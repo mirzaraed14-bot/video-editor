@@ -79,6 +79,33 @@ Sessions already connect to Remote Control (Settings → Claude Code). That mean
 - You never need to re-explain anything to a fresh session: memory plus each job's `RUN.md` resume block do that.
   Prompt F below is the whole handover.
 
+## 4b. Many channels, many chats — how the work is organised
+
+**One repo. One memory. Many channels. Chats are disposable.**
+
+- A **channel** is a preset folder, not a chat and not a repo: `presets/instagram/affanwizu/` (Urdu reels),
+  `presets/youtube/affan-afterhours/` (GTA long-form), and a new folder for each channel added. Adding a channel
+  means adding its preset + PLAYBOOK + LESSONS, nothing else.
+- A **job** is a folder under `projects/` with its own `RUN.md`. That file is the job's memory, and `./sync.sh`
+  carries it to the other machine.
+- A **chat** is one work session on one machine. Open one when there is work; let it go when the job ships.
+  Nothing important lives in it — memory, the preset and `RUN.md` hold everything.
+
+So it is NOT "two chats per channel forever". It is: **a chat on the machine that should do that piece of work.**
+
+| Work | Machine | Chat |
+|---|---|---|
+| Urdu reel: transcript → cut → captions | MacBook | one chat for that reel |
+| Dragging the .srt in, hand-finishing, export | desktop | the desktop chat |
+| Long-form episode: script, graphics, review | whichever is free (long renders → the Mac) | one chat for that episode |
+| A learning pass after shipping | either, after `./sync.sh` | any chat — it reads the files |
+
+**Rules that keep it from tangling**
+1. One job is owned by one machine at a time. Finish or `./sync.sh` before touching it from the other.
+2. Name chats after the job ("urdu seq22 cut", "GTA ep3 graphics"), not after the machine.
+3. Start every chat with `./sync.sh`, end it with `./sync.sh`.
+4. A fresh chat is never a cold start: memory + `handoff/<job>/RUN.md` bring it up to speed in one message.
+
 ## 5. The prompts
 
 **A — first run on a machine**
