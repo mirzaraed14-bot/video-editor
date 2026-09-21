@@ -1,0 +1,18 @@
+# Scripts must arrive on macOS with LF endings, or bash refuses them ("bad interpreter").
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+# Never touch binaries
+*.mov binary
+*.mp4 binary
+*.wav binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.otf binary
+*.prproj binary
+*.cube binary
+*.onnx binary
