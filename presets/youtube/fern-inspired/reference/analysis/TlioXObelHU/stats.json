@@ -1,0 +1,64 @@
+{
+ "id": "TlioXObelHU",
+ "duration_s": 772.3,
+ "cuts": 317,
+ "cuts_per_min": 24.6,
+ "shot_s": {
+  "median": 1.2,
+  "mean": 2.43,
+  "p10": 0.16,
+  "p90": 5.28,
+  "share_over_8s": 0.066
+ },
+ "cuts_per_min_by_quarter": [
+  27.7,
+  21.4,
+  28.3,
+  21.1
+ ],
+ "tone": {
+  "luma_mean": 0.27,
+  "luma_p10": 0.044,
+  "luma_p90": 0.548,
+  "sat_mean": 0.452,
+  "dark_pixel_share": 0.484
+ },
+ "palette": [
+  {
+   "hex": "#01041a",
+   "share": 0.243
+  },
+  {
+   "hex": "#070707",
+   "share": 0.152
+  },
+  {
+   "hex": "#272423",
+   "share": 0.131
+  },
+  {
+   "hex": "#504441",
+   "share": 0.123
+  },
+  {
+   "hex": "#d8d5d2",
+   "share": 0.105
+  },
+  {
+   "hex": "#566781",
+   "share": 0.097
+  },
+  {
+   "hex": "#9391a9",
+   "share": 0.092
+  },
+  {
+   "hex": "#b46d41",
+   "share": 0.058
+  }
+ ],
+ "loudness": {
+  "lufs": -18.9,
+  "lra": 2.4
+ }
+}

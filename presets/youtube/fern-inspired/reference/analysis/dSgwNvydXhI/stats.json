@@ -1,0 +1,64 @@
+{
+ "id": "dSgwNvydXhI",
+ "duration_s": 1801.3,
+ "cuts": 592,
+ "cuts_per_min": 19.7,
+ "shot_s": {
+  "median": 1.68,
+  "mean": 3.04,
+  "p10": 0.56,
+  "p90": 6.94,
+  "share_over_8s": 0.073
+ },
+ "cuts_per_min_by_quarter": [
+  14.3,
+  24.5,
+  16.5,
+  23.6
+ ],
+ "tone": {
+  "luma_mean": 0.663,
+  "luma_p10": 0.275,
+  "luma_p90": 0.931,
+  "sat_mean": 0.218,
+  "dark_pixel_share": 0.107
+ },
+ "palette": [
+  {
+   "hex": "#fcfcfc",
+   "share": 0.258
+  },
+  {
+   "hex": "#eeece9",
+   "share": 0.179
+  },
+  {
+   "hex": "#1f1b1c",
+   "share": 0.131
+  },
+  {
+   "hex": "#643e2c",
+   "share": 0.117
+  },
+  {
+   "hex": "#a8a19e",
+   "share": 0.088
+  },
+  {
+   "hex": "#c8cbc8",
+   "share": 0.087
+  },
+  {
+   "hex": "#697079",
+   "share": 0.085
+  },
+  {
+   "hex": "#bd824a",
+   "share": 0.055
+  }
+ ],
+ "loudness": {
+  "lufs": -14.7,
+  "lra": 4.0
+ }
+}

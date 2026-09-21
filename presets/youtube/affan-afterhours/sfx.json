@@ -1,0 +1,42 @@
+{
+ "_": "affan-afterhours SFX — a TRACK-MAP override only. The sound vocabulary (which sound lands on which motion class, its slices and its level band) is house-wide and lives in presets/youtube/default/sfx.json; change it THERE. This file exists because this channel's timeline is laid out differently: the creator places their own Epidemic music on A2 themselves, so every SFX layer shifts up one and the music role points at the track they already own.",
+ "_extends": "presets/youtube/default",
+ "tracks": {
+  "_": "0-based audio track indices for THIS channel: SFX on A3/A4/A5. The creator lays their own music and it does NOT live on a reserved track — on the shipped Travis explainer (2026-09-20) it went on A7, ABOVE these SFX, and A2 stayed empty. Read every audio track before planning sound; `music` below is only a hint for the music pass, which the creator normally runs themselves.",
+  "primary": 2,
+  "layer2": 3,
+  "layer3": 4,
+  "music": 1
+ },
+ "targets_dbfs": {
+  "_": "THIS CHANNEL RUNS 2 dB UNDER THE HOUSE BANDS. The youtube/default numbers were measured on a job with NO music bed; Affan Afterhours always has one, and the creator lays it themselves on A2, so the master sums voice + music + SFX. At the house bands the mix peaked at +0.008 dBFS (measured on the first full export, 2026-09-16) - over full scale, against YouTube's -1 dBTP. Two dB off every band puts the peak under -1 without touching the creator's music or the measured voice chain.",
+  "whoosh": -6,
+  "transient": -8,
+  "tick": -8,
+  "marker": -11,
+  "character": -12,
+  "soft": -14,
+  "bed": -20,
+  "_overlay_pass": "ADDED 2026-09-17 for the Higgsfield-overlay pass. The house bands above are for MOTION-GRAPHIC events (a card rising, a chip popping). A reenactment overlay needs DIEGETIC sound - the room it is in - and that sits far lower, because it plays under narration AND the creator's music. `ambience` is room tone and machine hum, `walla` is crowd murmur, `spot` is a visible action (a key, a mouse, a page, a chair), `accent` is an action that punctuates (a stamp, a shutter, a phone). A bed at the -20 `bed` band reads as tape hiss; at -30 it is felt and not heard.",
+  "ambience": -30,
+  "walla": -28,
+  "spot": -20,
+  "accent": -16
+ },
+ "overlay_beds": {
+  "_": "A BED IS CONTINUOUS ACROSS A RUN. Consecutive overlays in the same environment share ONE bed cue - restarting a room tone on every four-second clip pumps and reads as a mistake. Merge when the gap is under 0.6 s and the environment matches; a machine-hum layer does not break a room-tone run. On Hot Coffee this turned 59 overlay instances into 26 bed runs.",
+  "merge_gap_s": 0.6,
+  "fade_s": 0.3,
+  "environments": [
+   "ROOM_NIGHT",
+   "OFFICE",
+   "CHAMBER",
+   "HEARING",
+   "COURT_EMPTY",
+   "HALL_EMPTY",
+   "PRESS",
+   "STORE",
+   "KITCHEN"
+  ]
+ }
+}
