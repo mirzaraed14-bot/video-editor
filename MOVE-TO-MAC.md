@@ -14,24 +14,20 @@ MacBook can run the autonomous edits while the desktop stays free. Set up 2026-0
 
 ---
 
-## 1. One-time: create the hub
+## 1. The hub — DONE 2026-09-21
 
-1. On github.com → **New repository** → name it `video-editor` → **Private** → do **not** add a README.
-2. Copy the URL it shows (`https://github.com/<you>/video-editor.git`).
-3. On the desktop, in the project folder:
-   ```bash
-   git remote add origin https://github.com/<you>/video-editor.git
-   git push -u origin main
-   ```
-   Git opens a browser once to sign you in.
+**https://github.com/mirzaraed14-bot/video-editor** (private). The desktop pushed the first commit:
+2,075 files, 129 MB — every skill, preset, workflow, doc, and `memory/`. It deliberately leaves out footage,
+renders, `.mcp.json` (your keys) and the heavy static media.
 
-The repo carries ~200 MB: every skill, preset, workflow, doc, and your memory. It deliberately leaves out
-footage, renders, `.mcp.json` (your keys) and the heavy static media.
+GitHub CLI is installed on the desktop but **never finished signing in**: the app's Terminal panel doesn't give
+it interactive input, so `gh auth login` exits at "Press Enter to open…". Git itself pushes fine. To get `gh`
+working later, run that login from a normal PowerShell window, not the panel.
 
 ## 2. One-time: the MacBook
 
 ```bash
-git clone https://github.com/<you>/video-editor.git ~/video-editor
+git clone https://github.com/mirzaraed14-bot/video-editor.git ~/video-editor
 cd ~/video-editor
 ```
 Then, in order:
