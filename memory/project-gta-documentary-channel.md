@@ -35,6 +35,14 @@ the voice with an Adobe Enhance Speech v2 bounce (−22 LUFS, 128 kbps) and laid
 section turns. Rules that changed: the face gradual zoom is a RATE (~1.6 %/s), a cited on-camera source is PLAYED not drawn,
 an unsourceable slot gets an alternative artifact offered, insert points snap to word boundaries.
 
+**NEXT VIDEO (2026-09-21): the FACE-CAM style, measured in `presets/youtube/affan-afterhours-facecam/`** — the creator is
+"dieting down" the editing back to the look that got 170k: face + ~5 cut zooms/min at +25 % held ~1 s + a ~1 %/s push,
+3–4 game-footage runs/min of ~4 s (Extended Look is the bread and butter), 1–3 posters per video, 1–3 slow-downs at 0.6x
+(pitch kept), ≤ 2 hard chops, opens and closes on the face, first minute cuts 1.5–2.5x faster. Measured off two masters
+(`GTA Cars.mov` 170k, `Gta gun.mov` 35k) with `workflows/style-probe/-set/-zoom/-audio/-report.py`; the third reference
+("CAN'T Do Anymore") was dropped by the creator on 2026-09-22 — the two measured masters are the spec. The script for the
+next video is coming from the creator; the job runs in this style (its PLAYBOOK) with the channel PLAYBOOK/LESSONS.
+
 **Why:** the creator wants each video cheaper and faster, in the style that already works for them, with better
 explanation than a static poster gives.
 **How to apply:** start with `PLAYBOOK.md` § 0a (two formats) and the job's `BRIEF.md` "▶ STATUS" block. The

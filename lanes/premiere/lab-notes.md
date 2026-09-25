@@ -10,6 +10,7 @@
 - **YouTube export = CBR 50, not VBR.** VideoToolbox VBR treats the target as a ceiling (a 27-min 4K landed at 17.6 Mbps); set `ADBEVideoBitrateEncoding` to 0 in the `.epr`; 50 Mbps is the measured VMAF ceiling. Working preset, tracked and shipped: [`premiere-templates/youtube-2160p-h264-cbr50.epr`](premiere-templates/youtube-2160p-h264-cbr50.epr) (3840×2160, CBR, target = max = 50 Mbps, AAC 320k). Poll `lsof` for completion.
 - **Project files live at `projects/<job>/premiere/<job>.prproj`, never Premiere's save-dialog default (the pruned Auto-Save folder).** A relocation leaves its Auto-Saves in the old folder; sweep them to `premiere/archive/` and verify the move via `app.project.path`, not the filesystem.
 - **Drive the editor in the background; never front it.** `./workflows/window-grab.sh <App> <out.png>` captures a window's own buffer; most verification is a readback. The one exception is a PLANNED capture (`workflows/screen-record.sh`, a `capture` cell in the graphics plan): production footage of the timeline filling, not a verification frame, fronted for the take and said so in the report. Timeline colour labels are stamped from the project item at insert time and not scriptable per clip: label the item, then lay. Launch = `./lanes/premiere/premiere-up.sh [project]` with the CEP autostart patch applied by `apply-autostart-patch.py` (re-run after any engine re-clone).
+- **Windows: verify a caption track (or any on-screen state) with a PrintWindow grab (2026-09-25).** `window-grab.sh` is macOS-only, and QE `exportFramePNG` throws here. But user32 `PrintWindow(hwnd, hdc, 2)` (PW_RENDERFULLCONTENT) on Premiere's main window captures the GPU Program monitor too, without fronting it. Park the playhead with `seq.setPlayerPosition(ticks)` first. This closes the "no caption READ API" gap: the track (C1) and the rendered caption are both visible. Script: `powershell -ExecutionPolicy Bypass -File lanes/premiere/window-grab.ps1 -Out <png>` (the machine policy blocks unsigned scripts; Bypass is per-call only).
 - **Never escalate a stuck quit to `kill` / `kill -9`.** Premiere logs any non-graceful exit as a CRASH: the next launch opens on an error-report modal that blocks the CEP panel, so bridge autostart silently fails, and post-kill timeline state comes back subtly wrong even after a `save_project` that returned success. Save through the bridge, quit gracefully (ExtendScript `app.quit`, not an AppleEvent), then wait on the pid — and if it still will not quit, STOP and hand the app back to be quit by hand. `premiere-up.sh --restart` already refuses to escalate and exits with that instruction; keep it that way.
 - **OBS recordings carry two identical AAC tracks and Premiere silently refuses the file.** Remux losslessly first (`ffmpeg -i raw.mp4 -map 0:v:0 -map 0:a:0 -c copy -movflags +faststart out.mp4`); duration is unchanged so an EDL still applies. Clip deletion IS scriptable: `moveBin` into a fresh bin, then `deleteBin`.
 - **yt-dlp downloads headed into Premiere must be H.264:** `-f "bv*[vcodec^=avc1]+ba[ext=m4a]/b[vcodec^=avc1]"` (Premiere cannot import AV1).
@@ -54,6 +55,32 @@
   empty the timeline before the replay; that step is mandatory, not a first-run convenience.
 - While Premiere is mid-script the bridge returns `bridge_unavailable` for everything, including
   `ping`. That is a BUSY signal, not a dead panel — do not send anyone to Window → Extensions.
+- **2026-09-23, Windows + 25.0 (monetized-before-gta6): the same trap with a THIRD error text.** A 148-segment
+  replay, sent seconds after importing a 9.6 GB clip, failed after 6 s with `MCP Bridge is not running … Do not
+  retry until the panel says Connected`; the next `ping` timed out; the heartbeat file was still fresh. Premiere
+  had executed the whole script: 296 clips (148 V1 + 148 A1), all within a frame of the EDL. Any failure text from
+  `replay` (timeout, not running, unavailable) → ping until it answers, count clips, never re-run blind.
+
+## 2026-09-23 · Windows + 25.0: modals, paths and still clips (monetized-before-gta6 overlays)
+
+- **A native modal blocks the bridge, and the bridge reports it as "MCP Bridge is not running".** Seen twice: the
+  FCP XML export opens a **Translation Report** dialog, and a failed import opens **File Import Failure**. Check
+  Premiere's windows (EnumWindows on its pid); the dialogs are class `#32770` and close with `WM_CLOSE` sent to that
+  handle only. Their text is custom-drawn, so read it with `PrintWindow` into a PNG. (`premiere-dismiss.sh` is macOS-only.)
+- **The bridge strips one level of backslash escaping.** A path written `E:\\Claude...` in the script reaches
+  ExtendScript as `E:\Claude` → `E:Claude`, and `importFiles` fails behind a File Import Failure modal. **Use forward
+  slashes for `importFiles`**; for `exportAsMediaDirect` write four backslashes in the script source.
+- **`projectItem.changeMediaPath()` fails with a File Import Failure modal** for a PNG that `importFiles` accepts.
+  Relinking is out: give a rebuilt file a new name and import it. Imported files are also **locked on disk**.
+- **A still laid with in/out lands one frame short** (out-point quantization). **`trackItem.end = <Time>` is writable
+  and exact**: pin the end to the slot's own `end.ticks` after every overwrite.
+- **Helper functions declared before the IIFE make the bridge return "undefined"** (the script still runs). Put
+  everything inside one wrapper that returns the result.
+- **QE `getSequenceAt()` scan missed the active sequence**; `qe.project.getActiveSequence()` works.
+- **The Drop Shadow effect is nearly invisible on a dark background**: at 100 % opacity it darkened a luma-27 matte to
+  23. Bake shadows into the asset instead.
+- **Frame proof on Windows**: `exportAsMediaDirect(out, ".../systempresets/3F3F3F3F_504E4720/PNG Sequence (Match
+  Source).epr", 1)` over a one-frame sequence in/out, then restore in/out. It writes `<name>0.png`.
 - Recovery is a timeline edit on the creator's live project, so it can be blocked by the session's
   permission mode (it was here: `execute_extendscript`, `select_all_clips` and even the read-only
   `get_total_clip_count` were all refused). Have the creator clear the sequence by hand
@@ -323,3 +350,31 @@ Always check the EDL bash can actually see before re-splicing.
   (the actual jpg/png/mp4 the timeline points at) — that answered every question the frames would have.
 - **An Essential Graphics text layer's copy is not readable:** `Text.Source Text` returns a binary blob through the
   DOM, and the XML does not carry it either. A creator's own title cards can be located and timed, never quoted.
+- **Premiere 25.0 has NO clip colour-label API — read it from the `.prproj` instead (2026-09-22).** Every documented route returns nothing: `getColorLabel` is not a function on the DOM TrackItem, the QE clip exposes no such property, `export_as_fcp_xml` times out at 45 s without writing a file, and `select_clips_by_color` reports `count: 0` at all sixteen indices. The project file is gzipped XML and does carry it, but the 829 `BE.Prefs.LabelColors` entries under `ProjectItem` are **bin** labels and a red herring — a timeline clip's label is `asl.clip.label.name` on the **VideoClip**, with that clip's `InPoint`/`OutPoint` alongside it (which is what lets you join a block to the dialogue under it). Chain: `VideoClipTrackItem → ClipTrackItem → SubClip[ObjectRef] → SubClip → Clip[ObjectRef] → VideoClip → Clip → Properties`. Two different reference attributes are in play: `ObjectRef` points at `ObjectID`, `ObjectURef` at `ObjectUID`; tracks are reached via `Sequence → TrackGroups/TrackGroup/Second[ObjectRef] → VideoTrackGroup → TrackGroup/Tracks/Track[Index=0][ObjectURef]`. Ticks per second = 254016000000. Save through the bridge first, work on a COPY, never write the project. Working reader: `projects/gta6-pc-release/brief/readlabels.py`.
+- **`importFiles` takes ONE path per call through the CEP bridge (2026-09-22).** An array of 18 absolute paths fails `execute_extendscript` outright with "ExtendScript execution failed via CEP evalScript()" — a scripting failure, not a timeout, and not a length problem (the script was only 2.8 KB). The identical call with a single path succeeds every time, so loop it; the loop is cheap and lets you skip names already in the bin. Also strip non-ASCII from filenames before they reach the bridge (emoji and full-width punctuation from `yt-dlp` titles are a real source of this). Working driver: the `importall.py` pattern in `projects/gta6-pc-release/`.
+- **Higgsfield `generate_image` FAILS when `resolution: "2k"` is passed explicitly (2026-09-22)** — omit it and the server picks (1344x752 typically, sometimes larger). Failed jobs cost nothing. To get 4K, generate at the default then `upscale_image` (2 credits, preflightable only once a real `image_id` exists, and it returns 3856x2160).
+
+## 2026-09-23 — in-points floor to the SOURCE grid too; splits must sit on both grids (mj-allegations, Premiere 25.0)
+
+- setInPoint floors to the source's own frame grid exactly like setOutPoint (a 29.97 source moves in
+  33 ms steps), and with the timeline end pinned the out-point moves with it: up to 41 ms was clipped
+  off a word's tail. Workaround: pre-snap every in-point UP to the source grid (+0.1 ms) so the floor
+  lands where you meant. presets/youtube-shorts/abundance-wisdom/resolve_beats.py does this.
+- Splitting one continuous source into two clips (for two crops) skips or repeats a sliver of audio
+  unless the split time is on the source grid AND the first piece's length is a whole number of
+  timeline frames (50 fps source on a 60 fps sequence: split on a 0.1 s grid). plan_placement.py
+  searches for that point. Proven by readback: both splits 0.0 ms apart.
+
+## 2026-09-25 — a failed `importFiles` opens a MODAL that silently blocks the whole bridge (gta6-vice-city-sign, Premiere 25.0, Windows)
+
+- `importFiles` given a hand-escaped Windows path (`'E:\\Claude Projects\\…'` inside a JSON-wrapped ES
+  string) reached Premiere as `E:Claude Projects…` and raised **"File Import Failure — The importer reported a
+  generic error"**. The dialog is modal: the panel keeps writing its heartbeat, but every later command queues
+  unanswered and `ping` reports the bridge down. Premiere reads as "Responding" at near-zero CPU.
+- Fix: build the path as `new File('E:/forward/slashes/…')`, check `f.exists`, pass `f.fsName` to `importFiles`.
+- To see a modal behind other windows: enumerate the Premiere process's visible top-level windows (Win32
+  `EnumWindows`), render the dialog with `PrintWindow(hwnd, hdc, 2)` (a screen grab captures whatever covers
+  it), and dismiss it with `PostMessage(hwnd, WM_CLOSE)`. The queued commands drain on their own afterwards.
+- `replay` threw "MCP Bridge is not running" but the ES had executed in full (146/146 clips, frame-exact); only
+  its trailing `save_project` never ran. Read the sequence back and save by hand; never re-run a replay blind
+  (it appends after the last V1 clip).

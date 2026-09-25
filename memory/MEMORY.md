@@ -1,10 +1,14 @@
 - [Abundance Wisdom editor](user-abundance-wisdom-editor.md) — who the user is: runs Abundance Wisdom (shorts) + Affan Afterhours (GTA long-form), director role, voice-dictated, wants md-file continuity
 - [Shorts automation project](project-abundance-shorts-automation.md) — goal + state of automating their shorts; style spec path, their tools on this machine
 - [Higgsfield connector](reference-higgsfield-connector.md) — AI video via claude.ai connector (not .mcp.json); preflight cost, approve before spending credits
-- [GTA channel: two formats](project-gta-documentary-channel.md) — Affan Afterhours; the GTA 6 EXPLAINER is the default (doc format PAUSED); episode 2 "Travis Scott" SHIPPED 2026-09-20 — read its POSTMORTEM.md (what the creator kept/added/changed) before video 3
+- [GTA channel: two formats](project-gta-documentary-channel.md) — Affan Afterhours; the GTA 6 EXPLAINER is the default (doc format PAUSED); episode 2 "Travis Scott" SHIPPED 2026-09-20 (POSTMORTEM.md); video 3 = the FACE-CAM style, presets/youtube/affan-afterhours-facecam/ (measured 2026-09-21), script pending
 - [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; resume blocks, channel LESSONS after every review, save what the user gives in the same turn
 - [Epidemic Sound connector](reference-epidemic-sound-connector.md) — the user's music/SFX library; OAuth sign-in fails (redirect-URI allowlist), use an API key in .mcp.json instead
 - [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu captions ONLY (they keep clip selection); deep-talks style LOCKED in presets/instagram/affanwizu/, white style pending, transcribe.sh --lang ur
 - [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on a timeline they edited is a DECISION; export an FCP XML before any batch property change
 - [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — any web-sourced picture is checked at full size and enhanced in Higgsfield if soft, before it touches the timeline
 - [Editable captions in Premiere](feedback-editable-captions-in-premiere.md) — @affanwizu captions ship as an editable .srt caption track + saved Track Style, never a rendered .mov
+- [YouTube sourcing](feedback-youtube-sourcing.md) — the b-roll gets fetched here rather than handed over; force H.264 because Premiere cannot read AV1
+- [Walkthrough videos](feedback-walkthrough-videos.md) — per-video Tella/Loom brief: transcribe the audio, sample the frames they point at, resolve it into the job's BRIEF.md
+- [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
+- [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); its OWN preset folder presets/youtube/affanwiz/, never mixed with Afterhours or @affanwizu

@@ -21,7 +21,8 @@ def ts(t):
         '%02d:%02d:%02d,%03d' % (h, m, int(s), round((s - int(s)) * 1000))
 
 
-def main(job):
+def main(job, stem=None):
+    stem = stem or os.path.basename(os.path.normpath(job)) + '-captions'
     plan = json.load(open(os.path.join(job, 'captions-plan.json'), encoding='utf-8'))
     srt, rows = [], []
     for i, c in enumerate(plan['captions'], 1):
@@ -33,13 +34,22 @@ def main(job):
         coloured = [(w['t'].upper(), w['c']) for ln in c['lines'] for w in ln if w['c'] != 'white']
         rows.append((i, c['start'], c['end'], ' / '.join(lines), c.get('italic', False), coloured))
 
-    out_srt = os.path.join(job, 'outputs', 'seq22-captions.srt')
+    out_srt = os.path.join(job, 'outputs', stem + '.srt')
     os.makedirs(os.path.dirname(out_srt), exist_ok=True)
     open(out_srt, 'w', encoding='utf-8-sig').write('\n'.join(srt))
 
-    md = ['# Caption styling cheat-sheet — Sequence 22', '',
+    # italic captions as runs, e.g. "4–8, 19–21"
+    runs, ital_ids = [], [r[0] for r in rows if r[4]]
+    for n in ital_ids:
+        if runs and n == runs[-1][1] + 1:
+            runs[-1][1] = n
+        else:
+            runs.append([n, n])
+    ital_txt = ', '.join('%d' % a if a == b else '%d–%d' % (a, b) for a, b in runs)
+    md = ['# Caption styling cheat-sheet — ' + stem, '',
           'After **Upgrade Captions To Graphics**: apply **Gretaros** to every caption,',
-          '**Gretaris Italic** to captions 1–11 (the interviewer), then colour the words below.',
+          ('**Gretaris Italic** to captions %s (the other speaker), then colour the words below.' % ital_txt
+           if runs else 'no italic captions; colour the words below.'),
           'Everything not listed stays white.', '',
           '| # | in | out | caption | style |', '|---|---|---|---|---|']
     for i, st, en, text, ital, coloured in rows:
@@ -53,4 +63,4 @@ def main(job):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)

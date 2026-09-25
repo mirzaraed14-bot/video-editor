@@ -270,6 +270,7 @@ The system improves only through files, never through chat memory. Four writes, 
    = the look, `PLAYBOOK.md` = the repeatable procedure, `LESSONS.md` = what earlier jobs taught) and RUN.md names it.
    Affan Afterhours → [`presets/youtube/affan-afterhours/`](presets/youtube/affan-afterhours/README.md).
    @affanwizu (Urdu reels, Roman Urdu CAPTIONS ONLY) → [`presets/instagram/affanwizu/`](presets/instagram/affanwizu/README.md).
+   AffanWiz (English personal brand, long-form YouTube, promotes their Skool community) → [`presets/youtube/affanwiz/`](presets/youtube/affanwiz/README.md).
 2. **The creator's review is data.** After step 7, read what changed on the timeline (`place-graphics.py --diff`,
    `place-sfx.py --diff`, the V1 cut diff) plus what was said, and append each finding to the channel's `LESSONS.md` as
    *lesson → change made → file*. A lesson that repeats becomes a preset number or a PLAYBOOK rule; a one-off stays a lesson.

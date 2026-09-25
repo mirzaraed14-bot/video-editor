@@ -552,3 +552,83 @@ They kept **37/37 graphics, 163/164 SFX at identical levels, all 38 face nests a
   edges, the same rule the EDL already follows.
 - **The first sound of the video lands on frame 0.** They moved the opening riser 0.467 → 0.000. → `sfx-plan.py`'s
   cut-in riser for the first graphic starts at 0, not at the graphic's own in.
+
+## 2026-09-22 · the camera records NO audio — and how to sync anyway (gta6-pc-release)
+
+- **C1295.MP4's audio track is DEAD, not quiet:** flat −93 dB RMS with a constant −80.8 dB peak and zero speech
+  modulation, across the whole 16-minute take (C1296 the same; C1297 −77 dB, also unusable). The creator believed it
+  was "very very quiet" and asked for it to be turned up — there is nothing there to turn up. **Worth fixing at the
+  shoot:** the camera's mic input is not connected, so every take is a silent picture that can only be synced the
+  hard way. One clap at the top of each take would also make every future sync trivial and exact.
+- **`sync-dual-audio.py` cannot work on this footage** (it needs the camera's own mic as the reference) and, run
+  anyway, it returned a confident **+323.9 s** — impossible, since the mic (958 s) would then run 300 s past the end
+  of the camera (978 s). A scripted read repeats phrasing, which is what fools an unconstrained envelope search.
+  → **Always sanity-check an offset against the two durations before trusting it.**
+- **New tool: `workflows/sync-by-motion.py`** — correlates the camera's MOTION (the talking head moves while
+  speaking, stops in the pauses) against the voice's loudness envelope. Two independent signals (mouth-box motion and
+  whole-frame motion) are reported so they can be compared. Result here: **+12.045 s, no drift**, confirmed by an
+  eyeball check (lips closed at −133 ms, opening at 0).
+- **Two measurement traps it encodes, both paid for here:** sampling a 59.94 fps source at 30 or 60 Hz makes ffmpeg
+  duplicate/drop frames periodically, and the comb this rides on the motion signal shows up as a fake monotone
+  "drift" (−460 ppm at 30 Hz, −2512 ppm at 60 Hz, −3375 ppm at native-but-mismatched); sample at the camera's exact
+  rate fraction. And ONE median face box over a 16-minute take is wrong in most windows because the creator leans in
+  and out — the per-window box turned wandering ±1.5 s estimates into six of seven windows inside 0.28 s.
+
+## 2026-09-22 · a noise-gated mic makes every automatic boundary check lie
+
+**Lesson.** The OBS voice track on `gta6-pc-release` is noise-gated: quiet frames are digital zero, so the local
+noise floor reads about −140 dBFS. Every check written as "energy above floor + 12 dB" therefore fires on
+essentially every joint — `polish-boundaries.py`'s hot-cut sweep flagged **69 of 139** out-boundaries, and all but
+five were silence. Read that way, the warning list is noise and the five real defects hide inside it.
+
+**Change made.** Judge boundaries on gated footage in **absolute dBFS against the segment's own speech level**
+(speech sits −25 to −15 dBFS here), not against the floor. Measured that way the median joint sat 56 dB below
+speech and exactly five out-cuts and four in-cuts were within 8 dB of it — every one a real clipped word, each
+confirmed by slice re-ASR and fixed. Eleven boundaries were corrected in total.
+
+**File.** The one-off checker lived in the session scratchpad; the rule belongs here and in
+`presets/youtube/affan-afterhours-facecam/LESSONS.md`. If this recurs on a third job, fold the absolute-dB
+comparison into `polish-boundaries.py` as the gated-source path.
+
+## 2026-09-22 · WhisperX collapses a repeated line into ONE word, and on this mic the auto-fix is not enough
+
+**Lesson.** On a teleprompter read the creator re-records a line two to four times. WhisperX merges the repeats
+into a single word entry spanning every utterance — "about" ran 174.5 → 184.5 s across a 10-second pause, "1080"
+ran 4.6 s, "on..." bridged a false start into the good take. `refine-cuts.py` catches the ones where the *segment
+boundary* lands on such a word, but it cannot see a collapse that sits between two kept words, and it snapped
+three boundaries INTO the take they were supposed to open (the hook's "GTA 6 is coming out on PC in 2028", the
+"Oh, shit. 2028." beat, and "So GTA 5 is the weird one").
+
+**Change made.** On this footage, treat any word whose span exceeds ~0.7 s as fiction: measure the 10 ms envelope
+over the window, slice re-ASR it, and then **pin the boundary** (`"no_refine": true`) so the refiner cannot
+re-snap it. Four segments on this job are pinned for exactly that reason.
+
+**File.** `projects/gta6-pc-release/RUN.md` § Flags records which ones and why.
+
+## 2026-09-22 · read the written script against the transcript BEFORE cutting, not after
+
+**Lesson.** The creator's script promised four things in the intro. The raw take delivers three: the whole
+*"THE EXCUSE THAT JUST DIED"* section — GTA 6 shipping without Online, and Zelnick's "no recurrent consumer
+spending" quote — was never said on camera. That is the video's strongest argument and the one the intro
+explicitly sets up. No cut can fix it. Two more scripted beats (the case-against-me point two, and the four-point
+recap before the date reveal) are also missing, and one payoff line was fluffed beyond use.
+
+**Change made.** On a scripted shoot, diff the section list in `script.md` against the transcript at the START of
+step 2 and report every undelivered promise with the rough cut, while the set is still up and a pickup line costs
+one take. Reporting it after the overlays are placed costs a re-cut.
+
+**File.** `projects/gta6-pc-release/script.md` + RUN.md § Flags.
+
+## 2026-09-22 · the decisive test for a clipped word is the KEPT SPAN, not the boundary
+
+**Lesson.** The fresh-eyes mechanical pass on `gta6-pc-release` reported three clipped heads, each argued from a
+quiet pre-onset ramp in the envelope (−67 to −84 dB, against a −2.4 dB vowel) plus a whisper word-start measured
+on a wide slice window. All three were wrong. On a gated mic a ramp 65 dB under the vowel is the gate opening,
+not a fricative, and an ASR word-start read off an 8-second window carries onset padding of a few hundred ms.
+
+**Change made.** Do not argue about a boundary from the audio *around* it. Extract **exactly** `[start, end]` from
+the EDL, transcribe that clip alone, and read what came out. It answers the only question that matters — does the
+line the timeline keeps contain its first and last word — in one step, and it cost three 2-second clips here
+against a 34-tool-call investigation that reached the wrong answer.
+
+**File.** `projects/gta6-pc-release/RUN.md` § Flags.

@@ -1,0 +1,2083 @@
+{
+ "duration": 413.07,
+ "hard_cuts": 78,
+ "hard_cuts_per_min": 11.3,
+ "zoom_steps_in": 36,
+ "zoom_steps_out": 28,
+ "zoom_steps_per_min": 5.2,
+ "zoom_step_median": 1.265,
+ "zoom_step_hold_median": 1.2,
+ "zoom_steps_at_hard_cut": 11,
+ "zoom_level_share": {
+  "1.0-1.2": 821,
+  "1.2-1.4": 170,
+  "1.4-1.6": 126,
+  "1.6-1.8": 29,
+  "1.8-2.0": 6,
+  "2.0-2.2": 4,
+  "2.2-2.4": 0
+ },
+ "zoom_level_max_median": 1.56,
+ "reframes": 22,
+ "reframes_per_min": 3.2,
+ "visible_changes_per_min": 19.6,
+ "face_share": 0.793,
+ "face_runs": 24,
+ "face_run_median": 9.6,
+ "face_run_max": 39.47,
+ "overlay_runs": 23,
+ "overlay_runs_per_min": 3.3,
+ "overlay_run_median": 3.8,
+ "overlay_video": 22,
+ "overlay_still": 1,
+ "overlay_internal_cuts": 10,
+ "longest_face_gap": 22.8,
+ "slowmo": [
+  {
+   "start": 245.13,
+   "end": 247.79,
+   "dur": 2.66,
+   "dup": null,
+   "speed": 0.61,
+   "words": "you pay to register your"
+  }
+ ],
+ "slowmo_source": "word rate + duplicate frames",
+ "chopped": [
+  {
+   "t": 68.4,
+   "word": "the",
+   "into": 0.05,
+   "drop_db": 12.5,
+   "context": "three seconds boom you're out the game was named after this"
+  }
+ ],
+ "zoom_source": "background features",
+ "zoom_push_pct_per_s": 0.99,
+ "zoom_bg_level": 1.148,
+ "wpm": 211.2,
+ "pauses_over_0_3": 44,
+ "pauses_over_1": 2,
+ "word_cuts": [
+  {
+   "t": 2.0,
+   "word": "whether",
+   "into": 0.15,
+   "of": 0.28
+  },
+  {
+   "t": 3.4,
+   "word": "fuel",
+   "into": 0.21,
+   "of": 0.24
+  },
+  {
+   "t": 17.8,
+   "word": "insane",
+   "into": 0.43,
+   "of": 0.5
+  },
+  {
+   "t": 19.4,
+   "word": "game.",
+   "into": 0.14,
+   "of": 0.2
+  },
+  {
+   "t": 40.4,
+   "word": "mid-gameplay",
+   "into": 0.08,
+   "of": 0.56
+  },
+  {
+   "t": 58.0,
+   "word": "it's",
+   "into": 0.27,
+   "of": 0.3
+  },
+  {
+   "t": 59.2,
+   "word": "years",
+   "into": 0.07,
+   "of": 0.18
+  },
+  {
+   "t": 83.8,
+   "word": "Before",
+   "into": 0.08,
+   "of": 0.26
+  },
+  {
+   "t": 107.8,
+   "word": "have",
+   "into": 0.14,
+   "of": 0.16
+  },
+  {
+   "t": 198.2,
+   "word": "rejected.",
+   "into": 0.45,
+   "of": 0.5
+  },
+  {
+   "t": 226.4,
+   "word": "limit",
+   "into": 0.21,
+   "of": 0.24
+  },
+  {
+   "t": 276.4,
+   "word": "banking",
+   "into": 0.1,
+   "of": 0.46
+  },
+  {
+   "t": 285.6,
+   "word": "tour",
+   "into": 0.31,
+   "of": 0.36
+  },
+  {
+   "t": 289.6,
+   "word": "shop",
+   "into": 0.21,
+   "of": 0.24
+  },
+  {
+   "t": 313.4,
+   "word": "know,",
+   "into": 0.08,
+   "of": 0.14
+  },
+  {
+   "t": 322.0,
+   "word": "basically",
+   "into": 0.07,
+   "of": 0.38
+  },
+  {
+   "t": 343.2,
+   "word": "context",
+   "into": 0.49,
+   "of": 0.52
+  },
+  {
+   "t": 352.6,
+   "word": "Which",
+   "into": 0.13,
+   "of": 0.18
+  },
+  {
+   "t": 354.4,
+   "word": "promised",
+   "into": 0.25,
+   "of": 0.34
+  },
+  {
+   "t": 373.6,
+   "word": "for",
+   "into": 0.09,
+   "of": 0.12
+  },
+  {
+   "t": 393.0,
+   "word": "later.",
+   "into": 0.28,
+   "of": 0.3
+  }
+ ],
+ "word_steps": [
+  {
+   "t": 9.4,
+   "word": "upset.",
+   "ratio": 1.19
+  },
+  {
+   "t": 32.0,
+   "word": "your",
+   "ratio": 1.104
+  },
+  {
+   "t": 44.8,
+   "word": "that",
+   "ratio": 1.104
+  },
+  {
+   "t": 58.0,
+   "word": "it's",
+   "ratio": 1.268
+  },
+  {
+   "t": 79.6,
+   "word": "Deep",
+   "ratio": 1.262
+  },
+  {
+   "t": 125.0,
+   "word": "reasonable",
+   "ratio": 1.208
+  },
+  {
+   "t": 145.8,
+   "word": "okay",
+   "ratio": 1.151
+  },
+  {
+   "t": 276.4,
+   "word": "banking",
+   "ratio": 1.4
+  },
+  {
+   "t": 313.4,
+   "word": "know,",
+   "ratio": 1.252
+  },
+  {
+   "t": 352.6,
+   "word": "Which",
+   "ratio": 1.406
+  },
+  {
+   "t": 393.0,
+   "word": "later.",
+   "ratio": 1.336
+  }
+ ],
+ "push_pct_per_s": 1.79,
+ "zoom_steps": [
+  {
+   "t": 4.6,
+   "ratio": 1.124,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 4.0,
+   "run_end": 7.0,
+   "hold": 0.6,
+   "on_face": true,
+   "word": "does."
+  },
+  {
+   "t": 5.2,
+   "ratio": 0.752,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 4.0,
+   "run_end": 7.0,
+   "hold": 1.8,
+   "on_face": true
+  },
+  {
+   "t": 9.4,
+   "ratio": 1.19,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 7.4,
+   "run_end": 9.4,
+   "hold": 0.0,
+   "on_face": true,
+   "word": "upset."
+  },
+  {
+   "t": 14.0,
+   "ratio": 1.451,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 9.8,
+   "run_end": 15.2,
+   "hold": 1.2,
+   "on_face": true,
+   "word": "the"
+  },
+  {
+   "t": 24.2,
+   "ratio": 1.173,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 19.6,
+   "run_end": 25.8,
+   "hold": 1.2,
+   "on_face": true,
+   "word": "if"
+  },
+  {
+   "t": 25.4,
+   "ratio": 0.858,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 19.6,
+   "run_end": 25.8,
+   "hold": 0.4,
+   "on_face": true
+  },
+  {
+   "t": 32.0,
+   "ratio": 1.104,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 29.8,
+   "run_end": 36.4,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "register"
+  },
+  {
+   "t": 33.0,
+   "ratio": 0.913,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 29.8,
+   "run_end": 36.4,
+   "hold": 3.4,
+   "on_face": true
+  },
+  {
+   "t": 44.8,
+   "ratio": 1.104,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 1.2,
+   "on_face": true,
+   "word": "that"
+  },
+  {
+   "t": 46.0,
+   "ratio": 0.822,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 3.6,
+   "on_face": true
+  },
+  {
+   "t": 49.6,
+   "ratio": 1.261,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "because"
+  },
+  {
+   "t": 50.6,
+   "ratio": 0.796,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 3.8,
+   "on_face": true
+  },
+  {
+   "t": 54.4,
+   "ratio": 1.39,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 0.6,
+   "on_face": true,
+   "word": ""
+  },
+  {
+   "t": 55.0,
+   "ratio": 0.718,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 3.0,
+   "on_face": true
+  },
+  {
+   "t": 58.0,
+   "ratio": 1.268,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 40.6,
+   "run_end": 59.0,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "it's"
+  },
+  {
+   "t": 70.0,
+   "ratio": 1.389,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 68.6,
+   "run_end": 81.6,
+   "hold": 1.6,
+   "on_face": true,
+   "word": "right"
+  },
+  {
+   "t": 71.6,
+   "ratio": 0.721,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 68.6,
+   "run_end": 81.6,
+   "hold": 4.6,
+   "on_face": true
+  },
+  {
+   "t": 76.2,
+   "ratio": 1.191,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 68.6,
+   "run_end": 81.6,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "rockstar"
+  },
+  {
+   "t": 77.2,
+   "ratio": 0.756,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 68.6,
+   "run_end": 81.6,
+   "hold": 2.4,
+   "on_face": true
+  },
+  {
+   "t": 79.6,
+   "ratio": 1.262,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 68.6,
+   "run_end": 81.6,
+   "hold": 0.6,
+   "on_face": true,
+   "word": "Deep"
+  },
+  {
+   "t": 80.2,
+   "ratio": 0.794,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 68.6,
+   "run_end": 81.6,
+   "hold": 1.4,
+   "on_face": true
+  },
+  {
+   "t": 95.6,
+   "ratio": 0.857,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 84.0,
+   "run_end": 107.6,
+   "hold": 6.4,
+   "on_face": true
+  },
+  {
+   "t": 102.0,
+   "ratio": 1.258,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 84.0,
+   "run_end": 107.6,
+   "hold": 2.4,
+   "on_face": true,
+   "word": "anything,"
+  },
+  {
+   "t": 104.4,
+   "ratio": 0.756,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 84.0,
+   "run_end": 107.6,
+   "hold": 2.6,
+   "on_face": true
+  },
+  {
+   "t": 107.0,
+   "ratio": 1.51,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 84.0,
+   "run_end": 107.6,
+   "hold": 0.6,
+   "on_face": true,
+   "word": "that"
+  },
+  {
+   "t": 115.6,
+   "ratio": 0.909,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 111.2,
+   "run_end": 121.2,
+   "hold": 1.8,
+   "on_face": true
+  },
+  {
+   "t": 117.4,
+   "ratio": 1.391,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 111.2,
+   "run_end": 121.2,
+   "hold": 0.4,
+   "on_face": true,
+   "word": "they"
+  },
+  {
+   "t": 117.8,
+   "ratio": 0.717,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 111.2,
+   "run_end": 121.2,
+   "hold": 2.4,
+   "on_face": true
+  },
+  {
+   "t": 120.2,
+   "ratio": 1.601,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 111.2,
+   "run_end": 121.2,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "tool"
+  },
+  {
+   "t": 125.0,
+   "ratio": 1.208,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 121.6,
+   "run_end": 125.0,
+   "hold": 0.0,
+   "on_face": true,
+   "word": "reasonable"
+  },
+  {
+   "t": 127.0,
+   "ratio": 1.292,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 125.4,
+   "run_end": 131.4,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "called"
+  },
+  {
+   "t": 128.0,
+   "ratio": 0.777,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 125.4,
+   "run_end": 131.4,
+   "hold": 3.4,
+   "on_face": true
+  },
+  {
+   "t": 142.2,
+   "ratio": 1.244,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 138.4,
+   "run_end": 148.8,
+   "hold": 2.0,
+   "on_face": true,
+   "word": "it"
+  },
+  {
+   "t": 144.2,
+   "ratio": 0.735,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 138.4,
+   "run_end": 148.8,
+   "hold": 1.6,
+   "on_face": true
+  },
+  {
+   "t": 145.8,
+   "ratio": 1.151,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 138.4,
+   "run_end": 148.8,
+   "hold": 3.0,
+   "on_face": true,
+   "word": "okay"
+  },
+  {
+   "t": 160.8,
+   "ratio": 1.415,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 155.0,
+   "run_end": 167.8,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "to"
+  },
+  {
+   "t": 161.8,
+   "ratio": 0.643,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 155.0,
+   "run_end": 167.8,
+   "hold": 6.0,
+   "on_face": true
+  },
+  {
+   "t": 185.4,
+   "ratio": 1.322,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 181.2,
+   "run_end": 187.2,
+   "hold": 1.8,
+   "on_face": true,
+   "word": "rob"
+  },
+  {
+   "t": 194.8,
+   "ratio": 1.26,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 190.6,
+   "run_end": 197.4,
+   "hold": 2.6,
+   "on_face": true,
+   "word": "off"
+  },
+  {
+   "t": 228.0,
+   "ratio": 0.7,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 5.6,
+   "on_face": true
+  },
+  {
+   "t": 233.6,
+   "ratio": 1.252,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 1.8,
+   "on_face": true,
+   "word": "tracker"
+  },
+  {
+   "t": 235.4,
+   "ratio": 0.73,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 12.0,
+   "on_face": true
+  },
+  {
+   "t": 245.0,
+   "ratio": 0.911,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 2.4,
+   "on_face": true
+  },
+  {
+   "t": 247.4,
+   "ratio": 1.554,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "your"
+  },
+  {
+   "t": 248.4,
+   "ratio": 0.64,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 8.6,
+   "on_face": true
+  },
+  {
+   "t": 257.0,
+   "ratio": 1.165,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "cars"
+  },
+  {
+   "t": 258.0,
+   "ratio": 0.78,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 226.6,
+   "run_end": 262.2,
+   "hold": 4.2,
+   "on_face": true
+  },
+  {
+   "t": 276.4,
+   "ratio": 1.4,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 269.2,
+   "run_end": 277.4,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "banking"
+  },
+  {
+   "t": 313.4,
+   "ratio": 1.252,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 307.0,
+   "run_end": 318.0,
+   "hold": 1.4,
+   "on_face": true,
+   "word": "you"
+  },
+  {
+   "t": 314.8,
+   "ratio": 0.803,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 307.0,
+   "run_end": 318.0,
+   "hold": 3.2,
+   "on_face": true
+  },
+  {
+   "t": 329.4,
+   "ratio": 1.255,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 322.2,
+   "run_end": 339.0,
+   "hold": 2.6,
+   "on_face": true,
+   "word": "stars"
+  },
+  {
+   "t": 332.0,
+   "ratio": 0.725,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 322.2,
+   "run_end": 339.0,
+   "hold": 7.0,
+   "on_face": true
+  },
+  {
+   "t": 348.6,
+   "ratio": 1.251,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 343.6,
+   "run_end": 356.2,
+   "hold": 1.4,
+   "on_face": true,
+   "word": "texture"
+  },
+  {
+   "t": 350.0,
+   "ratio": 0.8,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 343.6,
+   "run_end": 356.2,
+   "hold": 2.6,
+   "on_face": true
+  },
+  {
+   "t": 352.6,
+   "ratio": 1.406,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 343.6,
+   "run_end": 356.2,
+   "hold": 1.8,
+   "on_face": true,
+   "word": "Which"
+  },
+  {
+   "t": 354.4,
+   "ratio": 0.715,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 343.6,
+   "run_end": 356.2,
+   "hold": 1.8,
+   "on_face": true
+  },
+  {
+   "t": 366.8,
+   "ratio": 1.453,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 360.4,
+   "run_end": 369.6,
+   "hold": 2.8,
+   "on_face": true,
+   "word": ""
+  },
+  {
+   "t": 385.4,
+   "ratio": 1.306,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 3.0,
+   "on_face": true,
+   "word": "we'll"
+  },
+  {
+   "t": 388.4,
+   "ratio": 0.703,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 4.6,
+   "on_face": true
+  },
+  {
+   "t": 393.0,
+   "ratio": 1.336,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 1.6,
+   "on_face": true,
+   "word": "later."
+  },
+  {
+   "t": 394.6,
+   "ratio": 0.763,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 5.0,
+   "on_face": true
+  },
+  {
+   "t": 399.6,
+   "ratio": 1.338,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 1.8,
+   "on_face": true,
+   "word": "finished"
+  },
+  {
+   "t": 401.4,
+   "ratio": 0.746,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 9.2,
+   "on_face": true
+  },
+  {
+   "t": 410.6,
+   "ratio": 1.38,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 373.8,
+   "run_end": 412.8,
+   "hold": 2.2,
+   "on_face": true,
+   "word": ""
+  }
+ ],
+ "reframe_list": [
+  {
+   "t": 72.8,
+   "dx": 0.078,
+   "dy": 0.091,
+   "at_hard_cut": false
+  },
+  {
+   "t": 75.6,
+   "dx": 0.003,
+   "dy": 0.051,
+   "at_hard_cut": false
+  },
+  {
+   "t": 103.4,
+   "dx": 0.024,
+   "dy": 0.06,
+   "at_hard_cut": false
+  },
+  {
+   "t": 166.0,
+   "dx": 0.024,
+   "dy": 0.062,
+   "at_hard_cut": false
+  },
+  {
+   "t": 166.2,
+   "dx": 0.015,
+   "dy": 0.107,
+   "at_hard_cut": false
+  },
+  {
+   "t": 167.6,
+   "dx": 0.027,
+   "dy": 0.08,
+   "at_hard_cut": false
+  },
+  {
+   "t": 195.0,
+   "dx": 0.028,
+   "dy": 0.064,
+   "at_hard_cut": false
+  },
+  {
+   "t": 202.8,
+   "dx": 0.001,
+   "dy": 0.052,
+   "at_hard_cut": false
+  },
+  {
+   "t": 229.6,
+   "dx": 0.083,
+   "dy": 0.036,
+   "at_hard_cut": false
+  },
+  {
+   "t": 230.6,
+   "dx": 0.061,
+   "dy": 0.042,
+   "at_hard_cut": false
+  },
+  {
+   "t": 230.8,
+   "dx": 0.052,
+   "dy": 0.03,
+   "at_hard_cut": false
+  },
+  {
+   "t": 232.6,
+   "dx": 0.056,
+   "dy": 0.031,
+   "at_hard_cut": false
+  },
+  {
+   "t": 234.8,
+   "dx": 0.006,
+   "dy": 0.052,
+   "at_hard_cut": false
+  },
+  {
+   "t": 237.0,
+   "dx": 0.009,
+   "dy": 0.05,
+   "at_hard_cut": false
+  },
+  {
+   "t": 259.2,
+   "dx": 0.026,
+   "dy": 0.056,
+   "at_hard_cut": false
+  },
+  {
+   "t": 276.6,
+   "dx": 0.002,
+   "dy": 0.058,
+   "at_hard_cut": true
+  },
+  {
+   "t": 297.2,
+   "dx": 0.117,
+   "dy": 0.088,
+   "at_hard_cut": false
+  },
+  {
+   "t": 327.8,
+   "dx": 0.07,
+   "dy": 0.006,
+   "at_hard_cut": false
+  },
+  {
+   "t": 368.6,
+   "dx": 0.031,
+   "dy": 0.065,
+   "at_hard_cut": false
+  },
+  {
+   "t": 368.8,
+   "dx": 0.054,
+   "dy": 0.09,
+   "at_hard_cut": false
+  },
+  {
+   "t": 386.0,
+   "dx": 0.029,
+   "dy": 0.065,
+   "at_hard_cut": false
+  },
+  {
+   "t": 401.6,
+   "dx": 0.052,
+   "dy": 0.054,
+   "at_hard_cut": false
+  }
+ ],
+ "overlay_runs_list": [
+  {
+   "start": 2.0,
+   "end": 3.8,
+   "cuts": 1,
+   "motion": 10.15,
+   "dur": 1.8,
+   "kind": "video"
+  },
+  {
+   "start": 7.2,
+   "end": 9.6,
+   "cuts": 0,
+   "motion": 18.59,
+   "dur": 2.4,
+   "kind": "video"
+  },
+  {
+   "start": 15.4,
+   "end": 19.4,
+   "cuts": 2,
+   "motion": 23.69,
+   "dur": 4.0,
+   "kind": "video"
+  },
+  {
+   "start": 26.0,
+   "end": 29.6,
+   "cuts": 0,
+   "motion": 2.33,
+   "dur": 3.6,
+   "kind": "video"
+  },
+  {
+   "start": 36.6,
+   "end": 40.4,
+   "cuts": 0,
+   "motion": 2.3,
+   "dur": 3.8,
+   "kind": "video"
+  },
+  {
+   "start": 59.2,
+   "end": 68.4,
+   "cuts": 0,
+   "motion": 2.33,
+   "dur": 9.2,
+   "kind": "video"
+  },
+  {
+   "start": 81.8,
+   "end": 83.8,
+   "cuts": 0,
+   "motion": 22.73,
+   "dur": 2.0,
+   "kind": "video"
+  },
+  {
+   "start": 107.8,
+   "end": 111.0,
+   "cuts": 0,
+   "motion": 8.26,
+   "dur": 3.2,
+   "kind": "video"
+  },
+  {
+   "start": 121.4,
+   "end": 125.2,
+   "cuts": 0,
+   "motion": 23.85,
+   "dur": 3.8,
+   "kind": "video"
+  },
+  {
+   "start": 131.6,
+   "end": 138.2,
+   "cuts": 1,
+   "motion": 13.74,
+   "dur": 6.6,
+   "kind": "video"
+  },
+  {
+   "start": 149.0,
+   "end": 154.8,
+   "cuts": 0,
+   "motion": 10.79,
+   "dur": 5.8,
+   "kind": "video"
+  },
+  {
+   "start": 168.0,
+   "end": 171.6,
+   "cuts": 0,
+   "motion": 23.84,
+   "dur": 3.6,
+   "kind": "video"
+  },
+  {
+   "start": 178.4,
+   "end": 181.0,
+   "cuts": 0,
+   "motion": 11.25,
+   "dur": 2.6,
+   "kind": "video"
+  },
+  {
+   "start": 187.4,
+   "end": 190.4,
+   "cuts": 0,
+   "motion": 21.91,
+   "dur": 3.0,
+   "kind": "video"
+  },
+  {
+   "start": 203.6,
+   "end": 226.4,
+   "cuts": 0,
+   "motion": 7.08,
+   "dur": 22.8,
+   "kind": "video"
+  },
+  {
+   "start": 262.4,
+   "end": 269.0,
+   "cuts": 2,
+   "motion": 6.62,
+   "dur": 6.6,
+   "kind": "video"
+  },
+  {
+   "start": 277.6,
+   "end": 288.2,
+   "cuts": 1,
+   "motion": 3.75,
+   "dur": 10.6,
+   "kind": "video"
+  },
+  {
+   "start": 289.6,
+   "end": 292.8,
+   "cuts": 0,
+   "motion": 15.96,
+   "dur": 3.2,
+   "kind": "video"
+  },
+  {
+   "start": 299.8,
+   "end": 306.8,
+   "cuts": 0,
+   "motion": 3.82,
+   "dur": 7.0,
+   "kind": "video"
+  },
+  {
+   "start": 318.2,
+   "end": 322.0,
+   "cuts": 0,
+   "motion": 10.69,
+   "dur": 3.8,
+   "kind": "video"
+  },
+  {
+   "start": 339.2,
+   "end": 346.8,
+   "cuts": 3,
+   "motion": 15.46,
+   "dur": 7.6,
+   "kind": "video"
+  },
+  {
+   "start": 356.4,
+   "end": 360.2,
+   "cuts": 0,
+   "motion": 1.44,
+   "dur": 3.8,
+   "kind": "video"
+  },
+  {
+   "start": 369.8,
+   "end": 373.6,
+   "cuts": 0,
+   "motion": 0.64,
+   "dur": 3.8,
+   "kind": "still"
+  }
+ ],
+ "face_runs_list": [
+  {
+   "start": 0.0,
+   "end": 2.0,
+   "shots": 1,
+   "dur": 2.0,
+   "face_h_floor": 0.2931,
+   "levels": [
+    1.0,
+    1.02,
+    1.04,
+    1.06,
+    1.07,
+    1.09,
+    1.1
+   ]
+  },
+  {
+   "start": 3.8,
+   "end": 7.2,
+   "shots": 1,
+   "dur": 3.4,
+   "face_h_floor": 0.3033,
+   "levels": [
+    1.0,
+    1.03,
+    1.04,
+    1.09,
+    1.23,
+    1.25,
+    1.27,
+    1.28,
+    1.3,
+    1.42,
+    1.48
+   ]
+  },
+  {
+   "start": 9.6,
+   "end": 15.4,
+   "shots": 1,
+   "dur": 5.8,
+   "face_h_floor": 0.3085,
+   "levels": [
+    0.95,
+    0.98,
+    1.0,
+    1.01,
+    1.02,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.51,
+    1.56
+   ]
+  },
+  {
+   "start": 19.4,
+   "end": 26.0,
+   "shots": 1,
+   "dur": 6.6,
+   "face_h_floor": 0.3255,
+   "levels": [
+    0.98,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.08,
+    1.09,
+    1.11,
+    1.13,
+    1.21,
+    1.3,
+    1.31,
+    1.32,
+    1.34
+   ]
+  },
+  {
+   "start": 29.6,
+   "end": 36.6,
+   "shots": 1,
+   "dur": 7.0,
+   "face_h_floor": 0.3194,
+   "levels": [
+    0.97,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.17
+   ]
+  },
+  {
+   "start": 40.4,
+   "end": 59.2,
+   "shots": 2,
+   "dur": 18.8,
+   "face_h_floor": 0.3019,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.39,
+    1.54,
+    1.56
+   ]
+  },
+  {
+   "start": 68.4,
+   "end": 81.8,
+   "shots": 2,
+   "dur": 13.4,
+   "face_h_floor": 0.3126,
+   "levels": [
+    0.94,
+    0.95,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.14,
+    1.15,
+    1.17,
+    1.19,
+    1.24,
+    1.3,
+    1.35,
+    1.36,
+    1.4,
+    1.46,
+    1.48,
+    1.49,
+    1.5,
+    1.51,
+    1.52,
+    1.57
+   ]
+  },
+  {
+   "start": 83.8,
+   "end": 107.8,
+   "shots": 1,
+   "dur": 24.0,
+   "face_h_floor": 0.3183,
+   "levels": [
+    0.97,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.14,
+    1.15,
+    1.16,
+    1.18,
+    1.19,
+    1.21,
+    1.22,
+    1.23,
+    1.24,
+    1.25,
+    1.26,
+    1.27,
+    1.28,
+    1.29,
+    1.3,
+    1.32,
+    1.39,
+    1.4,
+    1.42,
+    1.43,
+    1.45,
+    1.46,
+    1.5,
+    1.68,
+    1.72,
+    1.73
+   ]
+  },
+  {
+   "start": 111.0,
+   "end": 121.4,
+   "shots": 3,
+   "dur": 10.4,
+   "face_h_floor": 0.3115,
+   "levels": [
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.11,
+    1.12,
+    1.13,
+    1.39,
+    1.43,
+    1.83,
+    1.86
+   ]
+  },
+  {
+   "start": 125.2,
+   "end": 131.6,
+   "shots": 1,
+   "dur": 6.4,
+   "face_h_floor": 0.3366,
+   "levels": [
+    0.98,
+    1.0,
+    1.01,
+    1.02,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.19,
+    1.4
+   ]
+  },
+  {
+   "start": 138.2,
+   "end": 149.0,
+   "shots": 1,
+   "dur": 10.8,
+   "face_h_floor": 0.3174,
+   "levels": [
+    0.97,
+    1.0,
+    1.01,
+    1.02,
+    1.07,
+    1.08,
+    1.1,
+    1.11,
+    1.12,
+    1.14,
+    1.2,
+    1.22,
+    1.24,
+    1.26,
+    1.27,
+    1.29,
+    1.33,
+    1.37
+   ]
+  },
+  {
+   "start": 154.8,
+   "end": 168.0,
+   "shots": 2,
+   "dur": 13.2,
+   "face_h_floor": 0.3072,
+   "levels": [
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.03,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.14,
+    1.15,
+    1.16,
+    1.17,
+    1.19,
+    1.2,
+    1.21,
+    1.22,
+    1.25,
+    1.27,
+    1.3,
+    1.39,
+    1.65,
+    1.72,
+    1.75
+   ]
+  },
+  {
+   "start": 171.6,
+   "end": 178.4,
+   "shots": 1,
+   "dur": 6.8,
+   "face_h_floor": 0.3426,
+   "levels": [
+    0.96,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.07,
+    1.08,
+    1.09,
+    1.11,
+    1.13,
+    1.14
+   ]
+  },
+  {
+   "start": 181.0,
+   "end": 187.4,
+   "shots": 1,
+   "dur": 6.4,
+   "face_h_floor": 0.3416,
+   "levels": [
+    1.0,
+    1.01,
+    1.02,
+    1.04,
+    1.34,
+    1.38,
+    1.42
+   ]
+  },
+  {
+   "start": 190.4,
+   "end": 203.6,
+   "shots": 2,
+   "dur": 13.2,
+   "face_h_floor": 0.3113,
+   "levels": [
+    0.95,
+    0.99,
+    1.0,
+    1.02,
+    1.03,
+    1.05,
+    1.06,
+    1.08,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.14,
+    1.15,
+    1.16,
+    1.17,
+    1.38,
+    1.39,
+    1.44,
+    1.46,
+    1.48,
+    1.51,
+    1.52,
+    1.91,
+    2.02
+   ]
+  },
+  {
+   "start": 226.4,
+   "end": 262.4,
+   "shots": 5,
+   "dur": 36.0,
+   "face_h_floor": 0.3157,
+   "levels": [
+    0.96,
+    0.97,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.15,
+    1.16,
+    1.17,
+    1.18,
+    1.19,
+    1.22,
+    1.24,
+    1.28,
+    1.3,
+    1.31,
+    1.35,
+    1.41,
+    1.43,
+    1.44,
+    1.47,
+    1.48,
+    1.51,
+    1.52,
+    1.53,
+    1.56,
+    1.66,
+    1.67,
+    1.68
+   ]
+  },
+  {
+   "start": 269.0,
+   "end": 277.6,
+   "shots": 2,
+   "dur": 8.6,
+   "face_h_floor": 0.33,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.1,
+    1.11,
+    1.3,
+    1.32,
+    1.56,
+    1.64,
+    1.65,
+    1.66,
+    1.67
+   ]
+  },
+  {
+   "start": 288.2,
+   "end": 289.6,
+   "shots": 1,
+   "dur": 1.4,
+   "face_h_floor": 0.3478,
+   "levels": [
+    0.98,
+    1.01,
+    1.02
+   ]
+  },
+  {
+   "start": 292.8,
+   "end": 299.8,
+   "shots": 3,
+   "dur": 7.0,
+   "face_h_floor": 0.3159,
+   "levels": [
+    0.96,
+    0.97,
+    1.0,
+    1.05,
+    1.06,
+    1.09,
+    1.1,
+    1.12,
+    1.13,
+    1.14,
+    1.19,
+    1.21,
+    1.23,
+    1.24,
+    1.96,
+    2.01
+   ]
+  },
+  {
+   "start": 306.8,
+   "end": 318.2,
+   "shots": 3,
+   "dur": 11.4,
+   "face_h_floor": 0.3222,
+   "levels": [
+    0.98,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.07,
+    1.08,
+    1.1,
+    1.11,
+    1.12,
+    1.14,
+    1.15,
+    1.18,
+    1.2,
+    1.22,
+    1.23,
+    1.27,
+    1.28,
+    1.32,
+    1.35,
+    1.39,
+    1.4,
+    1.43,
+    1.44,
+    1.46
+   ]
+  },
+  {
+   "start": 322.0,
+   "end": 339.2,
+   "shots": 1,
+   "dur": 17.2,
+   "face_h_floor": 0.3159,
+   "levels": [
+    0.97,
+    0.98,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.15,
+    1.41,
+    1.42,
+    1.43,
+    1.45,
+    1.46
+   ]
+  },
+  {
+   "start": 346.8,
+   "end": 356.4,
+   "shots": 4,
+   "dur": 9.6,
+   "face_h_floor": 0.285,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.12,
+    1.34,
+    1.37,
+    1.41,
+    1.43,
+    1.57,
+    1.59,
+    1.6,
+    1.65
+   ]
+  },
+  {
+   "start": 360.2,
+   "end": 369.8,
+   "shots": 1,
+   "dur": 9.6,
+   "face_h_floor": 0.3289,
+   "levels": [
+    0.97,
+    0.98,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.1,
+    1.13,
+    1.3,
+    1.43,
+    1.45,
+    1.49,
+    1.51,
+    1.53,
+    1.55,
+    1.56,
+    1.57,
+    1.58,
+    1.59,
+    1.65
+   ]
+  },
+  {
+   "start": 373.6,
+   "end": 413.067,
+   "shots": 5,
+   "dur": 39.47,
+   "face_h_floor": 0.308,
+   "levels": [
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.12,
+    1.13,
+    1.14,
+    1.17,
+    1.18,
+    1.19,
+    1.2,
+    1.21,
+    1.22,
+    1.23,
+    1.24,
+    1.25,
+    1.26,
+    1.27,
+    1.28,
+    1.3,
+    1.32,
+    1.33,
+    1.39,
+    1.4,
+    1.41,
+    1.42,
+    1.43,
+    1.45,
+    1.48,
+    1.49,
+    1.52,
+    1.53,
+    1.58,
+    1.6,
+    1.61,
+    1.62,
+    1.64,
+    1.65
+   ]
+  }
+ ],
+ "pauses": [
+  {
+   "t": 354.69,
+   "gap": 15.19,
+   "before": "you.",
+   "after": "One"
+  },
+  {
+   "t": 105.97,
+   "gap": 1.08,
+   "before": "equipment.",
+   "after": "that"
+  },
+  {
+   "t": 144.13,
+   "gap": 0.82,
+   "before": "car",
+   "after": "you"
+  },
+  {
+   "t": 351.69,
+   "gap": 0.78,
+   "before": "which",
+   "after": "Which"
+  },
+  {
+   "t": 53.85,
+   "gap": 0.71,
+   "before": "paperwork",
+   "after": "crime"
+  },
+  {
+   "t": 78.85,
+   "gap": 0.68,
+   "before": "okay",
+   "after": "Deep"
+  },
+  {
+   "t": 397.76,
+   "gap": 0.68,
+   "before": "development.",
+   "after": "it"
+  },
+  {
+   "t": 160.18,
+   "gap": 0.62,
+   "before": "networking",
+   "after": "to"
+  },
+  {
+   "t": 197.15,
+   "gap": 0.6,
+   "before": "game",
+   "after": "rejected."
+  },
+  {
+   "t": 162.73,
+   "gap": 0.54,
+   "before": "it",
+   "after": "you"
+  },
+  {
+   "t": 192.44,
+   "gap": 0.52,
+   "before": "car.",
+   "after": "I"
+  },
+  {
+   "t": 384.98,
+   "gap": 0.48,
+   "before": "says,",
+   "after": "we'll"
+  }
+ ]
+}

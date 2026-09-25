@@ -136,8 +136,9 @@ Never re-enter the numbers by hand.
 
 **The creator labels the BLOCK; the label names the transition that follows it** (agreed 2026-09-21).
 One label per block, so each cut is owned by the block before it. A label on the last block is ignored.
-Aqua (3) = no transition. Yellow (2) still means pull-out, so a yellow block needing a transition
-carries a marker at the cut instead.
+Aqua (3) = no transition. Yellow (2) means pull-out for the ZOOM pass; in practice (ABW8, 2026-09-24)
+the creator runs the zoom pass first, then relabels blocks — yellow ones included — for transitions.
+Build order is therefore always zoom → transitions.
 
 | AE label | Transition | Build |
 |---|---|---|
@@ -234,7 +235,10 @@ Each short passes through **two AE comps**, and the reference project shows both
 - **Comp 2 — the build** (e.g. `ABW6 Linked Comp 03`, `ABW6 Linked Comp 02`): the Topaz file comes
   back and gets everything in §§ 2–8.
 
-A still image or an overlay never gets the head lock.
+A still image or an overlay never gets the head lock. Only **Iris (default-label)** clips are locked;
+**Violet** clips are left alone (the creator's label, ABW8 2026-09-23). The lock also runs straight on
+a "Replace with After Effects Composition" comp at Premiere's own scale (89–267 %); the nose is held
+by Anchor keys alone, so re-sliding Position later keeps it. Procedure + proof: PLAYBOOK § 2.
 
 ## 11. Endings
 

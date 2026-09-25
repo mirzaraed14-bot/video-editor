@@ -39,6 +39,16 @@ normalise a clip the creator left at another value. (Cost the day it was broken:
 
 Where two layers fit one beat, plan both and let the creator pick at the style test.
 
+## 1a. THREE STYLES, ONE FOLDER EACH (2026-09-21)
+
+| style | folder | status |
+|---|---|---|
+| **face-cam explainer** — face + cut zooms + game footage, 1–3 posters, the 170k look | [`../affan-afterhours-facecam/`](../affan-afterhours-facecam/README.md) | **DEFAULT for the next videos** ("dieting down the editing", the creator 2026-09-21) |
+| motion-graphics explainer — the face + 30–40 house graphics from colour labels | `projects/gta6-travis-scott-hired/STYLE.md` + this file § 1b | shipped once (Travis Scott, 2026-09-20); parked unless asked by name |
+| documentary — dark cinematic, Higgsfield reenactments | this file § 1–2 | PAUSED (Hot Coffee, 237 views) |
+
+A job reads ITS style folder plus this channel's PLAYBOOK/LESSONS/sfx.json; nothing from another style leaks in.
+
 ## 1b. THE CHANNEL HAS TWO FORMATS — and the explainer is the one that gets the views (2026-09-19)
 
 | | **GTA 6 explainer** (the channel's engine) | **documentary** (Hot Coffee, an experiment) |

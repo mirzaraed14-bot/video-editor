@@ -1,0 +1,14 @@
+Installed 2 packages in 1.51s
+[ WARN:0@0.310] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+# style probe — GTA Cars.mov
+
+1920x1080 @ 60.00 fps · 6:53.07 · samples at 5/s
+
+- **cuts:** 78 = **11.3/min** (cold open 15.0/min) · by minute [15.0, 7.0, 12.0, 8.0, 15.0, 14.0, 7.9]
+- **held shot:** median 3.6 s · longest 24.0 s
+- **face:** 79 % of runtime in 18 runs (median run 13.3 s, median face shot 3.8 s)
+- **overlays:** 20 = 2.9/min, 21 % of runtime, median 3.1 s · 19 moving / 1 still
+- **gradual push (face shots >= 1.5 s):** median 9.5 % per shot = 1.79 %/s
+- **cut zooms:** 143 in / 134 out · median step x1.3 · median hold 0.4 s
+- **luma:** mean 0.337 · dark 11 % · bright 16 %
+- first shot: face · last shot: face

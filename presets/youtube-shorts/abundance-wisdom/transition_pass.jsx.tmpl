@@ -1,0 +1,148 @@
+// Abundance Wisdom transition pass (template: transition_pass.py fills %COMP% / %OUT%) — label on a block = the transition AFTER that block.
+// 10 Purple = brightness dip to -90 · 16 Dark Green = brightness +30 · 4 Pink = white solid flash
+// 6 Peach = uni.Exposure Blur Mix 50 -> 0 · 14 Cyan = Gaussian Blur 50 -> 0
+(function () {
+    var OUT = "%OUT%";
+    var PRESETS = "C:/Users/affan/OneDrive/Documents/Adobe/After Effects 2025/User Presets/";
+    var LAYER_NAME = "Adjustment Layer 30";      // transitions (28 = grade, 29 = zoom)
+    var SOLID_NAME = "White Solid Flash";
+    var L = [];
+    function n(v) { return Math.round(v * 1000) / 1000; }
+    function write() { var f = new File(OUT); f.encoding = "UTF-8"; f.open("w"); f.write(L.join("\n")); f.close(); }
+
+    try {
+        var comp = null;
+        for (var i = 1; i <= app.project.numItems; i++) {
+            var it = app.project.item(i);
+            if (it instanceof CompItem && it.name === "%COMP%") comp = it;
+        }
+        if (!comp) { L.push("COMP NOT FOUND"); write(); return; }
+
+        app.beginUndoGroup("Abundance Wisdom transition pass (Claude)");
+
+        // clear a previous run
+        var removed = 0;
+        for (var d = comp.numLayers; d >= 1; d--) {
+            var nm = comp.layer(d).name;
+            if (nm === LAYER_NAME || nm === SOLID_NAME) { comp.layer(d).remove(); removed++; }
+        }
+        L.push("cleanup: removed " + removed + " transition layer(s) from a previous run");
+
+        // blocks = real footage/still layers, in time order
+        var blocks = [];
+        for (var li = 1; li <= comp.numLayers; li++) {
+            var ly = comp.layer(li);
+            if (ly.adjustmentLayer) continue;
+            if (ly.name.indexOf("Comp 1") >= 0) continue;          // caption precomp
+            if (ly instanceof TextLayer) continue;                  // creator's own annotations
+            if (ly.name.indexOf("*") === 0) continue;
+            blocks.push({ idx: li, name: ly.name, label: ly.label, inP: ly.inPoint, outP: ly.outPoint });
+        }
+        blocks.sort(function (a, b) { return a.inP - b.inP; });
+        L.push("blocks: " + blocks.length);
+
+        var MAP = {};
+        MAP[10] = "purple"; MAP[16] = "green"; MAP[4] = "pink"; MAP[6] = "peach"; MAP[14] = "cyan";
+        var topLayer = comp.layer(1);
+        var topIsCaption = (topLayer.name.indexOf("Comp 1") >= 0);
+        var made = 0;
+
+        for (var b = 0; b < blocks.length; b++) {
+            var blk = blocks[b];
+            var kind = MAP[blk.label];
+            if (!kind) continue;
+            if (b === blocks.length - 1) { L.push("SKIP  last block carries label " + blk.label + " but has no cut after it"); continue; }
+
+            // the visible cut: where the NEXT block starts (the creator nudges these)
+            var cut = blocks[b + 1].inP;
+            var note = "";
+            if (Math.abs(cut - blk.outP) > 0.005) note = "  (block ends " + n(blk.outP) + ", next starts " + n(cut) + " — using the next block's start)";
+
+            var lay, ef;
+            if (kind === "pink") {
+                lay = comp.layers.addSolid([1, 1, 1], SOLID_NAME, comp.width, comp.height, 1, comp.duration);
+                lay.name = SOLID_NAME;
+                if (topIsCaption) lay.moveAfter(topLayer);
+                lay.startTime = 0; lay.inPoint = cut; lay.outPoint = cut + 0.817;
+                var op = lay.property("Transform").property("Opacity");
+                op.setValueAtTime(cut, 100);
+                op.setValueAtTime(cut + 0.5, 0);
+                op.setInterpolationTypeAtKey(1, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                op.setInterpolationTypeAtKey(2, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                op.setTemporalEaseAtKey(1, [new KeyframeEase(0, 33.333)], [new KeyframeEase(-200, 4.1)]);
+                op.setTemporalEaseAtKey(2, [new KeyframeEase(0, 33.333)], [new KeyframeEase(0, 33.333)]);
+            } else {
+                lay = comp.layers.addSolid([1, 1, 1], LAYER_NAME, comp.width, comp.height, 1, comp.duration);
+                lay.adjustmentLayer = true;
+                lay.name = LAYER_NAME;
+                if (topIsCaption) lay.moveAfter(topLayer);
+                lay.startTime = 0;
+
+                if (kind === "purple" || kind === "green") {
+                    // their own preset carries the effect + easing; retime it onto the cut
+                    lay.inPoint = cut - 0.333; lay.outPoint = cut + 0.334;
+                    lay.applyPreset(new File(PRESETS + "Simple Brightness Fade In & Out.ffx"));
+                    ef = lay.property("Effects").property(1);
+                    var br = ef.property("Brightness");
+                    while (br.numKeys > 0) br.removeKey(1);
+                    var peak = (kind === "purple") ? -90 : 30;
+                    br.setValueAtTime(cut - 0.333, 0);
+                    br.setValueAtTime(cut, peak);
+                    br.setValueAtTime(cut + 0.267, 0);
+                    for (var k = 1; k <= 3; k++) {
+                        br.setInterpolationTypeAtKey(k, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                        br.setTemporalEaseAtKey(k, [new KeyframeEase(0, 16.667)], [new KeyframeEase(0, 16.667)]);
+                    }
+                } else if (kind === "peach") {
+                    lay.inPoint = cut; lay.outPoint = cut + 0.9;
+                    lay.applyPreset(new File(PRESETS + "Music Media Co Uni Expose.ffx"));
+                    ef = lay.property("Effects").property(1);
+                    var mix = ef.property("Mix");
+                    while (mix.numKeys > 0) mix.removeKey(1);
+                    mix.setValueAtTime(cut, 50);
+                    mix.setValueAtTime(cut + 0.5, 0);
+                    mix.setInterpolationTypeAtKey(1, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                    mix.setInterpolationTypeAtKey(2, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                    mix.setTemporalEaseAtKey(1, [new KeyframeEase(0, 33.333)], [new KeyframeEase(-300, 2.5)]);
+                    mix.setTemporalEaseAtKey(2, [new KeyframeEase(0, 33.333)], [new KeyframeEase(0, 33.333)]);
+                } else if (kind === "cyan") {
+                    lay.inPoint = cut; lay.outPoint = cut + 0.9;
+                    ef = lay.property("Effects").addProperty("ADBE Gaussian Blur 2");
+                    var bl = ef.property("Blurriness");
+                    bl.setValueAtTime(cut, 50);
+                    bl.setValueAtTime(cut + 0.7, 0);
+                    bl.setInterpolationTypeAtKey(1, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                    bl.setInterpolationTypeAtKey(2, KeyframeInterpolationType.BEZIER, KeyframeInterpolationType.BEZIER);
+                    bl.setTemporalEaseAtKey(1, [new KeyframeEase(0, 33.333)], [new KeyframeEase(0, 33.333)]);
+                    bl.setTemporalEaseAtKey(2, [new KeyframeEase(0, 33.333)], [new KeyframeEase(0, 33.333)]);
+                    try { ef.property("Repeat Edge Pixels").setValue(true); } catch (e) {}
+                }
+            }
+            made++;
+            var rb = "";
+            try {
+                if (kind === "pink") rb = "opacity@cut " + n(lay.property("Transform").property("Opacity").valueAtTime(cut, false));
+                else if (kind === "purple" || kind === "green") rb = "brightness " + n(ef.property("Brightness").valueAtTime(cut - 0.333, false)) + " / " + n(ef.property("Brightness").valueAtTime(cut, false)) + " / " + n(ef.property("Brightness").valueAtTime(cut + 0.267, false));
+                else if (kind === "peach") rb = "mix " + n(ef.property("Mix").valueAtTime(cut, false)) + " -> " + n(ef.property("Mix").valueAtTime(cut + 0.5, false));
+                else if (kind === "cyan") rb = "blur " + n(ef.property("Blurriness").valueAtTime(cut, false)) + " -> " + n(ef.property("Blurriness").valueAtTime(cut + 0.7, false));
+            } catch (e) { rb = "readback failed: " + e.toString(); }
+            L.push(kind.toUpperCase() + "  after block " + (b + 1) + " (" + n(blk.inP) + "-" + n(blk.outP) + ")  cut at " + n(cut) + "  layer " + n(lay.inPoint) + "-" + n(lay.outPoint) + "  | " + rb + note);
+        }
+
+        // tidy the solids this run created
+        var used = {};
+        for (var q = 1; q <= comp.numLayers; q++) { try { if (comp.layer(q).source) used[comp.layer(q).source.id] = true; } catch (e) {} }
+        var tidied = 0;
+        for (var pi = app.project.numItems; pi >= 1; pi--) {
+            var item = app.project.item(pi);
+            if (item instanceof FootageItem && (item.name === LAYER_NAME || item.name === SOLID_NAME) &&
+                !used[item.id] && item.usedIn.length === 0) { item.remove(); tidied++; }
+        }
+        L.push("made " + made + " transitions; tidied " + tidied + " unused solid item(s); comp now " + comp.numLayers + " layers");
+        app.endUndoGroup();
+    } catch (err) {
+        L.push("ERROR " + err.toString() + (err.line ? " line " + err.line : ""));
+        try { app.endUndoGroup(); } catch (e2) {}
+    }
+    write();
+})();

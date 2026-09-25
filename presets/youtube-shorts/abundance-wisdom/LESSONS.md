@@ -3,6 +3,120 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-09-24 — transitions by label (ABW8 Linked Comp 06)
+
+- **The creator labels for transitions AFTER the zoom pass, and relabels yellow pull-out blocks too**
+  (no markers used). So the order is fixed: zoom pass first (reads yellow), transitions second (reads
+  the new labels); after that the labels no longer say which blocks pull out — `apply.tsv` does.
+- Now a reusable tool: `transition_pass.py "<comp>" <out.jsx>` (template `transition_pass.jsx.tmpl`).
+  8 transitions built and read back on the first run.
+
+## 2026-09-24 — zoom pass on the Topaz render (ABW8 Linked Comp 06)
+
+- **The creator called it "Linked Comp 08"; the project has no 08.** The comp holding the Topaz render
+  with yellow/default labels was 06 (the active comp). Check by content, say which one was used.
+- **In the build comp the blocks are the creator's, not the cuts:** 11 blocks, one 16 s block
+  (13.92–29.90) spanning several 60 Minutes cuts → one zoom, depth 0.67. AE label 3 (Aqua) is the
+  default footage label = push in.
+- **The Topaz render blurs 2–4 frames at EVERY cut** (33 frames over 10 cuts; the export is sharp
+  there, and the frames before a cut soften too). Enhancement-only and Chronos-only renders of the same
+  cut stay sharp, so by elimination it is the **Full-Frame stabilisation** smoothing across the edit.
+  The AE head lock already holds the faces, so stabilisation adds little — flagged to the creator.
+- The first zoom plan sampled the cut frames → 2 "no face" and one false pivot. Sampling 0.1 s inside
+  each block fixed all three.
+
+## 2026-09-23 — Topaz settings matched to a competitor frame (ABW8 hurt.mov)
+
+- **Focus fix is the lever, not the sliders.** On footage blown up 180–270 % (60 Minutes 960×720 at
+  267 %), the frame only holds ~⅓ of its pixels of real detail; Strong (25 % → 4×) lets Iris rebuild at
+  the scale the detail actually lives. Standard left it soft.
+- **A second pass at 1× (Proteus, detail 60 / sharpen 60) adds the crisp edges** Iris won't give
+  (pushing Iris's own sliders made it softer). Costs ≈ 3× the enhancement time. Numbers → PLAYBOOK § 3.
+- **A reference frame from a competitor is GRADED; ours is compared before the creator's CC.**
+  Normalise contrast out before measuring (creator's correction, same day). Raw numbers said "the
+  source can't get there" (5.1 vs 8.5); normalised, two passes already match the competitor's edges,
+  and the grain I'd recommended doubled their texture — so grain came back out.
+- Topaz here is **5.0.4**: no Rhea, no Starlight (the newer models for very low-quality footage).
+
+## 2026-09-23 — captions on a sequence Claude built (ABW8 · Sequence 03)
+
+- **Creator: "max 3 words per layer."** Earlier guidance allowed 4 on fast lines; on this job 3 is a
+  hard cap (66 captions at 218 wpm, median 0.70 s). Treat 3 as the cap unless told otherwise.
+- **No re-transcription for a sequenced job:** `timeline_words.py` moves the per-source transcript
+  onto the sequence clock through the live A1 clips (read AFTER the creator's recut — the audio still
+  points at the sources even when V1 was replaced with AE comps). A clip outside every transcribed
+  window gets its own short extract, transcribed once and merged.
+- **Trim slivers:** a cut can leave a 20–40 ms prob-0 word at a clip EDGE ("anything, it | It is");
+  drop it. Short prob-0 words MID-clip are real ("in a bed", "harm a child") — an edge-blind rule
+  dropped both on the first try.
+- **Italic also covers words Michael quotes from someone else** (the police remarks), as on the
+  Destiny job — flagged to the creator as a choice they can flip.
+- `make_srt.py` had "captions 1–11" hard-coded from Sequence 22 in the cheat-sheet; it now lists the
+  real italic runs.
+
+## 2026-09-23 — first scripted head lock (ABW8 Linked Comp 02 + 03, ABW7.aep)
+
+- **The creator's handoff for the head lock: they "Replace with After Effects Composition" over the
+  Iris (default-label) clips; Violet clips are never locked.** The linked comp keeps Premiere's scale
+  (88.9–266.8 % here, not the 546 % of the reference short), and the lock works on it directly.
+  → PLAYBOOK § 2.
+- **Pipeline:** `head_track.py` (YuNet nose, every 60 fps frame, from the source files) →
+  `headlock_map.json` (comp/layer → clip, with the comp's sequence offset) → `apply_headlock.py`
+  (per-frame linear Anchor keys + Motion Tile 340/mirror, one undo group) → `headlock_proof.py`
+  (read back from AE, rebuild frames, locked vs unlocked sheet). 21 layers, 2,513 keys, one run.
+- **The lock is framing-independent:** Anchor(t) = Anchor(0) + (nose(t) − nose(0)), Position
+  untouched — so the creator can re-slide Position afterwards and the nose stays held.
+- **Never judge a lock by re-detecting the nose on the blown-up comp frame.** YuNet's anchors stop
+  around 256 px; on a 750 px face the landmark wandered 100–230 px and a perfect lock "failed".
+  Rebuild the frame from the source + AE's read-back anchors and check the crosshair by eye.
+- **A nose lock through a profile turn holds the nose, not the face** — the face swings around it
+  (60 Minutes 22.3–23.5 s: ~40 px residual vs ~120 px unlocked). Expected, same as AE's tracker.
+- **Check the tracked face is INSIDE the crop.** A clip the creator added (60 Minutes wide shot) had
+  Michael outside their crop; the tracker still found him at the frame edge. Flag it, don't reframe.
+- **`comp.saveFrameToPng` writes nothing on these comps either** (no Sapphire on them) — proof has to
+  come from the rebuild, not an AE still.
+
+## 2026-09-23 — the creator's recut of Claude's first sequence (data)
+
+Measured from the live V1 after their pass (`projects/mj-allegations/brief/v1_live.txt`):
+- **82.55 → 49.23 s.** Dropped the held arrest gap and the misattributed "his wife" beat, cut
+  Elizabeth Taylor to one 3.6 s line ("if they'd planned an assassination…") and the restroom beat's
+  closing "it's all right. It's okay."; KEPT both drop candidates (Bashir, and "even though I was
+  hurting" at 38.47–41.80).
+- **They cut the pauses INSIDE quotes.** Jumps within one continuous source: 0.13, 0.23, 0.27,
+  0.27, 0.30, 0.45, 0.48, 0.50, 0.50, 0.58 s, plus 1.08, 1.73, 3.78, 4.07, 6.80 s phrase drops.
+  Claude's sequence kept every quote continuous. **Next time: remove breaths/pauses ≥ ~0.13 s inside
+  a quote at sequencing** (the head lock + zoom hide the jump).
+- **They added lines Claude's draft didn't have** (60 Minutes 573.0 "One time I asked to use the
+  restroom." + 575.4 "And they said, sure, it's right around…", Sawyer 974.77 close-up) — the sheet
+  is a starting point, not the cut.
+- Music added by them, as agreed.
+
+## 2026-09-23 — first job where Claude SEQUENCES (ABW8 · Sequence 03, allegations cut)
+
+- **Pipeline for a cut sheet → timeline**, all in this folder: `find_quote.py` (locate a quote by its
+  words), `beats.json` in the job (word anchors per beat, optional measured `in`/`out` overrides),
+  `resolve_beats.py` → `edl.json`, `plan_placement.py` → `placement.json` (framing + splits),
+  `place_sequence.py` → the ExtendScript that lays it. The placer refuses a non-empty sequence.
+- **A cut sheet's timestamps belong to whichever upload the researcher watched.** Every source in the
+  bin was a different upload (Katherine at 11:02, not 9:36; Bashir "Part 16", not "10/10"; 60 Minutes
+  timed from an excerpt). **Locate by words, never by the sheet's clock.**
+- **Frame-check every beat before placing it** — it caught a **misattribution in the locked build**:
+  the "Lisa Marie" answer is Elizabeth Taylor on camera. Also verify "no child on frame" at ≥ 12 fps,
+  not 6 samples (a hand at the frame edge needed a close look — it was his).
+- **The aligner's word boundaries are soft; measure the audio at every edge that matters.** Four edges
+  were wrong by 30–200 ms (a stretched "that", an early "it", "anything," decaying 150 ms later than
+  aligned). RMS in 10 ms steps settles it.
+- **Premiere FLOORS in-points to the source's own frame grid** (29.97 → 33 ms steps) and the pinned
+  duration drags the out-point with it — up to 41 ms clipped off a word. Pre-snap every in-point UP to
+  the source grid. **A split inside one continuous source must land on BOTH grids** (source fps and
+  60 fps), or a sliver of audio is skipped mid-word (16 ms inside "No," on the first pass).
+- **Framing at sequencing = the creator's habit:** scale to fill the 1920 height, slide the crop onto
+  the face; split a quote at any camera cut so each shot gets its own crop. The face detector will
+  pick the biggest face — in a wide two-shot that was the interviewer, so check which face it found.
+- **Sources missing from the bin get searched for on disk first** (the Neverland statement was in
+  `C:\Users\affan\Videos`), and anything still missing gets a held gap plus a marker, never a silent skip.
+
 ## 2026-09-21 — transitions by block label (comp 06)
 
 - **The signalling rule the creator chose:** label the block, and the label is the transition that

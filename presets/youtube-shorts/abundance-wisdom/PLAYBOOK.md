@@ -39,12 +39,40 @@ plus **Motion Tile** (Output Height 340, Mirror Edges on) to cover the exposed e
 This is a **separate comp** that gets rendered and handed to Topaz; the build comp comes after.
 Speaking shots only; never on overlays or stills.
 
+**Scripted (validated 2026-09-23, ABW8 Linked Comp 02 + 03):**
+1. The creator does "Replace with After Effects Composition" over the clips. **Iris (default label)
+   = lock; Violet = leave alone.** Save a Premiere copy first and read the labels from it.
+2. `head_track.py <job> <v1_live.txt> <idx,...>` → `track.json` (nose per 60 fps frame, source px).
+   Check the sheet: the dot on the speaker's nose, AND the nose inside the creator's crop.
+3. Write `headlock_map.json` (comp, layer, clip, tl_offset = the comp's start in the sequence) and
+   verify every layer's in-point = tl_start − tl_offset before running anything.
+4. `apply_headlock.py <job> <map> <out.jsx>` → run with `AfterFX -r`. One undo group,
+   "Head lock (Claude)"; it re-keys cleanly if re-run.
+5. `headlock_proof.py jsx …` → run → `headlock_proof.py sheet …`: every LOCK row must hold the nose
+   on the crosshair. Never measure it with a face detector on the blown-up comp (LESSONS 2026-09-23).
+6. A layer at Scale 100 (letterboxed) is asked about, not locked: Motion Tile would fill the bands.
+
 ### 3. Topaz
 Run the creator's **`Iris Preset`** through the Topaz CLI
 (`C:\Program Files\Topaz Labs LLC\Topaz Video AI\ffmpeg.exe`, filters `tvai_up` / `tvai_fi` / `tvai_stb`):
 enhance `iris-3` (detail 73, sharpen 42, compression 84, denoise 14, deblur 14, dehalo 20,
 focus-fix Standard), frame interpolation `chr-2` to **60 fps**, stabilisation smoothness 50.
 Output naming follows the creator's own convention: `<job>_chr2_iris3.mov`.
+
+**Recommended look, tested 2026-09-23 on ABW8 `hurt.mov` against a competitor frame (Topaz 5.0.4):**
+Iris with the SAME sliders but **Focus fix Strong** (25 % down, 4× back up), then a **second
+enhancement: Proteus at 1×** (Improve detail 60, Sharpen 60, everything else 0), **grain off**.
+The competitor frame is graded and ours is not (the creator grades AFTER Topaz), so compare with
+contrast normalised out (Laplacian std ÷ face std): competitor edges 1.9 / texture 0.12; 60 Minutes
+close-up: one pass 1.1/0.07, one pass + grain 1.5/0.18, **two passes 1.6/0.10**, two passes + grain
+1.9/0.21 (grain overshoots the texture, so leave it off and judge after the grade).
+**Cost: two passes ≈ 3× the enhancement time** (7.3 vs 2.2 min for a 49 s short on the 3060 Ti).
+Worth it on soft, blown-up sources; skip the second pass when the short is mostly sharp HD (Bashir
+was already past the competitor on one pass: 3.0 vs 1.9).
+What did NOT help: pushing the Iris sliders (detail 100 / sharpen 70 got SOFTER), Add noise 5
+(softer, waxier), Proteus as the only model (softer). The sliders matter little; Focus fix is the lever.
+Test harness: CLI `tvai_up` on 0.5 s slices, `ffmpeg -h filter=tvai_up` for the options; GUI value
+= CLI value × 100. Before/after: `projects/mj-allegations/topaz-before-after.jpg`.
 
 ### 4. Captions (Claude writes, creator morphs)
 1. Word timings from WhisperX on the cut's audio — never Premiere's transcribe pass.
@@ -115,8 +143,13 @@ face top above y200), never animated.
 The house curve is reproduced with temporal eases: departure speed = 44x the average rate at
 1.7 % influence, arrival = 17x at 2.8 % — verified by sampling the result (worst deviation 0.022).
 
-Script: `scratchpad/ae/zoom06.jsx` pattern — always re-runnable (it removes its own previous layers
-first) and it tidies the unused solids it creates.
+Script: **`zoom_pass.py <srcmap.tsv> "<comp>" <work_dir>`** (since 2026-09-24; the layer dump is the
+`dump08.jsx` pattern: one row per layer with label, in/out, startTime, adj, enabled, path) → writes
+`apply.tsv` + `zoom.jsx` from `zoom_pass.jsx.tmpl`; run it with `AfterFX -r`. Re-runnable (it removes
+its own previous layers first), one undo group, tidies its unused solids, reads each Z Dist back.
+Face check samples **0.1 s inside** both ends of each block (never the cut frame itself: Topaz can
+leave it blurred, and a blurred face isn't detected) and keeps the more protective pivot.
+Preview every block at its deepest zoom before running (`projects/mj-allegations/zoom/preview.py`).
 
 **Gotchas that bit once each:** `moveAfter` throws if the layer is already where it would move to;
 ExtendScript chains `?:` LEFT-associatively, so nested ternaries silently collapse — use if/else.
