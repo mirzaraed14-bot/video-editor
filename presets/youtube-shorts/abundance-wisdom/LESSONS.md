@@ -3,6 +3,108 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-09-26 — the "black static" frames: ROOT CAUSE FOUND (months of manual frame-cutting)
+
+- **Symptom (every short for ~6 months):** about 10 visible one-frame flashes per export of a dark diamond mesh over
+  the whole picture. The creator's workaround: razor the bad frame out in Premiere, then slow a nearby block to
+  99 % to close the one-frame gap.
+- **Cause: CapCut's caption export, not the edit.** The 4K HEVC it writes (~4 Mbit/s) lifts the black background on
+  ONE frame every ~2 s: frames 5, 119, 239, 359, 479, 600, 719 … (every ~120 frames at 60 fps), identical in every
+  export checked (hurt2, hailieee, wacko 2, untrue). On those frames luma goes 16 → 17 on ~35 % of pixels and
+  chroma drifts to 126–131 (pure black is 128). When one lands on an HEVC keyframe (600, 1200, 1800, 2400) the noise
+  also carries, faintly (~1.3 % of pixels), into the frames that reference it until the next keyframe, 2.5 s later.
+  The file that goes INTO CapCut is clean.
+- **Why it shows:** in AE that "black" is keyed out and the caption stack (Deep Glow Unmult → Bevel Alpha → 2 × Drop
+  Shadow at 255 → Sharpen 70 → Turbulent Displace) turns a 1–3-level field into a visible mesh across the frame.
+  Proved on `Hurt Finall.mp4`: every one of the 25 predicted frames breaks from its neighbours (959 and 1439 show
+  the mesh; the difference image is the diamond grid).
+- **Fix: `clean_capcut.py "<CapCut export>"`, run on the file BEFORE it goes into AE.** On the dirty frames only, pixels
+  that are black in both neighbours and faint here go back to pure black; caption pixels are never touched.
+  Verified on hurt2.mp4: 617 dirty frames → 0; captions within 0.4 levels on every frame; same frame count and tags.
+  The manual frame-cutting is no longer needed.
+- **Encoding gotcha found on the way:** a raw pipe into ffmpeg has no colour info; tag the INPUT exactly like the
+  output, or ffmpeg converts (it read the pipe as BT.601 and shifted every coloured caption ~13 levels).
+- My first glitch detector (downscaled grey frames) saw nothing: a fine mesh averages away. Detect it at full
+  resolution, on the source layer, not the export.
+
+## 2026-09-26 — transitions on comp 18 (16 from the creator's labels)
+
+- **The transition template had the same doubles bug the zoom pass had,** with a worse symptom: the
+  twin sorted as "the next block", so the cut read as the double's OWN start, and it would have
+  produced two transitions at the wrong frame. It now merges same in/out layers first. Any pass that
+  walks "blocks" must group doubles.
+- **The caption came back before the transitions** ("hailieee.mp4 Comp 1", Sharpen + Turbulent
+  Displace, on top of the zooms). Order in the finished comp: caption → transitions → zooms → glow
+  bars → Adjustment Layer 32 (sharpen/look).
+
+## 2026-09-26 — zoom pass on a comp with doubles, glow bars and stills (ABW8 Linked Comp 18)
+
+- **"Double layers" = one shot.** The creator's aesthetic stacks a 100 % layer over a 198–229 % twin
+  with the same in/out (both yellow, or both default). One zoom goes above the pair; the smaller copy is
+  the one the face check reads. `zoom_pass.py` now groups by in/out explicitly, and a group pulls out if
+  any of its layers is yellow.
+- **The template took a glow bar for the caption layer.** Its caption test matched "Comp 1", and the glow
+  bars are "White Solid 3 Comp 1" precomps. The zooms would have gone in between the two bars of a pair.
+  Glow bars are now skipped; with no caption in the comp, the zooms go on top (README § 2 stack).
+- **Stills in the build comp** (Higgsfield .png at 150–165 %) get their layer transform passed to
+  `zoom_center.py` as `map`, so the face check measures them where they sit in the comp.
+- **A relative work dir silently does nothing in AE** (it resolves paths from its own install folder):
+  `zoom_pass.py` now makes the work dir absolute.
+- Six blocks came back "no face" (B&W profiles). Preview every block at its deepest zoom
+  (`projects/eminem-hailie/zoom/preview.py`, stills placed as the comp places them) before running.
+
+## 2026-09-26 — the creator's recut of Sequence 08, and its captions (data)
+
+Measured from the live Sequence 08 before captioning (`projects/eminem-hailie/captions/brief/tracks.txt`):
+- **They added the 60 Minutes stinger back** ("I never knew him… Never met him, never knew him", 35.1–39.3 s),
+  even though the paste stopped at beat 4. So the paste is what to sequence first, not the final word.
+- **They replaced the whip-pan under Tyson's question** with a clean Eminem close-up from 3:34 (206 %), and
+  put music-video B-roll on V2/V3 and a slowed music bed on A2. The weak broadcast shots I flagged were acted on.
+- **They kept some of the pauses I had cut** ("I have … a niece"), took "that's kind of like a daughter" over
+  "pretty much like a daughter", and dropped "so" before "when I think". 36.7 → 39.3 s.
+- **Captions on a recut: re-transcribe the SEQUENCE audio** (`workflows/sequence-captions.py read`; ~40 s of
+  audio) rather than moving the source transcript through A1. The source transcript was already known to drop
+  fillers and mistime numbers. The re-listen caught a 0.25 s fragment of Tyson's "I know" that reads as a word.
+- The Program monitor's timecode does not repaint in a background window grab; the picture does. Check a
+  caption against the picture, not the readout.
+
+## 2026-09-26 — second scripted head lock (ABW8 Linked Comp 07–13, ABW7.aep)
+
+- **The comps are the truth, not my sequencing plan.** The creator recut before "Replace with AE
+  Composition" (20 clips instead of 32, one new clip at 206 %). Read the layers straight from AE
+  (source, in-point, scale, position) and track those.
+- **Hold the nose at its MEDIAN, not at frame 1** (`apply_headlock.py --hold median`, now the default).
+  The creator's crop is set on the playing clip, so a head that moves early parks off-centre under a
+  frame-1 hold (comp 10 L1: x 180 vs 421). Position stays untouched either way.
+- **A border baked into the source + a lock = the border slides in, and Motion Tile mirrors it.**
+  At fill-height scale there is 0.5 px of clean margin. Fix without changing the framing: a
+  Transform effect "Border out (Claude)" (per-axis scale that pushes the border out of the layer)
+  BEFORE Motion Tile, with the layer Scale divided by the same factors (`"prescale"` in the map).
+- **AE scripting: adding or moving an effect invalidates every property reference already held**
+  ("Object is invalid"). Look each one up again after any structural change. The applier is
+  idempotent (clears keys, sets absolute values), so a failed run is fixed by running it again.
+- The ffmpeg `-ss` grab in the check sheets shows the NEXT frame at a clip's last frame when a camera
+  cut follows; AE shows the previous one. That is a sheet artifact, not a flash.
+
+## 2026-09-25 — second sequencing job (ABW8 · Sequence 08, `projects/eminem-hailie`)
+
+- **Sequence from what the creator PASTES, not the whole Content Engine file.** The MD held six drafts and
+  a stinger; the creator: "do the sequencing that I've sent you". Read the MD only to locate lines.
+- **Pause removal is now built into `resolve_beats.py`** (`"tighten"` in beats.json): cuts are placed at
+  measured silence against the clip's own room tone (10th percentile + 6 dB), keeping 0.10 s after
+  and 0.06 s before, removing any pause ≥ 0.13 s. This is the 2026-09-23 recut lesson, applied
+  automatically: 14 pauses, 10.3 s on a very slow 2002 take.
+- **WhisperX silently drops fillers and mistimes spoken numbers:** "my main *like* source", "Haley is
+  *um* 23", "3.9" given 0.2 s, "point nine" labelled as Tyson's "Wow". **The proof that catches it:**
+  rebuild the audio from Premiere's READ-BACK in/outs and re-transcribe it. That caught the "like"
+  after the cut was already placed.
+- **Camera cuts in the silent tail of a clip become its edge** (`sources.json` `"cuts"`, from ffmpeg
+  `scdet`); otherwise the 60 fps round-up shows 1 frame of the next shot.
+- **Channel frames baked into a source** (Mike Tyson's official uploads: a 26/30 px red frame) are
+  scaled out (`sources.json` `"border"`) → 187 % instead of 178 %.
+- **The face detector fails on B&W profiles and listeners** (9 of 17 Tyson clips). Set those by hand
+  in `framing.json` from ruled frames, and always check a contact sheet of the actual 9:16 crops.
+
 ## 2026-09-24 — transitions by label (ABW8 Linked Comp 06)
 
 - **The creator labels for transitions AFTER the zoom pass, and relabels yellow pull-out blocks too**

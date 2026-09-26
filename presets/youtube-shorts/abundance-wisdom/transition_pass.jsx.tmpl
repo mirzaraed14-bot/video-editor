@@ -39,12 +39,29 @@
             blocks.push({ idx: li, name: ly.name, label: ly.label, inP: ly.inPoint, outP: ly.outPoint });
         }
         blocks.sort(function (a, b) { return a.inP - b.inP; });
-        L.push("blocks: " + blocks.length);
 
         var MAP = {};
         MAP[10] = "purple"; MAP[16] = "green"; MAP[4] = "pink"; MAP[6] = "peach"; MAP[14] = "cyan";
+        // the creator's "double layers" (a shot over its 198-229 % twin, same in/out) are ONE block:
+        // without this the twin looks like the next block and the cut lands at the block's own start
+        var grouped = [];
+        for (var g = 0; g < blocks.length; g++) {
+            var last = grouped.length ? grouped[grouped.length - 1] : null;
+            if (last && Math.abs(last.inP - blocks[g].inP) < 0.005 && Math.abs(last.outP - blocks[g].outP) < 0.005) {
+                last.layers++;
+                if (!MAP[last.label] && MAP[blocks[g].label]) last.label = blocks[g].label;
+                else if (MAP[last.label] && MAP[blocks[g].label] && last.label !== blocks[g].label)
+                    L.push("NOTE  double at " + n(last.inP) + " carries two colours (" + last.label + ", " + blocks[g].label + ") — using the upper layer's");
+                continue;
+            }
+            blocks[g].layers = 1;
+            grouped.push(blocks[g]);
+        }
+        blocks = grouped;
+        L.push("blocks: " + blocks.length + " (doubles merged)");
+
         var topLayer = comp.layer(1);
-        var topIsCaption = (topLayer.name.indexOf("Comp 1") >= 0);
+        var topIsCaption = (topLayer.name.indexOf("Comp 1") >= 0 && !/white solid/i.test(topLayer.name));
         var made = 0;
 
         for (var b = 0; b < blocks.length; b++) {

@@ -58,8 +58,14 @@ def main(job, splits):
 
     rows, markers, dims = [], [], {}
     tmp = tempfile.mkdtemp()
+    # sources.json "border": [top/bottom, left/right] px baked into a source (a channel's frame) —
+    # scale past it and keep the crop inside it. framing.json "overrides": [{clip, at, face}] sets the
+    # face x (0-1 of the source width) for a piece the detector can't read (profiles, listeners, wides).
+    srcmeta = json.load(open(os.path.join(job, 'sources.json'), encoding='utf-8'))
+    fpath = os.path.join(job, 'framing.json')
+    overrides = json.load(open(fpath, encoding='utf-8'))['overrides'] if os.path.exists(fpath) else []
     for e in edl['segments']:
-        if e.get('seg') in (0, 1):
+        if e.get('seg') in (0, 1) and e.get('piece', 1) == 1:
             m = 'B%d %s' % (e['beat'], e['name'])
             notes = [e['warning']] if e.get('warning') else []
             if e.get('card'):
@@ -75,7 +81,8 @@ def main(job, splits):
         if src not in dims:
             dims[src] = probe(src)
         W, H = dims[src]
-        scale = FH / H * 1.0005                         # fill the height, a hair over to kill edge lines
+        bt, bl = srcmeta.get(e['clip'], {}).get('border', [0, 0])
+        scale = FH / (H - 2 * bt) * 1.0005               # fill the height, a hair over to kill edge lines
         pieces = [(e['src_in'], e['src_out'])]
         sfps = e.get('src_fps') or FPS
         for cut in sorted(split_at.get(e['clip'], [])):
@@ -93,15 +100,16 @@ def main(job, splits):
         tl = e['tl_in']
         for pi, (a, b) in enumerate(pieces):
             t_out = e['tl_out'] if pi == len(pieces) - 1 else snap(tl + (b - a))
-            fx = face_x(src, (a + b) / 2, tmp)
+            manual = [o for o in overrides if o['clip'] == e['clip'] and a <= o['at'] < b]
+            fx = manual[0]['face'] * W if manual else face_x(src, (a + b) / 2, tmp)
             cx = FW / 2 if fx is None else FW / 2 - (fx - W / 2) * scale
-            half = W * scale / 2
-            cx = max(FW - half, min(half, cx))            # keep the frame covered
+            half = (W / 2 - bl) * scale
+            cx = max(FW - half, min(half, cx))            # keep the frame covered (and the border out)
             rows.append({'beat': e['beat'], 'seg': e['seg'], 'piece': pi + 1, 'clip': e['clip'],
                          'source': src, 'src_in': round(a, 4), 'src_out': round(b, 4),
                          'tl_in': round(tl, 5), 'tl_out': round(t_out, 5),
                          'scale': round(scale * 100, 3), 'pos': [round(cx / FW, 5), 0.5],
-                         'face': None if fx is None else round(fx / W, 3)})
+                         'face': None if fx is None else round(fx / W, 3), 'face_manual': bool(manual)})
             tl = t_out
 
     json.dump({'fps': FPS, 'rows': rows, 'markers': markers, 'duration': edl['duration']},

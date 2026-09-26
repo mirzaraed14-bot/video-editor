@@ -43,8 +43,12 @@ def make_jsx(job, map_path, out_jsx, out_json, pick=None):
         var a = ap.valueAtTime(t, false);
         smp.push('{"t":' + t + ',"src":' + (t - ly.startTime) + ',"ax":' + a[0] + ',"ay":' + a[1] + '}');
       }
+      var pre = [100, 100], fx = ly.property("Effects");
+      for (var e = 1; e <= fx.numProperties; e++) if (fx.property(e).name === "Border out (Claude)")
+        pre = [fx.property(e).property("ADBE Geometry2-0004").value, fx.property(e).property("ADBE Geometry2-0003").value];
       R.push('{"comp":"' + c.name + '","layer":' + PICK[p][1] + ',"file":"' + ly.source.mainSource.file.fsName.replace(/\\/g, "/") +
-             '","pos":[' + pos[0] + ',' + pos[1] + '],"scale":' + sc[0] + ',"samples":[' + smp.join(",") + ']}');
+             '","pos":[' + pos[0] + ',' + pos[1] + '],"scale":' + sc[0] + ',"scaleY":' + sc[1] + ',"pre":[' + pre[0] + ',' + pre[1] + ']' +
+             ',"samples":[' + smp.join(",") + ']}');
     }
   } catch (e) { err = e.toString(); }
   var f = new File(OUT); f.encoding = "UTF-8"; f.open("w");
@@ -69,14 +73,20 @@ def sheet(job, map_path, read_path, out_jpg):
     blocks = []
     for L in R:
         t = tr[clip[(L['comp'], L['layer'])]]
-        s, (px, py) = L['scale'] / 100.0, L['pos']
+        sx, sy, (px, py) = L['scale'] / 100.0, L.get('scaleY', L['scale']) / 100.0, L['pos']
+        kx, ky = [v / 100.0 for v in L.get('pre', [100, 100])]
+        W, H = t['W'], t['H']
         a0, n0 = L['samples'][0], t['nose'][0]
-        cx, cy = px + (n0[0] - a0['ax']) * s, py + (n0[1] - a0['ay']) * s
+        lx, ly_ = W / 2 + kx * (n0[0] - W / 2), H / 2 + ky * (n0[1] - H / 2)   # nose in LAYER px
+        cx, cy = px + (lx - a0['ax']) * sx, py + (ly_ - a0['ay']) * sy
         rows = [[], []]
         for smp in L['samples']:
             img = grab(L['file'], smp['src'])
+            if (kx, ky) != (1.0, 1.0):      # the in-layer Transform effect: scale about the layer centre, clipped to the layer
+                img = cv2.warpAffine(img, np.float32([[kx, 0, W / 2 * (1 - kx)], [0, ky, H / 2 * (1 - ky)]]), (W, H),
+                                     flags=cv2.INTER_CUBIC)
             for r, (ax, ay) in enumerate([(smp['ax'], smp['ay']), (a0['ax'], a0['ay'])]):
-                M = np.float32([[s, 0, px - ax * s], [0, s, py - ay * s]])
+                M = np.float32([[sx, 0, px - ax * sx], [0, sy, py - ay * sy]])
                 comp = cv2.warpAffine(img, M, (FW, FH), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
                 comp = cv2.copyMakeBorder(comp, C, C, C, C, cv2.BORDER_CONSTANT)
                 x0, y0 = int(cx), int(cy)

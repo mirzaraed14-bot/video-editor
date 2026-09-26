@@ -32,24 +32,36 @@ def depth(span):
 
 
 def main(srcmap, comp_name, work):
+    work = os.path.abspath(work)          # AE resolves relative paths from its own install folder
     os.makedirs(work, exist_ok=True)
     rows = [r for r in csv.DictReader(open(srcmap, encoding='utf-8'), delimiter='\t')
             if r['layer'].isdigit() and r.get('adj', '0') == '0' and 'Comp 1' not in r['name']
             and r.get('enabled', '1') == '1']
-    blocks, seen = [], set()
-    for r in sorted(rows, key=lambda r: float(r['in'])):
-        key = (round(float(r['in']), 3), round(float(r['out']), 3))
-        if key in seen:
-            continue
-        seen.add(key)
+    # one block per distinct in/out: the creator's "double layers" (a 100 % shot over its 198-229 %
+    # twin, the aesthetic) are ONE shot. The face check uses the smallest-scale copy (the visible face);
+    # the block pulls out if any of its layers is yellow.
+    groups = {}
+    for r in rows:
+        groups.setdefault((round(float(r['in']), 3), round(float(r['out']), 3)), []).append(r)
+    blocks = []
+    for key in sorted(groups):
+        g = groups[key]
+        r = dict(min(g, key=lambda x: float(x['scale'] or 100)))
+        r['label'] = '2' if any(x['label'] == '2' for x in g) else r['label']
+        r['n_layers'] = len(g)
         blocks.append(r)
 
     shots = []
     for i, r in enumerate(blocks, 1):
         a, b = float(r['in']), float(r['out'])
         d = 'out' if r['label'] == '2' else 'in'
-        shots.append({'id': i, 'start': round(a, 3), 'end': round(b, 3), 'span': round(b - a, 3), 'dir': d,
-                      'z_deep': depth(b - a), 'src': r['path'].replace('\\', '/'), 'st': float(r['startTime'])})
+        s = {'id': i, 'start': round(a, 3), 'end': round(b, 3), 'span': round(b - a, 3), 'dir': d,
+             'z_deep': depth(b - a), 'src': r['path'].replace('\\', '/'), 'st': float(r['startTime']),
+             'layers': r['n_layers']}
+        vals = [float(r[k]) for k in ('scale', 'posX', 'posY', 'anchorX', 'anchorY')]
+        if vals != [100.0, 540.0, 960.0, 540.0, 960.0]:     # scaled/moved (a still, a reframed twin)
+            s['map'] = vals
+        shots.append(s)
 
     # face check near both ends, 0.1 s INSIDE the block: the frames right at a cut can be soft
     # (Topaz blurs 2-4 frames at every cut), and a blurred face is not detected
@@ -73,8 +85,9 @@ def main(srcmap, comp_name, work):
         z0, z1 = (s['z_deep'], 1.0) if s['dir'] == 'out' else (1.0, s['z_deep'])
         lines.append('\t'.join(str(v) for v in [s['id'], '%.4f' % s['start'], '%.4f' % s['end'], s['dir'],
                                                 '%.3f' % z0, '%.3f' % z1, '%.1f' % c['center'][0], '%.1f' % c['center'][1]]))
-        report.append('%2d  %6.2f-%6.2f  %5.2fs  %-3s  Z %.2f -> %.2f  centre y %4d  %s' % (
-            s['id'], s['start'], s['end'], s['span'], s['dir'].upper(), z0, z1, c['center'][1], c['why']))
+        report.append('%2d  %6.2f-%6.2f  %5.2fs  %-3s  Z %.2f -> %.2f  centre y %4d  %s%s' % (
+            s['id'], s['start'], s['end'], s['span'], s['dir'].upper(), z0, z1, c['center'][1], c['why'],
+            '  [%d layers]' % s['layers'] if s['layers'] > 1 else ''))
     tsv = os.path.join(work, 'apply.tsv')
     open(tsv, 'w', encoding='utf-8').write('\n'.join(lines))
 

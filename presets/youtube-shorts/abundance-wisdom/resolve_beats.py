@@ -47,8 +47,59 @@ def snap(t, fps):
     return round(t * fps) / fps
 
 
+_AUDIO = {}
+
+
+def rms_db(job, clip, a, b, hop=0.01):
+    """10 ms RMS (dBFS) of raw/<clip>.* between clip-local a and b."""
+    if clip not in _AUDIO:
+        raw = [f for f in os.listdir(os.path.join(job, 'raw')) if os.path.splitext(f)[0] == clip][0]
+        pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', os.path.join(job, 'raw', raw), '-ac', '1', '-ar', '16000',
+                              '-f', 's16le', '-'], capture_output=True, check=True).stdout
+        import numpy as np
+        _AUDIO[clip] = np.frombuffer(pcm, np.int16).astype(float)
+    import numpy as np
+    x, sr, n = _AUDIO[clip], 16000, int(hop * 16000)
+    i0, i1 = int(a * sr), int(b * sr)
+    frames = [x[k:k + n] for k in range(i0, i1 - n + 1, n)]
+    return [20 * np.log10(np.sqrt(np.mean(f ** 2)) / 32768 + 1e-9) for f in frames]
+
+
+def tighten(job, clip, a, b, cfg, hop=0.01):
+    """Split [a, b] at every measured pause, keeping keep_tail after the sound and keep_lead before
+    the next. A pause = a run below (the segment's 10th-percentile floor + margin_db) long enough to
+    remove at least min_remove. The creator cuts these at sequencing (LESSONS 2026-09-23 recut)."""
+    db = rms_db(job, clip, a, b, hop)
+    if not db:
+        return [(a, b)], []
+    whole = [d for d in rms_db(job, clip, 0, len(_AUDIO[clip]) / 16000, 0.05) if d > -120]
+    floor = sorted(whole)[len(whole) // 10]               # the clip's room tone, not a speech dip
+    thr = floor + cfg.get('margin_db', 6)
+    tail, lead, minrm = cfg.get('keep_tail', 0.10), cfg.get('keep_lead', 0.06), cfg.get('min_remove', 0.13)
+    runs, k = [], 0
+    while k < len(db):
+        if db[k] < thr:
+            s = k
+            while k < len(db) and db[k] < thr:
+                k += 1
+            runs.append((a + s * hop, a + k * hop))
+        k += 1
+    pieces, cur, cut = [], a, []
+    for s, e in runs:
+        if s <= a + 1e-6 or e >= b - 1e-6:          # a pause at the segment edge is the edge's business
+            continue
+        if (e - s) - tail - lead >= minrm:
+            pieces.append((cur, s + tail))
+            cur = e - lead
+            cut.append(round((e - s) - tail - lead, 3))
+    pieces.append((cur, b))
+    return pieces, cut
+
+
 def main(job, fps=60.0):
-    beats = json.load(open(os.path.join(job, 'beats.json'), encoding='utf-8'))['beats']
+    spec = json.load(open(os.path.join(job, 'beats.json'), encoding='utf-8'))
+    beats, tcfg = spec['beats'], spec.get('tighten')
+    removed = []
     words_all = {os.path.splitext(c['clip'])[0]: c['words']
                  for c in json.load(open(os.path.join(job, 'transcript', 'words.json'), encoding='utf-8'))['clips']}
     meta = json.load(open(os.path.join(job, 'sources.json'), encoding='utf-8'))
@@ -86,17 +137,33 @@ def main(job, fps=60.0):
                 src_in = override['in'] - off
             if 'out' in override:
                 src_out = override['out'] - off
-            src_in = snap_up(src_in + off, sfps) - off
-            dur = math.ceil((src_out - src_in) * fps - 1e-6) / fps
-            text = ' '.join(w['w'] for w in ws[i:j + 1])
-            edl.append({'beat': b['n'], 'seg': si, 'name': b['name'], 'clip': clip,
-                        'source': meta[clip]['source'], 'card': b.get('card') if si == 1 else None,
-                        'drop_candidate': b.get('drop_candidate'), 'src_fps': round(sfps, 4),
-                        'warning': b.get('warning') if si == 1 else None,
-                        'src_in': round(src_in + off, 4), 'src_out': round(src_in + off + dur, 4),
-                        'tl_in': round(t, 5), 'tl_out': round(t + dur, 5), 'text': text,
-                        'match': [round(s1, 2), round(s2, 2)]})
-            t += dur
+            pieces, cut = (tighten(job, clip, src_in, src_out, tcfg) if tcfg and override.get('tighten', True)
+                           else ([(src_in, src_out)], []))
+            removed += cut
+            # a camera cut in a piece's silent head/tail becomes its edge (else a 1-2 frame flash of
+            # the other shot). sources.json "cuts" = camera cuts in SOURCE time (scdet).
+            cam = [c - off for c in meta[clip].get('cuts', [])]
+            spoken = [(w['start'], w['end']) for w in ws[i:j + 1]]
+            quiet = lambda a, b: not any(s < b and e > a for s, e in spoken)
+            for pi, (p_in, p_out) in enumerate(pieces, 1):
+                for c in cam:
+                    if p_in - 0.02 < c < p_in + 0.15 and quiet(p_in, c):
+                        p_in = c
+                p_in = snap_up(p_in + off, sfps) - off
+                dur = math.ceil((p_out - p_in) * fps - 1e-6) / fps
+                for c in cam:
+                    if p_in + dur - 0.2 < c < p_in + dur + 1e-4 and quiet(c, p_in + dur):
+                        dur = math.floor((c - p_in) * fps + 1e-6) / fps
+                text = ' '.join(w['w'] for w in ws[i:j + 1] if p_in - 0.05 <= w['start'] < p_out)
+                first_piece = si == 1 and pi == 1
+                edl.append({'beat': b['n'], 'seg': si, 'piece': pi, 'name': b['name'], 'clip': clip,
+                            'source': meta[clip]['source'], 'card': b.get('card') if first_piece else None,
+                            'drop_candidate': b.get('drop_candidate'), 'src_fps': round(sfps, 4),
+                            'warning': b.get('warning') if first_piece else None,
+                            'src_in': round(p_in + off, 4), 'src_out': round(p_in + off + dur, 4),
+                            'tl_in': round(t, 5), 'tl_out': round(t + dur, 5), 'text': text,
+                            'match': [round(s1, 2), round(s2, 2)]})
+                t += dur
 
     json.dump(meta, open(os.path.join(job, 'sources.json'), 'w', encoding='utf-8'), indent=1)
     out = os.path.join(job, 'edl.json')
@@ -109,6 +176,9 @@ def main(job, fps=60.0):
         print('B%-2d s%d %-9s src %8.3f-%8.3f  tl %6.2f-%6.2f  %4.2fs  %s' % (
             e['beat'], e['seg'], e['clip'], e['src_in'], e['src_out'], e['tl_in'], e['tl_out'],
             e['tl_out'] - e['tl_in'], e['text'][:70]))
+    if removed:
+        print('\ntightened: %d pauses removed, %.2fs total (%s)' % (
+            len(removed), sum(removed), ', '.join('%.2f' % r for r in sorted(removed))))
     print('\ntotal %.2fs -> %s' % (t, out))
 
 

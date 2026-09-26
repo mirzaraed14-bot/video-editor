@@ -169,7 +169,7 @@ render engine** (no AE dependency, close rather than exact).
 2. The "revised light pop" preset: where is it saved? A Premiere preset is a readable `.prfpset` file.
 3. Not in the walkthrough: the **letterbox band with glowing lines**, the **oval vignette**, the
    **context tags** (`*2020*`). Where and how are these made?
-4. ~~Sample brief~~ **Found:** the Content Engine lives at `E:\Claude Projects\Abundance Wisdom\`. The
+4. ~~Sample brief~~ **Found:** the Content Engine lives at `X:\Claude Projects\Abundance Wisdom\`. The
    "FINAL LOCKED BUILD" block of a `*-CUT.md` (numbered beats: quote / source title / YouTube URL /
    in → out timestamps) is the step-3 input. Also found: `Abundance Wisdom Main CC Presets` (four AE
    presets `1–4.ffx`, each Lumetri Color + Curves, likely the source of the vignette).

@@ -65,19 +65,19 @@ def read(job, seq_name):
     json.dump({'project': lines[0], 'sequence': seq_name, 'fps': fps},
               open(os.path.join(job, 'brief', 'sequence.json'), 'w', encoding='utf-8'), indent=1)
 
-    a1 = [l.split('|') for l in lines[2:] if l.startswith('A1|')]
-    srcs = {r[5] for r in a1}
-    if len(srcs) != 1:
-        sys.exit('A1 plays %d sources; this tool expects one voice file: %s' % (len(srcs), srcs))
-    src = srcs.pop()
-    tmp = os.path.join(job, 'raw', '_voice.wav')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', src, '-vn', '-ac', '1', '-ar', '48000',
-                    '-c:a', 'pcm_s16le', tmp], check=True)
-    w = wave.open(tmp); sr = w.getframerate(); a = np.frombuffer(w.readframes(w.getnframes()), np.int16); w.close()
-    os.remove(tmp)
-    segs, short = [], []
+    a1 = sorted([l.split('|') for l in lines[2:] if l.startswith('A1|')], key=lambda r: float(r[1]))
+    sr, audio = 48000, {}
+    for src in {r[5] for r in a1}:                      # one decode per source; A1 may mix several
+        pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', src, '-vn', '-ac', '1', '-ar', str(sr),
+                              '-f', 's16le', '-'], capture_output=True, check=True).stdout
+        audio[src] = np.frombuffer(pcm, np.int16)
+    segs, short, t_prev = [], [], 0.0
     for r in a1:
         st, en, sin = float(r[1]), float(r[2]), float(r[3])
+        if st > t_prev + 1e-3:                          # a gap on A1 plays silence
+            segs.append(np.zeros(int(round(st * sr)) - int(round(t_prev * sr)), np.int16))
+        t_prev = en
+        a = audio[r[5]]
         n, i0 = int(round(en * sr)) - int(round(st * sr)), int(round(sin * sr))
         seg = a[i0:i0 + n]
         if len(seg) < n:

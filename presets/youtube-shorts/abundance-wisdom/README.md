@@ -172,6 +172,7 @@ placed back in AE. Measured on the reference short (46 captions over 39.3 s):
 | In AE | Sharpen **70** + **Turbulent Displace** (Displacement Turbulent, Amount **4**, Size 100, Complexity 1, Offset [540,960], Pinning 3, Evolution ramped continuously) |
 | In the precomp | CapCut export scaled **50 %** (CapCut renders 4K) + **Deep Glow** (Exposure 0.55, Unmult on) + **Bevel Alpha** 2.4 + **2 × Drop Shadow** (Opacity 255, Distance 12) |
 | CapCut blur | blur **0.80**, blend **1.0**, multiple_blur **6**, `bilateral` |
+| CapCut export defect | its 4K HEVC lifts the black on one frame every ~2 s (frames 5, 119, 239 …); run `clean_capcut.py` on it before AE, or the stack above renders a one-frame "black static" mesh (LESSONS 2026-09-26) |
 
 **Colour rules** (mid-colour sampled; each is a gradient, most words stay white, one or two coloured per caption):
 
