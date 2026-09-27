@@ -59,8 +59,9 @@ def main(job, map_path, out_jsx):
             min(xs) * s, max(xs) * s,
             min(v[1] - anchor0[1] for v in vals) * s, max(v[1] - anchor0[1] for v in vals) * s, out_w))
 
+    log = os.path.splitext(os.path.abspath(out_jsx))[0] + '.txt'    # AE writes its report next to the jsx
     code = r'''(function () {
-var OUT = "C:/Users/affan/AppData/Local/Temp/claude/E--Claude-Projects-video-editor-client-video-editor/7173e089-1e87-4811-944b-8e4043fa359d/scratchpad/ae/headlock.txt";
+var OUT = %s;
 var JOBS = %s;
 var L = [];
 try {
@@ -109,10 +110,10 @@ try {
   app.endUndoGroup();
 } catch (err) { L.push("ERROR " + err.toString() + (err.line ? " line " + err.line : "")); try { app.endUndoGroup(); } catch (e2) {} }
 var f = new File(OUT); f.encoding = "UTF-8"; f.open("w"); f.write(L.join("\n")); f.close();
-})();''' % json.dumps(jobs)
+})();''' % (json.dumps(log.replace('\\', '/')), json.dumps(jobs))
     open(out_jsx, 'w', encoding='utf-8').write(code)
     print('\n'.join(report))
-    print('wrote', out_jsx, '(%d layers, %d keys)' % (len(jobs), sum(len(j['times']) for j in jobs)))
+    print('wrote', out_jsx, '(%d layers, %d keys) -> AE report lands at %s' % (len(jobs), sum(len(j['times']) for j in jobs), log))
 
 
 if __name__ == '__main__':

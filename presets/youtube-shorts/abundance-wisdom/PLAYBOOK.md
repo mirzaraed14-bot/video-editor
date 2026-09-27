@@ -164,7 +164,9 @@ Per shot: an adjustment-layer solid named `Adjustment Layer 29`, inserted direct
 layer so captions never zoom, spanning exactly the shot, with `S_BlurMoCurves`.
 **Depth (creator's rule): < 1.25 s → 0.87 · < 2.5 s → 0.78 · longer → 0.70**, push-in from 1.00,
 pull-out to 1.00. **Center XY from `zoom_center.py`** (face pivot when a centred zoom would lift the
-face top above y200), never animated.
+face top above y200), never animated. **Which face:** posters (a box under 35 % of the widest) are
+dropped, then the TOP-most face scoring >= 0.8 is protected; with none that sure, the largest box
+(close-ups score 0.64-0.76). Never simply the largest box: on stage shots it is a torso or glutes.
 The house curve is reproduced with temporal eases: departure speed = 44x the average rate at
 1.7 % influence, arrival = 17x at 2.8 % — verified by sampling the result (worst deviation 0.022).
 

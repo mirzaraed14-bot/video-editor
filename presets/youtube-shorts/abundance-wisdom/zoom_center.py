@@ -22,7 +22,7 @@ usage: python zoom_center.py <shots.json> <frames_dir> <out.json>
 import json, os, subprocess, sys
 import cv2
 
-REPO = r'E:/Claude Projects/video-editor-client/video-editor'
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))   # wherever the repo lives (was hard-coded to E:)
 MODEL = os.path.join(REPO, 'assets', 'models', 'face_detection_yunet_2023mar.onnx')
 # The creator protects the FACE, not the hairline — a zoom may crop some hair, never the face.
 TOP_MARGIN = 200      # the face top must stay this far below the frame edge after the zoom.
@@ -31,6 +31,8 @@ TOP_MARGIN = 200      # the face top must stay this far below the frame edge aft
 HAIR = 0.45           # hair sits this fraction of a face height above the detected box (reported only)
 ORIGIN_MIN = 200      # never pivot higher than this (their measured range bottoms out near 83)
 FRAME_W, FRAME_H = 1080, 1920
+CONFIDENT = 0.8       # real faces score 0.8+; torso/glute false hits on stage shots 0.53-0.67
+MIN_REL_W = 0.35      # a box narrower than this share of the widest one is background (a poster)
 
 
 def detect(path):
@@ -43,7 +45,18 @@ def detect(path):
     ok, faces = det.detect(img)
     if faces is None or len(faces) == 0:
         return None, (w, h)
-    f = sorted(faces, key=lambda f: -f[2] * f[3])[0]
+    # Not the largest box: on bodybuilders YuNet also fires on torsos and glutes (0.53-0.67), and those
+    # boxes are bigger than the real face (0.88-0.93). Drop background posters first (small next to
+    # the biggest box: a 0.87 poster must not outrank a 0.71 close-up, which scores low because it
+    # fills the frame), keep the confident faces, then protect the TOP-most one: it rides out of
+    # frame first (the top half of a stacked split frame). A false hit ABOVE the face (a raised
+    # fist, 0.83) only lifts the pivot, which keeps the real face further from the top edge.
+    # No confident face at all (close-ups score 0.64-0.76) -> the largest box, as before: the top
+    # score is no signal there (a 0.74 hat brim beat a 0.72 Eminem close-up).
+    widest = max(f[2] for f in faces)
+    big = [f for f in faces if f[2] >= MIN_REL_W * widest]
+    sure = [f for f in big if f[-1] >= CONFIDENT]
+    f = min(sure, key=lambda f: f[1]) if sure else max(faces, key=lambda f: f[2] * f[3])
     return [float(v) for v in f[:4]], (w, h)
 
 

@@ -16,7 +16,7 @@ usage: python plan_placement.py <job_dir> [split source_time ...]
 import json, os, subprocess, sys, tempfile
 import cv2
 
-REPO = r'E:/Claude Projects/video-editor-client/video-editor'
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))   # wherever the repo lives (was hard-coded to E:)
 MODEL = os.path.join(REPO, 'assets', 'models', 'face_detection_yunet_2023mar.onnx')
 FW, FH, FPS = 1080, 1920, 60.0
 

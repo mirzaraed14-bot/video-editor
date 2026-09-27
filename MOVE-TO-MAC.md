@@ -43,7 +43,8 @@ Then, in order:
    ln -s ~/video-editor/memory ~/.claude/projects/$SLUG/memory
    ```
    (The slug is the project path with `/`, `\`, `:` and spaces turned into `-`. On the desktop the same job is
-   done by a junction at `C:\Users\affan\.claude\projects\E--Claude-Projects-video-editor-client-video-editor\memory`.)
+   done by a junction at `C:\Users\affan\.claude\projects\X--Claude-Projects-video-editor-client-video-editor\memory`
+   — the repo lives on the X: NVMe since 2026-09-26.)
 4. **Copy the two things git doesn't carry**, by SSD or AirDrop, from the desktop folder:
    - `.mcp.json` (your MCP keys — never put this in the repo)
    - `assets/sfx/` (145 MB) and `presets/youtube/fern-inspired/reference/videos/` (429 MB), only if you edit

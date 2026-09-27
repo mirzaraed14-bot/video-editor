@@ -11,7 +11,7 @@ import json, os, sys
 
 STYLE_NAME = {'red': 'Red Shade Greators', 'pink': 'Pink Shade', 'magenta': 'Pink Shade',
               'blue': 'Light Blue Shade', 'cyan': 'Light Blue Shade',
-              'yellow': 'Orange Yellow Shade'}
+              'yellow': 'Orange Yellow Shade', 'green': 'Green Shade'}
 
 
 def ts(t):

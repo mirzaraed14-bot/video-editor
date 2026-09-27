@@ -12,3 +12,4 @@
 - [Walkthrough videos](feedback-walkthrough-videos.md) — per-video Tella/Loom brief: transcribe the audio, sample the frames they point at, resolve it into the job's BRIEF.md
 - [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
 - [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); its OWN preset folder presets/youtube/affanwiz/, never mixed with Afterhours or @affanwizu
+- [Workspace on the X: NVMe](project-workspace-on-nvme.md) — since 2026-09-26 everything lives at X:\Claude Projects; E:\Claude Projects becomes a junction via move-to-nvme.cmd (run with Premiere + Claude closed), never just deleted

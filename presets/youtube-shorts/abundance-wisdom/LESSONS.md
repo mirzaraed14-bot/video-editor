@@ -3,6 +3,63 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-09-27 — zoom pass on ABW8 Linked Comp 25 (Nick Walker, 20 blocks, one Topaz render)
+
+- **The face picker took the biggest box, and on bodybuilders the biggest box is not the face.** YuNet fires on
+  torsos, glutes and knees at 0.53-0.84; the real stage face (0.88-0.93) is smaller. Block 4 (side pose)
+  read the glutes at y1006 and kept the centre pivot, which would have pushed the real face (top y191) to y56.
+  On the stacked split (Fouad top, Nick bottom) it protected Nick, the bigger face, and the 0.70 pull-out cut
+  Fouad's face off the top. `zoom_center.py` now drops posters, protects the TOP-most confident (>= 0.8)
+  face, and falls back to the largest box when nothing is that sure.
+- **Checked against the earlier comps before running:** the Eminem and MJ zoom frames (66 samples) give the
+  same pivots as shipped. The first version fell back to the top score, and a 0.74 hat brim beat a 0.72
+  Eminem close-up; the regression check caught it. Re-run that check after any change to the picker.
+- **Accepted false hit:** Nick's raised fists (0.83) sit above his face on the arms-up shot, so block 18
+  pivots at y200 instead of y420. Pivoting higher only moves the real face further from the top edge, so the
+  cost is a tighter bottom, not a cropped face.
+- No doubles, glow bars or caption precomp in this comp: 20 zooms on top, 13 face pivots, read back exact.
+- **Between the zoom and transition passes the creator added** the caption back (`nickkk.mp4 Comp 1`), a
+  Lavender `Adjustment Layer 34` sharpen per block, glow bars on 3 blocks, turned one block into a double (169 %),
+  and switched the zooms/glow bars/caption OFF (preview speed). Three yellow blocks stayed yellow = no
+  transition (fast posing cuts). The transition pass read 20 blocks correctly; nothing of theirs moved.
+- **The caption came back UNCLEANED** (`Caption Exports/nickkk.mp4` went straight into AE). `clean_capcut.py` fixed 17
+  frames of the known ~40 % lift (5, 119, 239 ... every ~2 s; 5 min 19 s for 39.7 s of 4K) and found a SECOND,
+  milder pattern: frames 601-749, 1201-1349, 1801-1949 (the 2.5 s after every 10 s mark), 1.3 % of pixels each,
+  CHROMA only (luma unchanged), in a band around the caption line (rows 2046-2128): encoder colour ringing next to
+  the text. Neutralised with the same mask; the text itself is never touched. Worth a look on the next export.
+
+## 2026-09-27 — the creator's caption edits on the Eminem short (data, read off `hailieee.mp4`), applied on Seq 09
+
+Compared caption by caption with my Seq 08 SRT (all 57):
+- **Green Shade is now in use** for success / money / career: CAREER, MONEY, SUCCEEDED (I had yellow or red). → README § 8.
+- **Much less colour:** ~19 of 58 captions coloured (mine: 27+). Most of my reds went white (LIVE, FAIL, NEVER KNEW
+  HIM), numbers went white except 3.9 (pink). → README § 8 density line.
+- **Spoken forms:** "GONNA" where he says gonna (the transcript had "going to"); tiny flash captions ("GOING TO",
+  0.22 s) folded into the next line.
+- **Two-line builds** (OF DRIVE / AND MOTIVATION, FROM COLLEGE / 3.9) and one 4-word caption to keep a phrase whole.
+- **No italics** on the other speakers' questions this time (one data point; the README rule stands until it repeats).
+- **An annotation line** under the stinger: "*TALKING ABOUT HIS FATHER*" with HIS FATHER in light blue.
+- **They captioned a fragment I had dropped** ("YOUR GIRL" — Whisper's full-context "Girl," was right; my isolated
+  re-listen said "No"). → When a full-context pass and a short isolated slice disagree, flag, don't drop.
+- Tooling: `make_plan.py` / `make_srt.py` now accept `<green>` → the creator's "Green Shade" style.
+
+## 2026-09-27 — third sequencing job (ABW8 · Sequence 09, `projects/nick-walker-olympia-win`)
+
+- **The frame check caught TWO misattributions in one sheet.** Beat 2's "He will never win the Mr. Olympia title"
+  (Greg's video, 6:38) is Nick's own coach on camera, voicing what critics would say. Beat 4's "he'd be fighting
+  for 10th place" is the VOB host, not Shawn Ray (the host says "Sean" seconds earlier; Shawn only says "That's
+  true"). **Check who is on screen AND who is being addressed, for every quote, before placing.** The sheet's own
+  alt fixed beat 2; beat 4 is flagged.
+- **A reaction video's "quote" may be the clip it reacts to.** Read the words around the quote ("Nick and I…",
+  "rather than that, I'd rather…") before trusting the attribution.
+- **A split inside one continuous 29.97 fps clip can only land where the 60 fps grid and the source grid line up
+  (~every 16.7 s).** `plan_placement.py` moved a 4136.4 split to 4137.395. If the crop can cover both halves, drop
+  the split instead.
+- **A long "pause" before an announcement is usually crowd roar, not silence** (−19 dB): trim it by hand, since the
+  RMS tightener correctly leaves it.
+- **Whisper invents a leading word on an assembled cut** ("If Nick Walker's…", "Girl, how old…"): re-hear the first
+  second alone before believing it.
+
 ## 2026-09-26 — the "black static" frames: ROOT CAUSE FOUND (months of manual frame-cutting)
 
 - **Symptom (every short for ~6 months):** about 10 visible one-frame flashes per export of a dark diamond mesh over

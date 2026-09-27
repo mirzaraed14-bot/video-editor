@@ -22,7 +22,7 @@ import json, os, subprocess, sys
 import cv2
 import numpy as np
 
-REPO = r'E:/Claude Projects/video-editor-client/video-editor'
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))   # wherever the repo lives (was hard-coded to E:)
 MODEL = os.path.join(REPO, 'assets', 'models', 'face_detection_yunet_2023mar.onnx')
 FPS = 60.0
 DETECT_W = 1280          # detection width; coordinates are scaled back to full source pixels

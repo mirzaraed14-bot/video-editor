@@ -11,7 +11,7 @@ from PIL import ImageFont
 
 FONT = r'C:/Users/affan/AppData/Local/Microsoft/Windows/Fonts/Gretaros-Regular.otf'
 FONT_SIZE, TRACKING, WRAP_PX = 52, -0.5, 840
-TAG = re.compile(r'<(red|cyan|magenta|yellow|pink|blue)>(.*?)</>', re.S)
+TAG = re.compile(r'<(red|cyan|magenta|yellow|pink|blue|green)>(.*?)</>', re.S)
 
 
 def parse_line(line):

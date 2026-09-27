@@ -182,6 +182,10 @@ placed back in AE. Measured on the reference short (46 captions over 39.3 s):
 | Light Blue Shade | `#3ECBDD` | names, places, neutral key nouns | MICHAEL, JACKSON, STUDIO, SOMEBODY |
 | Pink Shade | `#DF31E9` | **love, affection, tenderness — and women** | LOVE, S*X, LISA MARIE, TOGETHER, KITCHEN, LOVED, CARE |
 | Orange Yellow Shade | `#E6B401` | emphasis / energy | 24 HOURS, DAY TO DAY, WAKING UP, CAREER, CENTER, REAL |
+| Green Shade | (their saved style) | **success, money, career, winning** (the creator's Eminem edit, 2026-09-26) | CAREER, MONEY, SUCCEEDED |
+
+**Density (the creator's Eminem edit):** about **one caption in three** carries a colour; red only for the real
+insult or wound; numbers mostly stay white.
 
 **Punctuation: none except `?` and `!`.** No commas, no full stops — confirmed by the creator
 2026-09-21. (Quotes around a quoted insult are still fine.)
@@ -200,7 +204,7 @@ carries 12 styles; the caption set is:
 | **Pink Shade** | magenta emphasis |
 | **Light Blue Shade** | cyan emphasis |
 | **Orange Yellow Shade** | yellow-orange emphasis |
-| **Green Shade** | green emphasis (exists, unused in the reference short) |
+| **Green Shade** | green emphasis: success, money, career, winning (in use since the Eminem short) |
 
 (The others — GTA, Cenat PBE, Doc IG Style, Onyx, Calibri — belong to other channels.)
 **Apply the style by name; never rebuild the gradient by hand.**
