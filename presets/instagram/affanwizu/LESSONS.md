@@ -3,6 +3,28 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-09-29: the creator's caption corrections (ABW8 · Sequence 15, 68 lines)
+
+**52 of 68 lines (76 %) shipped verbatim.** Every edit found was one of three kinds:
+
+1. **A NEGATION MUST NEVER BE SPLIT FROM ITS VERB.** I wrote `aye age ni` / `barh pa rahe`; they made the
+   second line `nai barh pa rahe`. A caption that ends on `ni`/`nai` and continues the verb on the next line
+   reads as two broken halves. → keep `ni + verb` in ONE line, even at the cost of a 6-word line → `roman-urdu.md`.
+2. **They restore the connective I trimmed at a line head**: `aap under perform` → `islye aap under perform`;
+   `to aap excel` → `usme to aap excel`. When a line starts mid-clause, keep the connective that ties it back.
+3. **Real words beat ASR guesses**: `ragre yar` → `ragre jarhe ho`, `fail hua tha` → `fail hojata tha`,
+   `aap is ke liye` → `aap us ke liye`, `aap apni` → `aap apne lye`, `aap destined hain` → `destined`.
+
+**Spellings confirmed by their own typing:** `islye`, `lye`, `jarhe` (ja rahe), `hojata`, `usme`, and `nai`
+alongside `ni` — they did NOT change any of my `ni` spellings, so both stay valid; `ni` remains the default.
+
+**Reading a learning pass out of the project file (method note):** Premiere stores caption text in a binary
+Source Text blob; ExtendScript `getValue()` returns nothing usable and a live read of >~40 clips truncates.
+The route that works: gunzip the .prproj, attribute every `AE.ADBE Text` layer to its clip `<Start>` (objects
+are serialised flat, so an `ObjectRef` belongs to the nearest preceding `ObjectID`), then match by TIME against
+the delivered lines. **Caveat: sequences in the same project share timeline positions, so a match must also
+beat a text-similarity check** — 6 lines stayed unresolved because Sequence 10/11 captions sit at the same seconds.
+
 ## 2026-09-19: learning pass on the SHIPPED reel (Sequence 18 → `ameer.mov`)
 
 The creator's goal: raw file in, finished reel out, nothing touched by hand. Everything they did by hand this time

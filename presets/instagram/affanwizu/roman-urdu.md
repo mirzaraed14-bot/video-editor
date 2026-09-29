@@ -20,6 +20,12 @@ texting-style Roman Urdu, **not** a formal transliteration standard. Write the w
   (the creator added "aap jaise logon **ko**" back after an ASR check called it inaudible, 2026-09-19).
 - Known mishear: "bhai isse **kaam** karo apna" came out as "haan karo" (ہاں/ہام). Read "kaam" in that context.
 
+- **A negation stays with its verb in the SAME caption line** (2026-09-29): they rewrote a split
+  `… ni` / `barh pa rahe` into `nai barh pa rahe`. Never end a line on `ni`/`nai` when the verb follows.
+- **Keep the connective at a line head** — they put back `islye` and `usme` where I had trimmed them.
+- More of their joined spellings, typed by them: `islye` (isliye), `lye` (liye), `jarhe` (ja rahe),
+  `hojata` (ho jata), `usme` (us me). They use `nai` as well as `ni` and left every `ni` of mine untouched.
+
 ## Word list (Urdu → how the creator writes it)
 
 | Urdu | Roman | | Urdu | Roman |
