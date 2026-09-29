@@ -36,3 +36,27 @@ a job teaches something.
 - **Premiere's Drop Shadow is invisible on a dark matte** (100 % opacity darkened it ~12 %). Shadows are baked into
   the overlay PNG; a video overlay's shadow is burned into its matte segment. → README § 1a.
 - Spend on job 1: 67.5 Higgsfield credits for 28 enhanced overlays (incl. retries and one false "nsfw" flag).
+
+## 2026-09-28 · rough cut, charlie-best-youtuber
+
+- **The rough cut goes on the creator's own handover sequence, not a new one.** Job 1 replayed onto a new sequence;
+  the creator objected on job 2. → PLAYBOOK § Intake item 5 (clear the handover sequence, replay onto it; the
+  project backup is the safety net).
+- **The creator doesn't want to approve steps one by one.** A project-local allow list (`.claude/settings.local.json`:
+  Bash, Edit, Write, premiere-pro tools) lets the pipeline run unattended when auto mode's check is down.
+- **Sync is measured every job: Sequence 12's voice sat 68 ms (4 frames) late** against the camera (job 1: 15 ms). The
+  creator lines the Enhance-Speech mp3 up by eye; `sync-dual-audio.py` fixes it at intake. → PLAYBOOK § Intake item 3.
+- **polish-boundaries overshoots tight cuts into the NEXT, killed word, and the mechanical reviewer missed all 13**
+  (e.g. "...like a human. But" kept 321 ms of "But"). → after polish, run a LEAK SWEEP: any killed raw word
+  overlapping a kept clip by > 60 ms gets its OUT moved to the energy dip before it (job `transcript/fixes.py`,
+  `review/leak-fixes.json`), then re-ASR the tails. WhisperX starts can be early too, so confirm leaks on the envelope.
+
+## 2026-09-28 · music drop-outs, charlie-best-youtuber
+
+- **The music drops out wherever the creator punches in** ("when it gets zoomed in the music also gets pulled out… it
+  feels like this is an important part"). Their punch-ins are static Scale 127 on V1. Sequence 12: 37 punch-ins →
+  34 drops (adjacent ones merged), 58.8 s of music removed, every edge within 0.3 ms of the punch-in's.
+  → PLAYBOOK § Per step, Music row (becomes a README look rule if it repeats on the next video).
+- **Razoring through QE is clean**: `qe.project.getActiveSequence().getAudioTrackAt(n).razor(tc)` at the SEQUENCE
+  fps (Sequence 12 = 60) splits the clip, and the right-hand piece keeps its level and the right source offset. Lift the
+  piece with `trackItem.remove(false,false)`. Hard cuts only; fades are offered, not assumed.

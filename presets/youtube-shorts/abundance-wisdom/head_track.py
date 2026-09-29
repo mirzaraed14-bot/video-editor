@@ -38,14 +38,30 @@ def probe(src):
 
 
 def frames(src, t0, dur, w, h):
+    """One picture per TIMELINE frame, picked the way AE and Premiere show a clip: the source frame that
+    starts at or before the frame's time. Not `-ss t0` + `fps=60`: the accurate seek drops the frame
+    that straddles the in-point and the fps filter takes the NEAREST frame, so at 23.976 the track ran
+    up to a source frame ahead of the picture and read the next shot's face on a clip's last frame
+    (2026-09-29). Decoded with the real timestamps (-copyts) and chosen here."""
     dw = min(DETECT_W, w)
     dh = int(round(h * dw / w / 2)) * 2
-    cmd = ['ffmpeg', '-hide_banner', '-loglevel', 'error', '-ss', '%.4f' % t0, '-i', src, '-t', '%.4f' % dur,
-           '-vf', 'fps=%g,scale=%d:%d' % (FPS, dw, dh), '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-']
-    raw = subprocess.run(cmd, capture_output=True).stdout
-    n = len(raw) // (dw * dh * 3)
-    arr = np.frombuffer(raw[:n * dw * dh * 3], np.uint8).reshape(n, dh, dw, 3)
-    return arr, dw / w
+    st = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=start_time',
+                         '-of', 'csv=p=0', src], capture_output=True, text=True).stdout.strip()
+    st = float(st) if st not in ('', 'N/A') else 0.0                 # AE's source time 0 = the first frame
+    a, b = t0 + st - 0.2, t0 + st + dur + 0.1
+    s0 = max(0.0, a - 1.0)                                  # -t: stop reading after the clip (select alone decodes to EOF)
+    cmd = ['ffmpeg', '-hide_banner', '-loglevel', 'info', '-ss', '%.4f' % s0, '-t', '%.4f' % (b - s0 + 0.5), '-copyts', '-i', src, '-an',
+           '-vf', 'select=between(t\\,%.4f\\,%.4f),scale=%d:%d,showinfo' % (a, b, dw, dh),
+           '-fps_mode', 'passthrough', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-']
+    p = subprocess.run(cmd, capture_output=True, stdin=subprocess.DEVNULL)
+    pts = [float(l.split('pts_time:')[1].split()[0]) - st for l in p.stderr.decode(errors='ignore').splitlines()
+           if 'Parsed_showinfo' in l and 'pts_time:' in l]
+    n = min(len(pts), len(p.stdout) // (dw * dh * 3))
+    decoded = np.frombuffer(p.stdout[:n * dw * dh * 3], np.uint8).reshape(n, dh, dw, 3)
+    pts = np.array(pts[:n])
+    n_tl = int(round(dur * FPS))
+    pick = [max(0, int(np.searchsorted(pts, t0 + k / FPS + 1e-4, side='right')) - 1) for k in range(n_tl)]
+    return decoded[pick], dw / w
 
 
 def smooth(v, sigma):

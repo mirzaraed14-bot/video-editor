@@ -3,6 +3,51 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-09-29 — fourth sequencing job (ABW8 · Sequence 14, `projects/paris-jackson-masks`)
+
+- **"Open on her face while she listens" when the source never shows her listening → a V2 cover.** The CHD question
+  is wide, Alex, wide, Alex. A beat's `"cover"` in `beats.json` is now a picture-only V2 insert (resolve_beats →
+  edl `covers` → plan_placement track-2 row → place_sequence removes its A2 audio). Pick the face by transcript AND
+  frames: of 20 short Paris cutaways only one was truly silent, and she was smiling at a compliment; the one used is
+  her silent think right after Alex's NEXT masks question (same topic, same tone).
+- **In-points floor to the SEQUENCE grid (1/60 s here), not the source grid.** 20/20 clips from 23.976 and 25 fps
+  sources landed on 60 fps multiples, 0–13 ms early. The 2026-09-23 "source grid" reading came from 29.97 sources,
+  where both grids coincide. Never predict the floor: the placer now reads the in-point Premiere took.
+- **Camera-cut splits are RAZORS on one placed clip**, the frame computed from that actual in-point and the cut:
+  audio continuity 0.00 ms at all five, every clip's first and last frame inside its shot. The old both-grids search
+  cannot work at 23.976/29.97 (the grids meet every 16.7 s): it drifted a split up to 1 s late and ran one piece
+  past its segment. Two razors planned from the plan's in-point sat 4–5 ms before their cuts (a frame of the wide in
+  Alex's crop); a cover ending on the source's own cut is re-pinned the same way.
+- **"If it doesn't land by ear" is tested IN CONTEXT.** Paris's closer runs straight on from "…scary" (no pause, the
+  in-point on a 3 dB dip). Isolated, Whisper heard "I always felt protected" (p0.33, "you know" lost); joined after
+  Debbie's last line it read every word. A one-second slice is not an ear.
+- **A breath inside a long pause leaves a wordless tightened piece** (0.32 s at −36 dB between "looking at" and "a
+  piece of paper"): split the segment at the pause instead.
+- **Check a broadcast source for burned-in titles inside the beat**: "Michael Jackson's Camera / Interview in
+  Florida" runs 4.2 s under Michael's line, partly in the crop's bottom band; "DEBBIE ROWE" had faded before hers.
+- **The creator rejected the "thinking, looking down" cover: a listening shot means eyes ON the host, mouth closed,
+  while the HOST speaks.** Found by a voice classifier (MFCC stats + logistic regression, taught by the camera since
+  the podcast shows the speaker: 91 % agreement; Alex's questions score 0.03-0.07 "Paris") crossed with the Paris
+  shots: 15 real listening windows in 72 min, none over 2 s. Mouth-motion from YuNet landmarks could NOT tell talking
+  from listening (0.035 vs 0.026). Tools: `projects/paris-jackson-masks/brief/tools/`.
+- **`setInPoint` floors TWICE: to the source frame, then to the sequence grid.** A 23.976 shot starting at 2105.7286
+  can only be entered at 2105.7167 (the frame BEFORE the cut) or 2105.7667 (a frame late). The exact first frame is
+  reached with the razor: lay one frame early, razor at frame 1, delete the head, `move(-1/60)`. Proven on the
+  Program monitor: timeline frame 0 went from the Alex frame to Paris.
+- **Program-monitor grabs lag one playhead move.** Set the playhead twice, then grab, and judge by correlation
+  against frames extracted by exact pts (`-copyts` + `select=between(t,..)`); `-ss` seeking landed a frame off.
+- The bin was named "Pairs Masks": find bins by their content, not the exact name.
+- **Zoom pass, comp 30: a portrait painting is a "confident face".** The Call Her Daddy wall portrait (y 2–100)
+  outranked Alex in the wide, so the top-most-face rule pivoted both wides at y200, pushing in toward the painting.
+  `zoom_pass.py` now reads `<work>/centers.override.json` ([{start, center_y, why}]); the plan prints MANUAL.
+  Preview every pivot that lands on y200: it is either a face at the very top or not a person.
+- **The head tracker sampled the wrong frames.** `-ss in` + `fps=60` drops the frame straddling the in-point and
+  takes the NEAREST source frame, while AE shows the frame at or before; at 23.976 the track ran up to a frame ahead
+  of the picture and read the next shot's face on a clip's last frame. `head_track.py` now decodes with real
+  timestamps (`-copyts`, bounded by `-t`: `select` alone decodes to end of file, 15 min instead of 11 s) and picks
+  frames as AE does. Earlier locks (29.97/24/60 fps sources) were at most a frame early, never across a cut. Whisper drops the LAST word of a
+  file with no trailing silence (pad 0.8 s before judging an ending).
+
 ## 2026-09-27 — zoom pass on ABW8 Linked Comp 25 (Nick Walker, 20 blocks, one Topaz render)
 
 - **The face picker took the biggest box, and on bodybuilders the biggest box is not the face.** YuNet fires on
@@ -54,7 +99,7 @@ Compared caption by caption with my Seq 08 SRT (all 57):
   "rather than that, I'd rather…") before trusting the attribution.
 - **A split inside one continuous 29.97 fps clip can only land where the 60 fps grid and the source grid line up
   (~every 16.7 s).** `plan_placement.py` moved a 4136.4 split to 4137.395. If the crop can cover both halves, drop
-  the split instead.
+  the split instead. *(Fixed 2026-09-29: splits are razors now, exact at any source rate.)*
 - **A long "pause" before an announcement is usually crowd roar, not silence** (−19 dB): trim it by hand, since the
   RMS tightener correctly leaves it.
 - **Whisper invents a leading word on an assembled cut** ("If Nick Walker's…", "Girl, how old…"): re-hear the first
@@ -270,6 +315,7 @@ Measured from the live V1 after their pass (`projects/mj-allegations/brief/v1_li
   duration drags the out-point with it — up to 41 ms clipped off a word. Pre-snap every in-point UP to
   the source grid. **A split inside one continuous source must land on BOTH grids** (source fps and
   60 fps), or a sliver of audio is skipped mid-word (16 ms inside "No," on the first pass).
+  *(Superseded 2026-09-29: the floor is the SEQUENCE grid; splits are razors from the actual in-point.)*
 - **Framing at sequencing = the creator's habit:** scale to fill the 1920 height, slide the crop onto
   the face; split a quote at any camera cut so each shot gets its own crop. The face detector will
   pick the biggest face — in a wide two-shot that was the interviewer, so check which face it found.

@@ -38,8 +38,11 @@ examples: `projects/mj-allegations`, `projects/eminem-hailie`.
    for fillers and numbers the transcript dropped or mistimed). Repeated line → last take.
 3. `resolve_beats.py` → `edl.json`; `plan_placement.py` → `placement.json`; check a contact sheet of the
    actual 9:16 crops, and put faces the detector misses (profiles, listeners, wides) into `framing.json`.
-4. `place_sequence.py` → run the .jsx (it refuses a non-empty sequence) → read back every clip →
-   **rebuild the audio from the read-back in/outs and re-transcribe it against the script.**
+   A face the source never shows ("open on her while she listens") = a beat `"cover"`: a picture-only V2 insert.
+4. `place_sequence.py` → run the .jsx (it refuses a non-empty sequence; camera-cut splits become razors on one
+   clip, placed from the in-point Premiere actually took) → read back every clip, including that each clip's
+   first and last frame sit inside its shot → **rebuild the audio from the read-back in/outs and re-transcribe it
+   against the script.** An ending the creator hedges ("if it doesn't land") is judged in context, never isolated.
 5. Flag, never hide: shots where the broadcast shows someone else, whip-pans, wides.
 
 ### 1. Read the cut
@@ -109,6 +112,8 @@ Test harness: CLI `tvai_up` on 0.5 s slices, `ffmpeg -h filter=tvai_up` for the 
    → `<name>_clean.mp4` beside it (~4 min for 50 s of 4K). CapCut dirties the black on one frame every ~2 s,
    which the caption stack turns into the one-frame "black static" (LESSONS 2026-09-26). This replaces
    razoring the bad frames out in Premiere and slowing a block to 99 %.
+   **Already in AE?** Clean it anyway and re-point the footage item at `<name>_clean.mp4` (FootageItem.replace,
+   one undo group; `projects/paris-jackson-masks/captions/capcut/kid2_replace.jsx`): the precomp and its effects stay.
 
 ### 5. The AE build
 Driven by ExtendScript: `Start-Process AfterFX.exe -ArgumentList @("-r", "<path>.jsx")`.
@@ -167,6 +172,7 @@ pull-out to 1.00. **Center XY from `zoom_center.py`** (face pivot when a centred
 face top above y200), never animated. **Which face:** posters (a box under 35 % of the widest) are
 dropped, then the TOP-most face scoring >= 0.8 is protected; with none that sure, the largest box
 (close-ups score 0.64-0.76). Never simply the largest box: on stage shots it is a torso or glutes.
+A pivot the preview shows is wrong (a painting, a poster) is pinned in `<work>/centers.override.json`.
 The house curve is reproduced with temporal eases: departure speed = 44x the average rate at
 1.7 % influence, arrival = 17x at 2.8 % — verified by sampling the result (worst deviation 0.022).
 

@@ -4,7 +4,8 @@
 Each segment is [clip, first words, last words]. The first words are matched anywhere in the clip,
 the last words after them. Edges get a small breath of padding, clamped so a cut never reaches into
 the neighbouring word (that is how a "cut hard on heart" stays out of the painkiller line).
-Timeline slots are laid back to back on the 60 fps grid.
+Timeline slots are laid back to back on the 60 fps grid. A beat may carry "cover": picture-only V2
+inserts [{clip, src_in, from, to}] (see the code), written to edl.json "covers".
 
 usage: python resolve_beats.py <job_dir> [--fps 60]
 """
@@ -165,9 +166,38 @@ def main(job, fps=60.0):
                             'match': [round(s1, 2), round(s2, 2)]})
                 t += dur
 
+    # A beat's "cover": a picture-only insert on V2 over the beat's own footage (placement drops its
+    # audio), e.g. a listener's face when the source never cuts to them. from/to are source times of
+    # the beat's clip ('start'/'end' = the beat's edges); the end rounds UP to the timeline grid so the
+    # covered shot never shows through for a frame.
+    covers = []
+    for b in beats:
+        rows = [e for e in edl if e['beat'] == b['n'] and not e.get('placeholder')]
+        for k, cv in enumerate(b.get('cover', []), 1):
+            def tl_of(x, up):
+                if x == 'start':
+                    return rows[0]['tl_in']
+                if x == 'end':
+                    return rows[-1]['tl_out']
+                for e in rows:
+                    if e['clip'] == b['segments'][0][0] and e['src_in'] - 1e-4 <= x <= e['src_out'] + 1e-4:
+                        v = (e['tl_in'] + x - e['src_in']) * fps
+                        return (math.ceil(v - 1e-6) if up else math.floor(v + 1e-6)) / fps
+                sys.exit('cover %d of beat %d: %s is not inside the beat' % (k, b['n'], x))
+            a, z = tl_of(cv['from'], False), tl_of(cv['to'], True)
+            cm = meta[cv['clip']]
+            if 'fps' not in cm:
+                cm['fps'] = source_fps(cm['source'])
+            s_in = snap_up(cv['src_in'], cm['fps'])
+            covers.append({'beat': b['n'], 'cover': k, 'clip': cv['clip'], 'source': cm['source'],
+                           'src_fps': round(cm['fps'], 4), 'src_in': round(s_in, 4),
+                           'src_out': round(s_in + z - a, 4), 'tl_in': round(a, 5), 'tl_out': round(z, 5),
+                           'to_src': cv['to'] if isinstance(cv['to'], (int, float)) else None})
+
     json.dump(meta, open(os.path.join(job, 'sources.json'), 'w', encoding='utf-8'), indent=1)
     out = os.path.join(job, 'edl.json')
-    json.dump({'fps': fps, 'duration': round(t, 4), 'segments': edl}, open(out, 'w', encoding='utf-8'), indent=1)
+    json.dump({'fps': fps, 'duration': round(t, 4), 'segments': edl, 'covers': covers},
+              open(out, 'w', encoding='utf-8'), indent=1)
     for e in edl:
         if e.get('placeholder'):
             print('B%-2d        %6.2f-%6.2f  [PLACEHOLDER %.1fs — %s]' % (e['beat'], e['tl_in'], e['tl_out'],
@@ -176,6 +206,9 @@ def main(job, fps=60.0):
         print('B%-2d s%d %-9s src %8.3f-%8.3f  tl %6.2f-%6.2f  %4.2fs  %s' % (
             e['beat'], e['seg'], e['clip'], e['src_in'], e['src_out'], e['tl_in'], e['tl_out'],
             e['tl_out'] - e['tl_in'], e['text'][:70]))
+    for c in covers:
+        print('B%-2d V2 %-9s src %8.3f-%8.3f  tl %6.2f-%6.2f  %4.2fs  [cover, picture only]' % (
+            c['beat'], c['clip'], c['src_in'], c['src_out'], c['tl_in'], c['tl_out'], c['tl_out'] - c['tl_in']))
     if removed:
         print('\ntightened: %d pauses removed, %.2fs total (%s)' % (
             len(removed), sum(removed), ', '.join('%.2f' % r for r in sorted(removed))))
