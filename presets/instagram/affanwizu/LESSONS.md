@@ -3,6 +3,33 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-09-30: WhisperX drops speech silently (ABW8 · Sequence 17, 169 lines)
+
+Two lessons, both now hard gates in `PLAYBOOK.md` § 2:
+
+1. **A concat rebuild closes the sequence's gaps.** Seq 17's 74 clips sum to 181.65 s but the sequence
+   runs 184.92 s — one 3.27 s gap at 175.4 s. The first rebuild concatenated the clips and came out
+   181.65 s, which would have pulled every caption after 175 s three seconds early. Fix: insert
+   `color=black` + `anullsrc` per gap, then check the rebuild's duration against the sequence end.
+   → GATE A.
+2. **A "pause" in `words.json` can be dropped dialogue — measure it, don't trust it.** Two gaps
+   (8.5→15.0 s and 48.9→53.2 s, 11 s total) read −27 dB mean, the same as the take's speech; real
+   silence in the same file reads −55 dB. WhisperX had simply dropped them, with no warning. The
+   recovered lines carried the reel's core statistic ("follower count hai 350,000 … jo views hain,
+   in mai difference bohat zyada hai") and its pivot ("she already has two million followers — for
+   the last eight reels ni aye"). A caption pass that trusted the first transcript would have shipped
+   a reel missing its argument. → GATE B.
+   - **Re-decode WIDE spans.** A 3.4 s slice of 45.6–49.0 invented "2 million followers ke liye aakhri
+     aath reel"; the 42.0–58.5 slice around it read the same audio correctly. Short windows hallucinate.
+   - The main pass had also **mis-placed** words: "aap agar yahan reels pe jayen…" sat at 45.8 s in the
+     first transcript and at 50.0 s in the clean re-decode. When a span is re-decoded, replace the whole
+     window, never just the empty part.
+
+**ASR fixes this job** (context repair, per `roman-urdu.md`): `pachpan se` → **bachpan se**,
+`پیچھ` → **page**, `سٹرونگس` → **strongest**, `ایسیل ایسٹھیٹکس لینک` → **SL Aesthetics Clinic**,
+`شاہستہ لوڈی` → **Shaista Lodhi**, `وچیز نوٹ بینگ یوٹلائز` → **which is not being utilized**,
+`دیکھ رہو نا` → **dekh rahe ho na**, and a restored `se` in "sab se strongest point".
+
 ## 2026-09-29: the creator's caption corrections (ABW8 · Sequence 15, 68 lines)
 
 **52 of 68 lines (76 %) shipped verbatim.** Every edit found was one of three kinds:

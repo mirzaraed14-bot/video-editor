@@ -44,6 +44,23 @@ With After Effects / Premiere open the GPU is full and this crawls: prefix `WHIS
 (`get_sequence_structure`, plus the V1 clips' Motion), rebuild it with ffmpeg from the edit points and
 the same framing into `raw/`, and transcribe that. Gaps in the sequence stay gaps.
 
+**GATE A — the rebuild must equal the sequence end.** `sum(clip durations)` is NOT the sequence
+length: a concat of the clips silently closes every gap, and then every caption after the first gap
+is early by the gap. Compare `ffprobe` duration against the sequence end BEFORE transcribing; if it
+is short, insert `color=black` + `anullsrc` for each gap (seq17: one 3.27 s gap at 175.4 s, rebuild
+181.65 → 184.93 s, sequence 184.92). A frame of rounding is fine; a tenth is not.
+
+**GATE B — prove every silence is silent.** WhisperX drops speech in long Urdu takes without any
+warning, and a dropped span looks exactly like a pause in `words.json`. For EVERY speech gap > 1.5 s:
+```bash
+ffmpeg -hide_banner -nostats -ss <t> -t <len> -i <cut> -map 0:a -af volumedetect -f null NUL 2>&1 | grep mean_volume
+```
+Real silence reads ≈ −55 dB. Anything near the take's speech level (≈ −26 dB) is **dropped speech** —
+re-decode that span (faster-whisper, `language="ur"`, `vad_filter=False`, `word_timestamps=True`) and
+splice the words back in. Seq17 hid 11 s of dialogue in two such gaps, including the reel's core stat.
+Re-decode a WIDE, well-bounded span: short windows hallucinate (a 3.4 s slice invented a sentence that
+a 16.5 s slice around it disproved).
+
 ## 3. Draft the phrasing
 ```bash
 uv run presets/instagram/affanwizu/build.py projects/<job> --prep

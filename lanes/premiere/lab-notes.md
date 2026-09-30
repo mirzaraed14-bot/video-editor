@@ -378,3 +378,24 @@ Always check the EDL bash can actually see before re-splicing.
 - `replay` threw "MCP Bridge is not running" but the ES had executed in full (146/146 clips, frame-exact); only
   its trailing `save_project` never ran. Read the sequence back and save by hand; never re-run a replay blind
   (it appends after the last V1 clip).
+
+## 2026-09-30 — bridge output and Windows frame proofs (gta6-hurricanes overlays)
+
+- `node premiere-bridge.mjs execute_extendscript` prints ONLY the result on **stdout** (a JSON string like
+  `"placed"`, or a pretty-printed object when the ES returned JSON); every log line goes to **stderr**. Parse
+  `json.loads(stdout.strip())` first. Searching stdout for `'\n"'` misses a result that starts at position 0 and a
+  parser that falls back to the first `{` grabs the echoed `with args: {` from a merged stream.
+- The bridge `frame` command still throws on Windows. The working proof is the lab-notes route: set a one-frame
+  sequence in/out, `exportAsMediaDirect(<stem>, ".../MediaIO/systempresets/3F3F3F3F_504E4720/PNG Sequence (Match
+  Source).epr", 1)`, restore in/out. **A dot in the stem fails as "You do not have permission to create or delete
+  the output file"**: `f133.5` fails, `f1335` works. Build the paths with `os.path.join`, never hand-escaped.
+- A 43-block timeline guard compared positions rounded to 3 decimals against a 4-decimal snapshot and refused on
+  pure rounding; compare with a 2 ms tolerance.
+- **The PNG grab lands as `<stem>0` with NO extension** on 25.0 here (not `<stem>0.png`); PIL opens it as-is. An
+  unset sequence in/out reads back `in -400000 / out 0`, and `setInPoint(-400000)` + `setOutPoint(0)` restores that.
+- **QE razor on a 59.94 sequence cuts frame-exact** with `qe.project.getActiveSequence().getAudioTrackAt(n).razor(tc)`,
+  `tc` = the integer frame `round(T*60000/1001)` written as 60-frame non-drop `HH:MM:SS:FF` (display format 108):
+  22 ranges razored and lifted on A2, worst edge 0.1 ms off the plan (the music drop-outs under the cut zooms).
+- **An audio clip's timeline START is not floored to 29.97** (the 2026-09-13 flooring hits a slice's source in/out):
+  44 pops placed on odd 59.94 frames, bounced A3-only (`Wave48mono24.epr`, other tracks `setMute(1)` then
+  `setMute(0)`), every onset exactly on plan (3.8 ms late = the file's own transient offset).

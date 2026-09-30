@@ -122,3 +122,45 @@ A first attempt at the removal diff was wrong by 4x because it read only V1 and 
   ASR collapses repeats and short concatenations hallucinate them, so only the exact-span test counts.
 - The creator said "keep the improvised jokes": kept every aside, cut only retakes, stumbles and dead air.
   Result 1070 s raw → 5:59, 146 clips.
+
+## 2026-09-30 — gta6-hurricanes rough cut (ABW8 · Sequence 16): transcribe per burst FIRST
+- The creator synced it in Premiere and said so: **their in-points are the offset** (camera = OBS + 19.3833 s),
+  muxed verbatim with the camera-mic tail exactly where they switched A1. No measuring when they say it's synced.
+- **Change made: a per-burst transcription of the whole raw BEFORE authoring** (`review/raw-bursts.txt`: split on
+  energy gaps, transcribe each burst alone). It showed the hidden retakes up front ("In Rockstar games" x3,
+  "Braking gets worse" x3, "30 plus land" x2), so the first EDL was already close; WhisperX alone would have hidden them.
+- The mechanical reviewer running EVERY joint through exact-span ASR still found 5 real ones the long-pass cut
+  transcript missed (a "ha-" fragment, a trailing "I th-", "I, I, I", "the a store", "what happened—"). Keep that
+  review exhaustive; the long single-pass transcript both misses fragments and invents doubles.
+- Result: 752.8 s of voice → 6:48, 122 clips. Jokes kept whole (the zoo, the hiking punch line, "I don't know why I
+  did that", "Where was the tweet? God damn it"), their long pauses trimmed to ~0.5 s instead of cut.
+
+## 2026-09-30 — gta6-hurricanes overlays from the creator's Tella brief (ABW8 · Sequence 16)
+- **The brief convention:** the creator drags the face clips that want an overlay UP TO V2 and talks through each
+  one in a Tella walkthrough with the screen audio muted. 43 blocks → 24 slots; the playhead timecode at each
+  sentence resolves "here". Their standing overlay rules, said three times: **edges bleed** (inset, never full
+  frame), **a creative colour matte behind every overlay, varied, never one colour**, **drop shadow on the overlay**,
+  screenshots clean (Higgsfield-enhance when soft), downloads into the bin named after the video's topic.
+- **Change made: overlays are baked as ProRes 4444 alpha clips** (85 % inset, 22 px rounded corners, shadow baked in,
+  because Premiere's Drop Shadow is near-invisible on a dark matte, lab-notes) on **V4**, with a per-slot animated
+  gradient matte on **V3**: separate clips, so a matte or an overlay can be swapped alone. Tool:
+  `projects/gta6-hurricanes/overlays/build.py` + `place.py` (additive; refuses if V2 moved since the brief).
+- A "quote" overlay is a Higgsfield BACKGROUND (no text, 0.25 credits) with the exact quote set in type by us:
+  the quote is verified against two sources first (Rob Nelson / IGN, 2026-08-27).
+- Preview every segment's frame BEFORE rendering: 4 of 44 picks landed on the wrong shot (ESRB card, a social
+  post, a text card, the creator's own face in their Wolverine video). Trailer/compilation shots are short; check
+  the whole span, not one frame.
+
+## 2026-09-30 — gta6-hurricanes, the creator's pass and three calls (ABW8 · Sequence 16)
+- **The creator's pass, read off the timeline:** 18 nests + 22 gradual pushes (100→105/110) on V1, cut zooms as
+  razor-cut clips with a static scale > 100 (on V1 and inside the nests), music on A2 (three Epidemic tracks). The
+  overlays were untouched: 48/48 V3/V4 clips where they were placed.
+- **Cut zoom = the music drops out for that block.** Lesson → change: `music-dropouts.py` finds every cut zoom
+  (a static scale step, nests included, the gradual pushes excluded) and lifts the A2 music inside it. 22 ranges;
+  the music was already silent in 5 (the creator had cut those by hand, so this is their rule, not ours) and lifted
+  in 17 (29.95 s). Graduated to PLAYBOOK § Music.
+- **Overlay switches pop.** Lesson → change: `overlay-sfx.py` puts an Epidemic mouth-finger pop on every overlay
+  entrance and internal switch, 44 on A3. Graduated to PLAYBOOK § 6 SFX.
+- **A rapid run of stills gets NO push** (C02: four Game Informer screenshots at 0.4 s each, each pushed in 5 %: "too
+  flashy… very jarring"). Lesson → change: `build.py` `NO_PUSH = {2}`, re-rendered as `ov-c02-v2.mov`. One-off so
+  far; if it repeats, a still held under ~1 s never moves.
