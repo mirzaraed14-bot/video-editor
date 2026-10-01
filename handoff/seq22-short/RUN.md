@@ -1,4 +1,4 @@
-# seq22-short — "ABW8.prproj" [2026-10-01T13:58:23.584Z] [INFO] [PremiereProBridge] Found Adobe Premiere Pro at: C:\Program Files\Adobe\Adobe Premiere Pro 2025[2026-10-01T13:58:23.591Z] [INFO] [PremiereProBridge] Using file communication method[2026-10-01T13:58:23.591Z] [INFO] [PremiereProBridge] Adobe Premiere Pro bridge initialized successfully[2026-10-01T13:58:23.617Z] [INFO] [PremiereProTools] Executing tool: execute_extendscript with args: { script: '(function(){return app.project.name;})()\n' } · Sequence 22 (captions only)
+# seq22-short — ABW8 · Sequence 22 (captions only)
 
 ▶ **STATUS: DONE — caption track delivered 2026-10-01, waiting on the creator's review.**
 Deliverable: `projects/seq22-short/seq22-short.srt` (183 cues, 0 → 173.317 s). `caption_qa.py` PASSES.
@@ -12,7 +12,7 @@ any layers → learning pass into `presets/instagram/affanwizu/LESSONS.md`.
   Left OUT of the caption (shows "or apne pese"); add it if you want it.
 
 ## The job
-- Source: Premiere project **"ABW8.prproj" [2026-10-01T13:58:23.584Z] [INFO] [PremiereProBridge] Found Adobe Premiere Pro at: C:\Program Files\Adobe\Adobe Premiere Pro 2025[2026-10-01T13:58:23.591Z] [INFO] [PremiereProBridge] Using file communication method[2026-10-01T13:58:23.591Z] [INFO] [PremiereProBridge] Adobe Premiere Pro bridge initialized successfully[2026-10-01T13:58:23.617Z] [INFO] [PremiereProTools] Executing tool: execute_extendscript with args: { script: '(function(){return app.project.name;})()\n' }**, **Sequence 22**, read through the CEP bridge. 58 V1 clips of
+- Source: Premiere project **ABW8**, **Sequence 22**, read through the CEP bridge. 58 V1 clips of
   `X:\Recordings\PBZ\C1318.MP4` (1920×1080 at Scale 100, Position 0.5/0.5 → the 1080-wide centre band at y420–1500)
   + 58 A1 clips from a SEPARATE audio recording `E:\Shorts\...\Batch Batch\2026-10-01 16-53-36.mp4`.
 - Sequence end 173.317 s, no timeline gaps. Rebuild `raw/seq22-short-cut.mp4` = 173.334 s (Gate A ✓).
