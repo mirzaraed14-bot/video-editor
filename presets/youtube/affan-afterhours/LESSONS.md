@@ -632,3 +632,15 @@ line the timeline keeps contain its first and last word — in one step, and it 
 against a 34-tool-call investigation that reached the wrong answer.
 
 **File.** `projects/gta6-pc-release/RUN.md` § Flags.
+
+## 2026-10-01 · GTA short captions, ABW8 · Sequence 21 (`projects/seq21-short`)
+
+- **A separate voice track on A1 is not proof of an @affanwizu Urdu reel.** Sequence 21 had the same pattern (camera
+  file on V1, a dated recording on A1) but is an English GTA short (`X:\Recordings\Afterhours\`); a 30 s language check
+  (en, p 0.99) came before transcribing. → `projects/seq21-short/RUN.md`.
+- **Jump-cut shorts break WhisperX's words, not its timing:** in fragments the creator cuts mid-word it merged or
+  invented words ("Elena" for a whole phrase, "read the truth" for "Red Dead 2"). Re-decoding each A1 clip WITH
+  ±2.5 s of context from the source recording, then checking 20 ms envelope blobs, settled every one. Captions show
+  the fragments as heard (bar, some, take, report report).
+- **Captions over the creator's dramatic pauses hung 1–2 s** (wall to wall). `sequence-captions.py srt --hang 0.8` now
+  ends them 0.25 s after the last word, and a silent opening shot is no longer captioned. → `workflows/sequence-captions.py`.

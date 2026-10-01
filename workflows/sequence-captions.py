@@ -122,7 +122,7 @@ def corrected(words, out_path):
     return words
 
 
-def srt(job, max_words):
+def srt(job, max_words, hang=None):
     meta = json.load(open(os.path.join(job, 'brief', 'sequence.json'), encoding='utf-8'))
     fps = meta['fps']
     out = os.path.join(job, 'outputs', slug(meta['sequence']) + '-captions.srt')
@@ -155,7 +155,9 @@ def srt(job, max_words):
     if wi != len(tw):
         sys.exit('%d transcript words uncaptioned, from %r at %.2f s' % (len(tw) - wi, tw[wi]['w'], tw[wi]['start']))
 
-    caps[0]['start'] = min(caps[0]['start'], cuts[0])
+    # wall to wall from frame 0, unless the first clip is a silent shot (then it stays uncaptioned)
+    if not any(a <= cuts[0] < b for a, b in silent):
+        caps[0]['start'] = min(caps[0]['start'], cuts[0])
     for c in caps:
         near = [k for k in cuts if c['start'] - 0.12 <= k <= c['start'] + 0.05]
         if near:
@@ -165,6 +167,10 @@ def srt(job, max_words):
         for a, b in silent:
             if c['last'] <= a < c['end']:
                 c['end'] = a
+        # --hang: a caption over a long pause ends 0.25 s after its last word (opt-in; the default
+        # stays wall to wall). Seq 21 held "dropped on the" 1.7 s and "of the Year" 2.1 s over silence.
+        if hang is not None and c['end'] - c['last'] > hang:
+            c['end'] = c['last'] + 0.25
     for c in caps:
         c['start'], c['end'] = round(c['start'] * fps) / fps, round(c['end'] * fps) / fps
 
@@ -221,10 +227,11 @@ if __name__ == '__main__':
     ap.add_argument('job')
     ap.add_argument('sequence', nargs='?')
     ap.add_argument('--max-words', type=int, default=3)
+    ap.add_argument('--hang', type=float, default=None, help='end a caption 0.25 s after its last word when a pause longer than this follows')
     a = ap.parse_args()
     if a.cmd == 'read':
         read(a.job, a.sequence or sys.exit('read needs the sequence name'))
     elif a.cmd == 'srt':
-        srt(a.job, a.max_words)
+        srt(a.job, a.max_words, a.hang)
     else:
         import_(a.job)
