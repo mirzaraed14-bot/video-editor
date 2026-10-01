@@ -26,5 +26,13 @@ State at 2026-09-18:
 
 **GOAL (the user, 2026-09-19): full autonomy.** They want to hand over a raw file and get the finished reel with nothing touched by hand. Scope is no longer captions-only: the cut, frame stack, punch-ins, captions, title proposal and music placement are all ours. Every shipped reel gets a learning pass. The first shipped full edit was `ameer.mov` (ABW6 · Sequence 18, job `projects/dowry-beggars`); its measured recipe lives in `presets/instagram/affanwizu/reel-recipe.md`. Still manual: the song choice (theirs) and bringing captions in (scripted import broken → .srt drag).
 
+**Caption quality gate (2026-10-01, after the user said "you translate my English into Urdu" and "captions hang
+too long"):** every caption job now runs `codeswitch_pass.py` (a second, prompted listener for his English) and must
+PASS `caption_qa.py` before hand-off (hanging/uncaptioned speech = FAIL; English heard but not captioned, Whisper's
+Urdu stand-ins for his connectors, spelling = warnings; `--fix` respells). Ground truth = 211 of the creator's own
+lines with frame-exact timing in `presets/instagram/affanwizu/reference/`. Timing rule itself is confirmed right;
+hanging captions were always dropped speech. Spelling: joined aapko/isme/iska, `or` never aur, `kia`, `lye`, `chahye`,
+digits. Seq 17 was re-delivered as v2 the same day (its ending had been captioned 3.7 s early).
+
 Raw footage: `E:\Skool Recordings\<batch>\`, where Urdu reel takes are mixed with English GTA takes (C1253 = Urdu; C1269/C1263/C1287 = English). Forcing Urdu on English audio produces garbage.
 Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]].

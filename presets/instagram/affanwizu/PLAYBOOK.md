@@ -44,6 +44,14 @@ With After Effects / Premiere open the GPU is full and this crawls: prefix `WHIS
 (`get_sequence_structure`, plus the V1 clips' Motion), rebuild it with ffmpeg from the edit points and
 the same framing into `raw/`, and transcribe that. Gaps in the sequence stay gaps.
 
+**Then the English listener** (every job, ~1 min per minute of audio on CPU):
+```bash
+python presets/instagram/affanwizu/codeswitch_pass.py projects/<job>     # → transcript/codeswitch.json
+```
+The Urdu pass translates or drops his English connectors. This second pass re-decodes every ≤10 s stretch
+with a code-switched prompt so English stays English. It hallucinates sometimes, so it is never the transcript:
+`words.json` stays the timing backbone, and this pass only answers "was English said here?".
+
 **GATE A — the rebuild must equal the sequence end.** `sum(clip durations)` is NOT the sequence
 length: a concat of the clips silently closes every gap, and then every caption after the first gap
 is early by the gap. Compare `ffprobe` duration against the sequence end BEFORE transcribing; if it
@@ -82,10 +90,31 @@ Rewrite the draft as Roman Urdu, one caption per line, in the creator's spelling
   gap, and the first line shows from frame 0.
 - Fix Whisper's mishears from context (teacher, bezti, balcony, mentally…). **Show the creator every
   word you were unsure of.** Don't guess silently.
-- **Unclear stretch = re-decode just that snippet with `language="en"`** (faster-whisper in the whisperx
-  venv): the Urdu pass drops code-switched English ("opinions achay lage", "aurton ke baare mai").
+- **English = what he SAID, never the Urdu Whisper wrote in its place** (the creator's #1 complaint,
+  2026-10-01). Write with `codeswitch.json` open next to `words.json`: every English word it heard goes into
+  the caption in English. Whisper's usual stand-ins: ایسا = *doesn't mean*, ایسی طرح = *it's just that*,
+  خاص طور = *especially*, اسی طرح = *etc*; its usual drops: *most likely*, *but*, *as such*, *believe me*.
+  When the two listeners disagree, re-decode that span WIDE with `language="en"` and decide by ear.
+- **Quoted speech** (a boss, an ad, his inner voice) gets quotes, one pair per line. **Repeats** (`bohat bohat
+  bohat`) are counted by ear: Whisper collapses them.
+- **Spelling** = the 🔒 table at the top of [`roman-urdu.md`](roman-urdu.md) (aapko, isme, or, kia, lye, chahye,
+  hazar, lac, digits). `caption_qa.py --fix` applies it.
 - Style: `--style white` (commentary/rant reels) or yellow (aesthetic deep talks). Say which in the hand-off.
 - Repeated line across takes → caption what's in the cut. (The cut is theirs, so retakes are already gone.)
+
+## 4b. QA gate: must PASS before anything goes to the creator
+```bash
+python presets/instagram/affanwizu/caption_qa.py projects/<job>          # after build.py --srt
+python presets/instagram/affanwizu/caption_qa.py projects/<job> --fix    # respell captions.txt in their typing, then rebuild
+```
+- **FAIL hanging caption** = Whisper dropped words under that line (it measures speech with a separate
+  detector, so it can't be fooled by the transcript). Re-decode that span WIDE with `language="ur"` AND
+  `language="en"`, add the missing line(s), rebuild, re-run. On its first run it found three real drops in
+  shipped work: Seq 17 "2 million followers" and "she is the attraction, right? she is the marketing",
+  Seq 11 "founder explains the science of perfumes in an entertaining way". Zero false alarms on the
+  creator's own 211 lines.
+- **warn CONNECTOR / LONG WORD** = listen to that spot and caption the English he actually said.
+- **warn SPELLING** = `--fix`. Resolve every warning or say in the hand-off why it stays.
 
 ## 5. Review sheet → creator
 Send the lines with their timings (`build.py` prints the sheet) before rendering anything long.

@@ -273,7 +273,10 @@ def build(job_dir, out_path, alpha, until, title, srt_path=None, dur_override=No
     for i in range(len(lines) - 1):
         lines[i]["end"] = lines[i + 1]["start"]                    # hold until the next line: never a gap
     if lines:
-        lines[-1]["end"] = min(dur, snap(words[-1]["end"] + TAIL_HOLD)) if words else dur
+        spoken = words[-1]["end"] if words else 0.0
+        # an '@<sec>' last line placed past the transcript's last word (Whisper dropped the ending: Seq 17)
+        # holds to the end of the cut, as every one of the creator's own reels does
+        lines[-1]["end"] = dur if lines[-1]["start"] >= spoken else min(dur, snap(spoken + TAIL_HOLD))
     tcap = min(until, dur) if until else dur
     lines = [l for l in lines if l["start"] < tcap]
     if srt_path:

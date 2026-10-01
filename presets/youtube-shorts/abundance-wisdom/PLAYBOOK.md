@@ -63,7 +63,8 @@ Speaking shots only; never on overlays or stills.
 2. `head_track.py <job> <v1_live.txt> <idx,...>` → `track.json` (nose per 60 fps frame, source px).
    Build the clip list from the linked comps' OWN layers (read from AE: source, in-point, scale,
    position), since the creator may recut before replacing (`projects/eminem-hailie/brief/`).
-   Check the sheet: the dot on the speaker's nose, AND the nose inside the creator's crop.
+   Check the sheet (`uv run track_sheet.py <job>`, frames as AE shows them, in each layer's own scale and
+   position): the dot on the speaker's nose, AND the nose inside the creator's crop.
    A source with a baked border (Mike Tyson's uploads) gets `"prescale"` in the map (LESSONS 2026-09-26).
 3. Write `headlock_map.json` (comp, layer, clip, tl_offset = the comp's start in the sequence) and
    verify every layer's in-point = tl_start − tl_offset before running anything.
@@ -172,7 +173,8 @@ pull-out to 1.00. **Center XY from `zoom_center.py`** (face pivot when a centred
 face top above y200), never animated. **Which face:** posters (a box under 35 % of the widest) are
 dropped, then the TOP-most face scoring >= 0.8 is protected; with none that sure, the largest box
 (close-ups score 0.64-0.76). Never simply the largest box: on stage shots it is a torso or glutes.
-A pivot the preview shows is wrong (a painting, a poster) is pinned in `<work>/centers.override.json`.
+A pivot the preview shows is wrong (a painting, a poster, a face pushed off the SIDE) is pinned in
+`<work>/centers.override.json` (`center_y`, optional `center_x`).
 The house curve is reproduced with temporal eases: departure speed = 44x the average rate at
 1.7 % influence, arrival = 17x at 2.8 % — verified by sampling the result (worst deviation 0.022).
 

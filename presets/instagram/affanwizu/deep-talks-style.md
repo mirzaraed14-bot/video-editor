@@ -28,12 +28,26 @@ add captions ON their finished cut.
 
 - A line **switches on the start of its first word** (creator's switches sit a median 0.034 s from it,
   p90 0.12 s) and **holds until the next line starts**. There is never a gap and never an empty frame.
-- The first line shows from **frame 0**. The last line holds 0.4 s past the final word, clamped to the cut.
+- The first line shows from **frame 0**. The last line holds to the **end of the cut** (all four reference reels;
+  `build.py` holds it 0.4 s past the final word when the transcript reaches the end, to the end of the cut otherwise).
 - Switches snap to the cut's frame grid (60 fps on balcony).
+- **Re-confirmed 2026-10-01 on four finished reels** ([`reference/`](reference/README.md)): on Khayal the
+  creator kept the switch time of every one of my 52 unchanged lines (all within one frame), and on
+  balcony / BELIEVE / UNi their hand-placed switches sit within ±0.1 s of WhisperX's first-word start.
+  211 lines, zero gaps, zero empty frames. **The rule is right; keep it.**
+- **A caption that "hangs" over the next words is a TRANSCRIPT defect, not a timing one.** When Whisper
+  drops a stretch of speech, the line before it holds until the next word Whisper did catch: on Sequence 15
+  `aye age ni` stayed up 5.1 s while four lines of speech went by. The creator's own lines never carry more
+  than **0.78 s of speech per word**; `caption_qa.py` fails any line over 0.45 s × words + 0.6 s.
 
 ## 🔒 Phrasing
 
-A natural spoken phrase, usually **3–5 words** (range 1–6). A word said alone between pauses
+A natural spoken phrase, usually **3–5 words** (range 1–6). Measured on 211 lines (2026-10-01): median
+**4 words** (3 on BELIEVE, the fastest talker), 6 at most on the recent reels (balcony, the oldest, reached 8),
+and only 5 % over 5 — the creator's own cap for us is **5**. A line is on screen a median **0.9 s**
+(0.3 s → 2.3 s). Lines end most often on `hai` / `hain` / `mai` / `aap` / `ke`, and start on `aap` / `or` /
+`aik` / `mai` / `wo`: they cut where the breath is, even if it leaves `aap` hanging at a line end
+(`hona chahye ke aap` / `free hon financially`). A word said alone between pauses
 (`to`, `jo`) gets its own line. Lines end where the speaker breathes: often on a trailing `ke` (that)
 or a verb (`banunga`, `kardi`), never mid-verb-chain.
 

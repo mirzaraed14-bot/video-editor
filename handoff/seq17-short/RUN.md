@@ -1,10 +1,20 @@
 # seq17-short — ABW8 · Sequence 17 (captions only)
 
-▶ **STATUS: DONE — caption track delivered, waiting on the creator's review.**
-Deliverable: `projects/seq17-short/seq17-short.srt` (169 cues, 0 → 180.20 s, track length 184.917 s).
-Next: drag the .srt into ABW8 Sequence 17, apply the saved **"affanwizu yellow"** Track Style,
-set the caption baseline to **y1137**. After the creator corrects any layers → learning pass into
-`presets/instagram/affanwizu/LESSONS.md`.
+▶ **STATUS: v2 DELIVERED 2026-10-01 — replaces v1; waiting on the creator's review.**
+Deliverable: `projects/seq17-short/seq17-short.srt` (**176 cues**, 0 → 184.917 s). v1 kept as `seq17-short.v1.srt`
+/ `captions.v1.txt`. `caption_qa.py` PASSES (one warning: the English listener heard "support" for "supposed").
+Next: drag the .srt into ABW8 Sequence 17, apply **"affanwizu yellow"**, baseline **y1137**. After the creator
+corrects any layers → learning pass into `presets/instagram/affanwizu/LESSONS.md`.
+
+**v2 vs v1** (all found by the new `caption_qa.py` + `codeswitch_pass.py`, 2026-10-01):
+- **+ "2 million followers"** after "super famous" (29.7 s), missing in v1.
+- **+ "she is the attraction right" / "she is the marketing"** (110.7 s, 112.1 s); the lines around them re-timed.
+- **+ "matlab it’s common sense"** (77.7 s).
+- **The ending was wrong in v1:** "agar ye sirf is cheez / pe focus kare" was shown at 178.7 s, 3.7 s before he says
+  it, and nothing was captioned after 180.2 s. v2: "I personally think ke / ye jo business hai / 100 times more
+  profitable / agar ye sirf is cheez / pe focus kare", 178.6 → 184.9 s.
+- Spelling in the creator's typing: `or` (not aur), `aapko/aapke/aapne/inko/inka/jisme/usme`, `chahye`, `lye`,
+  `karhe`, `10 hazar`, `1 lac`, curly ’ in English contractions; the mock-ad line in quotes, one pair per line.
 
 ## The job
 - **Channel preset:** `presets/instagram/affanwizu/` (Roman Urdu captions ONLY; the creator owns the cut).

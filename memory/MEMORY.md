@@ -4,7 +4,7 @@
 - [GTA channel: two formats](project-gta-documentary-channel.md) — Affan Afterhours; the GTA 6 EXPLAINER is the default (doc format PAUSED); episode 2 "Travis Scott" SHIPPED 2026-09-20 (POSTMORTEM.md); video 3 = the FACE-CAM style, presets/youtube/affan-afterhours-facecam/ (measured 2026-09-21), script pending
 - [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; resume blocks, channel LESSONS after every review, save what the user gives in the same turn
 - [Epidemic Sound connector](reference-epidemic-sound-connector.md) — the user's music/SFX library; OAuth sign-in fails (redirect-URI allowlist), use an API key in .mcp.json instead
-- [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu captions ONLY (they keep clip selection); deep-talks style LOCKED in presets/instagram/affanwizu/, white style pending, transcribe.sh --lang ur
+- [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu reels; yellow style LOCKED in presets/instagram/affanwizu/; every caption job runs codeswitch_pass.py + must PASS caption_qa.py (since 2026-10-01)
 - [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on a timeline they edited is a DECISION; export an FCP XML before any batch property change
 - [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — any web-sourced picture is checked at full size and enhanced in Higgsfield if soft, before it touches the timeline
 - [Editable captions in Premiere](feedback-editable-captions-in-premiere.md) — @affanwizu captions ship as an editable .srt caption track + saved Track Style, never a rendered .mov

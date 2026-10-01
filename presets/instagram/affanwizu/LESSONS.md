@@ -3,6 +3,41 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-01: learning pass on four finished reels (Khayal, balcony, BELIEVE, UNi; 211 lines)
+
+The creator's brief: *"you translate the English bit into Urdu"*, *"learn how I do captions"*, *"some caption
+layer is extended too long while the next speaking bit has started"*. All 211 of their lines are now ground truth
+with frame-exact timing in [`reference/`](reference/README.md), pulled from the exports by `extract_captions.py`.
+
+1. **The timing rule was never the problem.** On Khayal (= my Seq 15) they kept the switch time of all 52 lines
+   they didn't reword, every one within a frame. On their own reels the switches sit within ±0.1 s of WhisperX's
+   first-word start. → rule confirmed, nothing changed → `deep-talks-style.md` § Timing.
+2. **"Hanging" captions are dropped speech.** Whisper drops a stretch, so the line before it holds over words it
+   doesn't show: Seq 15 `aye age ni` held 5.1 s over four lines. Their own lines never carry more than 0.78 s of
+   speech per word. → `caption_qa.py` measures speech with Silero (independent of Whisper) and FAILS a line over
+   0.45 s × words + 0.6 s, and any speech with no caption (in a gap, before the first line, after the last).
+   Zero false alarms on their 211 lines. On my shipped work it found Seq 15 `aye age ni`; Seq 11 "founder explains
+   the science of perfumes in an entertaining way" (missing); Seq 17 "2 million followers", "she is the
+   attraction, right? she is the marketing" and **the whole closing sentence**, which I had placed 3.7 s early.
+3. **English: Whisper keeps his nouns (spelled phonetically) but TRANSLATES or DROPS his connector phrases.**
+   doesn't mean → ایسا, it's just that → ایسی طرح (translated); most likely, but, as such (dropped). Quoted lines
+   ("aby yar mukao ya isko") dropped whole; six `bohat` collapsed to three.
+   → `codeswitch_pass.py`: a second listener with a code-switched prompt on every ≤10 s chunk. Measured: 19/34
+   English test phrases kept in English vs 3/34 without a prompt. It also hallucinates (it pasted the prompt into
+   BELIEVE and UNi and skipped 8 s of Khayal), so it is never the transcript, only a check: `caption_qa.py` warns
+   on every English word it heard that the caption on screen doesn't show (leaked fragments filtered by p < 0.2 or
+   impossible durations). It flags my Seq 15 "it's just that" / "choose", stays quiet on their reels.
+4. **Their spelling, counted on their own typing** (→ the 🔒 table in `roman-urdu.md`, `caption_qa.py --fix`):
+   joined `aapko aapke aapne isme jisme iska usne` (split forms: 0), `or` never `aur`, `kia` for what/did, `lye`,
+   `chahye`, `hazar`, `lac`, digits for every number, curly apostrophes in English contractions, quotes around
+   quoted speech (one pair per line) and around a weighted English word (`aap “destined” hain`).
+5. **Phrasing:** median 4 words (BELIEVE 3), max 6, a line on screen a median 0.9 s. They break at the breath even
+   when it strands `aap` at a line end.
+6. **Builder bug fixed:** a last line keyed by `@<sec>` past the transcript's end got an end time BEFORE its start
+   (Seq 17 v2). It now holds to the end of the cut, as all four reference reels do → `build.py`.
+
+**Seq 17 re-delivered as v2** with all of the above (176 cues; v1 kept as `seq17-short.v1.srt`).
+
 ## 2026-09-30: WhisperX drops speech silently (ABW8 · Sequence 17, 169 lines)
 
 Two lessons, both now hard gates in `PLAYBOOK.md` § 2:

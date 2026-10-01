@@ -41,6 +41,15 @@ procedure in [PLAYBOOK.md](PLAYBOOK.md).
   outranked Alex in the wide, so the top-most-face rule pivoted both wides at y200, pushing in toward the painting.
   `zoom_pass.py` now reads `<work>/centers.override.json` ([{start, center_y, why}]); the plan prints MANUAL.
   Preview every pivot that lands on y200: it is either a face at the very top or not a person.
+- **The face check only guards the TOP edge; a deep push can cut a face off the SIDE** (comp 34, 2026-09-30): in a
+  4.5 s block the camera follows Nick right, and at 0.70 about x540 half his face left the frame at the block's end.
+  The override now takes `center_x`; x1000 kept him whole in all 8 full-depth samples. In the preview, check faces
+  near the left/right edges too, not just the red line.
+- **Who says what in crosstalk: compare voices WITHIN the recording** (Seq 19 captions, 2026-09-30). A studio
+  reference of Nick (Olympia TV) against the press-conference PA mic scored everything near 0 (room + mic mismatch);
+  pyannote `wespeaker-voxceleb-resnet34-LM` embeddings of the press-conference lines against each other split two
+  voices cleanly (0.4-1.0 vs 0.0-0.1), anchored on a line whose speaker is certain from the content. It reversed my
+  text-only reading of who said "I still don't know who you are". Runs in the whisperx venv, no token needed.
 - **The head tracker sampled the wrong frames.** `-ss in` + `fps=60` drops the frame straddling the in-point and
   takes the NEAREST source frame, while AE shows the frame at or before; at 23.976 the track ran up to a frame ahead
   of the picture and read the next shot's face on a clip's last frame. `head_track.py` now decodes with real

@@ -79,7 +79,7 @@ def main(srcmap, comp_name, work):
         for c in json.load(open(cp, encoding='utf-8')):
             cents.setdefault(c['id'], []).append(c)
 
-    # <work>/centers.override.json: [{"start": <block start s>, "center_y": <px>, "why": "..."}] for a block
+    # <work>/centers.override.json: [{"start": <block start s>, "center_y": <px>, "center_x": <px, optional>, "why": ...}]:
     # whose "face" is not a person (a portrait painting on the podcast wall pulled a wide to y200).
     op = os.path.join(work, 'centers.override.json')
     overrides = json.load(open(op, encoding='utf-8')) if os.path.exists(op) else []
@@ -88,7 +88,8 @@ def main(srcmap, comp_name, work):
         c = min(cents[s['id']], key=lambda c: c['center'][1])      # lower y = pivot = more protective
         o = [x for x in overrides if abs(x['start'] - s['start']) < 0.02]
         if o:
-            c = {'center': [540.0, float(o[0]['center_y'])], 'why': 'MANUAL: ' + o[0].get('why', 'override')}
+            c = {'center': [float(o[0].get('center_x', 540.0)), float(o[0]['center_y'])],
+                 'why': 'MANUAL: ' + o[0].get('why', 'override')}
         z0, z1 = (s['z_deep'], 1.0) if s['dir'] == 'out' else (1.0, s['z_deep'])
         lines.append('\t'.join(str(v) for v in [s['id'], '%.4f' % s['start'], '%.4f' % s['end'], s['dir'],
                                                 '%.3f' % z0, '%.3f' % z1, '%.1f' % c['center'][0], '%.1f' % c['center'][1]]))
