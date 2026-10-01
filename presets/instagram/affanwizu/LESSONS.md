@@ -3,6 +3,14 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-02: the misplaced ending repeated (ABW8 · Sequence 20)
+
+Second reel in a row (after Seq 17) where WhisperX dropped the second-last sentence and placed the last one 3.5 s
+early: `words.json` ended at 30.9 s, the cut at 34.8 s, and the tail measured −23.4 dB (speech). Caught by Gate B;
+`caption_qa.py` would also have failed it (UNCAPTIONED after the last caption). A repeat → now a PLAYBOOK rule
+(§ 2 Gate B: when the last word ends > 1 s before the sequence end, re-decode the final 6–10 s and time the
+closing lines from it).
+
 ## 2026-10-01: learning pass on four finished reels (Khayal, balcony, BELIEVE, UNi; 211 lines)
 
 The creator's brief: *"you translate the English bit into Urdu"*, *"learn how I do captions"*, *"some caption
