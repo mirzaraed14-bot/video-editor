@@ -3,6 +3,16 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-04: Seq 25 + Seq 26 — the stand-in list grows, and a loop precedes a drop
+
+- **Seq 25:** "especially pakistan mai" came back as خاص طور پر; the CONNECTOR warning found it on the first try.
+- **Seq 26:** the Urdu pass LOOPED ("edit karta tha iske liye" ×3) and then dropped 5.6 s of speech; four English
+  phrases were translated: "the reason … is because" → اس کی وجہ ہے کہ, "but" → لیکن, "no offense to editors, it's
+  just that" → ایڈیٹروں کو کوئی فرق نہیں …, "and that's a fact" → اور یہ ایک حقیقت ہے.
+  → `caption_qa.py` now warns on a LOOP (same three words 3+ times within 15 words: zero hits on the four reference
+  reels) and knows وجہ / فرق نہیں / حقیقت as stand-ins. Loops came before missing speech on Seq 11 and Seq 26:
+  whenever one fires, re-decode the loop plus the next few seconds wide.
+
 ## 2026-10-02: the misplaced ending repeated (ABW8 · Sequence 20)
 
 Second reel in a row (after Seq 17) where WhisperX dropped the second-last sentence and placed the last one 3.5 s

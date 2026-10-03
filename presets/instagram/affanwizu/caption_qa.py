@@ -18,6 +18,8 @@ reference/*.captions.json). Checks, in order of how badly they hurt a reel:
   WARN  ENGLISH         an English word the code-switch pass heard (transcript/codeswitch.json, from
                          codeswitch_pass.py) that the caption on screen at that moment doesn't show:
                          the Urdu pass translated or dropped it. Caption what he SAID.
+  WARN  loop            the same three words 3+ times within 15 words of the transcript: Whisper looping,
+                         and real speech is usually missing right after it (Seq 11, Seq 26).
   WARN  long word        one transcript word > 0.9 s: a merged repeat or a translated phrase.
   WARN  spelling        a split or formal form the creator never types (SPELLING below, counted on
                          their own 142 lines: "aap ko" 0 vs "aapko" 5, "aur" 0 vs "or" 6 ...).
@@ -62,6 +64,7 @@ CONNECTORS = {   # Whisper's Urdu stand-in → what the creator actually says (s
     "ایسا": "doesn't mean / it's not like", "ایسی طرح": "it's just that", "اسی طرح": "it's just that / etc",
     "خاص طور": "especially", "خاص کر": "especially", "شاید": "most likely / maybe", "لیکن": "but",
     "یقین": "believe me", "ویسے": "by the way", "بہرحال": "anyway", "مثال کے طور": "for example",
+    "وجہ": "the reason … is because", "فرق نہیں": "no offense", "حقیقت": "that's a fact",   # Seq 26
 }
 
 def spoken_words(txt):
@@ -170,6 +173,13 @@ def main():
                 if tok == k or two.startswith(k + " ") or two == k:
                     warns.append(f"{w['start']:7.2f}  CONNECTOR  Whisper wrote '{k}': he often says \"{eng}\" here. Listen.")
                     break
+            tri = [x.get("w", x.get("word", "")) for x in ws[i:i + 3]]
+            if len(tri) == 3 and (i == 0 or [x.get("w", x.get("word", "")) for x in ws[i - 1:i + 2]] != tri):
+                win = [x.get("w", x.get("word", "")) for x in ws[i:i + 15]]
+                hits = sum(win[k:k + 3] == tri for k in range(len(win) - 2))
+                if hits >= 3:
+                    warns.append(f"{w['start']:7.2f}  LOOP  '{' '.join(tri)}' x{hits} within 15 words: Whisper looping; "
+                                 f"re-decode {w['start'] - 1:.1f}-{ws[min(i + 15, len(ws) - 1)]['end'] + 4:.1f}s wide")
             if w["end"] - w["start"] > 0.9:
                 warns.append(f"{w['start']:7.2f}  LONG WORD  '{tok}' {w['end'] - w['start']:.2f}s: a merged repeat or a translated phrase")
     cs = os.path.join(job, "transcript", "codeswitch.json")
