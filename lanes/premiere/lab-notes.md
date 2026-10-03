@@ -399,3 +399,35 @@ Always check the EDL bash can actually see before re-splicing.
 - **An audio clip's timeline START is not floored to 29.97** (the 2026-09-13 flooring hits a slice's source in/out):
   44 pops placed on odd 59.94 frames, bounced A3-only (`Wave48mono24.epr`, other tracks `setMute(1)` then
   `setMute(0)`), every onset exactly on plan (3.8 ms late = the file's own transient offset).
+
+## 2026-10-03 — inserting clips between butt-joined blocks (nick-walker-never-mr-olympia, Sequence 24)
+
+- **An overwrite whose source out-point rounds past the slot eats the next clip's HEAD.** A piece cut to a whole
+  number of 60 fps frames from a 23.976/24/29.97 source landed 1–2 frames long, overwrote the head of the host block
+  after it, and trimming the piece back (`clip.end = t`) left a 1–2 frame hole: the head is not restored. Lay the
+  piece ~20 ms SHORT (`setOutPoint(in + dur - 0.02)`), then extend its tail with `clip.end = at + dur`.
+- **`trackItem.start = t` repairs a trimmed head without moving the end** (start earlier, end unchanged, the source
+  in point extends): proven by rendering the block's first frame and matching it to camera frame 20124 (the
+  restored in), not 20125 (a slip). The DOM's `inPoint` reads STALE afterwards, exactly like `outPoint` after
+  `end =`; verify positions and lengths, or a rendered frame, never the in point.
+- **Opening a gap in butt-joined V1+A1 blocks:** `clip.move(delta)` per clip, latest first, V1 then A1, skipping an
+  A1 clip already carried by a linked move: 118 + 119 moves, every block exact. `overwriteClip` on V1 with an A/V
+  item lays its audio on A1 too.
+- **Speaker attribution by voiceprint works in the WhisperX venv:** `pyannote/wespeaker-voxceleb-resnet34-LM`
+  through `pyannote.audio` `Inference(window='whole')`, audio passed as an in-memory waveform (torchcodec is broken
+  on this box). Two references 8–10 s each separate cleanly (Bob vs Shawn −0.03); same speaker scores 0.6–0.8.
+  `resemblyzer` needs a C++ compiler on Windows (webrtcvad), so it does not install here.
+- **`face-nests.py` left a ZERO-length copy of the replaced clip at the run's edge** on a 60.00 fps sequence (14 of 25
+  runs, Sequence 24): the nest is overwritten at S + 1e-4 and the original survives as a 0-frame item. Invisible in
+  playback, but it is junk on the creator's timeline and breaks "the clip at time t" lookups. Fixed in the tool: right
+  after the overwrite it removes any sub-half-frame V1 item touching the run (no ripple) and reports `stubs`.
+- **A Premiere `exportAsMediaDirect` mp4 carries a stream GROUP, and `ffprobe -show_entries stream=... -of csv=p=0`
+  then prints the stream twice** ("1920,1080", blank, "1920,1080"): a `split(',')` parse dies. Read `-of json` and take
+  `streams[0]` (`overlays/card.py probe()`).
+- **`exportAsMediaDirect` can answer `bridge_unavailable` while Premiere goes on and writes the file** (a 4.4 s nest,
+  2026-10-03): watch the output file for a stable size, never re-fire the export.
+- **A dip's frames are judged at the PEAK, not one frame before it**: 97.9 % Black Video over a bright card still reads
+  mean 23 in the rendered PNG (the sequence composites non-linearly), while the 100 % key frame reads 0.00.
+- **Replacing every third-party clip with a rendered card, editably:** card on the track above at the same span, the V1
+  clip's `disabled = true` (video item only; its linked A1 item stays enabled, read back), the zoom as Motion > Scale
+  keys on the card. Undo for one clip = delete the card, re-enable the V1 video.

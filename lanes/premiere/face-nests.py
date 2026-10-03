@@ -92,6 +92,12 @@ APPLY = r"""(function(){
     if (app.project.activeSequence.sequenceID !== seq.sequenceID) app.project.openSequence(seq.sequenceID);
     nest = findNest(seq, NAME, S);
     if (!nest) return "ERROR: " + NAME + " did not land on V1 at " + S;
+    // the overwrite at S + NUDGE can leave the replaced clip behind as a ZERO-length item at the run's edge
+    // (2026-10-03, Sequence 24 at 60 fps: C1321.MP4 97.65-97.65 after Face nest 06): remove any sub-half-frame V1
+    // item touching the run, without ripple, so nothing else moves
+    var v1t = seq.videoTracks[0]; o.stubs = 0;
+    for (var i = v1t.clips.numItems - 1; i >= 0; i--) { var sc = v1t.clips[i];
+      if (sc.name !== NAME && sc.end.seconds - sc.start.seconds < F / 2 && sc.start.seconds >= S - F && sc.start.seconds <= E + F) { sc.remove(false, false); o.stubs++; } }
     o.made = true;
   }
   if (!sub) return "ERROR: nest on V1 but no subsequence named " + NAME;

@@ -36,6 +36,10 @@
             if (ly.name.indexOf("Comp 1") >= 0) continue;          // caption precomp
             if (ly instanceof TextLayer) continue;                  // creator's own annotations
             if (ly.name.indexOf("*") === 0) continue;
+            // only real footage/stills are blocks: a solid (the creator's "Black Solid 1" under the narrator, comp 39)
+            // or a pre-comp ("Pre-comp 1") read as a block once moved a cut onto the wrong frame (2026-10-02)
+            var src = ly.source;
+            if (!(src instanceof FootageItem) || (src.mainSource instanceof SolidSource)) continue;
             blocks.push({ idx: li, name: ly.name, label: ly.label, inP: ly.inPoint, outP: ly.outPoint });
         }
         blocks.sort(function (a, b) { return a.inP - b.inP; });

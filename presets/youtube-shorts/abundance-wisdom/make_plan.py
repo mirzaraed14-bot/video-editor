@@ -4,7 +4,7 @@
 Walks the transcript words in order, consuming them caption by caption, so every caption
 lands on the real word timings. Captions are wall-to-wall: each one ends where the next starts.
 
-usage: python make_plan.py <job_dir> [tail_seconds]
+usage: python make_plan.py <job_dir> [tail_seconds] [--hang <s>]
 """
 import json, os, re, sys
 from PIL import ImageFont
@@ -44,7 +44,7 @@ def width(font, words):
     return tot
 
 
-def main(job, tail=0.17):
+def main(job, tail=0.17, hang=None):
     txt = os.path.join(job, 'captions.txt')
     words = json.load(open(os.path.join(job, 'transcript', 'words.json'), encoding='utf-8'))['clips'][0]
     tw, dur = words['words'], words['duration']
@@ -74,6 +74,10 @@ def main(job, tail=0.17):
 
     for i, c in enumerate(caps):
         c['end'] = caps[i + 1]['start'] if i + 1 < len(caps) else min(dur, c['last_word_end'] + tail)
+        # --hang: over a long pause (music, a reaction shot) end 0.25 s after the last word instead of wall to
+        # wall (opt-in). Kanye's "then" would have held 7.5 s over the play-off music (Seq 23, 2026-10-02).
+        if hang is not None and c['end'] - c['last_word_end'] > hang:
+            c['end'] = c['last_word_end'] + 0.25
         del c['last_word_end']
         # merge adjacent words that share a colour so a phrase gets one gradient
         merged = []
@@ -109,4 +113,8 @@ def main(job, tail=0.17):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], float(sys.argv[2]) if len(sys.argv) > 2 else 0.17)
+    args = [a for a in sys.argv[1:]]
+    hang = None
+    if '--hang' in args:
+        k = args.index('--hang'); hang = float(args[k + 1]); del args[k:k + 2]
+    main(args[0], float(args[1]) if len(args) > 1 else 0.17, hang)

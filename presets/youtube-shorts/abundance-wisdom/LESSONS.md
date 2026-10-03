@@ -50,6 +50,18 @@ procedure in [PLAYBOOK.md](PLAYBOOK.md).
   pyannote `wespeaker-voxceleb-resnet34-LM` embeddings of the press-conference lines against each other split two
   voices cleanly (0.4-1.0 vs 0.0-0.1), anchored on a line whose speaker is certain from the content. It reversed my
   text-only reading of who said "I still don't know who you are". Runs in the whisperx venv, no token needed.
+- **Speech under music is where WhisperX drops words** (Seq 23, Kanye's play-off at the 2008 GRAMMYs): 12 s of his
+  protest were missing. Re-decode each A1 clip with ±2.5 s of source context (faster-whisper, no VAD) and keep the
+  words whose midpoint is inside the clip's in/out; a word straddling a seam is partly audible and stays, a word
+  that ends before the in-point goes (the leading "I"). `make_plan.py --hang 0.8` now keeps captions off a long
+  music stretch (opt-in; the default stays wall to wall). The narrator voice-over was captioned in italic.
+- **"No face" on a bowed head behind sunglasses means centre pivot, and the glasses get cut** (comp 39, a 0.70
+  pull-out): measure the face on the block's first frame (glasses top → chin) and pin its centre in
+  `centers.override.json`. Every "no face" block in the preview gets this look.
+- **The transition pass read a SOLID as a footage block** (comp 39, "Black Solid 1" 2.88–11.58 under the narrator): it
+  started with the next block, so that block's cut moved onto 2.88 (a doubled dip, none at 6.33). Blocks are now
+  only FootageItem layers that are not solids (precomps like "Pre-comp 1" are skipped too).
+  → `transition_pass.jsx.tmpl`. Read the transition log's "cut at" against the block list every run.
 - **The head tracker sampled the wrong frames.** `-ss in` + `fps=60` drops the frame straddling the in-point and
   takes the NEAREST source frame, while AE shows the frame at or before; at 23.976 the track ran up to a frame ahead
   of the picture and read the next shot's face on a clip's last frame. `head_track.py` now decodes with real
