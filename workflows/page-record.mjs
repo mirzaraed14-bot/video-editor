@@ -15,7 +15,9 @@
 //   --wait     ms after load before the take starts (fonts, lazy images)
 //   --hide     selectors to remove before the take (cookie bars, banners)
 //   --force    overwrite an existing output (default: refuse — a placed capture keeps its name)
-//   a .png output takes one still instead of a recording (--scroll then sets the scroll position first)
+//   a .png output takes one still instead of a recording (--scroll then sets the scroll position first);
+//   --full makes it a FULL-PAGE still (--full-screens N scrolls N screens first so lazy content loads), for a smooth pan
+//   over one tall image in the comp instead of a stuttery screencast scroll (Onyx QA, 2026-10-05)
 //
 // Output: a CONSTANT-rate H.264 mp4 (conformed by ffmpeg from Chrome's screencast webm) or a png,
 // at viewport x scale pixels. The comp frames and scales it (a screen-rec is a scene, never parked
@@ -39,6 +41,7 @@ const num = (k, d) => { const v = +opt(k, d); if (!Number.isFinite(v) || v < 0) 
 const SECS = num('--seconds', 6), SCROLL = num('--scroll', 0), DARK = args.includes('--dark'), FORCE = args.includes('--force');
 const W = num('--width', 1920), H = num('--height', 1080), SCALE = num('--scale', 2);
 const FPS = opt('--fps', '30000/1001'), WAIT = num('--wait', 1500), HIDE = opt('--hide', '');
+const FULL = args.includes('--full'), FULL_SCREENS = num('--full-screens', 3);   // .png only: a full-page still (lazy content loaded by scrolling N screens first)
 if (!/^\d+(\/\d+)?$/.test(FPS)) { console.error(`[page-record] --fps wants a rational like 30000/1001, got ${FPS}`); process.exit(2); }
 const out = resolve(outArg); const ext = out.toLowerCase().match(/\.(mp4|mov|png)$/)?.[1];
 if (!ext) { console.error('[page-record] output must end in .mp4, .mov or .png'); process.exit(2); }
@@ -95,7 +98,8 @@ try {
   if (still) {
     if (SCROLL > 0) { await page.evaluate(y => window.scrollTo(0, y), SCROLL); await new Promise(r => setTimeout(r, 300)); }
     await page.evaluate(() => document.getElementById('__hf_tick')?.remove());
-    await page.screenshot({ path: out });
+    if (FULL) await page.evaluate(async (n) => { for (let i = 0; i < n; i++) { window.scrollBy(0, window.innerHeight); await new Promise(r => setTimeout(r, 700)); } window.scrollTo(0, 0); await new Promise(r => setTimeout(r, 500)); }, FULL_SCREENS);
+    await page.screenshot({ path: out, fullPage: FULL });
   } else {
     const webm = out.replace(/\.(mp4|mov)$/i, '') + '.rec.webm';
     try {

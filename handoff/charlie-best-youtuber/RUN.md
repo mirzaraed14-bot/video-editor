@@ -20,7 +20,7 @@ Media = `raw/charlie-best-youtuber-synced.mov` on X: (bin `AffanWiz - charlie-be
 in build-cuts.py), mechanical (6 edges), a main-session LEAK SWEEP (13 OUTs that ran into a killed word, e.g.
 "…like a human. But"), dead-air gate green. Creator's hand pass done by the creator (final cut + music bed on A2, 2026-09-28). **MUSIC DROP-OUTS DONE, SAVED
 (2026-09-28):** the music is lifted under every punch-in (V1 Scale 127): 37 punch-ins → 34 drops, 58.8 s, A2 4 → 37
-clips, every edge within 0.3 ms, levels −15 dB kept, V1 + A1 identical before/after. Undo: `music/A2-before-dropouts.json`
+clips, every edge within 0.3 ms, clip levels kept (0 dB: the DOM's 0.1778), V1 + A1 identical before/after. Undo: `music/A2-before-dropouts.json`
 + `premiere-backup/ABW8-before-music-dropouts.prproj`; tool `music/dropouts.jsx.tmpl`. Hard cuts; 1–2 frame fades
 offered if they click. NEXT: overlays to README § 1a on the creator's word.
 

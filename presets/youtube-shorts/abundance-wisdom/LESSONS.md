@@ -3,6 +3,54 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-05 — zoom pass on ABW8 Linked Comp 46 (Nick Walker parents, 19 blocks, ABW9.aep)
+
+- **Two-shot reaction blocks need a SIDE pivot, decided per block from the full frames:** a pull-out's deepest
+  frame is its FIRST (block 5: Nick at x 0.02–0.20 → pivot x100), a push-in's is its LAST. Remember the region a
+  pivot keeps is NOT centred on it: at depth Z the source x range is `[c(1−Z), c + (1080−c)Z]`, so to keep
+  x0..x0+1080·Z the pivot is `c = x0 / (1 − Z)` (block 17: keep 0.10–0.80 at Z 0.70 → c = 360).
+- **Two faces wider apart than the crop:** keep the one whose face is whole-able (mom, crying) and the other's
+  profile front (eyes + nose); never split both faces down the middle. Said in the report.
+
+## 2026-10-04 — the creator's recut of Sequence 28: head lock (ABW9 comps 40–44) + captions
+
+- **The creator recut after the sequencing:** beat 5 came BACK ("My parents have been with me…", plus "Second year in
+  a row, I'm gonna miss the Olympia" from `'24 Olympia Announcement.mp4`), the reaction tail went, finals footage
+  became picture under the VO, and cutaways of his MOM and DAD (listening) were framed from the interview. Comps and
+  the sequence were READ, never assumed from the sequencing plan.
+- **Head lock in `ABW9.aep` (new project file), 17 of 17 layers locked, incl. the parents' listening cutaways** (a face
+  in footage the creator framed; the "speaking shots only" rule is about overlays and stills). The 4K interview at
+  Scale 100 / 156 is a zoom-in, not letterboxed: locked like the rest. Proof from AE's read-back keys: worst drift
+  0.023 px. Profile shots: the YuNet nose dot sits just past the tip, a constant offset that does not hurt the lock.
+- **Captions with an AI voice-over on A2:** `sequence-captions.py read` mixed A1 only, so the narrator would have
+  had no captions. → `--voice A1,A2` (PLAYBOOK § 4). Narrator italic (as Seq 23); Greg Doucette's quoted insult
+  upright like the commentators, split from the narrator's "being called a" at the speaker change.
+- **A word the two decoders disagree on ("Everyone says/said"):** a beam-5 context re-decode + the creator's own script
+  decide; the fix goes in words.json `_fixes`.
+
+## 2026-10-04 — fifth sequencing job (ABW8 · Sequence 28, `projects/nick-walker-parents`)
+
+- **The AI voice-over can already be ON the sequence (A2, ElevenLabs, cut in pieces) and "re-sequence the VO to the
+  script" means: hold each VO line's slot as a placeholder beat of EXACTLY its pieces' length, then shift the later
+  pieces by the clips placed before them** (`trackItem.move(seconds)`, relative, last piece first so nothing overlaps;
+  in/out kept). → `place_sequence.py` now only refuses when the tracks it lays onto (V1/A1, +V2/A2 with covers) hold
+  clips, and proves the creator's other clips untouched after (PLAYBOOK § 0).
+- **"Put all the source material in the new bin":** every source is laid from the job's bin. A file that already sits
+  in an older job's bin is imported AGAIN into this bin (same file on disk, no second download) and that item is laid,
+  so the older bins stay as they were. → `place_sequence.py`.
+- **Check the disk before downloading.** Of three YouTube sources, two were already local (matched by yt-dlp title +
+  duration without downloading); one of the local finals had a second copy in another job's broll — the one the
+  project already used was taken.
+- **"Let the reaction play, cut before the interviewer"** = an untouched segment (`tighten: false`) anchored on the
+  last spoken words with a measured `in`, split for framing where the subject changes (dad's hug, then mom's) — the
+  speech before it stays tightened as its own segment.
+- **Beat 5 "drop first if over 58 s"**: dropped (53.3 s without, ~62 s with) and kept under `beats.json` `_dropped`
+  with its anchors, plus a note on the B4 marker.
+- **A ranged marker (BLEEP over a swear):** `marker.end = <seconds number>` works; assigning a `Time` object fails
+  the whole evalScript AFTER `createMarker` already ran (a duplicate marker was left; deleted). → lanes/premiere/lab-notes.md.
+- **`placeholder_note`** on a placeholder beat now becomes its marker comment (was a hard-coded "arrest footage" note
+  from an earlier job).
+
 ## 2026-09-29 — fourth sequencing job (ABW8 · Sequence 14, `projects/paris-jackson-masks`)
 
 - **"Open on her face while she listens" when the source never shows her listening → a V2 cover.** The CHD question

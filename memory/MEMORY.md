@@ -11,6 +11,8 @@
 - [YouTube sourcing](feedback-youtube-sourcing.md) — the b-roll gets fetched here rather than handed over; force H.264 because Premiere cannot read AV1
 - [Walkthrough videos](feedback-walkthrough-videos.md) — per-video Tella/Loom brief: transcribe the audio, sample the frames they point at, resolve it into the job's BRIEF.md
 - [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
-- [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); its OWN preset folder presets/youtube/affanwiz/, never mixed with Afterhours or @affanwizu
+- [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); its OWN preset folder presets/youtube/affanwiz/, never mixed with Afterhours or @affanwizu; from 2026-10-04 the look is its STYLE.md (ported Game Informer style)
 - [Workspace on the X: NVMe](project-workspace-on-nvme.md) — since 2026-09-26 everything lives at X:\Claude Projects; E:\Claude Projects becomes a junction via move-to-nvme.cmd (run with Premiere + Claude closed), never just deleted
 - [Abundance Wisdom long-form](project-abundance-wisdom-longform.md) — Nick Walker long-form on ABW8 Sequence 24; the creator's standing overlay look (90 % gold-matte cards, nested host zooms); voiceprint every attributed quote
+- [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + Affan's reaction video for podcast outreach; the prospect's priority platform picks the look: Instagram = minimal motion graphics (onyx-samples/, pilot mfm-nursery-rhymes), YouTube = B-roll storytelling (onyx-samples-youtube/); fully automatic MP4
+- [Topaz Video AI](reference-topaz-video-ai.md) — Affan's Video AI 5.0.4 is scriptable (its own ffmpeg, tvai_* filters); his Iris recipe = workflows/topaz-iris.py; use --segments at every cut

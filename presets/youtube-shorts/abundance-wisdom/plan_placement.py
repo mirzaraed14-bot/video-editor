@@ -89,7 +89,7 @@ def main(job, splits):
             if e.get('drop_candidate'):
                 notes.append('DROP CANDIDATE #%d' % e['drop_candidate'])
             if e.get('placeholder'):
-                notes.append('SOURCE MISSING — arrest footage is not in the bin. %.1fs slot held.' % (e['tl_out'] - e['tl_in']))
+                notes.append(e.get('placeholder_note') or 'SOURCE MISSING: not in the bin. %.1fs slot held.' % (e['tl_out'] - e['tl_in']))
             markers.append({'t': e['tl_in'], 'name': m, 'comment': ' | '.join(notes)})
         if e.get('placeholder'):
             continue

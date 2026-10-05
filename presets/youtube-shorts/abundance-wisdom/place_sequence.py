@@ -8,7 +8,10 @@ rows after it (a camera cut inside one continuous source) are laid as ONE clip a
 each join, so the audio stays continuous. 'track': 2 rows (covers) go on V2, picture only: their
 linked audio is removed. Afterwards the project items' in/out marks are cleared again and one
 sequence marker per beat is written.
-Refuses to run on a sequence that already has clips — it never overwrites the creator's work.
+Refuses to run when the tracks it lays onto (V1/A1, plus V2/A2 with covers) already hold clips — it never
+overwrites the creator's work; their clips on other tracks are kept and verified untouched afterwards.
+
+Every source is laid from the job's bin (<bin name>, which must exist): a file not yet in it is imported there.
 
 usage: python place_sequence.py <job_dir> <sequence name> <bin name> <out.jsx> [extra_import_path ...]
 """
@@ -54,21 +57,47 @@ try {
   var seq = null;
   for (var s = 0; s < app.project.sequences.numSequences; s++) if (app.project.sequences[s].name === SEQ) seq = app.project.sequences[s];
   if (!seq) return "sequence not found: " + SEQ;
-  var existing = 0;
-  for (var t = 0; t < seq.videoTracks.numTracks; t++) existing += seq.videoTracks[t].clips.numItems;
-  for (var a = 0; a < seq.audioTracks.numTracks; a++) existing += seq.audioTracks[a].clips.numItems;
-  if (existing > 0) return "REFUSED: " + SEQ + " already has " + existing + " clip(s)";
+  // only the tracks this lays onto must be empty (V1/A1, plus V2/A2 with covers): the creator's own
+  // clips elsewhere (an AI voice-over already on A2, Sequence 28) are kept and counted back after
+  var hasCov = false;
+  for (var r0 = 0; r0 < ROWS.length; r0++) if (ROWS[r0][9] === 2) hasCov = true;
+  var existing = 0, kept = [];
+  for (var t = 0; t < seq.videoTracks.numTracks; t++) {
+    var nv = seq.videoTracks[t].clips.numItems;
+    if (t === 0 || (hasCov && t === 1)) existing += nv; else if (nv) kept.push("V" + (t + 1) + ":" + nv);
+  }
+  for (var a = 0; a < seq.audioTracks.numTracks; a++) {
+    var na = seq.audioTracks[a].clips.numItems;
+    if (a === 0 || (hasCov && a === 1)) existing += na; else if (na) kept.push("A" + (a + 1) + ":" + na);
+  }
+  if (existing > 0) return "REFUSED: " + SEQ + " already has " + existing + " clip(s) on the tracks it lays onto";
+  function snapKept() {
+    var o = [];
+    for (var t1 = 0; t1 < seq.videoTracks.numTracks; t1++) if (!(t1 === 0 || (hasCov && t1 === 1)))
+      for (var c = 0; c < seq.videoTracks[t1].clips.numItems; c++) { var k = seq.videoTracks[t1].clips[c]; o.push("V" + (t1 + 1) + k.start.seconds.toFixed(4) + k.end.seconds.toFixed(4) + k.inPoint.seconds.toFixed(4)); }
+    for (var a1 = 0; a1 < seq.audioTracks.numTracks; a1++) if (!(a1 === 0 || (hasCov && a1 === 1)))
+      for (var c2 = 0; c2 < seq.audioTracks[a1].clips.numItems; c2++) { var k2 = seq.audioTracks[a1].clips[c2]; o.push("A" + (a1 + 1) + k2.start.seconds.toFixed(4) + k2.end.seconds.toFixed(4) + k2.inPoint.seconds.toFixed(4)); }
+    return o.join("|");
+  }
+  var keptBefore = snapKept();
+  if (kept.length) log.push("kept the creator's clips on " + kept.join(" "));
   app.project.openSequence(seq.sequenceID);
   app.project.activeSequence = seq;
 
-  var bin = findBin(app.project.rootItem, BIN) || app.project.rootItem;
-  index(app.project.rootItem);
-  for (var m = 0; m < IMPORTS.length; m++) {
-    if (!items[norm(IMPORTS[m])]) {
-      log.push("import " + IMPORTS[m].split(sep).pop() + ": " + app.project.importFiles([IMPORTS[m]], true, bin, false));
-    }
+  // every source of the job lives in the job's bin (the creator's ask, Sequence 28): a file already in
+  // another bin is imported again INTO this bin (same file on disk, no second copy) and the bin's item
+  // is the one laid, so the older bins stay as they were
+  var bin = findBin(app.project.rootItem, BIN);
+  if (!bin) return "REFUSED: bin not found: " + BIN;
+  index(bin);
+  var srcs = {};
+  for (var r1 = 0; r1 < ROWS.length; r1++) srcs[ROWS[r1][0]] = true;
+  for (var m = 0; m < IMPORTS.length; m++) srcs[IMPORTS[m]] = true;
+  for (var sp in srcs) {
+    if (!items[norm(sp)]) log.push("import into " + BIN + ": " + sp.split(sep).pop() + " " + app.project.importFiles([sp], true, bin, false));
   }
-  index(app.project.rootItem);
+  items = {};
+  index(bin);
 
   var vt = seq.videoTracks[0], at = seq.audioTracks[0];
   function mkTime(sec) { var x = new Time(); x.seconds = sec; return x; }
@@ -198,6 +227,7 @@ try {
   log.push("V1 clips " + vt.clips.numItems + " | A1 clips " + ac + " | markers " + MARKS.length
            + (covers.length ? " | V2 clips " + seq.videoTracks[1].clips.numItems + " | A2 clips " + seq.audioTracks[1].clips.numItems : ""));
   log.push("V1 spans: " + vc.join(" "));
+  if (kept.length) log.push(snapKept() === keptBefore ? "creator's clips untouched: VERIFIED" : "WARNING the creator's clips CHANGED: undo this");
 } catch (err) { log.push("ERROR " + err.toString() + (err.line ? " line " + err.line : "")); }
 return log.join("\n");
 })()''' % (js(seq_name), js(bin_name), js(rows), js(marks), js(imports))

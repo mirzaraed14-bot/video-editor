@@ -431,3 +431,18 @@ Always check the EDL bash can actually see before re-splicing.
 - **Replacing every third-party clip with a rendered card, editably:** card on the track above at the same span, the V1
   clip's `disabled = true` (video item only; its linked A1 item stays enabled, read back), the zoom as Motion > Scale
   keys on the card. Undo for one clip = delete the card, re-enable the V1 video.
+
+- **2026-10-04 · `in` is a reserved word in ExtendScript (ES3): `{in: x}` as an object key kills the whole script**
+  with the bridge's generic "ExtendScript execution failed via CEP evalScript()" — a syntax error, not a host failure.
+  Same for `class`, `default`, `new` etc. as bare keys: rename (`ip:`) or quote them.
+- **2026-10-04 · reading another sequence needs no activation**: find it in `app.project.sequences` by name and read
+  its tracks; nests resolve through `clip.projectItem.isSequence()` + `projectItem.nodeId`. Only QE razors need the
+  sequence ACTIVE; `lanes/premiere/music-dropouts.py` opens it for the edit and puts the creator's view back.
+- **2026-10-04 · `exportAsMediaDirect` paths through `execute_extendscript` (Python subprocess + `json.dumps`) take TWO
+  backslashes in the script source, not four.** Four reach ExtendScript as doubled separators; `File` still resolves
+  them, but the exporter answers "Error: Unknown Error" and writes nothing. Two give single separators and the PNG
+  frame proof works (`projects/kick-fake-viewers/review/tools/proof-frames.py`; output is `<name>0` with NO extension,
+  rename to .png). The four-backslash note above was for a different call path: test with `new File(p).fsName`.
+- **2026-10-04 · a file whose extension lies blocks the bridge**: a CDN image saved as `.png` was a JPEG, `importFiles`
+  opened a File Import Failure modal, and the bridge reported "not running". Check magic bytes before importing.
+- **A ranged sequence marker takes `marker.end = <seconds as a number>` (2026-10-04, nick-walker-parents).** Assigning a `Time` object fails the whole `evalScript` with no message, AFTER `createMarker` already ran, so a retry leaves a duplicate marker: find markers by name first, delete extras, then set `end` as a number.

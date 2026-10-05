@@ -1,0 +1,12 @@
+# style report — game-informer (6:22.20)
+
+- **visible changes: 25.6/min** = hard cuts 13.5/min + zoom steps 1.7/min + reframes 10.7/min
+- **zoom steps (in):** 11 · median x1.113 · median hold 1.6 s · 0 coincide with a hard cut · out-steps 10
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 1066, '1.2-1.4': 129, '1.4-1.6': 41, '1.6-1.8': 9, '1.8-2.0': 0, '2.0-2.2': 4, '2.2-2.4': 0} · typical tightest level x1.26
+- **gradual push:** 0.62 %/s · typical tightest level over a matched run x1.078 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 0
+- **face:** 77 % in 25 runs, median 10.6 s, longest 30.0 s
+- **overlay runs:** 25 = 3.9/min · median 3.6 s · 23 video / 2 still · 26 cuts inside them · longest without the face 7.4 s
+- **speech:** 196.5 words/min over the whole runtime · pauses >= 0.3 s: 46 · >= 1 s: 2
+- **slowed stretches (word rate + duplicate frames):** 4
+   [set signature from 1388 samples; 32 detected faces rejected as off-set, 37 on-set samples without a detection counted as the creator]

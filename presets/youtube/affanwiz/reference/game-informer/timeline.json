@@ -1,0 +1,3377 @@
+{
+"source": "ABW8.prproj / Sequence 16, read live 2026-10-04 (read-only); = the published master Weather GTA.mov (382.2 s)",
+"note": "Volume Level is the Premiere DOM value: 0.1778 = 0 dB, 0.0891 = -6 dB (v = 10^((dB-15)/20)). Nest pushes are keyed on the nest clip (seconds = nest-local); raw-clip pushes are keyed in SOURCE seconds.",
+"tracks": {
+"video": [
+[
+"Video 1",
+46,
+false
+],
+[
+"Video 2",
+43,
+false
+],
+[
+"Video 3",
+24,
+false
+],
+[
+"Video 4",
+24,
+false
+]
+],
+"audio": [
+[
+"Audio 1",
+140,
+false
+],
+[
+"Audio 2",
+26,
+false
+],
+[
+"Audio 3",
+44,
+false
+],
+[
+"Audio 4",
+0,
+false
+]
+]
+},
+"video": [
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 3.2032,
+"end": 6.1228,
+"Position": {
+"keys": [
+[
+74.8581,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+74.8581,
+100
+],
+[
+77.7777,
+105
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 57",
+"start": 7.7244,
+"end": 20.5372,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+12.8128,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 27.7611,
+"end": 31.4981,
+"Position": {
+"keys": [
+[
+140.0399,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+140.0399,
+100
+],
+[
+143.777,
+105
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 58",
+"start": 38.6386,
+"end": 44.1942,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+5.5556,
+105
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 59",
+"start": 50.5171,
+"end": 53.687,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+3.1698,
+105
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 60",
+"start": 57.741,
+"end": 69.0356,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+11.2946,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 61",
+"start": 72.1888,
+"end": 82.8828,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+10.694,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 62",
+"start": 85.8191,
+"end": 94.1107,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+8.2916,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 63",
+"start": 100.05,
+"end": 121.2545,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+24.0073,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 63",
+"start": 121.2545,
+"end": 124.0573,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+21.2045,
+100
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 126.9935,
+"end": 128.8788,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 128.8788,
+"end": 131.0976,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 110
+},
+{
+"t": 1,
+"name": "Nested Sequence 64",
+"start": 136.4863,
+"end": 154.0706,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+17.5842,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 157.3405,
+"end": 161.5948,
+"Position": {
+"keys": [
+[
+446.0122,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+446.0122,
+100
+],
+[
+450.2665,
+105
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 164.848,
+"end": 166.9835,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 171.7883,
+"end": 176.5597,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 176.5597,
+"end": 180.7973,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 124
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 180.7973,
+"end": 181.7482,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "Nested Sequence 65",
+"start": 183.3165,
+"end": 198.2481,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+14.9316,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 66",
+"start": 200.4169,
+"end": 211.2444,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+10.8275,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 215.4986,
+"end": 217.4172,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 217.4172,
+"end": 218.6851,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 135
+},
+{
+"t": 1,
+"name": "Nested Sequence 67",
+"start": 218.6851,
+"end": 229.7128,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+11.0277,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 229.7128,
+"end": 231.181,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 231.181,
+"end": 232.182,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 105
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 232.182,
+"end": 237.8209,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 237.8209,
+"end": 239.2724,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 239.2724,
+"end": 240.3735,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 240.3735,
+"end": 245.0114,
+"Position": {
+"keys": [
+[
+597.7138,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+597.7138,
+100
+],
+[
+602.3518,
+105
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 68",
+"start": 248.4816,
+"end": 257.1069,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+8.6253,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 257.1069,
+"end": 259.0755,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 259.0755,
+"end": 259.943,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 139
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 259.943,
+"end": 261.8282,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 261.8282,
+"end": 262.2453,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "Nested Sequence 69",
+"start": 262.2453,
+"end": 278.3781,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+16.1328,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 282.916,
+"end": 287.5372,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 287.5372,
+"end": 288.972,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 288.972,
+"end": 290.1399,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 115
+},
+{
+"t": 1,
+"name": "Nested Sequence 70",
+"start": 296.1625,
+"end": 308.8419,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+12.6793,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 312.1452,
+"end": 313.7301,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 313.7301,
+"end": 314.9313,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 121
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 321.2042,
+"end": 326.5596,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 1,
+"name": "gta6-hurricanes-synced.mov",
+"start": 326.5596,
+"end": 329.6627,
+"Position": [
+0.4349,
+0.5
+],
+"Scale": 149
+},
+{
+"t": 1,
+"name": "Nested Sequence 71",
+"start": 329.6627,
+"end": 344.4775,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+14.8148,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 72",
+"start": 347.9142,
+"end": 361.5278,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+13.6136,
+110
+]
+]
+}
+},
+{
+"t": 1,
+"name": "Nested Sequence 73",
+"start": 369.052,
+"end": 382.1985,
+"Position": {
+"keys": [
+[
+0,
+[
+0.5,
+0.5
+]
+]
+]
+},
+"Scale": {
+"keys": [
+[
+0,
+100
+],
+[
+13.1465,
+110
+]
+]
+}
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 0,
+"end": 3.2032,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 6.1228,
+"end": 7.7244,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 20.5372,
+"end": 21.5549,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 21.5549,
+"end": 23.5736,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 23.5736,
+"end": 24.5412,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 24.5412,
+"end": 25.5422,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 25.5422,
+"end": 26.6933,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 26.6933,
+"end": 27.7611,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 31.4981,
+"end": 38.6386,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 44.1942,
+"end": 50.5171,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 53.687,
+"end": 55.9726,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 55.9726,
+"end": 57.741,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 69.0356,
+"end": 70.8708,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 70.8708,
+"end": 72.1888,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 82.8828,
+"end": 84.5345,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 84.5345,
+"end": 85.8191,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 94.1107,
+"end": 94.9782,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 94.9782,
+"end": 96.9802,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 96.9802,
+"end": 97.8144,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 97.8144,
+"end": 100.05,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 124.0573,
+"end": 126.9935,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 131.0976,
+"end": 136.4863,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 154.0706,
+"end": 157.3405,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 161.5948,
+"end": 164.848,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 166.9835,
+"end": 168.4183,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 168.4183,
+"end": 171.7883,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 181.7482,
+"end": 183.3165,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 198.2481,
+"end": 200.4169,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 211.2444,
+"end": 212.9127,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 212.9127,
+"end": 215.4986,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 245.0114,
+"end": 246.5296,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 246.5296,
+"end": 248.4816,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 278.3781,
+"end": 282.916,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 290.1399,
+"end": 290.6237,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 290.6237,
+"end": 292.2253,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 292.2253,
+"end": 296.1625,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 308.8419,
+"end": 310.3934,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 310.3934,
+"end": 312.1452,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 314.9313,
+"end": 321.2042,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 344.4775,
+"end": 345.9456,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 345.9456,
+"end": 347.9142,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 361.5278,
+"end": 366.4828,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 2,
+"name": "gta6-hurricanes-synced.mov",
+"start": 366.4828,
+"end": 369.052,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c01.mp4",
+"start": 0,
+"end": 3.2032,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c02.mp4",
+"start": 6.1228,
+"end": 7.7244,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c03.mp4",
+"start": 20.5372,
+"end": 27.7611,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c04.mp4",
+"start": 31.4981,
+"end": 38.6386,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c05.mp4",
+"start": 44.1942,
+"end": 50.5171,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c06.mp4",
+"start": 53.687,
+"end": 57.741,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c07.mp4",
+"start": 69.0356,
+"end": 72.1888,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c08.mp4",
+"start": 82.8828,
+"end": 85.8191,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c09.mp4",
+"start": 94.1107,
+"end": 100.0499,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c10.mp4",
+"start": 124.0573,
+"end": 126.9935,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c11.mp4",
+"start": 131.0976,
+"end": 136.4863,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c12.mp4",
+"start": 154.0706,
+"end": 157.3405,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c13.mp4",
+"start": 161.5948,
+"end": 164.848,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c14.mp4",
+"start": 166.9835,
+"end": 171.7883,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c15.mp4",
+"start": 181.7482,
+"end": 183.3165,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c16.mp4",
+"start": 198.2481,
+"end": 200.4169,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c17.mp4",
+"start": 211.2444,
+"end": 215.4986,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c18.mp4",
+"start": 245.0114,
+"end": 248.4816,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c19.mp4",
+"start": 278.3781,
+"end": 282.916,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c20.mp4",
+"start": 290.1399,
+"end": 296.1625,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c21.mp4",
+"start": 308.8419,
+"end": 312.1452,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c22.mp4",
+"start": 314.9313,
+"end": 321.2042,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c23.mp4",
+"start": 344.4775,
+"end": 347.9142,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 3,
+"name": "mt-c24.mp4",
+"start": 361.5278,
+"end": 369.052,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c01.mov",
+"start": 0,
+"end": 3.2032,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c02-v2.mov",
+"start": 6.1228,
+"end": 7.7244,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c03.mov",
+"start": 20.5372,
+"end": 27.7611,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c04.mov",
+"start": 31.4981,
+"end": 38.6386,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c05.mov",
+"start": 44.1942,
+"end": 50.5171,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c06.mov",
+"start": 53.687,
+"end": 57.741,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c07.mov",
+"start": 69.0356,
+"end": 72.1888,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c08.mov",
+"start": 82.8828,
+"end": 85.8191,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c09.mov",
+"start": 94.1107,
+"end": 100.0499,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c10.mov",
+"start": 124.0573,
+"end": 126.9935,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c11.mov",
+"start": 131.0976,
+"end": 136.4863,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c12.mov",
+"start": 154.0706,
+"end": 157.3405,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c13.mov",
+"start": 161.5948,
+"end": 164.848,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c14.mov",
+"start": 166.9835,
+"end": 171.7883,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c15.mov",
+"start": 181.7482,
+"end": 183.3165,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c16.mov",
+"start": 198.2481,
+"end": 200.4169,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c17.mov",
+"start": 211.2444,
+"end": 215.4986,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c18.mov",
+"start": 245.0114,
+"end": 248.4816,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c19.mov",
+"start": 278.3781,
+"end": 282.916,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c20.mov",
+"start": 290.1399,
+"end": 296.1625,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c21.mov",
+"start": 308.8419,
+"end": 312.1452,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c22.mov",
+"start": 314.9313,
+"end": 321.2042,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c23.mov",
+"start": 344.4775,
+"end": 347.9142,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"t": 4,
+"name": "ov-c24.mov",
+"start": 361.5278,
+"end": 369.052,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+],
+"nests": [
+{
+"name": "Nested Sequence 70",
+"len": 12.6793,
+"clips": [
+{
+"start": 0,
+"end": 1.7851,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 1.7851,
+"end": 2.319,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.319,
+"end": 6.4398,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 6.4398,
+"end": 7.1238,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 121
+},
+{
+"start": 7.1238,
+"end": 12.6793,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 66",
+"len": 10.8275,
+"clips": [
+{
+"start": 0,
+"end": 5.7558,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 5.7558,
+"end": 10.8275,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 126
+}
+]
+},
+{
+"name": "Nested Sequence 60",
+"len": 11.2946,
+"clips": [
+{
+"start": 0,
+"end": 2.8862,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.8862,
+"end": 4.688,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 4.688,
+"end": 6.2896,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 6.2896,
+"end": 7.8912,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 110
+},
+{
+"start": 7.8912,
+"end": 11.2946,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 61",
+"len": 10.694,
+"clips": [
+{
+"start": 0,
+"end": 4.1208,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 4.1208,
+"end": 5.6223,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 110
+},
+{
+"start": 5.6223,
+"end": 7.9913,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 7.9913,
+"end": 8.6086,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 8.6086,
+"end": 10.694,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 63",
+"len": 24.0073,
+"clips": [
+{
+"start": 0,
+"end": 1.6517,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 1.6517,
+"end": 5.5889,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 5.5889,
+"end": 7.4741,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 103
+},
+{
+"start": 7.4741,
+"end": 7.8579,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 7.8579,
+"end": 10.8608,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 10.8608,
+"end": 15.0484,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 15.0484,
+"end": 21.2045,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 21.2045,
+"end": 24.0073,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 62",
+"len": 8.2916,
+"clips": [
+{
+"start": 0,
+"end": 2.9029,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.9029,
+"end": 5.5055,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 5.5055,
+"end": 6.0894,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 6.0894,
+"end": 7.0737,
+"Position": [
+0.3542,
+0.5
+],
+"Scale": 203
+},
+{
+"start": 7.0737,
+"end": 8.2916,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 57",
+"len": 12.8128,
+"clips": [
+{
+"start": 0,
+"end": 1.5849,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 1.5849,
+"end": 2.6026,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 110
+},
+{
+"start": 2.6026,
+"end": 4.2709,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 4.2709,
+"end": 6.8235,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 6.8235,
+"end": 7.8078,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 7.8078,
+"end": 10.7608,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 10.7608,
+"end": 12.8128,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 110
+}
+]
+},
+{
+"name": "Nested Sequence 72",
+"len": 13.6136,
+"clips": [
+{
+"start": 0,
+"end": 2.9363,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.9363,
+"end": 3.8539,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 3.8539,
+"end": 8.642,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 8.642,
+"end": 10.2769,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 10.2769,
+"end": 12.1955,
+"Position": [
+0.5,
+0.563
+],
+"Scale": 161
+},
+{
+"start": 12.1955,
+"end": 13.6136,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 73",
+"len": 13.1465,
+"clips": [
+{
+"start": 0,
+"end": 2.5359,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.5359,
+"end": 11.1278,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 11.1278,
+"end": 13.1465,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 71",
+"len": 14.8148,
+"clips": [
+{
+"start": 0,
+"end": 4.2543,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 4.2543,
+"end": 6.8235,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 6.8235,
+"end": 11.8118,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 11.8118,
+"end": 14.8148,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 68",
+"len": 8.6253,
+"clips": [
+{
+"start": 0,
+"end": 2.953,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.953,
+"end": 4.2709,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 129
+},
+{
+"start": 4.2709,
+"end": 6.2563,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 6.2563,
+"end": 7.5909,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 7.5909,
+"end": 8.6253,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 59",
+"len": 3.1698,
+"clips": [
+{
+"start": 0,
+"end": 1.5349,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 1.5349,
+"end": 3.1698,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 58",
+"len": 5.5556,
+"clips": [
+{
+"start": 0,
+"end": 1.1345,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 1.1345,
+"end": 3.1365,
+"Position": [
+0.5,
+0.6074
+],
+"Scale": 145
+},
+{
+"start": 3.1365,
+"end": 5.5556,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 65",
+"len": 14.9316,
+"clips": [
+{
+"start": 0,
+"end": 3.7538,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 3.7538,
+"end": 4.9716,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 4.9716,
+"end": 8.9089,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 8.9089,
+"end": 13.3967,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 13.3967,
+"end": 14.9316,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 69",
+"len": 16.1328,
+"clips": [
+{
+"start": 0,
+"end": 1.8685,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 1.8685,
+"end": 5.5556,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 5.5556,
+"end": 7.4241,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 7.4241,
+"end": 8.2749,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 8.2749,
+"end": 9.009,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 123
+},
+{
+"start": 9.009,
+"end": 13.697,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 13.697,
+"end": 16.1328,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 67",
+"len": 11.0277,
+"clips": [
+{
+"start": 0,
+"end": 2.0187,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 2.0187,
+"end": 7.7744,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 7.7744,
+"end": 8.5752,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 8.5752,
+"end": 11.0277,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+}
+]
+},
+{
+"name": "Nested Sequence 64",
+"len": 17.5842,
+"clips": [
+{
+"start": 0,
+"end": 0.7508,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 0.7508,
+"end": 3.2366,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 3.2366,
+"end": 3.8872,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 3.8872,
+"end": 5.3887,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 5.3887,
+"end": 9.4928,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 111
+},
+{
+"start": 9.4928,
+"end": 10.7107,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 10.7107,
+"end": 13.1465,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 100
+},
+{
+"start": 13.1465,
+"end": 17.5842,
+"Position": [
+0.5,
+0.5
+],
+"Scale": 118
+}
+]
+}
+],
+"audio": [
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 0,
+"end": 9.3093,
+"src_in": 11.011,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 10.327,
+"end": 18.4851,
+"src_in": 21.338,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 20.5372,
+"end": 39.7731,
+"src_in": 31.5482,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 41.7751,
+"end": 64.0306,
+"src_in": 52.7861,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 65.6322,
+"end": 76.3096,
+"src_in": 76.6432,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 77.8111,
+"end": 91.9085,
+"src_in": 88.8221,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 92.8928,
+"end": 105.6389,
+"src_in": 103.9038,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 107.5241,
+"end": 128.8788,
+"src_in": 118.5351,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Loungin - Scientific (2).mp3",
+"start": 131.0976,
+"end": 136.4863,
+"src_in": 142.1086,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 154.0706,
+"end": 164.848,
+"src_in": 0,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 164.848,
+"end": 176.5597,
+"src_in": 10.7774,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 180.7973,
+"end": 181.7482,
+"src_in": 26.7267,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 181.7482,
+"end": 206.1726,
+"src_in": 27.6777,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 211.2444,
+"end": 217.4172,
+"src_in": 57.1738,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 218.6851,
+"end": 231.181,
+"src_in": 64.6145,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 232.182,
+"end": 251.4345,
+"src_in": 78.1114,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_First Born - Timothy Infinite (2).mp3",
+"start": 252.7525,
+"end": 257.1069,
+"src_in": 98.6819,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 262.2453,
+"end": 270.5202,
+"src_in": 0,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 271.2543,
+"end": 288.972,
+"src_in": 9.009,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 290.1399,
+"end": 296.1625,
+"src_in": 27.8945,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 296.1625,
+"end": 302.6023,
+"src_in": 33.9172,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 303.2863,
+"end": 313.7301,
+"src_in": 41.041,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 314.9313,
+"end": 326.5596,
+"src_in": 52.686,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 329.6627,
+"end": 356.5562,
+"src_in": 79.2292,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 361.5278,
+"end": 371.5879,
+"src_in": 111.0943,
+"Level": 0.1778
+},
+{
+"t": 2,
+"name": "ES_Brooklyn - Dyalla (2).mp3",
+"start": 371.5879,
+"end": 382.1985,
+"src_in": 121.1544,
+"Level": 0.1778
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 0,
+"end": 0.367,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 6.1228,
+"end": 6.4898,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 6.5232,
+"end": 6.8902,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 6.9236,
+"end": 7.2906,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 7.324,
+"end": 7.691,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 20.5372,
+"end": 20.9042,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 23.5736,
+"end": 23.9406,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 24.5412,
+"end": 24.9082,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 25.5422,
+"end": 25.9092,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 26.6933,
+"end": 27.0604,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 31.4981,
+"end": 31.8652,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 44.1942,
+"end": 44.5612,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 45.7791,
+"end": 46.1461,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 47.364,
+"end": 47.731,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 48.9489,
+"end": 49.3159,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 53.687,
+"end": 54.054,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 55.9726,
+"end": 56.3396,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 69.0356,
+"end": 69.4027,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 70.8708,
+"end": 71.2378,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 82.8828,
+"end": 83.2498,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 94.1107,
+"end": 94.4777,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 95.6122,
+"end": 95.9792,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 124.0573,
+"end": 124.4243,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 131.0976,
+"end": 131.4647,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 154.0706,
+"end": 154.4376,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 161.5948,
+"end": 161.9618,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 166.9835,
+"end": 167.3505,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 168.4183,
+"end": 168.7853,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 170.4203,
+"end": 170.7873,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 181.7482,
+"end": 182.1153,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 198.2481,
+"end": 198.6151,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 211.2444,
+"end": 211.6114,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 213.7469,
+"end": 214.1139,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 245.0114,
+"end": 245.3785,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 246.5296,
+"end": 246.8967,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 278.3781,
+"end": 278.7451,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 290.1399,
+"end": 290.5069,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 291.7415,
+"end": 292.1085,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 308.8419,
+"end": 309.2089,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 314.9313,
+"end": 315.2983,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 344.4775,
+"end": 344.8445,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 361.5278,
+"end": 361.8949,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 364.9813,
+"end": 365.3483,
+"src_in": 0,
+"Level": 0.0891
+},
+{
+"t": 3,
+"name": "es-pop-mouth-finger.wav",
+"start": 366.4828,
+"end": 366.8498,
+"src_in": 0,
+"Level": 0.0891
+}
+]
+}

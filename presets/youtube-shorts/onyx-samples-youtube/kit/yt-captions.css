@@ -1,0 +1,229 @@
+/* =========================================================================================
+   yt-captions.css  ·  the YouTube-Shorts caption look (README.md section 5), for HyperFrames.
+   Pairs with yt-captions.js, which builds the DOM and adds every step to the GSAP timeline.
+   Self-contained: a build step can paste this file into the composition's <style>.
+
+   Fonts: copy kit/fonts/Anton-Regular.ttf to <project>/fonts/Anton-Regular.ttf (the url below is
+   relative to index.html). Impact is only the fallback (fonts/impact.ttf, else the system Impact).
+
+   Swapping the font = change the "type" variables on .ytc. They are the only font-dependent
+   numbers: the colour gradients follow the cap height by themselves (text-box trim).
+     Anton  : --ytc-size 100px    --ytc-squeeze 0.86   --ytc-tracking -0.033em   (caps 0.860 em)
+     Impact : --ytc-size 108.7px  --ytc-squeeze 0.715  --ytc-tracking -0.009em   (caps 0.791 em)
+   ========================================================================================= */
+
+@font-face {
+  font-family: "YTC Anton";
+  src: url("fonts/Anton-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "YTC Impact";
+  src: url("fonts/impact.ttf") format("truetype"), local("Impact");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+.ytc {
+  /* ---- type ---- */
+  --ytc-font: "YTC Anton", "YTC Impact", sans-serif;
+  --ytc-size: 100px;          /* font-size; Anton caps are 0.860 em, so 100px = 86px caps */
+  --ytc-squeeze: 0.86;        /* horizontal glyph scale (the reference is set condensed) */
+  --ytc-tracking: -0.033em;   /* letter-spacing, before the squeeze */
+  --ytc-embolden: 0px;        /* extra stroke weight (a transparent text-stroke widens the painted glyphs) */
+
+  /* ---- placement: the glyph centre (middle of the cap height) on the 1080x1920 canvas ---- */
+  --ytc-x: 540px;
+  --ytc-y: 1071px;
+
+  /* ---- emphasis wipe: width of the soft edge, on screen ---- */
+  --ytc-feather: 58px;
+
+  /* ---- colours: each voice is a vertical gradient over the CAP height (0% cap top, 100% baseline)
+          plus its top/bottom end colours (painted on overshoots above/below the caps).
+          Values are the reference as a viewer sees it (decoded with its BT.709 tag). ---- */
+  --ytc-white: #FCF7F7;
+  --ytc-main:   linear-gradient(180deg, #FC1F23 0%, #FC3F42 25%, #FF5D60 50%, #FB3C3E 75%, #F11C26 100%);
+  --ytc-main-top: #FC1F23;   --ytc-main-bot: #F11C26;                  /* red sheen          */
+  --ytc-purple: linear-gradient(180deg, #DF25F7 0%, #EF4FFC 25%, #F97CFD 50%, #FAADFC 75%, #F5DCF8 100%);
+  --ytc-purple-top: #DF25F7; --ytc-purple-bot: #F5DCF8;                /* magenta -> lilac   */
+  --ytc-yellow: linear-gradient(180deg, #F6D408 0%, #FCD705 25%, #FED907 50%, #FCC506 75%, #F3B30B 100%);
+  --ytc-yellow-top: #F6D408; --ytc-yellow-bot: #F3B30B;                /* yellow -> gold     */
+  --ytc-cyan:   linear-gradient(180deg, #2AFDF7 0%, #50FBFB 25%, #7BFCFC 50%, #AEFCFB 75%, #DFFBF9 100%);
+  --ytc-cyan-top: #2AFDF7;   --ytc-cyan-bot: #DFFBF9;                  /* cyan -> ice        */
+
+  /* ---- internals ---- */
+  --ytc-pad: 0.24em;          /* room above/below the caps for overshoot, inside the painted box */
+  --ytc-padx: 0.06em;
+  --ytc-fl: calc(var(--ytc-feather) / var(--ytc-squeeze));   /* the feather in the text's own space */
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* Voice -> gradient. A custom voice can set these three on its chunks (yt-captions.js opts.palette). */
+.ytc-v-main   { --ytc-grad: var(--ytc-main);   --ytc-grad-top: var(--ytc-main-top);   --ytc-grad-bot: var(--ytc-main-bot); }
+.ytc-v-purple { --ytc-grad: var(--ytc-purple); --ytc-grad-top: var(--ytc-purple-top); --ytc-grad-bot: var(--ytc-purple-bot); }
+.ytc-v-yellow { --ytc-grad: var(--ytc-yellow); --ytc-grad-top: var(--ytc-yellow-top); --ytc-grad-bot: var(--ytc-yellow-bot); }
+.ytc-v-cyan   { --ytc-grad: var(--ytc-cyan);   --ytc-grad-top: var(--ytc-cyan-top);   --ytc-grad-bot: var(--ytc-cyan-bot); }
+
+.ytc-defs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* One chunk = a zero-height row whose centre line is (x, y). Hidden until the timeline shows it. */
+.ytc-chunk {
+  --ytc-p: 0;
+  position: absolute;
+  left: calc(var(--ytc-x) - 50%);
+  top: var(--ytc-y);
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* The line that pops (scaleX around the line centre); also the box of each smear ghost. */
+.ytc-line {
+  position: absolute;
+  left: 0;
+  top: -170px;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 50% 50%;
+}
+
+/* Smeared entrance frames: N ghosts at spread-out scales, averaged (plus-lighter at 1/N each). */
+.ytc-smear {
+  position: absolute;
+  left: 0;
+  top: -170px;
+  width: 100%;
+  height: 340px;
+  isolation: isolate;
+  visibility: hidden;
+  opacity: 0;
+}
+.ytc-smear > .ytc-line {
+  top: 0;
+  mix-blend-mode: plus-lighter;
+}
+.ytc-smear .ytc-fx {
+  filter: url(#ytc-fxl);      /* ghosts are summed in linear light; #ytc-smN converts back */
+}
+
+/* Outline + drop shadow come from the SVG filter #ytc-fx, applied AFTER the squeeze: the outline is
+   the same width on every side and never eats into the fill. The padding is room for the filter. */
+.ytc-fx {
+  display: inline-block;
+  padding: 34px 48px;
+  filter: url(#ytc-fx);
+}
+
+.ytc-sq {
+  display: inline-block;
+  transform: scaleX(var(--ytc-squeeze));
+  transform-origin: 50% 50%;
+}
+
+/* The fill: ONE text layer. A white cover with a soft left edge (the wipe) over the voice gradient,
+   clipped to the glyphs. --ytc-p (0..1, set on the chunk, inherited) slides the edge across the line:
+   0 = all white, 1 = all colour. */
+.ytc-text {
+  display: inline-block;
+  margin: 0;
+  padding: var(--ytc-pad) calc(var(--ytc-padx) - var(--ytc-tracking)) var(--ytc-pad) var(--ytc-padx);
+  font-family: var(--ytc-font);
+  font-size: var(--ytc-size);
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: normal;
+  line-height: 1;
+  letter-spacing: var(--ytc-tracking);
+  -webkit-text-stroke: var(--ytc-embolden) transparent;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-box: trim-both cap alphabetic;
+  color: var(--ytc-white);
+  -webkit-text-fill-color: transparent;
+  background-image:
+    linear-gradient(90deg,
+      transparent calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl)),
+      var(--ytc-white) calc(var(--ytc-p) * (100% + var(--ytc-fl)))),
+    var(--ytc-grad),
+    linear-gradient(var(--ytc-grad-top), var(--ytc-grad-top)),
+    linear-gradient(var(--ytc-grad-bot), var(--ytc-grad-bot));
+  background-origin: padding-box, content-box, padding-box, padding-box;
+  background-size: 100% 100%, 100% 100%, 100% 50%, 100% 50%;
+  background-position: 0 0, 0 0, 0 0, 0 100%;
+  background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+/* Fill model (QA 2026-10-05). Stacking the white cover over the voice gradient inside ONE background-clip:text layer bled
+   the gradient through at anti-aliased glyph edges (a pink rim on every white caption). Plain white chunks use a single
+   solid fill; wiped chunks are solid white with the colour on a ::after copy of the text, revealed by a mask. */
+.ytc-solid .ytc-text,
+.ytc-wipe .ytc-text {
+  background-image: none;
+  -webkit-text-fill-color: var(--ytc-white);
+}
+.ytc-wipe .ytc-text { position: relative; -webkit-text-fill-color: transparent; }
+/* QA r2: a solid white base under the masked colour copy still showed a pale rim at the coloured glyph edges (two
+   anti-aliased layers stacked). The white now sits on its own ::before copy, cut away (2 px edge) wherever the colour is
+   FULLY revealed, and fully opaque under the moving feather: no rim behind the colour, and no alpha dip (a dark band) in
+   the feather, which complementary soft masks would give. */
+.ytc-wipe .ytc-text::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  padding: inherit;
+  white-space: nowrap;
+  text-box: trim-both cap alphabetic;
+  -webkit-text-fill-color: var(--ytc-white);
+  -webkit-mask-image: linear-gradient(90deg, transparent calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl)),
+                                     #000 calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl) + 2px));
+  mask-image: linear-gradient(90deg, transparent calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl)),
+                              #000 calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl) + 2px));
+}
+.ytc-wipe .ytc-text::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  padding: inherit;
+  white-space: nowrap;
+  text-box: trim-both cap alphabetic;
+  -webkit-text-fill-color: transparent;
+  background-image:
+    var(--ytc-grad),
+    linear-gradient(var(--ytc-grad-top), var(--ytc-grad-top)),
+    linear-gradient(var(--ytc-grad-bot), var(--ytc-grad-bot));
+  background-origin: content-box, padding-box, padding-box;
+  background-size: 100% 100%, 100% 50%, 100% 50%;
+  background-position: 0 0, 0 0, 0 100%;
+  background-repeat: repeat-x, no-repeat, no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-mask-image: linear-gradient(90deg, #000 calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl)),
+                                     transparent calc(var(--ytc-p) * (100% + var(--ytc-fl))));
+  mask-image: linear-gradient(90deg, #000 calc(var(--ytc-p) * (100% + var(--ytc-fl)) - var(--ytc-fl)),
+                              transparent calc(var(--ytc-p) * (100% + var(--ytc-fl))));
+}

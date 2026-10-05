@@ -110,6 +110,7 @@ def main(job, fps=60.0):
         if not b['segments']:
             dur = snap(b.get('placeholder_seconds', 0), fps)
             edl.append({'beat': b['n'], 'seg': 0, 'name': b['name'], 'placeholder': True,
+                        'placeholder_note': b.get('placeholder_note'),
                         'card': b.get('card'), 'tl_in': round(t, 5), 'tl_out': round(t + dur, 5)})
             t += dur
             continue

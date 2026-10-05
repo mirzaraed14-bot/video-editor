@@ -60,3 +60,50 @@ a job teaches something.
 - **Razoring through QE is clean**: `qe.project.getActiveSequence().getAudioTrackAt(n).razor(tc)` at the SEQUENCE
   fps (Sequence 12 = 60) splits the clip, and the right-hand piece keeps its level and the right source offset. Lift the
   piece with `trackItem.remove(false,false)`. Hard cuts only; fades are offered, not assumed.
+
+## 2026-10-04 · the creator ports the Game Informer style (Affan Afterhours) to this channel
+
+- **"We're picking up this editing style from my other channel for our next video"** (YouTube `EsnIehnZUhs`). It was
+  our own job `gta6-hurricanes`, so the spec came from two sources that agree: the live ABW8 · Sequence 16 (read-only;
+  identical to the published master but for one pop) and the master `Weather GTA.mov` through the five style tools.
+  → `STYLE.md` (self-contained copy, numbers), README § 1 rewritten, § 1a partly superseded, PLAYBOOK rows 4–7.
+- **YouTube blocks yt-dlp here without cookies** ("Sign in to confirm you're not a bot"). The creator's OWN video is
+  already on disk: check `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` (match on duration; oEmbed gives the
+  title without signing in) before reaching for a download. Their Chrome is the fallback they named.
+- **The timeline beats the measurement on zooms and speed.** `style-report.py` saw 11 zoom steps and 4 "slowed
+  stretches"; the timeline holds 22 cut zooms (14 inside nests) and every clip at 100 %. Read the live project when it
+  exists; the tools are for exports without one. (`slowmo-scan.py` also crashed on a cp1252 console: fixed in place.)
+- **Cut zooms sort into two families by what they land on**: emphasis 103–135 % on the claim, the punch 139–203 %
+  re-centred on the joke and the self-roast. → STYLE § 2.
+- **The drop-out tool had to learn nests**: in this style 14 of 22 cut zooms sit inside nests and every face run has
+  a keyframed push, which a V1-only `getValue()` scan would miss or misread. → `lanes/premiere/music-dropouts.py`
+  (static scale > 100 on V1 + inside nests, pushes excluded), proven read-only: exactly the 22 reference ranges on
+  Sequence 16, 35 punch-ins on Sequence 12, all already silent.
+- **Correction:** the Volume Level 0.1778 on every clip is **0 dB** in the DOM's encoding (v = 10^((dB−15)/20)), not
+  −15 dB as job 2's notes said. Levels were never changed; only the label was wrong.
+
+## 2026-10-04 · job 3, kick-fake-viewers (CA-003, ABW8 · Sequence 27): rough cut + assets from the script
+
+- **The creator's joint spec is now the channel's: ~2 frames of silence out, ~1 in** (`POLISH_TAIL_MS=33
+  POLISH_LEAD_MS=17`). At that tightness every edge matters: the mechanical review found 7 clipped words (a missing
+  "thirty", "four thousand" without "four hundred channels", the 'f' of "For"/"First", the 's' of "views"), 9 mouth clicks
+  followed by dead air at INs, and 6 fragments of killed words riding on edges. → PLAYBOOK § 2; keep the exhaustive
+  exact-span review on every job at this tightness.
+- **Split on the envelope, not on transcript gaps.** Splitting at every WhisperX gap ≥ 0.40 s cut a phrase in two
+  ("He didn't say I | buy bots", a 15 ms overlap that aborted splice) and dropped speech WhisperX never placed
+  ("masters | like"). `quiet_run()` in the job's build-cuts.py: split only where the audio is quiet ≥ 0.40 s.
+- **The per-burst pass earns its keep on this channel too:** 6 hidden retakes ("dropped dropped", a second "and to be
+  clear", "Bots can / Bots can", "Kick / Kick's", "or not or", "you guys" misplaced by 2 s). → PLAYBOOK § 2.
+- **The creator films the script out of order and with life in between**: a phone call mid-take, a pickup line said
+  30 s late ("Bots can be sent to you by anyone" → moved back to its script place), no cold open / close in the take.
+  Read the whole raw before authoring; say what is missing.
+- **Script → assets is a repeatable step** (PLAYBOOK § Assets). What worked: their Chrome to find + verify (signed in to
+  X, so X search with date filters finds the clips the research cites); yt-dlp for X (no login) and YouTube via the
+  `mweb` client (360p only); headless 2x page captures, or a 1.7x-zoomed full-size capture in their Chrome when bot-
+  blocked. What failed: Reddit (blocked), X search for 2023 posts (empty), ppc.land (ad gate), Chrome tabs freezing on
+  `scrollIntoView` after a CSS zoom (open a fresh tab), screenshots saved at the PREVIEW scale (never pass `scale` with
+  `save_to_disk`), a CDN ".png" that was a JPEG (Premiere's File Import Failure modal blocked the bridge).
+- **Transcribe every quoted clip before placing it**: the Adin clip held the quote at 6–12 s, a slur at 23.6 s, and
+  offensive chat on screen; the script's second Adin quote was not in it at all. → `assets/SOURCES.md` columns.
+- **A "let it play" clip gets its own gap**: replayed with a 16.9 s hole after "Listen to exactly what he says.", the
+  clip on V2/A2 (never A1: audio-polish processes every A1 clip). `review/tools/replay-gap.py`.

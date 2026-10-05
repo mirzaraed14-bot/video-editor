@@ -3,7 +3,7 @@
 its voice on the sequence clock (for transcribe.sh), turn a hand-chunked captions.txt into a .srt, and
 put it on the sequence as a caption track.
 
-  python workflows/sequence-captions.py read   <job> "<Sequence name>"   # brief/tracks.txt + raw/<seq>-reference.mov
+  python workflows/sequence-captions.py read   <job> "<Sequence name>" [--voice A1,A2]   # brief/tracks.txt + raw/<seq>-reference.mov
   bash .claude/skills/rough-cut/scripts/transcribe.sh <job>               # -> transcript/words.json (sequence clock)
   #  write <job>/captions.txt: one caption per line, words in transcript order
   python workflows/sequence-captions.py srt    <job> --max-words 3        # -> outputs/<seq>-captions.srt
@@ -36,7 +36,7 @@ def slug(name):
     return re.sub(r'[^a-z0-9]+', '', name.lower().replace('sequence', 'seq'))
 
 
-def read(job, seq_name):
+def read(job, seq_name, voice=('A1',)):
     js = r'''(function () {
       var seq = null;
       for (var s = 0; s < app.project.sequences.numSequences; s++)
@@ -65,32 +65,32 @@ def read(job, seq_name):
     json.dump({'project': lines[0], 'sequence': seq_name, 'fps': fps},
               open(os.path.join(job, 'brief', 'sequence.json'), 'w', encoding='utf-8'), indent=1)
 
-    a1 = sorted([l.split('|') for l in lines[2:] if l.startswith('A1|')], key=lambda r: float(r[1]))
+    # the voice = A1, plus any other track named in --voice (an AI voice-over the creator keeps on A2, Sequence 28):
+    # every clip is summed onto the sequence clock, a gap plays silence, the music track stays out
+    a1 = sorted([l.split('|') for l in lines[2:] if l.split('|')[0] in voice], key=lambda r: float(r[1]))
     sr, audio = 48000, {}
     for src in {r[5] for r in a1}:                      # one decode per source; A1 may mix several
         pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', src, '-vn', '-ac', '1', '-ar', str(sr),
                               '-f', 's16le', '-'], capture_output=True, check=True).stdout
         audio[src] = np.frombuffer(pcm, np.int16)
-    segs, short, t_prev = [], [], 0.0
+    end = max(float(r[2]) for r in a1)
+    mix, short = np.zeros(int(round(end * sr)), np.int32), []
     for r in a1:
         st, en, sin = float(r[1]), float(r[2]), float(r[3])
-        if st > t_prev + 1e-3:                          # a gap on A1 plays silence
-            segs.append(np.zeros(int(round(st * sr)) - int(round(t_prev * sr)), np.int16))
-        t_prev = en
         a = audio[r[5]]
-        n, i0 = int(round(en * sr)) - int(round(st * sr)), int(round(sin * sr))
+        n, i0, o0 = int(round(en * sr)) - int(round(st * sr)), int(round(sin * sr)), int(round(st * sr))
         seg = a[i0:i0 + n]
         if len(seg) < n:
             short.append('%.3f-%.3f (source %.3f s, file ends %.3f s)' % (st, en, sin, len(a) / sr))
-            seg = np.concatenate([seg, np.zeros(n - len(seg), np.int16)])
-        segs.append(seg)
+        mix[o0:o0 + len(seg)] += seg
+    segs = [np.clip(mix, -32768, 32767).astype(np.int16)]
     out_wav = os.path.join(job, 'raw', '_ref.wav')
     w = wave.open(out_wav, 'wb'); w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr)
     w.writeframes(np.concatenate(segs).tobytes()); w.close()
     ref = os.path.join(job, 'raw', slug(seq_name) + '-reference.mov')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', out_wav, '-c:a', 'pcm_s16le', ref], check=True)
     os.remove(out_wav)
-    print('%s / %s: %d A1 clips, %.3f s at %g fps -> %s' % (lines[0], seq_name, len(a1), float(a1[-1][2]), fps, ref))
+    print('%s / %s: %d %s clips, %.3f s at %g fps -> %s' % (lines[0], seq_name, len(a1), '+'.join(sorted(voice)), end, fps, ref))
     for s in short:
         print('  ! A1 clip past the end of its media (plays silent): ' + s)
 
@@ -227,10 +227,11 @@ if __name__ == '__main__':
     ap.add_argument('job')
     ap.add_argument('sequence', nargs='?')
     ap.add_argument('--max-words', type=int, default=3)
+    ap.add_argument('--voice', default='A1', help='read: the tracks that carry speech, e.g. A1,A2 when the AI voice-over sits on A2')
     ap.add_argument('--hang', type=float, default=None, help='end a caption 0.25 s after its last word when a pause longer than this follows')
     a = ap.parse_args()
     if a.cmd == 'read':
-        read(a.job, a.sequence or sys.exit('read needs the sequence name'))
+        read(a.job, a.sequence or sys.exit('read needs the sequence name'), set(a.voice.split(',')))
     elif a.cmd == 'srt':
         srt(a.job, a.max_words, a.hang)
     else:

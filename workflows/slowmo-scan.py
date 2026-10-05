@@ -15,6 +15,7 @@ Writes {fps, frames, runs: [{start, end, dup_share, est_speed}]} and prints the 
 import json, subprocess, sys
 import numpy as np
 
+sys.stdout.reconfigure(encoding='utf-8')   # the "≈" in the report crashed a cp1252 Windows console (2026-10-04)
 video, out = sys.argv[1], sys.argv[2]
 r = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate', '-of', 'csv=p=0', video], capture_output=True, text=True)
 n, d = r.stdout.strip().splitlines()[0].split('/'); fps = float(n) / float(d)   # a .mov's timecode track adds a second line

@@ -1,0 +1,106 @@
+{
+ "segments": [
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 57.5,
+   "end": 61.083333333333336,
+   "transcript": "Sam: I refuse to let her watch Cocomelon because it's crack.  [start fixed 2026-10-05 by QA r2: Sam's 'I' onsets at ~57.53 (RMS), WhisperX said 57.82, so the old in-point started mid-vowel; 57.5 = 24 fps frame 1380, in the -22 dB gap]",
+   "no_refine": true
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 62.625,
+   "end": 63.75,
+   "transcript": "Sam: It's baby crack.  [end measured by RMS: WhisperX stretched 'crack' over a laugh]",
+   "no_refine": true
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 559.125,
+   "end": 562.3333333333334,
+   "transcript": "Shaan: They go and they buy Cocomelon for $103 million  [end fixed 2026-10-05 by QA: WhisperX squeezed '$103 million' into 80 ms; the real 'million,' runs to ~562.30, dip at 562.36 before '92'; 562.333 = 24 fps boundary]",
+   "no_refine": true
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 390.1666666666667,
+   "end": 393.6666666666667,
+   "transcript": "kids' YouTube videos were getting tons of views, but they were overlooked"
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 395.75,
+   "end": 395.9166666666667,
+   "transcript": "because"
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 396.75,
+   "end": 398.4583333333333,
+   "transcript": "they look too janky to be taken seriously.",
+   "_refine": {
+    "orig_start": 396.73,
+    "orig_end": 398.41
+   }
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 399.3333333333333,
+   "end": 404.5833333333333,
+   "transcript": "of the top 100 most viewed children's brands online, none of them were owned by big studios.",
+   "_refine": {
+    "orig_start": 399.43,
+    "orig_end": 404.57
+   }
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 463.875,
+   "end": 464.9166666666667,
+   "transcript": "And they do three deals.",
+   "_refine": {
+    "orig_start": 463.92,
+    "orig_end": 464.82
+   }
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 568.0416666666666,
+   "end": 569.5833333333334,
+   "transcript": "70 million on Blippi",
+   "_refine": {
+    "orig_start": 568.24,
+    "orig_end": 569.52
+   }
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 574.0,
+   "end": 576.2083333333334,
+   "transcript": "Little Baby Bum was the third big one that they bought."
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 492.2083333333333,
+   "end": 497.1666666666667,
+   "transcript": "And four years later, they exit this to Blackstone for 3 billion. / Sam: What?",
+   "_refine": {
+    "orig_start": 492.22,
+    "orig_end": 497.08
+   }
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 628.9583333333334,
+   "end": 632.25,
+   "no_refine": true,
+   "transcript": "Rene makes $300 million for this four years of work.  [split: one 'work' + 0.6 s pause, measured; keep ~0.25 s breath]"
+  },
+  {
+   "clip": "mfm-episode-moonbug.mp4",
+   "start": 632.5,
+   "end": 634.5416666666666,
+   "transcript": "His co-founder makes $300 million.  [WhisperX put 'His' at 632.95; RMS onset ~632.54]"
+  }
+ ]
+}

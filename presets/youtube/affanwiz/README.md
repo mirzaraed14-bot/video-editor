@@ -10,22 +10,31 @@ folder applies here, and nothing here applies there.
 
 **Nothing from another channel carries over by default either.** Affan Afterhours' face grammar, overlay frame and
 palette are that channel's; this one earns its own numbers from the creator's direction and their hand passes.
+What the creator explicitly ports is COPIED here with its numbers (`STYLE.md`, 2026-10-04), never linked, so a later
+Afterhours change never moves this channel.
 
-## 1. The look — PENDING the creator's direction
+## 1. The look — 🔒 [`STYLE.md`](STYLE.md) from the next video on (2026-10-04)
 
-The creator gives the editing direction after the first rough cut (2026-09-23). Record it here as locked rules,
-each with its date and the job it came from. Until then the house defaults hold:
-`presets/youtube/default/` (long-form cards + creative moves, grade Autumn-Rec709 70/115).
+**The creator, 2026-10-04: "We're picking up this editing style from my other channel for our next video."** The
+style is their Affan Afterhours video "Everything Game Informer Just Revealed About GTA 6", measured off its master
+and read off its Premiere timeline: **[`STYLE.md`](STYLE.md)** (numbers) + `reference/game-informer/` (the evidence).
+It replaces the house defaults (`presets/youtube/default/`) for this channel.
 
 | Area | Rule | Source |
 |---|---|---|
-| Face / zooms | **the creator's own**: they cut, nest and zoom the face themselves (cut zooms + nested gradual zooms). Nests are never touched. | creator, 2026-09-23 |
-| Overlays (screenshots, captures, clips) | **§ 1a THE OVERLAY FRAME, locked** | creator + reference frame, 2026-09-23 |
-| Grade | _pending_ (house default until told) | |
-| SFX / music | _pending_ | |
+| Face / zooms | every face run pushes (nest 100→110, short clip 100→105); cut zooms ~3.5/min, emphasis 103–135 %, the punch 139–203 % re-centred → STYLE § 2. When the creator does the face pass themselves (jobs 1–2), their nests are never touched. | STYLE 2026-10-04 · creator 2026-09-23 |
+| Overlays (screenshots, captures, clips) | **STYLE § 3**: 85 % inset filled, 22 px corners, baked shadow, its OWN varied animated matte. § 1a below keeps the Higgsfield rules and the tiny-overlay exception; its 88.5 % fit and single seamless matte are superseded. | STYLE 2026-10-04 |
+| Grade | **none** (the lit room is the look) | STYLE § 1 |
+| SFX | **a pop on every overlay entrance and internal switch**, exits silent → STYLE § 4 | STYLE 2026-10-04 |
+| Music | Epidemic beds, one per section with a gap before each new song, ~12.5 dB under the voice, **out under every cut zoom** → STYLE § 4, PLAYBOOK Music row | STYLE · creator 2026-09-28 |
+| Speed / transitions | none: 100 % speed, hard cuts only | STYLE § 1 |
 | Captions | none (long-form, YouTube CC) unless told | CLAUDE.md format table |
 
 ## 1a. 🔒 THE OVERLAY FRAME (the creator's direction, 2026-09-23, job monetized-before-gta6)
+
+> **Partly superseded 2026-10-04 by [`STYLE.md`](STYLE.md) § 3 / § 5:** size (now an 85 % filled inset with rounded
+> corners), the matte (now a different one per overlay) and the shadow numbers. **Still in force:** the Higgsfield
+> enhancement rules and the tiny-overlay exception (960 px wide, centred).
 
 The creator drops every overlay (a screenshot, a YouTube/Instagram capture, a gameplay clip) straight onto V1 in
 place of the face, un-resized. The finish turns each one into this frame, measured off their reference image

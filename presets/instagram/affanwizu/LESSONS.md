@@ -3,6 +3,14 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-06: the ending drop, third time (ABW8 · Sequence 29)
+
+`words.json` stopped 6.6 s before the cut (25.9 vs 32.5 s) with 6.3 s of speech in the gap; "jo professional hai wo"
+was pulled 6.7 s early and the seven seconds before it were gone. Three of the last six caption jobs (Seq 17, 20, 29)
+had this exact failure; the § 2 rule (re-decode the last 6–10 s whenever the last word ends > 1 s early) fixed it
+in one pass, and `caption_qa.py` would have failed the raw version. If it keeps repeating, automate the tail
+re-decode inside `codeswitch_pass.py` instead of doing it by hand.
+
 ## 2026-10-04: Seq 25 + Seq 26 — the stand-in list grows, and a loop precedes a drop
 
 - **Seq 25:** "especially pakistan mai" came back as خاص طور پر; the CONNECTOR warning found it on the first try.

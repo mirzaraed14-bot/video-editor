@@ -27,7 +27,7 @@ The creator hands over a **Premiere project + sequence name** (reference: `ABW6.
 
 ## Claude's line, in order
 
-### 0. Sequencing (when the creator hands over a script + a bin + an empty sequence)
+### 0. Sequencing (when the creator hands over a script + a bin + a sequence, empty or with the AI voice-over on A2)
 Build ONLY what they paste (not the Content Engine file's other drafts). Tools in this folder; worked
 examples: `projects/mj-allegations`, `projects/eminem-hailie`.
 1. `sources.json` per source (`offset`/`window` for long ones, `fps`, camera `cuts` from ffmpeg `scdet`,
@@ -39,7 +39,9 @@ examples: `projects/mj-allegations`, `projects/eminem-hailie`.
 3. `resolve_beats.py` → `edl.json`; `plan_placement.py` → `placement.json`; check a contact sheet of the
    actual 9:16 crops, and put faces the detector misses (profiles, listeners, wides) into `framing.json`.
    A face the source never shows ("open on her while she listens") = a beat `"cover"`: a picture-only V2 insert.
-4. `place_sequence.py` → run the .jsx (it refuses a non-empty sequence; camera-cut splits become razors on one
+4. `place_sequence.py` → run the .jsx (it refuses when V1/A1 already hold clips, keeps and re-verifies the creator's
+   clips on other tracks, e.g. an AI voice-over on A2 whose later pieces are then shifted by the clips placed before
+   them, and lays every source from the job's bin, importing a file there if it lives only in an older bin; camera-cut splits become razors on one
    clip, placed from the in-point Premiere actually took) → read back every clip, including that each clip's
    first and last frame sit inside its shot → **rebuild the audio from the read-back in/outs and re-transcribe it
    against the script.** An ending the creator hedges ("if it doesn't land") is judged in context, never isolated.
@@ -101,6 +103,8 @@ Test harness: CLI `tvai_up` on 0.5 s slices, `ffmpeg -h filter=tvai_up` for the 
 1. Word timings from WhisperX on the cut's audio — never Premiere's transcribe pass.
    `workflows/sequence-captions.py read <job>/captions "<Sequence>"` rebuilds the live A1 (any number of
    sources) on the sequence clock, then `transcribe.sh`; `… import` puts the .srt on as a caption track.
+   **An AI voice-over on A2 is speech too:** `read … --voice A1,A2` sums both onto the clock (the music track
+   stays out), else the narrator's lines never reach the transcript.
 2. Chunk into **1–3 words**, wall-to-wall, median ≈ 0.75 s (README § 8).
 3. Apply the colour and typography rules (README § 8): white by default, one or two gradient
    words per caption, **italic for the other speaker**, asterisks for non-speech, correct name spellings.
