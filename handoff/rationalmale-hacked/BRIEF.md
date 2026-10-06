@@ -1,13 +1,38 @@
 # rationalmale-hacked: Onyx sample Short for The Rational Male (Rollo Tomassi)
 
 ## ▶ STATUS: resume here
+- **2026-10-06 (night): v9 = QA round 3 (final) applied** — picture 1 MED/2 LOW, sound 2 LOW: captions cleared off the OPEN lower lip (kit lip gap 0.075 -> 0.13 x face height; the corner landmarks don't drop when the mouth opens, the lower lip does, 80-160 px here), s24 split at the "IS DONE." chunk change (s24a z1.45 / s24b z1.15; his mouth drifted 320 px in one shot), s25/s26 zooms swapped (1.45/1.15) to keep x1.26 steps, s23 fy_out 0.29, watermark_y 1360 + hook y [1422,1507] (the tight faces sit low in the source; at z1.15 the crop window is already at the frame's bottom edge, so the caption room came from the watermark), post strips s17/s21 crop [0.17,0,0.62,0.14] (lines whole), s04a r 0 (no clipped "n"), mute 2 [21.975, 22.28] (the "s"), kit snap only while a caption still leads its word ("IS GOING TO DO." back on 797). Topaz frame interpolation (Affan's rule, all samples) on the Iris base -> base_hq `outputs/rationalmale-hacked.topaz-fi.mov` (FIT screens stay on the 1080p base). Verify on frames, then final.
+- **2026-10-06 (evening): v8 = QA round 2 applied; round 3 (final) running (work/qa/r3-*).** ROUGH CUT CHANGED: the stammer after "whatever you want to call it." ("It's a… Yeah." + 0.8 s silence; WhisperX had stretched "call"/"it." over it, so the transcript showed no gap) is cut: EDL seg 11 end 136.0667, seg 12 start 137.6333 (frame-snapped; slice-ASR of both kept/removed parts checked; joints clean), 49.27 s / 1478 frames (was 50.6). words.json times fixed for want/to/call/it./It's (measured). Topaz base re-cut at the same frames by ProRes stream copy (old frames 1084-1123 dropped; verified frame-for-frame vs the new base); the v7 base, Topaz base, EDL, words and spec are in work/v7-backup/. Spec shifted -40 after f1084. r2 picture: s13 split at the f713 joint (z 1.45 / 1.15), s14/s24 z 1.45, s02/s04a/s04b crops, post strip s17/s21 2x, tall insets lowered out of the top 200 px, hook timing scales with fps (3.2 s at 30 fps). r2 captions: "FAKE PILL, / OR A SCAM COIN," (he says pill), pins 409/649/742/767/1073, chunks 34-38 white (paraphrase, not a read-out). Kit: captions snap onto / move on cuts; watermark_y 1295.
 - 2026-10-06: job opened (batch 1, `projects/_onyx-batch-2026-10/BATCH.md`). Research: `projects/_onyx-batch-2026-10/rollo/research.md`.
 - **Platform:** YOUTUBE (YouTube Shorts ~6 a week, median 3.2K = 1.42 % of 224K subs, 2 livestreams a week + a 195K clips channel; Instagram @rational_male 68.7K followers, median ~3.5K: same reach per post).
 - **Moment (Claude's pick, batch mode):** "I got hacked" (`VD8jLhaZIKg`, stream 2026-04-15): a fake DMCA email ("submit an appeal in 48 hours"), he clicks, the password changes, and the hacker uses his account to push a scam coin ("a dollar-sign red pill… This is not by me"). Brand-safe, fresh (never a Short), and the stream shows the phishing email on screen. Rejected: "Bezos is a beta" (defamatory lines about a named person), Clavicular (sexual-assault allegations involving a minor). Condition from Rollo: a shout-out.
-- **Next:** pull the section(s) → transcribe → rough cut (rough-cut skill) → style study → spec → build → QA.
+- 2026-10-06: sections pulled and normalised to a common time zero (audio padded; downloads kept in work/raw-orig/), transcribed.
+- 2026-10-06 build plan (YouTube look, README): the stream's OWN screens are the real artefacts (the DMCA email, the flagged X post, the passkey email, the @matonchain delegation email, the $REDPILL post) as FIT shots read from the 1080p base (text untouched by Topaz); the webcam shots from the Topaz 2x base (no frame interpolation); Pexels B-roll for click / password / hacker / coin / chart / new account. Profanity starred on screen (F*CKED, SH*T, MOTHERF*CKER) and MUTED in the audio (README § 5; yt_mix.py 'mute', added today). Email text quoted in cyan, Rollo white → red. Watermark THE RATIONAL MALE = his shout-out condition.
+- **rough cut DONE 39.0 s (outputs/rationalmale-hacked.mp4; 13 segments); fresh-eyes reviews running. Next: YouTube-look spec (yt/spec.json, B-roll per README § 10: the stream shows the phishing email on screen) → build → QA.**
 
 ## Download log (every file logged BEFORE it is pulled)
 | # | File | Source URL | Section | Approx size | Status |
 |---|---|---|---|---|---|
-| r1 | `raw/VD8jLhaZIKg_1455-1720.mkv` (best video ≤2160p + the original English audio) | https://www.youtube.com/watch?v=VD8jLhaZIKg | 14:55–17:20 (2.4 min) | ~80–250 MB | pending |
-| r2 | `raw/VD8jLhaZIKg_2048-2120.mkv` (best video ≤2160p + the original English audio) | https://www.youtube.com/watch?v=VD8jLhaZIKg | 20:48–21:20 (0.5 min) | ~20–60 MB | pending |
+| r1 | `raw/VD8jLhaZIKg_1455-1720.mkv` (best video ≤2160p + the original English audio) | https://www.youtube.com/watch?v=VD8jLhaZIKg | 14:55–17:20 (2.4 min) | ~80–250 MB | done 2026-10-06 (9 MB, 1920,1080,30/1, audio eng) |
+| r2 | `raw/VD8jLhaZIKg_2048-2120.mkv` (best video ≤2160p + the original English audio) | https://www.youtube.com/watch?v=VD8jLhaZIKg | 20:48–21:20 (0.5 min) | ~20–60 MB | done 2026-10-06 (3 MB, 1920,1080,30/1, audio eng) |
+| b01 | `yt/assets/broll/b01-clicking-mouse.mp4` (Pexels, free licence) | https://www.pexels.com/video/39425816/ → https://videos.pexels.com/video-files/39425816/16788574_1080_1920_30fps.mp4 | whole clip (hands on a laptop and mouse: "So I went to click the link") | ~3–30 MB | done 2026-10-06 (5 MB, 1080,1920,30000/1001
+ 18.018000
+) |
+| b02 | `yt/assets/broll/b02-typing-phone.mp4` (Pexels, free licence) | https://www.pexels.com/video/6962433/ → https://videos.pexels.com/video-files/6962433/6962433-hd_1080_1920_30fps.mp4 | whole clip (typing on a phone keyboard: "You recently changed your password") | ~3–30 MB | done 2026-10-06 (10 MB, 1080,1920,30000/1001
+ 14.655000
+) |
+| b03 | `yt/assets/broll/b03-hooded-hacker.mp4` (Pexels, free licence) | https://www.pexels.com/video/6331337/ → https://videos.pexels.com/video-files/6331337/6331337-hd_1080_1920_30fps.mp4 | whole clip (a hooded figure on a laptop: "the guy is a crypto scammer") | ~3–30 MB | done 2026-10-06 (2 MB, 720,1280,30000/1001
+ 4.351667
+) |
+| b04 | `yt/assets/broll/b04-holding-coin.mp4` (Pexels, free licence) | https://www.pexels.com/video/8370540/ → https://videos.pexels.com/video-files/8370540/8370540-hd_1080_1920_30fps.mp4 | whole clip (a hand holding a coin: "He's got a fake coin") | ~3–30 MB | done 2026-10-06 (7 MB, 1080,1920,30/1
+ 12.166667
+) |
+| b05 | `yt/assets/broll/b05-crypto-downtrend.mp4` (Pexels, free licence) | https://www.pexels.com/video/35606045/ → https://videos.pexels.com/video-files/35606045/15089453_1080_1920_25fps.mp4 | whole clip (a crypto chart going down: "Scam coin") | ~3–30 MB | done 2026-10-06 (7 MB, 1080,1920,25/1
+ 
+ 1080,1920,25/1
+ 17.040000
+) |
+| b06 | `yt/assets/broll/b06-scrolling-phone.mp4` (Pexels, free licence) | https://www.pexels.com/video/38410501/ → https://videos.pexels.com/video-files/38410501/16310021_1080_1920_25fps.mp4 | whole clip (scrolling a social feed: "I could start a new Twitter") | ~3–30 MB | done 2026-10-06 (9 MB, 1080,1920,25/1
+| m1 | `yt/assets/audio/ES_Tension 5 - Fredrik Ekstrom.wav` (music bed, WAV full mix) | Epidemic Sound recording 7a0f7666-2bfd-373c-8654-417b9ae5b3fc ("Tension 5", Fredrik Ekström; ambient, mystery, sneaking, suspense; 115 bpm; 1:54) | whole track | ~20 MB | done 2026-10-06 (32 MB) |
+ 21.280000
+) |

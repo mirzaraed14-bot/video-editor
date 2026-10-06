@@ -5,7 +5,7 @@ composition with a transparent background (README § 5, § 6) -> <job>/yt/hf-ove
   cd projects/<job>/yt/hf-overlay && npx --yes hyperframes@0.8.16 render . --format mov --fps <fps> -o ../work/overlay.mov
 
 Reads `<job>/yt/spec.json` → "hook": {"lines": ["SMALL WHITE LINE", "BIG GRADIENT LINE"], "caps": [49, 75], "y": [1357, 1442],
-"max_w": 840} and "watermark": "SHOW NAME", plus `<job>/yt/captions.json` (yt_captions.py). The hook slides in from the left
+"max_w": 840} and "watermark": "SHOW NAME" (+ optional "watermark_y", centre px, default 1160: lower it when the captions sit low, ig_capy.py), plus `<job>/yt/captions.json` (yt_captions.py). The hook slides in from the left
 over ~0.46 s, holds, slides out over ~0.88 s and is gone by ~3.2 s, with per-frame horizontal motion blur; every timeline
 step sits a quarter frame before its frame boundary (exact boundaries round a third of them a frame late).
 """
@@ -20,7 +20,7 @@ for _s in (sys.stdout, sys.stderr):
 
 KIT = os.path.dirname(os.path.abspath(__file__))
 W, H = 1080, 1920
-IN_FRAMES, HOLD_END, OUT_FRAMES = 11, 56, 21
+IN_24, HOLD_END_24, OUT_24 = 11, 56, 21          # frames at 24 fps (the reference); main() scales them to the job fps
 BLURS = [2, 6, 12, 24, 40]
 
 
@@ -51,6 +51,9 @@ def main():
         sizes.append(round(size * min(1.0, max_w / width), 1))
     if len(sizes) == 2 and caps[1] and sizes[1] * caps[0] / caps[1] < sizes[0]:
         sizes[0] = round(sizes[1] * caps[0] / caps[1], 1)   # a width-capped big line shrinks the small line too: the 0.65 ratio stays (QA r2)
+    # the hook's timing was measured at 24 fps (0.46 s in, out from 2.33 s, 0.88 s out, gone by 3.2 s): scale to this job's rate
+    # (QA 2026-10-06: at 30 fps the raw frame counts ran 2.47 s)
+    IN_FRAMES, HOLD_END, OUT_FRAMES = (int(round(n * fps / 24)) for n in (IN_24, HOLD_END_24, OUT_24))
     ease_in = lambda p: 1 if p >= 1 else 1 - 2 ** (-10 * p)
     hook_x = {}
     for f in range(IN_FRAMES):
@@ -79,7 +82,9 @@ def main():
     shutil.copy(os.path.join(KIT, "vendor", "gsap.min.js"), os.path.join(out, "vendor", "gsap.min.js"))
     kit_css = open(os.path.join(KIT, "yt-captions.css"), encoding="utf-8").read()
     kit_js = open(os.path.join(KIT, "yt-captions.js"), encoding="utf-8").read()
-    chunks = [dict(text=c["text"], start=c["start"], end=c["end"], voice=c["voice"], wipe=c["wipe"]) for c in cap["chunks"]]
+    chunks = [dict(text=c["text"], start=c["start"], end=c["end"], voice=c["voice"], wipe=c["wipe"], **({"y": c["y"]} if "y" in c else {}),
+                   **({"moves": c["moves"]} if c.get("moves") else {}))     # ig_capy.py: [frame, y] on a cut inside the chunk
+              for c in cap["chunks"]]
     hb = "\n".join(f'<filter id="hook-hb{i + 1}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="{bv} 0"/></filter>'
                    for i, bv in enumerate(BLURS))
     hook_divs = "".join(
@@ -116,7 +121,7 @@ html, body {{ margin: 0; background: transparent; }}
 {hb}
 </defs></svg>
 <div id="root" data-composition-id="{comp_id}" data-start="0" data-width="{W}" data-height="{H}" data-duration="{dur:.4f}" data-fps="{fps}">
-  <div id="wm-layer" class="layer"><div id="wm" style="top:{1160 - 24}px">{wm}</div></div>
+  <div id="wm-layer" class="layer"><div id="wm" style="top:{spec.get("watermark_y", 1160) - 24}px">{wm}</div></div>
   <div id="caps" class="layer"></div>
   <div id="hook" data-layout-allow-overflow>{hook_divs}</div>
 </div>

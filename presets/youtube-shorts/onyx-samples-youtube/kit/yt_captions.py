@@ -9,9 +9,10 @@ Reads `<job>/yt/spec.json` → "captions": {
                       is found on the voice track's 10 ms envelope near the WhisperX start, which runs 40-155 ms late; when it
                       can't be measured the chunk leads the WhisperX start by lead + 0.055 s),
   "snap": 2           a chunk change up to this many frames AFTER a shot cut moves back onto the cut; a chunk that changes VOICE
-                      also moves LATER onto a cut ≤ 3 frames ahead, if that cut is still before its first word (the speaker
+                      also moves LATER onto a cut ≤ 4 frames ahead, if that cut is still before its first word (the speaker
                       on screen and the caption colour switch together),
-  "chunks": [[n_words, "TEXT", voice, wipe], ...]   in order, covering every word exactly once
+  "chunks": [[n_words, "TEXT", voice, wipe(, start_f)], ...]   in order, covering every word exactly once; the optional 5th item
+                      pins the chunk's first frame (a measured acoustic onset, when the transcript's stamp is off)
 }
 voice: "main" (white, wipe → red) or another kit voice ("yellow", "cyan", "purple"): solid colour, wipe white → colour.
 Rules checked: ≤ 19 characters per chunk, words used exactly once. Each chunk holds until the next one (never blank).
@@ -44,24 +45,29 @@ def envelope(path, sr=16000):
     return 20 * np.log10(np.sqrt((x ** 2).mean(1)) + 1e-9)
 
 
-def onset(env, ws):
-    """Acoustic onset of a word whose WhisperX start is ws: after silence, the first 10 ms frame 12 dB over the floor;
-    in continuous speech, the dip just before it. Clamped to ws − 0.25 … ws + 0.02. None if it can't be measured."""
+def onset(env, ws, prev_end, gfloor):
+    """Acoustic onset of a word whose WhisperX start is ws, searched only AFTER the previous word's end (QA r3: an
+    unbounded search caught dips inside the previous word, and noise in silence). After a pause (≥ 0.12 s): the first
+    10 ms frame that stays 12 dB over the noise floor (local, never below the track's absolute floor + 15 dB) for 30 ms.
+    In continuous speech: the END of the dip before the word (the first frame 6 dB over the dip's minimum).
+    Clamped to ws − 0.15 … ws + 0.02 (WhisperX starts run 40-155 ms late). None if nothing qualifies."""
     i = lambda t: int(round(t * 100))
-    a, b = max(0, i(ws - 0.6)), min(len(env), i(ws + 0.1))
-    if b - a < 30:
+    lo_t = max(prev_end - 0.03, ws - 0.25)
+    a, b = max(0, i(lo_t)), min(len(env), i(ws + 0.03))
+    if b - a < 3:
         return None
     seg = env[a:b]
-    floor = np.percentile(env[a:max(a + 1, i(ws - 0.1))], 10)
-    lo, hi = i(ws - 0.25) - a, i(ws + 0.02) - a
-    pre = env[max(a, i(ws - 0.30)):max(a + 1, i(ws - 0.10))]
-    if pre.max() < floor + 6:                                   # the word follows a pause
-        above = np.nonzero(seg[lo:hi + 1] > floor + 12)[0]
-        if len(above):
-            return (a + lo + above[0]) / 100
+    if ws - prev_end >= 0.12:
+        floor = max(np.percentile(env[max(0, i(prev_end)):max(i(prev_end) + 1, i(ws - 0.05))], 20), gfloor + 15)
+        for k in range(len(seg) - 2):
+            if (seg[k:k + 3] > floor + 12).all():
+                return float(np.clip((a + k) / 100, ws - 0.15, ws + 0.02))
         return None
-    k = int(np.argmin(seg[lo:hi + 1]))                         # continuous speech: the dip before the word
-    return (a + lo + k + 1) / 100
+    m = int(np.argmin(seg))
+    rise = np.nonzero(seg[m:] > seg[m] + 6)[0]
+    if not len(rise):
+        return None
+    return float(np.clip((a + m + rise[0]) / 100, ws - 0.15, ws + 0.02))
 
 
 def main():
@@ -78,25 +84,32 @@ def main():
     cuts = [sh["f0"] for sh in spec["shots"][1:]]                    # shot cuts, straight from the spec (no picture pass needed)
     lead, snap = c.get("lead", 0.135), c.get("snap", 2)
     env = envelope(os.path.join(job, spec["audio"]["voice"])) if spec.get("audio", {}).get("voice") else None
+    gfloor = float(np.percentile(env, 5)) if env is not None else -90.0
     out, i, measured = [], 0, 0
-    for n, text, voice, wipe in chunks:
+    for spec_ch in chunks:
+        n, text, voice, wipe = spec_ch[:4]
+        fixed = spec_ch[4] if len(spec_ch) > 4 else None          # optional 5th item: a measured start frame (WhisperX stamps can be 0.1-0.6 s off)
         ws = W[i:i + n]; i += n
         if len(text) > 19:
             sys.exit(f"yt_captions: '{text}' is {len(text)} characters (max 19)")
-        on = onset(env, ws[0]["s"]) if (env is not None and out) else None
+        prev_end = out[-1]["last_word_end"] if out else 0.0
+        on = onset(env, ws[0]["s"], prev_end, gfloor) if (env is not None and out) else None
         measured += on is not None
         t = (on - lead) if on is not None else (ws[0]["s"] - lead - 0.055)
+        t = max(t, ws[0]["s"] - 0.30, prev_end - 0.05)                  # never absurdly early, never over words still being said
         f = 0 if not out else int(math.floor(t * fps + 1e-6))
         if out:
             f = max(f, out[-1]["start_f"] + 1)
         start = f
         if out:
-            earlier = [k for k in cuts if 0 <= f - k <= snap]            # a cut just before: change on the cut
-            later = [k for k in cuts if 0 < k - f <= 3 and k / fps <= ws[0]["s"]] if voice != out[-1]["voice"] else []
+            earlier = [k for k in cuts if 0 <= f - k <= snap and k / fps >= prev_end - 0.05]   # a cut just before: change on the cut
+            later = [k for k in cuts if 0 < k - f <= 4 and k / fps <= ws[0]["s"]] if voice != out[-1]["voice"] else []
             if later:
                 start = later[0]
             elif earlier:
                 start = earlier[-1]
+        if fixed is not None:
+            start = max(int(fixed), out[-1]["start_f"] + 1) if out else int(fixed)
         out.append(dict(text=text, voice=voice, wipe=bool(wipe), start_f=start, first_word=ws[0]["s"], onset=on,
                         last_word_end=ws[-1]["e"], words=" ".join(str(w["t"]) for w in ws)))
     for a, b in zip(out, out[1:]):

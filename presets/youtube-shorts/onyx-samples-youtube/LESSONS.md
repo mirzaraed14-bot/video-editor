@@ -78,3 +78,13 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   sign plate fitted to the width above the captions, over a blurred, darkened copy of the shot.
 - **The YouTube look is now a spec-driven kit**: `kit/yt_picture.py` + `projects/<job>/yt/spec.json` (MFM's spec reproduced
   the hand-written build pixel for pixel). New jobs write a spec; nothing is copied from another job.
+
+## Rollo (`projects/rationalmale-hacked/`), QA round 2, 2026-10-06
+- **The hook's timing was frame counts measured at 24 fps** (11 in / hold to 56 / 21 out): at 30 fps it ran 2.47 s, not 3.2 s.
+  → `yt_overlay.py` scales the counts by fps / 24.
+- **Watermark vs lip captions**: a talking head shot tight puts the lips low, and the captions (capped above the watermark) could not
+  get under them. → spec `watermark_y` (Rollo 1295); ig_capy keeps the glyph centre <= watermark_y - 90 (bottom >= 20 px over it).
+- **Cyan = a verbatim read-out only.** "PASSCODE WAS CREATED" was cyan while the card on screen said "A passkey on Android has been
+  added": a paraphrase is white. Check every cyan chunk against the frame it plays over.
+- **A self-correction is captioned as SPOKEN** ("fake pill", not the corrected "coin" said two repeats later in the source), and a
+  short word the transcript missed ("or a") still gets captioned (the chunk text may hold words the word count does not consume).

@@ -10,7 +10,8 @@ Reads `<job>/yt/spec.json` → "audio": {
          either side, QA r2), +2 dB from the turn (a 100 ms ramp, never a step),
   "sfx": [{"file": "assets/sfx/UI Save.wav", "lead": 0.281, "t": <s>, "gain_db": -22}]   designed sounds (repo-relative file,
          `lead` = leading silence to trim, `t` = audible onset), each ≥ 15 LU under the voice,
-  "target_i": -12, "target_tp": -1.5
+  "target_i": -12, "target_tp": -1.5,
+  "mute": [[t0, t1], ...]          optional: voice ranges silenced (profanity), with 10 ms ramps
 }
 Master: ONE static gain to the target loudness into an oversampled peak limiter (never loudnorm: its "linear" mode falls back
 to dynamic when a peak needs limiting, and pumps). The gain is re-trimmed so the limited result lands on the target. The limiter
@@ -107,6 +108,14 @@ def main():
     os.makedirs(work, exist_ok=True)
     voice = os.path.join(work, "voice.wav")
     run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(job, a["voice"]), "-vn", "-ac", "2", "-ar", "48000", "-t", f"{dur:.4f}", voice])
+    if a.get("mute"):               # profanity muted in the voice (README § 5: starred on screen, muted in the audio), 10 ms ramps
+        x = read_wav(voice); g = np.ones(len(x)); sr, rr = 48000, 480
+        for t0, t1 in a["mute"]:
+            i0, i1 = int(t0 * sr), int(t1 * sr)
+            g[max(0, i0 - rr):i0] = np.minimum(g[max(0, i0 - rr):i0], np.linspace(1, 0, i0 - max(0, i0 - rr)))
+            g[i0:i1] = 0; g[i1:i1 + rr] = np.minimum(g[i1:i1 + rr], np.linspace(0, 1, len(g[i1:i1 + rr])))
+        write_wav(voice, x * g[:, None])
+        print(f"voice: muted {len(a['mute'])} range(s)")
     vi, vtp = lufs(voice)
     print(f"voice: {vi:.1f} LUFS, true peak {vtp:.1f} dBFS")
     inputs, fc, labels = ["-i", voice], [], ["[0:a]"]
@@ -141,7 +150,7 @@ def main():
     for _ in range(3):
         run(["ffmpeg", "-v", "error", "-y", "-i", premix, "-af",
              f"volume={gain:.3f}dB,aresample=192000,alimiter=limit={10 ** ((ttp - 0.3) / 20):.4f}:attack=5:release=50:level=0:latency=1,"
-             f"aresample=48000,afade=t=out:st={dur - 0.010:.4f}:d=0.010",
+             f"aresample=48000,afade=t=in:d=0.005,afade=t=out:st={dur - 0.010:.4f}:d=0.010",      # 5 ms in: a cut can start mid-word
              "-ar", "48000", out])
         mi, mtp = lufs(out)
         if abs(mi - ti) <= 0.15 and mtp <= ttp + 0.05:

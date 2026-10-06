@@ -3,6 +3,18 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-06 — Sequence 30 (Martin Fitzwater vs Nick): head lock comps 50 + 52, captions
+
+- **A sequence can carry parked clips past the short** (Seq 30: the short ends 53.32 s, raw leftovers sit at 121–226 s
+  after a gap). Caption only the short: trim the read reference at the end of the first contiguous run before
+  transcribing (make_plan consumes every transcript word).
+- **A cut that joins two words fools both decoders the same way** ("I went as far as blocking" → "I wouldn't start as
+  blocking", beam 1 and beam 5 agreed). Agreement between decodes of the CUT proves nothing: decode the UNCUT source
+  around the joint, then fix words.json `_fixes` with times from the RMS.
+- **When a commentator reads a comment on screen, the screen settles the words** ("Nick responds and says very" = his
+  Instagram reply "very", visible in the frame). Quoted comment + reply = italic; the commentators themselves upright.
+- **Scale-100 layers of 1920×1080 footage in the 1080×1920 comp are letterboxed:** left unlocked and asked (comp 50 L3–L4).
+
 ## 2026-10-05 — zoom pass on ABW8 Linked Comp 46 (Nick Walker parents, 19 blocks, ABW9.aep)
 
 - **Two-shot reaction blocks need a SIDE pivot, decided per block from the full frames:** a pull-out's deepest

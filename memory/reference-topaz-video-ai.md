@@ -1,8 +1,11 @@
 ---
 name: reference-topaz-video-ai
-description: "Affan's Topaz Video AI 5.0.4 is installed and scriptable (its own ffmpeg with tvai_* filters); his Iris recipe is wrapped in workflows/topaz-iris.py — use it for soft faces and low-res footage"
+description: "Affan's Topaz Video AI 5.0.4 is installed and scriptable (its own ffmpeg with tvai_* filters); his Iris recipe is wrapped in workflows/topaz-iris.py — interpolation on every sample, Iris only for ≤1080p sources"
 metadata:
+  node_type: memory
   type: reference
+  originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
+  modified: 2026-10-06T16:27:41.469Z
 ---
 
 **Topaz Video AI 5.0.4** (Affan says "Video AI 5"; a newer "Topaz Video" app also exists on the machine but he asked for
@@ -23,3 +26,7 @@ his Iris values but outputs 2× (focus fix ½), which won clearly on the MFM ver
 `--segments` at every cut and camera change of a spliced base, so the stabiliser and the interpolation never cross a cut.
 Topaz appends a duplicate last frame; the script trims it. Speed: ~23 s of processing per second of 1080p→4K.
 Related: [[project-onyx-sample-shorts]], [[feedback-sourced-stills-must-be-hq]].
+
+2026-10-06: the frame-interpolation stage can DROP frames on near-static talking-head takes (8 of 26 lost on a webcam two-up), which desyncs the base. The script now redoes any take whose frame count changed WITHOUT interpolation, so the timeline never shifts; still check the ✓ line.
+
+2026-10-06, Affan's rule: "still do topaz because it makes the footage very smooth; if the quality difference isn't there don't enhance but apply interpolation". So interpolation (replace duplicate frames) on EVERY sample, per take; Iris only where it visibly helps (≤1080p sources). Native 4K → `--no-enhance --no-stab` (~2.7 fps at 4K; Iris softened a 4K beard at phone size, the stabiliser shifted a tripod frame). Interpolation leaves frames without a repeat untouched (46.6 dB to the source).

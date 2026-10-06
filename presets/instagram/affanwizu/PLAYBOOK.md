@@ -40,9 +40,12 @@ The creator hands over a **finished cut**. We return the same cut with captions,
 default dropped 10 s of speech on balcony).
 With After Effects / Premiere open the GPU is full and this crawls: prefix `WHISPERX_DEVICE=cpu` (~90 s for a 40 s reel).
 
-**The cut lives in Premiere (the usual case):** read the sequence through the bridge
-(`get_sequence_structure`, plus the V1 clips' Motion), rebuild it with ffmpeg from the edit points and
-the same framing into `raw/`, and transcribe that. Gaps in the sequence stay gaps.
+**The cut lives in Premiere (the usual case):** one command reads the sequence through the bridge and
+rebuilds it into `raw/` (gaps kept, sample-exact audio, Gate A checked, `--dur` printed):
+```bash
+python presets/instagram/affanwizu/sequence_reference.py "Sequence 31" projects/seq31-short
+```
+Then transcribe that. Gaps in the sequence stay gaps; a title stretched past the cut on V2 doesn't extend it.
 
 **Then the English listener** (every job, ~1 min per minute of audio on CPU):
 ```bash

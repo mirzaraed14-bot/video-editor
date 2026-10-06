@@ -1,6 +1,9 @@
 # mindsetmentor-23k-call: Onyx sample Short for The Mindset Mentor (Rob Dial)
 
 ## ▶ STATUS: resume here
+- **2026-10-06 (later): FINAL = v9** — the lip-line captions now MOVE ON THE CUT: a chunk on screen across a cut takes each shot's own height (before, it kept one shot's height and sat on the other shot's mouth for a few frames; found by Pomp's r3 QA), and a chunk that would appear 1-2 frames before a cut appears on it. Kit `ig_capy.py` (moves/show/hide) + `ig_overlay.py`. Picture and sound untouched (audio null -91 dB vs the previous final), clean decode; final + ~/Downloads replaced.
+- **2026-10-06: FINAL = v8, CAPTIONS MOVED UP UNDER THE LIPS** (Affan's review: "the distance between the captions and the lips needs to be shorter"). `kit/ig_capy.py` places every chunk just below the speaker's lower lip, per shot (chunk y 786-1044, was a fixed 1428; above the $19,672 card while it is up); picture, cards and sound unchanged from the earlier final. Clean decode, audio = picture; `outputs/mindsetmentor-23k-call.final.mp4` + ~/Downloads replaced.
+- **2026-10-06: FINAL = v6** (`outputs/mindsetmentor-23k-call.final.mp4`, copy in ~/Downloads). 3 QA rounds (work/qa/r1-*, r2-*, r3-*), the r3 fixes verified frame by frame on v6 (no frozen cutaway tail, 34 sound cues at -13.0 LUFS / -1.8 dBTP, clean decode, the bank card says "Wire transfer incoming"). Next for this job: Affan's review, then his reaction video and the delivery email draft (Affan sends).
 - 2026-10-05: job opened (batch 1, `projects/_onyx-batch-2026-10/BATCH.md`). Research: `_onyx-batch-2026-10/robdial/research.md`.
 - **Platform: INSTAGRAM** (@robdialjr: 1.7M followers, ~2.4 reels a day, settled median ~85K = 5 % of followers, top 164K;
   YouTube Shorts: 3.2 a day, median 15.6K = 1.44 % of 1.08M subs → Reels earn ~5x the views per post). Look:

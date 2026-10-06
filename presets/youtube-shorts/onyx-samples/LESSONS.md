@@ -134,3 +134,107 @@ app's built-in browser (Instagram's player doesn't show in Chrome screenshots, a
   and keep graphics minimal; the exchange is the visual.
 - Next study before each Instagram build: 2–3 more accounts (candidates: @thedankoe recent reels 358K/307K, DOAC's real handle,
   @hubermanlab clips, @chriswillx).
+
+## Reference study 2 (2026-10-05, before the Rob Dial build `projects/mindsetmentor-23k-call/`)
+
+| Account (reel) | Views | What it does |
+|---|---|---|
+| @melrobbins (12.8M followers; reels 1.3–2.1M) | 1.3–2.1M | One static shot, white caption boxes, no graphics at all. |
+| @jayshetty (a 4.8M reel) | 4.8M | 1 s of him in B&W, then warm cinematic stock B-roll under his voice the whole story long; small white captions. |
+| @robdial's own reels | — | B&W grade on him, small YELLOW sentence-case captions. |
+
+**Applied to the Rob sample:** Rob in B&W, warm B-roll for the story beats (faceless when he says "I"), HIS yellow captions (the new
+`plain` caption style: colour/size/weight per job, dark glow + soft radial scrim), only three diegetic graphics, each an object
+from the story itself: an iOS incoming-call banner (`call` card, with a vibrate sound), the `$23,000` count-up in a dark pill
+(`number` + `"box": true`), and a bank notification (`notify` card, with a ding). Credit line "Rob Dial · The Mindset Mentor"
+(his team's condition), delayed past the hook (`credit_t0`), in a pill (`credit_pill`).
+- **Diegetic UI beats abstract graphics for a told story.** A phone call in the story = the phone's call screen; money arriving = the
+  bank's notification. They read instantly and need no kicker.
+- **A bright B-roll shot behind yellow captions fails contrast** (a sunset time-lapse measured 1.4–2.9:1 on 9 frames even with the
+  scrim). The fix lives in the PICTURE, not a heavier scrim: `grade.shade` {y0, y1, a} darkens the bottom of that one shot (kit
+  `yt_picture.py`, 2026-10-06). A heavier caption scrim reads as a grey haze.
+- **QA r2 sound:** soft "return" whooshes at −22 dB are inaudible under a voice + bed (best excess −10 dB). Returns get the brighter
+  `tick` at −22 when a whoosh would have to be louder than the entrances; never drop a return's sound (README § 6).
+- **Caption timing with a 0.15 s lead:** back-to-back words make a chunk vanish before its last word is spoken. The next chunk starts
+  at max(first word − 0.15, last word of the previous chunk + 0.06).
+
+## Reference study 3 (2026-10-06, before the Chris Do build `projects/thefutur-nonprofit-15k/`)
+
+Same method (grid views from Chrome; 16-frame sheets drawn from each reel's own video in the built-in browser, nothing downloaded).
+
+| Account (reel) | Views | What it does |
+|---|---|---|
+| @thechrisdo `DdMhWYUgUfW` (12 Sep, 68.6 s) | 240K | Multicam stage role-play: wide, medium, close and an audience cut, a new angle every 2–5 s. Captions are **WHITE text on a BLACK box** (square-ish corners, 2 lines, sentence case, mid-low frame). The thumbnail/opening is one huge yellow condensed number: "$1000". **Correction to study 1:** it said "white boxes, black text"; the frames show black boxes with white text. |
+| @thechrisdo `DdmLEIqAbGE` (22 Sep, 54.9 s) | 112K | Same stage format, small plain white captions with no box, a yellow label box at the end. His recent top three are all live money role-plays (240K / 112K / 111K): the format IS his brand on Instagram. |
+| @chriswillx (Modern Wisdom) `Dd6ts6OxAgV` (30 Sep, 65 s) | 1M (feed: daily, 200K–1.1M) | A **white label box with black bold Title Case** ("Are You Mocked For Your Healthy Habits?") holds for the first ~8 s, under a small plain caption. After that: tiny ONE-WORD white captions at chest height, and the picture alternates between a wide and a close angle every 4–8 s. No graphics at all. |
+| @thedankoe `Dd6gGIJKgI1` (30 Sep, 28.5 s; feed peaks 33.9M / 9.1M / 7.1M) | 101K | Faceless: pure black canvas, one small thin line of type in the upper third, thin white circles, dots and lines that keep moving (a dot orbits, travels a path, a line draws out). Huge negative space. |
+
+**What changes for the Chris Do sample:**
+- **Two angles from one 4K camera** (Modern Wisdom, Chris's own multicam): alternate a wide and a punched-in close on the speaker
+  every 3–6 s, on word boundaries; cut to the woman for her lines (the exchange is the visual).
+- **His caption house style:** white text on a black box, sentence case.
+- **A title label held over the hook** (Modern Wisdom + his yellow one-word title): a question in a box for the first ~3 s.
+- **The one GRAPHIC beat is Dan Koe-minimal:** a black canvas, thin-line geometry, small type. For "$1,000 vs $15,000": two circles
+  whose AREAS are in the ratio of the money (1:15), drawn as thin white lines, small numbers under each. No count-up, no gold.
+
+## Rob Dial sample, QA rounds 2-3 (2026-10-06, `projects/mindsetmentor-23k-call/`, final v6)
+- **A stock cutaway's last frames can be a frozen hold** (c01's frames 140-145 = frame 139): the shot froze 0.25 s on her face mid-word.
+  Check the tail of every B-roll clip for repeated frames before choosing `src_in`; shift the shot, never stretch it.
+- **The ~1.5 s rule needs about 0.7 designed sounds per second** (34 cues in 49.4 s). Cut cues alone gave 0.49/s; the gaps were closed with
+  ticks at -22 dB placed where the voice leaves room (each measured: audible yet >= 21.9 dB under any word).
+- **A cue that belongs to a cut peaks ON the cut**, so its `t` sits ~0.07 s before the boundary (the kit starts the sound 0.05 s before `t`).
+- **A card must not state what the speaker hasn't said yet**: "Wire transfer received" while he says "I'll get it wired" → "incoming".
+
+## Batch 1 builds, QA round 1 (2026-10-06): what the reviewers caught on Chris Do, Rich Roll, Harbinger, Pomp
+- **Every rough-cut joint INSIDE one camera take is a jump cut unless the angle changes ON it** (Chris Do: two pose jumps inside one
+  long shot, HIGH). Before writing shots, list the visible picture jumps (frame-diff peaks on the base) and put a shot boundary, with a
+  zoom step of at least x1.18, on each one. A punch-in of a few % reads as a mistake; `r` is per SECOND, so keep push-ins ~6 % per shot.
+- **A stock clip is checked at full size, frame by frame, before it's used**: the "bank teller counter" was a coffee shop with a
+  stranger's face, a card-network decal and a duplicate frame every 6th frame; a "revolving door" carried G Pay / VISA decals and an
+  hours sign; a "bank facade" carried a real store's name. Text, logos and faces in stock = swap the clip (or use the speaker).
+- **A named real person never gets a stranger's face as a stand-in.** When no faceless clip exists, stay on the speaker.
+- **Hook frames: crop strangers out** (a man behind the guest in the hook) and keep the title label off the guest's head (measure the
+  hair top across the shot, not on one frame).
+- **Diegetic cards must match who does what**: an incoming-call banner reading "Zac's dad · calling…" said the dad called; the speech
+  says the TELLER called the dad → "Rhonda Jackson · PNC Bank · calling…".
+- **A bright B-roll shot behind white or yellow captions** gets `grade.shade` (a bottom gradient in the picture), measured to ≥ 4.5:1.
+- **The ~0.7 designed sounds per second** (Rob Dial lesson) is needed on every sample: the first builds all came in at ~0.5/s with 3-7 s
+  silent stretches; the reviewers measured gap-fill ticks that stay ≥ 11-20 dB under the words they touch.
+- **The audio must cover the last frame**: a cut 7 frames shorter than the picture leaves a silent tail; set `frames` to the audio length.
+- **Kit:** `ig_build.fps_arg` passed "30.0" for an integer rate and HyperFrames refused it (fixed: "30"). Topaz Iris with frame
+  interpolation ("fi") dropped 8 of 26 frames on a near-static two-up take: run `topaz-iris.py --no-fi` on talking heads (fixed by
+  re-doing the take and splicing it back to the exact frame count).
+
+## Affan's review of batch 1 (2026-10-06): captions just below the lips
+- *"I like the shorts you have made but the distance between the captions and the lips of the viewer needs to be shorter… I was constantly
+  moving my eyes up and down naturally which creates irritation… I don't want the captions on top of the lips but conveniently below."*
+- → `kit/ig_capy.py` (new): per shot, the caption top = the lowest mouth line of the shot (YuNet mouth landmarks, now stored by
+  `yt_faces.py`, mapped through the crop) + 0.075 × face height + 6 px. Checked on Rob, Chris Do and Rich Roll frames: the landmark sits on the
+  lips and the caption lands on the chin, ~60-95 px under the lip line (was 300-700 px under it). Wired into `ig_build.py` and `yt_build.py`;
+  `captions.fixed_y: true` turns it off. All batch-1 samples re-rendered with it (Rob v7, Chris Do v5, Rich Roll v6, Harbinger v5, Pomp v4, Rollo).
+
+## Lip-line captions, QA round 3 (Pomp) + round 2 (Rollo), 2026-10-06: a chunk must move ON the cut
+- **A chunk on screen across a cut kept ONE shot's height** (ig_capy placed each chunk by its mid-time): in the other shot it sat on the
+  mouth (Pomp: 13 runs, 61 frames, e.g. "that Alameda" over Zac's lips) and the caption height changed mid-shot 25 times. Rollo: a chunk that
+  starts ~0.13 s before its word (the lead) took the NEXT shot's height 3-4 frames before the cut (onto his lips 3 times).
+  → `kit/ig_capy.py`: (1) SNAP: a chunk that would appear 1..lead frames before a cut appears ON it (the chunk before holds to the cut);
+  never later than its own lead, so the text still lands on/before the word. (2) MOVES: a chunk spanning a cut is placed per SEGMENT and
+  jumps to the new shot's lip line exactly on the cut frame (`"moves": [[frame, y]]`, read by `ig_overlay.py` and `yt-captions.js`).
+  Instagram keeps the hand-tuned `start`/`end` and writes the effective `show`/`hide`; YouTube rewrites start/end (regenerated each build).
+  Re-rendered every sample: Rob v9, Chris Do v7, Rich Roll v7, Harbinger v6, MFM v11 (audio null -91 dB vs the previous finals).
+- **A face inside a screen capture is not the speaker**: a post photo / avatar in a FIT inset was read as Rollo's face and put a caption on
+  the screenshot. → an inset face counts only if it is inside the inset and >= 0.3 of its height (speaker insets measure 0.55-0.60).
+- **The label paint-out left a hard rectangle** on Pomp's dark wall (mask `g < 30` took the whole background) and a ghost of the letters
+  (the drop shadow). → `yt_picture.fill_box`: each column blends the box's clean top rows into the clean rows just under it (past the shadow),
+  feathered at the side edge: a bookshelf's spines continue, a wall stays a smooth gradient.
+- **(r3, later the same night) The snap must never make a caption LATE.** A blanket "up to lead frames" snap assumed every chunk had
+  its full lead; Rollo's "IS GOING TO DO." came out 0.077 s after "is". → snap only while the chunk still appears >= 0.02 s before its
+  first word (the measured onset, else the transcript start - 0.055 s). Instagram's 0.08 s lead leaves no room, so Instagram chunks keep
+  their time and only MOVE on the cut.
+- **Mouth corners are not the lower lip.** The corner line barely moves when the mouth opens; the lower lip drops 0.09-0.12 x face height
+  below it (Rollo, measured on 880-1320 px faces; Pomp: the box clipped the lower lip on 85 frames). Default gap 0.075 -> **0.13** x face
+  height (spec `captions.lip_gap`). Rollo's targets from the reviewer's ruler reads came out within 2 px on s01/s23/s25, 20-45 px lower
+  (still on the chin) elsewhere. Where the caption can't go low enough (a tight face low in the source, the crop window already at the
+  frame's bottom edge), lower the watermark (`watermark_y`, Rollo 1360, hook moved with it), never the caption onto the lip.
+- **Topaz on every sample, Affan's rule (2026-10-06)**: interpolation (replace duplicate frames) always, Iris only for <= 1080p.
+  Rich Roll's 4K cut had 113 exactly-repeated frames (8.5 %); Chronos per take -> 4, frame count exact. `base_hq` = `<job>.topaz-fi.mov`.

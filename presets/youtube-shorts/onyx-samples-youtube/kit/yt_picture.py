@@ -12,14 +12,18 @@ workflows/whip-slide.py). Shot kinds:
   A      the speaker: full-height 9:16 crop of the base (Topaz 4K base when present), face-tracked, linear push-in
   B      B-roll: a source clip retimed to the fps (speed > 1 for a time-lapse), centred on (cx, cy) or panned
   SPLIT  speaker on top (y 0 -> seam), B-roll below on a floating panel
-  FIT    a source (or a `crop` box of it) fitted to the width over a blurred, darkened copy of itself; `fg_y` centres it
+  FIT    a source (or a `crop` box of it) fitted to the width over a blurred, darkened copy of itself; `fg_y` centres it;
+         `inpaint` [[x0, y0, x1, y1], ...] (source fractions) paints out burned-in text in those boxes first (Pomp's show label;
+         fill_box: each column blends the clean top rows into the clean rows under the box, so draw the box with a clean top margin)
 Spec keys: fps, frames, base, base_hq (optional, e.g. the Topaz 4K base), faces (json from yt_faces.py), broll_dir,
 split {seam, bob_amp, bob_period}, shots [ {id, kind, f0, f1, ...} ], whip_dirs {shot id: "left"|"right"},
 sticker (optional) {shot, matte, matte_first_base_frame, rise_start, settle, final_xy_out, height_out, angle},
 grade (optional) {"A": {...}, "B": {...}}: a look per shot family (A = the speaker, also the SPLIT top; B = B-roll, FIT and the
 SPLIT bottom), overridable per shot with "grade": {...}. Keys: "bw" (true: Rec.709 luma), "sat" (saturation x), "warm"
-(+R / −B, e.g. 0.04), "contrast" (around mid-grey, e.g. 1.12), "black" (lift, e.g. 0.02). Built for the Instagram look
-(a host whose own reels are black-and-white, with colour B-roll).
+(+R / −B, e.g. 0.04), "contrast" (around mid-grey, e.g. 1.12), "black" (lift, e.g. 0.02), "shade" {y0, y1, a} (a bottom
+gradient in output-frame px: 0 at y0, smoothstep to a darkening of `a` at y1, held to the bottom; for a bright shot behind the
+captions, e.g. a sunset sky; full-frame A/B shots only). Built for the Instagram look (a host whose own reels are
+black-and-white, with colour B-roll).
 Frame ranges are [f0, f1) on the base cut's timeline; the shots must tile every frame. A B-roll `src` that is a bare
 file name lives in broll_dir; one with a "/" is relative to the job folder.
 """
@@ -39,13 +43,36 @@ W, H = 1080, 1920
 
 def probe(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
-                          "-of", "csv=p=0", path], capture_output=True, text=True).stdout.strip().split(",")
+                          "-of", "csv=p=0", path], capture_output=True, text=True).stdout.strip().splitlines()[0].split(",")      # first line only: some stock files carry 2 video streams
     return int(out[0]), int(out[1])
 
 
+
+def fill_box(fr, bx):
+    """Paint out burned-in text in box bx (source fractions x0, y0, x1, y1), in place. Each column is filled with a blend from the
+    box's clean top rows to the clean rows just under it (past the label's soft drop shadow), feathered at the side edges: right for
+    a label over an out-of-focus background (a bookshelf's spines continue, a wall stays a smooth gradient). QA 2026-10-06: a
+    cv2.inpaint of a glyph + `g < 30` mask left a hard rectangle on Pomp's dark wall and a ghost of the letters."""
+    H_, W_ = fr.shape[:2]
+    X0, Y0, X1, Y1 = int(bx[0] * W_), int(bx[1] * H_), int(bx[2] * W_), int(bx[3] * H_)
+    sg = H_ / 2160; n = max(2, int(10 * sg)); Yb = min(H_ - n, Y1 + int(24 * sg))
+    blur = lambda r: cv2.GaussianBlur(r[None], (0, 0), sigmaX=3 * sg, sigmaY=0.1)[0]
+    bot = blur(fr[Yb:Yb + n].astype(np.float32).mean(axis=0))[X0:X1]
+    top = blur(fr[Y0:Y0 + n].astype(np.float32).mean(axis=0))[X0:X1] if Y0 + n < Y1 else bot
+    w = np.linspace(0, 1, Yb - Y0, dtype=np.float32)[:, None, None]
+    patch = top[None] * (1 - w) + bot[None] * w
+    fx = int(40 * sg); ax = np.ones(X1 - X0, np.float32)
+    if X1 < W_:
+        ax[-fx:] = np.linspace(1, 0, fx)
+    if X0 > 0:
+        ax[:fx] = np.minimum(ax[:fx], np.linspace(0, 1, fx))
+    al = np.repeat(ax[None, :], Yb - Y0, axis=0)[..., None]
+    fr[Y0:Yb, X0:X1] = (fr[Y0:Yb, X0:X1].astype(np.float32) * (1 - al) + patch * al).astype(np.uint8)
+    return fr
+
 def src_fps(path):
     r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", path],
-                       capture_output=True, text=True).stdout.strip()
+                       capture_output=True, text=True).stdout.strip().splitlines()[0].strip()   # first stream only (some stock files carry 2)
     n, _, d = r.partition("/")
     return float(n) / float(d or 1) if n else 0.0
 
@@ -141,6 +168,10 @@ def grade(img, g):
         x = 0.5 + (x - 0.5) * g["contrast"]
     if g.get("black"):
         x = g["black"] + x * (1 - g["black"])
+    if g.get("shade"):
+        sh = g["shade"]
+        u = np.clip((np.arange(x.shape[0], dtype=np.float32) - sh["y0"]) / max(sh["y1"] - sh["y0"], 1), 0, 1)
+        x = x * (1 - sh["a"] * u * u * (3 - 2 * u))[:, None, None]
     return (np.clip(x, 0, 1) * 255 + 0.5).astype(np.uint8)
 
 
@@ -269,6 +300,9 @@ def main():
                 out = grade(render_B(rd["main"].read(), s, u, W, H), gB)
             elif s["kind"] == "FIT":
                 fr = rd["main"].read()
+                for bx in s.get("inpaint", []):    # burned-in source text (a show label) painted out, so the crop may reach the frame edge
+                    fr = fr.copy() if not fr.flags.writeable else fr
+                    fill_box(fr, bx)
                 bg = cv2.GaussianBlur(render_B(fr, dict(cx=0.5, cy=0.5, z0=1.0, r=0.0, _dur=1), 0, W, H), (0, 0), 28)
                 out = (bg.astype(np.float32) * s.get("bg_dim", 0.5)).astype(np.uint8)
                 if s.get("crop"):                  # fit only this box of the source (fractions x0, y0, x1, y1)

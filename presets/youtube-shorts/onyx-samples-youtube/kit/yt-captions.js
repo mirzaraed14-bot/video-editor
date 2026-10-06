@@ -210,6 +210,7 @@
       var chunk = el(doc, "div", "ytc-chunk ytc-v-" + (custom ? "custom" : voice));
       chunk.setAttribute("data-layout-allow-overflow", "");
       chunk.setAttribute("data-ytc-index", String(i));
+      if (c.y != null) chunk.style.setProperty("--ytc-y", c.y + "px");   // per-chunk glyph centre (ig_capy.py: just under the lips)
       if (custom) {
         chunk.style.setProperty("--ytc-grad", custom.grad);
         chunk.style.setProperty("--ytc-grad-top", custom.top);
@@ -242,6 +243,9 @@
       // on / off
       tl.set(chunk, { autoAlpha: 1 }, at(k0));
       tl.set(chunk, { autoAlpha: 0 }, at(k1));
+      (c.moves || []).forEach(function (m) {              // [frame, y]: a new shot's lip line, applied ON the cut frame (ig_capy.py)
+        tl.set(chunk, { "--ytc-y": m[1] + "px" }, at(m[0]));
+      });
 
       // entrance: one discrete state per frame
       for (var j = 0; j < o.pop.length && k0 + j < k1; j++) {

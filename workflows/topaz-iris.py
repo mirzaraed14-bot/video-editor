@@ -15,6 +15,10 @@ C:/ProgramData/Topaz Labs LLC/Topaz Video AI/presets), as he set it in the app o
                                                                       #   indices where a new take starts) so the stabiliser
                                                                       #   and the duplicate-frame interpolation never cross a cut
   --no-stab / --no-fi   switch those stages off (e.g. a static tripod shot, or cartoons)
+  --no-enhance          no Iris: only the frame interpolation (duplicate frames replaced) and/or stabilisation, output = input
+                        size (a native-4K source Iris does not improve; Affan 2026-10-06: "if the quality difference isn't there
+                        don't enhance but apply interpolation"). A take that comes back with a different frame count is redone
+                        without interpolation, so the timeline never shifts.
 
 Output: ProRes 422 HQ, same frame rate and frame count as the input, BT.709 tagged. Needs a signed-in Topaz Video AI install.
 """
@@ -55,7 +59,7 @@ def run(cmd, env):
         sys.exit("topaz-iris: ffmpeg failed:\n" + p.stderr[-3000:])
 
 
-def enhance(src, dst, out_scale, stab, fi, env, tmp):
+def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True):
     w, h, fps, n = probe(src)
     down_w = int(round(w * out_scale / 4 / 2)) * 2        # Iris runs x4: pre-scale so the output is out_scale x the input
     chain = []
@@ -66,7 +70,7 @@ def enhance(src, dst, out_scale, stab, fi, env, tmp):
         chain.append(STB.format(cpe=esc(cpe)))
     if fi:
         chain.append(FI)
-    chain += [f"scale={down_w}:-2", IRIS, "scale=out_color_matrix=bt709"]
+    chain += ([f"scale={down_w}:-2", IRIS] if iris else []) + ["scale=out_color_matrix=bt709"]
     run([TFFMPEG, "-hide_banner", "-nostdin", "-y", "-nostats", "-i", src, *SWS, "-filter_complex", ",".join(chain),
          "-an", "-c:v", "prores_ks", "-profile:v", "3", "-pix_fmt", "yuv422p10le", "-color_primaries", "bt709",
          "-color_trc", "bt709", "-colorspace", "bt709", "-r", fps, "-frames:v", str(n), dst], env)   # Topaz appends a duplicate last frame
@@ -80,6 +84,7 @@ def main():
     ap.add_argument("--out-scale", type=float, default=1.0)
     ap.add_argument("--segments", default="")
     ap.add_argument("--no-stab", action="store_true"); ap.add_argument("--no-fi", action="store_true")
+    ap.add_argument("--no-enhance", action="store_true")      # frame interpolation (and/or stabilisation) only: no Iris, output = input size
     a = ap.parse_args()
     if not os.path.exists(TFFMPEG):
         sys.exit(f"topaz-iris: Topaz Video AI's ffmpeg not found at {TFFMPEG}")
@@ -95,8 +100,11 @@ def main():
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a.src, "-vf", f"select='between(n\\,{s}\\,{e - 1})',setpts=N/FRAME_RATE/TB",
                             "-an", "-c:v", "ffv1", "-r", fps, seg], check=True)
             out = os.path.join(tmp, f"up{i:02d}.mov")
-            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp)
+            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance)
             flag = "" if on == inn else f"  ⚠ frame count {inn} -> {on}"
+            if on != inn and not a.no_fi:      # Chronos can return a static take short (Harbinger lost 8 frames): redo it without FI
+                (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, False, env, tmp, iris=not a.no_enhance)
+                flag += f" -> redone WITHOUT frame interpolation: {on} frames"
             print(f"  take {i + 1}: frames {s}-{e - 1} ({inn} f) {iw}x{ih} -> {ow}x{oh}{flag}")
             parts.append(out)
         if len(parts) == 1:

@@ -28,6 +28,7 @@ The baseline is per reel (`--y`; chin + ~115 px). **Default style for this chann
 - [`PLAYBOOK.md`](PLAYBOOK.md): the per-reel procedure (HOW)
 - [`LESSONS.md`](LESSONS.md): what each job taught
 - [`build.py`](build.py): `--prep` drafts the phrasing, then a burn or a transparent layer
+- [`sequence_reference.py`](sequence_reference.py): reads the creator's Premiere sequence and rebuilds it as the caption job's reference cut
 - [`codeswitch_pass.py`](codeswitch_pass.py): the second listener that hears his English (→ `transcript/codeswitch.json`)
 - [`caption_qa.py`](caption_qa.py): the gate before hand-off (dropped speech, English, spelling; `--fix`)
 - [`reference/`](reference/README.md): 211 of the creator's own caption lines, frame-exact, from four finished reels

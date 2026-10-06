@@ -42,7 +42,12 @@ point). Affan's instructions for it:
   file is logged in its job's BRIEF (name, source, size) before it is pulled.
 - **Transcripts:** YouTube refuses caption downloads from this machine (HTTP 429), so research pulls only the candidate
   sections' AUDIO and transcribes them locally, one at a time on the GPU.
-- **Topaz** (Affan's Iris recipe, `workflows/topaz-iris.py --out-scale 2`) on the speaker footage of every sample.
+- **Topaz on the speaker footage of every sample** (Affan, 2026-10-06: "still do topaz because it makes the footage very smooth; if the
+  quality difference isn't there don't enhance but apply interpolation"): his frame interpolation (Chronos, replace duplicate
+  frames) ALWAYS, per take (`--segments` at every joint and camera cut); his Iris enhancement only where it shows (≤1080p
+  sources, `--out-scale 2`). A native-4K source gets `--no-enhance --no-stab` (Iris softened Rob Dial's 4K beard and flattened
+  its contrast at phone size; the stabiliser shifted a tripod frame). Point `base_hq` (and FIT insets of the speaker that are
+  not text) at the result.
 - When the batch is done, tell Affan.
 
 ## 0. Pick the platform first (Affan, 2026-10-05)
@@ -70,6 +75,10 @@ past hits on the same topic). `raw/` holds only the source section we cut from.
    episode's chapters. Also note any **earlier Short by the same show on the same story**, with views. A big
    gap between them is the strongest line in the reaction video.
 3. Download **only the section needed** (`--download-sections "*<start>-<end>"`, H.264, ≤1080p) to `raw/`.
+   **Then normalise its time zero** (rough-cut SKILL § Gotchas, 2026-10-06): a section download starts the audio 0.05–4.9 s
+   after the video, and every cut lands that much early. `ffmpeg -i dl.mkv -map 0:v:0 -c:v copy -map 0:a:0 -af
+   "aresample=async=1:first_pts=0" -c:a flac raw/<name>.mkv`, the download kept in `work/raw-orig/`. Prefer the best
+   available resolution (4K when offered): a 9:16 crop of 4K needs no upscale (Iris only for ≤1080p sources; interpolation on every source, § Topaz above).
 4. **Default moment** when Affan gives none: the same story as their Short, re-cut from the full episode. Same
    content side by side is the cleanest comparison, and it's exactly what the permission email asked to use.
 
