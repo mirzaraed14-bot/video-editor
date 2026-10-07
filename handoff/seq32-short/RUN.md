@@ -19,4 +19,4 @@ Next: drag the .srt into ABW8 Sequence 32, apply **"affanwizu yellow"**, baselin
 - **Misplaced sentence at 132.5–140 s:** the main pass jumped from "payment dene mai" to "jab mene unke sath…" 3 s early and
   lost "aaj bhi mai, ab wo obviously, mujy unka channel pata hai, unka instagram, mujy sab pata hai". Re-timed from a wide re-decode.
 - 168–184 s re-heard: "magar it was / worth a shot", "agar magar na kara karen", the quoted "kisi or ko utha ke le lo".
-- The English listener was still running at delivery (the creator wants speed): English taken from the main pass + re-decodes.
+- English listener run after delivery: 4 fixes in v2 — "just because of this", "let’s get to work", "mere peeche behind the scenes", "even though".
