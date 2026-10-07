@@ -238,3 +238,51 @@ Same method (grid views from Chrome; 16-frame sheets drawn from each reel's own 
   frame's bottom edge), lower the watermark (`watermark_y`, Rollo 1360, hook moved with it), never the caption onto the lip.
 - **Topaz on every sample, Affan's rule (2026-10-06)**: interpolation (replace duplicate frames) always, Iris only for <= 1080p.
   Rich Roll's 4K cut had 113 exactly-repeated frames (8.5 %); Chronos per take -> 4, frame count exact. `base_hq` = `<job>.topaz-fi.mov`.
+
+## Affan's review 2 of batch 1 (2026-10-07): lesson -> change -> file
+- **Per-shot caption heights read as captions jumping** ("the base positioning shifts… that's going to mess with the viewer's head").
+  The lip-line fix of 2026-10-06 overshot: he wanted the captions CLOSE, not moving. -> one constant y per video (`ig_capy.py`
+  constant mode) + consistent framing; README rule 2.
+- **Punctuation**: only `! ?` and quotes. -> caption builders strip the rest; README rule 1.
+- **The rise looked choppy at 30 fps.** -> overlay at 60 fps; README rule 3.
+- **Quiet SFX are no SFX** (Rob, Rich: "the sound effects are not there"; the samples had 34-76 cues at -22 dB under voice + bed).
+  -> one audible, crisp Epidemic SFX per graphic; README rule 6.
+- **All-yellow captions** (Rob). -> white base, coloured emphasis words; rule 7.
+- **Hook for strangers** (Rob): a personal story from someone the viewer doesn't know needs the who + why-care set up first; rule 9.
+- **Clip choice** (Rich Roll): a personal story with nothing in it for the viewer fails however it's edited; pick a moment that gives
+  the viewer something to take away (the engine's selection step now asks "what does a stranger get from this?").
+- **The minimal look reads "too basic" on Chris Do and Harbinger** -> both move to the Sean Ryan (YouTube) look; Rob and Rich keep this
+  look with more motion graphics and SFX.
+
+## 2026-10-08 · Rich Roll re-pick (Bryan Johnson's five sleep rules)
+- **The value bar decided the pick**: a stranger leaves with a protocol (heart rate before bed + five free rules with numbers).
+- **New cards for informational clips**: `heart` (a beating heart + an ECG line: "one marker"), `receipt` (his "accounting system" metaphor
+  drawn literally, one tick per item, a stamp on "you can't cheat it"), `rules` (a numbered list that builds one rule per beat, colour
+  swatches in a sub line). Each entrance and each row has its own Epidemic sound.
+- **Cards go BELOW the caption band when the speaker's single frames the face high** (Bryan): the face is never covered, the captions sit
+  just under the lips, the cards fill the chest area (y 900-1600).
+- **Rough-cut joints**: audio-qa's click flags were real both times: a word's sibilant tail ("eyes?") and an onset ("So") clipped by the
+  refiner. Read the 5 ms envelope at every flagged joint and set the boundary by hand (`no_refine`).
+- **A list card never opens as an empty box** (v2: the 5-rule card sat as a dark panel for 0.9 s before rule 1). The `rules` card now
+  GROWS: a clip-path measured off the laid-out rows reveals the title strip, then one row per beat (the drop shadow lives on a wrapper
+  so the clip does not cut it). Set explicit `line-height` on every text class a card measures, or font fallback shifts the clip.
+- **Measure a tall card's bottom on the overlay alpha, not by eye**: 5 rows with subs ran 1105 -> 1649, past the 1620 band. Lifted to
+  y 1070 (bottom 1611); the caption line (top 911) still clears it by ~85 px.
+- **The `splice.sh` video offset** (yt-dlp sections keep the video's real start time): an A/V desync of 4.95 s shipped in the v1 base;
+  fixed in splice.sh (`video_offset`), Topaz re-run on the corrected base.
+- **QA r1 (Rich Roll): the caption "rise" was a no-op on LEFT-aligned captions.** `.cap .inner` is `display:inline` there (for
+  the multi-line box clone), and CSS transforms do nothing on an inline box, so 49 of 52 chunks hard-cut in. The kit now animates the
+  absolutely-positioned `#c{i}` (moves set `top`, so they don't collide). Verify a rise by measuring the overlay alpha over frames
+  +0..+12 after a chunk start, not by eye.
+- **Epidemic files carry lead-ins** (measured 5 ms RMS): `pop-glass` has a soft pre-tick and the real pop at 0.595 s, `whoosh-light`
+  is silent until 0.42 s (crest 0.75), `whoosh-air` until 0.14 s. Untrimmed, every pop and title whoosh landed ~0.6 s after its card.
+  `ig_build.ES_LEAD` trims them with a 5 ms fade-in; clicks/ticks were raised from 8 to 3 dB under the voice peak (they lived
+  above 6 kHz and read as nothing on a phone). **Rob Dial's v15 was built before this fix** (Epidemic kit, centred captions, so its
+  rise is fine): its pops/whooshes land late too; rebuilding it is a `--skip picture` run if Affan wants.
+- **A card's entrance sound can be chosen** (`"sfx_kind": "pop"`): a whoosh under continuous speech is masked, a transient pop is
+  not. Receipt rows tick 0.08 s BEFORE each word so the click clears the word's onset (a tick on the "s" of "stressed" vanished).
+- **Captions break on a speaker-changing camera cut**: `captions.breaks` [t, ...] (cut-timeline s) forces a chunk break.
+- **A source camera cut 1 frame before an EDL joint** leaves one frame of the other camera in the previous shot's crop (a 33 ms
+  flash): end that shot one frame early (`cut18 = F(starts[i18]) - 1`). Look for scene cuts within ±2 frames of every joint.
+- **A hook is a stake, not a label**: "5 rules for better sleep." -> "One number at night / decides your sleep." (his own claim).
+  A serif title line holds ~19 characters at the title size before it wraps.

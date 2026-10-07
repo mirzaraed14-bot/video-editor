@@ -122,6 +122,19 @@ def video_fps(path):
     num, den = tok.split("/")
     return int(num), int(den)
 
+def video_offset(path):
+    """The video stream's start relative to the audio's (seconds). A yt-dlp SECTION download cuts the video at the keyframe
+    BEFORE the section and keeps its real start time (Rich Roll 2026-10-08: video start_time 4.951 s, audio 0), so frame 0 of
+    the video is NOT at timeline 0: a frame-index trim must subtract this, or the picture runs ~5 s ahead of the voice."""
+    def st(sel):
+        out = subprocess.run(["ffprobe", "-v", "error", "-select_streams", sel, "-show_entries", "stream=start_time", "-of", "csv=p=0", path],
+                             capture_output=True, text=True).stdout.strip().splitlines()
+        try:
+            return float(out[0].split(",")[0])
+        except (IndexError, ValueError):
+            return 0.0
+    return st("v:0") - st("a:0")
+
 parts, vlabels = [], []
 # Joint treatment: J-CUT CROSSFADES, not fades-to-zero. A butt-splice clicks whenever a
 # joint misses a zero crossing (measured 1-sample jumps up to ~80x local signal), but
@@ -156,7 +169,12 @@ for i, seg in enumerate(segs):
         sb = sa + fd / fn
     max_shift = max(max_shift, abs(sa - a), abs(sb - b))
     seg["start"], seg["end"] = a, b = sa, sb
-    parts.append(f"[{k}:v]trim={a}:{b},setpts=PTS-STARTPTS[v{i}]")
+    # trim VIDEO by FRAME INDEX, not time: a source with truncated millisecond stamps (yt-dlp AV1 .mkv: frame 2 at 0.066 s, not
+    # 0.0667) lets a time trim ending exactly on a frame boundary take the NEXT frame too, +1 frame per segment, so the picture drifts
+    # behind the voice (Chris Do 2026-10-07: +7 frames, 0.2 s by the end). Identical on sources with exact stamps.
+    vo = video_offset(inputs[k])
+    fa, fb = max(0, round((sa - vo) * fn / fd)), max(1, round((sb - vo) * fn / fd))
+    parts.append(f"[{k}:v]trim=start_frame={fa}:end_frame={fb},setpts=PTS-STARTPTS[v{i}]")
     ext = xf_into(i + 1) if i < n - 1 else 0.0   # tail extension feeds the next joint's crossfade
     edge = ""
     if i == 0:

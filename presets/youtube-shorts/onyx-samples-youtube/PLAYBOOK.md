@@ -79,3 +79,10 @@ Run the multi-lens QA workflow (`projects/mfm-nursery-rhymes/work/qa/onyx-sample
 
 Every reported defect goes to a skeptic who tries to refute it. Fix, re-render, re-run: at most 3 rounds, defects only, never taste. Then
 Affan reviews it for taste. Every note goes into LESSONS.md the same turn.
+
+## Topaz (Affan, 2026-10-06)
+Interpolation on every sample ("it makes the footage very smooth"), Iris only where it visibly helps (≤1080p sources):
+`python workflows/topaz-iris.py <base> outputs/<job>.topaz.mov --out-scale 2 --no-stab --segments <every joint + camera cut>` runs
+interpolation BEFORE Iris in one pass (Iris makes repeated frames non-identical, so interpolating an Iris file afterwards misses
+half of them). Native 4K: add `--no-enhance`. Point `yt/spec.json` `base_hq` at the result; FIT insets of screen captures stay on the
+1080p base (text untouched). A take that comes back with a different frame count is redone without interpolation automatically.

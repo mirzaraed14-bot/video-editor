@@ -47,7 +47,9 @@ point). Affan's instructions for it:
   frames) ALWAYS, per take (`--segments` at every joint and camera cut); his Iris enhancement only where it shows (≤1080p
   sources, `--out-scale 2`). A native-4K source gets `--no-enhance --no-stab` (Iris softened Rob Dial's 4K beard and flattened
   its contrast at phone size; the stabiliser shifted a tripod frame). Point `base_hq` (and FIT insets of the speaker that are
-  not text) at the result.
+  not text) at the result. On a ≤1080p source run interpolation and Iris IN ONE PASS (his recipe order: interpolation first):
+  Iris redraws detail on every frame, so a repeated frame stops being identical and Chronos run afterwards misses it (Rollo:
+  held webcam frames 30 % -> only 15 % when interpolated after Iris).
 - When the batch is done, tell Affan.
 
 ## 0. Pick the platform first (Affan, 2026-10-05)

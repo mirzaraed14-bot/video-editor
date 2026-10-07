@@ -88,3 +88,62 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   added": a paraphrase is white. Check every cyan chunk against the frame it plays over.
 - **A self-correction is captioned as SPOKEN** ("fake pill", not the corrected "coin" said two repeats later in the source), and a
   short word the transcript missed ("or a") still gets captioned (the chunk text may hold words the word count does not consume).
+
+## Affan's review 2 of batch 1 (2026-10-07)
+- **MFM's sample is "perfect, don't even touch it"**: the benchmark for this look.
+- **Rollo**: the style is right, but punch-in cuts on the same camera and whips between two shots of the same camera are noise in an
+  already dynamic edit. -> whips only on a real scene/camera change; same-camera joints keep one keyframed push-in (README rules 4-5).
+  This overrides the QA reviewers' ×1.18 zoom-step and whip-every-cut rules.
+- **This look is now the default upgrade** for samples that read "too basic": Chris Do (the two people instead of B-roll overlays),
+  Harbinger and Pomp (the full style: overlays, face split screens).
+- Captions: constant position, `! ?` and quotes only, 60 fps overlay (README rules 1-3).
+
+## 2026-10-08 · Harbinger + Pomp Sean Ryan rebuilds (kit lessons)
+- **FACE SPLIT**: a SPLIT's bottom can be a second face from the SAME base frame (`"bottom": {"face": key, "face_x", "fy_out", "z0"}`),
+  only inside a source two-up range where both faces are live (Harbinger: Sean top, Jordan below). `yt_faces.py` scans both faces per
+  frame with `face_x` hints. Raise the bottom's z0 (2.0) when the source box carries a name plate under the guest.
+- **A burned-in show label on every base frame** (Pomp's "The Pomp Podcast", top left) leaks into a speaker crop: `base_inpaint`
+  [[x0, y0, x1, y1]] paints it out of the base before every A / SPLIT render (fill_box, the FIT shot's column blend).
+- **A wide title card or wordmark (BlockFi, The Americans) cannot survive a 9:16 crop**: make that shot FIT (fitted over its own blur).
+- **A webcam-tight guest (face ≈ 50 % of the frame at z0 1.0, the crop can't zoom OUT) puts the lips low**: the constant caption
+  line is capped at `watermark_y − 90`, so the default watermark (1160) pulled captions onto Sean's and Zac's mouths (QA r1, MED).
+  Fix the spec, not the picture: `captions.lip_gap` 0.04 (the 0.13 default is ~118 px on a huge face), `watermark_y` 1340, the hook at
+  y [1400, 1478]; push-ins on such a face stay ≤ 0.012/s or the crown leaves the frame.
+- **A camera change INSIDE a sentence** (the source cut to the other person for 0.18 s): an A shot's `"freeze": [[f0, f1]]` holds the
+  last good frame instead of flashing the wrong face (Rich Roll).
+- **Sound (QA r1):** `whoosh-light` crests ~0.7 s after its start: trim its head (`lead` 0.40) so the crest lands on the hook;
+  split-entrance `whoosh-air` 4 dB lower (it masked a word for 0.1 s at 2 dB under the voice peak).
+- **Caption colour = voice also covers QUOTED voices** per person: a `captions.palette` entry adds a colour (green for the third
+  quoted voice). Attribute a line by CONTENT, not by the show's camera: Pomp's reaction shot sat under Zac's "How do you not have the
+  money?" (the raw runs on into his next sentence); the B-roll covers that reaction so the picture never contradicts the colour.
+- yt-dlp sections of a stock clip can report `r_frame_rate` as "60/1,": parse the first field only.
+- **QA r2 (Harbinger):** a dark night B-roll does not open with `black` + `contrast` (contrast runs first and pulls the mids back
+  down). New `grade.gamma` key, applied FIRST; pair it with a negative `black` (a black-point crush) or the shot goes milky:
+  `{"gamma": 0.6, "black": -0.07, "sat": 1.2}` lifted the house facade from mean luma 0.09 to 0.17 with the window still glowing.
+- **A last word clipped by a WhisperX end that runs early** ("here." ended 230.488 in words.json, the vowel actually decays to
+  −28 dB at 230.58, and the next word's fricative starts 230.60): measure the 10 ms RMS + spectral centroid, move the segment end
+  into the gap, and correct BOTH word edges in `words.json` (else the export keeps a phantom next word that starts before the cut).
+- **Extending a cut after Topaz has run**: never redo the whole 4K base. Re-splice (the first N frames null at −91 dB and decode
+  identical), run `topaz-iris.py` (Iris 2x, then FI) on the LAST take only, and stream-copy concat it onto the old base's frames
+  [0, take start): ProRes is intra-only, so `-frames:v` + concat `-c copy` is exact. Splice with the job's original `AMPLIFY_DB`
+  (Harbinger: 0) or the voice changes level under an approved mix.
+- **QA r1 (Pomp): attribute every caption chunk by VOICE, not by the show's camera or by reading the raw transcript.** Two chunk pairs
+  were coloured for the wrong person ("FTX blew up in November" is Zac; "How do you not have the money?" is Pomp). A speaker embedding
+  per chunk (pyannote wespeaker, cosine vs known spans: same speaker 0.8–0.9, the other < 0.35) settles it in a minute — run it on
+  every two-person sample before the colours are locked (Pomp `yt/work/qa-r1/emb3.py`).
+- **A source's burned-in sponsor lower-third can sit under the label we already paint out**: check a SPLIT top panel at its FIRST
+  frames (before the push scrolls it away). Fix with the top panel's start zoom (`SP(..., top_z0=1.12)`) when the crop can clear it.
+- **Read a stock clip's first second before trusting a `src_in` of 0**: y08 "FTX arena" opened on 0.5 s of a coin shot.
+- **A chyron that NAMES the thing being said (Voyager) must be readable**: a 9:16 crop shows ~32 % of a 16:9 width, so a lower-third
+  that carries the noun goes FIT, like a wide wordmark.
+- **A low-frequency thump at a joint** (the segment started inside the tail of a filler hum, 55–140 Hz): mute the voice over the burst
+  with the ramps OUTSIDE the next word's onset (`yt_mix` ramps sit outside the range: end the range ≥ 10 ms before the onset).
+- **QA r2 (Pomp): turning a masking whoosh DOWN makes it vanish** (−5 dB put the split whooshes ~15 dB under the voice, below the bed:
+  "no SFX" on a phone, the review-2 complaint). Fix a whoosh that masks a word by MOVING its crest (≈ 0.30 s after the cue for
+  `whoosh-air`) into a voice gap at the normal level (`under` 6–7), never by lowering it. Find the gaps on the voice stem first.
+- **Fixing one end of a stock clip can move the defect to the other end**: a later `src_in` slid Pomp's SBF clip onto its closing
+  dissolve. Check a B shot's FIRST and LAST frames after every `src_in` change (and every clip's source for dissolves).
+- **A centred 9:16 crop of a walking subject**: SBF walked at x 0.6–0.8 and the centred crop cut him at the edge. Use `pan` [x0, x1]
+  to follow him; `z0` > 1 with `cy` 0.0 (top-aligned) also drops a news lower-third out of the bottom.
+- **Cutting a ProRes base by stream copy: seek on the OUTPUT side** (`ffmpeg -i in.mov -ss T -frames:v N -c copy`, with T = frame start − 5 ms). An input-side `-ss` keeps the packet before the seek point, flagged discard: each part decodes fine alone, but the concat demuxer keeps that packet, and the joined base gained a frame (Rich Roll: 1387 instead of 1386). Always check `nb_read_packets` == `nb_read_frames` and run a PSNR identity check against the source frames before building on a patched base.
+- **The start of a segment can sit inside the previous word** (Harbinger: 26.70 was inside "Because"; "-cause" played uncaptioned before "I think"). WhisperX ended "Because" at 26.69, but the [k]-vowel-[z] ran to 26.865. Measure the real gap (10 ms RMS) and move the start onto the frame inside it. Muting the fragment would only patch over the bad cut.

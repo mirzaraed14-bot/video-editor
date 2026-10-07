@@ -10,6 +10,8 @@ over ~0.46 s, holds, slides out over ~0.88 s and is gone by ~3.2 s, with per-fra
 step sits a quarter frame before its frame boundary (exact boundaries round a third of them a frame late).
 """
 import json, os, shutil, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "onyx-samples", "kit"))
+from captext import clean          # the caption punctuation rule (Affan, 2026-10-07: only ! ? and quotation marks)
 from PIL import ImageFont
 
 for _s in (sys.stdout, sys.stderr):
@@ -40,7 +42,7 @@ def main():
     fps = spec["fps"]
     dur = cap["frames"] / fps
     hook = spec.get("hook") or {}
-    lines = hook.get("lines", [])
+    lines = [clean(l) for l in hook.get("lines", [])]
     caps, ys, max_w = hook.get("caps", [49, 75]), hook.get("y", [1357, 1442]), min(hook.get("max_w", 840), 840)   # x 120-960: clear of YouTube's right-hand buttons
     l, t, r, b = mont(1000).getbbox("H")
     cr = (b - t) / 1000
@@ -82,7 +84,7 @@ def main():
     shutil.copy(os.path.join(KIT, "vendor", "gsap.min.js"), os.path.join(out, "vendor", "gsap.min.js"))
     kit_css = open(os.path.join(KIT, "yt-captions.css"), encoding="utf-8").read()
     kit_js = open(os.path.join(KIT, "yt-captions.js"), encoding="utf-8").read()
-    chunks = [dict(text=c["text"], start=c["start"], end=c["end"], voice=c["voice"], wipe=c["wipe"], **({"y": c["y"]} if "y" in c else {}),
+    chunks = [dict(text=clean(c["text"]), start=c["start"], end=c["end"], voice=c["voice"], wipe=c["wipe"], **({"y": c["y"]} if "y" in c else {}),
                    **({"moves": c["moves"]} if c.get("moves") else {}))     # ig_capy.py: [frame, y] on a cut inside the chunk
               for c in cap["chunks"]]
     hb = "\n".join(f'<filter id="hook-hb{i + 1}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="{bv} 0"/></filter>'
@@ -134,7 +136,7 @@ html, body {{ margin: 0; background: transparent; }}
   window.__timelines = window.__timelines || {{}};
   const COMP = "{comp_id}";
   const tl = gsap.timeline({{ paused: true }});
-  ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps} }});
+  ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps}, palette: {json.dumps(spec.get("captions", {}).get("palette"))} }});
   {json.dumps(steps)}.forEach(([t, x, b]) => {{
     tl.set("#hook", {{ x: x, filter: b ? "url(#hook-hb" + b + ")" : "none" }}, t);
   }});

@@ -1,5 +1,11 @@
 # RUN — nick-walker-never-mr-olympia ("The Body That Could Never Win", Nick Walker long-form)
 
+## ▶ STATUS: DONE (the creator, 2026-10-07) — closed, nothing to resume
+The creator finished the polish themselves on Sequence 24. This job is the reference for the channel's NEXT long-form:
+the standing overlay look (90 % cards on the golden matte, nested host zooms, Black Video dips), the cut method
+(WhisperX word edges, voiceprint every attributed quote) and the tools (`overlays/card.py`, `overlays/place-cards.py`,
+`lanes/premiere/face-nests.py`, `brief/make-insert-plan.py`, `place-inserts.py`) all carry over.
+
 ## ▶ STATUS: THE CREATOR'S TELLA DIRECTION, PLACED + VERIFIED (2026-10-03) — resume here
 Direction: `BRIEF.md` (Tella https://www.tella.tv/video/affans-video-7oqw, every "here" resolved to Sequence 24 by the
 playhead timecode in the recording). Backup before this pass: `premiere-backup/ABW8-before-tella-direction.prproj`.

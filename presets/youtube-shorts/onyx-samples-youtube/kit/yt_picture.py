@@ -11,16 +11,22 @@ spec's fps, to `<job>/yt/work/picture.mp4`, plus `<job>/yt/work/shots.json` (fra
 workflows/whip-slide.py). Shot kinds:
   A      the speaker: full-height 9:16 crop of the base (Topaz 4K base when present), face-tracked, linear push-in
   B      B-roll: a source clip retimed to the fps (speed > 1 for a time-lapse), centred on (cx, cy) or panned
-  SPLIT  speaker on top (y 0 -> seam), B-roll below on a floating panel
+  SPLIT  speaker on top (y 0 -> seam), B-roll below on a floating panel; a FACE SPLIT's bottom is {"face": key, "fy_out", "z0", "r"}:
+         a second face cropped from the same base frame (a two-up source: both faces live at once, Harbinger 2026-10-08)
   FIT    a source (or a `crop` box of it) fitted to the width over a blurred, darkened copy of itself; `fg_y` centres it;
          `inpaint` [[x0, y0, x1, y1], ...] (source fractions) paints out burned-in text in those boxes first (Pomp's show label;
          fill_box: each column blends the clean top rows into the clean rows under the box, so draw the box with a clean top margin)
 Spec keys: fps, frames, base, base_hq (optional, e.g. the Topaz 4K base), faces (json from yt_faces.py), broll_dir,
-split {seam, bob_amp, bob_period}, shots [ {id, kind, f0, f1, ...} ], whip_dirs {shot id: "left"|"right"},
+base_inpaint (optional) [[x0, y0, x1, y1], ...] source-fraction boxes painted out of every base frame on A and SPLIT shots (a burned-in show
+label, Pomp 2026-10-08),
+split {seam, bob_amp, bob_period}, shots [ {id, kind, f0, f1, ...} ], whip_dirs {shot id: "left"|"right"|"cut"} ("cut" = a hard cut, no
+whip: Affan 2026-10-07, transitions only when the scene changes; two shots of the same camera are ONE shot, never a whip),
 sticker (optional) {shot, matte, matte_first_base_frame, rise_start, settle, final_xy_out, height_out, angle},
+an A shot's "freeze": [[f0, f1], ...] holds the frame before f0 over [f0, f1) (a source camera change inside a sentence),
 grade (optional) {"A": {...}, "B": {...}}: a look per shot family (A = the speaker, also the SPLIT top; B = B-roll, FIT and the
 SPLIT bottom), overridable per shot with "grade": {...}. Keys: "bw" (true: Rec.709 luma), "sat" (saturation x), "warm"
-(+R / −B, e.g. 0.04), "contrast" (around mid-grey, e.g. 1.12), "black" (lift, e.g. 0.02), "shade" {y0, y1, a} (a bottom
+(+R / −B, e.g. 0.04), "gamma" (x ** g, applied FIRST: < 1 opens a dark shot's mids without greying its blacks, e.g. 0.65),
+"contrast" (around mid-grey, e.g. 1.12), "black" (lift, e.g. 0.02), "shade" {y0, y1, a} (a bottom
 gradient in output-frame px: 0 at y0, smoothstep to a darkening of `a` at y1, held to the bottom; for a bright shot behind the
 captions, e.g. a sunset sky; full-frame A/B shots only). Built for the Instagram look (a host whose own reels are
 black-and-white, with colour B-roll).
@@ -72,7 +78,7 @@ def fill_box(fr, bx):
 
 def src_fps(path):
     r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", path],
-                       capture_output=True, text=True).stdout.strip().splitlines()[0].strip()   # first stream only (some stock files carry 2)
+                       capture_output=True, text=True).stdout.strip().splitlines()[0].strip().split(",")[0]   # first stream only (some stock files carry 2; some print "60/1,")
     n, _, d = r.partition("/")
     return float(n) / float(d or 1) if n else 0.0
 
@@ -157,6 +163,8 @@ def grade(img, g):
     if not g:
         return img
     x = img.astype(np.float32) / 255
+    if g.get("gamma"):
+        x = x ** g["gamma"]
     y = x[..., 0] * 0.2126 + x[..., 1] * 0.7152 + x[..., 2] * 0.0722
     if g.get("bw"):
         x = np.repeat(y[..., None], 3, axis=2)
@@ -249,7 +257,7 @@ def main():
     assert plan[0]["first"] == 0 and plan[-1]["last"] == nframes - 1, "shots must cover every frame"
     for p, q in zip(plan, plan[1:]):
         assert p["last"] + 1 == q["first"], f"gap/overlap between {p['id']} and {q['id']}"
-    json.dump(dict(fps=fps, frames=nframes, shots=plan, cuts=[dict(frame=p["first"], dir=p["whip_in"] or "left") for p in plan[1:]]),
+    json.dump(dict(fps=fps, frames=nframes, shots=plan, cuts=[dict(frame=p["first"], dir=p["whip_in"] or "left") for p in plan[1:] if p["whip_in"] != "cut"]),
               open(os.path.join(work, "shots.json"), "w", encoding="utf-8"), indent=1)
 
     st = spec.get("sticker")
@@ -265,7 +273,7 @@ def main():
         rd = {}
         if s["kind"] in ("B", "FIT"):
             rd["main"] = Reader(SRC(s["src"]), s["src_in"], b - a, fps, s.get("speed", 1.0))
-        if s["kind"] == "SPLIT":
+        if s["kind"] == "SPLIT" and not s["bottom"].get("face"):      # a FACE SPLIT's bottom is a second face from the same base frame
             bt = s["bottom"]
             rd["bottom"] = Reader(SRC(bt["src"]), bt["src_in"], b - a, fps, bt.get("speed", 1.0))
         is_st = bool(st and st["shot"] == s["id"])
@@ -278,9 +286,26 @@ def main():
         G = spec.get("grade", {})
         gA = {**G.get("A", {}), **(s.get("grade", {}) if s["kind"] == "A" else {})}
         gB = {**G.get("B", {}), **(s.get("grade", {}) if s["kind"] in ("B", "FIT") else {})}
+        # "hold_in": N on an A shot = its first N frames show frame a+N (a stray source cutaway under the incoming whip: Chris Do's
+        # empty-bookshelf frames, QA 2026-10-07). The base pipe is sequential, so the frames are read ahead and the held one reused.
+        hold = int(s.get("hold_in", 0)) if s["kind"] == "A" else 0
+        held = None
+        if hold:
+            for _ in range(hold + 1):
+                held = basep.stdout.read(BW * BH * 3)
+        frz = [tuple(z) for z in s.get("freeze", [])] if s["kind"] == "A" else []   # [[f0, f1]]: those frames hold the frame before f0
+        last_raw = None                                                               # (a camera change inside a sentence: Rich Roll 2026-10-08)
         for n_abs in range(a, b):
-            raw = basep.stdout.read(BW * BH * 3)
+            raw = held if (hold and n_abs - a <= hold) else basep.stdout.read(BW * BH * 3)
+            if frz and any(z0 <= n_abs < z1 for z0, z1 in frz) and last_raw is not None:
+                raw = last_raw
+            else:
+                last_raw = raw
             base_rgb = np.frombuffer(raw, np.uint8).reshape(BH, BW, 3).copy()
+            n_face = a + hold if (hold and n_abs - a <= hold) else n_abs
+            if s["kind"] in ("A", "SPLIT") and spec.get("base_inpaint"):     # a show label burned into EVERY base frame (Pomp's), painted out
+                for bx in spec["base_inpaint"]:                              # before the speaker crop (fill_box: column blend, see FIT)
+                    fill_box(base_rgb, bx)
             u = (n_abs - a) / fps
             if s["kind"] == "A":
                 if is_st:
@@ -295,7 +320,7 @@ def main():
                         ma = m[..., 3] if m.shape[1] == BW else cv2.resize(m[..., 3], (BW, BH), interpolation=cv2.INTER_CUBIC)
                         al = ma[..., None].astype(np.float32) / 255
                         base_rgb = (comp.astype(np.float32) * (1 - al) + base_rgb.astype(np.float32) * al).astype(np.uint8)
-                out = grade(render_A(base_rgb, s["face"], n_abs, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b)), gA)
+                out = grade(render_A(base_rgb, s["face"], n_face, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b)), gA)
             elif s["kind"] == "B":
                 out = grade(render_B(rd["main"].read(), s, u, W, H), gB)
             elif s["kind"] == "FIT":
@@ -321,8 +346,12 @@ def main():
                 out = grade(render_A(base_rgb, t["face"], n_abs, 0.5, t["fy_out"], t["z0"], t["r"], u, W, H, panel_h=split["seam"] + split["bob_amp"] + 4, rng=(a, b)),
                             {**G.get("A", {}), **t.get("grade", {})})
                 seam = int(round(split["seam"] + split["bob_amp"] * math.sin(2 * math.pi * u / split["bob_period"])))
-                panel = grade(render_B(rd["bottom"].read(), s["bottom"], u, W, H - (split["seam"] - split["bob_amp"])),
-                              {**G.get("B", {}), **s["bottom"].get("grade", {})})
+                bt = s["bottom"]; ph = H - (split["seam"] - split["bob_amp"])
+                if bt.get("face"):
+                    panel = grade(render_A(base_rgb, bt["face"], n_abs, bt.get("fx_out", 0.5), bt["fy_out"], bt["z0"], bt.get("r", 0.0), u, W, ph,
+                                           rng=(a, b)), {**G.get("A", {}), **bt.get("grade", {})})
+                else:
+                    panel = grade(render_B(rd["bottom"].read(), bt, u, W, ph), {**G.get("B", {}), **bt.get("grade", {})})
                 out[seam:] = panel[:H - seam]
             enc.stdin.write(np.ascontiguousarray(out).tobytes())
             if stills and n_abs == (a + b) // 2:

@@ -446,3 +446,24 @@ Always check the EDL bash can actually see before re-splicing.
 - **2026-10-04 · a file whose extension lies blocks the bridge**: a CDN image saved as `.png` was a JPEG, `importFiles`
   opened a File Import Failure modal, and the bridge reported "not running". Check magic bytes before importing.
 - **A ranged sequence marker takes `marker.end = <seconds as a number>` (2026-10-04, nick-walker-parents).** Assigning a `Time` object fails the whole `evalScript` with no message, AFTER `createMarker` already ran, so a retry leaves a duplicate marker: find markers by name first, delete extras, then set `end` as a number.
+
+## 2026-10-07 — reaction videos in Affan's live ABW8 (Seqs 33-35), Premiere 25.0, Windows
+
+- **Edit a sequence WITHOUT activating it.** DOM writes on `app.project.sequences[i]` work on any sequence: Motion values and keys,
+  `disabled`, `overwriteClip` on its tracks, Volume Level. Only QE needs the active sequence (`addTracks`, `addAudioEffect`). Keep QE
+  to ONE short window: `openSequence(target)`, do the work, then `openSequence(prev)` in a `finally`. A parse error between open and
+  restore left the creator on the wrong sequence once. Driver: `projects/_onyx-batch-2026-10/reactions/tools/apply.py`.
+- **Motion's built-in Crop (Left/Top/Right/Bottom %) is in LAYER space**: it crops the source frame before Scale/Position. Proved on a
+  program-monitor grab: a zoomed screen layer cropped to its panel box never leaks into the bars. To keep a crop exact through an
+  animated zoom, bake keys every 1/30 s for Scale, Position and all four crops.
+- **`track.setLocked()` takes a NUMBER** (`setLocked(0)` / `setLocked(1)`). `setLocked(false)` kills the whole `evalScript` with no
+  message.
+- **QE `addAudioEffect` returns `false` on a LOCKED audio track**, and `audio-polish.py` then reports "chain missing after add" for
+  every clip. Check `isLocked()` first; unlock, apply, re-lock.
+- **`overwriteClip` onto an occupied slot**: two graphics that start at the same time on one track make the second placement either
+  skip ("exists") or overwrite the first. Overlapping graphics are rendered as ONE layer (a `group`). The placer now replaces a
+  different-named clip found at its slot.
+- **Never export in the creator's project** (Affan, 2026-10-07): `exportAsMediaDirect` pops an encoding window over his live session.
+  He cancelled it by accident, then asked us to stop. A cancelled export answers "User has cancelled the export" and Premiere deletes
+  its own `.m4v`/`.aac` temp files. Vertical preset for HIS exports: `premiere-templates/vertical-1080x1920-60-h264-cbr24.epr`
+  (`youtube-1080p5994-h264-cbr24.epr` with Width 1080, Height 1920, FPS 4233600000 ticks = 60).

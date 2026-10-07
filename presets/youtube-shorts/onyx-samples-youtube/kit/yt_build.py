@@ -26,6 +26,14 @@ def sh(cmd, cwd=None):
         sys.exit(f"yt_build: step failed: {' '.join(str(c) for c in cmd)}")
 
 
+def fps_arg(fps):
+    """HyperFrames wants NTSC rates as a fraction ("30000/1001", never "29.97002997"), whole rates as "30" (never "30.0")."""
+    for num, den in ((24000, 1001), (30000, 1001), (60000, 1001)):
+        if abs(fps - num / den) < 1e-6:
+            return f"{num}/{den}"
+    return str(int(round(fps))) if abs(fps - round(fps)) < 1e-6 else str(fps)
+
+
 def main():
     job, version = os.path.abspath(sys.argv[1]), sys.argv[2]
     skip = set()
@@ -45,7 +53,7 @@ def main():
         if spec.get("faces") and not spec.get("captions", {}).get("fixed_y"):     # captions just under the lips, per shot (Affan, 2026-10-06)
             sh([shutil.which("uv") or "uv", "run", "-q", os.path.join(REPO, "presets", "youtube-shorts", "onyx-samples", "kit", "ig_capy.py"), job, "--dir", "yt"])
         sh([sys.executable, os.path.join(KIT, "yt_overlay.py"), job])
-        sh([shutil.which("npx") or "npx", "--yes", "hyperframes@0.8.16", "render", ".", "--format", "mov", "--fps", str(fps), "-o", "../work/overlay.mov", "--quiet"],
+        sh([shutil.which("npx") or "npx", "--yes", "hyperframes@0.8.16", "render", ".", "--format", "mov", "--fps", fps_arg(fps), "-o", "../work/overlay.mov", "--quiet"],
            cwd=os.path.join(job, "yt", "hf-overlay"))
     if "mix" not in skip:
         sh([sys.executable, os.path.join(KIT, "yt_mix.py"), job])

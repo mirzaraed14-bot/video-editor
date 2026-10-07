@@ -1,5 +1,19 @@
 # Onyx sample Shorts: THE YOUTUBE LOOK (B-roll storytelling)
 
+> **AFFAN'S RULES, ALL VIDEOS (review 2, 2026-10-07; verbatim + per-video plan in
+> `projects/_onyx-batch-2026-10/REVIEW-2026-10-07.md`). They override anything below that disagrees.**
+> 1. Captions keep ONLY `!` `?` and quotation marks: no full stops, no commas, nothing else.
+> 2. Caption base position is CONSTANT for the whole video, just under the lips where the face sits; it never moves on a cut
+>    (frame the speaker shots consistently instead). The entrance animation is fine.
+> 3. The caption entrance must look smooth: the Instagram look's rise tween renders at 60 fps (`ig_build.py` outputs 60/59.94). The
+>    YouTube look keeps its measured stepped pop at the source rate (the reference design; MFM is "perfect").
+> 4. No instant zoom-in (punch-in cut) on the same camera: one continuous keyframed push-in.
+> 5. Transitions (whips) ONLY where the scene/camera/source changes, never between two shots of the same camera.
+> 6. Every pop-up / motion graphic has an audible, crisp SFX (high-end minimal podcast vibe; Epidemic Sound).
+> 7. Captions: white base + coloured emphasis words (not one colour for everything).
+> 8. Never cut a word short at a joint. 9. The hook makes a STRANGER care: who this is and why the story matters to them.
+> "Sean Ryan style/format" in Affan's words = `onyx-samples-youtube/` (this look's reference). MFM's sample is the benchmark: "perfect".
+
 > **Platform decides the look (Affan, 2026-10-05).** Every sample is built for the prospect's PRIORITY platform:
 > - **YouTube-first → this file**: maximal, full-bleed B-roll storytelling.
 > - **Instagram-first → `presets/youtube-shorts/onyx-samples/`**: the minimal motion-graphics look (the MFM pilot).

@@ -42,6 +42,12 @@ Reads `<job>/ig/spec.json`:
               a Slack-style message card; each message pops in at its t (a soft pop each). PARAPHRASE only, and say so in "note"
       tabs    {"file": "balance_sheet.xlsx", "tabs": ["Version 1", ...], "t_tabs": s, "step": 0.09, "pick": [i, t]}
               a spreadsheet window; the tabs pop in one by one from t_tabs; "pick" turns tab i red at t
+      heart   {"label": "RESTING HEART RATE", "sub": "before bed"}   a red heart that beats beside an ECG line drawing itself (a soft pop)
+      receipt {"title": "WHAT YOUR HEART RATE LOGS", "items": [[t, "FOOD"], ...], "stamp": [t, "YOU CAN'T CHEAT IT"]}
+              a paper receipt; each line prints at its t (a tick), then a red stamp slams on (a hit)
+      rules   {"title": "5 RULES FOR BETTER SLEEP", "rows": [[t, "NO FOOD 4 HOURS BEFORE BED", "bed at 10 = last food by 6"], ...]}
+              a dark list card that builds one numbered rule per beat (a click each); a sub line may carry colour dots:
+              "{red}" "{amber}" "{white}" "{blue}" become small swatches (Rich Roll / Bryan Johnson, 2026-10-08)
       (label also takes "italic": true: Pomp's bold-italic title box)
       every card also takes "y" (top, px) to override its default slot
   "credit": "@thechrisdo"   small credit line above the captions (a prospect's condition: Rob Dial, Rollo); "credit_t0" (s) delays it
@@ -61,7 +67,10 @@ for _s in (sys.stdout, sys.stderr):
 KIT = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(KIT, "..", "..", "..", ".."))
 W, H = 1080, 1920
-SLOTS = {"chat": 300, "tabs": 300, "sheet": 0, "check": 300, "title": 300, "chip": 420, "number": 330, "image": 300, "prompt": 300, "call": 280, "notify": 280, "label": 300, "circles": 0}
+SLOTS = {"heart": 330, "receipt": 290, "rules": 250, "chat": 300, "tabs": 300, "sheet": 0, "check": 300, "title": 300, "chip": 420, "number": 330, "image": 300, "prompt": 300, "call": 280, "notify": 280, "label": 300, "circles": 0}
+
+
+from captext import clean          # the caption punctuation rule (Affan, 2026-10-07: only ! ? and quotation marks)
 
 
 def esc(t):
@@ -89,15 +98,17 @@ def main():
     cap_html, cap_js = [], []
     for i, c in enumerate(cap.get("chunks", [])):
         words = []
-        for w in c["text"].replace("'", "’").split(" "):        # typographic apostrophes, matching the title
+        for w in clean(c["text"]).replace("'", "’").split(" "):   # Affan's rule: only ! ? and quotes; typographic apostrophes
             P = ".,!?;:\"“”‘’'"                                      # punctuation never blocks a highlight ("AMERICAN." == "AMERICAN"; QA 2026-10-06)
             hl = any(w.strip(P).lower() == h.strip(P).lower() for h in c.get("hl", []))
             words.append(f'<span class="w{" hl" if hl else ""}">{esc(w)}</span>')
         ytop = f' style="top:{int(c["y"])}px"' if "y" in c else ""          # per-chunk y from ig_capy.py: just under the speaker's lips
         cap_html.append(f'<div id="c{i}" class="cap {style}"{ytop}><span class="inner">{" ".join(words)}</span></div>')
         t_in, t_out = c.get("show", c["start"]), c.get("hide", c["end"])          # ig_capy.py snaps a start onto a cut 1-2 frames later
+        # the rise animates the absolutely-positioned box: a left-aligned chunk's .inner is display:inline (multi-line box clone),
+        # and transforms do nothing on an inline box (Rich Roll QA r1: 49 of 52 captions hard-cut in). Moves set `top`, not y.
         moves = "".join(f' tl.set("#c{i}", {{top: {int(y)}}}, {q(n / fps)});' for n, y in c.get("moves", []))   # new shot, new lip line, ON the cut
-        cap_js.append(f'tl.set("#c{i}", {{autoAlpha: 1}}, {q(t_in)}); tl.fromTo("#c{i} .inner", {{y: 14}}, {{y: 0, duration: 0.16, ease: "power2.out"}}, {q(t_in)}); '
+        cap_js.append(f'tl.set("#c{i}", {{autoAlpha: 1}}, {q(t_in)}); tl.fromTo("#c{i}", {{y: 14}}, {{y: 0, duration: 0.16, ease: "power2.out"}}, {q(t_in)}); '
                       f'tl.set("#c{i}", {{autoAlpha: 0}}, {q(t_out)});{moves}')
 
     # ---- cards
@@ -118,7 +129,7 @@ def main():
             d = min(0.9, max(0.4, (k["t1"] - k["t0"]) * 0.4))
             card_js.append(f'tl.set("#{cid}", {{autoAlpha: 1}}, {q(k["t0"])}); tl.fromTo("#{cid}", {{y: 40}}, {{y: 0, duration: 0.45, ease: "power3.out"}}, {q(k["t0"])}); '
                            f'(function(){{ const o = {{v: {k.get("from", 0)}}}; tl.to(o, {{v: {k["to"]}, duration: {d:.2f}, ease: "power2.out", onUpdate: () => {{ document.getElementById("{cid}v").textContent = Math.round(o.v).toLocaleString("en-US"); }}}}, {q(k["t0"] + 0.1)}); }})();')
-            sfx.append(dict(t=round(k["t0"] + 0.1 + 0.63 * d, 3), kind="tick"))     # power2.out reaches the final value at ~63 % of d (QA 2026-10-06)
+            sfx.append(dict(t=round(k["t0"] + 0.1 + 0.92 * d, 3), kind="number"))   # the landing: the counter only READS its final value near the end of power2.out (QA 2026-10-07: 0.63 fired 0.25 s early)
         elif kind == "image":
             src = k["src"]
             dst = os.path.join(out, "assets", os.path.basename(src))
@@ -215,13 +226,60 @@ def main():
             if k.get("pick") is not None:
                 card_js.append(f'tl.to("#{cid}t{k["pick"][0]}", {{backgroundColor: "#E5484D", color: "#FFFFFF", duration: 0.2}}, {q(k["pick"][1])});')
                 sfx.append(dict(t=round(k["pick"][1], 3), kind="tick"))
+        elif kind == "heart":
+            ecg = "0,130 120,130 150,130 170,95 190,130 225,130 245,30 270,230 292,130 330,130 352,110 380,130 900,130"
+            inner = (f'<div class="hrt"><svg viewBox="0 0 900 260" width="860" height="248">'
+                     f'<path id="{cid}h" d="M130 220 C 40 150, 10 100, 40 60 C 70 20, 120 30, 130 75 C 140 30, 190 20, 220 60 C 250 100, 220 150, 130 220 Z" '
+                     f'fill="#E5484D"/>'
+                     f'<polyline id="{cid}e" points="{ecg}" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" '
+                     f'stroke-dasharray="1400" stroke-dashoffset="1400" transform="translate(260 0) scale(0.7 1)"/></svg>'
+                     f'<div class="hrtlab">{esc(k["label"])}</div>' + (f'<div class="hrtsub">{esc(k["sub"])}</div>' if k.get("sub") else "") + '</div>')
+            beats = max(1, int((k["t1"] - k["t0"] - 0.6) / 0.8))
+            card_js.append(f'tl.set("#{cid}", {{autoAlpha: 1}}, {q(k["t0"])}); tl.fromTo("#{cid} .hrt", {{y: 40, opacity: 0}}, {{y: 0, opacity: 1, duration: 0.45, ease: "power3.out"}}, {q(k["t0"])}); '
+                           f'tl.to("#{cid}e", {{attr: {{"stroke-dashoffset": 0}}, duration: 1.1, ease: "none"}}, {q(k["t0"] + 0.25)}); '
+                           + " ".join(f'tl.fromTo("#{cid}h", {{scale: 1, svgOrigin: "130 130"}}, {{scale: 1.12, svgOrigin: "130 130", duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1}}, {q(k["t0"] + 0.3 + 0.8 * b)});'
+                                      for b in range(beats)))
+        elif kind == "receipt":
+            rows = "".join(f'<div class="rrow" id="{cid}r{j}"><span class="rtick">&#10003;</span><span class="rlab">{esc(lab)}</span><span class="rdots"></span>'
+                           f'<span class="rval">+</span></div>' for j, (_, lab) in enumerate(k["items"]))
+            st = k.get("stamp")
+            inner = (f'<div class="rcpt"><div class="rhead">{esc(k.get("title", ""))}</div><div class="rsub">{esc(k.get("sub", "before bed"))}</div>{rows}'
+                     + (f'<div class="rstamp" id="{cid}s">{esc(st[1])}</div>' if st else "") + '</div>')
+            card_js.append(f'tl.set("#{cid}", {{autoAlpha: 1}}, {q(k["t0"])}); tl.fromTo("#{cid} .rcpt", {{y: 60, opacity: 0, rotation: -2}}, {{y: 0, opacity: 1, rotation: -1, duration: 0.45, ease: "power3.out"}}, {q(k["t0"])}); '
+                           + " ".join(f'tl.fromTo("#{cid}r{j}", {{opacity: 0, x: -24}}, {{opacity: 1, x: 0, duration: 0.22, ease: "power2.out"}}, {q(t)});' for j, (t, _) in enumerate(k["items"])))
+            sfx += [dict(t=round(t, 3), kind="tick") for t, _ in k["items"]]
+            if st:
+                card_js.append(f'tl.fromTo("#{cid}s", {{scale: 1.6, opacity: 0, rotation: -10}}, {{scale: 1, opacity: 1, rotation: -6, duration: 0.22, ease: "power4.in"}}, {q(st[0])});')
+                sfx.append(dict(t=round(st[0] + 0.2, 3), kind="hit"))
+        elif kind == "rules":
+            sw = {"{red}": "#E5484D", "{amber}": "#F5A524", "{white}": "#F2F2F2", "{blue}": "#3B82F6"}
+            def sub_html(t):
+                t = esc(t)
+                for key, col in sw.items():
+                    t = t.replace(key, f'<span class="sw" style="background:{col}"></span>')
+                return t
+            rows = "".join(f'<div class="rule" id="{cid}r{j}"><div class="rnum">{j + 1}</div><div class="rtxt"><div class="rmain">{esc(r[1])}</div>'
+                           + (f'<div class="rmin">{sub_html(r[2])}</div>' if len(r) > 2 and r[2] else "") + '</div></div>' for j, r in enumerate(k["rows"]))
+            inner = f'<div class="rwrap"><div class="rules"><div class="rtitle">{esc(k.get("title", ""))}</div>{rows}</div></div>'
+            # the dark card GROWS one rule at a time (a clip-path measured off the laid-out rows), never an empty box waiting for its
+            # rows (Rich Roll v2, 2026-10-08); the drop shadow lives on the wrapper so the clip does not cut it off
+            card_js.append(f'(function () {{ const R = document.querySelector("#{cid} .rules"), top = R.getBoundingClientRect().top, H = R.offsetHeight, '
+                           f'pb = parseFloat(getComputedStyle(R).paddingBottom), '
+                           f'ins = (el) => "inset(0px 0px " + Math.max(0, H - (el.getBoundingClientRect().bottom - top) - pb).toFixed(1) + "px 0px round 34px)"; '
+                           f'tl.set(R, {{clipPath: ins(R.querySelector(".rtitle"))}}, 0); '
+                           + " ".join(f'tl.to(R, {{clipPath: ins(document.getElementById("{cid}r{j}")), duration: 0.32, ease: "power3.out"}}, {q(r[0] - 0.04)});'
+                                      for j, r in enumerate(k["rows"])) + ' })();')
+            card_js.append(f'tl.set("#{cid}", {{autoAlpha: 1}}, {q(k["t0"])}); tl.fromTo("#{cid} .rules", {{y: 50, opacity: 0}}, {{y: 0, opacity: 1, duration: 0.45, ease: "power3.out"}}, {q(k["t0"])}); '
+                           + " ".join(f'tl.fromTo("#{cid}r{j}", {{opacity: 0.0, x: -30}}, {{opacity: 1, x: 0, duration: 0.3, ease: "power3.out"}}, {q(r[0])}); '
+                                      f'tl.fromTo("#{cid}r{j} .rnum", {{scale: 0.6}}, {{scale: 1, duration: 0.35, ease: "back.out(2.2)"}}, {q(r[0])});' for j, r in enumerate(k["rows"])))
+            sfx += [dict(t=round(r[0], 3), kind="click") for r in k["rows"]]
         else:
             sys.exit(f"ig_overlay: unknown card kind {kind}")
         lstyle = f'left:{k.get("x", 90)}px;width:{W - 2 * k.get("x", 90)}px;text-align:left;' if k.get("align") == "left" else ""
         card_html.append(f'<div id="{cid}" class="card{" full" if kind in ("circles", "sheet") else ""}" style="top:{y}px;{lstyle}" data-layout-allow-overflow>{inner}</div>')
         card_js.append(f'tl.to("#{cid}", {{autoAlpha: 0, duration: 0.25, ease: "power1.in"}}, {q(max(k["t0"] + 0.3, k["t1"] - 0.25))});')
         if kind not in ("call", "notify"):
-            sfx.append(dict(t=round(k["t0"], 3), kind="pop" if kind in ("chip", "image") else "whoosh"))
+            sfx.append(dict(t=round(k["t0"], 3), kind=k.get("sfx_kind") or ("pop" if kind in ("chip", "image", "heart") else ("title" if kind in ("title", "label") else "whoosh"))))
 
     cap_align_css = ".cap .inner { font-style: italic; }\n" if cap.get("italic") else ""
     if cap.get("align") == "left":
@@ -349,6 +407,32 @@ html, body {{ margin: 0; background: transparent; }}
 .noti .ntime {{ font-size: 28px; color: rgba(60,60,67,0.6); }}
 .noti .ntitle {{ font-size: 42px; font-weight: 700; }}
 .noti .nbody {{ font-size: 56px; font-weight: 900; color: #1E9E4E; margin-top: 6px; letter-spacing: -0.01em; }}
+.hrt {{ display: inline-block; width: 920px; box-sizing: border-box; padding: 28px 30px 30px; border-radius: 32px; background: rgba(14,14,14,0.94);
+  box-shadow: 0 20px 56px rgba(0,0,0,0.45); }}
+.hrt svg {{ display: block; margin: 0 auto; }}
+.hrtlab {{ font-size: 52px; font-weight: 900; color: #FFFFFF; letter-spacing: 0.01em; margin-top: 6px; }}
+.hrtsub {{ font-size: 36px; font-weight: 400; color: rgba(255,255,255,0.68); margin-top: 4px; }}
+.rcpt {{ position: relative; display: inline-block; width: 760px; box-sizing: border-box; padding: 28px 44px 112px; text-align: left; color: #161616;
+  background: #F6F4EE; box-shadow: 0 24px 64px rgba(0,0,0,0.5); }}
+.rhead {{ font-size: 40px; font-weight: 900; letter-spacing: 0.06em; text-align: center; }}
+.rsub {{ font-size: 30px; font-weight: 400; color: rgba(22,22,22,0.6); text-align: center; margin: 2px 0 10px; padding-bottom: 12px;
+  border-bottom: 3px dashed rgba(22,22,22,0.25); }}
+.rrow {{ display: flex; align-items: baseline; gap: 14px; font-size: 42px; line-height: 1.2; font-weight: 800; padding: 6px 0; font-variant-numeric: tabular-nums; }}
+.rtick {{ color: #1E9E4E; font-weight: 900; }}
+.rdots {{ flex: 1; border-bottom: 3px dotted rgba(22,22,22,0.3); transform: translateY(-9px); }}
+.rval {{ color: #E5484D; font-weight: 900; }}
+.rstamp {{ position: absolute; left: 0; right: 0; margin: 0 auto; width: max-content; bottom: 20px; font-size: 44px; font-weight: 900; color: #D7263D; border: 6px solid #D7263D; border-radius: 12px;
+  padding: 8px 18px; letter-spacing: 0.04em; background: rgba(246,244,238,0.7); }}
+.rwrap {{ display: inline-block; filter: drop-shadow(0 18px 36px rgba(0,0,0,0.45)); }}
+.rules {{ display: block; width: 940px; box-sizing: border-box; padding: 24px 32px 16px; border-radius: 34px; text-align: left;
+  background: rgba(12,12,12,0.95); }}
+.rtitle {{ font-size: 34px; font-weight: 900; letter-spacing: 0.08em; color: #CFAA5A; margin-bottom: 8px; line-height: 1.15; }}
+.rule {{ display: flex; align-items: center; gap: 20px; padding: 9px 0; border-top: 2px solid rgba(255,255,255,0.08); opacity: 0; }}
+.rnum {{ width: 60px; height: 60px; border-radius: 30px; background: #FFFFFF; color: #0B0B0B; font-size: 34px; font-weight: 900; display: flex;
+  align-items: center; justify-content: center; flex: none; }}
+.rmain {{ font-size: 38px; font-weight: 800; color: #FFFFFF; line-height: 1.1; }}
+.rmin {{ font-size: 29px; font-weight: 400; color: rgba(255,255,255,0.66); margin-top: 2px; line-height: 1.2; }}
+.sw {{ display: inline-block; width: 26px; height: 26px; border-radius: 13px; vertical-align: -3px; margin: 0 6px 0 2px; border: 2px solid rgba(255,255,255,0.35); }}
 #credit {{ position: absolute; left: 0; width: {W}px; top: {credit_y}px; text-align: center; font-size: 32px; font-weight: 700;
   color: rgba(255,255,255,0.78); text-shadow: 0 2px 8px rgba(0,0,0,0.6); }}
 #credit .pill {{ display: inline-block; padding: 6px 18px 8px; border-radius: 20px; background: rgba(0,0,0,0.42); color: rgba(255,255,255,0.88); }}

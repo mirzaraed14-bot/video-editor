@@ -2,7 +2,7 @@
 # requires-python = ">=3.10"
 # dependencies = ["opencv-python-headless", "numpy"]
 # ///
-"""ig_capy.py: place every caption chunk JUST BELOW the speaker's lips (Affan, 2026-10-06: "the distance between the captions and
+"""ig_capy.py: place the captions JUST BELOW the speaker's lips at ONE constant position per video (default; per-shot = legacy) (Affan, 2026-10-06: "the distance between the captions and
 the lips needs to be shorter… I was constantly moving my eyes up and down") -> writes "y" into each `captions.chunks[*]` of the spec.
 
   uv run presets/youtube-shorts/onyx-samples/kit/ig_capy.py projects/<job> [--dir ig] [--gap 0.075] [--pad 6] [--dry]
@@ -68,6 +68,8 @@ def main():
     gap = gap_cli if gap_cli is not None else float(cap.get("lip_gap", 0.13))
     width = cap.get("width", 960) if cap.get("align") == "left" else 960
     credit_lim = (spec.get("credit_y", cap.get("y", 1310) - 80) - 8) if spec.get("credit") else 1620
+    if credit_lim < 900:                 # a credit line at the TOP of the frame (Rich Roll 2026-10-08) never bounds the captions from below
+        credit_lim = 1620
 
     def cap_h(text):
         lines = max(1, math.ceil(len(text) * size * 0.53 / max(width, 200))) if cap.get("align") == "left" else 1
@@ -134,6 +136,47 @@ def main():
         cpath = os.path.join(job, "yt", "captions.json"); cj = json.load(open(cpath, encoding="utf-8")); chunks = cj["chunks"]
     else:
         chunks = cap.get("chunks", [])
+    # CONSTANT mode (the default since Affan's review 2, 2026-10-07: "I want constant positioning of the captions… No videos should
+    # have different sets of base positioning"): ONE caption position for the whole video, just under the lips where the face
+    # usually sits (75th percentile of the measured face shots, so most clear an open mouth). Nothing moves on a cut. Shots whose
+    # lips would sit on that line are REPORTED (reframe them: raise the face / match the zoom), and so are cards that cross the band:
+    # move the card, not the caption. `captions.place: "per-shot"` keeps the older per-shot lip line (+ moves on cuts).
+    if cap.get("place", "constant") == "constant":
+        tops = [v for k, v in shot_top.items()]
+        Y = float(np.percentile(tops, cap.get("pct", 75))) if tops else float(cap.get("y", 1310))   # captions.pct 100 = clear EVERY mouth
+        if yt:
+            yc = int(round(min(max(Y + 50, 760), spec.get("watermark_y", 1160) - 90)))
+            for c in chunks:
+                for k in ("moves", "show", "hide"):
+                    c.pop(k, None)
+                c["y"] = yc
+            top_line = yc - 50
+        else:
+            hmax = max((cap_h(c["text"]) for c in chunks), default=70)
+            yt_ = int(round(min(max(Y, 560), min(1620, credit_lim) - hmax)))
+            for c in chunks:
+                for k in ("moves", "show", "hide"):
+                    c.pop(k, None)
+                c["y"] = yt_
+            top_line = yt_
+        lips = sorted(((sid, int(t - top_line)) for sid, t in shot_top.items() if t > top_line + 8), key=lambda x: -x[1])
+        clash = []
+        if not yt:
+            for k in cards:
+                if k["kind"] in FULL:
+                    continue
+                ky = k.get("y", 300); kh = CARD_H.get(k["kind"], 250) * (len(k.get("lines", [1])) / 2 if k["kind"] == "label" else 1)
+                if top_line < ky + kh + 14 and top_line + hmax > ky - 14 and any(c["start"] < k["t1"] and c["end"] > k["t0"] for c in chunks):
+                    clash.append(f'{k["kind"]}@{k["t0"]}s y{ky}-{int(ky + kh)}')
+        if "--dry" not in a:
+            json.dump(cj if yt else spec, open(cpath if yt else p, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        print(f"{'ig_capy (yt)' if yt else 'ig_capy'}: CONSTANT caption {'glyph centre ' + str(yc) if yt else 'top ' + str(top_line)} "
+              f"({cap.get('pct', 75)}th pct of {len(tops)} face shots){' [dry run]' if '--dry' in a else ''}")
+        if lips:
+            print("  reframe (the lips sit under the caption line by px): " + ", ".join(f"{sid} +{d}" for sid, d in lips))
+        if clash:
+            print("  cards crossing the caption band (move the card): " + ", ".join(clash))
+        return
     cuts = sorted({sh["f0"] for sh in spec["shots"] if sh["f0"] > 0})
     shot_at = lambda n: next((sh for sh in spec["shots"] if sh["f0"] <= n < sh["f1"]), spec["shots"][-1])
     fr = lambda t: int(round(t * fps + 1e-6))               # both overlays show a chunk on frames [round(start*fps), round(end*fps))
@@ -187,7 +230,9 @@ def main():
             ky = k.get("y", 300); kh = CARD_H.get(k["kind"], 250) * (len(k.get("lines", [1])) / 2 if k["kind"] == "label" else 1)
             if y < ky + kh + 14 and y + h > ky - 14:      # collides: ABOVE the card if that still clears the lips, else below it
                 above, below = ky - 16 - h, ky + kh + 16
-                y = above if above >= ideal - 40 or below + h > credit_lim else below
+                # above the card while it is within 90 px of the open-mouth line (that line is conservative: Rob's "right around
+                # $23,000." above his number card clears the lower lip by ~60 px; below the card it sat ~400 px from his mouth)
+                y = above if above >= ideal - 90 or below + h > credit_lim else below
         return int(round(min(max(y, 560), min(1620, credit_lim) - h)))
 
     out, nmoves = [], 0

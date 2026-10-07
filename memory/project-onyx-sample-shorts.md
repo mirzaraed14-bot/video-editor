@@ -2,7 +2,10 @@
 name: project-onyx-sample-shorts
 description: "Onyx Influence sales samples: a re-edited Short per podcast prospect plus Affan's reaction video; own minimal motion-graphics look in presets/youtube-shorts/onyx-samples/, NOT Abundance Wisdom"
 metadata:
+  node_type: memory
   type: project
+  originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
+  modified: 2026-10-07T17:46:48.659Z
 ---
 
 Started 2026-10-04. Affan's agency Onyx Influence emails US podcast hosts for permission to use one of their Shorts.
@@ -48,6 +51,30 @@ sees what the service would do for them. Affan wants the editing as automated as
 - **Pilot status (2026-10-05):** the MFM sample is FINAL at `projects/mfm-nursery-rhymes/outputs/mfm-nursery-rhymes.sample.final.mp4`
   (built by `hf-sample/build.py`, word-anchored; 3 multi-lens QA rounds, all fixes verified). It's waiting on Affan's taste review,
   his music-bed choice, then his reaction video. The QA workflow script to reuse is `projects/mfm-nursery-rhymes/work/qa/onyx-sample-qa-r3.js`.
+- **Batch 1 review 2 (Affan, 2026-10-07)**, per prospect, in `projects/_onyx-batch-2026-10/BATCH.md`:
+  **MFM is perfect: don't touch it.** "Sean Ryan style/format" = the YouTube look (`onyx-samples-youtube/`, measured from the Shawn
+  Ryan reference). Chris Do → Sean Ryan style with the two people instead of B-roll overlays (few or none). Harbinger and Pomp → full
+  Sean Ryan style (overlays, face split screens). Rollo → keep the style, drop the same-camera punch-ins and whips. Rob Dial → keep the
+  Instagram look, fix the hook (a stranger must care who he is), add audible SFX, white+colour captions, no clipped words. Rich Roll →
+  re-pick a VALUABLE (informational) moment, keep his minimal style but with more motion graphics (e.g. avatars acting out the story) and
+  crisp Epidemic SFX. All: [[feedback-caption-punctuation]], [[feedback-captions-just-below-lips]] (constant), [[feedback-no-same-camera-punch-ins]],
+  [[feedback-sfx-on-every-graphic]]. The hook must set up a stranger: who this is and why the story matters to THEM.
 - **Podcast-source traps found on the pilot** (all in the preset's LESSONS.md): episode border frames, burned-in name labels,
   two-up layouts, WhisperX squeezing numbers and starting first words late, and the 24→30 fps frame mapping (`rframe()`).
 Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]], [[feedback-youtube-sourcing]].
+
+
+**Reaction videos (2026-10-07 night):** Affan's reactions to the samples are edited IN his ABW8 project: Seq 33 = MFM, 34 = Chris Do, 35 = Rollo. All three are prepared and verified; HE exports ([[feedback-affan-exports-himself]]). His Tella direction is resolved in `projects/_onyx-batch-2026-10/REACTIONS-BRIEF.md`:
+- his split layout, face-only only on emphasis beats, instant punch-ins allowed (his rule for this format);
+- zooms into the sample cropped to the panel;
+- Bebas Neue white captions with no animation, on the seam (his onyxinfluence reel is the reference);
+- a channel card on the intro, clean motion graphics with Epidemic SFX, a subtle Epidemic jazz bed, no grade.
+The toolkit is `projects/_onyx-batch-2026-10/reactions/tools/`. Rob Dial's reaction is next, then delivery email drafts (Affan sends).
+
+**2026-10-08: the three on hold are FINAL** in ~/Downloads, each through fresh-eyes QA rounds: Harbinger (Sean Ryan yt7), Pomp (Sean Ryan yt9), Rich Roll (new pick, Bryan Johnson's five sleep rules, Instagram v6). The kit fixes found on the way are in both presets' LESSONS.md:
+- the caption rise was a no-op on left-aligned captions;
+- the Epidemic files' lead-ins made pops land 0.6 s late (`ES_LEAD`);
+- whooshes that mask a word are MOVED into a voice gap, never turned down;
+- caption colour is checked by speaker embedding;
+- patched 4K bases are cut by stream copy with output-side seeking.
+Open: Rob Dial v15 predates the SFX fix; offer a `--skip picture` rebuild.

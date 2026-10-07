@@ -30,3 +30,5 @@ Related: [[project-onyx-sample-shorts]], [[feedback-sourced-stills-must-be-hq]].
 2026-10-06: the frame-interpolation stage can DROP frames on near-static talking-head takes (8 of 26 lost on a webcam two-up), which desyncs the base. The script now redoes any take whose frame count changed WITHOUT interpolation, so the timeline never shifts; still check the ✓ line.
 
 2026-10-06, Affan's rule: "still do topaz because it makes the footage very smooth; if the quality difference isn't there don't enhance but apply interpolation". So interpolation (replace duplicate frames) on EVERY sample, per take; Iris only where it visibly helps (≤1080p sources). Native 4K → `--no-enhance --no-stab` (~2.7 fps at 4K; Iris softened a 4K beard at phone size, the stabiliser shifted a tripod frame). Interpolation leaves frames without a repeat untouched (46.6 dB to the source).
+
+Order matters: interpolation BEFORE Iris, in one pass (`--out-scale 2` without `--no-fi`). Iris output makes repeated frames non-identical, so Chronos run on an Iris file misses them (Rollo 2026-10-06: held webcam frames 30 % -> 15 % only).

@@ -8,6 +8,8 @@ metadata:
   modified: 2026-10-03T01:27:25.445Z
 ---
 
+**DONE (the creator confirmed 2026-10-07).** Next long-form starts from this job as the template.
+
 The Abundance Wisdom channel's first face-led long-form: Nick Walker, "The Body That Could Never Win" (LOCKED script v2,
 2 Oct 2026, target ~9:15, publish by Oct 4–5 while the Olympia news is warm). Job folder
 `projects/nick-walker-never-mr-olympia/` (RUN.md is the state). The creator records + syncs + cuts their own host

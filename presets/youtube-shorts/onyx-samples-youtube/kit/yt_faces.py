@@ -8,7 +8,7 @@ of yt_picture.py).
   uv run presets/youtube-shorts/onyx-samples-youtube/kit/yt_faces.py projects/<job> [--dir ig] [--step 2]
 
 Reads `<job>/<dir>/spec.json`: "base" (the approved cut), "fps", "shots". Every A shot's "face" key and every SPLIT shot's
-"top"."face" key is scanned over that shot's frames [f0, f1), every `--step` frames, with YuNet
+"top"."face" (and a FACE SPLIT's "bottom"."face") key is scanned over that shot's frames [f0, f1), every `--step` frames, with YuNet
 (assets/models/face_detection_yunet_2023mar.onnx); the largest face wins. Boxes are stored in the BASE's pixels, also when
 detection runs on a downscaled copy (bases wider than 1920 px). Several shots may share one key (one speaker): yt_picture
 fits each shot only to the detections inside its own frame range. Each per-frame entry is [x, y, w, h] + YuNet's five
@@ -39,15 +39,14 @@ def main():
     BW, BH = probe(base)
     s = min(1.0, 1920 / BW)
     W, H = int(round(BW * s)), int(round(BH * s))
-    want, hints = {}, {}
+    want = {}                                    # frame -> [(key, hint px or None)]: a FACE SPLIT needs two faces at one frame
     for sh in spec["shots"]:
-        src = sh if sh["kind"] == "A" else (sh.get("top", {}) if sh["kind"] == "SPLIT" else {})
-        key, hint = src.get("face"), src.get("face_x")
-        if key:
-            for n in list(range(sh["f0"], sh["f1"], step)) + [sh["f1"] - 1]:
-                want[n] = key
-                if hint is not None:
-                    hints[n] = hint * W
+        srcs = [sh] if sh["kind"] == "A" else ([sh.get("top", {}), sh.get("bottom", {})] if sh["kind"] == "SPLIT" else [])
+        for src in srcs:
+            key, hint = src.get("face"), src.get("face_x")
+            if key:
+                for n in list(range(sh["f0"], sh["f1"], step)) + [sh["f1"] - 1]:
+                    want.setdefault(n, []).append((key, hint * W if hint is not None else None))
     det = cv2.FaceDetectorYN.create(MODEL, "", (W, H), 0.6, 0.3, 5000)
     proc = subprocess.Popen(["ffmpeg", "-v", "error", "-i", base, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "bgr24", "-"],
                             stdout=subprocess.PIPE)
@@ -60,16 +59,17 @@ def main():
             break
         if n in want:
             _, faces = det.detect(np.frombuffer(buf, np.uint8).reshape(H, W, 3))
-            if faces is not None and len(faces) and n in hints:     # only a face within 12 % of the width of the hint counts
-                faces = [r for r in faces if abs(r[0] + r[2] / 2 - hints[n]) < 0.12 * W]
-            if faces is not None and len(faces):
-                f = (min(faces, key=lambda r: abs(r[0] + r[2] / 2 - hints[n])) if n in hints
-                     else max(faces, key=lambda r: r[2] * r[3]))
-                found.setdefault(want[n], {})[n] = [round(float(v) / s, 1) for v in f[:14]]   # box + 5 landmarks (eyes, nose, mouth corners)
+            for key, hp in want[n]:
+                cand = list(faces) if faces is not None else []
+                if hp is not None:                       # only a face within 12 % of the width of the hint counts
+                    cand = [r for r in cand if abs(r[0] + r[2] / 2 - hp) < 0.12 * W]
+                if cand:
+                    f = min(cand, key=lambda r: abs(r[0] + r[2] / 2 - hp)) if hp is not None else max(cand, key=lambda r: r[2] * r[3])
+                    found.setdefault(key, {})[n] = [round(float(v) / s, 1) for v in f[:14]]   # box + 5 landmarks (eyes, nose, mouth corners)
         n += 1
     proc.stdout.close(); proc.kill()
     out = {}
-    for key in sorted(set(want.values())):
+    for key in sorted({k for lst in want.values() for k, _ in lst}):
         pf = found.get(key, {})
         if not pf:
             out[key] = {"frames": 0}
