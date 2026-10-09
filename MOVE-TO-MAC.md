@@ -9,6 +9,9 @@ MacBook can run the autonomous edits while the desktop stays free. Set up 2026-0
   `~/.claude/projects/<slug>/memory` path to it, so both see the same facts.
 - **Jobs stay local, their notes travel.** `./sync.sh` copies each job's small text state into `handoff/`.
   Footage and renders never move.
+- **Research media stays local too** (2026-10-10): downloaded videos, frame dumps, project copies and the effects-catalog
+  `src/` + `work/` folders under `research/` are in `.gitignore` (a sync once swept 6.2 GB of them into a commit; GitHub
+  rejects files over 100 MB). The research notes, catalog pages and thumbnail sheets still sync.
 - **The chat follows you.** Sessions connect to Remote Control, so a session running on one machine can be
   continued from claude.ai/code on the other. Nothing to re-explain, no second conversation to keep in sync.
 
