@@ -1,0 +1,1702 @@
+{
+ "duration": 360.79,
+ "hard_cuts": 150,
+ "hard_cuts_per_min": 24.9,
+ "zoom_steps_in": 24,
+ "zoom_steps_out": 7,
+ "zoom_steps_per_min": 4.0,
+ "zoom_step_median": 1.269,
+ "zoom_step_hold_median": 1.4,
+ "zoom_steps_at_hard_cut": 19,
+ "zoom_level_share": {
+  "1.0-1.2": 595,
+  "1.2-1.4": 102,
+  "1.4-1.6": 76,
+  "1.6-1.8": 38,
+  "1.8-2.0": 14,
+  "2.0-2.2": 0,
+  "2.2-2.4": 0
+ },
+ "zoom_level_max_median": 1.33,
+ "reframes": 16,
+ "reframes_per_min": 2.7,
+ "visible_changes_per_min": 30.3,
+ "face_share": 0.987,
+ "face_runs": 26,
+ "face_run_median": 7.4,
+ "face_run_max": 74.0,
+ "overlay_runs": 25,
+ "overlay_runs_per_min": 4.2,
+ "overlay_run_median": 3.4,
+ "overlay_video": 4,
+ "overlay_still": 21,
+ "overlay_internal_cuts": 21,
+ "longest_face_gap": 10.8,
+ "slowmo": [
+  {
+   "start": 43.71,
+   "end": 45.29,
+   "dur": 1.58,
+   "dup": null,
+   "speed": 0.44,
+   "words": "edition of gta 6"
+  },
+  {
+   "start": 152.75,
+   "end": 153.75,
+   "dur": 1.0,
+   "dup": null,
+   "speed": 0.7,
+   "words": "like a Jason"
+  },
+  {
+   "start": 191.62,
+   "end": 192.78,
+   "dur": 1.16,
+   "dup": null,
+   "speed": 0.54,
+   "words": "Matt Gator or"
+  },
+  {
+   "start": 248.36,
+   "end": 250.22,
+   "dur": 1.86,
+   "dup": null,
+   "speed": 0.26,
+   "words": "like $250 we"
+  },
+  {
+   "start": 282.61,
+   "end": 283.81,
+   "dur": 1.2,
+   "dup": null,
+   "speed": 0.68,
+   "words": "scream a damn"
+  }
+ ],
+ "slowmo_source": "word rate + duplicate frames",
+ "chopped": [
+  {
+   "t": 58.8,
+   "word": "right",
+   "into": 0.18,
+   "drop_db": 14.4,
+   "context": "in the game line right you have the standard the ultimate"
+  },
+  {
+   "t": 142.4,
+   "word": "right?",
+   "into": 0.19,
+   "drop_db": 22.3,
+   "context": "we bought this box, right? Wearing these damn"
+  },
+  {
+   "t": 256.2,
+   "word": "that's",
+   "into": 0.15,
+   "drop_db": 12.4,
+   "context": "sticker pack I guess that's fine map is very cool"
+  }
+ ],
+ "zoom_source": "background features",
+ "zoom_push_pct_per_s": 0.0,
+ "zoom_bg_level": 1.004,
+ "wpm": 206.0,
+ "pauses_over_0_3": 52,
+ "pauses_over_1": 2,
+ "word_cuts": [
+  {
+   "t": 2.8,
+   "word": "box.",
+   "into": 0.41,
+   "of": 0.94
+  },
+  {
+   "t": 13.8,
+   "word": "well.",
+   "into": 0.16,
+   "of": 0.18
+  },
+  {
+   "t": 30.6,
+   "word": "sentence.",
+   "into": 0.37,
+   "of": 0.44
+  },
+  {
+   "t": 35.8,
+   "word": "game",
+   "into": 0.16,
+   "of": 0.2
+  },
+  {
+   "t": 36.2,
+   "word": "not",
+   "into": 0.18,
+   "of": 0.22
+  },
+  {
+   "t": 46.6,
+   "word": "that's",
+   "into": 0.07,
+   "of": 0.32
+  },
+  {
+   "t": 48.8,
+   "word": "because",
+   "into": 0.22,
+   "of": 0.26
+  },
+  {
+   "t": 52.8,
+   "word": "problems",
+   "into": 0.06,
+   "of": 0.36
+  },
+  {
+   "t": 58.8,
+   "word": "right",
+   "into": 0.18,
+   "of": 0.2
+  },
+  {
+   "t": 60.8,
+   "word": "have",
+   "into": 0.12,
+   "of": 0.18
+  },
+  {
+   "t": 62.2,
+   "word": "edition",
+   "into": 0.3,
+   "of": 0.32
+  },
+  {
+   "t": 72.2,
+   "word": "mecha",
+   "into": 0.33,
+   "of": 0.36
+  },
+  {
+   "t": 74.6,
+   "word": "good",
+   "into": 0.17,
+   "of": 0.2
+  },
+  {
+   "t": 82.4,
+   "word": "right",
+   "into": 0.21,
+   "of": 0.26
+  },
+  {
+   "t": 86.2,
+   "word": "from",
+   "into": 0.06,
+   "of": 0.16
+  },
+  {
+   "t": 117.2,
+   "word": "far.",
+   "into": 0.17,
+   "of": 0.26
+  },
+  {
+   "t": 142.4,
+   "word": "right?",
+   "into": 0.19,
+   "of": 0.22
+  },
+  {
+   "t": 155.6,
+   "word": "sense.",
+   "into": 0.53,
+   "of": 0.68
+  },
+  {
+   "t": 160.2,
+   "word": "this.",
+   "into": 0.34,
+   "of": 0.44
+  },
+  {
+   "t": 169.6,
+   "word": "intrigued.",
+   "into": 0.24,
+   "of": 0.3
+  },
+  {
+   "t": 171.4,
+   "word": "but",
+   "into": 0.1,
+   "of": 0.16
+  },
+  {
+   "t": 174.0,
+   "word": "Leonida",
+   "into": 0.36,
+   "of": 0.48
+  },
+  {
+   "t": 180.2,
+   "word": "thing.",
+   "into": 0.21,
+   "of": 0.34
+  },
+  {
+   "t": 185.2,
+   "word": "box,",
+   "into": 0.09,
+   "of": 0.32
+  },
+  {
+   "t": 193.8,
+   "word": "called.",
+   "into": 0.16,
+   "of": 0.24
+  },
+  {
+   "t": 223.0,
+   "word": "know",
+   "into": 0.11,
+   "of": 0.16
+  },
+  {
+   "t": 230.0,
+   "word": "stuff",
+   "into": 0.19,
+   "of": 0.22
+  },
+  {
+   "t": 236.8,
+   "word": "shot",
+   "into": 0.1,
+   "of": 0.3
+  },
+  {
+   "t": 237.8,
+   "word": "imagine",
+   "into": 0.3,
+   "of": 0.34
+  },
+  {
+   "t": 249.0,
+   "word": "like",
+   "into": 0.64,
+   "of": 0.82
+  },
+  {
+   "t": 256.2,
+   "word": "that's",
+   "into": 0.15,
+   "of": 0.26
+  },
+  {
+   "t": 256.6,
+   "word": "fine",
+   "into": 0.15,
+   "of": 0.3
+  },
+  {
+   "t": 269.8,
+   "word": "even",
+   "into": 0.08,
+   "of": 0.16
+  },
+  {
+   "t": 280.4,
+   "word": "things.",
+   "into": 0.23,
+   "of": 0.28
+  },
+  {
+   "t": 299.0,
+   "word": "it's",
+   "into": 0.06,
+   "of": 0.16
+  },
+  {
+   "t": 307.6,
+   "word": "been",
+   "into": 0.1,
+   "of": 0.14
+  },
+  {
+   "t": 310.2,
+   "word": "included",
+   "into": 0.36,
+   "of": 0.4
+  },
+  {
+   "t": 330.6,
+   "word": "that",
+   "into": 0.1,
+   "of": 0.12
+  },
+  {
+   "t": 346.0,
+   "word": "right?",
+   "into": 0.16,
+   "of": 0.24
+  },
+  {
+   "t": 357.4,
+   "word": "So",
+   "into": 0.17,
+   "of": 0.26
+  }
+ ],
+ "word_steps": [
+  {
+   "t": 46.6,
+   "word": "that's",
+   "ratio": 1.27
+  },
+  {
+   "t": 52.8,
+   "word": "problems",
+   "ratio": 1.431
+  },
+  {
+   "t": 62.2,
+   "word": "edition",
+   "ratio": 1.208
+  },
+  {
+   "t": 171.4,
+   "word": "but",
+   "ratio": 1.3
+  },
+  {
+   "t": 249.0,
+   "word": "like",
+   "ratio": 1.431
+  },
+  {
+   "t": 280.4,
+   "word": "things.",
+   "ratio": 1.409
+  },
+  {
+   "t": 330.6,
+   "word": "that",
+   "ratio": 1.268
+  }
+ ],
+ "push_pct_per_s": -0.08,
+ "zoom_steps": [
+  {
+   "t": 20.4,
+   "ratio": 1.259,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 16.2,
+   "run_end": 21.4,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "mostly"
+  },
+  {
+   "t": 29.6,
+   "ratio": 1.176,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 28.0,
+   "run_end": 30.4,
+   "hold": 0.8,
+   "on_face": true,
+   "word": "time."
+  },
+  {
+   "t": 46.6,
+   "ratio": 1.27,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 43.0,
+   "run_end": 48.6,
+   "hold": 2.0,
+   "on_face": true,
+   "word": "that's"
+  },
+  {
+   "t": 52.8,
+   "ratio": 1.431,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 49.0,
+   "run_end": 53.2,
+   "hold": 0.4,
+   "on_face": true,
+   "word": "problems"
+  },
+  {
+   "t": 62.2,
+   "ratio": 1.208,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 61.0,
+   "run_end": 67.8,
+   "hold": 1.4,
+   "on_face": true,
+   "word": "edition"
+  },
+  {
+   "t": 63.6,
+   "ratio": 0.838,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 61.0,
+   "run_end": 67.8,
+   "hold": 2.0,
+   "on_face": true
+  },
+  {
+   "t": 65.6,
+   "ratio": 1.351,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 61.0,
+   "run_end": 67.8,
+   "hold": 2.2,
+   "on_face": true,
+   "word": "okay"
+  },
+  {
+   "t": 85.8,
+   "ratio": 1.121,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 82.6,
+   "run_end": 102.4,
+   "hold": 8.0,
+   "on_face": true,
+   "word": "you"
+  },
+  {
+   "t": 91.0,
+   "ratio": 1.362,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 82.6,
+   "run_end": 102.4,
+   "hold": 2.8,
+   "on_face": true,
+   "word": "from"
+  },
+  {
+   "t": 93.8,
+   "ratio": 0.744,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 82.6,
+   "run_end": 102.4,
+   "hold": 6.4,
+   "on_face": true
+  },
+  {
+   "t": 100.2,
+   "ratio": 1.188,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 82.6,
+   "run_end": 102.4,
+   "hold": 2.2,
+   "on_face": true,
+   "word": "see"
+  },
+  {
+   "t": 109.4,
+   "ratio": 1.091,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 106.6,
+   "run_end": 111.2,
+   "hold": 1.8,
+   "on_face": true,
+   "word": "wear"
+  },
+  {
+   "t": 120.6,
+   "ratio": 1.366,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 117.4,
+   "run_end": 121.2,
+   "hold": 0.6,
+   "on_face": true,
+   "word": ""
+  },
+  {
+   "t": 137.4,
+   "ratio": 1.299,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 134.8,
+   "run_end": 142.2,
+   "hold": 1.8,
+   "on_face": true,
+   "word": "figurine."
+  },
+  {
+   "t": 139.2,
+   "ratio": 0.779,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 134.8,
+   "run_end": 142.2,
+   "hold": 3.0,
+   "on_face": true
+  },
+  {
+   "t": 148.2,
+   "ratio": 1.134,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 145.6,
+   "run_end": 154.2,
+   "hold": 2.4,
+   "on_face": true,
+   "word": "shelf,"
+  },
+  {
+   "t": 150.6,
+   "ratio": 0.873,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 145.6,
+   "run_end": 154.2,
+   "hold": 3.6,
+   "on_face": true
+  },
+  {
+   "t": 171.4,
+   "ratio": 1.3,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 169.8,
+   "run_end": 173.4,
+   "hold": 2.0,
+   "on_face": true,
+   "word": "product,"
+  },
+  {
+   "t": 192.8,
+   "ratio": 1.258,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 188.0,
+   "run_end": 198.2,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "or"
+  },
+  {
+   "t": 193.8,
+   "ratio": 0.794,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 188.0,
+   "run_end": 198.2,
+   "hold": 4.4,
+   "on_face": true
+  },
+  {
+   "t": 249.0,
+   "ratio": 1.431,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 247.2,
+   "run_end": 249.8,
+   "hold": 0.8,
+   "on_face": true,
+   "word": "like"
+  },
+  {
+   "t": 251.6,
+   "ratio": 1.23,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 250.2,
+   "run_end": 254.6,
+   "hold": 3.0,
+   "on_face": true,
+   "word": "case"
+  },
+  {
+   "t": 264.2,
+   "ratio": 1.441,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 262.2,
+   "run_end": 265.0,
+   "hold": 0.8,
+   "on_face": true,
+   "word": "put"
+  },
+  {
+   "t": 274.8,
+   "ratio": 1.357,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 272.2,
+   "run_end": 281.8,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "the"
+  },
+  {
+   "t": 275.8,
+   "ratio": 0.734,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 272.2,
+   "run_end": 281.8,
+   "hold": 4.6,
+   "on_face": true
+  },
+  {
+   "t": 280.4,
+   "ratio": 1.409,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 272.2,
+   "run_end": 281.8,
+   "hold": 1.4,
+   "on_face": true,
+   "word": "things."
+  },
+  {
+   "t": 322.2,
+   "ratio": 1.253,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 319.2,
+   "run_end": 324.2,
+   "hold": 2.0,
+   "on_face": true,
+   "word": "so"
+  },
+  {
+   "t": 330.6,
+   "ratio": 1.268,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 329.6,
+   "run_end": 331.4,
+   "hold": 0.8,
+   "on_face": true,
+   "word": "know"
+  },
+  {
+   "t": 354.2,
+   "ratio": 1.106,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 352.4,
+   "run_end": 357.2,
+   "hold": 1.0,
+   "on_face": true,
+   "word": ""
+  },
+  {
+   "t": 355.2,
+   "ratio": 0.903,
+   "dir": "out",
+   "level": null,
+   "at_hard_cut": false,
+   "run_start": 352.4,
+   "run_end": 357.2,
+   "hold": 2.0,
+   "on_face": true
+  },
+  {
+   "t": 359.6,
+   "ratio": 1.286,
+   "dir": "in",
+   "level": null,
+   "at_hard_cut": true,
+   "run_start": 357.6,
+   "run_end": 360.6,
+   "hold": 1.0,
+   "on_face": true,
+   "word": "this."
+  }
+ ],
+ "reframe_list": [
+  {
+   "t": 4.4,
+   "dx": 0.02,
+   "dy": 0.094,
+   "at_hard_cut": true
+  },
+  {
+   "t": 30.8,
+   "dx": 0.005,
+   "dy": 0.064,
+   "at_hard_cut": true
+  },
+  {
+   "t": 31.0,
+   "dx": 0.003,
+   "dy": 0.06,
+   "at_hard_cut": false
+  },
+  {
+   "t": 31.8,
+   "dx": 0.02,
+   "dy": 0.052,
+   "at_hard_cut": false
+  },
+  {
+   "t": 35.6,
+   "dx": 0.023,
+   "dy": 0.056,
+   "at_hard_cut": true
+  },
+  {
+   "t": 36.4,
+   "dx": 0.052,
+   "dy": 0.035,
+   "at_hard_cut": true
+  },
+  {
+   "t": 66.0,
+   "dx": 0.005,
+   "dy": 0.053,
+   "at_hard_cut": false
+  },
+  {
+   "t": 66.8,
+   "dx": 0.002,
+   "dy": 0.054,
+   "at_hard_cut": false
+  },
+  {
+   "t": 89.8,
+   "dx": 0.053,
+   "dy": 0.026,
+   "at_hard_cut": false
+  },
+  {
+   "t": 150.6,
+   "dx": 0.093,
+   "dy": 0.071,
+   "at_hard_cut": true
+  },
+  {
+   "t": 194.6,
+   "dx": 0.034,
+   "dy": 0.064,
+   "at_hard_cut": false
+  },
+  {
+   "t": 195.2,
+   "dx": 0.025,
+   "dy": 0.052,
+   "at_hard_cut": false
+  },
+  {
+   "t": 210.2,
+   "dx": 0.016,
+   "dy": 0.056,
+   "at_hard_cut": true
+  },
+  {
+   "t": 210.6,
+   "dx": 0.008,
+   "dy": 0.057,
+   "at_hard_cut": true
+  },
+  {
+   "t": 291.8,
+   "dx": 0.059,
+   "dy": 0.024,
+   "at_hard_cut": false
+  },
+  {
+   "t": 357.4,
+   "dx": 0.064,
+   "dy": 0.061,
+   "at_hard_cut": true
+  }
+ ],
+ "overlay_runs_list": [
+  {
+   "start": 6.0,
+   "end": 8.2,
+   "cuts": 0,
+   "motion": 1.04,
+   "dur": 2.2,
+   "kind": "video"
+  },
+  {
+   "start": 21.6,
+   "end": 27.8,
+   "cuts": 0,
+   "motion": 0.15,
+   "dur": 6.2,
+   "kind": "still"
+  },
+  {
+   "start": 39.8,
+   "end": 41.2,
+   "cuts": 0,
+   "motion": 0.0,
+   "dur": 1.4,
+   "kind": "still"
+  },
+  {
+   "start": 58.8,
+   "end": 60.8,
+   "cuts": 0,
+   "motion": 0.0,
+   "dur": 2.0,
+   "kind": "still"
+  },
+  {
+   "start": 70.8,
+   "end": 73.0,
+   "cuts": 1,
+   "motion": 0.12,
+   "dur": 2.2,
+   "kind": "still"
+  },
+  {
+   "start": 74.6,
+   "end": 78.0,
+   "cuts": 0,
+   "motion": 0.58,
+   "dur": 3.4,
+   "kind": "still"
+  },
+  {
+   "start": 79.0,
+   "end": 82.4,
+   "cuts": 3,
+   "motion": 0.35,
+   "dur": 3.4,
+   "kind": "still"
+  },
+  {
+   "start": 102.6,
+   "end": 106.4,
+   "cuts": 0,
+   "motion": 0.64,
+   "dur": 3.8,
+   "kind": "still"
+  },
+  {
+   "start": 111.4,
+   "end": 117.2,
+   "cuts": 1,
+   "motion": 20.45,
+   "dur": 5.8,
+   "kind": "video"
+  },
+  {
+   "start": 126.2,
+   "end": 134.6,
+   "cuts": 0,
+   "motion": 0.72,
+   "dur": 8.4,
+   "kind": "still"
+  },
+  {
+   "start": 142.4,
+   "end": 145.4,
+   "cuts": 0,
+   "motion": 0.41,
+   "dur": 3.0,
+   "kind": "still"
+  },
+  {
+   "start": 155.6,
+   "end": 160.2,
+   "cuts": 0,
+   "motion": 0.27,
+   "dur": 4.6,
+   "kind": "still"
+  },
+  {
+   "start": 163.6,
+   "end": 169.6,
+   "cuts": 0,
+   "motion": 0.07,
+   "dur": 6.0,
+   "kind": "still"
+  },
+  {
+   "start": 173.6,
+   "end": 180.2,
+   "cuts": 1,
+   "motion": 0.26,
+   "dur": 6.6,
+   "kind": "still"
+  },
+  {
+   "start": 183.2,
+   "end": 187.8,
+   "cuts": 1,
+   "motion": 0.4,
+   "dur": 4.6,
+   "kind": "still"
+  },
+  {
+   "start": 199.2,
+   "end": 202.0,
+   "cuts": 0,
+   "motion": 0.95,
+   "dur": 2.8,
+   "kind": "still"
+  },
+  {
+   "start": 205.6,
+   "end": 208.8,
+   "cuts": 0,
+   "motion": 0.43,
+   "dur": 3.2,
+   "kind": "still"
+  },
+  {
+   "start": 211.6,
+   "end": 214.2,
+   "cuts": 0,
+   "motion": 1.4,
+   "dur": 2.6,
+   "kind": "video"
+  },
+  {
+   "start": 215.4,
+   "end": 217.6,
+   "cuts": 0,
+   "motion": 0.16,
+   "dur": 2.2,
+   "kind": "still"
+  },
+  {
+   "start": 224.6,
+   "end": 228.2,
+   "cuts": 1,
+   "motion": 0.43,
+   "dur": 3.6,
+   "kind": "still"
+  },
+  {
+   "start": 230.0,
+   "end": 232.4,
+   "cuts": 0,
+   "motion": 0.44,
+   "dur": 2.4,
+   "kind": "still"
+  },
+  {
+   "start": 234.4,
+   "end": 245.2,
+   "cuts": 9,
+   "motion": 1.22,
+   "dur": 10.8,
+   "kind": "video"
+  },
+  {
+   "start": 254.8,
+   "end": 262.0,
+   "cuts": 4,
+   "motion": 0.99,
+   "dur": 7.2,
+   "kind": "still"
+  },
+  {
+   "start": 269.8,
+   "end": 272.0,
+   "cuts": 0,
+   "motion": 0.98,
+   "dur": 2.2,
+   "kind": "still"
+  },
+  {
+   "start": 346.0,
+   "end": 352.2,
+   "cuts": 0,
+   "motion": 0.57,
+   "dur": 6.2,
+   "kind": "still"
+  }
+ ],
+ "face_runs_list": [
+  {
+   "start": 0.0,
+   "end": 6.0,
+   "shots": 3,
+   "dur": 6.0,
+   "face_h_floor": 0.3394,
+   "levels": [
+    0.96,
+    0.99,
+    1.02,
+    1.03,
+    1.05,
+    1.06,
+    1.32,
+    1.58,
+    1.61,
+    1.63,
+    1.65
+   ]
+  },
+  {
+   "start": 8.2,
+   "end": 21.6,
+   "shots": 6,
+   "dur": 13.4,
+   "face_h_floor": 0.3508,
+   "levels": [
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.25,
+    1.26,
+    1.27,
+    1.46
+   ]
+  },
+  {
+   "start": 27.8,
+   "end": 39.8,
+   "shots": 8,
+   "dur": 12.0,
+   "face_h_floor": 0.3591,
+   "levels": [
+    0.98,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.32,
+    1.33,
+    1.35,
+    1.38,
+    1.42,
+    1.46,
+    1.47,
+    1.48,
+    1.52,
+    1.54,
+    1.55,
+    1.57,
+    1.58,
+    1.69,
+    1.7
+   ]
+  },
+  {
+   "start": 41.2,
+   "end": 58.8,
+   "shots": 7,
+   "dur": 17.6,
+   "face_h_floor": 0.3583,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.04,
+    1.05,
+    1.08,
+    1.14,
+    1.15,
+    1.16,
+    1.17,
+    1.18,
+    1.19,
+    1.2,
+    1.22,
+    1.23,
+    1.32,
+    1.37,
+    1.38,
+    1.41,
+    1.43,
+    1.46,
+    1.47,
+    1.5,
+    1.54,
+    1.55,
+    1.56,
+    1.59,
+    1.6,
+    1.62
+   ]
+  },
+  {
+   "start": 60.8,
+   "end": 70.8,
+   "shots": 5,
+   "dur": 10.0,
+   "face_h_floor": 0.3397,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.08,
+    1.1,
+    1.11,
+    1.12,
+    1.25,
+    1.39,
+    1.4,
+    1.41
+   ]
+  },
+  {
+   "start": 73.0,
+   "end": 74.6,
+   "shots": 1,
+   "dur": 1.6,
+   "face_h_floor": 0.341,
+   "levels": [
+    1.0,
+    1.02,
+    1.03,
+    1.07
+   ]
+  },
+  {
+   "start": 78.0,
+   "end": 79.0,
+   "shots": 1,
+   "dur": 1.0,
+   "face_h_floor": 0.3414,
+   "levels": [
+    1.0,
+    1.02,
+    1.07,
+    1.11
+   ]
+  },
+  {
+   "start": 82.4,
+   "end": 102.6,
+   "shots": 5,
+   "dur": 20.2,
+   "face_h_floor": 0.3423,
+   "levels": [
+    0.98,
+    0.99,
+    1.0,
+    1.02,
+    1.03,
+    1.05,
+    1.07,
+    1.08,
+    1.18,
+    1.2,
+    1.21,
+    1.29,
+    1.35,
+    1.38,
+    1.39,
+    1.41,
+    1.42,
+    1.44,
+    1.46,
+    1.73,
+    1.74,
+    1.75,
+    1.79,
+    1.8,
+    1.81,
+    1.82
+   ]
+  },
+  {
+   "start": 106.4,
+   "end": 111.4,
+   "shots": 1,
+   "dur": 5.0,
+   "face_h_floor": 0.3488,
+   "levels": [
+    1.0,
+    1.03,
+    1.04,
+    1.07,
+    1.09,
+    1.12,
+    1.13
+   ]
+  },
+  {
+   "start": 117.2,
+   "end": 126.2,
+   "shots": 5,
+   "dur": 9.0,
+   "face_h_floor": 0.3521,
+   "levels": [
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.13
+   ]
+  },
+  {
+   "start": 134.6,
+   "end": 142.4,
+   "shots": 3,
+   "dur": 7.8,
+   "face_h_floor": 0.3363,
+   "levels": [
+    0.97,
+    0.98,
+    1.0,
+    1.01,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.1,
+    1.32,
+    1.35,
+    1.38,
+    1.41
+   ]
+  },
+  {
+   "start": 145.4,
+   "end": 155.6,
+   "shots": 3,
+   "dur": 10.2,
+   "face_h_floor": 0.3144,
+   "levels": [
+    0.95,
+    0.97,
+    0.98,
+    1.01,
+    1.02,
+    1.03,
+    1.05,
+    1.06,
+    1.07,
+    1.09,
+    1.1,
+    1.12,
+    1.14,
+    1.17,
+    1.18,
+    1.19,
+    1.2,
+    1.22,
+    1.24,
+    1.25,
+    1.31,
+    1.34,
+    1.35,
+    1.38,
+    1.41,
+    1.61
+   ]
+  },
+  {
+   "start": 160.2,
+   "end": 163.6,
+   "shots": 2,
+   "dur": 3.4,
+   "face_h_floor": 0.3754,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02
+   ]
+  },
+  {
+   "start": 169.6,
+   "end": 173.6,
+   "shots": 2,
+   "dur": 4.0,
+   "face_h_floor": 0.3744,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02
+   ]
+  },
+  {
+   "start": 180.2,
+   "end": 183.2,
+   "shots": 2,
+   "dur": 3.0,
+   "face_h_floor": 0.339,
+   "levels": [
+    1.0,
+    1.01,
+    1.05,
+    1.11
+   ]
+  },
+  {
+   "start": 187.8,
+   "end": 199.2,
+   "shots": 4,
+   "dur": 11.4,
+   "face_h_floor": 0.3415,
+   "levels": [
+    0.92,
+    0.95,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.06,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.13,
+    1.14,
+    1.17,
+    1.3,
+    1.31,
+    1.71
+   ]
+  },
+  {
+   "start": 202.0,
+   "end": 205.6,
+   "shots": 2,
+   "dur": 3.6,
+   "face_h_floor": 0.3308,
+   "levels": [
+    1.0,
+    1.03,
+    1.04,
+    1.45,
+    1.47,
+    1.48,
+    1.55,
+    1.58,
+    1.61
+   ]
+  },
+  {
+   "start": 208.8,
+   "end": 211.6,
+   "shots": 2,
+   "dur": 2.8,
+   "face_h_floor": 0.3794,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.09,
+    1.22,
+    1.23,
+    1.29
+   ]
+  },
+  {
+   "start": 214.2,
+   "end": 215.4,
+   "shots": 1,
+   "dur": 1.2,
+   "face_h_floor": 0.3545,
+   "levels": [
+    1.0,
+    1.04,
+    1.09
+   ]
+  },
+  {
+   "start": 217.6,
+   "end": 224.6,
+   "shots": 3,
+   "dur": 7.0,
+   "face_h_floor": 0.3481,
+   "levels": [
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06
+   ]
+  },
+  {
+   "start": 228.2,
+   "end": 230.0,
+   "shots": 1,
+   "dur": 1.8,
+   "face_h_floor": 0.3752,
+   "levels": [
+    0.99,
+    1.0,
+    1.02,
+    1.03
+   ]
+  },
+  {
+   "start": 232.4,
+   "end": 234.4,
+   "shots": 1,
+   "dur": 2.0,
+   "face_h_floor": 0.3615,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.04,
+    1.05,
+    1.07
+   ]
+  },
+  {
+   "start": 245.2,
+   "end": 254.8,
+   "shots": 6,
+   "dur": 9.6,
+   "face_h_floor": 0.3526,
+   "levels": [
+    0.97,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.27,
+    1.3,
+    1.31,
+    1.32,
+    1.33,
+    1.34,
+    1.35,
+    1.36,
+    1.37
+   ]
+  },
+  {
+   "start": 262.0,
+   "end": 269.8,
+   "shots": 4,
+   "dur": 7.8,
+   "face_h_floor": 0.3641,
+   "levels": [
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.22,
+    1.42,
+    1.43,
+    1.44,
+    1.46
+   ]
+  },
+  {
+   "start": 272.0,
+   "end": 346.0,
+   "shots": 24,
+   "dur": 74.0,
+   "face_h_floor": 0.3459,
+   "levels": [
+    0.96,
+    0.97,
+    0.98,
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.06,
+    1.07,
+    1.08,
+    1.09,
+    1.1,
+    1.11,
+    1.12,
+    1.13,
+    1.15,
+    1.17,
+    1.18,
+    1.22,
+    1.25,
+    1.26,
+    1.29,
+    1.31,
+    1.33,
+    1.34,
+    1.41,
+    1.44,
+    1.45,
+    1.6,
+    1.63,
+    1.65,
+    1.66,
+    1.67,
+    1.69,
+    1.78,
+    1.83,
+    1.84,
+    1.88
+   ]
+  },
+  {
+   "start": 352.2,
+   "end": 360.792,
+   "shots": 3,
+   "dur": 8.59,
+   "face_h_floor": 0.3484,
+   "levels": [
+    0.99,
+    1.0,
+    1.01,
+    1.02,
+    1.03,
+    1.04,
+    1.05,
+    1.08,
+    1.09,
+    1.1,
+    1.24,
+    1.25,
+    1.27,
+    1.29
+   ]
+  }
+ ],
+ "pauses": [
+  {
+   "t": 241.34,
+   "gap": 1.2,
+   "before": "this",
+   "after": "the"
+  },
+  {
+   "t": 341.31,
+   "gap": 1.0,
+   "before": "like",
+   "after": "You"
+  },
+  {
+   "t": 265.44,
+   "gap": 0.64,
+   "before": "a",
+   "after": "spoon,"
+  },
+  {
+   "t": 85.24,
+   "gap": 0.6,
+   "before": "like",
+   "after": "you"
+  },
+  {
+   "t": 225.07,
+   "gap": 0.6,
+   "before": "a",
+   "after": "spoon"
+  },
+  {
+   "t": 120.29,
+   "gap": 0.54,
+   "before": "Because",
+   "after": "why"
+  },
+  {
+   "t": 182.19,
+   "gap": 0.52,
+   "before": "pink",
+   "after": "case,"
+  },
+  {
+   "t": 185.43,
+   "gap": 0.52,
+   "before": "box,",
+   "after": "right?"
+  },
+  {
+   "t": 19.95,
+   "gap": 0.5,
+   "before": "is",
+   "after": "mostly"
+  },
+  {
+   "t": 317.62,
+   "gap": 0.5,
+   "before": "map",
+   "after": "very"
+  },
+  {
+   "t": 350.61,
+   "gap": 0.5,
+   "before": "like,",
+   "after": "okay,"
+  },
+  {
+   "t": 125.87,
+   "gap": 0.46,
+   "before": "ate",
+   "after": "up"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+[ WARN:0@0.120] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+# style probe — son.mov
+
+1080x1920 @ 60.00 fps · 0:29.65 · samples at 10/s
+
+- **cuts:** 20 = **40.5/min** (cold open 40.5/min) · by minute [40.5]
+- **held shot:** median 1.5 s · longest 4.6 s
+- **face:** 21 % of runtime in 3 runs (median run 1.8 s, median face shot 1.8 s)
+- **overlays:** 18 = 36.4/min, 79 % of runtime, median 1.25 s · 18 moving / 0 still
+- **gradual push (face shots >= 1.5 s):** median 7.3 % per shot = 3.44 %/s
+- **cut zooms:** 0 in / 0 out · median step xNone · median hold None s
+- **luma:** mean 0.255 · dark 15 % · bright 0 %
+- first shot: overlay · last shot: overlay

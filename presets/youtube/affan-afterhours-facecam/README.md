@@ -6,6 +6,8 @@ strong cut to get a point across funnily … sometimes I slow my voice down so i
 Extended Look is our bread and butter."* Top result 170k views. This folder is that style, **measured off the
 creator's own masters**, so it can be reproduced from numbers rather than from memory.
 
+**🔒 2026-10-08, the creator: "don't use my friends editing style, only use the ones I [edited]".** The Fuel System reference below (and every number measured off it) is the FRIEND'S hand — background only, never the spec. **▶ Read [`CREATOR-HAND.md`](CREATOR-HAND.md) first (2026-10-08).** It is measured off the creator's OWN shipped timelines (PC Release, Collector's Box, Game Informer), clip by clip, and wins wherever it differs from the numbers below — which were measured off two exports, the 170k one cut by the creator's friend. Biggest corrections: cut zooms are a razor + static scale at a median 121–136 % (not +25), the push is their saved "105/110 GTA LF Zoom Preset", slow-downs follow the jokes (0–11), overlays are inset over a colour matte (since 09-30), pops sit at ≈ −18 dB, and the meme layer (colour-bars glitch, Vine boom, memes, cricket) is theirs.
+
 **Where it sits.** The channel is `presets/youtube/affan-afterhours/` (PLAYBOOK, LESSONS, sfx.json stay there and
 apply). That folder documents two earlier looks — the documentary (paused) and the motion-graphics explainer
 (`projects/gta6-travis-scott-hired/STYLE.md`). **This is the third, and the default for the next videos.** Each style

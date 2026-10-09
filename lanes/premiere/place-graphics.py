@@ -25,6 +25,8 @@ Premiere is driven through lanes/premiere/premiere-bridge.mjs (headless, bridge 
 is DOM overwriteClip at start + 1e-4 (the same nudge as the EDL replay: a double a hair below the
 frame tick gets FLOORED into the previous frame), then the clip's end is pinned. Removal is DOM
 TrackItem.remove(false, false) with a QE fallback. Every write is read back before it is believed.
+
+Any mode takes `--sequence "<name>"`: the sequence by name, never the active one (QE paths refused).
 """
 import json, os, re, subprocess, sys, glob
 for _s in (sys.stdout, sys.stderr):  # Windows pipes default to cp1252, which cannot encode the status glyphs
@@ -36,6 +38,22 @@ for _s in (sys.stdout, sys.stderr):  # Windows pipes default to cp1252, which ca
 from pathlib import Path
 
 BRIDGE = Path(__file__).resolve().parent / 'premiere-bridge.mjs'
+
+
+# `--sequence NAME` (2026-10-08): address the sequence BY NAME instead of `app.project.activeSequence`, so the tool never
+# depends on, or switches, the active sequence (two sessions sharing one Premiere: lab-notes 2026-10-08). Every script is
+# rewritten before it is sent; a QE call (QE only ever sees the ACTIVE sequence) is refused loudly instead of acting on
+# another session's timeline.
+SEQ_NAME = None
+
+
+def by_name(script):
+    if not SEQ_NAME:
+        return script
+    find = ('(function(){for(var q=0;q<app.project.sequences.numSequences;q++)if(app.project.sequences[q].name===%s)'
+            'return app.project.sequences[q];return null;})()' % json.dumps(SEQ_NAME))
+    refuse = '(function(){throw new Error("QE acts on the ACTIVE sequence: refused under --sequence")})()'
+    return script.replace('app.project.activeSequence', find).replace('qe.project.getActiveSequence()', refuse)
 NUDGE = 1e-4
 
 
@@ -48,7 +66,7 @@ def sh(*cmd, check=True):
 
 def es(script):
     """Run ExtendScript through the bridge; return the string result."""
-    out = sh('node', str(BRIDGE), 'execute_extendscript', json.dumps({'script': script}))
+    out = sh('node', str(BRIDGE), 'execute_extendscript', json.dumps({'script': by_name(script)}))
     try:
         j = json.loads(out)
     except json.JSONDecodeError:
@@ -344,8 +362,10 @@ class Placer:
 
 
 def main():
+    global SEQ_NAME
     a = sys.argv[1:]
     if len(a) < 2: sys.exit(__doc__)
+    if '--sequence' in a: SEQ_NAME = a[a.index('--sequence') + 1]
     p = Placer(a[0])
     if '--plan' in a:
         rows, changes = p.derive()

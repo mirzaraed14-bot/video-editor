@@ -1,0 +1,3944 @@
+{
+ "name": "Sequence 21",
+ "video": [
+  [
+   {
+    "start": 0.0,
+    "end": 1.6333,
+    "name": "C1319.MP4",
+    "in": 24.25,
+    "out": 26.0467,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 1.6333,
+    "end": 3.0167,
+    "name": "C1319.MP4",
+    "in": 26.0467,
+    "out": 27.5683,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.55677086114883423",
+       "Scale": 165.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 3.0167,
+    "end": 5.3833,
+    "name": "Screenshot 2026-10-01 173125.png",
+    "in": 3599.9833,
+    "out": 3602.35,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173125.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": {
+        "v": "0.68703705072402954:0.5",
+        "kf": [
+         [
+          3599.9833,
+          "0.68703705072402954:0.5"
+         ]
+        ]
+       },
+       "Scale": {
+        "v": 140.0,
+        "kf": [
+         [
+          3599.9833,
+          140.0
+         ],
+         [
+          3602.35,
+          150.0
+         ]
+        ]
+       },
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 5.3833,
+    "end": 7.3,
+    "name": "C1319.MP4",
+    "in": 42.0833,
+    "out": 44.1917,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 7.3,
+    "end": 13.7,
+    "name": "C1319.MP4",
+    "in": 45.3167,
+    "out": 52.3567,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.41388890147209167:0.54166668653488159",
+       "Scale": 149.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 13.7,
+    "end": 15.5833,
+    "name": "C1319.MP4",
+    "in": 53.6167,
+    "out": 55.6883,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 15.5833,
+    "end": 18.7,
+    "name": "C1319.MP4",
+    "in": 56.2333,
+    "out": 59.6617,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": {
+        "v": "0.58333331346511841:0.67395836114883423",
+        "kf": [
+         [
+          56.2333,
+          "0.58333331346511841:0.67395836114883423"
+         ],
+         [
+          56.8933,
+          "0.60555553436279297:0.67395836114883423"
+         ],
+         [
+          57.48,
+          "0.78148150444030762:0.67395836114883423"
+         ],
+         [
+          58.0117,
+          "0.88148146867752075:0.67395836114883423"
+         ],
+         [
+          58.36,
+          "0.74351853132247925:0.67395836114883423"
+         ],
+         [
+          58.7633,
+          "0.75092589855194092:0.67395836114883423"
+         ],
+         [
+          59.4233,
+          "0.76851850748062134:0.67395836114883423"
+         ]
+        ]
+       },
+       "Scale": 256.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 18.7,
+    "end": 21.0167,
+    "name": "C1319.MP4",
+    "in": 69.85,
+    "out": 72.3983,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 21.0167,
+    "end": 21.65,
+    "name": "C1319.MP4",
+    "in": 73.0167,
+    "out": 73.7133,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.11018518358469009:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 858.0,
+       "#4": false,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 21.65,
+    "end": 23.25,
+    "name": "C1319.MP4",
+    "in": 81.45,
+    "out": 83.21,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 23.25,
+    "end": 24.2,
+    "name": "C1319.MP4",
+    "in": 85.8167,
+    "out": 86.8617,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 24.2,
+    "end": 25.0667,
+    "name": "C1319.MP4",
+    "in": 92.25,
+    "out": 93.2033,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.5546875",
+       "Scale": 183.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 25.0667,
+    "end": 29.3,
+    "name": "C1319.MP4",
+    "in": 95.7,
+    "out": 100.3567,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 29.3,
+    "end": 29.9667,
+    "name": "C1319.MP4",
+    "in": 100.3567,
+    "out": 101.09,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 180.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 29.9667,
+    "end": 31.9667,
+    "name": "C1319.MP4",
+    "in": 109.1833,
+    "out": 111.3833,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 31.9667,
+    "end": 32.7833,
+    "name": "C1319.MP4",
+    "in": 111.64,
+    "out": 112.5383,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 32.7833,
+    "end": 34.1333,
+    "name": "C1319.MP4",
+    "in": 132.4,
+    "out": 133.885,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 34.1333,
+    "end": 35.4667,
+    "name": "C1319.MP4",
+    "in": 139.25,
+    "out": 140.7167,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 166.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 35.4667,
+    "end": 36.75,
+    "name": "C1319.MP4",
+    "in": 142.1667,
+    "out": 143.5783,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.50370371341705322:0.51249998807907104",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 36.75,
+    "end": 38.6333,
+    "name": "C1319.MP4",
+    "in": 146.6167,
+    "out": 148.6883,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "X:\\Recordings\\Afterhours\\C1319.MP4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.57222223281860352:0.55729168653488159",
+       "Scale": 181.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 3.0167,
+    "name": "Adjustment Layer",
+    "in": 3600.0,
+    "out": 3603.0167,
+    "media_kind": "file",
+    "media": "1112293707",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 18.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 13.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 3.0167,
+    "end": 42.7333,
+    "name": "Adjustment Layer",
+    "in": 3600.65,
+    "out": 3640.3667,
+    "media_kind": "file",
+    "media": "1112293707",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 18.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 13.0
+      }
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 3.0167,
+    "name": "Screenshot 2026-10-01 173103.png",
+    "in": 3599.9833,
+    "out": 3603.0,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173103.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.7734375",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 5.3833,
+    "end": 7.3,
+    "name": "Screenshot 2026-10-01 173118.png",
+    "in": 3599.9833,
+    "out": 3601.9,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173118.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.77604168653488159",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 18.7,
+    "end": 21.0167,
+    "name": "Screenshot 2026-10-01 173421.png",
+    "in": 3599.9833,
+    "out": 3602.3,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173421.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.78177082538604736",
+       "Scale": 82.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 21.65,
+    "end": 23.25,
+    "name": "Screenshot 2026-10-01 173203.png",
+    "in": 3599.9833,
+    "out": 3601.5833,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173203.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.79218751192092896",
+       "Scale": 83.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 29.9667,
+    "end": 31.9667,
+    "name": "Screenshot 2026-10-01 173231.png",
+    "in": 3599.9833,
+    "out": 3601.9833,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173231.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.80729168653488159",
+       "Scale": 58.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 32.7833,
+    "end": 34.1333,
+    "name": "Screenshot 2026-10-01 173316.png",
+    "in": 3599.9833,
+    "out": 3601.3333,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-10-01 173316.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.77864581346511841",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 0.6,
+    "name": "Graphic",
+    "in": 3599.9833,
+    "out": 3600.5833,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "GTA 6",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 5.0,
+       "end": 5.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 0.6,
+    "end": 1.55,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.95,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 1.55,
+    "end": 2.4,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.85,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 2.4,
+    "end": 3.0,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "game of the year",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 16.0,
+       "end": 16.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 3.0,
+    "end": 3.0167,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.0167,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "alanah Pearce",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 7.0,
+       "end": 7.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 5.3833,
+    "end": 5.9333,
+    "name": "Graphic",
+    "in": 3600.0167,
+    "out": 3600.5667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "alanah Pearce",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 7.0,
+       "end": 7.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 5.9333,
+    "end": 6.6833,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.75,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "who’s been a",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 12.0,
+       "end": 12.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 6.6833,
+    "end": 7.2833,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "game awards juror",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 17.0,
+       "end": 17.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 7.2833,
+    "end": 8.15,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.8667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "says It's probably",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 4.0,
+       "end": 4.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 8.15,
+    "end": 8.7167,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.5667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "not happening",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 13.0,
+       "end": 13.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 8.7167,
+    "end": 9.1667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.45,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "Last year",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 9.0,
+       "end": 9.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 9.1667,
+    "end": 10.3333,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3601.1667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 10.3333,
+    "end": 11.0,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 11.0,
+    "end": 11.4833,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.4833,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 11.4833,
+    "end": 12.5333,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3601.05,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "4th and nominees",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 3.0,
+       "end": 3.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 12.5333,
+    "end": 13.6667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3601.1333,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "dropped on the 17th",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 19.0,
+       "end": 19.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 13.6667,
+    "end": 14.6667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3601.0,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "GTA 6 comes out",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 6.0,
+       "end": 6.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 14.6667,
+    "end": 15.5333,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.8667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "on November 19th",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 16.0,
+       "end": 16.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 18.7167,
+    "end": 19.2333,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.5167,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "most",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 4.0,
+       "end": 4.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 19.2333,
+    "end": 20.0833,
+    "name": "Graphic",
+    "in": 3600.5167,
+    "out": 3601.3667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "anticipated game",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": -1.0,
+       "end": -1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 20.0833,
+    "end": 21.0167,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.9333,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "of all time",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 11.0,
+       "end": 11.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 21.6167,
+    "end": 21.8833,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.2667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 21.8833,
+    "end": 22.4667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.5833,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 22.4667,
+    "end": 23.25,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.7833,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 23.25,
+    "end": 24.2,
+    "name": "Graphic",
+    "in": 3599.8667,
+    "out": 3600.8167,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "could take goty",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 15.0,
+       "end": 15.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 25.0667,
+    "end": 25.8167,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.75,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "If GTA 6",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 8.0,
+       "end": 8.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 25.8167,
+    "end": 26.5667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.75,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 26.5667,
+    "end": 27.4667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.9,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "and loses fine",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 14.0,
+       "end": 14.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 27.4667,
+    "end": 29.3,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3601.8333,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "I'll accept that",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 16.0,
+       "end": 16.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 29.3,
+    "end": 29.9667,
+    "name": "Graphic",
+    "in": 3600.1167,
+    "out": 3600.7833,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "I don't accept that",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 19.0,
+       "end": 19.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 29.9667,
+    "end": 30.7167,
+    "name": "Graphic",
+    "in": 3599.7667,
+    "out": 3600.5167,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "btw Rockstar",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 3.0,
+       "end": 3.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 30.7167,
+    "end": 31.3167,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 31.3167,
+    "end": 31.9333,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6167,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 31.9333,
+    "end": 32.75,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.8167,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "at the Game Awards",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 18.0,
+       "end": 18.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 32.75,
+    "end": 33.2,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.45,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "red dead 2",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 10.0,
+       "end": 10.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 33.2,
+    "end": 34.1833,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.9833,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "lost to God of War",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 18.0,
+       "end": 18.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 34.1833,
+    "end": 34.7833,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 34.7833,
+    "end": 35.4167,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.6333,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "was unfair",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 10.0,
+       "end": 10.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 35.4167,
+    "end": 36.1667,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.75,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": null,
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 1.0,
+       "end": 1.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   },
+   {
+    "start": 36.1667,
+    "end": 36.7333,
+    "name": "Graphic",
+    "in": 3600.0,
+    "out": 3600.5667,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.1588541716337204",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "not happen",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 10.0,
+       "end": 10.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "start": 3.0,
+    "end": 8.0,
+    "name": "Black Video",
+    "in": 3600.0,
+    "out": 3605.0,
+    "media_kind": "file",
+    "media": "1112293707",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Opacity",
+      "instance": null,
+      "match": "AE.ADBE Opacity",
+      "bypass": false,
+      "params": {
+       "Opacity": {
+        "v": 100.0,
+        "kf": [
+         [
+          3600.0167,
+          100.0
+         ],
+         [
+          3600.8833,
+          0.0
+         ]
+        ]
+       },
+       "Blend Mode": 18.0,
+       "Blend Mode#3": 0.0
+      }
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 40.2667,
+    "name": "Graphic",
+    "in": 3581.8333,
+    "out": 3622.1,
+    "media_kind": "file",
+    "media": "1196574294",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.44722223281860352:-0.28697916865348816",
+       "Scale": 100.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     },
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Text",
+      "instance": "ain’t no way this is real",
+      "match": "AE.ADBE Text",
+      "bypass": false,
+      "params": {
+       "Source Text": null,
+       "Transform": false,
+       "Position": "0.125:0.65000003576278687",
+       "Scale": 100.0,
+       "Horizontal Scale": 100.0,
+       "#6": true,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "Anchor Point": "0:0",
+       "#10": false,
+       "#11": 0.0,
+       "#12": 0.0,
+       "start": 25.0,
+       "end": 25.0,
+       "#15": false,
+       "#16": false,
+       "#17": false,
+       "#18": false,
+       "Parent Width": 0.0,
+       "Parent Height": 0.0,
+       "Parent Rotation": 0.0,
+       "#22": false
+      }
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 39.7667,
+    "name": "rose.png",
+    "in": 3599.9833,
+    "out": 3639.75,
+    "label": "Lavender",
+    "media_kind": "file",
+    "media": "E:\\Bullshit Folder\\rose.png",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.79310344827586166:0.15167548500881842",
+       "Scale": 36.978248596191,
+       "Scale Width": 36.978248596191,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0,
+       "Crop Left": 0.0,
+       "Crop Top": 0.0,
+       "Crop Right": 0.0,
+       "Crop Bottom": 0.0
+      }
+     }
+    ]
+   }
+  ]
+ ],
+ "audio": [
+  [
+   {
+    "start": 0.0,
+    "end": 3.0167,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 52.45,
+    "out": 55.7683,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 1.84
+   },
+   {
+    "start": 5.3833,
+    "end": 7.3,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 70.2833,
+    "out": 72.3917,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 2.77
+   },
+   {
+    "start": 7.3,
+    "end": 13.7,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 73.5167,
+    "out": 80.5567,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 5.17
+   },
+   {
+    "start": 13.7,
+    "end": 15.5833,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 81.8167,
+    "out": 83.8883,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 6.56
+   },
+   {
+    "start": 15.5833,
+    "end": 18.7,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 84.4333,
+    "out": 87.8617,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -4.51
+   },
+   {
+    "start": 18.7,
+    "end": 21.0167,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 98.05,
+    "out": 100.5983,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -1.8
+   },
+   {
+    "start": 21.0167,
+    "end": 21.65,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 101.2167,
+    "out": 101.9133,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -4.41
+   },
+   {
+    "start": 21.65,
+    "end": 23.25,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 109.65,
+    "out": 111.41,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -4.58
+   },
+   {
+    "start": 23.25,
+    "end": 24.2,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 114.0167,
+    "out": 115.0617,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -2.51
+   },
+   {
+    "start": 24.2,
+    "end": 25.0667,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 120.45,
+    "out": 121.4033,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 6.23
+   },
+   {
+    "start": 25.0667,
+    "end": 29.9667,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 123.9,
+    "out": 129.29,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 0.05
+   },
+   {
+    "start": 29.9667,
+    "end": 31.9667,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 137.3833,
+    "out": 139.5833,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -2.11
+   },
+   {
+    "start": 31.9667,
+    "end": 32.7833,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 139.84,
+    "out": 140.7383,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 3.13
+   },
+   {
+    "start": 32.7833,
+    "end": 34.1333,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 160.6,
+    "out": 162.085,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 0.88
+   },
+   {
+    "start": 34.1333,
+    "end": 35.4667,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 167.45,
+    "out": 168.9167,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": 5.05
+   },
+   {
+    "start": 35.4667,
+    "end": 36.75,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 170.3667,
+    "out": 171.7783,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -4.57
+   },
+   {
+    "start": 36.75,
+    "end": 38.6333,
+    "name": "2026-10-01 17-12-13.mp4",
+    "in": 174.8167,
+    "out": 176.8883,
+    "speed": 1.1,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Shorts\\Abudance Wisdom Shorts Exports\\Final Renders\\Batch Batch\\2026-10-01 17-12-13.mp4",
+    "gain_db": -4.77
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 2.7333,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 0.7,
+    "out": 3.4333,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -9.15
+   },
+   {
+    "start": 2.7333,
+    "end": 3.0167,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 4.9667,
+    "out": 5.25,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -7.03
+   },
+   {
+    "start": 3.0167,
+    "end": 7.2833,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 5.25,
+    "out": 9.5167,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -9.39
+   },
+   {
+    "start": 7.2833,
+    "end": 10.3333,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 9.8167,
+    "out": 12.8667,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -10.15
+   },
+   {
+    "start": 12.0167,
+    "end": 15.0667,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 9.8167,
+    "out": 12.8667,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -10.15
+   },
+   {
+    "start": 15.5833,
+    "end": 24.2,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 12.8667,
+    "out": 21.4833,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -11.15
+   },
+   {
+    "start": 25.0667,
+    "end": 29.1333,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 21.4833,
+    "out": 25.55,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -10.6
+   },
+   {
+    "start": 29.9667,
+    "end": 209.5833,
+    "name": "WWE The Undertaker Theme Song.mp3",
+    "in": 26.3833,
+    "out": 206.0,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "C:\\Users\\affan\\Downloads\\Music\\WWE The Undertaker Theme Song.mp3",
+    "gain_db": -14.9,
+    "fx": [
+     {
+      "kind": "AudioFilterComponent",
+      "display": null,
+      "instance": null,
+      "match": null,
+      "bypass": false,
+      "params": {
+       "Mute": null,
+       "Level": {
+        "v": 0.177827939391,
+        "kf": [
+         [
+          29.7167,
+          0.177827939391
+         ],
+         [
+          31.5,
+          0.10000000149
+         ]
+        ]
+       }
+      }
+     },
+     {
+      "kind": "AudioFilterComponent",
+      "display": null,
+      "instance": null,
+      "match": null,
+      "bypass": false,
+      "params": {
+       "Bypass": null,
+       "Left": 0.177827939391,
+       "Right": 0.177827939391,
+       "#None": 0.177827939391,
+       "#None#None": 0.177827939391
+      }
+     }
+    ],
+    "level_db": -0.0,
+    "level_kf_db": [
+     [
+      29.7167,
+      -0.0
+     ],
+     [
+      31.5,
+      -5.0
+     ]
+    ]
+   }
+  ],
+  [],
+  []
+ ],
+ "frame_ticks": 4233600000
+}

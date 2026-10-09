@@ -1,0 +1,21 @@
+{
+ "median_f0": 175.8,
+ "slowdowns": [
+  {
+   "start": 201.15,
+   "end": 201.51,
+   "dur": 0.36,
+   "pitch_ratio": 0.8,
+   "words": "day one."
+  }
+ ],
+ "chopped": [
+  {
+   "t": 222.4,
+   "word": "accurate,",
+   "into": 0.28,
+   "drop_db": 16.9,
+   "context": "If the trace is actually accurate, this is the step that"
+  }
+ ]
+}

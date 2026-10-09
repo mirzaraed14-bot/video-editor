@@ -1,0 +1,42 @@
+{
+ "median_f0": 195.1,
+ "slowdowns": [
+  {
+   "start": 352.4,
+   "end": 352.85,
+   "dur": 0.45,
+   "pitch_ratio": 0.82,
+   "words": "millions"
+  }
+ ],
+ "chopped": [
+  {
+   "t": 165.6,
+   "word": "GTA",
+   "into": 0.33,
+   "drop_db": 13.9,
+   "context": "named after. GTA 5 you walk up, press"
+  },
+  {
+   "t": 167.6,
+   "word": "yours",
+   "into": 0.17,
+   "drop_db": 12.6,
+   "context": "walk up, press triangle, it's yours forever, boom done."
+  },
+  {
+   "t": 402.2,
+   "word": "thinking.",
+   "into": 0.32,
+   "drop_db": 13.6,
+   "context": "the exact question you're thinking. Does this change what"
+  },
+  {
+   "t": 421.2,
+   "word": "gta",
+   "into": 0.33,
+   "drop_db": 15.5,
+   "context": "like gta 5 style there's just"
+  }
+ ]
+}

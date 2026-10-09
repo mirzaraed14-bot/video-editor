@@ -89,7 +89,8 @@ def mix(job, spec):
             f, lead = os.path.join("assets", "sfx", "epidemic", f"{name}.wav"), ES_LEAD.get(name, 0.0)
             if f not in pk_cache:
                 pk_cache[f] = peak_db(os.path.join(REPO, f))
-            gain = vpk - under + cue.get("rel_db", 0.0) - pk_cache[f]      # this cue's peak sits `under` dB below the voice's peak
+            gain = vpk - under + cue.get("rel_db", 0.0) + a.get("sfx_rel", {}).get(name, 0.0) - pk_cache[f]   # peak `under` dB below the voice's
+            # "audio.sfx_rel": {"whoosh-light": -10, "whoosh-air": -10}: a per-job offset per Epidemic file (Affan 2026-10-08: whooshes -10 dB)
             ms = int(round(max(0, cue["t"] - (0.06 if name.startswith("whoosh") else 0.01)) * 1000))   # a whoosh swells into its peak
             dur_s = 2.4
         else:

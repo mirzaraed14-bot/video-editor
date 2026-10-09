@@ -1,0 +1,77 @@
+{
+ "median_f0": 186.0,
+ "slowdowns": [
+  {
+   "start": 61.74,
+   "end": 62.09,
+   "dur": 0.35,
+   "pitch_ratio": 0.72,
+   "words": "a world"
+  },
+  {
+   "start": 269.72,
+   "end": 270.11,
+   "dur": 0.39,
+   "pitch_ratio": 0.77,
+   "words": "all your"
+  },
+  {
+   "start": 270.92,
+   "end": 271.36,
+   "dur": 0.44,
+   "pitch_ratio": 0.77,
+   "words": "get all that"
+  },
+  {
+   "start": 324.44,
+   "end": 324.83,
+   "dur": 0.39,
+   "pitch_ratio": 0.7,
+   "words": ""
+  },
+  {
+   "start": 358.27,
+   "end": 358.62,
+   "dur": 0.35,
+   "pitch_ratio": 0.75,
+   "words": "or wrong"
+  }
+ ],
+ "chopped": [
+  {
+   "t": 117.4,
+   "word": "right?",
+   "into": 0.16,
+   "drop_db": 14.2,
+   "context": "in development for 13 years, right? Here's how it works now."
+  },
+  {
+   "t": 125.2,
+   "word": "Cops",
+   "into": 0.2,
+   "drop_db": 19.2,
+   "context": "actually see your crime. Cops don't magically"
+  },
+  {
+   "t": 196.8,
+   "word": "itself",
+   "into": 0.36,
+   "drop_db": 14.6,
+   "context": "keeping it it's the game itself it's called criminal"
+  },
+  {
+   "t": 233.6,
+   "word": "heard.",
+   "into": 0.2,
+   "drop_db": 16.4,
+   "context": "In and out, nobody heard. So there are types"
+  },
+  {
+   "t": 246.0,
+   "word": "about.",
+   "into": 0.15,
+   "drop_db": 19.0,
+   "context": "more state I haven't told you about. So if you go far enough,"
+  }
+ ]
+}

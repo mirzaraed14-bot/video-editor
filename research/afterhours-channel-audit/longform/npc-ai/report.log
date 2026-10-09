@@ -1,0 +1,12 @@
+# style report — npc-ai (6:54.69)
+
+- **visible changes: 20.1/min** = hard cuts 11.9/min + zoom steps 4.5/min + reframes 3.9/min
+- **zoom steps (in):** 31 · median x1.159 · median hold 1.4 s · 1 coincide with a hard cut · out-steps 19
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 828, '1.2-1.4': 313, '1.4-1.6': 26, '1.6-1.8': 5, '1.8-2.0': 0, '2.0-2.2': 0, '2.2-2.4': 0} · typical tightest level x1.31
+- **gradual push:** 0.14 %/s · typical tightest level over a matched run x1.056 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 0
+- **face:** 76 % in 28 runs, median 8.5 s, longest 35.6 s
+- **overlay runs:** 27 = 3.9/min · median 4.8 s · 27 video / 0 still · 14 cuts inside them · longest without the face 11.6 s
+- **speech:** 186.4 words/min over the whole runtime · pauses >= 0.3 s: 74 · >= 1 s: 0
+- **slowed stretches (word rate + duplicate frames):** 8
+   [set signature from 1353 samples; 49 detected faces rejected as off-set, 75 on-set samples without a detection counted as the creator]

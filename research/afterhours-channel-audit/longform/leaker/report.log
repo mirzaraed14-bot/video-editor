@@ -1,0 +1,12 @@
+# style report — leaker (4:31.00)
+
+- **visible changes: 29.0/min** = hard cuts 19.0/min + zoom steps 5.5/min + reframes 5.5/min
+- **zoom steps (in):** 25 · median x1.12 · median hold 2.0 s · 12 coincide with a hard cut · out-steps 6
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 680, '1.2-1.4': 89, '1.4-1.6': 3, '1.6-1.8': 0, '1.8-2.0': 0, '2.0-2.2': 0, '2.2-2.4': 0} · typical tightest level x1.17
+- **gradual push:** -0.01 %/s · typical tightest level over a matched run x1.039 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 1
+- **face:** 71 % in 27 runs, median 5.4 s, longest 23.6 s
+- **overlay runs:** 27 = 6.0/min · median 3.0 s · 26 video / 1 still · 7 cuts inside them · longest without the face 10.0 s
+- **speech:** 155.9 words/min over the whole runtime · pauses >= 0.3 s: 16 · >= 1 s: 9
+- **slowed stretches (pitch):** 1
+   [set signature from 870 samples; 22 detected faces rejected as off-set, 93 on-set samples without a detection counted as the creator]

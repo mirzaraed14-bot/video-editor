@@ -1,0 +1,12 @@
+# style report — ps5-pro (8:18.00)
+
+- **visible changes: 22.8/min** = hard cuts 13.9/min + zoom steps 2.3/min + reframes 7.3/min
+- **zoom steps (in):** 19 · median x1.217 · median hold 1.2 s · 2 coincide with a hard cut · out-steps 9
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 641, '1.2-1.4': 115, '1.4-1.6': 78, '1.6-1.8': 67, '1.8-2.0': 5, '2.0-2.2': 0, '2.2-2.4': 7} · typical tightest level x1.42
+- **gradual push:** 1.13 %/s · typical tightest level over a matched run x1.068 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 2
+- **face:** 63 % in 32 runs, median 7.1 s, longest 21.0 s
+- **overlay runs:** 31 = 3.7/min · median 6.2 s · 28 video / 3 still · 36 cuts inside them · longest without the face 23.0 s
+- **speech:** 181.7 words/min over the whole runtime · pauses >= 0.3 s: 61 · >= 1 s: 4
+- **slowed stretches (word rate + duplicate frames):** 1
+   [set signature from 885 samples; 57 detected faces rejected as off-set, 513 on-set samples without a detection counted as the creator]

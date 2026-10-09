@@ -1,0 +1,8 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=0-w6zC0X4Lo
+[youtube] 0-w6zC0X4Lo: Downloading webpage
+WARNING: [youtube] 0-w6zC0X4Lo: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] 0-w6zC0X4Lo: Downloading initial data API JSON
+[youtube] 0-w6zC0X4Lo: Downloading ios player API JSON
+WARNING: [youtube] 0-w6zC0X4Lo: Some ios client https formats have been skipped as they are missing a URL. YouTube may have enabled the SABR-only streaming experiment for the current session. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+WARNING: Only images are available for download. use --list-formats to see them
+ERROR: [youtube] 0-w6zC0X4Lo: Requested format is not available. Use --list-formats for a list of available formats

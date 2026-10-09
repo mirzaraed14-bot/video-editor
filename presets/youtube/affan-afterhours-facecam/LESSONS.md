@@ -164,3 +164,74 @@ A first attempt at the removal diff was wrong by 4x because it read only V1 and 
 - **A rapid run of stills gets NO push** (C02: four Game Informer screenshots at 0.4 s each, each pushed in 5 %: "too
   flashy… very jarring"). Lesson → change: `build.py` `NO_PUSH = {2}`, re-rendered as `ov-c02-v2.mov`. One-off so
   far; if it repeats, a still held under ~1 s never moves.
+
+## 2026-10-08 — the channel audit: the creator's three shipped timelines, read clip by clip
+- **Keyframes ARE readable in the .prproj** (the 2026-09-22 note said they were blobs): Motion params carry
+  `<Keyframes>ticks,value,…;</Keyframes>` as text, and a component's `<InstanceName>` is the name of the SAVED PRESET
+  the creator applied. That exposed their system: **"110 GTA LF Zoom Preset"** (100→110 across a nest) and
+  **"105 GTA Lf Zoom Preset"** (100→105 across a clip), cut zooms as a razor + static scale (median 121–136 %, not
+  +25), zoom ladders 110→120→130→140. → new file [`CREATOR-HAND.md`](CREATOR-HAND.md); PLAYBOOK step 5b points to it;
+  reader `research/afterhours-channel-audit/prproj/read-timeline.py` (+ summarize / aggregate / grammar-stats).
+- **An uncaptured correction: the overlay pops were too loud.** Game Informer shipped with Clip Gain −12 dB added to
+  39 of the 44 pops placed at −6 dB (−7 on the C02 flash run) — nobody logged it because the job was never
+  post-mortemed. → PLAYBOOK step 6: pops at Volume −6 + Gain −12. **Lesson: every shipped job gets the timeline diff,
+  even when the creator says nothing** (channel PLAYBOOK § D).
+- **Slow-downs are not a quota:** 11 (PC Release), 0 (Collector's Box), 0 (Game Informer). The export detector found
+  4 on Game Informer that the timeline does not have → where a timeline exists, it outranks the export probe.
+- **`gta6-vice-city-sign` shipped as "GTA 6 Collector's Box DISAPPOINTED Everyone"** (Sequence 05 ends 6:00.7 = the
+  upload's 6:00.8) and `gta6-hurricanes` as "Everything Game Informer Just Revealed About GTA 6". The creator finished
+  Collector's Box alone: a screen-share format (OBS screen recording full-frame + face PiP at scale 46 top-right),
+  no nests, Vine booms, a shake hit, the colour-bars glitch. → CREATOR-HAND § 3–4.
+- **The 170k reference (Fuel System) was cut by the creator's friend**, not the creator (`X:\Claude Projects\GTA 6\
+  results-log.md`). The README's reference numbers describe that editor's hand; CREATOR-HAND describes Affan's.
+
+## 2026-10-08 — where the export probe lies on this channel (found by the frame-by-frame catalogues)
+- **`style-report.py` face share overcounts whenever a FACE appears that is not the creator:** AI illustrations of
+  Jason/Lucia and game close-ups passed as "face" (CAN'T: report 78 % vs 57 % counted by eye; DIRTIEST 88 % vs ~61 %),
+  and a face PiP over a screen recording reads as a full face shot (Collector's Box: 99 % face / 3 overlays vs 64 %
+  full face + 32 % PiP). → For any video with illustrations, PiP or character close-ups, take face share and overlay
+  counts from the visual catalogue or the timeline, never from report.md.
+- **The slow-down detector fires on still web pages and held poses** (Collector's Box; DIRTIEST's "10 slow-downs";
+  Game Informer's 4 where the timeline has none). → slow-downs come from the timeline (PlaybackSpeed) or a frame-level
+  check, never from report.md alone.
+- **Background-feature zoom tracking under-counts cut zooms inside nests** (Game Informer: 11 measured vs 23 on the
+  timeline). → the timeline reader (`research/afterhours-channel-audit/prproj/read-timeline.py`) is the zoom truth
+  whenever a .prproj exists.
+
+## 2026-10-09 — video 22 "You Can't Just Play The Missions In GTA 6" (job `gta6-ign-missions`, ABW8 › Sequence 39): NEW TREATMENTS, VERDICT PENDING
+The creator opened the graphics layer up ("try out different visual effects… subtle clean refined polished minimalistic…
+premium SFX, not goofy"; the core grammar stays theirs). Each treatment below is a question for their review — log the
+verdict here (keep / tweak / never) and promote the keepers into PLAYBOOK step 5.
+- **The "IGN dossier" quote card** (10×): type straight on a blurred, darkened game plate (no card box), one pink
+  underline drawn on the spoken anchor word, a Playfair pink quote mark, a letter-spaced credit line. g16 enacts his
+  "Need to, not can" — "can" struck, "need to" turns pink. Verdict: —
+- **The mission line** (6 states, the video's recurring diagram): yellow M markers on a thin rail — the old habit
+  ("mission, mission, mission, boom, done"), the chapter menu (the gaps between missions light up as he names them),
+  the gap = the relationship, the $ padlock on the next mission, the flip (side missions swap size with missions), and
+  the closer: the whole line shrinks to a sliver on a dot-matrix map of Leonida. Verdict: —
+- **Explainer diagrams** instead of footage where the line is a process or a comparison: the date list, GTA 5 vs GTA 6
+  columns, a three-state robbery flow (getaway car → inside → rob it / stay → the safe → cops outside → out the back),
+  the car-value meter that drains when it gets scratched, a checklist with the joke item struck on "I'm kidding",
+  a route map that lights up everything the speedrun skipped, the "Ryde Me" app tile with the y going pink. Verdict: —
+- **A real headline, captured live** (Insider Gaming's write-up of the IGN interview, dark mode) as an inset card with a
+  pink sweep on "IGN published". Verdict: —
+- **B-roll as a sharp 85 % inset over a blurred copy of itself** (their inset rule, without a colour matte). Verdict: —
+- **Premium SFX instead of pops**: glassy ticks / soft confirm chimes ≈ −18 dBFS peak (their pop level), airy whooshes
+  −20 as texture on full-frame entrances, a pen stroke −22 on every underline, a latch on the lock, a riser ending on
+  the payoff quote. Verdict: —
+- **Face pass in their own grammar**: 57 cut zooms (median 135 %) incl. a 110→120→130 ladder and a 250 % extreme
+  close-up on "What the fuck?", 2 stretch gags; NO slow-downs (a speed change would ripple 66 placed graphics + 91
+  SFX — five candidate beats are flagged in RUN.md). Music: 4 of their tracks by section, out under every zoom.
+
+## 2026-10-09 — review 1 of video 22 (his Tella walkthrough `projects/gta6-ign-missions/brief/walkthrough-1/`)
+- **"The video itself is pretty good… no other complaints" — except: a stray frame of face at overlay edges, everywhere.**
+  Lesson → change → file: back-to-back graphics were ended 0.02 s early (one frame at 59.94) and graphic edges were
+  never snapped to V1 cuts, so a single frame of the next (un-zoomed) shot flashed in → `build-plan.py` now snaps every
+  graphic edge within a few frames of a V1 cut ONTO the cut and butts neighbours exactly; gate = no gap < 0.8 s between
+  graphics and no face sliver < 0.3 s at any graphic edge. **Promote to PLAYBOOK step 5: every overlay edge lands on a
+  V1 cut or on the next overlay — never a frame of face between.** His last-resort fill when media is short: slow the
+  insert to 98–99 %.
+- **He re-cuts the draft himself** (tightened jump cuts, trimmed a line, re-picked a passage) and keeps it — his cut then
+  becomes the EDL (`transcript/his-cut.py` reads it back) and every graphics/SFX/music layer is rebuilt from it, never
+  patched. **Never re-place onto his timeline from the plan's old times:** a plate swap keyed to stale times laid 24
+  duplicate overlays while he was editing. Read the live timeline (and check it holds still, `review/stable.py`) first.

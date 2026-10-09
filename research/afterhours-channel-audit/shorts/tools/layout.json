@@ -1,0 +1,72 @@
+{
+ "01_dont-release-pc": {
+  "dur": 29.7,
+  "top": 0.14010416666666667,
+  "bot": 0.859375,
+  "cap_changes": 50,
+  "cap_empty_share": 0.3602693602693603
+ },
+ "02_steroids": {
+  "dur": 28.8,
+  "top": 0.15,
+  "bot": 0.8901041666666667,
+  "cap_changes": 42,
+  "cap_empty_share": 0.09722222222222222
+ },
+ "03_shouldnt-release-pc": {
+  "dur": 37.2,
+  "top": 0.10625,
+  "bot": 0.8932291666666666,
+  "cap_changes": 63,
+  "cap_empty_share": 0.14516129032258066
+ },
+ "04_ps4": {
+  "dur": 27.1,
+  "top": 0.109375,
+  "bot": 0.8989583333333333,
+  "cap_changes": 36,
+  "cap_empty_share": 0.15867158671586715
+ },
+ "05_mobile": {
+  "dur": 16.6,
+  "top": 0.0,
+  "bot": 0.6411458333333333,
+  "cap_changes": 21,
+  "cap_empty_share": 0.0
+ },
+ "06_forza": {
+  "dur": 30.1,
+  "top": 0.075,
+  "bot": 0.9244791666666666,
+  "cap_changes": 42,
+  "cap_empty_share": 0.019933554817275746
+ },
+ "07_travis": {
+  "dur": 33.9,
+  "top": 0.159375,
+  "bot": 0.8494791666666667,
+  "cap_changes": 41,
+  "cap_empty_share": 0.035398230088495575
+ },
+ "08_collectors-box": {
+  "dur": 61.9,
+  "top": 0.2,
+  "bot": 0.8541666666666666,
+  "cap_changes": 92,
+  "cap_empty_share": 0.0
+ },
+ "09_vice-city": {
+  "dur": 38.1,
+  "top": 0.2,
+  "bot": 0.8598958333333333,
+  "cap_changes": 41,
+  "cap_empty_share": 0.015748031496062992
+ },
+ "10_goty": {
+  "dur": 38.6,
+  "top": 0.18020833333333333,
+  "bot": 0.8692708333333333,
+  "cap_changes": 44,
+  "cap_empty_share": 0.23316062176165803
+ }
+}

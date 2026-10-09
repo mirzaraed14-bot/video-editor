@@ -1,0 +1,28 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=n6Cd0HKsnZM
+[youtube] n6Cd0HKsnZM: Downloading webpage
+WARNING: [youtube] n6Cd0HKsnZM: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] n6Cd0HKsnZM: Downloading initial data API JSON
+[youtube] n6Cd0HKsnZM: Downloading web embedded client config
+[youtube] n6Cd0HKsnZM: Downloading player f2999a12-main
+[youtube] n6Cd0HKsnZM: Downloading web embedded player API JSON
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] Downloading comment section API JSON
+[youtube] Downloading ~650 comments
+[youtube] Sorting comments by top
+[youtube] Downloading comment API JSON page 1 (0/~650)
+[youtube] Downloading comment API JSON page 2 (20/~650)
+[youtube] Downloading comment API JSON page 3 (40/~650)
+[youtube] Downloading comment API JSON page 4 (60/~650)
+[youtube] Downloading comment API JSON page 5 (80/~650)
+[youtube] Downloading comment API JSON page 6 (100/~650)
+[youtube] Downloading comment API JSON page 7 (120/~650)
+[youtube] Downloading comment API JSON page 8 (140/~650)
+[youtube] Downloading comment API JSON page 9 (160/~650)
+[youtube] Downloading comment API JSON page 10 (180/~650)
+[youtube] Downloading comment API JSON page 11 (200/~650)
+[youtube] Downloading comment API JSON page 12 (220/~650)
+[youtube] Downloading comment API JSON page 13 (240/~650)
+[youtube] Downloading comment API JSON page 14 (260/~650)
+[youtube] Extracted 269 comments
+[info] n6Cd0HKsnZM: Downloading 1 format(s): 399+251
+[info] Writing video metadata as JSON to: n6Cd0HKsnZM.info.json

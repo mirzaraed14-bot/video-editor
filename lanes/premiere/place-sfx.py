@@ -17,6 +17,8 @@ The plan is universal (workflows/sfx-plan.py); this is the HOW for Premiere. Row
     at + 1e-4 (the replay's floor-nudge), then the in/out are cleared again
   - the level is the clip's intrinsic Volume > Level: v = 10^((dB - 15) / 20), which is the
     encoding read off eleven distinct whole-dB values on the your-job timeline
+
+Any mode takes `--sequence "<name>"`: the sequence by name, never the active one (QE paths refused).
 """
 import json, math, os, subprocess, sys
 for _s in (sys.stdout, sys.stderr):  # Windows pipes default to cp1252, which cannot encode the status glyphs
@@ -28,6 +30,22 @@ for _s in (sys.stdout, sys.stderr):  # Windows pipes default to cp1252, which ca
 from pathlib import Path
 
 BRIDGE = Path(__file__).resolve().parent / 'premiere-bridge.mjs'
+
+
+# `--sequence NAME` (2026-10-08): address the sequence BY NAME instead of `app.project.activeSequence`, so the tool never
+# depends on, or switches, the active sequence (two sessions sharing one Premiere: lab-notes 2026-10-08). Every script is
+# rewritten before it is sent; a QE call (QE only ever sees the ACTIVE sequence) is refused loudly instead of acting on
+# another session's timeline.
+SEQ_NAME = None
+
+
+def by_name(script):
+    if not SEQ_NAME:
+        return script
+    find = ('(function(){for(var q=0;q<app.project.sequences.numSequences;q++)if(app.project.sequences[q].name===%s)'
+            'return app.project.sequences[q];return null;})()' % json.dumps(SEQ_NAME))
+    refuse = '(function(){throw new Error("QE acts on the ACTIVE sequence: refused under --sequence")})()'
+    return script.replace('app.project.activeSequence', find).replace('qe.project.getActiveSequence()', refuse)
 NUDGE = 1e-4
 
 
@@ -39,7 +57,7 @@ def sh(*cmd, check=True):
 
 
 def es(script, _retry=True):
-    out = sh('node', str(BRIDGE), 'execute_extendscript', json.dumps({'script': script}))
+    out = sh('node', str(BRIDGE), 'execute_extendscript', json.dumps({'script': by_name(script)}))
     # the bridge logs to stdout too (multi-line when the script is long): the result is the LAST
     # top-level JSON value, which starts at the last unindented '{' or '[' line
     lines = out.splitlines(); j = None
@@ -246,8 +264,10 @@ class Placer:
 
 
 def main():
+    global SEQ_NAME
     a = sys.argv[1:]
     if len(a) < 2: sys.exit(__doc__)
+    if '--sequence' in a: SEQ_NAME = a[a.index('--sequence') + 1]
     plan = a[a.index('--plan') + 1] if '--plan' in a else None
     p = Placer(a[0], plan)
     if '--apply' in a: sys.exit(0 if p.apply() else 1)

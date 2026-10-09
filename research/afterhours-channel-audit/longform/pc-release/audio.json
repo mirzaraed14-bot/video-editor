@@ -1,0 +1,35 @@
+{
+ "median_f0": 192.8,
+ "slowdowns": [
+  {
+   "start": 95.88,
+   "end": 96.33,
+   "dur": 0.45,
+   "pitch_ratio": 0.69,
+   "words": ""
+  },
+  {
+   "start": 103.96,
+   "end": 104.31,
+   "dur": 0.35,
+   "pitch_ratio": 0.77,
+   "words": "2008"
+  },
+  {
+   "start": 291.35,
+   "end": 291.73,
+   "dur": 0.38,
+   "pitch_ratio": 0.75,
+   "words": ""
+  }
+ ],
+ "chopped": [
+  {
+   "t": 144.4,
+   "word": "labor",
+   "into": 0.15,
+   "drop_db": 14.1,
+   "context": "that takes labor so GTA 5 came"
+  }
+ ]
+}

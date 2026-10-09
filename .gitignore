@@ -126,3 +126,23 @@ assets/sfx/
 !projects/*/captions/captions*.txt
 !projects/*/captions/transcript/
 !projects/*/captions/transcript/*.json
+
+# RESEARCH DOWNLOADS STAY LOCAL (2026-10-10). A sync swept 6.2 GB of research media into one commit (channel-audit
+# source videos up to 1.2 GB each, ~3,700 extracted frames, Premiere XML dumps, the effects-catalog source + work
+# folders). GitHub rejects files > 100 MB, and history is forever: the same rule as the job folders above applies.
+# The research NOTES (md, html, catalog json, thumbnail sheets, small shots) still sync.
+research/**/*.mp4
+research/**/*.mov
+research/**/*.mkv
+research/**/*.webm
+research/**/*.wav
+research/**/*.mp3
+research/**/*.m4a
+research/**/*.prproj
+research/**/*.xml
+research/effects-catalog/src/
+research/effects-catalog/work/
+research/afterhours-channel-audit/longform/**/*.jpg
+research/afterhours-channel-audit/longform/**/*.png
+research/afterhours-channel-audit/shorts/**/*.jpg
+research/afterhours-channel-audit/shorts/**/*.png

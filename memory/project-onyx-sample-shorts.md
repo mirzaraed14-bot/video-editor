@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-07T17:46:48.659Z
+  modified: 2026-10-08T17:03:17.893Z
 ---
 
 Started 2026-10-04. Affan's agency Onyx Influence emails US podcast hosts for permission to use one of their Shorts.
@@ -78,3 +78,10 @@ The toolkit is `projects/_onyx-batch-2026-10/reactions/tools/`. Rob Dial's react
 - caption colour is checked by speaker embedding;
 - patched 4K bases are cut by stream copy with output-side seeking.
 Open: Rob Dial v15 predates the SFX fix; offer a `--skip picture` rebuild.
+
+**2026-10-08 night: reaction Seq 37 (Pomp) + Seq 38 (Rich Roll) PREPARED** in ABW8, per his note "tighten a tiny bit (filler words) … same style … a bit more motion graphics with SFX".
+- Filler cuts were made on HIS timeline, each one proven first.
+- 22 / 25 graphics.
+- Pipeline order: REACTIONS-BRIEF.md status.
+- Seq 37's V1/V3 track outputs were off when he handed it over; left as he had them.
+- Rob Dial's reaction is next, then the delivery email drafts.- Reaction channel cards use the creator's REAL YouTube profile picture (fetched og:image), never a freeze frame from the video (Affan, 2026-10-08, on Seq 38's Rich Roll card; swapped by changeMediaPath so his own edits stayed).

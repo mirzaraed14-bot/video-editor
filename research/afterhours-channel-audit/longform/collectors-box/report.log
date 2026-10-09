@@ -1,0 +1,12 @@
+# style report — collectors-box (6:00.79)
+
+- **visible changes: 30.3/min** = hard cuts 24.9/min + zoom steps 4.0/min + reframes 2.7/min
+- **zoom steps (in):** 24 · median x1.269 · median hold 1.4 s · 19 coincide with a hard cut · out-steps 7
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 595, '1.2-1.4': 102, '1.4-1.6': 76, '1.6-1.8': 38, '1.8-2.0': 14, '2.0-2.2': 0, '2.2-2.4': 0} · typical tightest level x1.33
+- **gradual push:** 0.0 %/s · typical tightest level over a matched run x1.004 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 3
+- **face:** 99 % in 26 runs, median 7.4 s, longest 74.0 s
+- **overlay runs:** 25 = 4.2/min · median 3.4 s · 4 video / 21 still · 21 cuts inside them · longest without the face 10.8 s
+- **speech:** 206.0 words/min over the whole runtime · pauses >= 0.3 s: 52 · >= 1 s: 2
+- **slowed stretches (word rate + duplicate frames):** 5
+   [set signature from 739 samples; 0 detected faces rejected as off-set, 530 on-set samples without a detection counted as the creator]

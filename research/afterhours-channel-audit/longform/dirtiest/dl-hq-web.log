@@ -1,0 +1,10 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=fqxHPE3d-2M
+[youtube] fqxHPE3d-2M: Downloading webpage
+WARNING: [youtube] fqxHPE3d-2M: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] fqxHPE3d-2M: Downloading initial data API JSON
+[youtube] fqxHPE3d-2M: Downloading iframe API JS
+[youtube] fqxHPE3d-2M: Downloading player 5203c085-main
+[youtube] fqxHPE3d-2M: Downloading web player API JSON
+WARNING: [youtube] Unable to fetch GVS PO Token for web client: Missing required Visitor Data. You may need to pass Visitor Data with --extractor-args "youtube:visitor_data=XXX"
+[youtube] [jsc:deno] Solving JS challenges using deno
+ERROR: [youtube] fqxHPE3d-2M: Requested format is not available. Use --list-formats for a list of available formats

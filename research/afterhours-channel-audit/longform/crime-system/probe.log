@@ -1,0 +1,13 @@
+[ WARN:0@0.181] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+# style probe — crime-system.mp4
+
+1920x1080 @ 59.94 fps · 6:06.23 · samples at 5/s
+
+- **cuts:** 84 = **13.8/min** (cold open 18.0/min) · by minute [18.0, 13.0, 11.0, 15.0, 12.0, 14.0, 9.6]
+- **held shot:** median 3.4 s · longest 18.6 s
+- **face:** 77 % of runtime in 20 runs (median run 11.1 s, median face shot 3.8 s)
+- **overlays:** 28 = 4.6/min, 23 % of runtime, median 2.4 s · 27 moving / 1 still
+- **gradual push (face shots >= 1.5 s):** median -0.5 % per shot = -0.08 %/s
+- **cut zooms:** 90 in / 77 out · median step x1.149 · median hold 0.8 s
+- **luma:** mean 0.313 · dark 8 % · bright 12 %
+- first shot: face · last shot: face

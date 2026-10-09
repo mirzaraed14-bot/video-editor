@@ -1,0 +1,15 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=Ao9LCMfZFaI
+[youtube] Ao9LCMfZFaI: Downloading webpage
+WARNING: [youtube] Ao9LCMfZFaI: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] Ao9LCMfZFaI: Downloading initial data API JSON
+[youtube] Ao9LCMfZFaI: Downloading tv client config
+[youtube] Ao9LCMfZFaI: Downloading player f2999a12-main
+[youtube] Ao9LCMfZFaI: Downloading tv player API JSON
+[youtube] Ao9LCMfZFaI: Downloading mweb client config
+[youtube] Ao9LCMfZFaI: Downloading mweb player API JSON
+[youtube] [jsc:deno] Solving JS challenges using deno
+WARNING: [youtube] Ao9LCMfZFaI: mweb client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=mweb.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+[info] Ao9LCMfZFaI: Downloading 1 format(s): 18
+[download] Sleeping 5.00 seconds as required by the site...
+[download] Destination: leaker\raw\leaker.mp4
+[download]   0.0% of   11.90MiB at  Unknown B/s ETA Unknown[download]   0.0% of   11.90MiB at  Unknown B/s ETA Unknown[download]   0.1% of   11.90MiB at  Unknown B/s ETA Unknown[download]   0.1% of   11.90MiB at    5.85MiB/s ETA 00:02  [download]   0.3% of   11.90MiB at   12.09MiB/s ETA 00:00[download]   0.5% of   11.90MiB at    8.18MiB/s ETA 00:01[download]   1.0% of   11.90MiB at    1.13MiB/s ETA 00:10[download]   2.1% of   11.90MiB at    1.05MiB/s ETA 00:11[download]   4.2% of   11.90MiB at    1.38MiB/s ETA 00:08[download]   8.4% of   11.90MiB at    2.05MiB/s ETA 00:05[download]  16.8% of   11.90MiB at    3.25MiB/s ETA 00:03[download]  33.6% of   11.90MiB at    2.95MiB/s ETA 00:02[download]  56.4% of   11.90MiB at    3.10MiB/s ETA 00:01[download]  82.3% of   11.90MiB at    3.62MiB/s ETA 00:00[download]  82.3% of   11.90MiB at  Unknown B/s ETA Unknown[download]  82.4% of   11.90MiB at    2.91MiB/s ETA 00:00  [download]  82.4% of   11.90MiB at    4.53MiB/s ETA 00:00[download]  82.5% of   11.90MiB at    9.70MiB/s ETA 00:00[download]  82.6% of   11.90MiB at   20.04MiB/s ETA 00:00[download]  82.9% of   11.90MiB at   13.58MiB/s ETA 00:00[download]  83.4% of   11.90MiB at   11.74MiB/s ETA 00:00[download]  84.4% of   11.90MiB at  584.33KiB/s ETA 00:03[download]  86.5% of   11.90MiB at    1.09MiB/s ETA 00:01[download]  90.7% of   11.90MiB at    1.98MiB/s ETA 00:00[download]  99.1% of   11.90MiB at    3.37MiB/s ETA 00:00[download] 100.0% of   11.90MiB at    3.49MiB/s ETA 00:00[download] 100% of   11.90MiB in 00:00:04 at 2.60MiB/s   

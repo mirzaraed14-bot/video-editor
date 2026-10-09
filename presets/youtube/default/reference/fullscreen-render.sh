@@ -100,7 +100,7 @@ else
     [ -z "${STEP_FPS:-}" ] || NB=""   # `&& NB=` would exit under set -e
     ffmpeg -y -v error -i "renders/$ID-ss$SUF.mp4" ${NB:+-frames:v "$NB"} -vf \
       "$MB_CORE,setpts=N/($RFPS)/TB$EXPAND,noise=c0s=7:c0f=t" \
-      -c:v libx264 -crf 14 -pix_fmt yuv420p -an -r "$FPS" "renders/$ID$SUF.mp4"
+      -c:v libx264 -bf 0 -crf 14 -pix_fmt yuv420p -an -r "$FPS" "renders/$ID$SUF.mp4"
     rm "renders/$ID-ss$SUF.mp4"
     echo "-> renders/$ID$SUF.mp4 (motion blur + grain baked)"
   else
@@ -108,7 +108,7 @@ else
       --output "renders/$ID-clean$SUF.mp4"
     # the standing film-grain pass (same recipe as bg-light) — full-screens only
     ffmpeg -y -v error -i "renders/$ID-clean$SUF.mp4" -vf "${EXPAND#,}${EXPAND:+,}noise=c0s=7:c0f=t" \
-      -c:v libx264 -crf 14 -pix_fmt yuv420p -an "renders/$ID$SUF.mp4"
+      -c:v libx264 -bf 0 -crf 14 -pix_fmt yuv420p -an "renders/$ID$SUF.mp4"
     rm "renders/$ID-clean$SUF.mp4"
     echo "-> renders/$ID$SUF.mp4 (grain baked)"
   fi

@@ -1,0 +1,12 @@
+# style report — pc-release (5:15.70)
+
+- **visible changes: 26.4/min** = hard cuts 17.7/min + zoom steps 6.3/min + reframes 3.6/min
+- **zoom steps (in):** 33 · median x1.161 · median hold 2.0 s · 10 coincide with a hard cut · out-steps 14
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 465, '1.2-1.4': 30, '1.4-1.6': 64, '1.6-1.8': 63, '1.8-2.0': 7, '2.0-2.2': 14, '2.2-2.4': 5} · typical tightest level x1.75
+- **gradual push:** 0.36 %/s · typical tightest level over a matched run x1.119 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 1
+- **face:** 78 % in 19 runs, median 10.0 s, longest 31.4 s
+- **overlay runs:** 19 = 3.6/min · median 3.8 s · 12 video / 7 still · 4 cuts inside them · longest without the face 8.0 s
+- **speech:** 197.5 words/min over the whole runtime · pauses >= 0.3 s: 47 · >= 1 s: 2
+- **slowed stretches (pitch):** 3
+   [set signature from 590 samples; 29 detected faces rejected as off-set, 645 on-set samples without a detection counted as the creator]

@@ -1,0 +1,12 @@
+# style report — dirtiest (7:45.72)
+
+- **visible changes: 28.7/min** = hard cuts 17.3/min + zoom steps 3.6/min + reframes 9.3/min
+- **zoom steps (in):** 28 · median x1.156 · median hold 1.2 s · 12 coincide with a hard cut · out-steps 12
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 1030, '1.2-1.4': 182, '1.4-1.6': 85, '1.6-1.8': 8, '1.8-2.0': 0, '2.0-2.2': 0, '2.2-2.4': 0} · typical tightest level x1.19
+- **gradual push:** 0.81 %/s · typical tightest level over a matched run x1.095 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 3
+- **face:** 88 % in 35 runs, median 7.0 s, longest 32.8 s
+- **overlay runs:** 34 = 4.4/min · median 3.9 s · 34 video / 0 still · 32 cuts inside them · longest without the face 12.2 s
+- **speech:** 193.0 words/min over the whole runtime · pauses >= 0.3 s: 63 · >= 1 s: 2
+- **slowed stretches (word rate + duplicate frames):** 10
+   [set signature from 1735 samples; 299 detected faces rejected as off-set, 96 on-set samples without a detection counted as the creator]

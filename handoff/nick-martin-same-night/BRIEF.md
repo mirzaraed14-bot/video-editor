@@ -1,5 +1,57 @@
 # BRIEF — nick-martin-same-night (Abundance Wisdom long-form #2, "SAME NIGHT")
 
+## ▶ THE CREATOR'S TELLA DIRECTION (2026-10-08) — this supersedes the pre-production treatment below where they differ
+Source: https://www.tella.tv/video/affans-video-epsb → `brief/tella-guide.mp4` (14:33, their voice only),
+`brief/tella-transcript.txt`, sheets `brief/tella-frames/`. Timeline: **ABW8 · Sequence 36** (1920x1080, 60 fps, 6:28),
+snapshot `seq36-before-tella.json` (`dump-seq.py`). Host cut on V1 (camera `X:\Recordings\Abundance Wisdom\C1330.MP4`,
+95 clips); **82 face blocks pushed up to V2 = overlay slots**; A1 = voice (`raw/host-voice-enhanced.mp3`, 175 clips);
+A2 = their 4 Epidemic music tracks (Rise From the Shadows 0–36 s, Triple Five 36–148, Seven Days 149–284,
+Quantifications 284–388). The line spoken in every block: `transcript/seq36-slots.txt` (S01–S82).
+
+**The job, in their words:**
+1. **Lock the face cut.** Put the script's third-party clips/quotes IN BETWEEN the blocks (that pushes everything later;
+   they expect ~8 min), and an overlay on EVERY V2 block.
+2. **Overlays: creative, not the LF1 look.** "Last time… just rounded corners and a golden matte… we need to be a lot
+   more creative." Use the catalog (`research/effects-catalog/`), and research more channels if useful. Mostly creative
+   treatments, with a minimalist overlay "sprinkled here and there". "Test the boundaries of creativity", "at least 10×
+   better" than LF1. **Sound effects with every visual effect.**
+3. **Title screens:** a cinematic title after the intro (after "on camera with the date", 0:36.38: push the rest
+   later), chapter title screens in the middle. At Tella 13:58–14:12 the playhead sat at **~4:43** when they said
+   "here a title screen will be present" (confirm).
+4. **Music:** listen to their tracks for the vibe and keep the overlays consistent with it; adjust/extend A2 as the
+   inserts lengthen the video.
+5. **Sources:** highest quality possible. Stills/screenshots enhanced in **Higgsfield** when soft (and the generated
+   images below), costs credits: preflight + approval first.
+
+**Per-slot direction (resolved from the transcript + playhead):**
+| Slot | Line | Their direction |
+|---|---|---|
+| S01–S03 | "Two men, same stage, same night. They both lost." | Nick Walker and Martin Fitzwater at the 2026 Arnold Classic, where both lost |
+| S04 | "And one of them cheered." | Martin celebrating at the Arnold: screenshot/overlay, enhanced in Higgsfield |
+| S05–S07 | "Six months later, one of them is Mr. Olympia." | Nick winning the Olympia, flashback style: S05 getting the medal, S06 showing the ring, S07 lifting the trophy ("this cut… here… here") |
+| S08 | "The other has the worst night of his career." | Martin at the 2026 Olympia, **slow motion, grayscale**, standing, sad |
+| S09 | "rivalry started six years earlier" | A creative image; the reference they showed was **FX-11 Rival Colour Split** (Tella 6:55–7:20) |
+| S10 | "On the night they both turned pro." | **Higgsfield:** an IFBB pro card on a desk, shiny tablecloth, bloom light on the card, everything around it black; zoom in |
+| S11–S13 | "one person… who wanted Martin to come back. You won't guess who." | A **silhouette of a person with a question mark** over the figure |
+| S14 | "Every clip you're about to see is the real person" | A Martin Fitzwater overlay (search for the right one) |
+| after 0:36.38 | (end of intro) | **Cinematic title screen**, rest of the video pushed later |
+| S15 | "September 2020, Pittsburgh." | A creative **calendar** animation to that date |
+| S16 | "The NPC North Americans, an amateur show." | The show's own imagery (Google), enhanced, **animated**, not a still |
+| S17–S18 | "If you win your class, you walk out a professional." | A **steel 3D bodybuilder figure** celebrating, holding up an IFBB pro card and a medal |
+| S22–S23 | "a former college shot put and discus thrower… His name is Martin Fitzwater." | **Old photos** of a young Martin (not current) with a **name animation** beside his face |
+| S24 | "Nick wins the New York Pro and the Arnold Classic" | Creative |
+| all others | | Their standing rule: creative, from the catalog, SFX on each |
+Catalog cards they had on screen while talking: FX-13 Depth-Sandwich Type, FX-01 Hatched Empire Map, FX-10 Map Desk
+Lean-In, FX-11 Rival Colour Split, FX-02 Octagon Power Badges, FX-03 Tug-of-War Strings, FX-04 Era Tag.
+
+**Differences from the script to resolve (asked 2026-10-08):**
+- The cold open: their cut opens on the host at 0:00 (the script's clips 0a–0d come first); their direction puts the
+  Arnold/Olympia moments as overlays on S01–S08 instead.
+- They voiced some scripted CLIPS themselves: 2a (S42–S47, the Giles/media lines), 3b (S54), 3d (S57–S59, the "very"
+  comment), part of 3e (V1 3:59 "gracious…"), and Text Card 1 (S60–S62). Insert the original clips as the script says,
+  or keep their read with the evidence on screen?
+- Lines not in the script: "and the other one tried to disrespect the runner-up" (V1 4:08.9).
+
 ## ▶ STATUS: PRE-PRODUCTION (2026-10-07) — resume here
 Script 🔒 FINAL 6 Oct 2026: `X:\Claude Projects\Abundance Wisdom\NICK-MARTIN-LONGFORM.md` (the creator pasted the same
 text 2026-10-07). Sources: `X:\Claude Projects\Abundance Wisdom\NICK-MARTIN-LONGFORM-SOURCES.md`. **The creator has not

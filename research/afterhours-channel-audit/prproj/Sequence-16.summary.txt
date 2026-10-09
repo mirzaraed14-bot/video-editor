@@ -1,0 +1,376 @@
+# Sequence 16
+
+== V1: 46 clips
+   media: {'gta6-hurricanes-synced.mov': 28, 'Nested Sequence 63': 2, 'Nested Sequence 57': 1, 'Nested Sequence 58': 1, 'Nested Sequence 59': 1, 'Nested Sequence 60': 1, 'Nested Sequence 61': 1, 'Nested Sequence 62': 1, 'Nested Sequence 64': 1, 'Nested Sequence 65': 1, 'Nested Sequence 66': 1, 'Nested Sequence 67': 1}
+   0:03.20-0:06.12 (2.92s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 74.8581 | label Iris | scale 100->105 over 2.92s (1.71%/s, 2kf), pos kf [[74.8581, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   0:07.72-0:20.54 (12.81s) | Nested Sequence 57 | [NEST Nested Sequence 57] | scale 100->110 over 12.81s (0.78%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 7 clips
+           media: {'gta6-hurricanes-synced.mov': 7}
+           0:00.00-0:01.58 (1.58s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 89.0723 | label Iris
+           0:01.58-0:02.60 (1.02s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 90.6572 | label Iris | scale 110
+           0:02.60-0:04.27 (1.67s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 96.046 | label Iris
+           0:04.27-0:06.82 (2.55s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 97.9645 | label Iris
+           0:06.82-0:07.81 (0.98s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 104.2208 | label Iris
+           0:07.81-0:10.76 (2.95s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 105.5388 | label Iris
+           0:10.76-0:12.81 (2.05s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 108.4917 | label Iris | scale 110
+   0:27.76-0:31.50 (3.74s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 140.0399 | label Iris | scale 100->105 over 3.74s (1.34%/s, 2kf), pos kf [[140.0399, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   0:38.64-0:44.19 (5.56s) | Nested Sequence 58 | [NEST Nested Sequence 58] | scale 100->105 over 5.56s (0.90%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-hurricanes-synced.mov': 3}
+           0:00.00-0:01.13 (1.13s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 154.9548 | label Iris
+           0:01.13-0:03.14 (2.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 200.5337 | label Iris | scale 145, pos 0.5:0.60740739107131958
+           0:03.14-0:05.56 (2.42s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 205.5554 | label Iris
+   0:50.52-0:53.69 (3.17s) | Nested Sequence 59 | [NEST Nested Sequence 59] | scale 100->105 over 3.17s (1.58%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+
+        == nest V1: 2 clips
+           media: {'gta6-hurricanes-synced.mov': 2}
+           0:00.00-0:01.53 (1.53s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 217.7008 | label Iris
+           0:01.53-0:03.17 (1.63s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 220.2033 | label Iris
+   0:57.74-1:09.04 (11.29s) | Nested Sequence 60 | [NEST Nested Sequence 60] | scale 100->110 over 11.29s (0.89%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-hurricanes-synced.mov': 5}
+           0:00.00-0:02.89 (2.89s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 234.5343 | label Iris
+           0:02.89-0:04.69 (1.80s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 241.3745 | label Iris
+           0:04.69-0:06.29 (1.60s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 244.7278 | label Iris
+           0:06.29-0:07.89 (1.60s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 246.3294 | label Iris | scale 110
+           0:07.89-0:11.29 (3.40s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 250.8339 | label Iris
+   1:12.19-1:22.88 (10.69s) | Nested Sequence 61 | [NEST Nested Sequence 61] | scale 100->110 over 10.69s (0.94%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-hurricanes-synced.mov': 5}
+           0:00.00-0:04.12 (4.12s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 264.0138 | label Iris
+           0:04.12-0:05.62 (1.50s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 268.1345 | label Iris | scale 110
+           0:05.62-0:07.99 (2.37s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 271.588 | label Iris
+           0:07.99-0:08.61 (0.62s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 274.8746 | label Iris
+           0:08.61-0:10.69 (2.09s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 281.8482 | label Iris
+   1:25.82-1:34.11 (8.29s) | Nested Sequence 62 | [NEST Nested Sequence 62] | scale 100->110 over 8.29s (1.21%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-hurricanes-synced.mov': 5}
+           0:00.00-0:02.90 (2.90s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 292.1418 | label Iris
+           0:02.90-0:05.51 (2.60s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 301.9516 | label Iris
+           0:05.51-0:06.09 (0.58s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 305.9723 | label Iris
+           0:06.09-0:07.07 (0.98s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 307.8909 | label Iris | scale 203, pos 0.3541666567325592:0.5
+           0:07.07-0:08.29 (1.22s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 313.5466 | label Iris
+   1:40.05-2:01.25 (21.20s) | Nested Sequence 63 | [NEST Nested Sequence 63] | scale 100->110 over 24.01s (0.42%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 8 clips
+           media: {'gta6-hurricanes-synced.mov': 8}
+           0:00.00-0:01.65 (1.65s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 329.0954 | label Iris
+           0:01.65-0:05.59 (3.94s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 332.4321 | label Iris
+           0:05.59-0:07.47 (1.89s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 336.3694 | label Iris | scale 103
+           0:07.47-0:07.86 (0.38s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 338.5215 | label Iris
+           0:07.86-0:10.86 (3.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 339.339 | label Iris
+           0:10.86-0:15.05 (4.19s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 344.5108 | label Iris
+           0:15.05-0:21.20 (6.16s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 348.982 | label Iris
+           0:21.20-0:24.01 (2.80s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 367.0834 | label Iris
+   2:01.25-2:04.06 (2.80s) | Nested Sequence 63 | [NEST Nested Sequence 63] | scale 100->100 over 21.20s (0.00%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 8 clips
+           media: {'gta6-hurricanes-synced.mov': 8}
+           0:00.00-0:01.65 (1.65s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 329.0954 | label Iris
+           0:01.65-0:05.59 (3.94s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 332.4321 | label Iris
+           0:05.59-0:07.47 (1.89s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 336.3694 | label Iris | scale 103
+           0:07.47-0:07.86 (0.38s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 338.5215 | label Iris
+           0:07.86-0:10.86 (3.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 339.339 | label Iris
+           0:10.86-0:15.05 (4.19s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 344.5108 | label Iris
+           0:15.05-0:21.20 (6.16s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 348.982 | label Iris
+           0:21.20-0:24.01 (2.80s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 367.0834 | label Iris
+   2:06.99-2:08.88 (1.89s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 382.7657 | label Iris
+   2:08.88-2:11.10 (2.22s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 384.6509 | label Iris | scale 110
+   2:16.49-2:34.07 (17.58s) | Nested Sequence 64 | [NEST Nested Sequence 64] | scale 100->110 over 17.58s (0.57%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 8 clips
+           media: {'gta6-hurricanes-synced.mov': 8}
+           0:00.00-0:00.75 (0.75s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 394.3273 | label Iris
+           0:00.75-0:03.24 (2.49s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 395.6953 | label Iris
+           0:03.24-0:03.89 (0.65s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 399.5325 | label Iris
+           0:03.89-0:05.39 (1.50s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 403.6199 | label Iris
+           0:05.39-0:09.49 (4.10s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 405.1214 | label Iris | scale 111
+           0:09.49-0:10.71 (1.22s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 412.6122 | label Iris
+           0:10.71-0:13.15 (2.44s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 414.2472 | label Iris
+           0:13.15-0:17.58 (4.44s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 434.4841 | label Iris | scale 118
+   2:37.34-2:41.59 (4.25s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 446.0122 | label Iris | scale 100->105 over 4.25s (1.18%/s, 2kf), pos kf [[446.0122, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   2:44.85-2:46.98 (2.14s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 462.5454 | label Iris
+   2:51.79-2:56.56 (4.77s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 476.8764 | label Iris
+   2:56.56-3:00.80 (4.24s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 489.7726 | label Iris | scale 124
+   3:00.80-3:01.75 (0.95s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 495.3782 | label Iris
+   3:03.32-3:18.25 (14.93s) | Nested Sequence 65 | [NEST Nested Sequence 65] | scale 100->110 over 14.93s (0.67%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-hurricanes-synced.mov': 5}
+           0:00.00-0:03.75 (3.75s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 504.2037 | label Iris
+           0:03.75-0:04.97 (1.22s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 509.3422 | label Iris
+           0:04.97-0:08.91 (3.94s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 510.8603 | label Iris
+           0:08.91-0:13.40 (4.49s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 516.0489 | label Iris
+           0:13.40-0:14.93 (1.53s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 521.0372 | label Iris
+   3:20.42-3:31.24 (10.83s) | Nested Sequence 66 | [NEST Nested Sequence 66] | scale 100->110 over 10.83s (0.92%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 2 clips
+           media: {'gta6-hurricanes-synced.mov': 2}
+           0:00.00-0:05.76 (5.76s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 527.5103 | label Iris
+           0:05.76-0:10.83 (5.07s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 533.2661 | label Iris | scale 126
+   3:35.50-3:37.42 (1.92s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 547.2801 | label Iris
+   3:37.42-3:38.69 (1.27s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 557.557 | label Iris | scale 135
+   3:38.69-3:49.71 (11.03s) | Nested Sequence 67 | [NEST Nested Sequence 67] | scale 100->110 over 11.03s (0.91%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-hurricanes-synced.mov': 4}
+           0:00.00-0:02.02 (2.02s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 563.0625 | label Iris
+           0:02.02-0:07.77 (5.76s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 569.1019 | label Iris
+           0:07.77-0:08.58 (0.80s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 575.5583 | label Iris
+           0:08.58-0:11.03 (2.45s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 576.6761 | label Iris
+   3:49.71-3:51.18 (1.47s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 579.1286 | label Iris
+   3:51.18-3:52.18 (1.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 581.9981 | label Iris | scale 105
+   3:52.18-3:57.82 (5.64s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 584.0668 | label Iris
+   3:57.82-3:59.27 (1.45s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 590.2063 | label Iris
+   3:59.27-4:00.37 (1.10s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 593.8433 | label Iris
+   4:00.37-4:05.01 (4.64s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 597.7138 | label Iris | scale 100->105 over 4.64s (1.08%/s, 2kf), pos kf [[597.7138, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   4:08.48-4:17.11 (8.63s) | Nested Sequence 68 | [NEST Nested Sequence 68] | scale 100->110 over 8.63s (1.16%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-hurricanes-synced.mov': 5}
+           0:00.00-0:02.95 (2.95s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 609.976 | label Iris
+           0:02.95-0:04.27 (1.32s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 612.929 | label Iris | scale 129
+           0:04.27-0:06.26 (1.99s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 614.6307 | label Iris
+           0:06.26-0:07.59 (1.33s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 617.0831 | label Iris
+           0:07.59-0:08.63 (1.03s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 618.9183 | label Iris
+   4:17.11-4:19.08 (1.97s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 620.303 | label Iris
+   4:19.08-4:19.94 (0.87s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 622.2717 | label Iris | scale 139
+   4:19.94-4:21.83 (1.89s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 629.0951 | label Iris
+   4:21.83-4:22.25 (0.42s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 630.9804 | label Iris
+   4:22.25-4:38.38 (16.13s) | Nested Sequence 69 | [NEST Nested Sequence 69] | scale 100->110 over 16.13s (0.62%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 7 clips
+           media: {'gta6-hurricanes-synced.mov': 7}
+           0:00.00-0:01.87 (1.87s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 634.4672 | label Iris
+           0:01.87-0:05.56 (3.69s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 637.3033 | label Iris
+           0:05.56-0:07.42 (1.87s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 647.3967 | label Iris
+           0:07.42-0:08.27 (0.85s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 653.8866 | label Iris
+           0:08.27-0:09.01 (0.73s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 656.2556 | label Iris | scale 123
+           0:09.01-0:13.70 (4.69s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 657.1732 | label Iris
+           0:13.70-0:16.13 (2.44s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 662.8622 | label Iris
+   4:42.92-4:47.54 (4.62s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 671.6877 | label Iris
+   4:47.54-4:48.97 (1.43s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 677.2265 | label Iris
+   4:48.97-4:50.14 (1.17s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 678.6613 | label Iris | scale 115
+   4:56.16-5:08.84 (12.68s) | Nested Sequence 70 | [NEST Nested Sequence 70] | scale 100->110 over 12.68s (0.79%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-hurricanes-synced.mov': 5}
+           0:00.00-0:01.79 (1.79s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 687.5535 | label Iris
+           0:01.79-0:02.32 (0.53s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 689.6056 | label Iris
+           0:02.32-0:06.44 (4.12s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 690.6066 | label Iris
+           0:06.44-0:07.12 (0.68s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 695.4948 | label Iris | scale 121
+           0:07.12-0:12.68 (5.56s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 697.5802 | label Iris
+   5:12.15-5:13.73 (1.58s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 709.5589 | label Iris
+   5:13.73-5:14.93 (1.20s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 712.028 | label Iris | scale 121
+   5:21.20-5:26.56 (5.36s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 723.6396 | label Iris
+   5:26.56-5:29.66 (3.10s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 729.5121 | label Iris | scale 149, pos 0.4348958432674408:0.5
+   5:29.66-5:44.48 (14.81s) | Nested Sequence 71 | [NEST Nested Sequence 71] | scale 100->110 over 14.81s (0.68%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-hurricanes-synced.mov': 4}
+           0:00.00-0:04.25 (4.25s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 736.1187 | label Iris
+           0:04.25-0:06.82 (2.57s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 742.9422 | label Iris
+           0:06.82-0:11.81 (4.99s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 747.1798 | label Iris
+           0:11.81-0:14.81 (3.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 753.0857 | label Iris
+   5:47.91-6:01.53 (13.61s) | Nested Sequence 72 | [NEST Nested Sequence 72] | scale 100->110 over 13.61s (0.73%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 6 clips
+           media: {'gta6-hurricanes-synced.mov': 6}
+           0:00.00-0:02.94 (2.94s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 763.6295 | label Iris
+           0:02.94-0:03.85 (0.92s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 767.2165 | label Iris
+           0:03.85-0:08.64 (4.79s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 768.8014 | label Iris
+           0:08.64-0:10.28 (1.63s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 773.9231 | label Iris
+           0:10.28-0:12.20 (1.92s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 775.5581 | label Iris | scale 161, pos 0.5:0.56296294927597046
+           0:12.20-0:13.61 (1.42s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 778.2274 | label Iris
+   6:09.05-6:22.20 (13.15s) | Nested Sequence 73 | [NEST Nested Sequence 73] | scale 100->110 over 13.15s (0.76%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+       + opacity kf [100.0, 0.0]
+
+        == nest V1: 3 clips
+           media: {'gta6-hurricanes-synced.mov': 3}
+           0:00.00-0:02.54 (2.54s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 787.787 | label Iris
+           0:02.54-0:11.13 (8.59s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 790.5731 | label Iris
+           0:11.13-0:13.15 (2.02s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 799.7156 | label Iris
+
+== V2: 43 clips
+   media: {'gta6-hurricanes-synced.mov': 43}
+   0:00.00-0:03.20 (3.20s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 70.5538 | label Iris
+   0:06.12-0:07.72 (1.60s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 80.0967 | label Iris
+   0:20.54-0:21.55 (1.02s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 114.748 | label Iris
+   0:21.55-0:23.57 (2.02s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 125.7756 | label Iris
+   0:23.57-0:24.54 (0.97s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 133.767 | label Iris
+   0:24.54-0:25.54 (1.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 134.7346 | label Iris
+   0:25.54-0:26.69 (1.15s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 135.7356 | label Iris
+   0:26.69-0:27.76 (1.07s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 136.8868 | label Iris
+   0:31.50-0:38.64 (7.14s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 147.1637 | label Iris
+   0:44.19-0:50.52 (6.32s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 209.2924 | label Iris
+   0:53.69-0:55.97 (2.29s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 224.3741 | label Iris
+   0:55.97-0:57.74 (1.77s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 227.227 | label Iris
+   1:09.04-1:10.87 (1.84s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 257.2904 | label Iris
+   1:10.87-1:12.19 (1.32s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 259.3758 | label Iris
+   1:22.88-1:24.53 (1.65s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 285.7021 | label Iris
+   1:24.53-1:25.82 (1.28s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 290.8572 | label Iris
+   1:34.11-1:34.98 (0.87s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 318.5849 | label Iris
+   1:34.98-1:36.98 (2.00s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 319.9196 | label Iris
+   1:36.98-1:37.81 (0.83s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 322.0718 | label Iris
+   1:37.81-1:40.05 (2.24s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 323.0561 | label Iris
+   2:04.06-2:06.99 (2.94s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 373.2228 | label Iris
+   2:11.10-2:16.49 (5.39s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 388.2879 | label Iris
+   2:34.07-2:37.34 (3.27s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 440.6068 | label Iris
+   2:41.59-2:44.85 (3.25s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 456.4727 | label Iris
+   2:46.98-2:48.42 (1.43s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 465.098 | label Iris
+   2:48.42-2:51.79 (3.37s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 469.5024 | label Iris
+   3:01.75-3:03.32 (1.57s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 500.2664 | label Iris
+   3:18.25-3:20.42 (2.17s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 525.3415 | label Iris
+   3:31.24-3:32.91 (1.67s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 541.5744 | label Iris
+   3:32.91-3:35.50 (2.59s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 543.4095 | label Iris
+   4:05.01-4:06.53 (1.52s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 606.0388 | label Iris
+   4:06.53-4:08.48 (1.95s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 607.7405 | label Iris
+   4:38.38-4:42.92 (4.54s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 666.0487 | label Iris
+   4:50.14-4:50.62 (0.48s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 679.8292 | label Iris
+   4:50.62-4:52.23 (1.60s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 680.8135 | label Iris
+   4:52.23-4:56.16 (3.94s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 682.7154 | label Iris
+   5:08.84-5:10.39 (1.55s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 703.9533 | label Iris
+   5:10.39-5:12.15 (1.75s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 706.706 | label Iris
+   5:14.93-5:21.20 (6.27s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 713.6963 | label Iris
+   5:44.48-5:45.95 (1.47s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 758.2408 | label Iris
+   5:45.95-5:47.91 (1.97s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 760.0593 | label Iris
+   6:01.53-6:06.48 (4.95s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 779.9625 | label Iris
+   6:06.48-6:09.05 (2.57s) | gta6-hurricanes-synced.mov | <gta6-hurricanes-synced.mov> in 785.2178 | label Iris
+
+== V3: 24 clips
+   media: {'mt-c01.mp4': 1, 'mt-c02.mp4': 1, 'mt-c03.mp4': 1, 'mt-c04.mp4': 1, 'mt-c05.mp4': 1, 'mt-c06.mp4': 1, 'mt-c07.mp4': 1, 'mt-c08.mp4': 1, 'mt-c09.mp4': 1, 'mt-c10.mp4': 1, 'mt-c11.mp4': 1, 'mt-c12.mp4': 1}
+   0:00.00-0:03.20 (3.20s) | mt-c01.mp4 | <mt-c01.mp4> in 0.0 | label Violet
+   0:06.12-0:07.72 (1.60s) | mt-c02.mp4 | <mt-c02.mp4> in 0.0 | label Violet
+   0:20.54-0:27.76 (7.22s) | mt-c03.mp4 | <mt-c03.mp4> in 0.0 | label Violet
+   0:31.50-0:38.64 (7.14s) | mt-c04.mp4 | <mt-c04.mp4> in 0.0 | label Violet
+   0:44.19-0:50.52 (6.32s) | mt-c05.mp4 | <mt-c05.mp4> in 0.0 | label Violet
+   0:53.69-0:57.74 (4.05s) | mt-c06.mp4 | <mt-c06.mp4> in 0.0 | label Violet
+   1:09.04-1:12.19 (3.15s) | mt-c07.mp4 | <mt-c07.mp4> in 0.0 | label Violet
+   1:22.88-1:25.82 (2.94s) | mt-c08.mp4 | <mt-c08.mp4> in 0.0 | label Violet
+   1:34.11-1:40.05 (5.94s) | mt-c09.mp4 | <mt-c09.mp4> in 0.0 | label Violet
+   2:04.06-2:06.99 (2.94s) | mt-c10.mp4 | <mt-c10.mp4> in 0.0 | label Violet
+   2:11.10-2:16.49 (5.39s) | mt-c11.mp4 | <mt-c11.mp4> in 0.0 | label Violet
+   2:34.07-2:37.34 (3.27s) | mt-c12.mp4 | <mt-c12.mp4> in 0.0 | label Violet
+   2:41.59-2:44.85 (3.25s) | mt-c13.mp4 | <mt-c13.mp4> in 0.0 | label Violet
+   2:46.98-2:51.79 (4.80s) | mt-c14.mp4 | <mt-c14.mp4> in 0.0 | label Violet
+   3:01.75-3:03.32 (1.57s) | mt-c15.mp4 | <mt-c15.mp4> in 0.0 | label Violet
+   3:18.25-3:20.42 (2.17s) | mt-c16.mp4 | <mt-c16.mp4> in 0.0 | label Violet
+   3:31.24-3:35.50 (4.25s) | mt-c17.mp4 | <mt-c17.mp4> in 0.0 | label Violet
+   4:05.01-4:08.48 (3.47s) | mt-c18.mp4 | <mt-c18.mp4> in 0.0 | label Violet
+   4:38.38-4:42.92 (4.54s) | mt-c19.mp4 | <mt-c19.mp4> in 0.0 | label Violet
+   4:50.14-4:56.16 (6.02s) | mt-c20.mp4 | <mt-c20.mp4> in 0.0 | label Violet
+   5:08.84-5:12.15 (3.30s) | mt-c21.mp4 | <mt-c21.mp4> in 0.0 | label Violet
+   5:14.93-5:21.20 (6.27s) | mt-c22.mp4 | <mt-c22.mp4> in 0.0 | label Violet
+   5:44.48-5:47.91 (3.44s) | mt-c23.mp4 | <mt-c23.mp4> in 0.0 | label Violet
+   6:01.53-6:09.05 (7.52s) | mt-c24.mp4 | <mt-c24.mp4> in 0.0 | label Violet
+
+== V4: 24 clips
+   media: {'ov-c01.mov': 1, 'ov-c02-v2.mov': 1, 'ov-c03.mov': 1, 'ov-c04.mov': 1, 'ov-c05.mov': 1, 'ov-c06.mov': 1, 'ov-c07.mov': 1, 'ov-c08.mov': 1, 'ov-c09.mov': 1, 'ov-c10.mov': 1, 'ov-c11.mov': 1, 'ov-c12.mov': 1}
+   0:00.00-0:03.20 (3.20s) | ov-c01.mov | <ov-c01.mov> in 0.0 | label Violet
+   0:06.12-0:07.72 (1.60s) | ov-c02-v2.mov | <ov-c02-v2.mov> in 0.0 | label Violet
+   0:20.54-0:27.76 (7.22s) | ov-c03.mov | <ov-c03.mov> in 0.0 | label Violet
+   0:31.50-0:38.64 (7.14s) | ov-c04.mov | <ov-c04.mov> in 0.0 | label Violet
+   0:44.19-0:50.52 (6.32s) | ov-c05.mov | <ov-c05.mov> in 0.0 | label Violet
+   0:53.69-0:57.74 (4.05s) | ov-c06.mov | <ov-c06.mov> in 0.0 | label Violet
+   1:09.04-1:12.19 (3.15s) | ov-c07.mov | <ov-c07.mov> in 0.0 | label Violet
+   1:22.88-1:25.82 (2.94s) | ov-c08.mov | <ov-c08.mov> in 0.0 | label Violet
+   1:34.11-1:40.05 (5.94s) | ov-c09.mov | <ov-c09.mov> in 0.0 | label Violet
+   2:04.06-2:06.99 (2.94s) | ov-c10.mov | <ov-c10.mov> in 0.0 | label Violet
+   2:11.10-2:16.49 (5.39s) | ov-c11.mov | <ov-c11.mov> in 0.0 | label Violet
+   2:34.07-2:37.34 (3.27s) | ov-c12.mov | <ov-c12.mov> in 0.0 | label Violet
+   2:41.59-2:44.85 (3.25s) | ov-c13.mov | <ov-c13.mov> in 0.0 | label Violet
+   2:46.98-2:51.79 (4.80s) | ov-c14.mov | <ov-c14.mov> in 0.0 | label Violet
+   3:01.75-3:03.32 (1.57s) | ov-c15.mov | <ov-c15.mov> in 0.0 | label Violet
+   3:18.25-3:20.42 (2.17s) | ov-c16.mov | <ov-c16.mov> in 0.0 | label Violet
+   3:31.24-3:35.50 (4.25s) | ov-c17.mov | <ov-c17.mov> in 0.0 | label Violet
+   4:05.01-4:08.48 (3.47s) | ov-c18.mov | <ov-c18.mov> in 0.0 | label Violet
+   4:38.38-4:42.92 (4.54s) | ov-c19.mov | <ov-c19.mov> in 0.0 | label Violet
+   4:50.14-4:56.16 (6.02s) | ov-c20.mov | <ov-c20.mov> in 0.0 | label Violet
+   5:08.84-5:12.15 (3.30s) | ov-c21.mov | <ov-c21.mov> in 0.0 | label Violet
+   5:14.93-5:21.20 (6.27s) | ov-c22.mov | <ov-c22.mov> in 0.0 | label Violet
+   5:44.48-5:47.91 (3.44s) | ov-c23.mov | <ov-c23.mov> in 0.0 | label Violet
+   6:01.53-6:09.05 (7.52s) | ov-c24.mov | <ov-c24.mov> in 0.0 | label Violet
+
+== A1: 140 clips
+   media: {'gta6-hurricanes-synced.mov': 140}
+
+== A2: 26 clips
+   media: {'ES_Loungin - Scientific (2).mp3': 9, 'ES_Brooklyn - Dyalla (2).mp3': 9, 'ES_First Born - Timothy Infinite (2).mp3': 8}
+   0:00.00-0:09.31 (9.31s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 11.011 | label Caribbean | gain -24.0 dB
+   0:10.33-0:18.49 (8.16s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 21.338 | label Caribbean | gain -24.0 dB
+   0:20.54-0:39.77 (19.24s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 31.5482 | label Caribbean | gain -24.0 dB
+   0:41.78-1:04.03 (22.26s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 52.7861 | label Caribbean | gain -24.0 dB
+   1:05.63-1:16.31 (10.68s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 76.6432 | label Caribbean | gain -24.0 dB
+   1:17.81-1:31.91 (14.10s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 88.8221 | label Caribbean | gain -24.0 dB
+   1:32.89-1:45.64 (12.75s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 103.9038 | label Caribbean | gain -24.0 dB
+   1:47.52-2:08.88 (21.35s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 118.5351 | label Caribbean | gain -24.0 dB
+   2:11.10-2:16.49 (5.39s) | ES_Loungin - Scientific (2).mp3 | <ES_Loungin - Scientific (2).mp3> in 142.1086 | label Caribbean | gain -24.0 dB
+   2:34.07-2:44.85 (10.78s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 0.0 | label Caribbean | gain -20.0 dB
+   2:44.85-2:56.56 (11.71s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 10.7774 | label Caribbean | gain -24.0 dB
+   3:00.80-3:01.75 (0.95s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 26.7267 | label Caribbean | gain -24.0 dB
+   3:01.75-3:26.17 (24.42s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 27.6776 | label Caribbean | gain -26.0 dB
+   3:31.24-3:37.42 (6.17s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 57.1738 | label Caribbean | gain -26.0 dB
+   3:38.69-3:51.18 (12.50s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 64.6145 | label Caribbean | gain -26.0 dB
+   3:52.18-4:11.43 (19.25s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 78.1114 | label Caribbean | gain -26.0 dB
+   4:12.75-4:17.11 (4.35s) | ES_First Born - Timothy Infinite (2).mp3 | <ES_First Born - Timothy Infinite (2).mp3> in 98.6819 | label Caribbean | gain -26.0 dB
+   4:22.25-4:30.52 (8.27s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 0.0 | label Caribbean | gain -24.0 dB
+   4:31.25-4:48.97 (17.72s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 9.009 | label Caribbean | gain -24.0 dB
+   4:50.14-4:56.16 (6.02s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 27.8945 | label Caribbean | gain -24.0 dB
+   4:56.16-5:02.60 (6.44s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 33.9172 | label Caribbean | gain -27.0 dB
+   5:03.29-5:13.73 (10.44s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 41.041 | label Caribbean | gain -27.0 dB
+   5:14.93-5:26.56 (11.63s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 52.686 | label Caribbean | gain -27.0 dB
+   5:29.66-5:56.56 (26.89s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 79.2292 | label Caribbean | gain -24.0 dB
+   6:01.53-6:11.59 (10.06s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 111.0943 | label Caribbean | gain -24.0 dB
+   6:11.59-6:22.20 (10.61s) | ES_Brooklyn - Dyalla (2).mp3 | <ES_Brooklyn - Dyalla (2).mp3> in 121.1544 | label Caribbean | gain -27.0 dB
+
+== A3: 44 clips
+   media: {'es-pop-mouth-finger.wav': 44}
+   0:00.00-0:00.37 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB
+   0:06.12-0:06.49 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -7.0 dB
+   0:06.52-0:06.89 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -7.0 dB
+   0:06.92-0:07.29 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -7.0 dB
+   0:07.32-0:07.69 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -7.0 dB
+   0:20.54-0:20.90 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:23.57-0:23.94 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:24.54-0:24.91 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:25.54-0:25.91 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:26.69-0:27.06 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:31.50-0:31.87 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:44.19-0:44.56 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:45.78-0:46.15 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:47.36-0:47.73 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:48.95-0:49.32 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:53.69-0:54.05 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   0:55.97-0:56.34 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   1:09.04-1:09.40 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   1:10.87-1:11.24 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   1:22.88-1:23.25 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   1:34.11-1:34.48 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   1:35.61-1:35.98 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:04.06-2:04.42 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:11.10-2:11.46 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:34.07-2:34.44 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:41.59-2:41.96 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:46.98-2:47.35 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:48.42-2:48.79 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   2:50.42-2:50.79 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   3:01.75-3:02.12 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   3:18.25-3:18.62 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   3:31.24-3:31.61 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   3:33.75-3:34.11 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   4:05.01-4:05.38 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   4:06.53-4:06.90 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   4:38.38-4:38.75 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   4:50.14-4:50.51 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   4:51.74-4:52.11 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   5:08.84-5:09.21 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   5:14.93-5:15.30 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   5:44.48-5:44.84 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   6:01.53-6:01.89 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   6:04.98-6:05.35 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB
+   6:06.48-6:06.85 (0.37s) | es-pop-mouth-finger.wav | <es-pop-mouth-finger.wav> in 0.0 | label Caribbean | vol -6.0 dB | gain -12.0 dB

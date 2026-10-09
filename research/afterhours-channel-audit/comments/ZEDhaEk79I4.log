@@ -1,0 +1,19 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=ZEDhaEk79I4
+[youtube] ZEDhaEk79I4: Downloading webpage
+WARNING: [youtube] ZEDhaEk79I4: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] ZEDhaEk79I4: Downloading initial data API JSON
+[youtube] ZEDhaEk79I4: Downloading web embedded client config
+[youtube] ZEDhaEk79I4: Downloading player f2999a12-main
+[youtube] ZEDhaEk79I4: Downloading web embedded player API JSON
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] Downloading comment section API JSON
+[youtube] Downloading ~294 comments
+[youtube] Sorting comments by top
+[youtube] Downloading comment API JSON page 1 (0/~294)
+[youtube] Downloading comment API JSON page 2 (20/~294)
+[youtube] Downloading comment API JSON page 3 (40/~294)
+[youtube] Downloading comment API JSON page 4 (60/~294)
+[youtube] Downloading comment API JSON page 5 (80/~294)
+[youtube] Extracted 85 comments
+[info] ZEDhaEk79I4: Downloading 1 format(s): 399+251-7
+[info] Writing video metadata as JSON to: ZEDhaEk79I4.info.json

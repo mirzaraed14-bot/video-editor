@@ -1,0 +1,351 @@
+# Sequence 24
+
+== V1: 127 clips
+   media: {'gta6-pc-release-synced.mov': 106, 'Nested Sequence 110': 1, 'Nested Sequence 111': 1, 'Nested Sequence 112': 1, 'Nested Sequence 113': 1, 'Nested Sequence 114': 1, 'TV colour bars test card screen with sine tone in 4K.mp4': 1, 'Nested Sequence 115': 1, 'Nested Sequence 116': 1, 'Nested Sequence 117': 1, 'Nested Sequence 118': 1, 'house exploding #meme#.mp4': 1}
+   0:00.00-0:01.89 (1.89s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 42.359 | label Tan
+   0:01.89-0:04.72 (2.84s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 50.1668 | label Violet
+   0:04.72-0:06.62 (1.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 57.7077 | label Iris | scale 100->105 over 1.90s (2.63%/s, 2kf), pos kf [[57.7077, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   0:06.62-0:09.14 (2.52s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 61.745 | label Tan
+   0:09.14-0:10.99 (1.85s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 66.3496 | label Tan
+   0:10.99-0:18.23 (7.24s) | Nested Sequence 110 | [NEST Nested Sequence 110] | scale 100->110 over 7.24s (1.38%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:01.79 (1.79s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 72.3056 | label Iris
+           0:01.79-0:03.05 (1.27s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 77.3106 | label Iris
+           0:03.05-0:05.41 (2.35s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 81.5315 | label Iris
+           0:05.41-0:07.24 (1.84s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 100.1667 | label Iris
+   0:18.23-0:20.92 (2.69s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 102.0019 | SPEED 0.8 | label Iris | scale 136
+   0:20.92-0:24.49 (3.57s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 114.2475 | label Violet
+   0:24.49-0:25.46 (0.97s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 121.3546 | label Iris | scale 294, pos 0.5:0.35370370745658875
+   0:25.46-0:28.39 (2.94s) | Nested Sequence 111 | [NEST Nested Sequence 111] | scale 100->105 over 2.94s (1.70%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+
+        == nest V1: 2 clips
+           media: {'gta6-pc-release-synced.mov': 2}
+           0:00.00-0:02.25 (2.25s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 128.9288 | label Iris
+           0:02.25-0:02.94 (0.68s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 131.181 | label Iris | scale 114
+   0:28.39-0:32.98 (4.59s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 134.501 | label Rose
+   0:32.98-0:34.83 (1.85s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 144.094 | label Rose
+   0:34.83-0:36.45 (1.62s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 145.9458 | label Rose
+   0:36.45-0:38.04 (1.58s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 147.5641 | label Rose
+   0:38.04-0:42.13 (4.09s) | Nested Sequence 112 | [NEST Nested Sequence 112] | scale 100->105 over 4.09s (1.22%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+
+        == nest V1: 2 clips
+           media: {'gta6-pc-release-synced.mov': 2}
+           0:00.00-0:02.92 (2.92s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 156.5397 | label Iris
+           0:02.92-0:04.09 (1.17s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 159.4593 | label Iris | scale 116
+   0:42.13-0:47.35 (5.22s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 162.9795 | label Mango
+   0:47.35-0:54.34 (6.99s) | Nested Sequence 113 | [NEST Nested Sequence 113] | scale 100->110 over 6.99s (1.43%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:01.74 (1.74s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 173.0395 | label Iris
+           0:01.74-0:04.65 (2.92s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 185.5187 | label Iris
+           0:04.65-0:06.99 (2.34s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 191.7249 | label Iris | scale 110
+   0:54.34-0:56.86 (2.52s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 200.1833 | label Violet
+   0:56.86-0:58.38 (1.52s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 205.7889 | label Violet
+   0:58.38-1:01.80 (3.42s) | Nested Sequence 114 | [NEST Nested Sequence 114] | scale 100->110 over 3.64s (2.75%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:00.88 (0.88s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 210.7939 | label Iris
+           0:00.88-0:02.70 (1.82s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 212.0785 | label Iris
+           0:02.70-0:03.64 (0.93s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 213.9137 | SPEED 0.8 | label Iris | scale 110
+   1:01.80-1:02.00 (0.20s) | TV colour bars test card screen with sin | <TV colour bars test card screen with sine ton> in 2.8862 | label Iris
+   1:02.00-1:08.60 (6.61s) | Nested Sequence 115 | [NEST Nested Sequence 115] | scale 100->110 over 6.61s (1.51%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:01.45 (1.45s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 219.0855 | label Iris
+           0:01.45-0:03.60 (2.15s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 229.2624 | label Rose
+           0:03.60-0:05.31 (1.70s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 232.599 | label Rose | scale 123
+           0:05.31-0:06.61 (1.30s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 245.4786 | label Iris | scale 201, pos 0.57708334922790527:0.61944442987442017
+   1:08.60-1:09.54 (0.93s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 251.6681 | label Iris
+   1:09.54-1:11.14 (1.60s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 256.0892 | SPEED 0.8 | label Rose | scale 110
+   1:11.14-1:12.12 (0.98s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 258.258 | label Rose
+   1:12.12-1:12.87 (0.75s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 260.1432 | label Rose
+   1:12.87-1:14.69 (1.82s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 260.894 | SPEED 0.8 | label Rose | scale 110
+   1:14.69-1:21.26 (6.57s) | Nested Sequence 116 | [NEST Nested Sequence 116] | scale 100->110 over 6.57s (1.52%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:02.10 (2.10s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 264.5977 | label Iris
+           0:02.10-0:04.29 (2.19s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 269.3357 | label Iris
+           0:04.29-0:06.57 (2.29s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 276.6931 | label Iris | scale 110
+   1:21.26-1:22.17 (0.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 278.9787 | label Iris | scale 158
+   1:22.17-1:23.48 (1.32s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 283.65 | label Violet
+   1:23.48-1:24.93 (1.45s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 286.0358 | label Violet
+   1:24.93-1:27.14 (2.20s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 288.1379 | label Iris
+   1:27.14-1:27.47 (0.33s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 290.3401 | label Iris | scale 121
+   1:27.47-1:30.37 (2.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 300.4835 | label Iris | scale 100->105 over 2.90s (1.72%/s, 2kf), pos kf [[300.4835, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   1:30.37-1:31.21 (0.83s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 306.4228 | label Iris
+   1:31.21-1:31.96 (0.75s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 307.5739 | SPEED 0.8 | label Iris | scale 110
+   1:31.96-1:33.36 (1.40s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 309.8596 | SPEED 0.8 | label Iris | scale 110
+   1:33.36-1:35.53 (2.17s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 311.6947 | SPEED 0.8 | label Iris | scale 130
+   1:35.53-1:36.35 (0.82s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 313.4298 | SPEED 0.8 | label Iris | scale 160
+   1:36.35-1:41.53 (5.19s) | Nested Sequence 117 | [NEST Nested Sequence 117] | scale 100->110 over 5.69s (1.76%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 2 clips
+           media: {'gta6-pc-release-synced.mov': 2}
+           0:00.00-0:03.74 (3.74s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 317.9176 | label Iris
+           0:03.74-0:05.69 (1.95s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 326.8098 | label Iris | scale 126
+   1:41.53-1:42.39 (0.85s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 331.2309 | label Blue
+   1:42.39-1:44.49 (2.10s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 332.4821 | label Blue
+   1:44.49-1:45.91 (1.42s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 335.6186 | label Blue
+   1:45.91-1:47.62 (1.72s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 338.8218 | label Blue
+   1:47.62-1:50.66 (3.04s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 342.1585 | label Blue
+   1:50.66-1:52.43 (1.77s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 345.5619 | label Blue
+   1:52.43-1:53.70 (1.27s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 350.7671 | label Iris | scale 156
+   1:53.70-1:54.76 (1.07s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 353.4531 | label Iris
+   1:54.76-1:56.45 (1.69s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 355.3216 | label Iris | scale 105
+   1:56.45-1:57.47 (1.02s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 373.8068 | label Rose
+   1:57.47-1:58.72 (1.25s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 375.1414 | label Rose
+   1:58.72-2:00.20 (1.48s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 380.0964 | label Rose
+   2:00.20-2:02.17 (1.97s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 382.382 | label Iris
+   2:02.17-2:03.07 (0.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 385.3016 | label Iris | scale 134
+   2:03.07-2:10.58 (7.51s) | Nested Sequence 118 | [NEST Nested Sequence 118] | scale 100->110 over 7.51s (1.33%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:01.75 (1.75s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 391.8081 | label Iris
+           0:01.75-0:04.70 (2.95s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 397.4971 | label Iris
+           0:04.70-0:07.51 (2.80s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 416.8998 | label Iris
+   2:10.58-2:10.78 (0.20s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 419.7026 | label Iris | scale 146
+   2:10.78-2:11.97 (1.18s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 423.2228 | label Iris
+   2:11.97-2:15.15 (3.19s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 424.6576 | label Tan
+   2:15.15-2:15.67 (0.52s) | house exploding #meme#.mp4 | <house exploding #meme#.mp4> in 4.4711 | label Iris
+   2:15.67-2:17.82 (2.15s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 430.4801 | label Iris | scale 151
+   2:17.82-2:24.48 (6.66s) | Nested Sequence 119 | [NEST Nested Sequence 119] | scale 100->110 over 6.66s (1.50%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:03.72 (3.72s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 443.493 | label Iris
+           0:03.72-0:05.54 (1.82s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 447.2134 | label Iris | scale 110
+           0:05.54-0:06.66 (1.12s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 449.0319 | label Iris | scale 120
+   2:24.48-2:25.48 (1.00s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 457.5905 | label Rose
+   2:25.48-2:27.63 (2.15s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 459.4757 | label Rose
+   2:27.63-2:31.38 (3.75s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 463.7466 | label Iris | scale 100->105 over 3.75s (1.33%/s, 2kf), pos kf [[463.7466, '0.5:0.5']], PRESET '105 GTA Lf Zoom Preset'
+   2:31.38-2:35.24 (3.85s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 478.2778 | label Rose
+   2:35.24-2:37.99 (2.75s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 507.4736 | label Iris
+   2:37.99-2:39.23 (1.23s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 510.2264 | label Iris | scale 130
+   2:39.23-2:41.38 (2.15s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 520.5534 | label Blue
+   2:41.38-2:43.20 (1.82s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 524.4239 | label Blue
+   2:43.20-2:45.20 (2.00s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 530.1296 | label Iris | scale 137
+   2:45.20-2:47.92 (2.72s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 534.0502 | label Mango
+   2:47.92-2:55.69 (7.77s) | Nested Sequence 120 | [NEST Nested Sequence 120] | scale 100->110 over 7.77s (1.29%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:03.42 (3.42s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 539.2721 | label Iris
+           0:03.42-0:05.04 (1.62s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 546.4125 | label Iris | scale 127
+           0:05.04-0:06.27 (1.23s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 551.5677 | label Iris
+           0:06.27-0:07.77 (1.50s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 555.1379 | label Iris
+   2:55.73-2:57.53 (1.80s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 561.0271 | label Mango
+   2:57.53-2:58.50 (0.97s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 563.93 | label Mango
+   2:58.50-3:00.03 (1.53s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 565.198 | label Mango
+   3:00.03-3:03.87 (3.84s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 575.7752 | label Mango
+   3:03.87-3:05.37 (1.50s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 606.4225 | label Iris
+   3:05.37-3:06.27 (0.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 608.4579 | label Iris
+   3:06.27-3:07.15 (0.88s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 609.3587 | label Iris | scale 149
+   3:07.15-3:15.98 (8.83s) | Nested Sequence 121 | [NEST Nested Sequence 121] | scale 100->110 over 8.83s (1.13%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:02.59 (2.59s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 619.2019 | label Iris
+           0:02.59-0:03.89 (1.30s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 621.7878 | label Iris | scale 138
+           0:03.89-0:06.81 (2.92s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 627.944 | label Iris
+           0:06.81-0:08.83 (2.02s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 630.8636 | label Iris | scale 129
+   3:15.98-3:16.80 (0.82s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 672.2549 | label Rose
+   3:16.80-3:20.23 (3.44s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 675.6917 | label Rose
+   3:20.23-3:21.50 (1.27s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 679.9126 | label Iris | scale 167
+   3:21.50-3:23.47 (1.97s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 682.7654 | label Blue
+   3:23.47-3:24.52 (1.05s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 685.4181 | label Blue
+   3:24.52-3:27.77 (3.25s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 687.7037 | label Mango
+   3:27.77-3:34.21 (6.44s) | Nested Sequence 122 | [NEST Nested Sequence 122] | scale 100->110 over 6.44s (1.55%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:01.38 (1.38s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 692.1414 | label Iris
+           0:01.38-0:02.34 (0.95s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 694.1768 | label Iris
+           0:02.34-0:04.92 (2.59s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 697.7137 | label Iris | scale 129
+           0:04.92-0:06.44 (1.52s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 702.4517 | label Iris
+   3:34.21-3:37.05 (2.84s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 704.3703 | label Mango
+   3:37.05-3:45.21 (8.16s) | Nested Sequence 123 | [NEST Nested Sequence 123] | scale 100->110 over 8.16s (1.23%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:01.70 (1.70s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 708.2576 | label Iris
+           0:01.70-0:04.74 (3.04s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 712.028 | label Iris
+           0:04.74-0:08.16 (3.42s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 718.2008 | label Iris
+   3:45.21-3:47.18 (1.97s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 727.3099 | SPEED 0.8 | label Iris | scale 143
+   3:47.18-3:48.95 (1.77s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 736.0019 | label Iris
+   3:48.95-3:49.60 (0.65s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 737.7537 | SPEED 0.8 | label Iris | scale 110
+   3:49.60-3:50.28 (0.68s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 739.7056 | label Iris | scale 120
+   3:50.28-3:51.75 (1.47s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 743.3927 | label Iris | scale 130
+   3:51.75-3:55.47 (3.72s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 753.7196 | label Iris | scale 140
+   3:55.47-4:00.67 (5.21s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 760.0426 | label Iris
+   4:00.67-4:01.56 (0.88s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 765.2478 | label Iris | scale 172
+   4:01.56-4:03.59 (2.04s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 773.8564 | label Mango
+   4:03.59-4:05.03 (1.43s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 777.4266 | label Mango
+   4:05.03-4:06.53 (1.50s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 780.3296 | label Iris
+   4:06.53-4:07.46 (0.93s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 782.8487 | label Iris | scale 149
+   4:07.46-4:14.02 (6.56s) | Nested Sequence 124 | [NEST Nested Sequence 124] | scale 100->110 over 6.56s (1.53%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:02.72 (2.72s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 788.9048 | label Iris
+           0:02.72-0:04.25 (1.53s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 791.9745 | label Iris
+           0:04.25-0:05.44 (1.18s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 793.9098 | label Iris
+           0:05.44-0:06.56 (1.12s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 796.3956 | label Iris
+   4:14.02-4:17.14 (3.12s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 800.4997 | label Rose
+   4:17.14-4:22.55 (5.41s) | Nested Sequence 125 | [NEST Nested Sequence 125] | scale 100->110 over 5.41s (1.85%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:01.90 (1.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 812.6785 | label Iris | scale 183
+           0:01.90-0:03.50 (1.60s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 816.0486 | label Iris
+           0:03.50-0:05.41 (1.90s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 818.818 | label Iris
+   4:22.55-4:23.53 (0.98s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 825.0075 | label Mango
+   4:23.53-4:28.03 (4.50s) | Nested Sequence 126 | [NEST Nested Sequence 126] | scale 100->110 over 4.50s (2.22%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 4 clips
+           media: {'gta6-pc-release-synced.mov': 4}
+           0:00.00-0:02.17 (2.17s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 828.2107 | label Iris
+           0:02.17-0:02.67 (0.50s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 830.3795 | label Iris | scale 110
+           0:02.67-0:03.65 (0.98s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 833.4827 | label Iris
+           0:03.65-0:04.50 (0.85s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 835.0175 | label Iris
+   4:28.03-4:29.79 (1.75s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 838.2708 | label Iris | scale 131
+   4:29.79-4:31.15 (1.37s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 840.0225 | label Iris | scale 356
+   4:31.15-4:32.74 (1.58s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 842.5417 | label Iris
+   4:32.74-4:34.27 (1.53s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 845.1276 | label Iris
+   4:34.27-4:36.89 (2.62s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 849.5987 | label Iris
+   4:36.89-4:38.76 (1.87s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 872.9054 | label Violet
+   4:38.76-4:39.50 (0.73s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 875.0575 | label Violet
+   4:39.50-4:44.15 (4.65s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 876.0418 | label Violet
+   4:44.15-4:46.40 (2.25s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 883.7996 | label Iris
+   4:46.40-4:48.04 (1.63s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 899.3318 | label Iris
+   4:48.04-4:49.47 (1.43s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 900.9667 | SPEED 0.8 | label Iris | scale 174
+   4:49.47-4:56.85 (7.37s) | Nested Sequence 127 | [NEST Nested Sequence 127] | scale 100->110 over 7.37s (1.36%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 3 clips
+           media: {'gta6-pc-release-synced.mov': 3}
+           0:00.00-0:02.44 (2.44s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 910.1926 | label Iris
+           0:02.44-0:03.50 (1.07s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 912.6284 | label Iris | scale 148
+           0:03.50-0:07.37 (3.87s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 915.598 | label Iris
+   4:56.85-4:58.13 (1.28s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 919.4686 | label Blue
+   4:58.13-4:59.18 (1.05s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 922.7385 | label Blue
+   4:59.18-5:00.22 (1.03s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 924.1899 | label Iris | scale 215
+   5:00.22-5:01.47 (1.25s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 929.1449 | label Iris
+   5:01.47-5:03.15 (1.69s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 934.9006 | label Iris | scale 110
+   5:03.15-5:03.92 (0.77s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 937.4365 | label Iris | scale 120
+   5:03.92-5:06.14 (2.22s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 938.2039 | label Iris | scale 130
+   5:06.14-5:06.99 (0.85s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 940.4228 | label Iris | scale 140
+   5:06.99-5:15.70 (8.71s) | Nested Sequence 128 | [NEST Nested Sequence 128] | scale 100->110 over 8.71s (1.15%/s, 2kf), pos kf [[0.0, '0.5:0.5']], PRESET '110 GTA LF Zoom Preset'
+
+        == nest V1: 5 clips
+           media: {'gta6-pc-release-synced.mov': 5}
+           0:00.00-0:03.50 (3.50s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 950.6997 | label Iris
+           0:03.50-0:04.10 (0.60s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 954.9206 | label Iris
+           0:04.10-0:05.37 (1.27s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 956.4555 | label Iris | scale 123
+           0:05.37-0:07.07 (1.70s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 958.1906 | label Iris
+           0:07.07-0:08.71 (1.64s) | gta6-pc-release-synced.mov | <gta6-pc-release-synced.mov> in 963.8129 | label Iris | scale 135
+
+== V2: 26 clips
+   media: {'overlay-matte.mp4': 26}
+   0:00.00-0:04.72 (4.72s) | overlay-matte.mp4 | <overlay-matte.mp4> in 0.0 | label Violet
+   0:06.62-0:10.99 (4.37s) | overlay-matte.mp4 | <overlay-matte.mp4> in 2.8862 | label Violet
+   0:20.92-0:24.49 (3.57s) | overlay-matte.mp4 | <overlay-matte.mp4> in 2.8862 | label Violet
+   0:42.13-0:47.35 (5.22s) | overlay-matte.mp4 | <overlay-matte.mp4> in 5.7891 | label Violet
+   0:54.34-0:58.38 (4.04s) | overlay-matte.mp4 | <overlay-matte.mp4> in 8.692 | label Violet
+   1:22.17-1:24.93 (2.77s) | overlay-matte.mp4 | <overlay-matte.mp4> in 11.5949 | label Violet
+   1:41.53-1:45.91 (4.37s) | overlay-matte.mp4 | <overlay-matte.mp4> in 14.4978 | label Violet
+   1:45.91-1:52.43 (6.52s) | overlay-matte.mp4 | <overlay-matte.mp4> in 17.384 | label Violet
+   1:56.45-2:00.20 (3.75s) | overlay-matte.mp4 | <overlay-matte.mp4> in 20.2869 | label Violet
+   2:24.48-2:27.63 (3.15s) | overlay-matte.mp4 | <overlay-matte.mp4> in 0.5505 | label Violet
+   2:31.38-2:35.24 (3.85s) | overlay-matte.mp4 | <overlay-matte.mp4> in 4.1541 | label Violet
+   2:39.23-2:43.20 (3.97s) | overlay-matte.mp4 | <overlay-matte.mp4> in 7.1571 | label Violet
+   2:45.20-2:47.93 (2.74s) | overlay-matte.mp4 | <overlay-matte.mp4> in 8.8088 | label Violet
+   2:55.69-3:03.87 (8.17s) | overlay-matte.mp4 | <overlay-matte.mp4> in 17.1338 | label Violet
+   3:21.50-3:24.52 (3.02s) | overlay-matte.mp4 | <overlay-matte.mp4> in 14.9149 | label Violet
+   3:24.52-3:27.81 (3.29s) | overlay-matte.mp4 | <overlay-matte.mp4> in 18.0514 | label Violet
+   3:34.21-3:37.05 (2.84s) | overlay-matte.mp4 | <overlay-matte.mp4> in 20.5205 | label Violet
+   4:01.56-4:05.03 (3.47s) | overlay-matte.mp4 | <overlay-matte.mp4> in 1.7351 | label Violet
+   4:22.55-4:23.53 (0.98s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:36.89-4:37.98 (1.08s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:37.98-4:39.50 (1.52s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:39.50-4:40.78 (1.28s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:40.78-4:41.86 (1.08s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:41.86-4:43.38 (1.52s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:43.38-4:44.15 (0.77s) | overlay-matte.mp4 | <overlay-matte.mp4> in 24.4745 | label Violet
+   4:56.85-4:59.18 (2.34s) | overlay-matte.mp4 | <overlay-matte.mp4> in 5.2553 | label Violet
+
+== V3: 23 clips
+   media: {'FACEPALM MEME 🤣 HD 🤣.mp4': 1, 'cue2-coming-to-pc-2028.mp4': 1, 'Screenshot 2026-09-22 224138.png': 1, 'Nested Sequence 129': 1, 'collage-rockstar-history-labelled.png': 1, 'mg1-four-days-ago.mp4': 1, 'plate-blurred-date-text.png': 1, 'cue10-rumoured-pc-2028.mp4': 1, 'img-gta4-2k.png': 1, 'img-gta5-2k.png': 1, 'RDR2 Official Gameplay Video.mp4': 1, 'GTA 5 Official Gameplay Video.mp4': 1}
+   0:00.00-0:01.89 (1.89s) | FACEPALM MEME 🤣 HD 🤣.mp4 | <FACEPALM MEME 🤣 HD 🤣.mp4> in 0.0 | label Iris | scale 132->127 over 1.89s (-2.65%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   0:01.89-0:04.72 (2.84s) | cue2-coming-to-pc-2028.mp4 | <cue2-coming-to-pc-2028.mp4> in 0.0 | label Violet | scale 95->87 over 2.84s (-2.82%/s, 2kf), pos kf [[0.0, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   0:06.62-0:09.14 (2.52s) | Screenshot 2026-09-22 224138.png | <Screenshot 2026-09-22 224138.png> in 3599.9964 | label Lavender | scale 151->140 over 4.37s (-2.52%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   0:09.14-0:10.99 (1.85s) | Nested Sequence 129 | [NEST Nested Sequence 129] | scale 281, pos 0.71510416269302368:-0.31851851940155029
+
+        == nest V3: 1 clips
+           media: {'Screenshot 2026-09-22 224138.png': 1}
+           0:00.00-0:01.85 (1.85s) | Screenshot 2026-09-22 224138.png | <Screenshot 2026-09-22 224138.png> in 3602.5156 | label Lavender | scale 151->140 over 4.37s (-2.52%/s, 2kf)
+               + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   0:20.92-0:24.49 (3.57s) | collage-rockstar-history-labelled.png | <collage-rockstar-history-labelled.png> in 3599.9964 | label Lavender | scale 95->87 over 3.57s (-2.24%/s, 2kf), pos kf [[3599.9964, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   0:42.13-0:47.35 (5.22s) | mg1-four-days-ago.mp4 | <mg1-four-days-ago.mp4> in 0.0 | label Violet | scale 95->87 over 3.57s (-2.24%/s, 2kf), pos kf [[0.0, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   0:54.34-0:58.38 (4.04s) | plate-blurred-date-text.png | <plate-blurred-date-text.png> in 3599.9964 | label Lavender | scale 130->120 over 4.04s (-2.48%/s, 2kf), pos kf [[3599.9964, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   1:22.17-1:24.93 (2.77s) | cue10-rumoured-pc-2028.mp4 | <cue10-rumoured-pc-2028.mp4> in 0.0 | label Violet | scale 95->87 over 3.57s (-2.24%/s, 2kf), pos kf [[0.0, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   1:41.53-1:45.91 (4.37s) | img-gta4-2k.png | <img-gta4-2k.png> in 3599.9964 | label Lavender | scale 45->43 over 4.37s (-0.46%/s, 2kf), pos kf [[3599.9964, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   1:45.91-1:52.43 (6.52s) | img-gta5-2k.png | <img-gta5-2k.png> in 3599.9964 | label Lavender | scale 48->43 over 6.52s (-0.77%/s, 2kf), pos kf [[3599.9964, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   1:56.45-2:00.20 (3.75s) | RDR2 Official Gameplay Video.mp4 | <RDR2 Official Gameplay Video.mp4> in 59.9933 | label Iris | scale 88->84 over 3.75s (-1.07%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   2:24.48-2:27.63 (3.15s) | GTA 5 Official Gameplay Video.mp4 | <GTA 5 Official Gameplay Video.mp4> in 44.9783 | label Iris | scale 129->124 over 3.15s (-1.59%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   2:31.38-2:35.24 (3.85s) | GTA 6 Official Extended Gameplay.mp4 | <GTA 6 Official Extended Gameplay.mp4> in 299.9997 | label Iris | scale 90->85 over 3.85s (-1.30%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   2:39.23-2:43.20 (3.97s) | img-zelnick-ceo.png | <img-zelnick-ceo.png> in 3599.9964 | label Lavender | scale 90->85 over 3.97s (-1.26%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   2:45.20-2:47.93 (2.74s) | mg2-zelnick.mp4 | <mg2-zelnick.mp4> in 0.0 | SPEED 0.9879 | label Violet | scale 90->87 over 2.72s (-1.10%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   2:55.69-3:03.87 (8.17s) | mg3-quotes.mp4 | <mg3-quotes.mp4> in 0.0 | SPEED 0.9879 | label Violet | scale 90->85 over 8.14s (-0.61%/s, 2kf), pos kf [[0.0, '0.5:0.5']]
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   3:21.50-3:24.52 (3.02s) | img-mike-york.png | <img-mike-york.png> in 3599.9964 | label Lavender | scale 85
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   3:24.52-3:27.81 (3.29s) | mg4-playstation.mp4 | <mg4-playstation.mp4> in 0.0 | SPEED 0.9898 | label Violet | scale 85->80 over 3.25s (-1.54%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   3:34.21-3:37.05 (2.84s) | mg5-different-pc.mp4 | <mg5-different-pc.mp4> in 0.0 | label Violet | scale 85->80 over 3.29s (-1.52%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   4:01.56-4:05.03 (3.47s) | mg6-setups.mp4 | <mg6-setups.mp4> in 0.0 | label Violet | scale 85->80 over 3.47s (-1.44%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   4:22.55-4:23.53 (0.98s) | mg7-money.mp4 | <mg7-money.mp4> in 0.0 | label Violet | scale 85->80 over 3.29s (-1.52%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   4:36.89-4:44.15 (7.26s) | Screenshot 2026-09-22 230937.png | <Screenshot 2026-09-22 230937.png> in 3599.9964 | label Lavender | scale 129->122 over 7.26s (-0.96%/s, 2kf)
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+   4:56.85-4:59.18 (2.34s) | console-ps6-concept.png | <console-ps6-concept.png> in 3599.9964 | label Lavender | scale 126
+       + Drop Shadow [AE.ADBE Drop Shadow] {'Shadow Color': 1.8374686479671624e+19, 'Opacity': 204.0, 'Direction': 135.0, 'Distance': 30.0, 'Softness': 40.0}
+
+== A1: 182 clips
+   media: {'gta6-pc-release-synced.mov': 180, 'TV colour bars test card screen with sine tone in 4K.mp4': 1, 'house exploding #meme#.mp4': 1}
+
+== A2: 1 clips
+   media: {'Awkward Cricket Sound Effect.mp3': 1}
+   3:56.65-4:00.56 (3.90s) | Awkward Cricket Sound Effect.mp3 | <Awkward Cricket Sound Effect.mp3> in 0.5339 | label Caribbean | gain -15.0 dB
+
+== A3: 8 clips
+   media: {'ES_Loungin - Scientific.mp3': 7, 'ES_First Born - Timothy Infinite (1).mp3': 1}
+   0:00.00-0:05.61 (5.61s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 11.0777 | label Caribbean | gain -17.0 dB
+   0:06.62-0:18.23 (11.61s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 17.701 | label Caribbean | gain -20.0 dB
+   0:20.90-0:31.31 (10.41s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 31.982 | label Caribbean | gain -20.0 dB
+   0:32.98-0:59.26 (26.28s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 44.0607 | label Caribbean | gain -20.0 dB
+   1:02.00-1:07.30 (5.31s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 73.073 | label Caribbean | gain -20.0 dB
+   1:14.69-1:31.21 (16.52s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 85.769 | label Caribbean | gain -20.0 dB
+   1:36.35-1:41.53 (5.19s) | ES_Loungin - Scientific.mp3 | <ES_Loungin - Scientific.mp3> in 107.424 | label Caribbean | gain -20.0 dB
+   1:41.53-3:53.05 (131.51s) | ES_First Born - Timothy Infinite (1).mp3 | <ES_First Born - Timothy Infinite (1).mp3> in 0.0 | label Caribbean | gain -20.0 dB

@@ -467,3 +467,90 @@ Always check the EDL bash can actually see before re-splicing.
   He cancelled it by accident, then asked us to stop. A cancelled export answers "User has cancelled the export" and Premiere deletes
   its own `.m4v`/`.aac` temp files. Vertical preset for HIS exports: `premiere-templates/vertical-1080x1920-60-h264-cbr24.epr`
   (`youtube-1080p5994-h264-cbr24.epr` with Width 1080, Height 1920, FPS 4233600000 ticks = 60).
+
+## 2026-10-08 — graphics + SFX onto Affan's live ABW8 Sequence 36 (nick-martin-same-night, Premiere 25.0, Windows, 60 fps)
+
+- **Hand-written `placement.json` rows must be frame-snapped.** Slot times carried 3 decimals (5.417 for frame 325 = 5.41667);
+  `place-graphics.py --apply` trims the item to `END-START` (3.333 s = 199.98 frames, FLOORED to 199) and only ever shortens the
+  end pin, so g03 and t01 landed ONE FRAME SHORT and the face on V2 flashed through. `--verify` passed (1.5-frame tolerance).
+  Fix: snap every row to `round(round(t*fps)/fps, 5)` before `--apply` (`derive()` already does; a hand-made row does not).
+- **`place-sfx.py` with a slice that ends at the media end loses its last 1-2 frames** (`setOutPoint(dur + 1e-4)` is clamped to
+  the media's last frame; 0.700 s -> 0.667, 0.160 -> 0.133). Harmless when the slice carries a baked fade-out; `--verify` then
+  reports every tail as drift and refuses to save. Record the placed tails in the plan (or make `src_out` frame-floored minus a
+  frame), verify, then `save_project`.
+- **At 60 fps `MBLUR_SS` caps at 4** (the renderer refuses fps > 240: 60 x 8 = 480). `MBLUR=1 MBLUR_SS=4 MBLUR_SHUTTER=3`.
+- **QE `addTracks(0, 0, 1, 1, n, 0, 0)` added a stereo A5** on a sequence with A1-A4 (place-sfx `provision()`), nothing moved.
+- **Two Claude sessions in ONE Premiere project (2026-10-08):** DOM edits on named, non-active sequences are safe in parallel
+  (the bridge serialises calls). Anything that switches the ACTIVE sequence (QE razor, `addTracks`, `audio-polish.py`,
+  playhead grabs) is not: wrap it in `lanes/premiere/ACTIVE-WINDOW.lock` (create with O_EXCL, wait while it exists, stale
+  after 15 min; `reactions/tools/apply.py` `active_window`). A save from either session saves the other's half-done edits.
+- **Reaction tightening on HIS timeline (2026-10-08, Seq 37/38):** QE razors at every cut edge on every track (one locked window),
+  lift (no ripple), then `clip.move(delta)` per clip, earliest first, deltas read fresh, so a clip carried by a linked partner
+  reads 0 and is skipped. Then 10 ms Level fades at each new A1 joint. Proof: rebuild A1 offline from the readback and null it
+  against the offline-cut audio; a readback rounded to 1 ms fakes a mismatch of a few samples, so read in-points to 0.1 ms.
+  `exportAsFinalCutProXML` needs the NATIVE path (`new File(p).fsName`); a forward-slash path returns true and writes nothing.
+- **A QE razor on a VIDEO track does not carry the linked audio** (A1 counts unchanged after 76 video razors on Seq 37/38).
+- **`Track.isMuted()` on a video track is the track-output eye**: Seq 37 arrived with V1 + V3 off, and the program monitor showed
+  only the overlays. Grabs switch outputs on and restore them in a finally (`apply.py --grab-only`). Never leave his toggles changed.
+
+## 2026-10-08 · `app.project.activeSequence = seq` READS BACK but does not switch — a shared-Premiere hazard (gta6-ign-missions)
+- **The assignment returned the new name on readback in the same script, yet the NEXT bridge script still saw the old
+  active sequence.** `audio-polish.py` (which works on `activeSequence`) therefore ran on another session's Sequence 38 and
+  overwrote its 50-clip Amplify (+7 dB → +6 dB) before saving. Nothing was added or removed; one value changed, reported
+  to that session at once. **Switch with `app.project.openSequence(sequenceID)`, wait ~1.5 s, then PROVE the target with
+  two independent reads (DOM `app.project.activeSequence.name` AND QE `qe.project.getActiveSequence().name`) plus a
+  fingerprint only the target has (its A1 clip count) — and refuse to run otherwise.** Re-check the active sequence after
+  the command too. Tool: `projects/gta6-ign-missions/transcript/active-window.py` (+ the shared `ACTIVE-WINDOW.lock`).
+- **Any tool that acts on `activeSequence` is unsafe while two sessions share one Premiere.** Prefer DOM writes addressed
+  to a sequence BY NAME (e.g. `replay-seq39.py`); keep QE-only operations inside a proven active window.
+
+## 2026-10-08 · late: three Premiere findings from the SAME NIGHT fix pass (nick-martin-same-night)
+- **A graphic flashed the shot underneath for ONE frame at its head although the placement was frame-exact** (V3 start −
+  V2 start = 0 frames). Cause: the libx264 render had B-frames (`has_b_frames=2`), so the mp4 carries negative DTS and an
+  edit list (`elst`) that Premiere misreads at the clip head. Fix at the source: `-bf 0` on every libx264 encode in
+  `render.sh` (the reference `presets/youtube/default/reference/fullscreen-render.sh` too). Check a render with
+  `ffprobe -show_entries stream=has_b_frames` = 0.
+- **`place-sfx.py` / `place-graphics.py` take `--sequence "<name>"`**: every script addresses the sequence BY NAME and any
+  QE call is refused, so a placement never touches (or depends on) the active sequence while another session holds
+  `ACTIVE-WINDOW.lock`. Proven: 14 SFX + 2 bleeps placed on Sequence 36 while Sequence 39 stayed active for the other
+  session. DOM `addKey` / `setValueAtKey` on Motion > Scale and Volume > Level also work on a non-active sequence.
+- **A short audio slice can land 2 frames short even with media to spare** (a 28-frame bleep came in at 26 with a 3-frame
+  pad behind it; `clip.end = t` then moved the end but `outPoint` read back stale). Ask for 2 frames more than you need
+  and record the read-back tail in the plan.
+
+## 2026-10-09 · gta6-ign-missions (ABW8 › Sequence 39, Windows, Premiere 2025, shared with another session)
+- **`app.project.importFiles([20 paths], true, bin, false)` HUNG Premiere**: its "Import Files" progress dialog sat at 0 %
+  with Premiere idle (0.3 CPU-s in 5 s), every bridge call timed out ("Bridge response timeout", heartbeat still alive)
+  and the OTHER session's bridge was blocked too. Nothing had been imported. Found by enumerating Premiere's top-level
+  windows (Win32 `EnumWindows`, class `#32770` titled "Import Files"; a `PrintWindow` grab showed the empty bar), cleared
+  with a posted `WM_CLOSE` (= Cancel; no focus change, no mouse). **Import ONE file per `importFiles` call** (0.6 s each,
+  66 + 12 + 4 files clean). Tools: `projects/gta6-ign-missions/hf-graphics/place-seq39.py`, `place-sfx-seq39.py`.
+- **QE `exportFramePNG` threw "Unknown error exception" on EVERY timecode** (`HH:MM:SS:FF`, `;` drop-frame, even
+  `qs.CTI.timecode`) and to any path (spaces or none) on Sequence 39 this session, so `premiere-bridge.mjs frame` fails
+  with "ExtendScript execution failed via CEP evalScript()". No dialog open. Verification fell back to an OFFLINE
+  composite rebuilt from Premiere's own readback (V1–V3 start/end/inPoint/media → per-layer stills → overlay):
+  `projects/gta6-ign-missions/review/composite-check.py`. Extract each layer as its own still FIRST: stacking seeked
+  inputs in one filtergraph emitted the base frame before a layer whose first PTS sat a hair after 0 (4 of 9 frames
+  showed the face where the graphic was).
+- **The bridge pretty-prints a parsed result across several lines**: a caller that `json.loads` only the LAST stdout line
+  reads `}` and fails. Parse the whole stdout.
+- **`music-dropouts.py --music-track N` is 1-BASED** (`4` = A4); `3` planned against the SFX on A3. Applied on Seq 39:
+  51 ranges, 99 razors, 0 music under a zoom, levels unchanged, video identical.
+- **QE video-only razors at 59.94** (`getVideoTrackAt(0).razor(tc)`, integer frame → 60-frame NDF label): 70 razors,
+  V1 127 → 197, every cut within half a frame, A1 untouched (127) — the face-pass cut zooms (`transcript/face-pass.py`).
+  The Uniform-Scale dance (OFF → Scale + Scale Width → ON → Scale) held on 57 zooms in a SEPARATE readback; a stretch
+  gag is Uniform OFF + Scale 100 + Scale Width 380–420.
+- **Face position: OpenCV 5 has no `CascadeClassifier`; use the vendored YuNet** (`assets/models/face_detection_yunet_2023mar.onnx`,
+  `cv2.FaceDetectorYN`). Pick the most CONFIDENT face (last column), not the largest box: a 392 px false positive on the
+  leather chair won on area on 5 of 20 shots.
+- **At 59.94 the HyperFrames motion-blur supersample caps at 4** (already noted above for 60): `MBLUR_SS=8` failed the
+  render outright; `MBLUR=1 MBLUR_SS=4 MBLUR_SHUTTER=3`.
+- **Parallel HyperFrames renders at -P 6 failed 3 of 26 with "FFmpeg cannot start"** (its own `ffmpeg -version` probe
+  timing out under load). Re-run the failures at -P 2.
+- **A LOCKED track lies to DOM scripts (2026-10-09, Seq 36 V1 locked by the creator):** `clip.remove(false,false)` returns
+  `true` and removes nothing; `videoTracks[0].overwriteClip(item, t)` silently lays the picture on the next UNLOCKED video
+  track (V2) while the audio still lands on A1. Read `track.isLocked()` before any write. To change one clip on a locked
+  track: `setLocked(0)`, the edit, `setLocked(1)` in a Python `finally` (separate bridge calls). `setLocked(true)` THROWS
+  in this Premiere (25.0); 0/1 work. ExtendScript `try/finally` with a `return` inside returns `undefined`, so never
+  rely on it to report a failure. (`projects/nick-martin-same-night/replace-3c-v1.py`)
+

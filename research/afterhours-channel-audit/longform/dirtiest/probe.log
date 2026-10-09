@@ -1,0 +1,13 @@
+[ WARN:0@0.549] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+# style probe — dirtiest.mp4
+
+1920x1080 @ 59.94 fps · 7:45.72 · samples at 5/s
+
+- **cuts:** 134 = **17.3/min** (cold open 21.0/min) · by minute [21.0, 16.0, 22.0, 17.0, 16.0, 16.0, 15.0, 14.4]
+- **held shot:** median 2.8 s · longest 12.2 s
+- **face:** 88 % of runtime in 17 runs (median run 17.2 s, median face shot 3.0 s)
+- **overlays:** 24 = 3.1/min, 12 % of runtime, median 1.5 s · 24 moving / 0 still
+- **gradual push (face shots >= 1.5 s):** median 5.4 % per shot = 1.36 %/s
+- **cut zooms:** 82 in / 63 out · median step x1.179 · median hold 0.5 s
+- **luma:** mean 0.338 · dark 6 % · bright 9 %
+- first shot: face · last shot: face

@@ -1,0 +1,20 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=fqxHPE3d-2M
+[youtube] fqxHPE3d-2M: Downloading webpage
+WARNING: [youtube] fqxHPE3d-2M: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] fqxHPE3d-2M: Downloading initial data API JSON
+[youtube] fqxHPE3d-2M: Downloading web embedded client config
+[youtube] fqxHPE3d-2M: Downloading player f2999a12-main
+[youtube] fqxHPE3d-2M: Downloading web embedded player API JSON
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] Downloading comment section API JSON
+[youtube] Downloading ~211 comments
+[youtube] Sorting comments by top
+[youtube] Downloading comment API JSON page 1 (0/~211)
+[youtube] Downloading comment API JSON page 2 (20/~211)
+[youtube] Downloading comment API JSON page 3 (40/~211)
+[youtube] Downloading comment API JSON page 4 (60/~211)
+[youtube] Downloading comment API JSON page 5 (80/~211)
+[youtube] Downloading comment API JSON page 6 (100/~211)
+[youtube] Extracted 103 comments
+[info] fqxHPE3d-2M: Downloading 1 format(s): 399+251-1
+[info] Writing video metadata as JSON to: fqxHPE3d-2M.info.json

@@ -1,0 +1,10 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=oiVSr0wHksc
+[youtube] oiVSr0wHksc: Downloading webpage
+WARNING: [youtube] oiVSr0wHksc: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)
+[youtube] oiVSr0wHksc: Downloading initial data API JSON
+[youtube] oiVSr0wHksc: Downloading mweb client config
+[youtube] oiVSr0wHksc: Downloading mweb player API JSON
+[youtube] oiVSr0wHksc: Downloading player 5203c085-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+WARNING: [youtube] oiVSr0wHksc: mweb client https formats require a GVS PO Token which was not provided. They will be skipped as they may yield HTTP Error 403. You can manually pass a GVS PO Token for this client with --extractor-args "youtube:po_token=mweb.gvs+XXX". For more information, refer to  https://github.com/yt-dlp/yt-dlp/wiki/PO-Token-Guide
+ERROR: [youtube] oiVSr0wHksc: Requested format is not available. Use --list-formats for a list of available formats
