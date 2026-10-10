@@ -1,6 +1,6 @@
 # seq41-short — ABW8 · Sequence 41 (captions only)
 
-▶ **STATUS: DONE — caption track delivered 2026-10-10, waiting on the creator's review.**
+▶ **STATUS: DONE — caption track delivered 2026-10-10, v2 on the 60 fps grid (2026-10-10), waiting on the creator's review.**
 Deliverable: `projects/seq41-short/seq41-short.srt` (86 cues, 0 → 69.867 s). `caption_qa.py` PASSES.
 Next: drag the .srt into ABW8 Sequence 41, apply **"affanwizu yellow"**, baseline **y1110**.
 

@@ -3,6 +3,15 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-10: tool bug — captions snapped to a 0.1 s grid (Seq 31, 32, 41, 42)
+
+`build.py` snaps every caption switch to the reference cut's frame rate. The long-sequence rebuild (Seq 31's
+`rebuild2`, then `sequence_reference.py`) wrote its picture at 10 fps (it only fed `chin-line.py`), so every switch
+landed on a 0.1 s grid: up to 50 ms off, 21 ms on average (the creator's own switches sit ~34 ms from the word).
+→ `sequence_reference.py` now reads the sequence's own frame rate (`seq.timebase`) and writes the picture at it.
+Seq 41 and 42 were rebuilt and re-sent; Seq 31 and 32 shipped on the 0.1 s grid (their captions.txt has since been
+edited outside this job, so they were not regenerated without asking).
+
 ## 2026-10-06: the ending drop, third time (ABW8 · Sequence 29)
 
 `words.json` stopped 6.6 s before the cut (25.9 vs 32.5 s) with 6.3 s of speech in the gap; "jo professional hai wo"

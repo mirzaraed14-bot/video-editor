@@ -7,8 +7,8 @@ usage: python presets/instagram/affanwizu/sequence_reference.py "Sequence 31" pr
            -> <job>/transcript/sequence.json
 2. REBUILD the cut so its timeline seconds ARE the sequence's seconds (PLAYBOOK § 2, GATE A):
            - audio: one ffmpeg per A1 clip, PCM joined sample-exact in Python, every timeline gap kept as silence;
-           - picture: the V1 clips through the concat demuxer at 10 fps with the first clip's Scale / Position, only
-             for `chin-line.py` (keyframe-approximate: never time anything off the picture).
+           - picture: the V1 clips through the concat demuxer at the SEQUENCE frame rate with the first clip's Scale /
+             Position, for `chin-line.py` and for build.py's frame snap (keyframe-approximate: never time anything off it).
            -> <job>/raw/<job>-cut.mp4
            The cut ENDS where the last V1/A1 clip ends: a title graphic stretched past it on V2 doesn't count
            (Seq 25: the sequence ran to 191.3 s, the cut to 43.6 s).
@@ -27,7 +27,7 @@ JSX = r"""(function(){
   var NAME=__NAME__, seq=null;
   for (var i=0;i<app.project.sequences.numSequences;i++) if (app.project.sequences[i].name===NAME) seq=app.project.sequences[i];
   if (!seq) { var n=[]; for (var i=0;i<app.project.sequences.numSequences;i++) n.push(app.project.sequences[i].name); return "ERROR: no "+NAME+" | have: "+n.join(", "); }
-  var o={project:app.project.name, name:seq.name, end:seq.end/254016000000, w:seq.frameSizeHorizontal, h:seq.frameSizeVertical, v:[], a:[]};
+  var o={project:app.project.name, name:seq.name, end:seq.end/254016000000, w:seq.frameSizeHorizontal, h:seq.frameSizeVertical, fps:254016000000/Number(seq.timebase), v:[], a:[]};
   function motion(c){ var r={}; for (var i=0;i<c.components.numItems;i++){ var k=c.components[i]; if (k.displayName=="Motion"){
       for (var j=0;j<k.properties.numItems;j++){ var p=k.properties[j]; try{ r[p.displayName]=String(p.getValue()); }catch(e){} } } } return r; }
   for (var t=0;t<seq.videoTracks.numTracks;t++){ var tr=seq.videoTracks[t]; for (var i=0;i<tr.clips.numItems;i++){ var c=tr.clips[i];
@@ -93,7 +93,9 @@ def rebuild(d, job):
                                                "stream=width,height", "-of", "csv=p=0", V[0]["path"]]).decode().strip().split(",")[:2])
     vw, vh = round(sw * k / 2) * 2, round(sh * k / 2) * 2
     ox, oy = round(px * W - vw / 2), round(py * H - vh / 2)
-    vf = (f"fps=10,scale={vw}:{vh},pad={max(W, vw + max(0, ox))}:{max(H, vh + max(0, oy))}:{max(0, ox)}:{max(0, oy)}:black,"
+    fps = round(float(d.get("fps") or 60), 3)                     # the SEQUENCE frame rate: build.py snaps every
+    #   caption switch to this picture's frame grid (a 10 fps picture put every switch on a 0.1 s grid: Seq 31-42)
+    vf = (f"fps={fps},scale={vw}:{vh},pad={max(W, vw + max(0, ox))}:{max(H, vh + max(0, oy))}:{max(0, ox)}:{max(0, oy)}:black,"
           f"crop={W}:{H}:{max(0, -ox)}:{max(0, -oy)},setsar=1,tpad=stop_mode=clone:stop_duration={end:.2f}")
     out = os.path.join(job, "raw", f"{name}-cut.mp4")
     os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -117,7 +119,7 @@ def main():
     json.dump(d, open(os.path.join(job, "transcript", "sequence.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     out, end, got, gaps, n, framings = rebuild(d, job)
     srcs = sorted({c["path"] for c in d["v"] if c["t"] == 0})
-    print(f"{d['project']} · {d['name']}: {n} V1 clips, {gaps} timeline gap(s), source {', '.join(srcs)}")
+    print(f"{d['project']} · {d['name']}: {n} V1 clips, {gaps} timeline gap(s), {float(d.get('fps') or 0):.3f} fps, source {', '.join(srcs)}")
     if abs(d["end"] - end) > 0.05:
         print(f"  the sequence runs to {d['end']:.3f}s but the cut ends at {end:.3f}s (something on V2+ is stretched past it)")
     if framings > 1:

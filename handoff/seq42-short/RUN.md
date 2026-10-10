@@ -1,6 +1,6 @@
 # seq42-short — ABW8 · Sequence 42 (captions only)
 
-▶ **STATUS: DONE — caption track delivered 2026-10-10, waiting on the creator's review.**
+▶ **STATUS: DONE — caption track delivered 2026-10-10, v2 on the 60 fps grid (2026-10-10), waiting on the creator's review.**
 Deliverable: `projects/seq42-short/seq42-short.srt` (52 cues, 0 → 39.233 s). `caption_qa.py` PASSES.
 Next: drag the .srt into ABW8 Sequence 42, apply **"affanwizu yellow"**, baseline **y1113**.
 
