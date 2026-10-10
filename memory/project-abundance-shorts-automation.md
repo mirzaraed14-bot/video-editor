@@ -37,3 +37,14 @@ AE scripting VERIFIED 2026-09-14 (pref now "1"): `Start-Process AfterFX.exe -Arg
 YouTube downloads: **REVISED 2026-09-22 — Claude fetches them itself** (yt-dlp is installed and the repo ships it for exactly this). The earlier split, where the user downloaded and Claude worked from the files, no longer applies. See [[feedback-youtube-sourcing]].
 
 **2026-09-20 — full teardown done.** The channel preset now lives at `presets/youtube-shorts/abundance-wisdom/`: README.md (the measured look), PLAYBOOK.md (procedure + who owns which stage), LESSONS.md (lessons + open questions). Read those before any Abundance Wisdom job; style-spec.md is the older export-only analysis. Reference job: Premiere `ABW6.prproj`/`Sequence 11` dynamically linked to AE `ABW7.aep`/`ABW6 Linked Comp 03`. Key mechanics: per-shot S_BlurMoCurves Z-Dist zoom, mask + 198%/43% twin for letterboxed shots, 1%-tall white-solid glow bars, per-section grade stack whose Looks/Curves data CANNOT be scripted (duplicate the creator's adjustment layer instead), captions as one Premiere graphic each (second line = separate graphic one track up, italic = other speaker), BCC Brightness-Contrast flashes peaking on the cut, Studio Reverb on speech, current loudness target −15.3 LUFS.
+
+**2026-10-10 — CODE RENDERER TRIAL (his ask: make shorts entirely without Premiere/AE, 3/day).** Job
+`projects/aw-code-trial-parents/` (RUN.md = full record). His AE finishing stage (Comp 47 of the Nick Walker parents
+short) rebuilt as GPU code (`render/aw_render2.py`): 30.5 dB PSNR vs AE's own lossless frames, 30.1 dB vs his export,
+~5 fps on his RTX 3060 Ti. Method that works: AE as a MEASURING INSTRUMENT only — script builds test comps in a COPY of
+his project, saves the copy, `aerender ... -mfr OFF 100` renders headless (MFR on hangs with Deep Glow/Sapphire;
+Universe renders BLACK headless), then each effect is fitted to the measurements. Key measured facts: his grade =
+PRE sharpen → Magic Bullet Looks (identical on all sections; vertical gradient + strong diffusion glow, NOT pointwise)
+→ Curves+Lumetri+Hue/Sat (exact per-section LUT) → Sharpen 40 (= 4-neighbour Laplacian × 40/64) → S_Vignette (mask).
+Ask before each AE pass (it switches his open project for ~1-3 min); never `app.open` without checking the project is
+clean. Still his tools in the trial: Topaz input, CapCut captions, Premiere sequence render — next stages.

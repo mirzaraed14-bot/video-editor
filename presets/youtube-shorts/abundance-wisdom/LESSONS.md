@@ -3,6 +3,32 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-10 — head lock comps 55–59 + captions Sequence 40 (`projects/nutcase-shark-tank`, Shark Tank / Nutcase)
+
+- **A speaker who laughs his way OUT of the frame must not be chased.** The tracker keeps finding the face at the edge,
+  and the lock then swings the frame 500–800 px (most of it Motion Tile mirror). Lock until the unlocked nose passes
+  the crop edge, then HOLD the last anchor (`track.json` `held_from`; raw kept in `track_raw.json`). Comp 56 L2 from
+  frame 118, comp 59 L4 from frame 100. Earlier jobs topped out at ~300 px x / ~160 px y; flag anything beyond.
+- **`headlock_proof.py jsx` wrote nothing with a relative output path** (AE resolves it against its own folder): the
+  tool now makes the path absolute.
+- **A multi-speaker pitch (Shark Tank):** upright = the sharks (the short's wisdom and punchlines), italic = the founders
+  pitching/answering, read off the shot list (who is on screen per comp layer) and the uncut source.
+
+## 2026-10-10 — captions rendered from TEXT, matched to his Premiere render (code trial, `projects/aw-code-trial-parents`)
+
+- **The "Revised Light pop" is stretched to each caption's duration** (preset applied with scaled keys): on every
+  graphic of Seq 28 the Graphic Group Scale runs 100 → 105 at 13.6 % of the clip (linear) → 112 at the clip's END
+  (eased in). A short caption pops fast and a long one slowly, so the fixed-time `POP` table in `build.py` can never
+  match more than on average (~2 % off mid-pop). Exact curve: `projects/aw-code-trial-parents/render/cap_pop.py`.
+- **His caption font size is 48.0** (a float in the Source Text blob), tracking 0, with the font's GPOS kerning
+  (Metrics). PIL without raqm (this machine) ignores GPOS: AY/AV/WA/LY pairs come out ~5 px wide each. Read the pairs
+  with fontTools (`render/kerning.py`). PIL `getbbox()` on a single glyph returns the advance box, not the ink.
+- **The second line's offset is per caption**: each V5 graphic carries its own Motion position (+63 / +65 / +67 px
+  under the V6 line in Seq 28). Read it, never assume one pitch.
+- **CapCut returns the caption layer 6 frames late**, and its Motion Blur (blur 0.81, multiple 6, bilateral) only
+  shows at caption changes: an optical-flow smear between the two layouts over ~4 frames either side of each cut.
+  That smear is part of his look in the final. Model: `render/capcut_blur.py`.
+
 ## 2026-10-06 — Sequence 30 (Martin Fitzwater vs Nick): head lock comps 50 + 52, captions
 
 - **A sequence can carry parked clips past the short** (Seq 30: the short ends 53.32 s, raw leftovers sit at 121–226 s

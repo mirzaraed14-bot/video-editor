@@ -53,7 +53,7 @@ def make_jsx(job, map_path, out_jsx, out_json, pick=None):
   } catch (e) { err = e.toString(); }
   var f = new File(OUT); f.encoding = "UTF-8"; f.open("w");
   f.write(err ? '{"error":"' + err + '"}' : "[" + R.join(",") + "]"); f.close();
-})();''' % (json.dumps(out_json.replace('\\', '/')), json.dumps(sel), N)
+})();''' % (json.dumps(os.path.abspath(out_json).replace('\\', '/')), json.dumps(sel), N)   # absolute: AE resolves a relative path against its own exe folder
     open(out_jsx, 'w', encoding='utf-8').write(code)
     print('wrote', out_jsx, '(%d layers)' % len(sel))
 
