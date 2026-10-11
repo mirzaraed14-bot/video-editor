@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7173e089-1e87-4811-944b-8e4043fa359d
-  modified: 2026-09-23T15:02:18.986Z
+  modified: 2026-10-10T19:11:05.823Z
 ---
 
 Goal: automate the full Abundance Wisdom shorts edit (soundbite stitching → head-lock → Topaz → captions → zooms/transitions → audio → export) to match the user's hand edits. Started 2026-09-14.
@@ -47,4 +47,11 @@ Universe renders BLACK headless), then each effect is fitted to the measurements
 PRE sharpen → Magic Bullet Looks (identical on all sections; vertical gradient + strong diffusion glow, NOT pointwise)
 → Curves+Lumetri+Hue/Sat (exact per-section LUT) → Sharpen 40 (= 4-neighbour Laplacian × 40/64) → S_Vignette (mask).
 Ask before each AE pass (it switches his open project for ~1-3 min); never `app.open` without checking the project is
-clean. Still his tools in the trial: Topaz input, CapCut captions, Premiere sequence render — next stages.
+clean.
+
+**2026-10-11 — the trial short was made END TO END FROM RAW with no Premiere/AE/CapCut and nothing done by him**
+(his goal, restated 2026-10-10: "a one of one copy", "you do everything here"): 28.9 dB vs his YT final; stage A
+(sequence from raw, read from the .prproj) 43.6 dB vs his Nig.mov; his Topaz replayed headless from his .tzlog =
+bit-exact on his input; captions rendered from the project's text (font 48, GPOS kerning, per-caption stretched pop)
++ a CapCut optical-flow smear model. Edits he makes after a Claude step (e.g. Position nudges after a head lock) are
+MEASURED from his render, not assumed. Full record: `projects/aw-code-trial-parents/RUN.md`.

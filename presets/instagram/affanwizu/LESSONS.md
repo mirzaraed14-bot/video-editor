@@ -3,6 +3,13 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-11: a "captions" sequence on his own camera take can be ENGLISH (Seq 44)
+
+I assumed Urdu (every earlier caption job on his C-/CAM- takes was an @affanwizu reel) and started the `--lang ur` pass;
+he stopped it: *"its an english video"*. → PLAYBOOK § 1 already says to confirm the language: do it FIRST (listen to a
+few seconds or let Whisper detect it) before any Urdu pass, and ask the style when the language is English. His pick
+for that English vertical: the plain **white** style as an .srt track (`projects/seq44-short/RUN.md`).
+
 ## 2026-10-10: tool bug — captions snapped to a 0.1 s grid (Seq 31, 32, 41, 42)
 
 `build.py` snaps every caption switch to the reference cut's frame rate. The long-sequence rebuild (Seq 31's

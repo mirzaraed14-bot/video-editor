@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-06T16:27:41.469Z
+  modified: 2026-10-10T18:23:16.698Z
 ---
 
 **Topaz Video AI 5.0.4** (Affan says "Video AI 5"; a newer "Topaz Video" app also exists on the machine but he asked for
@@ -30,5 +30,11 @@ Related: [[project-onyx-sample-shorts]], [[feedback-sourced-stills-must-be-hq]].
 2026-10-06: the frame-interpolation stage can DROP frames on near-static talking-head takes (8 of 26 lost on a webcam two-up), which desyncs the base. The script now redoes any take whose frame count changed WITHOUT interpolation, so the timeline never shifts; still check the ✓ line.
 
 2026-10-06, Affan's rule: "still do topaz because it makes the footage very smooth; if the quality difference isn't there don't enhance but apply interpolation". So interpolation (replace duplicate frames) on EVERY sample, per take; Iris only where it visibly helps (≤1080p sources). Native 4K → `--no-enhance --no-stab` (~2.7 fps at 4K; Iris softened a 4K beard at phone size, the stabiliser shifted a tripod frame). Interpolation leaves frames without a repeat untouched (46.6 dB to the source).
+
+2026-10-10: **replaying his Topaz app export's own commands from the .tzlog is BIT-EXACT.** For his AW shorts (whole
+clip, no segments: cpe → `tvai_stb ref-2 … ,tvai_fi chr-2 …,scale=270:-1,tvai_up iris-3 x4 …` → h264_nvenc constqp 25,
+then a second pass `tvai_up prob-4 w=1080:h=1920 compression=0.61 details=0.61` → nvenc qp 25) the headless replay
+gave video frames with the same MD5 as his own Topaz files (`projects/aw-code-trial-parents/stageB/topaz_his.py`). So
+"run Topaz like he does" needs no app and no click: copy the commands from his latest log. ~40 min for 44 s at 1080x1920.
 
 Order matters: interpolation BEFORE Iris, in one pass (`--out-scale 2` without `--no-fi`). Iris output makes repeated frames non-identical, so Chronos run on an Iris file misses them (Rollo 2026-10-06: held webcam frames 30 % -> 15 % only).

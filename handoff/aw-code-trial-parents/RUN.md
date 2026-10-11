@@ -1,6 +1,62 @@
 # RUN — aw-code-trial-parents: rebuild an Abundance Wisdom short ENTIRELY IN CODE, matched frame by frame
 
 ## ▶ STATUS: resume here
+**2026-10-11 — his review of the from-raw short: "captions have way too much wiggle, that's the only issue, otherwise it
+looks good."** Cause: the Turbulent Displace model was 25 px white noise (each letter wobbled on its own). MEASURED
+his real field on his AE export (`render/measure_turb.py`, 10.6k caption patches vs our render with turbulence off):
+rms 1.95 px x / 1.58 px y; spatial correlation 0.95 @ 30 px, 0.70 @ 120, 0.29 @ 240, 0 @ 320+ (Size 100 = ~100 px
+Gaussian); temporal 0.94 @ 0.1 s, 0.60 @ 0.4 s, 0 @ 1 s. New `aw_render.turbulence`: white noise on a 50 px x 0.1 s
+lattice, Gaussian-smoothed (100 px, 0.29 s), normalised to those rms values (checked: 0.98 / 0.69 / 0.16 spatial,
+0.94 / 0.57 / 0.34 / 0.07 temporal). Re-render v2 → `outputs/nick-parents.fromraw.v2.*`.
+Also found in the review crops: orange words came out YELLOW (BODYBUILDING G 207 vs his 176). Two causes, both fixed:
+(1) CapCut's export shifts colour (red down, slight desaturation): `fit/capcut_colour.json` (3x3 through zero, caption
+ink rms 7.48 → 4.69) applied in `capcut_blur.roundtrip` → `captions/caps_capcut.v3.mov`; (2) the caption Deep Glow was
+added ON TOP of the letters (R clips at 1, G/B keep rising): refit `render/calib_glow2.py` against AE's lossless caption
+renders — 'mix' composite (glow held 89 % off the letter's own alpha), colour-word interior 16.7 → 14.0, halo 4.3 → 4.0
+(`fit/glow2.json`, used for captions by `aw_render2`; the bars keep fit/glow.json). Orange at 1230: G 164 vs his 179.
+Re-render v4 DONE and sent: `outputs/nick-parents.fromraw.v4.final.mp4` = **28.50 dB vs his final** (best so far; AE
+stage 29.31 dB vs AE lossless), review files `…v4.side-by-side.phone.mp4`, `…v4.captions-closeup.phone.mp4`,
+`v4_caption_check.png` (his vs ours: wiggle gone, orange/red/white match). Waiting on his look at v4.
+
+**2026-10-11 00:10 — THE SHORT IS MADE FROM RAW, NO PREMIERE / AE / CAPCUT, NOTHING DONE BY HIM.**
+`outputs/nick-parents.fromraw.final.mp4` (2630 frames + code audio) vs his `Nig Final YT.mov`: **28.93 dB** (rms 9.43,
+every 10th frame, half res). Chain: `stageA/seq_render.py render` (raw sources → Seq 28 picture, 43.56 dB vs his
+Nig.mov) → `stageB/topaz_his.py` (his exact Topaz commands, headless; bit-exact on his own input) →
+`stageB/fix_frame_count.py` (chr-2 repeated a frame at the frame-960 cut on our input: dropped, count = his) →
+`render/render_full.py --source … --caption captions/caps_capcut.mov` (AE look + code captions through the CapCut
+model) → `render/premiere_pass.py … audio_code.wav`. Review files: `outputs/nick-parents.fromraw.side-by-side(.phone).mp4`,
+`outputs/nick-parents.fromraw.captions-closeup(.phone).mp4`, `outputs/fromraw-side-by-side-stills.jpg`.
+Where the residual comes from: our Topaz output vs his = 36.6 dB (stabiliser lands 1–4 px apart, Iris detail differs:
+Topaz's AI on a not-bit-identical input; 8–16 s weakest), comp 43 L3 (~7 rms, 1 s), comp 45 (flow slow-mo, ~5 rms).
+Same AE stage on HIS Topaz file + code captions = 29.94 dB, so the code look/captions are not the limit.
+Next ideas (if he wants closer): encode stage A closer to Premiere's H.264 (Topaz reacts to input noise); refine comp 43 L3.
+
+**2026-10-10 evening — GOAL (his words): a one-of-one copy with NO Premiere / AE / CapCut and nothing done by him.**
+- **Stage D DONE:** code captions → CapCut model (`captions/caps_capcut.mov`) are closer to his CapCut return than his own
+  Premiere caption render is (band rms 3.98 vs 4.50; at caption changes 8.34 vs 10.95). Full AE-stage render with them
+  (`outputs/nick-parents.code-ae-stage.codecaps.mp4`): 8.25 rms vs his final (8.12 with his CapCut file).
+- **Stage A (sequence render from RAW, `stageA/seq_render.py`) in calibration.** Read from ABW8 (read-only): the short's
+  picture = Seq 28 48.467–92.300 (= Nig.mov). Premiere clips (Motion keys in SOURCE time) already 40–47 dB vs Nig.mov.
+  AE head-lock comps 40–44 rebuilt WITHOUT AE (layers from `ae_comps4044.txt`, our lock keys, Motion Tile): he moved
+  Position on 16/17 layers after the lock (22:46) and before exporting Nig (23:20), measured from Nig by `fit_layers.py`
+  (`layer_fit.json`, scales unchanged, 0.8–1.9 rms half-res). Comp 45 (not readable without AE) found by search:
+  "Nick Walker - Official IFBB Pro.mp4" ~50.5 s, ~187 %, slowed ~0.55 with blending (`fit_comp45.py` running). V2 is off
+  in his export. Decoder fix: `-fps_mode passthrough` (CFR output duplicated the first frame after a seek → off-by-one).
+  AE start times are 4-decimal: frame rounding bias being calibrated (`calib_bias.py`).
+- **Stage A DONE (first full pass): `outputs/nig.code-seq.mov` = 43.56 dB / rms 1.89 vs his Nig.mov** (every 10th frame),
+  from the raw sources only. Keys to it: Premiere Position is a SPATIAL bezier (key value + per-key spatial tangents)
+  travelled in arc length by the temporal speed/influence curve: one auto-bezier tangent overshoots the key (the
+  last clip's slide was 19 px off with straight paths). Comp 45 = IFBB Pro clip at speed 0.5571 from 50.678 s, 187.07 %,
+  pos (616.1, 964.3), slowed with optical-flow interpolation (`flow_interp`). Frame rounding bias 0.01 frame.
+  Weakest: comp 45 and the end of comp 43 L3 (~8 rms) → `fit_layer_time.py` (whole-frame slips per layer) running.
+- **Stage B PROVEN BIT-EXACT:** `stageB/topaz_his.py` replays his exact Topaz commands (from his own export log): cpe →
+  stb + chr-2 + iris-3 → prob-4, headless (167 + 1488 + 670 s). On his Nig.mov it reproduces Nig_stab_chr2_iris3_prob4.mov
+  with IDENTICAL decoded frames (video-stream MD5 equal over 2631 frames; files differ by 24 bytes of metadata).
+  Now running on our stage-A render → `stageB/code/nig_code_stab_chr2_iris3_prob4.mov`.
+  comp 43 L3 (seq 84.0–85.03) keeps ~7 rms vs Nig at every time offset / blend / blur tried: accepted (likely a hand
+  tweak of that layer's anchors); all other layers 1–2 rms, timing offsets all 0 (`fit_layer_time.py`).
+- Next: finish A → B → C (code captions) → Premiere pass + audio in code → side-by-side vs Nig Final YT.
+
 **2026-10-10 — STAGE D (captions from text) — the Premiere caption layer is SOLVED; CapCut's blur is being fitted.**
 `render/cap_render.py` draws his 66 caption graphics from ABW8 (Seq 28) and matches his Premiere caption render
 `peace.mov` at **1.25/255 RMS full frame** (was 7.68). What made it exact (all READ from his project, not guessed):

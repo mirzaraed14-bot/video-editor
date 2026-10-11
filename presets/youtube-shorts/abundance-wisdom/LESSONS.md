@@ -3,6 +3,13 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-11 — the caption wiggle is BROAD and SLOW (his review of the code-rendered short)
+
+- **"Captions have way too much wiggle"**: his Turbulent Displace (Amount 4, Size 100, Complexity 1, Evolution ~180°/s)
+  measured on his export moves whole words together: ~2 px rms, correlated over ~100–150 px (letters 30 px apart move
+  as one), changing over ~0.4 s. A fine noise field of the same strength reads as jitter. Any code rebuild of his
+  caption chain uses the measured field (`projects/aw-code-trial-parents/render/aw_render.py` `turbulence`).
+
 ## 2026-10-10 — head lock comps 55–59 + captions Sequence 40 (`projects/nutcase-shark-tank`, Shark Tank / Nutcase)
 
 - **A speaker who laughs his way OUT of the frame must not be chased.** The tracker keeps finding the face at the edge,

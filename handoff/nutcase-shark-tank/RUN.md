@@ -15,6 +15,24 @@ Waiting on the creator:
   way out of shot: the lock follows them until then and HOLDS from there (`track.json` `held_from`; raw track in
   `track_raw.json`), so the frame doesn't chase a face that is leaving.
 
+**2026-10-10: CAPCUT CAPTION RETURN CLEANED** — `Caption Exports/seek 2.mp4` (in "seek 2.mp4 Comp 1" → Comp 60 L1)
+→ `seek 2_clean.mp4`: 771 of 3494 frames repaired (30 static frames, one every 2 s, ~38–43 % of the frame; 741 faint
+1-frame specks ≤ 2.3 %), `captions/capcut/clean.log`. Verified on 16 cleaned frames: caption pixels (Y > 60) unchanged
+(≤ 3 levels, ≤ 2 px per frame). Footage #1083 re-pointed in place (`captions/capcut/seek2_replace.jsx`, undo "Clean
+CapCut caption export (Claude)"): size / fps / duration and the precomp layer in/out MATCH. AE not saved.
+
+**2026-10-10: TRANSITIONS on Comp 60** from his labels (`transitions/transitions60.jsx`, log `.txt`; labels read fresh in
+`transitions/labels60.tsv`): 33 made (12 Dark Green +30, 9 Purple −90, 8 Cyan blur, 4 Peach exposure), each read back.
+No transition: blocks 13, 21, 33 (Aqua) and 4, 27, 36, 37 (still YELLOW from the zoom pass: not a transition colour,
+flagged to him); 41 = last. His caption precomp "seek 2.mp4 Comp 1" (disabled) is now the top layer; he also added 3
+grade layers (Adjustment Layer 32). AE not saved.
+
+**2026-10-10: ZOOM PASS (BlurMoCurves) on ABW8 Linked Comp 60** (his Topaz render `seek topaz_4_stab_chr2_iris3.mov`,
+41 blocks, 14 yellow = pull out): 41 `Adjustment Layer 29` zooms with S_BlurMoCurves, 16 face pivots, read back as
+planned (start / mid / end Z), fresh dump: exactly one zoom per footage block, all above the footage. Preview
+`zoom/zoom-preview.jpg` checked block by block (23, 25, 27 = product shots, centred). Layer 16 (the letterboxed shot) is
+his own 126 % fill. No caption layer in the comp yet, so the zooms sit on top. ABW9 NOT saved.
+
 **2026-10-10: CAPTIONS on ABW8 Sequence 40** (= this short): 87 captions, max 3 words, imported as caption track C1
 ("Subtitle"), seen on screen in the Program monitor. ABW8 NOT saved. Next on the creator: Upgrade Captions To Graphics
 → styles from `captions/caption-colours.md` → "Revised Light pop" → caption export → CapCut → clean.
