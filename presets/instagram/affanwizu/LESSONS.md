@@ -10,6 +10,14 @@ he stopped it: *"its an english video"*. → PLAYBOOK § 1 already says to confi
 few seconds or let Whisper detect it) before any Urdu pass, and ask the style when the language is English. His pick
 for that English vertical: the plain **white** style as an .srt track (`projects/seq44-short/RUN.md`).
 
+## 2026-10-11: "2 words per layer" (Seq 45) — one request so far, not yet a rule
+
+The creator asked for Sequence 45 at 2 words per layer. Splitting each 5-word line on its own left 50 one-word scraps and 44
+layers under 0.25 s (unreadable). What worked: time every word, then pair BY HAND on natural units across the old line
+breaks; allow 3 words only for a verb chain said too fast to split ("kar rha hun" = 0.18 s) or to keep a negation with its
+verb ("ni ayen ge"); never leave a layer under 0.2 s. Result: 153 layers, 98 × 2 / 35 × 3 / 20 × 1, median 0.45 s on screen.
+If they ask for it again, it becomes a `--max-words 2` mode for this channel (with that pairing logic) and a PLAYBOOK rule.
+
 ## 2026-10-10: tool bug — captions snapped to a 0.1 s grid (Seq 31, 32, 41, 42)
 
 `build.py` snaps every caption switch to the reference cut's frame rate. The long-sequence rebuild (Seq 31's

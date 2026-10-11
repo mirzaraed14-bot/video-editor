@@ -1,7 +1,11 @@
 # seq45-short — ABW8 · Sequence 45 (captions only)
 
-▶ **STATUS: DONE — caption track delivered 2026-10-11, waiting on the creator's review.**
-Deliverable: `projects/seq45-short/seq45-short.srt` (91 cues, 0 → 71.017 s, 60 fps grid). `caption_qa.py` PASSES.
+▶ **STATUS: v2 = 2 WORDS PER LAYER (the creator's request, 2026-10-11), waiting on their review.**
+Deliverable: `projects/seq45-short/seq45-short.srt` (153 layers: 98 two-word, 35 three-word, 20 one-word; none under 0.2 s;
+60 fps grid). `caption_qa.py` PASSES. The 5-word version is kept as `captions.5w.txt` / `seq45-short.5w.srt`.
+How the pairs were made: every word timed from the transcript (re-decodes for the repaired spans), then paired BY HAND on
+natural units; 3 words only where a verb chain is said too fast to split ("kar rha hun" = 0.18 s) or a negation would
+be cut from its verb ("ni ayen ge", "aapko ni lagta").
 Next: drag the .srt into ABW8 Sequence 45, apply **"affanwizu yellow"**, baseline **y1208**.
 
 **Flagged for the creator:** 0.0 s "irfan junejo ki najaiz aulad" (name spelling); 9.2 s "isi chaske mai" (every decoder
