@@ -10,6 +10,15 @@ he stopped it: *"its an english video"*. → PLAYBOOK § 1 already says to confi
 few seconds or let Whisper detect it) before any Urdu pass, and ask the style when the language is English. His pick
 for that English vertical: the plain **white** style as an .srt track (`projects/seq44-short/RUN.md`).
 
+## 2026-10-11: tool bug — the rebuilt cut had NO picture (Seq 47)
+
+`sequence_reference.py` joined the V1 clips with the concat demuxer straight off the camera file. This camera's
+`CAM_*_D.MP4` (4K HEVC 29.97) also carries a 1280×720 MJPEG thumbnail as a second video stream, and through the demuxer
+the picture came out EMPTY: the reference was audio-only, so `chin-line.py` crashed (IndexError) and build.py would have
+had no frame grid. → the picture is now built per clip from the main stream only (`-map 0:v:0`), each clip with its
+own Scale/Position, then joined; the tool now refuses to finish if the result has no video stream. Regression check:
+Seq 42 measures chin y991 vs y998 before (keyframe-exact framing now).
+
 ## 2026-10-11: "2 words per layer" (Seq 45) — one request so far, not yet a rule
 
 The creator asked for Sequence 45 at 2 words per layer. Splitting each 5-word line on its own left 50 one-word scraps and 44

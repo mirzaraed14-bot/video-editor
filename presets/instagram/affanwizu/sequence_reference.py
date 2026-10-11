@@ -7,8 +7,8 @@ usage: python presets/instagram/affanwizu/sequence_reference.py "Sequence 31" pr
            -> <job>/transcript/sequence.json
 2. REBUILD the cut so its timeline seconds ARE the sequence's seconds (PLAYBOOK § 2, GATE A):
            - audio: one ffmpeg per A1 clip, PCM joined sample-exact in Python, every timeline gap kept as silence;
-           - picture: the V1 clips through the concat demuxer at the SEQUENCE frame rate with the first clip's Scale /
-             Position, for `chin-line.py` and for build.py's frame snap (keyframe-approximate: never time anything off it).
+           - picture: each V1 clip encoded on its own from the main video stream, at the SEQUENCE frame rate and with
+             its own Scale / Position, then joined; for `chin-line.py` and build.py's frame snap (never time anything off it).
            -> <job>/raw/<job>-cut.mp4
            The cut ENDS where the last V1/A1 clip ends: a title graphic stretched past it on V2 doesn't count
            (Seq 25: the sequence ran to 191.3 s, the cut to 43.6 s).
@@ -81,29 +81,44 @@ def rebuild(d, job):
     w = wave.open(wav, "wb"); w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(bytes(pcm)); w.close()
 
     W, H = d["w"], d["h"]
+    fps = round(float(d.get("fps") or 60), 3)      # the SEQUENCE frame rate: build.py snaps every caption switch to this
+    #   picture's frame grid (a 10 fps picture put every switch on a 0.1 s grid: Seq 31-42)
+    # Picture = one short encode PER CLIP from the main video stream only (`0:v:0`), then a stream-copy join.
+    # The concat demuxer straight off the camera files gave an EMPTY picture on Seq 47: those CAM_*.MP4 carry a second
+    # (MJPEG thumbnail) video stream and HEVC that the demuxer would not decode. Per clip also means per-clip framing.
+    segs = []
+    for k, v in enumerate(V):
+        m = v["m"]
+        sc = float(m.get("Scale", 100)) / 100
+        px, py = (float(x) for x in m.get("Position", "0.5,0.5").split(","))
+        sw, sh = map(int, subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                                                   "stream=width,height", "-of", "csv=p=0", v["path"]]).decode().strip().split(",")[:2])
+        vw, vh = round(sw * sc / 2) * 2, round(sh * sc / 2) * 2
+        ox, oy = round(px * W - vw / 2), round(py * H - vh / 2)
+        vf = (f"scale={vw}:{vh},pad={max(W, vw + max(0, ox))}:{max(H, vh + max(0, oy))}:{max(0, ox)}:{max(0, oy)}:black,"
+              f"crop={W}:{H}:{max(0, -ox)}:{max(0, -oy)},setsar=1,fps={fps}")
+        seg = os.path.join(tmp, f"v{k:04d}.mp4")
+        r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{v['i0']:.4f}", "-i", v["path"], "-t", f"{v['e'] - v['s']:.4f}",
+                            "-map", "0:v:0", "-an", "-vf", vf, "-c:v", "libx264", "-preset", "ultrafast", "-crf", "30", seg],
+                           capture_output=True, text=True)
+        if r.returncode: sys.exit(f"sequence_reference: picture clip {k} failed: {r.stderr[-400:]}")
+        segs.append(seg)
     lst = os.path.join(tmp, "list.txt")
     with open(lst, "w", encoding="utf-8") as f:
-        for v in V:
-            f.write(f"file '{v['path']}'\ninpoint {v['i0']:.4f}\noutpoint {v['i0'] + v['e'] - v['s']:.4f}\n")
+        f.writelines(f"file '{x}'\n" for x in segs)
     framings = {(c["m"].get("Scale"), c["m"].get("Position")) for c in V}
-    m = V[0]["m"]
-    k = float(m.get("Scale", 100)) / 100
-    px, py = (float(x) for x in m.get("Position", "0.5,0.5").split(","))
-    sw, sh = map(int, subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
-                                               "stream=width,height", "-of", "csv=p=0", V[0]["path"]]).decode().strip().split(",")[:2])
-    vw, vh = round(sw * k / 2) * 2, round(sh * k / 2) * 2
-    ox, oy = round(px * W - vw / 2), round(py * H - vh / 2)
-    fps = round(float(d.get("fps") or 60), 3)                     # the SEQUENCE frame rate: build.py snaps every
-    #   caption switch to this picture's frame grid (a 10 fps picture put every switch on a 0.1 s grid: Seq 31-42)
-    vf = (f"fps={fps},scale={vw}:{vh},pad={max(W, vw + max(0, ox))}:{max(H, vh + max(0, oy))}:{max(0, ox)}:{max(0, oy)}:black,"
-          f"crop={W}:{H}:{max(0, -ox)}:{max(0, -oy)},setsar=1,tpad=stop_mode=clone:stop_duration={end:.2f}")
     out = os.path.join(job, "raw", f"{name}-cut.mp4")
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav, "-map", "0:v", "-map", "1:a",
-                        "-vf", vf, "-t", f"{end:.4f}", "-c:v", "libx264", "-preset", "ultrafast", "-crf", "28",
-                        "-c:a", "aac", "-b:a", "256k", out], capture_output=True, text=True)
+    r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav, "-map", "0:v:0", "-map", "1:a",
+                        "-vf", f"tpad=stop_mode=clone:stop_duration={end:.2f}", "-t", f"{end:.4f}", "-r", f"{fps}",
+                        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "30", "-c:a", "aac", "-b:a", "256k", out],
+                       capture_output=True, text=True)
     if r.returncode:
         sys.exit(f"sequence_reference: ffmpeg failed: {r.stderr[-800:]}")
+    vstreams = subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "v", "-show_entries", "stream=index",
+                                        "-of", "csv=p=0", out]).decode().split()
+    if not vstreams:
+        sys.exit("sequence_reference: the rebuilt cut has NO picture (chin-line and the frame snap need it)")
     got = float(subprocess.check_output(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=duration",
                                          "-of", "csv=p=0", out]))
     gaps = sum(1 for a, b in zip(V, V[1:]) if b["s"] - a["e"] > 0.02)
@@ -123,7 +138,7 @@ def main():
     if abs(d["end"] - end) > 0.05:
         print(f"  the sequence runs to {d['end']:.3f}s but the cut ends at {end:.3f}s (something on V2+ is stretched past it)")
     if framings > 1:
-        print(f"  {framings} different Scale/Position values: the picture uses the first clip's (chin-line only)")
+        print(f"  {framings} different Scale/Position values (each clip framed as in Premiere)")
     ok = abs(got - end) < 0.05
     print(f"  GATE A: audio {got:.3f}s vs cut {end:.3f}s -> {'OK' if ok else 'MISMATCH'}")
     print(f"  -> {out}\n  build.py ... --srt --dur {end:.3f}")
