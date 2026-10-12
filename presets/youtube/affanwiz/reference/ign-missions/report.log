@@ -1,0 +1,12 @@
+# style report — ign-missions (8:16.03)
+
+- **visible changes: 24.3/min** = hard cuts 11.4/min + zoom steps 5.9/min + reframes 7.7/min
+- **zoom steps (in):** 49 · median x1.346 · median hold 1.2 s · 18 coincide with a hard cut · out-steps 33
+- **zoom levels** (face size over each run's floor, share of face samples): {'1.0-1.2': 949, '1.2-1.4': 215, '1.4-1.6': 126, '1.6-1.8': 7, '1.8-2.0': 19, '2.0-2.2': 2, '2.2-2.4': 1} · typical tightest level x1.41
+- **gradual push:** -0.02 %/s · typical tightest level over a matched run x1.071 (source: background features)
+- **chopped words at hard cuts (audio breaks inside the word):** 0
+- **face:** 62 % in 28 runs, median 6.8 s, longest 38.8 s
+- **overlay runs:** 27 = 3.3/min · median 6.2 s · 27 video / 0 still · 7 cuts inside them · longest without the face 23.6 s
+- **speech:** 200.9 words/min over the whole runtime · pauses >= 0.3 s: 86 · >= 1 s: 5
+- **slowed stretches (word rate + duplicate frames):** 2
+   [set signature from 1466 samples; 23 detected faces rejected as off-set, 76 on-set samples without a detection counted as the creator]
