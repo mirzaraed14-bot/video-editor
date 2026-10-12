@@ -286,3 +286,59 @@ Same method (grid views from Chrome; 16-frame sheets drawn from each reel's own 
   flash): end that shot one frame early (`cut18 = F(starts[i18]) - 1`). Look for scene cuts within ±2 frames of every joint.
 - **A hook is a stake, not a label**: "5 rules for better sleep." -> "One number at night / decides your sleep." (his own claim).
   A serif title line holds ~19 characters at the title size before it wraps.
+
+## 2026-10-12 · Kit v2 (batch 2): the "expensive" Instagram look, opt-in with `"look": "v2"`
+Affan's direction (big black bars, caption animations, a LOT of refined premium motion graphics, crisp SFX, "an expensive video") +
+the measured references (`references/batch2-style-research.md`) -> README § v2 look, `kit/V2-HOWTO.md`, demo
+`projects/_onyx-batch2-2026-10/kit-demo/` (Rich Roll x Bryan Johnson rebuilt from richroll-sleep-rules' base; that job untouched).
+- **The window changes the crop math, not the engine.** A 1044 x 900 window needs every shot kind framed for a 1.16:1 picture. Forking
+  yt_picture.py would split the YouTube look's engine; instead the engine renders at the window's size (its module-level W, H set
+  before its main runs) and a finish pass letterboxes it -> `kit/ig_window.py` (grade defaults, rack, mood, leak, vignette, grain, the
+  rounded mask; the slow 4K window render is cached while the shots are unchanged).
+- **A constant caption anchor needs the block's real height before the comp exists.** A stack block is 2-4 lines of mixed sizes and
+  must stay inside the window; measuring in the page reads the fallback font (the Rich Roll `rules` lesson) -> `kit/ig_type.py` breaks
+  the lines with the real font files (PIL); `ig_capy.place_v2` clamps the one caption top inside the window; the comp gets explicit
+  line heights.
+- **Auto hero words need a stop list.** The first stack pass picked "They're", "before", "basically" as heroes and split "four | hours"
+  -> `ig_captions.v2_chunks`: `hl` first, then a number, then the longest content word; blocks break on commas (3+ words), never end on
+  a weak word or on a number whose unit follows; scraps under 0.5 s merge only across no punctuation.
+- **In a letterboxed window the free space is BESIDE the head.** Captions under the lips own the lower middle, so the demo frames the
+  speaker on the right third (`fx_out` 0.64) and keeps the side graphics left of the head above the caption line (Z1, x 78-520);
+  `captions.cx` centres the stack under the off-centre mouth; wide content goes full-window (racked) for <= 3 s.
+- **A GSAP fromTo with a VISIBLE from-state shows before its time.** HyperFrames renders with 6 workers that seek out of order, and a
+  fromTo renders its from-state when the timeline is built: the route's pulse rings (from opacity 0.7) were on screen from frame 0, the
+  node label sat in the accent before its pulse. -> every pulse comes in from invisible first, then fades (`pulse()`; later tweens use
+  `immediateRender: false`, so the earlier tween wins on a backward seek). Two counters writing one number showed the second value
+  before the first fill -> the progress number is read off the arc on every render.
+- **Name every web font uniquely.** The hero face was declared as font-family "Serif": every snapshot showed Cormorant, but the
+  RENDER drew Inter italic (the name collides with the generic `serif` keyword on the render path), so the heroes ran ~30 % wider than
+  measured and "accounting" left the window. -> the v2 families are OnyxSerif / OnyxMono / OnyxWide / OnyxPlay; check fonts on a frame
+  of the FINAL render, never only on a snapshot.
+- **A clip-path growth also clips the glass glow.** -> the list widget and the vertical route GROW by height (overflow hidden), so the
+  accent glow stays on (never an empty box: the Rich Roll v2 rule kept).
+- **A full-window scene owns the window.** The side route showed through the racked compare -> side cards dip out (0.18 s) under any
+  full-window or racked card and come back after it (`ig_v2`), and a racked card counts in the 25 % full-window budget.
+- **The pacing rules are measured, not eyeballed.** `ig/work/v2-events.json` + the build report: events per 10 s, the full-window share,
+  face between scenes (caught 1.38 s between the word scene and the racked compare in the demo: moved 0.16 s), cards held > 6 s with
+  no beat (route `pulses` add one), full-window edges 1-3 frames off a cut (caught on the mini test).
+- **Sound lands on the crest, not the file start.** Swells and soft whooshes crest 0.3-1.3 s into their files and long reverberant hits
+  ring past the 2.4 s slice -> `ig_build.ES_PRE` places each v2 file so its crest is ON the event, `ES_DUR` fades the tail;
+  whooshes sit 15-16 dB under the voice peak by default (Affan's -10 dB of 2026-10-08 built in). Lead-ins/crests measured on 25 ms RMS
+  bins (`assets/sfx/epidemic/MANIFEST.md`).
+- **v1 stays byte for byte.** `kit-demo/regress/regress.py` re-ran ig_captions, ig_capy and ig_overlay on scratch copies of all six
+  batch-1 Instagram specs before and after the change: spec.json, index.html and sfx-cues.json identical; the mix filter graphs of five
+  jobs compared against the committed ig_build.py: identical.
+- **A measured self-check for the build agents** -> `kit/ig_qa.py` (decode, loudness, every caption word once, punctuation, one caption
+  y inside the window, a sound on every designed event, each cue's level against the voice from the mix's own stems, the density
+  report, a contact sheet).
+
+## 2026-10-12 · v2 batch 2, QA round 2
+- **Lesson:** all four v2 Instagram beds sat 17-18 LU under the voice; Affan's rule is 12-14 (memory voice-first mix). Glass ticks peaked only
+  ~2 dB under the voice peak (the rule is ~8), and some graphics had only a quiet whoosh as their sound. **Change:** `V2-HOWTO.md` now says
+  `bed_under_lu` 13, ticks ~8 dB under, a crisp cue per graphic (the code default stays 18 so batch-1 jobs rebuild byte-identical).
+  **File:** `kit/V2-HOWTO.md`.
+- **Lesson:** in the letterbox window a same-camera jump cut reads cheap (Jeremy IG had ten). **Change:** hide every joint under a card,
+  widget, word scene or B-roll entering ON the cut frame, or merge the shots; never a zoom punch-in. **File:** `kit/V2-HOWTO.md` § 2 (to add
+  when the kit is next touched), this entry.
+- **Lesson:** white captions over bright B-roll fail contrast (Victor IG, Jeremy IG). **Change:** shade under the caption and measure
+  ≥ 4.5:1 on every B-roll shot (Vivian's build measured ≥ 6.7:1 per shot). **File:** this entry.

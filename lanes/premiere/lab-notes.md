@@ -554,3 +554,16 @@ Always check the EDL bash can actually see before re-splicing.
   in this Premiere (25.0); 0/1 work. ExtendScript `try/finally` with a `return` inside returns `undefined`, so never
   rely on it to report a failure. (`projects/nick-martin-same-night/replace-3c-v1.py`)
 
+
+## 2026-10-12 · building a sequence from RAW recordings (Onyx reactions, batch 2)
+- **A long ExtendScript call outlives the bridge's reply window, but the work still lands.** 104 segments × 2 `overwriteClip` in one
+  call came back "MCP Bridge is not running"; Premiere had finished every placement. Batch heavy DOM work (16 segments, 24 Motion
+  edits per call) and READ BACK before retrying, never re-run blind (`reactions/tools/build_seq.py`).
+- **A 59.94 camera's in-point lands on the 60 fps sequence grid**: `setInPoint` + `overwriteClip` put each camera piece 1-31 ms
+  EARLY (mean 16 ms) against the requested sync time. Inside lip-sync tolerance; `build_seq.py --verify` allows 35 ms.
+- **Video-only placement = a video-only subclip**: `projectItem.createSubClip(name, 0, end, 0, 1, 0)` (takeVideo 1, takeAudio 0), then
+  `setInPoint/OutPoint` + `overwriteClip` on it: the camera's scratch audio never touches A1.
+- **A new sequence with his exact settings = `clone()` of an EMPTY sequence of his** (1080x1920 60, his track count), renamed; the
+  clone becomes the ACTIVE sequence. `createNewSequenceFromClips` would inherit the camera's 1920x1080.
+- **Camera-to-OBS sync**: `workflows/sync-dual-audio.py --report --json-out`; fit the offset line through the windows with peak ≥ 10x
+  only (C1349's weak first window sat 40 ms off the other three); window centres are CAMERA time.

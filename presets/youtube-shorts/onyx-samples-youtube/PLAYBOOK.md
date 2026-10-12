@@ -63,7 +63,7 @@ The whips must blur and shift the PICTURE while the captions stay sharp on top, 
 3. Every time is **anchored to words** (the MFM pilot's `build.py` v2 pattern: `at()` anchors, segment-relative patches), so a re-cut moves
    everything with it.
 4. `python build.py` → `npx hyperframes@0.8.16 check` → snapshot the risky moments → render → `outputs/<job>.sample.final.mp4`, plus a copy in
-   `~/Downloads/`.
+   `X:\Claude Projects\Exports\`.
 
 Also apply the shared PLAYBOOK § 5b (the episode's border, burned-in labels, two-up spans, number checks): those traps come from the podcast
 source, not from the look.

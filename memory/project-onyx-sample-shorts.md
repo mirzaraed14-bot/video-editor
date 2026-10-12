@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-08T17:03:17.893Z
+  modified: 2026-10-11T23:49:03.135Z
 ---
 
 Started 2026-10-04. Affan's agency Onyx Influence emails US podcast hosts for permission to use one of their Shorts.
@@ -85,3 +85,6 @@ Open: Rob Dial v15 predates the SFX fix; offer a `--skip picture` rebuild.
 - Pipeline order: REACTIONS-BRIEF.md status.
 - Seq 37's V1/V3 track outputs were off when he handed it over; left as he had them.
 - Rob Dial's reaction is next, then the delivery email drafts.- Reaction channel cards use the creator's REAL YouTube profile picture (fetched og:image), never a freeze frame from the video (Affan, 2026-10-08, on Seq 38's Rich Roll card; swapped by changeMediaPath so his own edits stayed).
+- **Batch 2 (2026-10-12): Jeremy Miner, Victor Antonio, Scott D. Clary, Jay Clouse** (`projects/_onyx-batch2-2026-10/BATCH.md`). Affan's call: EVERY prospect gets BOTH formats, an Instagram-look and a YouTube-look sample (8 samples), cut from ONE clip per prospect ("one clip, 2 formats": same moment, same cut, edited twice). Research first; he approves the bits and sequencing and gives creative direction per video before any edit.
+- **Batch 2 APPROVED 2026-10-12**: all four picks (`PICKS.md`), 8 videos, section downloads approved, no Rural Sales Show credit. YouTube look = Sean Ryan format + [[feedback-split-screen-white-line]]; Instagram look = [[feedback-instagram-expensive-minimal]]. Check Sean Ryan's channel for anything new first.
+- **2026-10-12 (overnight, Affan asleep): batch 2 BUILT.** All 8 samples final in ~/Downloads (`<job>.yt|ig.final.mp4`): Jeremy (Google $88K), Victor (marketing first), Vivian/Scott (casino, $5M), Jay/David Altizer (MrBeast train); 4 build agents + a v2 Instagram kit agent (letterbox window, animated captions, 9 refined graphic kinds, `kit/V2-HOWTO.md`), shared locks `_onyx-batch2-2026-10/lock.sh youtube|gpu`; fresh-eyes QA rounds. Reactions to Rob Dial + Harbinger samples PREPARED in ABW8 from his RAW recordings ("Rob Dial reaction", "Jordan Harbinger reaction"; new tools `reactions/tools/build_seq.py author.py pins.py seqmap.py switches.py dump.py`). Next: his review, his reactions to the batch-2 samples, delivery emails (he sends).

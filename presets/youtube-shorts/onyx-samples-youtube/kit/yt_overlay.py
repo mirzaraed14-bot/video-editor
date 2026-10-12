@@ -93,6 +93,11 @@ def main():
         f'<div id="hl{i + 1}" class="hl" style="top:{ys[i] - sizes[i] * 0.62:.0f}px;font-size:{sizes[i]}px;height:{sizes[i] * 1.3:.0f}px" '
         f'data-layout-allow-overflow><span class="stroke">{txt}</span><span class="fill">{txt}</span></div>' for i, txt in enumerate(lines))
     wm = spec.get("watermark", "")
+    # captions.on_seam (Affan 2026-10-12): ONE constant caption line for the whole video, ON the split seam's white line, so a split
+    # that arrives later finds the captions already there; captions.y pins any other constant glyph centre
+    cs = spec.get("captions", {})
+    cy_ = (spec.get("split", {}).get("seam", 1092) + cs.get("seam_dy", 0)) if cs.get("on_seam") else cs.get("y")
+    cap_y = f", y: {float(cy_):.1f}" if cy_ is not None else ""
     comp_id = "onyx-yt-overlay"
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -136,7 +141,7 @@ html, body {{ margin: 0; background: transparent; }}
   window.__timelines = window.__timelines || {{}};
   const COMP = "{comp_id}";
   const tl = gsap.timeline({{ paused: true }});
-  ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps}, palette: {json.dumps(spec.get("captions", {}).get("palette"))} }});
+  ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps}, palette: {json.dumps(spec.get("captions", {}).get("palette"))}{cap_y} }});
   {json.dumps(steps)}.forEach(([t, x, b]) => {{
     tl.set("#hook", {{ x: x, filter: b ? "url(#hook-hb" + b + ")" : "none" }}, t);
   }});

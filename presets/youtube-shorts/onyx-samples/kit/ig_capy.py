@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["opencv-python-headless", "numpy"]
+# dependencies = ["opencv-python-headless", "numpy", "pillow"]
 # ///
 """ig_capy.py: place the captions JUST BELOW the speaker's lips at ONE constant position per video (default; per-shot = legacy) (Affan, 2026-10-06: "the distance between the captions and
 the lips needs to be shorter… I was constantly moving my eyes up and down") -> writes "y" into each `captions.chunks[*]` of the spec.
@@ -20,6 +20,10 @@ across a cut takes each shot's own height, moving ON the cut frame ("moves": [[f
 otherwise sat on the other shot's mouth); each segment is pushed below (or above) any card live during it, kept inside
 y 200 → min(1620, credit_y - 8) - caption height.
 The spec's own `captions.y` stays the fallback. Re-run after any shot, crop or card change; it is idempotent.
+v2 look ("look": "v2", batch 2): the shots are rendered into the letterbox WINDOW (ig_type.frame: 1044 x 900 at y 510), so the crop math
+runs at the window's size and the result is offset by the window's top; the constant line is clamped INSIDE the window (its top + 80 ..
+its bottom - 24 - the tallest block, measured by ig_type with the real fonts: a stack block is 2-4 lines of mixed sizes).
+`captions.on_seam` puts the line on the split seam (Affan 2026-10-12: captions ON the split line, for the whole video).
 """
 import json, math, os, subprocess, sys
 import numpy as np
@@ -62,6 +66,14 @@ def main():
     rel = {k: float(np.median([((e[11] + e[13]) / 2 - e[1]) / e[3] for e in v["per_frame"].values() if len(e) >= 14]))
            for k, v in lm.items() if any(len(e) >= 14 for e in v["per_frame"].values())}
     cap = spec["captions"]; size = cap.get("size", 52) if sub != "yt" else 86
+    v2 = spec.get("look") == "v2" and sub != "yt"
+    if v2:                                        # the v2 window: crop math at window size, offset by the window's top
+        sys.path.insert(0, KIT)
+        import ig_type
+        FR = ig_type.frame(spec)
+        OW, OH, OY = FR["w"], FR["h"], FR["y"]
+    else:
+        OW, OH, OY = W, H, 0
     # caption top = lowest mouth-CORNER line + gap x face height + pad. The corners do not move much when the mouth opens but the
     # lower lip drops 0.09-0.12 x face height below them (QA r3 Rollo, measured on 880-1320 px faces; Pomp r3: the box clipped
     # the lower lip on 85 frames at 0.075), so the default clears an OPEN mouth. Per job: captions.lip_gap.
@@ -87,12 +99,12 @@ def main():
         tops = []
         for j, n in enumerate(ks):
             u = (n - sh["f0"]) / fps
-            k = max(W / BW, H / BH) * sh["z0"] * (1 + sh.get("r", 0.0) * u)
-            vw, vh = W / k, H / k
+            k = max(OW / BW, OH / BH) * sh["z0"] * (1 + sh.get("r", 0.0) * u)
+            vw, vh = OW / k, OH / k
             fx, fy = (a0 + b * n) * S, cy * S
             x0 = min(max(fx - sh["fx_out"] * vw, 0), max(BW - vw, 0)); y0 = min(max(fy - sh["fy_out"] * vh, 0), max(BH - vh, 0))
             mouth = ((box[j, 11] + box[j, 13]) / 2 if box.shape[1] >= 14 else box[j, 1] + rel[sh["face"]] * box[j, 3]) * S
-            tops.append((mouth - y0) * k + gap * box[j, 3] * S * k + pad)
+            tops.append((mouth - y0) * k + gap * box[j, 3] * S * k + pad + OY)
         return float(np.percentile(tops, 90))
 
     det = None
@@ -105,8 +117,8 @@ def main():
         if det is None or det[1] != (dw, dh):
             det = (cv2.FaceDetectorYN.create(MODEL, "", (dw, dh), 0.6, 0.3, 5000), (dw, dh))
         cx0, cy0, cx1, cy1 = sh.get("crop", [0, 0, 1, 1]); cwp, chp = (cx1 - cx0) * sw, (cy1 - cy0) * shh
-        kf = W / cwp * sh.get("z0", 1.0); fw, fh = cwp * kf, chp * kf
-        ox, oy = (W - fw) / 2, (sh["fg_y"] - fh / 2) if sh.get("fg_y") else (H - fh) / 2
+        kf = OW / cwp * sh.get("z0", 1.0); fw, fh = cwp * kf, chp * kf
+        ox, oy = (OW - fw) / 2, (sh["fg_y"] - fh / 2) if sh.get("fg_y") else (OH - fh) / 2
         tops = []
         for q in (0.2, 0.5, 0.8):
             t = sh.get("src_in", sh["f0"] / fps) + q * (sh["f1"] - sh["f0"]) / fps
@@ -121,7 +133,7 @@ def main():
             if not inside or f[3] < 0.3 * chp:      # outside the inset, or small (a photo in a captured post: 0.21 of the inset; a
                 continue                            # speaker inset: 0.55-0.60): not the speaker, so the shot takes the median
             mouth = (f[11] + f[13]) / 2
-            tops.append((mouth - cy0 * shh) * kf + oy + gap * f[3] * kf + pad)
+            tops.append((mouth - cy0 * shh) * kf + oy + gap * f[3] * kf + pad + OY)
         return float(max(tops)) if tops else None
 
     shot_top = {}
@@ -141,6 +153,8 @@ def main():
     # usually sits (75th percentile of the measured face shots, so most clear an open mouth). Nothing moves on a cut. Shots whose
     # lips would sit on that line are REPORTED (reframe them: raise the face / match the zoom), and so are cards that cross the band:
     # move the card, not the caption. `captions.place: "per-shot"` keeps the older per-shot lip line (+ moves on cuts).
+    if v2:
+        return place_v2(spec, cap, chunks, shot_top, FR, ig_type, p, "--dry" in a)
     if cap.get("place", "constant") == "constant":
         tops = [v for k, v in shot_top.items()]
         Y = float(np.percentile(tops, cap.get("pct", 75))) if tops else float(cap.get("y", 1310))   # captions.pct 100 = clear EVERY mouth
@@ -264,6 +278,48 @@ def main():
     tag = "ig_capy (yt)" if yt else "ig_capy"
     print(f"{tag}: {len(shot_top)} shots measured, default {default:.0f}; y min/median/max {min(out)}/{int(np.median(out))}/{max(out)}; "
           f"{snaps} starts snapped onto a cut, {nmoves} on-cut moves" + (" [dry run]" if "--dry" in a else ""))
+
+
+# the v2 kinds' approximate heights (px) for the clash report; full-window scenes and bar elements never meet the caption line
+V2_H = {"neon": 330, "lower3": 130, "route": 240, "widget": 420, "compare": 300, "reticle": 0}
+V2_SKIP = {"wordscene", "titlecard", "leak", "hook"}
+
+
+def place_v2(spec, cap, chunks, shot_top, FR, ig_type, path, dry):
+    """ONE constant caption top for the whole video, inside the window: the 75th percentile of the face shots' lip lines (as the v1
+    constant mode), or the split seam (`on_seam`), clamped to [window top + 80, window bottom - 24 - the tallest chunk]."""
+    hmax = max((ig_type.cap_height(c, cap) for c in chunks), default=70)
+    if cap.get("on_seam"):
+        seam = spec.get("split", {}).get("seam", FR["h"] // 2)
+        first = (ig_type.stack_cfg(cap)["lead_size"] * ig_type.stack_cfg(cap)["lead_lh"]) if cap.get("mode") == "stack" else hmax
+        Y, why = FR["y"] + seam - first / 2, "on the split seam"
+    else:
+        tops = list(shot_top.values())
+        Y = float(np.percentile(tops, cap.get("pct", 75))) if tops else float(cap.get("y", FR["y"] + FR["h"] * 0.55))
+        why = f"{cap.get('pct', 75)}th pct of {len(tops)} face shots"
+    lo, hi = FR["y"] + 80, FR["y"] + FR["h"] - 24 - hmax
+    yt_ = int(round(min(max(Y, lo), hi)))
+    for c in chunks:
+        for k in ("moves", "show", "hide"):
+            c.pop(k, None)
+        c["y"] = yt_
+    lips = sorted(((sid, int(t - yt_)) for sid, t in shot_top.items() if t > yt_ + 8), key=lambda x: -x[1])
+    clash = []
+    for k in spec.get("cards", []):
+        if k["kind"] in V2_SKIP:
+            continue
+        ky = k["y"] if "y" in k else FR["y"] + k.get("wy", 0)
+        kh = k.get("h", V2_H.get(k["kind"], 250))
+        if kh and yt_ < ky + kh + 14 and yt_ + hmax > ky - 14 and any(c["start"] < k["t1"] and c["end"] > k["t0"] for c in chunks):
+            clash.append(f'{k["kind"]}@{k["t0"]}s y{ky}-{int(ky + kh)}')
+    if not dry:
+        json.dump(spec, open(path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    print(f"ig_capy (v2): CONSTANT caption top {yt_} ({why}; window {FR['y']}-{FR['y'] + FR['h']}, tallest block {hmax} px"
+          f"{', CLAMPED' if yt_ != int(round(Y)) else ''}){' [dry run]' if dry else ''}")
+    if lips:
+        print("  reframe (the lips sit under the caption line by px): " + ", ".join(f"{sid} +{d}" for sid, d in lips))
+    if clash:
+        print("  cards crossing the caption band (move the card): " + ", ".join(clash))
 
 
 if __name__ == "__main__":

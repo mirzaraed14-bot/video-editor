@@ -26,6 +26,9 @@ A row with status **`YES - make video`** there is the trigger for a job here.
 
 ## Batch mode: the standing workflow (Affan, 2026-10-05)
 
+> **Exports go to `X:\Claude Projects\Exports\`, never the C drive** (Affan 2026-10-12: "don't fill C drive with these videos;
+> everything related to your business will be in X drive"). `finalize.sh` runs with `VE_EXPORT_DIR="X:/Claude Projects/Exports"`.
+
 When there are several YESes, they run as a batch (batch 1: `projects/_onyx-batch-2026-10/BATCH.md`, the tracker and resume
 point). Affan's instructions for it:
 - **One sample per prospect for now**, in the look of their priority platform (§ 0). Two per prospect (one per platform) only
@@ -38,10 +41,21 @@ point). Affan's instructions for it:
   for accounts doing the minimal motion-graphics style better than us, take what works, and log it in this preset's
   LESSONS. Never ship the same look twice by habit.
 - **YouTube look**: keep the MFM-built style for batch 1 and only improve it (`onyx-samples-youtube/`).
+- **Every video beats the last one, BOTH looks (Affan, 2026-10-12, a rule for all videos):** never lock one style. Before each
+  build, research the look's references again (Sean Ryan's channel for the YouTube look; premium minimal Instagram pages for the
+  Instagram look) and write in the job BRIEF what this sample does better than the previous one. Batch 2 direction: YouTube = the
+  Sean Ryan format + a WHITE LINE on every split with the captions ON that line from frame 1; Instagram = big black bars, animated
+  captions, many refined premium motion graphics, crisp SFX, "an expensive video".
 - **Downloads are approved per batch** (candidate audio, their Shorts, the chosen section, B-roll, one music track); every
   file is logged in its job's BRIEF (name, source, size) before it is pulled.
 - **Transcripts:** YouTube refuses caption downloads from this machine (HTTP 429), so research pulls only the candidate
   sections' AUDIO and transcribes them locally, one at a time on the GPU.
+- **ONE session talks to YouTube at a time (batch 2, 2026-10-12).** Four research agents hitting YouTube at once got the whole
+  IP blocked: every watch page, caption and yt-dlp request answered "Sign in to confirm you're not a bot", and the browser
+  landed on Google's /sorry CAPTCHA. Browse pages (channel tabs, playlists, channel search) still answered. Parallel agents may
+  research the web, but YouTube watch/caption/audio pulls go through one queue, spaced out. Never touch the CAPTCHA, and use no
+  cookies, client switching, proxies or third-party transcript sites. While blocked, read published text (the show's own
+  episode pages, show notes, chapter lists) and mark each angle "premise from title" vs "read on transcript".
 - **Topaz on the speaker footage of every sample** (Affan, 2026-10-06: "still do topaz because it makes the footage very smooth; if the
   quality difference isn't there don't enhance but apply interpolation"): his frame interpolation (Chronos, replace duplicate
   frames) ALWAYS, per take (`--segments` at every joint and camera cut); his Iris enhancement only where it shows (≤1080p
@@ -79,7 +93,8 @@ past hits on the same topic). `raw/` holds only the source section we cut from.
 3. Download **only the section needed** (`--download-sections "*<start>-<end>"`, H.264, ≤1080p) to `raw/`.
    **Then normalise its time zero** (rough-cut SKILL § Gotchas, 2026-10-06): a section download starts the audio 0.05–4.9 s
    after the video, and every cut lands that much early. `ffmpeg -i dl.mkv -map 0:v:0 -c:v copy -map 0:a:0 -af
-   "aresample=async=1:first_pts=0" -c:a flac raw/<name>.mkv`, the download kept in `work/raw-orig/`. Prefer the best
+   "aresample=async=1:first_pts=0" -c:a flac raw/<name>.mkv`, the download kept in `work/raw-orig/`. **Then CHECK the picture against the sound** (batch 2, Jay Clouse: the video started 5.743 s after the audio while ffprobe
+   reported start_time 0 for both streams): a mouth-movement or clap check on the first spoken word; trim the late stream with `-ss`. Prefer the best
    available resolution (4K when offered): a 9:16 crop of 4K needs no upscale (Iris only for ≤1080p sources; interpolation on every source, § Topaz above).
 4. **Default moment** when Affan gives none: the same story as their Short, re-cut from the full episode. Same
    content side by side is the cleanest comparison, and it's exactly what the permission email asked to use.
@@ -112,7 +127,7 @@ branding and written into BRIEF.md.
 - **Composition:** HyperFrames, the `talking-head-recut` mechanics. The source video sits in a wrapper that
   tweens between layouts (full-bleed ↔ card ↔ bubble ↔ split); cards and graphics are timed to word timestamps.
 - Captions per README § 5, SFX per § 6, music bed if used.
-- Render to `outputs/<job>.final.mp4`, plus a copy in `~/Downloads/`.
+- Render to `outputs/<job>.final.mp4`, plus a copy in `X:\Claude Projects\Exports\`.
 
 ### 5b. Before writing the composition (learned on the pilot)
 - **Scan the base cut for the episode's own layouts**: a border around the whole episode (row/column brightness), burned-in

@@ -2,6 +2,9 @@
 
   python presets/youtube-shorts/onyx-samples/kit/ig_build.py projects/<job> <version> [--preview] [--skip picture,overlay,mix]
 
+"look": "v2" (batch 2, V2-HOWTO.md): the picture pass is ig_window.py (the same engine, rendered into the letterbox window, plus the
+grade, vignette, grain, racks and leaks) and the overlay is ig_v2.py (animated captions + the refined vocabulary); the rest is shared.
+
 Steps: the shared picture engine (onyx-samples-youtube/kit/yt_picture.py --dir ig: speaker crops, B-roll, splits, FIT cards,
 push-ins; HARD cuts, no whips: the Instagram look cuts clean) → ig_captions.py (when "captions.chunks" is empty) →
 ig_capy.py (captions placed just under the speaker's lips, per shot) → ig_overlay.py → HyperFrames render (transparent ProRes 4444) → the mix (voice + optional bed + one designed sound per graphic
@@ -37,6 +40,24 @@ ES = {"pop": ("pop-glass", 6), "chip": ("pop-glass", 6), "card": ("pop-glass", 6
 # the card (Rich Roll QA r1). click/tick sat 8 dB under the voice and read as nothing on a phone: 0 dB now (r2: little body
 # below 3.2 kHz, so a phone speaker needs the level).
 ES_LEAD = {"pop-glass": 0.585, "whoosh-air": 0.14, "whoosh-light": 0.45, "vibrate": 0.34}
+
+# The v2 look's sounds (batch 2, 2026-10-12; files + Epidemic ids in the preset README's v2 downloads note). The research asked for "the
+# premium middle" the kit lacked: cinematic thuds, a reverberant soft impact, soft / medium whooshes, an airy swell, a film shutter, a
+# vintage flash, a glassy tick, a data blip, a lens focus. Affan's palette (2026-10-08): swells INTO reveals, thuds ON them, airy
+# whooshes on entrances, analog shutters; never magic, glitch, typing or trills (rise-air is the chirp-free swell). Whooshes start
+# 15-16 dB under the voice peak (the old 6 dB + his -10 dB, 2026-10-08), so v2 jobs need no sfx_rel for them.
+ES.update({"glass": ("tick-glass", 2), "blip": ("blip-data", 12), "focus": ("focus-pull", 9), "shutter-film": ("shutter-film", 6),
+           "thud": ("thud-thin", 6), "thud-low": ("thud-low", 9), "impact": ("hit-soft", 5), "whoosh-soft": ("whoosh-soft", 15),
+           "whoosh-med": ("whoosh-med", 16), "rise-air": ("rise-air", 12), "flash": ("flash-vintage", 9), "boom": ("boom-dark", 10)})
+# measured 2026-10-12 (25 ms RMS bins; scratch: kit-demo): LEAD = silence trimmed off the head, PRE = from the trimmed start to the
+# crest (the cue's t lands ON the crest: a swell rises into its moment, a thud hits on it), DUR / fade = the slice (long reverberant
+# tails fade instead of being cut at 2.4 s mid-ring).
+ES_LEAD.update({"hit-soft": 0.08, "whoosh-soft": 0.03, "whoosh-med": 0.15, "rise-air": 0.05, "flash-vintage": 0.03, "boom-dark": 0.04})
+ES_PRE = {"tick-glass": 0.0, "blip-data": 0.0, "focus-pull": 0.05, "shutter-film": 0.10, "thud-thin": 0.03, "thud-low": 0.06, "hit-soft": 0.26,
+          "whoosh-soft": 0.26, "whoosh-med": 0.70, "rise-air": 1.22, "flash-vintage": 0.11, "boom-dark": 0.46}
+ES_DUR = {"tick-glass": (0.3, 0.05), "blip-data": (0.5, 0.1), "focus-pull": (0.6, 0.1), "shutter-film": (0.5, 0.12), "thud-thin": (1.2, 0.4),
+          "thud-low": (2.0, 0.6), "hit-soft": (2.2, 0.7), "whoosh-soft": (1.0, 0.3), "whoosh-med": (1.6, 0.4), "rise-air": (1.5, 0.2),
+          "flash-vintage": (1.0, 0.3), "boom-dark": (2.5, 0.8)}
 
 
 def peak_db(path):
@@ -91,17 +112,21 @@ def mix(job, spec):
                 pk_cache[f] = peak_db(os.path.join(REPO, f))
             gain = vpk - under + cue.get("rel_db", 0.0) + a.get("sfx_rel", {}).get(name, 0.0) - pk_cache[f]   # peak `under` dB below the voice's
             # "audio.sfx_rel": {"whoosh-light": -10, "whoosh-air": -10}: a per-job offset per Epidemic file (Affan 2026-10-08: whooshes -10 dB)
-            ms = int(round(max(0, cue["t"] - (0.06 if name.startswith("whoosh") else 0.01)) * 1000))   # a whoosh swells into its peak
-            dur_s = 2.4
+            pre = ES_PRE.get(name, 0.06 if name.startswith("whoosh") else 0.01)       # a whoosh swells into its peak; v2 files: crest ON t
+            if name in ES_PRE and cue["t"] < pre:                                    # too close to the start: trim more so the crest still lands
+                lead += pre - cue["t"]; pre = cue["t"]
+            ms = int(round(max(0, cue["t"] - pre) * 1000))
+            dur_s, fade_s = ES_DUR.get(name, (2.4, 0.0))
         else:
             f, lead, g = SFX.get(cue.get("kind"), (cue.get("file"), cue.get("lead", 0), cue.get("gain_db", -20)))
             g = a.get("sfx_gain", {}).get(cue.get("kind"), g)      # per-job level for a library sound ("audio.sfx_gain": {"whoosh": -12})
             gain = cue.get("gain_db", g)
             ms = int(round(max(0, cue["t"] - 0.05) * 1000))     # a whoosh peaks just after the motion starts
-            dur_s = 1.2
+            dur_s, fade_s = 1.2, 0.0
         inputs += ["-i", os.path.join(REPO, f)]
+        tail = f"afade=t=out:st={dur_s - fade_s:.3f}:d={fade_s:.3f}," if fade_s else ""
         fc.append(f"[{len(inputs) // 2 - 1}:a]atrim=start={lead}:duration={dur_s},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,"
-                  f"afade=t=in:d=0.005,volume={gain:.2f}dB,adelay={ms}|{ms},apad[s{k}]")
+                  f"afade=t=in:d=0.005,{tail}volume={gain:.2f}dB,adelay={ms}|{ms},apad[s{k}]")
         labels.append(f"[s{k}]")
     if a.get("bed") and os.path.exists(os.path.join(job, a["bed"])):
         bed = os.path.join(w, "bed-cut.wav")
@@ -134,7 +159,10 @@ def main():
     fps, dur = spec["fps"], spec["frames"] / spec["fps"]
     w = os.path.join(job, "ig", "work")
     if "picture" not in skip:
-        sh(["uv", "run", "-q", os.path.join(YTKIT, "yt_picture.py"), job, "--stills", "--dir", "ig"])
+        if spec.get("look") == "v2":       # the letterbox window: the same engine at window size + the v2 finish (ig_window.py)
+            sh(["uv", "run", "-q", os.path.join(KIT, "ig_window.py"), job])
+        else:
+            sh(["uv", "run", "-q", os.path.join(YTKIT, "yt_picture.py"), job, "--stills", "--dir", "ig"])
     if "overlay" not in skip:
         if not spec.get("captions", {}).get("chunks"):
             sh([sys.executable, os.path.join(KIT, "ig_captions.py"), job])

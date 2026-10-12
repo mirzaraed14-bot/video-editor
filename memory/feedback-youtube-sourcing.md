@@ -26,3 +26,8 @@ went in. Premiere cannot read AV1, so always force H.264:
 redirect. When a source is another creator's own video (a podcast, a reaction, a video essay) rather than a
 publisher's, say so and keep the clip short — that is a flag, never a refusal. See
 [[project-gta-documentary-channel]].
+
+**Rate limit (2026-10-12):** four parallel research agents hitting YouTube got this IP blocked outright (watch pages, captions,
+yt-dlp all "Sign in to confirm you're not a bot"; browser sent to Google's /sorry CAPTCHA). Only ONE session pulls from YouTube
+at a time, spaced out; never bypass a block (no cookies, client switching, proxies, transcript sites). Recorded in the Onyx
+PLAYBOOK batch-mode section.

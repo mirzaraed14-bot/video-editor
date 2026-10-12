@@ -3,6 +3,24 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-12 — letterbox look on comp 65 (Ronnie Coleman, `projects/ronnie-coleman-truths/letterbox`)
+
+- **His current letterbox build (comp 60, 4 instances) differs from README § 5's older one:** the line precomp is
+  `White Solid 1 Comp 1` (white solid Scale [100, 1] at y1497 inside a 2.92 s 1080×1920 comp), each bar layer at
+  **Scale [202, 100], Position x 1086**, so line y = layer y + 537; bars sit **above** the grade adjustment layers
+  and below the zooms; twins at 184–256 % (2–22 % past the fill scale) and **33–63 %** opacity (median 47); masks hand
+  drawn, x bleeding 56–92 px past each side, edges on the band or up to 12 px inside. → PLAYBOOK § the letterbox pass.
+- **Copy his bar with `layer.copyToComp(comp)`** instead of rebuilding Deep Glow: every plugin setting comes across.
+  Find the new layer by `layer.id` (not "index 1").
+- **ExtendScript: property objects held across `layer.duplicate()` / `moveAfter` go stale** ("invalid numeric result"
+  on read-back). Re-fetch the mask by name before reading it back.
+- **His caption layer travels from short to short** (comps 47 and 60 carry the SAME Turbulent Displace Evolution keys:
+  0 → 9197.8 at 50.967 s → 6139 at 52.517 s). On a short past ~51 s that is a fast backwards wiggle, then none. Build a
+  new caption layer by copying his (`copyToComp` + `replaceSource`, `projects/ronnie-coleman-truths/captions/capcut/
+  place_caption65.jsx`) and flag the Evolution keys whenever the short runs past 50.97 s.
+- **Fuchsia (13) relabels a block for this pass, which is NOT a transition colour:** run the letterbox pass after the
+  transition pass has read the labels, and never re-run transitions over a fuchsia block unasked.
+
 ## 2026-10-11 — the caption wiggle is BROAD and SLOW (his review of the code-rendered short)
 
 - **"Captions have way too much wiggle"**: his Turbulent Displace (Amount 4, Size 100, Complexity 1, Evolution ~180°/s)

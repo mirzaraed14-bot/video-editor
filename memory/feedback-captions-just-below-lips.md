@@ -20,3 +20,5 @@ position for the whole video. The down-to-up entrance animation is fine; the bas
 **How to apply:** pick one caption y per video, just under the lips where the face usually sits (`ig_capy.py` constant mode), and make
 the FRAMING consistent (face at the same height in every speaker shot) so that one y works everywhere; lay cards out around the caption
 band instead of moving the caption. Punctuation and animation rules: [[feedback-caption-punctuation]]. Related: [[project-onyx-sample-shorts]].
+
+**Split formats (2026-10-12):** when the video has split screens, the one constant position is the split LINE, not the lips: see [[feedback-split-screen-white-line]].

@@ -19,7 +19,8 @@ workflows/whip-slide.py). Shot kinds:
 Spec keys: fps, frames, base, base_hq (optional, e.g. the Topaz 4K base), faces (json from yt_faces.py), broll_dir,
 base_inpaint (optional) [[x0, y0, x1, y1], ...] source-fraction boxes painted out of every base frame on A and SPLIT shots (a burned-in show
 label, Pomp 2026-10-08),
-split {seam, bob_amp, bob_period}, shots [ {id, kind, f0, f1, ...} ], whip_dirs {shot id: "left"|"right"|"cut"} ("cut" = a hard cut, no
+split {seam, bob_amp, bob_period, line {w, rgb} (default a 6 px white seam line; null = none; with a line the seam holds
+still unless bob_amp is given)}, shots [ {id, kind, f0, f1, ...} ], whip_dirs {shot id: "left"|"right"|"cut"} ("cut" = a hard cut, no
 whip: Affan 2026-10-07, transitions only when the scene changes; two shots of the same camera are ONE shot, never a whip),
 sticker (optional) {shot, matte, matte_first_base_frame, rise_start, settle, final_xy_out, height_out, angle},
 an A shot's "freeze": [[f0, f1], ...] holds the frame before f0 over [f0, f1) (a source camera change inside a sentence),
@@ -199,7 +200,11 @@ def main():
     S = BW / probe(P(spec["base"]))[0]           # faces were measured on the original base
     K0 = H / BH
     faces = json.load(open(P(spec["faces"]), encoding="utf-8")) if spec.get("faces") else {}
-    split = {"seam": 1092, "bob_amp": 11, "bob_period": 1.25, **spec.get("split", {})}
+    split = {"seam": 1092, "bob_amp": 11, "bob_period": 1.25, "line": {"w": 6, "rgb": [255, 255, 255]}, **spec.get("split", {})}
+    # Affan 2026-10-12: EVERY split has a white line on the seam ("it feels organized"), and the captions sit ON that line from
+    # frame 1 (captions.on_seam). A line under fixed captions cannot bob, so the seam holds still unless the spec asks for a bob.
+    if split.get("line") and "bob_amp" not in spec.get("split", {}):
+        split["bob_amp"] = 0
     broll = P(spec.get("broll_dir", f"{sub}/assets/broll"))
     SRC = lambda src: P(src) if ("/" in src or "\\" in src) else os.path.join(broll, src)   # a bare name lives in broll_dir; a path is job-relative
     work = os.path.join(job, sub, "work")
@@ -353,6 +358,9 @@ def main():
                 else:
                     panel = grade(render_B(rd["bottom"].read(), bt, u, W, ph), {**G.get("B", {}), **bt.get("grade", {})})
                 out[seam:] = panel[:H - seam]
+                if split.get("line"):                     # the white seam line, centred on the seam row
+                    lw = int(split["line"].get("w", 6)); y0l = max(0, seam - lw // 2)
+                    out[y0l:y0l + lw] = np.array(split["line"].get("rgb", [255, 255, 255]), np.uint8)
             enc.stdin.write(np.ascontiguousarray(out).tobytes())
             if stills and n_abs == (a + b) // 2:
                 Image.fromarray(out).resize((360, 640)).save(os.path.join(work, "stills", f"{s['id']}.jpg"), quality=85)

@@ -149,3 +149,25 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
 - **The start of a segment can sit inside the previous word** (Harbinger: 26.70 was inside "Because"; "-cause" played uncaptioned before "I think"). WhisperX ended "Because" at 26.69, but the [k]-vowel-[z] ran to 26.865. Measure the real gap (10 ms RMS) and move the start onto the frame inside it. Muting the fragment would only patch over the bad cut.
 - **Affan's review (2026-10-08): the whooshes are too loud.** Chris Do's hook `whoosh-light` (+6.8 dB gain) and split `whoosh-air` (+7.0, under 2) were cut by exactly 10 dB (`WHOOSH_TRIM`; mix-only rebuild, picture bit-identical, audio null -49 dB outside the whooshes). Start every new sample's whooshes 10 dB under that level. Pops, ticks and hits are not whooshes: they keep their audible level.
 - **A comment pasted mid-line silently deleted three SFX cues** (Pomp yt9, 2026-10-08): `sfx = [hook]   # note + [splits...]` made the split whooshes part of the comment, and the shipped final had only the hook. The yt8→yt9 check gain-matched the audio OUTSIDE the cue windows and never looked inside them. Rules: (1) every spec builder asserts its cue count (`assert len(sfx) == 1 + n_splits`); (2) after any mix change, isolate each intended cue (premix − voice) and confirm it is present at its new level, not just that the rest of the audio nulls.
+
+## 2026-10-12 · batch 2 direction (Affan, before the build)
+- **Lesson:** "when I do split screens I always have a white line in the middle… it feels organized", and the captions sit ON that
+  line, with the base caption position set for the whole video so a split arriving 5-10 s later finds them already there (batch 1 had
+  no line: "the one thing I don't like"). **Change:** `kit/yt_picture.py` draws a white seam line on every SPLIT (`split.line`, default
+  6 px white; a line holds the seam still unless `bob_amp` is set); `captions.on_seam: true` pins every chunk's glyph centre to
+  `split.seam` (+ `seam_dy`) for the WHOLE video (`kit/yt_overlay.py`) and skips the per-shot lip placement (`kit/yt_build.py`).
+  **File:** the kit; the rule is memory `feedback-split-screen-white-line`.
+- **Lesson:** never lock the look; each sample must beat the last one (Affan's general rule). **Change:** research Sean Ryan's
+  channel again before each batch and write the improvement into the job BRIEF. **File:** onyx-samples PLAYBOOK § Batch mode.
+
+## 2026-10-12 · batch 2 build findings (reported by the build agents; worked around in the jobs, kit NOT yet changed)
+- **A section download can start its VIDEO seconds after its AUDIO while ffprobe reports start_time 0 for both** (Jay Clouse:
+  5.743 s), so splice.sh's offset check misses it. **Change:** measure the A/V offset at intake by a mouth-movement or clap check,
+  not only the stream start times; that job trimmed with `-ss 5.743`. **File:** the onyx-samples PLAYBOOK § 1.3 (intake).
+- **`yt_picture.py` conforms 24/25/30 fps stock wrongly on a 60 fps base** (25 fps B-roll played at 0.42x; Jeremy set `speed` 1.0001
+  to dodge it) and **ignores `fx_out` on a SPLIT's top panel** (Jay). **`whip-slide.py` steps once per frame**, so at 60 fps a whip
+  lasts 0.13 s (Jeremy re-timed it in `yt/build.py`). **Topaz fails on a 3-frame take** (drop that `--segments` boundary).
+  **`captext.clean()` strips "·"** from hook lines. **File:** the kit, to fix deliberately (each job's BRIEF § Kit lessons has the detail).
+- **A tight remote-call webcam face cannot be full-frame with captions on the seam** (the caption line lands on the mouth): every
+  David Altizer shot became the top of a split. Plan for it at the storyboard.
+- **Topaz on a sourced THUMBNAIL waxes faces and invents texture**: Lanczos + light sharpening instead.

@@ -279,6 +279,10 @@ The system improves only through files, never through chat memory. Four writes, 
    draft; lab-notes is the record.
 4. **Every job carries its own state:** `BRIEF.md` in pre-production, `RUN.md` from intake, each with a "▶ STATUS:
    resume here" block at the top, rewritten at every milestone, so a new session picks the job up cold.
+5. **Every video beats the last one (Affan, 2026-10-12, all channels and formats).** Never lock one editing style forever:
+   before EACH video, research the format's current best examples, and write in the BRIEF what this video does better than
+   the last one of its kind (1 % counts). A preset's locked number is a guard against accidental drift, not a ceiling: a
+   deliberate improvement is always allowed and is logged in its LESSONS.
 
 ## Lab Notes — the locks
 

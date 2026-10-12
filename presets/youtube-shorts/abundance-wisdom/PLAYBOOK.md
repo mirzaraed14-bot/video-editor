@@ -193,6 +193,17 @@ any number of blocks, stills placed as the comp places them).
 **Doubles** (a 100 % shot over its 198–229 % twin, same in/out) are ONE block with one zoom above both.
 The zooms sit directly under a caption layer if there is one, otherwise on top: always above the glow bars.
 
+### The letterbox pass (scripted, 2026-10-12 on ABW8 comp 65, his look read off comp 60)
+
+He marks the shots: **AE label 13 (fuchsia) on the footage = give it the letterbox look** (README § 4–5). Per block:
+measure the picture band on every 2nd frame of the render (`projects/ronnie-coleman-truths/letterbox/plan_band.py`:
+mask edge = band edge inside 95 % of frames, the stabilised band wobbles ±5 px), mask x −60..1140, twin = fill scale
+× 1.10 at 47 %, two copies of his comp 60 glow line (`layer.copyToComp`, so every Deep Glow setting is his) at
+line y = mask edge, above the grade and below the zooms. `letterbox.jsx.tmpl` (same folder) → `node --check` →
+`AfterFX -r`; re-runnable (its layers carry the comment "Claude letterbox", its masks are "Letterbox (Claude)").
+Proof = a rebuild from the render (`proof.py`): `comp.saveFrameToPng` writes nothing on these comps.
+Run it AFTER the transition pass reads labels: fuchsia is not a transition colour.
+
 ### The transition pass (scripted, validated 2026-09-24 on ABW8 comp 06, 2026-09-26 on comp 18)
 
 AFTER the zoom pass, once the creator has relabelled the blocks (README § 7). Re-read the labels first

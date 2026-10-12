@@ -50,7 +50,9 @@ def main():
             os.path.join(w, "picture.whip.mp4")])
     if "overlay" not in skip:
         sh([sys.executable, os.path.join(KIT, "yt_captions.py"), job]) if "captions" not in skip else None
-        if spec.get("faces") and not spec.get("captions", {}).get("fixed_y"):     # captions just under the lips, per shot (Affan, 2026-10-06)
+        cs = spec.get("captions", {})
+        if spec.get("faces") and not cs.get("fixed_y") and not cs.get("on_seam"):  # captions just under the lips, per shot (Affan, 2026-10-06);
+                                                                                     # on_seam: the split line, constant (Affan, 2026-10-12)
             sh([shutil.which("uv") or "uv", "run", "-q", os.path.join(REPO, "presets", "youtube-shorts", "onyx-samples", "kit", "ig_capy.py"), job, "--dir", "yt"])
         sh([sys.executable, os.path.join(KIT, "yt_overlay.py"), job])
         sh([shutil.which("npx") or "npx", "--yes", "hyperframes@0.8.16", "render", ".", "--format", "mov", "--fps", fps_arg(fps), "-o", "../work/overlay.mov", "--quiet"],

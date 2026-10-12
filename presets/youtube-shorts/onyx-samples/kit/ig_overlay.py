@@ -80,6 +80,9 @@ def esc(t):
 def main():
     job = os.path.abspath(sys.argv[1])
     spec = json.load(open(os.path.join(job, "ig", "spec.json"), encoding="utf-8"))
+    if spec.get("look") == "v2":       # batch 2's letterbox look has its own vocabulary (ig_v2.py); nothing below runs for it
+        import ig_v2
+        return ig_v2.build(job, spec)
     fps = spec["fps"]
     dur = spec["frames"] / fps
     q = lambda t: round(max(0.0, round(t * fps) - 0.25) / fps, 5)          # a quarter frame before the frame boundary
