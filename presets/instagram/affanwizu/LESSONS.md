@@ -10,6 +10,15 @@ he stopped it: *"its an english video"*. → PLAYBOOK § 1 already says to confi
 few seconds or let Whisper detect it) before any Urdu pass, and ask the style when the language is English. His pick
 for that English vertical: the plain **white** style as an .srt track (`projects/seq44-short/RUN.md`).
 
+## 2026-10-13: the ending dropped a 4th time (Seq 51) → `transcript_check.py`
+
+Seq 17, 20, 29 and now 51: WhisperX stops before the cut ends and squeezes the last sentence early (Seq 51: words end at
+163.1 s, 4.7 s of speech after, "sunglasses mene promote kardi… mai khud pehnta hun" lost). The checks that caught it lived
+in session scratch scripts. → `transcript_check.py` (preset) runs Gate B + the ending rule + loops + true silences in one
+command and prints what the English listener heard in each bad window (on Seq 51 it printed the missing ending verbatim).
+Also from Seq 51: two TIMELINE GAPS = two silences (27.05–35.88, 42.85–49.15) get explicit `@<sec> |` lines so no caption
+hangs over a gap; "easy mode" (آسان موڈ) and "something in return" (heard "in it") restored.
+
 ## 2026-10-11: tool bug — the rebuilt cut had NO picture (Seq 47)
 
 `sequence_reference.py` joined the V1 clips with the concat demuxer straight off the camera file. This camera's

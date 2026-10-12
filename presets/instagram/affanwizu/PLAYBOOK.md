@@ -61,7 +61,10 @@ is early by the gap. Compare `ffprobe` duration against the sequence end BEFORE 
 is short, insert `color=black` + `anullsrc` for each gap (seq17: one 3.27 s gap at 175.4 s, rebuild
 181.65 → 184.93 s, sequence 184.92). A frame of rounding is fine; a tenth is not.
 
-**GATE B — prove every silence is silent, INCLUDING the tail after the last word.** WhisperX drops speech in long Urdu takes without any
+**GATE B — prove every silence is silent, INCLUDING the tail after the last word.** One command does it (after
+`codeswitch_pass.py`): `python presets/instagram/affanwizu/transcript_check.py projects/<job>` prints every DROP, the
+dropped ENDING, every LOOP and every true SILENCE (end the caption there), with what the English listener heard in each
+bad window. Exit 1 = re-decode those windows before writing. By hand, the same check is: WhisperX drops speech in long Urdu takes without any
 warning, and a dropped span looks exactly like a pause in `words.json`. For EVERY speech gap > 1.5 s:
 ```bash
 ffmpeg -hide_banner -nostats -ss <t> -t <len> -i <cut> -map 0:a -af volumedetect -f null NUL 2>&1 | grep mean_volume
