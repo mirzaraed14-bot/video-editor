@@ -323,13 +323,16 @@ def main():
             return None
         E, bounds, dx, dy, ref = fits[ck]
         a = max(x for x in bounds if x <= n_abs); b = min([x for x in bounds if x > n_abs] or [r1])
-        near = [(k, v) for k, v in E.items() if a <= k < b and abs(k - n_abs) <= 8]
+        SIG = float(spec.get("head_track_sigma", 12))      # Affan 2026-10-20 "it feels like the video is bouncing": follow the head CALMLY
+        near = [(k, v) for k, v in E.items() if a <= k < b and abs(k - n_abs) <= 3 * SIG]
         if not near:
             inside = [(k, v) for k, v in E.items() if a <= k < b] or list(E.items())
             near = [min(inside, key=lambda kv: abs(kv[0] - n_abs))]
-        w = np.array([math.exp(-((k - n_abs) ** 2) / 18.0) for k, _ in near]); V = np.array([v for _, v in near])
+        V = np.array([v for _, v in near]); V = np.array([np.median(V[max(0, i - 4):i + 5], axis=0) for i in range(len(V))])  # outliers out
+        w = np.array([math.exp(-((k - n_abs) ** 2) / (2 * SIG * SIG)) for k, _ in near])
         ex, ey, iod = (float(np.dot(w, V[:, i]) / w.sum()) for i in range(3))
-        return ex, ey, float(np.clip(ref / iod, 0.85, 1.15)) if iod > 0 else 1.0     # the EYES themselves: set fy_out to the eye line (~0.32)
+        sc = float(np.clip(ref / iod, 0.85, 1.15)) if iod > 0 and spec.get("head_track_scale") else 1.0   # size-following made it pump in and out
+        return ex, ey, sc                                  # the EYES themselves: set fy_out to the eye line (~0.32)
 
     def eye_track(key, n_abs, r0, r1):
         """Head lock, chained at the CUTS (Affan 2026-10-19: "his face shouldn't be moving up and down with the cuts"). Anchored on the
@@ -411,10 +414,33 @@ def main():
         seg = fits.get((key, g0, g1), (0, 0, 0, None))[3]
         return 1.0 if not ref or not seg else float(np.clip(ref / seg, 0.88, 1.12))
 
-    def render_A(base_rgb, key, n_abs, fx_out, fy_out, z0, r, u, out_w, out_h, panel_h=None, rng=(0, 10 ** 9)):
-        k = max(out_w / BW, (panel_h or out_h) / BH) * z0 * (1 + r * u)
-        fx, fy = face_track(key, n_abs, *rng)
-        if HL:                                   # same size after every jump; needs z0 >= ~1.2 so the crop has room to hold the height too
+    def zoom_at(zk, n):
+        """Eased zoom keyframes [[frame, scale], ...] (Affan 2026-10-20: zoom only on emphasis, in and back out, easy-ease, never a jump at a
+        cut). Smoothstep between keys, held before the first and after the last."""
+        zk = sorted(zk)
+        if n <= zk[0][0]:
+            return zk[0][1]
+        for (f0_, s0_), (f1_, s1_) in zip(zk, zk[1:]):
+            if n <= f1_:
+                t = (n - f0_) / max(f1_ - f0_, 1); t = t * t * (3 - 2 * t)
+                return s0_ + (s1_ - s0_) * t
+        return zk[-1][1]
+
+    def static_eyes(key, f0, f1):
+        """No tracking (a split panel): the shot's median eye midpoint, held still."""
+        ck = ("static", key, f0, f1)
+        if ck not in fits:
+            pf = faces[key]["per_frame"]; ks = [k for k in pf if f0 <= int(k) < f1 and len(pf[k]) >= 8] or [k for k in pf if len(pf[k]) >= 8]
+            fits[ck] = (float(np.median([(pf[k][4] + pf[k][6]) / 2 for k in ks])), float(np.median([(pf[k][5] + pf[k][7]) / 2 for k in ks])))
+        return fits[ck][0] * S, fits[ck][1] * S
+
+    def render_A(base_rgb, key, n_abs, fx_out, fy_out, z0, r, u, out_w, out_h, panel_h=None, rng=(0, 10 ** 9), zk=None, track=True):
+        k = max(out_w / BW, (panel_h or out_h) / BH) * z0 * (zoom_at(zk, n_abs) if zk else 1 + r * u)
+        if not track and HT and faces[key]["per_frame"] and len(next(iter(faces[key]["per_frame"].values()))) >= 8:
+            fx, fy = static_eyes(key, *rng)                # Affan 2026-10-20: "split screen should not have head tracking"
+        else:
+            fx, fy = face_track(key, n_abs, *rng)
+        if HL and track:                         # size lock (only when head_track_scale or the older chained lock asks for it)
             k *= lock_scale(key, n_abs, *rng)
         x0, y0 = view(BW, BH, fx, fy, k, out_w, panel_h or out_h, fx_out, fy_out)
         return warp(base_rgb, k, x0, y0, out_w, out_h)
@@ -528,7 +554,7 @@ def main():
                         ma = m[..., 3] if m.shape[1] == BW else cv2.resize(m[..., 3], (BW, BH), interpolation=cv2.INTER_CUBIC)
                         al = ma[..., None].astype(np.float32) / 255
                         base_rgb = (comp.astype(np.float32) * (1 - al) + base_rgb.astype(np.float32) * al).astype(np.uint8)
-                out = grade(render_A(base_rgb, s["face"], n_face, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b)), gA)
+                out = grade(render_A(base_rgb, s["face"], n_face, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b), zk=s.get("zoomkeys")), gA)
             elif s["kind"] == "B":
                 fr = rd["main"].read()
                 out = grade(render_B(fr, s, u, W, H), gB)
@@ -576,7 +602,7 @@ def main():
                                    {**G.get("B", {}), **bt.get("grade", {})})[:seam]
                 ph = H - (split["seam"] - split["bob_amp"])
                 out[seam:] = grade(render_A(base_rgb, t["face"], n_abs, t.get("fx_out", 0.5), t["fy_out"], t["z0"], t.get("r", 0.0), u, W, ph,
-                                            rng=(a, b)), {**G.get("A", {}), **t.get("grade", {})})[:H - seam]
+                                            rng=(a, b), track=False), {**G.get("A", {}), **t.get("grade", {})})[:H - seam]
                 if split.get("line"):
                     lw = int(split["line"].get("w", 6)); y0l = max(0, seam - lw // 2)
                     out[y0l:y0l + lw] = np.array(split["line"].get("rgb", [255, 255, 255]), np.uint8)

@@ -55,8 +55,9 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
 - `python presets/youtube-shorts/onyx-samples-youtube/kit/yt_build.py $J v1` (background, ~4 min).
 
 - **Head lock + 60 fps (2026-10-19, from AW):** `python workflows/cut-frames.py outputs/<job>.mp4 work/cut/joints30.txt > work/cut/joints_measured.txt`,
-  then `head_lock=` those joints, `head_track=True` (the crop follows the EYES on every frame; A `fy_out` 0.32 = the eye line), A `z0` 1.12 and
-  **`r` as a per-second rate** `min(0.10, 0.55/dur)` (the reference's linear 8-14 %/s push; scan faces with `yt_faces.py --step 1`); `fps_out=60` makes `yt_build.py` double the finished picture with
+  then `head_lock=` those joints, `head_track=True` (CALM: the crop follows the EYES, sigma 12 frames, no size-following; A `fy_out` 0.32 = the eye line, `z0` 1.12;
+  scan faces with `yt_faces.py --step 1`) and **`zoomkeys` per speaker shot** (eased, zoom only on emphasised lines and back out; a quick
+  zoom-in after a whip; never a scale jump at a cut). Splits are not tracked (Affan 2026-10-20 Tella feedback); `fps_out=60` makes `yt_build.py` double the finished picture with
   Topaz Chronos per shot (`topaz-iris.py --fps-mult 2`, never across a cut) and render the captions at 60. Both on by default for Scott.
 - **Before the build (Scott):** freshness check + locked prediction + pre-mortem + title + thumbnail in
   `presets/youtube-shorts/scott-clary/RESULTS.md` (ENGINE.md has the line; `thumbnail.py` draws the locked cover format).

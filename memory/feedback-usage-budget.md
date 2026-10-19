@@ -1,8 +1,11 @@
 ---
 name: feedback-usage-budget
-description: Affan 2026-10-15: six parallel build agents burned ~50 % of his Max 20x weekly plan in 3 hours and hit the limit; he's on paid usage credits he can't afford to exceed — budget every job, no agent swarms, fresh small sessions
+description: "Affan 2026-10-15: six parallel build agents burned ~50 % of his Max 20x weekly plan in 3 hours and hit the limit; he's on paid usage credits he can't afford to exceed — budget every job, no agent swarms, fresh small sessions"
 metadata:
+  node_type: memory
   type: feedback
+  originSessionId: ca11365e-c88c-4196-8400-a7f96c6e5dbd
+  modified: 2026-10-19T20:12:12.125Z
 ---
 
 2026-10-14 evening: six long-running build agents ran in parallel (3 resumed Opus agents carrying 500-600K tokens of history + 3 new
@@ -19,3 +22,6 @@ few image reads; start a FRESH session with a short resume file instead of conti
 On credits (until a reset) pause rather than cut quality. Related: [[feedback-use-fable-allowance]], [[project-onyx-sample-shorts]].
 
 - 2026-10-15 (Scott Clary FUBU Short): Affan capped ONE video at $10 of usage credits. Per-video cap: plan the build in few, batched turns; avoid full-size image reads and doc re-reads.
+- 2026-10-20 (cbum-last-show, weekly at 9 %): Affan: "you can run a few subagents like 6 7 if you want, we have ample room". So with
+  the weekly plan low, 6-7 parallel subagents are OK. Keep them lean (fresh, short briefs, one output file each, Sonnet for mechanical
+  work), and re-check usage before the next batch. The 10-15 caution returns if the weekly usage climbs or he is on credits again.

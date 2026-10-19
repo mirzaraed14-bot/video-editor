@@ -1,6 +1,91 @@
 # RUN — cbum-last-show ("THE LAST SHOW", Chris Bumstead, Abundance Wisdom long-form #3)
 
 ## ▶ STATUS: resume here
+**2026-10-20 ~01:50: 5b PREP DONE BY 7 PARALLEL AGENTS** (the creator OK'd 6-7 here). Every cover has its exact frame, the facts are
+checked, the subtitles are drafted, the head lock is measured, and the SFX are shortlisted. Nothing is built, placed or rippled. The gate
+`validate_v2.py` still PASSES. The cold open measures 2.27 changes / 10 s, a worst 20 s window of 7, and 10 SFX. Runtime **11:46.06**.
+- **Files** (all listed in v2 `legend.finds`):
+  - `work/storyboard/finds/covers-{A,B,C}.json`: 43 picks, attached as `pick` on each v2 element. The .md shows them as **PICK**.
+  - `finds/facts.{json,md}`, `finds/sfx-shortlist.{json,md}`, `finds/headlock.{json,md}`.
+  - `brief/subtitles-draft.{json,md}` + `-t.srt` / `-T-ripple.srt` (regenerate: `PYTHONIOENCODING=utf-8 python work/storyboard/subs_draft.py`).
+  - Frame sheets: `work/storyboard/frames/{A,B,C}/`.
+- **New in the plan:**
+  - **T1:** a -1.20 s DEFECT trim of 2a's head. It opened on "...the best one yet." at speech level; the in point moves 98.00 → 99.20.
+  - B1 is a multi-angle edit (~29 cuts, no line-up). The line-ups come from 01's prejudging take 1172.8-1273.5.
+  - The co-host-04 two-shot is now the line-up hold. The backstage bald man at 01 423.5 is seen only from behind, so it's the alt.
+  - The scorecard and the Arnold beat become rebuilt F4 cards: NSP's frame is watermarked, and no SAME NIGHT export exists.
+  - The end screen is black + dust.
+  - Every cover pre-lapping into a V1 piece starts at that piece's scale. 02 ≥ 1.05, Greg ≥ 1.10, 1c repositioned off its GI title box.
+  - 01's video starts 0.04 s after its audio. That left 0a-b ending on 1-2 frames of shot C; a freeze now covers them.
+  - 5b's frame 0 is soft and different; c5-host-107's freeze runs one frame on over it.
+  - noun4 gets real speed + a freeze (the trailer's floor shot fades to black at 81.54).
+- **SFX calibration:** the shortlist's gains assume a -15.5 dBFS voice peak. This host peaks near -6 dBFS, so add about +9.5 dB.
+- **Checkpoint questions:** 15 now (full list in `brief/cold-open-checkpoint.md`). New since 01:10: T1, the head lock (z0 1.2 light
+  chain?), host line #27 (false), "not one judge" / "IV · UNANIMOUS", the backstage bald man, the 5-show flash, and 4a "I disagree" / 4d's speaker.
+- **Silence:** the facts agent opened YouTube in the built-in browser and its autoplay played aloud. The pane is closed, the rule is in
+  memory (feedback-work-in-silence), and it goes into every brief.
+- **Usage:** 5-hour window 15 %, weekly all-models 11 %, Fable 0 %.
+
+**2026-10-20 ~01:10: STEP 5a DONE. Storyboard v2 is re-timed onto the ASSEMBLED timeline and its gate passes. NOTHING is built,
+placed or rippled. NEXT = the creator's checkpoint decisions, then the cold-open build (step 5b).**
+- **Files:**
+  - `brief/storyboard-v2.json` is the machine copy. `brief/storyboard-v2.md` is the readable storyboard.
+  - `brief/cold-open-checkpoint.md` is the checkpoint plan: the measured table, the shot list, the build order and the decisions.
+  - Chain (job folder): `python work/sb_readback.py` (by name, read-only) → `python work/storyboard/build_v2.py` →
+    `uv run projects/cbum-last-show/work/storyboard/face_gate.py` (from the repo root) → `python work/storyboard/validate_v2.py`
+    (**PASS**) → `python work/storyboard/v2_md.py`.
+- **Times:** every element carries t (today's saved timeline) and T (after the planned ripples R1-R9), plus the anchor it hangs on,
+  so a changed ripple re-derives everything.
+- **Ripples needed (the creator's OK first):**
+  - R1 +2.4 s: the 0a freeze + EVLS card.
+  - R2 +0.2 s: the black under "die".
+  - R3 +0.4 s: the pre-pivot silence.
+  - R4 +1.894 s: chapter card I.
+  - R5-R8 +2.9 / 2.9 / 3.1 / 3.1 s: the blacks + chapter cards II-V.
+  - R9 +0.8 s: the black after 5d.
+  - The ending tail is +23.6 s.
+  - **Runtime 11:47.26** (11:36 without chapter cards). No trim needed.
+- **Creator's ask 1:** 132.5 s FACE / 184.8 s covered, out of 317.3 s of host.
+  - `work/storyboard/face_gate.py` measured EVERY frame of every planned face span: **0 reading frames on screen**.
+  - It caught 6 glances the 0.25 s eye-line missed: seg 56 (0.77 s), 57 and 141 mid-line, and the tails of 97, 100, 101 and 121.
+  - All are covered now. The 5 "want face" reading segments (c1-host-01) are on the results ledger.
+- **Cold open, measured on the plan:**
+  - 82.36 s to the end of the title.
+  - 2.38 picture changes / 10 s and worst 20 s window = 7 (density.py method). Strict, with the pivot's 4 host jump cuts: 2.86 and 9.
+  - 1.07 SFX / 10 s, 2 impacts, 3 text events + the title, 0.52 s silence, 0 % synthetic.
+  - The title fits its 6.006 s gap; the text card fits its 3.50 s gap.
+- **Corrections to the draft found on the footage:**
+  - 0c-d's picture is the trailer's IV hospital-bed shot. The plan freezes the crying shot through "die".
+  - The draft's "bowed head at trailer 17.5" is ANOTHER man in a gym. co-host-02 moves to 02's own medal moments.
+  - 4 shot slivers get freezes / pre-laps: 0c-c head, 5d-b head, 5c-a head and tail.
+  - 02 is a broadcast feed, not a locked-off audience wide; only the speech is one shot.
+  - 5d now plays the whole scene with "[bleep] this"; 0c is the short version.
+- **Timeline facts:**
+  - Every sequence marker after the cold open is 4 frames late (the ripple didn't move them), and the 3a bleep marker
+    (t 306.473-306.673) is missing.
+  - Premiere's outPoint reads stale after an `.end` trim.
+  - Both are now in `lanes/premiere/lab-notes.md`.
+- **Mid-rolls land at T 6:21 and 9:14** (the blacks after the Ch3 / Ch4 cliffhangers; the BRIEF said ~6:40 / ~9:20).
+- **AW LESSONS applied (no conflict found with v2's calls; the three freezes in the open sit inside lesson 12's slow-zoom cap):**
+  - 11: every build settles >= 1 s before its cut, which `validate_v2.py` checks. The c2 ledger now holds 1.1 s into seg 52.
+  - 16: each face run drifts once, alternating in/out, <= 3.5 % and <= 0.35 %/s.
+  - 4: date cards enter over 0.8 s.
+  - 13: subtitles style; 17: renders use `-bf 0`.
+- **R3's A1 is ROOM TONE, never digital zero** (the splice lock): extend seg 13 into clean raw, else a room-tone clip.
+- **The caption audit still has to run.** The NEVER-list check passes on today's copy, but most subtitles are placeholders until their
+  text is set (by ear / WhisperX). Run `validate_v2.py` again once they exist.
+- **graphics-plan's `validate-plan.py` does NOT apply here.** It takes cut times from the host-only cuts.json (no inserts) and holds
+  the plan to youtube/default's rhythm law. `validate_v2.py` is this job's gate, against the live readback.
+- **Usage at this checkpoint:** 5-hour window 8 %, weekly all-models 9 %, Fable 0 % (no subagents used in this step).
+- **Creator decisions for the checkpoint** (full list in `brief/cold-open-checkpoint.md`):
+  - R1-R4 OK?
+  - The F2 title style.
+  - Q4 chapter cards.
+  - LOCK 6 "In tears".
+  - The 0c ending.
+  - The 0a freeze frame.
+  - Plus the pending ones below: 4d by ear, the 5c names, re-records, music.
+
 **2026-10-20: STEP 4 GRADE APPLIED by the creator: a master-clip Lumetri on C1359 (bin "THE LAST SHOW (cbum-last-show)"),
 Creative > Look = `grade/cbum-host-grade.cube`, Intensity 100, NO vignette (his call).**
 - It grades every host clip and none of the archive, and it survives re-replays. Don't add Lumetri to timeline clips.
@@ -339,7 +424,7 @@ camera/reading → rough cut EDL (`RENDER=0`) → Premiere (multi-clip replay on
 | 2 | Rough cut | done | `transcript/cuts.json` 154 seg / 5:17 host; dead-air ✓; 2 sonnet reviews ✓; cluster sweep 0 repeats; replayed onto ABW10 › "THE LAST SHOW - rough cut" (154/154, verified, saved) |
 | 3 | Audio polish | done | +8 dB (measured: kept speech -24.6 LUFS) → Hard Limiter -6 dBFS on all 154 A1 clips, read back by name, saved |
 | 4 | Color grade | done (host) | master-clip Lumetri on C1359, Look = grade/cbum-host-grade.cube, no vignette (creator); sat 0.415, corners 1.215 (vignette declined); archive regrade pending |
-| 5 | Graphics | started | INSERTS laid (48 pieces, 11:06, verified, saved); graphics not built yet: re-time the storyboard onto the assembled timeline next |
+| 5 | Graphics | 5a done, 5b prep done | INSERTS laid (48 pieces, 11:06, verified, saved); 5a: `brief/storyboard-v2.{json,md}` + `brief/cold-open-checkpoint.md`, validate_v2.py PASS, face gate 0 reading frames; 5b prep (frame picks, facts, subtitles draft, head lock, SFX shortlist) in `work/storyboard/finds/`; the build waits on the creator's 15 checkpoint answers (ripples R1-R9 + T1, F2, Q4, lock 6, head lock, facts) |
 | 6 | SFX | — | |
 | 7 | Review | — | |
 | 8 | Export | — | the creator exports |

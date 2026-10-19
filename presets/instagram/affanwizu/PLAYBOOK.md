@@ -46,6 +46,9 @@ rebuilds it into `raw/` (gaps kept, sample-exact audio, Gate A checked, `--dur` 
 python presets/instagram/affanwizu/sequence_reference.py "Sequence 31" projects/seq31-short
 ```
 Then transcribe that. Gaps in the sequence stay gaps; a title stretched past the cut on V2 doesn't extend it.
+Speed-changed clips are played at their own speed (Premiere reports their in point divided by the speed: ABW10 Seq 12),
+and the tool aborts if any clip returns less audio than it fills on the timeline. **The first caption line starts at
+`@0.00`, never an empty line:** Premiere lays an .srt's first cue at the drop point, so a late first cue shifts them all.
 
 **Then the English listener** (every job, ~1 min per minute of audio on CPU):
 ```bash

@@ -28,12 +28,13 @@ JSX = r"""(function(){
   for (var i=0;i<app.project.sequences.numSequences;i++) if (app.project.sequences[i].name===NAME) seq=app.project.sequences[i];
   if (!seq) { var n=[]; for (var i=0;i<app.project.sequences.numSequences;i++) n.push(app.project.sequences[i].name); return "ERROR: no "+NAME+" | have: "+n.join(", "); }
   var o={project:app.project.name, name:seq.name, end:seq.end/254016000000, w:seq.frameSizeHorizontal, h:seq.frameSizeVertical, fps:254016000000/Number(seq.timebase), v:[], a:[]};
+  function speed(c){ var r=1; try{ r=Number(c.getSpeed()); }catch(e){} try{ if (c.isSpeedReversed()) r=-r; }catch(e){} return r||1; }
   function motion(c){ var r={}; for (var i=0;i<c.components.numItems;i++){ var k=c.components[i]; if (k.displayName=="Motion"){
       for (var j=0;j<k.properties.numItems;j++){ var p=k.properties[j]; try{ r[p.displayName]=String(p.getValue()); }catch(e){} } } } return r; }
   for (var t=0;t<seq.videoTracks.numTracks;t++){ var tr=seq.videoTracks[t]; for (var i=0;i<tr.clips.numItems;i++){ var c=tr.clips[i];
-     o.v.push({t:t, name:c.name, s:c.start.seconds, e:c.end.seconds, i0:c.inPoint.seconds, path:c.projectItem?c.projectItem.getMediaPath():"", m:motion(c)}); } }
+     o.v.push({t:t, name:c.name, s:c.start.seconds, e:c.end.seconds, i0:c.inPoint.seconds, sp:speed(c), path:c.projectItem?c.projectItem.getMediaPath():"", m:motion(c)}); } }
   for (var t=0;t<seq.audioTracks.numTracks;t++){ var tr=seq.audioTracks[t]; for (var i=0;i<tr.clips.numItems;i++){ var c=tr.clips[i];
-     o.a.push({t:t, name:c.name, s:c.start.seconds, e:c.end.seconds, i0:c.inPoint.seconds, path:c.projectItem?c.projectItem.getMediaPath():""}); } }
+     o.a.push({t:t, name:c.name, s:c.start.seconds, e:c.end.seconds, i0:c.inPoint.seconds, sp:speed(c), path:c.projectItem?c.projectItem.getMediaPath():""}); } }
   return JSON.stringify(o);
 })()"""
 
@@ -54,12 +55,30 @@ def read_sequence(name):
     return json.loads(out[out.index("{"):out.rindex("}") + 1])
 
 
+def src_in(c):
+    """The clip's real in point in its source file. On a speed-changed clip Premiere reports inPoint DIVIDED by the
+    speed (ABW10 Seq 12: 0.8x clips read in=250.04 s on a 215.7 s file; the real in point is 250.04 x 0.8 = 200.03 s).
+    Ignoring it pulled the wrong stretch of the take: 9 s of speech captioned out of 40 s."""
+    return c["i0"] * abs(c.get("sp", 1))
+
+
+def tempo(sp):
+    """ffmpeg atempo chain for a speed (each stage 0.5-2.0): the voice plays at the clip's speed, pitch kept."""
+    out, sp = [], abs(sp)
+    while sp > 2.0: out.append("atempo=2.0"); sp /= 2.0
+    while sp < 0.5: out.append("atempo=0.5"); sp /= 0.5
+    if abs(sp - 1) > 1e-6: out.append(f"atempo={sp:.6f}")
+    return ",".join(out)
+
+
 def rebuild(d, job):
     name = os.path.basename(os.path.normpath(job))
     V = sorted([c for c in d["v"] if c["t"] == 0], key=lambda x: x["s"])
     A = sorted([c for c in d["a"] if c["t"] == 0], key=lambda x: x["s"])
     if not V or not A:
         sys.exit("sequence_reference: V1 or A1 is empty")
+    if any(c.get("sp", 1) < 0 for c in V + A):
+        sys.exit("sequence_reference: a V1/A1 clip is REVERSED; this rebuild doesn't do reverse playback yet")
     end = max(c["e"] for c in V + A)
     tmp = os.path.join(os.environ.get("TMP", "/tmp"), f"seqref_{name}")
     os.makedirs(tmp, exist_ok=True)
@@ -69,8 +88,12 @@ def rebuild(d, job):
         if target > pos:                                          # timeline gap -> silence
             pcm.extend(b"\0" * 4 * (target - pos)); pos = target
         n = round((a["e"] - a["s"]) * SR)
-        raw = subprocess.check_output(["ffmpeg", "-v", "error", "-ss", f"{a['i0']:.6f}", "-i", a["path"], "-t", f"{n / SR:.6f}",
-                                       "-vn", "-ac", "2", "-ar", str(SR), "-f", "s16le", "-"])
+        sp, af = abs(a.get("sp", 1)), tempo(a.get("sp", 1))
+        raw = subprocess.check_output(["ffmpeg", "-v", "error", "-ss", f"{src_in(a):.6f}", "-t", f"{n / SR * sp + 0.05:.6f}", "-i", a["path"],
+                                       "-vn", *(["-af", af] if af else []), "-ac", "2", "-ar", str(SR), "-f", "s16le", "-"])
+        if len(raw) < n * 4 * 0.98:
+            sys.exit(f"sequence_reference: A1 clip at {a['s']:.2f}s returned {len(raw) / 4 / SR:.2f}s of audio for "
+                     f"{n / SR:.2f}s on the timeline (in point {src_in(a):.2f}s, speed {sp}): the read in point is wrong")
         if target < pos:                                          # overlapping clips: the earlier one wins
             raw = raw[(pos - target) * 4:]; n -= pos - target
         raw = raw[:n * 4] + b"\0" * max(0, n * 4 - len(raw))
@@ -95,10 +118,13 @@ def rebuild(d, job):
                                                    "stream=width,height", "-of", "csv=p=0", v["path"]]).decode().strip().split(",")[:2])
         vw, vh = round(sw * sc / 2) * 2, round(sh * sc / 2) * 2
         ox, oy = round(px * W - vw / 2), round(py * H - vh / 2)
-        vf = (f"scale={vw}:{vh},pad={max(W, vw + max(0, ox))}:{max(H, vh + max(0, oy))}:{max(0, ox)}:{max(0, oy)}:black,"
+        sp = abs(v.get("sp", 1))
+        vf = (f"setpts=(PTS-STARTPTS)/{sp:.6f},scale={vw}:{vh},pad={max(W, vw + max(0, ox))}:{max(H, vh + max(0, oy))}:{max(0, ox)}:{max(0, oy)}:black,"
               f"crop={W}:{H}:{max(0, -ox)}:{max(0, -oy)},setsar=1,fps={fps}")
         seg = os.path.join(tmp, f"v{k:04d}.mp4")
-        r = subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{v['i0']:.4f}", "-i", v["path"], "-t", f"{v['e'] - v['s']:.4f}",
+        still = os.path.splitext(v["path"])[1].lower() in (".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tif", ".tiff", ".psd")
+        src = ["-loop", "1", "-i", v["path"]] if still else ["-ss", f"{src_in(v):.4f}", "-i", v["path"]]   # a still is ONE frame
+        r = subprocess.run(["ffmpeg", "-v", "error", "-y", *src, "-t", f"{v['e'] - v['s']:.4f}",          # unless looped (Seq 12)
                             "-map", "0:v:0", "-an", "-vf", vf, "-c:v", "libx264", "-preset", "ultrafast", "-crf", "30", seg],
                            capture_output=True, text=True)
         if r.returncode: sys.exit(f"sequence_reference: picture clip {k} failed: {r.stderr[-400:]}")

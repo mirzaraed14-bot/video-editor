@@ -3,6 +3,22 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-20: "bruv what are these shitty captions" (ABW10 Seq 12) — speed-changed clips + a late first cue
+
+- **Every A1 clip was at 1.1x or 0.8x, and Premiere reports a speed-changed clip's `inPoint` DIVIDED by the speed**
+  (the 0.8x clip read 250.04 s on a 215.7 s file; the real in point is 250.04 × 0.8 = 200.03 s). The rebuild pulled the wrong
+  stretch of the take for all 15 clips: 9.4 s of speech instead of 33.6 s, so the reel got 10 captions of the wrong words.
+  → `sequence_reference.py` reads `getSpeed()`, cuts at in × speed, plays the audio through `atempo` at the clip's speed, and
+  ABORTS when a clip returns less audio than its timeline length. Same quirk logged in `lanes/premiere/lab-notes.md`.
+- **Premiere lays an .srt's FIRST CUE at the drop point, not at 00:00.** v1 started with an empty `@0.00 |`, its first cue sat
+  at 4.13 s, and every caption landed 4.13 s early. → the first line always starts at `@0.00` (their own rule: the first
+  line shows from frame 0); `build.py` prints a ⚠ when the first cue is later than 0.
+- **The picture rebuild gave each still ONE frame**, shifting every later frame (chin read y1330, true y1270).
+  → stills are looped for their timeline length (`sequence_reference.py`).
+- A gate that only checks LENGTH (GATE A) can't see a wrong in point: the audio was exactly 40.583 s and mostly the wrong
+  words. What caught it was the creator's waveform vs my "9 s of speech". → when speech is under ~half the cut on a talking
+  reel, treat the rebuild as suspect before captioning (now also enforced by the short-clip abort).
+
 ## 2026-10-11: a "captions" sequence on his own camera take can be ENGLISH (Seq 44)
 
 I assumed Urdu (every earlier caption job on his C-/CAM- takes was an @affanwizu reel) and started the `--lang ur` pass;

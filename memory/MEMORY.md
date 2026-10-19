@@ -37,8 +37,9 @@
 - [Google Drive = G:](reference-google-drive.md) — Google Drive for desktop mounts his Drive as G:\My Drive; upload = copy there; ~97 % full (2026-10-14)
 - [Viral pick bar](feedback-viral-pick-bar.md) — Affan 2026-10-14 rejected 5/6 batch-3 picks: a moment must END in a usable lesson or a reversed belief on a universal stake; statements/history/self-talk fail (VIRAL-BAR.md gates A-E)
 - [Use the Fable allowance](feedback-use-fable-allowance.md) — Affan 2026-10-14: Fable's weekly pool is separate and was idle; delegate real, high-value agent work to model fable
-- [Usage budget](feedback-usage-budget.md) — Affan 2026-10-15: 6 parallel agents burned ~50 % of the weekly plan in 3 h; on paid credits now: cost estimate first, no agent swarms, fresh small sessions, pause rather than cut quality
+- [Usage budget](feedback-usage-budget.md) — Affan 2026-10-15: 6 parallel agents burned ~50 % of the weekly plan in 3 h; on paid credits now: cost estimate first, no agent swarms, fresh small sessions, pause rather than cut quality; 2026-10-20: weekly low again, he OK'd 6-7 lean parallel subagents
 - [AW shorts session start](reference-aw-shorts-session-start.md) — fresh sessions for AW short passes start at presets/youtube-shorts/abundance-wisdom/SESSION-START.md (recipes, templates, costs)
 - [Reactions max 3:00](feedback-reactions-max-3-min.md) — Affan 2026-10-19: every Onyx reaction ≤ 3 minutes (Instagram stops suggesting longer ones); cut tangents, never verdicts
 - [AW grade is faceless-only](feedback-aw-grade-faceless-only.md) — Affan 2026-10-19: never put the AW After Effects grade on Scott or any face brand; AW head lock is OK where it helps
 - [Head steady across cuts](feedback-head-steady-across-cuts.md) — Affan 2026-10-19: on same-camera jump cuts the head must not move up/down or change size; chained eye head lock + z0 1.2
+- [Work in silence](feedback-work-in-silence.md) — Affan 2026-10-20: never play sound while working (a hidden built-in-browser YouTube tab played 20+ min); ffmpeg to -f null only, no players, close media tabs, silence rule in every subagent brief

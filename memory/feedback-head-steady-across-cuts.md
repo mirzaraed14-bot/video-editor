@@ -14,6 +14,9 @@ there's a cut and the camera angle stays the same the person moves up and down .
 2026-10-20 follow-up: he means real head TRACKING (the AW head lock: the face pinned on every frame, not only matched at cuts), and the
 push-ins must match the Shawn Ryan reference (linear ~8-14 %/s). Kit: `head_track=True`, A `fy_out` 0.32 (eye line), `r` per second.
 
+2026-10-20 Tella feedback: but CALM. "Too poppy": no bouncing, no size-following, no cut zooms, no tiny in-and-out pops. Zoom only
+on emphasis, eased in and back out (he liked the zoom-out on the last line and a quick zoom-in right after a whip). Splits: no tracking.
+
 **How to apply:** on every Short built from his jump-cut sequences (Scott Clary and Onyx samples), turn on the kit's chained eye head
 lock (`head_lock` = joints snapped by `workflows/cut-frames.py`, A shots at z0 1.2) and check eye-line close-ups with a guide line before
 delivery. Related: [[feedback-no-same-camera-punch-ins]].

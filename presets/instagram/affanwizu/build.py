@@ -283,7 +283,9 @@ def build(job_dir, out_path, alpha, until, title, srt_path=None, dur_override=No
         # an EDITABLE caption track for Premiere (drag the .srt onto the timeline): no render, the creator
         # fixes spellings in the Text panel. The look comes from the Premiere caption track style
         # (white-style.md / deep-talks-style.md § Premiere caption track).
-        ts = lambda t: f"{int(t // 3600):02d}:{int(t % 3600 // 60):02d}:{int(t % 60):02d},{int(round(t % 1 * 1000)) % 1000:03d}"
+        def ts(t):                       # whole milliseconds first: 2.9996 s must read 00:00:03,000, never 00:00:02,000
+            ms = int(round(t * 1000))
+            return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
         with open(srt_path, "w", encoding="utf-8") as f:
             n = 0
             for ln in lines:
@@ -292,6 +294,12 @@ def build(job_dir, out_path, alpha, until, title, srt_path=None, dur_override=No
                 n += 1
                 f.write(f"{n}\n{ts(ln['start'])} --> {ts(min(ln['end'], tcap))}\n{ln['text']}\n\n")
         print(f"[affanwizu] SRT {n} captions, {tcap:.2f}s → {srt_path}")
+        first = next((ln["start"] for ln in lines if ln["text"]), 0.0)
+        if first > 0.001:
+            # Premiere lays the FIRST CUE where the .srt is dropped, not 00:00: ABW10 Seq 12 (first cue 4.13 s) landed every
+            # caption 4.13 s early. The creator's first line shows from frame 0 anyway (deep-talks-style.md).
+            print(f"[affanwizu] ⚠ FIRST CUE AT {first:.3f}s, not 0: Premiere drops the track with that cue at the drop point. "
+                  f"Start the first line at @0.00 (their rule), or tell the creator to drop it at {ts(first)}.")
         for ln in lines:
             print(f"  {ln['start']:6.2f}-{ln['end']:6.2f}  {ln['text']}")
         return

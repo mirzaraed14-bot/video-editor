@@ -631,3 +631,13 @@ Always check the EDL bash can actually see before re-splicing.
   ONE frame of the next host clip's head (the host clip shifted to +1 frame, a 1-frame hole after the tail fix). Repair:
   `clip.start = <old start>` on V1 and A1 restores the head (verify by position, not the stale inPoint). The placer now lays
   90 ms short (`projects/cbum-last-show/work/place_inserts.py`); its verify tolerates a ≤ 2-frame in-point snap.
+- **After `trackItem.end = x`, `outPoint` reads back STALE (cbum-last-show 2026-10-20).** `work/fix_cold_open.py` trimmed 0a-b and
+  0a-c with `.end`, and the by-name readback still gives the OLD outPoint (0a-b 1360.476, true 1359.675; 0a-c 1372.354, true
+  1373.122). `end - start` is right. So compute the source out as `inPoint + (end - start)`, never trust `outPoint` after an `.end`
+  trim (`projects/cbum-last-show/work/storyboard/tl.py`).
+- **A by-name ripple (`clip.move()`) does not move the SEQUENCE markers.** After the -0.0667 s cold-open fix every later marker sits
+  4 frames late. Re-set markers by name after any ripple, or key nothing off them.
+- **On a speed-changed clip, `trackItem.inPoint` / `outPoint` read back DIVIDED by the speed (ABW10 Seq 12, 2026-10-20).** A 0.8x
+  clip of a 215.7 s file read in=250.04 s; the real source in point is in × `getSpeed()` = 200.03 s (`outPoint - inPoint` equals the
+  timeline duration, not the source span). Anything that pulls source media off `inPoint` must multiply by `clip.getSpeed()`
+  (and check `isSpeedReversed()`): `presets/instagram/affanwizu/sequence_reference.py` does.
