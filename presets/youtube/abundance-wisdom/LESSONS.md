@@ -73,3 +73,8 @@ rule in this folder's README/PLAYBOOK (none yet: the look still lives in each jo
       starts (decide with a forced-alignment fit of the full text, `fit_test.py`). Last gate: `cluster_sweep.py`, every
       segment's clusters re-heard alone, 0 repeats. → `projects/cbum-last-show/work/` (`slice_asr.py`, `joint_asr.py`, `realign.py`, `words_patch.py`,
       `rebuild.sh`).
+19. **Host grade: the creator took the colour LUT and DECLINED the vignette (cbum-last-show, 2026-10-20).** The LUT pulls the
+    violet wall to slate (saturation 0.68 → 0.42) with skin protected; without the vignette, corners/centre stays ~1.2. Don't
+    re-add a vignette unasked. Apply the host LUT as a MASTER-CLIP effect on the host's source item: it never touches archive
+    inserts and survives re-replays (Premiere 25 cannot script the LUT slot; the master clip is ~1 minute by hand).
+    → `projects/cbum-last-show/grade/cbum-host-grade.cube`, `work/grade/host_grade.py`.

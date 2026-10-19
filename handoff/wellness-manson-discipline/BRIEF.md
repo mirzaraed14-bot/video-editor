@@ -1,6 +1,8 @@
 # wellness-manson-discipline: Onyx sample Short for Wellness + Wisdom (Josh Trent) (batch 3)
 
 ## ▶ STATUS: resume here
+- **2026-10-19: Affan: "manson music needs to be up by 6 dB"** → bed_under_lu 8.5 on both looks (spec + build_spec + work/mix.wav; measured YT 7.8 / IG 8.5 LU under the voice; YT v3 + IG ig4 and the Exports copies replaced; −12.1 / −13.0 LUFS, ≤ −1.7 dBTP). `UNDER=8.5 python projects/_onyx-batch3-2026-10/own_music.py wellness-manson-discipline` reproduces it.
+- **2026-10-19: Affan's OWN MUSIC on both looks:** Gibran Alcocer "Idea 23", his file (copied to `audio/music/`, used as a voice-carved copy `*.voicecarve.wav`, -4 dB around 2.5 kHz), from 0.704 s, 14.5 LU under the voice (YT window-held, turn lift 1 dB; measured 13.8-14.5 LU under). New: yt v3 / ig ig4 (picture stream-copied from the drafts, mix-only). spec.json + build_spec.py now carry this bed (backups `*.bak-own-music`), `<look>/work/mix.wav` is the new mix (old: `mix.epidemic-bed.wav`): picture-only rebuilds keep his music. Script: `projects/_onyx-batch3-2026-10/own_music.py`.
 - **Better than its closest batch-2 sample (Vivian Tu, also a held belief reversed with a receipt):** YT = real receipts where she had
   0 of 16 real inserts and 3 stock actors (Goggins is his own site, the definition is Manson's own article line, marked), a MEASURED slow
   payoff (after the turn 7 shots at 4.0 s vs her 2.59 s) and an archival "then" device; IG = the void frame + line/dim captions instead of

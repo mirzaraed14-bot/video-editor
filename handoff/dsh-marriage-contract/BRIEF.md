@@ -1,6 +1,7 @@
 # dsh-marriage-contract: Onyx sample Short for Digital Social Hour (Sean Kelly) (batch 3)
 
 ## ▶ STATUS: resume here
+- **2026-10-19: Affan's OWN MUSIC on both looks:** G-Eazy "I Mean It (Instrumental)", his file (copied to `audio/music/`, used as a voice-carved copy `*.voicecarve.wav`, -4 dB around 2.5 kHz), from 0.044 s, 14.5 LU under the voice (YT window-held, turn lift 1 dB; measured 13.8-14.5 LU under). New: yt v4 / ig ig3 (picture stream-copied from the drafts, mix-only). spec.json + build_spec.py now carry this bed (backups `*.bak-own-music`), `<look>/work/mix.wav` is the new mix (old: `mix.epidemic-bed.wav`): picture-only rebuilds keep his music. Script: `projects/_onyx-batch3-2026-10/own_music.py`.
 - **21:20: TOPAZ STOPPED (unresolved).** Iris 2x + FI took 28 min for segment 0 alone (89 of 1353 frames): the GPU is pinned at 100 % /
   7.9 GB by a WhisperX run of another session OUTSIDE the lock (`cbum-last-show`, pid 130275, since 19:01), so the whole base would take
   ~7 h and hold the GPU lock from five other agents. Both looks are built on the 1080 base (`base_hq` points at

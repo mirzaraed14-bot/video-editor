@@ -1,6 +1,7 @@
 # priestley-bidding-war: Onyx sample Short for Daniel Priestley (batch 3)
 
 ## ▶ STATUS: resume here
+- **2026-10-19: Affan's OWN MUSIC on both looks:** M83 "Midnight City" (lyrics version: in-point 110 s = the 109-177 s stretch without singing), his file (copied to `audio/music/`, used as a voice-carved copy `*.voicecarve.wav`, -4 dB around 2.5 kHz), from 110.0 s, 14.5 LU under the voice (YT window-held, turn lift 1 dB; measured 13.8-14.5 LU under). New: yt v7 (from v5) / ig ig4 (picture stream-copied from the drafts, mix-only). spec.json + build_spec.py now carry this bed (backups `*.bak-own-music`), `<look>/work/mix.wav` is the new mix (old: `mix.epidemic-bed.wav`): picture-only rebuilds keep his music. Script: `projects/_onyx-batch3-2026-10/own_music.py`.
 - **2026-10-14 22:45 PST: YT v6 = the pre-Topaz YouTube candidate (measured QA PASS, every reviewer finding verified fixed on frames:
   `yt/work/qa-f388-v6.jpg`, `qa-chart-v6.jpg`, `qa-misc-v6.jpg`); IG ig3 (the fixed spec) still queued on the shared render lock; Topaz
   RUNNING on the GPU lock since 22:36 (`work/topaz.log` prints at the end).** When `outputs/priestley-bidding-war.topaz.mov` lands:

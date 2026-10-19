@@ -299,27 +299,123 @@ def main():
     fits = {}
     HL = sorted(spec.get("head_lock", []))   # head lock (AW, Affan 2026-10-19): the joints of a jump-cut run; the face fit restarts at each
 
+    HT = bool(spec.get("head_track"))      # per-frame head tracking (the AW head lock): the head stays pinned on every frame
+
+    def track_eye(key, n_abs, r0, r1):
+        """Head TRACKING (Affan 2026-10-20: "where is the damn head tracking"): on every frame the eye midpoint goes to the same output
+        point and the inter-eye distance to the same size, from a Gaussian-weighted average of the detections within +-8 frames INSIDE the
+        take (never across a cut, sigma 3 frames: no jitter, no lag you can see). Pinned on every frame, so every cut is seamless too.
+        Returns (eye x, eye y, scale) in base px: with head_track the spec's fy_out IS the eye line (~0.32), so a push zooms into the eyes."""
+        ck = ("track", key, r0, r1)
+        if ck not in fits:
+            pf = faces[key]["per_frame"]
+            ks = sorted(int(k) for k in pf if r0 <= int(k) < r1 and len(pf[k]) >= 8)
+            E = {k: ((pf[str(k)][4] + pf[str(k)][6]) / 2, (pf[str(k)][5] + pf[str(k)][7]) / 2,
+                     math.hypot(pf[str(k)][6] - pf[str(k)][4], pf[str(k)][7] - pf[str(k)][5]),
+                     pf[str(k)][0] + pf[str(k)][2] / 2, pf[str(k)][1] + pf[str(k)][3] / 2) for k in ks}
+            if not E:
+                fits[ck] = None
+            else:
+                A = np.array(list(E.values()))
+                fits[ck] = (E, [r0] + [j for j in HL if r0 < j < r1] + [r1], float(np.median(A[:, 3] - A[:, 0])),
+                            float(np.median(A[:, 4] - A[:, 1])), float(np.median(A[:, 2])))
+        if fits[ck] is None:
+            return None
+        E, bounds, dx, dy, ref = fits[ck]
+        a = max(x for x in bounds if x <= n_abs); b = min([x for x in bounds if x > n_abs] or [r1])
+        near = [(k, v) for k, v in E.items() if a <= k < b and abs(k - n_abs) <= 8]
+        if not near:
+            inside = [(k, v) for k, v in E.items() if a <= k < b] or list(E.items())
+            near = [min(inside, key=lambda kv: abs(kv[0] - n_abs))]
+        w = np.array([math.exp(-((k - n_abs) ** 2) / 18.0) for k, _ in near]); V = np.array([v for _, v in near])
+        ex, ey, iod = (float(np.dot(w, V[:, i]) / w.sum()) for i in range(3))
+        return ex, ey, float(np.clip(ref / iod, 0.85, 1.15)) if iod > 0 else 1.0     # the EYES themselves: set fy_out to the eye line (~0.32)
+
+    def eye_track(key, n_abs, r0, r1):
+        """Head lock, chained at the CUTS (Affan 2026-10-19: "his face shouldn't be moving up and down with the cuts"). Anchored on the
+        eyes (a face box slides down a face that looks down). Inside a run of jump cuts [r0, r1) each take holds a static crop placed so
+        that its FIRST frames land exactly where the previous take's LAST frames were (eye midpoint and inter-eye distance, median of
+        up to 4 detections each side), the way an editor matches position keyframes at every cut; one constant offset and one scale
+        normalisation for the whole run keep the face near its framing without breaking any cut. Returns (cx, cy, scale), base px."""
+        ck = ("chain", key, r0, r1)
+        if ck not in fits:
+            pf = faces[key]["per_frame"]; md = lambda v: float(np.median(v))
+            bounds = [r0] + [j for j in HL if r0 < j < r1] + [r1]
+            E = lambda v: ((v[4] + v[6]) / 2, (v[5] + v[7]) / 2, math.hypot(v[6] - v[4], v[7] - v[5]), v[0] + v[2] / 2, v[1] + v[3] / 2)
+            takes = []
+            for a, b in zip(bounds, bounds[1:]):
+                ks = sorted(int(k) for k in pf if a <= int(k) < b and len(pf[k]) >= 8)
+                takes.append((a, b, np.array([E(pf[str(k)]) for k in ks]) if len(ks) >= 2 else None))
+            rows = [t[2] for t in takes if t[2] is not None]
+            if not rows:
+                fits[ck] = {}
+            else:
+                allr = np.vstack(rows); dx, dy = md(allr[:, 3] - allr[:, 0]), md(allr[:, 4] - allr[:, 1])
+                chain, prev = [], None
+                for a, b, R in takes:
+                    if R is None:
+                        chain.append((a, b) + (prev[:3] if prev else (md(allr[:, 0]), md(allr[:, 1]), 1.0))); continue
+                    h, t = R[:4], R[-4:]
+                    if prev is None:
+                        A = (md(R[:, 0]), md(R[:, 1])); sc = 1.0
+                    else:
+                        pax, pay, ps, pt = prev
+                        sc = ps * md(pt[:, 2]) / max(md(h[:, 2]), 1e-6)                     # same eye spacing across the cut
+                        A = (md(h[:, 0]) - (md(pt[:, 0]) - pax) * ps / sc, md(h[:, 1]) - (md(pt[:, 1]) - pay) * ps / sc)
+                    chain.append((a, b, A[0], A[1], sc)); prev = (A[0], A[1], sc, t)
+                meds = [(md(R[:, 0]), md(R[:, 1])) for _, _, R in takes if R is not None]
+                live = [c for c, (_, _, R) in zip(chain, takes) if R is not None]
+                ox = md([m[0] - c[2] for m, c in zip(meds, live)]); oy = md([m[1] - c[3] for m, c in zip(meds, live)])
+                sn = md([c[4] for c in chain])                                                  # run-wide offset + scale: cuts stay matched
+                fits[ck] = {(a, b): (ax + ox + dx, ay + oy + dy, float(np.clip(sc / sn, 0.85, 1.15))) for a, b, ax, ay, sc in chain}
+        for (a, b), v in fits[ck].items():
+            if a <= n_abs < b:
+                return v
+        return None
+
     def face_track(key, n_abs, f0, f1):
         """The face centre (base px) at base frame n_abs: a straight-line fit of the detections INSIDE the shot [f0, f1)
         (a running median flipped between neighbours and shook the crop, QA 2026-10-05); the slope is capped at 2 px/frame."""
+        if HL and faces[key]["per_frame"] and len(next(iter(faces[key]["per_frame"].values()))) >= 8:
+            v = track_eye(key, n_abs, f0, f1) if HT else eye_track(key, n_abs, f0, f1)
+            if v:
+                return v[0] * S, v[1] * S
         if HL:                                   # so after every jump cut the head lands on the same output point (fx_out, fy_out)
             f0 = max([f0] + [j for j in HL if j <= n_abs]); f1 = min([f1] + [j for j in HL if j > n_abs])
         if (key, f0, f1) not in fits:
             f = faces[key]; pf = f["per_frame"]
             ks = [int(k) for k in pf if f0 <= int(k) < f1] or [int(k) for k in pf]
             xs = np.array(ks, float); cx = np.array([pf[str(k)][0] + pf[str(k)][2] / 2 for k in ks])
-            cy = np.median([pf[str(k)][1] + pf[str(k)][3] / 2 for k in ks])
+            cy = np.median([pf[str(k)][1] + pf[str(k)][3] / 2 for k in ks]); fh = float(np.median([pf[str(k)][3] for k in ks]))
             if len(ks) >= 3:
                 b, a0 = np.polyfit(xs, cx, 1); b = float(np.clip(b, -2, 2)); a0 = float(np.mean(cx) - b * np.mean(xs))
             else:
                 b, a0 = 0.0, float(np.mean(cx))
-            fits[(key, f0, f1)] = (a0, b, float(cy))
-        a0, b, cy = fits[(key, f0, f1)]
+            fits[(key, f0, f1)] = (a0, b, float(cy), fh)
+        a0, b, cy, _ = fits[(key, f0, f1)]
         return (a0 + b * n_abs) * S, cy * S
+
+    refh = {}
+
+    def lock_scale(key, n_abs, f0, f1):
+        """Head lock holds the head's SIZE too (Affan 2026-10-19, the calendar Short: 'his face shouldn't be moving up and down with the
+        cuts'): the take's median face height against the whole run's median, clipped to +-12 %."""
+        if (key, f0, f1) not in refh:
+            pf = faces[key]["per_frame"]; hs = [pf[k][3] for k in pf if f0 <= int(k) < f1]
+            refh[(key, f0, f1)] = float(np.median(hs)) if hs else None
+        if faces[key]["per_frame"] and len(next(iter(faces[key]["per_frame"].values()))) >= 8:
+            v = track_eye(key, n_abs, f0, f1) if HT else eye_track(key, n_abs, f0, f1)
+            return v[2] if v else 1.0
+        ref = refh[(key, f0, f1)]; face_track(key, n_abs, f0, f1)
+        g0 = max([f0] + [j for j in HL if j <= n_abs]); g1 = min([f1] + [j for j in HL if j > n_abs])
+        seg = fits.get((key, g0, g1), (0, 0, 0, None))[3]
+        return 1.0 if not ref or not seg else float(np.clip(ref / seg, 0.88, 1.12))
 
     def render_A(base_rgb, key, n_abs, fx_out, fy_out, z0, r, u, out_w, out_h, panel_h=None, rng=(0, 10 ** 9)):
         k = max(out_w / BW, (panel_h or out_h) / BH) * z0 * (1 + r * u)
         fx, fy = face_track(key, n_abs, *rng)
+        if HL:                                   # same size after every jump; needs z0 >= ~1.2 so the crop has room to hold the height too
+            k *= lock_scale(key, n_abs, *rng)
         x0, y0 = view(BW, BH, fx, fy, k, out_w, panel_h or out_h, fx_out, fy_out)
         return warp(base_rgb, k, x0, y0, out_w, out_h)
 

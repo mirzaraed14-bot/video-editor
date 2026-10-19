@@ -626,3 +626,8 @@ Always check the EDL bash can actually see before re-splicing.
 - **Creating a sequence while another session works:** `createNewSequenceFromClips` opens (activates) the new sequence,
   so it ran inside ACTIVE-WINDOW.lock for ~1.5 s. `openSequence(prevId)` restored the other session's sequence, proven by
   DOM + QE reads. Everything else (import of ONE file, clear, replay in chunks of 30, verify, save) was by name.
+- **"Lay it 20 ms short, then extend the end" is NOT enough for a 25 fps source on a 59.94 timeline (cbum-last-show 2026-10-19).**
+  `setInPoint` snapped the 25 fps THE END clip's in point 51 ms early to its own frame grid, so the short overwrite still covered
+  ONE frame of the next host clip's head (the host clip shifted to +1 frame, a 1-frame hole after the tail fix). Repair:
+  `clip.start = <old start>` on V1 and A1 restores the head (verify by position, not the stale inPoint). The placer now lays
+  90 ms short (`projects/cbum-last-show/work/place_inserts.py`); its verify tolerates a ≤ 2-frame in-point snap.

@@ -1,6 +1,7 @@
 # moonshots-cathie-no-job: Onyx sample Short for Moonshots (Peter Diamandis) (batch 3)
 
 ## ▶ STATUS: resume here
+- **2026-10-19: Affan's OWN MUSIC on both looks:** "Thelema", his file (copied to `audio/music/`, used as a voice-carved copy `*.voicecarve.wav`, -4 dB around 2.5 kHz), from 2.724 s, 14.5 LU under the voice (YT window-held, turn lift 1 dB; measured 13.8-14.5 LU under). New: yt v4 / ig ig5 (picture stream-copied from the drafts, mix-only). spec.json + build_spec.py now carry this bed (backups `*.bak-own-music`), `<look>/work/mix.wav` is the new mix (old: `mix.epidemic-bed.wav`): picture-only rebuilds keep his music. Script: `projects/_onyx-batch3-2026-10/own_music.py`.
 - **2026-10-14 22:45: DRAFTS PASS, WAITING ON TOPAZ.** YT v2 (1080p base) measured: decode clean, 1442 f, captions = 132 words, caption
   line on the seam y 1092, payoff report 2.51 s before the turn / 3.29 s after → v3 merges the interview shot into the laptop shot (after-turn
   mean ≈ 3.6 s), last shot 5.33 s; Peter z0 1.35 so his "POWERED BY MOONSHOTS" shirt print sits under the captions; charts start with

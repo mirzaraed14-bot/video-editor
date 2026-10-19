@@ -1,6 +1,132 @@
 # RUN — cbum-last-show ("THE LAST SHOW", Chris Bumstead, Abundance Wisdom long-form #3)
 
 ## ▶ STATUS: resume here
+**2026-10-20: STEP 4 GRADE APPLIED by the creator: a master-clip Lumetri on C1359 (bin "THE LAST SHOW (cbum-last-show)"),
+Creative > Look = `grade/cbum-host-grade.cube`, Intensity 100, NO vignette (his call).**
+- It grades every host clip and none of the archive, and it survives re-replays. Don't add Lumetri to timeline clips.
+- **Measured over the cut, LUT only** (`work/grade/measure.json`):
+  - saturation 0.68 → 0.415 ✓, whites 0.63 ✓, blacks neutral ✓.
+  - corners/centre stays 1.215: the BRIEF target ≤ 0.70 is NOT met without the vignette, because the LUT darkens the wall
+    and the centre patch alike. The creator declined the vignette; offer a softer one only if he asks.
+- **Archive regrade** (BRIEF decision 9: event footage low-key, teal shadows, amber skin) is still to do, at the
+  graphics/finishing step.
+
+**2026-10-20 ~01:30: ASSEMBLED EDIT VERIFIED BY EAR-PROXY, 11:05.97, SAVED (ABW10 › "THE LAST SHOW - rough cut").**
+- **Joint hearing** (`work/insert_joints.py` → `work/insert-joints.md`): every joint touching an insert, rebuilt from
+  Premiere's ACTUAL in/outs, plus all 48 pieces heard alone.
+  - Two real defects, both in the cold open, FIXED by one by-name ripple (`work/fix_cold_open.py`; 199 clips moved once,
+    verified, saved):
+    - 0a-b's tail leaked "They're g-": out 1360.48 → 1359.66.
+    - 0a-c clipped "Bumstead": out 1372.35 → 1373.10.
+  - The other 32 flags were stitch/mishear artifacts: each piece is clean heard alone, "Maybe" is present in 5e-b, and
+    5a-a ends on "goal.".
+- **Locks:** LOCK 4 ✓ ("IgA", p 0.82). Locks 1, 2, 3, 5 and 6 have verdicts above; LOCK 7 goes to the mix. The B1 posing
+  audio carries crowd chatter + arena music: duck it.
+- **The rest of the 01:00 block below still holds** (NEXT + creator decisions).
+
+**2026-10-20 ~00:30: THE ASSEMBLED EDIT IS ON THE TIMELINE: ABW10 › "THE LAST SHOW - rough cut", 11:06, SAVED.**
+- **On the timeline:**
+  - 154 host clips + 48 clip pieces on V1/A1 (202 + 202).
+  - Every piece is frame-exact against `brief/insert-plan.json`.
+  - Host V1+A1 are exactly shifted. The 154 host audio chains (+8 dB → -6 dBFS) rode along; the 48 inserted clips carry
+    no chain yet (their levels are the mix step's).
+  - Two empty gaps by design: the TITLE (75.33-81.33) and the Instagram TEXT CARD (265.87-269.37).
+  - 8 sequence markers: the bleeps (3a, 5a-b, 5d), 0c's picture-out, 4d's subtitles-by-ear, 5c not-Chris ×2, and the gaps.
+- **Tools and records:**
+  - `work/place_inserts.py` (by name; `--plan` / `--apply` / `--verify`).
+  - Backup before the inserts: `premiere/rough-cut-before-inserts.xml` + `premiere/seq-before-inserts.json`.
+  - Layout: `premiere/inserts-layout.json`.
+  - One repair was needed: the 25 fps THE END source snapped 4f-b's in point and its overwrite ate 1 frame of the next
+    host head; it was restored, and lab-notes + the placer margin are fixed.
+- **Picks:** B1 posing = 135.5-142.5 (by eye). The END source was the creator's download (no direct download possible).
+- **NEXT** (none of these are done):
+  - Step 4 grade: the creator's 1-min hand step, or the baked-copy option. ⚠ A V2 adjustment layer now also covers the
+    archive: cut it at every insert or skip it over the archive.
+  - Step 5 graphics: re-time the storyboard onto THIS timeline (`premiere/inserts-layout.json` + `work/assembly.py`).
+  - The 2.39 band and the archive regrade.
+  - Date cards, subtitles (third-party / rough audio), the title and the cards.
+  - Step 6 SFX, the mix (ARENA MUSIC under 4a/2b-2d/B1 ducked to -30 dB or replaced, lock 7), the bleeps, the ending
+    (black → "Maybe. Maybe not." card → 15-20 s end screen).
+- **Creator decisions pending:**
+  - LOCK 6 "In tears": not visible, so re-record "Emotional." or drop it.
+  - 4d subtitle text BY EAR.
+  - 5c speakers' NAMES.
+  - Re-records: "On top", #31-32, "in Prague".
+  - Confirm "2026" and "mental space".
+  - The grade route.
+  - Music (he lays his own).
+- **The hung GPU job** (python 12452/58516 from 19:54) may still pin the GPU: ask the creator to end it in Task Manager.
+
+**2026-10-19 ~22:30: INSERTS in progress (the clips between the host lines). VIDEO 01 IS IN** (`broll/01_CBum_2024-11_THE-END.mp4`,
+the creator's download, 30:16, 1080p25).
+- **Clip in/outs:** WhisperX word timings of each source window (`transcript/windows.json` → `transcript/windows/*.json`,
+  `work/transcribe-windows.py`). Matched by `work/inserts_match.py` → `work/inserts-match.{json,md}`.
+  - 17 of 20 clips matched cleanly.
+  - 2a, 2c and 5a needed the full speech (02) and the vlog (09, 0-210 s): the script's caption timestamps were off.
+  - 01's windows are w01_1300 (0a/4a/4d) and w01_1690 (4f/4e).
+  - **These four windows are transcribing on CPU** (`WIN_DEVICE=cpu`). The 19:54 GPU run HUNG; its python 12452/58516
+    is still alive (killing was refused here) and the GPU sits at 100 %, 7.7 GB. The creator may need to end it.
+- **Voiceprints** (`work/voiceprint.py` → `work/voiceprint.json`; Chris refs 06 + 09 agree at 0.65):
+  - LOCK 1 ✓: the trailer's "I can't do this… afraid I was going to die" = CHRIS (0.49-0.66); "Do you feel
+    fearful?" = the interviewer.
+  - LOCK 2: 5c "he's Superman…" and "People perceive…" are NOT Chris (≈0). They are the young man and the woman
+    (likely his wife) the trailer interviews. Their names are needed for the captions: ask the creator.
+  - LOCK 3: 5b = CHRIS (0.64/0.54), not Hany.
+- **INSERT PLAN** `brief/insert-plan.json` (`work/make_insert_plan.py`): 38 pieces, 4:08 of clips; 0a/4a/4d/4e/4f PENDING (the
+  01 windows are transcribing on CPU). All 18 hand-offs match the real last line of each host block.
+  - 2a is kept WHOLE (98.0-124.25, incl. "six Olympias around my neck… who I became along the way": no grafts).
+  - 2c is 4 pieces cut at real gaps (WhisperX dropped 3 stretches; recovered by slice re-ASR + `work/falign.py` forced
+    alignment), ending on the complete "…that means so much more."
+  - 5a-b "I still am fucking very human" gets the f-word BLEEPED (115.4-116.3).
+  - Assembled runtime ≈ 9:34 + the five 01 clips ≈ 12:10 (`work/assembly.py`).
+- **LOCK 4 (IgA) ✓:** WhisperX writes "IgA disease" at 101.16 (p 0.82) in 1b, so caption it "IgA". **Lock 7** (arena music)
+  belongs to the mix and is still live under 4a / 2b-2d / B1.
+- **Joint hearing:** `work/insert_joints.py` (running) checks every insert joint as Premiere actually laid it (each source
+  snaps its in point to its own frame grid). Verdicts go in `work/insert-joints.md`.
+- **LOCK 6 ("in tears")**, full-res face crops of the speech: he is visibly emotional (eyes closed, lips pressed, glassy
+  eyes) but NO visible tears in this footage. Fallback: re-record "Emotional." or drop "In tears" from the take.
+  CREATOR'S CALL.
+- **LOCK 5** also covers 2a 2b 2c 2d 5a: the speech is one stage shot, no audience cutaways; 5a is Chris alone.
+  Clean. The 01 clips are still to check.
+- **LOCK 5 (no daughters)**, by eye on 1 fps sheets (`work/clip_sheets.py`): 0b 0c 1a 1b 1c 3a 3b 3c 4b 4c 5b 5c 5d 5e
+  are all clean. Still to check: 2a, 2c, 5a (09 mentions "now having a child"), and the 01 clips.
+- **Notes for the build:**
+  - **5d contains "Like, fuck this."** (~57-58 s in the trailer): BLEEP it. 0c's pieces skip it.
+  - 0c picture out at 61.94 (the trailer's PERFECTION card follows).
+  - 4b shows the real IFBB scorecard (178-194 s), the source for the scorecard freeze.
+  - 1c carries a Generation Iron logo bottom-left, mostly inside the 2.39 band crop.
+
+**2026-10-19 ~16:00: step 4 BLOCKED on ONE hand step; step 5a (graphics plan) STARTED.**
+- **What the creator asked:** "apply the cc yourself via adjustment layer". It can't be done exactly on this machine:
+  - the LUT slot is not scriptable (lab-notes; the grade-lut.py file-write path needs Premiere 26 params and a closed
+    project);
+  - ABW10 holds NO Adjustment Layer item and NO Lumetri anywhere (`work/grade/lumetri-probe.json`);
+  - scripting cannot construct one, and the Premiere 26 donor imports nothing on 25.0.
+  - A dial-only rebuild of v4 was REJECTED: global WB/saturation greys the face (v1), and there is no program render to
+    verify it with.
+- **Options given to the creator:**
+  - (a) ~1 min by hand: File › New › Adjustment Layer → V2 → Lumetri → Creative › Look = `grade\cbum-host-grade.cube`
+    + the 4 Vignette dials;
+  - (b) a baked graded copy of C1359 swapped in by script (exact, no clicks, not adjustable in Premiere, a big render).
+  - Default: wait for (a).
+- ⚠ **An adjustment layer spanning V2 grades every ARCHIVE clip inserted on V1 later.** That is wrong: the archive gets
+  its own low-key regrade, and the violet-wall correction would damage it. So the GRADE clip must be CUT at every archive
+  insert (or the archive sits on a track above it). The master-clip plan avoided this.
+- **Someone else (the creator or the other session) made "THE LAST SHOW - rough cut" the ACTIVE sequence (~15:50).**
+  Re-check who is in it before any lock window.
+
+**2026-10-19 ~15:30: grade v4 APPROVED by the creator. He applies it BY HAND as a master-clip effect on C1359 (the clicks
+were sent), then exports 3 stills → `grade/check/check1..3.png`. Then run `python work/grade/verify_frames.py` (job folder).**
+- **The LUT** lives at `grade/cbum-host-grade.cube`, a durable copy of `work/grade/`.
+- **Starting Vignette values:** Amount -2.0, Midpoint 35, Roundness 0, Feather 70 (no lane notes on Lumetri's vignette
+  maths). Tune from the ring gains `verify_frames.py` prints.
+- **Why stills by hand:**
+  - QE exportFramePNG throws on this machine (lab-notes 2026-09-13 / 10-09).
+  - exportAsMediaDirect is off-limits on his projects (memory).
+  - A window grab would flip his timeline while he edits another sequence.
+- **Picks** (timeline → source, all on camera): 00:00:01:45 → 61.67 · 00:00:21:59 → 123.632 · 00:00:46:57 → 241.6.
+  References are in `work/grade/verify/`. The footage is bt709/tv, ffmpeg's decode = an explicit 709 decode (0 diff).
+
 **2026-10-19 ~15:00: STEP 4 host grade BUILT OFFLINE (v4); before/after sent; waiting on the creator's OK, then the creator
 applies it by hand once (Premiere's scripting cannot set a Lumetri LUT).**
 - **Build:** `work/grade/host_grade.py` writes `work/grade/cbum-host-grade.cube` (33^3) and the vignette, measured with
@@ -212,8 +338,8 @@ camera/reading → rough cut EDL (`RENDER=0`) → Premiere (multi-clip replay on
 | 1 | Intake | done | `raw/C1359.MP4` copied (C1361 was the wrong file, parked); script + sources in `brief/` |
 | 2 | Rough cut | done | `transcript/cuts.json` 154 seg / 5:17 host; dead-air ✓; 2 sonnet reviews ✓; cluster sweep 0 repeats; replayed onto ABW10 › "THE LAST SHOW - rough cut" (154/154, verified, saved) |
 | 3 | Audio polish | done | +8 dB (measured: kept speech -24.6 LUFS) → Hard Limiter -6 dBFS on all 154 A1 clips, read back by name, saved |
-| 4 | Color grade | built, awaiting OK | host LUT + vignette v4 measured (sat 0.415, corners 0.665, whites 0.51); not on the timeline yet |
-| 5 | Graphics | — | storyboard first (FX codes), cold open + title built to final first |
+| 4 | Color grade | done (host) | master-clip Lumetri on C1359, Look = grade/cbum-host-grade.cube, no vignette (creator); sat 0.415, corners 1.215 (vignette declined); archive regrade pending |
+| 5 | Graphics | started | INSERTS laid (48 pieces, 11:06, verified, saved); graphics not built yet: re-time the storyboard onto the assembled timeline next |
 | 6 | SFX | — | |
 | 7 | Review | — | |
 | 8 | Export | — | the creator exports |
@@ -226,7 +352,7 @@ camera/reading → rough cut EDL (`RENDER=0`) → Premiere (multi-clip replay on
 ## Sources: download log (probe each on landing: height ≥ 720, H.264, duration ≈ the YouTube length)
 | # | file | status |
 |---|---|---|
-| 01 | `01_CBum_2024-11_THE-END.mp4` | **MISSING** (not in the 2026-10-19 IDM batch): the creator to fetch https://www.youtube.com/watch?v=X0LLRvrSWu8 |
+| 01 | `01_CBum_2024-11_THE-END.mp4` | IN 2026-10-19 22:15 (the creator's download, copied from ~/Downloads), h264 1080p 25, 1816.4 s; video starts +0.040 s after audio (1 frame, harmless in Premiere) |
 | 02 | `02_CBum_2024-10_Retirement-speech.mp4` | IN 2026-10-19 (IDM), h264 1080p 29.97, 427.2 s; the 360p stand-in is now obsolete |
 | 03 | `03_CBum_2026-10_The-Standard-trailer.mp4` | IN, 1080p, 24000/1001, 124 s |
 | 04 | `04_CBum_2018-09_Hospital.mp4` | IN (IDM), h264 1080p 59.94, 1697.4 s |

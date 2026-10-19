@@ -7,8 +7,8 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Daymond John: the 50 FUBU shirts (`fubu-50-shirts`) | 2026-10-15 | 44.1 s | Daymond listening + "DAYMOND JOHN" card; Scott: "some of the sh*t you did was very impressive" | not locked before delivery (routine started 2026-10-19); if still unposted: 5K-40K · fails if FUBU-and-rappers is a story already clipped | | | | | | | | |
 | 2 | Daymond John: the Shark who was WRONG about Bombas (`bombas-shark-was-wrong`) | 2026-10-17 | 38.7 s | "I have the number one invested Shark Tank product ever" + "DAYMOND JOHN" card + the sock | not locked before delivery; if still unposted: 8K-60K · fails if the Elmo turn reads as a joke with no lesson | | | | | | | | |
-| 3 | Ryan Serhant: the bank CEO's empty calendar (`serhant-empty-calendar`) | planned | ~45 s | Scott: "What habits do 10-figure people have?" (no name; credit at ~3 s) | **3K-30K** · the payoff is a sentence, not a picture: without a real calendar visual the reversal lands flat (locked 2026-10-19) | | | | | | | | |
-| 4 | Ryan Serhant: pitched 50 shows, one yes (`serhant-50-pitches`) | planned | ~50 s | "A lot of people get on reality TV and then they become irrelevant" (no name) | **3K-25K** · reads as bragging ("my fifth show") unless "what else can we do?" lands as the button (locked 2026-10-19) | | | | | | | | |
+| 3 | Ryan Serhant: the bank CEO's empty calendar (`serhant-empty-calendar`) | 2026-10-19 (30 fps, no Topaz: GPU jammed) | 33.4 s | Scott: "What habits do 10-figure people have?" (no name; credit at ~3 s) | **3K-30K** · the payoff is a sentence, not a picture: without a real calendar visual the reversal lands flat (locked 2026-10-19) | | | | | | | | |
+| 4 | Ryan Serhant: pitched 50 shows, one yes (`serhant-50-pitches`) | 2026-10-19 (60 fps) | 53.1 s | "A lot of people get on reality TV and then they become irrelevant" (no name) | **3K-25K** · reads as bragging ("my fifth show") unless "what else can we do?" lands as the button (locked 2026-10-19) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
 
@@ -26,3 +26,5 @@ universal persistence number with a picture; "what else can we do?" is a questio
 |---|---|---|
 | 3 | Ryan Serhant saw a bank CEO's calendar. It was almost empty. | `projects/_client-scott-clary/serhant-empty-calendar/thumbnail.jpg` ("HIS CALENDAR / WAS EMPTY", teal EMPTY; photo: Ryan outside the SERHANT office) |
 | 4 | Ryan Serhant pitched 50 TV shows. One got picked up. Now he's on Netflix. | `projects/_client-scott-clary/serhant-50-pitches/thumbnail.jpg` ("50 PITCHES / ONE YES", teal YES; photo: the Owning Manhattan premiere) |
+
+Licensing flag (2026-10-19): the #4 thumbnail photo is a Getty image (gettyimages-2158515218, via CBS); swap it for an official Netflix / SERHANT press still before posting. The #3 photo comes from Parade (credit not shown on the page).

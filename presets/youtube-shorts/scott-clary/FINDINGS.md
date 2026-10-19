@@ -26,3 +26,4 @@
 
 ## Fact-check log
 - 2026-10-19: "3,000 other agents" matches Inman (2010 open casting call); Sell It Like Serhant premiered April 2018 (Bravo).
+- 2026-10-19: Serhant clip 1 captions corrected by Affan: WhisperX "Bravo maybe said" = "Bravo said"; "in Millionaire are listening" = "in Million Dollar Listing".

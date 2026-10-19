@@ -1,6 +1,7 @@
 # tftc-hospital-bill: Onyx sample Short for TFTC (Marty Bent) (batch 3)
 
 ## ▶ STATUS: resume here
+- **2026-10-19: Affan's OWN MUSIC on both looks:** Seekae "Test & Recognise" (Flume re-work, slowed; vocals almost throughout: in-point 313 s = the vocal-free full-level outro), his file (copied to `audio/music/`, used as a voice-carved copy `*.voicecarve.wav`, -4 dB around 2.5 kHz), from 313.0 s, 14.5 LU under the voice (YT window-held, turn lift 1 dB; measured 13.8-14.5 LU under). New: yt v2 / ig v4 (picture stream-copied from the drafts, mix-only). spec.json + build_spec.py now carry this bed (backups `*.bak-own-music`), `<look>/work/mix.wav` is the new mix (old: `mix.epidemic-bed.wav`): picture-only rebuilds keep his music. Script: `projects/_onyx-batch3-2026-10/own_music.py`.
 - **2026-10-14 22:40 (build agent): TOPAZ STOPPED, both looks ship on the 1080p base.** `topaz-iris.py` (Iris 2x + FI, 8 takes) held the GPU lock
   from 21:18 and finished ONE 114-frame take in 73 min (the GPU was saturated by Affan's own Topaz Video AI session plus other agents' jobs);
   the remaining 800 frames would have taken the night while two other agents' Topaz runs queued behind it. Killed (my process only), the stale

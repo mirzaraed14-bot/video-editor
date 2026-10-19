@@ -41,3 +41,4 @@
 - [AW shorts session start](reference-aw-shorts-session-start.md) — fresh sessions for AW short passes start at presets/youtube-shorts/abundance-wisdom/SESSION-START.md (recipes, templates, costs)
 - [Reactions max 3:00](feedback-reactions-max-3-min.md) — Affan 2026-10-19: every Onyx reaction ≤ 3 minutes (Instagram stops suggesting longer ones); cut tangents, never verdicts
 - [AW grade is faceless-only](feedback-aw-grade-faceless-only.md) — Affan 2026-10-19: never put the AW After Effects grade on Scott or any face brand; AW head lock is OK where it helps
+- [Head steady across cuts](feedback-head-steady-across-cuts.md) — Affan 2026-10-19: on same-camera jump cuts the head must not move up/down or change size; chained eye head lock + z0 1.2
