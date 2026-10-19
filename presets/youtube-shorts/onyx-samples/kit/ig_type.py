@@ -7,6 +7,8 @@ here with the real font files (PIL) and written into the HTML with an explicit l
 
   layout_stack(words, cap)   -> {"lines": [{"role", "words": [i, ...], "size", "lh", "w"}], "h": px}
   cap_height(chunk, cap)     -> the px height of one caption chunk in its mode (stack / word / line)
+  frame(spec)                -> the picture's window {x, y, w, h, radius}; spec.frame = "window" (default) | "square" | "void" | a dict
+  bars(FR), hook_y(FR), credit_y(FR)   -> the letterbox bands inside the safe zone and the default hook / credit positions per frame
 """
 import os
 from PIL import ImageFont
@@ -31,12 +33,54 @@ _cache = {}
 # The v2 letterbox window (research § d): measured on Stealth Motion's 512K reel (picture 1044 x 899 at x 22, bars 507 / 514, corner
 # radius 64-80), rounded to an even 900 and centred: bars 510 / 510, which keeps the whole window inside the repo's 200 -> 1620 band.
 FRAME = dict(x=18, y=510, w=1044, h=900, radius=64)
+# Batch 3 (STYLE-RESEARCH § E1, 2026-10-14): one composition PER SHOW, named. "window" = the batch-2 default above.
+#   square  Chris Williamson's list reels (620K in 3 days), measured on 10 frames: bars 470 / 470, sides 50 / 50 -> 980 x 980 at
+#           x 50, y 470, corners r ~40; the picture gains 80 px of height over the window.
+#   void    Mark Brazil (554K, 177K): NO bars; the picture is full-bleed and a dark set is crushed to black (ig_window's "crush" +
+#           a 35 % vignette), so the set's own darkness is the letterbox. For dark sets only: a bright set just goes grey.
+PRESETS = {"window": FRAME, "square": dict(x=50, y=470, w=980, h=980, radius=40), "void": dict(x=0, y=0, w=1080, h=1920, radius=0)}
+SAFE_TOP, SAFE_BOTTOM = 200, 1620        # the repo's short-form safe band: key visuals only inside y 200 -> 1620
+
+
+def frame_spec(spec):
+    """spec.frame as a dict: "square" -> {"preset": "square"}; a dict passes through; absent -> {}."""
+    f = spec.get("frame", {})
+    return {"preset": f} if isinstance(f, str) else dict(f or {})
 
 
 def frame(spec):
-    """The window of a v2 spec (spec.frame overrides any key; e.g. the 4:3 square-cornered variant {"x": 0, "y": 555, "w": 1080,
-    "h": 810, "radius": 0}, Valueclippss)."""
-    return {**FRAME, **{k: v for k, v in spec.get("frame", {}).items() if k in FRAME}}
+    """The window of a v2 spec. spec.frame is a preset name ("window" | "square" | "void") or a dict whose keys override the preset's
+    (e.g. {"preset": "square", "radius": 48}; the batch-2 4:3 square-cornered variant {"x": 0, "y": 555, "w": 1080, "h": 810,
+    "radius": 0}, Valueclippss). A spec without "frame" gets the batch-2 window, exactly as before."""
+    f = frame_spec(spec)
+    base = PRESETS.get(f.get("preset", "window"))
+    if base is None:
+        raise SystemExit(f"ig_type: frame preset '{f.get('preset')}' is not one of {sorted(PRESETS)}")
+    return {**base, **{k: v for k, v in f.items() if k in FRAME}}
+
+
+def is_void(spec):
+    return frame_spec(spec).get("preset") == "void"
+
+
+def bars(FR):
+    """The letterbox bars' usable bands inside the safe zone: {"top": (y0, y1), "bottom": (y0, y1)}; a band is None when the frame
+    leaves no bar there (void)."""
+    top = (SAFE_TOP, FR["y"]) if FR["y"] - SAFE_TOP >= 120 else None
+    bottom = (FR["y"] + FR["h"], SAFE_BOTTOM) if SAFE_BOTTOM - FR["y"] - FR["h"] >= 120 else None
+    return {"top": top, "bottom": bottom}
+
+
+def hook_y(FR):
+    """The hook's default centre: mid top bar (window 365, square 345); with no top bar (void) y 340, in the set's dark space above
+    the head and inside the safe band."""
+    return (SAFE_TOP + FR["y"]) / 2 + 10 if bars(FR)["top"] else 340
+
+
+def credit_y(FR):
+    """The credit's default top: 90 px under the window (window 1500, square 1540); void: 1570 (inside the safe band)."""
+    y = FR["y"] + FR["h"] + 90
+    return y if y + 30 <= SAFE_BOTTOM else 1570
 
 
 def font(key, size):

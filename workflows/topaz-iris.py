@@ -59,8 +59,9 @@ def run(cmd, env):
         sys.exit("topaz-iris: ffmpeg failed:\n" + p.stderr[-3000:])
 
 
-def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True):
+def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True, mult=1):
     w, h, fps, n = probe(src)
+    num, den = (int(x) for x in (fps.split("/") + ["1"])[:2]); fps_out = f"{num * mult}/{den}"   # --fps-mult: Chronos makes the new frames
     down_w = int(round(w * out_scale / 4 / 2)) * 2        # Iris runs x4: pre-scale so the output is out_scale x the input
     chain = []
     if stab:
@@ -69,11 +70,13 @@ def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True):
              CPE.format(cpe=esc(cpe)), "-f", "null", "-"], env)
         chain.append(STB.format(cpe=esc(cpe)))
     if fi:
-        chain.append(FI)
+        chain.append(FI if mult == 1 else FI.replace("rdt=0.01:", f"rdt=0.01:fps={num * mult / den:g}:"))
     chain += ([f"scale={down_w}:-2", IRIS] if iris else []) + ["scale=out_color_matrix=bt709"]
+    if fi and mult > 1:
+        chain.append("tpad=stop_mode=clone:stop=1")   # Chronos at N x returns N*n - 1 frames (nothing after the last): repeat the last one
     run([TFFMPEG, "-hide_banner", "-nostdin", "-y", "-nostats", "-i", src, *SWS, "-filter_complex", ",".join(chain),
          "-an", "-c:v", "prores_ks", "-profile:v", "3", "-pix_fmt", "yuv422p10le", "-color_primaries", "bt709",
-         "-color_trc", "bt709", "-colorspace", "bt709", "-r", fps, "-frames:v", str(n), dst], env)   # Topaz appends a duplicate last frame
+         "-color_trc", "bt709", "-colorspace", "bt709", "-r", fps_out, "-frames:v", str(n * mult), dst], env)   # Topaz appends a duplicate last frame
     ow, oh, _, on = probe(dst)
     return (w, h, n), (ow, oh, on)
 
@@ -84,6 +87,7 @@ def main():
     ap.add_argument("--out-scale", type=float, default=1.0)
     ap.add_argument("--segments", default="")
     ap.add_argument("--no-stab", action="store_true"); ap.add_argument("--no-fi", action="store_true")
+    ap.add_argument("--fps-mult", type=int, default=1)     # 2 = double the frame rate with Chronos (30 -> 60), per take so it never blends across a cut
     ap.add_argument("--no-enhance", action="store_true")      # frame interpolation (and/or stabilisation) only: no Iris, output = input size
     a = ap.parse_args()
     if not os.path.exists(TFFMPEG):
@@ -100,10 +104,15 @@ def main():
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a.src, "-vf", f"select='between(n\\,{s}\\,{e - 1})',setpts=N/FRAME_RATE/TB",
                             "-an", "-c:v", "ffv1", "-r", fps, seg], check=True)
             out = os.path.join(tmp, f"up{i:02d}.mov")
-            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance)
-            flag = "" if on == inn else f"  ⚠ frame count {inn} -> {on}"
-            if on != inn and not a.no_fi:      # Chronos can return a static take short (Harbinger lost 8 frames): redo it without FI
+            M = a.fps_mult
+            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance, mult=M)
+            flag = "" if on == inn * M else f"  ⚠ frame count {inn} -> {on}"
+            if on != inn * M and not a.no_fi:      # Chronos can return a static take short (Harbinger lost 8 frames): redo it without FI
                 (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, False, env, tmp, iris=not a.no_enhance)
+                if M > 1:                         # ... and repeat each frame M times so the timeline still matches
+                    dup = out.replace(".mov", "-dup.mov"); num, den = (int(x) for x in (probe(out)[2].split("/") + ["1"])[:2])
+                    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-vf", f"fps={num * M}/{den}", "-c:v", "prores_ks", "-profile:v", "3",
+                                    "-pix_fmt", "yuv422p10le", "-frames:v", str(inn * M), dup], check=True); shutil.move(dup, out); on = probe(out)[3]
                 flag += f" -> redone WITHOUT frame interpolation: {on} frames"
             print(f"  take {i + 1}: frames {s}-{e - 1} ({inn} f) {iw}x{ih} -> {ow}x{oh}{flag}")
             parts.append(out)
@@ -114,7 +123,7 @@ def main():
             open(lst, "w", encoding="utf-8").write("".join(f"file '{p.replace(os.sep, '/')}'\n" for p in parts))
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", a.dst], check=True)
         ow, oh, _, on = probe(a.dst)
-        print(f"✓ {a.dst}: {ow}x{oh}, {on} frames (input {n})" + ("" if on == n else "  ⚠ FRAME COUNT CHANGED"))
+        print(f"✓ {a.dst}: {ow}x{oh}, {on} frames (input {n} x {a.fps_mult})" + ("" if on == n * a.fps_mult else "  ⚠ FRAME COUNT CHANGED"))
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 

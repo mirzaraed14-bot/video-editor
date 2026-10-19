@@ -24,6 +24,9 @@ v2 look ("look": "v2", batch 2): the shots are rendered into the letterbox WINDO
 runs at the window's size and the result is offset by the window's top; the constant line is clamped INSIDE the window (its top + 80 ..
 its bottom - 24 - the tallest block, measured by ig_type with the real fonts: a stack block is 2-4 lines of mixed sizes).
 `captions.on_seam` puts the line on the split seam (Affan 2026-10-12: captions ON the split line, for the whole video).
+Batch 3 frames ("frame": "square" | "void", ig_type.PRESETS): the same math at the frame's size; the line is also kept inside the safe
+band (y 200 -> 1620 - the block), which only binds on the full-bleed void. Ghosts, chapter cards and bar-parked cards are left out of
+the clash report.
 """
 import json, math, os, subprocess, sys
 import numpy as np
@@ -282,7 +285,7 @@ def main():
 
 # the v2 kinds' approximate heights (px) for the clash report; full-window scenes and bar elements never meet the caption line
 V2_H = {"neon": 330, "lower3": 130, "route": 240, "widget": 420, "compare": 300, "reticle": 0}
-V2_SKIP = {"wordscene", "titlecard", "leak", "hook"}
+V2_SKIP = {"wordscene", "titlecard", "leak", "hook", "chapter", "ghost"}   # (a ghost may sit under the captions: Mark Brazil runs them across it)
 
 
 def place_v2(spec, cap, chunks, shot_top, FR, ig_type, path, dry):
@@ -297,7 +300,8 @@ def place_v2(spec, cap, chunks, shot_top, FR, ig_type, path, dry):
         tops = list(shot_top.values())
         Y = float(np.percentile(tops, cap.get("pct", 75))) if tops else float(cap.get("y", FR["y"] + FR["h"] * 0.55))
         why = f"{cap.get('pct', 75)}th pct of {len(tops)} face shots"
-    lo, hi = FR["y"] + 80, FR["y"] + FR["h"] - 24 - hmax
+    # inside the window and the repo's safe band (y 200 -> 1620; only the full-bleed void frame reaches past it)
+    lo, hi = max(FR["y"] + 80, ig_type.SAFE_TOP), min(FR["y"] + FR["h"] - 24, ig_type.SAFE_BOTTOM) - hmax
     yt_ = int(round(min(max(Y, lo), hi)))
     for c in chunks:
         for k in ("moves", "show", "hide"):
@@ -306,7 +310,7 @@ def place_v2(spec, cap, chunks, shot_top, FR, ig_type, path, dry):
     lips = sorted(((sid, int(t - yt_)) for sid, t in shot_top.items() if t > yt_ + 8), key=lambda x: -x[1])
     clash = []
     for k in spec.get("cards", []):
-        if k["kind"] in V2_SKIP:
+        if k["kind"] in V2_SKIP or k.get("zone") or k.get("layout") == "bar":     # bar-parked cards never meet the caption line
             continue
         ky = k["y"] if "y" in k else FR["y"] + k.get("wy", 0)
         kh = k.get("h", V2_H.get(k["kind"], 250))

@@ -9,6 +9,9 @@ Steps: the shared picture engine (onyx-samples-youtube/kit/yt_picture.py --dir i
 push-ins; HARD cuts, no whips: the Instagram look cuts clean) → ig_captions.py (when "captions.chunks" is empty) →
 ig_capy.py (captions placed just under the speaker's lips, per shot) → ig_overlay.py → HyperFrames render (transparent ProRes 4444) → the mix (voice + optional bed + one designed sound per graphic
 entrance, from the library: Affan wanted MORE sound on this look) → composite → outputs/<job>.sample-ig.<version>.mp4.
+
+The bed: "audio.bed_under_lu" defaults to 13 LU under the voice (Affan's voice-first rule, 12-14; batch 3, 2026-10-14: it was 18, and
+QA round 2 of batch 2 fixed every v2 bed by hand). Every spec shipped so far sets the key itself, so none of them changes.
 """
 import json, os, re, shutil, subprocess, sys
 
@@ -134,7 +137,7 @@ def mix(job, spec):
             "-af", f"afade=t=out:st={dur - 1.0:.3f}:d=1.0", "-ar", "48000", "-ac", "2", bed])
         bi, _ = lufs(bed)
         inputs += ["-i", bed]
-        fc.append(f"[{len(inputs) // 2 - 1}:a]aresample=48000,aformat=channel_layouts=stereo,volume={(vi - a.get('bed_under_lu', 18)) - bi:.2f}dB,apad[bed]")
+        fc.append(f"[{len(inputs) // 2 - 1}:a]aresample=48000,aformat=channel_layouts=stereo,volume={(vi - a.get('bed_under_lu', 13)) - bi:.2f}dB,apad[bed]")
         labels.append("[bed]")
     fc.append(f"{''.join(labels)}amix=inputs={len(labels)}:duration=first:normalize=0,atrim=0:{dur:.4f}[m]")
     premix = os.path.join(w, "premix.wav")

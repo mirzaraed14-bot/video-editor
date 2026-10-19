@@ -11,6 +11,15 @@ force a chunk break there: a camera cut where the speaker changes mid-sentence (
 Bryan's words while Rich was still talking).
 v2 look ("captions.mode", batch 2): "stack" and "word" use their own chunker (v2_chunks below: per-word times, ONE hero per stack block);
 "line" keeps this chunker and adds each word's time ("words": [[t0, t1, text, role]]) for the hero colour sweep. No mode = v1, unchanged.
+
+HERO DIET (batch 3, STYLE-RESEARCH § E2, 2026-10-14; opt-in so every batch-2 spec chunks exactly as before):
+  "hero_gap": 4.0   at most one hero per 4 s, in every v2 mode. Batch 2 had a 124 px serif hero in 72-97 % of the stack blocks (a
+                    giant gold word every ~1.4 s): emphasis everywhere is emphasis nowhere; Mark Brazil (554K) lights one word per
+                    sentence and leaves many sentences plain. With the key set, a stack block's hero is its first `hl` word, else a
+                    number (never "one"), else NOTHING (the "longest content word" fallback is off); then heroes closer than
+                    hero_gap s to a kept one become lead words, `hl` heroes winning over numbers, earlier over later.
+                    Target: <= 12 heroes in 45 s. "hero_gap": 0 keeps the no-fallback rule without a spacing.
+  "auto_hero": true  brings the longest-content-word fallback back (lowest priority) under the same gap.
 """
 import json, os, re, sys
 
@@ -42,6 +51,15 @@ STOP = WEAK_END | {"that", "this", "it", "it's", "you", "we", "they", "he", "she
 STACK_WEAK = WEAK_END | {"no", "not", "very", "so", "like", "than", "other", "who", "who's", "that", "if", "by"}   # never the last word of a block
 NUM = re.compile(r"^(\$?\d[\d,.]*%?|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen|twenty|thirty|forty|fifty|sixty|"
                  r"hundred|thousand|million|billion|half|double|twice)$")
+
+
+def hero_gap_keep(cands, gap):
+    """cands [(t, priority, key)] -> the keys kept: greedy by (priority, t), each kept hero >= gap s from every other kept one."""
+    kept = []
+    for t, _, k in sorted(cands, key=lambda c: (c[1], c[0])):
+        if all(abs(t - kt) >= gap for kt, _ in kept):
+            kept.append((t, k))
+    return {k for _, k in kept}
 
 
 def v2_chunks(W, c, spec, hl, crosses):
@@ -93,20 +111,32 @@ def v2_chunks(W, c, spec, hl, crosses):
             elif blocks and W[i]["e"] - W[i]["s"] < 0.18 and re.search(r"[.!?]$", W[i]["t"]) and len(blocks[-1]) == 1 and not crosses(blocks[-1][-1], W[i]):
                 blocks[-1].append(W[i]); i += 1; continue
             blocks.append(b); i += 1
-    out = []
+    diet = c.get("hero_gap") is not None                       # batch 3's hero diet (opt-in; see the module docstring)
+    all_roles, cands = [], []
     for j, b in enumerate(blocks):
         roles = ["lead"] * len(b)
         if mode == "stack":
-            pick = next((k for k, w in enumerate(b) if key(w) in hl), None)
+            pick, prio = next((k for k, w in enumerate(b) if key(w) in hl), None), 0
             if pick is None:
-                pick = next((k for k, w in enumerate(b) if NUM.match(key(w)) and key(w) not in {"one"}), None)
-            if pick is None:
+                pick, prio = next((k for k, w in enumerate(b) if NUM.match(key(w)) and key(w) not in {"one"}), None), 1
+            if pick is None and (not diet or c.get("auto_hero")):
                 cand = [k for k, w in enumerate(b) if key(w) not in STOP and len(key(w)) >= 4]
-                pick = max(cand, key=lambda k: (len(key(b[k])), k)) if cand else None
+                pick, prio = (max(cand, key=lambda k: (len(key(b[k])), k)) if cand else None), 2
             if pick is not None and len(b) > 1:
                 roles[pick] = "hero"
+                cands.append((b[pick]["s"], prio, (j, pick)))
         else:
             roles = ["hero" if key(w) in hl else "lead" for w in b]
+            cands += [(w["s"], 0, (j, k)) for k, w in enumerate(b) if roles[k] == "hero"]
+        all_roles.append(roles)
+    if diet:
+        keep = hero_gap_keep(cands, float(c["hero_gap"]))
+        for _, _, (j, k) in cands:
+            if (j, k) not in keep:
+                all_roles[j][k] = "lead"
+    out = []
+    for j, b in enumerate(blocks):
+        roles = all_roles[j]
         start = max(0.0, b[0]["s"] - 0.03)
         nxt = max(0.0, blocks[j + 1][0]["s"] - 0.03) if j + 1 < len(blocks) else spec["frames"] / spec["fps"]
         hold = 1.2 if mode == "stack" else 0.6
@@ -185,6 +215,14 @@ def main():
         out.append(dict(text=text, start=round(start, 3), end=round(end, 3), hl=[x["t"].strip(".,!?") for x in ch if x["t"].lower().strip(".,!?") in hl]))
         if c.get("mode") == "line":     # v2 `line` mode: the v1 chunks plus each word's own time (the hero colour sweep runs ON its word)
             out[-1]["words"] = [[round(x["s"], 3), round(x["e"], 3), x["t"], "hero" if x["t"].lower().strip(".,!?") in hl else "lead"] for x in ch]
+    if c.get("mode") == "line" and c.get("hero_gap") is not None:      # batch 3's hero diet: one sweep per hero_gap s
+        cands = [(w[0], 0, (i, k)) for i, o in enumerate(out) for k, w in enumerate(o["words"]) if w[3] == "hero"]
+        keep = hero_gap_keep(cands, float(c["hero_gap"]))
+        for _, _, (i, k) in cands:
+            if (i, k) not in keep:
+                out[i]["words"][k][3] = "lead"
+        for o in out:
+            o["hl"] = [w[2].strip(".,!?") for w in o["words"] if w[3] == "hero"]
     c["chunks"] = out
     json.dump(spec, open(sp_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print(f"ig_captions: {len(out)} chunks from {len(W)} words (≤{mw} words / ≤{mc} chars), {sum(1 for o in out if o['hl'])} with highlights")

@@ -342,3 +342,58 @@ the measured references (`references/batch2-style-research.md`) -> README § v2 
   when the kit is next touched), this entry.
 - **Lesson:** white captions over bright B-roll fail contrast (Victor IG, Jeremy IG). **Change:** shade under the caption and measure
   ≥ 4.5:1 on every B-roll shot (Vivian's build measured ≥ 6.7:1 per shot). **File:** this entry.
+
+## 2026-10-14 · Kit upgrades for batch 3 (STYLE-RESEARCH § A2 / E / F / G 2-5), before the six Instagram builds
+- **Lesson:** batch 2's four Instagram samples were one template: the same window, the same stack captions with a serif hero in 72-97 %
+  of blocks, 4-7 leaks each, 17 of 24 side cards at the window's top-left, cards restating the captions, and the bars empty ~90 % of the
+  time (the research, § A2). **Change:** opt-in keys: `"frame": "square" | "void"` (ig_type.PRESETS, ig_window: the void's crush +
+  vignette), `captions.reveal: "dim"` and `captions.hero_gap` (Vivian's cut: 28 heroes -> 8), `zone` (lower3 / meter parked in a bar),
+  widget `layout: "bar"` (story meter), lower3 `again`, `ghost`, `chapter`, top-level `behind` (type behind the speaker through a person
+  matte), `bed_under_lu` default 13. **File:** `kit/ig_type.py`, `kit/ig_window.py`, `kit/ig_v2.py`, `kit/ig_captions.py`, `kit/ig_capy.py`,
+  `kit/ig_build.py`, `kit/V2-HOWTO.md` § 4, README § Batch 3.
+- **Lesson:** the batch-2 failures were measurable, so they should FAIL a build, not wait for a reviewer. **Change:** `ig_v2.gates()`
+  (printed after the density lines) and three `ig_qa` FAILs: `restate` (a card printing > 50 % of the words the captions on screen with
+  it say; a neon's spoken number exempt), `slots` (> 2 side cards in a row in one slot), `leaks` (> 2); the top bar's share as a NOTE.
+  Run on the shipped batch-2 specs they reproduce the research's numbers (top bar 6 / 9 / 20 / 16 %; Vivian's todo 86 %; 5-7 leaks).
+  **File:** `kit/ig_v2.py`, `kit/ig_qa.py`.
+- **Lesson:** a new key must not move an old video by a pixel. **Change:** every batch-3 piece is behind its own key, and the batch-3
+  CSS is written into the page only when a batch-3 piece is used. Proof (scratch `kit-ig/tools/regress.py`): on the five v2 specs (four
+  batch-2 jobs + the kit demo), index.html as shipped and in all three caption modes, sfx-cues, events, chunks, the caption y and the
+  mix graph: 80 of 80 identical. Vivian's IG rebuilt from the copy: window render reused (derived spec unchanged), picture layer and
+  mix bit-identical, final PSNR 56.2 dB average / 47.05 dB min vs the shipped final, 2170 of 2640 frames identical: the rest is
+  HyperFrames' time-budgeted static-frame dedup (36 overlay frames differ at 56-93 dB from an IDENTICAL index.html) re-encoded by x264.
+  **File:** this entry.
+- **Lesson:** the window render's cache trusted any picture.mp4: a render killed by an out-of-memory (the machine was down to 2 GB with
+  other agents running) left a 1280-of-1320-frame file that the next build would have reused. **Change:** the cache also checks the
+  render's frame count. **File:** `kit/ig_window.py`.
+- **Lesson:** white captions over a gold chapter card read ~1.6:1 (the demo). **Change:** a light accent's chapter card is a deep tone
+  of the accent with the type in the accent; a dark accent keeps the solid card + white type. **File:** `kit/ig_v2.py`.
+- **Lesson:** a ghost cut-out at 65 % reads as a pasted sticker over a bright set. **Change:** a 0.55 radial shadow pools under it and
+  its bottom fades over 35 %; it is for a REAL named person (a stock stranger as a named person is the YouTube look's own failure).
+  **File:** `kit/ig_v2.py`, V2-HOWTO § 4.
+- **Lesson (demo, square):** a chapter card's type centred in the window sat ON the caption line (the captions keep running over the
+  card). **Change:** the type centres at 36 % of the window's height (`wy` overrides). **File:** `kit/ig_v2.py`.
+- **Lesson (demo):** behind-the-speaker type centred on the window was 60 % hidden by the head ("DEC…"); the look needs the head to cover
+  a PART. **Change:** `x` defaults to AUTO: the word slides along its line until the speaker's matte hides `hide` (25 %) of it, the
+  build prints the share; `y` defaults to 0.22 x h (put it where the head is narrow). **File:** `kit/ig_window.py`.
+- **Lesson (demo):** a ghost standing at 74 % of the window put the captions across its chest. **Change:** by default it stands ON the
+  caption line (feet fading out just above it) and shrinks to fit the window. **File:** `kit/ig_v2.py`.
+- **Lesson (demo):** the void needs a DARK set: Vivian's and Rich Roll's are bright, so the void demo ran on Rob Dial's black set
+  (`mindsetmentor-23k-call`, read only; B&W, his own look). The crush took the wall to pure black; his white wall logo stays (on-brand,
+  busier than Mark Brazil's). On a void the face sits where the source puts it (A shots are full-height), so the free space is the set's
+  dark area, often BELOW the face: hook and cards there. **File:** V2-HOWTO § 4.
+- **Lesson:** `ig_qa` failed every starred profanity ("SH*T") as punctuation (the batch-2 Vivian false FAIL). **Change:** an asterisk
+  inside a word passes. **File:** `kit/ig_qa.py`.
+
+## 2026-10-19 · Batch-3 reactions (five, built from raw in ABW10, 3:00 cap): lesson → change → file
+- **The 3-minute cap (Affan: Instagram stops suggesting longer ones) is met by cutting tangents, never his verdicts**: every reaction
+  landed 2:46-2:51 keeping intro, one critique beat per problem, OUR YouTube cut hook → payoff, the Instagram look + why-minimal,
+  outro → budget table in `projects/_onyx-batch3-2026-10/REACTIONS-RUN.md` § The 3:00 budget.
+- **He restarts our sample when he talks over it**: graft the clean pieces (sample time continuous, joined in a quiet gap) so the
+  viewer sees ONE clean play; the joint is measured by audio xcorr (tools3/xplay2.py), never by words → each BRIEF § The cut.
+- **VLC prints the file name over the first second** (and File Explorer sometimes covers the start): every sample play is a
+  master-file card (`ba_wipe` with before = after = the master, no wipe) over his recording, the audio stays his → all five plans.
+- **A critique lands harder when the fix is SHOWN on their own frame**: Moonshots moves the caption up to the face, Priestley sets
+  his live-typed new title on the Short, DSH draws hook → route → payoff along the Short's own progress bar → build_plan.py heroes.
+- **One look per reaction, never repeated in a batch** (accent font, entrance, SFX signature, hero kind): columns E-I recorded in
+  each build_plan.py docstring with "what this does better than the last one".

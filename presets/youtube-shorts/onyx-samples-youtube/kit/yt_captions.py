@@ -16,15 +16,65 @@ Reads `<job>/yt/spec.json` → "captions": {
 }
 voice: "main" (white, wipe → red) or another kit voice ("yellow", "cyan", "purple"): solid colour, wipe white → colour.
 Rules checked: ≤ 19 characters per chunk, words used exactly once. Each chunk holds until the next one (never blank).
+
+NUMERALS (2026-10-14, batch-2 QA X4; Affan's rule: captions keep only ! ? and quotation marks): every chunk's text goes through
+`numerals()` before anything else, and captions.json carries the cleaned text (what renders): captext.clean first (thousands:
+"250,000" -> "250K", "$17,000" -> "$17K", "1,500" -> "1500"; full stops and commas go), then the two things clean() keeps are spelled
+out: clock times "3:48 PM" -> "THREE FORTY-EIGHT PM" ("3:00 PM" -> "THREE PM", "3:05" -> "THREE OH FIVE", "3:00" -> "THREE O'CLOCK")
+and decimals "$2.3 MILLION" / "$2.3M" -> "TWO POINT THREE MILLION DOLLARS", "2.5%" -> "TWO POINT FIVE PERCENT". The 19-character
+limit is checked AFTER this, so a long spelled-out number tells you to split the chunk (e.g. [2, "SO TWO POINT THREE", ...],
+[1, "MILLION DOLLARS", ...]). Write the words yourself when the spoken form differs ("$4.99" said "four ninety-nine").
 """
-import json, math, os, subprocess, sys
+import json, math, os, re, subprocess, sys
 import numpy as np
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "onyx-samples", "kit"))
+from captext import clean          # the shared punctuation rule (read-only here; the Instagram kit owns it)
 
 for _s in (sys.stdout, sys.stderr):
     try:
         _s.reconfigure(encoding="utf-8")
     except Exception:
         pass
+
+
+ONES = ("ZERO ONE TWO THREE FOUR FIVE SIX SEVEN EIGHT NINE TEN ELEVEN TWELVE THIRTEEN FOURTEEN FIFTEEN SIXTEEN SEVENTEEN EIGHTEEN "
+        "NINETEEN").split()
+TENS = "_ _ TWENTY THIRTY FORTY FIFTY SIXTY SEVENTY EIGHTY NINETY".split()
+CLOCK = re.compile(r"\b(\d{1,2}):(\d{2})(\s*(?:[AP]\.?M\.?)(?![A-Z]))?", re.I)
+DEC = re.compile(r"(\$?)\b(\d+)\.(\d+)(\s+(?:THOUSAND|MILLION|BILLION|TRILLION)\b|[KMBT]\b)?(%?)", re.I)
+
+
+def say(n):
+    """0-999 in words (caps)."""
+    if n < 20:
+        return ONES[n]
+    if n < 100:
+        return TENS[n // 10] + ("-" + ONES[n % 10] if n % 10 else "")
+    return ONES[n // 100] + " HUNDRED" + (" " + say(n % 100) if n % 100 else "")
+
+
+def numerals(text):
+    """A chunk's text with no punctuation inside numbers (see the docstring)."""
+    t = clean(text)
+
+    def clock(m):
+        h, mm = int(m.group(1)), int(m.group(2))
+        ap = re.sub(r"[.\s]", "", m.group(3) or "").upper()
+        mid = ("" if ap else " O'CLOCK") if mm == 0 else (" OH " + ONES[mm] if mm < 10 else " " + say(mm))
+        return say(h) + mid + (" " + ap if ap else "")
+
+    def dec(m):
+        cur, ip, fp, scale, pct = m.groups()
+        if int(ip) > 999:
+            return m.group(0)
+        sc = (scale or "").strip().upper()
+        sc = {"K": "THOUSAND", "M": "MILLION", "B": "BILLION", "T": "TRILLION"}.get(sc, sc)
+        return (say(int(ip)) + " POINT " + " ".join(ONES[int(c)] for c in fp) + (" " + sc if sc else "")
+                + (" PERCENT" if pct else "") + (" DOLLARS" if cur else ""))
+
+    t = CLOCK.sub(clock, t)
+    t = DEC.sub(dec, t)
+    return re.sub(r"\s{2,}", " ", t).strip()
 
 
 def load_words(path):
@@ -86,12 +136,18 @@ def main():
     env = envelope(os.path.join(job, spec["audio"]["voice"])) if spec.get("audio", {}).get("voice") else None
     gfloor = float(np.percentile(env, 5)) if env is not None else -90.0
     out, i, measured = [], 0, 0
+    changed = []
     for spec_ch in chunks:
         n, text, voice, wipe = spec_ch[:4]
         fixed = spec_ch[4] if len(spec_ch) > 4 else None          # optional 5th item: a measured start frame (WhisperX stamps can be 0.1-0.6 s off)
         ws = W[i:i + n]; i += n
+        raw, text = text, numerals(text)
+        if text != raw:
+            changed.append(f"'{raw}' -> '{text}'")
+        if re.search(r"\d[.,:]\d", text):
+            print(f"yt_captions: WARNING '{text}' still has punctuation inside a number: write it as spoken")
         if len(text) > 19:
-            sys.exit(f"yt_captions: '{text}' is {len(text)} characters (max 19)")
+            sys.exit(f"yt_captions: '{text}' is {len(text)} characters (max 19)" + (f" after the numeral rule (was '{raw}'): split the chunk" if text != raw else ""))
         prev_end = out[-1]["last_word_end"] if out else 0.0
         on = onset(env, ws[0]["s"], prev_end, gfloor) if (env is not None and out) else None
         measured += on is not None
@@ -126,6 +182,8 @@ def main():
         print("yt_captions: cuts 1-3 frames off a chunk change (move a FREE cut onto it if no base joint is crossed): "
               + ", ".join(f"cut f{k} vs chunk f{f}" for k, f in near))
     print(f"yt_captions: {measured} of {len(out) - 1} chunk onsets measured on the voice track")
+    if changed:
+        print("yt_captions: punctuation/numerals cleaned: " + "; ".join(changed))
     wiped = sum(ch["wipe"] for ch in out)
     print(f"yt_captions: {len(out)} chunks, {wiped} wiped ({wiped / len(out):.0%}), mean {sum(ch['end_f'] - ch['start_f'] for ch in out) / len(out) / fps:.2f} s")
 

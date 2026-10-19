@@ -107,3 +107,28 @@ a job teaches something.
   offensive chat on screen; the script's second Adin quote was not in it at all. → `assets/SOURCES.md` columns.
 - **A "let it play" clip gets its own gap**: replayed with a 16.9 s hole after "Listen to exactly what he says.", the
   clip on V2/A2 (never A1: audio-polish processes every A1 clip). `review/tools/replay-gap.py`.
+
+## 2026-10-13 · the channel moves to the IGN-missions style (STYLE.md v2) — Sequence 27 restyled
+
+- **"Replicate that style exactly for the AffanWiz channel"** (Afterhours video 22, 8:17). It was our own job
+  (`gta6-ign-missions`, Sequence 39), so the spec came off the creator's FINAL timeline (read live, read-only) + the
+  published master through the style tools + every graphic sampled entering/settled/leaving → `STYLE.md` v2, the v1 Game
+  Informer port kept as `STYLE-v1-game-informer.md`. What changed vs v1: **graphics = full-frame "IGN dossier" plates +
+  alpha overlays** (blurred footage plate, warm-white Inter type, pink underline that draws, refined UI diagrams), not inset
+  cards over gradient mattes; b-roll insets sit over their OWN blur; **premium SFX** (soft whoosh, pen line, glassy ticks,
+  chimes) instead of pops; **no face push** (no nests), cut zooms median 135 %; music beds on their own track, out under
+  every zoom.
+- **Reuse the reference job's tools, re-anchored**: build-plan (word-anchored beats, edges on V1 cuts, neighbours butt),
+  build-comps (same HEAD/helpers at 60 fps), build-plates, place-gfx, place-sfx, place-music, face-pass, active-window —
+  copied into `projects/kick-fake-viewers/` and pointed at Sequence 27 (60.00 fps, not 59.94). Gotchas found adapting:
+  the face planner snapped to clip STARTS only, so a zoom ran 3 frames into the Adin gap (snap to ends too); a section of
+  advice outran a 160 s song (add a turn, the bed resumes in sync).
+- **This script is proof-heavy**: 24 graphics at 3.7/min, face 53 % (reference 62 %); the first 30 s was all graphics
+  until three short beats were handed back to the face (longest face-less run 12 s).
+- **The "my theory" graphics name nobody and show no recognisable streamer** (the phone's feed is a blurred Kick Browse
+  thumbnail): the theory must not read as an accusation.
+- **The legal list goes on screen when the take misses it**: the reported-drops meter says "reported" (he never says it).
+- **A plate is blurred, not anonymous: check every plate for readable text.** At σ≈26 and ×0.38, big type still reads: the
+  N3on-chapter plate under the dot room (KM@15, his channel page) carried a legible business email. Change → g03 re-sourced
+  to KM@140 (N3on on camera), placed as `g03-plate-v2.mp4`; the check = a contact sheet of `compositions/_bg/*.jpg` before
+  placing. → `projects/kick-fake-viewers/build-plan.py`.

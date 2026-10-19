@@ -1,0 +1,66 @@
+# Client Short from Affan's sequence: the lean recipe (≈ 40 tool calls)
+
+For a client Short where **Affan picks the moment, cuts it in Premiere and records a Tella walkthrough**. Built from the first one,
+`projects/_client-scott-clary/fubu-50-shirts/` (2026-10-15, BRIEF.md there). Look = this kit (README.md); this page is only the ORDER and
+the commands that work. Budget: Affan caps a video at **$10 of Claude usage** → a FRESH session per Short, no subagents, no research,
+one check sheet, no full-size image reads. Paths below are relative to the repo; `J=projects/<client>/<job>`.
+
+## 1. Walkthrough → brief (3 calls)
+- Built-in browser on the Tella link, then JS: `v=document.querySelector('video'); v.muted=true; await v.play();` wait 4 s, read
+  `performance.getEntriesByType('resource')` for `prod-stream.tella.tv/media/manifest.m3u8?...`.
+- `ffmpeg -i "<manifest url>" -map 0:v:0 -map 0:a:0? -c copy $J/guide/guide.mp4`, audio-only copy into `$J/guide/tx/raw/`, then
+  `bash .claude/skills/rough-cut/scripts/transcribe.sh $J/guide/tx` (it only picks up VIDEO extensions: keep the audio in an .mp4).
+- One overview sheet (`fps=1/8,scale=480:-1,tile=6x7`) + ONE full frame where his Premiere **Transcript panel** shows the whole
+  sequence text. His words = the brief: write `$J/BRIEF.md` (direction, rules, sources table, ▶ STATUS) before cutting.
+
+## 2. His sequence → the cut (3 calls)
+- `python workflows/prproj-seq.py "--latest ABW10" "Sequence NN"` (newest autosave AFTER the walkthrough; prints every track).
+  **V1 = the cut, V2 = a full-screen overlay slot (no split), V3 = a split slot.** Follow the sequencing strictly; nothing added.
+- Doubled-frame check: `signalstats` YDIF over 1 s; alternating ~0.01 / ~1.5 = 30p doubled to 60p → cut the section at 30p:
+  `ffmpeg -ss <a> -i source.mp4 -t <len> -vf fps=30 -c:v libx264 -crf 12 -pix_fmt yuv420p -c:a pcm_s16le $J/raw/<x>_section.mkv`
+  (seek on an even 60p frame). Never put the whole episode in `raw/` (transcribe.sh takes every clip there).
+- `python workflows/prproj-seq.py <proj> "Sequence NN" --edl /tmp/video-editor/<job>/cuts.json --offset <a> --clip <x>_section.mkv`
+  (`cygpath -w` for the /tmp path), **copy it to `$J/transcript/cuts.json` too** (voice-gain.py reads that before splice.sh writes
+  it), transcribe the section, `bash .claude/skills/rough-cut/scripts/splice.sh $J`. Write `work/cut/joints30.txt` (segment starts
+  + any camera cut inside a segment, from `select='gt(scene,0.3)'`).
+- Background: `python workflows/topaz-iris.py $J/outputs/<job>.mp4 $J/outputs/<job>.topaz.mov --out-scale 2 --no-stab --segments <joints>`
+  (~10 min; launch with run_in_background, not `( … &)`).
+
+## 3. Overlays (6-10 calls)
+- **Real photos**: `python workflows/img-candidates.py <dir> "tag|query|n" …` (curl Bing, never python urllib (region-skewed junk): `curl -s -A <UA> "https://www.bing.com/images/search?q=<q>&first=1"`,
+  → files + sources.txt + ONE numbered `_sheet.jpg`; ≥ 700 px; Pinterest /originals/ tried first). Skip Getty/Alamy
+  watermarks. A brand's own product shots are often transparent PNGs (a ready cutout).
+- **Stock video**: Pexels/Pixabay return 403 to curl. Mixkit works: page `https://mixkit.co/free-stock-video/<tag>/`, ids from
+  `assets.mixkit.co/videos/<id>/<id>-360.mp4`, download `<id>-1080.mp4`. Pexels via the browser (same-origin `fetch('/search/videos/<q>/')`)
+  only for ids; its stock rarely shows a specific scene.
+- **Higgsfield** (Affan asked for it on image overlays): soft image → `media_import_url` (no presigned PUT, no huge URLs) →
+  `upscale_image` 2k (≈ 2 cr) → `jobs_wait` → curl the result. A scene no stock shows (a FUBU bouncer at a velvet rope) →
+  `generate_image` `gpt_image_2_5` 9:16 (0.25 cr) then upscale. Never a real person generated. Log every source in BRIEF.
+- **Popularity beats: the face a casual viewer names instantly** (Affan: 50 Cent, not LL Cool J).
+- A "speaker silent and listening" opener: his own camera from a silent stretch, `setpts=PTS/0.75,minterpolate=fps=30:mi_mode=mci`.
+
+## 4. Spec, faces, build (5 calls)
+- Copy `fubu-50-shirts/yt/build_spec.py` and edit: chunks (assert word count; ≤ 19 chars; only ! ? and quotes; profanity starred
+  + `audio.mute`), shots on HIS slots, free cuts = first word frame − 4, one A shot per same-camera run (his jump cuts stay; no
+  punch-in), `"cut"` whips on the same camera, `SPLIT` with `"flip": true` when he wants the speaker BELOW, A `fy_out` 0.35 (lips
+  above the seam captions), hook card = the credit with "/" (the hook font has no "·"), watermark = the show's name, **no bed**
+  (he adds music), SFX on every overlay (flash-vintage / shutter-film on photos, thud-low / hit-soft on scenes, whoosh-soft on
+  the split, tick-glass on swaps).
+- Two shot extras (Bombas, 2026-10-17): `"prop": {src (RGBA cutout), f0, f1, xy, h, angle}` on a shot = a product that whips in,
+  hangs mid-frame and whips out (leave ≥ 3 frames before the cut); a "stronger zoom" = its own A shot, `r` 0.22-0.25, starting at
+  the previous A shot's end zoom (`z0 = z0_prev * (1 + r_prev)`) so the cut never jumps scale.
+- `cd $J && python yt/build_spec.py`, then `uv run presets/youtube-shorts/onyx-samples-youtube/kit/yt_faces.py $J`.
+- `python presets/youtube-shorts/onyx-samples-youtube/kit/yt_build.py $J v1` (background, ~4 min).
+
+- **Head lock + 60 fps (2026-10-19, from AW):** `head_lock=JF[1:]` (his joints) in the spec restarts the face fit at every joint, so
+  the head lands on the same point after each of his jump cuts; `fps_out=60` makes `yt_build.py` double the finished picture with
+  Topaz Chronos per shot (`topaz-iris.py --fps-mult 2`, never across a cut) and render the captions at 60. Both on by default for Scott.
+- **Before the build (Scott):** freshness check + locked prediction + pre-mortem + title + thumbnail in
+  `presets/youtube-shorts/scott-clary/RESULTS.md` (ENGINE.md has the line; `thumbnail.py` draws the locked cover format).
+
+## 5. One check, then final (4 calls)
+- ONE 16-frame sheet (`select=eq(n\,…)`, `scale=270:480,tile=8x2`). The v1 defects last time: captions on the lips, a face cropped,
+  the subject outside a 16:9 → 9:16 crop (set `cx`), a missing glyph. Fix in the spec, re-run `build_spec.py` (it picks up
+  `base_hq` once Topaz is done), build `final`. A picture-only change: `--skip overlay,mix`.
+- Deliver: copy to `$J/outputs/<job>.final.mp4` and `X:\Claude Projects\Exports\<client>-<job>.final.mp4`, the sheet as
+  `outputs/<job>.proof-sheet.jpg`, `ebur128` for LUFS / peak, BRIEF ▶ STATUS. The MP4 is > 30 MB: only the desktop app shows it.

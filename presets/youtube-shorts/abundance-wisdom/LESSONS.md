@@ -3,6 +3,37 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-14 — MJ "Son told Tyson" raw cut (`projects/mj-skin-son-tyson`, ABW8 Sequence 53)
+
+- **A podcast with a burned-in ad banner** (Hotboxin': TYSONPRO.COM across the bottom 232 px): scale so the 9:16 frame ends
+  on the banner's top and lift the Motion y (226.5 %, y 0.637); `plan_placement.py`'s `border` is symmetric (it would crop
+  the top too), so the job carries a `fix_placement.py` post-pass.
+- **"Stop dead after X" is tested from both sides:** when the next word follows within 20 ms, transcribe what FOLLOWS each
+  candidate cut (from 432.81 Whisper heard "He was changing…", from 432.97 only "…changing"): that, not the RMS dip, places
+  the boundary.
+- **A file name is not the episode:** the bin's "Prince Jackson Opens Up…" was another interview; check by its words before
+  building on it.
+- **A brief's runtime is an estimate:** the locked words of this one run 38 s against a 50–55 s target; report it, never pad.
+
+## 2026-10-13 — CBum "Born With It" raw cut (`projects/cbum-born-with-it`, ABW8 Sequence 52)
+
+- **A cut sheet written from YouTube auto-captions carries their mishears:** the "name after 'the doctor'" ("Larry") is the
+  word "literally"; one of beat 8's two "f-words" is "shit". Every word is settled from the bin copy's audio, and the
+  differences go back to Affan (the sheet asks for that in B9).
+- **No sequence handed over → clone an EMPTY one of his** (Sequence 48: 1080×1920, 60 fps, v3/a4), name it the next free
+  number (Sequence 52), new bin named after the job; never lay into his own empty Sequence 48/49 (they may be reserved).
+- **A source's OWN inserts sit inside kept lines** (CBum's shin-press clip under "woke up the next day", his burned-in
+  "WARNING PICTURE IS NASTAY..." under "by the time I got home"): kept as his footage, flagged, never silently covered.
+- **WhisperX can park a word a second early across a crying pause** ("I" at 620.37, spoken 621.50, before a camera cut):
+  measure the onset with 20 ms RMS before trusting a start that lands next to a cut.
+- **"Do the captions AND the colouring, some layered"** (Sequence 52): Premiere still cannot colour words by script, so
+  the coloured, stacked layer is RENDERED as his caption export (the file he takes to CapCut) with the code-trial engine
+  (`projects/cbum-born-with-it/captions/render_caps.py`): captions.txt `+` = a stacked second line (+65 px, the caption
+  above holds to the pair's end). His caption base moved: line-1 cap top y1022 on ronnie.mov (Seq 46) vs 1031.75 on
+  peace.mov (Seq 28); measure the latest export before each render.
+- **Sheet runtimes are estimates:** "68 s with everything" came to 57.95 s after the measured tighten, so neither of its
+  runtime cuts was needed.
+
 ## 2026-10-12 — letterbox look on comp 65 (Ronnie Coleman, `projects/ronnie-coleman-truths/letterbox`)
 
 - **His current letterbox build (comp 60, 4 instances) differs from README § 5's older one:** the line precomp is
@@ -659,3 +690,9 @@ Six corrections, all now rules:
    music level actually set?
 4. **Grade sections.** The grade is split into 6 spans with slightly different sharpening
    (BCC Unsharp Amount 17 vs 7, Unsharp Mask on/off). Is that per source-clip quality, by eye, or a rule?
+
+- 2026-10-17 (ABW10 Seq 05 roadster captions): **captions came in before the words** (worst 0.56 s) and two lines were misheard
+  ("is your system" = "are we talking", "want to go" = "wanna go"). Change: transcribe the clean A1 dialogue rebuilt from the
+  sequence's A1 clips, not the finished render's mix, and when two timings exist take the LATER start per word; read the transcript
+  once against the audio for misheard phrases before writing captions. File: `projects/abw10-comp04/captions/` (merge in RUN.md).
+

@@ -13,7 +13,13 @@ palette are that channel's; this one earns its own numbers from the creator's di
 What the creator explicitly ports is COPIED here with its numbers (`STYLE.md`, 2026-10-04), never linked, so a later
 Afterhours change never moves this channel.
 
-## 1. The look — 🔒 [`STYLE.md`](STYLE.md) from the next video on (2026-10-04)
+## 1. The look — 🔒 [`STYLE.md`](STYLE.md) **v2, the IGN-missions style (2026-10-13)**
+
+> **2026-10-13:** the creator moved the channel to the style of Afterhours video 22 ("GTA 6 Just Got A Whole Lot More
+> Interesting…"): STYLE.md v2 (full-frame "IGN dossier" plates + overlays, premium SFX, no face push). The table below and
+> § 1a describe v1 (Game Informer port, `STYLE-v1-game-informer.md`) and are kept as history; where they differ, v2 wins.
+
+### v1 (2026-10-04)
 
 **The creator, 2026-10-04: "We're picking up this editing style from my other channel for our next video."** The
 style is their Affan Afterhours video "Everything Game Informer Just Revealed About GTA 6", measured off its master

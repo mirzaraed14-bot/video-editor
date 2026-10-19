@@ -171,3 +171,31 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
 - **A tight remote-call webcam face cannot be full-frame with captions on the seam** (the caption line lands on the mouth): every
   David Altizer shot became the top of a split. Plan for it at the storyboard.
 - **Topaz on a sourced THUMBNAIL waxes faces and invents texture**: Lanczos + light sharpening instead.
+
+## 2026-10-14 · batch 3 kit upgrade (before the 6 YouTube builds; spec `projects/_onyx-batch3-2026-10/STYLE-RESEARCH.md` § A1, B1, D, G)
+- **Lesson:** stock did the storytelling in batch 2 (47 of 55 inserts in three samples; 9 stock actors as real people) and the one
+  sample built from real artefacts (MrBeast) is the one that looks like Shawn Ryan, whose 2026 Shorts run on RECEIPTS (articles with a
+  highlighted line, dated charts, the show's own episode card) and MARKS (a red circle on the map, blue boxes on a menu).
+  **Change:** shot kinds `DOC` and `CHART`, and `marks`, `chart`, `fx` on any shot, drawn into the picture → `kit/yt_picture.py`
+  (keys), `kit/yt_devices.py` (drawing); README § 13; PLAYBOOK § 3 gate (≥ 50 % real inserts, 0 stock actors, ≤ 2 marks) and § 4b.
+- **Lesson:** "fast set-up, slow payoff" was written down and never measured (batch 2: 1.99-2.66 s after the turn; Victor ended on a
+  0.60 s face). **Change:** `kit/yt_build.py` prints the payoff report and warns under 3.0 s (`allow_fast_payoff` to override).
+- **Lesson:** 3 of 4 batch-2 hooks had only a whoosh (-18.8 to -22.8 dB, inaudible on a phone), and hand-written cue lists drop cues
+  (the Pomp comment bug). **Change:** `kit/yt_cues.py` plans every device's cue from the same keys that draw it, adds a missing hook
+  hit, and `yt_build.py` asserts the pair → `kit/yt_mix.py` places them by PEAK (`under`) with sliced tails (`dur` / `fade`).
+- **Lesson:** `3:48 PM`, `$2.3 MILLION`, `250,000` reached captions.json (QA X4). **Change:** `kit/yt_captions.py` `numerals()`; the
+  19-character limit is checked after it (a spelled-out number may need its chunk split).
+- **Kit facts found while building it:** a body-text line in a 4K desktop capture is ~1600 px wide, so a full-width card shows it at
+  ~20 px: crop the front card to the sentence (a clipping) over the whole page; a cover-fitted plate of a cropped clipping reads as giant
+  blurred letters (the plate now comes from the back-most source, uncropped); a push centred on a highlight near a card's edge pushes
+  that edge out of frame (the focus now glides 70 % to the centre); numpy `(h, w, 1)` broadcasting was 5x slower than same-shape
+  arrays in the per-frame composites. Regression: the batch-2 MrBeast spec rebuilds its picture bit-identical (1103 / 1103 frames).
+- **Not built (cheap list, § D):** D5 (renders / type cards for abstract nouns), D7 (the host's question first) and D8 (32-45 s) are
+  sourcing / cut rules (README § 10, PLAYBOOK § 2), not code; D10 grade stays a per-spec recommendation (a kit default would change
+  batch-2 rebuilds). Known kit bugs still open from batch 2 (out of this scope): `fx_out` ignored on a SPLIT's top (fixing it changes
+  the shipped MrBeast picture, its s12: make it an opt-in key), and 24/25/30 fps stock conformed wrongly on a 60 fps base.
+
+- 2026-10-15 (Scott Clary FUBU, client job): `SPLIT` gained `"flip": true` (yt_picture.py; backup .bak-2026-10-15): B-roll ABOVE the seam, the speaker BELOW (Affan: "Daymond at the bottom, New York, London and Paris on top"). "top" still names the speaker so yt_faces scans it. Also: Montserrat in the hook has no "·" glyph (renders blank): use "/" in hook lines.
+- 2026-10-15 review: "everyone knows him" beats "the brand's classic face": for a popularity beat Affan wants the most globally famous wearer (50 Cent over LL Cool J, whom he did not recognise). Pick the face a casual viewer names instantly.
+- 2026-10-17 (Scott Clary Bombas): `prop` (yt_picture.draw_prop): an RGBA product cutout on a shot that whips in from the right, floats mid-frame with a soft shadow and whips out left. Affan: "a sock appearing through a whip transition, it just hangs in the middle and then goes away".
+- 2026-10-19 (Scott Clary, from AW): `head_lock` (yt_picture: face fit restarts at each joint of a jump-cut run) and `fps_out` (yt_build: Topaz Chronos doubles the finished picture per shot, overlays render at the new rate). Affan: the AW grade is NOT for face videos; head lock is.

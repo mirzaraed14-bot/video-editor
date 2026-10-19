@@ -1,6 +1,37 @@
 # RUN — kick-fake-viewers (AffanWiz CA-003 · ABW8 · Sequence 27)
 
-## ▶ STATUS: resume here (2026-10-04)
+## ▶ STATUS: resume here (2026-10-13) — RESTYLE TO THE IGN-MISSIONS STYLE: DONE, SAVED, awaiting the creator's review
+The creator (2026-10-13): analyse Afterhours video 22 ("GTA 6 Just Got A Whole Lot More Interesting…", job
+`gta6-ign-missions`, Sequence 39) frame by frame and turn Sequence 27 into THAT style — overlays, editing, SFX, everything.
+Spec written: `presets/youtube/affanwiz/STYLE.md` v2 (+ evidence `presets/youtube/affanwiz/reference/ign-missions/`).
+Backup before any write: `premiere-backup/ABW8-before-ign-style-2026-10-13.prproj` (+ Seq 27 readbacks beside it).
+Sequence 27 had not changed since 10-04 except **A2 muted by the creator** (the Adin clip's audio): left muted, flagged.
+
+Done on Sequence 27 (all by sequence NAME; the three active-sequence windows used the shared lock and restored Sequence 51):
+- **Face pass** (`transcript/face-pass.py`, word-anchored): 54 entries = 52 cut zooms (median 135 %, p25–p75 130–140,
+  14 big hits re-centred on a measured face, one 250 % on "What the fuck") + 2 stretch gags ("soul is intact" 380 %,
+  "God forbid" 300 %); 48 V1 razors (121 → 169 clips), A1 untouched; `--verify` 0 mismatches.
+- **Graphics plan** (`build-plan.py` → `graphics-plan.json`): 24 beats, 3.7/min, face 53 %, longest face-less run 12 s.
+- **Plates + b-roll** (`hf-graphics/gfx/build-plates.py`) on **V2**: 24/24 placed frame-exact (`hf-graphics/place-gfx.py`).
+- **Overlays** (`hf-graphics/gfx/build-comps.py`, HyperFrames alpha ProRes 4444 at 60 fps) on **V3**: 21/21 rendered + placed frame-exact.
+- **SFX** (`hf-graphics/place-sfx.py`): 76/76 cues on A3/A4 at the reference's levels, 0 extra.
+- **Music** (`transcript/place-music.py`): 7 beds on a new **A5** (Loungin −20 · First Born −24 with a hole for the Adin clip ·
+  Take a Ride −25 · Brooklyn −24 · Loungin −23 · Take a Ride −23), then `lanes/premiere/music-dropouts.py --music-track 5`:
+  41 zoom ranges lifted, 0 music under a zoom; `--verify` 0 problems.
+- Old raw asset layer (20 V2 clips from 10-04) removed (`place-gfx.py --clear-raw`); the Adin audio stays on A2.
+- **Verified:** `place-gfx.py --verify` 45/45 rows · `review/gate-frames.py` 15 graphics runs, 21 overlays, 170 V1 cuts,
+  0 problems · face-pass `--verify` 0 mismatches · SFX 76/76 · music-dropouts `--verify` 0 problems · offline composites
+  (`review/composite-check.py`, sheet `review/frames/sheet.jpg`) show every layer stacked right. g03's plate (KM@15 showed
+  N3on's channel page with a legible business email) re-sourced to KM@140 → `g03-plate-v2.mp4`.
+- **Final layout:** V1 169 face clips (zooms) · V2 24 plates/b-roll · V3 21 overlays · A1 121 voice · A2 Adin audio (muted
+  by the creator) · A3 64 + A4 12 SFX · A5 43 music pieces. Saved; NOT exported (the creator exports).
+NEXT: the creator's review (step 7) → read the diffs (`place-gfx.py`, `place-sfx.py --diff`, V1) → LESSONS.
+Left for him: 0.8x slow-downs ("What the fuck", "soul is intact", "God forbid"), A2 mute (Adin's own audio is unheard
+while muted), the legal flags below.
+
+---
+
+## ▶ (earlier) STATUS (2026-10-04)
 **ROUGH CUT + ASSETS ON SEQUENCE 27, VOICE CHAIN ON, SAVED. Next: the creator's pass, then the STYLE.md finish.**
 - **V1/A1:** the rough cut, 121 clips, 6:10 of speech (+ a 16.9 s gap) = **6:26.4**, replayed onto Sequence 27 itself
   (the creator's single C1327 handover clip removed). `diff-edl`: 0 deleted, 0 boundary moves vs `transcript/cuts.json`.

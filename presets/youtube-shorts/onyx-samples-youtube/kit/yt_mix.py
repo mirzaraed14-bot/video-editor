@@ -9,7 +9,12 @@ Reads `<job>/yt/spec.json` → "audio": {
          (a smooth gain curve from the bed's own short-term loudness: a track that builds would otherwise drift 4-5 LU
          either side, QA r2), +2 dB from the turn (a 100 ms ramp, never a step),
   "sfx": [{"file": "assets/sfx/UI Save.wav", "lead": 0.281, "t": <s>, "gain_db": -22}]   designed sounds (repo-relative file,
-         `lead` = leading silence to trim, `t` = audible onset), each ≥ 15 LU under the voice,
+         `lead` = leading silence to trim, `t` = audible onset), each ≥ 15 LU under the voice; a cue may give "under" (dB under
+         the voice's PEAK, measured here: gain = voice peak - under - file peak) instead of gain_db, and "dur" / "fade" (s) to
+         slice a long reverberant tail,
+  "auto_sfx": true   (default) also place the cues the spec implies (kit/yt_cues.py, 2026-10-14): the hook pair when the spec's
+         own cues lack a whoosh / a hit in 0-1 s ("hook_sfx": "spec" keeps the hook as written), every DOC highlight and stack slap,
+         mark, chart and fx; each device's own "sfx" key silences or swaps its cue,
   "target_i": -12, "target_tp": -1.5,
   "mute": [[t0, t1], ...]          optional: voice ranges silenced (profanity), with 10 ms ramps
 }
@@ -28,6 +33,14 @@ for _s in (sys.stdout, sys.stderr):
         pass
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import yt_cues
+
+
+def peak_db(path):
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", path, "-af", "astats=measure_overall=Peak_level:measure_perchannel=none",
+                        "-f", "null", "-"], capture_output=True, text=True).stderr
+    return float(re.findall(r"Peak level dB:\s*(-?[\d.]+)", r)[-1])
 
 
 def lufs(path):
@@ -119,12 +132,25 @@ def main():
     vi, vtp = lufs(voice)
     print(f"voice: {vi:.1f} LUFS, true peak {vtp:.1f} dBFS")
     inputs, fc, labels = ["-i", voice], [], ["[0:a]"]
-    for k, sfx in enumerate(a.get("sfx", [])):
+    auto = yt_cues.auto_cues(spec)
+    cues = list(a.get("sfx", [])) + auto
+    vpk, fpk = None, {}
+    for k, sfx in enumerate(cues):
         inputs += ["-i", os.path.join(REPO, sfx["file"])]
         ms = int(round(sfx["t"] * 1000))
-        fc.append(f"[{len(inputs) // 2 - 1}:a]atrim=start={sfx.get('lead', 0)},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,"
-                  f"volume={sfx.get('gain_db', -22)}dB,adelay={ms}|{ms},apad[s{k}]")
+        gain = sfx.get("gain_db", -22)
+        if "under" in sfx and "gain_db" not in sfx:          # set by peak: `under` dB below the voice's own peak
+            vpk = peak_db(voice) if vpk is None else vpk
+            fpk[sfx["file"]] = fpk.get(sfx["file"]) or peak_db(os.path.join(REPO, sfx["file"]))
+            gain = round(vpk - sfx["under"] - fpk[sfx["file"]], 1)
+        cut = (f"atrim=start={sfx.get('lead', 0)}:end={sfx.get('lead', 0) + sfx['dur']:.3f}" if sfx.get("dur") else f"atrim=start={sfx.get('lead', 0)}")
+        fade = f",afade=t=out:st={sfx['dur'] - sfx['fade']:.3f}:d={sfx['fade']:.3f}" if sfx.get("dur") and sfx.get("fade") else ""
+        fc.append(f"[{len(inputs) // 2 - 1}:a]{cut},asetpts=PTS-STARTPTS{fade},aresample=48000,aformat=channel_layouts=stereo,"
+                  f"volume={gain}dB,adelay={ms}|{ms},apad[s{k}]")
         labels.append(f"[s{k}]")
+        if sfx in auto:
+            print(f"sfx auto: {os.path.basename(sfx['file'])} crest {sfx['crest']:.2f} s, {gain:+.1f} dB ({sfx['under']} dB under the voice peak) — {sfx['why']}")
+    print(f"sfx: {len(cues)} cues ({len(cues) - len(auto)} from the spec, {len(auto)} auto)")
     bed = a.get("bed")
     if bed and os.path.exists(os.path.join(job, bed)):
         bed_cut = os.path.join(work, "bed-cut.wav")

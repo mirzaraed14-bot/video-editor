@@ -1,6 +1,7 @@
 # creatorscience-mrbeast-train: Onyx sample Short for Jay Clouse (Creator Science), guest David Altizer (batch 2)
 
 ## ▶ STATUS: resume here
+- **2026-10-14: Affan swapped the bed: "She Knows (Instrumental)" (J. Cole, reprod. Zodiac Beatz), his file (copied to `yt/assets/audio/`), from 1.984 s (the bell intro; the beat drops ~0:33 of the track), levels as shipped (13 LU under). Mix-only rebuilds (picture PSNR inf vs the approved finals): YT = yt6, IG = ig10 (target_tp -2.0: with this track the AAC encode reached -1.1 dBTP at -1.5). Finals + `X:\Claude Projects\Exports\` replaced; old finals kept as `outputs/*.final.prev-epidemic-bed.mp4`. ig_qa PASS, -12.0 / -13.0 LUFS.**
 - 2026-10-12 10:30: **QA r2: YouTube SHIPS (yt5 unchanged). Instagram remixed = ig8** (mix only, `--skip picture,overlay`; then
   ig_captions + ig_capy re-run to restore the spec's chunks for ig_qa): bed 17 → 13 LU (measured 12.7 LU under the voice on the stems),
   `sfx_rel` tick-glass −6 (the glass ticks ~8 dB under the voice peak), crisp cues on the entrances that only had a whoosh (pop 5.78 / 7.03

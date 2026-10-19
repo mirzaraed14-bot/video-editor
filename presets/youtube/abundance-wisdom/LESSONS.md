@@ -61,3 +61,15 @@ rule in this folder's README/PLAYBOOK (none yet: the look still lives in each jo
     ≤ 3.5 %, 0.35 %/s), keyed on his C1330 clips by name. → `host-zoom.py`.
 17. **A one-frame flash of the face at a graphic's head was the RENDER, not the placement.** libx264 B-frames give the mp4
     an edit list that Premiere misreads at the clip head. → every graphic encodes with `-bf 0` (render.sh, both copies).
+18. **On a scripted shoot WhisperX hides the retakes; the cut followed it onto the wrong take (cbum-last-show, 2026-10-19).**
+    A false start plus its retake comes back as ONE stretched word ("years." 8 s, "who" 1.5 s), or as the script's words
+    painted over the wrong audio (a run with p < 0.4). Neither the take-map nor a stitched-joint re-ASR sees it, because
+    Whisper collapses repeats inside one window. 20 hidden repeats survived a first pass.
+    → Find the kept take with sub-span re-ASR split at the silences (two clusters of matching length = two takes; trust
+      the speech bursts, not faster-whisper's word times, which run 0.3-1 s early).
+    → Forced-align the LAST take's known text (`work/realign.py`), with hand pins where the aligner squeezes a slow word.
+    → Then let the boundary tools run. A list read slowly ("2020… 2021…" at 1.1 s each) is NOT a false start; count the
+      clusters. "Last take" means the last COMPLETE take: two restarts that broke off before the line's last word are false
+      starts (decide with a forced-alignment fit of the full text, `fit_test.py`). Last gate: `cluster_sweep.py`, every
+      segment's clusters re-heard alone, 0 repeats. → `projects/cbum-last-show/work/` (`slice_asr.py`, `joint_asr.py`, `realign.py`, `words_patch.py`,
+      `rebuild.sh`).

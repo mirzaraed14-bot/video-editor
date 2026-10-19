@@ -17,6 +17,10 @@ for this look, all **hypotheses** from one reference until a YouTube-look sample
 2. **The loop.** Pick the out-point so the last line runs back into the first (README § 9). Read last → first aloud before locking the cut.
 3. **Who speaks.** List every voice in the cut, quoted voices included ("she goes…"), because each one gets its own caption colour
    (README § 5). Diarize when there are two or more speakers.
+4. **Open on the host's question** in an interview clip (batch 3, STYLE-RESEARCH § D7; Shawn Ryan's 614K sniper Short): 0.8-1.6 s of
+   the host asking, the hook card over it, then the guest's answer. The host's chunks get their own caption colour (`main` / `yellow`).
+5. **Shorter by default: 32-45 s** (§ D8: Shawn Ryan's two best recent Shorts run 32.2 s and 41.2 s; batch 2 ran 44-55 s). Keep 55 s
+   only when the payoff needs it; `yt_build.py` notes a runtime over 45 s.
 
 ## 3. Storyboard (the gate before building)
 
@@ -27,8 +31,14 @@ which chunks wipe · effects (whip direction, hook title, sticker, story effect)
 Check it against the README § 3 rhythm rules before Affan sees it:
 - the B-roll / SPLIT / speaker shares (≈ 50–55 / 10–15 / 35 %),
 - every B-roll shot arriving 0.3–1.9 s before its noun,
-- shot lengths: ~2 s in the set-up, ~4 s in the payoff,
-- the first B-roll by ~0.7 s, and the last shot on the speaker.
+- shot lengths: ~2 s in the set-up, ~4 s in the payoff: **after the turn the mean shot is ≥ 3.5 s and the last shot ≥ 3.0 s**
+  (`yt_build.py` prints both and warns under 3.0 s; batch 2 ran 1.99-2.66 s after the turn),
+- the first B-roll by ~0.7 s, and the last shot on the speaker (or the closing image, Y3),
+- **receipts (batch 3, § D1-D2): ≥ 50 % of B-roll inserts are the real thing; 0 stock actors as a named or quoted person; every
+  sourced claim that can be shown is a DOC (the article / post / chart / the show's own episode card) with its line highlighted;
+  ≤ 2 marks (circle / box / underline / arrow) per video; one story `fx` at most, only when the words describe it,**
+- the batch's variety rule (STYLE-RESEARCH § F): name this sample's hero move and signature device; no hero move used more than
+  twice in a batch.
 
 Until this look is locked, **Affan approves the storyboard before the build**, the same as on the pilot.
 
@@ -43,7 +53,21 @@ Until this look is locked, **Affan approves the storyboard before the build**, t
 - **Sticker** (if any): a flat red "!" PNG (`#C90506` → `#9A0204`), made once and kept in the preset's assets.
 - **Watermark text:** the show's exact name, as they write it.
 
+## 4b. Receipts and chart data (batch 3)
+
+- **DOC stills**: capture the page as a full still (`workflows/page-record.mjs --full`, or `window-grab.sh` for an app), into
+  `yt/assets/broll/`, checked at full size; measure the line to highlight as FRACTIONS of the file (x, y, w, h); log the URL and date
+  in BRIEF.md. A dark-mode page takes an underline or a box, not the highlighter (it multiplies). Body text under ~20 px on the card
+  is unreadable on a phone: crop the card to the sentence (a "clipping") and stack it on the full page behind it.
+- **Chart data**: every number in a `chart` comes from a source logged in BRIEF.md (GATE 5) and printed small on the chart
+  (`"source"`); land the draw (`t` + `draw`) on the spoken number.
+
 ## 5. Build and render: two passes
+
+> **Current build (2026-10-14): one command, `python kit/yt_build.py projects/<job> <version>`** (README § 13 for the batch-3 keys).
+> Before rendering it prints the payoff report (D3) and the cue plan, and stops if a hook card lacks its whoosh + hit pair. The
+> kit places the cues of every DOC highlight / stack slap, mark, chart and fx itself (`kit/yt_cues.py`); a spec builder lists only
+> its OTHER cues and still asserts their count. The steps below are the original plan the kit implements.
 
 The whips must blur and shift the PICTURE while the captions stay sharp on top, so the picture and the overlays are built separately.
 

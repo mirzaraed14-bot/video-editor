@@ -165,3 +165,20 @@ All rules at the top of this file still apply (punctuation, ONE caption position
 **Build:** `python projects/<job>/ig/build_spec.py && python presets/youtube-shorts/onyx-samples/kit/ig_build.py projects/<job> <version> --preview`
 (ig_build routes a v2 spec to `ig_window.py` for the picture and `ig_v2.py` for the overlay; the window render is cached between
 builds while the shots are unchanged).
+
+## Batch 3 upgrades (2026-10-14)
+
+From `projects/_onyx-batch3-2026-10/STYLE-RESEARCH.md` § A2 (the batch-2 critique: 53 % of the screen black and empty ~90 % of the
+time, a serif hero in 72-97 % of the caption blocks, one template x 4, 17 of 24 side cards in one slot, the leak as a tic, cards
+restating the captions) and § E (the ranked upgrades, measured on Mark Brazil, Chris Williamson and DOAC). **All opt-in; a batch-2 spec
+renders as before** (LESSONS 2026-10-14: the five v2 specs' overlays byte-identical, Vivian rebuilt at 56.2 dB). Keys and numbers:
+[kit/V2-HOWTO.md § 4](kit/V2-HOWTO.md); variety across a batch: STYLE-RESEARCH § F.
+
+| | Batch 3 |
+|---|---|
+| Frame per show | `"frame": "square"` (980 x 980 at y 470, r 40, Chris Williamson) · `"void"` (full-bleed, a DARK set crushed to black + 35 % vignette, no bars, Mark Brazil) · `"window"` (batch 2) only when neither fits. |
+| The bars carry content | `"zone": "topbar" \| "bottombar"` parks a lower-third or the story meter in a bar; target: the top bar holds something >= 25 % of the runtime (batch 2: 6-19 %). |
+| Captions | `reveal: "dim"`: the block lands at 40 % white, each word lights on its spoken time, the hero lights in the accent (Mark Brazil). `hero_gap: 4.0`: <= one hero per 4 s and no automatic hero (Vivian: 28 -> 8). One constant anchor, only ! ? and quotes, 60 fps: unchanged. |
+| New cards | `ghost` (the person named, cut out locally and faded in beside the speaker at 65 %) · widget `layout: "bar"` (a story meter in the bottom bar: the number re-rolls as the story moves it) · `chapter` (a full-window card in the show's colour for list moments, hard in on the cut) · lower3 `again` (the name returns in the last 30 %) · `behind` (heavy caps behind the speaker through a person matte, once). |
+| Gates | `ig_qa`: no card restating > 50 % of the captions on screen with it, no more than 2 side cards in a row in one slot, <= 2 leaks; the top bar's share as a note. |
+| Mix | `bed_under_lu` defaults to 13 (Affan's 12-14). |

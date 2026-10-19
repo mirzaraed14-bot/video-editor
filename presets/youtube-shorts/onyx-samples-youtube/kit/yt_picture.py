@@ -33,8 +33,51 @@ captions, e.g. a sunset sky; full-frame A/B shots only). Built for the Instagram
 black-and-white, with colour B-roll).
 Frame ranges are [f0, f1) on the base cut's timeline; the shots must tile every frame. A B-roll `src` that is a bare
 file name lives in broll_dir; one with a "/" is relative to the job folder.
+
+BATCH 3 (2026-10-14, STYLE-RESEARCH § D1-D4, D6; drawn by yt_devices.py, cued by yt_cues.py; a spec without these keys renders the
+same picture bit for bit). Times `t` are SECONDS on the cut's timeline (the clock of audio.sfx); boxes [x, y, w, h] are FRACTIONS of
+the source FILE's full frame (measure them on the file, before any crop) unless "space": "frame" (output px on 1080x1920).
+  DOC    a still RECEIPT (article / post screenshot, chart image, the show's own thumbnail) as a card over a blurred plate of itself.
+         {"kind": "DOC", "src": "x.png" | "stack": ["back.png", ..., {"src": "front.png", "crop": [...], "at": s}],
+          "crop": [x0, y0, x1, y1] (fractions, the front card), "look": "paper" (radius 10) | "screen" (14 px near-black bezel,
+          radius 30, a faint glare, a light edge), "w": 900 (card width px at rest), "max_h": 860, "fg_y": 660 (card centre y; keep
+          the card above the caption line), "tilt": -3 (deg, + = clockwise; D1: 3-5 deg), "push": 0.07 (scale per s,
+          D1: 6-8 %/s, centred on "focus" [fx, fy] = the first highlight's centre by default, which glides "drift" 0.7 of the
+          way to the frame's centre over the shot), "stack_step": [-40, -40, 3]
+          (px, px, deg per layer behind the front, fanned the tilt's way), "at" on a stack layer = it SLAPS in then (7 % big,
+          1.4 deg off, settles in 0.24 s; a thud-thin cue), "bg": "self" (the BACK-most layer's whole source, blurred 28 px, x
+          "bg_dim" 0.32, 35 % vignette) | "dark" | an image file,
+          "shadow": 0.55 (soft drop shadow, 26 px blur, 20 px down), "highlight": [[t, x, y, w, h(, dur)], ...] = a highlighter
+          sweeps that line of the FRONT card: #F5DC0B at 45 % ("hl_a") multiply, linear left -> right over 0.35 s, rounded chisel
+          ends, a 5 % wobble (a shutter-film cue 8 dB under the voice peak)}. Grade family B. The whip moves it like any shot.
+  CHART  a full-frame chart receipt: {"kind": "CHART", "chart": {...}, "src": optional still/clip for a blurred plate ("bg_dim"
+         0.35), else a near-black plate with a faint accent lift behind the chart ("glow_bg" 0.08), "push": 0.02 (per s, on the
+         chart's centre: nothing is static)}.
+  "chart" on ANY shot (D4): {"t": s (the draw starts; default shot start + 0.2), "draw": 0.8 (power2.inOut, land it on the spoken
+         number), "type": "line" | "bar", "data": [["MAR 2021", 141.6], ...] (label, value; LOG THE SOURCE in BRIEF.md),
+         "box": [100, 360, 880, 560] (output px; keep it above the caption line), "color": "gold" (#F6B412) | hex, "title",
+         "source" (printed "SOURCE: ..."), "fmt": {"prefix": "$", "suffix": "", "decimals": null, "human": true (2.4K / 313M)},
+         "value_label" (the landed chip's text), "y0" (axis floor; bars default 0), "hi" (the bar in the accent, default the last),
+         "plate": 0.6 (on a non-CHART shot: a FROSTED panel, the shot blurred 22 px and darkened, with a hairline rim), "area":
+         true, "chip_px": 40}. Type: IBM Plex Mono, title 34 px caps at 86 %, labels 26 px, source 20 px at 45 %. Line: 6 px with
+         a 12 px glow, a 22 % -> 0 accent fill, 1 px grid at 15 % white sweeping in over the 0.3 s before `t`, a head dot whose
+         value chip (40 px on #0E0E0E 90 %; D4 said 30, too small on a phone) COUNTS as it draws, a ring + the end DATE CHIP
+         (28 px) on the landing. Bar: grey bars (30 %) rise in turn (min 10 px, so a tiny value still shows), the "hi" bar in the
+         accent with a glow and a 54 px counting value. Cues: blip-data on the draw (12 dB under the voice peak), thud-thin on
+         the landing (8 dB).
+  "marks" on ANY shot (D2): [{"t": s, "type": "circle" | "box" | "underline" | "arrow", "box": [x, y, w, h], "space": "src"
+         (B, FIT, DOC: follows the push) | "frame" (any shot, output px), "dur": 0.35 (draw-on, power2.inOut), "until" (default:
+         to the cut), "color": "red" (#E70A24) | "blue" (#3FA9F5, UI boxes) | hex, "width": 8, "pad", "from" (arrow: left | right |
+         top | bottom | top-left | ... ; default bottom-left), "len", "bend"}]. Hand-made: a 3.5 % + 2 % radius wobble, 1.1 turns
+         spiralling out, marker taper (62 % -> 100 % -> 70 %), a soft 3 px shadow; the arrowhead follows the path's end tangent and
+         draws in the last 20 %. Cue: tick-glass on the close (6 dB under). D2: <= 2 per video.
+  "fx" on ANY shot (D6, one per video, only when the words describe it): {"kind": "flicker" (brightness -"depth" 0.15 in seeded
+         1-4 frame runs) | "shake" ("amp" <= 12 px, "hz" 7, eases out over the last 45 %) | "freeze" (holds frame f0), "f0", "f1"
+         (default: the shot), "sfx"}. Applied after the grade, before charts and marks. Cues: shake thud-low, freeze shutter-film,
+         flicker none (name one with "sfx": "boom-dark" for a lights-out).
+  Every device takes "sfx": false (silent) | "<library name>" | {"name", "under", "dt"} (yt_cues.py).
 """
-import json, math, os, subprocess, sys
+import json, math, os, subprocess, sys, time
 import cv2, numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
@@ -46,6 +89,49 @@ for _s in (sys.stdout, sys.stderr):
 
 KIT = os.path.dirname(os.path.abspath(__file__))
 W, H = 1080, 1920
+sys.path.insert(0, KIT)
+import yt_devices as dev        # the batch-3 devices: DOC cards, marks, charts, fx (drawn into the picture, so they whip with it)
+
+_PROP = {}
+
+
+def draw_prop(out, p, n_abs, fps, SRC):
+    """A product cutout over the picture (Affan 2026-10-17, Bombas): whips in from the right (the whip's halving offsets, motion-blurred),
+    hangs mid-frame with a slow float and a soft shadow, whips out to the left. Spec: shot "prop" {src (RGBA), f0, f1, xy [cx, cy],
+    h px, angle deg, travel px (1150), shadow (0.45)}; part of the PICTURE, so it must leave before the shot's cut."""
+    key = (p["src"], p["h"], p.get("angle", 0))
+    if key not in _PROP:
+        im = Image.open(SRC(p["src"])).convert("RGBA"); im = im.crop(im.getbbox())
+        im = im.resize((round(im.width * p["h"] / im.height), p["h"]), Image.LANCZOS).rotate(p.get("angle", 0), Image.BICUBIC, expand=True)
+        a = np.asarray(im, np.float32) / 255.0
+        _PROP[key] = (a[..., :3] * a[..., 3:4], a[..., 3:4], cv2.GaussianBlur(a[..., 3], (0, 0), 18)[..., None] * p.get("shadow", 0.45))
+    rgb, al, sh = _PROP[key]
+    T_ = p.get("travel", 1150); off = lambda k: T_ * 0.5 ** k if k < 12 else 0.0
+    ki, ko = n_abs - p["f0"], p["f1"] - 1 - n_abs
+    if ki < 12:
+        dx, v = off(ki), (T_ if ki == 0 else off(ki - 1) - off(ki))
+    elif ko < 12:
+        dx, v = -off(ko), (T_ if ko == 0 else off(ko - 1) - off(ko))
+    else:
+        dx, v = 0.0, 0.0
+    dy = 10 * math.sin(2 * math.pi * (n_abs - p["f0"]) / fps / 1.7)
+    kw = int(min(v * 0.5, 160))
+    if kw > 2:
+        rgb, al = cv2.blur(rgb, (kw, 1)), cv2.blur(al, (kw, 1))[..., None]
+        sh = cv2.blur(sh, (kw, 1))[..., None]
+    f = out.astype(np.float32) / 255.0; Hh, Ww = f.shape[:2]; h, w = al.shape[:2]
+    for lay, (ox, oy) in ((sh, (16, 26)), (None, (0, 0))):
+        x0 = int(round(p["xy"][0] + dx - w / 2 + ox)); y0 = int(round(p["xy"][1] + dy - h / 2 + oy))
+        xa, ya, xb, yb = max(x0, 0), max(y0, 0), min(x0 + w, Ww), min(y0 + h, Hh)
+        if xa >= xb or ya >= yb:
+            continue
+        sl = (slice(ya - y0, yb - y0), slice(xa - x0, xb - x0)); reg = f[ya:yb, xa:xb]
+        if lay is not None:
+            reg *= 1 - lay[sl]
+        else:
+            reg[:] = reg * (1 - al[sl]) + rgb[sl]
+    return (np.clip(f, 0, 1) * 255 + 0.5).astype(np.uint8)
+
 
 
 def probe(path):
@@ -211,10 +297,13 @@ def main():
     os.makedirs(os.path.join(work, "stills") if stills else work, exist_ok=True)
 
     fits = {}
+    HL = sorted(spec.get("head_lock", []))   # head lock (AW, Affan 2026-10-19): the joints of a jump-cut run; the face fit restarts at each
 
     def face_track(key, n_abs, f0, f1):
         """The face centre (base px) at base frame n_abs: a straight-line fit of the detections INSIDE the shot [f0, f1)
         (a running median flipped between neighbours and shook the crop, QA 2026-10-05); the slope is capped at 2 px/frame."""
+        if HL:                                   # so after every jump cut the head lands on the same output point (fx_out, fy_out)
+            f0 = max([f0] + [j for j in HL if j <= n_abs]); f1 = min([f1] + [j for j in HL if j > n_abs])
         if (key, f0, f1) not in fits:
             f = faces[key]; pf = f["per_frame"]
             ks = [int(k) for k in pf if f0 <= int(k) < f1] or [int(k) for k in pf]
@@ -234,8 +323,8 @@ def main():
         x0, y0 = view(BW, BH, fx, fy, k, out_w, panel_h or out_h, fx_out, fy_out)
         return warp(base_rgb, k, x0, y0, out_w, out_h)
 
-    def render_B(frame, d, u, out_w, out_h):
-        sw, sh = frame.shape[1], frame.shape[0]
+    def b_view(sw, sh, d, u, out_w, out_h):
+        """A B shot's crop of its source frame: scale k and the view's top-left (x0, y0) in source px."""
         k = max(out_w / sw, out_h / sh) * d.get("z0", 1.0) * (1 + d.get("r", 0.0) * u)
         if "pan" in d:
             p = u / d["_dur"] if d["_dur"] > 0 else 0
@@ -249,6 +338,10 @@ def main():
             p = p * p * (3 - 2 * p)
             cy = d["pan_y"][0] + (d["pan_y"][1] - d["pan_y"][0]) * p
         x0, y0 = view(sw, sh, cx * sw, cy * sh, k, out_w, out_h)
+        return k, x0, y0
+
+    def render_B(frame, d, u, out_w, out_h):
+        k, x0, y0 = b_view(frame.shape[1], frame.shape[0], d, u, out_w, out_h)
         return warp(frame, k, x0, y0, out_w, out_h)
 
     shots = spec["shots"]
@@ -273,11 +366,24 @@ def main():
                             "-vf", "scale=out_color_matrix=bt709:out_range=tv,setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709",
                             "-c:v", "libx264", "-crf", "12", "-preset", "slow", "-pix_fmt", "yuv420p", os.path.join(work, "picture.mp4")],
                            stdin=subprocess.PIPE)
+    t_start = time.time()
     for s in shots:
         a, b = s["f0"], s["f1"]
         rd = {}
         if s["kind"] in ("B", "FIT"):
             rd["main"] = Reader(SRC(s["src"]), s["src_in"], b - a, fps, s.get("speed", 1.0))
+        doc = dev.Doc(s, SRC, fps) if s["kind"] == "DOC" else None
+        plate = None
+        if s["kind"] == "CHART":                                    # a dark plate, or a still's / a clip's own blurred, darkened copy
+            if not s.get("chart"):
+                sys.exit(f"yt_picture: CHART shot {s['id']} has no \"chart\"")
+            if not s.get("src"):
+                plate = dev.plate_dark()
+            elif s["src"].lower().endswith((".png", ".jpg", ".jpeg", ".webp")):
+                plate = dev.plate_self(dev.load_rgb(SRC(s["src"])), s.get("bg_dim", 0.35))
+            else:
+                rd["main"] = Reader(SRC(s["src"]), s.get("src_in", 0.0), b - a, fps, s.get("speed", 1.0))
+        fx_state = {}
         if s["kind"] == "SPLIT" and not s["bottom"].get("face"):      # a FACE SPLIT's bottom is a second face from the same base frame
             bt = s["bottom"]
             rd["bottom"] = Reader(SRC(bt["src"]), bt["src_in"], b - a, fps, bt.get("speed", 1.0))
@@ -312,6 +418,7 @@ def main():
                 for bx in spec["base_inpaint"]:                              # before the speaker crop (fill_box: column blend, see FIT)
                     fill_box(base_rgb, bx)
             u = (n_abs - a) / fps
+            xf = None
             if s["kind"] == "A":
                 if is_st:
                     m = rd["matte"].read()
@@ -327,7 +434,21 @@ def main():
                         base_rgb = (comp.astype(np.float32) * (1 - al) + base_rgb.astype(np.float32) * al).astype(np.uint8)
                 out = grade(render_A(base_rgb, s["face"], n_face, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b)), gA)
             elif s["kind"] == "B":
-                out = grade(render_B(rd["main"].read(), s, u, W, H), gB)
+                fr = rd["main"].read()
+                out = grade(render_B(fr, s, u, W, H), gB)
+                if s.get("marks"):                                   # source px -> output px, for "src"-space marks
+                    k_, x0_, y0_ = b_view(fr.shape[1], fr.shape[0], s, u, W, H)
+                    xf = (np.array([[k_, 0.0], [0.0, k_]]), np.array([-k_ * x0_, -k_ * y0_]), (fr.shape[1], fr.shape[0]))
+            elif s["kind"] == "DOC":
+                out = grade(doc.frame(n_abs / fps), gB)
+                xf = doc.mark_xf() if s.get("marks") else None
+            elif s["kind"] == "CHART":
+                if plate is None:
+                    fr = rd["main"].read()
+                    bgc = cv2.GaussianBlur(render_B(fr, dict(cx=0.5, cy=0.5, z0=1.0, r=0.0, _dur=1), 0, W, H), (0, 0), 28)
+                    out = grade((bgc.astype(np.float32) * s.get("bg_dim", 0.35)).astype(np.uint8), gB)
+                else:
+                    out = grade(plate.copy(), gB)
             elif s["kind"] == "FIT":
                 fr = rd["main"].read()
                 for bx in s.get("inpaint", []):    # burned-in source text (a show label) painted out, so the crop may reach the frame edge
@@ -335,8 +456,10 @@ def main():
                     fill_box(fr, bx)
                 bg = cv2.GaussianBlur(render_B(fr, dict(cx=0.5, cy=0.5, z0=1.0, r=0.0, _dur=1), 0, W, H), (0, 0), 28)
                 out = (bg.astype(np.float32) * s.get("bg_dim", 0.5)).astype(np.uint8)
+                sw0, sh0, ox0, oy0 = fr.shape[1], fr.shape[0], 0, 0
                 if s.get("crop"):                  # fit only this box of the source (fractions x0, y0, x1, y1)
                     cx0, cy0, cx1, cy1 = s["crop"]
+                    ox0, oy0 = int(cx0 * fr.shape[1]), int(cy0 * fr.shape[0])
                     fr = fr[int(cy0 * fr.shape[0]):int(cy1 * fr.shape[0]), int(cx0 * fr.shape[1]):int(cx1 * fr.shape[1])]
                 kf = W / fr.shape[1] * s["z0"] * (1 + s["r"] * u)
                 fw, fh = int(round(fr.shape[1] * kf)), int(round(fr.shape[0] * kf))
@@ -346,6 +469,21 @@ def main():
                 ww, hh = min(W - dx0, fw - sx0), min(H - dy0, fh - sy0)
                 out[dy0:dy0 + hh, dx0:dx0 + ww] = fg[sy0:sy0 + hh, sx0:sx0 + ww]
                 out = grade(out, gB)
+                if s.get("marks"):
+                    A_ = np.array([[fw / fr.shape[1], 0.0], [0.0, fh / fr.shape[0]]])
+                    xf = (A_, np.array([x, y], float) - A_ @ np.array([ox0, oy0], float), (sw0, sh0))
+            elif s["kind"] == "SPLIT" and s.get("flip"):        # Affan 2026-10-15 (Scott Clary FUBU): B-roll ABOVE the seam, the speaker BELOW;
+                t, bt = s["top"], s["bottom"]                    # "top" still names the speaker (yt_faces scans it), "bottom" the B-roll
+                seam = int(round(split["seam"] + split["bob_amp"] * math.sin(2 * math.pi * u / split["bob_period"])))
+                out = np.empty((H, W, 3), np.uint8)
+                out[:seam] = grade(render_B(rd["bottom"].read(), bt, u, W, split["seam"] + split["bob_amp"] + 4),
+                                   {**G.get("B", {}), **bt.get("grade", {})})[:seam]
+                ph = H - (split["seam"] - split["bob_amp"])
+                out[seam:] = grade(render_A(base_rgb, t["face"], n_abs, t.get("fx_out", 0.5), t["fy_out"], t["z0"], t.get("r", 0.0), u, W, ph,
+                                            rng=(a, b)), {**G.get("A", {}), **t.get("grade", {})})[:H - seam]
+                if split.get("line"):
+                    lw = int(split["line"].get("w", 6)); y0l = max(0, seam - lw // 2)
+                    out[y0l:y0l + lw] = np.array(split["line"].get("rgb", [255, 255, 255]), np.uint8)
             elif s["kind"] == "SPLIT":
                 t = s["top"]
                 out = grade(render_A(base_rgb, t["face"], n_abs, 0.5, t["fy_out"], t["z0"], t["r"], u, W, H, panel_h=split["seam"] + split["bob_amp"] + 4, rng=(a, b)),
@@ -361,12 +499,25 @@ def main():
                 if split.get("line"):                     # the white seam line, centred on the seam row
                     lw = int(split["line"].get("w", 6)); y0l = max(0, seam - lw // 2)
                     out[y0l:y0l + lw] = np.array(split["line"].get("rgb", [255, 255, 255]), np.uint8)
+            if s.get("prop") and s["prop"]["f0"] <= n_abs < s["prop"]["f1"]:   # a product cutout hangs over the shot (draw_prop)
+                out = draw_prop(out, s["prop"], n_abs, fps, SRC)
+            if s.get("fx"):                                      # D6 story effect on the graded picture
+                out = dev.apply_fx(out, s["fx"], n_abs, s, fps, fx_state)
+            if s.get("chart"):                                   # D4 chart receipt, then D2 marks: graphics drawn INTO the picture
+                dev.draw_chart(out, s["chart"], n_abs / fps, a / fps, s["kind"] == "CHART")
+                if s["kind"] == "CHART" and s.get("push", 0.02):  # nothing is static (README § 7): a slow push on the chart's centre
+                    bx_ = s["chart"].get("box", [100, 360, 880, 560]); k_ = 1 + s.get("push", 0.02) * u
+                    cxp, cyp = bx_[0] + bx_[2] / 2, bx_[1] + bx_[3] / 2
+                    out = cv2.warpAffine(out, np.float32([[k_, 0, cxp * (1 - k_)], [0, k_, cyp * (1 - k_)]]), (W, H), flags=cv2.INTER_CUBIC,
+                                         borderMode=cv2.BORDER_REFLECT)
+            if s.get("marks"):
+                dev.draw_marks(out, s["marks"], n_abs / fps, xf, s["id"])
             enc.stdin.write(np.ascontiguousarray(out).tobytes())
             if stills and n_abs == (a + b) // 2:
                 Image.fromarray(out).resize((360, 640)).save(os.path.join(work, "stills", f"{s['id']}.jpg"), quality=85)
         for r_ in rd.values():
             r_.close()
-        print(f"  {s['id']} {s['kind']:5s} frames {a}-{b - 1} ({(b - a) / fps:.2f} s)")
+        print(f"  {s['id']} {s['kind']:5s} frames {a}-{b - 1} ({(b - a) / fps:.2f} s)  [{time.time() - t_start:.0f} s]", flush=True)
     basep.stdout.close(); basep.wait()
     enc.stdin.close(); enc.wait()
     print(f"wrote {nframes} frames -> {os.path.join(work, 'picture.mp4')}  (base: {os.path.basename(base)}, {BW}x{BH})")

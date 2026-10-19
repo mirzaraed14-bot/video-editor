@@ -271,6 +271,7 @@ The system improves only through files, never through chat memory. Four writes, 
    Affan Afterhours → [`presets/youtube/affan-afterhours/`](presets/youtube/affan-afterhours/README.md).
    @affanwizu (Urdu reels, Roman Urdu CAPTIONS ONLY) → [`presets/instagram/affanwizu/`](presets/instagram/affanwizu/README.md).
    AffanWiz (English personal brand, long-form YouTube, promotes their Skool community) → [`presets/youtube/affanwiz/`](presets/youtube/affanwiz/README.md).
+   Scott D. Clary client Shorts (Success Story) → [`presets/youtube-shorts/scott-clary/`](presets/youtube-shorts/scott-clary/ENGINE.md): ENGINE, FINDINGS, and RESULTS.md, where every Short's locked prediction and 7-day results are logged.
    Onyx sample Shorts (podcast prospects' re-edits for Onyx Influence outreach, plus Affan's reaction video): the prospect's priority platform picks the look (its PLAYBOOK § 0). Instagram-first → [`presets/youtube-shorts/onyx-samples/`](presets/youtube-shorts/onyx-samples/README.md); YouTube-first → [`presets/youtube-shorts/onyx-samples-youtube/`](presets/youtube-shorts/onyx-samples-youtube/README.md).
 2. **The creator's review is data.** After step 7, read what changed on the timeline (`place-graphics.py --diff`,
    `place-sfx.py --diff`, the V1 cut diff) plus what was said, and append each finding to the channel's `LESSONS.md` as

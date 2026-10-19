@@ -10,6 +10,15 @@ he stopped it: *"its an english video"*. → PLAYBOOK § 1 already says to confi
 few seconds or let Whisper detect it) before any Urdu pass, and ask the style when the language is English. His pick
 for that English vertical: the plain **white** style as an .srt track (`projects/seq44-short/RUN.md`).
 
+## 2026-10-19: first ABW10 job (Sequence 09) — a loop at the very START, and the loop window
+
+The Urdu pass looped the opening ("dekhne ke liye bhi difference hota hai, meri shuru mai" ×3, 0–7 s) and the 15-word loop
+window missed it (a 7-word phrase repeated 3 times spans 14 words). → window 17 words in `transcript_check.py` and
+`caption_qa.py`: catches it, the Seq 26 loop and the middle loop here, and stays quiet on Seq 42–51 and the four reference
+reels (rhetorical repeats like "phir mene… phir mene…" sit further apart). The English listener had the real opening.
+Also: a new project number holds other channels' work (ABW10 = Onyx reactions too) → check frame, tracks and language
+before forcing `--lang ur`, and prefix the job with the project (`abw10-seq09-short`).
+
 ## 2026-10-13: the ending dropped a 4th time (Seq 51) → `transcript_check.py`
 
 Seq 17, 20, 29 and now 51: WhisperX stops before the cut ends and squeezes the last sentence early (Seq 51: words end at

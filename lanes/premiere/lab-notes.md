@@ -567,3 +567,62 @@ Always check the EDL bash can actually see before re-splicing.
   clone becomes the ACTIVE sequence. `createNewSequenceFromClips` would inherit the camera's 1920x1080.
 - **Camera-to-OBS sync**: `workflows/sync-dual-audio.py --report --json-out`; fit the offset line through the windows with peak ≥ 10x
   only (C1349's weak first window sat 40 ms off the other three); window centres are CAMERA time.
+
+## 2026-10-13 · overlapping SFX on ONE audio track: `overwriteClip` splits the earlier sound (Onyx reactions, batch 3)
+- **Symptom:** a plan with a whoosh at t and a thud at t + 0.34 s placed both on A2: the readback had 73 clips for 55 cues. Overwriting a
+  short clip into the MIDDLE of a longer one splits the longer one: its head ends at the new clip (an abrupt cut mid-sound) and its
+  TAIL survives after the new clip as a separate clip that starts mid-waveform (a stray, clicky fragment). 18 such tails in one video.
+- **Fix (reactions/tools/apply.py, 2026-10-13):** each cue goes to the first of `plan.sfx_tracks` (default A2, A4) that is free at its
+  time (busy = the file's length minus its ES_LEAD trim); when both are sounding, the one that frees first is ENDED at the cue
+  (`clip.end = t`), never split. `--overlays` first clears our SFX clips from those tracks, so re-placing is idempotent; `--verify`
+  now counts the clips on both tracks against the plan's cue count.
+- **Hard audio edges** where a reviewed video starts/stops at full level (a VLC pause, a cut through a music bed): `tools/afade.py`
+  puts 25 ms Volume ramps on the A1 clips either side (keys in clip-source time, as the bed's), DOM only, no active sequence.
+- **build_seq.py --place** on 60+ segments: the bridge drops after ~16-32 segments per run; `--resume` in a loop finishes it (the
+  placed work is always intact). Re-placing after a rough cut changed: `--place --clear`, then `--resume` loops.
+
+## 2026-10-14 — exporting a Dynamic-Linked AE comp (Affan's ABW8 Sequence 53 → ABW9 Linked Comp 79, Premiere/AE 2025, Windows)
+
+- **`exportAsMediaDirect` of a sequence whose picture is a heavy Dynamic-Linked comp runs for HOURS behind a modal dialog.**
+  Comp 79 (Sapphire BlurMoCurves, Deep Glow lines, a 4K caption precomp with Turbulent Displace, a LookSuite/BCC/Lumetri grade)
+  rendered through the open AE at ~12 s/frame (~1.3 cores): 1 MB of ~110 MB after 13 min, dialog at 0 % → 6–8 h, Premiere
+  blocked by "Encoding Sequence 53" (#32770) the whole time. The dialog is NOT in a PrintWindow of the main window: find it with
+  EnumWindows on Premiere's PID and PrintWindow its own hwnd. With AE open and the project UNSAVED, Dynamic Link renders the
+  in-memory state; closing AE mid-export would fall back to the saved .aep. Quote the time before starting a full export.
+
+
+## 2026-10-19 · batch-3 reactions (five, ABW10): what the toolkit got wrong and the workaround
+- **facex.py locks onto the leather chair.** YuNet scores the tufted leather behind Affan as a face: Wellness one beat (x 323 vs his
+  ~1050), Moonshots the outro (284-297 vs ~900), **Priestley EVERY beat (221-527 vs 908-1076)**. `tools3/facefix.py` resets outliers
+  to the median, which fails when all beats are wrong: then pass `t0=x` per beat, measured on a camera grid
+  (`srcgrid.py <dump> "<seq>" 1 out.jpg t...`, track 1 = the face track). Re-apply after EVERY build_plan.py + facex.py run (the
+  plan rebuild resets face_x). Fix candidate: pick the detection nearest the previous beat's x, not the top score.
+- **A view is NOT clamped to the recording.** geom.view_motion places whatever cx/cy/z it gets: a view whose half-height in source px
+  (994 / 2 / (0.71 z)) exceeds cy shows a black band at the panel top (Priestley short_mock cy 560 z 1.15 → 40 px). Keep
+  cy ≥ 700 / z and ≤ 1440 − 700 / z (and the same for x with 760 / z).
+- **Between-key slips on camera pushes**: an anim baked at 1/30 s keys bent up to 9.9 px off the panel between keys (Moonshots title
+  push). `apply.py` now reads `plan.anim_kps` (default 30); 60 = a key on every frame → max 2.9 px. Set in build_plan.py.
+- **--layout-check before --razor can crash** (`view_at` returns None) when a drifting screen clip straddles a face-only edge; razor
+  first (it cuts at every face edge), then dump-layout, then check.
+- **Joint words: the free ASR times are not evidence.** WhisperX/faster-whisper word times on this desktop audio sit up to ±0.4 s off,
+  and an RMS dip cannot tell "here" from "right". Two job-local tools decide instead: `tools3/falign.py` (wav2vec2 forced alignment of
+  the KNOWN text in a 2-4 s window; also scores alternative wordings: 'happy' 0.99 vs 'if' 0.49) and `tools3/endtest.py` (Whisper
+  large-v3 on each candidate cut end/start, a 0.4 s hard stop appended: "280.833 → 'the case', 281.083 → 'the case here'").
+  Both run with the whisperx venv python; endtest under `lock.sh gpu` and needs torch's lib dir on the DLL path (cublas64_12).
+- `tools3/tightasr.sh` must be run from the REPO root with `projects/<job>` (its second half cds into the repo).
+- **falign.py cannot score digits**: wav2vec2's character set has no numerals, so "1.29" aligns as noise and a wording test with
+  digits misleads (DSH: it "found" a second "million"). Spell numbers out ("one point two nine") before comparing variants.
+- **Re-rendering an overlay Premiere already imported**: write it under a NEW name (overlays.py `plan["captions_file"]`), then
+  `projectItem.changeMediaPath(path, true)` on the clip's project item. The first attempt on a just-written 850 MB file raised a modal
+  "File Import Failure: The importer reported a generic error"; the modal blocks the CEP bridge ("MCP Bridge is not running") until it
+  closes: find it with EnumWindows on Premiere's PID, PostMessage WM_CLOSE, wait for ping, retry (the retry with a Windows path worked).
+
+## 2026-10-19 · cbum-last-show (ABW10 › "THE LAST SHOW - rough cut", shared with the Onyx session)
+- **A long single bridge call reports "MCP Bridge is not running" while the ExtendScript keeps running and FINISHES.**
+  `audio-polish.py --apply` on 154 A1 clips: the bridge gave up, then the lock's restore call queued behind the script and
+  succeeded. A by-name read-back found all 154 chains correct (`projects/cbum-last-show/work/premiere_seq.py --verify-audio`).
+  Never retry blind after this error, because a second `--apply` on a finished chain is harmless but a re-replay is not. Read
+  back BY NAME, since `audio-polish.py --verify` reads the ACTIVE sequence, which is the other session's again by then.
+- **Creating a sequence while another session works:** `createNewSequenceFromClips` opens (activates) the new sequence,
+  so it ran inside ACTIVE-WINDOW.lock for ~1.5 s. `openSequence(prevId)` restored the other session's sequence, proven by
+  DOM + QE reads. Everything else (import of ONE file, clear, replay in chunks of 30, verify, save) was by name.

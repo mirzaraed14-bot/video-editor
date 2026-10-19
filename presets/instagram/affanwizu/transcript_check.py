@@ -8,7 +8,7 @@ Prints, against an independent speech detector (Silero):
   ENDING   speech after the transcript's last word: the ending was dropped or squeezed early
            (Seq 17, 20, 29, 51 — the most common failure on this channel)
   SILENCE  a pause with no speech at all (a timeline gap or a real pause): end the caption there with `@<sec> |`
-  LOOP     the same three words 3+ times within 15 words
+  LOOP     the same three words 3+ times within 17 words
   LONG     one word over 0.9 s
 and, for every DROP / ENDING / LOOP, what the English listener (transcript/codeswitch.json) heard in that window,
 which is usually the missing text. Re-decode those windows wide (ur + en) before writing the lines.
@@ -59,10 +59,10 @@ def main():
     for i, w in enumerate(ws):
         tri = [word(x) for x in ws[i:i + 3]]
         if len(tri) == 3 and (i == 0 or [word(x) for x in ws[i - 1:i + 2]] != tri):
-            win = [word(x) for x in ws[i:i + 15]]
+            win = [word(x) for x in ws[i:i + 17]]
             n = sum(win[k:k + 3] == tri for k in range(len(win) - 2))
             if n >= 3:
-                issues.append(("LOOP", w["start"], ws[min(i + 15, len(ws) - 1)]["end"], f"'{' '.join(tri)}' x{n}"))
+                issues.append(("LOOP", w["start"], ws[min(i + 17, len(ws) - 1)]["end"], f"'{' '.join(tri)}' x{n}"))
         if w["end"] - w["start"] > 0.9:
             issues.append(("LONG", w["start"], w["end"], f"'{word(w)}' {w['end'] - w['start']:.2f}s"))
     print(f"transcript_check  {os.path.basename(job)}: {len(ws)} words, last word ends {ws[-1]['end']:.2f}s, cut {end:.2f}s, "

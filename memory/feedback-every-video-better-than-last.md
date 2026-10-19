@@ -22,3 +22,10 @@ better… we should not stick to just one editing style forever… do your resea
 - Never ship the same build untouched as the previous job; the creator's explicit locks (e.g. [[feedback-split-screen-white-line]],
   [[feedback-caption-punctuation]]) stay, everything else is open to getting better.
 Related: [[feedback-long-term-self-improving]], [[feedback-instagram-expensive-minimal]].
+
+**Restated 2026-10-13, explicitly for REACTION videos too:** "with every single video we make, the sample videos or the reaction videos,
+a learning loop: look at your previous reaction video, analyze it, then go on Instagram / YouTube and find better styles, something
+cooler, more creative, and incorporate that… one percent better each and every day… so our channel doesn't look like one stale channel
+uploading one same style." So before each reaction batch: an honest critique of the last reactions (their plans + program-monitor grabs)
++ a research pass on current reaction/commentary edits, written to `projects/_onyx-batch-2026-10/reactions/research-<date>.md`, and the
+toolkit (`reactions/tools/overlays.py`, the plan builders) gets the improvements BEFORE the edit.

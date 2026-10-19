@@ -1,6 +1,7 @@
 # jeremyminer-google-88k: Onyx sample Short for Jeremy Miner (NEPQ, 7th Level) (batch 2)
 
 ## ▶ STATUS: resume here
+- **2026-10-14: Affan swapped the bed: "Black Skinhead (Instrumental)" (Kanye West), his file (from E:\C shit\Telegram Desktop, copied to `yt/assets/audio/`), from 0.144 s, "make sure it's not too loud": YT bed_under_lu 14.5 + turn lift 1 dB (measured 14.2 LU under the voice), IG 14. Mix-only rebuilds (picture PSNR inf vs the approved finals): YT = yt v4, IG = ig v12 = v11's picture (its overlay cache was truncated, so v11's video stream was copied) + the new mix. NOTE: the IG final/export had been v5 (pre-QA-round-3) until now; v12 carries round 3. Finals + `X:\Claude Projects\Exports\` replaced; old finals kept as `outputs/*.final.prev-epidemic-bed.mp4`. ig_qa PASS, -12.1 / -13.0 LUFS.**
 - **2026-10-12 (QA round 2 by the main session, `_onyx-batch2-2026-10/review/qa-r2.md`): YouTube SHIPS (yt v2). Instagram round 3
   (the last) applied -> IG final = ig v11.**
   - J-I1/J-I2 (jump cuts): no face-to-face cut on a joint remains. 1439 = the Adobe logo card (i08b, an IG layout of the card: logo right

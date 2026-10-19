@@ -28,4 +28,9 @@ Job 3 (2026-10-04) = `projects/kick-fake-viewers/` (CA-003, ABW8 Sequence 27): t
 `X:\Claude Projects\Personal Brand English - Skool Community\creator-shorts\CA-NNN-*.md`; they want TIGHT joints
 (~2 frames out / 1 in), improvised bits kept, and every asset the script names gathered via their Chrome and laid in
 the sequence (PLAYBOOK § Assets).
+**2026-10-13: the look is STYLE.md v2 = the IGN-missions style** (Afterhours video 22, "GTA 6 Just Got A Whole Lot More
+Interesting…", our job gta6-ign-missions / Seq 39): full-frame "IGN dossier" graphics (blurred footage plate on V2 + alpha
+HyperFrames overlay on V3), b-roll inset over its own blur, premium SFX (whoosh/pen/ticks/chimes) on A3/A4, beds on A5 out
+under every zoom, cut zooms median 135 %, no face push. Sequence 27 (CA-003, kick-fake-viewers) was restyled to it; the
+reusable pattern is that job's folder. v1 (Game Informer port) kept as STYLE-v1-game-informer.md.
 Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]].

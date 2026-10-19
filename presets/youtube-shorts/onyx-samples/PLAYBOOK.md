@@ -56,6 +56,11 @@ point). Affan's instructions for it:
   research the web, but YouTube watch/caption/audio pulls go through one queue, spaced out. Never touch the CAPTCHA, and use no
   cookies, client switching, proxies or third-party transcript sites. While blocked, read published text (the show's own
   episode pages, show notes, chapter lists) and mark each angle "premise from title" vs "read on transcript".
+- **Serialising is not enough (batch 3, 2026-10-14):** six research agents through `lock.sh youtube` (one stream, 20 s cool-down) still
+  got the IP bot-blocked within ~6 minutes of metadata pulls (04:18-04:24 PST). The request RATE is what trips it. Now: research
+  agents read published text first (podcast RSS `podcast:transcript`, show sites) and LIST their YouTube pulls; the main session
+  runs ONE spaced queue (≥ 60 s apart). A block sets `.locks/youtube.BLOCKED` (lock.sh then fails fast, exit 75); one probe after
+  ~45 min, then the queue.
 - **Topaz on the speaker footage of every sample** (Affan, 2026-10-06: "still do topaz because it makes the footage very smooth; if the
   quality difference isn't there don't enhance but apply interpolation"): his frame interpolation (Chronos, replace duplicate
   frames) ALWAYS, per take (`--segments` at every joint and camera cut); his Iris enhancement only where it shows (≤1080p
@@ -127,6 +132,10 @@ branding and written into BRIEF.md.
 - **Composition:** HyperFrames, the `talking-head-recut` mechanics. The source video sits in a wrapper that
   tweens between layouts (full-bleed ↔ card ↔ bubble ↔ split); cards and graphics are timed to word timestamps.
 - Captions per README § 5, SFX per § 6, music bed if used.
+- **The Instagram look v2 (batch 2) and its batch-3 upgrades:** `kit/ig_build.py` per [kit/V2-HOWTO.md](kit/V2-HOWTO.md). Batch 3
+  (2026-10-14, § 4 there): pick a FRAME per show (`square` / `void` / `window`) and a caption mode by STYLE-RESEARCH § F (never
+  batch 2's window + stack + leaks), `reveal: "dim"` + `hero_gap: 4.0` on the captions, the bars carrying content (`zone`, the
+  story meter), and `ig_qa` must PASS its gates: no card restating the captions, <= 2 side cards in a row in one slot, <= 2 leaks.
 - Render to `outputs/<job>.final.mp4`, plus a copy in `X:\Claude Projects\Exports\`.
 
 ### 5b. Before writing the composition (learned on the pilot)

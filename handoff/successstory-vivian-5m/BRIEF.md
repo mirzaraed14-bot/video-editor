@@ -1,6 +1,7 @@
 # successstory-vivian-5m: Onyx sample Short for Scott D. Clary (Success Story), guest Vivian Tu (batch 2)
 
 ## ▶ STATUS: resume here
+- **2026-10-14: Affan swapped the bed: "Thelema", his file (copied to `yt/assets/audio/Thelema.mp3`), from 2.724 s, levels as shipped (YT 13.6 window-held, IG 13 LU under). Mix-only rebuilds (picture PSNR inf vs the approved finals): YT = yt v3, IG = ig v9. Finals + `X:\Claude Projects\Exports\` replaced; old finals kept as `outputs/*.final.prev-epidemic-bed.mp4`. -12.1 / -13.0 LUFS; ig_qa flags only the known "sh*t" asterisk (Affan's taste call, same as the shipped v8).**
 - **2026-10-12 11:01: main-session QA r2: YT SHIPS; IG mix fixed → IG final = ig v8** (mix only; picture = v7, max frame diff 0.3/255):
   bed 17.2 → 13.0 LU under the voice (`bed_under_lu` 13: the kit's 17 is outside Affan's 12-14), glass ticks 2 → 8 dB under the voice
   peak (`sfx_rel` tick-glass -6; thud-thin -2, hit-soft -3), a crisp glass tick added on the four entrances that had only a soft whoosh

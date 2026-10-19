@@ -59,10 +59,17 @@ system and one music bed hold it together, and the last line runs back into the 
 | **B** (B-roll) | Full-bleed real footage of the thing being named. | Every noun, place, object and event. A pop-culture comparison gets the real reference (*"they communicate through electricity"* → *Stranger Things*). | 0.8–2.7 s in the set-up; a whole sentence (4–5 s) in the payoff |
 | **SPLIT** | Speaker on top (56–57 % of the height), B-roll below, hard seam, no divider line. The bottom panel floats ±9–24 px (a ~1.25 s bob); the top keeps pushing in (up to +27 % over 2.3 s). The caption sits on the seam. | A line where both the face and the noun matter (a reaction to a thing, a guest's comparison). | 2–4 s |
 
+Batch 3 adds two shot kinds for **evidence** (Shawn Ryan's 2026 Shorts, § 13): **DOC** (a still receipt: an article or post
+screenshot, a chart image, the show's own past-episode thumbnail, as a tilted card over its own blurred plate, pushed in on the line a
+highlighter sweeps) and **CHART** (a full-frame line or bar chart with dates that draws on). Both whip like any shot.
+
 **Rhythm rules (measured):**
 - **Share of runtime: B-roll ≈ 50–55 %, SPLIT ≈ 10–15 %, speaker ≈ 35 %.** The face is on screen less than half the time.
 - **Fast set-up, slow payoff.** Mean shot 2.7 s, but ~2 s per shot over the first ~45 % (12 shots in 23 s), then ~4 s per shot
-  to the end (7 shots in 28 s). In the slow half, the captions keep the rhythm (a new chunk every ~0.66 s).
+  to the end (7 shots in 28 s). In the slow half, the captions keep the rhythm (a new chunk every ~0.66 s). **MEASURED AT BUILD
+  TIME since 2026-10-14** (batch 2 never slowed down: 1.99-2.66 s after the turn, Victor ended on a 0.60 s face): `yt_build.py`
+  prints the mean shot before / after `audio.turn_t` and WARNS when the mean after the turn is < 3.0 s (target ≥ 3.5 s) or the last
+  shot is < 3.0 s; `"allow_fast_payoff": "<reason>"` in the spec records a deliberate exception.
 - **Open on the speaker for under a second, then B-roll** (the reference cuts to the farm at 0.67 s).
 - **B-roll arrives early: 0.3–1.9 s before its noun is spoken.** The cut lands on a caption change, 1–5 frames before the phrase.
 - **Literal beats clever.** "Old farmhouse" = an old farmhouse; "slave quarters" = a real sign that says Slave Quarters. Test: with the
@@ -146,7 +153,12 @@ looked at this farm"), so the replay reads as one continuous thought. Check it a
 
 ## 10. B-roll sourcing (the hard part of this look)
 
-Every noun needs real footage, sourced in this order:
+Every noun needs real footage, sourced in this order. **Batch-3 rules (STYLE-RESEARCH 2026-10-14 § A1, D1, D5): ≥ 50 % of B-roll
+inserts are the REAL thing (batch 2: 12 / 27 / 0 / 94 %); ZERO stock actors standing in for a named or quoted person (9 in batch 2:
+a stock woman as Google's VP, a stock "me at 60"); a claim with a source gets its RECEIPT as a DOC (the article, the post, the chart,
+the show's own episode thumbnail with its date), captured by `workflows/page-record.mjs --full` / `window-grab.sh` (the capture gate);
+an ABSTRACT noun ("privacy", "AI", "the original wound") gets a glossy 3D macro render (Pexels / Pixabay "3D render" motion clips,
+logged) or a one-word type card, never a stock actor miming it: ≤ 2.5 s each, ≤ 3 per video.**
 1. **The show's own footage:** their past episodes and Shorts often hold the exact clip (a guest's photo, a product, a place).
 2. **Real footage of the named thing** from its official source: a company's, brand's, studio's or newsroom's own channel, via yt-dlp (forced
    H.264, repo rule). A clip from **another creator's** own video stays ≤ 3 s and is flagged in BRIEF.md (a flag, never a refusal).
@@ -179,3 +191,27 @@ enhanced if soft (the HQ rule), and logged with its source in BRIEF.md.
 | Sound | SFX only, no bed | A continuous mood bed ~13.6 LU under the voice, one SFX, silent transitions |
 | Loudness | −16.6 LUFS | −12 LUFS |
 | Ending | Cut on the payoff card | Cut on the last word; the loop runs into the first line |
+
+## 13. Batch 3 devices: receipts, marks, charts, story effects (2026-10-14)
+
+From `projects/_onyx-batch3-2026-10/STYLE-RESEARCH.md` § A1 (batch 2: stock did the storytelling, stock actors played real people, no
+slow payoff, the one-time devices never used) and § B1 (Shawn Ryan now: evidence B-roll, annotation marks, the host's question first,
+32-41 s). All are spec keys in `kit/yt_picture.py` (full key list in its docstring), drawn INTO the picture by `kit/yt_devices.py` so
+the whip moves them, and cued by `kit/yt_cues.py` (every device gets its premium sound without hand-written cues). A spec with none
+of these keys renders the same picture bit for bit (proved on `creatorscience-mrbeast-train`, 2026-10-14).
+
+| Device | Spec | Numbers |
+|---|---|---|
+| **DOC** receipt | shot `"kind": "DOC"`, `"src"` or `"stack"` (back → front; a layer's `"at"` = it slaps in) | card `w` 900 at `fg_y` 660 (`max_h` 860), `tilt` −3°, `push` 7 %/s centred on the first highlight and gliding 70 % (`drift`) to the frame's centre; stack 40 px / 40 px / 3° per layer; slap = 7 % big + 1.4° off, settles in 0.24 s; `look` paper (radius 10) or screen (14 px near-black bezel, radius 30, glare, light rim); shadow 55 %, 26 px blur, 20 px down; plate = the back-most source blurred 28 px × 0.32 with a 35 % vignette |
+| **Highlighter** | DOC `"highlight": [[t, x, y, w, h], ...]` (fractions of the source file) | `#F5DC0B` multiply at 45 % (`hl_a`), linear left → right over 0.35 s from `t`, chisel ends, 5 % wobble; cue shutter-film 8 dB under the voice peak. Body text must be ≥ ~20 px on the card: crop the front card to the sentence (a clipping) and stack it on the full page |
+| **Marks** | any shot `"marks": [{"t", "type", "box", "space"}]` | circle / box / underline / arrow, 8 px, red `#E70A24` (blue `#3FA9F5` for UI boxes), draw-on 0.35 s power2.inOut, 3.5 % + 2 % wobble, 1.1 turns, marker taper, soft shadow; the arrowhead follows the end tangent; stays to the cut; ≤ 2 per video; cue tick-glass on the close, 6 dB under |
+| **Chart** | any shot `"chart": {...}`, or a full-frame `"kind": "CHART"` | line (6 px + 12 px glow, 22 % fill, grid 1 px at 15 %, a 40 px value chip that COUNTS, a date chip + ring on the landing) or bar (grey bars, the `hi` bar in the accent with a 54 px counting value); accent gold `#F6B412`; Plex Mono type; over B-roll on a frosted panel (blur 22, × 0.4); CHART kind pushes 2 %/s; `draw` 0.8 s power2.inOut landing on the spoken number; data source logged in BRIEF.md and printed small; cues blip-data (12 dB under) + thud-thin on the landing (8 dB) |
+| **Story fx** | any shot `"fx": {"kind": "flicker" / "shake" / "freeze"}` | flicker −15 % in seeded 1-4-frame runs (the farm), shake ≤ 12 px easing out, freeze holds frame `f0`; one per video, only when the words describe it; cues shake thud-low, freeze shutter-film, flicker none unless named (`"sfx": "boom-dark"` for a lights-out) |
+| **Hook sound** | automatic | a hook card with no hit in 0-1 s gets thud-thin on its landing (8 dB under), and a whoosh-med (16 dB under) if it has none; `yt_build.py` asserts the pair; `"audio": {"hook_sfx": "spec"}` keeps a shipped mix exactly |
+| **Payoff report** | automatic (`yt_build.py`) | mean shot before / after `audio.turn_t`, last shot, first B-roll, runtime; WARNS after-turn mean < 3.0 s (target ≥ 3.5) or last shot < 3.0 s; `"allow_fast_payoff": "<reason>"` |
+| **Numerals** | automatic (`yt_captions.py`) | captions.json carries what renders: thousands → K, clock times and decimals spelled out ("THREE FORTY-EIGHT PM", "TWO POINT THREE MILLION DOLLARS"), the 19-character limit checked after |
+
+Every device takes `"sfx": false` (silent), a library name, or `{"name", "under", "dt"}`. Recommended in every batch-3 spec
+(§ D10, not a kit default so batch 2 rebuilds unchanged): `"grade": {"B": {"contrast": 1.06, "sat": 0.92, "warm": 0.02}}`, and a
+per-shot `shade` where white captions sit on a bright plate. The watermark is the show's name only (§ 6; `yt_build.py` flags
+`NAME · ROLE`). Demo of every device: scratch `kit-yt/demo-b3/` (2026-10-14).

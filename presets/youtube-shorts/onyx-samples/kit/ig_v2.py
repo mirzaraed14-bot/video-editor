@@ -65,8 +65,40 @@ SPLIT shots get a glowing seam over the picture's white line (Affan: every split
 DENSITY: v2-events.json lists every designed event; the report prints events per 10 s (target 3-4, research move 16), the
 full-window share (<= 25 %), the face between full-window scenes (>= 1.5 s), cards held > 6 s with no new beat, and full-window edges
 within 3 frames of a cut that do not land ON it (Affan 2026-10-09: no stray frames).
+
+BATCH 3 (projects/_onyx-batch3-2026-10/STYLE-RESEARCH.md § E, 2026-10-14). Every key below is opt-in: a batch-2 spec renders exactly as
+before (regression: the same index.html and sfx-cues.json on all five v2 specs, and the Vivian final rebuilt, LESSONS 2026-10-14).
+  "frame": "square" | "void" | "window"   the composition (ig_type.PRESETS, ig_window): square 980 x 980 at y 470 r 40; void = full-bleed,
+            the dark set crushed to black, no bars (the hook defaults to y 340 and the credit to 1570, inside the safe band).
+  "captions.reveal": "dim"   (stack and line) the whole block / line lands at 40 % white (blur 3) in 0.12 s and each word LIGHTS to
+            100 % on its spoken time (0.10 s); a word spoken while the block lands comes in lit; a stack hero waits in white and lights
+            IN the accent with its glow; a line hero sweeps as it lights. (word mode shows one word at a time: no dim stage.)
+  "captions.hero_gap": 4.0   the hero diet (ig_captions): <= one hero per 4 s, no automatic hero.
+  "zone": "topbar" | "bottombar"   on lower3 / bar meter: the card parks in a letterbox bar (top = the hook's line, bottom = the
+            credit's slot) and stays up under full-window scenes. The bars carry content (research § E1: top bar >= 25 % of frames).
+  widget "layout": "bar"   STORY METER {"label": "SAVED", "values": [[t, pct, "$252K"], ...], "w": 640, "zone": "bottombar" (default) |
+            "topbar"}: a 6 px track draws on, the accent fill moves to each pct and the mono value re-rolls (0.45 s power2.inOut) on
+            each spoken update; glass tick + data blip per update, a thin thud on the last. In the bottom bar the credit dips out under
+            it. Exempt from the 6 s hold rule (a persistent HUD, 10-30 s).
+  lower3 "again": [t0, t1]   the same lower-third comes back late (research § E8: first by ~3 s, again in the last 30 %).
+  ghost     {"src": png with alpha | photo | video (+ "src_t"), "crop": [x0, y0, x1, y1] (source fractions, before the cut-out), "h": 540, "side": "left" | "right" (or "x"), "wy" / "y", "opacity": 0.65,
+            "mono": true, "scrim": 0.55, "fade_bottom": 0.35, "label"}   the person / thing NAMED as a background-removed cut-out
+            beside the speaker (never over the face): opacity 0 -> 0.65 + rise 20 px + blur 8 -> 0 in 0.5 s, a 3 % drift, out 0.3 s;
+            by default it stands ON the caption line (feet fading out just above it, shrunk to fit the window), 40 px in from the side;
+            the cut-out is made locally (ghost_png: `npx hyperframes remove-background`, u2net_human_seg on CPU, cached in
+            ig/work/ghost/). "wy" / "y" place its top by hand. Sound: an airy swell cresting
+            on the landing (t0 + 0.45) + a thin thud.
+  "behind": [{"t0", "t1", "text", "lead", "y", "size"}]   (top-level; drawn by ig_window) heavy caps BEHIND the speaker, once (the hook
+            or the payoff phrase, research § E10); here only its sound (medium whoosh cresting as it lands + a low thud) and its event.
+  chapter   {"text": "#3" | "NOTHING", "kicker": "PART", "bg": accent, "color", "size": 150, "wy": type centre (0.36 x h)}   (a LIGHT accent such as gold becomes a deep
+            tone of itself with the type in the accent: the white captions keep running over the card and must stay readable)
+            a full-window solid card in the show's colour, hard in and out ON the cut (0.6-0.9 s), the type rises 36 px with a blur;
+            thin thud + soft whoosh. Counts in the full-window budget.
+GATES (gates(), printed after the density lines, FAILed by ig_qa): a card may not restate the captions on screen during it (> 50 %
+of its printed words), no more than 2 side cards in a row in one slot (top-left, low-right, a bar, docked...), <= 2 leaks per video;
+the top bar's share of the runtime is reported (target >= 25 %).
 """
-import json, math, os, shutil, sys
+import hashlib, json, math, os, shutil, subprocess, sys
 
 KIT = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(KIT, "..", "..", "..", ".."))
@@ -75,7 +107,7 @@ import ig_type                           # noqa: E402
 from captext import clean                # noqa: E402  (Affan, 2026-10-07: only ! ? and quotation marks)
 
 W, H = 1080, 1920
-FULL = {"wordscene", "titlecard"}        # cards that cover the whole window (they count against the 25 % budget)
+FULL = {"wordscene", "titlecard", "chapter"}   # cards that cover the whole window (they count against the 25 % budget)
 
 
 def esc(t):
@@ -87,8 +119,22 @@ def hexa(col, a):
     return f"{col}{int(round(a * 255)):02X}"
 
 
+def rgba(col, a):
+    """#RRGGBB + alpha -> "rgba(r,g,b,a)" (a form every GSAP colour tween parses)."""
+    c = col.lstrip("#")
+    return f"rgba({int(c[0:2], 16)},{int(c[2:4], 16)},{int(c[4:6], 16)},{a})"
+
+
 def cap_word(w):
     return clean(w).replace("'", "’")
+
+
+def expand_cards(spec):
+    """The spec's cards plus the returns: a lower3 with "again": [t0, t1] comes back late (research § E8: by ~3 s and again in the last
+    30 %). The returns are appended AFTER the spec's own cards so every card keeps its id (k<i>)."""
+    cards = list(spec.get("cards", []))
+    return cards + [{**{kk: vv for kk, vv in k.items() if kk != "again"}, "t0": k["again"][0], "t1": k["again"][1], "_return": True}
+                    for k in spec.get("cards", []) if k["kind"] == "lower3" and k.get("again")]
 
 
 def build(job, spec):
@@ -145,9 +191,18 @@ def build(job, spec):
         return (f'<svg width="0" height="0" style="position:absolute"><filter id="{fid}" x="-30%" y="-30%" width="160%" height="160%">'
                 f'<feGaussianBlur id="{fid}g" stdDeviation="0 0"/></filter></svg>')
 
-    def xy(k, w_default):
+    def zone_top(zone, h):
+        """A card parked in a letterbox bar (batch 3, research § E1 / E7: the bars carry content): "topbar" centres it on the hook's
+        line, "bottombar" puts it in the credit's slot (the credit dips out while it is up)."""
+        if zone == "topbar":
+            return int(round(ig_type.hook_y(FR) - h / 2))
+        if zone == "bottombar":
+            return int(round(spec.get("credit_y", ig_type.credit_y(FR)) - 12))
+        sys.exit(f"ig_v2: zone '{zone}' is not topbar | bottombar")
+
+    def xy(k, w_default, h=0):
         x = k.get("x", FR["x"] + 60)
-        y = k["y"] if "y" in k else FR["y"] + k.get("wy", 60)
+        y = k["y"] if "y" in k else (zone_top(k["zone"], h) if k.get("zone") else FR["y"] + k.get("wy", 60))
         return x, y, k.get("w", w_default)
 
     # ------------------------------------------------------------------ captions
@@ -163,6 +218,7 @@ def build(job, spec):
         if mode == "stack":
             lay = ig_type.layout_stack(words, cap)
             cfg = ig_type.stack_cfg(cap)
+            dim = cap.get("reveal") == "dim"
             # every line is placed in px (its width is measured): centred on captions.cx (default the window's centre; set it to the
             # mouth's x when the framing puts the speaker on a third), never closer than 40 px to the window's side edges
             cxl = cap.get("cx", FR["x"] + FR["w"] / 2)
@@ -174,15 +230,37 @@ def build(job, spec):
                 for j in L["words"]:
                     t = ig_type.show_word(words[j][2], cap, words[j][3])
                     cw = col(words[j][2])
-                    st = (f' style="color:{cw};text-shadow:0 0 18px {hexa(cw, 0.6)}, 0 0 4px {cw}"' if words[j][3] == "hero" else f' style="color:{cw}"') if cw else ""
+                    if dim and words[j][3] == "hero":      # dim reveal: the hero waits in white like the rest and lights IN the accent
+                        st = ' style="color:#FFFFFF;text-shadow:0 0 18px rgba(255,255,255,0), 0 0 4px rgba(255,255,255,0)"'
+                    else:
+                        st = (f' style="color:{cw};text-shadow:0 0 18px {hexa(cw, 0.6)}, 0 0 4px {cw}"' if words[j][3] == "hero" else f' style="color:{cw}"') if cw else ""
                     spans.append(f'<span class="w" id="{cid}w{j}"{st}>{esc(t)}</span>')
                 mt = (f"margin-top:{cfg['gap']}px;" if li else "") + f"padding-left:{max(0, xl - left):.0f}px;"
                 lines.append(f'<div class="sl {L["role"]}{" black" if cap.get("hero") == "black" and L["role"] == "hero" else ""}" '
                              f'style="{mt}height:{L["lh"]}px;line-height:{L["lh"]}px;font-size:{L["size"]}px">{" ".join(spans)}</div>')
-            caph.append(f'<div id="{cid}" class="cap2 stack" style="top:{y}px;left:{left:.0f}px;width:{inner}px;text-align:left">{"".join(lines)}</div>')
+            caph.append(f'<div id="{cid}" class="cap2 stack{" dim" if dim else ""}" style="top:{y}px;left:{left:.0f}px;width:{inner}px;text-align:left">{"".join(lines)}</div>')
             js.append(f'tl.set("#{cid}", {{autoAlpha: 1}}, {q(c["start"])});')
             for j, w in enumerate(words):
                 hero = w[3] == "hero"
+                if dim:
+                    # DIM-TO-LIT (batch 3, research § E3, Mark Brazil 554K): the whole block lands at once in 40 % white (0.12 s
+                    # power3.out, blur 6 -> 3), then each word lights to 100 % on its own spoken time (0.10 s, blur 3 -> 0); a word
+                    # spoken while the block lands comes in lit. The hero lights in the accent (or its `colors` meaning) with its glow.
+                    tl_ = max(c["start"] + 0.12, w[0] - 0.03)
+                    if w[0] - 0.03 <= c["start"] + 0.06:
+                        js.append(f'tl.fromTo("#{cid}w{j}", {{opacity: 0, y: 10, filter: "blur(6px)"}}, {{opacity: 1, y: 0, filter: "blur(0px)", duration: 0.12, '
+                                  f'ease: "power3.out"}}, {q(c["start"])});')
+                        tl_ = c["start"]
+                    else:
+                        js.append(f'tl.fromTo("#{cid}w{j}", {{opacity: 0, y: 10, filter: "blur(6px)"}}, {{opacity: 0.4, y: 0, filter: "blur(3px)", duration: 0.12, '
+                                  f'ease: "power3.out"}}, {q(c["start"])}); '
+                                  f'tl.fromTo("#{cid}w{j}", {{opacity: 0.4, filter: "blur(3px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.10, ease: "power2.out", '
+                                  f'immediateRender: false}}, {q(tl_)});')
+                    if hero:
+                        hc = col(w[2]) or ACC
+                        js.append(f'tl.fromTo("#{cid}w{j}", {{color: "#FFFFFF", textShadow: "0 0 18px rgba(255,255,255,0), 0 0 4px rgba(255,255,255,0)"}}, '
+                                  f'{{color: "{hc}", textShadow: "0 0 18px {rgba(hc, 0.6)}, 0 0 4px {rgba(hc, 1)}", duration: 0.16, ease: "power2.out", immediateRender: false}}, {q(tl_)});')
+                    continue
                 js.append(f'tl.fromTo("#{cid}w{j}", {{opacity: 0, x: {0 if hero else 24}, y: {14 if hero else 0}, filter: "blur(6px)", scale: 1.04}}, '
                           f'{{opacity: 1, x: 0, y: 0, filter: "blur(0px)", scale: 1, duration: {0.18 if hero else 0.12}, ease: "power3.out"}}, {q(max(c["start"], w[0] - 0.03))});')
             js.append(f'tl.to("#{cid}", {{opacity: 0, y: -16, duration: 0.14, ease: "power2.in"}}, {q(max(c["start"] + 0.2, c["end"] - 0.15))}); '
@@ -201,16 +279,21 @@ def build(job, spec):
                       f'tl.set("#{cid}", {{autoAlpha: 0}}, {q(c["end"])});')
         else:                                                  # line
             spans = []
+            dim = cap.get("reveal") == "dim"
+            wid = lambda j: f' id="{cid}w{j}"' if dim else ""
             for j, w in enumerate(words):
                 if w[3] == "hero" or col(w[2]):
                     hc = col(w[2]) or ACC
-                    spans.append(f'<span class="w sweep"><span class="base">{esc(w[2])}</span><span class="sw" id="{cid}s{j}" style="color:{hc};'
+                    spans.append(f'<span class="w sweep"{wid(j)}><span class="base">{esc(w[2])}</span><span class="sw" id="{cid}s{j}" style="color:{hc};'
                                  f'text-shadow:0 0 16px {hexa(hc, 0.55)}">{esc(w[2])}</span></span>')
                     js.append(f'tl.fromTo("#{cid}s{j}", {{clipPath: "inset(0% 100% 0% 0%)"}}, {{clipPath: "inset(0% 0% 0% 0%)", duration: 0.22, '
                               f'ease: "power2.inOut"}}, {q(max(c["start"], w[0] - 0.02))});')
                 else:
-                    spans.append(f'<span class="w">{esc(w[2])}</span>')
-            caph.append(f'<div id="{cid}" class="cap2 line" style="top:{y}px;left:{cap.get("cx", FR["x"] + FR["w"] / 2) - FR["w"] / 2:.0f}px;width:{FR["w"]}px"><div class="lmask"><div class="lin">'
+                    spans.append(f'<span class="w"{wid(j)}>{esc(w[2])}</span>')
+                if dim:     # the line rises in at 40 % white and each word lights on its spoken time (0.10 s); a hero sweeps as it lights
+                    js.append(f'tl.fromTo("#{cid}w{j}", {{opacity: 0.4, filter: "blur(2px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.10, ease: "power2.out", '
+                              f'immediateRender: false}}, {q(max(c["start"], w[0] - 0.03))});')
+            caph.append(f'<div id="{cid}" class="cap2 line{" dim" if dim else ""}" style="top:{y}px;left:{cap.get("cx", FR["x"] + FR["w"] / 2) - FR["w"] / 2:.0f}px;width:{FR["w"]}px"><div class="lmask"><div class="lin">'
                         f'{" ".join(spans)}</div></div></div>')
             js.append(f'tl.set("#{cid}", {{autoAlpha: 1}}, {q(c["start"])}); '
                       f'tl.fromTo("#{cid} .lin", {{y: 40}}, {{y: 0, duration: 0.32, ease: "power3.out"}}, {q(c["start"])}); '
@@ -222,7 +305,7 @@ def build(job, spec):
     if hk:
         hl = {h.lower() for h in hk.get("hl", [])}
         n_l = len(hk["lines"]); hgt = (44 if hk.get("kicker") else 0) + n_l * 80
-        top = int(hk.get("y", (200 + FR["y"]) / 2 + 10) - hgt / 2)
+        top = int(hk.get("y", ig_type.hook_y(FR)) - hgt / 2)          # mid top bar (window 365); void: 340, above the head
         lines = []
         for li, line in enumerate(hk["lines"]):
             ws = [f'<span class="hhl">{esc(w)}</span>' if w.strip("!?\"").lower() in hl else esc(w) for w in line.split(" ")]
@@ -239,7 +322,7 @@ def build(job, spec):
         ev.append((t0, "hook", None))
     credit = spec.get("credit")
     if credit:
-        cy = spec.get("credit_y", FR["y"] + FR["h"] + 90)
+        cy = spec.get("credit_y", ig_type.credit_y(FR))               # 90 px under the window (window 1500); void: 1570
         html.append(f'<div id="credit2" class="v2c credit2" style="top:{cy}px"><span class="cdash"></span>{esc(credit)}</div>')
         ct0 = spec.get("credit_t0", 0.0)
         js.append(f'tl.set("#credit2", {{autoAlpha: 1}}, {q(ct0)});' + rise_in("#credit2", ct0, d=0.5, y=8, blur=6))
@@ -254,8 +337,14 @@ def build(job, spec):
             js.append(show(cid, t0, t1) + f'tl.fromTo("#{cid}", {{opacity: 0}}, {{opacity: 1, duration: 0.2, ease: "power1.out"}}, {q(t0)});')
             cue(t0 - 0.02, "whoosh-soft"); ev.append((t0, "split", None))
 
+    # ------------------------------------------------------------------ behind-the-speaker type (batch 3, § E10): ig_window draws it into the
+    # picture (type between the background and the speaker's matte); its sound and its beat live here
+    for b in spec.get("behind", []):
+        cue(b["t0"] + 0.25, "whoosh-med"); cue(b["t0"] + 0.4, "thud-low"); ev.append((b["t0"] + 0.25, "behind", None))
+
     # ------------------------------------------------------------------ cards
-    for i, k in enumerate(spec.get("cards", [])):
+    cards = expand_cards(spec)
+    for i, k in enumerate(cards):
         kind, cid = k["kind"], f"k{i}"
         t0, t1 = k.get("t0", k.get("t", 0)), k.get("t1", k.get("t", 0))
         if kind == "leak":
@@ -302,8 +391,8 @@ def build(job, spec):
                 cue(t2, "rise-air", k); cue(t2 + 0.32, "thud", k); ev.append((t2, "neon re-roll", i))
             js.append(out_fade(f"#{cid}", t1, d=0.22))
         elif kind == "lower3":
-            x, y, _ = xy(k, 0)
             bh = k.get("bar_h", 120)
+            x, y, _ = xy(k, 0, bh)                     # "zone": "topbar" | "bottombar" parks it in a bar (research § E1)
             html.append(f'<div id="{cid}" class="v2c l3" style="left:{x}px;top:{y}px"><div class="l3s"></div><div class="l3bar" style="height:{bh}px"></div>'
                         f'<div class="l3t"><div class="l3n">{esc(k["name"])}</div><div class="l3r">{esc(k.get("role", ""))}</div></div></div>')
             js.append(show(cid, t0, t1)
@@ -403,6 +492,42 @@ def build(job, spec):
                 cue(tp, "glass", k, rel=-2); ev.append((tp, "route pulse", i))
             js.append(out_fade(f"#{cid}", t1, d=0.22))
             cue(t0, "whoosh-soft", k); ev.append((t0, "route", i))
+        elif kind == "widget" and k.get("layout") == "bar":
+            # STORY METER (batch 3, research § E7; DOAC's "Raised $X / Target" HUD, 3.2M): a thin accent bar + a mono label whose value
+            # RE-ROLLS on each spoken update, parked in a bar (default the bottom bar's credit slot; the credit dips out while it is up)
+            w = k.get("w", 640)
+            mh = 58                                       # the text row (32) + 14 + the 6 px track + 6
+            zone = k.get("zone", "bottombar")
+            x = k.get("x", int(round((W - w) / 2)))
+            y = k["y"] if "y" in k else (FR["y"] + k["wy"] if "wy" in k else zone_top(zone, mh))
+            vals = [list(v) for v in k.get("values", [])]   # [[t, pct, "TEXT"], ...]
+            texts = [str(v[2]) if len(v) > 2 else f"{v[1]:.0f}%" for v in vals]
+            ticks = "".join(f'<div class="mtick" style="left:{p_}%"></div>' for p_ in (25, 50, 75))
+            vhtml = "".join(f'<span class="mv" id="{cid}v{j}">' + "".join(f'<span class="ch">{"&nbsp;" if ch == " " else esc(ch)}</span>' for ch in t)
+                            + "</span>" for j, t in enumerate(texts))
+            html.append(f'<div id="{cid}" class="v2c meter" style="left:{x}px;top:{y}px;width:{w}px">'
+                        f'<div class="mrow"><span class="mlab">{esc(k.get("label", ""))}</span><span class="mval">{vhtml}</span></div>'
+                        f'<div class="mtrack" id="{cid}tr">{ticks}<div class="mfill" id="{cid}f"></div></div></div>')
+            js.append(show(cid, t0, t1) + rise_in(f"#{cid} .mrow", t0, d=0.4, y=10, blur=6)
+                      + f'tl.fromTo("#{cid}tr", {{scaleX: 0, transformOrigin: "0% 50%"}}, {{scaleX: 1, duration: 0.45, ease: "power2.inOut"}}, {q(t0)});')
+            cue(t0, "whoosh-soft", k); cue(t0 + 0.02, "glass", k); ev.append((t0, "meter", i))
+            prev = 0.0
+            for j, v in enumerate(vals):
+                tj, pct = max(v[0], t0 + 0.25), max(0.0, min(100.0, float(v[1])))
+                js.append(f'tl.fromTo("#{cid}f", {{scaleX: {prev / 100:.4f}}}, {{scaleX: {pct / 100:.4f}, duration: 0.45, ease: "power2.inOut", '
+                          f'immediateRender: {"true" if j == 0 else "false"}}}, {q(tj)});')
+                if j:
+                    js.append(f'tl.fromTo("#{cid}v{j - 1} .ch", {{opacity: 1, yPercent: 0, filter: "blur(0px)"}}, {{opacity: 0, yPercent: -55, filter: "blur(6px)", '
+                              f'duration: 0.4, ease: "power2.inOut", stagger: 0.02, immediateRender: false}}, {q(tj - 0.06)});')
+                js.append(f'tl.fromTo("#{cid}v{j} .ch", {{opacity: 0, yPercent: 55, filter: "blur(6px)"}}, {{opacity: 1, yPercent: 0, filter: "blur(0px)", '
+                          f'duration: 0.45, ease: "power2.inOut", stagger: 0.02}}, {q(tj)});')
+                last = j == len(vals) - 1
+                cue(tj + 0.3, "glass", k); cue(tj + 0.3, "blip", k)
+                if last and j:
+                    cue(tj + 0.4, "thud", k)
+                ev.append((tj + 0.3, "meter value", i))
+                prev = pct
+            js.append(out_fade(f"#{cid}", t1, d=0.25, y=-8))
         elif kind == "widget":
             lay = k.get("layout", "todo")
             x, y, w = xy(k, 820)
@@ -586,20 +711,83 @@ def build(job, spec):
                           f'tl.fromTo("#{cid}{ls}s", {{scaleX: 0}}, {{scaleX: 1, duration: 0.3, ease: "power2.out"}}, {q(tw_ + 0.05)});')
                 cue(tw_, "thud", k); ev.append((tw_, "compare win", i))
             js.append(out_fade(f"#{cid}", t1, d=0.22))
+        elif kind == "ghost":
+            # GHOST CUT-OUT (batch 3, research § E4; Mark Brazil x Robert Greene, 177K: a cut-out of 50 Cent fades in standing in the
+            # void): the person (or thing) NAMED appears beside the speaker, never over the face, and leaves on the next beat
+            png, (gw0, gh0) = ghost_png(job, out, k, i)
+            h = k.get("h", 540)
+            if "y" in k or "wy" in k:
+                y = k["y"] if "y" in k else FR["y"] + k["wy"]
+            else:     # default: standing on the caption line (its feet fade out just above it), never taller than the window allows
+                cap_top = min((c["y"] for c in chunks if c.get("y") is not None), default=None)
+                bot = FR["y"] + FR["h"] * 0.74 if cap_top is None else min(FR["y"] + FR["h"] * 0.74, cap_top - 14)
+                h = int(min(h, bot - max(FR["y"], ig_type.SAFE_TOP) - 24))
+                y = int(round(bot - h))
+            gw = int(round(gw0 * h / gh0))
+            side = k.get("side", "left")
+            x = k.get("x", FR["x"] + 40 if side == "left" else FR["x"] + FR["w"] - 40 - gw)
+            op, scrim, fb = k.get("opacity", 0.65), k.get("scrim", 0.55), k.get("fade_bottom", 0.35)   # the scrim pools a shadow on a bright set
+            lab = f'<div class="ghl">{esc(k["label"])}</div>' if k.get("label") else ""
+            mask = f"-webkit-mask-image:linear-gradient(180deg,#000 {100 * (1 - fb):.0f}%,rgba(0,0,0,0) 100%);" if fb else ""
+            html.append(f'<div id="{cid}" class="v2c ghost" style="left:{x}px;top:{y}px;width:{gw}px;height:{h}px">'
+                        + (f'<div class="ghs"></div>' if scrim else "")
+                        + f'<img class="ghi" src="assets/{os.path.basename(png)}" style="width:{gw}px;height:{h}px;{mask}" alt="">{lab}</div>')
+            land = t0 + 0.45                               # fully in: the swell crests and the thud lands here
+            js.append(show(cid, t0, t1)
+                      + f'tl.fromTo("#{cid} .ghi", {{opacity: 0, y: 20, filter: "blur(8px)"}}, {{opacity: {op}, y: 0, filter: "blur(0px)", duration: 0.5, ease: "power2.out"}}, {q(t0)}); '
+                      + (f'tl.fromTo("#{cid} .ghs", {{opacity: 0}}, {{opacity: {scrim}, duration: 0.5, ease: "power1.out"}}, {q(t0)}); ' if scrim else "")
+                      + f'tl.fromTo("#{cid} .ghi", {{scale: 1.0, transformOrigin: "50% 100%"}}, {{scale: 1.03, duration: {max(0.5, t1 - t0):.2f}, ease: "none", immediateRender: false}}, {q(t0)}); '
+                      + (rise_in(f"#{cid} .ghl", t0 + 0.35, d=0.35, y=10, blur=6) if lab else "")
+                      + out_fade(f"#{cid}", t1, d=0.3, y=-10))
+            cue(land, "rise-air", k); cue(land + 0.02, "thud", k); ev.append((land, "ghost", i))
+        elif kind == "chapter":
+            # CHAPTER CARD (batch 3, research § E9; Chris Williamson's list reels, 620K): the whole window turns to the show's colour with
+            # "#1" / one word, 0.6-0.9 s, HARD in and out on the cut (no fade: it is a cut to a card)
+            text = str(k.get("text", "#1"))
+            size, maxw = k.get("size", 150), FR["w"] - 160
+            track = 0.06 if len(text) > 3 else -0.02
+            wd = ig_type.width(text, "inter-900", size, track)
+            if wd > maxw:
+                size = int(size * maxw / wd)
+            # a light accent (gold, cream) would sink the white captions that run over the card (~1.6:1): the card takes a deep tone of
+            # the accent and the type the accent itself; a dark accent (teal, navy) stays a solid card with white type (Chris Williamson)
+            light = lum(k.get("bg", ACC)) > 0.45
+            bg = k.get("bg", deep(ACC) if light else ACC)
+            fg = k.get("color", ACC if light and "bg" not in k else ("#0B0B0B" if lum(bg) > 0.45 else "#FFFFFF"))
+            kick = f'<div class="chk">{esc(k["kicker"])}</div>' if k.get("kicker") else ""
+            # the type centres at 36 % of the window's height ("wy" overrides): above the caption line, which keeps running over the card
+            hh = size + (62 if kick else 0)
+            cy_ = k.get("wy", int(FR["h"] * 0.36))
+            html.append(f'<div id="{cid}" class="v2c chap" style="left:{FR["x"]}px;top:{FR["y"]}px;width:{FR["w"]}px;height:{FR["h"]}px;'
+                        f'border-radius:{FR["radius"]}px;background:{bg};color:{fg}"><div class="chg" style="--cy:{cy_}px"></div>'
+                        f'<div class="chin" style="top:{cy_ - hh / 2:.0f}px">{kick}<div class="cht" style="font-size:{size}px;line-height:{size}px;'
+                        f'letter-spacing:{track}em">{esc(text)}</div></div></div>')
+            js.append(show(cid, t0, t1)
+                      + f'tl.fromTo("#{cid} .cht", {{y: 36, opacity: 0, filter: "blur(8px)"}}, {{y: 0, opacity: 1, filter: "blur(0px)", duration: 0.28, ease: "power3.out"}}, {q(t0)}); '
+                      + (rise_in(f"#{cid} .chk", t0 + 0.04, d=0.28, y=10, blur=6) if kick else "")
+                      + f'tl.fromTo("#{cid} .chin", {{scale: 1.0}}, {{scale: 1.04, duration: {max(0.3, t1 - t0):.2f}, ease: "none"}}, {q(t0)});')
+            cue(t0, "thud", k); cue(t0 + 0.02, "whoosh-soft", k); ev.append((t0, "chapter", i))
         else:
             sys.exit(f"ig_v2: card kind '{kind}' is not part of the v2 vocabulary (neon lower3 reticle route widget wordscene titlecard compare "
-                     f"leak). The v1 paper cards stay on v1; their v2 equivalents: rules/receipt/check -> widget list/todo, notify/call -> widget notify, "
+                     f"leak ghost chapter). The v1 paper cards stay on v1; their v2 equivalents: rules/receipt/check -> widget list/todo, notify/call -> widget notify, "
                      f"number -> neon, title/label -> hook or neon.")
 
-    scenes = [(k["t0"], k["t1"]) for k in spec.get("cards", []) if k["kind"] in FULL or k.get("rack")]
-    for i, k in enumerate(spec.get("cards", [])):
-        if k["kind"] in FULL or k.get("rack") or k["kind"] == "leak":
-            continue
+    scenes = [(k["t0"], k["t1"]) for k in cards if k["kind"] in FULL or k.get("rack")]
+    for i, k in enumerate(cards):
+        if k["kind"] in FULL or k.get("rack") or k["kind"] == "leak" or k.get("zone") or k.get("layout") == "bar":
+            continue                       # (a card parked in a bar is outside the window: it stays up under a full-window scene)
         for a, b in scenes:
             if a < k["t1"] - 0.3 and b > k["t0"] + 0.3:
                 js.append(f'tl.to("#k{i}", {{opacity: 0, duration: 0.18, ease: "power1.in"}}, {q(max(k["t0"], a))}); '
                           + (f'tl.to("#k{i}", {{opacity: 1, duration: 0.25, ease: "power1.out"}}, {q(b)});' if b < k["t1"] - 0.3 else ""))
-    css = CSS.replace("ACC66", hexa(ACC, 0.4)).replace("ACC33", hexa(ACC, 0.2)).replace("ACC99", hexa(ACC, 0.6)).replace("ACCB3", hexa(ACC, 0.7)).replace("ACC", ACC)
+    if credit:                             # a bar meter in the bottom bar takes the credit's slot: the credit dips out under it
+        for k in cards:
+            if k["kind"] == "widget" and k.get("layout") == "bar" and k.get("zone", "bottombar") == "bottombar" and "y" not in k and "wy" not in k:
+                js.append(f'tl.fromTo("#credit2", {{opacity: 1}}, {{opacity: 0, duration: 0.2, ease: "power1.in", immediateRender: false}}, {q(max(0.0, k["t0"] - 0.22))});'
+                          + (f' tl.fromTo("#credit2", {{opacity: 0}}, {{opacity: 1, duration: 0.3, ease: "power1.out", immediateRender: false}}, {q(k["t1"] + 0.02)});'
+                             if k["t1"] < dur - 0.4 else ""))
+    uses3 = cap.get("reveal") == "dim" or any(k["kind"] in ("ghost", "chapter") or k.get("layout") == "bar" for k in cards)
+    css = (CSS + (CSS3 if uses3 else "")).replace("ACC66", hexa(ACC, 0.4)).replace("ACC33", hexa(ACC, 0.2)).replace("ACC99", hexa(ACC, 0.6)).replace("ACCB3", hexa(ACC, 0.7)).replace("ACC", ACC)
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -630,21 +818,22 @@ def build(job, spec):
     open(os.path.join(out, "index.html"), "w", encoding="utf-8").write(doc)
     os.makedirs(os.path.join(job, "ig", "work"), exist_ok=True)
     json.dump(sorted(sfx, key=lambda s: s["t"]), open(os.path.join(job, "ig", "work", "sfx-cues.json"), "w", encoding="utf-8"), indent=1)
-    report = density(spec, ev, fps, dur, FR)
+    report = density(spec, ev, fps, dur, FR, cards)
     json.dump(dict(events=sorted(ev), **report), open(os.path.join(job, "ig", "work", "v2-events.json"), "w", encoding="utf-8"), indent=1)
-    print(f"ig_v2: {len(chunks)} caption chunks ({mode}), {len(spec.get('cards', []))} cards, {len(sfx)} sfx cues, {len(ev)} designed events -> {out}")
+    print(f"ig_v2: {len(chunks)} caption chunks ({mode}), {len(cards)} cards, {len(sfx)} sfx cues, {len(ev)} designed events -> {out}")
     for line in report["lines"]:
         print("  " + line)
 
 
-def density(spec, ev, fps, dur, FR):
+def density(spec, ev, fps, dur, FR, cards=None):
     """The research's pacing targets (move 16), measured on this spec: events per 10 s, the full-window budget, face between scenes,
-    long holds, and full-window edges that miss a cut by 1-3 frames (a one-frame face flash, Affan 2026-10-09)."""
+    long holds, and full-window edges that miss a cut by 1-3 frames (a one-frame face flash, Affan 2026-10-09). Batch 3 adds the
+    gates (see gates()): caption overlap, slot repeats, the leak count and the top bar's share, appended after the batch-2 lines."""
     ts = sorted(t for t, _, _ in ev)
     bins = [sum(1 for t in ts if b <= t < b + 10) for b in range(0, int(math.ceil(dur)), 10)]
     low = [f"{10 * j}-{10 * j + 10} s" for j, n in enumerate(bins) if n < 3 and 10 * j + 10 <= dur + 0.5]
     lines = [f"events per 10 s: {bins} (target >= 3-4; {len(ts) / dur * 10:.1f} overall)" + (f"  ** thin: {low}" if low else "")]
-    cards = spec.get("cards", [])
+    cards = spec.get("cards", []) if cards is None else cards
     full = sorted((k["t0"], k["t1"], k["kind"]) for k in cards if k["kind"] in FULL or k.get("rack"))
     share = sum(b - a for a, b, _ in full) / dur
     lines.append(f"full-window scenes: {len(full)}, {share * 100:.0f} % of runtime (<= 25 %)" + ("  ** OVER **" if share > 0.25 else ""))
@@ -652,7 +841,7 @@ def density(spec, ev, fps, dur, FR):
         if b0 - a1 < 1.5:
             lines.append(f"  ** only {b0 - a1:.2f} s of face between {ka}@{a0} and {kb}@{b0} (>= 1.5 s)")
     for i, k in enumerate(cards):
-        if k["kind"] in ("leak",):
+        if k["kind"] in ("leak",) or k.get("layout") == "bar":      # a bar meter is a persistent HUD (10-30 s by design)
             continue
         beats = sorted([k["t0"]] + [t for t, _, idx in ev if idx == i and k["t0"] < t < k["t1"]] + [k["t1"]])
         gap = max(b - a for a, b in zip(beats, beats[1:]))
@@ -665,7 +854,205 @@ def density(spec, ev, fps, dur, FR):
             near = [c for c in cuts if 0 < abs(c - f) <= 3]
             if near:
                 lines.append(f"  ** {kd} edge {edge:.3f} s is {f - near[0]:+d} frames off the cut at frame {near[0]}: land it ON the cut")
-    return dict(per10=bins, full_share=round(share, 3), lines=lines)
+    g = gates(spec, cards, FR, dur)
+    lines += g.pop("lines")
+    return dict(per10=bins, full_share=round(share, 3), lines=lines, **g)
+
+
+# ---------------------------------------------------------------------------------------------- batch-3 gates (STYLE-RESEARCH § E5, E6, E1)
+STOPW = {"the", "a", "an", "and", "or", "of", "to", "in", "on", "at", "for", "with", "is", "it", "its", "it's", "i", "you", "he", "she",
+         "we", "they", "my", "your", "his", "her", "our", "their", "this", "that", "be", "was", "are", "so", "if", "by", "as", "from", "but",
+         "not", "no", "do", "did", "have", "has", "had", "me", "him", "them", "up", "out", "just", "like", "vs", "what", "who"}
+LEAK_MAX, OVERLAP_MAX, SLOT_RUN_MAX, TOPBAR_TARGET = 2, 0.5, 2, 0.25
+
+
+def tokens(text):
+    """Content words of a string: lower case, punctuation off ($252K -> 252k), stop words and single letters out."""
+    out = []
+    for t in str(text).lower().replace("·", " ").replace("/", " ").replace("→", " ").split():
+        t = "".join(ch for ch in t if ch.isalnum() or ch == "'").strip("'")
+        if len(t) > 1 and t not in STOPW:
+            out.append(t)
+    return out
+
+
+def card_text(k):
+    """What a card PRINTS that a caption could also say (the restating check). Excluded on purpose: the hook (the opening line), a
+    word scene (kinetic type OF the spoken words), the title card and lower-third name (a name), a chapter card, a leak, and a neon's
+    value (Mark Brazil's big spoken number is the device: its lead / tail lines still count)."""
+    kd = k["kind"]
+    parts = []
+    if kd == "neon":
+        parts = [k.get(x, "") for x in ("lead", "tail", "lead2", "tail2")]
+    elif kd == "lower3":
+        parts = [k.get("role", "")]
+    elif kd == "widget":
+        parts = [k.get(x, "") for x in ("title", "meta", "label", "sub", "body")]
+        parts += [" ".join(str(v) for v in it[1:]) for it in k.get("items", [])]
+        parts += [str(v[2]) for v in k.get("values", []) if len(v) > 2]
+        if k.get("stamp"):
+            parts.append(k["stamp"][1])
+    elif kd == "route":
+        parts = [k.get("title", "")] + [" ".join(str(v) for v in nd[1:]) for nd in k.get("nodes", [])]
+    elif kd == "compare":
+        parts = [" ".join(str(k.get(s_, {}).get(f_, "")) for f_ in ("label", "value", "sub")) for s_ in ("left", "right")]
+    elif kd in ("reticle", "ghost"):
+        parts = [k.get("label", "")]
+    return tokens(" ".join(p for p in parts if p))
+
+
+def card_slot(k, FR):
+    """The coarse place a card occupies (research § E5: top-left, the bottom bar, docked to the object, full-window...)."""
+    kd = k["kind"]
+    if kd == "leak":
+        return None
+    if kd in FULL or k.get("rack"):
+        return "full"
+    if k.get("zone") or k.get("layout") == "bar":
+        return k.get("zone", "bottombar")
+    if kd == "reticle":
+        return "docked"
+    wdef = {"neon": FR["w"] - 120, "widget": 820, "compare": FR["w"] - 120, "route": 440 if k.get("orient") == "v" else FR["w"] - 120,
+            "lower3": 420, "ghost": 360}.get(kd, 400)
+    w = k.get("w", wdef)
+    x = k.get("x", FR["x"] + (FR["w"] - w) / 2 if kd in ("widget", "compare") else
+              (FR["x"] + FR["w"] - 40 - w if kd == "ghost" and k.get("side") == "right" else FR["x"] + 60))
+    y = k["y"] if "y" in k else FR["y"] + k.get("wy", 60)
+    if y + 40 < FR["y"]:
+        return "topbar"
+    if y > FR["y"] + FR["h"]:
+        return "bottombar"
+    u = (x + w / 2 - FR["x"]) / FR["w"]
+    v = (y - FR["y"]) / FR["h"]
+    return ("top" if v < 0.4 else "low") + "-" + ("left" if u < 0.4 else "right" if u > 0.6 else "centre")
+
+
+def gates(spec, cards, FR, dur):
+    """Batch 3's measured gates (ig_qa FAILs on the first three):
+      overlap  a card's printed words that the captions on screen during it also say, as a share of its words (research § E5: <= 50 %;
+               batch 2: Vivian's todo 100 %, Jeremy's "60 min / 30 min" widget); only cards with >= 2 content words
+      slots    consecutive side cards (full-window ones and leaks aside) in the same slot (<= 2 in a row; batch 2: 17 of 24 side cards at
+               the window's top-left)
+      leaks    the light leaks per video (<= 2, only on a real source change; batch 2: 4-7, every video opening with one)
+      topbar   the share of the runtime the top bar carries something (the hook, a card in it): a NOTE, target >= 25 % (batch 2: 6-19 %)"""
+    chunks = spec.get("captions", {}).get("chunks", [])
+    lines, over = [], []
+    for i, k in enumerate(cards):
+        if "t0" not in k or "t1" not in k:
+            continue
+        ct = card_text(k)
+        if len(set(ct)) < 2:
+            continue
+        said = set()
+        for c in chunks:
+            if c.get("start", 0) < k["t1"] and c.get("end", 0) > k["t0"]:
+                said |= set(tokens(" ".join(w[2] for w in c["words"]) if c.get("words") else c.get("text", "")))
+        hit = sorted(set(ct) & said)
+        r = len(hit) / len(set(ct))
+        if r > OVERLAP_MAX:
+            over.append(dict(card=i, kind=k["kind"], t0=k["t0"], share=round(r, 2), words=hit))
+            lines.append(f"  ** {k['kind']}@{k['t0']} restates the captions: {r * 100:.0f} % of its words ({', '.join(hit[:6])}) (<= 50 %: add, never restate)")
+    side = sorted(((k.get("t0", k.get("t", 0)), card_slot(k, FR), k["kind"]) for k in cards), key=lambda s: s[0])
+    side = [s for s in side if s[1] not in (None, "full")]
+    runs, cur = [], []
+    for s in side:
+        if cur and s[1] == cur[-1][1]:
+            cur.append(s)
+        else:
+            if len(cur) > SLOT_RUN_MAX:
+                runs.append(cur)
+            cur = [s]
+    if len(cur) > SLOT_RUN_MAX:
+        runs.append(cur)
+    tally = {}
+    for s in side:
+        tally[s[1]] = tally.get(s[1], 0) + 1
+    lines.append("slots (side cards): " + ", ".join(f"{k_} {v_}" for k_, v_ in sorted(tally.items(), key=lambda kv: -kv[1])))
+    for r_ in runs:
+        lines.append(f"  ** {len(r_)} side cards in a row in slot {r_[0][1]} ({', '.join(f'{kd}@{t:.2f}' for t, _, kd in r_)}): move them around (<= 2)")
+    leaks = sum(1 for k in cards if k["kind"] == "leak")
+    lines.append(f"leaks: {leaks} (<= {LEAK_MAX}, real source changes only)" + ("  ** OVER **" if leaks > LEAK_MAX else ""))
+    top = None
+    if ig_type.bars(FR)["top"]:
+        iv = []
+        if spec.get("hook"):
+            iv.append((spec["hook"].get("t0", 0.1), spec["hook"].get("t1", 2.9)))
+        iv += [(k["t0"], k["t1"]) for k in cards if "t0" in k and card_slot(k, FR) == "topbar"]
+        iv.sort()
+        tot, end = 0.0, -1.0
+        for a, b in iv:
+            a = max(a, end)
+            if b > a:
+                tot += b - a
+                end = b
+        top = round(tot / dur, 3)
+        lines.append(f"top bar carries content {top * 100:.0f} % of the runtime (target >= {TOPBAR_TARGET * 100:.0f} % or empty by choice)")
+    return dict(overlap=over, slot_runs=[[list(s) for s in r_] for r_ in runs], leaks=leaks, topbar_share=top, lines=lines)
+
+
+def deep(col, k=0.80):
+    """The accent pushed toward black by k (a deep tone of the show's colour)."""
+    c = col.lstrip("#")
+    return "#" + "".join(f"{int(int(c[j:j + 2], 16) * (1 - k)):02X}" for j in (0, 2, 4))
+
+
+def lum(col):
+    """Relative luminance of #RRGGBB (0 black .. 1 white)."""
+    c = col.lstrip("#")
+    ch = [int(c[j:j + 2], 16) / 255 for j in (0, 2, 4)]
+    ch = [v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4 for v in ch]
+    return 0.2126 * ch[0] + 0.7152 * ch[1] + 0.0722 * ch[2]
+
+
+VIDEO_EXT = (".mp4", ".mov", ".mkv", ".webm", ".m4v")
+
+
+def ghost_png(job, out, k, i):
+    """The ghost card's cut-out -> hf-overlay/assets/ghost<i>.png, returns (path, (w, h)). k["src"]: a PNG that already has an alpha
+    channel is used as it is; a photo, or a video frame at k["src_t"], is cut out with `npx hyperframes remove-background`
+    (u2net_human_seg, local and free; cached in ig/work/ghost/ by source + time). Cropped to its alpha box and turned black-and-white
+    unless "mono": false. A cut-out shorter than its display height is upscaled: it says so (the HQ-stills rule: check the source at
+    full size, enhance it first if it is soft)."""
+    from PIL import Image
+    src = k["src"] if os.path.isabs(k["src"]) else os.path.join(job, k["src"])
+    gdir = os.path.join(job, "ig", "work", "ghost")
+    os.makedirs(gdir, exist_ok=True)
+    stem = hashlib.sha1(f"{os.path.abspath(src)}|{os.path.getsize(src)}|{k.get('src_t', '')}|{k.get('crop', '')}".encode()).hexdigest()[:12]
+    cut = os.path.join(gdir, f"{stem}.cut.png")
+    if not os.path.exists(cut):
+        img = src
+        if os.path.splitext(src)[1].lower() in VIDEO_EXT:
+            img = os.path.join(gdir, f"{stem}.frame.png")
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{float(k.get('src_t', 0)):.3f}", "-i", src, "-frames:v", "1", img], check=True)
+        if k.get("crop"):           # [x0, y0, x1, y1] source fractions: keep the person, drop props / stands / other people first
+            im = Image.open(img)
+            x0_, y0_, x1_, y1_ = k["crop"]
+            img = os.path.join(gdir, f"{stem}.crop.png")
+            im.crop((int(x0_ * im.width), int(y0_ * im.height), int(x1_ * im.width), int(y1_ * im.height))).save(img)
+        im = Image.open(img)
+        if im.mode in ("RGBA", "LA") and im.getchannel("A").getextrema()[0] < 250:
+            im.convert("RGBA").save(cut)
+        else:
+            print(f"ig_v2: ghost k{i}: cutting out {os.path.basename(img)} (hyperframes remove-background, CPU)", flush=True)
+            r = subprocess.run([shutil.which("npx") or "npx", "--yes", "hyperframes@0.8.16", "remove-background", img, "-o", cut], capture_output=True, text=True, encoding="utf-8", errors="replace")
+            if r.returncode or not os.path.exists(cut):
+                sys.exit(f"ig_v2: remove-background failed on {img}: {(r.stderr or r.stdout)[-400:]}")
+    im = Image.open(cut).convert("RGBA")
+    box = im.getchannel("A").point(lambda a: 255 if a > 12 else 0).getbbox()
+    if not box:
+        sys.exit(f"ig_v2: ghost k{i}: the cut-out of {src} is empty (no person found?)")
+    im = im.crop(box)
+    if k.get("mono", True):
+        L_ = im.convert("L")
+        im = Image.merge("RGBA", (L_, L_, L_, im.getchannel("A")))
+    h = k.get("h", 540)
+    if im.height < h * 0.9:
+        print(f"ig_v2: ghost k{i}: the cut-out is {im.height} px tall for a {h} px card: upscaled, check it is not soft (HQ-stills rule)")
+    if im.height > 2 * h:
+        im = im.resize((int(round(im.width * 2 * h / im.height)), 2 * h), Image.LANCZOS)
+    dst = os.path.join(out, "assets", f"ghost{i}.png")
+    im.save(dst)
+    return dst, im.size
 
 
 CSS = """
@@ -841,4 +1228,37 @@ html, body { margin: 0; background: transparent; }
 .cmp.v .cmvv { font-size: 70px; }
 .cmp .cmvs { position: absolute; left: 0; right: 0; top: 50%; margin-top: -18px; text-align: center; font-family: "OnyxMono"; font-weight: 600; font-size: 22px;
   letter-spacing: 0.1em; color: rgba(255,255,255,0.75); background: #111; line-height: 36px; }
+"""
+
+# batch 3's styles, written into the page only when the spec uses a batch-3 piece (a batch-2 spec's index.html stays byte-identical)
+CSS3 = """
+/* ---- batch 3: dim-to-lit captions (a soft white bloom on the lit words, Mark Brazil) */
+.cap2.stack.dim .sl.lead { text-shadow: 0 0 18px rgba(0,0,0,0.5), 0 0 3px rgba(0,0,0,0.35), 0 0 22px rgba(255,255,255,0.18); }
+.cap2.line.dim .w { opacity: 0.4; filter: blur(2px); }
+
+/* ---- story meter (a bar parked in the letterbox) */
+.meter { font-family: "OnyxMono"; }
+.meter .mrow { display: flex; justify-content: space-between; align-items: baseline; height: 32px; line-height: 32px; font-size: 26px; letter-spacing: 0.14em;
+  text-transform: uppercase; white-space: nowrap; }
+.meter .mlab { color: rgba(255,255,255,0.7); font-weight: 500; }
+.meter .mval { display: grid; justify-items: end; font-weight: 600; font-size: 30px; color: #FFFFFF; text-shadow: 0 0 10px rgba(255,255,255,0.25); }
+.meter .mv { grid-area: 1 / 1; white-space: nowrap; }
+.meter .mv .ch { display: inline-block; opacity: 0; }
+.meter .mtrack { position: relative; margin-top: 14px; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.14); }
+.meter .mfill { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; border-radius: 3px; background: ACC; box-shadow: 0 0 12px ACC99, 0 0 3px ACC;
+  transform: scaleX(0); transform-origin: 0% 50%; }
+.meter .mtick { position: absolute; top: -4px; width: 1px; height: 14px; background: rgba(255,255,255,0.22); }
+
+/* ---- ghost cut-out */
+.ghost .ghs { position: absolute; left: -35%; right: -35%; top: -12%; bottom: -12%; background: radial-gradient(closest-side, rgba(0,0,0,0.9), rgba(0,0,0,0)); opacity: 0; }
+.ghost .ghi { position: absolute; left: 0; top: 0; display: block; opacity: 0; }
+.ghost .ghl { position: absolute; left: -60px; right: -60px; top: 100%; margin-top: 12px; text-align: center; font-family: "OnyxMono"; font-weight: 500; font-size: 24px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.78); white-space: nowrap; text-shadow: 0 0 10px rgba(0,0,0,0.7); }
+
+/* ---- chapter card */
+.chap { overflow: hidden; }
+.chap .chg { position: absolute; inset: 0; background: radial-gradient(circle at 50% var(--cy), rgba(255,255,255,0.16), rgba(255,255,255,0) 62%); }
+.chap .chin { position: absolute; left: 0; right: 0; text-align: center; }
+.chap .chk { font-family: "OnyxMono"; font-weight: 500; font-size: 26px; line-height: 44px; letter-spacing: 0.24em; text-transform: uppercase; opacity: 0.75; margin-bottom: 18px; }
+.chap .cht { font-weight: 900; line-height: 1.0; white-space: nowrap; text-shadow: 0 0 34px rgba(0,0,0,0.25); }
 """

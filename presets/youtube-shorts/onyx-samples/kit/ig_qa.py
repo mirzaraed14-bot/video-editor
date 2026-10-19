@@ -12,6 +12,9 @@ Checks (each prints PASS / FAIL / NOTE; exit 1 on any FAIL):
   sfx        every designed event has a sound within 0.15 s; each cue's peak vs the voice's peak around it, measured on the mix's own
              stems (premix - voice = SFX + bed); the longest stretch without a designed sound (README § 6: ~1.5 s)
   density    the ig_v2 report (events per 10 s, full-window share, face between scenes, long holds, edges near cuts)
+  restate    (batch 3, v2) no card prints > 50 % of the words the captions on screen with it say (STYLE-RESEARCH § E5)
+  slots      (batch 3, v2) no more than 2 side cards in a row in one slot (top-left, low-right, a bar, docked to an object)
+  leaks      (batch 3, v2) <= 2 light leaks per video (§ E6); top bar: its share of the runtime with content, a NOTE (target >= 25 %)
   --sheet    a contact sheet of the output at every cut and every card entrance -> ig/work/qa-sheet.jpg
 """
 import io, json, math, os, re, subprocess, sys
@@ -73,7 +76,9 @@ def main():
         say(False, "captions", f"word sequence differs at #{k}: shown {a_[k:k + 4]} vs cut {b_[k:k + 4]} ({len(a_)} vs {len(b_)} words)")
     else:
         say(True, "captions", f"{len(shown)} words, each once and in order")
-    bad = sorted({ch for _, t in shown for ch in clean(t) if not (ch.isalnum() or ch in " '’!?\"“”$%&+-/×→")})
+    # an asterisk INSIDE a word is a starred profanity ("SH*T": captext keeps it on purpose), not punctuation (batch-2 false FAIL, Vivian)
+    bad = sorted({ch for _, t in shown for ch in clean(t) if not (ch.isalnum() or ch in " '’!?\"“”$%&+-/×→")
+                  and not (ch == "*" and re.search(r"\w\*+\w", clean(t)))})
     say(not bad, "punct", "only ! ? and quotes survive" if not bad else f"characters left on screen: {bad}")
     ys = sorted({c.get("y") for c in chunks})
     say(len(ys) == 1, "position", f"constant caption y {ys[0]}" if len(ys) == 1 else f"{len(ys)} different caption y values: {ys[:6]}")
@@ -94,6 +99,17 @@ def main():
         silent = [f"{t:.2f} {lab}" for t, lab, _ in ev["events"] if not any(abs(c - t) <= 0.15 for c in ct)]
         say(not silent, "sfx", f"{len(cues)} cues for {len(ev['events'])} designed events" + (f"; no sound on: {silent}" if silent else ""))
         print("      density: " + " | ".join(ev["lines"]))
+    if spec.get("look") == "v2":       # batch 3's gates (STYLE-RESEARCH § E5 / E6 / E1), on the spec as it stands now
+        import ig_type, ig_v2
+        FR_ = ig_type.frame(spec)
+        g = ig_v2.gates(spec, ig_v2.expand_cards(spec), FR_, dur)
+        say(not g["overlap"], "restate", "no card restates the captions on screen with it (<= 50 % of its words)" if not g["overlap"] else
+            "cards repeating the captions: " + "; ".join(f"{o['kind']}@{o['t0']} {o['share'] * 100:.0f} % ({', '.join(o['words'][:4])})" for o in g["overlap"]))
+        say(not g["slot_runs"], "slots", "no slot holds more than 2 side cards in a row" if not g["slot_runs"] else
+            "3+ side cards in a row in one slot: " + "; ".join(f"{r[0][1]} x{len(r)} from {r[0][0]:.2f} s" for r in g["slot_runs"]))
+        say(g["leaks"] <= ig_v2.LEAK_MAX, "leaks", f"{g['leaks']} light leaks (<= {ig_v2.LEAK_MAX}, real source changes only)")
+        if g["topbar_share"] is not None:
+            say(None, "top bar", f"carries content {g['topbar_share'] * 100:.0f} % of the runtime (target >= 25 %, or empty by choice)")
     gaps = np.diff([0.0] + ct + [dur])
     gi = int(np.argmax(gaps))
     say(None, "sfx gap", f"longest stretch without a designed sound {gaps.max():.1f} s (from {([0.0] + ct)[gi]:.2f} s; README § 6 asks ~1.5 s, a bed fills it)")
