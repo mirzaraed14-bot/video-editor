@@ -5,7 +5,7 @@ Deliverable: `projects/abw10-seq09-short/abw10-seq09-short.srt` (78 cues, 0 → 
 `caption_qa.py` PASSES. Next: drag the .srt into **ABW10 · Sequence 09** at 00:00, apply **"affanwizu yellow"**, baseline **y1224**.
 
 **Flagged for the creator:** 10.5 s "POV reels banata tha" (Whisper: کیو وی); 29.2 s "bache mera content dekhen ge"
-(heard "de ge"); 70.2 s last line "ye dekhte hain" (heard "dekhen thay", the cut ends mid-sentence).
+(heard "de ge"). The last line "to brands bhi / ye dekhte hain" is CONFIRMED by two Urdu re-decodes of 66.8–70.68 s.
 
 ## The job
 - First @affanwizu job in **ABW10** (job named `abw10-…` so it can't collide with ABW8's sequence numbers). Checked it is
@@ -23,3 +23,8 @@ Deliverable: `projects/abw10-seq09-short/abw10-seq09-short.srt` (78 cues, 0 → 
 - **Loop + drop (51.5–60.6 s):** "ایسی" ×9 then 7.3 s missing; `transcript_check.py` printed the English listener's text,
   re-decoded wide: "jo mai pretend kar rha tha / to overacting / … / ke followers per / 10,000 views / … / around 12
   followers / pretty damn good".
+
+## Better than the last one (CLAUDE.md learning loop § 5)
+`transcript_check.py` now catches an OPENING loop (17-word window): this reel's first 7 s were a Whisper loop that the old
+window missed; caught on the second look here, caught automatically from the next reel on, with no false alarms on the
+reference set. Numbers follow the creator's own typing for spoken Urdu thousands ("hazar 2 hazar", like "10 15 hazar").
