@@ -11,8 +11,9 @@
 3. SFX all -10 dB.
 4. Lips: every speaker's mouth clear of the captions (lip_check + a 0.25 s strip over Tito's T2 run); Tito's zooms pivot on
    his lips at depth 0.85 (face top >= 203 measured); Jermaine's name card moved above his band (y0 175).
-Open with him: Marlon kept at 300 % (his ask was "zoom in further, even if softer"; lips above the captions needs ~600 %, so
-the captions sit on his nose and his mouth stays free — his call); 30 vs 60 fps; final name/place; flags O6 / O5 / J2 / J3b.
+DECIDED 2026-10-22: Marlon stays at 300 % ("Keep Marlon at 300 %, his mouth is clear. v5 is good to review.") — lips above
+the captions would need ~600 %; the captions sit on his nose and his mouth stays free.
+Still open with him: 30 vs 60 fps; final name/place; flags O6 / O5 / J2 / J3b. Next: his review of v5 -> LESSONS.
 
 ## (previous) STATUS (2026-10-22, later) — v5: framing + audio DONE, picture assembly next
 - Lips vs captions (`build/lip_check.py`, zoom included): ALL clear. Tito re-framed nose y834 (`Y_override.TC`) and his three

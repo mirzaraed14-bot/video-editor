@@ -48,3 +48,4 @@
 - [Work in silence](feedback-work-in-silence.md) — Affan 2026-10-20: never play sound while working (a hidden built-in-browser YouTube tab played 20+ min); ffmpeg to -f null only, no players, close media tabs, silence rule in every subagent brief
 - [No phone copies](feedback-no-phone-copies.md) — Affan 2026-10-21/22: no phone encodes by default, only when he asks (<30 MiB, sent to him); masters go to X:\Claude Projects\Exports\
 - [Onyx client criteria](feedback-onyx-client-criteria.md) — Affan 2026-10-21: only Scott-Clary-like podcasts: 100K+ subs, in-studio (never Zoom), can afford $1,500+/mo, weekly uploads, weak Shorts; check before outreach and before any sample
+- [Fix only what he named](feedback-fix-only-what-he-named.md) — Affan 2026-10-22: a note changes only what he named; never swap his grade/sharpen; compare to his finals; test frames of every shot before a full render

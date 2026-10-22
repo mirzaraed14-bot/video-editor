@@ -778,3 +778,13 @@ Six corrections, all now rules:
   x zoom > 884 px), make the zoom SHALLOWER (Tito 0.85 instead of 0.75-0.82) rather than give up either the caption rule or
   the top-200 safe zone. Name cards obey the same rule: a card that lands on a mouth moves (Jermaine's above his letterbox
   band, y0 175). Check: `build/lip_check.py` (zoom included) + YuNet face top on the render.
+- 2026-10-22 (same, his call on v5): **a mouth that is already clear beats a deeper punch.** Marlon (sunglasses, CBS memorial,
+  300 %): lifting his lips above the caption line needed ~600 %, not the ~390 % first quoted; with the captions on his nose
+  and his mouth free he chose to keep 300 % ("his mouth is clear"). Quote the MEASURED zoom before asking for a softness trade.
+- 2026-10-22 (MJ siblings, his review of v5: "the whole grading is so soft... I told you to just reduce the blackness"):
+  **fix ONLY what he named, and never swap out his grade.** v5 replaced his AE stack (layer-43 look + PRE sharpen bands
+  unsh/ssh/bccu + Sharpen 40) with curves fitted on one MJ pair, without sharpening -> soft, flat, hazy. The CORRECTION to the
+  entry above: the v4 darkness came from the splice-pipe drift feeding his stack, not from the stack itself; his stack on
+  the one-pass (drift-free) picture gives his channel look (crisp, contrasty, warm brown skin) — v6. Reference for "how my
+  grading looks": his own finals in `E:/Shorts/Abudance Wisdom Shorts Exports/Final Renders` (e.g. `toya yt final.mov`:
+  cheek skin luma 0.55, sat 0.55, R/G 1.55, face p10 0.08). Show him test frames of EVERY shot before a full render.
