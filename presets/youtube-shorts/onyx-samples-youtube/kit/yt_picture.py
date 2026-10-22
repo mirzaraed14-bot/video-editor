@@ -608,7 +608,8 @@ def main():
                     out[y0l:y0l + lw] = np.array(split["line"].get("rgb", [255, 255, 255]), np.uint8)
             elif s["kind"] == "SPLIT":
                 t = s["top"]
-                out = grade(render_A(base_rgb, t["face"], n_abs, 0.5, t["fy_out"], t["z0"], t["r"], u, W, H, panel_h=split["seam"] + split["bob_amp"] + 4, rng=(a, b)),
+                out = grade(render_A(base_rgb, t["face"], n_abs, 0.5, t["fy_out"], t["z0"], t["r"], u, W, H, panel_h=split["seam"] + split["bob_amp"] + 4, rng=(a, b),
+                                     track=t.get("track", False)),          # splits are not head-tracked (Affan 2026-10-20); "track": true opts in
                             {**G.get("A", {}), **t.get("grade", {})})
                 seam = int(round(split["seam"] + split["bob_amp"] * math.sin(2 * math.pi * u / split["bob_period"])))
                 bt = s["bottom"]; ph = H - (split["seam"] - split["bob_amp"])

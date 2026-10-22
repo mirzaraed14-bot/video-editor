@@ -696,3 +696,85 @@ Six corrections, all now rules:
   sequence's A1 clips, not the finished render's mix, and when two timings exist take the LATER start per word; read the transcript
   once against the audio for misheard phrases before writing captions. File: `projects/abw10-comp04/captions/` (merge in RUN.md).
 
+- 2026-10-20 (direction video, Katherine "day Michael died", ABW10 Seq 13): **one zoom layer per same-shot run.** Consecutive cuts
+  of the same camera on the same person get ONE BlurMoCurves zoom spanning all of them and NO transition between them (else it
+  zooms "out, out, out" on one shot and reads jarring); a new layer only where he asks for one. Transitions go only at camera or
+  overlay changes, by the label-colour rule (purple dip, cyan gaussian, dark green exposure). File: `projects/katherine-day-michael-died/BRIEF.md`.
+- 2026-10-20 (same): **Topaz on jittery footage** (still shaky after head lock / overlays): raise the interpolation a few points and
+  lift the SECOND stabilisation pass slightly; never go to three passes (the lips slow down and captions can't keep up).
+- 2026-10-20 (Katherine "day Michael died", the first short BUILT IN CODE from a direction video, `projects/katherine-day-michael-died/`):
+  **caption height on ABW10 is NOT the ABW8 trial's.** His ABW10 finals (Paris Life, Linked Comp 09) put line 1 at y1093–1134;
+  the trial engine (Nick Walker, ABW8) lands it at y980. Measure his latest final before reusing a position; the code build keeps
+  it as data (`timeline.json caption_shift`). File: `projects/katherine-day-michael-died/build/finish.py`.
+- 2026-10-20 (same): **Seq times dumped at 4 decimals are not frames** (1.7667 = frame 106.002): `t >= t0` matching put every
+  "…67" cut one frame late vs the audio. Snap every time to the 60 fps grid before rendering. File: `build/stage_a.py`, `build/finish.py`.
+- 2026-10-20 (same): **head lock in code = optical flow on the UPPER face + the face detector low-passed** (the detector's nose
+  point alone wobbles 1–9 src px per frame): lock error 2–3× lower on 22 of 25 shots; keep the steadier per shot. And **Topaz's
+  full-frame stabiliser partly fights a head lock** (it smooths the background, which moves once the head is pinned): measured
+  better on some shots, worse on others; his "jittery after head tracking" note is this. File: `build/stage_a.py`, RUN.md.
+- 2026-10-20 (same): **Topaz changes the frame count** (+1..+3: chr-2 near cuts and in black gaps, prob-4 one at the end); re-grid
+  by CONTENT (`build/align_frames.py`, banded DP), not by guessing at cuts. `zoom_center.py`'s detector fails on extreme close-ups
+  (no face / partial boxes): apply its rule to geometry measured from landmarks + the locked nose instead.
+- 2026-10-21 (Katherine short, his review of v2): **"KAT, YOU HAVE TO COME DOWN TO THE HOSPITAL"** — Joe calls her Kat. Every
+  ASR pass heard "can't you have to", and a "Kate" prompt scored 0.00, so the caption agent kept the ungrammatical reading as a
+  stumble. Lesson: when quoted speech parses badly ("can't you have to"), test a NAME / nickname for the first word before
+  calling it a stumble, and flag it to him instead of deciding. Change: job `captions/transcript/words.json` + `captions.txt`.
+- 2026-10-21 (same): **a letterbox overlay's face must sit clear of the caption band** (line 1 y1093–1134, a stacked line to
+  ~y1199): the MJ smiling overlay had the captions across his smile. Frame overlays so the feature that carries the beat (a
+  smile, the eyes) sits below ~y1215 or above ~y1080; keep the band full of picture (scale up rather than leave black).
+  Change: `timeline.json` O3 scale 1.10 → 1.25 about src (668, 442), mouth now y1243–1290.
+- 2026-10-21 (same): his MJ morgue still (`projects/katherine-day-michael-died/raw/mj-morgue-still.webp`, 1280², "People v.
+  Murray / SA073164" + a stock ID burned in under the photo): crop to the photo (x96–1255, y35–1155, right-aligned so the
+  head stays in through the zoom-out), never show the burned-in text. Reusable for the next MJ short.
+
+- 2026-10-21 (MJ siblings "found out he died", the 2nd short built in code, `projects/mj-siblings-found-out/`): **when he re-edits
+  our raw cut in Premiere, HIS sequence is the source of truth** (dump it read-only: `seqref/seq_his.tsv`): picture from his V1
+  in-points (he slipped Tito's video 0.25 s to fix the CNN package's A/V sync himself), audio from his A1, V2 clips = his
+  overlay slots. File: `build/timeline.json`.
+- 2026-10-21 (same): **the AW grade turns broadcast skin orange-red**: graded skin measured HSV-sat 0.80-0.85 / R/G 2.2-3.2 on
+  CNN/ABC/60 Minutes footage (Katherine's final was 0.64-0.71 / 2.3-2.7, his "very red" note). Measure graded skin per source
+  AND per overlay and level saturation before the grade (`sat_level`; target ~0.54 / R/G ~1.6); re-check after Topaz (La Toya
+  drifted pink). File: `build/finish.py`, `build/sat_probe*.sh`.
+- 2026-10-21 (same): **black overlay slots make Topaz chr-2 swallow frames** (13 here, vs +1..+3 on Katherine): align_frames'
+  band of 6 failed; widen it (24) or render the overlays into Stage A before Topaz. File: `build/align_frames.py`.
+- 2026-10-21 (same): **wav2vec2 mis-times numbers and stretched words** ("15 minutes" placed 0.3 s early, "weak" 0.2 s short):
+  gate every cut edge with 10 ms RMS against the body level, and re-ASR a 3 s snippet when an edge is loud. The rough-cut
+  planner would have cut both words. File: `projects/mj-siblings-found-out/beats.json`.
+- 2026-10-21 (same): **his D1 call: "its eye balls i believe"** (Jermaine: "I pulled his eyeballs back to look in his eyes") — the
+  ASR split eyeballs/pulls; when a 0.2 s syllable stays ambiguous, flag it with the time and let him settle it.
+- 2026-10-22 (MJ siblings, same job): **the final AAC 320k encode overshoots a brick-wall limiter by ~1.8 dB true peak** (the WAV
+  measured -1.2 dBTP, the mp4 +0.6). Measure true peak on the ENCODED file; give the limiter ~2 dB of headroom (-3.2) and
+  re-mux the audio (`-c:v copy`) instead of re-rendering the picture. File: `projects/mj-siblings-found-out/build/audio.py`.
+- 2026-10-21 (same): name lower thirds added on his OK (the brief's 'essential with four faces'): Gretaros white name +
+  his caption gold relation, under the caption line, 2 s from each speaker's FIRST FACE (not the beat start when the beat
+  opens on an overlay). File: `projects/mj-siblings-found-out/build/finish.py` (lt_card).
+- 2026-10-22 (MJ siblings v4, HIS REVIEW): **(1) the grade made Black skin "too black... like chocolate", not the real colour**:
+  the AW grade + my saturation cut darkened/muddied dark skin; match HOW HE GRADES BLACK FACES on his own finals (measure
+  them: `E:/Shorts/Abudance Wisdom Shorts Exports/Final Renders`). **(2) artifacts / pixelation on faces** (worst on the grey
+  Oprah MJ overlay): the Topaz chain scales the WHOLE frame to 270 wide before iris x4, which wrecks good 1080p overlays;
+  overlays from clean sources must skip that chain. **(3) SFX 10 dB lower.** **(4) captions must not cover the speakers'
+  mouths**: frame each face so the caption line sits just UNDER the lips (memory: captions-just-below-lips), zoom included.
+  File: `projects/mj-siblings-found-out/` (v5).
+- 2026-10-22 (MJ siblings v5, the fix for his v4 review): **the "chocolate" skin was mostly a PIPE bug, not the grade**: every
+  splice tool fed ffmpeg an UNTAGGED rawvideo yuv420p pipe, ffmpeg read it as BT.601 and wrote BT.709, so each generation made
+  skin ~7 % darker and redder; v4 went through five (raw Y 119 -> 73). Rule: every rawvideo writer tags its INPUT
+  `-color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709`, and the enhanced picture is assembled in ONE
+  pass from first-generation sources (`build/assemble.py` + a plan), never by chained splices. Measured fix (landmark cheeks,
+  `build/skin_stats.py`): La Toya luma 0.31 -> 0.63, R/G 3.02 -> 1.70; Tito 0.17 -> 0.40, 2.64 -> 1.76; Jermaine 0.28 -> 0.39,
+  sat 0.30 -> 0.48. File: `projects/mj-siblings-found-out/build/`.
+- 2026-10-22 (same): **his grade BRIGHTENS dark skin; the trial layer-43 fit (Nick Walker) darkened it.** On his own pair
+  (`Final Renders/mj_stab_chr2_iris3.mov` -> `MJ Final Skin.mp4`) dark skin rises ~1.2-1.35x in luma (Ronnie 0.293 -> 0.346,
+  MJ 0.443 -> 0.590) with R/G about kept. Fit his grade as per-channel quantile curves on his pre/post pair (`build/fit_grade.py`
+  -> `grade_curves.json`, 76 frames, centre region, no caption rows / letterbox / dips) and validate by re-applying to the pre
+  file (0.557 vs his 0.590). The PRE sharpen bands + Sharpen 40 went too: they turned Topaz texture into blocky speckle.
+- 2026-10-22 (same): **overlays skip Topaz**: the chain's 270-px downscale before iris x4 pixelated clean 1080p overlays
+  (the grey Oprah MJ); Stage A overlay frames go straight into the one-pass assembly. **Topaz still speckles 300-500 % face
+  upscales** (Jermaine's / Marlon's forehead shine -> white 1-4 px dots): a 5x5 grey opening on luma, applied only where the
+  blurred neighbourhood is warm mid-luma skin (`finish.py despeckle`, timeline `despeckle: [setup]`), removes them and keeps
+  catchlights, teeth, sunglasses glints and the mic grille.
+- 2026-10-22 (same): **lips vs captions on a push-in: pivot the zoom ON the lip line.** The face-top pivot rule moves the
+  pivot up, which pushes the lips DOWN into the caption band during the push (Tito, v4). Pin the lips (nose y so the lower lip
+  sits <= 1084, caption top 1093; `zoom_pivot_override`) and, when the face is too big for both rules (face top -> lip span
+  x zoom > 884 px), make the zoom SHALLOWER (Tito 0.85 instead of 0.75-0.82) rather than give up either the caption rule or
+  the top-200 safe zone. Name cards obey the same rule: a card that lands on a mouth moves (Jermaine's above his letterbox
+  band, y0 175). Check: `build/lip_check.py` (zoom included) + YuNet face top on the render.

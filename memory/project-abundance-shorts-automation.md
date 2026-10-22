@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7173e089-1e87-4811-944b-8e4043fa359d
-  modified: 2026-10-10T19:11:05.823Z
+  modified: 2026-10-20T01:52:33.233Z
 ---
 
 Goal: automate the full Abundance Wisdom shorts edit (soundbite stitching → head-lock → Topaz → captions → zooms/transitions → audio → export) to match the user's hand edits. Started 2026-09-14.
@@ -55,3 +55,29 @@ clean.
 bit-exact on his input; captions rendered from the project's text (font 48, GPOS kerning, per-caption stretched pop)
 + a CapCut optical-flow smear model. Edits he makes after a Claude step (e.g. Position nudges after a head lock) are
 MEASURED from his render, not assumed. Full record: `projects/aw-code-trial-parents/RUN.md`.
+
+**2026-10-20 — NEXT TEST (his idea): he records a CREATIVE-DIRECTION video for his next short and Claude makes it
+fully in code** (the v4 engine from the trial). If it holds up he can post up to 3 shorts/day. The difference from the
+trial: that was a copy (every decision read from his project); here Claude makes the decisions (soundbites + cut
+points, pull-out vs push-in, transition types, caption colouring, music, SFX), so the sequencing goes back to him as
+text for an OK before the build (see [[feedback-sequencing-before-edit]]). Sources: he puts the files in a folder
+(YouTube is blocked on this PC, SESSION-START). Start it in a FRESH session; brief = walkthrough recipe
+([[feedback-walkthrough-videos]]).
+
+**2026-10-20 — FIRST SHORT BUILT IN CODE FROM HIS DIRECTION VIDEO: Katherine "day Michael died"** (ABW10 Seq 13,
+`projects/katherine-day-michael-died/`, RUN.md = full record). Made in one session with no AE/Premiere/CapCut: hook stare +
+Joe/MJ overlays picked by face scans, head lock (optical flow + detector), his Topaz chain headless + his jitter tweak per shot,
+AE look from the trial's measured primitives driven by a job `timeline.json`, code captions (agent) at his ABW10 height
+(line 1 y1093, NOT the ABW8 trial's 980), his whoosh/flash SFX. v2 delivered with a PLACEHOLDER morgue still (he was in
+bed); his still in `raw/` + one finish re-render = final. Awaiting his review.
+
+**2026-10-21:** Katherine short APPROVED after 3 review fixes (final in X:\Claude Projects\Exports). Next short = "How MJ's
+Siblings Found Out He Died" (`projects/mj-siblings-found-out/`): he handed a locked edit BRIEF (5 YouTube sources), asked
+for the RAW SEQUENCE in Premiere first, then a direction video, then the code build. Raw cut placed in ABW10 ("MJ Siblings
+Found Out - raw cut", 56.8 s, beat 4 skipped, 05 replaced by his local CBS2 memorial); awaiting his direction video (RUN.md).
+
+**2026-10-22:** MJ siblings built in code from his own re-edit of the raw cut + his Tella direction (v1-v4). His v4 review
+("chocolate" skin, face artifacts, SFX -10 dB, captions on mouths) -> v5 exported to X:\Claude Projects\Exports
+(`mj-siblings-found-out.v5.mp4`), awaiting his review. Root cause of the skin: untagged rawvideo pipes (BT.601 -> 709 drift
+per splice) + a grade fitted on the wrong (Nick Walker) footage; fixed with BT.709-tagged pipes, one-pass assembly and HIS
+grade fitted from his own pre/post pair. Details: the job's RUN.md + AW shorts LESSONS (2026-10-22 entries).

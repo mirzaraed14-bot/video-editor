@@ -4,6 +4,7 @@
   python workflows/mg-cards.py counter  OUT.mp4 --to 50 --label "SHOWS PITCHED" [--dur 3.0]
   python workflows/mg-cards.py calendar OUT.mp4 --label "A BANK CEO'S WEEK" [--dur 3.4]
   python workflows/mg-cards.py tvoff    OUT.mp4 --src STILL.jpg [--cx 0.5] [--dur 3.3]
+  python workflows/mg-cards.py collateral OUT.mp4 --dur 9.4 --t1 3.0 --t2 6.3 [--r0 0 --r1 1.6]   (the $525M loan and the ten characters that secured it)
 
 dots      a field of N white dots on navy; one dot turns teal and the camera eases in on it; the label rises in under it.
 counter   a number rolls up from 1 to --to (ease-in-out), each change sliding up with a fading ghost; the final number turns teal.
@@ -152,11 +153,65 @@ def tvoff(a):
     out.stdin.close(); out.wait()
 
 
+COLLATERAL = ["CAPTAIN AMERICA", "THE AVENGERS", "BLACK PANTHER", "DOCTOR STRANGE", "ANT-MAN", "HAWKEYE", "NICK FURY", "SHANG-CHI",
+              "CLOAK & DAGGER", "POWER PACK"]     # the 2005 Merrill Lynch facility's collateral: theatrical film rights to these ten (SEC 8-K)
+
+
+def collateral(a):
+    """$525,000,000 rolls up ("IN DEBT"), then shrinks to the top while the ten characters whose movie rights secured the loan pop in
+    (--t1 s), then a teal plate rises at the bottom: IF THE MOVIES FLOPPED / THE BANK GOT THEM (--t2 s). The caption band (y 1000-1200)
+    and the safe bands stay clear. Marvel Studios' 2005 financing; Cuneo, Scott Clary 2026-10-21."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS); D = a.dur
+    fbig, fn = ImageFont.truetype(ANTON, 172), ImageFont.truetype(ANTON, 64)
+    mix = lambda col, q: tuple(int(NAVY[c] + (col[c] - NAVY[c]) * q) for c in range(3))     # fades go to the navy, never to black
+    total = 525_000_000
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        rl = lambda x: ease(min(max(x - a.r0, 0) / (a.r1 - a.r0), 1))                   # the roll lands on the spoken number (--r0/--r1 s)
+        v = round(total * rl(s)); prev = round(total * rl(s - 1 / FPS))
+        g = eout((s - a.t1) / 0.45)                                                   # 0 -> 1: the number moves up and shrinks
+        k = 1 - 0.42 * g; y = 330 - 130 * g
+        num = Image.new("RGB", (w, 260), NAVY); nd = ImageDraw.Draw(num); txt = f"${v:,}"; tw = nd.textlength(txt, font=fbig)
+        nd.text((w / 2 - tw / 2, 10), txt, font=fbig, fill=TEAL if v == total else WHITE)
+        if v != prev:
+            num = num.filter(ImageFilter.GaussianBlur(min(1.5 + abs(v - prev) / total * 60, 7)))
+        if k != 1:
+            nw, nh = round(w * k), round(260 * k); num = num.resize((nw, nh), Image.LANCZOS); im.paste(num, ((w - nw) // 2, round(y)))
+        else:
+            im.paste(num, (0, round(y)))
+        la = eout((s - a.r0) / 0.4) * (1 - g)                                                    # "IN DEBT" under the rolling number, gone in phase 2
+        if la > 0.01:
+            label(d, "IN DEBT", w / 2, 600, 84, mix(WHITE, la), 1.0, eout((s - a.r0) / 0.4))
+        if g > 0.01:
+            label(d, "SECURED BY THE MOVIE RIGHTS TO", w / 2, 360, 52, mix((150, 165, 190), g), 1.0, g)
+            for j, nm in enumerate(COLLATERAL):
+                p = eout((s - a.t1 - 0.25 - 0.11 * j) / 0.22)
+                if p <= 0:
+                    continue
+                col, row = j % 2, j // 2; cx = w * (0.28 if col == 0 else 0.72); cy = 470 + row * 98
+                dim = 1 - 0.35 * eout((s - a.t2) / 0.4)
+                ni = Image.new("RGBA", (520, 90), (0, 0, 0, 0)); ndd = ImageDraw.Draw(ni); tw = ndd.textlength(nm, font=fn)
+                ndd.text((260 - tw / 2, 6), nm, font=fn, fill=mix(WHITE, dim) + (255,))
+                sc = 0.6 + 0.4 * p + 0.08 * math.sin(math.pi * min(p, 1))                    # pops in with a small overshoot
+                ni = ni.resize((round(520 * sc), round(90 * sc)), Image.LANCZOS); ni.putalpha(ni.getchannel("A").point(lambda q: int(q * p)))
+                im.paste(ni, (round(cx - ni.width / 2), round(cy - ni.height / 2 + 20 * (1 - p))), ni)
+        sp = eout((s - a.t2) / 0.35)
+        if sp > 0:
+            py = 1290 + 60 * (1 - sp); d.rounded_rectangle((90, py, w - 90, py + 230), radius=26, fill=tuple(int(NAVY[c] + (TEAL[c] - NAVY[c]) * sp) for c in range(3)))
+            label(d, "IF THE MOVIES FLOPPED", w / 2, py + 22 - 30, 80, NAVY, sp, 1.0)
+            label(d, "THE BANK GOT THEM", w / 2, py + 118 - 30, 80, NAVY, sp, 1.0)
+        out.stdin.write(push(im, t, 0.05).tobytes())
+    out.stdin.close(); out.wait()
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff"]); ap.add_argument("out")
+    ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral"]); ap.add_argument("out")
+    ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
+    ap.add_argument("--r0", type=float, default=0.0); ap.add_argument("--r1", type=float, default=1.6)
     ap.add_argument("--n", type=int, default=3000); ap.add_argument("--to", type=int, default=50); ap.add_argument("--label", default="")
     ap.add_argument("--src"); ap.add_argument("--cx", type=float, default=0.5); ap.add_argument("--dur", type=float, default=3.0); ap.add_argument("--w", type=int, default=1080); ap.add_argument("--h", type=int, default=1920)
     a = ap.parse_args()
-    {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff}[a.kind](a)
+    {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral}[a.kind](a)
     print("done", a.out)

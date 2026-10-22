@@ -76,15 +76,16 @@ def hook_cues(spec):
     a = spec.get("audio", {})
     if not (spec.get("hook") or {}).get("lines"):
         return None, None, []
-    near = [c for c in a.get("sfx", []) if c.get("t", 9) <= 1.0]
+    t0 = float(spec["hook"].get("t0", 0.0))                 # hook.t0: a late card (a guest credit) gets its pair at its own landing
+    near = [c for c in a.get("sfx", []) if t0 - 0.05 <= c.get("t", 9) <= t0 + 1.0]
     whoosh = next((c for c in near if "whoosh" in os.path.basename(c["file"])), None)
     hit = next((c for c in near if any(k in os.path.basename(c["file"]) for k in ("thud", "hit", "boom", "impact"))), None)
     if a.get("hook_sfx") == "spec" or a.get("auto_sfx") is False:
         return whoosh, hit, []
-    land = hook_landing(spec["fps"])
+    land = hook_landing(spec["fps"]) + t0
     added = []
     if whoosh is None:
-        whoosh = cue("whoosh-med", max(0.30, land - 0.12), "hook slides in"); added.append(whoosh)
+        whoosh = cue("whoosh-med", max(0.30 + t0, land - 0.12), "hook slides in"); added.append(whoosh)
     if hit is None:
         hit = cue("thud-thin", land, "hook lands"); added.append(hit)
     return whoosh, hit, added

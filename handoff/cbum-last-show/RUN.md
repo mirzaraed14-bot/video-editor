@@ -1,6 +1,231 @@
 # RUN — cbum-last-show ("THE LAST SHOW", Chris Bumstead, Abundance Wisdom long-form #3)
 
 ## ▶ STATUS: resume here
+**2026-10-21 ~16:30: HIS TWO NEW ASKS (watching the restored sequence) ARE PLACED AND SAVED.** Evidence + stills:
+`review/redo-2-fixes/` (`id-evidence.jpg`, `4a-tags-corrected.png`, `subscribe-alert-2m16.png`).
+- **Line-up label "thats not shaun brh": he was right.** The left man's bib is never legible in the 4a shot, and Shaun Clarida (#7)
+  is a bald Black athlete (Fitness Volt winners photo), so the earlier "#7 = Clarida" was never proven. His tag is DROPPED; only
+  Chris (#5) and Martin (#8, legible on his bib; the medal winner) are named (`c4-4a-tags-alpha-d.mov`, tracked, pointer SFX
+  retimed). Every Martin image re-checked against the winners photo (co-08, co-10, cob-21, c3-martin, c3-3a-martin, c3-arnold,
+  c4-finals-twomen with bib 8 visible, c4-martin-olympia): all the same bald, clean-shaven man. (co-10's result ledger sits over
+  this same line-up; it lists names, it points at no one.)
+- **Subscribe alerts (his ask; overrides the default no-CTA rule for this film):** `cta-sub-alpha.mov` (kit tag language, bell
+  rings once, "Abundance Wisdom", 3.0 s, lower-left) on V3 at **2:16.4, 4:40.2, 8:01.4**: calm face windows with nothing on V2-V5,
+  ≥ 30 s from both mid-rolls, none in the cold open / end screen / after the health-scare trailer. One soft "letter set down on
+  a table" SFX each (three different Epidemic takes). Build: `python work/redo/cta/build_cta.py`. A full SFX rebuild must now
+  include the section: `--sections co,co-b,titles,ch1,ch2,ch3,ch4,ch5,cta`.
+
+**2026-10-21 ~15:00: HIS SECOND REVIEW (of the redo) IS FIXED, VERIFIED AND SAVED: waiting on his watch.** Report: **`work/redo/REPORT-REVIEW-2.md`**. He reviewed the DAMAGED copy by mistake; the resolved list is
+`review/critique-2026-10-21-redo/NOTES.md` (REAL vs damaged-only). Fixed on the restored sequence, each placed by readback and saved:
+- **c4-pre4f removed** (0.37 s vlog flash before 4f); sweep: no V2 cover < 1 s, no 1-3 frame V2 gap, every V1 gap covered. The face
+  gate's 2 "reading" flags (138.08, 526.54) are padding artifacts: the last 8 frames before both cuts are eye contact (checked by frame).
+- **c1-1c-push removed** (the push on Breon); `removed-rows.json` in ch1/ch4.
+- **co-02 + c3-post rebuilt from his REAL Instagram** (`redo-gfx/assets/img/ig-real/`, fetched 2026-10-21): his own avatar (the B&W crab
+  most-muscular; 150 px is the largest served without login), real counts/bio/first six grid tiles; the real 28 Oct 2024 post
+  (instagram.com/p/DBrWCDGSdLs: the carousel's first photo, the exact caption, 2,782,954 likes) as the desktop post view, the
+  highlighter on "One more run just for fun, giving the people what they want." Files `co-02-b.mp4`, `c3-post-c.mp4` (fades
+  out before the c3-prague butt joint; the ledger outside the camera, frame-identical).
+- **Prague line-up tags:** the names were RIGHT (bib numbers in the 4a shot = the official sheet: #7 Clarida, #5 Bumstead, #8 Fitzwater =
+  the bald clean-shaven man = his Martin photos); he saw them over the damaged copy's wrong shot (01 @ 387 s). The pointers now rest on
+  the shoulders and are TRACKED (`work/redo/ch4/track_4a.py` → `c4-4a-tags-alpha-c.mov`). Every Martin image re-checked: correct.
+- **4e → host joint:** a 0.4004 s breath opened at 511.394 (`work/redo/ripple_breath.py`: everything after moved, JSONs shifted, the A4
+  voice chunk split), Chris's chopped next syllable faded out (A4 chunk ends 511.28), his own room tone bridges the breath
+  (`audio/sfx-redo/bridge_4e-c_tail.wav` on A1, `work/redo/fix_4e_joint.py`). Word-level sweep of the other joints: B1 (crowd tail
+  `bridge_B1_tail.wav`) and 5a-b (his mp3 cut chopped "now.": one-frame crossfade into `bridge_5a-b_tail.wav`) fixed by
+  `work/redo/fix_joints_b1_5a.py`; the rest end cleanly.
+- **c4-martin-olympia-b:** opens on 4e's last frame held, dissolving straight into the Martin card (no black).
+- **5c/5d:** V1 under the trailer audio is the trailer's own picture, in sync; the tape overlay on 5d is light. Damaged-only.
+- **SFX rebuilt** from a fresh Epidemic pool (`audio/sfx-redo/src/pool/`, 124 takes, `work/redo/sfx/POOL.md`): 283 → 213 cues,
+  air sounds 135 → 65, 101 distinct takes, no back-to-back repeat (trophy lights rotate 4 switch takes; the tonal hit-soft take removed), every graphic keeps a sound.
+  Rebuild = `python work/redo/sfx/build_sfx.py --sections co,co-b,titles,ch1,ch2,ch3,ch4,ch5` → `python work/redo/sfx/fit_tracks.py`
+  (3 tracks: trims the least tail where a 4th sound starts) → `python work/redo/place_sfx_redo.py --t0 0 --t1 700 --replace --apply`.
+  Placed 213/213 on A2/A5/A6; the 279 now-offline v1 items removed from the "REDO sfx" bin (no Link Media prompt on reopen).
+- verify_redo: all PASS but 19's known 5d-b cue-end flag. Tracks: V1 183 · V2 71 · V3 26 · V4 22 · A1 38 · A2 158 · A4 18 · A5 45 ·
+  A6 13; end 690.74. LESSONS 23-30 written.
+- **NEXT:** his watch of the whole film → his notes → LESSONS + fixes.
+
+**2026-10-21 ~07:30: THE REDO IS BUILT ON THE TIMELINE AND VERIFIED: waiting on the creator's watch (step 7).** Report mapping
+his 19 points to the changes and checks: **`work/redo/REPORT-19.md`**. Brief for agents: `work/redo/REDO-PLAN.md`.
+He saw cold open v2 (`review/redo-cold-open-v1.mp4`): "the whole intro looks so much better", except 0:25 ("hideous"), rebuilt as
+`co-07-c` (LESSONS 21-22).
+- **Sequence:** ABW10 › "THE LAST SHOW - rough cut" (id b0896a23…, the RESTORED copy, in the job bin). The damaged copy (id cf0dc4bb…)
+  is GONE: deleted from ABW10 on 2026-10-21 with the creator's OK; its restore point is the XML
+  `premiere/recovery/DAMAGED-07-09-cf0dc4bb.xml` (777 clipitems). Other restore points: `premiere/redo-start-2026-10-21.xml` (before the
+  redo), `premiere/recovery/ABW10-saved-0707.prproj`, `premiere/before-breath-511.394.xml` (before the 4e breath). The duplicate
+  "Face nest" sequences from the import stay (harmless).
+- **His own edits kept:** his Enhanced-Speech voice mp3 on A3/A4 (+A1) and his two ~0.7 s cuts. The old SFX are NOT in his mp3.
+- **Done (all verified by readback; `python work/redo/verify_redo.py` = all PASS):**
+  - stage 1: old V2/V3/SFX cleared, 0a freeze + 0b + 0c out of the cold open, ripple −13.56355 s (VO starts 9.359);
+  - host head-lock removed; 23 face nests with one eased ≤ 4 % zoom; archive pieces re-centred (no 2.39 bars any more);
+  - 99 graphics (co, co-b, titles, ch1-ch5) + 22 subtitle overlays (V4); 278 SFX (A2/A5/A6); levels on 34 A1 inserts;
+  - 5d made continuous (`work/redo/fix_5d.py`, 5d-b now 612.512-620.453 from source frame 1304); 5a bleep keyed on the mp3 chunk;
+    the A4 chunk ending at 249.816 extended to 250.217; the 0a-c crowd tail bridge (`work/redo/place_tail.py`, a baked WAV).
+- **Tracks:** V1 cut + nests · V2 covers · V3 overlays · V4 subtitles · V5 spare · A1 inserts + bridge · A2 bleep tones + SFX ·
+  A3/A4 his voice · A5/A6 SFX · A7 nest scratch (keep EMPTY).
+- **Tools (job folder):** `work/redo/linemap.py` (live times; expands nests; resolves stale in/out against the plan),
+  `place_redo.py` (graphics by section/ids, eased opacity fades, NO overwrite padding), `place_sfx_redo.py`, `apply_levels.py`
+  (idempotent bleeps), `nests.py` (+ `plan_nests.py`), `check_coverage.py`, `verify_redo.py`, `preview.py` (offline preview /
+  `--audio-only` mix), `redo-gfx/` (kit + renders).
+- **After his OK (2026-10-21 ~08:10):** the gold outline TRACKED on Samson at 0:25 (`co-07-d`, `work/redo/co/outline_samson.py`, a matte from
+  `hyperframes remove-background`, traced crown → arms → waist; below the waist the matte grabs backdrop) + a line-draw SFX.
+  The chapter cards I-V were re-placed as `t-chN-final.mp4` (the titles agent re-rendered them in place after placement), as were
+  the subtitles (`s-*-final.mov`). verify_redo: all PASS (19 flags only 5d's stretched cue end; the line ends 620.22, its overlay 620.45).
+- **NEXT:** his watch of the whole film in Premiere → his notes → LESSONS + fixes. Music bed is his. Higgsfield upgrades optional
+  (`work/redo/*/higgsfield-requests.json`, the daily limit blocked them today).
+
+### (earlier) ▶ STATUS before the redo
+**2026-10-21: THE CREATOR'S VERDICT: REDO.** "very mid… not cinematic… feels like a draft… I would not upload this." His video
+review is at `review/critique-2026-10-21/` (`guide.mp4`, `guide-transcript.md`, and the fix list **`CRITIQUE.md`**: read it
+FIRST). The bar is the Nick Walker long-form (ABW8 Seq 24) + the FX catalog. Keep the grade and the cut; REDO the visual layer,
+transitions, host framing, audio levels and subtitles.
+
+Honest causes (not usage):
+1. The BRIEF's research decisions became the target instead of his look: "0 % synthetic, real footage only", "≤ 2.5 changes
+   / 10 s", near-black F4 cards instead of his gold-matte cards, "freeze instead of slow-mo". So the plan minimised motion
+   graphics, Higgsfield images, screenshots and transitions. Metrics passed and the film was bland.
+2. Covers were picked from the downloaded archive by availability (the speech reused under many lines), not designed per line.
+3. The per-clip head-lock repositioning made his face drift up across cuts; his standard is a nest + one subtle zoom.
+4. The freezes under VO came from the plan and were never checked against his taste.
+5. The inserts were left at raw level "for the mix step", so the level jumps were audible.
+6. The subtitles were drafted but not all placed.
+7. The work was split over 3 sessions, and his standing look (memory project-abundance-wisdom-longform) was never written into
+   the plan. The checkpoints asked about seconds, not about the look.
+
+**2026-10-20 11:25: overnight close.**
+- The chapters session reported DONE (step 5b built + measured + saved).
+- ABW10 was saved and Premiere quit cleanly (bridge `app.quit()`; the project was saved first).
+- The PC was shut down at the creator's request (`shutdown /s /t 300`).
+- Tomorrow, reopen ABW10 › "THE LAST SHOW - rough cut". Still the creator's:
+  - grade Looks (`grade/archive/APPLY.md`)
+  - music bed + mix (lock 7)
+  - 4d words by ear
+  - 5c names
+  - his watch notes
+
+**2026-10-20 ~11:20: STEP 5b CHAPTERS 1-5 + THE ENDING ARE BUILT ON THE TIMELINE AND MEASURED** (side session, after the cold open).
+No cold-open taste notes from the creator had reached this session by 11:20 (his only answers today: no re-records, keep #27), so it ran on the checkpoint defaults.
+Restore point before the first chapter write: `premiere/before-chapters-2026-10-20.xml`.
+- **On the timeline (ABW10 › "THE LAST SHOW - rough cut", by name, read back, saved; no active-sequence switch, no QE):**
+  - **V2, 47 clips** (`work/storyboard/place_ch.py --section all`, idempotent):
+    - covers, frame-exact freezes, the c2 six-win flash (6 × 10 frames) and the 4c-c tail cover;
+    - black under every ledger / F4 card / headline / dust field over a host clip.
+    - Records: `work/storyboard/v2-placement-<section>.json`.
+  - **V1 archive motion, 23 pieces** (same script; record `work/storyboard/v1-motion-applied.json`):
+    - Every pre-lap cover shares ONE eased curve with the piece it runs into. Measured continuous at all 8 joints (`n → n+1` or a held frame).
+    - Framing was chosen by eye on band sheets: 1a +110 px, 1c +112 px (hides the Generation Iron title box), 2a top-anchored,
+      2b + 2c one push 1.10 → 1.25 pinned under the band top, Greg 1.12 → 1.15 (hides his inset borders), 4d 1.00 → 1.07 toward Chris,
+      5a +80, 5b +40, 2d / 5f 1.10 as 0b.
+  - **Head lock + drift on every face run 2-25** (`work/storyboard/headlock_ch.py`; record `work/storyboard/headlock-applied.json`,
+    run 1 included):
+    - the light chain, re-centred wherever that needs less zoom;
+    - the drift (push-in / pull-out) read from each FACE element;
+    - a +0.004 zoom margin, so every frame edge is covered.
+    - ⚠ Run 11 (c3-host-66, segs 72-78, a sawtooth) needs z 1.159; with its pull-out it peaks at 1.20 ×, a visible softening.
+      Run 3 (c1-host-04) is at 1.07.
+  - **V3: seven overlay parts C1 C2 C3 C4a(-b) C4b C5 E** (`hf-graphics/build_chapters.py` / `render_chapters.sh` / `verify_chapters.py`,
+    placed by `work/storyboard/place_overlay_ch.py`). They tile 85.352 → 705.271 with no gap.
+    - Contents: ledgers, date cards, noun tags, year slams, the Instagram / Arnold / scorecard / quote / NSP-headline F4 cards, chapter
+      cards II-V, subtitles, the end card "MAYBE. MAYBE NOT." and 17 s of black + dust.
+    - All 329 exact-frame checkpoints and the every-frame scan passed on the first renders; the re-rendered C4a-b passed its checkpoints
+      (`verify_chapters.py C4a`), not a second full scan. Details and every builder flag: `hf-graphics/PROJECT.md`.
+    - ⚠ Several V2 covers over host clips sit moved down or top-anchored (+40 to +138 px): in those spans ONLY the V3 bars hide the
+      host's top rows. With V3 switched off (say while grading) his head shows above y 138; switch V3 back on before judging.
+    - To swap a placed part later (C4b for 4d, C5 for 5c): render `VER=<x> ./render_chapters.sh C4b`, REMOVE the old part from V3 by
+      name first, then `place_overlay_ch.py --parts C4b --apply` (it refuses a filled slot; an overwrite-replace leaves a 0.1 s tail).
+  - **SFX: 71 clips on A2/A3** (68 cues + 3 bleep tones). Built by `audio/sfx-chapters/build.py`, +9.06 dB calibration, placed by
+    `work/storyboard/place_sfx_ch.py`. Read back: 0 overlaps, 0 missing.
+  - **Bleeps** (`work/storyboard/place_bleeps.py`): A1 Level keyed to -inf over each MEASURED word span, 5 ms ramps, plus a 1 kHz tone at
+    -17.5 dBFS (level with the voice). The markers were moved onto the spans:
+    - 3a 315.065-315.432
+    - 5a 575.291-575.942 ("fucking" is 0.65 s; the old marker said 0.2)
+    - 5d 629.696-629.946
+  - **Markers:** MID-ROLL 1 379.362 (6:19.36) and MID-ROLL 2 551.901 (9:11.90) sit on the black starts. New: END SCREEN 688.271-705.271.
+  - `work/storyboard/validate_v2.py`: PASS.
+- **Measured previews** (`uv run projects/cbum-last-show/work/storyboard/preview_render.py all --t0 <a> --t1 <b> --label chN --v N` from
+  the repo root; generalized today and bit-identical to cold-open v2; reports in `review/chN-measure.md`):
+
+  | | ch1 v2 | ch2 v2 | ch3 v2 | ch4 v1 | ch5 v1 | end v1 |
+  |---|---|---|---|---|---|---|
+  | host-leak frames outside FACE | 0 | 0 | 0 | 0 | 0 | 0 |
+  | picture changes / 10 s (≤ 2.5) | 1.46 | 1.62 | 1.82 | 1.68 | **2.95** | 0.42 |
+  | host-run median (≥ 2.5 s) | 4.13 | 2.80 | 4.67 | 3.85 | 4.63 | - |
+  | longest stretch without relief (≤ 20 s) | 8.4 | 8.3 | 10.3 | 17.7 | **22.4** | - |
+  | colour jumps over 7 (Cb/Cr) | 1 | 10 (6 inside the flash) | 4 | 7 | 7 | 0 |
+  | graphics settling < 1 s before a cut | 0 / 10 | 0 / 27 | 0 / 8 | 1 / 20 | 2 / 13 | 0 |
+  | SFX / 10 s (≤ 2.5), impacts | 1.83, 0 | 1.62, 1 | 0.82, 0 | 0.81, 0 | 1.09, 0 | 0 |
+  | loudness, no music (I / LRA / TP) | -17.2 / 5.1 / +0.1 | -17.9 / 5.2 / -2.6 | -18.8 / 10.1 / -5.6 | -16.0 / 12.3 / -1.1 | -16.9 / 6.8 / -1.1 | - |
+
+  - **ch5 density and stretch:** both come from the trailer's own fast editing (5c / 5d, 614.3-634.6) plus the planned six-echo recap
+    montage (median 1.3 s, inside the 1.3-1.6 montage target). Without them ch5 is under 2.5.
+  - **The settle "fails", judged from the comps' timelines (not by eye):**
+    - ch4 474.107: the detector caught a dust/stepped-push step. The scorecard highlighter settles at 472.25, 2.05 s before its cut.
+    - ch5: the 5c date card (0.93 s) and the NOUN #4 tag (0.88 s) settle against the TRAILER'S own internal cuts, as the cold open's
+      0c card does.
+  - **Colour jumps over 7** are archive ↔ host and archive ↔ archive cuts (02 Olympia, 05 Breon, 07 NSP, 01 kitchen, the flash run).
+    ⚠ The previews grade BY SOURCE (`preview_render.py lut_for`): the vlog match on every 04/06/09 clip and the event cube on
+    05/07/08/10. `grade/archive/APPLY.md` leaves exactly those UNGRADED in the chapters. So the colour column does not predict
+    Premiere's picture; re-measure after the grade hand step with a per-clip grade map. Cadence, leak, settle, SFX and loudness are
+    unaffected.
+  - **Loudness:** no bed yet. The archive pieces carry no chain (LRA 12 in ch4 = 4a's crowd silence). TP +0.1 in ch1 needs the master
+    limiter: the mix step.
+- **Held, by rule:**
+  - 4d's subtitles (the creator by ear);
+  - 5c's subtitles (the speaker names);
+  - 4a's undrafted cues, incl. "I disagree".
+  - Built: NSP's own "…It was unanimous" (attributed: his voice, his side panels in shot, tagged; facts.md allows that). The build
+    held it by default; it is re-rendered as `ch-overlay-C4a-b.mov`. The scorecard card never says "unanimous" / "not one judge".
+- **Fixed on the way** (lab-notes 2026-10-20):
+  - Premiere floors `setInPoint` to the source frame, then to the sequence grid, so the covers now aim at frame centres. The cold-open
+    covers read 6-41 ms early (1 source frame), left as built.
+  - The audio Level scale.
+  - A top-anchored cover edge exactly on y 138 let one resampled row of host through: they are now tucked 2 px under the bar.
+- **NEXT:**
+  - the creator watches chapters 1-5 + the ending in Premiere (taste, step 7);
+  - the grade hand step, `grade/archive/APPLY.md` § "Later, when the chapter covers are built": the 01 covers c3-host-62, c3-host-70,
+    c4-host-89 and the 01 half of c3-host-63 take `cbum-archive-event.cube` by Paste Attributes. The two 02 freeze stills
+    (`ch_02_f6734.png` at T 252.75, `ch_02_f3068.png` at 612.18) are new items and need their own Lumetri with
+    `cbum-archive-event-02.cube`. The 02 / B1 covers should inherit the master-clip Look (check the first one by eye);
+  - the 4d words and the 5c names (then re-render C4b / C5 with `VER=<x>`);
+  - the music bed and the mix: lock 7 arena music, the archive piece levels, the master limiter.
+- `brief/subtitles-draft.json`'s T for the chapter cues predates the T2 trim (47-49 frames late). The overlay builder re-derives every
+  cue from the piece map, so nothing on screen is late. Regenerate the draft with `work/storyboard/subs_draft.py` before editing cues by hand.
+
+**2026-10-20 10:35: the creator WON'T re-record anything ("I aint recording more stuff for this").** So the re-record asks are
+CLOSED:
+- "On top", #31-32 and "in Prague" stay out (already cut cleanly).
+- "In tears" is dropped.
+- **#27 "A year later, he wins his first two pro shows" is factually false.** The options are to CUT the sentence (the ledger
+  shows the 2017 Pittsburgh/Toronto wins) or to keep it. **The creator: KEEP (2026-10-20). It stays as recorded; no more flagging.**
+- Never list re-records to him again on this job.
+
+**2026-10-20 ~08:20: THE COLD OPEN IS BUILT ON THE TIMELINE AND MEASURED.** It waits on the creator: the grade hand step, a watch, his
+notes, the music. **Read `brief/cold-open-checkpoint-report.md` first.**
+- **Timeline (ABW10 › "THE LAST SHOW - rough cut", by name, saved):**
+  - All approved ripples R1-R9 and trims T1 (2a defect) + T2 ("In tears" cut) are applied: `work/storyboard/apply_ripples.py` +
+    `fix_anchor_moves.py`. Every clip sits within half a frame of `brief/storyboard-v2.json` T. Restore points:
+    `premiere/{before,after}-ripples-2026-10-20.*`.
+  - The plan now reads the FROZEN pre-ripple readback `work/storyboard/timeline-readback-pre.json`, so its T = the live timeline.
+  - Cold-open V2 (17 clips, `place_covers.py` / `replace_stills.py`), V3 overlay (`place_overlay.py`, hf-graphics parts A/B),
+    SFX (`place_sfx_co.py`, `audio/sfx-cold-open/`), the pivot head lock (`headlock_apply.py --run 1`), 0b's push.
+- **Preview v2** (`review/cold-open-preview-v2.mp4`, built by `uv run work/storyboard/preview_render.py all --v N` from the repo root),
+  measured against the BRIEF:
+  - 2.34 changes / 10 s, worst 20 s window 7, median shot 3.25 s, 2 impacts.
+  - Colour jump worst 7.03 on SAME NIGHT's Cb/Cr metric (theirs: 13.7).
+  - 0 reading frames. -16.6 LUFS with no music (the mix step).
+- **Grade (hand step, Lumetri isn't scriptable):** `grade/archive/APPLY.md` § 1 + § 3. Round 2 is one look in per-source and per-clip
+  cubes: vlog matches on the 4 cold-open vlog covers, 01b on the 0a run + co-host-03, a trim stacked on 0b. The preview already carries it.
+- **Bugs found and fixed today** (in lab-notes):
+  - stale in/outPoint after `.start`/`.end` trims;
+  - `.end` can overlap the next clip;
+  - 3-decimal plan anchors misplaced 3 clips;
+  - still keys must sit at inPoint (~3600 s) + t;
+  - changeMediaPath raised a blocking modal (the creator closed it);
+  - an overwrite-replace leaves a 0.1 s tail of the old clip;
+  - my still extractor grabbed the NEXT frame (+5 ms seek), now fixed.
+- **Usage:** 5-hour window 20 %, weekly 17 %, Fable 1 % (the creator: speed over frugality until he says otherwise).
+- **This session's context is at 85 %: build chapter 1 onward in a FRESH session from this block** (same pipeline per chapter:
+  place_covers --section → overlay agent → SFX agent → preview_render --t0/--t1 → measure).
+
 **2026-10-20 ~01:50: 5b PREP DONE BY 7 PARALLEL AGENTS** (the creator OK'd 6-7 here). Every cover has its exact frame, the facts are
 checked, the subtitles are drafted, the head lock is measured, and the SFX are shortlisted. Nothing is built, placed or rippled. The gate
 `validate_v2.py` still PASSES. The cold open measures 2.27 changes / 10 s, a worst 20 s window of 7, and 10 SFX. Runtime **11:46.06**.
@@ -424,8 +649,8 @@ camera/reading → rough cut EDL (`RENDER=0`) → Premiere (multi-clip replay on
 | 2 | Rough cut | done | `transcript/cuts.json` 154 seg / 5:17 host; dead-air ✓; 2 sonnet reviews ✓; cluster sweep 0 repeats; replayed onto ABW10 › "THE LAST SHOW - rough cut" (154/154, verified, saved) |
 | 3 | Audio polish | done | +8 dB (measured: kept speech -24.6 LUFS) → Hard Limiter -6 dBFS on all 154 A1 clips, read back by name, saved |
 | 4 | Color grade | done (host) | master-clip Lumetri on C1359, Look = grade/cbum-host-grade.cube, no vignette (creator); sat 0.415, corners 1.215 (vignette declined); archive regrade pending |
-| 5 | Graphics | 5a done, 5b prep done | INSERTS laid (48 pieces, 11:06, verified, saved); 5a: `brief/storyboard-v2.{json,md}` + `brief/cold-open-checkpoint.md`, validate_v2.py PASS, face gate 0 reading frames; 5b prep (frame picks, facts, subtitles draft, head lock, SFX shortlist) in `work/storyboard/finds/`; the build waits on the creator's 15 checkpoint answers (ripples R1-R9 + T1, F2, Q4, lock 6, head lock, facts) |
-| 6 | SFX | — | |
+| 5 | Graphics | 5a done, 5b BUILT: cold open + chapters 1-5 + ending on the timeline, every preview measured (`review/*-measure.md`) | INSERTS laid (48 pieces, 11:06, verified, saved); 5a: `brief/storyboard-v2.{json,md}` + `brief/cold-open-checkpoint.md`, validate_v2.py PASS, face gate 0 reading frames; 5b prep (frame picks, facts, subtitles draft, head lock, SFX shortlist) in `work/storyboard/finds/`; the build waits on the creator's 15 checkpoint answers (ripples R1-R9 + T1, F2, Q4, lock 6, head lock, facts) |
+| 6 | SFX | built + placed | cold open 11 clips (`audio/sfx-cold-open/`), chapters 71 clips incl. 3 bleep tones (`audio/sfx-chapters/`); bleep mutes on A1; the mix (bed, arena lock 7, archive levels, master limiter) is still to do |
 | 7 | Review | — | |
 | 8 | Export | — | the creator exports |
 

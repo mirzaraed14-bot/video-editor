@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: ca11365e-c88c-4196-8400-a7f96c6e5dbd
-  modified: 2026-10-19T20:12:12.125Z
+  modified: 2026-10-20T00:33:13.225Z
 ---
 
 2026-10-14 evening: six long-running build agents ran in parallel (3 resumed Opus agents carrying 500-600K tokens of history + 3 new
@@ -25,3 +25,7 @@ On credits (until a reset) pause rather than cut quality. Related: [[feedback-us
 - 2026-10-20 (cbum-last-show, weekly at 9 %): Affan: "you can run a few subagents like 6 7 if you want, we have ample room". So with
   the weekly plan low, 6-7 parallel subagents are OK. Keep them lean (fresh, short briefs, one output file each, Sonnet for mechanical
   work), and re-check usage before the next batch. The 10-15 caution returns if the weekly usage climbs or he is on credits again.
+- 2026-10-20 (cbum-last-show, weekly at 12 %, a Tuesday), Affan: "you don't have to be very very frugal to the point you're just wasting
+  time, you can run agents and sub agents… I'm gonna tell you myself when it starts to get a bit tight on the usage". So when the weekly
+  plan is low, **speed beats frugality**. Use agents/subagents freely for real work and don't stall on cost estimates. HE signals when it
+  gets tight, and that is the switch back to the 10-15 rules. Still report usage at the job's gates.

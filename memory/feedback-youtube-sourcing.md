@@ -31,3 +31,7 @@ publisher's, say so and keep the clip short — that is a flag, never a refusal.
 yt-dlp all "Sign in to confirm you're not a bot"; browser sent to Google's /sorry CAPTCHA). Only ONE session pulls from YouTube
 at a time, spaced out; never bypass a block (no cookies, client switching, proxies, transcript sites). Recorded in the Onyx
 PLAYBOOK batch-mode section.
+
+**Still blocked 2026-10-21** (429 + "confirm you're not a bot" on the first plain `yt-dlp -F`): when he says "download them
+yourself", try ONE plain request, then hand back. He pulls with SnapDownloader into `E:\Bullshit Folder` (often `Henry\`),
+and those uploads are often 360p/480p with no higher option.

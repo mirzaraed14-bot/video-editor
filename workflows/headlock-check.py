@@ -36,7 +36,7 @@ def main():
     spec = json.load(open(os.path.join(job, "yt", "spec.json"), encoding="utf-8"))
     fps = spec["fps"] * mult
     det = cv2.FaceDetectorYN.create(MODEL, "", (1080, 1920), 0.6)
-    js = [j for j in spec.get("head_lock", []) if any(s["kind"] == "A" and s["f0"] < j < s["f1"] for s in spec["shots"])]
+    js = [j for j in spec.get("head_lock", []) if any(s["kind"] in ("A", "SPLIT") and s["f0"] < j < s["f1"] for s in spec["shots"])]   # a SPLIT top counts too (2026-10-21)
     worst_y, worst_h, rows = 0.0, 0.0, []
     for j in js:
         def med(ns):                              # the median over 6 frames: one frame's detection is too noisy to judge a lock
@@ -49,7 +49,7 @@ def main():
         dy, dh = fb[1] - fa[1], 100 * (fb[2] - fa[2]) / fa[2]
         worst_y, worst_h = max(worst_y, abs(dy)), max(worst_h, abs(dh))
         rows.append(f"  joint {j:5d}: eyes y {fa[1]:6.0f} -> {fb[1]:6.0f} (dy {dy:+5.0f} px)   eye gap {fa[2]:4.0f} -> {fb[2]:4.0f} ({dh:+5.1f} %)")
-    print(f"{os.path.basename(src)}: {len(js)} joints inside speaker shots")
+    print(f"{os.path.basename(src)}: {len(js)} joints inside speaker shots (A or SPLIT top)")
     print("\n".join(rows))
     print(f"worst: |dy| {worst_y:.0f} px, |dh| {worst_h:.1f} %  ->  " + ("LOCKED" if worst_y <= 12 and worst_h <= 5 else "MOVES"))
 

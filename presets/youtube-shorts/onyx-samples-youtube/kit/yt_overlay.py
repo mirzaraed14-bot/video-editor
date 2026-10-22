@@ -5,7 +5,7 @@ composition with a transparent background (README § 5, § 6) -> <job>/yt/hf-ove
   cd projects/<job>/yt/hf-overlay && npx --yes hyperframes@0.8.16 render . --format mov --fps <fps> -o ../work/overlay.mov
 
 Reads `<job>/yt/spec.json` → "hook": {"lines": ["SMALL WHITE LINE", "BIG GRADIENT LINE"], "caps": [49, 75], "y": [1357, 1442],
-"max_w": 840} and "watermark": "SHOW NAME" (+ optional "watermark_y", centre px, default 1160: lower it when the captions sit low, ig_capy.py), plus `<job>/yt/captions.json` (yt_captions.py). The hook slides in from the left
+"max_w": 840, "t0": 0.0 (s: the card lands later, e.g. a guest credit on the line that names him)} and "watermark": "SHOW NAME" (+ optional "watermark_y", centre px, default 1160: lower it when the captions sit low, ig_capy.py), plus `<job>/yt/captions.json` (yt_captions.py). The hook slides in from the left
 over ~0.46 s, holds, slides out over ~0.88 s and is gone by ~3.2 s, with per-frame horizontal motion blur; every timeline
 step sits a quarter frame before its frame boundary (exact boundaries round a third of them a frame late).
 """
@@ -75,6 +75,9 @@ def main():
         steps.append((round(max(0.0, (f - 0.25) / fps), 5), round(x, 1), lvl(x - prev)))
         prev = x
     hide_t = round((HOLD_END + OUT_FRAMES - 0.25) / fps, 5)
+    t0 = float(hook.get("t0", 0.0))             # hook.t0 (s): the card lands later, e.g. a guest credit on the line that names him (Scott 2026-10-21)
+    if t0:
+        steps = [(0.0, -1300.0, 0)] + [(round(t + t0, 5), x, bl) for t, x, bl in steps]; hide_t = round(hide_t + t0, 5)
 
     out = os.path.join(job, "yt", "hf-overlay")
     os.makedirs(os.path.join(out, "fonts"), exist_ok=True)

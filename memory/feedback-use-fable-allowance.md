@@ -1,15 +1,19 @@
 ---
 name: feedback-use-fable-allowance
-description: Affan 2026-10-14: spread agent work onto the Fable model (its weekly allowance is separate and was untouched while the main pool was at 54 % on a Wednesday); give it real, high-value tasks
+description: "Affan 2026-10-21: NO Fable agents; agents run on Opus only when the task needs it, Sonnet/Haiku otherwise; check with the advisor which model a task needs"
 metadata:
   type: feedback
 ---
 
-Affan, 2026-10-14 (Wednesday): "make sure to use fable as well, it's Wednesday and we are at 54 % usage for the week, the Fable model is
-still untouched, so delegate some good value task to it."
+**Rule (Affan, 2026-10-21, MJ siblings short):** "don't use agents of fable, use opus only, and use advisor as well to see if a
+task actually requires opus, don't just use opus for everything" + "you can use agents but of opus and other models".
+This REPLACES the 2026-10-14 note that said to delegate to Fable's separate weekly pool.
 
-**Why:** Fable's usage pool is separate; leaving it idle while the main pool runs down wastes capacity he pays for.
+**Why:** his call on the usage pools (the Fable pool is no longer to be spent on agents).
 
-**How to apply:** when spawning several agents, put a real share of the substantive ones on `model: "fable"` (e.g. whole sample builds,
-research re-mines), not just throwaway tasks; check the week's usage when he mentions it. First use: batch 3's TFTC, SPI and Priestley
-builds. Related: [[project-onyx-sample-shorts]].
+**How to apply:** before launching any subagent, ask the advisor (or decide explicitly) which model the task needs and pass
+`model` explicitly: `opus` only for judgment-heavy work (creative choices, adjudicating evidence), `sonnet` for mechanical
+work against stated criteria (running a template's scripts, scanning sheets against rules), `haiku` for pure command runs.
+Small leftovers stay in the main session (an agent's startup can cost more than the work). Gate agent output at judgment
+points (e.g. captions: the agent writes captions.txt + the mishear table, the main session reviews, then renders).
+Related: [[feedback-usage-budget]].

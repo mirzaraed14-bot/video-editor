@@ -32,14 +32,68 @@ sources (queued in the Onyx session's YouTube queue; download log in RUN.md). Ro
 | Ending: black → "Maybe. Maybe not." card → a 15-20 s end-screen tail | graphics | timeline |
 | Music: he lays his own (ask once at the checkpoint) | — | — |
 
+## Beats Nick Walker by (2026-10-21, the creator: "i want it to be better than nick walker video")
+The floor: `projects/nick-walker-never-mr-olympia` (ABW8 Seq 24): 68 overlays, nearly all ONE treatment (third-party footage as a
+90 % gold-matte card), linear 100->104 host nests, one physique MG (Ronnie: shoulders/waist/sweep drawn on), one camera-roll flash
+of champions, one IronMag highlighter, Black Video dips, two light leaks, captions on the five press clips only, raw insert levels.
+This video beats it with moves that edit does not have, or does worse:
+1. **Concept images (Higgsfield)**: NW has none. Here: the six-trophy silhouette (`co-01`, variant B in `c2-six`).
+2. **Rebuilt UI evidence**: NW had a screenshot still. Here: the @cbum profile with a follower count-up (`co-02`), an IG story
+   on a propped phone (`c5-107`, FX-57), headline cards in each outlet's own style (FX-54, `cob-14`, `c5-107`).
+3. **Data motion graphics**: NW has none. Here: the career line ending on RETIRED / UN-RETIRED (FX-72, `co-03`/`co-05`), rank
+   ledgers that build as the result is spoken (FX-36/69, `co-10`, `c2-six`, `c4-4a-tags`), the rebuilt Prague scorecard (FX-35,
+   `c4-scorecard`), a five-day countdown (FX-71, `cob-20b`), a 2026 results ledger without him (`c5-109`).
+4. **Maps and routes**: NW has none. Here: Prague on a map (FX-24, `c4-prague`), the route to Vegas (`c1-vegas`), the F1 corner
+   in line art (FX-24/62, `cob-22`, `c3-f1`, `c5-115`).
+5. **Name intros on every named person**: NW used plain cards. Here: FX-42 kin tags (Martin, Breon, Greg, Kamali, Hany, Dino,
+   Darwen) and FX-23 pointer tags on who is who in the Prague line-up.
+6. **Type that performs**: NW had none. Here: karaoke quote lighting word by word (FX-18, `co-09`), year ghosts (FX-41), a red-pen strike
+   (FX-55, `co-05`), the swap of the two date cards on "the order wrong" (`cob-15`), the headline avalanche (FX-32).
+7. **Titles**: NW had no designed title family. Here: FX-12 tumbling-debris title + five chapter cards + an end card + an end screen, stepped 20 fps (FX-81).
+8. **Archive treated, not just carded**: monochrome grading into the palette (FX-14, `co-07`), slow-mo decelerating to stillness
+   without a freeze (`cob-18`), cold stand-in mood (FX-48), double exposure (FX-37), tape/VCR callback + CRT power-off (FX-43/49,
+   `c5-5d-tape`, `c5-5d-off`), VHS joins (`co-00`), punch-ins on the scorebug/board (FX-75).
+9. **Host craft**: NW used LINEAR nest zooms. Here: 23 nests with EASED zooms (LESSONS 10), and fades where every graphic meets the face.
+10. **Sound and finishing**: NW had raw insert levels, few SFX, captions on five clips. Here: every insert level-matched to his voice
+    with fades and bridges, 278 premium SFX matched to the action (marker strokes on highlighters), subtitles on every third-party clip.
+
+### Cold open v2 checked against the list (0:00-1:12, `review/redo-cold-open-v1.mp4` + `co-07-c`)
+- PASS 1 (`co-01`), 2 (`co-02`), 3 (`co-03`/`co-05`/`co-10`/`cob-20b`), 5 (`co-08`, kin tag), 6 (`co-05`/`co-09`/`cob-14`/`cob-15`),
+  7 (FX-12 title + card I), 8 (`co-00`, `co-07`, `cob-18`, `cob-20a`, `cob-21`, `cob-23`), 9 (nest CO-1, eased, face fades in at 40.04), 10
+  (0a levelled 8.6 -> 0.1 LU spread, tail bridge, matched SFX, subtitles on 0a).
+- PARTIAL 4: the cold open has the F1 corner line art (`cob-22`) but no map; the maps live in ch1/ch4.
+- CLOSED 2026-10-21 (his OK): the drawn-on-body move is in. `co-07-d` traces a gold line on Samson's silhouette per frame from a background-removal matte (`work/redo/co/outline_samson.py`), from his crown down both arms to the waist, landing before "bigger" with a glow swell, plus a line-draw SFX. It is TRACKED, unlike NW's static Ronnie drawing. Original gap: NW's single best beat was a physique MG, with lines drawn ON the body (Ronnie). The cold open had no drawn-on-body move. The nearest
+  candidate is line 9 ("a division built for bigger men", `co-07-c`): outline Samson's frame in gold over the monochrome shot (FX-70
+  ring/benchmark style) to make "bigger" visible. Proposed, not built: it needs his OK on the refined 0:25 first.
+- GAP: one Higgsfield image only (the account's daily limit). Upgrades are queued in `work/redo/*/higgsfield-requests.json`.
+
 ## What this video does better than the last one (CLAUDE.md learning loop #5)
-SAME NIGHT's cold open measured: 65 % synthetic pictures, 3.4 picture changes and 5.3 SFX per 10 s, colour jump 13.7, four
-one-off type treatments, an FX-12 space title. THE LAST SHOW's open targets: 0 % synthetic (all real footage, Chris's own
-cinematography), ≤ 2.5 changes and ≤ 2.5 SFX per 10 s, colour jump ≤ 7 under ONE grade shared with the host, one type system
-matched to his own trailer, a title in the film's palette, and a measured pass/fail against those numbers before it is shown.
-Plus: the host is graded for the first time (the wall and neon no longer out-shine the face), and every reading span is hidden.
+> **SUPERSEDED 2026-10-21:** the creator rejected these targets. Follow `review/critique-2026-10-21/CRITIQUE.md` and "Beats Nick Walker by" above. The original text is kept below as history.
+
+**Rewritten 2026-10-21, to agree with "Beats Nick Walker by":** this video beats the last two (Nick Walker; SAME NIGHT) by
+- a bespoke designed visual on every line. Synthetic pictures are welcome where they serve the line: a Higgsfield concept image,
+  a rebuilt UI, a motion graphic, the named person.
+- the FX catalog used heavily: data MGs, maps, name intros, performing type.
+- an FX-12 title and chapter-card family.
+- archive treated, not just carded.
+- no freeze under his VO.
+- eased nest zooms on his face, and opacity fades and flashes instead of pops.
+- level-matched inserts with fades at every joint, premium SFX matched to the action, and subtitles on every third-party clip.
+- the host graded (his LUT), and every reading span hidden.
+
+Research numbers (changes per 10 s, colour jump, synthetic share) are guards, never targets (LESSONS 20).
+
+*History (2026-10-14, superseded):*
+> SAME NIGHT's cold open measured: 65 % synthetic pictures, 3.4 picture changes and 5.3 SFX per 10 s, colour jump 13.7, four
+> one-off type treatments, an FX-12 space title. THE LAST SHOW's open targets: 0 % synthetic (all real footage, Chris's own
+> cinematography), ≤ 2.5 changes and ≤ 2.5 SFX per 10 s, colour jump ≤ 7 under ONE grade shared with the host, one type system
+> matched to his own trailer, a title in the film's palette, and a measured pass/fail against those numbers before it is shown.
+> Plus: the host is graded for the first time (the wall and neon no longer out-shine the face), and every reading span is hidden.
 
 ## Decisions (from research, each with its FX code or a new code)
+> **SUPERSEDED 2026-10-21:** the creator rejected these research decisions (synthetic ≤ 15 %, real speed + a freeze, no glows,
+> cuts to black instead of dissolves, ≤ 2.5 changes per 10 s and the rest). See RUN.md causes 1 and 4 and CRITIQUE.md A9 and C12-13. Follow
+> CRITIQUE.md and "Beats Nick Walker by" above. Kept as history only: do not build from them.
 Sources: `research/intro-diagnosis/FINDINGS.md` [DX], `research/opens-cinematic/FINDINGS.md` [STD = Chris's own trailer,
 GN = the competitor CBUM: The Movie, CZ = Coffeezilla]. The face-led study [HOST] is still running: rows marked (open) wait for it.
 

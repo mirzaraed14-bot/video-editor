@@ -21,6 +21,15 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 - **No music bed** in our export: Affan adds it. SFX on every graphic.
 - **Never the Abundance Wisdom grade / letterbox look** (faceless videos only, 2026-10-19). AW head lock is welcome.
 - His sequencing is followed exactly; popular faces beat brand faces ("50 Cent, not LL Cool J").
+- **Open on the guest's own cam, and the hook card runs from 0 to ~3 s** (Affan 2026-10-21, Marvel vs RDJ: "i want peters cam at the
+  beginning not the iron man image"; "the hook text ... should be from the beginning and end at 3 sec"). The card is the credit
+  (ROLE / NAME); a B-roll picture never takes frame 1.
+- **No dead air**: every pause >= 0.25 s inside a kept line is cut to ~0.16 s (measured, `work/cut/make_edl.py` PAUSES), except a
+  deliberate dramatic beat (2026-10-21: "why are there so many pauses").
+- **Every picture is sharp at phone size**: a soft or compressed still is replaced by a 4K source, not just upscaled ("what is that
+  low quality image of iron man").
+- A line whose words can read backwards on screen gets a picture that fixes the meaning, never a caption that changes his words:
+  "from bankruptcy 10 years earlier" kept, with a 1998 BANKRUPT -> 2009 SOLD TO DISNEY card under it (Affan agreed once it was explained).
 
 ## Title + thumbnail format (locked 2026-10-19; never changed per video)
 - **Title** carries the FULL reversal and the name (search value): "Ryan Serhant saw a bank CEO's calendar. It was almost empty."

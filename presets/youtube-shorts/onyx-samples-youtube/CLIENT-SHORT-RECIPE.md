@@ -62,6 +62,21 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
 - **Before the build (Scott):** freshness check + locked prediction + pre-mortem + title + thumbnail in
   `presets/youtube-shorts/scott-clary/RESULTS.md` (ENGINE.md has the line; `thumbnail.py` draws the locked cover format).
 
+## 4b. When Affan says "no need to sequence" (Peter Cuneo, 2026-10-21, `projects/_client-scott-clary/marvel-board-vs-rdj`)
+- The cut comes from the agreed text draft: `work/cut/make_edl.py` holds (beat, start, end, pin) on the VIDEO clock. A podcast RSS
+  MP3 lines up with his YouTube download by cross-correlation (0.04 s there), so its WhisperX words can draft the EDL while the video
+  transcribes. Where WhisperX stretches or squeezes a word (a "the" across a 0.8 s pause; "$525 million" squeezed into 0.4 s of a
+  3.7 s phrase), measure the 50 ms RMS, re-time those words in `transcript/words.json` (keep `words.whisperx.json`) and pin the
+  segment (`no_refine`): refine-cuts otherwise moves the edge to the wrong word.
+- **Measure the face before choosing the layout.** A webcam guest sat so close (face 45 % of the height, eyes at 67 %) that every
+  9:16 crop was an extreme close-up with the mouth under the caption line: his beats became standard SPLITS (face on top, captions on
+  the seam under the chin), with one prebuilt bottom clip per long split (`yt/split_bottom.py`: hard cuts between stills, a baked
+  lights-on) so the untracked top stays ONE shot.
+- `hook.t0` (s) lands the credit card late, on the line that names him; a magazine cover of the guest (DOC) proves the authority.
+- Cards: `workflows/mg-cards.py collateral` (a number rolls up, a list pops in, a verdict plate) is the template for a "what was at
+  stake" beat; `--r0/--r1` land the roll on the spoken number. The caption numeral rule spells decimals out: write the words he says.
+- Topaz and WhisperX hang when another session holds the GPU: build at 30 fps first, run the 60 fps final once the GPU is free.
+
 ## 5. One check, then final (4 calls)
 - ONE 16-frame sheet (`select=eq(n\,…)`, `scale=270:480,tile=8x2`). The v1 defects last time: captions on the lips, a face cropped,
   the subject outside a 16:9 → 9:16 crop (set `cx`), a missing glyph. Fix in the spec, re-run `build_spec.py` (it picks up

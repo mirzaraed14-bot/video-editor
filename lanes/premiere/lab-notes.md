@@ -641,3 +641,56 @@ Always check the EDL bash can actually see before re-splicing.
   clip of a 215.7 s file read in=250.04 s; the real source in point is in × `getSpeed()` = 200.03 s (`outPoint - inPoint` equals the
   timeline duration, not the source span). Anything that pulls source media off `inPoint` must multiply by `clip.getSpeed()`
   (and check `isSpeedReversed()`): `presets/instagram/affanwizu/sequence_reference.py` does.
+- **A head trim by `trackItem.start = x` reads back a STALE inPoint too** (cbum-last-show 2026-10-20, seg 4 trimmed 49 frames: inPoint
+  still 83.267, it plays from 84.085; outPoint unchanged and right). So after ANY `.start` / `.end` trim, the true source range is
+  `outPoint - (end - start)` (head trim) or `inPoint + (end - start)` (tail trim). Better still, keep the plan as the record and
+  verify by position and by eye. `projects/cbum-last-show/work/storyboard/apply_ripples.py`.
+- **`trackItem.end = x` past the NEXT clip's start is not refused**: it read back as two overlapping clips on V1/A1 (seg 13 extended
+  0.4 s while seg 14 had not moved yet). Order every extension AFTER the move that makes room, and read back for overlaps.
+- **Plan anchors must be stored at full precision**: a host clip started 0.5 ms before a 3-decimal ripple anchor, was not shifted,
+  and kept its gap on the wrong side (`fix_anchor_moves.py`). Compare clip times to anchors at 1e-6, never against rounded values.
+- **A STILL's clip inPoint reads ~3600 s** (PNG on a 59.94 timeline, cbum-last-show 2026-10-20). Motion keys written at source time
+  0..d sat before the clip, so it showed a static end value instead of the creep. Key stills at `inPoint + t`, and check with
+  `getValueAtTime(inPoint + d/2)`. Video clips key at their real source in.
+- **`projectItem.changeMediaPath(<a different PNG>, true)` raised a "File Import Failure" modal** that blocked the bridge for minutes.
+  Closing it needs the user: posting WM_CLOSE from a script was refused by the permission check. Swap stills by importing the new file
+  and overwriting it onto the same slot instead.
+- **Overwriting a "90 ms short" clip onto an EXISTING clip leaves the old clip's last ~0.1 s behind**, and the `end` pin then overlaps it.
+  After any overwrite-replace, remove the leftovers by name and read back for overlaps (`work/storyboard/replace_stills.py`).
+- **`projectItem.setInPoint(t)` FLOORS t to the source's own frame grid, then the placed clip's in lands on the SEQUENCE grid (floor
+  again)** (cbum-last-show 2026-10-20). A 3-decimal pick time sitting a hair below its frame start (05 @23.976: 803.886 vs the frame
+  start 803.88644) lands one source frame early; the cold-open covers read back 6-41 ms early this way. Aim the in at the frame's
+  CENTRE, `(n + 0.5) / fps`, and read back `inPoint` against `n / fps` (`work/storyboard/place_ch.py` reports "in-err"). The
+  residual sequence-grid floor (up to 1 timeline frame for 25 fps sources) shows the previous source frame for one timeline frame:
+  harmless inside a shot, so keep picks 1+ frame clear of a shot edge.
+- **Audio `Volume > Level` reads 0.17782794 at 0 dB**: the scripting scale is `10 ** ((dB - 15) / 20)` (+15 dB = 1.0, -inf = 0).
+  Bleep mutes key Level 0.1778 → 0 → 0 → 0.1778 with 5 ms ramps in the clip's MEDIA time (`work/storyboard/place_bleeps.py`).
+
+## 2026-10-21 · THE LAST SHOW redo (cbum-last-show): four findings on a long, heavily layered sequence
+- **Opening the sequence (openSequence) keeps Premiere busy for 5-20 s**: the first probe after it reads "MCP Bridge is not
+  running" and the window's restore call failed the same way, leaving the creator's sequence switched. `work/active_window.py`
+  now retries its probe (12 x 3 s); restore by id again once the bridge answers, and verify with `ping` (`activeSequence`).
+- **`createSubsequence` + `overwriteClip` outlasts the bridge's ~4 s patience** and the call reports `bridge_unavailable` while
+  Premiere finishes it. Don't retry blindly: wait until `readback()` answers, PROVE the nest from V1 (name + start), then key it
+  in a second short call (`work/redo/nests.py`). `app.project.save()` on this project can exceed 45 s: retry the save.
+- **Stale in/out points survive a restart**: after scripted `.start`/`.end` trims (2026-10-20) the readback still reports the
+  OLD outPoint of 0a-b (and old inPoints of in-trimmed clips) the next day, from the saved project. A span longer than the
+  clip is ambiguous (stale in OR stale out): resolve it against the plan's own source times (`work/redo/linemap.py`).
+- **An audio clip laid with `overwriteClip` lands on the video frame grid** (start within half a frame of the requested time),
+  so a verify must use a half-frame tolerance, not a 2-decimal match.
+- (ffmpeg on this PC, 2026-10: `-filter_complex_script` is gone; use `-/filter_complex <file>`.)
+- **⚠ `audioTrack.overwriteClip(<an A/V project item>, t)` lays the VIDEO too, on V1, overwriting it.** (2026-10-21, THE LAST SHOW:
+  a 254 ms audio "tail bridge" from the 01 vlog, in/out set with mediaType 2 = audio only, came in on V1 as the WHOLE 1816 s
+  video from t, replacing every host clip, insert and nest on V1 after 9.6 s.) Never place an A/V item to make an audio-only
+  clip: bake the slice to a WAV (gain + fades) and place THAT (audio-only items stay on their track). Recovery that worked
+  without closing the creator's project: the last explicit save was clean, so `app.project.importSequences(<copy of the saved
+  .prproj>, [<sequenceID>])` imported the clean sequence (+ duplicates of its nest sequences), verified track by track against
+  the readbacks, then the damaged one was renamed and moved to a recovery bin. Never save between the accident and the check.
+- **Opening a breath in a built timeline by script (2026-10-21, THE LAST SHOW, `projects/cbum-last-show/work/redo/ripple_breath.py`):**
+  there is no ripple-insert in the DOM, but `trackItem.move(D)` per clip works if every track is moved LATEST FIRST (no collisions)
+  and the shift is whole frames. A clip spanning the point is split by setting `c.end` and re-laying the rest from its own item with
+  `setInPoint/setOutPoint(…, 4)` + `overwriteClip` (audio-only items only). The re-laid in-point is FLOORED to the source frame
+  (an mp3 came back 23 ms early): read it back and nudge the start by that amount. Markers do not move with clips: delete and
+  re-create them. Shift every job JSON's live times after the point in the same run, or the placers drift.
+- **A closed-but-kept damaged sequence still gets reviewed:** after a recovery, close the damaged sequence's TAB immediately (the
+  creator watched the damaged copy because it stayed open in his timeline tabs).

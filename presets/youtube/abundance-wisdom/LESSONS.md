@@ -78,3 +78,58 @@ rule in this folder's README/PLAYBOOK (none yet: the look still lives in each jo
     re-add a vignette unasked. Apply the host LUT as a MASTER-CLIP effect on the host's source item: it never touches archive
     inserts and survives re-replays (Premiere 25 cannot script the LUT slot; the master clip is ~1 minute by hand).
     → `projects/cbum-last-show/grade/cbum-host-grade.cube`, `work/grade/host_grade.py`.
+20. **THE LAST SHOW was rejected as "mid, a draft, not a documentary" (2026-10-21). The AW long-form rules, from his review**
+    (`projects/cbum-last-show/review/critique-2026-10-21/CRITIQUE.md`):
+    - **Bespoke visual per LINE.** A Higgsfield image, a screenshot (Instagram, results) or the named person. Never one archive
+      clip stretched across several lines; every line naming a person shows that person; no unflattering shots.
+    - **The FX catalog + motion graphics are the job.** The Nick Walker video is the floor.
+    - **Host face:** NEST consecutive face cuts, ONE subtle zoom-in, no per-clip repositioning ("camera goes up"), no cut zooms.
+    - **No freeze frames under his VO.**
+    - **Opacity fades into and out of graphics and footage** (no pops), flash transitions where the energy turns.
+    - **Level-match every insert to the voice, with short audio fades at joins, before his first watch.**
+    - **SFX match the action** (a highlighter wipe = a highlighter sound).
+    - **Subtitles on EVERY third-party clip.**
+    - **Research numbers (changes/10 s, colour jump) are guards, never the target, and never override his standing look.**
+
+## 2026-10-21 · THE LAST SHOW redo, cold open v2 ("the whole intro looks so much better… it's insane")
+21. **He took the redo's cold open: VO from the first breath after the archive, a bespoke visual per line, no freezes, level-matched
+    inserts.** What he praised is the method in lesson 20 executed; keep it.
+22. **A collage is not premium.** The 0:25 beat (Samson Dauda on his raw Olympia LED backdrop + a low-res Nick Walker torso
+    cut-out + a giant steel OPEN word + two mono tags) was "hideous… not refined, expensive at all". → ONE subject, graded into
+    the film's world (warm monochrome, crushed blacks, the backdrop and watermarks falling into black under a soft oval), the
+    stage light coming up on him, one quiet line of type (mono gold label + Instrument Serif italic). When a source is busy,
+    grade it into the palette instead of stacking more elements on it. → `work/redo/co/build_co.py` co-07 v2 (`co-07-c.mp4`).
+
+## 2026-10-21 · THE LAST SHOW redo, his second review ("a lot better than our previous one, but there are a few mistakes")
+Notes resolved in `projects/cbum-last-show/review/critique-2026-10-21-redo/NOTES.md`.
+23. **After a recovery, the damaged copy must not be where he can open it.** He reviewed the DAMAGED sequence (its tab was still open),
+    so half his notes (flashing frames, "no captions", vlog under the trailer audio, "stretching to 29 minutes") were the damage.
+    → close a damaged sequence's tab the moment it is replaced; delete it only with his OK, after an FCP XML backup; the handoff names
+    the sequence by name AND id.
+24. **SFX variety is the quality bar ("2/10… that Vegas whoosh so many times").** 125 of 296 cues were two air samples (one whoosh 70×).
+    → every class is a POOL of distinct Epidemic takes rotated with no back-to-back repeats; air sounds are thinned (a hit or stroke
+    within 0.25 s carries the moment; ≥ 1.2 s between air cues); whooshes stay 10 dB under the hits. `work/redo/sfx/build_sfx.py`.
+25. **Never a mock-up of a real person's account.** co-02/c3-post used an invented avatar and an invented caption ("you have to search
+    Instagram… this is his profile picture"). → fetch the real thing: the profile header and grid (instagram.com/<user>), the post's
+    image + exact caption + likes from its public embed (`/p/<code>/embed/captioned/`), news articles for the shortcode. Rebuild it
+    faithfully; animate only what the line needs (the follower count, a highlighter).
+26. **Pointers on people are TRACKED and rest on the body.** Static circles slid off the men as the handheld camera drifted ~250 px.
+    → template-match each man through the shot (`work/redo/ch4/track_4a.py`), circle on the shoulder, line up to the name, the label
+    moving with him. Identities by a primary source in the shot itself: a bib must be LEGIBLE in that shot (then matched to the
+    official sheet); otherwise a reference photo of the candidate must match. A name inferred by elimination is not proof (lesson 31).
+27. **An insert that ends mid-syllable needs a breath, not a butt join ("too abrupt, destroys the immersion").** 4e's picture cut kept
+    90 ms of Chris's NEXT word, then the host. → find the true word end, fade there, open a ~0.4 s breath (`ripple_breath.py`), fill it
+    with the speaker's own room tone at the measured level (`fix_4e_joint.py`), and hold the last picture frame through the breath into
+    the next graphic.
+28. **A cover never opens on black.** c4-martin-olympia faded up from an empty dark frame ("cheap"). → hold the previous shot's last
+    frame and dissolve straight into the card.
+29. **No sub-1 s covers.** A 0.37 s pre-roll of the next insert over his face read as a random flash. → a cover is a real shot (≥ 1 s)
+    or nothing; the eye-line gate's ±0.25 s padding can flag a cut's last frames as "reading" — check those frames before covering.
+30. **A push-in on a still portrait is "pretty silly".** → hold archive portraits plainly (c1-1c-push removed).
+31. **Name only the men you can prove ("thats not shaun brh", same day).** The left man's bib was never legible; he was named Clarida by
+    elimination, and Clarida turned out to be a bald Black athlete. → bib legible in the shot or a matching reference photo, else no
+    tag; send him the evidence (bib crops + reference photo) with every identity fix (`work/redo/ch4/id-evidence.jpg`).
+32. **Subscribe alerts, on his ask (THE LAST SHOW, 2026-10-21): "little… fit the aesthetic… not too often".** → about 3 in an
+    11-minute film, 3 s each, lower-left in the film's own tag language, only on calm host-face windows with nothing else on screen,
+    never in the cold open, the end screen, near a mid-roll or after a heavy moment; one soft refined sound each.
+    `projects/cbum-last-show/work/redo/cta/build_cta.py`.

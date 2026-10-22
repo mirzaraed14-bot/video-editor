@@ -9,8 +9,12 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 | 2 | Daymond John: the Shark who was WRONG about Bombas (`bombas-shark-was-wrong`) | 2026-10-17 | 38.7 s | "I have the number one invested Shark Tank product ever" + "DAYMOND JOHN" card + the sock | not locked before delivery; if still unposted: 8K-60K · fails if the Elmo turn reads as a joke with no lesson | | | | | | | | |
 | 3 | Ryan Serhant: the bank CEO's empty calendar (`serhant-empty-calendar`) | 2026-10-19 (30 fps, no Topaz: GPU jammed) | 33.4 s | Scott: "What habits do 10-figure people have?" (no name; credit at ~3 s) | **3K-30K** · the payoff is a sentence, not a picture: without a real calendar visual the reversal lands flat (locked 2026-10-19) | | | | | | | | |
 | 4 | Ryan Serhant: pitched 50 shows, one yes (`serhant-50-pitches`) | 2026-10-19 (60 fps) | 53.1 s | "A lot of people get on reality TV and then they become irrelevant" (no name) | **3K-25K** · reads as bragging ("my fifth show") unless "what else can we do?" lands as the button (locked 2026-10-19) | | | | | | | | |
+| 5 | Peter Cuneo: Marvel's board vs Robert Downey Jr. (`marvel-board-vs-rdj`) | 2026-10-21 (60 fps, v2 after Affan's review) | 40.0 s | Peter's own cam: "The board initially was very anti-casting Robert Downey Jr. as Tony Stark" + FORMER MARVEL CEO / PETER CUNEO card 0-3 s | **10K-150K** · the RDJ-almost-wasn't-Iron-Man story is old Marvel lore (Feige has told it for years): fails if the first 3 s read as a rerun (locked 2026-10-21) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
+
+**First result (Affan's screenshot, 2026-10-21):** a Daymond Short posted as **"Daymond John Almost LOST $250M" = 35K views** (age at
+screenshot not given; assumed row 2, the Bombas Short: confirm). Affan's read: fine but not enough; views come from ENTERTAINING stories.
 
 ## Pre-mortems (written before production, 2026-10-19)
 **3 · Empty calendar.** Got 5K because: the "habits of 10-figure people" opener sounds like a generic advice riff and gets swiped; the
@@ -21,10 +25,17 @@ quotable turn; people send it to their overbooked boss.
 insider; too many names and numbers too fast for a 17-year-old. Got 5M because: "pitched 50 times, one yes, now on Netflix" is a
 universal persistence number with a picture; "what else can we do?" is a question anyone can steal; the Netflix premiere is the receipt.
 
+**5 · Marvel vs RDJ (written 2026-10-21, first views-first pick).** Got 5K because: "Marvel almost didn't cast RDJ" is a story Marvel
+fans have seen a hundred times; Cuneo is an unknown older face, so the authority beat is skipped past; the $525M collateral card is too
+much reading at Shorts speed. Got 5M because: RDJ's mug shot next to Iron Man is a picture everyone knows; the board member who was
+IN the room ("when the lights came on ... do it") is a first-hand angle; it ends on a number ("sold to Disney for $4.5 billion from
+bankruptcy") that makes the casting call look like the bet that saved the company.
+
 ## Titles + thumbnails
 | # | Title | Thumbnail |
 |---|---|---|
 | 3 | Ryan Serhant saw a bank CEO's calendar. It was almost empty. | `projects/_client-scott-clary/serhant-empty-calendar/thumbnail.jpg` ("HIS CALENDAR / WAS EMPTY", teal EMPTY; photo: Ryan outside the SERHANT office) |
 | 4 | Ryan Serhant pitched 50 TV shows. One got picked up. Now he's on Netflix. | `projects/_client-scott-clary/serhant-50-pitches/thumbnail.jpg` ("50 PITCHES / ONE YES", teal YES; photo: the Owning Manhattan premiere) |
+| 5 | Marvel's board didn't want Robert Downey Jr. as Iron Man. Then they saw his screen test. | `projects/_client-scott-clary/marvel-board-vs-rdj/thumbnail.jpg` ("MARVEL ALMOST / SAID NO", teal NO; photo: RDJ's 1999 booking photo, "DOWNEY" board) |
 
 Licensing flag (2026-10-19): the #4 thumbnail photo is a Getty image (gettyimages-2158515218, via CBS); swap it for an official Netflix / SERHANT press still before posting. The #3 photo comes from Parade (credit not shown on the page).

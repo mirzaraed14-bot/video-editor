@@ -1,0 +1,80 @@
+# Abundance Wisdom captions: ABW10 / Sequence 13 (Katherine Jackson, the day Michael died, 0-47.87 s). Built in code.
+# One caption per line, in order. Column 1 = start-end in sequence seconds (OUTPUT of make_plan.py from the aligned
+# transcript: edit the words, run `python make_plan.py`, the times refresh). Every caption runs until the next starts.
+#   i:  = ITALIC = the interviewer's voice (the reporter; decided by voice, not by who is on screen)
+#   +   = STACKED second line under the caption above (that caption holds until the pair ends)
+#   <red>..</> = the wound / shock   <blue>..</> = names, places, key nouns   <pink>..</> = love, tenderness
+#   <yellow>..</> = emphasis (Orange Yellow Shade)   <green>..</> = success, money (unused here)
+# Max 3 words. No commas or full stops; ? and ! only (inside the colour tag when the word is coloured).
+# Transcript decisions (see NOTES.md): "KAT YOU HAVE TO COME DOWN TO THE HOSPITAL" (Affan's correction 2026-10-21:
+# Joe calls her Kat; the ASR heard "can't you"); "and WHEN HE was alive" (WhisperX heard "we was"); the repeat "I couldn't, I couldn't go" is kept.
+ 0.000- 0.667  i: ON THE DAY
+ 0.667- 1.850  i: MICHAEL <red>DIED</>
+ 1.850- 2.650  i: WHERE WERE YOU?
+ 2.650- 3.617  I CAME HOME
+ 3.617- 4.800  AND THEIR <blue>FATHER</>
+ 4.800- 5.317  +CALLED ME
+ 5.317- 5.950  AND HE SAID
+ 5.950- 6.483  KAT YOU HAVE
+ 6.483- 6.983  TO COME DOWN
+ 6.983- 8.033  TO THE <blue>HOSPITAL</>
+ 8.033- 9.000  I WENT DOWN
+ 9.000-10.233  AND NOBODY
+10.233-11.317  WOULD SAY ANYTHING
+11.317-12.100  EVERYBODY WAS WAITING
+12.100-12.800  FOR <yellow>SOMEBODY ELSE</>
+12.800-13.550  TO TELL ME
+13.550-13.967  AND I SAID
+13.967-14.750  WELL WHERE'S <blue>MICHAEL?</>
+14.750-15.050  I WANT TO
+15.050-15.333  +GO TO
+15.333-15.733  HIS ROOM
+15.733-16.067  I WANT TO
+16.067-16.350  +GO AND
+16.350-16.900  <pink>VISIT</> HIM
+16.900-18.067  <yellow>NOBODY</> SAID ANYTHING
+18.067-18.917  AND THEN FINALLY
+18.917-19.417  IN ABOUT
+19.417-20.150  10 OR 15
+20.150-20.817  MINUTES LATER
+20.817-21.350  THEY TOOK ME
+21.350-22.083  TO A <blue>ROOM</>
+22.083-22.983  SO FINALLY
+22.983-23.333  I SAID
+23.333-23.883  WELL DID HE
+23.883-24.567  <yellow>MAKE IT?</>
+24.567-25.200  AND I WAS
+25.200-26.183  <red>SCREAMING</> LIKE
+26.183-26.533  DID HE
+26.533-27.283  <yellow>MAKE IT?</>
+27.283-28.467  AND <blue>FRANK</>
+28.467-29.183  FINALLY SAID
+29.183-29.833  SLOWLY
+29.833-30.217  NO HE
+30.217-31.167  +<red>DIDN'T MAKE IT</>
+31.167-31.567  I DON'T KNOW
+31.567-32.133  WHAT HAPPENED
+32.133-32.700  AFTER THAT
+32.700-33.067  I GUESS
+33.067-33.517  I MUST HAVE
+33.517-34.033  <yellow>BLACKED OUT</>
+34.033-34.650  OR SCREAMED
+34.650-35.300  OR SOMETHING
+35.300-36.000  IN THAT <blue>MORGUE</>
+36.000-36.950  WHERE MICHAEL WAS
+36.950-38.050  I COULDN'T
+38.050-38.733  I COULDN'T GO
+38.733-39.350  i: YOU DIDN'T WANT
+39.350-40.233  i: TO SEE <blue>MICHAEL?</>
+40.233-41.117  NOT THAT WAY
+41.117-41.617  NO
+41.617-42.117  I WANTED TO
+42.117-42.950  +<pink>REMEMBER HIM</>
+42.950-43.400  WHEN HE WAS
+43.400-44.133  <pink>SMILING</>
+44.133-44.500  AND WHEN HE
+44.500-45.383  WAS <yellow>ALIVE</>
+45.383-45.783  i: AND YOU HAVE
+45.783-46.317  i: NO <yellow>REGRETS</>
+46.317-47.017  i: ABOUT THAT?
+47.017-47.867  NO I DON'T
