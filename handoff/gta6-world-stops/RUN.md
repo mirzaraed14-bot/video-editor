@@ -1,6 +1,18 @@
 # RUN — gta6-world-stops ("The Day The World Stops For GTA 6", Affan Afterhours video 23)
 
-## ▶ STATUS: resume here (2026-10-23 10:08) — REVIEW 1 APPLIED, SAVED, handed back for his review (he exports)
+## ▶ STATUS: resume here (2026-10-23 10:32) — REVIEW 1 APPLIED + SAVED; HE IS WORKING ON THIS SEQUENCE TOO
+
+**His own edits today, AFTER the 10:08 save (his hand, kept):** (1) a 0.35 s ripple trim at 0:30 in the cold open (the joint
+between EDL segments 15/16: src 77.978→78.195 and 79.396→79.529 out), adopted as the cut: `transcript/cuts.json` =
+`cuts.his-trim.json` (206 segments, 7:42.13), transcript re-exported, plan re-anchored; (2) A1 replaced by ONE file,
+`C:/Users/affan/Downloads/Music/she-esv2-20p-bg-10p-music-10p.mp3` (his speech-enhanced mixdown of this cut). It is CENSORED
+(ASR around the 4 windows hears no swear), so my A1 razors + polish are superseded by his file: do not touch A1.
+**My error, repaired:** re-placing the CTAs after his ripple used plan times that predated it: 77 graphics landed 0.35 s late
+with 0.35 s head slivers of his shifted copies. Repaired by adopting his trim into the EDL and re-laying V2/V3 at his timing
+(85/85, gate-frames 0, frame0 0); SFX were never moved (99/101 already matched; the 2 CTA ticks moved on purpose). Music: his
+ripple cut 0.35 s out of the first bed at 0:30 (a small music skip), left as he cut it; place-music verify lists 8 "out of
+sync" pieces, all from that ripple. CTAs now LOWER-RIGHT, measured clear of his head through every zoom (top corners overlapped
+his hair/forehead under the 130–145 % zooms: review/frames/cta-edge-zoom.jpg, review/cta-side.py, cta-zoom-sheet.jpg).
 
 **His notes** (`brief/walkthrough-1/transcript.txt`): (1) SFX more premium, stop repeating one sound for different things;
 (2) some intentional pauses "too much" (not all; the cold open was fine); (3) the "Number one" frame glitch: start dark, then
@@ -26,10 +38,11 @@ the card; (4) censor "fuck" (only fuck) to the end; (5) a themed subscribe CTA e
   punchline, no promise copy (fresh-eyes review moved them); gate-frames checks they never touch a cut-away.
 - Face pass remapped (`transcript/face-remap.py`) + HIS two own zooms restored from his XML (silent beat 125 %, "crazy" 150 %
   at his position): 65 entries, verified. Music re-laid (5 beds, 44 drop-outs). Graphics renders VER f/g/h, plates VER f.
-**Premiere state (SAVED 10:08):** "GTA 23 - The Day The World Stops" rebuilt by name on the 206-segment cut (7:42.48):
-V1 239 clips (65 face-pass entries, 0 mismatches) · A1 214 (206 + 8 censor razors; 4 word pieces DISABLED; Amplify 0 dB +
-Hard Limiter −6 dBFS read back on all 214) · V2 39 / V3 46 (39 cells + 8 CTAs, 85/85 rows) · A2/A3 101 SFX (101/101) · A4 5
-beds, 44 drop-outs (0 problems). Gates: gate-frames 0 problems · frame0 0 bare openings (render) + composite proof
+**Premiere state (SAVED 10:31:52):** "GTA 23 - The Day The World Stops" on HIS cut (206 segments, 7:42.13): V1 239 clips
+(65 face-pass entries, 0 mismatches after his ripple) · A1 = his ONE enhanced file (censored, ASR-checked) · V2 39 / V3 46
+(39 cells + 8 CTAs lower-right, 85/85 rows) · A2/A3 101 SFX (101/101) · A4 45 pieces (5 beds, 44 drop-outs; his 0:30 ripple
+shows as 8 "out of sync" pieces). (Before his A1 swap, my A1 was 214 clips: 8 censor razors, 4 pieces disabled, polish read
+back on all 214.) Gates: gate-frames 0 problems · frame0 0 bare openings (render) + composite proof
 (review/frames/f0-sheet.jpg, final-sheet.jpg) · dead-air 3 flags = kept punchline beats. QE program grabs are dead on this
 machine (composite-check.py stands in). Backups: `premiere-backup/gta23-his-cut-2026-10-23.xml` (morning) and
 `gta23-before-rebuild-2026-10-23.xml` (pre-wipe, identical).

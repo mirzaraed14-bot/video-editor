@@ -306,3 +306,9 @@ his verdict on review (read his timeline + notes, then mark each KEEP / NEVER / 
     "27 days out" → `build-plan.py` § CTAs. VERDICT PENDING: copy, look, frequency, and the clock-gear tick under it.
   - HIS OWN zooms carried through the rebuild (read from his XML by SOURCE time, never by timeline seconds): the 125 % on his
     silent beat, the 150 % on "crazy" at his position.
+- **His own edits on the review-1 cut (2026-10-23, read off the live timeline, kept):** he tightened ONE more cold-open joint
+  (0.35 s at 0:30 — so "the cold open was fine" still allowed a trim there), and replaced A1 with a speech-enhanced mixdown of
+  the whole cut (`she-esv2-20p-bg-10p-music-10p.mp3`, his naming: Enhance Speech v2, background 20 %, music 10 %) → he
+  polishes the voice himself after the edit; a future job could offer the enhanced voice in the draft (ask first).
+- **CTA placement learned the hard way:** a top-corner card collides with his hair/forehead under the 130–145 % cut zooms and
+  when he leans; LOWER-RIGHT over the torso clears his head through every zoom (measured per 0.2 s, `review/cta-side.py`).

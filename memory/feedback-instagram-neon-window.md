@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 93c0e1a1-25a8-4661-92dc-64c57a7b8258
-  modified: 2026-10-21T19:42:36.630Z
+  modified: 2026-10-23T05:44:41.900Z
 ---
 
 **Rule (Affan, 2026-10-21, Scott D. Clary Marvel Short, IG variant):** after a frame-by-frame study of @markbrazil's last 10 reels
@@ -16,6 +16,11 @@ frame: near-square rounded window on pure black, black-and-white picture). He ap
 neutral-cool, not the reference's B&W), and two SFX "goofy… it needs to sound expensive" (a neon tube flicker and a short
 'dramatic' riser: both narrow tones, 38 / 25 dB tonal prominence above 1 kHz). Numbers and the tonal check: the preset's
 LESSONS.md.
+
+**War Dogs IG review (2026-10-23):** NO head tracking (one fixed frame, pushes toward a fixed point; this overrides
+[[feedback-head-steady-across-cuts]]'s eye lock for this look), NO captions while the hook text is up (the first seconds
+looked cluttered with captions + hook card + tag), and a counter "riser" was weird/loud: a climbing number gets a quiet
+broadband airy swell (~15 dB under the voice peak).
 
 **Why:** Mark's type system (word-by-word white captions, one red neon Playfair hero, giant stage numbers, mono red-bar tag, letter
 flicker, light-leak burns) is what he finds premium; DOAC's window gives the cinematic black surround his 2026-10-12 IG direction

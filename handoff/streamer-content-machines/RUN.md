@@ -19,6 +19,11 @@ DONE on "CA-007 Streamer Tier List" (ABW10; backup `premiere-backup/ABW10-before
   Measured, NOT auditioned (silence rule): first listens 0:54 (CTA sound), 2:35 (riser), 3:50 (chapter hit), 4:27 (swell), 6:06–6:15 (tier stamps).
 - **Music** 38 pre-cut pieces, 0 problems. **Voice chain** A1 165/165 (+0 dB → −6 dBFS; `work/audio_chain_check.py`, by name).
 SAVED 2026-10-23 (Afterhours cleared it). NEXT: his re-review; then LESSONS from his notes. He exports himself.
+**HIS HAND, after the save (seen ~10:35, `work/diff_live.py`)**: he ripple-deleted 1.418 s at 5:19.37 ("But it's not going" of seg129
+"But it's not going to be a real career."; all tracks rippled). Sync still 0 off (201 V1 pieces), graphics/SFX moved WITH the cut
+(t34 split at 319.369; its card is static there, no visible jump: `review/frames/t34-jump.jpg`). Side effect: the Dyalla music bed on
+A4 now SKIPS 1.42 s at 5:19.4 (piece in 57.357 → next in 61.762) — offered to him, NOT fixed (he was editing in Premiere).
+The verify baselines (plan/EDL) are stale by −1.418 s after 319.369: before ANY new placement run `work/edl_from_a1.py` + build-plan.
 Open questions to him: keep the stray "views," (after his first cut) and "B tier." (after his second)? Face share now 34 %.
 
 ## Shared Premiere (ABW10) — another session works here

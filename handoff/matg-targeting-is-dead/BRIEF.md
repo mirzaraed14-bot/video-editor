@@ -24,6 +24,22 @@
   FINAL PLAN: v5 picture → `topaz-iris.py yt/work/picture.whip.mp4 yt/work/picture.whip48.mov --no-enhance --no-stab --fps-mult 2
   --segments <shot f0s + 77,245,993>` (GPU lock; the jump cuts inside s03/s05/s13 must be segment cuts) → `build_spec.py --fps-out 48`
   → `yt_build.py … final --skip picture`.
+- **IG 2026-10-23 10:55: IG FINAL DELIVERED (neon-window look, tight pacing, 48 fps), awaiting Affan's review.**
+  `outputs/matg-targeting-is-dead.sample-ig.final.mp4` = `X:\Claude Projects\Exports\matg-targeting-is-dead.ig.final.mp4` (md5-identical;
+  H.264 High 1080x1920 48 fps, 2484 f, 51.75 s, AAC 256k; decode clean; -12.2 LUFS, TP -2.3; bed 'Out There' 13.5 LU under the voice;
+  26 cues, every slice <= 18.9 dB tonal). QA (`ig/qa.py`) PASS: bars black, no strays, punctuation, every word once; proof
+  `outputs/…sample-ig.proof-sheet.jpg`. Same lines and receipts as the YT look (GATE 5): IM8's Beckham + Aryna cards, the Zacks SCR
+  strips ($305 -> $301, never the $35.7M line), the $305/$301/$239 chart, IM8's live ads, Meta's targeting panel, the Athletech photo,
+  80-20 -> 90-10 landing on Danny's word. Camera plate from the TIGHT 4K Topaz (`ig/tools/wincam.py`), not `ig/work/cam24.mov`
+  (no crop is upscaled), Chronos x2 per take (1.7 % near-zero steps). v1 kept for reference (`…sample-ig.v1.mp4`).
+- **IG 2026-10-23 10:30: IG v1 drafted + reviewed (one sonnet reviewer, defects only); v2 rendering with the fixes.** v1 =
+  `outputs/…sample-ig.v1.mp4` (QA PASS: 2484 f @ 48, bars black, no strays, punctuation + every word once). Reviewer r1 fixed in v2:
+  thud-2/3 slices began on 0.16 s of silence (hits 0.2 s late; sound.py now aligns a hit's measured ONSET / a swell's PEAK on the event);
+  cues added for note strip 2 + the chart's page turn; markers -12 (their scribble sat in the voice band) and a click on the Gender box;
+  'to' / fast runs re-blocked (plan asserts every word reaches full opacity before its block fades); one-line captions + a soft scrim
+  over IM8's cards (white jacket); ad cards side by side (no overlap slivers); Meta panel clear of the bug; the leaning 2-up take
+  head-locked (`ig/tools/headlock.py`: it jumped 77 px at the cut in from Danny full); the spoken 'right?' after 'paid marketing'
+  (raw 225.98-226.18) added to the $33M stack tail. Kept by design: the stack lands '$33 million' whole on '$33'.
 - **IG 2026-10-23 08:55: IG BUILDING on the tight cut (fresh IG builder).** Everything re-anchored to WORDS in `ig/plan.py` (cut map,
   layouts, framing, 18 shots, 40 caption blocks, 24 cues; build/sound/qa import it). Camera = `ig/tools/wincam.py`: window crops from
   the TIGHT 4K Topaz (never upscaled; 1080p crops would have been 1.2-1.45x), mouth line 568-595 / face 540-578 px in every speaker run

@@ -3,6 +3,17 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-23: names come from his screenshots (ABW10 Seq 22)
+
+- **When the reel shows screenshots, read them before writing a single name.** Seq 22's V5 carried 13 of them: the photo
+  at 0–5 s settled "arslan ash" (Whisper: ارشلین ایش / "Arsalan Ash"), the event poster "IMMAF" (the English listener:
+  "IMMF"), the fundraiser card "gohelpme.pk" and "7 lakh PKR". → PLAYBOOK habit: export the V2+ stills and read them first.
+- **A slow spoken list is one item per line** ("registration / tickets / nutrition"): on one line, 2.3 s for 3 words reads
+  as missing words to the gate, and it is also how the list is said.
+- **Known false warning:** the English listener sometimes echoes its own prompt sentence ("video script nahi ki")
+  mid-segment, which `echoes_prompt()` misses (Seq 20 + 22) → caption_qa warns "heard script". Warning only; fix the filter
+  if it ever produces a FAIL.
+
 ## 2026-10-23: a reel that READS OUT comments (ABW10 Seq 20)
 
 - **Read-out comments and imitated pitches are quoted speech:** every line gets its own pair of quotes (BELIEVE's

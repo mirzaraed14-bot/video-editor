@@ -35,3 +35,7 @@ that was never wrong about the geometry and completely wrong about the intent.
 See [[project-gta-documentary-channel]] and [[feedback-long-term-self-improving]]. The channel-level
 version is locked in `presets/youtube/affan-afterhours/README.md` § 1 (THE OVERLAY FRAME) and
 `LESSONS.md`.
+
+**2026-10-23 addition (GTA 23):** a stillness check is NOT a "no edits" check. He ripple-trimmed 0.35 s between two of my write
+batches; my placer re-laid 77 graphics at stale plan times (repaired). Before ANY re-place on a timeline he may have touched,
+diff the live clip starts against the plan, rebuild the EDL from his V1 if they drifted, and adopt his trim first.

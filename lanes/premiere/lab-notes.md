@@ -773,3 +773,9 @@ Always check the EDL bash can actually see before re-splicing.
 - **FCP XML drops Scale Width:** a Uniform-OFF stretch exports as scale + a Center offset; read stretches from the DOM.
 - **Clip-level SFX tails:** trim each SFX clip to where its tail is 40 dB under its peak (`clip.end` by ticks after the
   overwrite); a 3.35 s cinematic thud occupies a track for 2.3 s instead, so 100 cues fit on A2/A3.
+- **2026-10-23 · A creator RIPPLE between two of my write batches shifts everything after it, and a plan-time re-place then
+  lands late:** he trimmed 0.35 s at 0:30 of GTA 23 after my save; `stable.py` (a 45 s stillness check) passed, my placer
+  matched rows to the timeline with ±1.5 frames, found 77 graphics "missing", and re-laid them 0.35 s late (leaving 0.35 s
+  head slivers of his shifted copies). Before ANY re-place on a timeline he may have touched: diff the live SFX/graphics
+  starts against the plan (a uniform offset after one time = his ripple), rebuild the EDL from his V1 source in-points
+  (merge contiguous clips), adopt it, re-run the plan, THEN place. Never trust a stillness check as a "no edits" check.

@@ -18,6 +18,21 @@ Log every review in `LESSONS.md`.
 - **Long Epidemic files** (60-80 s ambiences, 19 s shutter sets) misread the mixer's whole-file peak: slice and peak-normalise
   first, then place by dB under the voice peak; a buzz with sparse pops needs ~5-6 dB under, not 10-12, to be heard.
 
+## What the second build taught (MATG Onyx sample, 2026-10-23, `projects/matg-targeting-is-dead/ig/`)
+- **Anchor the whole plan to WORDS** (`ig/plan.py`: cut map, framing, shots, blocks, cues; build/sound/qa import it), so a re-timed
+  cut re-times everything; it was re-tightened mid-job.
+- **Big webcam faces: frame for the mouth, not the face box.** Crop every layout so the mouth line sits at one window y (585) with one
+  face height (~560-600 px), measured per frame with YuNet (`ig/tools/mouth_check.py`). The caption top then sits ~95 px under it
+  (window y 680): 640 touched the lower lip on wide smiles. A take where the speaker leans in gets a smoothed per-frame crop
+  (`ig/tools/headlock.py`); a static crop jumped his head 77 px at the cut.
+- **Crop the camera plate from the 4K Topaz**, never from a 1080p copy (two-up panels would be upscaled 1.45x). Then Chronos x2 on the
+  1044 x 1044 plate, per take.
+- **Measure each SFX slice's onset.** A slice that starts on digital silence plays late (0.16 s on two thud slices). Align a hit's
+  onset and a swell's peak on the event (`ig/sound.py`).
+- **A white card under white captions needs a soft scrim** sized to the caption block. Keep captions on cards to ONE line, clear of the
+  card's own name line.
+- **Fast runs ("CAC is going to go") break blocks badly.** The plan asserts every word reaches full opacity before its block fades.
+
 ## What Affan asked for (2026-10-21, his words)
 - He picked from 10 clean IG pages, then: *"analyze mark brazil's style frame by frame ... scan his last 10 reels"*.
 - Then: *"I want the motion graphics and subtitles style of Mark but in the rounded rectangle aesthetic like this"*, with a
@@ -52,9 +67,9 @@ every picture sharp (no shallow-focus softness on name cards) · no bed / no CTA
 Two kits to copy, by source:
 - **Webcam / remote guest** → the Marvel job's `ig/` (`projects/_client-scott-clary/marvel-board-vs-rdj-ig/`): fixed crop, room relight.
 - **In-person studio camera** → the War Dogs job's `ig/` (`projects/_client-scott-clary/war-dogs-fake-office/ig/`, 2026-10-23): the
-  cam is EYE-LOCKED per take (faces.json eye centre, smoothed sigma 12 frames inside each take, never across a joint, so the head
-  never jumps at a jump cut; eyes at window (522, 420), the frame's top edge melting into black above the head), with the approved
-  quick pushes as zoom keys; `--fps 30` renders a quick check on the 4K Topaz base; photos of real people below the window's size
+  cam is ONE FIXED FRAME, **no head tracking** (Affan's review, LESSONS 2026-10-23): anchored on his median eye position at window
+  (522, 420), the frame's top edge melting into black above the head, with the approved quick pushes as zoom keys toward that
+  fixed point; **no captions while the hook card is up**; `--fps 30` renders a quick check on the 4K Topaz base; photos of real people below the window's size
   play as sharp PANELS at or under native size over a blurred copy (Affan: no Topaz on faces); cards restyled in code (counter,
   checklist with red ticks, a white Craigslist artifact card, hairline figures).
 Rewrite only the beat plan at the top of `build.py` (SHOTS, LEAKS, BLOCKS, the stage beats) and `sound.py` (CUES; a FRESH Epidemic

@@ -22,3 +22,19 @@ needs to sound expensive"* (with a screenshot of the "$525 million" stage type).
    a big stage-light clunk on "lights came on". → `ig/sound.py`; the check is in README § Sound.
    **Rule from now on:** before a sound goes in, measure its tonal prominence above 1 kHz (p90 of max-bin vs its ±40-bin
    neighbourhood over the loud part); > 20 dB = reject.
+
+## 2026-10-23 · Review 1 of the War Dogs IG Short (`projects/_client-scott-clary/war-dogs-fake-office/`, "it's good but…")
+Affan: no head tracking at all in this video; no captions for the duration the hook text is up ("the first 3-4 seconds look so
+cluttered: the captions, the text box, the podcast tag"); the sound under the counter climbing to $300,000,000 "should be something
+else, a lot more subtle, minimalistic… a weird sound effect… definitely lower in volume".
+
+1. **No head tracking.** The eye-locked crop (per take, smoothed) is out: ONE fixed frame for the whole video, anchored on his median
+   eye position (846, 341 in 1080p), the approved pushes zooming toward that fixed point. → `ig/build.py` (EX0/EY0, `cam_frame`).
+   This overrides the 2026-10-19 head-steady-across-cuts lock for this look until he says otherwise.
+2. **The hook card owns the screen.** While the hook text (and the name tag) is up, there are NO captions; they start on the first
+   word after it ("War Dogs" at 3.3 s). → BLOCKS in `ig/build.py`. Apply from the start next time: a hook card = a caption pause.
+3. **A climbing number gets a breath, not a riser.** The clean "build-up" riser under the counter read as weird and loud. → a slow,
+   broadband dark airy swell (`wd-swell-dark-airy.wav`, Epidemic 0ea4c198; 14.8 / 10.3 dB tonal) at 15 dB under the voice peak
+   (~10 dB lower than the riser), its slice ending on the swell's peak as the number lands; the landing boom unchanged. → `ig/sound.py`.
+Patched, not re-rendered: `build.py --patch` re-rendered only the cam shots and the hook (0-200, 560-700, 930-1005, 1540-1610,
+2545-2670 at 60 fps), the rest of the picture passed through.
