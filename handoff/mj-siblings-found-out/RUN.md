@@ -1,6 +1,14 @@
 # RUN — "How Michael Jackson's Siblings Found Out He Died 💔" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-22 ~08:00) — v5 EXPORTED, waiting on his review
+## ▶ STATUS: resume here (2026-10-22 ~13:00) — v6 EXPORTED, waiting on his review
+**`X:\Claude Projects\Exports\mj-siblings-found-out.v6.mp4`** (3495 f, -14.1 LUFS, -2.9 dBTP). His v5 note: "the whole
+grading is so soft... I told you to just reduce the blackness" -> v6 = HIS AE stack restored (layer-43 look + PRE sharpen
+bands + Sharpen 40, `grade_mode` 'ae', sat_level cleared; v5 values kept as `sat_level_v5`) on the drift-free one-pass
+picture. Everything else from v5 kept (SFX -10, lips, Tito zooms 0.85, Jermaine card y0 175, despeckle, overlays skip
+Topaz). He OK'd test frames of all 35 shots first (`renders/test_v6/ALL-SHOTS-v6-test.jpg`): "Looks right, render v6 as is."
+Rule from here: test frames of every shot BEFORE any full render; change only what he names.
+
+## (previous) STATUS (2026-10-22 ~08:00) — v5 EXPORTED, superseded by v6
 **`outputs/mj-siblings-found-out.v5.mp4` -> `X:\Claude Projects\Exports\mj-siblings-found-out.v5.mp4`** (58.25 s, 3495 f,
 1080x1920 60 fps, -14.1 LUFS, -2.9 dBTP). Fixes for his four v4 notes, all measured on the render:
 1. Colour: one-pass assembly (no splice drift) + HIS fitted grade. Cheek skin v4 -> v5: La Toya luma 0.31 -> 0.63 (R/G 3.02 ->

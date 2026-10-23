@@ -24,3 +24,9 @@ soft Google image reads as cheap next to the game footage and the graphics.
 - Do it before the image touches the timeline, not as a fix afterwards.
 - Applies to both channel formats; logged in `presets/youtube/affan-afterhours/LESSONS.md` and the job's
   `STYLE.md` § 4b. Related: [[project-gta-documentary-channel]].
+
+**Update 2026-10-23 (War Dogs, Affan: "wtf is that overlay"):** a Topaz Iris 2x on a small press photo of a real person made it
+look waxy and fake (the real Efraim Diveroli with a rifle), and a tight 9:16 crop of a wide movie still showed half a face. Sharp
+means a genuinely high-res source, not an AI upscale of a soft one: when only a soft photo exists, find another picture, or show it
+in a panel over a blurred copy (as the 720p diamond clip was) instead of filling 9:16. Check every overlay's actual crop at full
+size before the render. See [[feedback-face-cam-max-4s]].

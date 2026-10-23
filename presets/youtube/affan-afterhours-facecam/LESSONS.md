@@ -235,3 +235,74 @@ verdict here (keep / tweak / never) and promote the keepers into PLAYBOOK step 5
   becomes the EDL (`transcript/his-cut.py` reads it back) and every graphics/SFX/music layer is rebuilt from it, never
   patched. **Never re-place onto his timeline from the plan's old times:** a plate swap keyed to stale times laid 24
   duplicate overlays while he was editing. Read the live timeline (and check it holds still, `review/stable.py`) first.
+
+## 2026-10-22 — video 22's verdicts, read off the SHIPPED Sequence 39 (readback 10-13, `presets/youtube/affanwiz/reference/ign-missions/seq39-*.json`; master "GTA 6 Just Got A Whole Lot More Interesting…", 8:16)
+Diffed against our last placement (39 cells). His verdicts on the 10-09 treatments:
+- **KEEP:** the IGN-dossier quote cards (10/10 shipped), the mission line (6/6 states), every explainer diagram (list,
+  compare, 3-state flow, meter, checklist, route map, app tile), the phone, the live headline capture, b-roll as an 85 %
+  inset over its own blur (7 of 10), the premium SFX palette (85 cues shipped on A2 + 4 on A3), the four music beds
+  (50 pieces, out under every zoom). Promote all of these to the default for this channel (AffanWiz adopted the same
+  style as its STYLE v2 on 10-13).
+- **NEVER (removed by him):** the one-robbery-per-word montage (g15a/b/c, 0.8–1.6 s each), the "robbing places together"
+  b-roll (g12) and the "interactable" b-roll (g37) → short b-roll flashes on a single phrase don't earn their slot; an
+  insert should hold ≥ ~2.5 s and illustrate a claim, not a word.
+- **ADDED by him:** one 0.8x run (3 clips, 2:53.5–2:57.9) on a joke beat → plan 1–2 joke slow-downs IN the edit,
+  before the graphics are placed (a speed change ripples everything after it).
+- **Tightened by him:** jump cuts (~0.25 s), word edges, one 2.8 s line, the finished cut ran 496.2 s vs our 505.2 s
+  (−1.8 %) → cut ~2 % tighter at the word edges next time.
+
+## 2026-10-23 — video 23 "The Day The World Stops For GTA 6" (job `gta6-world-stops`, ABW10 › "GTA 23 - The Day The World Stops"): NEW TREATMENTS, VERDICT PENDING
+Built on 22's verdicts (dossier look kept; no sub-2.5 s inserts; joke beats left for his 0.8x; ~2 % tighter edges). New, for
+his verdict on review (read his timeline + notes, then mark each KEEP / NEVER / CHANGED here):
+- **The receipts system:** a corner TAG on every card (REAL solid · REPORTED outline · ESTIMATE yellow · IMAGINED pink dashed)
+  + a source line bottom-left; a legend card on "picture it" explains it once.
+- **IMAGINED dossier scenes** instead of footage for his "picture this" lines: the PS5 download → lock, the re-enlistment
+  contract with the pen, the $37 receipt.
+- **The November countdown rail** as the title card, the three chapter cards (01 · 02 · 03) and the Game Awards payoff.
+- **Real page captures** cropped to headline + hero, the headline underlined (dark pages) / marker-highlighted (light pages)
+  on the spoken word; thumbnails of three receipts as one board (c03) instead of sub-2 s quick cuts.
+- **Stats as beats:** counters (130 / 20 / 10,995 / +315 %), the money ladder with a tag per rung, the struck "30,000,000"
+  with NO SOURCE FOUND, his "$10B" as his own ESTIMATE.
+- **Cut zooms gentler for the new closer setup:** median 130 % (22: 135), ladders on his lists, one 200 % extreme, one 400 %
+  stretch gag; big hits repositioned off the measured face.
+- **A 27-file SFX palette** (22: 11) rotated so neighbours never repeat; 92 cues.
+- **Process (no verdict needed, kept):** a verbatim-prompted stutter guard on every segment + joint after the mechanical
+  review found 22 hidden retakes the plain span ASR had smoothed; three fresh-eyes review rounds (content/honesty +
+  visuals/timing) before handover — round 1 caught swapped beer ABVs and a REAL tag a source did not support.
+
+## 2026-10-23 — video 23 review 1 (his Tella walkthrough `projects/gta6-world-stops/brief/walkthrough-1/`, + his own timeline edits)
+- **His trims, read off the live timeline (FCP XML `projects/gta6-world-stops/premiere-backup/gta23-his-cut-2026-10-23.xml`):**
+  six ripple cuts across all tracks, net −2.1 s — a 0.5 s pause inside a long line, a 0.47 s pause, 0.88 s of the beer-name
+  struggle, the 0.13 s "in" sliver, the FIRST of "Fucking, fucking crazy", and "for a video game." replaced by a 1.75 s silent
+  beat on his face (confirmed intentional). → He cuts mid-line pauses of ~0.5 s and doubled words; a beat he wants is SILENCE
+  ON HIS FACE, not a line.
+- **"Intentional pauses: some feel too much"** (example 0:34, "all I'm gonna request you is … picture it") → tighten every
+  mid-phrase silence ≥ ~0.4 s; keep only the beats before a punchline.
+- **SFX: "much more premium refined… you're repeating a lot of sound effects for different things"** → the 27-file palette
+  leaned on UI clicks (one dull click 12x across different meanings). One sound family per MEANING, never one file for two
+  meanings, ≤ 2 uses per file, cinematic and expensive, never UI-ish (feedback-premium-sfx).
+- **"Frame glitch" into "01 The Standoff"** → every card's first elements entered 2–4 frames AFTER its cut (tag at 0.05 s,
+  title at 0.06 s), so the cut showed a few frames of bare plate before the content. RULE: every comp's content is on screen
+  ON its first frame; motion may start there, never after it.
+- **Censor "fuck" (that word only, to the end)** → cut from the voice, nothing over it (CREATOR-HAND § 4).
+- **NEW ASK: a GTA-themed subscribe call-to-action about every minute** ("subscribe for more upcoming GTA stuff, 27 days
+  remaining") — his explicit ask overrides the repo's no-CTA default for this channel.
+- **Review-1 changes made (2026-10-23, rebuild on HIS cut)** — lesson → change made → file:
+  - pauses → 37 of 47 silences ≥ 0.38 s tightened to 0.20 s, cold open + 6 punchline beats + 4 COMEDIC beats kept (the reveal,
+    the word search "very … GTA-ish", the "PIP washer … PISS washer" self-correction, the stretch gag's laugh room: a first pass
+    that cut them was caught by the fresh-eyes review: a comedic beat is never "dead air" for him); every removed span re-checked
+    for speech (only a whispered "fuckin'" went) → `projects/gta6-world-stops/transcript/pauses.py`, `review/pauses.txt`.
+    The −30 dB pause threshold swallows WHISPERED words: re-check removed spans by ASR before a pause cut ships.
+  - SFX → measured why it sounded cheap: the most-used files were narrow tones (ui-glass 42 dB, ui-pop-glass 52,
+    chime-confirm 60 tonal prominence; limit 20). New screened set, one family per meaning (paper = a document arrives,
+    marker = a line drawn, deep thud = a chapter, light switch = a stop lighting, stapler = a tag pinned, low punch = a number,
+    airy whoosh = footage, clock gears = the CTA), 100 cues · 64 files · none > 2x → `sfx/v2/`, `build-plan.py` § SFX.
+  - frame 0 → builder clamps any entrance inside the first 0.12 s onto frame 0 + a render gate (alpha coverage at frame 0 vs
+    0.5 s): 22 bare openings → 0 → `hf-graphics/gfx/build-comps.py` FRAME0, `review/frame0.py`.
+  - censor → 4 words razored on A1 at measured edges (the soft /f/ fricative counts: cutting at the quietest RMS point left
+    an audible "f-"), piece DISABLED (reversible) + 10 ms fades → `transcript/censor.py`, `place-censor-seq23.py`.
+  - CTA → 8 "27 DAYS" GTA-phone countdown notifications top-right over his face, each on a breath at a sentence start, >= 1 s
+    after a cut-away, never over a gag/punchline, no promise copy, ~55 s apart, the last on his own
+    "27 days out" → `build-plan.py` § CTAs. VERDICT PENDING: copy, look, frequency, and the clock-gear tick under it.
+  - HIS OWN zooms carried through the rebuild (read from his XML by SOURCE time, never by timeline seconds): the 125 % on his
+    silent beat, the 150 % on "crazy" at his position.

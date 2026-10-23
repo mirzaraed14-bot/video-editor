@@ -71,6 +71,10 @@ def spoken_words(txt):
     """Words as SAID: '250,000' is "two hundred fifty thousand", 'SL' is "es el"."""
     n = 0
     for t in txt.replace("“", "").replace("”", "").split():
+        if re.fullmatch(r"[A-Za-z0-9]+(\.[A-Za-z]{2,})+", t):   # a web address: 'AyanGFX.com' is "ayan G F X dot com"
+            parts = re.findall(r"[A-Z]{2,}(?![a-z])|[A-Z]?[a-z]+|\d+", t.split(".")[0])     # (ABW10 Seq 20)
+            n += sum(len(x) if x.isupper() else 1 for x in parts) + 2 * t.count(".")
+            continue
         digits = re.sub(r"\D", "", t)
         if digits:
             v = int(digits); sig = len(digits.rstrip("0")) or 1

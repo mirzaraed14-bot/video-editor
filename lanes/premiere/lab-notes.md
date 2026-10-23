@@ -694,3 +694,82 @@ Always check the EDL bash can actually see before re-splicing.
   re-create them. Shift every job JSON's live times after the point in the same run, or the placers drift.
 - **A closed-but-kept damaged sequence still gets reviewed:** after a recovery, close the damaged sequence's TAB immediately (the
   creator watched the damaged copy because it stayed open in his timeline tabs).
+
+## 2026-10-22 · gta6-world-stops (ABW10, shared with the English Editor session) — capture + rough-cut notes
+- **`workflows/page-record.mjs` (lane-agnostic, logged here because its stills feed the Premiere graphics):** `--hide` is
+  applied ONCE, before `--wait`, so late-loading ads come back (Dexerto's `#bottom-adhesion` bar did) → re-apply the hide
+  after the wait; Cloudflare "Verify you are human" walls are saved as if they were the article (Digital Citizen, VGC,
+  TweakTown) → look at every PNG, never trust the exit code; it prints no headline box → measure it on the PNG. The
+  receipts run used a patched scratchpad copy; the repo file is unchanged.
+- **WhisperX collapses numeral tokens** ("GTA 6", "14th", "18th" ≈ 0.1 s) and ends them early, so a cut at
+  `word.end + 0.08` clips the tail ("for GTSA", "November 14"). Every numeral-final segment gets an exact-span ASR check;
+  extend to the measured decay.
+- **A burst-timed (explicit) EDL row must be pinned (`no_refine`) BEFORE polish-boundaries**: unpinned, the polisher
+  re-snapped two of them to a WhisperX merged-repeat word ("January." 996.9–998.2) and would have cut a line to nothing.
+- **A dead-air split can eat a QUIET word**: the gate's −36 dB threshold read a soft second "fucking" as silence; split
+  at its real onset (ASR-verified) instead of the gate's run end.
+- **`createNewSequenceFromClips` opened the new sequence (made it ACTIVE) and laid the clip on V1/A1** — run it inside
+  ACTIVE-WINDOW.lock, empty the tracks, restore the previous active sequence by id (`projects/gta6-world-stops/transcript/seq23.py`).
+- **QE `setSpeed` is NOT a scriptable slow-down on Premiere 2025 (tested on the last clip of "GTA 23 - The Day The World
+  Stops", 2026-10-22).** `setSpeed(80, true)` (the vendor MCP's 2-arg form) throws "Not Enough Parameters".
+  `setSpeed(0.8, "", false, true, false)` sets ONLY that V1 item to 0.8 — its timeline duration does NOT change (it plays
+  0.8 × the source span, the DOM inPoint reads divided by the speed) and the linked A1 clip stays at 1.0 → picture/sound
+  desync. Setting it back with `setSpeed(1, …)` read back **0.80427, not 1**. Repair = remove the V1 + A1 pieces by name
+  and overwrite the segment again from the EDL (speed 1 on both). → Joke slow-downs stay the creator's (Rate Stretch /
+  Ctrl+R takes him seconds); flag the beats, don't script them (`projects/gta6-world-stops/transcript/speed-test.py`).
+
+## 2026-10-22 · streamer-content-machines (ABW10 › "CA-007 Streamer Tier List", 59.94, shared with the Afterhours session)
+- **QE `razor(tc)` reads the timecode string in the SEQUENCE's display format, and a 59.94 sequence made with
+  `createNewSequenceFromClips` from a 59.94 camera clip displays DROP-FRAME (`getSettings().videoDisplayFormat` = 106).**
+  `face-pass.py` built NON-drop strings (`f // 60` seconds, `:` separators): 5 razors in the first minute landed right, the
+  other 39 landed 4 frames EARLY per elapsed minute (−4 … −24 frames). Fix: build DF numbering from the frame count:
+  `f = round(t*60000/1001); D, M = divmod(f, 35964); fn = f + 36*D + (4*((M-4)//3596) if M > 3 else 0)`, then
+  `HH;MM;SS;FF` from `fn` at 60 per second (`projects/streamer-content-machines/work/face_pass.py` `tc()`). Read
+  `videoDisplayFormat` before any QE timecode call; verify every razor by position afterwards (the face pass does).
+- **⚠ CORRECTED 2026-10-23 — `L.end = x` does NOT extend a clip, it SLIPS it.** The 2026-10-22 "heal" (remove the right
+  piece R of a razor, then `L.end = R_end`) kept L's OUT point and moved its IN point back by R's length: the picture
+  played up to 4 s EARLY against the voice on A1 (the creator saw lips out of sync at 1:24, 1:56, 2:50, 3:22, 3:49, 4:59,
+  5:50; `projects/streamer-content-machines/work/sync_audit.py` found 50 of 203 V1 pieces off, −3 … −240 frames). Every
+  V1 read-back gate passed because none compared V1 in-points with A1. **Never heal a razor this way; rebuild V1/A1 from
+  the EDL instead, and after ANY V1 edit run a picture-vs-voice offset audit (V1 `inPoint − start` must equal the A1
+  clip's under it, within half a frame).**
+
+## 2026-10-22 · gta6-world-stops (ABW10 › "GTA 23 - The Day The World Stops") — graphics + face-pass notes
+- **The DF razor fix holds:** `projects/gta6-world-stops/transcript/face-pass.py` reads `videoDisplayFormat` (106) and
+  builds `HH;MM;SS;FF` drop-frame strings with the formula above: 36 razors across 7:55, every one verified ON its planned
+  frame by position, A1 untouched (175 → 175).
+- **`clip.end` set in SECONDS can land short of a butted neighbour:** a V2/V3 end set to the next clip's start (+1e-4 s)
+  read back 0.4 ms early (16671.97 frames), because the setter will not overlap the neighbour. Set the end in exact
+  frame TICKS instead: `t.ticks = String(Math.round(end * 254016000000 / 4237833600) * 4237833600)` (59.94 = 4237833600
+  ticks per frame) → on the boundary, both sides read back the same frame (`hf-graphics/place-seq23.py --fix-ends`).
+- **Plan edges must live on the frame grid, not just on V1 cuts:** a word-anchored out-point that is not on a cut stayed
+  sub-frame after placement (15 of them, gate OFFGRID). Round every non-cut edge UP to the next frame in the plan
+  (overwriteClip already rounds a start up), then check each render still covers its slot before pinning
+  (`projects/gta6-world-stops/build-plan.py` § FRAME GRID; `review/gate-frames.py` now fails OFFGRID).
+- **Two SFX tracks hold a dense graphics pass if the planner counts collisions first:** 96 cues, one collision (four
+  legend ticks 0.3 s apart under a 2.5 s hit) — drop the long cue rather than adding a track mid-session (adding one
+  needs the active-sequence lock).
+- **`audio-polish.py --verify` reads the ACTIVE sequence, not the job's:** run outside the lock it reported "A1 clips 1 · no
+  chain" off the creator's Sequence 19 (read-only, nothing written). Wrap it like `--apply`, inside `active-window.py`
+  (EXPECT_A1 = the job's A1 count): 175/175 verified there.
+- **After a machine crash, a render that logged `exit=0` can still be a broken file:** `c41-alpha-c.mov` (rendered
+  minutes before the crash) had no moov atom (576 KB instead of ~550 MB: the OS never flushed it). Importing it opened
+  a modal **"File Import Failure"** dialog that BLOCKS the bridge — every call then answers `bridge_unavailable` while
+  Premiere itself reads "Responding". Before any import after a crash: `ffprobe` + a full decode (`ffmpeg -i f -f null -`)
+  of every render/plate. To see a modal: enumerate the Premiere process's visible top-level windows (EnumWindows +
+  GetWindowText); an error notice can be dismissed with WM_CLOSE (PostMessage 0x0010), then the bridge answers again.
+
+- **2026-10-23 · Censoring a word on a linked A1 (GTA 23 review 1):** QE razor on `getAudioTrackAt(0)` at the two word edges
+  (DF timecode on a drop-frame sequence) splits ONLY A1 (V1 count unchanged, read back), then `trackItem.disabled = true` on
+  the A1 piece silences it with its picture playing on (reversible: re-enable = word back). 10 ms Volume Level keys on the
+  neighbours (`setTimeVarying(true)`, keys in SOURCE time = inPoint + offset; 0 at the edge). Razor AFTER audio-polish: the
+  pieces inherit the Amplify + Hard Limiter chain. `transcript/place-censor-seq23.py`.
+- **`audio-polish.py --verify` re-measures the gain** (voice-gain.py, ffmpeg per segment over the raw) before it reads the
+  chain back: > 10 min on a 7:41 cut, all of it INSIDE the ACTIVE-WINDOW lock with Premiere idle. Expect it; don't kill it.
+- **The ACTIVE-WINDOW helper runs its command from the repo root:** pass ABSOLUTE script paths (a relative
+  `transcript/x.py` opened the window, failed to start, and closed it: harmless, but the step silently did nothing).
+- **FCP XML audio tracks are MONO pairs:** a stereo Premiere track exports as two XML tracks (A1 → XML A1+A2 …), so an XML
+  "A8" is Premiere's A4. Count tracks from the sequence, never from the XML.
+- **FCP XML drops Scale Width:** a Uniform-OFF stretch exports as scale + a Center offset; read stretches from the DOM.
+- **Clip-level SFX tails:** trim each SFX clip to where its tail is 40 dB under its peak (`clip.end` by ticks after the
+  overwrite); a 3.35 s cinematic thud occupies a track for 2.3 s instead, so 100 cues fit on A2/A3.

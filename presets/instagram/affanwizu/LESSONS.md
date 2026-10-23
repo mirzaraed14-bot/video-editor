@@ -3,6 +3,17 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-23: a reel that READS OUT comments (ABW10 Seq 20)
+
+- **Read-out comments and imitated pitches are quoted speech:** every line gets its own pair of quotes (BELIEVE's
+  `“aby yar mukao ya isko”` / `“jaldi jaldi karo”` / `“ghar chalo yar”`), not one pair spanning the lines. → applied; the rule
+  is already in `roman-urdu.md` § quotes.
+- **`caption_qa.py` counted a web address as one spoken word** ("AyanGFX.com" = 1.52 s of speech → FAIL HANGING). It is said
+  "ayan G F X dot com". → `spoken_words()` counts an address by its parts (caps run = letters, each dot = "dot" + tld).
+- **WhisperX on a 3-minute monologue dropped three stretches and looped once**; one batched hi + en re-decode of every gate
+  flag (15 windows) resolved them all before a line was written. On CPU it took ~13 min while another job shared the CPU:
+  for long reels, batch the windows once rather than re-decoding spot by spot.
+
 ## 2026-10-20: "bruv what are these shitty captions" (ABW10 Seq 12) — speed-changed clips + a late first cue
 
 - **Every A1 clip was at 1.1x or 0.8x, and Premiere reports a speed-changed clip's `inPoint` DIVIDED by the speed**

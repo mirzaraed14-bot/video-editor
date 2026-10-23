@@ -75,7 +75,13 @@ APPLY = r"""(function(){
   app.enableQE(); var qa = qe.project.getActiveSequence().getAudioTrackAt(MT - 1), A = seq.audioTracks[MT - 1];
   var fps = %s / parseInt(seq.timebase, 10), base = Math.round(fps);
   function p(n){ return n < 10 ? "0" + n : "" + n; }
-  function tc(T){ var f = Math.round(T * fps); return p(Math.floor(f / (base * 3600))) + ":" + p(Math.floor(f / (base * 60)) %% 60) + ":" + p(Math.floor(f / base) %% 60) + ":" + p(f %% base); }
+  // QE razor reads the string in the sequence's OWN display format: a 29.97/59.94 DROP-FRAME sequence (videoDisplayFormat
+  // 102/106) needs DF numbering, or every razor lands 2/4 frames early per elapsed minute (lab-notes 2026-10-22, CA-007)
+  var fmt = seq.getSettings().videoDisplayFormat, df = (fmt === 102 || fmt === 106), dn = df ? Math.round(fps / 15) : 0;
+  function tc(T){ var f = Math.round(T * fps), sep = df ? ";" : ":";
+    if (df) { var per10 = Math.round(fps * 600), perMin = base * 60 - dn, D = Math.floor(f / per10), M = f %% per10;
+              f = f + 9 * dn * D + (M > dn ? dn * Math.floor((M - dn) / perMin) : 0); }
+    return p(Math.floor(f / (base * 3600))) + sep + p(Math.floor(f / (base * 60)) %% 60) + sep + p(Math.floor(f / base) %% 60) + sep + p(f %% base); }
   function inside(t){ for (var k = 0; k < A.clips.numItems; k++) { var c = A.clips[k]; if (c.start.seconds < t - 0.004 && c.end.seconds > t + 0.004) return c; } return null; }
   var tol = 0.5 / fps, log = [];
   for (var r = R.length - 1; r >= 0; r--) { var a = R[r][0], b = R[r][1], cuts = 0, lifted = 0;

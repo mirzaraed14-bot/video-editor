@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26a2857f-411a-4f2c-917d-fb6059e77b46
-  modified: 2026-10-03T22:36:27.485Z
+  modified: 2026-10-23T03:23:39.666Z
 ---
 
 **AffanWiz** (named 2026-09-23) is the creator's English personal brand, long-form YouTube with them on camera,
@@ -33,4 +33,11 @@ Interesting…", our job gta6-ign-missions / Seq 39): full-frame "IGN dossier" g
 HyperFrames overlay on V3), b-roll inset over its own blur, premium SFX (whoosh/pen/ticks/chimes) on A3/A4, beds on A5 out
 under every zoom, cut zooms median 135 %, no face push. Sequence 27 (CA-003, kick-fake-viewers) was restyled to it; the
 reusable pattern is that job's folder. v1 (Game Informer port) kept as STYLE-v1-game-informer.md.
-Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]].
+**2026-10-22: CA-007 "I Ranked Every Streamer's Content Machine"** (raw X:\Recordings\PBE\C1389.MP4, job
+`projects/streamer-content-machines/`) built in a NEW bin + sequence "CA-007 Streamer Tier List" in **ABW10** (shared that
+night with the Afterhours session doing GTA 23: lock + by-name + ask-before-save protocol). STYLE v2 + a tier-board spine
+(side board on the face at each verdict) + chapter tags + side cards; fresh Epidemic SFX set.
+**2026-10-23 revision 1** (his Tella review, four must-fixes) built, gated and SAVED in ABW10: lip sync (V1 rebuilt from his
+A1), reading covers (face share 34 %), new SFX set `sfx2/` (110 cues / 67 files), a CTA about every minute (one as a chip
+inside t25). Awaiting his re-review; he exports himself (RUN.md, review/REVISION-1.md).
+Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]], [[feedback-every-video-better-than-last]].

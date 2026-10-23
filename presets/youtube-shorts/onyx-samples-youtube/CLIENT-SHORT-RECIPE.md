@@ -76,6 +76,11 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
 - Cards: `workflows/mg-cards.py collateral` (a number rolls up, a list pops in, a verdict plate) is the template for a "what was at
   stake" beat; `--r0/--r1` land the roll on the spoken number. The caption numeral rule spells decimals out: write the words he says.
 - Topaz and WhisperX hang when another session holds the GPU: build at 30 fps first, run the 60 fps final once the GPU is free.
+- (War Dogs, 2026-10-23) Overlay devices in `yt_overlay.py`: `tags` (a name tag beside the guest's head: dot, line, label; place it
+  from `yt/work/faces.json`, on the side with room), `stamps` (a word slams in and holds), `glints` (a star flash on a word). Cards in
+  `mg-cards.py`: `counter --money` ($ + commas), `craigslist`. Scott's YouTube uploads wipe an ad graphic in near ad reads: check the
+  last frames of the cut (YDIF) and freeze the last shot before the wipe (A shot `"freeze": [[f0, N]]`). A tight close-up camera
+  wants z0 1.0 (1.12 cut the head).
 
 ## 5. One check, then final (4 calls)
 - ONE 16-frame sheet (`select=eq(n\,…)`, `scale=270:480,tile=8x2`). The v1 defects last time: captions on the lips, a face cropped,

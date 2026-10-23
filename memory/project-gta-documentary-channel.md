@@ -1,6 +1,6 @@
 ---
 name: project-gta-documentary-channel
-description: "Affan Afterhours — the user's GTA channel: TWO formats (the GTA 6 explainer is the engine and the default; the documentary is paused); episode 2 'How Rockstar Hired Travis Scott' SHIPPED 2026-09-20, post-mortem written; the creator's face-zoom grammar, overlay frame and PNG-puppet direction"
+description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23, at his review — RUN.md; his face-zoom grammar in facecam CREATOR-HAND.md"
 metadata: 
   node_type: memory
   type: project
@@ -55,3 +55,12 @@ palette and mannequin rule do not carry to an explainer. Any web-sourced picture
 **2026-10-08 — CHANNEL AUDIT DONE; START HERE NOW: `presets/youtube/affan-afterhours/EDITOR.md`** (the GTA editor's handbook: reading order, the style on one card, where every asset lives). The creator's own grammar, read clip by clip off their three shipped face-cam timelines, is `presets/youtube/affan-afterhours-facecam/CREATOR-HAND.md` and wins over the reference numbers: saved presets "110 GTA LF Zoom Preset" (nests) / "105 GTA Lf Zoom Preset" (single clips); cut zooms = razor + static scale, median 121–136 %; slow-downs 0.8x only where jokes are (0–11); pops at −18 dB (they pulled them 12 dB down after Game Informer); music by clip gain −20…−27 dB, out under every cut zoom; their meme layer (colour-bars glitch, Vine boom, memes, cricket). `gta6-vice-city-sign` shipped as 'Collector's Box DISAPPOINTED Everyone', `gta6-hurricanes` as 'Everything Game Informer Just Revealed'. Audit data: `research/afterhours-channel-audit/`.
 
 **2026-10-09 — video 22 "You Can't Just Play The Missions In GTA 6" (job `gta6-ign-missions`) edited on ABW8 › Sequence 39, at step 7 (the creator's review).** State + resume: `projects/gta6-ign-missions/RUN.md`. New graphics language ("IGN dossier": quote cards on blurred game plates, the recurring mission-line diagram, explainer diagrams, premium Epidemic SFX) logged for the creator's verdict in facecam `LESSONS.md` 2026-10-09 — read their verdict there before reusing any of it. Sequences 37/38 belong to the Onyx session; Premiere is shared (ACTIVE-WINDOW.lock).
+
+**2026-10-22 — video 22 SHIPPED (he exported it himself); video 23 "The Day The World Stops For GTA 6" (job `gta6-world-stops`) edited on ABW10 › "GTA 23 - The Day The World Stops" (new bin "GTA 23 World Stops"), at step 7 (his review).** State + resume: `projects/gta6-world-stops/RUN.md`. New in 23: the receipts system (REAL / REPORTED / ESTIMATE / IMAGINED corner tags + source line on every card), IMAGINED dossier scenes, the November countdown rail, a 27-file Epidemic SFX palette, cut zooms gentler (median 130 %) for his new closer "relaxed" setup, a verbatim-prompted stutter guard on the cut. His verdicts go in facecam `LESSONS.md` before reusing any of it. Premiere ABW10 is shared with the English Editor session (AffanWiz CA-007): message before saves, ACTIVE-WINDOW.lock for any active-sequence switch, Sequence 19 restored.
+
+**2026-10-23 — video 23 review 1 (his Tella walkthrough) applied and SAVED, back at his review.** Rebuilt on HIS cut (read
+off the live timeline first; his two own zooms carried over by source time): pauses tightened 37/47 but the punchline AND
+comedic beats kept (a first pass that cut the comedic ones was caught by a fresh-eyes review: his comedy is timing), the SFX
+replaced by a screened one-family-per-meaning set (the old kit's most-used clicks were narrow tones, 42-60 dB tonal
+prominence), every comp on screen from frame 0 (his "Number one" glitch), "fuck" cut from the voice 4x (A1 pieces disabled),
+and 8 "27 DAYS" subscribe CTAs (his new ask, overrides the no-CTA default for this channel). Details: RUN.md + facecam LESSONS.

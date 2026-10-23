@@ -24,6 +24,9 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 - **Open on the guest's own cam, and the hook card runs from 0 to ~3 s** (Affan 2026-10-21, Marvel vs RDJ: "i want peters cam at the
   beginning not the iron man image"; "the hook text ... should be from the beginning and end at 3 sec"). The card is the credit
   (ROLE / NAME); a B-roll picture never takes frame 1.
+- **Face cam never more than ~4 s without an overlay or MG; constant rotation of overlays; stronger, quicker zooms; the hook card's
+  top line as big as the second** (Affan 2026-10-23, War Dogs: "if the person is there from the face cam for more than four seconds
+  the retention will drop off").
 - **No dead air**: every pause >= 0.25 s inside a kept line is cut to ~0.16 s (measured, `work/cut/make_edl.py` PAUSES), except a
   deliberate dramatic beat (2026-10-21: "why are there so many pauses").
 - **Every picture is sharp at phone size**: a soft or compressed still is replaced by a 4K source, not just upscaled ("what is that

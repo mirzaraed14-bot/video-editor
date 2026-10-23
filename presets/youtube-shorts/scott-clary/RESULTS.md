@@ -10,8 +10,13 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 | 3 | Ryan Serhant: the bank CEO's empty calendar (`serhant-empty-calendar`) | 2026-10-19 (30 fps, no Topaz: GPU jammed) | 33.4 s | Scott: "What habits do 10-figure people have?" (no name; credit at ~3 s) | **3K-30K** · the payoff is a sentence, not a picture: without a real calendar visual the reversal lands flat (locked 2026-10-19) | | | | | | | | |
 | 4 | Ryan Serhant: pitched 50 shows, one yes (`serhant-50-pitches`) | 2026-10-19 (60 fps) | 53.1 s | "A lot of people get on reality TV and then they become irrelevant" (no name) | **3K-25K** · reads as bragging ("my fifth show") unless "what else can we do?" lands as the button (locked 2026-10-19) | | | | | | | | |
 | 5 | Peter Cuneo: Marvel's board vs Robert Downey Jr. (`marvel-board-vs-rdj`) | 2026-10-21 (60 fps, v2 after Affan's review) | 40.0 s | Peter's own cam: "The board initially was very anti-casting Robert Downey Jr. as Tony Stark" + FORMER MARVEL CEO / PETER CUNEO card 0-3 s | **10K-150K** · the RDJ-almost-wasn't-Iron-Man story is old Marvel lore (Feige has told it for years): fails if the first 3 s read as a rerun (locked 2026-10-21) | | | | | | | | |
+| 6 | David Packouz: the real War Dogs guys faked an office for a $300M deal (`war-dogs-fake-office`) | 2026-10-23 (60 fps, v4 after Affan's notes) | 45.0 s | Packouz on screen + "the 300 million dollar deal ... the main focus of the film War Dogs" + hook card SECURING THE REAL $300M PENTAGON DEAL + THE REAL DAVID PACKOUZ tag | **15K-150K** · Packouz is not a face anyone knows: if "War Dogs" doesn't register in the first 3 s (no Jonah Hill on screen yet) it reads as a stranger's anecdote (locked 2026-10-23) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
+
+**2026-10-22 (Affan's screenshot):** the "SESAME STREET?" frame confirms it is row 2, the Bombas Short, posted as **"Daymond John Almost
+LOST $250M" = 238K views** (35K on 10-21 -> 238K on 10-22: a late ignition; age unknown, curve OPEN, nothing concluded yet).
+Asked Affan for FUBU (same guest, same episode, same kit = the control), both Serhant Shorts and Marvel.
 
 **First result (Affan's screenshot, 2026-10-21):** a Daymond Short posted as **"Daymond John Almost LOST $250M" = 35K views** (age at
 screenshot not given; assumed row 2, the Bombas Short: confirm). Affan's read: fine but not enough; views come from ENTERTAINING stories.
@@ -31,11 +36,17 @@ much reading at Shorts speed. Got 5M because: RDJ's mug shot next to Iron Man is
 IN the room ("when the lights came on ... do it") is a first-hand angle; it ends on a number ("sold to Disney for $4.5 billion from
 bankruptcy") that makes the casting call look like the bet that saved the company.
 
+**6 · War Dogs fake office (written 2026-10-23).** Got 5K because: nobody knows Packouz's face and the movie is 10 years old; the
+story needs the viewer to know what a "facility inspection" is; "young girls off Craigslist" reads as cringe and draws the comments.
+Got 5M because: "the real War Dogs" is a ready-made curiosity hook (the movie is a cult favourite); a fake office for a $300M Pentagon
+deal is a picture everyone gets; "if it wasn't completely illegal, I'd buy you all diamonds" is a quotable line that gets shared.
+
 ## Titles + thumbnails
 | # | Title | Thumbnail |
 |---|---|---|
 | 3 | Ryan Serhant saw a bank CEO's calendar. It was almost empty. | `projects/_client-scott-clary/serhant-empty-calendar/thumbnail.jpg` ("HIS CALENDAR / WAS EMPTY", teal EMPTY; photo: Ryan outside the SERHANT office) |
 | 4 | Ryan Serhant pitched 50 TV shows. One got picked up. Now he's on Netflix. | `projects/_client-scott-clary/serhant-50-pitches/thumbnail.jpg` ("50 PITCHES / ONE YES", teal YES; photo: the Owning Manhattan premiere) |
 | 5 | Marvel's board didn't want Robert Downey Jr. as Iron Man. Then they saw his screen test. | `projects/_client-scott-clary/marvel-board-vs-rdj/thumbnail.jpg` ("MARVEL ALMOST / SAID NO", teal NO; photo: RDJ's 1999 booking photo, "DOWNEY" board) |
+| 6 | The real War Dogs guys faked an entire office to win a $300M Pentagon deal | `projects/_client-scott-clary/war-dogs-fake-office/thumbnail.jpg` ("THEY FAKED / THE OFFICE", teal FAKED; photo: Packouz with Miles Teller on the War Dogs set) |
 
 Licensing flag (2026-10-19): the #4 thumbnail photo is a Getty image (gettyimages-2158515218, via CBS); swap it for an official Netflix / SERHANT press still before posting. The #3 photo comes from Parade (credit not shown on the page).

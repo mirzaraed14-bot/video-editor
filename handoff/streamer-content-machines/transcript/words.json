@@ -1,0 +1,9888 @@
+{
+"language": "en",
+"source": "per-burst text (faster-whisper large-v3) + wav2vec2 alignment per burst (review/tools/align_bursts.py) + review/tools/fix_words.py (token rejoin + name fixes)",
+"clips": [
+{
+"clip": "C1389.MP4",
+"words": [
+{
+"w": "IShowSpeed's",
+"start": 2.52,
+"end": 3.23,
+"prob": 0.425,
+"burst": 0,
+"fixed": true
+},
+{
+"w": "TikTok.",
+"start": 3.23,
+"end": 3.94,
+"prob": 0.425,
+"burst": 0,
+"fixed": true
+},
+{
+"w": "127",
+"start": 3.94,
+"end": 4.3,
+"prob": 0.979,
+"burst": 0,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 4.3,
+"end": 5.28,
+"prob": 0.99,
+"burst": 0,
+"unaligned": true
+},
+{
+"w": "259",
+"start": 5.28,
+"end": 6.44,
+"prob": 0.959,
+"burst": 0,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 6.44,
+"end": 6.86,
+"prob": 0.993,
+"burst": 0,
+"unaligned": true
+},
+{
+"w": "314",
+"start": 6.86,
+"end": 7.7,
+"prob": 0.983,
+"burst": 0,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 7.7,
+"end": 8.3,
+"prob": 0.999,
+"burst": 0,
+"unaligned": true
+},
+{
+"w": "Every",
+"start": 9.991,
+"end": 10.311,
+"prob": 0.838,
+"burst": 1
+},
+{
+"w": "post",
+"start": 10.412,
+"end": 10.913,
+"prob": 0.936,
+"burst": 1
+},
+{
+"w": "over",
+"start": 11.294,
+"end": 11.515,
+"prob": 0.728,
+"burst": 1
+},
+{
+"w": "a",
+"start": 11.535,
+"end": 11.555,
+"prob": 0.0,
+"burst": 1
+},
+{
+"w": "hundred",
+"start": 11.876,
+"end": 12.337,
+"prob": 0.948,
+"burst": 1
+},
+{
+"w": "million",
+"start": 12.437,
+"end": 12.838,
+"prob": 0.922,
+"burst": 1
+},
+{
+"w": "views",
+"start": 12.898,
+"end": 13.219,
+"prob": 0.789,
+"burst": 1
+},
+{
+"w": "he's",
+"start": 17.12,
+"end": 17.38,
+"prob": 0.666,
+"burst": 2,
+"unaligned": true
+},
+{
+"w": "he's",
+"start": 17.38,
+"end": 18.08,
+"prob": 0.822,
+"burst": 2,
+"unaligned": true
+},
+{
+"w": "forced",
+"start": 18.08,
+"end": 18.4,
+"prob": 0.558,
+"burst": 2,
+"unaligned": true
+},
+{
+"w": "at",
+"start": 18.4,
+"end": 18.68,
+"prob": 0.624,
+"burst": 2,
+"unaligned": true
+},
+{
+"w": "31.",
+"start": 18.68,
+"end": 19.1,
+"prob": 0.994,
+"burst": 2,
+"unaligned": true
+},
+{
+"w": "He's",
+"start": 20.61,
+"end": 20.83,
+"prob": 0.875,
+"burst": 3,
+"unaligned": true
+},
+{
+"w": "posted",
+"start": 20.83,
+"end": 21.11,
+"prob": 0.997,
+"burst": 3,
+"unaligned": true
+},
+{
+"w": "31.",
+"start": 21.11,
+"end": 21.51,
+"prob": 0.965,
+"burst": 3,
+"unaligned": true
+},
+{
+"w": "ever",
+"start": 24.118,
+"end": 24.284,
+"prob": 0.974,
+"burst": 4
+},
+{
+"w": "The",
+"start": 25.842,
+"end": 25.943,
+"prob": 0.894,
+"burst": 5
+},
+{
+"w": "last",
+"start": 25.984,
+"end": 26.226,
+"prob": 0.621,
+"burst": 5
+},
+{
+"w": "one",
+"start": 26.328,
+"end": 26.429,
+"prob": 0.687,
+"burst": 5
+},
+{
+"w": "was",
+"start": 26.469,
+"end": 26.671,
+"prob": 0.907,
+"burst": 5
+},
+{
+"w": "in",
+"start": 26.752,
+"end": 26.833,
+"prob": 0.834,
+"burst": 5
+},
+{
+"w": "June.",
+"start": 26.914,
+"end": 27.218,
+"prob": 0.843,
+"burst": 5
+},
+{
+"w": "The",
+"start": 28.852,
+"end": 28.933,
+"prob": 0.995,
+"burst": 6
+},
+{
+"w": "last",
+"start": 28.973,
+"end": 29.156,
+"prob": 0.972,
+"burst": 6
+},
+{
+"w": "one",
+"start": 29.237,
+"end": 29.339,
+"prob": 0.822,
+"burst": 6
+},
+{
+"w": "was",
+"start": 29.359,
+"end": 29.541,
+"prob": 0.814,
+"burst": 6
+},
+{
+"w": "in",
+"start": 29.602,
+"end": 29.663,
+"prob": 0.996,
+"burst": 6
+},
+{
+"w": "June.",
+"start": 29.704,
+"end": 29.988,
+"prob": 0.971,
+"burst": 6
+},
+{
+"w": "I",
+"start": 33.251,
+"end": 33.332,
+"prob": 0.904,
+"burst": 7
+},
+{
+"w": "went",
+"start": 33.372,
+"end": 33.573,
+"prob": 0.884,
+"burst": 7
+},
+{
+"w": "through",
+"start": 33.633,
+"end": 33.895,
+"prob": 0.648,
+"burst": 7
+},
+{
+"w": "every",
+"start": 34.337,
+"end": 34.679,
+"prob": 0.93,
+"burst": 7
+},
+{
+"w": "I",
+"start": 35.772,
+"end": 35.833,
+"prob": 0.681,
+"burst": 8
+},
+{
+"w": "went",
+"start": 35.853,
+"end": 35.994,
+"prob": 0.535,
+"burst": 8
+},
+{
+"w": "through",
+"start": 36.015,
+"end": 36.197,
+"prob": 0.857,
+"burst": 8
+},
+{
+"w": "every",
+"start": 36.379,
+"end": 36.581,
+"prob": 0.893,
+"burst": 8
+},
+{
+"w": "platform",
+"start": 36.621,
+"end": 37.147,
+"prob": 0.875,
+"burst": 8
+},
+{
+"w": "for",
+"start": 39.34,
+"end": 39.52,
+"prob": 0.9,
+"burst": 9,
+"unaligned": true
+},
+{
+"w": "10",
+"start": 39.52,
+"end": 39.8,
+"prob": 0.836,
+"burst": 9,
+"unaligned": true
+},
+{
+"w": "of",
+"start": 39.8,
+"end": 39.96,
+"prob": 0.959,
+"burst": 9,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 39.96,
+"end": 40.08,
+"prob": 0.979,
+"burst": 9,
+"unaligned": true
+},
+{
+"w": "biggest",
+"start": 40.08,
+"end": 40.5,
+"prob": 0.981,
+"burst": 9,
+"unaligned": true
+},
+{
+"w": "streamers",
+"start": 40.5,
+"end": 41.46,
+"prob": 0.983,
+"burst": 9,
+"unaligned": true
+},
+{
+"w": "YouTube",
+"start": 43.231,
+"end": 43.632,
+"prob": 0.572,
+"burst": 10
+},
+{
+"w": "Shorts,",
+"start": 43.692,
+"end": 44.053,
+"prob": 0.868,
+"burst": 10
+},
+{
+"w": "Instagram",
+"start": 44.354,
+"end": 44.876,
+"prob": 0.884,
+"burst": 10
+},
+{
+"w": "Reels,",
+"start": 44.916,
+"end": 45.237,
+"prob": 0.616,
+"burst": 10
+},
+{
+"w": "TikToks.",
+"start": 45.477,
+"end": 46.199,
+"prob": 0.882,
+"burst": 10
+},
+{
+"w": "streams",
+"start": 50.502,
+"end": 51.067,
+"prob": 0.895,
+"burst": 11
+},
+{
+"w": "And",
+"start": 51.791,
+"end": 51.871,
+"prob": 0.92,
+"burst": 12
+},
+{
+"w": "the",
+"start": 51.891,
+"end": 51.971,
+"prob": 0.809,
+"burst": 12
+},
+{
+"w": "clip",
+"start": 52.012,
+"end": 52.253,
+"prob": 0.916,
+"burst": 12
+},
+{
+"w": "pages,",
+"start": 52.273,
+"end": 52.695,
+"prob": 0.773,
+"burst": 12
+},
+{
+"w": "nobody",
+"start": 52.836,
+"end": 53.177,
+"prob": 0.369,
+"burst": 12
+},
+{
+"w": "counts.",
+"start": 53.237,
+"end": 53.559,
+"prob": 0.921,
+"burst": 12
+},
+{
+"w": "And",
+"start": 55.193,
+"end": 55.274,
+"prob": 0.872,
+"burst": 13
+},
+{
+"w": "it",
+"start": 55.335,
+"end": 55.417,
+"prob": 0.955,
+"burst": 13
+},
+{
+"w": "got",
+"start": 55.458,
+"end": 55.621,
+"prob": 0.971,
+"burst": 13
+},
+{
+"w": "weird.",
+"start": 55.703,
+"end": 56.029,
+"prob": 0.785,
+"burst": 13
+},
+{
+"w": "One",
+"start": 63.974,
+"end": 64.075,
+"prob": 0.994,
+"burst": 14
+},
+{
+"w": "of",
+"start": 64.116,
+"end": 64.177,
+"prob": 0.762,
+"burst": 14
+},
+{
+"w": "them",
+"start": 64.258,
+"end": 64.44,
+"prob": 0.805,
+"burst": 14
+},
+{
+"w": "paid.",
+"start": 64.622,
+"end": 65.027,
+"prob": 0.887,
+"burst": 14
+},
+{
+"w": "one",
+"start": 67.11,
+"end": 67.35,
+"prob": 0.414,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "of",
+"start": 67.35,
+"end": 67.47,
+"prob": 0.996,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "them",
+"start": 67.47,
+"end": 67.59,
+"prob": 0.996,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "paid",
+"start": 67.59,
+"end": 67.79,
+"prob": 0.968,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "1.4",
+"start": 67.79,
+"end": 68.85,
+"prob": 0.827,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 68.85,
+"end": 69.47,
+"prob": 0.874,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "dollars",
+"start": 69.47,
+"end": 69.97,
+"prob": 0.991,
+"burst": 15,
+"unaligned": true
+},
+{
+"w": "In",
+"start": 73.701,
+"end": 73.801,
+"prob": 0.878,
+"burst": 16
+},
+{
+"w": "five",
+"start": 73.922,
+"end": 74.263,
+"prob": 0.726,
+"burst": 16
+},
+{
+"w": "weeks",
+"start": 74.344,
+"end": 74.706,
+"prob": 0.866,
+"burst": 16
+},
+{
+"w": "for",
+"start": 75.027,
+"end": 75.168,
+"prob": 0.99,
+"burst": 16
+},
+{
+"w": "his.",
+"start": 75.228,
+"end": 75.369,
+"prob": 0.977,
+"burst": 16
+},
+{
+"w": "One",
+"start": 81.09,
+"end": 81.31,
+"prob": 0.683,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "stream",
+"start": 81.31,
+"end": 81.55,
+"prob": 0.556,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "is",
+"start": 81.55,
+"end": 81.71,
+"prob": 0.765,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "10",
+"start": 81.71,
+"end": 81.87,
+"prob": 0.842,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "hours",
+"start": 81.87,
+"end": 82.11,
+"prob": 0.948,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 82.11,
+"end": 82.33,
+"prob": 0.972,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "day",
+"start": 82.33,
+"end": 82.51,
+"prob": 0.999,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 82.51,
+"end": 82.67,
+"prob": 0.87,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "almost",
+"start": 82.67,
+"end": 82.93,
+"prob": 0.986,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "none",
+"start": 82.93,
+"end": 83.15,
+"prob": 0.995,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "of",
+"start": 83.15,
+"end": 83.33,
+"prob": 0.997,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "it",
+"start": 83.33,
+"end": 83.43,
+"prob": 0.989,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "goes",
+"start": 83.43,
+"end": 83.61,
+"prob": 0.993,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "anywhere.",
+"start": 83.61,
+"end": 83.95,
+"prob": 0.992,
+"burst": 17,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 89.181,
+"end": 89.262,
+"prob": 0.69,
+"burst": 18
+},
+{
+"w": "the",
+"start": 89.302,
+"end": 89.382,
+"prob": 0.981,
+"burst": 18
+},
+{
+"w": "best",
+"start": 89.443,
+"end": 89.685,
+"prob": 0.983,
+"burst": 18
+},
+{
+"w": "content",
+"start": 89.785,
+"end": 90.229,
+"prob": 0.844,
+"burst": 18
+},
+{
+"w": "machine",
+"start": 90.269,
+"end": 90.652,
+"prob": 0.906,
+"burst": 18
+},
+{
+"w": "on",
+"start": 90.813,
+"end": 90.914,
+"prob": 0.938,
+"burst": 18
+},
+{
+"w": "the",
+"start": 90.954,
+"end": 91.055,
+"prob": 0.971,
+"burst": 18
+},
+{
+"w": "internet",
+"start": 91.176,
+"end": 91.539,
+"prob": 0.957,
+"burst": 18
+},
+{
+"w": "isn't",
+"start": 96.141,
+"end": 96.362,
+"prob": 0.865,
+"burst": 19
+},
+{
+"w": "even",
+"start": 96.422,
+"end": 96.603,
+"prob": 0.917,
+"burst": 19
+},
+{
+"w": "on",
+"start": 96.643,
+"end": 96.724,
+"prob": 0.788,
+"burst": 19
+},
+{
+"w": "the",
+"start": 96.764,
+"end": 96.844,
+"prob": 0.834,
+"burst": 19
+},
+{
+"w": "channel",
+"start": 96.904,
+"end": 97.306,
+"prob": 0.956,
+"burst": 19
+},
+{
+"w": "you",
+"start": 97.367,
+"end": 97.547,
+"prob": 0.985,
+"burst": 19
+},
+{
+"w": "check.",
+"start": 97.608,
+"end": 97.929,
+"prob": 0.938,
+"burst": 19
+},
+{
+"w": "I'm",
+"start": 100.781,
+"end": 100.963,
+"prob": 0.621,
+"burst": 20
+},
+{
+"w": "judging",
+"start": 101.023,
+"end": 101.365,
+"prob": 0.869,
+"burst": 20
+},
+{
+"w": "the",
+"start": 101.405,
+"end": 101.486,
+"prob": 0.99,
+"burst": 20
+},
+{
+"w": "machine",
+"start": 101.526,
+"end": 101.969,
+"prob": 0.773,
+"burst": 20
+},
+{
+"w": "in",
+"start": 102.13,
+"end": 102.21,
+"prob": 0.71,
+"burst": 20
+},
+{
+"w": "this",
+"start": 102.231,
+"end": 102.371,
+"prob": 0.812,
+"burst": 20
+},
+{
+"w": "video,",
+"start": 102.412,
+"end": 102.754,
+"prob": 0.93,
+"burst": 20
+},
+{
+"w": "not",
+"start": 102.854,
+"end": 103.056,
+"prob": 0.73,
+"burst": 20
+},
+{
+"w": "the",
+"start": 103.096,
+"end": 103.176,
+"prob": 0.989,
+"burst": 20
+},
+{
+"w": "person.",
+"start": 103.217,
+"end": 103.599,
+"prob": 0.972,
+"burst": 20
+},
+{
+"w": "Most",
+"start": 105.832,
+"end": 106.054,
+"prob": 0.987,
+"burst": 21
+},
+{
+"w": "of",
+"start": 106.075,
+"end": 106.135,
+"prob": 0.749,
+"burst": 21
+},
+{
+"w": "these",
+"start": 106.176,
+"end": 106.317,
+"prob": 0.896,
+"burst": 21
+},
+{
+"w": "guys",
+"start": 106.378,
+"end": 106.6,
+"prob": 0.647,
+"burst": 21
+},
+{
+"w": "have",
+"start": 106.641,
+"end": 106.802,
+"prob": 0.922,
+"burst": 21
+},
+{
+"w": "teams.",
+"start": 106.863,
+"end": 107.267,
+"prob": 0.915,
+"burst": 21
+},
+{
+"w": "Because",
+"start": 118.051,
+"end": 118.273,
+"prob": 0.857,
+"burst": 22
+},
+{
+"w": "most",
+"start": 118.354,
+"end": 118.516,
+"prob": 0.806,
+"burst": 22
+},
+{
+"w": "of",
+"start": 118.536,
+"end": 118.576,
+"prob": 0.998,
+"burst": 22
+},
+{
+"w": "these",
+"start": 118.617,
+"end": 118.758,
+"prob": 0.899,
+"burst": 22
+},
+{
+"w": "guys",
+"start": 118.799,
+"end": 119.061,
+"prob": 0.786,
+"burst": 22
+},
+{
+"w": "have",
+"start": 119.243,
+"end": 119.405,
+"prob": 0.856,
+"burst": 22
+},
+{
+"w": "teams.",
+"start": 119.445,
+"end": 119.728,
+"prob": 0.977,
+"burst": 22
+},
+{
+"w": "So",
+"start": 122.92,
+"end": 123.061,
+"prob": 0.7,
+"burst": 23
+},
+{
+"w": "we",
+"start": 123.081,
+"end": 123.181,
+"prob": 0.864,
+"burst": 23
+},
+{
+"w": "have",
+"start": 123.201,
+"end": 123.342,
+"prob": 0.895,
+"burst": 23
+},
+{
+"w": "two",
+"start": 123.402,
+"end": 123.582,
+"prob": 0.936,
+"burst": 23
+},
+{
+"w": "scores,",
+"start": 123.623,
+"end": 123.984,
+"prob": 0.872,
+"burst": 23
+},
+{
+"w": "how",
+"start": 124.285,
+"end": 124.526,
+"prob": 0.919,
+"burst": 23
+},
+{
+"w": "often",
+"start": 124.626,
+"end": 124.867,
+"prob": 0.978,
+"burst": 23
+},
+{
+"w": "they",
+"start": 124.907,
+"end": 125.048,
+"prob": 0.982,
+"burst": 23
+},
+{
+"w": "post.",
+"start": 125.088,
+"end": 125.469,
+"prob": 0.97,
+"burst": 23
+},
+{
+"w": "and",
+"start": 127.832,
+"end": 127.933,
+"prob": 0.68,
+"burst": 24
+},
+{
+"w": "how",
+"start": 128.054,
+"end": 128.378,
+"prob": 0.831,
+"burst": 24
+},
+{
+"w": "hard",
+"start": 128.438,
+"end": 128.762,
+"prob": 0.812,
+"burst": 24
+},
+{
+"w": "it",
+"start": 128.903,
+"end": 128.984,
+"prob": 0.972,
+"burst": 24
+},
+{
+"w": "hits.",
+"start": 129.025,
+"end": 129.267,
+"prob": 0.928,
+"burst": 24
+},
+{
+"w": "Let's",
+"start": 129.794,
+"end": 129.96,
+"prob": 0.807,
+"burst": 25
+},
+{
+"w": "go.",
+"start": 129.981,
+"end": 130.147,
+"prob": 0.941,
+"burst": 25
+},
+{
+"w": "Archetype",
+"start": 133.7,
+"end": 134.28,
+"prob": 0.938,
+"burst": 26,
+"unaligned": true
+},
+{
+"w": "1",
+"start": 134.28,
+"end": 134.42,
+"prob": 0.713,
+"burst": 26,
+"unaligned": true
+},
+{
+"w": "The",
+"start": 134.42,
+"end": 134.92,
+"prob": 0.17,
+"burst": 26,
+"unaligned": true
+},
+{
+"w": "Ghost",
+"start": 134.92,
+"end": 135.16,
+"prob": 0.926,
+"burst": 26,
+"unaligned": true
+},
+{
+"w": "xQc.",
+"start": 138.893,
+"end": 139.074,
+"prob": 0.333,
+"burst": 27,
+"fixed": true
+},
+{
+"w": "about",
+"start": 140.02,
+"end": 140.28,
+"prob": 0.583,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "290",
+"start": 140.28,
+"end": 141.08,
+"prob": 0.969,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "hours",
+"start": 141.08,
+"end": 141.42,
+"prob": 0.964,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "live",
+"start": 141.42,
+"end": 141.84,
+"prob": 0.904,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "in",
+"start": 141.84,
+"end": 142.08,
+"prob": 0.987,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "30",
+"start": 142.08,
+"end": 142.26,
+"prob": 0.992,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "days,",
+"start": 142.26,
+"end": 142.52,
+"prob": 0.981,
+"burst": 28,
+"unaligned": true
+},
+{
+"w": "That's",
+"start": 143.42,
+"end": 143.88,
+"prob": 0.89,
+"burst": 29,
+"unaligned": true
+},
+{
+"w": "nearly",
+"start": 143.88,
+"end": 144.06,
+"prob": 0.993,
+"burst": 29,
+"unaligned": true
+},
+{
+"w": "10",
+"start": 144.06,
+"end": 144.5,
+"prob": 0.826,
+"burst": 29,
+"unaligned": true
+},
+{
+"w": "hours",
+"start": 144.5,
+"end": 144.88,
+"prob": 0.986,
+"burst": 29,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 144.88,
+"end": 145.12,
+"prob": 0.987,
+"burst": 29,
+"unaligned": true
+},
+{
+"w": "day.",
+"start": 145.12,
+"end": 145.3,
+"prob": 0.999,
+"burst": 29,
+"unaligned": true
+},
+{
+"w": "nobody",
+"start": 147.181,
+"end": 147.562,
+"prob": 0.882,
+"burst": 30
+},
+{
+"w": "on",
+"start": 147.642,
+"end": 147.723,
+"prob": 0.95,
+"burst": 30
+},
+{
+"w": "this",
+"start": 147.743,
+"end": 147.903,
+"prob": 0.792,
+"burst": 30
+},
+{
+"w": "list",
+"start": 147.964,
+"end": 148.205,
+"prob": 0.768,
+"burst": 30
+},
+{
+"w": "nobody",
+"start": 149.148,
+"end": 149.65,
+"prob": 0.893,
+"burst": 30
+},
+{
+"w": "on",
+"start": 149.951,
+"end": 150.032,
+"prob": 0.849,
+"burst": 30
+},
+{
+"w": "this",
+"start": 150.052,
+"end": 150.232,
+"prob": 0.767,
+"burst": 30
+},
+{
+"w": "list",
+"start": 150.293,
+"end": 150.554,
+"prob": 0.86,
+"burst": 30
+},
+{
+"w": "makes",
+"start": 150.714,
+"end": 150.955,
+"prob": 0.844,
+"burst": 30
+},
+{
+"w": "more",
+"start": 151.036,
+"end": 151.196,
+"prob": 0.826,
+"burst": 30
+},
+{
+"w": "content",
+"start": 151.256,
+"end": 151.718,
+"prob": 0.907,
+"burst": 30
+},
+{
+"w": "than",
+"start": 151.738,
+"end": 151.879,
+"prob": 0.938,
+"burst": 30
+},
+{
+"w": "him",
+"start": 151.939,
+"end": 152.019,
+"prob": 0.987,
+"burst": 30
+},
+{
+"w": "Now",
+"start": 154.593,
+"end": 154.816,
+"prob": 0.922,
+"burst": 31
+},
+{
+"w": "where",
+"start": 154.917,
+"end": 155.16,
+"prob": 0.804,
+"burst": 31
+},
+{
+"w": "does",
+"start": 155.181,
+"end": 155.343,
+"prob": 0.848,
+"burst": 31
+},
+{
+"w": "it",
+"start": 155.424,
+"end": 155.525,
+"prob": 0.918,
+"burst": 31
+},
+{
+"w": "go?",
+"start": 155.566,
+"end": 155.748,
+"prob": 0.984,
+"burst": 31
+},
+{
+"w": "YouTube",
+"start": 166.062,
+"end": 166.387,
+"prob": 0.611,
+"burst": 32
+},
+{
+"w": "Shorts.",
+"start": 166.427,
+"end": 166.773,
+"prob": 0.912,
+"burst": 32
+},
+{
+"w": "YouTube",
+"start": 167.882,
+"end": 168.29,
+"prob": 0.604,
+"burst": 33
+},
+{
+"w": "Shorts.",
+"start": 168.33,
+"end": 168.676,
+"prob": 0.968,
+"burst": 33
+},
+{
+"w": "The",
+"start": 175.162,
+"end": 175.283,
+"prob": 0.884,
+"burst": 34
+},
+{
+"w": "newest",
+"start": 175.343,
+"end": 175.665,
+"prob": 0.865,
+"burst": 34
+},
+{
+"w": "one",
+"start": 175.786,
+"end": 175.907,
+"prob": 0.793,
+"burst": 34
+},
+{
+"w": "is",
+"start": 176.008,
+"end": 176.069,
+"prob": 0.982,
+"burst": 34
+},
+{
+"w": "from",
+"start": 176.109,
+"end": 176.27,
+"prob": 0.824,
+"burst": 34
+},
+{
+"w": "October",
+"start": 176.431,
+"end": 176.875,
+"prob": 0.932,
+"burst": 34
+},
+{
+"w": "last",
+"start": 176.935,
+"end": 177.197,
+"prob": 0.81,
+"burst": 34
+},
+{
+"w": "year.",
+"start": 177.237,
+"end": 177.399,
+"prob": 0.949,
+"burst": 34
+},
+{
+"w": "The",
+"start": 178.973,
+"end": 179.075,
+"prob": 0.902,
+"burst": 35
+},
+{
+"w": "newest",
+"start": 179.136,
+"end": 179.462,
+"prob": 0.771,
+"burst": 35
+},
+{
+"w": "one",
+"start": 179.585,
+"end": 179.666,
+"prob": 1.0,
+"burst": 35
+},
+{
+"w": "It's",
+"start": 180.491,
+"end": 180.592,
+"prob": 0.738,
+"burst": 36
+},
+{
+"w": "from",
+"start": 180.612,
+"end": 180.774,
+"prob": 0.646,
+"burst": 36
+},
+{
+"w": "October.",
+"start": 180.875,
+"end": 181.319,
+"prob": 0.949,
+"burst": 36
+},
+{
+"w": "Last",
+"start": 182.415,
+"end": 182.762,
+"prob": 0.836,
+"burst": 37
+},
+{
+"w": "year,",
+"start": 182.823,
+"end": 182.987,
+"prob": 0.953,
+"burst": 37
+},
+{
+"w": "Instagram",
+"start": 186.381,
+"end": 187.105,
+"prob": 0.902,
+"burst": 38
+},
+{
+"w": "no",
+"start": 187.185,
+"end": 187.406,
+"prob": 0.959,
+"burst": 38
+},
+{
+"w": "Reels",
+"start": 187.467,
+"end": 187.768,
+"prob": 0.941,
+"burst": 38
+},
+{
+"w": "in",
+"start": 192.674,
+"end": 192.816,
+"prob": 0.355,
+"burst": 39
+},
+{
+"w": "the",
+"start": 192.836,
+"end": 192.938,
+"prob": 0.795,
+"burst": 39
+},
+{
+"w": "tiktok",
+"start": 193.019,
+"end": 193.588,
+"prob": 0.759,
+"burst": 39
+},
+{
+"w": "linked",
+"start": 193.86,
+"end": 194.34,
+"prob": 0.42,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "on",
+"start": 194.34,
+"end": 194.54,
+"prob": 0.941,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "his",
+"start": 194.54,
+"end": 194.74,
+"prob": 0.99,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "own",
+"start": 194.74,
+"end": 194.92,
+"prob": 0.975,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "channel,",
+"start": 194.92,
+"end": 195.32,
+"prob": 0.988,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "has",
+"start": 195.44,
+"end": 195.84,
+"prob": 0.975,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "47",
+"start": 195.84,
+"end": 196.34,
+"prob": 0.979,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "followers.",
+"start": 196.34,
+"end": 196.96,
+"prob": 0.976,
+"burst": 40,
+"unaligned": true
+},
+{
+"w": "But",
+"start": 201.921,
+"end": 202.061,
+"prob": 0.843,
+"burst": 41
+},
+{
+"w": "fans",
+"start": 202.141,
+"end": 202.523,
+"prob": 0.804,
+"burst": 41
+},
+{
+"w": "do",
+"start": 202.583,
+"end": 202.764,
+"prob": 0.874,
+"burst": 41
+},
+{
+"w": "clip",
+"start": 202.804,
+"end": 203.045,
+"prob": 0.919,
+"burst": 41
+},
+{
+"w": "him,",
+"start": 203.085,
+"end": 203.266,
+"prob": 0.878,
+"burst": 41
+},
+{
+"w": "I",
+"start": 203.506,
+"end": 203.567,
+"prob": 0.994,
+"burst": 41
+},
+{
+"w": "have",
+"start": 203.607,
+"end": 203.767,
+"prob": 0.966,
+"burst": 41
+},
+{
+"w": "checked.",
+"start": 203.848,
+"end": 204.189,
+"prob": 0.896,
+"burst": 41
+},
+{
+"w": "One",
+"start": 209.18,
+"end": 209.547,
+"prob": 0.726,
+"burst": 42,
+"fixed": true
+},
+{
+"w": "30-day",
+"start": 209.547,
+"end": 209.913,
+"prob": 0.726,
+"burst": 42,
+"fixed": true
+},
+{
+"w": "count",
+"start": 209.913,
+"end": 210.28,
+"prob": 0.726,
+"burst": 42,
+"fixed": true
+},
+{
+"w": "267",
+"start": 211.8,
+"end": 212.44,
+"prob": 0.96,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "clips",
+"start": 212.44,
+"end": 212.82,
+"prob": 0.913,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "from",
+"start": 212.82,
+"end": 213.12,
+"prob": 0.985,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "55",
+"start": 213.12,
+"end": 213.7,
+"prob": 0.98,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "accounts",
+"start": 213.7,
+"end": 214.3,
+"prob": 0.973,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "for",
+"start": 214.3,
+"end": 214.68,
+"prob": 0.841,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "speed,",
+"start": 214.68,
+"end": 215.02,
+"prob": 0.945,
+"burst": 43,
+"unaligned": true
+},
+{
+"w": "It's",
+"start": 216.252,
+"end": 216.602,
+"prob": 0.743,
+"burst": 44,
+"fixed": true
+},
+{
+"w": "a...",
+"start": 216.602,
+"end": 216.951,
+"prob": 0.743,
+"burst": 44,
+"fixed": true
+},
+{
+"w": "well,",
+"start": 216.951,
+"end": 217.3,
+"prob": 0.743,
+"burst": 44,
+"fixed": true
+},
+{
+"w": "hold",
+"start": 217.3,
+"end": 217.65,
+"prob": 0.743,
+"burst": 44,
+"fixed": true
+},
+{
+"w": "that",
+"start": 217.65,
+"end": 217.999,
+"prob": 0.743,
+"burst": 44,
+"fixed": true
+},
+{
+"w": "thought.",
+"start": 217.999,
+"end": 218.349,
+"prob": 0.743,
+"burst": 44,
+"fixed": true
+},
+{
+"w": "the",
+"start": 222.432,
+"end": 222.553,
+"prob": 0.954,
+"burst": 45
+},
+{
+"w": "most",
+"start": 222.613,
+"end": 222.875,
+"prob": 0.906,
+"burst": 45
+},
+{
+"w": "content",
+"start": 222.956,
+"end": 223.561,
+"prob": 0.957,
+"burst": 45
+},
+{
+"w": "out",
+"start": 223.843,
+"end": 223.944,
+"prob": 0.482,
+"burst": 45
+},
+{
+"w": "of",
+"start": 223.984,
+"end": 224.044,
+"prob": 0.711,
+"burst": 45
+},
+{
+"w": "anyone",
+"start": 224.186,
+"end": 224.528,
+"prob": 0.969,
+"burst": 45
+},
+{
+"w": "the",
+"start": 228.501,
+"end": 228.622,
+"prob": 0.995,
+"burst": 46
+},
+{
+"w": "most",
+"start": 228.702,
+"end": 228.963,
+"prob": 0.916,
+"burst": 46
+},
+{
+"w": "content",
+"start": 229.064,
+"end": 229.526,
+"prob": 0.924,
+"burst": 46
+},
+{
+"w": "out",
+"start": 229.646,
+"end": 229.767,
+"prob": 0.595,
+"burst": 46
+},
+{
+"w": "of",
+"start": 229.807,
+"end": 229.867,
+"prob": 0.748,
+"burst": 46
+},
+{
+"w": "anyone",
+"start": 229.988,
+"end": 230.309,
+"prob": 0.926,
+"burst": 46
+},
+{
+"w": "the",
+"start": 232.631,
+"end": 232.772,
+"prob": 0.946,
+"burst": 47
+},
+{
+"w": "least",
+"start": 232.852,
+"end": 233.213,
+"prob": 0.955,
+"burst": 47
+},
+{
+"w": "of",
+"start": 233.334,
+"end": 233.434,
+"prob": 0.879,
+"burst": 47
+},
+{
+"w": "it",
+"start": 233.534,
+"end": 233.615,
+"prob": 0.704,
+"burst": 47
+},
+{
+"w": "cut",
+"start": 233.976,
+"end": 234.197,
+"prob": 0.887,
+"burst": 47
+},
+{
+"w": "into",
+"start": 234.257,
+"end": 234.478,
+"prob": 0.917,
+"burst": 47
+},
+{
+"w": "anything.",
+"start": 234.578,
+"end": 234.939,
+"prob": 0.858,
+"burst": 47
+},
+{
+"w": "And",
+"start": 239.8,
+"end": 239.901,
+"prob": 0.797,
+"burst": 48
+},
+{
+"w": "he's",
+"start": 239.941,
+"end": 240.162,
+"prob": 0.698,
+"burst": 48
+},
+{
+"w": "not",
+"start": 240.202,
+"end": 240.362,
+"prob": 0.919,
+"burst": 48
+},
+{
+"w": "even",
+"start": 240.443,
+"end": 240.603,
+"prob": 0.78,
+"burst": 48
+},
+{
+"w": "the",
+"start": 240.643,
+"end": 240.744,
+"prob": 0.835,
+"burst": 48
+},
+{
+"w": "strangest",
+"start": 240.784,
+"end": 241.205,
+"prob": 0.903,
+"burst": 48
+},
+{
+"w": "one,",
+"start": 241.306,
+"end": 241.406,
+"prob": 0.958,
+"burst": 48
+},
+{
+"w": "we",
+"start": 241.426,
+"end": 241.546,
+"prob": 0.842,
+"burst": 48
+},
+{
+"w": "have",
+"start": 241.566,
+"end": 241.707,
+"prob": 0.885,
+"burst": 48
+},
+{
+"w": "just",
+"start": 241.847,
+"end": 242.068,
+"prob": 0.754,
+"burst": 48
+},
+{
+"w": "started.",
+"start": 242.128,
+"end": 242.51,
+"prob": 0.907,
+"burst": 48
+},
+{
+"w": "Archetype",
+"start": 244.361,
+"end": 244.743,
+"prob": 0.79,
+"burst": 49
+},
+{
+"w": "two,",
+"start": 244.783,
+"end": 245.024,
+"prob": 0.931,
+"burst": 49
+},
+{
+"w": "the",
+"start": 245.426,
+"end": 245.547,
+"prob": 0.915,
+"burst": 49
+},
+{
+"w": "buyer.",
+"start": 245.587,
+"end": 245.969,
+"prob": 0.884,
+"burst": 49
+},
+{
+"w": "N3on.",
+"start": 250.235,
+"end": 250.564,
+"prob": 0.953,
+"burst": 51,
+"fixed": true
+},
+{
+"w": "1.19",
+"start": 250.9,
+"end": 251.96,
+"prob": 0.954,
+"burst": 52,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 251.96,
+"end": 252.36,
+"prob": 0.667,
+"burst": 52,
+"unaligned": true
+},
+{
+"w": "subs.",
+"start": 252.36,
+"end": 252.58,
+"prob": 0.956,
+"burst": 52,
+"unaligned": true
+},
+{
+"w": "Shorts",
+"start": 254.67,
+"end": 255.05,
+"prob": 0.785,
+"burst": 53,
+"unaligned": true
+},
+{
+"w": "doing",
+"start": 255.05,
+"end": 255.25,
+"prob": 0.977,
+"burst": 53,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 255.25,
+"end": 255.53,
+"prob": 0.879,
+"burst": 53,
+"unaligned": true
+},
+{
+"w": "40,000.",
+"start": 255.53,
+"end": 256.23,
+"prob": 0.843,
+"burst": 53,
+"unaligned": true
+},
+{
+"w": "Videos",
+"start": 256.99,
+"end": 257.35,
+"prob": 0.546,
+"burst": 54,
+"fixed": true
+},
+{
+"w": "30",
+"start": 257.35,
+"end": 257.71,
+"prob": 0.546,
+"burst": 54,
+"fixed": true
+},
+{
+"w": "to",
+"start": 257.71,
+"end": 258.07,
+"prob": 0.546,
+"burst": 54,
+"fixed": true
+},
+{
+"w": "80,000.",
+"start": 258.07,
+"end": 258.43,
+"prob": 0.546,
+"burst": 54,
+"fixed": true
+},
+{
+"w": "Looks",
+"start": 260.211,
+"end": 260.411,
+"prob": 0.782,
+"burst": 55
+},
+{
+"w": "like",
+"start": 260.471,
+"end": 260.632,
+"prob": 0.882,
+"burst": 55
+},
+{
+"w": "a",
+"start": 260.692,
+"end": 260.712,
+"prob": 0.998,
+"burst": 55
+},
+{
+"w": "guy",
+"start": 260.752,
+"end": 260.933,
+"prob": 0.996,
+"burst": 55
+},
+{
+"w": "who",
+"start": 260.973,
+"end": 261.093,
+"prob": 0.843,
+"burst": 55
+},
+{
+"w": "is",
+"start": 261.174,
+"end": 261.254,
+"prob": 0.736,
+"burst": 55
+},
+{
+"w": "struggling,",
+"start": 261.294,
+"end": 261.796,
+"prob": 0.89,
+"burst": 55
+},
+{
+"w": "EXCEPT",
+"start": 262.377,
+"end": 262.859,
+"prob": 0.991,
+"burst": 55
+},
+{
+"w": "His",
+"start": 264.58,
+"end": 264.681,
+"prob": 0.908,
+"burst": 56
+},
+{
+"w": "team",
+"start": 264.761,
+"end": 265.022,
+"prob": 0.862,
+"burst": 56
+},
+{
+"w": "showed",
+"start": 265.082,
+"end": 265.343,
+"prob": 0.83,
+"burst": 56
+},
+{
+"w": "Business",
+"start": 265.423,
+"end": 265.765,
+"prob": 0.848,
+"burst": 56
+},
+{
+"w": "Insider",
+"start": 265.805,
+"end": 266.286,
+"prob": 0.872,
+"burst": 56
+},
+{
+"w": "the",
+"start": 266.367,
+"end": 266.487,
+"prob": 0.84,
+"burst": 56
+},
+{
+"w": "documents.",
+"start": 266.527,
+"end": 267.069,
+"prob": 0.878,
+"burst": 56
+},
+{
+"w": "$1.4",
+"start": 267.42,
+"end": 268.16,
+"prob": 0.722,
+"burst": 57,
+"unaligned": true
+},
+{
+"w": "million,",
+"start": 268.16,
+"end": 268.42,
+"prob": 0.671,
+"burst": 57,
+"unaligned": true
+},
+{
+"w": "303",
+"start": 268.82,
+"end": 270.32,
+"prob": 0.962,
+"burst": 57,
+"unaligned": true
+},
+{
+"w": "clippers.",
+"start": 270.32,
+"end": 270.98,
+"prob": 0.878,
+"burst": 57,
+"unaligned": true
+},
+{
+"w": "five",
+"start": 272.38,
+"end": 272.72,
+"prob": 0.418,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "weeks,",
+"start": 272.72,
+"end": 273.16,
+"prob": 0.987,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "$40",
+"start": 273.34,
+"end": 274.2,
+"prob": 0.862,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "per",
+"start": 274.2,
+"end": 274.4,
+"prob": 0.907,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "100,000",
+"start": 274.4,
+"end": 275.62,
+"prob": 0.658,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "views,",
+"start": 275.62,
+"end": 276.82,
+"prob": 0.951,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 277.04,
+"end": 277.28,
+"prob": 0.985,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "network",
+"start": 277.28,
+"end": 277.64,
+"prob": 0.995,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "of",
+"start": 277.64,
+"end": 277.92,
+"prob": 0.999,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 277.92,
+"end": 278.28,
+"prob": 0.989,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 278.28,
+"end": 278.54,
+"prob": 0.719,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "thousand",
+"start": 278.54,
+"end": 279.06,
+"prob": 0.93,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "people.",
+"start": 279.06,
+"end": 279.42,
+"prob": 0.999,
+"burst": 58,
+"unaligned": true
+},
+{
+"w": "And",
+"start": 281.633,
+"end": 281.715,
+"prob": 0.532,
+"burst": 59
+},
+{
+"w": "I'm",
+"start": 281.735,
+"end": 281.796,
+"prob": 0.001,
+"burst": 59
+},
+{
+"w": "-",
+"start": 281.817,
+"end": 281.837,
+"prob": 0.892,
+"burst": 59
+},
+{
+"w": "In",
+"start": 283.051,
+"end": 283.132,
+"prob": 0.349,
+"burst": 60
+},
+{
+"w": "about",
+"start": 283.172,
+"end": 283.415,
+"prob": 0.925,
+"burst": 60
+},
+{
+"w": "one",
+"start": 283.556,
+"end": 283.697,
+"prob": 0.733,
+"burst": 60
+},
+{
+"w": "stream",
+"start": 283.718,
+"end": 284.02,
+"prob": 0.775,
+"burst": 60
+},
+{
+"w": "he",
+"start": 284.121,
+"end": 284.222,
+"prob": 0.853,
+"burst": 60
+},
+{
+"w": "said",
+"start": 284.283,
+"end": 284.485,
+"prob": 0.89,
+"burst": 60
+},
+{
+"w": "this",
+"start": 284.545,
+"end": 284.727,
+"prob": 0.998,
+"burst": 60
+},
+{
+"w": "No",
+"start": 289.66,
+"end": 289.821,
+"prob": 0.903,
+"burst": 61
+},
+{
+"w": "one",
+"start": 289.901,
+"end": 290.001,
+"prob": 0.802,
+"burst": 61
+},
+{
+"w": "actually",
+"start": 290.081,
+"end": 290.382,
+"prob": 0.814,
+"burst": 61
+},
+{
+"w": "watched",
+"start": 290.422,
+"end": 290.743,
+"prob": 0.701,
+"burst": 61
+},
+{
+"w": "the",
+"start": 290.783,
+"end": 290.903,
+"prob": 0.761,
+"burst": 61
+},
+{
+"w": "stream,",
+"start": 290.924,
+"end": 291.224,
+"prob": 0.795,
+"burst": 61
+},
+{
+"w": "the",
+"start": 291.665,
+"end": 291.746,
+"prob": 0.927,
+"burst": 61
+},
+{
+"w": "clips",
+"start": 291.866,
+"end": 292.307,
+"prob": 0.812,
+"burst": 61
+},
+{
+"w": "made",
+"start": 292.427,
+"end": 292.648,
+"prob": 0.787,
+"burst": 61
+},
+{
+"w": "it",
+"start": 292.688,
+"end": 292.748,
+"prob": 0.747,
+"burst": 61
+},
+{
+"w": "look",
+"start": 292.828,
+"end": 293.029,
+"prob": 0.883,
+"burst": 61
+},
+{
+"w": "huge.",
+"start": 293.049,
+"end": 293.39,
+"prob": 0.944,
+"burst": 61
+},
+{
+"w": "His",
+"start": 295.721,
+"end": 295.861,
+"prob": 0.752,
+"burst": 62
+},
+{
+"w": "own",
+"start": 296.022,
+"end": 296.163,
+"prob": 0.907,
+"burst": 62
+},
+{
+"w": "accounts",
+"start": 296.243,
+"end": 296.705,
+"prob": 0.896,
+"burst": 62
+},
+{
+"w": "don't",
+"start": 297.007,
+"end": 297.268,
+"prob": 0.799,
+"burst": 62
+},
+{
+"w": "matter.",
+"start": 297.308,
+"end": 297.629,
+"prob": 0.966,
+"burst": 62
+},
+{
+"w": "He",
+"start": 298.071,
+"end": 298.212,
+"prob": 0.944,
+"burst": 63
+},
+{
+"w": "bought",
+"start": 298.292,
+"end": 298.614,
+"prob": 0.526,
+"burst": 63
+},
+{
+"w": "the",
+"start": 298.675,
+"end": 298.796,
+"prob": 0.942,
+"burst": 63
+},
+{
+"w": "machine.",
+"start": 298.836,
+"end": 299.279,
+"prob": 0.975,
+"burst": 63
+},
+{
+"w": "and",
+"start": 303.172,
+"end": 303.273,
+"prob": 0.743,
+"burst": 64
+},
+{
+"w": "Adin's",
+"start": 303.455,
+"end": 303.859,
+"prob": 0.693,
+"burst": 64,
+"fixed": true
+},
+{
+"w": "in",
+"start": 304.102,
+"end": 304.183,
+"prob": 0.988,
+"burst": 64
+},
+{
+"w": "this",
+"start": 304.223,
+"end": 304.405,
+"prob": 0.856,
+"burst": 64
+},
+{
+"w": "too.",
+"start": 304.466,
+"end": 304.708,
+"prob": 0.916,
+"burst": 64
+},
+{
+"w": "That",
+"start": 306.12,
+"end": 306.4,
+"prob": 0.754,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "network",
+"start": 306.4,
+"end": 306.82,
+"prob": 0.935,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "was",
+"start": 306.82,
+"end": 307.16,
+"prob": 0.986,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "reportedly",
+"start": 307.16,
+"end": 307.54,
+"prob": 0.98,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "built",
+"start": 307.54,
+"end": 307.94,
+"prob": 0.959,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "half",
+"start": 307.94,
+"end": 308.24,
+"prob": 0.71,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "with",
+"start": 308.24,
+"end": 308.52,
+"prob": 0.982,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "Adin.",
+"start": 308.52,
+"end": 308.84,
+"prob": 0.798,
+"burst": 65,
+"fixed": true
+},
+{
+"w": "Adin's",
+"start": 308.94,
+"end": 309.58,
+"prob": 0.966,
+"burst": 65,
+"fixed": true
+},
+{
+"w": "own",
+"start": 309.58,
+"end": 309.8,
+"prob": 0.953,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "Instagram,",
+"start": 309.8,
+"end": 310.22,
+"prob": 0.816,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "6",
+"start": 310.46,
+"end": 310.9,
+"prob": 0.895,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 310.9,
+"end": 311.3,
+"prob": 0.895,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "followers.",
+"start": 311.3,
+"end": 311.6,
+"prob": 0.995,
+"burst": 65,
+"unaligned": true
+},
+{
+"w": "Two",
+"start": 313.201,
+"end": 313.846,
+"prob": 0.817,
+"burst": 66
+},
+{
+"w": "reels",
+"start": 314.23,
+"end": 314.774,
+"prob": 0.829,
+"burst": 66
+},
+{
+"w": "this",
+"start": 314.835,
+"end": 315.036,
+"prob": 0.97,
+"burst": 66
+},
+{
+"w": "year.",
+"start": 315.077,
+"end": 315.278,
+"prob": 0.934,
+"burst": 66
+},
+{
+"w": "By",
+"start": 324.74,
+"end": 324.861,
+"prob": 0.81,
+"burst": 67
+},
+{
+"w": "the",
+"start": 324.881,
+"end": 324.941,
+"prob": 0.555,
+"burst": 67
+},
+{
+"w": "way,",
+"start": 324.961,
+"end": 325.041,
+"prob": 0.155,
+"burst": 67
+},
+{
+"w": "I",
+"start": 325.161,
+"end": 325.222,
+"prob": 0.994,
+"burst": 67
+},
+{
+"w": "have",
+"start": 325.262,
+"end": 325.442,
+"prob": 0.84,
+"burst": 67
+},
+{
+"w": "done",
+"start": 325.482,
+"end": 325.663,
+"prob": 0.799,
+"burst": 67
+},
+{
+"w": "a",
+"start": 325.763,
+"end": 325.823,
+"prob": 0.646,
+"burst": 67
+},
+{
+"w": "whole",
+"start": 325.903,
+"end": 326.224,
+"prob": 0.867,
+"burst": 67
+},
+{
+"w": "video",
+"start": 326.364,
+"end": 326.665,
+"prob": 0.732,
+"burst": 67
+},
+{
+"w": "on",
+"start": 326.785,
+"end": 326.865,
+"prob": 0.981,
+"burst": 67
+},
+{
+"w": "the",
+"start": 326.926,
+"end": 327.026,
+"prob": 0.991,
+"burst": 67
+},
+{
+"w": "fake",
+"start": 327.146,
+"end": 327.467,
+"prob": 0.902,
+"burst": 67
+},
+{
+"w": "viewer",
+"start": 327.607,
+"end": 327.968,
+"prob": 0.86,
+"burst": 67
+},
+{
+"w": "bot",
+"start": 328.028,
+"end": 328.309,
+"prob": 0.729,
+"burst": 67
+},
+{
+"w": "situation",
+"start": 328.329,
+"end": 328.91,
+"prob": 0.867,
+"burst": 67
+},
+{
+"w": "with",
+"start": 328.971,
+"end": 329.151,
+"prob": 0.908,
+"burst": 67
+},
+{
+"w": "all",
+"start": 329.351,
+"end": 329.472,
+"prob": 0.834,
+"burst": 67
+},
+{
+"w": "these",
+"start": 329.512,
+"end": 329.652,
+"prob": 0.949,
+"burst": 67
+},
+{
+"w": "streamers",
+"start": 329.672,
+"end": 330.113,
+"prob": 0.707,
+"burst": 67
+},
+{
+"w": "that",
+"start": 330.354,
+"end": 330.514,
+"prob": 0.909,
+"burst": 67
+},
+{
+"w": "will",
+"start": 330.534,
+"end": 330.715,
+"prob": 0.92,
+"burst": 67
+},
+{
+"w": "be",
+"start": 330.735,
+"end": 330.835,
+"prob": 0.751,
+"burst": 67
+},
+{
+"w": "linked",
+"start": 330.915,
+"end": 331.196,
+"prob": 0.958,
+"burst": 67
+},
+{
+"w": "I",
+"start": 331.597,
+"end": 331.657,
+"prob": 0.668,
+"burst": 67
+},
+{
+"w": "think",
+"start": 331.697,
+"end": 331.918,
+"prob": 0.961,
+"burst": 67
+},
+{
+"w": "it",
+"start": 331.958,
+"end": 331.998,
+"prob": 0.963,
+"burst": 67
+},
+{
+"w": "is",
+"start": 332.299,
+"end": 332.379,
+"prob": 0.763,
+"burst": 67
+},
+{
+"w": "here",
+"start": 332.459,
+"end": 332.659,
+"prob": 0.848,
+"burst": 67
+},
+{
+"w": "but",
+"start": 337.241,
+"end": 337.442,
+"prob": 0.87,
+"burst": 68
+},
+{
+"w": "buying",
+"start": 337.703,
+"end": 338.307,
+"prob": 0.779,
+"burst": 68
+},
+{
+"w": "it",
+"start": 338.548,
+"end": 338.649,
+"prob": 0.344,
+"burst": 68
+},
+{
+"w": "is",
+"start": 338.669,
+"end": 338.709,
+"prob": 0.002,
+"burst": 68
+},
+{
+"w": "one",
+"start": 338.91,
+"end": 339.031,
+"prob": 0.765,
+"burst": 68
+},
+{
+"w": "way",
+"start": 339.071,
+"end": 339.252,
+"prob": 0.921,
+"burst": 68
+},
+{
+"w": "but",
+"start": 339.333,
+"end": 339.534,
+"prob": 0.887,
+"burst": 68
+},
+{
+"w": "the",
+"start": 339.775,
+"end": 339.856,
+"prob": 0.984,
+"burst": 68
+},
+{
+"w": "next",
+"start": 339.896,
+"end": 340.097,
+"prob": 0.997,
+"burst": 68
+},
+{
+"w": "one",
+"start": 340.238,
+"end": 340.338,
+"prob": 0.942,
+"burst": 68
+},
+{
+"w": "Didn't",
+"start": 340.913,
+"end": 341.137,
+"prob": 0.752,
+"burst": 69
+},
+{
+"w": "even",
+"start": 341.178,
+"end": 341.341,
+"prob": 0.854,
+"burst": 69
+},
+{
+"w": "do",
+"start": 341.402,
+"end": 341.524,
+"prob": 0.883,
+"burst": 69
+},
+{
+"w": "that.",
+"start": 341.565,
+"end": 341.728,
+"prob": 0.968,
+"burst": 69
+},
+{
+"w": "So",
+"start": 345.611,
+"end": 345.732,
+"prob": 0.992,
+"burst": 70
+},
+{
+"w": "buying",
+"start": 345.792,
+"end": 346.075,
+"prob": 0.808,
+"burst": 70
+},
+{
+"w": "it",
+"start": 346.155,
+"end": 346.236,
+"prob": 0.73,
+"burst": 70
+},
+{
+"w": "is",
+"start": 346.357,
+"end": 346.458,
+"prob": 0.682,
+"burst": 70
+},
+{
+"w": "one",
+"start": 346.579,
+"end": 346.68,
+"prob": 0.923,
+"burst": 70
+},
+{
+"w": "way",
+"start": 346.7,
+"end": 346.882,
+"prob": 0.91,
+"burst": 70
+},
+{
+"w": "but",
+"start": 346.942,
+"end": 347.083,
+"prob": 0.875,
+"burst": 70
+},
+{
+"w": "the",
+"start": 347.124,
+"end": 347.204,
+"prob": 0.871,
+"burst": 70
+},
+{
+"w": "next",
+"start": 347.265,
+"end": 347.426,
+"prob": 0.948,
+"burst": 70
+},
+{
+"w": "guy",
+"start": 347.467,
+"end": 347.648,
+"prob": 0.981,
+"burst": 70
+},
+{
+"w": "Doesn't",
+"start": 348.161,
+"end": 348.444,
+"prob": 0.759,
+"burst": 71
+},
+{
+"w": "even",
+"start": 348.504,
+"end": 348.666,
+"prob": 0.9,
+"burst": 71
+},
+{
+"w": "have",
+"start": 348.706,
+"end": 348.907,
+"prob": 0.994,
+"burst": 71
+},
+{
+"w": "to.",
+"start": 348.948,
+"end": 349.069,
+"prob": 0.964,
+"burst": 71
+},
+{
+"w": "Archetype",
+"start": 355.22,
+"end": 355.76,
+"prob": 0.961,
+"burst": 72,
+"unaligned": true
+},
+{
+"w": "3,",
+"start": 355.76,
+"end": 355.94,
+"prob": 0.719,
+"burst": 72,
+"unaligned": true
+},
+{
+"w": "The",
+"start": 356.12,
+"end": 356.48,
+"prob": 0.394,
+"burst": 72,
+"unaligned": true
+},
+{
+"w": "Sniper",
+"start": 356.48,
+"end": 357.02,
+"prob": 0.957,
+"burst": 72,
+"unaligned": true
+},
+{
+"w": "Back",
+"start": 360.472,
+"end": 360.754,
+"prob": 0.999,
+"burst": 73
+},
+{
+"w": "to",
+"start": 360.834,
+"end": 360.975,
+"prob": 0.978,
+"burst": 73
+},
+{
+"w": "speed.",
+"start": 361.036,
+"end": 361.459,
+"prob": 0.953,
+"burst": 73
+},
+{
+"w": "Shorts,",
+"start": 363.03,
+"end": 363.57,
+"prob": 0.845,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 363.61,
+"end": 363.77,
+"prob": 0.966,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "middle",
+"start": 363.77,
+"end": 364.03,
+"prob": 0.996,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "one",
+"start": 364.03,
+"end": 364.21,
+"prob": 0.993,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "does",
+"start": 364.21,
+"end": 364.41,
+"prob": 0.715,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 364.41,
+"end": 364.67,
+"prob": 0.985,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "7",
+"start": 364.67,
+"end": 365.11,
+"prob": 0.82,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "million.",
+"start": 365.11,
+"end": 365.53,
+"prob": 0.922,
+"burst": 74,
+"unaligned": true
+},
+{
+"w": "One",
+"start": 366.18,
+"end": 366.48,
+"prob": 0.616,
+"burst": 75,
+"unaligned": true
+},
+{
+"w": "did",
+"start": 366.48,
+"end": 366.66,
+"prob": 0.946,
+"burst": 75,
+"unaligned": true
+},
+{
+"w": "28",
+"start": 366.66,
+"end": 367.42,
+"prob": 0.646,
+"burst": 75,
+"unaligned": true
+},
+{
+"w": "million,",
+"start": 367.42,
+"end": 367.78,
+"prob": 0.853,
+"burst": 75,
+"unaligned": true
+},
+{
+"w": "He",
+"start": 368.3,
+"end": 368.46,
+"prob": 0.671,
+"burst": 76,
+"unaligned": true
+},
+{
+"w": "posts",
+"start": 368.46,
+"end": 368.72,
+"prob": 0.762,
+"burst": 76,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 368.72,
+"end": 369.28,
+"prob": 0.981,
+"burst": 76,
+"unaligned": true
+},
+{
+"w": "11",
+"start": 369.28,
+"end": 369.66,
+"prob": 0.836,
+"burst": 76,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 369.66,
+"end": 370.0,
+"prob": 0.946,
+"burst": 76,
+"unaligned": true
+},
+{
+"w": "month.",
+"start": 370.0,
+"end": 370.24,
+"prob": 0.995,
+"burst": 76,
+"unaligned": true
+},
+{
+"w": "Instagram",
+"start": 371.12,
+"end": 371.6,
+"prob": 0.929,
+"burst": 77,
+"unaligned": true
+},
+{
+"w": "55",
+"start": 371.6,
+"end": 371.88,
+"prob": 0.513,
+"burst": 77,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 371.88,
+"end": 372.46,
+"prob": 0.576,
+"burst": 77,
+"unaligned": true
+},
+{
+"w": "followers",
+"start": 372.46,
+"end": 372.8,
+"prob": 0.973,
+"burst": 77,
+"unaligned": true
+},
+{
+"w": "65",
+"start": 374.02,
+"end": 374.7,
+"prob": 0.874,
+"burst": 78,
+"unaligned": true
+},
+{
+"w": "posts.",
+"start": 374.7,
+"end": 375.26,
+"prob": 0.92,
+"burst": 78,
+"unaligned": true
+},
+{
+"w": "Ever.",
+"start": 376.147,
+"end": 376.334,
+"prob": 0.969,
+"burst": 79
+},
+{
+"w": "So",
+"start": 379.68,
+"end": 379.801,
+"prob": 0.847,
+"burst": 80
+},
+{
+"w": "how",
+"start": 379.861,
+"end": 380.021,
+"prob": 0.995,
+"burst": 80
+},
+{
+"w": "is",
+"start": 380.141,
+"end": 380.202,
+"prob": 0.998,
+"burst": 80
+},
+{
+"w": "he",
+"start": 380.242,
+"end": 380.382,
+"prob": 0.738,
+"burst": 80
+},
+{
+"w": "the",
+"start": 380.442,
+"end": 380.542,
+"prob": 0.949,
+"burst": 80
+},
+{
+"w": "biggest",
+"start": 380.663,
+"end": 380.984,
+"prob": 0.939,
+"burst": 80
+},
+{
+"w": "streamer",
+"start": 381.004,
+"end": 381.324,
+"prob": 0.68,
+"burst": 80
+},
+{
+"w": "alive",
+"start": 381.405,
+"end": 381.685,
+"prob": 0.899,
+"burst": 80
+},
+{
+"w": "while",
+"start": 382.066,
+"end": 382.247,
+"prob": 0.899,
+"burst": 80
+},
+{
+"w": "he",
+"start": 382.287,
+"end": 382.367,
+"prob": 0.978,
+"burst": 80
+},
+{
+"w": "is",
+"start": 382.447,
+"end": 382.507,
+"prob": 0.818,
+"burst": 80
+},
+{
+"w": "barely",
+"start": 382.608,
+"end": 382.989,
+"prob": 0.935,
+"burst": 80
+},
+{
+"w": "posting?",
+"start": 383.049,
+"end": 383.45,
+"prob": 0.761,
+"burst": 80
+},
+{
+"w": "One",
+"start": 386.87,
+"end": 387.21,
+"prob": 0.217,
+"burst": 81,
+"fixed": true
+},
+{
+"w": "30-day",
+"start": 387.21,
+"end": 387.55,
+"prob": 0.217,
+"burst": 81,
+"fixed": true
+},
+{
+"w": "count",
+"start": 387.55,
+"end": 387.89,
+"prob": 0.217,
+"burst": 81,
+"fixed": true
+},
+{
+"w": "4835",
+"start": 388.8,
+"end": 390.58,
+"prob": 0.799,
+"burst": 82,
+"unaligned": true
+},
+{
+"w": "clips",
+"start": 390.58,
+"end": 391.54,
+"prob": 0.546,
+"burst": 82,
+"unaligned": true
+},
+{
+"w": "of",
+"start": 391.54,
+"end": 391.74,
+"prob": 0.927,
+"burst": 82,
+"unaligned": true
+},
+{
+"w": "speed",
+"start": 391.74,
+"end": 392.04,
+"prob": 0.972,
+"burst": 82,
+"unaligned": true
+},
+{
+"w": "from",
+"start": 392.04,
+"end": 392.48,
+"prob": 0.952,
+"burst": 82,
+"unaligned": true
+},
+{
+"w": "1088",
+"start": 392.48,
+"end": 393.82,
+"prob": 0.785,
+"burst": 82,
+"unaligned": true
+},
+{
+"w": "from",
+"start": 394.76,
+"end": 394.98,
+"prob": 0.917,
+"burst": 83,
+"unaligned": true
+},
+{
+"w": "1087",
+"start": 394.98,
+"end": 396.12,
+"prob": 0.855,
+"burst": 83,
+"unaligned": true
+},
+{
+"w": "different",
+"start": 396.12,
+"end": 397.1,
+"prob": 0.965,
+"burst": 83,
+"unaligned": true
+},
+{
+"w": "accounts",
+"start": 397.1,
+"end": 397.46,
+"prob": 0.987,
+"burst": 83,
+"unaligned": true
+},
+{
+"w": "over",
+"start": 399.002,
+"end": 399.223,
+"prob": 0.898,
+"burst": 84
+},
+{
+"w": "a",
+"start": 399.384,
+"end": 399.425,
+"prob": 0.966,
+"burst": 84
+},
+{
+"w": "BILLION",
+"start": 399.827,
+"end": 400.371,
+"prob": 0.945,
+"burst": 84
+},
+{
+"w": "YouTube",
+"start": 400.794,
+"end": 401.237,
+"prob": 0.598,
+"burst": 84
+},
+{
+"w": "views.",
+"start": 401.298,
+"end": 401.62,
+"prob": 0.932,
+"burst": 84
+},
+{
+"w": "That's",
+"start": 402.473,
+"end": 402.756,
+"prob": 0.548,
+"burst": 85,
+"fixed": true
+},
+{
+"w": "how.",
+"start": 402.756,
+"end": 403.039,
+"prob": 0.548,
+"burst": 85,
+"fixed": true
+},
+{
+"w": "Speed",
+"start": 405.2,
+"end": 405.421,
+"prob": 0.886,
+"burst": 86
+},
+{
+"w": "doesn't",
+"start": 405.461,
+"end": 405.682,
+"prob": 0.829,
+"burst": 86
+},
+{
+"w": "post",
+"start": 405.702,
+"end": 405.902,
+"prob": 0.975,
+"burst": 86
+},
+{
+"w": "consistently,",
+"start": 405.922,
+"end": 406.564,
+"prob": 0.839,
+"burst": 86
+},
+{
+"w": "a",
+"start": 406.805,
+"end": 406.865,
+"prob": 0.66,
+"burst": 86
+},
+{
+"w": "thousand",
+"start": 406.905,
+"end": 407.266,
+"prob": 0.927,
+"burst": 86
+},
+{
+"w": "other",
+"start": 407.406,
+"end": 407.627,
+"prob": 0.893,
+"burst": 86
+},
+{
+"w": "people",
+"start": 407.667,
+"end": 407.968,
+"prob": 0.853,
+"burst": 86
+},
+{
+"w": "do",
+"start": 408.028,
+"end": 408.168,
+"prob": 0.874,
+"burst": 86
+},
+{
+"w": "it",
+"start": 408.208,
+"end": 408.269,
+"prob": 0.749,
+"burst": 86
+},
+{
+"w": "for",
+"start": 408.329,
+"end": 408.509,
+"prob": 0.916,
+"burst": 86
+},
+{
+"w": "him.",
+"start": 408.549,
+"end": 408.67,
+"prob": 0.86,
+"burst": 86
+},
+{
+"w": "Some",
+"start": 409.521,
+"end": 409.683,
+"prob": 0.568,
+"burst": 87
+},
+{
+"w": "are",
+"start": 409.723,
+"end": 409.824,
+"prob": 0.511,
+"burst": 87
+},
+{
+"w": "fans,",
+"start": 409.904,
+"end": 410.207,
+"prob": 0.695,
+"burst": 87
+},
+{
+"w": "some",
+"start": 410.489,
+"end": 410.63,
+"prob": 0.56,
+"burst": 87
+},
+{
+"w": "are",
+"start": 410.671,
+"end": 410.751,
+"prob": 0.506,
+"burst": 87
+},
+{
+"w": "brand",
+"start": 410.792,
+"end": 411.033,
+"prob": 0.853,
+"burst": 87
+},
+{
+"w": "campaigns,",
+"start": 411.074,
+"end": 411.658,
+"prob": 0.771,
+"burst": 87
+},
+{
+"w": "some",
+"start": 412.632,
+"end": 412.89,
+"prob": 0.618,
+"burst": 88,
+"fixed": true
+},
+{
+"w": "are",
+"start": 412.89,
+"end": 413.149,
+"prob": 0.618,
+"burst": 88,
+"fixed": true
+},
+{
+"w": "brand",
+"start": 413.149,
+"end": 413.408,
+"prob": 0.618,
+"burst": 88,
+"fixed": true
+},
+{
+"w": "campaigns.",
+"start": 413.408,
+"end": 413.666,
+"prob": 0.618,
+"burst": 88,
+"fixed": true
+},
+{
+"w": "I",
+"start": 418.361,
+"end": 418.442,
+"prob": 0.703,
+"burst": 89
+},
+{
+"w": "found",
+"start": 418.522,
+"end": 418.743,
+"prob": 0.886,
+"burst": 89
+},
+{
+"w": "one",
+"start": 418.843,
+"end": 418.944,
+"prob": 0.691,
+"burst": 89
+},
+{
+"w": "paid",
+"start": 419.004,
+"end": 419.205,
+"prob": 0.796,
+"burst": 89
+},
+{
+"w": "for",
+"start": 419.245,
+"end": 419.406,
+"prob": 0.827,
+"burst": 89
+},
+{
+"w": "by",
+"start": 419.466,
+"end": 419.607,
+"prob": 0.756,
+"burst": 89
+},
+{
+"w": "Expedia.",
+"start": 419.707,
+"end": 420.269,
+"prob": 0.923,
+"burst": 89
+},
+{
+"w": "He",
+"start": 423.36,
+"end": 423.441,
+"prob": 0.582,
+"burst": 90
+},
+{
+"w": "doesn't",
+"start": 423.461,
+"end": 423.721,
+"prob": 0.867,
+"burst": 90
+},
+{
+"w": "even",
+"start": 423.762,
+"end": 423.922,
+"prob": 0.792,
+"burst": 90
+},
+{
+"w": "have",
+"start": 423.962,
+"end": 424.123,
+"prob": 0.922,
+"burst": 90
+},
+{
+"w": "a",
+"start": 424.163,
+"end": 424.183,
+"prob": 0.977,
+"burst": 90
+},
+{
+"w": "content",
+"start": 424.243,
+"end": 424.624,
+"prob": 0.892,
+"burst": 90
+},
+{
+"w": "machine.",
+"start": 424.644,
+"end": 424.885,
+"prob": 0.88,
+"burst": 90
+},
+{
+"w": "He",
+"start": 424.925,
+"end": 425.025,
+"prob": 0.649,
+"burst": 90
+},
+{
+"w": "has",
+"start": 425.065,
+"end": 425.246,
+"prob": 0.845,
+"burst": 90
+},
+{
+"w": "a",
+"start": 425.306,
+"end": 425.346,
+"prob": 0.499,
+"burst": 90
+},
+{
+"w": "sniper",
+"start": 425.487,
+"end": 426.008,
+"prob": 0.876,
+"burst": 90
+},
+{
+"w": "rifle.",
+"start": 426.068,
+"end": 426.389,
+"prob": 0.901,
+"burst": 90
+},
+{
+"w": "and",
+"start": 429.832,
+"end": 429.933,
+"prob": 0.889,
+"burst": 91
+},
+{
+"w": "an",
+"start": 429.973,
+"end": 430.034,
+"prob": 0.748,
+"burst": 91
+},
+{
+"w": "army",
+"start": 430.318,
+"end": 430.56,
+"prob": 0.972,
+"burst": 91
+},
+{
+"w": "reloading",
+"start": 430.641,
+"end": 431.148,
+"prob": 0.939,
+"burst": 91
+},
+{
+"w": "it.",
+"start": 431.188,
+"end": 431.249,
+"prob": 0.982,
+"burst": 91
+},
+{
+"w": "By",
+"start": 437.842,
+"end": 437.944,
+"prob": 0.996,
+"burst": 92
+},
+{
+"w": "the",
+"start": 437.985,
+"end": 438.066,
+"prob": 0.916,
+"burst": 92
+},
+{
+"w": "way,",
+"start": 438.087,
+"end": 438.189,
+"prob": 0.156,
+"burst": 92
+},
+{
+"w": "comment...",
+"start": 438.209,
+"end": 438.698,
+"prob": 0.731,
+"burst": 92
+},
+{
+"w": "By",
+"start": 439.601,
+"end": 439.701,
+"prob": 0.706,
+"burst": 93
+},
+{
+"w": "the",
+"start": 439.721,
+"end": 439.801,
+"prob": 0.86,
+"burst": 93
+},
+{
+"w": "way,",
+"start": 439.821,
+"end": 439.902,
+"prob": 0.058,
+"burst": 93
+},
+{
+"w": "comment",
+"start": 439.922,
+"end": 440.303,
+"prob": 0.943,
+"burst": 93
+},
+{
+"w": "if",
+"start": 440.604,
+"end": 440.685,
+"prob": 0.96,
+"burst": 93
+},
+{
+"w": "you",
+"start": 440.725,
+"end": 440.845,
+"prob": 0.985,
+"burst": 93
+},
+{
+"w": "think",
+"start": 440.885,
+"end": 441.086,
+"prob": 0.992,
+"burst": 93
+},
+{
+"w": "this",
+"start": 441.186,
+"end": 441.347,
+"prob": 0.872,
+"burst": 93
+},
+{
+"w": "is",
+"start": 441.427,
+"end": 441.488,
+"prob": 0.976,
+"burst": 93
+},
+{
+"w": "too",
+"start": 441.568,
+"end": 441.769,
+"prob": 0.803,
+"burst": 93
+},
+{
+"w": "low.",
+"start": 441.809,
+"end": 442.01,
+"prob": 0.937,
+"burst": 93
+},
+{
+"w": "I'll",
+"start": 443.822,
+"end": 443.963,
+"prob": 0.882,
+"burst": 94
+},
+{
+"w": "explain",
+"start": 443.983,
+"end": 444.367,
+"prob": 0.817,
+"burst": 94
+},
+{
+"w": "at",
+"start": 444.407,
+"end": 444.447,
+"prob": 0.218,
+"burst": 94
+},
+{
+"w": "the",
+"start": 444.508,
+"end": 444.589,
+"prob": 0.881,
+"burst": 94
+},
+{
+"w": "end",
+"start": 444.73,
+"end": 444.912,
+"prob": 0.735,
+"burst": 94
+},
+{
+"w": "why",
+"start": 444.993,
+"end": 445.215,
+"prob": 0.839,
+"burst": 94
+},
+{
+"w": "it",
+"start": 445.275,
+"end": 445.336,
+"prob": 0.945,
+"burst": 94
+},
+{
+"w": "isn't.",
+"start": 445.437,
+"end": 445.639,
+"prob": 0.841,
+"burst": 94
+},
+{
+"w": "Archetype",
+"start": 449.88,
+"end": 450.36,
+"prob": 0.911,
+"burst": 95,
+"unaligned": true
+},
+{
+"w": "4,",
+"start": 450.36,
+"end": 450.52,
+"prob": 0.718,
+"burst": 95,
+"unaligned": true
+},
+{
+"w": "The",
+"start": 450.7,
+"end": 450.92,
+"prob": 0.646,
+"burst": 95,
+"unaligned": true
+},
+{
+"w": "Specialist.",
+"start": 450.92,
+"end": 451.54,
+"prob": 0.814,
+"burst": 95,
+"unaligned": true
+},
+{
+"w": "These",
+"start": 455.566,
+"end": 455.83,
+"prob": 0.902,
+"burst": 96
+},
+{
+"w": "three.",
+"start": 455.932,
+"end": 456.278,
+"prob": 0.934,
+"burst": 96
+},
+{
+"w": "are",
+"start": 456.791,
+"end": 456.931,
+"prob": 0.237,
+"burst": 97
+},
+{
+"w": "world",
+"start": 457.032,
+"end": 457.353,
+"prob": 0.709,
+"burst": 97
+},
+{
+"w": "class",
+"start": 457.393,
+"end": 457.774,
+"prob": 0.909,
+"burst": 97
+},
+{
+"w": "at",
+"start": 457.975,
+"end": 458.055,
+"prob": 0.784,
+"burst": 97
+},
+{
+"w": "exactly",
+"start": 458.216,
+"end": 458.738,
+"prob": 0.878,
+"burst": 97
+},
+{
+"w": "one",
+"start": 458.958,
+"end": 459.079,
+"prob": 0.787,
+"burst": 97
+},
+{
+"w": "thing.",
+"start": 459.139,
+"end": 459.34,
+"prob": 0.962,
+"burst": 97
+},
+{
+"w": "Penguinz0.",
+"start": 461.641,
+"end": 462.328,
+"prob": 0.848,
+"burst": 98,
+"fixed": true
+},
+{
+"w": "two",
+"start": 464.39,
+"end": 464.57,
+"prob": 0.329,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "or",
+"start": 464.57,
+"end": 464.75,
+"prob": 0.976,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "three",
+"start": 464.75,
+"end": 464.93,
+"prob": 0.998,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "videos",
+"start": 464.93,
+"end": 465.39,
+"prob": 0.994,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 465.39,
+"end": 465.59,
+"prob": 0.991,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "day",
+"start": 465.59,
+"end": 465.75,
+"prob": 0.999,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "1.2",
+"start": 465.75,
+"end": 467.05,
+"prob": 0.57,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 467.05,
+"end": 467.25,
+"prob": 0.953,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "1.8",
+"start": 467.25,
+"end": 468.15,
+"prob": 0.996,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 468.15,
+"end": 468.71,
+"prob": 0.986,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "each",
+"start": 468.71,
+"end": 469.21,
+"prob": 0.996,
+"burst": 99,
+"unaligned": true
+},
+{
+"w": "That's",
+"start": 473.831,
+"end": 474.092,
+"prob": 0.958,
+"burst": 100
+},
+{
+"w": "longs,",
+"start": 474.253,
+"end": 474.675,
+"prob": 0.964,
+"burst": 100
+},
+{
+"w": "not",
+"start": 474.796,
+"end": 474.977,
+"prob": 0.999,
+"burst": 100
+},
+{
+"w": "shorts.",
+"start": 475.057,
+"end": 475.499,
+"prob": 0.918,
+"burst": 100
+},
+{
+"w": "He's",
+"start": 478.48,
+"end": 478.72,
+"prob": 0.794,
+"burst": 101,
+"unaligned": true
+},
+{
+"w": "uploaded",
+"start": 478.72,
+"end": 479.02,
+"prob": 0.958,
+"burst": 101,
+"unaligned": true
+},
+{
+"w": "10",
+"start": 479.02,
+"end": 479.46,
+"prob": 0.712,
+"burst": 101,
+"unaligned": true
+},
+{
+"w": "shorts.",
+"start": 479.46,
+"end": 479.88,
+"prob": 0.8,
+"burst": 101,
+"unaligned": true
+},
+{
+"w": "ever",
+"start": 480.634,
+"end": 480.817,
+"prob": 0.971,
+"burst": 102
+},
+{
+"w": "Last",
+"start": 482.84,
+"end": 483.28,
+"prob": 0.844,
+"burst": 103,
+"unaligned": true
+},
+{
+"w": "one",
+"start": 483.28,
+"end": 483.5,
+"prob": 0.983,
+"burst": 103,
+"unaligned": true
+},
+{
+"w": "was",
+"start": 483.5,
+"end": 483.74,
+"prob": 0.967,
+"burst": 103,
+"unaligned": true
+},
+{
+"w": "March",
+"start": 483.74,
+"end": 484.02,
+"prob": 0.874,
+"burst": 103,
+"unaligned": true
+},
+{
+"w": "2025.",
+"start": 484.02,
+"end": 484.38,
+"prob": 0.921,
+"burst": 103,
+"unaligned": true
+},
+{
+"w": "Jynxzi.",
+"start": 486.522,
+"end": 486.948,
+"prob": 0.86,
+"burst": 104,
+"fixed": true
+},
+{
+"w": "streams",
+"start": 487.81,
+"end": 488.23,
+"prob": 0.451,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "around",
+"start": 488.23,
+"end": 488.39,
+"prob": 0.973,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "280",
+"start": 488.39,
+"end": 489.05,
+"prob": 0.994,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "hours",
+"start": 489.05,
+"end": 489.71,
+"prob": 0.936,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 489.71,
+"end": 489.91,
+"prob": 0.991,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "month",
+"start": 489.91,
+"end": 490.11,
+"prob": 0.999,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "his",
+"start": 490.11,
+"end": 490.33,
+"prob": 0.755,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "shorts",
+"start": 490.33,
+"end": 490.63,
+"prob": 0.997,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "were",
+"start": 490.63,
+"end": 490.81,
+"prob": 0.995,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "doing",
+"start": 490.81,
+"end": 491.09,
+"prob": 1.0,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "almost",
+"start": 491.09,
+"end": 491.45,
+"prob": 0.994,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 491.45,
+"end": 491.71,
+"prob": 0.996,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 491.71,
+"end": 492.09,
+"prob": 0.998,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "each",
+"start": 492.09,
+"end": 492.43,
+"prob": 0.998,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "last",
+"start": 492.43,
+"end": 493.03,
+"prob": 0.99,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "one",
+"start": 493.03,
+"end": 493.29,
+"prob": 0.966,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "september",
+"start": 493.29,
+"end": 493.87,
+"prob": 0.965,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "2nd",
+"start": 493.87,
+"end": 494.19,
+"prob": 0.998,
+"burst": 105,
+"unaligned": true
+},
+{
+"w": "Instagram",
+"start": 494.64,
+"end": 495.04,
+"prob": 0.732,
+"burst": 106,
+"unaligned": true
+},
+{
+"w": "Reels",
+"start": 495.04,
+"end": 495.4,
+"prob": 0.843,
+"burst": 106,
+"unaligned": true
+},
+{
+"w": "1-3",
+"start": 495.4,
+"end": 495.86,
+"prob": 0.296,
+"burst": 106,
+"unaligned": true
+},
+{
+"w": "Million",
+"start": 495.86,
+"end": 496.24,
+"prob": 0.73,
+"burst": 106,
+"unaligned": true
+},
+{
+"w": "Last",
+"start": 496.83,
+"end": 497.17,
+"prob": 0.708,
+"burst": 107,
+"unaligned": true
+},
+{
+"w": "one",
+"start": 497.17,
+"end": 497.31,
+"prob": 0.737,
+"burst": 107,
+"unaligned": true
+},
+{
+"w": "August",
+"start": 497.31,
+"end": 497.55,
+"prob": 0.586,
+"burst": 107,
+"unaligned": true
+},
+{
+"w": "20.",
+"start": 497.55,
+"end": 497.97,
+"prob": 0.949,
+"burst": 107,
+"unaligned": true
+},
+{
+"w": "He",
+"start": 500.571,
+"end": 500.652,
+"prob": 0.992,
+"burst": 108
+},
+{
+"w": "just",
+"start": 500.672,
+"end": 500.834,
+"prob": 0.974,
+"burst": 108
+},
+{
+"w": "stopped.",
+"start": 500.874,
+"end": 501.218,
+"prob": 0.964,
+"burst": 108
+},
+{
+"w": "CaseOh.",
+"start": 503.253,
+"end": 503.644,
+"prob": 0.68,
+"burst": 109,
+"fixed": true
+},
+{
+"w": "CaseOh",
+"start": 504.202,
+"end": 504.527,
+"prob": 0.655,
+"burst": 110,
+"fixed": true
+},
+{
+"w": "uploads",
+"start": 507.31,
+"end": 507.61,
+"prob": 0.583,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "every",
+"start": 507.61,
+"end": 507.97,
+"prob": 0.847,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "day",
+"start": 507.97,
+"end": 508.27,
+"prob": 1.0,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "700k",
+"start": 508.27,
+"end": 509.11,
+"prob": 0.93,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 509.11,
+"end": 509.29,
+"prob": 0.966,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "1.1",
+"start": 509.29,
+"end": 509.79,
+"prob": 0.998,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 509.79,
+"end": 510.09,
+"prob": 0.985,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "shorts",
+"start": 510.09,
+"end": 510.55,
+"prob": 0.724,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "on",
+"start": 510.55,
+"end": 510.93,
+"prob": 0.998,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "an",
+"start": 510.93,
+"end": 511.17,
+"prob": 0.996,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "11",
+"start": 511.17,
+"end": 511.47,
+"prob": 0.999,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 511.47,
+"end": 511.85,
+"prob": 0.995,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "channel",
+"start": 511.85,
+"end": 512.19,
+"prob": 0.998,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 512.19,
+"end": 512.75,
+"prob": 0.978,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "127",
+"start": 512.75,
+"end": 513.45,
+"prob": 0.983,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "000.",
+"start": 513.45,
+"end": 513.89,
+"prob": 0.773,
+"burst": 111,
+"unaligned": true
+},
+{
+"w": "Last",
+"start": 517.901,
+"end": 518.183,
+"prob": 0.978,
+"burst": 112
+},
+{
+"w": "Instagram",
+"start": 518.244,
+"end": 518.747,
+"prob": 0.902,
+"burst": 112
+},
+{
+"w": "reel,",
+"start": 518.787,
+"end": 519.069,
+"prob": 0.789,
+"burst": 112
+},
+{
+"w": "April.",
+"start": 520.378,
+"end": 520.659,
+"prob": 0.832,
+"burst": 112
+},
+{
+"w": "Okay,",
+"start": 524.271,
+"end": 524.573,
+"prob": 0.862,
+"burst": 113
+},
+{
+"w": "the",
+"start": 524.613,
+"end": 524.714,
+"prob": 0.963,
+"burst": 113
+},
+{
+"w": "top",
+"start": 524.774,
+"end": 525.076,
+"prob": 0.981,
+"burst": 113
+},
+{
+"w": "three.",
+"start": 525.297,
+"end": 525.539,
+"prob": 0.925,
+"burst": 113
+},
+{
+"w": "and",
+"start": 529.581,
+"end": 529.681,
+"prob": 0.787,
+"burst": 114
+},
+{
+"w": "one",
+"start": 529.822,
+"end": 529.923,
+"prob": 0.855,
+"burst": 114
+},
+{
+"w": "of",
+"start": 529.963,
+"end": 530.023,
+"prob": 0.752,
+"burst": 114
+},
+{
+"w": "them",
+"start": 530.063,
+"end": 530.224,
+"prob": 0.796,
+"burst": 114
+},
+{
+"w": "is",
+"start": 530.345,
+"end": 530.445,
+"prob": 0.719,
+"burst": 114
+},
+{
+"w": "local",
+"start": 530.586,
+"end": 530.928,
+"prob": 0.604,
+"burst": 114
+},
+{
+"w": "is",
+"start": 531.028,
+"end": 531.129,
+"prob": 0.86,
+"burst": 114
+},
+{
+"w": "and",
+"start": 531.45,
+"end": 531.531,
+"prob": 0.955,
+"burst": 114
+},
+{
+"w": "one",
+"start": 531.611,
+"end": 531.691,
+"prob": 0.973,
+"burst": 114
+},
+{
+"w": "of",
+"start": 531.732,
+"end": 531.772,
+"prob": 0.999,
+"burst": 114
+},
+{
+"w": "them",
+"start": 531.812,
+"end": 531.933,
+"prob": 0.981,
+"burst": 114
+},
+{
+"w": "is",
+"start": 532.013,
+"end": 532.093,
+"prob": 0.768,
+"burst": 114
+},
+{
+"w": "going",
+"start": 532.194,
+"end": 532.415,
+"prob": 0.872,
+"burst": 114
+},
+{
+"w": "to",
+"start": 532.435,
+"end": 532.495,
+"prob": 1.0,
+"burst": 114
+},
+{
+"w": "look",
+"start": 532.536,
+"end": 532.696,
+"prob": 0.917,
+"burst": 114
+},
+{
+"w": "like",
+"start": 532.737,
+"end": 532.918,
+"prob": 0.881,
+"burst": 114
+},
+{
+"w": "an",
+"start": 532.958,
+"end": 532.998,
+"prob": 0.998,
+"burst": 114
+},
+{
+"w": "f",
+"start": 533.239,
+"end": 533.259,
+"prob": 0.999,
+"burst": 114
+},
+{
+"w": "until",
+"start": 533.891,
+"end": 534.172,
+"prob": 0.961,
+"burst": 115
+},
+{
+"w": "I",
+"start": 534.192,
+"end": 534.212,
+"prob": 0.034,
+"burst": 115
+},
+{
+"w": "open",
+"start": 534.232,
+"end": 534.694,
+"prob": 0.48,
+"burst": 115
+},
+{
+"w": "this",
+"start": 534.714,
+"end": 534.875,
+"prob": 0.648,
+"burst": 115
+},
+{
+"w": "tab.",
+"start": 534.895,
+"end": 535.015,
+"prob": 0.5,
+"burst": 115
+},
+{
+"w": "Archetype",
+"start": 539.232,
+"end": 539.575,
+"prob": 0.339,
+"burst": 116,
+"fixed": true
+},
+{
+"w": "five.",
+"start": 539.575,
+"end": 539.918,
+"prob": 0.339,
+"burst": 116,
+"fixed": true
+},
+{
+"w": "Archetype",
+"start": 540.87,
+"end": 541.39,
+"prob": 0.956,
+"burst": 117,
+"unaligned": true
+},
+{
+"w": "5,",
+"start": 541.39,
+"end": 541.53,
+"prob": 0.699,
+"burst": 117,
+"unaligned": true
+},
+{
+"w": "The",
+"start": 541.77,
+"end": 542.05,
+"prob": 0.306,
+"burst": 117,
+"unaligned": true
+},
+{
+"w": "Machines.",
+"start": 542.05,
+"end": 542.63,
+"prob": 0.877,
+"burst": 117,
+"unaligned": true
+},
+{
+"w": "Ludwig.",
+"start": 543.892,
+"end": 544.338,
+"prob": 0.67,
+"burst": 118
+},
+{
+"w": "Shorts",
+"start": 552.38,
+"end": 552.84,
+"prob": 0.817,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "almost",
+"start": 552.84,
+"end": 553.14,
+"prob": 0.904,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "every",
+"start": 553.14,
+"end": 553.5,
+"prob": 0.545,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "day,",
+"start": 553.5,
+"end": 553.78,
+"prob": 0.995,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 553.86,
+"end": 554.0,
+"prob": 0.925,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "middle",
+"start": 554.0,
+"end": 554.24,
+"prob": 0.995,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "one",
+"start": 554.24,
+"end": 554.44,
+"prob": 0.975,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 554.44,
+"end": 554.66,
+"prob": 0.913,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "2",
+"start": 554.66,
+"end": 555.04,
+"prob": 0.824,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 555.04,
+"end": 555.32,
+"prob": 0.863,
+"burst": 119,
+"unaligned": true
+},
+{
+"w": "TikTok",
+"start": 556.21,
+"end": 556.51,
+"prob": 0.543,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "14",
+"start": 556.51,
+"end": 556.93,
+"prob": 0.525,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "posts",
+"start": 556.93,
+"end": 557.49,
+"prob": 0.723,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "in",
+"start": 557.49,
+"end": 557.71,
+"prob": 0.988,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "under",
+"start": 557.71,
+"end": 557.99,
+"prob": 0.988,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "4",
+"start": 557.99,
+"end": 558.25,
+"prob": 0.687,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "weeks",
+"start": 558.25,
+"end": 558.59,
+"prob": 0.967,
+"burst": 120,
+"unaligned": true
+},
+{
+"w": "plus",
+"start": 559.15,
+"end": 559.41,
+"prob": 0.431,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "edited",
+"start": 559.41,
+"end": 559.67,
+"prob": 0.99,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "videos",
+"start": 559.67,
+"end": 560.05,
+"prob": 0.962,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "at",
+"start": 560.05,
+"end": 560.35,
+"prob": 0.959,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "1",
+"start": 560.35,
+"end": 560.69,
+"prob": 0.764,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 560.69,
+"end": 561.11,
+"prob": 0.713,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "4",
+"start": 561.11,
+"end": 561.35,
+"prob": 0.993,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "million.",
+"start": 561.35,
+"end": 561.71,
+"prob": 0.939,
+"burst": 121,
+"unaligned": true
+},
+{
+"w": "every",
+"start": 562.551,
+"end": 562.772,
+"prob": 0.9,
+"burst": 122
+},
+{
+"w": "lane,",
+"start": 562.813,
+"end": 563.074,
+"prob": 0.866,
+"burst": 122
+},
+{
+"w": "every",
+"start": 563.316,
+"end": 563.537,
+"prob": 0.767,
+"burst": 122
+},
+{
+"w": "week.",
+"start": 563.577,
+"end": 563.879,
+"prob": 0.864,
+"burst": 122
+},
+{
+"w": "S",
+"start": 568.377,
+"end": 568.459,
+"prob": 0.822,
+"burst": 123
+},
+{
+"w": "tier.",
+"start": 568.52,
+"end": 568.828,
+"prob": 0.891,
+"burst": 123
+},
+{
+"w": "Druski",
+"start": 570.562,
+"end": 570.927,
+"prob": 0.73,
+"burst": 124,
+"fixed": true
+},
+{
+"w": "Instagram",
+"start": 572.4,
+"end": 572.82,
+"prob": 0.72,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "Reels,",
+"start": 572.82,
+"end": 573.32,
+"prob": 0.88,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "his",
+"start": 573.38,
+"end": 573.68,
+"prob": 0.697,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "YouTube",
+"start": 573.68,
+"end": 574.02,
+"prob": 0.741,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "links,",
+"start": 574.02,
+"end": 574.4,
+"prob": 0.878,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "Instagram",
+"start": 574.48,
+"end": 575.1,
+"prob": 0.975,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "521",
+"start": 575.1,
+"end": 576.04,
+"prob": 0.946,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "posts,",
+"start": 576.04,
+"end": 576.42,
+"prob": 0.963,
+"burst": 125,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 578.64,
+"end": 578.865,
+"prob": 0.158,
+"burst": 126,
+"fixed": true
+},
+{
+"w": "reel",
+"start": 578.865,
+"end": 579.09,
+"prob": 0.158,
+"burst": 126,
+"fixed": true
+},
+{
+"w": "every",
+"start": 579.09,
+"end": 579.315,
+"prob": 0.158,
+"burst": 126,
+"fixed": true
+},
+{
+"w": "week,",
+"start": 579.315,
+"end": 579.54,
+"prob": 0.158,
+"burst": 126,
+"fixed": true
+},
+{
+"w": "so",
+"start": 579.54,
+"end": 579.8,
+"prob": 0.674,
+"burst": 126,
+"unaligned": true
+},
+{
+"w": "5",
+"start": 579.8,
+"end": 580.28,
+"prob": 0.806,
+"burst": 126,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 580.28,
+"end": 580.54,
+"prob": 0.885,
+"burst": 126,
+"unaligned": true
+},
+{
+"w": "52",
+"start": 580.54,
+"end": 580.96,
+"prob": 0.99,
+"burst": 126,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 580.96,
+"end": 581.4,
+"prob": 0.985,
+"burst": 126,
+"unaligned": true
+},
+{
+"w": "tiktok",
+"start": 582.38,
+"end": 582.96,
+"prob": 0.691,
+"burst": 127,
+"unaligned": true
+},
+{
+"w": "10",
+"start": 582.96,
+"end": 583.24,
+"prob": 0.925,
+"burst": 127,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 583.24,
+"end": 583.5,
+"prob": 0.948,
+"burst": 127,
+"unaligned": true
+},
+{
+"w": "82",
+"start": 583.5,
+"end": 583.88,
+"prob": 0.995,
+"burst": 127,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 583.88,
+"end": 584.26,
+"prob": 0.998,
+"burst": 127,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 584.994,
+"end": 585.035,
+"prob": 0.679,
+"burst": 128
+},
+{
+"w": "post.",
+"start": 585.117,
+"end": 585.466,
+"prob": 0.698,
+"burst": 128
+},
+{
+"w": "YouTube",
+"start": 585.96,
+"end": 586.36,
+"prob": 0.71,
+"burst": 129,
+"unaligned": true
+},
+{
+"w": "Coulda",
+"start": 586.36,
+"end": 586.633,
+"prob": 0.595,
+"burst": 129,
+"fixed": true
+},
+{
+"w": "Been",
+"start": 586.633,
+"end": 586.907,
+"prob": 0.595,
+"burst": 129,
+"fixed": true
+},
+{
+"w": "episodes",
+"start": 586.907,
+"end": 587.18,
+"prob": 0.595,
+"burst": 129,
+"fixed": true
+},
+{
+"w": "doing",
+"start": 587.18,
+"end": 587.5,
+"prob": 0.979,
+"burst": 129,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 587.5,
+"end": 587.74,
+"prob": 0.771,
+"burst": 129,
+"unaligned": true
+},
+{
+"w": "5-9",
+"start": 587.74,
+"end": 588.8,
+"prob": 0.799,
+"burst": 129,
+"unaligned": true
+},
+{
+"w": "million.",
+"start": 588.8,
+"end": 589.28,
+"prob": 0.787,
+"burst": 129,
+"unaligned": true
+},
+{
+"w": "And",
+"start": 594.532,
+"end": 594.633,
+"prob": 0.673,
+"burst": 130
+},
+{
+"w": "look,",
+"start": 594.674,
+"end": 594.917,
+"prob": 0.926,
+"burst": 130
+},
+{
+"w": "Coulda",
+"start": 596.37,
+"end": 596.651,
+"prob": 0.53,
+"burst": 131,
+"fixed": true
+},
+{
+"w": "Been",
+"start": 596.651,
+"end": 596.931,
+"prob": 0.53,
+"burst": 131,
+"fixed": true
+},
+{
+"w": "Records",
+"start": 596.931,
+"end": 597.212,
+"prob": 0.53,
+"burst": 131,
+"fixed": true
+},
+{
+"w": "has",
+"start": 597.292,
+"end": 597.472,
+"prob": 0.985,
+"burst": 131
+},
+{
+"w": "its",
+"start": 597.553,
+"end": 597.633,
+"prob": 0.829,
+"burst": 131
+},
+{
+"w": "own",
+"start": 597.813,
+"end": 597.953,
+"prob": 0.883,
+"burst": 131
+},
+{
+"w": "Instagram",
+"start": 598.033,
+"end": 598.434,
+"prob": 0.747,
+"burst": 131
+},
+{
+"w": "and",
+"start": 598.454,
+"end": 598.534,
+"prob": 0.694,
+"burst": 131
+},
+{
+"w": "TikTok.",
+"start": 598.575,
+"end": 599.015,
+"prob": 0.776,
+"burst": 131
+},
+{
+"w": "The",
+"start": 599.096,
+"end": 599.196,
+"prob": 0.794,
+"burst": 131
+},
+{
+"w": "show",
+"start": 599.236,
+"end": 599.416,
+"prob": 0.81,
+"burst": 131
+},
+{
+"w": "became",
+"start": 599.456,
+"end": 599.717,
+"prob": 0.883,
+"burst": 131
+},
+{
+"w": "a",
+"start": 599.757,
+"end": 599.777,
+"prob": 0.82,
+"burst": 131
+},
+{
+"w": "brand",
+"start": 599.877,
+"end": 600.178,
+"prob": 0.935,
+"burst": 131
+},
+{
+"w": "with",
+"start": 600.218,
+"end": 600.338,
+"prob": 0.842,
+"burst": 131
+},
+{
+"w": "its",
+"start": 600.378,
+"end": 600.478,
+"prob": 0.791,
+"burst": 131
+},
+{
+"w": "own",
+"start": 600.639,
+"end": 600.739,
+"prob": 0.899,
+"burst": 131
+},
+{
+"w": "accounts.",
+"start": 600.799,
+"end": 601.14,
+"prob": 0.913,
+"burst": 131
+},
+{
+"w": "S-tier.",
+"start": 602.404,
+"end": 602.809,
+"prob": 0.881,
+"burst": 132
+},
+{
+"w": "Kai",
+"start": 604.403,
+"end": 604.75,
+"prob": 0.792,
+"burst": 133,
+"fixed": true
+},
+{
+"w": "Cenat.",
+"start": 604.75,
+"end": 605.096,
+"prob": 0.792,
+"burst": 133,
+"fixed": true
+},
+{
+"w": "Kai's",
+"start": 605.45,
+"end": 605.81,
+"prob": 0.905,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "main",
+"start": 605.81,
+"end": 605.97,
+"prob": 0.898,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "channel",
+"start": 605.97,
+"end": 606.25,
+"prob": 0.859,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "4",
+"start": 606.25,
+"end": 606.49,
+"prob": 0.593,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "uploads",
+"start": 606.49,
+"end": 606.87,
+"prob": 0.975,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "this",
+"start": 606.87,
+"end": 607.25,
+"prob": 0.974,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "whole",
+"start": 607.25,
+"end": 607.59,
+"prob": 0.904,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "year.",
+"start": 607.59,
+"end": 608.11,
+"prob": 0.995,
+"burst": 134,
+"unaligned": true
+},
+{
+"w": "Zero",
+"start": 608.945,
+"end": 609.332,
+"prob": 0.971,
+"burst": 135
+},
+{
+"w": "shorts.",
+"start": 609.373,
+"end": 609.637,
+"prob": 0.618,
+"burst": 135
+},
+{
+"w": "by",
+"start": 610.201,
+"end": 610.362,
+"prob": 0.832,
+"burst": 136
+},
+{
+"w": "everything",
+"start": 610.603,
+"end": 611.005,
+"prob": 0.862,
+"burst": 136
+},
+{
+"w": "I",
+"start": 611.186,
+"end": 611.247,
+"prob": 0.809,
+"burst": 136
+},
+{
+"w": "have",
+"start": 611.287,
+"end": 611.428,
+"prob": 0.885,
+"burst": 136
+},
+{
+"w": "said.",
+"start": 611.508,
+"end": 611.709,
+"prob": 0.917,
+"burst": 136
+},
+{
+"w": "f-tier",
+"start": 612.533,
+"end": 612.877,
+"prob": 0.768,
+"burst": 137
+},
+{
+"w": "Let's",
+"start": 614.811,
+"end": 614.992,
+"prob": 0.836,
+"burst": 138
+},
+{
+"w": "open",
+"start": 615.092,
+"end": 615.313,
+"prob": 0.91,
+"burst": 138
+},
+{
+"w": "the",
+"start": 615.394,
+"end": 615.515,
+"prob": 0.887,
+"burst": 138
+},
+{
+"w": "second",
+"start": 615.555,
+"end": 615.857,
+"prob": 0.903,
+"burst": 138
+},
+{
+"w": "tab",
+"start": 615.897,
+"end": 616.118,
+"prob": 0.992,
+"burst": 138
+},
+{
+"w": "now.",
+"start": 616.158,
+"end": 616.339,
+"prob": 0.644,
+"burst": 138
+},
+{
+"w": "Kai",
+"start": 617.89,
+"end": 618.137,
+"prob": 0.424,
+"burst": 139,
+"fixed": true
+},
+{
+"w": "Cenat",
+"start": 618.137,
+"end": 618.383,
+"prob": 0.424,
+"burst": 139,
+"fixed": true
+},
+{
+"w": "Live",
+"start": 618.383,
+"end": 618.63,
+"prob": 0.424,
+"burst": 139,
+"fixed": true
+},
+{
+"w": "16.6",
+"start": 618.63,
+"end": 620.07,
+"prob": 0.867,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 620.07,
+"end": 620.43,
+"prob": 0.995,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "subscribers",
+"start": 620.43,
+"end": 620.79,
+"prob": 0.996,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "double",
+"start": 620.79,
+"end": 621.55,
+"prob": 0.823,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "his",
+"start": 621.55,
+"end": 621.85,
+"prob": 0.998,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "main",
+"start": 621.85,
+"end": 622.09,
+"prob": 0.994,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "channel",
+"start": 622.09,
+"end": 622.47,
+"prob": 0.999,
+"burst": 139,
+"unaligned": true
+},
+{
+"w": "streams",
+"start": 622.99,
+"end": 623.35,
+"prob": 0.781,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "edited",
+"start": 623.35,
+"end": 623.79,
+"prob": 0.905,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "videos",
+"start": 623.79,
+"end": 624.27,
+"prob": 0.984,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 624.27,
+"end": 624.59,
+"prob": 0.897,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 624.59,
+"end": 624.77,
+"prob": 0.987,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "30",
+"start": 624.77,
+"end": 625.13,
+"prob": 0.99,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "shorts",
+"start": 625.13,
+"end": 625.65,
+"prob": 0.958,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "in",
+"start": 625.65,
+"end": 625.97,
+"prob": 0.995,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "12",
+"start": 625.97,
+"end": 626.19,
+"prob": 0.992,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "days",
+"start": 626.19,
+"end": 626.53,
+"prob": 0.998,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "two",
+"start": 626.53,
+"end": 627.13,
+"prob": 0.458,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "or",
+"start": 627.13,
+"end": 627.29,
+"prob": 1.0,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "three",
+"start": 627.29,
+"end": 627.57,
+"prob": 0.999,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 627.57,
+"end": 627.75,
+"prob": 0.999,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "day",
+"start": 627.75,
+"end": 627.91,
+"prob": 1.0,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 627.91,
+"end": 628.45,
+"prob": 0.984,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "866",
+"start": 628.45,
+"end": 629.45,
+"prob": 0.977,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "000",
+"start": 629.45,
+"end": 629.87,
+"prob": 0.851,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "each",
+"start": 629.87,
+"end": 630.23,
+"prob": 0.999,
+"burst": 140,
+"unaligned": true
+},
+{
+"w": "Instagram",
+"start": 630.97,
+"end": 631.39,
+"prob": 0.777,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "25",
+"start": 631.39,
+"end": 631.67,
+"prob": 0.734,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "posts",
+"start": 631.67,
+"end": 632.21,
+"prob": 0.957,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "doing",
+"start": 632.21,
+"end": 632.63,
+"prob": 0.909,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "9",
+"start": 632.63,
+"end": 632.95,
+"prob": 0.877,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 632.95,
+"end": 633.11,
+"prob": 0.701,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "56",
+"start": 633.11,
+"end": 633.43,
+"prob": 0.988,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 633.43,
+"end": 633.89,
+"prob": 0.963,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 633.89,
+"end": 634.43,
+"prob": 0.672,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 634.43,
+"end": 634.53,
+"prob": 0.992,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "clip",
+"start": 634.53,
+"end": 634.75,
+"prob": 0.959,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "page",
+"start": 634.75,
+"end": 634.93,
+"prob": 0.491,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "is",
+"start": 634.93,
+"end": 635.09,
+"prob": 0.985,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "3,266",
+"start": 635.09,
+"end": 638.01,
+"prob": 0.38,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "clips",
+"start": 638.01,
+"end": 638.43,
+"prob": 0.945,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "from",
+"start": 638.43,
+"end": 639.05,
+"prob": 0.98,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "759",
+"start": 639.05,
+"end": 640.57,
+"prob": 0.996,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "accounts",
+"start": 640.57,
+"end": 640.95,
+"prob": 0.994,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "in",
+"start": 640.95,
+"end": 641.53,
+"prob": 0.989,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "one",
+"start": 641.53,
+"end": 641.81,
+"prob": 0.826,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "month.",
+"start": 641.81,
+"end": 642.21,
+"prob": 0.998,
+"burst": 141,
+"unaligned": true
+},
+{
+"w": "So",
+"start": 644.48,
+"end": 644.621,
+"prob": 0.92,
+"burst": 142
+},
+{
+"w": "Speed",
+"start": 644.681,
+"end": 644.961,
+"prob": 0.998,
+"burst": 142
+},
+{
+"w": "has",
+"start": 645.001,
+"end": 645.222,
+"prob": 0.902,
+"burst": 142
+},
+{
+"w": "the",
+"start": 645.262,
+"end": 645.342,
+"prob": 0.866,
+"burst": 142
+},
+{
+"w": "army,",
+"start": 645.442,
+"end": 645.763,
+"prob": 0.905,
+"burst": 142
+},
+{
+"w": "Kai",
+"start": 646.304,
+"end": 646.725,
+"prob": 0.925,
+"burst": 142
+},
+{
+"w": "has",
+"start": 646.986,
+"end": 647.186,
+"prob": 0.805,
+"burst": 142
+},
+{
+"w": "the",
+"start": 647.226,
+"end": 647.346,
+"prob": 0.754,
+"burst": 142
+},
+{
+"w": "army",
+"start": 647.527,
+"end": 647.787,
+"prob": 0.876,
+"burst": 142
+},
+{
+"w": "and",
+"start": 648.108,
+"end": 648.268,
+"prob": 0.629,
+"burst": 142
+},
+{
+"w": "the",
+"start": 648.288,
+"end": 648.369,
+"prob": 0.931,
+"burst": 142
+},
+{
+"w": "machine.",
+"start": 648.409,
+"end": 648.85,
+"prob": 0.862,
+"burst": 142
+},
+{
+"w": "That's",
+"start": 652.091,
+"end": 652.392,
+"prob": 0.857,
+"burst": 143
+},
+{
+"w": "the",
+"start": 652.472,
+"end": 652.592,
+"prob": 0.883,
+"burst": 143
+},
+{
+"w": "difference",
+"start": 652.612,
+"end": 653.074,
+"prob": 0.863,
+"burst": 143
+},
+{
+"w": "between",
+"start": 653.475,
+"end": 653.796,
+"prob": 0.875,
+"burst": 143
+},
+{
+"w": "Speed",
+"start": 653.856,
+"end": 654.117,
+"prob": 0.943,
+"burst": 143
+},
+{
+"w": "and",
+"start": 654.137,
+"end": 654.237,
+"prob": 0.771,
+"burst": 143
+},
+{
+"w": "Kai.",
+"start": 654.277,
+"end": 654.518,
+"prob": 0.769,
+"burst": 143
+},
+{
+"w": "That's",
+"start": 654.578,
+"end": 654.839,
+"prob": 0.817,
+"burst": 143
+},
+{
+"w": "the",
+"start": 654.899,
+"end": 655.0,
+"prob": 0.906,
+"burst": 143
+},
+{
+"w": "difference",
+"start": 655.04,
+"end": 655.381,
+"prob": 0.857,
+"burst": 143
+},
+{
+"w": "between",
+"start": 655.421,
+"end": 655.782,
+"prob": 0.909,
+"burst": 143
+},
+{
+"w": "a",
+"start": 655.802,
+"end": 655.822,
+"prob": 0.0,
+"burst": 143
+},
+{
+"w": "B-tier",
+"start": 656.043,
+"end": 656.564,
+"prob": 0.811,
+"burst": 143
+},
+{
+"w": "streamer",
+"start": 656.584,
+"end": 656.925,
+"prob": 0.888,
+"burst": 143
+},
+{
+"w": "and",
+"start": 657.046,
+"end": 657.146,
+"prob": 0.833,
+"burst": 143
+},
+{
+"w": "an",
+"start": 657.166,
+"end": 657.206,
+"prob": 0.845,
+"burst": 143
+},
+{
+"w": "S-tier",
+"start": 657.527,
+"end": 657.929,
+"prob": 0.85,
+"burst": 143
+},
+{
+"w": "streamer.",
+"start": 657.949,
+"end": 658.31,
+"prob": 0.904,
+"burst": 143
+},
+{
+"w": "so",
+"start": 666.961,
+"end": 667.082,
+"prob": 0.988,
+"burst": 144
+},
+{
+"w": "look",
+"start": 667.122,
+"end": 667.304,
+"prob": 0.859,
+"burst": 144
+},
+{
+"w": "at",
+"start": 667.324,
+"end": 667.404,
+"prob": 0.641,
+"burst": 144
+},
+{
+"w": "the",
+"start": 667.445,
+"end": 667.525,
+"prob": 0.973,
+"burst": 144
+},
+{
+"w": "map",
+"start": 667.606,
+"end": 667.848,
+"prob": 0.998,
+"burst": 144
+},
+{
+"w": "Efficiency",
+"start": 670.061,
+"end": 670.643,
+"prob": 0.895,
+"burst": 145
+},
+{
+"w": "comes",
+"start": 670.704,
+"end": 670.904,
+"prob": 0.809,
+"burst": 145
+},
+{
+"w": "from",
+"start": 670.965,
+"end": 671.125,
+"prob": 0.87,
+"burst": 145
+},
+{
+"w": "being",
+"start": 671.206,
+"end": 671.427,
+"prob": 0.754,
+"burst": 145
+},
+{
+"w": "famous.",
+"start": 671.527,
+"end": 671.929,
+"prob": 0.97,
+"burst": 145
+},
+{
+"w": "You",
+"start": 675.151,
+"end": 675.291,
+"prob": 0.788,
+"burst": 146
+},
+{
+"w": "can't",
+"start": 675.352,
+"end": 675.633,
+"prob": 0.768,
+"burst": 146
+},
+{
+"w": "copy",
+"start": 675.714,
+"end": 676.035,
+"prob": 0.987,
+"burst": 146
+},
+{
+"w": "that",
+"start": 676.076,
+"end": 676.216,
+"prob": 0.874,
+"burst": 146
+},
+{
+"w": "consistency",
+"start": 676.337,
+"end": 677.222,
+"prob": 0.957,
+"burst": 146
+},
+{
+"w": "comes",
+"start": 677.322,
+"end": 677.584,
+"prob": 0.778,
+"burst": 146
+},
+{
+"w": "from",
+"start": 677.644,
+"end": 677.825,
+"prob": 0.872,
+"burst": 146
+},
+{
+"w": "a",
+"start": 677.845,
+"end": 677.865,
+"prob": 0.0,
+"burst": 146
+},
+{
+"w": "system.",
+"start": 678.287,
+"end": 678.669,
+"prob": 0.837,
+"burst": 146
+},
+{
+"w": "And",
+"start": 682.381,
+"end": 682.482,
+"prob": 0.877,
+"burst": 147
+},
+{
+"w": "you",
+"start": 682.523,
+"end": 682.624,
+"prob": 0.854,
+"burst": 147
+},
+{
+"w": "can",
+"start": 682.644,
+"end": 682.765,
+"prob": 0.857,
+"burst": 147
+},
+{
+"w": "copy",
+"start": 682.805,
+"end": 683.088,
+"prob": 0.883,
+"burst": 147
+},
+{
+"w": "that",
+"start": 683.149,
+"end": 683.432,
+"prob": 0.796,
+"burst": 147
+},
+{
+"w": "tomorrow.",
+"start": 683.553,
+"end": 684.098,
+"prob": 0.875,
+"burst": 147
+},
+{
+"w": "you",
+"start": 687.501,
+"end": 687.601,
+"prob": 0.925,
+"burst": 148
+},
+{
+"w": "can't",
+"start": 687.641,
+"end": 687.903,
+"prob": 0.806,
+"burst": 148
+},
+{
+"w": "be",
+"start": 687.943,
+"end": 688.063,
+"prob": 0.542,
+"burst": 148
+},
+{
+"w": "the",
+"start": 688.083,
+"end": 688.184,
+"prob": 0.909,
+"burst": 148
+},
+{
+"w": "sniper",
+"start": 688.204,
+"end": 688.646,
+"prob": 0.829,
+"burst": 148
+},
+{
+"w": "you",
+"start": 688.706,
+"end": 688.827,
+"prob": 0.885,
+"burst": 148
+},
+{
+"w": "don't",
+"start": 688.867,
+"end": 689.128,
+"prob": 0.674,
+"burst": 148
+},
+{
+"w": "you",
+"start": 689.269,
+"end": 689.349,
+"prob": 0.994,
+"burst": 148
+},
+{
+"w": "know",
+"start": 689.39,
+"end": 689.49,
+"prob": 0.996,
+"burst": 148
+},
+{
+"w": "you",
+"start": 689.53,
+"end": 689.651,
+"prob": 0.746,
+"burst": 148
+},
+{
+"w": "can't",
+"start": 689.731,
+"end": 690.053,
+"prob": 0.737,
+"burst": 148
+},
+{
+"w": "buy",
+"start": 690.153,
+"end": 690.415,
+"prob": 0.839,
+"burst": 148
+},
+{
+"w": "a",
+"start": 690.455,
+"end": 690.495,
+"prob": 0.545,
+"burst": 148
+},
+{
+"w": "billion",
+"start": 690.555,
+"end": 690.957,
+"prob": 0.953,
+"burst": 148
+},
+{
+"w": "views",
+"start": 690.977,
+"end": 691.339,
+"prob": 0.952,
+"burst": 148
+},
+{
+"w": "You",
+"start": 705.784,
+"end": 705.926,
+"prob": 0.924,
+"burst": 149
+},
+{
+"w": "can",
+"start": 705.967,
+"end": 706.25,
+"prob": 0.932,
+"burst": 149
+},
+{
+"w": "be",
+"start": 706.29,
+"end": 706.432,
+"prob": 0.742,
+"burst": 149
+},
+{
+"w": "his",
+"start": 706.472,
+"end": 706.614,
+"prob": 0.749,
+"burst": 149
+},
+{
+"w": "Clipper,",
+"start": 706.654,
+"end": 706.978,
+"prob": 0.978,
+"burst": 149
+},
+{
+"w": "40",
+"start": 707.57,
+"end": 707.95,
+"prob": 0.682,
+"burst": 150,
+"unaligned": true
+},
+{
+"w": "cents",
+"start": 707.95,
+"end": 708.19,
+"prob": 0.963,
+"burst": 150,
+"unaligned": true
+},
+{
+"w": "per",
+"start": 708.19,
+"end": 708.35,
+"prob": 0.975,
+"burst": 150,
+"unaligned": true
+},
+{
+"w": "thousand",
+"start": 708.35,
+"end": 708.59,
+"prob": 0.888,
+"burst": 150,
+"unaligned": true
+},
+{
+"w": "views",
+"start": 708.59,
+"end": 708.93,
+"prob": 0.995,
+"burst": 150,
+"unaligned": true
+},
+{
+"w": "But.",
+"start": 709.953,
+"end": 710.237,
+"prob": 0.746,
+"burst": 151
+},
+{
+"w": "But",
+"start": 710.98,
+"end": 711.44,
+"prob": 0.249,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "it's",
+"start": 711.44,
+"end": 711.62,
+"prob": 0.835,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "not",
+"start": 711.62,
+"end": 711.78,
+"prob": 0.992,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "going",
+"start": 711.78,
+"end": 713.0,
+"prob": 0.97,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 713.0,
+"end": 713.16,
+"prob": 0.997,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "be",
+"start": 713.16,
+"end": 713.28,
+"prob": 0.996,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 713.28,
+"end": 713.36,
+"prob": 0.975,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "real",
+"start": 713.36,
+"end": 713.54,
+"prob": 0.985,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "career.",
+"start": 713.54,
+"end": 713.78,
+"prob": 0.98,
+"burst": 152,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 717.25,
+"end": 717.43,
+"prob": 0.364,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "since",
+"start": 717.43,
+"end": 717.61,
+"prob": 0.994,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "october",
+"start": 717.61,
+"end": 718.09,
+"prob": 0.678,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "1st",
+"start": 718.09,
+"end": 718.51,
+"prob": 0.896,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "youtube",
+"start": 718.51,
+"end": 718.73,
+"prob": 0.914,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "is",
+"start": 718.73,
+"end": 718.99,
+"prob": 0.593,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 718.99,
+"end": 719.25,
+"prob": 0.907,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "know",
+"start": 719.25,
+"end": 719.37,
+"prob": 0.966,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 719.37,
+"end": 719.67,
+"prob": 0.964,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 719.67,
+"end": 719.83,
+"prob": 0.907,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "guys",
+"start": 719.83,
+"end": 720.61,
+"prob": 0.842,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "already",
+"start": 720.61,
+"end": 720.87,
+"prob": 0.996,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "heard",
+"start": 720.87,
+"end": 721.27,
+"prob": 1.0,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 721.27,
+"end": 721.53,
+"prob": 1.0,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "it",
+"start": 721.53,
+"end": 721.79,
+"prob": 1.0,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "probably",
+"start": 721.79,
+"end": 722.01,
+"prob": 0.996,
+"burst": 153,
+"unaligned": true
+},
+{
+"w": "that",
+"start": 723.0,
+"end": 723.261,
+"prob": 0.914,
+"burst": 154
+},
+{
+"w": "YouTube",
+"start": 723.561,
+"end": 723.882,
+"prob": 0.745,
+"burst": 154
+},
+{
+"w": "is",
+"start": 723.902,
+"end": 723.962,
+"prob": 0.404,
+"burst": 154
+},
+{
+"w": "cutting",
+"start": 724.002,
+"end": 724.243,
+"prob": 0.914,
+"burst": 154
+},
+{
+"w": "reach",
+"start": 724.283,
+"end": 724.443,
+"prob": 0.845,
+"burst": 154
+},
+{
+"w": "for",
+"start": 724.463,
+"end": 724.583,
+"prob": 0.839,
+"burst": 154
+},
+{
+"w": "pages",
+"start": 724.603,
+"end": 724.904,
+"prob": 0.831,
+"burst": 154
+},
+{
+"w": "that",
+"start": 724.944,
+"end": 725.144,
+"prob": 0.877,
+"burst": 154
+},
+{
+"w": "mostly",
+"start": 725.204,
+"end": 725.505,
+"prob": 0.878,
+"burst": 154
+},
+{
+"w": "re-upload",
+"start": 725.565,
+"end": 726.026,
+"prob": 0.763,
+"burst": 154
+},
+{
+"w": "other",
+"start": 726.086,
+"end": 726.246,
+"prob": 0.845,
+"burst": 154
+},
+{
+"w": "people's",
+"start": 726.286,
+"end": 726.547,
+"prob": 0.873,
+"burst": 154
+},
+{
+"w": "videos,",
+"start": 726.567,
+"end": 726.988,
+"prob": 0.851,
+"burst": 154
+},
+{
+"w": "even",
+"start": 727.408,
+"end": 727.549,
+"prob": 0.934,
+"burst": 154
+},
+{
+"w": "with",
+"start": 727.589,
+"end": 727.729,
+"prob": 0.837,
+"burst": 154
+},
+{
+"w": "permission.",
+"start": 727.749,
+"end": 728.13,
+"prob": 0.952,
+"burst": 154
+},
+{
+"w": "You",
+"start": 730.832,
+"end": 730.933,
+"prob": 0.928,
+"burst": 155
+},
+{
+"w": "can",
+"start": 730.954,
+"end": 731.055,
+"prob": 0.999,
+"burst": 155
+},
+{
+"w": "be",
+"start": 731.096,
+"end": 731.197,
+"prob": 0.98,
+"burst": 155
+},
+{
+"w": "the",
+"start": 731.238,
+"end": 731.319,
+"prob": 0.815,
+"burst": 155
+},
+{
+"w": "machine.",
+"start": 731.38,
+"end": 731.887,
+"prob": 0.824,
+"burst": 155
+},
+{
+"w": "Kai's",
+"start": 734.41,
+"end": 734.77,
+"prob": 0.805,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "live",
+"start": 734.77,
+"end": 734.97,
+"prob": 0.822,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "channel",
+"start": 734.97,
+"end": 735.27,
+"prob": 0.987,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 735.27,
+"end": 735.47,
+"prob": 0.818,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "866,000",
+"start": 735.47,
+"end": 736.89,
+"prob": 0.892,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 736.89,
+"end": 737.05,
+"prob": 0.829,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "short",
+"start": 737.05,
+"end": 737.19,
+"prob": 0.361,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "two",
+"start": 737.19,
+"end": 737.47,
+"prob": 0.561,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 737.47,
+"end": 737.69,
+"prob": 0.991,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 737.69,
+"end": 737.77,
+"prob": 0.999,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "half",
+"start": 737.77,
+"end": 737.97,
+"prob": 1.0,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 737.97,
+"end": 738.09,
+"prob": 0.993,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "day",
+"start": 738.09,
+"end": 738.29,
+"prob": 0.999,
+"burst": 156,
+"unaligned": true
+},
+{
+"w": "That",
+"start": 740.07,
+"end": 740.37,
+"prob": 0.636,
+"burst": 157,
+"unaligned": true
+},
+{
+"w": "clears",
+"start": 740.37,
+"end": 740.77,
+"prob": 0.971,
+"burst": 157,
+"unaligned": true
+},
+{
+"w": "YouTube's",
+"start": 740.77,
+"end": 741.75,
+"prob": 0.9,
+"burst": 157,
+"unaligned": true
+},
+{
+"w": "10",
+"start": 741.75,
+"end": 742.01,
+"prob": 0.798,
+"burst": 157,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 742.01,
+"end": 742.35,
+"prob": 0.611,
+"burst": 157,
+"unaligned": true
+},
+{
+"w": "requirement",
+"start": 742.35,
+"end": 742.73,
+"prob": 0.985,
+"burst": 157,
+"unaligned": true
+},
+{
+"w": "in",
+"start": 745.76,
+"end": 746.14,
+"prob": 0.63,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 746.14,
+"end": 746.24,
+"prob": 0.948,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "90",
+"start": 746.24,
+"end": 746.54,
+"prob": 0.968,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "day",
+"start": 746.54,
+"end": 746.72,
+"prob": 0.621,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "window",
+"start": 746.72,
+"end": 746.98,
+"prob": 0.998,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "in",
+"start": 746.98,
+"end": 747.24,
+"prob": 0.836,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "about",
+"start": 747.24,
+"end": 747.44,
+"prob": 0.992,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "5",
+"start": 747.44,
+"end": 747.66,
+"prob": 0.58,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "days",
+"start": 747.66,
+"end": 748.02,
+"prob": 0.984,
+"burst": 158,
+"unaligned": true
+},
+{
+"w": "not",
+"start": 751.02,
+"end": 751.24,
+"prob": 0.317,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "because",
+"start": 751.24,
+"end": 751.46,
+"prob": 0.978,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "every",
+"start": 751.46,
+"end": 751.78,
+"prob": 0.958,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "short",
+"start": 751.78,
+"end": 752.04,
+"prob": 0.64,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "is",
+"start": 752.04,
+"end": 752.22,
+"prob": 0.98,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "huge",
+"start": 752.22,
+"end": 752.5,
+"prob": 0.992,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "relative",
+"start": 752.5,
+"end": 752.96,
+"prob": 0.738,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 752.96,
+"end": 753.26,
+"prob": 0.999,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "his",
+"start": 753.26,
+"end": 753.42,
+"prob": 0.997,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "subscriber",
+"start": 753.42,
+"end": 753.76,
+"prob": 0.991,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "count",
+"start": 753.76,
+"end": 754.12,
+"prob": 0.94,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "he",
+"start": 754.12,
+"end": 754.3,
+"prob": 0.942,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "has",
+"start": 754.3,
+"end": 754.42,
+"prob": 0.999,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "16.6",
+"start": 754.42,
+"end": 755.12,
+"prob": 0.999,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "million",
+"start": 755.12,
+"end": 755.34,
+"prob": 0.997,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "subscribers",
+"start": 755.34,
+"end": 755.64,
+"prob": 0.998,
+"burst": 159,
+"unaligned": true
+},
+{
+"w": "that's",
+"start": 756.87,
+"end": 757.111,
+"prob": 0.892,
+"burst": 160
+},
+{
+"w": "not",
+"start": 757.151,
+"end": 757.312,
+"prob": 0.936,
+"burst": 160
+},
+{
+"w": "that's",
+"start": 757.672,
+"end": 757.873,
+"prob": 0.904,
+"burst": 160
+},
+{
+"w": "technically",
+"start": 758.033,
+"end": 758.515,
+"prob": 0.404,
+"burst": 160
+},
+{
+"w": "not",
+"start": 758.555,
+"end": 758.735,
+"prob": 0.763,
+"burst": 160
+},
+{
+"w": "good",
+"start": 758.775,
+"end": 758.976,
+"prob": 0.828,
+"burst": 160
+},
+{
+"w": "but",
+"start": 759.096,
+"end": 759.296,
+"prob": 0.868,
+"burst": 160
+},
+{
+"w": "just",
+"start": 759.537,
+"end": 759.677,
+"prob": 0.867,
+"burst": 160
+},
+{
+"w": "because",
+"start": 759.718,
+"end": 759.938,
+"prob": 0.979,
+"burst": 160
+},
+{
+"w": "the",
+"start": 759.958,
+"end": 760.018,
+"prob": 0.0,
+"burst": 160
+},
+{
+"w": "The",
+"start": 761.151,
+"end": 761.271,
+"prob": 0.979,
+"burst": 161
+},
+{
+"w": "consistency",
+"start": 761.492,
+"end": 762.276,
+"prob": 0.864,
+"burst": 161
+},
+{
+"w": "is",
+"start": 762.336,
+"end": 762.437,
+"prob": 0.845,
+"burst": 161
+},
+{
+"w": "so",
+"start": 762.477,
+"end": 762.658,
+"prob": 0.988,
+"burst": 161
+},
+{
+"w": "much.",
+"start": 762.718,
+"end": 762.939,
+"prob": 0.987,
+"burst": 161
+},
+{
+"w": "He...",
+"start": 765.405,
+"end": 765.695,
+"prob": 0.98,
+"burst": 162
+},
+{
+"w": "His",
+"start": 766.372,
+"end": 766.493,
+"prob": 0.724,
+"burst": 163
+},
+{
+"w": "content",
+"start": 766.553,
+"end": 766.957,
+"prob": 0.866,
+"burst": 163
+},
+{
+"w": "system",
+"start": 766.997,
+"end": 767.26,
+"prob": 0.977,
+"burst": 163
+},
+{
+"w": "is",
+"start": 767.32,
+"end": 767.401,
+"prob": 0.68,
+"burst": 163
+},
+{
+"w": "an",
+"start": 767.421,
+"end": 767.482,
+"prob": 0.743,
+"burst": 163
+},
+{
+"w": "S-tier",
+"start": 767.603,
+"end": 767.986,
+"prob": 0.824,
+"burst": 163
+},
+{
+"w": "system.",
+"start": 768.026,
+"end": 768.349,
+"prob": 0.912,
+"burst": 163
+},
+{
+"w": "That's",
+"start": 772.462,
+"end": 772.683,
+"prob": 0.927,
+"burst": 164
+},
+{
+"w": "what",
+"start": 772.724,
+"end": 772.865,
+"prob": 0.838,
+"burst": 164
+},
+{
+"w": "a",
+"start": 772.905,
+"end": 772.946,
+"prob": 0.501,
+"burst": 164
+},
+{
+"w": "faceless",
+"start": 773.026,
+"end": 773.43,
+"prob": 0.767,
+"burst": 164
+},
+{
+"w": "short",
+"start": 773.45,
+"end": 773.692,
+"prob": 0.802,
+"burst": 164
+},
+{
+"w": "channel",
+"start": 773.732,
+"end": 774.055,
+"prob": 0.877,
+"burst": 164
+},
+{
+"w": "is.",
+"start": 774.196,
+"end": 774.297,
+"prob": 0.948,
+"burst": 164
+},
+{
+"w": "like",
+"start": 775.702,
+"end": 776.004,
+"prob": 0.861,
+"burst": 165
+},
+{
+"w": "mine.",
+"start": 776.126,
+"end": 776.509,
+"prob": 0.981,
+"burst": 165
+},
+{
+"w": "One",
+"start": 778.802,
+"end": 778.942,
+"prob": 0.782,
+"burst": 166
+},
+{
+"w": "niche,",
+"start": 779.023,
+"end": 779.324,
+"prob": 0.801,
+"burst": 166
+},
+{
+"w": "two",
+"start": 779.485,
+"end": 779.666,
+"prob": 0.848,
+"burst": 166
+},
+{
+"w": "or",
+"start": 779.706,
+"end": 779.786,
+"prob": 0.982,
+"burst": 166
+},
+{
+"w": "three",
+"start": 779.867,
+"end": 780.108,
+"prob": 0.868,
+"burst": 166
+},
+{
+"w": "a",
+"start": 780.148,
+"end": 780.188,
+"prob": 0.499,
+"burst": 166
+},
+{
+"w": "day.",
+"start": 780.228,
+"end": 780.449,
+"prob": 0.952,
+"burst": 166
+},
+{
+"w": "Same",
+"start": 783.681,
+"end": 783.912,
+"prob": 0.834,
+"burst": 167,
+"fixed": true
+},
+{
+"w": "Short",
+"start": 783.912,
+"end": 784.142,
+"prob": 0.834,
+"burst": 167,
+"fixed": true
+},
+{
+"w": "on",
+"start": 784.202,
+"end": 784.263,
+"prob": 0.976,
+"burst": 167
+},
+{
+"w": "YouTube,",
+"start": 784.303,
+"end": 784.684,
+"prob": 0.808,
+"burst": 167
+},
+{
+"w": "Instagram,",
+"start": 784.724,
+"end": 785.206,
+"prob": 0.857,
+"burst": 167
+},
+{
+"w": "TikTok,",
+"start": 785.226,
+"end": 785.668,
+"prob": 0.746,
+"burst": 167
+},
+{
+"w": "Facebook.",
+"start": 785.688,
+"end": 786.19,
+"prob": 0.767,
+"burst": 167
+},
+{
+"w": "YouTube",
+"start": 788.191,
+"end": 788.532,
+"prob": 0.524,
+"burst": 168
+},
+{
+"w": "and",
+"start": 788.572,
+"end": 788.652,
+"prob": 0.65,
+"burst": 168
+},
+{
+"w": "Facebook",
+"start": 788.672,
+"end": 788.973,
+"prob": 0.502,
+"burst": 168
+},
+{
+"w": "will",
+"start": 788.994,
+"end": 789.074,
+"prob": 0.004,
+"burst": 168
+},
+{
+"w": "pay",
+"start": 789.094,
+"end": 789.315,
+"prob": 0.294,
+"burst": 168
+},
+{
+"w": "you.",
+"start": 789.355,
+"end": 789.455,
+"prob": 0.961,
+"burst": 168
+},
+{
+"w": "So",
+"start": 794.821,
+"end": 794.962,
+"prob": 0.689,
+"burst": 169
+},
+{
+"w": "yeah",
+"start": 794.982,
+"end": 795.123,
+"prob": 0.414,
+"burst": 169
+},
+{
+"w": "that's",
+"start": 795.464,
+"end": 795.706,
+"prob": 0.936,
+"burst": 169
+},
+{
+"w": "gonna",
+"start": 795.726,
+"end": 795.947,
+"prob": 0.462,
+"burst": 169
+},
+{
+"w": "be",
+"start": 795.987,
+"end": 796.128,
+"prob": 0.983,
+"burst": 169
+},
+{
+"w": "it.",
+"start": 796.209,
+"end": 796.289,
+"prob": 0.883,
+"burst": 169
+},
+{
+"w": "On",
+"start": 798.911,
+"end": 798.991,
+"prob": 0.895,
+"burst": 170
+},
+{
+"w": "S",
+"start": 799.232,
+"end": 799.312,
+"prob": 0.983,
+"burst": 170
+},
+{
+"w": "tier,",
+"start": 799.332,
+"end": 799.613,
+"prob": 0.842,
+"burst": 170
+},
+{
+"w": "I",
+"start": 799.694,
+"end": 799.754,
+"prob": 0.991,
+"burst": 170
+},
+{
+"w": "have",
+"start": 799.794,
+"end": 799.935,
+"prob": 0.87,
+"burst": 170
+},
+{
+"w": "Kai",
+"start": 800.035,
+"end": 800.366,
+"prob": 0.719,
+"burst": 170,
+"fixed": true
+},
+{
+"w": "Cenat,",
+"start": 800.366,
+"end": 800.697,
+"prob": 0.719,
+"burst": 170,
+"fixed": true
+},
+{
+"w": "I",
+"start": 801.059,
+"end": 801.119,
+"prob": 0.796,
+"burst": 170
+},
+{
+"w": "have",
+"start": 801.159,
+"end": 801.28,
+"prob": 0.912,
+"burst": 170
+},
+{
+"w": "So",
+"start": 801.941,
+"end": 802.062,
+"prob": 0.83,
+"burst": 171
+},
+{
+"w": "on",
+"start": 802.122,
+"end": 802.203,
+"prob": 0.936,
+"burst": 171
+},
+{
+"w": "S",
+"start": 802.364,
+"end": 802.404,
+"prob": 0.965,
+"burst": 171
+},
+{
+"w": "tier",
+"start": 802.424,
+"end": 802.626,
+"prob": 0.463,
+"burst": 171
+},
+{
+"w": "I",
+"start": 802.686,
+"end": 802.747,
+"prob": 0.983,
+"burst": 171
+},
+{
+"w": "have",
+"start": 802.787,
+"end": 802.908,
+"prob": 0.988,
+"burst": 171
+},
+{
+"w": "Kai,",
+"start": 802.968,
+"end": 803.31,
+"prob": 0.87,
+"burst": 171
+},
+{
+"w": "Druski",
+"start": 803.592,
+"end": 804.055,
+"prob": 0.764,
+"burst": 171,
+"fixed": true
+},
+{
+"w": "Ludwig",
+"start": 804.176,
+"end": 804.619,
+"prob": 0.921,
+"burst": 171
+},
+{
+"w": "F-tier",
+"start": 805.242,
+"end": 805.584,
+"prob": 0.851,
+"burst": 172
+},
+{
+"w": "is",
+"start": 805.664,
+"end": 805.725,
+"prob": 0.832,
+"burst": 172
+},
+{
+"w": "xQc.",
+"start": 805.745,
+"end": 805.886,
+"prob": 0.407,
+"burst": 172,
+"fixed": true
+},
+{
+"w": "B",
+"start": 809.802,
+"end": 809.943,
+"prob": 0.712,
+"burst": 173
+},
+{
+"w": "tier",
+"start": 809.983,
+"end": 810.285,
+"prob": 0.683,
+"burst": 173
+},
+{
+"w": "is",
+"start": 810.345,
+"end": 810.426,
+"prob": 0.353,
+"burst": 173
+},
+{
+"w": "speed.",
+"start": 810.466,
+"end": 810.889,
+"prob": 0.942,
+"burst": 173
+},
+{
+"w": "A",
+"start": 820.183,
+"end": 820.367,
+"prob": 0.658,
+"burst": 174,
+"fixed": true
+},
+{
+"w": "tier",
+"start": 820.367,
+"end": 820.551,
+"prob": 0.658,
+"burst": 174,
+"fixed": true
+},
+{
+"w": "is",
+"start": 820.551,
+"end": 820.735,
+"prob": 0.658,
+"burst": 174,
+"fixed": true
+},
+{
+"w": "A",
+"start": 821.353,
+"end": 821.586,
+"prob": 0.425,
+"burst": 175,
+"fixed": true
+},
+{
+"w": "tier",
+"start": 821.586,
+"end": 821.819,
+"prob": 0.425,
+"burst": 175,
+"fixed": true
+},
+{
+"w": "is",
+"start": 821.819,
+"end": 822.053,
+"prob": 0.425,
+"burst": 175,
+"fixed": true
+},
+{
+"w": "Charlie.",
+"start": 822.053,
+"end": 822.286,
+"prob": 0.425,
+"burst": 175,
+"fixed": true
+},
+{
+"w": "Jynxzi.",
+"start": 824.572,
+"end": 825.098,
+"prob": 0.865,
+"burst": 176,
+"fixed": true
+},
+{
+"w": "Mm-hmm.",
+"start": 826.232,
+"end": 826.375,
+"prob": 0.131,
+"burst": 177
+},
+{
+"w": "CaseOh",
+"start": 827.261,
+"end": 827.583,
+"prob": 0.499,
+"burst": 178,
+"fixed": true
+},
+{
+"w": "is",
+"start": 827.643,
+"end": 827.724,
+"prob": 0.729,
+"burst": 178
+},
+{
+"w": "also",
+"start": 827.764,
+"end": 828.006,
+"prob": 0.894,
+"burst": 178
+},
+{
+"w": "B",
+"start": 828.026,
+"end": 828.187,
+"prob": 0.727,
+"burst": 178
+},
+{
+"w": "tier.",
+"start": 828.207,
+"end": 828.308,
+"prob": 0.34,
+"burst": 178
+},
+{
+"w": "N3on.",
+"start": 841.492,
+"end": 841.856,
+"prob": 0.865,
+"burst": 179,
+"fixed": true
+},
+{
+"w": "and",
+"start": 841.896,
+"end": 841.997,
+"prob": 0.756,
+"burst": 179
+},
+{
+"w": "Adin",
+"start": 842.098,
+"end": 842.325,
+"prob": 0.609,
+"burst": 179,
+"fixed": true
+},
+{
+"w": "are",
+"start": 842.325,
+"end": 842.553,
+"prob": 0.609,
+"burst": 179,
+"fixed": true
+},
+{
+"w": "C",
+"start": 842.553,
+"end": 842.781,
+"prob": 0.609,
+"burst": 179,
+"fixed": true
+},
+{
+"w": "tier.",
+"start": 842.781,
+"end": 843.008,
+"prob": 0.609,
+"burst": 179,
+"fixed": true
+},
+{
+"w": "And",
+"start": 848.109,
+"end": 848.231,
+"prob": 0.676,
+"burst": 180
+},
+{
+"w": "yeah",
+"start": 848.252,
+"end": 848.476,
+"prob": 0.59,
+"burst": 180
+},
+{
+"w": "i",
+"start": 849.76,
+"end": 849.8,
+"prob": 0.692,
+"burst": 181
+},
+{
+"w": "don't",
+"start": 849.82,
+"end": 849.961,
+"prob": 0.722,
+"burst": 181
+},
+{
+"w": "know",
+"start": 849.981,
+"end": 850.121,
+"prob": 0.885,
+"burst": 181
+},
+{
+"w": "i",
+"start": 850.181,
+"end": 850.242,
+"prob": 0.876,
+"burst": 181
+},
+{
+"w": "did",
+"start": 850.282,
+"end": 850.422,
+"prob": 0.915,
+"burst": 181
+},
+{
+"w": "i",
+"start": 850.442,
+"end": 850.502,
+"prob": 0.485,
+"burst": 181
+},
+{
+"w": "forget",
+"start": 850.562,
+"end": 850.863,
+"prob": 0.724,
+"burst": 181
+},
+{
+"w": "anyone",
+"start": 850.923,
+"end": 851.224,
+"prob": 0.916,
+"burst": 181
+},
+{
+"w": "but",
+"start": 851.565,
+"end": 851.665,
+"prob": 0.907,
+"burst": 181
+},
+{
+"w": "yeah",
+"start": 851.685,
+"end": 851.805,
+"prob": 0.49,
+"burst": 181
+},
+{
+"w": "that's",
+"start": 851.825,
+"end": 852.006,
+"prob": 0.833,
+"burst": 181
+},
+{
+"w": "going",
+"start": 852.026,
+"end": 852.146,
+"prob": 0.97,
+"burst": 181
+},
+{
+"w": "to",
+"start": 852.166,
+"end": 852.226,
+"prob": 0.718,
+"burst": 181
+},
+{
+"w": "be",
+"start": 852.246,
+"end": 852.347,
+"prob": 0.914,
+"burst": 181
+},
+{
+"w": "it",
+"start": 852.467,
+"end": 852.547,
+"prob": 0.717,
+"burst": 181
+},
+{
+"w": "for",
+"start": 852.567,
+"end": 852.667,
+"prob": 0.977,
+"burst": 181
+},
+{
+"w": "the",
+"start": 852.708,
+"end": 852.768,
+"prob": 0.206,
+"burst": 181
+},
+{
+"w": "video",
+"start": 852.808,
+"end": 853.028,
+"prob": 0.804,
+"burst": 181
+},
+{
+"w": "guys",
+"start": 853.048,
+"end": 853.289,
+"prob": 0.602,
+"burst": 181
+},
+{
+"w": "hope",
+"start": 853.309,
+"end": 853.389,
+"prob": 0.003,
+"burst": 181
+},
+{
+"w": "you",
+"start": 853.469,
+"end": 853.57,
+"prob": 0.403,
+"burst": 181
+},
+{
+"w": "guys",
+"start": 853.69,
+"end": 853.91,
+"prob": 0.584,
+"burst": 181
+},
+{
+"w": "liked",
+"start": 853.951,
+"end": 854.171,
+"prob": 0.839,
+"burst": 181
+},
+{
+"w": "it",
+"start": 854.231,
+"end": 854.311,
+"prob": 0.778,
+"burst": 181
+},
+{
+"w": "i'm",
+"start": 854.532,
+"end": 854.692,
+"prob": 0.381,
+"burst": 181
+},
+{
+"w": "trying",
+"start": 854.793,
+"end": 855.013,
+"prob": 0.831,
+"burst": 181
+},
+{
+"w": "to",
+"start": 855.033,
+"end": 855.073,
+"prob": 0.1,
+"burst": 181
+},
+{
+"w": "make",
+"start": 855.254,
+"end": 855.414,
+"prob": 0.872,
+"burst": 181
+},
+{
+"w": "these",
+"start": 855.454,
+"end": 855.595,
+"prob": 0.905,
+"burst": 181
+},
+{
+"w": "videos",
+"start": 855.635,
+"end": 856.036,
+"prob": 0.809,
+"burst": 181
+},
+{
+"w": "as",
+"start": 856.537,
+"end": 856.637,
+"prob": 0.706,
+"burst": 181
+},
+{
+"w": "entertaining",
+"start": 856.697,
+"end": 857.118,
+"prob": 0.84,
+"burst": 181
+},
+{
+"w": "as",
+"start": 857.158,
+"end": 857.219,
+"prob": 0.904,
+"burst": 181
+},
+{
+"w": "possible",
+"start": 857.279,
+"end": 857.62,
+"prob": 0.924,
+"burst": 181
+},
+{
+"w": "and",
+"start": 858.47,
+"end": 858.571,
+"prob": 0.714,
+"burst": 182
+},
+{
+"w": "as",
+"start": 858.631,
+"end": 858.691,
+"prob": 0.975,
+"burst": 182
+},
+{
+"w": "consistent",
+"start": 858.751,
+"end": 859.213,
+"prob": 0.907,
+"burst": 182
+},
+{
+"w": "as",
+"start": 859.253,
+"end": 859.333,
+"prob": 0.688,
+"burst": 182
+},
+{
+"w": "possible",
+"start": 859.373,
+"end": 859.754,
+"prob": 0.889,
+"burst": 182
+},
+{
+"w": "so",
+"start": 859.935,
+"end": 860.035,
+"prob": 0.618,
+"burst": 182
+},
+{
+"w": "that",
+"start": 860.075,
+"end": 860.216,
+"prob": 0.909,
+"burst": 182
+},
+{
+"w": "I",
+"start": 860.296,
+"end": 860.376,
+"prob": 0.751,
+"burst": 182
+},
+{
+"w": "practice",
+"start": 860.416,
+"end": 860.838,
+"prob": 0.796,
+"burst": 182
+},
+{
+"w": "what",
+"start": 860.858,
+"end": 860.998,
+"prob": 0.857,
+"burst": 182
+},
+{
+"w": "I",
+"start": 861.018,
+"end": 861.078,
+"prob": 0.744,
+"burst": 182
+},
+{
+"w": "preach.",
+"start": 861.119,
+"end": 861.359,
+"prob": 0.876,
+"burst": 182
+},
+{
+"w": "um",
+"start": 861.95,
+"end": 862.15,
+"prob": 0.737,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "yeah",
+"start": 862.15,
+"end": 862.69,
+"prob": 0.989,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "let",
+"start": 862.69,
+"end": 862.89,
+"prob": 0.992,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "me",
+"start": 862.89,
+"end": 863.01,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "know",
+"start": 863.01,
+"end": 863.13,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "what",
+"start": 863.13,
+"end": 863.27,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 863.27,
+"end": 863.37,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "guys",
+"start": 863.37,
+"end": 863.51,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "think",
+"start": 863.51,
+"end": 863.75,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "make",
+"start": 863.75,
+"end": 863.97,
+"prob": 0.978,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "sure",
+"start": 863.97,
+"end": 864.13,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 864.13,
+"end": 864.27,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "get",
+"start": 864.27,
+"end": 864.49,
+"prob": 0.998,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "uh",
+"start": 864.49,
+"end": 864.79,
+"prob": 0.951,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "make",
+"start": 864.79,
+"end": 865.15,
+"prob": 0.999,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "sure",
+"start": 865.15,
+"end": 865.27,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 865.27,
+"end": 865.39,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "get",
+"start": 865.39,
+"end": 865.51,
+"prob": 0.999,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "into",
+"start": 865.51,
+"end": 865.69,
+"prob": 0.998,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "make",
+"start": 865.69,
+"end": 866.09,
+"prob": 0.416,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "sure",
+"start": 866.09,
+"end": 866.79,
+"prob": 1.0,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 866.79,
+"end": 866.97,
+"prob": 0.999,
+"burst": 183,
+"unaligned": true
+},
+{
+"w": "Make",
+"start": 868.001,
+"end": 868.101,
+"prob": 0.414,
+"burst": 184
+},
+{
+"w": "sure",
+"start": 868.121,
+"end": 868.261,
+"prob": 0.763,
+"burst": 184
+},
+{
+"w": "to",
+"start": 868.281,
+"end": 868.342,
+"prob": 0.745,
+"burst": 184
+},
+{
+"w": "click",
+"start": 868.362,
+"end": 868.522,
+"prob": 0.843,
+"burst": 184
+},
+{
+"w": "the",
+"start": 868.542,
+"end": 868.622,
+"prob": 0.837,
+"burst": 184
+},
+{
+"w": "link",
+"start": 868.642,
+"end": 868.783,
+"prob": 0.877,
+"burst": 184
+},
+{
+"w": "below",
+"start": 868.823,
+"end": 869.003,
+"prob": 0.98,
+"burst": 184
+},
+{
+"w": "if",
+"start": 869.063,
+"end": 869.103,
+"prob": 1.0,
+"burst": 184
+},
+{
+"w": "you're",
+"start": 869.123,
+"end": 869.284,
+"prob": 0.98,
+"burst": 184
+},
+{
+"w": "interested",
+"start": 869.304,
+"end": 869.685,
+"prob": 0.814,
+"burst": 184
+},
+{
+"w": "in",
+"start": 869.725,
+"end": 869.805,
+"prob": 0.702,
+"burst": 184
+},
+{
+"w": "scaling",
+"start": 869.905,
+"end": 870.246,
+"prob": 0.968,
+"burst": 184
+},
+{
+"w": "a",
+"start": 870.286,
+"end": 870.326,
+"prob": 0.516,
+"burst": 184
+},
+{
+"w": "faceless",
+"start": 870.366,
+"end": 870.687,
+"prob": 0.886,
+"burst": 184
+},
+{
+"w": "shorts",
+"start": 870.727,
+"end": 870.968,
+"prob": 0.832,
+"burst": 184
+},
+{
+"w": "channel",
+"start": 870.988,
+"end": 871.289,
+"prob": 0.607,
+"burst": 184
+},
+{
+"w": "to",
+"start": 871.349,
+"end": 871.389,
+"prob": 0.974,
+"burst": 184
+},
+{
+"w": "you",
+"start": 872.1,
+"end": 872.26,
+"prob": 0.592,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "know,",
+"start": 872.26,
+"end": 872.4,
+"prob": 0.996,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 872.4,
+"end": 872.72,
+"prob": 0.996,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "make",
+"start": 872.72,
+"end": 872.94,
+"prob": 1.0,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "ad",
+"start": 872.94,
+"end": 873.18,
+"prob": 0.979,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "revenue",
+"start": 873.18,
+"end": 873.58,
+"prob": 0.99,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 873.58,
+"end": 874.02,
+"prob": 0.989,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "brand",
+"start": 874.02,
+"end": 874.22,
+"prob": 0.921,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "deals",
+"start": 874.22,
+"end": 874.64,
+"prob": 0.995,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "before",
+"start": 874.64,
+"end": 875.46,
+"prob": 0.961,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "January",
+"start": 875.46,
+"end": 876.26,
+"prob": 0.989,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "31st,",
+"start": 876.26,
+"end": 876.92,
+"prob": 0.918,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "because",
+"start": 876.96,
+"end": 877.16,
+"prob": 0.997,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "because",
+"start": 877.16,
+"end": 877.9,
+"prob": 0.683,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "that's",
+"start": 877.9,
+"end": 878.6,
+"prob": 1.0,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "when",
+"start": 878.6,
+"end": 878.7,
+"prob": 0.986,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 878.7,
+"end": 879.0,
+"prob": 0.999,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "requirement",
+"start": 879.0,
+"end": 879.46,
+"prob": 0.998,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "doubles.",
+"start": 879.46,
+"end": 879.82,
+"prob": 0.983,
+"burst": 185,
+"unaligned": true
+},
+{
+"w": "You",
+"start": 880.45,
+"end": 880.85,
+"prob": 0.858,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "can",
+"start": 880.85,
+"end": 880.97,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "join",
+"start": 880.97,
+"end": 881.31,
+"prob": 0.999,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "for",
+"start": 881.31,
+"end": 881.57,
+"prob": 0.999,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "$1",
+"start": 881.57,
+"end": 882.09,
+"prob": 0.922,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 882.09,
+"end": 882.17,
+"prob": 0.997,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "month.",
+"start": 882.17,
+"end": 882.39,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "You",
+"start": 882.47,
+"end": 882.59,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "can",
+"start": 882.59,
+"end": 882.67,
+"prob": 0.947,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "get",
+"start": 882.67,
+"end": 882.83,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "a",
+"start": 882.83,
+"end": 882.93,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "free",
+"start": 882.93,
+"end": 883.09,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "call",
+"start": 883.09,
+"end": 883.41,
+"prob": 0.999,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "one-on-one",
+"start": 883.41,
+"end": 884.11,
+"prob": 0.976,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "with",
+"start": 884.11,
+"end": 884.25,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "me.",
+"start": 884.25,
+"end": 884.47,
+"prob": 1.0,
+"burst": 186,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 885.201,
+"end": 885.341,
+"prob": 0.599,
+"burst": 187
+},
+{
+"w": "you",
+"start": 885.421,
+"end": 885.581,
+"prob": 0.711,
+"burst": 187
+},
+{
+"w": "can",
+"start": 885.621,
+"end": 885.762,
+"prob": 0.756,
+"burst": 187
+},
+{
+"w": "get",
+"start": 885.802,
+"end": 885.942,
+"prob": 0.724,
+"burst": 187
+},
+{
+"w": "three",
+"start": 886.022,
+"end": 886.303,
+"prob": 0.767,
+"burst": 187
+},
+{
+"w": "modules",
+"start": 886.583,
+"end": 887.064,
+"prob": 0.751,
+"burst": 187
+},
+{
+"w": "where",
+"start": 887.104,
+"end": 887.285,
+"prob": 0.866,
+"burst": 187
+},
+{
+"w": "you",
+"start": 887.325,
+"end": 887.425,
+"prob": 0.698,
+"burst": 187
+},
+{
+"w": "can",
+"start": 887.445,
+"end": 887.565,
+"prob": 0.912,
+"burst": 187
+},
+{
+"w": "understand",
+"start": 887.585,
+"end": 888.006,
+"prob": 0.836,
+"burst": 187
+},
+{
+"w": "the",
+"start": 888.046,
+"end": 888.147,
+"prob": 0.824,
+"burst": 187
+},
+{
+"w": "whole",
+"start": 888.167,
+"end": 888.407,
+"prob": 0.695,
+"burst": 187
+},
+{
+"w": "game",
+"start": 888.467,
+"end": 888.708,
+"prob": 0.926,
+"burst": 187
+},
+{
+"w": "so",
+"start": 888.728,
+"end": 888.768,
+"prob": 0.0,
+"burst": 187
+},
+{
+"w": "literally",
+"start": 890.661,
+"end": 891.081,
+"prob": 0.895,
+"burst": 188
+},
+{
+"w": "the",
+"start": 891.121,
+"end": 891.182,
+"prob": 0.925,
+"burst": 188
+},
+{
+"w": "cheapest",
+"start": 891.262,
+"end": 891.643,
+"prob": 0.847,
+"burst": 188
+},
+{
+"w": "it",
+"start": 891.723,
+"end": 891.783,
+"prob": 0.805,
+"burst": 188
+},
+{
+"w": "can",
+"start": 891.843,
+"end": 892.103,
+"prob": 0.758,
+"burst": 188
+},
+{
+"w": "be",
+"start": 892.144,
+"end": 892.284,
+"prob": 0.866,
+"burst": 188
+},
+{
+"w": "to",
+"start": 892.645,
+"end": 892.745,
+"prob": 0.622,
+"burst": 188
+},
+{
+"w": "get",
+"start": 892.865,
+"end": 893.045,
+"prob": 0.834,
+"burst": 188
+},
+{
+"w": "you",
+"start": 893.085,
+"end": 893.206,
+"prob": 0.936,
+"burst": 188
+},
+{
+"w": "off",
+"start": 893.266,
+"end": 893.386,
+"prob": 0.724,
+"burst": 188
+},
+{
+"w": "the",
+"start": 893.406,
+"end": 893.486,
+"prob": 0.809,
+"burst": 188
+},
+{
+"w": "runway",
+"start": 893.546,
+"end": 893.847,
+"prob": 0.945,
+"burst": 188
+},
+{
+"w": "for",
+"start": 893.887,
+"end": 894.007,
+"prob": 0.989,
+"burst": 188
+},
+{
+"w": "one",
+"start": 894.108,
+"end": 894.188,
+"prob": 0.835,
+"burst": 188
+},
+{
+"w": "dollar",
+"start": 894.228,
+"end": 894.548,
+"prob": 0.836,
+"burst": 188
+},
+{
+"w": "a",
+"start": 894.568,
+"end": 894.589,
+"prob": 0.0,
+"burst": 188
+},
+{
+"w": "month",
+"start": 895.009,
+"end": 895.19,
+"prob": 0.894,
+"burst": 188
+},
+{
+"w": "For",
+"start": 895.8,
+"end": 895.98,
+"prob": 0.619,
+"burst": 189,
+"unaligned": true
+},
+{
+"w": "$1,",
+"start": 895.98,
+"end": 896.4,
+"prob": 0.807,
+"burst": 189,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 897.34,
+"end": 897.58,
+"prob": 0.554,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "can",
+"start": 897.58,
+"end": 897.68,
+"prob": 0.745,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "get",
+"start": 897.68,
+"end": 897.84,
+"prob": 0.999,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 897.84,
+"end": 897.98,
+"prob": 0.997,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "calls",
+"start": 897.98,
+"end": 898.2,
+"prob": 0.955,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 898.2,
+"end": 898.34,
+"prob": 0.708,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 898.34,
+"end": 898.42,
+"prob": 0.994,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "three",
+"start": 898.42,
+"end": 898.56,
+"prob": 0.949,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "modules",
+"start": 898.56,
+"end": 898.88,
+"prob": 0.994,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 898.88,
+"end": 899.16,
+"prob": 0.963,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "it",
+"start": 899.16,
+"end": 899.24,
+"prob": 0.998,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "will",
+"start": 899.24,
+"end": 899.32,
+"prob": 0.998,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "be",
+"start": 899.32,
+"end": 899.48,
+"prob": 1.0,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "more",
+"start": 899.48,
+"end": 899.72,
+"prob": 0.999,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "than",
+"start": 899.72,
+"end": 899.86,
+"prob": 1.0,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "enough",
+"start": 899.86,
+"end": 900.08,
+"prob": 1.0,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 900.08,
+"end": 900.24,
+"prob": 0.999,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "get",
+"start": 900.24,
+"end": 900.42,
+"prob": 1.0,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 900.42,
+"end": 900.58,
+"prob": 1.0,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "off",
+"start": 900.58,
+"end": 900.74,
+"prob": 0.998,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 900.74,
+"end": 900.88,
+"prob": 0.999,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "runway",
+"start": 900.88,
+"end": 901.1,
+"prob": 0.992,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "very",
+"start": 901.1,
+"end": 901.48,
+"prob": 0.546,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "very",
+"start": 901.48,
+"end": 901.74,
+"prob": 0.898,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "cheap",
+"start": 901.74,
+"end": 902.04,
+"prob": 1.0,
+"burst": 190,
+"unaligned": true
+},
+{
+"w": "and",
+"start": 902.953,
+"end": 903.034,
+"prob": 0.855,
+"burst": 191
+},
+{
+"w": "very",
+"start": 903.115,
+"end": 903.339,
+"prob": 0.595,
+"burst": 191
+},
+{
+"w": "valuable.",
+"start": 903.379,
+"end": 903.867,
+"prob": 0.931,
+"burst": 191
+},
+{
+"w": "So,",
+"start": 904.423,
+"end": 904.952,
+"prob": 0.968,
+"burst": 192
+},
+{
+"w": "yeah.",
+"start": 905.095,
+"end": 905.339,
+"prob": 0.687,
+"burst": 192
+},
+{
+"w": "make",
+"start": 905.982,
+"end": 906.082,
+"prob": 0.498,
+"burst": 193
+},
+{
+"w": "sure",
+"start": 906.103,
+"end": 906.264,
+"prob": 0.54,
+"burst": 193
+},
+{
+"w": "to",
+"start": 906.284,
+"end": 906.486,
+"prob": 0.734,
+"burst": 193
+},
+{
+"w": "get",
+"start": 906.647,
+"end": 906.789,
+"prob": 0.887,
+"burst": 193
+},
+{
+"w": "that",
+"start": 906.829,
+"end": 907.051,
+"prob": 0.791,
+"burst": 193
+},
+{
+"w": "if",
+"start": 907.152,
+"end": 907.212,
+"prob": 0.998,
+"burst": 193
+},
+{
+"w": "you",
+"start": 907.253,
+"end": 907.354,
+"prob": 1.0,
+"burst": 193
+},
+{
+"w": "are",
+"start": 907.394,
+"end": 907.515,
+"prob": 0.749,
+"burst": 193
+},
+{
+"w": "interested.",
+"start": 907.556,
+"end": 907.959,
+"prob": 0.866,
+"burst": 193
+},
+{
+"w": "I'm",
+"start": 908.19,
+"end": 908.41,
+"prob": 0.825,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "going",
+"start": 908.41,
+"end": 908.41,
+"prob": 0.632,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "to",
+"start": 908.41,
+"end": 908.55,
+"prob": 1.0,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "catch",
+"start": 908.55,
+"end": 908.65,
+"prob": 0.998,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "you",
+"start": 908.65,
+"end": 908.75,
+"prob": 0.999,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "guys",
+"start": 908.75,
+"end": 908.89,
+"prob": 0.982,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "inside",
+"start": 908.89,
+"end": 909.17,
+"prob": 0.98,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "of",
+"start": 909.17,
+"end": 909.63,
+"prob": 0.934,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "the",
+"start": 909.63,
+"end": 909.73,
+"prob": 1.0,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "next",
+"start": 909.73,
+"end": 909.87,
+"prob": 1.0,
+"burst": 194,
+"unaligned": true
+},
+{
+"w": "one.",
+"start": 909.87,
+"end": 910.03,
+"prob": 0.999,
+"burst": 194,
+"unaligned": true
+}
+]
+}
+]
+}

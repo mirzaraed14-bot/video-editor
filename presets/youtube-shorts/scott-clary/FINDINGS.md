@@ -5,6 +5,20 @@
 crazy moment told in the guest's own words) beat lessons. The VIRAL-BAR gate A (a usable lesson) is relaxed for this channel: a story
 with a picture, stakes and a punchline is enough. First data point: "Daymond John Almost LOST $250M" = 35K (not enough for him).
 
+## The Daymond factor (Affan 2026-10-22, from the Bombas Short at 238K; ONE observation, curve open: hypotheses, not findings)
+Frame-by-frame (`projects/_client-scott-clary/bombas-shark-was-wrong`, 38.7 s): 0 s "I have the number one invested Shark Tank
+product ever" + FUBU FOUNDER / SHARK TANK INVESTOR card -> 3 s "Bombas" (the sock, the Tank pitch footage) -> his own big idea with
+celebrity nouns (Flavor Flav, Snoop Dogg socks) -> "They're like, thank you. Click." -> "It's Sesame Street. I'm like, Sesame Street?
+...these idiots" -> his 2-year-old: "Daddy, put on your Elmos" (photo with his daughter) -> "a tear came down my eye... not because of
+the Elmos... I'm going to make a lot of money" (he wipes his eye on camera) -> "it's not for me to object, it's for me to understand".
+- F1 A household face, rich, recognised in frame 1 (the name card at 0 s did not hurt: CONTRADICTS H1 on this channel, n=1).
+- F2 A superlative + money in the first line ("number one ... ever"; title: name + $250M + "almost lost").
+- F3 The famous expert was WRONG or nearly lost it (the AW factor's podcast form: the held judgment "a Shark knows" reversed, in his
+  own voice, with a receipt).
+- F4 Celebrity and brand nouns all the way through (Bombas, Flavor Flav, Snoop, Sesame Street, Elmo): pictures, not concepts.
+- F5 A comic turn on an emotion (the tear is about money): entertainment, not a lecture; the lesson is one line at the end.
+- F6 Affan's two-track rule: a household-famous, rich guest's own story is enough; a less famous guest must give the viewer value.
+
 ## Validated on this channel
 (none yet: the first results arrive 7 days after the first logged upload)
 
@@ -27,6 +41,10 @@ with a picture, stakes and a punchline is enough. First data point: "Daymond Joh
   DeJoria's wife's note + the Hell's Angels; Cuneo: Marvel's board vs Robert Downey Jr.; Macci: "I got the next two"; Morgan: the
   rigged claw machine; Morgan: OJ's Bronco + Bundy's VW at $7M a year. Bench of 10 in the same file. Guests ranked by Wikipedia
   page views (a fame proxy: YouTube stays off this machine), not by episode views.
+
+- **Daymond-type moments (2026-10-22; `projects/_client-scott-clary/research/viral2/TOP-MOMENTS.md`):** Scaramucci "lost his job,
+  his marriage and his son's birth in 11 days" + "give me Stephen Colbert's number" (studio); Packouz faked an office for a $300M Army
+  contract; Lubetzky KIND $5.2M -> $1B (studio); Daymond's Kevin O'Leary/Snoop riff (studio); Pincus ignored Facebook. Bench of 9.
 
 ## Freshness log
 - 2026-10-19, web search (not YouTube): no indexed clip of Serhant's bank-CEO calendar, the "pitched 50 shows" angle, or "yes and / no

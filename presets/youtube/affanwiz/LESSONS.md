@@ -132,3 +132,40 @@ a job teaches something.
   N3on-chapter plate under the dot room (KM@15, his channel page) carried a legible business email. Change → g03 re-sourced
   to KM@140 (N3on on camera), placed as `g03-plate-v2.mp4`; the check = a contact sheet of `compositions/_bg/*.jpg` before
   placing. → `projects/kick-fake-viewers/build-plan.py`.
+
+## 2026-10-22 · CA-007 "I Ranked Every Streamer's Content Machine" (ABW10 › "CA-007 Streamer Tier List") — STYLE v2, + the first "1 % better" pass
+- **A spine graphic carries a list video**: the TIER BOARD (S/A/B/C/F, the thumbnail's layout) appears at every verdict as
+  a compact SIDE board on the face (right third, x 1450–1850, dark glass card), the newest entry dropping in, and fills the
+  whole frame once for the spoken recap. → `projects/streamer-content-machines/hf-graphics/gfx/build-comps-B.py`.
+- **Side cards keep the face on screen while information lands** (chapter tags top-left for the five archetypes, the
+  census / Expedia / clipper-math / recipe cards on the right): a proof-dense script got 25 full-frame graphics (3.5/min)
+  + 17 side overlays, face 50 % (the script's density; the reference was 62 %, CA-003 53 %). The no-stray-frame gate skips
+  side overlays (they never cut the face). → `build-plan.py` (region 'side'), `review/gate-frames.py`.
+- **A fresh, wide SFX set per job** (the 2026-10-21 variety note): 53 Epidemic files in 12 classes, every one ≤ 20 dB tonal
+  prominence, takes rotated in time order (none twice in a row) → 157 cues over 42 distinct files. Real bells/chimes all
+  fail the prominence rule (21–86 dB): the "chime" class is soft timpani. → `sfx/LIBRARY.md`, `build-plan.py` § SFX.
+- **The take, not the script, sets the numbers**: on-screen numbers follow his words; live pages had moved (xQc TikTok 48 vs
+  his 47, Adin 5.8M vs 6M, Speed's best Short 30M vs 28M), so captures are cropped/dimmed where their own number competes.
+- **WhisperX merges repeated lines on a heavy-retake take**: rebuild the words per energy burst (faster-whisper per burst,
+  wav2vec2-aligned per burst, numerals keep faster-whisper) and measure every cut edge on the envelope; a spectral check
+  catches clipped fricatives ("five" played as "ive"). → `projects/streamer-content-machines/review/tools/`, `transcript/build-cuts.py`.
+- **ABW10's 59.94 sequences display DROP-FRAME**: QE razors need DF timecode (lab-notes 2026-10-22).
+
+## 2026-10-23 · CA-007 review (Tella walkthrough) — four must-fixes ("otherwise I literally cannot upload this")
+- **Lips out of sync at 1:24, 1:56, 2:50, 3:22, 3:49, 4:59, 5:50** → my 2026-10-22 stray-razor "heal" (`.end =`) SLIPPED 50 V1
+  pieces (−3 … −240 frames); no gate compared V1 with A1. Change → V1 rebuilt from HIS A1 with a video-only subclip, zoom edges
+  pre-split (no QE razor), `work/sync_audit.py` = 0 off; the audit is now a gate after every V1 write (PLAYBOOK + lab-notes).
+- **"Whenever I'm looking down reading off the phone … cover the whole thing"** → head-pitch measurement (`review/tools/look_down.py`),
+  covers on every ≥ 60 % reading clip (37 → 0 s visible), the archetype titles full-frame, side cards that sat on reading lines
+  made full-frame. Face share falls to ~34 % (his ask). → PLAYBOOK rule.
+- **"SFX very cheap … recycling one sound effect … I need variety, crisp, expensive"** (v1 had 42 files, but 44 near-identical
+  ticks/thuds dominated) → a new premium set (`sfx2/`, 77 takes in 16 classes), 157 → 110 cues (a pen per underline and a click
+  per list row were the tick-fest: `THIN` in `build-plan.py`), no take more than 3 times or twice within 60 s, and a class that
+  runs dry BORROWS a sibling class's take (`FALLBACK`) instead of repeating: 69 different files. → PLAYBOOK rule.
+- **Head-pitch 40–60 % ≠ reading**: the 12 such clips on CA-007 were all camera-facing looks/gestures; real reading = head
+  tipped fully down (compare against a ≥ 60 % frame, `review/frames/ref-reading.jpg`). Eyeball them; don't cover by number.
+- **"A clean animation each minute prompting them to join the Skool community"** → CTA side cards + a full plug card. → PLAYBOOK
+  (the channel's CTA exception). Once the reading covers took the face away, 3:00–5:00 had NO face window: that minute's CTA rides
+  INSIDE a full-frame comp as a chip (same template, scaled .85, top-left above the comp's own rows), never skipped; a fourth CTA
+  inside 70 s at the end was retired instead. Every CTA line is his words (his ask + the plug in the take), none invented.
+- He cut two lines himself ("$40 per 100,000"; "CaseOh is also"): his A1 became the EDL (`work/edl_from_a1.py`); his hand wins.

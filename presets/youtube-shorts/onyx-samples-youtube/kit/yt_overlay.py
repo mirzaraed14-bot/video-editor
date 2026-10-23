@@ -9,7 +9,7 @@ Reads `<job>/yt/spec.json` → "hook": {"lines": ["SMALL WHITE LINE", "BIG GRADI
 over ~0.46 s, holds, slides out over ~0.88 s and is gone by ~3.2 s, with per-frame horizontal motion blur; every timeline
 step sits a quarter frame before its frame boundary (exact boundaries round a third of them a frame late).
 """
-import json, os, shutil, sys
+import json, math, os, shutil, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "onyx-samples", "kit"))
 from captext import clean          # the caption punctuation rule (Affan, 2026-10-07: only ! ? and quotation marks)
 from PIL import ImageFont
@@ -101,6 +101,46 @@ def main():
     cs = spec.get("captions", {})
     cy_ = (spec.get("split", {}).get("seam", 1092) + cs.get("seam_dy", 0)) if cs.get("on_seam") else cs.get("y")
     cap_y = f", y: {float(cy_):.1f}" if cy_ is not None else ""
+    # TAGS (Affan 2026-10-23, War Dogs): a name tag beside the guest's head ("THE REAL / DAVID PACKOUZ"). Spec "tags": [{"t0", "t1",
+    # "x", "y" (the dot, output px, beside the head), "dx" (+ = the label opens to the right), "dy" (elbow rise, px), "small", "big" ("|" breaks a line)}]
+    tags = spec.get("tags", [])
+    tag_divs, tag_js = [], []
+    for i, g in enumerate(tags):
+        sgn = 1 if g.get("dx", 220) >= 0 else -1; L = abs(g.get("dx", 220)); rise = g.get("dy", -90)
+        ex, ey = g["x"] + sgn * L, g["y"] + rise                              # the elbow end, where the label hangs
+        tag_divs.append(
+            f'<div id="tg{i}" class="tag">'
+            f'<div class="tdot" style="left:{g["x"] - 9}px;top:{g["y"] - 9}px"></div>'
+            f'<div class="tdiag" style="left:{g["x"]}px;top:{g["y"]}px;width:{math.hypot(L * 0.35, rise):.0f}px;'
+            f'transform:rotate({math.degrees(math.atan2(rise, sgn * L * 0.35)):.2f}deg)"></div>'
+            f'<div class="thor" style="left:{min(g["x"] + sgn * L * 0.35, ex)}px;top:{ey - 2}px;width:{L * 0.65:.0f}px;'
+            f'transform-origin:{"left" if sgn > 0 else "right"} center"></div>'
+            f'<div class="tlab" style="{"left" if sgn > 0 else "right"}:{ex + 14 if sgn > 0 else W - ex + 14}px;top:{ey - 40}px;'
+            f'text-align:{"left" if sgn > 0 else "right"}"><div class="tsm">{clean(g.get("small", ""))}</div>'
+            f'<div class="tbig">{"<br>".join(clean(x) for x in g.get("big", "").split("|"))}</div></div></div>')   # "|" = a line break
+        t0, t1 = g["t0"], g["t1"]
+        tag_js.append(
+            f'tl.set("#tg{i}", {{autoAlpha: 1}}, {t0});'
+            f'tl.fromTo("#tg{i} .tdot", {{scale: 0}}, {{scale: 1, duration: 0.22, ease: "back.out(3)"}}, {t0});'
+            f'tl.fromTo("#tg{i} .tdiag", {{scaleX: 0}}, {{scaleX: 1, duration: 0.16, ease: "power2.out"}}, {t0 + 0.12});'
+            f'tl.fromTo("#tg{i} .thor", {{scaleX: 0}}, {{scaleX: 1, duration: 0.22, ease: "power2.out"}}, {t0 + 0.26});'
+            f'tl.fromTo("#tg{i} .tlab", {{clipPath: "inset(0 {"100%" if sgn > 0 else "0"} 0 {"0" if sgn > 0 else "100%"})", y: 6}}, '
+            f'{{clipPath: "inset(0 0% 0 0%)", y: 0, duration: 0.34, ease: "power3.out"}}, {t0 + 0.42});'
+            f'tl.to("#tg{i}", {{autoAlpha: 0, y: -10, duration: 0.25, ease: "power2.in"}}, {t1 - 0.25});')
+    # STAMPS + GLINTS (War Dogs, 2026-10-23): "stamps": [{"t", "text", "x", "y" (centre px), "angle", "color"}] slam in and hold;
+    # "glints": [{"t", "x", "y", "size"}] = a four-point star that flashes on a word ("diamonds")
+    for i, g in enumerate(spec.get("stamps", [])):
+        col = g.get("color", "#E5383B")
+        tag_divs.append(f'<div id="st{i}" class="stamp" style="left:{g["x"]}px;top:{g["y"]}px;color:{col};border-color:{col};'
+                        f'">{clean(g["text"])}</div>')
+        tag_js.append(f'tl.set("#st{i}", {{xPercent: -50, yPercent: -50, rotation: {g.get("angle", -8)}}}, 0);'
+                      f'tl.fromTo("#st{i}", {{autoAlpha: 0, scale: 2.4}}, {{autoAlpha: 1, scale: 1, duration: 0.16, ease: "power4.in"}}, {g["t"]});'
+                      f'tl.to("#st{i}", {{keyframes: [{{x: -9, duration: 0.04}}, {{x: 7, duration: 0.04}}, {{x: -4, duration: 0.04}}, {{x: 0, duration: 0.05}}]}}, {g["t"] + 0.16});')
+    for i, g in enumerate(spec.get("glints", [])):
+        z = g.get("size", 90)
+        tag_divs.append(f'<div id="gl{i}" class="glint" style="left:{g["x"] - z / 2}px;top:{g["y"] - z / 2}px;width:{z}px;height:{z}px"></div>')
+        tag_js.append(f'tl.fromTo("#gl{i}", {{autoAlpha: 0, scale: 0.2, rotation: -30}}, {{autoAlpha: 1, scale: 1, rotation: 0, duration: 0.18, ease: "power2.out"}}, {g["t"]});'
+                      f'tl.to("#gl{i}", {{autoAlpha: 0, scale: 0.4, rotation: 25, duration: 0.3, ease: "power2.in"}}, {g["t"] + 0.32});')
     comp_id = "onyx-yt-overlay"
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -122,6 +162,16 @@ html, body {{ margin: 0; background: transparent; }}
 #hl1 .fill {{ color: #FFFFFF; }}
 #hl2 .fill {{ background: linear-gradient(180deg, #F39A10 0%, #F6B412 45%, #F7D428 100%); -webkit-background-clip: text; background-clip: text;
   color: transparent; }}
+.tag {{ position: absolute; inset: 0; visibility: hidden; }}
+.tdot {{ position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #19D3C5; box-shadow: 0 0 14px rgba(25,211,197,0.9); }}
+.tdiag, .thor {{ position: absolute; height: 4px; background: #FFFFFF; transform-origin: left center; box-shadow: 0 2px 6px rgba(0,0,0,0.45); }}
+.tlab {{ position: absolute; white-space: nowrap; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); }}
+.tsm {{ font-family: "YT Montserrat", sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 0.18em; color: #19D3C5; }}
+.tbig {{ font-family: "YTC Anton", sans-serif; font-size: 58px; line-height: 1.02; color: #FFFFFF; letter-spacing: 0.01em; }}
+.stamp {{ position: absolute; visibility: hidden; font-family: "YTC Anton", sans-serif; font-size: 112px; letter-spacing: 0.06em; padding: 4px 26px;
+  border: 10px solid; border-radius: 14px; background: rgba(255,255,255,0.08); text-shadow: 0 0 2px rgba(0,0,0,0.3); mix-blend-mode: normal; }}
+.glint {{ position: absolute; visibility: hidden; background: #FFFFFF; filter: drop-shadow(0 0 12px #CFF7FF) drop-shadow(0 0 26px #9EE7FF);
+  clip-path: polygon(50% 0%, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0% 50%, 42% 42%); }}
 #wm {{ position: absolute; left: 0; width: {W}px; text-align: center; font-family: "YTC Anton", sans-serif; font-size: 47px;
   letter-spacing: 0.01em; color: rgba(255,255,255,0.38); transform: skewX(-12deg); text-shadow: 0 2px 4px rgba(0,0,0,0.18); line-height: 1; }}
 </style>
@@ -132,6 +182,7 @@ html, body {{ margin: 0; background: transparent; }}
 </defs></svg>
 <div id="root" data-composition-id="{comp_id}" data-start="0" data-width="{W}" data-height="{H}" data-duration="{dur:.4f}" data-fps="{fps}">
   <div id="wm-layer" class="layer"><div id="wm" style="top:{spec.get("watermark_y", 1160) - 24}px">{wm}</div></div>
+  <div id="tags" class="layer">{"".join(tag_divs)}</div>
   <div id="caps" class="layer"></div>
   <div id="hook" data-layout-allow-overflow>{hook_divs}</div>
 </div>
@@ -149,6 +200,7 @@ html, body {{ margin: 0; background: transparent; }}
     tl.set("#hook", {{ x: x, filter: b ? "url(#hook-hb" + b + ")" : "none" }}, t);
   }});
   tl.set("#hook", {{ autoAlpha: 0 }}, {hide_t});
+  {"".join(tag_js)}
   tl.set({{}}, {{}}, {dur:.4f});
   window.__timelines[COMP] = tl;
 }})();

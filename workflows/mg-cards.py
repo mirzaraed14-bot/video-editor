@@ -1,7 +1,10 @@
 """mg-cards.py: small motion-graphic B-roll clips drawn frame by frame (PIL -> ffmpeg), so the kit places them like any B shot.
 
   python workflows/mg-cards.py dots     OUT.mp4 --n 3000 --label "1 OF 3,000 AGENTS" [--dur 3.0] [--w 1080 --h 1920]
-  python workflows/mg-cards.py counter  OUT.mp4 --to 50 --label "SHOWS PITCHED" [--dur 3.0]
+  python workflows/mg-cards.py counter  OUT.mp4 --to 50 --label "SHOWS PITCHED" [--dur 3.0] [--money: $ and commas]
+  python workflows/mg-cards.py inspection OUT.mp4 --mode open|passed [--dur 4]   (a U.S. Army facility-inspection clipboard)
+  python workflows/mg-cards.py inspectors OUT.mp4 --label "4 INSPECTORS" [--dur 3]   (four figures pop in)
+  python workflows/mg-cards.py craigslist OUT.mp4 --label "RECEPTIONIST NEEDED - MIAMI BEACH OFFICE" [--dur 3.5]
   python workflows/mg-cards.py calendar OUT.mp4 --label "A BANK CEO'S WEEK" [--dur 3.4]
   python workflows/mg-cards.py tvoff    OUT.mp4 --src STILL.jpg [--cx 0.5] [--dur 3.3]
   python workflows/mg-cards.py collateral OUT.mp4 --dur 9.4 --t1 3.0 --t2 6.3 [--r0 0 --r1 1.6]   (the $525M loan and the ten characters that secured it)
@@ -71,14 +74,19 @@ def dots(a):
 
 
 def counter(a):
-    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS); f = ImageFont.truetype(ANTON, 360)
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    fmt = (lambda v: f"${v:,}") if a.money else str
+    size = 360
+    while ImageFont.truetype(ANTON, size).getlength(fmt(a.to)) > w - 120:
+        size -= 10
+    f = ImageFont.truetype(ANTON, size)
     val = lambda t: 1 + round((a.to - 1) * ease(t / 0.72))
     for i in range(N):
         t = i / (N - 1); v = val(t); speed = abs(v - val(max(t - 1 / (N - 1), 0)))   # numbers per frame
         im = Image.new("RGB", (w, h), NAVY)
-        num = Image.new("RGB", (w, 520), NAVY); nd = ImageDraw.Draw(num); txt = str(v); tw = nd.textlength(txt, font=f)
+        num = Image.new("RGB", (w, 520), NAVY); nd = ImageDraw.Draw(num); txt = fmt(v); tw = nd.textlength(txt, font=f)
         pop = 1 + 0.08 * (1 - eout((t - 0.72) / 0.12)) if v == a.to else 1.0           # the last number lands with a small settle
-        nd.text((w / 2 - tw / 2, 40), txt, font=f, fill=TEAL if v == a.to else WHITE)
+        nd.text((w / 2 - tw / 2, 40 + (360 - size) * 0.6), txt, font=f, fill=TEAL if v == a.to else WHITE)
         if speed:
             num = num.filter(ImageFilter.GaussianBlur(min(1.5 + speed * 1.5, 7)))       # motion blur while it rolls
         if pop != 1.0:
@@ -153,6 +161,121 @@ def tvoff(a):
     out.stdin.close(); out.wait()
 
 
+def craigslist(a):
+    """A Craigslist-style listing on a white page (the classic look: purple serif links, grey rules), the title types out word by
+    word, then a cursor clicks "reply". For "hired a few girls off Craigslist to act as a receptionist" (War Dogs, 2026-10-23)."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    serif = "C:/Windows/Fonts/times.ttf"; serif_b = "C:/Windows/Fonts/timesbd.ttf"
+    fl, ft, fb, fs = ImageFont.truetype(serif_b, 120), ImageFont.truetype(serif_b, 86), ImageFont.truetype(serif, 62), ImageFont.truetype(serif, 40)
+    PURPLE, GREY, INK = (128, 0, 128), (150, 150, 150), (30, 30, 30)
+    title = a.label or "RECEPTIONIST NEEDED - MIAMI BEACH OFFICE"
+    body = ["employment type: temporary", "start: this week"]          # only what he said: a receptionist, within a week
+    words = title.split()
+    for i in range(N):
+        s_ = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), (255, 255, 255)); d = ImageDraw.Draw(im)
+        d.text((80, 230), "craigslist", font=fl, fill=PURPLE)
+        d.text((80 + d.textlength("craigslist ", font=fl), 278), "> miami > jobs", font=fs, fill=GREY)
+        d.line((80, 390, w - 80, 390), fill=(220, 220, 220), width=3)
+        nw = min(len(words), int(max(s_ - 0.25, 0) / 0.12) + (1 if s_ > 0.25 else 0))     # the title types word by word
+        y = 430; line = ""
+        for wd in words[:nw]:
+            if d.textlength(line + wd + " ", font=ft) > w - 160:
+                d.text((80, y), line, font=ft, fill=PURPLE); y += 104; line = ""
+            line += wd + " "
+        if line:
+            d.text((80, y), line, font=ft, fill=PURPLE)
+        if nw < len(words) and int(s_ * 4) % 2 == 0:
+            d.rectangle((80 + d.textlength(line, font=ft), y + 8, 86 + d.textlength(line, font=ft), y + 76), fill=PURPLE)
+        by = y + 150; bp = eout((s_ - 0.25 - 0.12 * len(words)) / 0.35)
+        if bp > 0:
+            for k, b in enumerate(body):
+                c = tuple(int(255 + (v - 255) * bp) for v in INK); d.text((80, by + 80 * k), b, font=fb, fill=c)
+            rb = (80, by + 80 * len(body) + 40, 330, by + 80 * len(body) + 124)
+            d.rounded_rectangle(rb, radius=12, fill=tuple(int(255 + (v - 255) * bp) for v in (90, 90, 90)))
+            d.text((rb[0] + 62, rb[1] + 14), "reply", font=fb, fill=(255, 255, 255))
+            cp = eout((s_ - (0.6 + 0.12 * len(words))) / 0.4)                        # the cursor glides to "reply" and clicks
+            if cp > 0:
+                cx, cy = w - 120 + (rb[0] + 170 - (w - 120)) * cp, h - 300 + (rb[1] + 50 - (h - 300)) * cp
+                d.polygon([(cx, cy), (cx, cy + 60), (cx + 16, cy + 46), (cx + 28, cy + 72), (cx + 38, cy + 67), (cx + 26, cy + 42), (cx + 46, cy + 42)], fill=INK, outline=(255, 255, 255))
+        out.stdin.write(push(im, t, 0.05).tobytes())
+    out.stdin.close(); out.wait()
+
+
+def inspection(a):
+    """A U.S. Army facility-inspection checklist on a clipboard (War Dogs, 2026-10-23). --mode open: the clipboard slides up, the rows
+    appear one by one with empty boxes ("they wanted to send contracting officers... to do a facility inspection"). --mode passed: the
+    same sheet, every box gets a teal tick in turn, then a red PASSED stamp slams ("they gave him glowing reviews")."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    rows = ["OFFICE", "STAFF", "SIGNAGE", "RECEPTION"]
+    fh_, fr_, fs_ = ImageFont.truetype(ANTON, 58), ImageFont.truetype(ANTON, 76), ImageFont.truetype(ANTON, 150)
+    RED = (229, 56, 59); PAPER = (246, 244, 238); INK = (28, 32, 44)
+    for i in range(N):
+        s_ = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        up = eout(s_ / 0.45) if a.mode == "open" else 1.0
+        x0, y0, x1, y1 = 130, 250 + round(500 * (1 - up)), w - 130, 1000 + round(500 * (1 - up))
+        d.rounded_rectangle((x0 + 14, y0 + 18, x1 + 14, y1 + 18), radius=28, fill=(8, 12, 22))                 # shadow
+        d.rounded_rectangle((x0, y0, x1, y1), radius=28, fill=PAPER)
+        d.rounded_rectangle(((x0 + x1) / 2 - 120, y0 - 34, (x0 + x1) / 2 + 120, y0 + 30), radius=14, fill=(150, 156, 170))   # the clip
+        d.text((x0 + 60, y0 + 70), "U.S. ARMY", font=fh_, fill=(120, 128, 145))
+        d.text((x0 + 60, y0 + 130), "FACILITY INSPECTION", font=fr_, fill=INK)
+        d.line((x0 + 60, y0 + 240, x1 - 60, y0 + 240), fill=(200, 200, 205), width=4)
+        for k, r in enumerate(rows):
+            p = eout((s_ - 0.45 - 0.22 * k) / 0.25) if a.mode == "open" else 1.0
+            if p <= 0:
+                continue
+            ry = y0 + 290 + 105 * k + round(20 * (1 - p)); c = tuple(int(PAPER[j] + (INK[j] - PAPER[j]) * p) for j in range(3))
+            d.rounded_rectangle((x0 + 60, ry, x0 + 128, ry + 68), radius=10, outline=c, width=6)
+            d.text((x0 + 160, ry - 8), r, font=fr_, fill=c)
+            if a.mode == "passed":                                                           # the ticks, one by one
+                q = eout((s_ - 0.25 - 0.28 * k) / 0.2)
+                if q > 0:
+                    pts = [(x0 + 70, ry + 34), (x0 + 92, ry + 58), (x0 + 140, ry - 6)]
+                    seg = q * 2
+                    d.line([pts[0], (pts[0][0] + (pts[1][0] - pts[0][0]) * min(seg, 1), pts[0][1] + (pts[1][1] - pts[0][1]) * min(seg, 1))], fill=TEAL, width=14)
+                    if seg > 1:
+                        f_ = seg - 1
+                        d.line([pts[1], (pts[1][0] + (pts[2][0] - pts[1][0]) * f_, pts[1][1] + (pts[2][1] - pts[1][1]) * f_)], fill=TEAL, width=14)
+        if a.mode == "passed":
+            sp = (s_ - (0.25 + 0.28 * len(rows) + 0.15)) / 0.16
+            if sp > 0:
+                k = 1 + 1.4 * (1 - eout(min(sp, 1)))
+                st = Image.new("RGBA", (620, 230), (0, 0, 0, 0)); sd = ImageDraw.Draw(st)
+                sd.rounded_rectangle((8, 8, 612, 222), radius=18, outline=RED + (255,), width=14)
+                tw = sd.textlength("PASSED", font=fs_); sd.text((310 - tw / 2, 20), "PASSED", font=fs_, fill=RED + (255,))
+                st = st.rotate(-9, Image.BICUBIC, expand=True); st = st.resize((round(st.width * k), round(st.height * k)), Image.LANCZOS)
+                im.paste(st, (round(w / 2 - st.width / 2), round(y0 + 620 - st.height / 2)), st)
+        out.stdin.write(push(im, t, 0.05).tobytes())
+    out.stdin.close(); out.wait()
+
+
+def inspectors(a):
+    """Four simple figures pop in one by one on navy, the last one in teal, with a label ("a group of like four middle-aged older
+    ladies", War Dogs 2026-10-23). Abstract icons: no real person is drawn."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    n = 4; gap = 220; xs = [w / 2 + (k - (n - 1) / 2) * gap for k in range(n)]; cy = 640
+    for i in range(N):
+        s_ = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        for k, x in enumerate(xs):
+            p = eout((s_ - 0.1 - 0.18 * k) / 0.25)
+            if p <= 0:
+                continue
+            sc = 0.6 + 0.4 * p + 0.1 * math.sin(math.pi * min(p, 1)); col = TEAL if k == n - 1 else (236, 240, 247)
+            c = tuple(int(NAVY[j] + (col[j] - NAVY[j]) * min(1, p * 1.4)) for j in range(3))
+            hair = tuple(int(NAVY[j] + (c[j] - NAVY[j]) * 0.55) for j in range(3))
+            d.rounded_rectangle((x - 92 * sc, cy - 80 * sc, x + 92 * sc, cy + 150 * sc), radius=int(70 * sc), fill=c)   # shoulders
+            hy = cy - 150 * sc
+            d.rounded_rectangle((x - 72 * sc, hy - 66 * sc, x + 72 * sc, hy + 78 * sc), radius=int(64 * sc), fill=hair)  # a bob of hair
+            r = 50 * sc; d.ellipse((x - r, hy - r + 8 * sc, x + r, hy + r + 8 * sc), fill=c)                          # the face
+        la = eout((s_ - 0.1 - 0.18 * n) / 0.35)
+        if la > 0:
+            label(d, a.label or "THE INSPECTORS", w / 2, 860, 96, tuple(int(NAVY[j] + (255 - NAVY[j]) * la) for j in range(3)), 1.0, la)
+        out.stdin.write(push(im, t, 0.05).tobytes())
+    out.stdin.close(); out.wait()
+
+
 COLLATERAL = ["CAPTAIN AMERICA", "THE AVENGERS", "BLACK PANTHER", "DOCTOR STRANGE", "ANT-MAN", "HAWKEYE", "NICK FURY", "SHANG-CHI",
               "CLOAK & DAGGER", "POWER PACK"]     # the 2005 Merrill Lynch facility's collateral: theatrical film rights to these ten (SEC 8-K)
 
@@ -207,11 +330,12 @@ def collateral(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral"]); ap.add_argument("out")
+    ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral", "craigslist", "inspection", "inspectors"]); ap.add_argument("out")
     ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
+    ap.add_argument("--money", action="store_true"); ap.add_argument("--mode", default="open")
     ap.add_argument("--r0", type=float, default=0.0); ap.add_argument("--r1", type=float, default=1.6)
     ap.add_argument("--n", type=int, default=3000); ap.add_argument("--to", type=int, default=50); ap.add_argument("--label", default="")
     ap.add_argument("--src"); ap.add_argument("--cx", type=float, default=0.5); ap.add_argument("--dur", type=float, default=3.0); ap.add_argument("--w", type=int, default=1080); ap.add_argument("--h", type=int, default=1920)
     a = ap.parse_args()
-    {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral}[a.kind](a)
+    {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral, "craigslist": craigslist, "inspection": inspection, "inspectors": inspectors}[a.kind](a)
     print("done", a.out)

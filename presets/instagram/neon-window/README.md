@@ -49,9 +49,18 @@ Captions only `! ?` and quotes · one constant caption position · white line on
 every picture sharp (no shallow-focus softness on name cards) · no bed / no CTA on Scott jobs · work in silence.
 
 ## How to build the next one
-Copy the Marvel job's `ig/` (build.py, sound.py, qa.py, lnum_font.py, fonts/) and rewrite only the beat plan at the top of
-`build.py` (SHOTS, LEAKS, BLOCKS, the stage beats in `draw_stack`) and `sound.py` (CUES). Cam: re-cut from the original
-at 60 fps (`ig/work/cam60.mp4`); if the source repeats frames (a webcam), double the 30p cut with Topaz Chronos per take when
-the GPU is free: `workflows/topaz-iris.py <cut30>.mp4 ig/work/cam60.topaz.mov --fps-mult 2 --no-enhance --no-stab --segments
-<30p joints>` (build.py picks it up), then check the cam's frame differences no longer alternate. Then `python ig/build.py --frames ...` for checks, `python ig/build.py`, `python ig/sound.py --mux`,
-`python ig/qa.py outputs/<job>.final.mp4`.
+Two kits to copy, by source:
+- **Webcam / remote guest** → the Marvel job's `ig/` (`projects/_client-scott-clary/marvel-board-vs-rdj-ig/`): fixed crop, room relight.
+- **In-person studio camera** → the War Dogs job's `ig/` (`projects/_client-scott-clary/war-dogs-fake-office/ig/`, 2026-10-23): the
+  cam is EYE-LOCKED per take (faces.json eye centre, smoothed sigma 12 frames inside each take, never across a joint, so the head
+  never jumps at a jump cut; eyes at window (522, 420), the frame's top edge melting into black above the head), with the approved
+  quick pushes as zoom keys; `--fps 30` renders a quick check on the 4K Topaz base; photos of real people below the window's size
+  play as sharp PANELS at or under native size over a blurred copy (Affan: no Topaz on faces); cards restyled in code (counter,
+  checklist with red ticks, a white Craigslist artifact card, hairline figures).
+Rewrite only the beat plan at the top of `build.py` (SHOTS, LEAKS, BLOCKS, the stage beats) and `sound.py` (CUES; a FRESH Epidemic
+set per job, each slice tonal-checked). Cam at 60: if the source repeats frames or is 30p, double the 30p cut with Topaz Chronos
+per take: `workflows/topaz-iris.py <cut30> ig/work/cam60.topaz.mov --fps-mult 2 --no-enhance --no-stab --segments <30p joints>`
+(the 4K base scaled to 2560x1440 keeps detail for the pushes; ~30 min for 45 s while sharing the GPU), **wrapped in
+`projects/_onyx-batch2-2026-10/lock.sh gpu`** (sessions share one GPU; two Topaz jobs at once can run out of VRAM), then
+`ig/motion_check.py`. Then `python ig/build.py --frames ...` for checks, `python ig/build.py`, `python ig/sound.py --mux`,
+`python ig/qa.py outputs/<job>-ig.final.mp4 60`.
