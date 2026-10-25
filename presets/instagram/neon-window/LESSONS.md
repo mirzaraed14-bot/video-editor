@@ -38,3 +38,46 @@ else, a lot more subtle, minimalistic… a weird sound effect… definitely lowe
    (~10 dB lower than the riser), its slice ending on the swell's peak as the number lands; the landing boom unchanged. → `ig/sound.py`.
 Patched, not re-rendered: `build.py --patch` re-rendered only the cam shots and the hook (0-200, 560-700, 930-1005, 1540-1610,
 2545-2670 at 60 fps), the rest of the picture passed through.
+- 2026-10-24 (Brad Lea Ferrari IG, in-studio multi-camera, 30p source -> 60 fps Chronos): (1) a FIXED frame per take, placed so the head doesn't jump at joints (<= 9 px drift), beats head tracking on studio shoots; (2) push-ins (10-15 % within ~0.9 s) anchor on the MOUTH so the lips stay above the caption spot; (3) hold the zoom at 1.00 while type sits above the head (it touched the hair); (4) watch the speaker leaning down at a close-up's first cut (lips dropped under the captions: start the shot half a line later); (5) Epidemic files rejected by the narrow-tone check: phone-buzz, riser-dramatic, riser-reverse-layers; a small reused set repeats (pen stroke 5x, low boom 4x): source a wider set per job.
+
+## 2026-10-25 · Chris Do "$150 sneaker" IG Short (`projects/_client-scott-clary/chris-do-sneaker-pricing/ig/`, Affan: "make the style and everything 1% better this time")
+What it did better than the War Dogs IG (the BRIEF's § IG variant has the full list):
+1. **The hook is Mark's stage shot**: the whole webcam frame small at the window bottom (`hookstage_frame`), the promise in the dark
+   band above, the mono credit beside his head; no captions under it (they start on the first word after, 2.65 s).
+2. **Mouth-anchored fixed frame per take**: every cam shot puts his median mouth at window y 590 and the pushes zoom ON it, so the
+   caption top keeps a measured gap under the lips at every zoom (`lips_check()` asserts >= 20 px; tightest 43 px).
+3. **One object that returns and evolves** (Mark's floating artifact cards, Brad's receipt): the sneaker lit with its price -> inside a
+   floating sponsored-ad card -> beside its $150 fake -> lit again on "a different kind of buyer". The marker ring + FAKE are drawn
+   strokes, never a font or a stamp.
+4. **A number that climbs is a hand-drawn line chart** (Mark 10-23), point by point on each spoken number, under a quiet airy breath.
+5. **Sound measured three ways** before it goes in: tonal prominence (<= 20 dB), the slice starts on its measured attack (envelope
+   events listed per file), and `ig/cue_check.py` (premix - voice = the SFX alone) proves each crest lands on its frame and every cue's
+   50 ms loudness sits >= 3 dB under the voice beside it (worst -6.4 dB). First pass had four cues as loud as the voice (a stinger,
+   two thuds, the landing): lowered 3-5 dB; transients measuring 14-18 dB under (card slide, tag tap, chart dot) raised, since
+   "quiet ticks read as none".
+Caught by the 60 fps frame check, the proof sheet and the review pass (all fixed before delivery):
+- **A floating card under the show bug**: the 640 px ad card at y 40 ran its corner under SUCCESS STORY. -> card at 90 % with its top
+  at y 92 (bug bottom 74), all its marks scaled with it (AS). Rule: anything near the top of the window starts below y 80.
+- **A hero phrase wider than a line orphans its neighbour**: "different kind of buyer" in red Playfair was > 620 px, the layout
+  cannot split inside a red run, so "a" sat alone on line 1. -> hero = "different" (the stressed word). Rule: a red hero is one or
+  two words; check every block's line count before rendering.
+- **A drawn mark must arrive with its object**: on the callback the pair's FAKE was drawn at full strength while the shoes and prices
+  were still fading in (0.35 s), so it floated alone under the burn. -> `hand_stroke(..., alpha=)` and `draw_fake_word(..., alpha=p)`;
+  patched 962-1000, 1824-1850. Gotcha: `hand_stroke`'s own loop rebinds `a` to a point, so a fade argument named `a` is clobbered
+  (the first patch died at the first drawn frame): it is `alpha`.
+- **Every drawn stroke gets a sound, even a repeat**: the FAKE re-written under the pair's $150 (16.18-16.58) was silent, only the card
+  slide 0.15 s earlier had one. -> the marker `write` slice again at 16.18, 9 dB under (24 cues).
+
+## 2026-10-25 · Review 1 of the Chris Do IG Short: "the sound effects need to sound expensive and premium"
+1. **Cheap = what a phone plays.** Measured: v1's cinematic hits (deep thud, airy hit, soft stinger, low thud) sat 25-41 dB down in
+   300 Hz-6 kHz, so on a phone they vanished and only the foley came through: 8 soft taps, marker squeaks, pencil strokes, a card
+   slide. -> One cinematic family only (trailer impacts, a hall tom, taiko, a reverberant impact, reverse swells, deep and clean
+   whooshes, single soft deep thuds); no taps, no foley. -> `ig/sound.py` v2.
+2. **Split the crack from the weight.** Every hit is HIGH-PASSED (70-150 Hz) before it is peak-normalised, so its crack, not its sub,
+   sets its level; the weight is ONE sub-boom layer under the big moments (hook, the landing number, the callback).
+3. **Check in the phone band, cue by cue.** `ig/cue_check.py` now renders each cue ALONE at the mixer's gain and reports it against the
+   voice beside it, full band (>= 3 dB under, plus the whole SFX bus) and in 300 Hz-6 kHz (WEAK below -20 dB). v2: loudest -5.2,
+   none weak. Also re-run the tonal test on the final SLICES: a trailer swell passed as a file (18.3) but its peak slice measured 20.2.
+4. **A hit is placed by its attack, a swell by its crest.** Three hits had been placed by their 5 ms peak and started 100-140 ms early.
+5. **Repeats get pitch steps, never the same sample 5x.** The thread's five thuds: his asks step up (0.94 -> 1.0 -> 1.06), the
+   client's "Yes" sits low (0.89), each a dB louder; and check a "single" library hit is not a double (cd2-thuds-deep is 2 hits each).

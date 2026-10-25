@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 93c0e1a1-25a8-4661-92dc-64c57a7b8258
-  modified: 2026-10-23T05:44:41.900Z
+  modified: 2026-10-25T02:27:35.074Z
 ---
 
 **Rule (Affan, 2026-10-21, Scott D. Clary Marvel Short, IG variant):** after a frame-by-frame study of @markbrazil's last 10 reels
@@ -31,5 +31,9 @@ first build) and copies the Marvel job's `ig/` kit (`projects/_client-scott-clar
 override Mark's: captions only ! ? and quotes at one constant spot under the lips ([[feedback-caption-punctuation]],
 [[feedback-captions-just-below-lips]]), SFX on every graphic ([[feedback-sfx-on-every-graphic]]). Study: 
 `presets/youtube-shorts/onyx-samples/references/markbrazil-study-2026-10-21.md`.
+
+**Newest kit to copy (2026-10-25):** the Chris Do IG Short, `projects/_client-scott-clary/chris-do-sneaker-pricing/ig/` (Mark's
+stage-shot hook, mouth-anchored fixed frame per take, `cue_check.py` proving every SFX crest and its level vs the voice); its lessons
+(nothing near the window top above y 80, a red hero is 1-2 words) are in the preset's LESSONS.md.
 
 **Onyx samples (Affan 2026-10-22):** the Instagram version of an Onyx sample now uses this neon-window look too (first: Marketing Against the Grain, `projects/matg-targeting-is-dead/`), with review 1 applied (colour picture, less glow, expensive SFX).

@@ -8,6 +8,9 @@
   python workflows/mg-cards.py calendar OUT.mp4 --label "A BANK CEO'S WEEK" [--dur 3.4]
   python workflows/mg-cards.py tvoff    OUT.mp4 --src STILL.jpg [--cx 0.5] [--dur 3.3]
   python workflows/mg-cards.py collateral OUT.mp4 --dur 9.4 --t1 3.0 --t2 6.3 [--r0 0 --r1 1.6]   (the $525M loan and the ten characters that secured it)
+  python workflows/mg-cards.py sneaker  OUT.mp4 --src CUTOUT.png --mode real|fake|rule|button [--steps 600@0.9,700@1.3,800@1.7] [--t1 --t2]
+  python workflows/mg-cards.py replies  OUT.mp4 --t1 2.2 [--dur 3]     (rates out, Yes / Yes / No. back; "No." lands at --t1)
+  python workflows/mg-cards.py dayrate  OUT.mp4 --steps 250@0,300@2.6,400@3.0,600@3.4,800@3.8 [--label "HIS DAY RATE"]
 
 dots      a field of N white dots on navy; one dot turns teal and the camera eases in on it; the label rises in under it.
 counter   a number rolls up from 1 to --to (ease-in-out), each change sliding up with a fading ghost; the final number turns teal.
@@ -328,14 +331,197 @@ def collateral(a):
     out.stdin.close(); out.wait()
 
 
+SEGOE, SEGOE_SB, SEGOE_B, INK_FREE = (f"C:/Windows/Fonts/{f}" for f in ("segoeui.ttf", "seguisb.ttf", "segoeuib.ttf", "Inkfree.ttf"))
+RED = (229, 56, 59)
+
+
+def _steps(s):
+    """'600@0.9,700@1.3,800@1.7' -> [(600, 0.9), ...]: a number and the second it lands (on the spoken word)."""
+    return [(int(v), float(t)) for v, t in (p.split("@") for p in s.split(","))]
+
+
+def _shoe(src, width, grey=0.0):
+    im = Image.open(src).convert("RGBA"); im = im.crop(im.getbbox())
+    im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+    if grey:
+        g = im.convert("LA").convert("RGBA"); g.putalpha(im.getchannel("A")); im = Image.blend(im, g, grey)
+    return im
+
+
+def _paste_shoe(im, shoe, cx, cy, a=1.0, sc=1.0, glow=0.0):
+    """The cutout centred on (cx, cy) with a soft floor shadow; glow > 0 adds a teal halo behind it."""
+    s = shoe if sc == 1 else shoe.resize((round(shoe.width * sc), round(shoe.height * sc)), Image.LANCZOS)
+    lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+    ld.ellipse((cx - s.width * 0.42, cy + s.height * 0.40, cx + s.width * 0.42, cy + s.height * 0.56), fill=(0, 0, 0, int(150 * a)))
+    if glow > 0:
+        ld.ellipse((cx - s.width * 0.55, cy - s.height * 0.75, cx + s.width * 0.55, cy + s.height * 0.75), fill=TEAL + (int(120 * glow),))
+    lay = lay.filter(ImageFilter.GaussianBlur(40 if glow > 0 else 18))
+    sh = s.copy(); sh.putalpha(s.getchannel("A").point(lambda q: int(q * a)))
+    lay.alpha_composite(sh, (round(cx - s.width / 2), round(cy - s.height / 2)))
+    im.alpha_composite(lay)
+
+
+def _marker_word(im, text, x, y, size, p, col=RED):
+    """A word written on in marker (Ink Free), revealed left to right by p (0 -> 1): written, never stamped."""
+    f = ImageFont.truetype(INK_FREE, size); lay = Image.new("RGBA", im.size, (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+    ld.text((x, y), text, font=f, fill=col + (255,), stroke_width=max(2, size // 40), stroke_fill=col + (255,))
+    tw = ld.textlength(text, font=f) + size * 0.2
+    m = Image.new("L", im.size, 0); ImageDraw.Draw(m).rectangle((x - 10, y - size * 0.3, x + tw * p, y + size * 1.5), fill=255)
+    lay.putalpha(Image.composite(lay.getchannel("A"), Image.new("L", im.size, 0), m)); im.alpha_composite(lay)
+
+
+def _marker_ring(d, box, p, col=RED, width=12):
+    """A hand-drawn ring around box, drawn clockwise by p (0 -> 1), slightly overshooting where it closes."""
+    if p > 0:
+        d.arc(box, start=-200, end=-200 + 380 * p, fill=col, width=width)
+
+
+def sneaker(a):
+    """The sneaker beats of the Chris Do pricing Short (Scott Clary, 2026-10-24); --src is an RGBA product cutout.
+    --mode real:   navy; LIMITED DROP, the shoe rises in, its resale price steps through --steps (600@t,700@t,800@t) on the spoken
+                   numbers, the last in teal; an AUTHENTIC tick pops at --t1 ("that's the real one").
+    --mode fake:   a sponsored Instagram-style ad on white (same shoe, LIMITED EDITION, Shop now); the price $150 pops at --t1
+                   ("Ours is $150"); a red marker ring and FAKE are written on at --t2 ("that's a fake").
+    --mode rule:   the two side by side, top = the real one $800, bottom = the fake $150 (FAKE in marker): "pricing is positioning".
+    --mode button: the same layout already in; at --t1 the real one lights up teal and the fake dims ("a different kind of buyer").
+    The caption band (y 1000-1200) and the safe bands (top 200, bottom 300) stay clear of key visuals."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    big, mid, small = ImageFont.truetype(ANTON, 250), ImageFont.truetype(ANTON, 120), ImageFont.truetype(ANTON, 64)
+    if a.mode == "real":
+        shoe = _shoe(a.src, 900); steps = _steps(a.steps)
+        for i in range(N):
+            s = i / FPS; t = i / (N - 1)
+            im = Image.new("RGBA", (w, h), NAVY + (255,)); d = ImageDraw.Draw(im)
+            la = eout((s - 0.1) / 0.35); label(d, "LIMITED DROP", w / 2, 290, 72, (150, 165, 190), la, la)
+            up = eout(s / 0.5); _paste_shoe(im, shoe, w / 2, 660 + 90 * (1 - up), a=up)
+            cur = [k for k, (v, tt) in enumerate(steps) if s >= tt]
+            if cur:
+                k = cur[-1]; v, tt = steps[k]; q = eout((s - tt) / 0.18); txt = f"${v:,}"
+                num = Image.new("RGBA", (w, 330), (0, 0, 0, 0)); nd = ImageDraw.Draw(num); tw = nd.textlength(txt, font=big)
+                nd.text((w / 2 - tw / 2, 20), txt, font=big, fill=(TEAL if k == len(steps) - 1 else WHITE) + (255,))
+                if q < 1:
+                    num = num.filter(ImageFilter.GaussianBlur(4 * (1 - q)))
+                im.alpha_composite(num, (0, round(1230 + 40 * (1 - q))))
+                label(d, "RESALE PRICE", w / 2, 1262, 56, (150, 165, 190), eout((s - steps[0][1]) / 0.3), 1.0)   # between the watermark (~1185) and the number's glyph top (~1344)
+            tp = (s - a.t1) / 0.25
+            if tp > 0:                                                                  # AUTHENTIC: a teal pill with a drawn tick
+                k_ = 0.7 + 0.3 * eout(tp) + 0.08 * math.sin(math.pi * min(tp, 1)); pw, ph = 420 * k_, 96 * k_; px, py = w / 2, 920
+                d.rounded_rectangle((px - pw / 2, py - ph / 2, px + pw / 2, py + ph / 2), radius=int(ph / 2), fill=TEAL)
+                d.line([(px - pw / 2 + 40 * k_, py), (px - pw / 2 + 62 * k_, py + 22 * k_), (px - pw / 2 + 100 * k_, py - 24 * k_)], fill=NAVY, width=int(12 * k_))
+                f_ = ImageFont.truetype(ANTON, int(60 * k_)); d.text((px - pw / 2 + 118 * k_, py - 42 * k_), "AUTHENTIC", font=f_, fill=NAVY)
+            out.stdin.write(push(im.convert("RGB"), t, 0.04).tobytes())
+    elif a.mode == "fake":
+        shoe = _shoe(a.src, 760); fh, fs, fsb, fb = (ImageFont.truetype(SEGOE_SB, 46), ImageFont.truetype(SEGOE, 38),
+                                                    ImageFont.truetype(SEGOE_B, 52), ImageFont.truetype(SEGOE_SB, 50))
+        for i in range(N):
+            s = i / FPS; t = i / (N - 1)
+            im = Image.new("RGBA", (w, h), NAVY + (255,)); d = ImageDraw.Draw(im)
+            up = eout(s / 0.4); oy = round(120 * (1 - up)); x0, x1, y0, y1 = 70, w - 70, 210 + oy, 1600 + oy
+            d.rounded_rectangle((x0, y0, x1, y1), radius=34, fill=(255, 255, 255))
+            d.ellipse((x0 + 34, y0 + 30, x0 + 124, y0 + 120), fill=(40, 40, 40))         # the shop's avatar
+            d.text((x0 + 150, y0 + 32), "kicks.deals.outlet", font=fh, fill=(20, 20, 20))
+            d.text((x0 + 150, y0 + 84), "Sponsored", font=fs, fill=(120, 120, 120))
+            d.rectangle((x0, y0 + 150, x1, y0 + 760), fill=(242, 242, 242))
+            _paste_shoe(im, shoe, w / 2, y0 + 455)
+            bw_ = d.textlength("LIMITED EDITION", font=fsb) + 48                         # a badge on the photo (the caption band runs under the image)
+            d.rounded_rectangle((x0 + 30, y0 + 175, x0 + 30 + bw_, y0 + 255), radius=40, fill=(20, 20, 20))
+            d.text((x0 + 54, y0 + 182), "LIMITED EDITION", font=fsb, fill=(255, 255, 255))
+            pp = (s - a.t1) / 0.22                                                      # $150 pops in on "Ours is 150"
+            if pp > 0:
+                k_ = 0.6 + 0.4 * eout(pp) + 0.1 * math.sin(math.pi * min(pp, 1)); f_ = ImageFont.truetype(ANTON, int(190 * k_))
+                d.text((x0 + 40, y0 + 1010 + 40 * (1 - k_)), "$150", font=f_, fill=RED)
+            d.rounded_rectangle((x0 + 40, y1 - 150, x1 - 40, y1 - 50), radius=18, fill=(0, 149, 246))
+            tw = d.textlength("Shop now", font=fb); d.text((w / 2 - tw / 2, y1 - 136), "Shop now", font=fb, fill=(255, 255, 255))
+            rp = eout((s - a.t2) / 0.35)                                                # the ring, then FAKE written on
+            _marker_ring(d, (x0 + 10, y0 + 990, x0 + 470, y0 + 1250), rp)
+            if s > a.t2 + 0.3:
+                _marker_word(im, "FAKE", x0 + 500, y0 + 1000, 170, eout((s - a.t2 - 0.3) / 0.3))
+            out.stdin.write(push(im.convert("RGB"), t, 0.04).tobytes())
+    else:                                                                               # rule / button: real on top, fake below
+        real, fake = _shoe(a.src, 720), _shoe(a.src, 560, grey=0.35)
+        for i in range(N):
+            s = i / FPS; t = i / (N - 1)
+            im = Image.new("RGBA", (w, h), NAVY + (255,)); d = ImageDraw.Draw(im)
+            ina = 1.0 if a.mode == "button" else eout(s / 0.3)
+            g = eout((s - a.t1) / 0.4) if a.mode == "button" else 0.0                  # the real one lights up, the fake dims
+            _paste_shoe(im, real, w / 2, 560, a=ina, sc=1 + 0.06 * g, glow=g)
+            tw = d.textlength("$800", font=mid); d.text((w / 2 - tw / 2, 770), "$800", font=mid, fill=tuple(int(c * ina) for c in TEAL))
+            fa = ina * (1 - 0.65 * g); fy = 1340 + round(60 * (1 - ina))
+            _paste_shoe(im, fake, w / 2 - 150, fy, a=fa)
+            fc = tuple(int(NAVY[j] + (RED[j] - NAVY[j]) * fa) for j in range(3))
+            d.text((w / 2 + 170, fy - 150), "$150", font=mid, fill=fc)
+            if fa > 0.3:
+                _marker_word(im, "FAKE", w / 2 + 160, fy + 30, 100, min(1.0, ina), fc)
+            out.stdin.write(push(im.convert("RGB"), t, 0.03).tobytes())
+    out.stdin.close(); out.wait()
+
+
+def replies(a):
+    """A client thread on navy: his raised rates go out ($$, $$$, $$$$, teal bubbles, right), the client answers Yes, Yes ... and
+    a red "No." lands at --t1 ("until they start to say no", Chris Do, 2026-10-24). No invented numbers: the $ signs carry it."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS); f = ImageFont.truetype(SEGOE_SB, 72)
+    msgs = [("out", "$$"), ("in", "Yes"), ("out", "$$$"), ("in", "Yes"), ("out", "$$$$"), ("in", "No.")]
+    gap = max(min((a.t1 - 0.3) / 4, 0.35), 0.12); times = [0.05 + gap * k for k in range(5)] + [a.t1]   # the five land before "No."
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        for k, ((side, txt), tt) in enumerate(zip(msgs, times)):
+            p = eout((s - tt) / 0.22)
+            if p <= 0:
+                continue
+            tw = d.textlength(txt, font=f); bw, bh = tw + 100, 124; y = 240 + 124 * k + round(30 * (1 - p))
+            last = k == len(msgs) - 1; col = TEAL if side == "out" else (RED if last else (226, 232, 240))
+            x = w - 90 - bw if side == "out" else 90
+            sc = 0.85 + 0.15 * p + (0.12 * math.sin(math.pi * min(p, 1)) if last else 0)
+            bx0, by0 = x + bw * (1 - sc) / 2, y + bh * (1 - sc) / 2
+            c = tuple(int(NAVY[j] + (col[j] - NAVY[j]) * p) for j in range(3))
+            d.rounded_rectangle((bx0, by0, bx0 + bw * sc, by0 + bh * sc), radius=int(48 * sc), fill=c)
+            tc = NAVY if side == "out" else ((255, 255, 255) if last else NAVY)
+            d.text((bx0 + 50 * sc, by0 + 12 * sc), txt, font=ImageFont.truetype(SEGOE_SB, int(72 * sc)), fill=tuple(int(NAVY[j] + (tc[j] - NAVY[j]) * p) for j in range(3)))
+        out.stdin.write(push(im, t, 0.04).tobytes())
+    out.stdin.close(); out.wait()
+
+
+def dayrate(a):
+    """HIS DAY RATE: the number steps through --steps (250@t,300@t,...) on the spoken numbers, each change sliding up with motion
+    blur, the last one teal, "/ DAY" under it; under the caption band a bar for each rate rises as it lands (Chris Do, 2026-10-24)."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS); steps = _steps(a.steps)
+    big = ImageFont.truetype(ANTON, 300); top = max(v for v, _ in steps)
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        label(d, a.label or "HIS DAY RATE", w / 2, 270, 72, (150, 165, 190), eout(s / 0.3), eout(s / 0.3))
+        cur = [k for k, (v, tt) in enumerate(steps) if s >= tt]
+        if cur:
+            k = cur[-1]; v, tt = steps[k]; q = eout((s - tt) / 0.16); txt = f"${v:,}"
+            num = Image.new("RGB", (w, 380), NAVY); nd = ImageDraw.Draw(num); tw = nd.textlength(txt, font=big)
+            nd.text((w / 2 - tw / 2, 10), txt, font=big, fill=TEAL if k == len(steps) - 1 else WHITE)
+            if q < 1:
+                num = num.filter(ImageFilter.GaussianBlur(5 * (1 - q)))
+            im.paste(num, (0, round(400 + 50 * (1 - q))))
+            label(d, "/ DAY", w / 2, 800, 96, WHITE, 1.0, 1.0)
+        n = len(steps); bw = 120; gap = 46; x0 = w / 2 - (n * bw + (n - 1) * gap) / 2; base = 1600
+        for k, (v, tt) in enumerate(steps):                                            # the bars under the caption band
+            p = eout((s - tt) / 0.3)
+            if p <= 0:
+                continue
+            bh = 340 * v / top * p; x = x0 + k * (bw + gap)
+            d.rounded_rectangle((x, base - bh, x + bw, base), radius=14, fill=TEAL if k == n - 1 else (90, 108, 140))
+        out.stdin.write(push(im, t, 0.04).tobytes())
+    out.stdin.close(); out.wait()
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral", "craigslist", "inspection", "inspectors"]); ap.add_argument("out")
+    ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral", "craigslist", "inspection", "inspectors",
+                                     "sneaker", "replies", "dayrate"]); ap.add_argument("out")
+    ap.add_argument("--steps", default="")
     ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
     ap.add_argument("--money", action="store_true"); ap.add_argument("--mode", default="open")
     ap.add_argument("--r0", type=float, default=0.0); ap.add_argument("--r1", type=float, default=1.6)
     ap.add_argument("--n", type=int, default=3000); ap.add_argument("--to", type=int, default=50); ap.add_argument("--label", default="")
     ap.add_argument("--src"); ap.add_argument("--cx", type=float, default=0.5); ap.add_argument("--dur", type=float, default=3.0); ap.add_argument("--w", type=int, default=1080); ap.add_argument("--h", type=int, default=1920)
     a = ap.parse_args()
-    {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral, "craigslist": craigslist, "inspection": inspection, "inspectors": inspectors}[a.kind](a)
+    {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral, "craigslist": craigslist, "inspection": inspection, "inspectors": inspectors,
+     "sneaker": sneaker, "replies": replies, "dayrate": dayrate}[a.kind](a)
     print("done", a.out)

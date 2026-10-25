@@ -1,0 +1,56 @@
+# Abundance Wisdom captions: "Why Michael Jackson's Daughter Won't Post On His Birthday" (31.50 s, Paris IG | Michael 1993 | Paris podcast). Built in code.
+# One caption per line, in order. Column 1 = start-end in sequence seconds (OUTPUT of make_plan.py from the aligned
+# transcript: edit the words, run `python make_plan.py`, the times refresh). Every caption runs until the next starts.
+#   i:  = ITALIC = an interviewer's voice (none in this short: three speakers, no question audio)
+#   +   = STACKED second line under the caption above (none in this short)
+#   <red>..</> = the brief's emphasis (LOSE THEIR MINDS, KILL MYSELF, HATE, DIDN'T WANT US TO (EVEN) KNOW, TAKEN AWAY, NO BIRTHDAYS, MOST BEAUTIFUL, NO ONE'S BUSINESS, BEST FRIEND)
+#   <blue>..</> = key nouns   <yellow>..</> = emphasis (Orange Yellow Shade)
+# Max 3 words. No commas or full stops; ? and ! only (inside the colour tag when the word is coloured).
+ 0.000- 0.667  I DON'T POST
+ 0.667- 1.083  ANYTHING FOR
+ 1.083- 2.100  MY DAD'S BIRTHDAY
+ 2.100- 2.467  AND PEOPLE
+ 2.467- 2.950  <red>LOSE THEIR MINDS</>
+ 2.950- 3.317  THEY TELL ME
+ 3.317- 4.100  TO <red>KILL MYSELF</>
+ 4.100- 5.150  <blue>SOCIAL MEDIA</>
+ 5.150- 5.967  IS APPARENTLY
+ 5.967- 6.367  HOW PEOPLE
+ 6.367- 7.000  EXPRESS THEIR <yellow>LOVE</>
+ 7.000- 7.517  AND AFFECTION
+ 7.517- 8.033  THESE DAYS
+ 8.033- 8.433  BACK WHEN HE
+ 8.433- 9.083  WAS <yellow>ALIVE</>
+ 9.083-10.133  HE USED TO
+10.133-10.833  <red>HATE</> ANYBODY
+10.833-11.433  ACKNOWLEDGING HIS
+11.433-11.883  BIRTHDAY
+11.883-12.233  WISHING HIM A
+12.233-12.883  HAPPY BIRTHDAY
+12.883-13.483  <yellow>CELEBRATING</> IT
+13.483-14.117  NOTHING LIKE THAT
+14.117-14.583  HE ACTUALLY
+14.583-15.133  <red>DIDN'T WANT US</>
+15.133-15.900  <red>TO EVEN KNOW</>
+15.900-16.417  WHEN HIS
+16.417-17.267  BIRTHDAY WAS
+17.267-18.167  MY CHILDHOOD
+18.167-18.983  WAS COMPLETELY
+18.983-19.650  <red>TAKEN AWAY</>
+19.650-20.167  FROM ME
+20.167-20.433  THERE WAS
+20.433-21.333  NO CHRISTMAS
+21.333-22.283  <red>NO BIRTHDAYS</>
+22.283-22.783  NO NORMAL
+22.783-23.450  PLEASURES OF
+23.450-24.067  <yellow>CHILDHOOD</>
+24.067-25.067  I CANNOT RECREATE
+25.067-25.600  THAT PART OF
+25.600-26.367  MY <blue>LIFE</>
+26.367-27.450  MY RELATIONSHIP IS
+27.450-28.067  THE <red>MOST BEAUTIFUL</>
+28.067-29.150  RELATIONSHIP EVER
+29.150-29.450  AND IT'S
+29.450-30.567  <red>NO ONE'S BUSINESS</>
+30.567-30.967  THAT WAS MY
+30.967-31.500  <red>BEST FRIEND</>

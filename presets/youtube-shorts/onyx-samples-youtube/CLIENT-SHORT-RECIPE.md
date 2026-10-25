@@ -82,6 +82,17 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
   last frames of the cut (YDIF) and freeze the last shot before the wipe (A shot `"freeze": [[f0, N]]`). A tight close-up camera
   wants z0 1.0 (1.12 cut the head).
 
+- (Chris Do, 2026-10-24) When Affan asks Claude to fetch the episode: ONE plain `yt-dlp` request (no cookies, no workaround; stop on a
+  bot check) and only the story's stretch: `--download-sections "*<a>-<b>"` with the avc1 format (8 min of 1080p60 in ~2 min). The RSS
+  MP3 can carry extra ad seconds (5393 vs 5385 s there): measure the offset (FFT cross-correlation), never assume it. Cards in
+  `mg-cards.py`: `sneaker --mode real|fake|rule|button` (a product cutout, its price stepping on the spoken numbers, a sponsored-ad
+  mock with a marker ring + FAKE written on, the real-vs-fake pair and its callback), `replies` (rates out, Yes / Yes / No.),
+  `dayrate` (a rate stepping up + bars), all timed by `--steps v@t` / `--t1` from the transcript in build_spec. A webcam guest whose
+  head fills a 9:16 crop: open on a FIT panel of his cam so a `tags` pointer has room (`"plate": true` on a busy background), and
+  check captions vs lips on a FULL-SIZE frame (the 1/4-size proof sheet exaggerates overlaps). Snap every shot edge within 4 frames
+  of a cut ONTO the cut: a 1-2 frame sliver between a word-led shot edge and a joint kills the 60 fps Topaz pass (`IndexError` in
+  topaz-iris.py, final v1).
+
 ## 5. One check, then final (4 calls)
 - ONE 16-frame sheet (`select=eq(n\,…)`, `scale=270:480,tile=8x2`). The v1 defects last time: captions on the lips, a face cropped,
   the subject outside a 16:9 → 9:16 crop (set `cx`), a missing glyph. Fix in the spec, re-run `build_spec.py` (it picks up

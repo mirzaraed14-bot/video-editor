@@ -31,8 +31,10 @@ A row with status **`YES - make video`** there is the trigger for a job here.
 
 When there are several YESes, they run as a batch (batch 1: `projects/_onyx-batch-2026-10/BATCH.md`, the tracker and resume
 point). Affan's instructions for it:
-- **One sample per prospect for now**, in the look of their priority platform (§ 0). Two per prospect (one per platform) only
-  if Affan says so after the batch.
+- **BOTH formats for every yes (Affan, 2026-10-24: "i want both formats for each yes").** Each sample ships as a YouTube version
+  (`onyx-samples-youtube/`, the Sean Ryan look) AND an Instagram version (`presets/instagram/neon-window/`), cut from the same
+  approved moment (MATG pattern: one cut, two looks). Supersedes the old one-sample-per-prospect rule; § 0 still decides which one
+  is mentioned first in the email.
 - **Claude picks the moment** ("go on to their podcasts, figure out the best moments yourself"), with the Onyx clips engine
   and Affan's Abundance Wisdom fundamentals (study AW's Shorts above 300K views; `onyx-shorts-engine/AW-VIRAL-STUDY.md`).
   "The clip selection is what makes a video; the editing is the sauce on the steak."

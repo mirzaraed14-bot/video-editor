@@ -11,8 +11,11 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 | 4 | Ryan Serhant: pitched 50 shows, one yes (`serhant-50-pitches`) | 2026-10-19 (60 fps) | 53.1 s | "A lot of people get on reality TV and then they become irrelevant" (no name) | **3K-25K** · reads as bragging ("my fifth show") unless "what else can we do?" lands as the button (locked 2026-10-19) | | | | | | | | |
 | 5 | Peter Cuneo: Marvel's board vs Robert Downey Jr. (`marvel-board-vs-rdj`) | 2026-10-21 (60 fps, v2 after Affan's review) | 40.0 s | Peter's own cam: "The board initially was very anti-casting Robert Downey Jr. as Tony Stark" + FORMER MARVEL CEO / PETER CUNEO card 0-3 s | **10K-150K** · the RDJ-almost-wasn't-Iron-Man story is old Marvel lore (Feige has told it for years): fails if the first 3 s read as a rerun (locked 2026-10-21) | | | | | | | | |
 | 6 | David Packouz: the real War Dogs guys faked an office for a $300M deal (`war-dogs-fake-office`) | 2026-10-23 (60 fps, v4 after Affan's notes) | 45.0 s | Packouz on screen + "the 300 million dollar deal ... the main focus of the film War Dogs" + hook card SECURING THE REAL $300M PENTAGON DEAL + THE REAL DAVID PACKOUZ tag | **15K-150K** · Packouz is not a face anyone knows: if "War Dogs" doesn't register in the first 3 s (no Jonah Hill on screen yet) it reads as a stranger's anecdote (locked 2026-10-23) | | | | | | | | |
+| 7 | Chris Do: a $150 sneaker told him everything about pricing (`chris-do-sneaker-pricing`) | 2026-10-24 (60 fps, v1, approved first pass 2026-10-25) | 33.9 s | Chris Do's cam: "Anything that has a higher price has a perceived higher value." + promise card WHY CHARGING MORE / GETS BETTER CLIENTS 0-3 s + EMMY WINNER / CHRIS DO pointer | **4K-40K** · the opener is an abstract principle with no face anyone knows and no story yet: if the sneaker (2-3 s in) doesn't land before the swipe, it reads as generic pricing advice (locked 2026-10-24) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
+
+**2026-10-24 (Affan, in chat):** the Bombas Short ("Daymond John Almost LOST $250M") is at **378K** (238K on 10-22, still climbing). Baseline: Scott's Shorts were averaging **in the 900s** before Onyx. Used as the proof line in Onyx approval replies (Moonshots, 2026-10-24).
 
 **2026-10-22 (Affan's screenshot):** the "SESAME STREET?" frame confirms it is row 2, the Bombas Short, posted as **"Daymond John Almost
 LOST $250M" = 238K views** (35K on 10-21 -> 238K on 10-22: a late ignition; age unknown, curve OPEN, nothing concluded yet).
@@ -41,6 +44,13 @@ story needs the viewer to know what a "facility inspection" is; "young girls off
 Got 5M because: "the real War Dogs" is a ready-made curiosity hook (the movie is a cult favourite); a fake office for a $300M Pentagon
 deal is a picture everyone gets; "if it wasn't completely illegal, I'd buy you all diamonds" is a quotable line that gets shared.
 
+**7 · Chris Do sneaker pricing (written 2026-10-24, first value-track pick, F6).** Got 5K because: Chris Do is not a face a casual
+viewer knows and the first line is a principle, not a picture; "charge more" is the most repeated freelancer advice online (his own
+channel has clipped pricing for years); no comic turn. Got 5M because: everyone has felt "$150 for that? it's fake", so the rule lands
+as a memory, not a lecture; it reverses the beginner instinct (cheaper = more clients); $250 -> $800 a day is a concrete number any
+freelancer can copy and send to a friend. Freshness (web, 2026-10-24): no prior clip of the sneaker angle found; YouTube unchecked
+(Affan to scroll Scott's Shorts tab).
+
 ## Titles + thumbnails
 | # | Title | Thumbnail |
 |---|---|---|
@@ -48,5 +58,6 @@ deal is a picture everyone gets; "if it wasn't completely illegal, I'd buy you a
 | 4 | Ryan Serhant pitched 50 TV shows. One got picked up. Now he's on Netflix. | `projects/_client-scott-clary/serhant-50-pitches/thumbnail.jpg` ("50 PITCHES / ONE YES", teal YES; photo: the Owning Manhattan premiere) |
 | 5 | Marvel's board didn't want Robert Downey Jr. as Iron Man. Then they saw his screen test. | `projects/_client-scott-clary/marvel-board-vs-rdj/thumbnail.jpg` ("MARVEL ALMOST / SAID NO", teal NO; photo: RDJ's 1999 booking photo, "DOWNEY" board) |
 | 6 | The real War Dogs guys faked an entire office to win a $300M Pentagon deal | `projects/_client-scott-clary/war-dogs-fake-office/thumbnail.jpg` ("THEY FAKED / THE OFFICE", teal FAKED; photo: Packouz with Miles Teller on the War Dogs set) |
+| 7 | Chris Do saw an $800 sneaker for $150. He knew it was fake. | `projects/_client-scott-clary/chris-do-sneaker-pricing/thumbnail.jpg` ("CHEAP LOOKS / FAKE", teal FAKE; photo: a real photo of Chris Do, to source) |
 
 Licensing flag (2026-10-19): the #4 thumbnail photo is a Getty image (gettyimages-2158515218, via CBS); swap it for an official Netflix / SERHANT press still before posting. The #3 photo comes from Parade (credit not shown on the page).

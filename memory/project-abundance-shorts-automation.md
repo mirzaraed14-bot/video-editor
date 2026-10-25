@@ -81,3 +81,5 @@ Found Out - raw cut", 56.8 s, beat 4 skipped, 05 replaced by his local CBS2 memo
 (`mj-siblings-found-out.v5.mp4`), awaiting his review. Root cause of the skin: untagged rawvideo pipes (BT.601 -> 709 drift
 per splice) + a grade fitted on the wrong (Nick Walker) footage; fixed with BT.709-tagged pipes, one-pass assembly and HIS
 grade fitted from his own pre/post pair. Details: the job's RUN.md + AW shorts LESSONS (2026-10-22 entries).
+
+2026-10-24: third short built fully in code, Paris Jackson "won't post on his birthday" (`projects/paris-wont-post-birthday/`): raw sequence in ABW10 -> his edit + Tella direction video -> code build (MJ-siblings engine) -> v1 in `X:\Claude Projects\Exports\`, awaiting his review. New traps (Topaz token lapse = watermark, IG glitch line, podcast A/V -0.37 s, Premiere 30 fps display) are in the AW LESSONS.md.

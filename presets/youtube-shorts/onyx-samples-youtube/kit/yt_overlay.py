@@ -102,7 +102,8 @@ def main():
     cy_ = (spec.get("split", {}).get("seam", 1092) + cs.get("seam_dy", 0)) if cs.get("on_seam") else cs.get("y")
     cap_y = f", y: {float(cy_):.1f}" if cy_ is not None else ""
     # TAGS (Affan 2026-10-23, War Dogs): a name tag beside the guest's head ("THE REAL / DAVID PACKOUZ"). Spec "tags": [{"t0", "t1",
-    # "x", "y" (the dot, output px, beside the head), "dx" (+ = the label opens to the right), "dy" (elbow rise, px), "small", "big" ("|" breaks a line)}]
+    # "x", "y" (the dot, output px, beside the head), "dx" (+ = the label opens to the right), "dy" (elbow rise, px), "small", "big" ("|" breaks a line),
+    # "plate" (optional: a dark rounded backing under the label)}]
     tags = spec.get("tags", [])
     tag_divs, tag_js = [], []
     for i, g in enumerate(tags):
@@ -116,7 +117,9 @@ def main():
             f'<div class="thor" style="left:{min(g["x"] + sgn * L * 0.35, ex)}px;top:{ey - 2}px;width:{L * 0.65:.0f}px;'
             f'transform-origin:{"left" if sgn > 0 else "right"} center"></div>'
             f'<div class="tlab" style="{"left" if sgn > 0 else "right"}:{ex + 14 if sgn > 0 else W - ex + 14}px;top:{ey - 40}px;'
-            f'text-align:{"left" if sgn > 0 else "right"}"><div class="tsm">{clean(g.get("small", ""))}</div>'
+            f'text-align:{"left" if sgn > 0 else "right"};'
+            f'{"background:rgba(8,12,22,0.66);padding:8px 16px 6px;border-radius:12px;" if g.get("plate") else ""}">'   # plate: a dark backing over a busy background (Chris Do's bookshelf, 2026-10-24)
+            f'<div class="tsm">{clean(g.get("small", ""))}</div>'
             f'<div class="tbig">{"<br>".join(clean(x) for x in g.get("big", "").split("|"))}</div></div></div>')   # "|" = a line break
         t0, t1 = g["t0"], g["t1"]
         tag_js.append(

@@ -788,3 +788,60 @@ Six corrections, all now rules:
   the one-pass (drift-free) picture gives his channel look (crisp, contrasty, warm brown skin) — v6. Reference for "how my
   grading looks": his own finals in `E:/Shorts/Abudance Wisdom Shorts Exports/Final Renders` (e.g. `toya yt final.mov`:
   cheek skin luma 0.55, sat 0.55, R/G 1.55, face p10 0.08). Show him test frames of EVERY shot before a full render.
+- 2026-10-24 (MJ kids saw, `projects/mj-kids-saw-day-he-died/`, raw sequence): **news packages splice courtroom testimony.** The
+  Telegraph's Alvarez clip joins "Paris screamed out, Daddy" straight to "Dr. Conrad Murray said…" (≈40 s of Q&A cut) and drops in
+  "the children were crying and screaming" from elsewhere in his testimony; its cutaways (defence table, Murray) sit under his
+  words, and the brief's timestamps ran ~4 s early. Match by WORDS, check what is on screen under every piece (one frame per piece),
+  and for "speaker on camera" use the uncut trial feed (fan uploads: `Conrad Murray Trial - Day N` / per-witness playlists; their
+  playlist RSS `youtube.com/feeds/videos.xml?playlist_id=…` lists exact video links when YouTube pages are blocked). Live-stream
+  uploads DROP audio/picture (Alvarez lost ~1.6 s on "kind of ushered them out and said"): diff the words before swapping a piece.
+- 2026-10-24 (same): **his order for AW shorts is raw sequence → HIS sequencing (he re-edits it) → his direction video → code
+  build.** An approval button must say only "approved"; mine bundled "start the code build" and he had to stop it.
+- 2026-10-24 (Paris "won't post on his birthday", the 3rd short built in code, `projects/paris-wont-post-birthday/`):
+  **Topaz's login token can lapse MID-RUN**: the chain kept going and only step 3 (prob-4) came out with a "Topaz Labs"
+  WATERMARK on every face ("Critical error refreshing token Could not establish connection"; topazlabs.com reachable = the
+  app's own sign-in). Check a frame of EVERY Topaz output for the watermark before assembling; after he signs in, re-run only
+  the dirty step (`build/topaz_step3.py` on the clean step-2 file). Never work around the licence.
+- 2026-10-24 (same): **search his drives before asking for downloads** (he asked "have you checked my machine?"): 2 of 4 sources
+  were already in `E:\Bullshit Folder\Henry` — one a BETTER copy (Paris's original vertical IG video instead of the news
+  package that wraps it). `find` by title words over E:, X:, C:\Users\affan takes ~15 s.
+- 2026-10-24 (same): **her IG video carries a thin bright glitch line** (dashed, 2-8 px, ~24 % of the used frames, also a faint
+  variant in bursts next to strong ones): detect per frame (row brighter than both rows +-5 px over >35 % of the width / of
+  its right 70 %; faint tier only near a strong band) and repair by vertical interpolation IN STAGE A, before Topaz.
+  `build/ig_line.py` (cache `build/ig_lines.json`). seq_render frames are H x W x 3 uint8, not C x H x W float.
+- 2026-10-24 (same): **podcast A/V offsets can be large**: Jack Osbourne's upload has the picture 0.37 s AHEAD of the sound
+  (mouth-darkness vs speech-envelope cross-correlation on 7 shots, `build/av_offset.py`; CONFIRMED on a bilabial: the lips close
+  for the "m" of "my dad" 0.37 s before it sounds, `build/mouth_strip.py`). His own IG slip (+0.10) measured +0.13 by the same
+  method. Measure every talking source; he only said "a bit out of sync".
+- 2026-10-24 (same): **captions vs an OPEN mouth**: the YuNet lower-lip estimate (corners + 0.18 x width) is a closed mouth;
+  open, the lip/teeth reach ~25-30 px lower (P1/P5 touched the caption top y1093 at lip ~1078-1089). Target lower lip <= ~1060.
+- 2026-10-24 (same, Premiere): cloning the 60 fps "Onyx reaction template (empty)" and setting 30 fps with setSettings leaves
+  the 60 fps TIMECODE display (videoDisplayFormat 108): the sequence then READS half its length ("the runtime is just 16 seconds")
+  and QE razors silently miss; set videoDisplayFormat 104 too. In-points are FLOORED twice (source grid, then sequence grid):
+  pass the first source frame at/after the wanted time and verify on the read-back. A "pause" on a phone line can be a quiet
+  word (cutting a 0.66 s "gap" deleted "probably"): re-ASR the snippet after every cut.
+- 2026-10-24 (MJ kids saw, code build, `projects/mj-kids-saw-day-he-died/build/`): **head lock inside a letterbox needs a bigger
+  scale than the letterbox look itself.** His "346 %" band (TEL 348 px -> 1204 px) leaves the band edges exposed (mirror strips)
+  as soon as the locked nose moves (TEL nose y 101-120, FM 116-141 src px): solve scale + nose Y per setup from the tracked noses
+  so every frame fills the band (here 4.0, AT nose y745, FM y704). One caption line for courtroom + a full-bleed close-up
+  then forces a trade: his call was **Katherine LOWER, captions on her NOSE** (nose y870): with her lips on the line (nose y561)
+  the bottom mirror tile showed ~490 px and "looked really ugly".
+- 2026-10-24 (same): **caption_shift is POSITIVE = UP** (the layer's native ink y1030-1070; -62 put ABW10 captions at 1093).
+  A sign slip put them on the name cards; check one finished still before believing a caption height.
+- 2026-10-24 (same): **when YouTube / a news site blocks this PC and he is away, fill the slot from footage already on disk**
+  and say so: the trial packages carry their own Murray cutaways (AP close-up, Telegraph defence table) and the exhibit photos
+  (Exh. 23 = the Telegraph bedroom photo: crop clear of the AP bug + "People v. Murray" text, Higgsfield-enhance, 1.5 cr).
+  SD overlays (640x360 at 600 %) DO go through his Topaz chain; the "overlays skip Topaz" rule is for clean HD overlays.
+- 2026-10-24 (same): **graded skin per source still needs levelling before his grade**: AP Faheem came out 0.27 luma / 0.96 sat
+  (the "chocolate" case) and 60 Minutes Katherine 0.42 / 0.8 / R/G 2.4 (the "very red" case). Pre-grade gamma 0.74 + sat 0.58
+  (Faheem) and sat 0.55 (Katherine) brought them to 0.39 / 0.68 and 0.43 / 0.61 / 1.8 with his AE stack untouched; he approved
+  the frames. Measure with `build/skin_png.py` on the test stills.
+- 2026-10-24 (MJ kids saw, HIS REVIEW of v1): **(1) "why is Conrad so zoomed in"**: an SD 16:9 overlay full-screen is already a
+  5.3x blow-up; stacking an extra framing scale (6.6) + a 128 % push-in read as far too tight. SD full-screen overlays: the
+  minimum full-bleed scale (+ just enough to hide the source's black edge rows) and a shallow push (<= 115 %). **(2) "the lips
+  are not synced properly"**: a news package can carry a DIFFERENT A/V offset per segment: AP's Faheem 92-118 s ran picture
+  0.14 s early while its 39-63 s segment was in sync. Measure every source SEGMENT (closed-lip sounds, fixed mouth crops on the
+  finished frame; the letterbox twin fools a face detector), not one point per file. **(3) captions "a bit below, towards the
+  middle line"** (this short: line y940-980 instead of just under the lips at y850). **(4) a dark overlay ("too dark... or you
+  messed up the grading")**: lifting the blue Telegraph cutaway only went milky; swap to a well-lit shot of the same subject
+  (the Day 3 feed's Murray cutaway, 706.4 s) rather than push the grade.

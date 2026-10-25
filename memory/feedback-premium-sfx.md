@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: dba6d668-1b25-43d5-a8b2-d5bc637b60ae
-  modified: 2026-10-21T19:42:46.880Z
+  modified: 2026-10-25T03:58:21.269Z
 ---
 
 Affan on SAME NIGHT cold open v2 (2026-10-08): the magic-shimmer SFX on the Sandow lift was "so goofy… I want this video
@@ -25,6 +25,13 @@ expensive"):** the two flagged sounds (a neon tube flickering on, a short "drama
 above 1 kHz (max FFT bin vs its ±40-bin neighbourhood, p90 over the loud part); every accepted cinematic sound measured 8-19 dB.
 Reject anything > 20 dB before it goes in, and keep the electric family (neon buzz, fluorescent hum) out entirely. Recipe:
 presets/instagram/neon-window/LESSONS.md.
+
+**PHONE BAND (Affan 2026-10-25, Chris Do IG: "the sound effects need to sound expensive and premium"):** the cinematic hits in
+v1 had almost nothing in 300 Hz-6 kHz (25-41 dB down), so on a phone they vanished and only the taps and foley (marker, pencil, card
+slide) came through: that is what read cheap. Fix: no taps/foley in a premium Short; high-pass every hit (70-150 Hz) before
+normalising so its crack sets its level, and carry the weight with one sub-boom layer under the big moments. Check each cue ALONE in the
+phone band (`projects/_client-scott-clary/chris-do-sneaker-pricing/ig/cue_check.py`: WEAK below -20 dB vs the voice), re-run the tonal
+test on the final slices, place hits by their attack (not their peak), pitch-step repeats.
 
 **VARIETY (Affan 2026-10-21, THE LAST SHOW redo, rated the SFX "2 out of 10"):** "this Vegas whoosh air sound effect so many times…
 annoying… way more variety… not just spam [one] sound effect again and again". The redo had 293 cues sliced from SAME NIGHT's handful
