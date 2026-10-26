@@ -29,3 +29,10 @@ cooler, more creative, and incorporate that… one percent better each and every
 uploading one same style." So before each reaction batch: an honest critique of the last reactions (their plans + program-monitor grabs)
 + a research pass on current reaction/commentary edits, written to `projects/_onyx-batch-2026-10/reactions/research-<date>.md`, and the
 toolkit (`reactions/tools/overlays.py`, the plan builders) gets the improvements BEFORE the edit.
+
+**Restated 2026-10-26 (said about the AW long-form, asked "with each video"), with a floor and a required step for EVERY video:** "I don't want to lock this style in… I'm constantly
+trying out different effects and motion graphics… before we dive into any project it's your job that you reference the entire
+style catalog… analyze it frame by frame… with every single video I need 5 % improvement in smoothness and premiumness and the
+expensive look." So the floor is 5 % (on smoothness, premium feel and the expensive look). Before every edit, read the WHOLE FX catalog
+(CATALOG.md + all 137 reference stills in research/effects-catalog/shots/) and write a catalog pass into the BRIEF. No edit starts before that section exists (CLAUDE.md learning loop #5). A playbook is the
+gist and the starting point, never the style: presets/youtube/abundance-wisdom/PLAYBOOK.md.

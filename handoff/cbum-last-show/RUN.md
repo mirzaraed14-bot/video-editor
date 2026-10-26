@@ -1,6 +1,9 @@
 # RUN — cbum-last-show ("THE LAST SHOW", Chris Bumstead, Abundance Wisdom long-form #3)
 
 ## ▶ STATUS: resume here
+**2026-10-26: UPLOADED** (the creator: "a couple of days since the last video that we uploaded"). JOB CLOSED. Its learnings are
+distilled into `presets/youtube/abundance-wisdom/PLAYBOOK.md`, where the next AW long-form starts (a gist, never a style lock).
+
 **2026-10-21 ~16:30: HIS TWO NEW ASKS (watching the restored sequence) ARE PLACED AND SAVED.** Evidence + stills:
 `review/redo-2-fixes/` (`id-evidence.jpg`, `4a-tags-corrected.png`, `subscribe-alert-2m16.png`).
 - **Line-up label "thats not shaun brh": he was right.** The left man's bib is never legible in the 4a shot, and Shaun Clarida (#7)

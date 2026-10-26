@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: dba6d668-1b25-43d5-a8b2-d5bc637b60ae
-  modified: 2026-10-25T03:58:21.269Z
+  modified: 2026-10-26T06:04:28.541Z
 ---
 
 Affan on SAME NIGHT cold open v2 (2026-10-08): the magic-shimmer SFX on the Sandow lift was "so goofy… I want this video
@@ -32,6 +32,12 @@ slide) came through: that is what read cheap. Fix: no taps/foley in a premium Sh
 normalising so its crack sets its level, and carry the weight with one sub-boom layer under the big moments. Check each cue ALONE in the
 phone band (`projects/_client-scott-clary/chris-do-sneaker-pricing/ig/cue_check.py`: WEAK below -20 dB vs the voice), re-run the tonal
 test on the final slices, place hits by their attack (not their peak), pitch-step repeats.
+
+**FIT (Affan 2026-10-26, Scott x Morgan claw v2: "don't sound premium ... in some places the sound effect doesn't even fit the
+motion graphic"):** v2 used the YT kit's stock cues (data blips on an LCD menu, glass ticks on a $100 landing, glass pops on a card,
+a whoosh on every cut back to the face). Never use the kit's auto cues on a client Short: size each sound to its motion (whip = short
+whoosh crested on the cut; a value landing = a hit on its first VISIBLE frame; a wind-up = a riser ending on the landing; cuts back to
+the face silent), levels near the Chris Do IG mix. Template: projects/_client-scott-clary/morgan-claw-machine/yt/sound.py + cue_check.py.
 
 **VARIETY (Affan 2026-10-21, THE LAST SHOW redo, rated the SFX "2 out of 10"):** "this Vegas whoosh air sound effect so many times…
 annoying… way more variety… not just spam [one] sound effect again and again". The redo had 293 cues sliced from SAME NIGHT's handful

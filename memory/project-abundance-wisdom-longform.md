@@ -5,10 +5,20 @@ metadata:
   node_type: memory
   type: project
   originSessionId: e83a5461-9372-426b-acd3-91eb82cfebd1
-  modified: 2026-10-03T01:27:25.445Z
+  modified: 2026-10-26T03:17:27.699Z
 ---
 
-**DONE (the creator confirmed 2026-10-07).** Next long-form starts from this job as the template.
+**2026-10-26: every new AW long-form starts at `presets/youtube/abundance-wisdom/PLAYBOOK.md`.** It holds the gist of the look and
+the procedure, distilled from Nick Walker → SAME NIGHT → THE LAST SHOW (projects/cbum-last-show, the current state of the art, uploaded
+a few days before 2026-10-26). It is a starting point, never a style lock: each video does the whole FX-catalog pass and beats the last by ≥ 5 %
+([[feedback-every-video-better-than-last]], [[feedback-aw-longform-documentary-rules]]).
+
+**2026-10-26: the next one, Paris Jackson "BOTH VERSIONS" (locked script 22 Oct, ~15:30, publish within 7 days), job
+`projects/paris-jackson-both-versions/`.** BRIEF.md (catalog pass, Beats-THE-LAST-SHOW list, lock conditions) + RUN.md are the state;
+checkpoint 1 sent, waiting on his answers (project, a missing Ch1 host line, 8 IDM downloads). Its own rules: no AI, no stock, no minors
+on frame, "suicide" never as on-screen text.
+
+**Nick Walker: DONE (the creator confirmed 2026-10-07).** It was the template for the next long-form.
 
 The Abundance Wisdom channel's first face-led long-form: Nick Walker, "The Body That Could Never Win" (LOCKED script v2,
 2 Oct 2026, target ~9:15, publish by Oct 4–5 while the Olympia news is warm). Job folder

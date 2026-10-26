@@ -12,6 +12,7 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 | 5 | Peter Cuneo: Marvel's board vs Robert Downey Jr. (`marvel-board-vs-rdj`) | 2026-10-21 (60 fps, v2 after Affan's review) | 40.0 s | Peter's own cam: "The board initially was very anti-casting Robert Downey Jr. as Tony Stark" + FORMER MARVEL CEO / PETER CUNEO card 0-3 s | **10K-150K** · the RDJ-almost-wasn't-Iron-Man story is old Marvel lore (Feige has told it for years): fails if the first 3 s read as a rerun (locked 2026-10-21) | | | | | | | | |
 | 6 | David Packouz: the real War Dogs guys faked an office for a $300M deal (`war-dogs-fake-office`) | 2026-10-23 (60 fps, v4 after Affan's notes) | 45.0 s | Packouz on screen + "the 300 million dollar deal ... the main focus of the film War Dogs" + hook card SECURING THE REAL $300M PENTAGON DEAL + THE REAL DAVID PACKOUZ tag | **15K-150K** · Packouz is not a face anyone knows: if "War Dogs" doesn't register in the first 3 s (no Jonah Hill on screen yet) it reads as a stranger's anecdote (locked 2026-10-23) | | | | | | | | |
 | 7 | Chris Do: a $150 sneaker told him everything about pricing (`chris-do-sneaker-pricing`) | 2026-10-24 (60 fps, v1, approved first pass 2026-10-25) | 33.9 s | Chris Do's cam: "Anything that has a higher price has a perceived higher value." + promise card WHY CHARGING MORE / GETS BETTER CLIENTS 0-3 s + EMMY WINNER / CHRIS DO pointer | **4K-40K** · the opener is an abstract principle with no face anyone knows and no story yet: if the sneaker (2-3 s in) doesn't land before the swipe, it reads as generic pricing advice (locked 2026-10-24) | | | | | | | | |
+| 8 | John Morgan: a billionaire admits his claw machines are rigged (`morgan-claw-machine`) | 2026-10-26 (60 fps, v3 after Affan's review: casino beat out, tight cuts, premium SFX) | 38.2 s (v1/v2 51.0 s) | Morgan's cam: "All he did was pay a hundred bucks for a 50 cent bunny." + WHY YOU NEVER WIN / THE CLAW MACHINE card 0-3 s + BILLIONAIRE pointer | **20K-300K** · Morgan is a regional face (his ads), not a national one: if "billionaire" + the claw don't land in 2 s, it reads as a random old man; and "rigged" may be read as a payout-rate fact viewers already know (locked 2026-10-26) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
 
@@ -51,6 +52,12 @@ as a memory, not a lecture; it reverses the beginner instinct (cheaper = more cl
 freelancer can copy and send to a friend. Freshness (web, 2026-10-24): no prior clip of the sneaker angle found; YouTube unchecked
 (Affan to scroll Scott's Shorts tab).
 
+**8 · Morgan claw machine (written 2026-10-26).** Got 5K because: Morgan's face means nothing outside the South; "claw machines are
+rigged" is a known internet fact (payout settings videos exist); no story stakes, it's a confession. Got 5M because: everyone has lost
+at a claw machine, so the confession pays off a lifetime of suspicion; "a hundred bucks for a 50 cent bunny" is a quotable, shareable
+number line; the dad hugged "like he won the World Series" is a picture every parent recognises; the comments fight (rigged vs fair).
+Freshness: the story sits in his book's lottery chapter, not his famous origin stories; YouTube unchecked (Affan's Shorts-tab scroll).
+
 ## Titles + thumbnails
 | # | Title | Thumbnail |
 |---|---|---|
@@ -59,5 +66,6 @@ freelancer can copy and send to a friend. Freshness (web, 2026-10-24): no prior 
 | 5 | Marvel's board didn't want Robert Downey Jr. as Iron Man. Then they saw his screen test. | `projects/_client-scott-clary/marvel-board-vs-rdj/thumbnail.jpg` ("MARVEL ALMOST / SAID NO", teal NO; photo: RDJ's 1999 booking photo, "DOWNEY" board) |
 | 6 | The real War Dogs guys faked an entire office to win a $300M Pentagon deal | `projects/_client-scott-clary/war-dogs-fake-office/thumbnail.jpg` ("THEY FAKED / THE OFFICE", teal FAKED; photo: Packouz with Miles Teller on the War Dogs set) |
 | 7 | Chris Do saw an $800 sneaker for $150. He knew it was fake. | `projects/_client-scott-clary/chris-do-sneaker-pricing/thumbnail.jpg` ("CHEAP LOOKS / FAKE", teal FAKE; photo: a real photo of Chris Do, to source) |
+| 8 | A billionaire admits his claw machines are rigged: a hundred bucks for a 50 cent bunny | `projects/_client-scott-clary/morgan-claw-machine/thumbnail.jpg` ("THE CLAW / IS RIGGED", teal RIGGED; photo: a real photo of John Morgan, to source) |
 
 Licensing flag (2026-10-19): the #4 thumbnail photo is a Getty image (gettyimages-2158515218, via CBS); swap it for an official Netflix / SERHANT press still before posting. The #3 photo comes from Parade (credit not shown on the page).

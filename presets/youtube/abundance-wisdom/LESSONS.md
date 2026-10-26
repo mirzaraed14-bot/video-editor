@@ -1,7 +1,8 @@
 # Abundance Wisdom long-form: LESSONS
 
-What the creator's reviews taught, newest first. Format: *lesson → change made → file*. A lesson that repeats becomes a
-rule in this folder's README/PLAYBOOK (none yet: the look still lives in each job's BRIEF.md + storyboard).
+What the creator's reviews taught, oldest first. Format: *lesson → change made → file*. A lesson that repeats goes into
+[`PLAYBOOK.md`](PLAYBOOK.md) (since 2026-10-26: the gist of the look + the procedure, a starting point and NEVER a style lock;
+every video must be ≥ 5 % smoother, more premium and more expensive than the last).
 
 ## 2026-10-08 · SAME NIGHT (nick-martin-same-night), cold open v1 review
 
@@ -133,3 +134,15 @@ Notes resolved in `projects/cbum-last-show/review/critique-2026-10-21-redo/NOTES
     11-minute film, 3 s each, lower-left in the film's own tag language, only on calm host-face windows with nothing else on screen,
     never in the cold open, the end screen, near a mid-roll or after a heavy moment; one soft refined sound each.
     `projects/cbum-last-show/work/redo/cta/build_cta.py`.
+
+## 2026-10-26 · BOTH VERSIONS (paris-jackson-both-versions), the cold-open pacing + look review
+33. **Intentional pauses are RARE and never on his face ("you went overboard… not with every damn cut").** I took "restore the pauses
+    on the lines Part A marks slow" as a pause between every sentence of those blocks plus a 0.4 s breath at every host↔clip joint,
+    stretched into his silent frames: in those frames he turns back to READ the script, so every pause showed him reading. → The face
+    cam stays TIGHT, always. A deliberate pause only where it is felt to be necessary (a handful per film: the script's explicit
+    holds), and it sits under an OVERLAY, never on his face. Joints get their short audio fades, not host-side breaths.
+    `projects/paris-jackson-both-versions/work/pacing.py` (now: Part A's two explicit holds only).
+34. **Every reading span is under an overlay, never his face in the centre (same review; the AffanWiz rule, memory
+    feedback-cover-phone-reading, now explicitly for AW long-form).** → measure head pitch AND yaw on the final cut
+    (`work/look_down.py`, `workflows/eye-line.py`) and lay a full-frame graphic over every reading run before he sees it; his face
+    shows only where he looks into the lens.

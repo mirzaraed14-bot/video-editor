@@ -21,7 +21,12 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
   (seek on an even 60p frame). Never put the whole episode in `raw/` (transcribe.sh takes every clip there).
 - `python workflows/prproj-seq.py <proj> "Sequence NN" --edl /tmp/video-editor/<job>/cuts.json --offset <a> --clip <x>_section.mkv`
   (`cygpath -w` for the /tmp path), **copy it to `$J/transcript/cuts.json` too** (voice-gain.py reads that before splice.sh writes
-  it), transcribe the section, `bash .claude/skills/rough-cut/scripts/splice.sh $J`. Write `work/cut/joints30.txt` (segment starts
+  it), transcribe the section, `bash .claude/skills/rough-cut/scripts/splice.sh $J`.
+- **Stumbles WhisperX drops (Morgan, 2026-10-26):** "a- the- the claw", "they- they- there's" never reach words.json, so an energy
+  pause cut keeps them and Affan hears hesitations. Run faster-whisper large-v3 (the whisperx venv; torch's `lib` on the DLL path)
+  with a filler-friendly `initial_prompt` on the spliced cut, cut what it finds, and accept an edge only if the candidate reads clean
+  BOTH with and without the prompt (a prompt containing the words it hunts can invent them). An edge inside a consonant burst
+  clicks (audio-qa JOINT CLICKS): move it into the closure before it. Write `work/cut/joints30.txt` (segment starts
   + any camera cut inside a segment, from `select='gt(scene,0.3)'`).
 - Background: `python workflows/topaz-iris.py $J/outputs/<job>.mp4 $J/outputs/<job>.topaz.mov --out-scale 2 --no-stab --segments <joints>`
   (~10 min; launch with run_in_background, not `( … &)`).
@@ -44,8 +49,12 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
   + `audio.mute`), shots on HIS slots, free cuts = first word frame − 4, one A shot per same-camera run (his jump cuts stay; no
   punch-in), `"cut"` whips on the same camera, `SPLIT` with `"flip": true` when he wants the speaker BELOW, A `fy_out` 0.35 (lips
   above the seam captions), hook card = the credit with "/" (the hook font has no "·"), watermark = the show's name, **no bed**
-  (he adds music), SFX on every overlay (flash-vintage / shutter-film on photos, thud-low / hit-soft on scenes, whoosh-soft on
-  the split, tick-glass on swaps).
+  (he adds music), SFX on every overlay. **Premium sound (Affan 2026-10-26, Morgan v2: the kit's stock cues "don't sound premium ...
+  don't fit the motion graphic"): never the kit's blips / glass ticks / glass pops.** Copy `morgan-claw-machine/yt/sound.py` (cinematic
+  slices, HP-filtered hits, one sub layer under the 3 big moments, a fresh Epidemic pull per job) and its `CUES` block in
+  `yt/build_spec.py` (`auto_sfx: False`): a whip cut = a short whoosh crested ON the cut, ~12 dB under; a card value = a hit or a
+  thud on its first VISIBLE frame; a number winding up = a reverse swell ending on the landing; cuts back to the face and prop exits
+  silent. Gate: `yt/cue_check.py` PASS (no LOUD, no WEAK on a phone), levels near the Chris Do IG mix (hits -5..-12 dB full).
 - Two shot extras (Bombas, 2026-10-17): `"prop": {src (RGBA cutout), f0, f1, xy, h, angle}` on a shot = a product that whips in,
   hangs mid-frame and whips out (leave ≥ 3 frames before the cut); a "stronger zoom" = its own A shot, `r` 0.22-0.25, starting at
   the previous A shot's end zoom (`z0 = z0_prev * (1 + r_prev)`) so the cut never jumps scale.

@@ -271,6 +271,7 @@ The system improves only through files, never through chat memory. Four writes, 
    Affan Afterhours → [`presets/youtube/affan-afterhours/`](presets/youtube/affan-afterhours/README.md).
    @affanwizu (Urdu reels, Roman Urdu CAPTIONS ONLY) → [`presets/instagram/affanwizu/`](presets/instagram/affanwizu/README.md).
    AffanWiz (English personal brand, long-form YouTube, promotes their Skool community) → [`presets/youtube/affanwiz/`](presets/youtube/affanwiz/README.md).
+   Abundance Wisdom long-form (face-led bodybuilding documentaries) → [`presets/youtube/abundance-wisdom/PLAYBOOK.md`](presets/youtube/abundance-wisdom/PLAYBOOK.md): the gist, never a style lock. Every video does the whole FX-catalog pass first and is ≥ 5 % better than the last.
    Scott D. Clary client Shorts (Success Story) → [`presets/youtube-shorts/scott-clary/`](presets/youtube-shorts/scott-clary/ENGINE.md): ENGINE, FINDINGS, and RESULTS.md, where every Short's locked prediction and 7-day results are logged.
    Onyx sample Shorts (podcast prospects' re-edits for Onyx Influence outreach, plus Affan's reaction video): the prospect's priority platform picks the look (its PLAYBOOK § 0). Instagram-first → [`presets/youtube-shorts/onyx-samples/`](presets/youtube-shorts/onyx-samples/README.md); YouTube-first → [`presets/youtube-shorts/onyx-samples-youtube/`](presets/youtube-shorts/onyx-samples-youtube/README.md).
 2. **The creator's review is data.** After step 7, read what changed on the timeline (`place-graphics.py --diff`,
@@ -284,6 +285,14 @@ The system improves only through files, never through chat memory. Four writes, 
    before EACH video, research the format's current best examples, and write in the BRIEF what this video does better than
    the last one of its kind (1 % counts). A preset's locked number is a guard against accidental drift, not a ceiling: a
    deliberate improvement is always allowed and is logged in its LESSONS.
+   **The style-catalog pass comes before every edit (Affan, 2026-10-26).**
+   - Read all of `research/effects-catalog/CATALOG.md` and LOOK at every reference still in `research/effects-catalog/shots/`.
+     Go thoroughly, frame by frame, never a skim.
+   - Write a "catalog pass" section into the BRIEF: the moves that fit this video, the ones not yet used on this channel, and the
+     ones the last video leaned on.
+   - Use the catalog as much as the story allows. On long-forms the floor is ≥ 5 % better in smoothness, premium feel and
+     expensive look.
+   - No edit starts before that section exists.
 
 ## Lab Notes — the locks
 

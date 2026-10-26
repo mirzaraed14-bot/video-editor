@@ -11,6 +11,8 @@
   python workflows/mg-cards.py sneaker  OUT.mp4 --src CUTOUT.png --mode real|fake|rule|button [--steps 600@0.9,700@1.3,800@1.7] [--t1 --t2]
   python workflows/mg-cards.py replies  OUT.mp4 --t1 2.2 [--dur 3]     (rates out, Yes / Yes / No. back; "No." lands at --t1)
   python workflows/mg-cards.py dayrate  OUT.mp4 --steps 250@0,300@2.6,400@3.0,600@3.4,800@3.8 [--label "HIS DAY RATE"]
+  python workflows/mg-cards.py clawmenu OUT.mp4 --t1 0.6 --t2 2.4 --t3 3.6 --t4 4.8 [--dur 6]   (a claw machine's operator menu)
+  python workflows/mg-cards.py bunnycost OUT.mp4 --src BUNNY_CARD.png --t1 1.2 --t2 3.2 --t3 4.0 [--dur 5]   ($100 in vs a 50-cent bunny)
 
 dots      a field of N white dots on navy; one dot turns teal and the camera eases in on it; the label rises in under it.
 counter   a number rolls up from 1 to --to (ease-in-out), each change sliding up with a fading ghost; the final number turns teal.
@@ -511,10 +513,86 @@ def dayrate(a):
     out.stdin.close(); out.wait()
 
 
+CONSOLA, CONSOLA_B = "C:/Windows/Fonts/consola.ttf", "C:/Windows/Fonts/consolab.ttf"
+LCD, LCD_DIM = (124, 255, 178), (40, 90, 66)
+
+
+def clawmenu(a):
+    """A claw machine's operator menu on an LCD (John Morgan, 2026-10-26: "it's all pre-programmed ... no skill involved ... win every
+    10 times or every 20 times"). Rows fill in on the spoken words: SKILL REQUIRED -> NO (--t1), PAYOUT -> 1 IN 10 (--t2), then
+    1 IN 20 (--t3), CLAW STRENGTH -> WEAK (--t4); under the caption band a PLAYS counter ticks up from --t3 and stops at 19."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    fh, fr, fv, fp = ImageFont.truetype(CONSOLA_B, 46), ImageFont.truetype(CONSOLA, 56), ImageFont.truetype(CONSOLA_B, 64), ImageFont.truetype(CONSOLA_B, 190)
+    rows = [("SKILL REQUIRED", [(a.t1, "NO")], RED), ("PAYOUT", [(a.t2, "1 IN 10"), (a.t3, "1 IN 20")], LCD), ("CLAW STRENGTH", [(a.t4, "WEAK")], RED)]
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        up = eout(s / 0.35); x0, x1, y0, y1 = 80, w - 80, 250 + round(80 * (1 - up)), 960 + round(80 * (1 - up))
+        d.rounded_rectangle((x0 - 10, y0 - 10, x1 + 10, y1 + 10), 34, fill=(30, 36, 48))                 # the machine's bezel
+        d.rounded_rectangle((x0, y0, x1, y1), 26, fill=(6, 14, 10))                                       # the LCD
+        for yy in range(y0 + 4, y1, 6):                                                                    # scan lines
+            d.line((x0 + 6, yy, x1 - 6, yy), fill=(9, 19, 14))
+        d.text((x0 + 50, y0 + 40), "OPERATOR MENU", font=fh, fill=LCD_DIM)
+        d.line((x0 + 50, y0 + 110, x1 - 50, y0 + 110), fill=LCD_DIM, width=3)
+        for k, (name, vals, col) in enumerate(rows):
+            ry = y0 + 170 + 165 * k
+            d.text((x0 + 50, ry), name, font=fr, fill=LCD)
+            cur = [v for tt, v in vals if s >= tt]
+            if cur:
+                tt = [tt for tt, v in vals if v == cur[-1]][0]; blink = s - tt < 0.4 and int((s - tt) * 10) % 2 == 0
+                if not blink:
+                    vw = d.textlength(cur[-1], font=fv); d.text((x1 - 50 - vw, ry - 4), cur[-1], font=fv, fill=col)
+            elif int(s * 3) % 2 == 0:
+                d.text((x1 - 50 - d.textlength("_", font=fv), ry - 4), "_", font=fv, fill=LCD_DIM)
+        if s >= a.t3:                                                                                     # PLAYS under the caption band
+            n = min(19, 1 + int((s - a.t3) / max((a.dur - a.t3 - 0.3) / 18, 0.05)))
+            label(d, "PLAYS", w / 2, 1250, 60, LCD_DIM, 1.0, 1.0)
+            txt = f"{n:02d}"; tw = d.textlength(txt, font=fp); d.text((w / 2 - tw / 2, 1320), txt, font=fp, fill=LCD)
+        out.stdin.write(push(im, t, 0.03).tobytes())
+    out.stdin.close(); out.wait()
+
+
+def bunnycost(a):
+    """$100 in vs a 50-cent bunny (John Morgan, 2026-10-26): a $ counter rolls up to $100 on "a hundred bucks" (--t1), labelled PUMPED
+    IN; on "50 cents" (--t2) it slides under the caption band and the bunny card (--src, RGBA, its own $0.50 tag) rises into the top;
+    MADE IN CHINA lands on "China" (--t3)."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    card = Image.open(a.src).convert("RGBA"); ch = 760; card = card.resize((round(card.width * ch / card.height), ch), Image.LANCZOS)
+    big = ImageFont.truetype(ANTON, 300)
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGBA", (w, h), NAVY + (255,)); d = ImageDraw.Draw(im)
+        v = round(100 * ease(min(max(s / max(a.t1, 0.3), 0), 1))); txt = f"${v}"
+        g = eout((s - a.t2) / 0.45)                                                                       # 0 -> 1: the move
+        k = 1 - 0.45 * g; ny = 420 + (1300 - 420) * g
+        num = Image.new("RGBA", (w, 380), (0, 0, 0, 0)); nd = ImageDraw.Draw(num); tw = nd.textlength(txt, font=big)
+        nd.text((w / 2 - tw / 2, 0), txt, font=big, fill=(TEAL if v == 100 else WHITE) + (255,))
+        if s < a.t1:
+            num = num.filter(ImageFilter.GaussianBlur(3))
+        num = num.resize((round(w * k), round(380 * k)), Image.LANCZOS); im.alpha_composite(num, (round((w - num.width) / 2), round(ny)))
+        la = 1 - g
+        if la > 0.02:
+            label(d, "PUMPED IN", w / 2, 300, 72, tuple(int(NAVY[j] + (150 - NAVY[j]) * la) for j in range(3)), 1.0, 1.0)
+        else:
+            label(d, "PUMPED IN", w / 2, 1236, 56, (150, 165, 190), 1.0, 1.0)   # under the watermark (~1185)
+        if g > 0:                                                                                          # the bunny card rises in
+            c = card.copy(); c.putalpha(card.getchannel("A").point(lambda q: int(q * min(1, g * 1.4))))
+            im.alpha_composite(c, (round((w - c.width) / 2), round(200 + 260 * (1 - g))))
+        cp = eout((s - a.t3) / 0.25)
+        if cp > 0:
+            f_ = ImageFont.truetype(ANTON, 54); txt2 = "MADE IN CHINA"; tw2 = d.textlength(txt2, font=f_)
+            px, py = w / 2 - 330, 840
+            d.rounded_rectangle((px - 18, py - 6, px + tw2 + 18, py + 74), 12, fill=tuple(int(NAVY[j] + (255 - NAVY[j]) * cp) for j in range(3)))
+            d.text((px, py), txt2, font=f_, fill=tuple(int(255 + (NAVY[j] - 255) * cp) for j in range(3)))
+        out.stdin.write(push(im.convert("RGB"), t, 0.03).tobytes())
+    out.stdin.close(); out.wait()
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral", "craigslist", "inspection", "inspectors",
-                                     "sneaker", "replies", "dayrate"]); ap.add_argument("out")
+                                     "sneaker", "replies", "dayrate", "clawmenu", "bunnycost"]); ap.add_argument("out")
+    ap.add_argument("--t3", type=float, default=0.0); ap.add_argument("--t4", type=float, default=0.0)
     ap.add_argument("--steps", default="")
     ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
     ap.add_argument("--money", action="store_true"); ap.add_argument("--mode", default="open")
@@ -523,5 +601,5 @@ if __name__ == "__main__":
     ap.add_argument("--src"); ap.add_argument("--cx", type=float, default=0.5); ap.add_argument("--dur", type=float, default=3.0); ap.add_argument("--w", type=int, default=1080); ap.add_argument("--h", type=int, default=1920)
     a = ap.parse_args()
     {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral, "craigslist": craigslist, "inspection": inspection, "inspectors": inspectors,
-     "sneaker": sneaker, "replies": replies, "dayrate": dayrate}[a.kind](a)
+     "sneaker": sneaker, "replies": replies, "dayrate": dayrate, "clawmenu": clawmenu, "bunnycost": bunnycost}[a.kind](a)
     print("done", a.out)
