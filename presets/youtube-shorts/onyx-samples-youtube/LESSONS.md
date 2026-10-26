@@ -231,3 +231,7 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   >= 10 px a frame through, with the step across it matching the mean step on each side (within 12 px), is left unlocked
   (`morgan-claw-machine/yt/build_spec.py` `smooth_through`). Gate for every Short with jump cuts inside a face shot: step the eye
   midpoint across each in-shot joint on the DELIVERED frames (YuNet, 60 fps); any step far above the neighbouring steps is a snap.
+- 2026-10-26 (Morgan claw, after v3): "remove the sfx except for the transition ones, once I put music it's like too much". Under HIS
+  music bed the card hits, swells and sub-booms crowd the mix; v4 keeps only the whip-cut whooshes (cuts back to the face stay silent).
+  One Short so far: a lesson, not yet a rule. If it repeats, make transition-only the default for Shorts he scores himself, and
+  ship the full design as a stem he can pull from.

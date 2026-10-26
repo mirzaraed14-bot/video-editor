@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: dba6d668-1b25-43d5-a8b2-d5bc637b60ae
-  modified: 2026-10-26T06:04:28.541Z
+  modified: 2026-10-26T07:34:35.354Z
 ---
 
 Affan on SAME NIGHT cold open v2 (2026-10-08): the magic-shimmer SFX on the Sandow lift was "so goofy… I want this video
@@ -38,6 +38,10 @@ motion graphic"):** v2 used the YT kit's stock cues (data blips on an LCD menu, 
 a whoosh on every cut back to the face). Never use the kit's auto cues on a client Short: size each sound to its motion (whip = short
 whoosh crested on the cut; a value landing = a hit on its first VISIBLE frame; a wind-up = a riser ending on the landing; cuts back to
 the face silent), levels near the Chris Do IG mix. Template: projects/_client-scott-clary/morgan-claw-machine/yt/sound.py + cue_check.py.
+
+**UNDER HIS MUSIC (Affan 2026-10-26, Morgan claw after v3):** "remove the sfx except for the transition ones, once I put music it's
+like too much". On a Short he scores himself, the card hits and swells crowd his bed: v4 kept only the whip-cut whooshes. One data
+point so far; if it repeats, transition-only is the default when he adds the music.
 
 **VARIETY (Affan 2026-10-21, THE LAST SHOW redo, rated the SFX "2 out of 10"):** "this Vegas whoosh air sound effect so many times…
 annoying… way more variety… not just spam [one] sound effect again and again". The redo had 293 cues sliced from SAME NIGHT's handful
