@@ -845,3 +845,43 @@ Six corrections, all now rules:
   middle line"** (this short: line y940-980 instead of just under the lips at y850). **(4) a dark overlay ("too dark... or you
   messed up the grading")**: lifting the blue Telegraph cutaway only went milky; swap to a well-lit shot of the same subject
   (the Day 3 feed's Murray cutaway, 706.4 s) rather than push the grade.
+- 2026-10-26 (MJ × Joe appointment, sequencing): **`resolve_beats.py` "tighten" misses pauses on three kinds of source** because
+  its pause threshold is the WHOLE file's 10th-percentile floor + 6 dB: gated podcast audio (Art Of Dialogue: floor −95, the
+  pauses sit at −80…−90, so 1.0–1.5 s silences stayed), restaurant room tone (NewsOne JJ: speech pauses at the noise level),
+  and compilations with silent cards (the detail.). WhisperX also hides pauses by stretching a word ("is" 0.78 s, "child"
+  1.7 s). Fix that worked: re-transcribe the A1 rebuilt from the READBACK, list every word gap > 0.22 s with its RMS, and
+  hand-split the real ones as explicit `in`/`out` pieces (two rounds here). Also: a compilation's question and answer can
+  come from different interviews (JOW: beat 6 dated ~1993 by the Tyson/Jordan line that follows it) — date every piece by
+  its own picture and words, never by the brief's source note.
+- 2026-10-26 (Derek "daughters", raw sequence, `projects/derek-lunsford-daughters/`): **a brief's "(X only)" line can hold
+  other voices.** On a family vlog call, per-word pyin (Derek 100–160 Hz, his wife 200–275, the child on the phone 300–475) +
+  a 2 fps lips sheet split the speakers: two of the four "Derek only" lines were his wife's, and the daughter's "Dada" sat
+  between his words (dropped). `tools/f0_words.py`. **Two recordings of one PA call** (his arena vlog vs the broadcast)
+  align by band-passed envelope cross-correlation (+112.10 s, r 0.755): take the AUDIO where the name is clean and the
+  PICTURE from the other at the same moment (per-piece V2 covers). **`place_sequence` re-pins any cover whose `to` is a
+  number** (`to_src`, meant for a cover ending on the covered footage's own cut): for covers synced to ANOTHER source it
+  wrecked two ends (one before its start, one at 3831 s) — null `to_src` in placement.json for those. **The face detector
+  picks the wrong person in two-shots** (B-roll with a second bodybuilder, the bed shot, three men from behind): render
+  the crop sheet (`tools/crop_sheet.py`, first/mid/last frame per row as framed) BEFORE placing and pin `framing.json`.
+  Also: `plan_placement.py` needs `uv run --with opencv-contrib-python-headless --with numpy`; a beat's `drop_candidate`
+  must be an int; a "laugh" in a pause can be a room VOICE ("yeah, that's"): the re-ASR of the readback found it.
+- 2026-10-26 (MJ × Joe appointment, code build): **a source decides where its face can sit.** With one caption line (lips
+  ~y835), a face that sits HIGH in its 16:9 frame (podcast mediums: Art Of Dialogue bodyguard, Fiddes) exposes a mirror strip
+  at the top at 177.87 % — scale it up instead (2.4 / 1.95 / 2.75 = tight, his taste); a face that sits LOW with a bug under it
+  (NewsOne JJ) goes in his 440-1484 letterbox band with the captions on the nose (his Katherine note) — the band ends above the
+  bug, no delogo, no mirror. Check `stage_a.py sheet` for mirror tiles before rendering. Also: Topaz `align_frames` can drop /
+  hold a few frames; check they fall in still slots or on cuts.
+- 2026-10-27 (MJ × Joe appointment, HIS REVIEW of v1) — lesson → change → file:
+  **(1) "use the exact same interview where he answers the question" for the hook.** A "freeze from this interview where Joe is
+  just looking" means the SAME interview as the answer that follows, even when another clip sits in his source monitor (v1 read
+  his source monitor = the Larry King clip). → hook = JJ 832.6–834.8 (Joe silent, lips closed, staring toward the interviewer;
+  found by listing the interview's silent spans per camera shot, then frame strips) → `projects/joe-jackson-appointment/build/make_timeline.py` F0.
+  **(2) A letterboxed clip's blurred background must fill the WHOLE screen.** His twin (198 %) covers a 1044–1204 px band, not a
+  thin one (JOW at his 60.87 % = 657 px band left black above/below). → per-shot `twin_scale` (3.0, about the band centre) →
+  `build/finish.py` letterbox(); rule: twin_scale >= 1920 / band height.
+  **(3) "Remove the music, the music is my job; keep the sound effects of the transitions."** A brief that names a music bed
+  does not make music Claude's call on AW shorts (PLAYBOOK division of labour: music = creator). → no bed by default, SFX kept
+  → `build/audio.py` MUSIC = None.
+  **Outcome (2026-10-27):** v2 (only those three notes changed) was UPLOADED as delivered, no second round. The 4th code build
+  shipped after one review: his Tella direction video + sequencing-first held the creative calls, so the notes were
+  source/framing/music, not taste.

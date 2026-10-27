@@ -100,3 +100,12 @@ Open: Rob Dial v15 predates the SFX fix; offer a `--skip picture` rebuild.
 **2026-10-24 (Affan): BOTH formats for every yes** — each sample ships as a YouTube (Sean Ryan) version AND an Instagram (neon-window) version from the same approved moment (MATG pattern). Rule lives in presets/youtube-shorts/onyx-samples/PLAYBOOK.md; supersedes one-sample-per-prospect. Batch 5 (Brad Lea / Dropping Bombs, Fantasy Footballers): projects/_onyx-batch5-2026-10/BATCH.md.
 
 **2026-10-26: the Onyx page becomes Affan's PERSONAL brand page, handle @affancuts** (free on IG/YT/TikTok when checked; runner-up @affanpods). Organic-posting planning runs in its own Claude Code session from X:\Claude Projects\Hormozi Business, brief = my-businesses/onyx-organic-page-brief.md.
+
+**2026-10-27: batch-5 reactions + his first @affancuts organic reel PREPARED in ABW10** (bin "Onyx batch 5 reactions (2026-10-27)"):
+Brad Lea 2:48.8, Fantasy Footballers 2:48.3, MATG 2:43.5 (from OBS 2026-10-26 19-23/19-39/19-57 + C1404-C1406) and "Shorts cooked reel"
+1:23.8 (OBS 20-15-52 + C1407; his rule: organic reels ≤ 1:30, reactions ≤ 3:00). State: projects/_onyx-batch5-2026-10/REACTIONS-RUN.md.
+He exports; review not in yet. Numbers he says on camera are checked against the screen (graphics use the screen).
+
+2026-10-27 review → "<name> v2" ×3 + reel v2 (whole intro, MATG stakes line, subtle SFX). He then hand-trimmed the v2s himself (FF 2:29.7,
+MATG 2:37.0, more no-bed spans) and picked his own songs for the SAMPLES (Real Slim Shady = Brad, Big Poppa = FF, Thelema = MATG, yt + ig; I misread them as reaction
+beds first): Exports/<job>.<yt|ig>.music.mp4 via _onyx-batch5-2026-10/samples_music.py. Never re-run apply.py over a hand-edited v2.

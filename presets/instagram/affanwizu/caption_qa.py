@@ -147,9 +147,17 @@ def main():
     if not srt or not media: sys.exit(f"caption_qa: need <job>/*.srt and <job>/raw/<cut> (srt={srt}, media={media})")
     cues, sp = srt_cues(srt), speech(media[0])
     cover = lambda t0, t1: sum(max(0.0, min(e, t1) - max(s, t0)) for s, e in sp)
+    # A clip slowed in Premiere stretches every word by 1/speed (ABW10 Seq 30: "minus 9,675" on a 0.8x clip held 4.5 s of
+    # speech, all 7 words present), so the speech under a cue is measured back at normal speed.
+    seqf = os.path.join(job, "transcript", "sequence.json")
+    a1 = [c for c in json.load(open(seqf, encoding="utf-8"))["a"] if c["t"] == 0] if os.path.exists(seqf) else []
+    def at_speed(t0, t1):
+        tot = sum(max(0.0, min(c["e"], t1) - max(c["s"], t0)) for c in a1)
+        if not tot: return 1.0
+        return sum(max(0.0, min(c["e"], t1) - max(c["s"], t0)) * abs(c.get("sp", 1) or 1) for c in a1) / tot
     fails, warns = [], []
     for t0, t1, txt in cues:
-        n = spoken_words(txt); c = cover(t0, t1)
+        n = spoken_words(txt); c = cover(t0, t1) * min(1.0, at_speed(t0, t1))
         if c > PER_WORD * n + SLACK:
             fails.append(f"{t0:7.2f}-{t1:6.2f}  HANGING  {c:.2f}s of speech under {n} word(s) ({c / n:.2f}s/word, limit "
                          f"{PER_WORD * n + SLACK:.2f}s): \"{txt}\"  → words are missing here; re-decode this span")

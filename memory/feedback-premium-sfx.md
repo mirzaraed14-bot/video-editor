@@ -49,3 +49,10 @@ of samples: whoosh-air (= rise-whoosh.wav) 71×, rise-air 47×, thud-low 37×. S
 small kit. Source a fresh, wide set per job from Epidemic, with several takes per action class, and rotate them so no sample repeats back
 to back and none dominates. Each sound matches what its animation does. Related:
 [[feedback-sfx-on-every-graphic]], [[feedback-cinematic-pacing-longform]].
+
+**SUBTLE (Affan 2026-10-27, batch-5 Onyx reactions + reel: "the sound effects sound very very cheap … they don't sound expensive,
+premium, refined, subtle … some places they're loud"):** the layers were sliced from earlier jobs' kits (Chris Do / War Dogs / MG:
+trailer toms, taiko, heavy thuds, deep whooshes), 38-47 cues per video, hits 5 dB under his voice peak. So: a fresh Epidemic set per
+job, soft and airy (gentle swishes, light risers, high-passed soft impacts; still no taps/foley per PHONE BAND), no trailer drums or big booms on a talking reaction,
+and every cue clearly under the voice (hits ≥ 8 dB under the voice peak, whooshes far lower); fewer big moments, none louder than the
+rest. Lesson: presets/youtube-shorts/onyx-samples/LESSONS.md § 2026-10-27 review.

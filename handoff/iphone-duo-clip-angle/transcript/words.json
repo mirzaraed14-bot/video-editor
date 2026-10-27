@@ -1,0 +1,11509 @@
+{
+"language": "en",
+"source": "per-burst text (review/bursts.txt, large-v3) + wav2vec2 alignment per burst on CPU (review/tools/text_align.py) + review/tools/fix_words.py (token rejoin + name fixes)",
+"clips": [
+{
+"clip": "C1410.MP4",
+"words": [
+{
+"w": "Two",
+"start": 22.801,
+"end": 22.943,
+"prob": 0.997,
+"burst": 0
+},
+{
+"w": "days",
+"start": 22.983,
+"end": 23.165,
+"prob": 0.985,
+"burst": 0
+},
+{
+"w": "ago,",
+"start": 23.226,
+"end": 23.408,
+"prob": 0.748,
+"burst": 0
+},
+{
+"w": "I",
+"start": 23.469,
+"end": 23.529,
+"prob": 0.694,
+"burst": 0
+},
+{
+"w": "should",
+"start": 23.549,
+"end": 23.731,
+"prob": 0.741,
+"burst": 0
+},
+{
+"w": "speedbots.",
+"start": 23.752,
+"end": 24.378,
+"prob": 0.8,
+"burst": 0
+},
+{
+"w": "Two",
+"start": 25.461,
+"end": 25.621,
+"prob": 0.833,
+"burst": 1
+},
+{
+"w": "days",
+"start": 25.641,
+"end": 25.822,
+"prob": 0.843,
+"burst": 1
+},
+{
+"w": "ago,",
+"start": 25.882,
+"end": 26.062,
+"prob": 0.909,
+"burst": 1
+},
+{
+"w": "IShowSpeed",
+"start": 26.143,
+"end": 26.564,
+"prob": 0.524,
+"burst": 1,
+"fixed": true
+},
+{
+"w": "bought",
+"start": 26.584,
+"end": 26.804,
+"prob": 0.967,
+"burst": 1
+},
+{
+"w": "Apple's",
+"start": 27.025,
+"end": 27.326,
+"prob": 0.752,
+"burst": 1
+},
+{
+"w": "new",
+"start": 27.386,
+"end": 27.526,
+"prob": 0.893,
+"burst": 1
+},
+{
+"w": "foldable",
+"start": 27.546,
+"end": 27.968,
+"prob": 0.706,
+"burst": 1
+},
+{
+"w": "iPhone",
+"start": 28.108,
+"end": 28.389,
+"prob": 0.625,
+"burst": 1
+},
+{
+"w": "Duo.",
+"start": 28.409,
+"end": 28.73,
+"prob": 0.937,
+"burst": 1
+},
+{
+"w": "Live.",
+"start": 30.366,
+"end": 30.738,
+"prob": 0.782,
+"burst": 2
+},
+{
+"w": "2.6",
+"start": 31.061,
+"end": 31.704,
+"prob": 0.516,
+"burst": 3
+},
+{
+"w": "million",
+"start": 31.745,
+"end": 32.026,
+"prob": 0.845,
+"burst": 3
+},
+{
+"w": "views.",
+"start": 32.046,
+"end": 32.388,
+"prob": 0.974,
+"burst": 3
+},
+{
+"w": "He",
+"start": 34.67,
+"end": 34.751,
+"prob": 0.996,
+"burst": 4
+},
+{
+"w": "hit",
+"start": 34.791,
+"end": 34.971,
+"prob": 0.954,
+"burst": 4
+},
+{
+"w": "62",
+"start": 35.011,
+"end": 35.473,
+"prob": 0.952,
+"burst": 4
+},
+{
+"w": "million",
+"start": 35.533,
+"end": 35.794,
+"prob": 0.824,
+"burst": 4
+},
+{
+"w": "subscribers",
+"start": 35.814,
+"end": 36.336,
+"prob": 0.932,
+"burst": 4
+},
+{
+"w": "in",
+"start": 36.516,
+"end": 36.617,
+"prob": 0.888,
+"burst": 4
+},
+{
+"w": "that",
+"start": 36.677,
+"end": 36.857,
+"prob": 0.883,
+"burst": 4
+},
+{
+"w": "same",
+"start": 36.938,
+"end": 37.178,
+"prob": 0.783,
+"burst": 4
+},
+{
+"w": "stream.",
+"start": 37.239,
+"end": 37.56,
+"prob": 0.899,
+"burst": 4
+},
+{
+"w": "And",
+"start": 39.371,
+"end": 39.472,
+"prob": 0.528,
+"burst": 5
+},
+{
+"w": "within",
+"start": 39.492,
+"end": 39.814,
+"prob": 0.646,
+"burst": 5
+},
+{
+"w": "hours,",
+"start": 39.855,
+"end": 40.338,
+"prob": 0.922,
+"burst": 5
+},
+{
+"w": "the",
+"start": 40.681,
+"end": 40.782,
+"prob": 0.995,
+"burst": 5
+},
+{
+"w": "clippers",
+"start": 40.822,
+"end": 41.285,
+"prob": 0.923,
+"burst": 5,
+"fixed": true
+},
+{
+"w": "showed",
+"start": 41.406,
+"end": 41.688,
+"prob": 0.848,
+"burst": 5
+},
+{
+"w": "up.",
+"start": 41.769,
+"end": 41.849,
+"prob": 0.98,
+"burst": 5
+},
+{
+"w": "speed",
+"start": 44.7,
+"end": 45.041,
+"prob": 0.896,
+"burst": 6
+},
+{
+"w": "buys",
+"start": 45.081,
+"end": 45.381,
+"prob": 0.816,
+"burst": 6
+},
+{
+"w": "the",
+"start": 45.421,
+"end": 45.522,
+"prob": 0.703,
+"burst": 6
+},
+{
+"w": "iphone",
+"start": 45.682,
+"end": 45.982,
+"prob": 0.548,
+"burst": 6
+},
+{
+"w": "duo",
+"start": 46.002,
+"end": 46.363,
+"prob": 0.892,
+"burst": 6
+},
+{
+"w": "1200",
+"start": 46.563,
+"end": 47.144,
+"prob": 0.761,
+"burst": 6
+},
+{
+"w": "views",
+"start": 47.184,
+"end": 47.425,
+"prob": 0.636,
+"burst": 6
+},
+{
+"w": "speed",
+"start": 47.665,
+"end": 47.986,
+"prob": 0.941,
+"burst": 6
+},
+{
+"w": "buys",
+"start": 48.046,
+"end": 48.286,
+"prob": 0.825,
+"burst": 6
+},
+{
+"w": "the",
+"start": 48.306,
+"end": 48.386,
+"prob": 0.833,
+"burst": 6
+},
+{
+"w": "iphone",
+"start": 48.507,
+"end": 48.787,
+"prob": 0.595,
+"burst": 6
+},
+{
+"w": "duo",
+"start": 48.807,
+"end": 49.107,
+"prob": 0.894,
+"burst": 6
+},
+{
+"w": "953",
+"start": 49.308,
+"end": 50.189,
+"prob": 0.822,
+"burst": 6
+},
+{
+"w": "views",
+"start": 50.249,
+"end": 50.47,
+"prob": 0.941,
+"burst": 6
+},
+{
+"w": "SPEED",
+"start": 51.672,
+"end": 51.976,
+"prob": 0.992,
+"burst": 7
+},
+{
+"w": "BUYS",
+"start": 52.016,
+"end": 52.239,
+"prob": 0.69,
+"burst": 7
+},
+{
+"w": "THE",
+"start": 52.279,
+"end": 52.36,
+"prob": 0.857,
+"burst": 7
+},
+{
+"w": "IPHONE",
+"start": 52.441,
+"end": 52.724,
+"prob": 0.501,
+"burst": 7
+},
+{
+"w": "DUO!",
+"start": 52.765,
+"end": 53.108,
+"prob": 0.936,
+"burst": 7
+},
+{
+"w": "18",
+"start": 54.262,
+"end": 54.606,
+"prob": 0.892,
+"burst": 8
+},
+{
+"w": "views.",
+"start": 54.647,
+"end": 54.869,
+"prob": 0.666,
+"burst": 8
+},
+{
+"w": "I",
+"start": 56.351,
+"end": 56.411,
+"prob": 0.978,
+"burst": 9
+},
+{
+"w": "went",
+"start": 56.471,
+"end": 56.652,
+"prob": 0.723,
+"burst": 9
+},
+{
+"w": "through",
+"start": 56.692,
+"end": 56.933,
+"prob": 0.814,
+"burst": 9
+},
+{
+"w": "23",
+"start": 57.114,
+"end": 58.158,
+"prob": 0.703,
+"burst": 9
+},
+{
+"w": "of",
+"start": 58.278,
+"end": 58.358,
+"prob": 0.936,
+"burst": 9
+},
+{
+"w": "them",
+"start": 58.439,
+"end": 58.559,
+"prob": 0.992,
+"burst": 9
+},
+{
+"w": "These",
+"start": 59.701,
+"end": 59.903,
+"prob": 0.607,
+"burst": 10
+},
+{
+"w": "exact",
+"start": 59.943,
+"end": 60.306,
+"prob": 0.902,
+"burst": 10
+},
+{
+"w": "shorts.",
+"start": 60.366,
+"end": 60.669,
+"prob": 0.687,
+"burst": 10
+},
+{
+"w": "20",
+"start": 62.771,
+"end": 63.192,
+"prob": 0.893,
+"burst": 11
+},
+{
+"w": "of",
+"start": 63.232,
+"end": 63.312,
+"prob": 0.647,
+"burst": 11
+},
+{
+"w": "them",
+"start": 63.373,
+"end": 63.533,
+"prob": 0.801,
+"burst": 11
+},
+{
+"w": "got",
+"start": 63.573,
+"end": 63.774,
+"prob": 0.879,
+"burst": 11
+},
+{
+"w": "under",
+"start": 64.015,
+"end": 64.256,
+"prob": 0.927,
+"burst": 11
+},
+{
+"w": "5000",
+"start": 64.336,
+"end": 64.918,
+"prob": 0.892,
+"burst": 11
+},
+{
+"w": "views.",
+"start": 64.958,
+"end": 65.239,
+"prob": 0.961,
+"burst": 11
+},
+{
+"w": "Same",
+"start": 71.021,
+"end": 71.322,
+"prob": 0.917,
+"burst": 12
+},
+{
+"w": "stream,",
+"start": 71.362,
+"end": 71.743,
+"prob": 0.917,
+"burst": 12
+},
+{
+"w": "same",
+"start": 71.843,
+"end": 72.144,
+"prob": 0.967,
+"burst": 12
+},
+{
+"w": "guy,",
+"start": 72.224,
+"end": 72.525,
+"prob": 0.892,
+"burst": 12
+},
+{
+"w": "same",
+"start": 72.646,
+"end": 72.967,
+"prob": 0.873,
+"burst": 12
+},
+{
+"w": "day,",
+"start": 73.007,
+"end": 73.208,
+"prob": 0.985,
+"burst": 12
+},
+{
+"w": "everything.",
+"start": 73.529,
+"end": 73.89,
+"prob": 0.947,
+"burst": 12
+},
+{
+"w": "and",
+"start": 75.452,
+"end": 75.554,
+"prob": 0.913,
+"burst": 13
+},
+{
+"w": "then",
+"start": 75.595,
+"end": 75.757,
+"prob": 0.914,
+"burst": 13
+},
+{
+"w": "there's",
+"start": 75.778,
+"end": 76.022,
+"prob": 0.595,
+"burst": 13
+},
+{
+"w": "this",
+"start": 76.042,
+"end": 76.205,
+"prob": 0.753,
+"burst": 13
+},
+{
+"w": "one",
+"start": 76.327,
+"end": 76.408,
+"prob": 0.998,
+"burst": 13
+},
+{
+"w": "212,000",
+"start": 77.878,
+"end": 78.847,
+"prob": 0.707,
+"burst": 14
+},
+{
+"w": "views.",
+"start": 78.887,
+"end": 79.15,
+"prob": 0.466,
+"burst": 14
+},
+{
+"w": "So",
+"start": 80.95,
+"end": 81.051,
+"prob": 0.859,
+"burst": 15
+},
+{
+"w": "what",
+"start": 81.071,
+"end": 81.211,
+"prob": 0.8,
+"burst": 15
+},
+{
+"w": "did",
+"start": 81.231,
+"end": 81.371,
+"prob": 0.873,
+"burst": 15
+},
+{
+"w": "that",
+"start": 81.472,
+"end": 81.712,
+"prob": 0.96,
+"burst": 15
+},
+{
+"w": "one",
+"start": 81.853,
+"end": 81.973,
+"prob": 0.842,
+"burst": 15
+},
+{
+"w": "do",
+"start": 82.013,
+"end": 82.153,
+"prob": 0.874,
+"burst": 15
+},
+{
+"w": "that",
+"start": 82.454,
+"end": 82.655,
+"prob": 0.968,
+"burst": 15
+},
+{
+"w": "the",
+"start": 83.517,
+"end": 83.617,
+"prob": 0.992,
+"burst": 15
+},
+{
+"w": "other",
+"start": 83.677,
+"end": 83.858,
+"prob": 0.964,
+"burst": 15
+},
+{
+"w": "20",
+"start": 83.938,
+"end": 84.339,
+"prob": 0.944,
+"burst": 15
+},
+{
+"w": "didn't?",
+"start": 84.379,
+"end": 84.7,
+"prob": 0.841,
+"burst": 15
+},
+{
+"w": "And",
+"start": 90.34,
+"end": 90.421,
+"prob": 0.995,
+"burst": 16
+},
+{
+"w": "what's",
+"start": 90.501,
+"end": 90.742,
+"prob": 0.714,
+"burst": 16
+},
+{
+"w": "the",
+"start": 90.782,
+"end": 90.902,
+"prob": 0.855,
+"burst": 16
+},
+{
+"w": "angle",
+"start": 91.123,
+"end": 91.424,
+"prob": 0.702,
+"burst": 16
+},
+{
+"w": "not",
+"start": 91.705,
+"end": 91.906,
+"prob": 0.816,
+"burst": 16
+},
+{
+"w": "one",
+"start": 92.106,
+"end": 92.227,
+"prob": 0.604,
+"burst": 16
+},
+{
+"w": "person",
+"start": 92.307,
+"end": 92.668,
+"prob": 0.897,
+"burst": 16
+},
+{
+"w": "used?",
+"start": 92.889,
+"end": 93.13,
+"prob": 0.993,
+"burst": 16
+},
+{
+"w": "I'll",
+"start": 96.091,
+"end": 96.252,
+"prob": 0.901,
+"burst": 17
+},
+{
+"w": "show",
+"start": 96.313,
+"end": 96.494,
+"prob": 0.937,
+"burst": 17
+},
+{
+"w": "you",
+"start": 96.514,
+"end": 96.635,
+"prob": 0.749,
+"burst": 17
+},
+{
+"w": "both",
+"start": 96.675,
+"end": 96.897,
+"prob": 0.91,
+"burst": 17
+},
+{
+"w": "and",
+"start": 97.017,
+"end": 97.118,
+"prob": 0.858,
+"burst": 17
+},
+{
+"w": "I'll",
+"start": 97.158,
+"end": 97.34,
+"prob": 0.806,
+"burst": 17
+},
+{
+"w": "tell",
+"start": 97.38,
+"end": 97.602,
+"prob": 0.894,
+"burst": 17
+},
+{
+"w": "you",
+"start": 97.622,
+"end": 97.743,
+"prob": 0.713,
+"burst": 17
+},
+{
+"w": "exactly",
+"start": 97.924,
+"end": 98.629,
+"prob": 0.924,
+"burst": 17
+},
+{
+"w": "how",
+"start": 100.541,
+"end": 100.761,
+"prob": 0.99,
+"burst": 18
+},
+{
+"w": "to",
+"start": 100.822,
+"end": 100.962,
+"prob": 0.9,
+"burst": 18
+},
+{
+"w": "clip",
+"start": 101.002,
+"end": 101.263,
+"prob": 0.976,
+"burst": 18
+},
+{
+"w": "so",
+"start": 101.524,
+"end": 101.644,
+"prob": 0.996,
+"burst": 18
+},
+{
+"w": "you're",
+"start": 101.665,
+"end": 101.865,
+"prob": 0.763,
+"burst": 18
+},
+{
+"w": "never",
+"start": 101.905,
+"end": 102.166,
+"prob": 0.896,
+"burst": 18
+},
+{
+"w": "the",
+"start": 102.206,
+"end": 102.327,
+"prob": 0.888,
+"burst": 18
+},
+{
+"w": "guy",
+"start": 102.347,
+"end": 102.708,
+"prob": 0.783,
+"burst": 18
+},
+{
+"w": "with",
+"start": 102.849,
+"end": 103.069,
+"prob": 0.328,
+"burst": 18
+},
+{
+"w": "18",
+"start": 103.17,
+"end": 103.531,
+"prob": 0.872,
+"burst": 18
+},
+{
+"w": "views",
+"start": 103.551,
+"end": 103.832,
+"prob": 0.815,
+"burst": 18
+},
+{
+"w": "even",
+"start": 104.033,
+"end": 104.213,
+"prob": 0.897,
+"burst": 18
+},
+{
+"w": "with",
+"start": 104.254,
+"end": 104.394,
+"prob": 0.911,
+"burst": 18
+},
+{
+"w": "brand",
+"start": 104.454,
+"end": 104.775,
+"prob": 0.904,
+"burst": 18
+},
+{
+"w": "new",
+"start": 104.856,
+"end": 105.056,
+"prob": 0.923,
+"burst": 18
+},
+{
+"w": "information",
+"start": 105.378,
+"end": 105.94,
+"prob": 0.995,
+"burst": 18
+},
+{
+"w": "Mistake",
+"start": 107.221,
+"end": 107.625,
+"prob": 0.867,
+"burst": 19
+},
+{
+"w": "number",
+"start": 107.645,
+"end": 107.887,
+"prob": 0.92,
+"burst": 19
+},
+{
+"w": "one,",
+"start": 107.968,
+"end": 108.089,
+"prob": 0.935,
+"burst": 19
+},
+{
+"w": "the",
+"start": 108.13,
+"end": 108.23,
+"prob": 0.984,
+"burst": 19
+},
+{
+"w": "obvious",
+"start": 108.452,
+"end": 108.816,
+"prob": 0.855,
+"burst": 19
+},
+{
+"w": "angle.",
+"start": 108.957,
+"end": 109.219,
+"prob": 0.867,
+"burst": 19
+},
+{
+"w": "so",
+"start": 112.45,
+"end": 112.67,
+"prob": 0.894,
+"burst": 20
+},
+{
+"w": "this",
+"start": 113.031,
+"end": 113.211,
+"prob": 0.962,
+"burst": 20
+},
+{
+"w": "has",
+"start": 113.251,
+"end": 113.431,
+"prob": 0.895,
+"burst": 20
+},
+{
+"w": "happened",
+"start": 113.511,
+"end": 113.912,
+"prob": 0.887,
+"burst": 20
+},
+{
+"w": "to",
+"start": 113.992,
+"end": 114.192,
+"prob": 0.816,
+"burst": 20
+},
+{
+"w": "me",
+"start": 114.633,
+"end": 114.973,
+"prob": 0.819,
+"burst": 20
+},
+{
+"w": "a",
+"start": 115.113,
+"end": 115.153,
+"prob": 0.526,
+"burst": 20
+},
+{
+"w": "lot",
+"start": 115.173,
+"end": 115.313,
+"prob": 0.794,
+"burst": 20
+},
+{
+"w": "of",
+"start": 115.334,
+"end": 115.394,
+"prob": 0.798,
+"burst": 20
+},
+{
+"w": "times",
+"start": 115.454,
+"end": 115.654,
+"prob": 0.807,
+"burst": 20
+},
+{
+"w": "when",
+"start": 115.674,
+"end": 115.814,
+"prob": 0.912,
+"burst": 20
+},
+{
+"w": "i",
+"start": 115.874,
+"end": 115.954,
+"prob": 0.915,
+"burst": 20
+},
+{
+"w": "was",
+"start": 115.994,
+"end": 116.114,
+"prob": 0.698,
+"burst": 20
+},
+{
+"w": "beginning",
+"start": 116.355,
+"end": 116.715,
+"prob": 0.829,
+"burst": 20
+},
+{
+"w": "to",
+"start": 116.755,
+"end": 116.835,
+"prob": 0.771,
+"burst": 20
+},
+{
+"w": "make",
+"start": 116.855,
+"end": 117.055,
+"prob": 0.936,
+"burst": 20
+},
+{
+"w": "you",
+"start": 117.096,
+"end": 117.156,
+"prob": 0.93,
+"burst": 20
+},
+{
+"w": "know",
+"start": 117.176,
+"end": 117.296,
+"prob": 0.846,
+"burst": 20
+},
+{
+"w": "clips",
+"start": 117.336,
+"end": 117.576,
+"prob": 0.822,
+"burst": 20
+},
+{
+"w": "and",
+"start": 117.656,
+"end": 117.776,
+"prob": 0.714,
+"burst": 20
+},
+{
+"w": "you",
+"start": 117.856,
+"end": 117.916,
+"prob": 0.88,
+"burst": 20
+},
+{
+"w": "know",
+"start": 117.936,
+"end": 118.037,
+"prob": 0.772,
+"burst": 20
+},
+{
+"w": "faceless",
+"start": 118.057,
+"end": 118.377,
+"prob": 0.619,
+"burst": 20
+},
+{
+"w": "shorts",
+"start": 118.397,
+"end": 118.617,
+"prob": 0.538,
+"burst": 20
+},
+{
+"w": "that",
+"start": 118.657,
+"end": 118.797,
+"prob": 0.858,
+"burst": 20
+},
+{
+"w": "kind",
+"start": 118.838,
+"end": 118.958,
+"prob": 0.936,
+"burst": 20
+},
+{
+"w": "of",
+"start": 118.998,
+"end": 119.038,
+"prob": 0.992,
+"burst": 20
+},
+{
+"w": "thing",
+"start": 119.078,
+"end": 119.198,
+"prob": 0.934,
+"burst": 20
+},
+{
+"w": "whenever",
+"start": 119.558,
+"end": 119.899,
+"prob": 0.802,
+"burst": 20
+},
+{
+"w": "something",
+"start": 119.919,
+"end": 120.219,
+"prob": 0.846,
+"burst": 20
+},
+{
+"w": "new",
+"start": 120.279,
+"end": 120.439,
+"prob": 0.948,
+"burst": 20
+},
+{
+"w": "pops",
+"start": 120.479,
+"end": 120.72,
+"prob": 0.874,
+"burst": 20
+},
+{
+"w": "out",
+"start": 120.8,
+"end": 120.88,
+"prob": 0.998,
+"burst": 20
+},
+{
+"w": "I",
+"start": 121.552,
+"end": 121.855,
+"prob": 0.741,
+"burst": 21
+},
+{
+"w": "like",
+"start": 121.915,
+"end": 122.117,
+"prob": 0.681,
+"burst": 21
+},
+{
+"w": "from",
+"start": 122.97,
+"end": 123.15,
+"prob": 0.876,
+"burst": 22
+},
+{
+"w": "when",
+"start": 123.491,
+"end": 123.631,
+"prob": 0.806,
+"burst": 22
+},
+{
+"w": "i",
+"start": 123.651,
+"end": 123.711,
+"prob": 0.986,
+"burst": 22
+},
+{
+"w": "was",
+"start": 123.751,
+"end": 123.892,
+"prob": 0.813,
+"burst": 22
+},
+{
+"w": "making",
+"start": 123.932,
+"end": 124.192,
+"prob": 0.866,
+"burst": 22
+},
+{
+"w": "like",
+"start": 124.232,
+"end": 124.372,
+"prob": 0.666,
+"burst": 22
+},
+{
+"w": "when",
+"start": 124.392,
+"end": 124.492,
+"prob": 0.929,
+"burst": 22
+},
+{
+"w": "i",
+"start": 124.532,
+"end": 124.573,
+"prob": 0.796,
+"burst": 22
+},
+{
+"w": "was",
+"start": 124.593,
+"end": 124.713,
+"prob": 0.907,
+"burst": 22
+},
+{
+"w": "starting",
+"start": 124.733,
+"end": 125.073,
+"prob": 0.913,
+"burst": 22
+},
+{
+"w": "i",
+"start": 125.494,
+"end": 125.554,
+"prob": 0.992,
+"burst": 22
+},
+{
+"w": "would",
+"start": 125.594,
+"end": 125.774,
+"prob": 0.499,
+"burst": 22
+},
+{
+"w": "i",
+"start": 125.895,
+"end": 125.935,
+"prob": 0.994,
+"burst": 22
+},
+{
+"w": "would",
+"start": 125.975,
+"end": 126.115,
+"prob": 0.858,
+"burst": 22
+},
+{
+"w": "literally",
+"start": 126.155,
+"end": 126.415,
+"prob": 0.939,
+"burst": 22
+},
+{
+"w": "just",
+"start": 126.455,
+"end": 126.636,
+"prob": 0.821,
+"burst": 22
+},
+{
+"w": "make",
+"start": 126.736,
+"end": 126.936,
+"prob": 0.856,
+"burst": 22
+},
+{
+"w": "the",
+"start": 126.956,
+"end": 127.076,
+"prob": 0.726,
+"burst": 22
+},
+{
+"w": "most",
+"start": 127.096,
+"end": 127.297,
+"prob": 0.895,
+"burst": 22
+},
+{
+"w": "generic",
+"start": 127.337,
+"end": 127.757,
+"prob": 0.862,
+"burst": 22
+},
+{
+"w": "angle",
+"start": 127.837,
+"end": 128.058,
+"prob": 0.902,
+"burst": 22
+},
+{
+"w": "so",
+"start": 128.098,
+"end": 128.278,
+"prob": 0.898,
+"burst": 22
+},
+{
+"w": "if",
+"start": 128.538,
+"end": 128.619,
+"prob": 0.918,
+"burst": 22
+},
+{
+"w": "if",
+"start": 128.919,
+"end": 128.979,
+"prob": 0.996,
+"burst": 22
+},
+{
+"w": "i",
+"start": 129.099,
+"end": 129.159,
+"prob": 0.689,
+"burst": 22
+},
+{
+"w": "was",
+"start": 129.199,
+"end": 129.38,
+"prob": 0.731,
+"burst": 22
+},
+{
+"w": "making",
+"start": 129.56,
+"end": 129.88,
+"prob": 0.819,
+"burst": 22
+},
+{
+"w": "a",
+"start": 129.921,
+"end": 129.941,
+"prob": 0.96,
+"burst": 22
+},
+{
+"w": "clip",
+"start": 130.001,
+"end": 130.181,
+"prob": 0.871,
+"burst": 22
+},
+{
+"w": "on",
+"start": 130.221,
+"end": 130.321,
+"prob": 0.775,
+"burst": 22
+},
+{
+"w": "speed",
+"start": 130.361,
+"end": 130.561,
+"prob": 0.97,
+"burst": 22
+},
+{
+"w": "speeds",
+"start": 130.922,
+"end": 131.243,
+"prob": 0.915,
+"burst": 22
+},
+{
+"w": "by",
+"start": 131.323,
+"end": 131.563,
+"prob": 0.9,
+"burst": 22
+},
+{
+"w": "you",
+"start": 131.583,
+"end": 131.823,
+"prob": 0.648,
+"burst": 22
+},
+{
+"w": "know",
+"start": 131.843,
+"end": 131.984,
+"prob": 0.249,
+"burst": 22
+},
+{
+"w": "speed",
+"start": 132.004,
+"end": 132.184,
+"prob": 0.996,
+"burst": 22
+},
+{
+"w": "buying",
+"start": 132.224,
+"end": 132.424,
+"prob": 0.813,
+"burst": 22
+},
+{
+"w": "the",
+"start": 132.444,
+"end": 132.524,
+"prob": 0.893,
+"burst": 22
+},
+{
+"w": "iPhone",
+"start": 132.605,
+"end": 132.805,
+"prob": 0.205,
+"burst": 22,
+"fixed": true
+},
+{
+"w": "Duo",
+"start": 132.805,
+"end": 133.005,
+"prob": 0.205,
+"burst": 22,
+"fixed": true
+},
+{
+"w": "i",
+"start": 133.346,
+"end": 133.406,
+"prob": 0.981,
+"burst": 22
+},
+{
+"w": "would",
+"start": 133.446,
+"end": 133.606,
+"prob": 0.839,
+"burst": 22
+},
+{
+"w": "make",
+"start": 133.626,
+"end": 133.806,
+"prob": 0.849,
+"burst": 22
+},
+{
+"w": "the",
+"start": 133.866,
+"end": 133.947,
+"prob": 0.902,
+"burst": 22
+},
+{
+"w": "short",
+"start": 133.987,
+"end": 134.187,
+"prob": 0.877,
+"burst": 22
+},
+{
+"w": "oh",
+"start": 134.467,
+"end": 134.588,
+"prob": 0.654,
+"burst": 22
+},
+{
+"w": "speed",
+"start": 134.608,
+"end": 134.868,
+"prob": 0.925,
+"burst": 22
+},
+{
+"w": "buys",
+"start": 134.928,
+"end": 135.208,
+"prob": 0.644,
+"burst": 22
+},
+{
+"w": "the",
+"start": 135.249,
+"end": 135.349,
+"prob": 0.84,
+"burst": 22
+},
+{
+"w": "iphone",
+"start": 135.469,
+"end": 135.749,
+"prob": 0.531,
+"burst": 22
+},
+{
+"w": "duo",
+"start": 135.769,
+"end": 135.97,
+"prob": 0.559,
+"burst": 22
+},
+{
+"w": "Well",
+"start": 136.79,
+"end": 137.291,
+"prob": 0.709,
+"burst": 23
+},
+{
+"w": "then",
+"start": 137.492,
+"end": 137.672,
+"prob": 0.974,
+"burst": 23
+},
+{
+"w": "they",
+"start": 137.913,
+"end": 138.073,
+"prob": 0.522,
+"burst": 23
+},
+{
+"w": "can",
+"start": 138.093,
+"end": 138.213,
+"prob": 0.682,
+"burst": 23
+},
+{
+"w": "watch",
+"start": 138.254,
+"end": 138.835,
+"prob": 0.83,
+"burst": 23
+},
+{
+"w": "his",
+"start": 138.915,
+"end": 139.115,
+"prob": 0.969,
+"burst": 23
+},
+{
+"w": "video.",
+"start": 139.135,
+"end": 139.576,
+"prob": 0.806,
+"burst": 23
+},
+{
+"w": "What",
+"start": 140.038,
+"end": 140.218,
+"prob": 0.85,
+"burst": 23
+},
+{
+"w": "did",
+"start": 140.258,
+"end": 140.418,
+"prob": 0.882,
+"burst": 23
+},
+{
+"w": "you",
+"start": 140.458,
+"end": 140.619,
+"prob": 0.792,
+"burst": 23
+},
+{
+"w": "offer?",
+"start": 140.739,
+"end": 140.98,
+"prob": 0.886,
+"burst": 23
+},
+{
+"w": "it's",
+"start": 143.53,
+"end": 143.67,
+"prob": 0.706,
+"burst": 24
+},
+{
+"w": "literally",
+"start": 143.751,
+"end": 144.091,
+"prob": 0.902,
+"burst": 24
+},
+{
+"w": "the",
+"start": 144.131,
+"end": 144.251,
+"prob": 0.909,
+"burst": 24
+},
+{
+"w": "exact",
+"start": 144.331,
+"end": 144.672,
+"prob": 0.985,
+"burst": 24
+},
+{
+"w": "same",
+"start": 144.732,
+"end": 144.972,
+"prob": 0.882,
+"burst": 24
+},
+{
+"w": "thing",
+"start": 145.033,
+"end": 145.213,
+"prob": 0.864,
+"burst": 24
+},
+{
+"w": "it's",
+"start": 145.293,
+"end": 145.433,
+"prob": 0.833,
+"burst": 24
+},
+{
+"w": "lazily",
+"start": 145.593,
+"end": 146.094,
+"prob": 0.824,
+"burst": 24
+},
+{
+"w": "uploaded",
+"start": 146.214,
+"end": 146.675,
+"prob": 0.883,
+"burst": 24
+},
+{
+"w": "like",
+"start": 146.715,
+"end": 146.875,
+"prob": 0.82,
+"burst": 24
+},
+{
+"w": "it's",
+"start": 146.915,
+"end": 147.076,
+"prob": 0.753,
+"burst": 24
+},
+{
+"w": "a",
+"start": 147.116,
+"end": 147.156,
+"prob": 0.963,
+"burst": 24
+},
+{
+"w": "lazy",
+"start": 147.236,
+"end": 147.596,
+"prob": 0.821,
+"burst": 24
+},
+{
+"w": "up",
+"start": 147.717,
+"end": 147.797,
+"prob": 0.993,
+"burst": 24
+},
+{
+"w": "to",
+"start": 147.817,
+"end": 148.037,
+"prob": 0.76,
+"burst": 24
+},
+{
+"w": "upload",
+"start": 148.137,
+"end": 148.478,
+"prob": 0.925,
+"burst": 24
+},
+{
+"w": "you",
+"start": 148.498,
+"end": 148.618,
+"prob": 0.995,
+"burst": 24
+},
+{
+"w": "didn't",
+"start": 148.658,
+"end": 148.898,
+"prob": 0.847,
+"burst": 24
+},
+{
+"w": "do",
+"start": 148.939,
+"end": 149.079,
+"prob": 0.834,
+"burst": 24
+},
+{
+"w": "anything",
+"start": 149.179,
+"end": 149.499,
+"prob": 0.862,
+"burst": 24
+},
+{
+"w": "to",
+"start": 149.539,
+"end": 149.68,
+"prob": 0.869,
+"burst": 24
+},
+{
+"w": "it",
+"start": 149.74,
+"end": 149.78,
+"prob": 0.996,
+"burst": 24
+},
+{
+"w": "And",
+"start": 152.331,
+"end": 152.473,
+"prob": 0.8,
+"burst": 25
+},
+{
+"w": "like",
+"start": 152.675,
+"end": 152.877,
+"prob": 0.882,
+"burst": 25
+},
+{
+"w": "you",
+"start": 152.897,
+"end": 153.038,
+"prob": 0.79,
+"burst": 25
+},
+{
+"w": "have",
+"start": 153.059,
+"end": 153.24,
+"prob": 0.946,
+"burst": 25
+},
+{
+"w": "to",
+"start": 153.281,
+"end": 153.362,
+"prob": 0.965,
+"burst": 25
+},
+{
+"w": "you",
+"start": 153.382,
+"end": 153.442,
+"prob": 0.01,
+"burst": 25
+},
+{
+"w": "guys",
+"start": 153.463,
+"end": 153.604,
+"prob": 0.246,
+"burst": 25
+},
+{
+"w": "have",
+"start": 153.624,
+"end": 153.745,
+"prob": 0.356,
+"burst": 25
+},
+{
+"w": "to",
+"start": 153.766,
+"end": 153.846,
+"prob": 0.574,
+"burst": 25
+},
+{
+"w": "keep",
+"start": 153.887,
+"end": 154.069,
+"prob": 0.956,
+"burst": 25
+},
+{
+"w": "mind",
+"start": 154.78,
+"end": 155.081,
+"prob": 0.818,
+"burst": 26
+},
+{
+"w": "these",
+"start": 155.421,
+"end": 155.621,
+"prob": 0.749,
+"burst": 26
+},
+{
+"w": "platforms",
+"start": 155.721,
+"end": 156.302,
+"prob": 0.872,
+"burst": 26
+},
+{
+"w": "Instagram",
+"start": 156.442,
+"end": 156.903,
+"prob": 0.923,
+"burst": 26
+},
+{
+"w": "and",
+"start": 156.943,
+"end": 157.023,
+"prob": 0.596,
+"burst": 26
+},
+{
+"w": "YouTube",
+"start": 157.043,
+"end": 157.343,
+"prob": 0.551,
+"burst": 26
+},
+{
+"w": "they're",
+"start": 157.363,
+"end": 157.583,
+"prob": 0.772,
+"burst": 26
+},
+{
+"w": "not",
+"start": 157.603,
+"end": 157.743,
+"prob": 0.765,
+"burst": 26
+},
+{
+"w": "stupid",
+"start": 157.864,
+"end": 158.344,
+"prob": 0.857,
+"burst": 26
+},
+{
+"w": "if",
+"start": 158.704,
+"end": 158.784,
+"prob": 0.836,
+"burst": 26
+},
+{
+"w": "you",
+"start": 158.824,
+"end": 159.065,
+"prob": 0.936,
+"burst": 26
+},
+{
+"w": "re-upload",
+"start": 159.125,
+"end": 159.825,
+"prob": 0.824,
+"burst": 26
+},
+{
+"w": "the",
+"start": 160.306,
+"end": 160.426,
+"prob": 0.963,
+"burst": 26
+},
+{
+"w": "exact",
+"start": 160.526,
+"end": 161.007,
+"prob": 0.92,
+"burst": 26
+},
+{
+"w": "same",
+"start": 161.047,
+"end": 161.367,
+"prob": 0.777,
+"burst": 26
+},
+{
+"w": "damn",
+"start": 161.647,
+"end": 161.988,
+"prob": 0.754,
+"burst": 26
+},
+{
+"w": "clip",
+"start": 162.028,
+"end": 162.348,
+"prob": 0.818,
+"burst": 26
+},
+{
+"w": "with",
+"start": 162.628,
+"end": 162.808,
+"prob": 0.832,
+"burst": 26
+},
+{
+"w": "speed",
+"start": 162.869,
+"end": 163.129,
+"prob": 0.887,
+"burst": 26
+},
+{
+"w": "uploaded",
+"start": 163.169,
+"end": 163.589,
+"prob": 0.861,
+"burst": 26
+},
+{
+"w": "himself",
+"start": 163.689,
+"end": 164.15,
+"prob": 0.901,
+"burst": 26
+},
+{
+"w": "On",
+"start": 165.334,
+"end": 165.454,
+"prob": 0.63,
+"burst": 27
+},
+{
+"w": "your",
+"start": 165.495,
+"end": 165.696,
+"prob": 0.837,
+"burst": 27
+},
+{
+"w": "page",
+"start": 165.736,
+"end": 166.038,
+"prob": 0.909,
+"burst": 27
+},
+{
+"w": "just",
+"start": 166.32,
+"end": 166.521,
+"prob": 0.854,
+"burst": 27
+},
+{
+"w": "a",
+"start": 166.823,
+"end": 166.863,
+"prob": 0.977,
+"burst": 27
+},
+{
+"w": "different",
+"start": 166.923,
+"end": 167.285,
+"prob": 0.926,
+"burst": 27
+},
+{
+"w": "caption",
+"start": 167.326,
+"end": 167.768,
+"prob": 0.881,
+"burst": 27
+},
+{
+"w": "This",
+"start": 168.361,
+"end": 168.882,
+"prob": 0.633,
+"burst": 28
+},
+{
+"w": "is",
+"start": 169.685,
+"end": 169.806,
+"prob": 0.807,
+"burst": 28
+},
+{
+"w": "not",
+"start": 169.846,
+"end": 170.026,
+"prob": 0.95,
+"burst": 28
+},
+{
+"w": "going",
+"start": 170.067,
+"end": 170.227,
+"prob": 0.941,
+"burst": 28
+},
+{
+"w": "to",
+"start": 170.267,
+"end": 170.328,
+"prob": 0.99,
+"burst": 28
+},
+{
+"w": "go",
+"start": 170.368,
+"end": 170.508,
+"prob": 0.964,
+"burst": 28
+},
+{
+"w": "viral.",
+"start": 170.528,
+"end": 170.93,
+"prob": 0.66,
+"burst": 28
+},
+{
+"w": "Their",
+"start": 172.31,
+"end": 172.511,
+"prob": 0.716,
+"burst": 29
+},
+{
+"w": "algorithms",
+"start": 172.571,
+"end": 172.991,
+"prob": 0.552,
+"burst": 29
+},
+{
+"w": "are",
+"start": 173.052,
+"end": 173.112,
+"prob": 0.233,
+"burst": 29
+},
+{
+"w": "trained",
+"start": 173.152,
+"end": 173.392,
+"prob": 0.715,
+"burst": 29
+},
+{
+"w": "in",
+"start": 173.452,
+"end": 173.512,
+"prob": 0.64,
+"burst": 29
+},
+{
+"w": "a",
+"start": 173.552,
+"end": 173.592,
+"prob": 0.371,
+"burst": 29
+},
+{
+"w": "way",
+"start": 173.632,
+"end": 173.813,
+"prob": 0.645,
+"burst": 29
+},
+{
+"w": "that",
+"start": 173.853,
+"end": 173.993,
+"prob": 0.834,
+"burst": 29
+},
+{
+"w": "one",
+"start": 174.173,
+"end": 174.294,
+"prob": 0.678,
+"burst": 29
+},
+{
+"w": "thing",
+"start": 174.334,
+"end": 174.534,
+"prob": 0.828,
+"burst": 29
+},
+{
+"w": "cannot",
+"start": 174.594,
+"end": 174.935,
+"prob": 0.84,
+"burst": 29
+},
+{
+"w": "go",
+"start": 174.975,
+"end": 175.135,
+"prob": 0.968,
+"burst": 29
+},
+{
+"w": "wild",
+"start": 175.175,
+"end": 175.495,
+"prob": 0.482,
+"burst": 29
+},
+{
+"w": "multiple",
+"start": 175.516,
+"end": 175.936,
+"prob": 0.796,
+"burst": 29
+},
+{
+"w": "times",
+"start": 175.996,
+"end": 176.297,
+"prob": 0.751,
+"burst": 29
+},
+{
+"w": "if",
+"start": 176.357,
+"end": 176.437,
+"prob": 0.89,
+"burst": 29
+},
+{
+"w": "there",
+"start": 176.497,
+"end": 176.778,
+"prob": 0.797,
+"burst": 29
+},
+{
+"w": "isn't",
+"start": 176.958,
+"end": 177.238,
+"prob": 0.65,
+"burst": 29
+},
+{
+"w": "a",
+"start": 177.278,
+"end": 177.298,
+"prob": 0.961,
+"burst": 29
+},
+{
+"w": "lot",
+"start": 177.338,
+"end": 177.499,
+"prob": 0.774,
+"burst": 29
+},
+{
+"w": "of",
+"start": 177.519,
+"end": 177.579,
+"prob": 0.748,
+"burst": 29
+},
+{
+"w": "revision",
+"start": 177.619,
+"end": 178.0,
+"prob": 0.817,
+"burst": 29
+},
+{
+"w": "in",
+"start": 178.06,
+"end": 178.1,
+"prob": 0.993,
+"burst": 29
+},
+{
+"w": "it.",
+"start": 178.12,
+"end": 178.18,
+"prob": 0.327,
+"burst": 29
+},
+{
+"w": "I",
+"start": 181.87,
+"end": 181.91,
+"prob": 0.958,
+"burst": 30
+},
+{
+"w": "mean",
+"start": 181.97,
+"end": 182.451,
+"prob": 0.715,
+"burst": 30
+},
+{
+"w": "the",
+"start": 182.491,
+"end": 182.591,
+"prob": 0.859,
+"burst": 30
+},
+{
+"w": "reason",
+"start": 182.632,
+"end": 182.872,
+"prob": 0.853,
+"burst": 30
+},
+{
+"w": "I",
+"start": 182.892,
+"end": 183.012,
+"prob": 0.878,
+"burst": 30
+},
+{
+"w": "tell",
+"start": 183.052,
+"end": 183.172,
+"prob": 0.994,
+"burst": 30
+},
+{
+"w": "you",
+"start": 183.213,
+"end": 183.293,
+"prob": 0.989,
+"burst": 30
+},
+{
+"w": "this",
+"start": 183.333,
+"end": 183.453,
+"prob": 0.876,
+"burst": 30
+},
+{
+"w": "is",
+"start": 183.593,
+"end": 183.693,
+"prob": 0.668,
+"burst": 30
+},
+{
+"w": "all",
+"start": 183.954,
+"end": 184.094,
+"prob": 0.767,
+"burst": 30
+},
+{
+"w": "of",
+"start": 184.114,
+"end": 184.154,
+"prob": 0.608,
+"burst": 30
+},
+{
+"w": "the",
+"start": 184.214,
+"end": 184.294,
+"prob": 0.843,
+"burst": 30
+},
+{
+"w": "shorts",
+"start": 184.334,
+"end": 184.555,
+"prob": 0.829,
+"burst": 30
+},
+{
+"w": "that",
+"start": 184.595,
+"end": 184.755,
+"prob": 0.864,
+"burst": 30
+},
+{
+"w": "are",
+"start": 184.815,
+"end": 184.895,
+"prob": 0.332,
+"burst": 30
+},
+{
+"w": "recently",
+"start": 184.936,
+"end": 185.376,
+"prob": 0.906,
+"burst": 30
+},
+{
+"w": "have",
+"start": 185.416,
+"end": 185.557,
+"prob": 0.846,
+"burst": 30
+},
+{
+"w": "been",
+"start": 185.577,
+"end": 185.717,
+"prob": 0.335,
+"burst": 30
+},
+{
+"w": "have",
+"start": 185.917,
+"end": 186.057,
+"prob": 0.77,
+"burst": 30
+},
+{
+"w": "been",
+"start": 186.077,
+"end": 186.198,
+"prob": 0.837,
+"burst": 30
+},
+{
+"w": "going",
+"start": 186.218,
+"end": 186.418,
+"prob": 0.861,
+"burst": 30
+},
+{
+"w": "viral",
+"start": 186.458,
+"end": 186.779,
+"prob": 0.767,
+"burst": 30
+},
+{
+"w": "on",
+"start": 186.819,
+"end": 186.879,
+"prob": 0.861,
+"burst": 30
+},
+{
+"w": "my",
+"start": 186.919,
+"end": 187.059,
+"prob": 0.838,
+"burst": 30
+},
+{
+"w": "channel",
+"start": 187.099,
+"end": 187.36,
+"prob": 0.937,
+"burst": 30
+},
+{
+"w": "on",
+"start": 187.87,
+"end": 187.951,
+"prob": 0.842,
+"burst": 31
+},
+{
+"w": "my",
+"start": 187.971,
+"end": 188.051,
+"prob": 0.997,
+"burst": 31
+},
+{
+"w": "faceless",
+"start": 188.091,
+"end": 188.432,
+"prob": 0.716,
+"burst": 31
+},
+{
+"w": "channel,",
+"start": 188.452,
+"end": 188.693,
+"prob": 0.552,
+"burst": 31
+},
+{
+"w": "Abundance",
+"start": 188.713,
+"end": 189.014,
+"prob": 0.284,
+"burst": 31
+},
+{
+"w": "Wisdom.",
+"start": 189.034,
+"end": 189.255,
+"prob": 0.791,
+"burst": 31
+},
+{
+"w": "You",
+"start": 189.275,
+"end": 189.375,
+"prob": 0.881,
+"burst": 31
+},
+{
+"w": "can",
+"start": 189.395,
+"end": 189.516,
+"prob": 0.889,
+"burst": 31
+},
+{
+"w": "check",
+"start": 189.576,
+"end": 189.817,
+"prob": 0.928,
+"burst": 31
+},
+{
+"w": "it",
+"start": 189.857,
+"end": 189.917,
+"prob": 0.804,
+"burst": 31
+},
+{
+"w": "out,",
+"start": 189.997,
+"end": 190.118,
+"prob": 0.607,
+"burst": 31
+},
+{
+"w": "right?",
+"start": 190.499,
+"end": 190.699,
+"prob": 0.831,
+"burst": 31
+},
+{
+"w": "I'm",
+"start": 191.181,
+"end": 191.282,
+"prob": 0.72,
+"burst": 32
+},
+{
+"w": "not",
+"start": 191.303,
+"end": 191.444,
+"prob": 0.836,
+"burst": 32
+},
+{
+"w": "lying.",
+"start": 191.505,
+"end": 191.828,
+"prob": 0.983,
+"burst": 32
+},
+{
+"w": "is",
+"start": 192.271,
+"end": 192.351,
+"prob": 0.826,
+"burst": 33
+},
+{
+"w": "all",
+"start": 192.612,
+"end": 192.773,
+"prob": 0.729,
+"burst": 33
+},
+{
+"w": "the",
+"start": 192.833,
+"end": 192.954,
+"prob": 0.835,
+"burst": 33
+},
+{
+"w": "shorts",
+"start": 192.994,
+"end": 193.275,
+"prob": 0.741,
+"burst": 33
+},
+{
+"w": "that",
+"start": 193.617,
+"end": 193.758,
+"prob": 0.862,
+"burst": 33
+},
+{
+"w": "provide",
+"start": 193.818,
+"end": 194.34,
+"prob": 0.853,
+"burst": 33
+},
+{
+"w": "extra",
+"start": 194.521,
+"end": 194.823,
+"prob": 0.85,
+"burst": 33
+},
+{
+"w": "value",
+"start": 194.863,
+"end": 195.225,
+"prob": 0.801,
+"burst": 33
+},
+{
+"w": "that",
+"start": 195.285,
+"end": 195.486,
+"prob": 0.901,
+"burst": 33
+},
+{
+"w": "provide",
+"start": 195.627,
+"end": 196.048,
+"prob": 0.632,
+"burst": 33
+},
+{
+"w": "like",
+"start": 196.069,
+"end": 196.229,
+"prob": 0.8,
+"burst": 33
+},
+{
+"w": "which",
+"start": 197.08,
+"end": 197.261,
+"prob": 0.9,
+"burst": 34
+},
+{
+"w": "have",
+"start": 197.301,
+"end": 197.441,
+"prob": 0.8,
+"burst": 34
+},
+{
+"w": "been",
+"start": 197.461,
+"end": 197.621,
+"prob": 0.851,
+"burst": 34
+},
+{
+"w": "curated",
+"start": 197.781,
+"end": 198.342,
+"prob": 0.874,
+"burst": 34
+},
+{
+"w": "in",
+"start": 198.362,
+"end": 198.402,
+"prob": 0.002,
+"burst": 34
+},
+{
+"w": "a",
+"start": 198.462,
+"end": 198.522,
+"prob": 0.308,
+"burst": 34
+},
+{
+"w": "way",
+"start": 198.622,
+"end": 198.822,
+"prob": 0.656,
+"burst": 34
+},
+{
+"w": "that",
+"start": 198.842,
+"end": 198.982,
+"prob": 0.982,
+"burst": 34
+},
+{
+"w": "they",
+"start": 199.022,
+"end": 199.162,
+"prob": 0.933,
+"burst": 34
+},
+{
+"w": "haven't",
+"start": 199.202,
+"end": 199.423,
+"prob": 0.85,
+"burst": 34
+},
+{
+"w": "been",
+"start": 199.463,
+"end": 199.583,
+"prob": 0.999,
+"burst": 34
+},
+{
+"w": "curated",
+"start": 199.623,
+"end": 200.023,
+"prob": 0.868,
+"burst": 34
+},
+{
+"w": "before",
+"start": 200.083,
+"end": 200.404,
+"prob": 0.926,
+"burst": 34
+},
+{
+"w": "I",
+"start": 200.844,
+"end": 200.944,
+"prob": 0.801,
+"burst": 34
+},
+{
+"w": "choose",
+"start": 201.064,
+"end": 201.404,
+"prob": 0.822,
+"burst": 34
+},
+{
+"w": "the",
+"start": 201.505,
+"end": 201.625,
+"prob": 0.181,
+"burst": 34
+},
+{
+"w": "same",
+"start": 201.685,
+"end": 201.905,
+"prob": 0.923,
+"burst": 34
+},
+{
+"w": "topics",
+"start": 201.945,
+"end": 202.285,
+"prob": 0.73,
+"burst": 34
+},
+{
+"w": "as",
+"start": 202.385,
+"end": 202.485,
+"prob": 0.94,
+"burst": 34
+},
+{
+"w": "everyone",
+"start": 202.586,
+"end": 203.006,
+"prob": 0.86,
+"burst": 34
+},
+{
+"w": "but",
+"start": 203.406,
+"end": 203.566,
+"prob": 0.766,
+"burst": 34
+},
+{
+"w": "I",
+"start": 203.687,
+"end": 203.767,
+"prob": 0.995,
+"burst": 34
+},
+{
+"w": "frame",
+"start": 204.067,
+"end": 204.467,
+"prob": 0.89,
+"burst": 34
+},
+{
+"w": "it",
+"start": 204.487,
+"end": 204.527,
+"prob": 0.895,
+"burst": 34
+},
+{
+"w": "like",
+"start": 204.607,
+"end": 204.768,
+"prob": 0.907,
+"burst": 34
+},
+{
+"w": "the",
+"start": 204.808,
+"end": 204.888,
+"prob": 0.921,
+"burst": 34
+},
+{
+"w": "angle",
+"start": 205.088,
+"end": 205.328,
+"prob": 0.817,
+"burst": 34
+},
+{
+"w": "is",
+"start": 205.368,
+"end": 205.448,
+"prob": 0.622,
+"burst": 34
+},
+{
+"w": "different",
+"start": 205.488,
+"end": 205.788,
+"prob": 0.887,
+"burst": 34
+},
+{
+"w": "so",
+"start": 205.809,
+"end": 205.869,
+"prob": 0.718,
+"burst": 34
+},
+{
+"w": "I'm",
+"start": 205.889,
+"end": 205.949,
+"prob": 0.003,
+"burst": 34
+},
+{
+"w": "going",
+"start": 205.969,
+"end": 206.069,
+"prob": 0.303,
+"burst": 34
+},
+{
+"w": "to",
+"start": 206.089,
+"end": 206.189,
+"prob": 0.4,
+"burst": 34
+},
+{
+"w": "tell",
+"start": 206.429,
+"end": 206.569,
+"prob": 0.858,
+"burst": 34
+},
+{
+"w": "you",
+"start": 206.589,
+"end": 206.649,
+"prob": 0.9,
+"burst": 34
+},
+{
+"w": "guys",
+"start": 206.669,
+"end": 206.849,
+"prob": 0.604,
+"burst": 34
+},
+{
+"w": "an",
+"start": 206.889,
+"end": 206.95,
+"prob": 0.751,
+"burst": 34
+},
+{
+"w": "example",
+"start": 206.97,
+"end": 207.29,
+"prob": 0.925,
+"burst": 34
+},
+{
+"w": "For",
+"start": 209.07,
+"end": 209.171,
+"prob": 0.87,
+"burst": 35
+},
+{
+"w": "example,",
+"start": 209.231,
+"end": 209.552,
+"prob": 0.946,
+"burst": 35
+},
+{
+"w": "if",
+"start": 209.692,
+"end": 209.772,
+"prob": 0.883,
+"burst": 35
+},
+{
+"w": "I",
+"start": 209.873,
+"end": 209.933,
+"prob": 0.983,
+"burst": 35
+},
+{
+"w": "was",
+"start": 209.973,
+"end": 210.093,
+"prob": 0.946,
+"burst": 35
+},
+{
+"w": "making",
+"start": 210.153,
+"end": 210.414,
+"prob": 0.982,
+"burst": 35
+},
+{
+"w": "the",
+"start": 210.575,
+"end": 210.655,
+"prob": 0.982,
+"burst": 35
+},
+{
+"w": "iPhone",
+"start": 210.795,
+"end": 211.036,
+"prob": 0.644,
+"burst": 35
+},
+{
+"w": "Duo",
+"start": 211.056,
+"end": 211.257,
+"prob": 0.869,
+"burst": 35
+},
+{
+"w": "clip,",
+"start": 211.297,
+"end": 211.517,
+"prob": 0.741,
+"burst": 35
+},
+{
+"w": "Speed",
+"start": 211.537,
+"end": 211.778,
+"prob": 0.914,
+"burst": 35
+},
+{
+"w": "buying",
+"start": 211.999,
+"end": 212.219,
+"prob": 0.887,
+"burst": 35
+},
+{
+"w": "the",
+"start": 212.24,
+"end": 212.3,
+"prob": 0.996,
+"burst": 35
+},
+{
+"w": "iPhone",
+"start": 212.36,
+"end": 212.601,
+"prob": 0.656,
+"burst": 35
+},
+{
+"w": "Duo,",
+"start": 212.621,
+"end": 212.801,
+"prob": 0.619,
+"burst": 35
+},
+{
+"w": "I",
+"start": 213.082,
+"end": 213.122,
+"prob": 0.998,
+"burst": 35
+},
+{
+"w": "would",
+"start": 213.162,
+"end": 213.343,
+"prob": 0.835,
+"burst": 35
+},
+{
+"w": "not",
+"start": 213.383,
+"end": 213.543,
+"prob": 0.852,
+"burst": 35
+},
+{
+"w": "make",
+"start": 213.583,
+"end": 213.724,
+"prob": 0.995,
+"burst": 35
+},
+{
+"w": "the",
+"start": 213.764,
+"end": 213.844,
+"prob": 0.893,
+"burst": 35
+},
+{
+"w": "clip,",
+"start": 213.884,
+"end": 214.025,
+"prob": 0.783,
+"burst": 35
+},
+{
+"w": "oh,",
+"start": 214.105,
+"end": 214.245,
+"prob": 0.674,
+"burst": 35
+},
+{
+"w": "Speed",
+"start": 214.265,
+"end": 214.526,
+"prob": 0.6,
+"burst": 35
+},
+{
+"w": "buys",
+"start": 214.566,
+"end": 214.867,
+"prob": 0.464,
+"burst": 35
+},
+{
+"w": "the",
+"start": 214.887,
+"end": 214.968,
+"prob": 0.962,
+"burst": 35
+},
+{
+"w": "iPhone",
+"start": 215.068,
+"end": 215.369,
+"prob": 0.684,
+"burst": 35
+},
+{
+"w": "Duo.",
+"start": 215.389,
+"end": 215.69,
+"prob": 0.896,
+"burst": 35
+},
+{
+"w": "Stupid.",
+"start": 216.873,
+"end": 217.197,
+"prob": 0.635,
+"burst": 36
+},
+{
+"w": "Right?",
+"start": 217.867,
+"end": 218.055,
+"prob": 0.714,
+"burst": 37
+},
+{
+"w": "Instead",
+"start": 218.542,
+"end": 218.887,
+"prob": 0.928,
+"burst": 38
+},
+{
+"w": "This",
+"start": 219.771,
+"end": 219.912,
+"prob": 0.912,
+"burst": 39
+},
+{
+"w": "is",
+"start": 219.972,
+"end": 220.033,
+"prob": 0.793,
+"burst": 39
+},
+{
+"w": "just",
+"start": 220.053,
+"end": 220.194,
+"prob": 0.852,
+"burst": 39
+},
+{
+"w": "coming",
+"start": 220.335,
+"end": 220.516,
+"prob": 0.392,
+"burst": 39
+},
+{
+"w": "on",
+"start": 220.556,
+"end": 220.596,
+"prob": 0.201,
+"burst": 39
+},
+{
+"w": "top",
+"start": 220.616,
+"end": 220.757,
+"prob": 0.498,
+"burst": 39
+},
+{
+"w": "of",
+"start": 220.798,
+"end": 220.838,
+"prob": 0.122,
+"burst": 39
+},
+{
+"w": "my",
+"start": 220.878,
+"end": 220.959,
+"prob": 0.968,
+"burst": 39
+},
+{
+"w": "head.",
+"start": 220.999,
+"end": 221.12,
+"prob": 0.944,
+"burst": 39
+},
+{
+"w": "Speed",
+"start": 221.721,
+"end": 221.982,
+"prob": 0.718,
+"burst": 40,
+"fixed": true
+},
+{
+"w": "buys",
+"start": 221.982,
+"end": 222.243,
+"prob": 0.718,
+"burst": 40,
+"fixed": true
+},
+{
+"w": "the",
+"start": 222.243,
+"end": 222.503,
+"prob": 0.718,
+"burst": 40,
+"fixed": true
+},
+{
+"w": "iPhone",
+"start": 222.503,
+"end": 222.764,
+"prob": 0.718,
+"burst": 40,
+"fixed": true
+},
+{
+"w": "Duo",
+"start": 222.764,
+"end": 223.025,
+"prob": 0.718,
+"burst": 40,
+"fixed": true
+},
+{
+"w": "like",
+"start": 223.085,
+"end": 223.285,
+"prob": 0.86,
+"burst": 40
+},
+{
+"w": "and",
+"start": 223.426,
+"end": 223.526,
+"prob": 0.774,
+"burst": 40
+},
+{
+"w": "then",
+"start": 223.606,
+"end": 223.887,
+"prob": 0.92,
+"burst": 40
+},
+{
+"w": "what",
+"start": 223.927,
+"end": 224.068,
+"prob": 0.881,
+"burst": 40
+},
+{
+"w": "you",
+"start": 224.108,
+"end": 224.248,
+"prob": 0.993,
+"burst": 40
+},
+{
+"w": "do",
+"start": 224.288,
+"end": 224.409,
+"prob": 0.92,
+"burst": 40
+},
+{
+"w": "is",
+"start": 224.529,
+"end": 224.609,
+"prob": 0.68,
+"burst": 40
+},
+{
+"w": "you",
+"start": 224.649,
+"end": 224.81,
+"prob": 0.982,
+"burst": 40
+},
+{
+"w": "do",
+"start": 224.83,
+"end": 224.95,
+"prob": 0.881,
+"burst": 40
+},
+{
+"w": "a",
+"start": 224.99,
+"end": 225.031,
+"prob": 0.952,
+"burst": 40
+},
+{
+"w": "side",
+"start": 225.091,
+"end": 225.331,
+"prob": 0.864,
+"burst": 40
+},
+{
+"w": "by",
+"start": 225.372,
+"end": 225.472,
+"prob": 1.0,
+"burst": 40
+},
+{
+"w": "side",
+"start": 225.532,
+"end": 225.753,
+"prob": 0.851,
+"burst": 40
+},
+{
+"w": "comparison",
+"start": 225.813,
+"end": 226.415,
+"prob": 0.948,
+"burst": 40
+},
+{
+"w": "or",
+"start": 226.555,
+"end": 226.635,
+"prob": 0.908,
+"burst": 40
+},
+{
+"w": "like",
+"start": 226.696,
+"end": 226.876,
+"prob": 0.783,
+"burst": 40
+},
+{
+"w": "flashback",
+"start": 226.956,
+"end": 227.498,
+"prob": 0.971,
+"burst": 40
+},
+{
+"w": "transition",
+"start": 227.518,
+"end": 227.979,
+"prob": 0.944,
+"burst": 40
+},
+{
+"w": "of",
+"start": 228.02,
+"end": 228.06,
+"prob": 0.998,
+"burst": 40
+},
+{
+"w": "How",
+"start": 228.48,
+"end": 228.7,
+"prob": 0.845,
+"burst": 41
+},
+{
+"w": "speed",
+"start": 228.72,
+"end": 228.981,
+"prob": 0.833,
+"burst": 41
+},
+{
+"w": "reacted",
+"start": 229.021,
+"end": 229.461,
+"prob": 0.956,
+"burst": 41
+},
+{
+"w": "when",
+"start": 229.482,
+"end": 229.642,
+"prob": 0.35,
+"burst": 41
+},
+{
+"w": "the",
+"start": 229.962,
+"end": 230.062,
+"prob": 0.788,
+"burst": 41
+},
+{
+"w": "iphone",
+"start": 230.182,
+"end": 230.443,
+"prob": 0.758,
+"burst": 41
+},
+{
+"w": "17",
+"start": 230.483,
+"end": 230.923,
+"prob": 0.898,
+"burst": 41
+},
+{
+"w": "got",
+"start": 230.964,
+"end": 231.144,
+"prob": 0.947,
+"burst": 41
+},
+{
+"w": "launched",
+"start": 231.184,
+"end": 231.444,
+"prob": 0.702,
+"burst": 41
+},
+{
+"w": "and",
+"start": 231.484,
+"end": 231.584,
+"prob": 0.863,
+"burst": 41
+},
+{
+"w": "what's",
+"start": 231.725,
+"end": 231.965,
+"prob": 0.896,
+"burst": 41
+},
+{
+"w": "the",
+"start": 232.005,
+"end": 232.105,
+"prob": 0.935,
+"burst": 41
+},
+{
+"w": "excitement",
+"start": 232.165,
+"end": 232.706,
+"prob": 0.858,
+"burst": 41
+},
+{
+"w": "level",
+"start": 232.746,
+"end": 233.066,
+"prob": 0.721,
+"burst": 41
+},
+{
+"w": "now?",
+"start": 233.126,
+"end": 233.367,
+"prob": 0.93,
+"burst": 41
+},
+{
+"w": "Is",
+"start": 233.427,
+"end": 233.507,
+"prob": 0.927,
+"burst": 41
+},
+{
+"w": "he",
+"start": 233.547,
+"end": 233.647,
+"prob": 0.857,
+"burst": 41
+},
+{
+"w": "getting",
+"start": 233.667,
+"end": 233.908,
+"prob": 0.848,
+"burst": 41
+},
+{
+"w": "crazier?",
+"start": 233.948,
+"end": 234.508,
+"prob": 0.926,
+"burst": 41
+},
+{
+"w": "Is",
+"start": 234.568,
+"end": 234.649,
+"prob": 0.864,
+"burst": 41
+},
+{
+"w": "he",
+"start": 234.669,
+"end": 234.769,
+"prob": 0.752,
+"burst": 41
+},
+{
+"w": "more",
+"start": 234.789,
+"end": 234.949,
+"prob": 0.784,
+"burst": 41
+},
+{
+"w": "excited?",
+"start": 235.009,
+"end": 235.55,
+"prob": 0.938,
+"burst": 41
+},
+{
+"w": "you",
+"start": 236.912,
+"end": 237.012,
+"prob": 0.979,
+"burst": 42
+},
+{
+"w": "know",
+"start": 237.032,
+"end": 237.173,
+"prob": 0.856,
+"burst": 42
+},
+{
+"w": "what",
+"start": 237.574,
+"end": 237.734,
+"prob": 0.893,
+"burst": 42
+},
+{
+"w": "crazy",
+"start": 237.814,
+"end": 238.175,
+"prob": 0.933,
+"burst": 42
+},
+{
+"w": "things",
+"start": 238.215,
+"end": 238.435,
+"prob": 0.848,
+"burst": 42
+},
+{
+"w": "he",
+"start": 238.455,
+"end": 238.556,
+"prob": 0.902,
+"burst": 42
+},
+{
+"w": "did",
+"start": 238.616,
+"end": 238.796,
+"prob": 0.998,
+"burst": 42
+},
+{
+"w": "with",
+"start": 238.937,
+"end": 239.077,
+"prob": 0.947,
+"burst": 42
+},
+{
+"w": "the",
+"start": 239.117,
+"end": 239.177,
+"prob": 0.262,
+"burst": 42
+},
+{
+"w": "iPhone",
+"start": 239.197,
+"end": 239.438,
+"prob": 0.431,
+"burst": 42
+},
+{
+"w": "17's",
+"start": 239.458,
+"end": 239.999,
+"prob": 0.818,
+"burst": 42
+},
+{
+"w": "launch",
+"start": 240.079,
+"end": 240.4,
+"prob": 0.638,
+"burst": 42
+},
+{
+"w": "and",
+"start": 240.831,
+"end": 240.931,
+"prob": 0.801,
+"burst": 43
+},
+{
+"w": "what",
+"start": 241.012,
+"end": 241.193,
+"prob": 0.798,
+"burst": 43
+},
+{
+"w": "did",
+"start": 241.233,
+"end": 241.374,
+"prob": 0.61,
+"burst": 43
+},
+{
+"w": "he",
+"start": 241.394,
+"end": 241.495,
+"prob": 0.842,
+"burst": 43
+},
+{
+"w": "do",
+"start": 241.555,
+"end": 241.716,
+"prob": 0.885,
+"burst": 43
+},
+{
+"w": "now",
+"start": 241.777,
+"end": 241.938,
+"prob": 0.971,
+"burst": 43
+},
+{
+"w": "like",
+"start": 241.978,
+"end": 242.139,
+"prob": 0.908,
+"burst": 43
+},
+{
+"w": "You",
+"start": 242.571,
+"end": 242.671,
+"prob": 0.801,
+"burst": 44
+},
+{
+"w": "guys",
+"start": 242.691,
+"end": 242.892,
+"prob": 0.33,
+"burst": 44
+},
+{
+"w": "understand?",
+"start": 242.933,
+"end": 243.395,
+"prob": 0.886,
+"burst": 44
+},
+{
+"w": "Now",
+"start": 243.938,
+"end": 244.159,
+"prob": 0.949,
+"burst": 44
+},
+{
+"w": "it's",
+"start": 244.26,
+"end": 244.381,
+"prob": 0.829,
+"burst": 44
+},
+{
+"w": "something",
+"start": 244.481,
+"end": 244.863,
+"prob": 0.921,
+"burst": 44
+},
+{
+"w": "that",
+"start": 244.903,
+"end": 245.064,
+"prob": 0.961,
+"burst": 44
+},
+{
+"w": "YouTube",
+"start": 245.125,
+"end": 245.426,
+"prob": 0.395,
+"burst": 44
+},
+{
+"w": "is",
+"start": 245.487,
+"end": 245.547,
+"prob": 0.818,
+"burst": 44
+},
+{
+"w": "like,",
+"start": 245.587,
+"end": 245.748,
+"prob": 0.904,
+"burst": 44
+},
+{
+"w": "huh?",
+"start": 245.788,
+"end": 245.989,
+"prob": 0.679,
+"burst": 44
+},
+{
+"w": "This",
+"start": 246.674,
+"end": 246.836,
+"prob": 0.623,
+"burst": 45
+},
+{
+"w": "guy",
+"start": 246.876,
+"end": 246.977,
+"prob": 0.665,
+"burst": 45
+},
+{
+"w": "has",
+"start": 246.998,
+"end": 247.079,
+"prob": 0.082,
+"burst": 45
+},
+{
+"w": "uploaded",
+"start": 247.119,
+"end": 247.443,
+"prob": 0.78,
+"burst": 45
+},
+{
+"w": "this",
+"start": 247.504,
+"end": 247.646,
+"prob": 0.919,
+"burst": 45
+},
+{
+"w": "clip.",
+"start": 247.706,
+"end": 247.97,
+"prob": 0.942,
+"burst": 45
+},
+{
+"w": "it's",
+"start": 248.501,
+"end": 248.601,
+"prob": 0.648,
+"burst": 46
+},
+{
+"w": "it",
+"start": 248.962,
+"end": 249.043,
+"prob": 0.842,
+"burst": 46
+},
+{
+"w": "offers",
+"start": 249.364,
+"end": 249.625,
+"prob": 0.874,
+"burst": 46
+},
+{
+"w": "brand",
+"start": 249.685,
+"end": 249.886,
+"prob": 0.795,
+"burst": 46
+},
+{
+"w": "new",
+"start": 249.906,
+"end": 250.086,
+"prob": 0.801,
+"burst": 46
+},
+{
+"w": "perspective",
+"start": 250.167,
+"end": 250.648,
+"prob": 0.893,
+"burst": 46
+},
+{
+"w": "it's",
+"start": 250.709,
+"end": 250.829,
+"prob": 0.736,
+"burst": 46
+},
+{
+"w": "fresh",
+"start": 250.909,
+"end": 251.23,
+"prob": 0.823,
+"burst": 46
+},
+{
+"w": "it's",
+"start": 251.351,
+"end": 251.471,
+"prob": 0.628,
+"burst": 46
+},
+{
+"w": "nice",
+"start": 251.552,
+"end": 251.873,
+"prob": 0.725,
+"burst": 46
+},
+{
+"w": "it's",
+"start": 251.973,
+"end": 252.154,
+"prob": 0.782,
+"burst": 46
+},
+{
+"w": "not",
+"start": 252.234,
+"end": 252.435,
+"prob": 0.744,
+"burst": 46
+},
+{
+"w": "like",
+"start": 252.475,
+"end": 252.656,
+"prob": 0.881,
+"burst": 46
+},
+{
+"w": "one",
+"start": 252.836,
+"end": 252.917,
+"prob": 0.985,
+"burst": 46
+},
+{
+"w": "of",
+"start": 252.957,
+"end": 252.997,
+"prob": 1.0,
+"burst": 46
+},
+{
+"w": "those",
+"start": 253.037,
+"end": 253.198,
+"prob": 0.903,
+"burst": 46
+},
+{
+"w": "amateurs",
+"start": 253.298,
+"end": 253.719,
+"prob": 0.827,
+"burst": 46
+},
+{
+"w": "who",
+"start": 254.21,
+"end": 254.351,
+"prob": 0.734,
+"burst": 47
+},
+{
+"w": "are",
+"start": 254.411,
+"end": 254.531,
+"prob": 0.872,
+"burst": 47
+},
+{
+"w": "just",
+"start": 254.572,
+"end": 254.732,
+"prob": 0.85,
+"burst": 47
+},
+{
+"w": "blatantly",
+"start": 255.093,
+"end": 255.635,
+"prob": 0.837,
+"burst": 47
+},
+{
+"w": "uploading",
+"start": 256.016,
+"end": 256.458,
+"prob": 0.765,
+"burst": 47
+},
+{
+"w": "random",
+"start": 256.638,
+"end": 256.939,
+"prob": 0.85,
+"burst": 47
+},
+{
+"w": "clips",
+"start": 256.979,
+"end": 257.26,
+"prob": 0.739,
+"burst": 47
+},
+{
+"w": "every",
+"start": 257.621,
+"end": 257.822,
+"prob": 0.823,
+"burst": 47
+},
+{
+"w": "day",
+"start": 257.862,
+"end": 258.003,
+"prob": 0.844,
+"burst": 47
+},
+{
+"w": "thinking",
+"start": 258.063,
+"end": 258.344,
+"prob": 0.986,
+"burst": 47
+},
+{
+"w": "that",
+"start": 258.404,
+"end": 258.544,
+"prob": 0.83,
+"burst": 47
+},
+{
+"w": "they'll",
+"start": 258.585,
+"end": 258.805,
+"prob": 0.845,
+"burst": 47
+},
+{
+"w": "get",
+"start": 258.825,
+"end": 258.946,
+"prob": 0.873,
+"burst": 47
+},
+{
+"w": "views.",
+"start": 259.026,
+"end": 259.287,
+"prob": 0.57,
+"burst": 47
+},
+{
+"w": "They",
+"start": 259.327,
+"end": 259.447,
+"prob": 0.784,
+"burst": 47
+},
+{
+"w": "don't",
+"start": 259.488,
+"end": 259.648,
+"prob": 0.858,
+"burst": 47
+},
+{
+"w": "know",
+"start": 259.688,
+"end": 259.788,
+"prob": 0.924,
+"burst": 47
+},
+{
+"w": "anything.",
+"start": 259.849,
+"end": 260.15,
+"prob": 0.965,
+"burst": 47
+},
+{
+"w": "This",
+"start": 260.531,
+"end": 260.692,
+"prob": 0.814,
+"burst": 48
+},
+{
+"w": "guy",
+"start": 260.712,
+"end": 260.853,
+"prob": 0.864,
+"burst": 48
+},
+{
+"w": "is",
+"start": 260.893,
+"end": 260.953,
+"prob": 0.256,
+"burst": 48
+},
+{
+"w": "actually",
+"start": 260.993,
+"end": 261.235,
+"prob": 0.844,
+"burst": 48
+},
+{
+"w": "putting",
+"start": 261.275,
+"end": 261.516,
+"prob": 0.679,
+"burst": 48
+},
+{
+"w": "the",
+"start": 261.536,
+"end": 261.637,
+"prob": 0.589,
+"burst": 48
+},
+{
+"w": "time.",
+"start": 261.677,
+"end": 261.979,
+"prob": 0.926,
+"burst": 48
+},
+{
+"w": "And",
+"start": 264.211,
+"end": 264.291,
+"prob": 0.913,
+"burst": 49
+},
+{
+"w": "YouTube",
+"start": 264.352,
+"end": 264.674,
+"prob": 0.485,
+"burst": 49
+},
+{
+"w": "has",
+"start": 264.694,
+"end": 264.895,
+"prob": 0.713,
+"burst": 49
+},
+{
+"w": "literally",
+"start": 264.915,
+"end": 265.237,
+"prob": 0.808,
+"burst": 49
+},
+{
+"w": "made",
+"start": 265.278,
+"end": 266.083,
+"prob": 0.764,
+"burst": 49
+},
+{
+"w": "this",
+"start": 266.103,
+"end": 266.244,
+"prob": 0.81,
+"burst": 49
+},
+{
+"w": "official",
+"start": 266.284,
+"end": 266.626,
+"prob": 0.912,
+"burst": 49
+},
+{
+"w": "by",
+"start": 266.686,
+"end": 266.807,
+"prob": 0.997,
+"burst": 49
+},
+{
+"w": "the",
+"start": 266.847,
+"end": 266.948,
+"prob": 0.994,
+"burst": 49
+},
+{
+"w": "way",
+"start": 266.988,
+"end": 267.089,
+"prob": 0.998,
+"burst": 49
+},
+{
+"w": "On",
+"start": 269.224,
+"end": 269.325,
+"prob": 0.686,
+"burst": 50
+},
+{
+"w": "October",
+"start": 269.365,
+"end": 269.707,
+"prob": 0.814,
+"burst": 50
+},
+{
+"w": "1st.",
+"start": 269.748,
+"end": 269.888,
+"prob": 0.205,
+"burst": 50
+},
+{
+"w": "YouTube",
+"start": 272.07,
+"end": 272.452,
+"prob": 0.588,
+"burst": 51
+},
+{
+"w": "said",
+"start": 272.472,
+"end": 272.632,
+"prob": 0.933,
+"burst": 51
+},
+{
+"w": "it's",
+"start": 272.693,
+"end": 272.813,
+"prob": 0.705,
+"burst": 51
+},
+{
+"w": "changing",
+"start": 272.873,
+"end": 273.194,
+"prob": 0.983,
+"burst": 51
+},
+{
+"w": "how",
+"start": 273.255,
+"end": 273.536,
+"prob": 0.66,
+"burst": 51
+},
+{
+"w": "the",
+"start": 273.556,
+"end": 273.656,
+"prob": 0.851,
+"burst": 51
+},
+{
+"w": "Shorts",
+"start": 273.676,
+"end": 273.957,
+"prob": 0.73,
+"burst": 51
+},
+{
+"w": "feeds",
+"start": 274.017,
+"end": 274.339,
+"prob": 0.852,
+"burst": 51
+},
+{
+"w": "work.",
+"start": 274.379,
+"end": 274.64,
+"prob": 0.907,
+"burst": 51
+},
+{
+"w": "channels",
+"start": 276.11,
+"end": 276.451,
+"prob": 0.755,
+"burst": 52
+},
+{
+"w": "that",
+"start": 276.471,
+"end": 276.651,
+"prob": 0.826,
+"burst": 52
+},
+{
+"w": "re-upload",
+"start": 276.691,
+"end": 277.172,
+"prob": 0.607,
+"burst": 52
+},
+{
+"w": "other",
+"start": 277.212,
+"end": 277.352,
+"prob": 0.904,
+"burst": 52
+},
+{
+"w": "people's",
+"start": 277.372,
+"end": 277.632,
+"prob": 0.9,
+"burst": 52
+},
+{
+"w": "videos",
+"start": 277.672,
+"end": 277.993,
+"prob": 0.612,
+"burst": 52
+},
+{
+"w": "without",
+"start": 278.033,
+"end": 278.313,
+"prob": 0.834,
+"burst": 52
+},
+{
+"w": "adding",
+"start": 278.413,
+"end": 278.634,
+"prob": 0.929,
+"burst": 52
+},
+{
+"w": "anything",
+"start": 278.674,
+"end": 278.954,
+"prob": 0.896,
+"burst": 52
+},
+{
+"w": "of",
+"start": 278.994,
+"end": 279.074,
+"prob": 0.828,
+"burst": 52
+},
+{
+"w": "their",
+"start": 279.114,
+"end": 279.274,
+"prob": 0.807,
+"burst": 52
+},
+{
+"w": "own",
+"start": 279.314,
+"end": 279.435,
+"prob": 0.969,
+"burst": 52
+},
+{
+"w": "will",
+"start": 279.495,
+"end": 279.655,
+"prob": 0.754,
+"burst": 52
+},
+{
+"w": "get",
+"start": 279.675,
+"end": 279.855,
+"prob": 0.785,
+"burst": 52
+},
+{
+"w": "less",
+"start": 280.076,
+"end": 280.336,
+"prob": 0.865,
+"burst": 52
+},
+{
+"w": "reach",
+"start": 280.496,
+"end": 280.776,
+"prob": 0.893,
+"burst": 52
+},
+{
+"w": "guaranteed",
+"start": 280.917,
+"end": 281.858,
+"prob": 0.924,
+"burst": 52
+},
+{
+"w": "less",
+"start": 282.319,
+"end": 282.639,
+"prob": 0.782,
+"burst": 52
+},
+{
+"w": "reach",
+"start": 282.819,
+"end": 283.08,
+"prob": 0.891,
+"burst": 52
+},
+{
+"w": "And",
+"start": 286.201,
+"end": 286.301,
+"prob": 0.825,
+"burst": 53
+},
+{
+"w": "they",
+"start": 286.321,
+"end": 286.462,
+"prob": 0.472,
+"burst": 53
+},
+{
+"w": "told",
+"start": 286.502,
+"end": 286.744,
+"prob": 0.848,
+"burst": 53
+},
+{
+"w": "you",
+"start": 286.784,
+"end": 286.884,
+"prob": 0.769,
+"burst": 53
+},
+{
+"w": "what",
+"start": 286.905,
+"end": 287.025,
+"prob": 0.979,
+"burst": 53
+},
+{
+"w": "doesn't",
+"start": 287.045,
+"end": 287.327,
+"prob": 0.434,
+"burst": 53
+},
+{
+"w": "count.",
+"start": 287.387,
+"end": 287.769,
+"prob": 0.867,
+"burst": 53
+},
+{
+"w": "Crops,",
+"start": 288.281,
+"end": 288.745,
+"prob": 0.856,
+"burst": 54
+},
+{
+"w": "flips,",
+"start": 289.068,
+"end": 289.451,
+"prob": 0.883,
+"burst": 54
+},
+{
+"w": "speeding",
+"start": 289.733,
+"end": 290.137,
+"prob": 0.886,
+"burst": 54
+},
+{
+"w": "it",
+"start": 290.157,
+"end": 290.217,
+"prob": 0.746,
+"burst": 54
+},
+{
+"w": "up.",
+"start": 290.318,
+"end": 290.379,
+"prob": 0.889,
+"burst": 54
+},
+{
+"w": "Filters,",
+"start": 290.801,
+"end": 291.223,
+"prob": 0.816,
+"burst": 55
+},
+{
+"w": "captions",
+"start": 291.344,
+"end": 291.707,
+"prob": 0.598,
+"burst": 55
+},
+{
+"w": "that",
+"start": 291.727,
+"end": 291.868,
+"prob": 0.626,
+"burst": 55
+},
+{
+"w": "just",
+"start": 291.888,
+"end": 292.049,
+"prob": 0.815,
+"burst": 55
+},
+{
+"w": "type",
+"start": 292.11,
+"end": 292.351,
+"prob": 0.88,
+"burst": 55
+},
+{
+"w": "out",
+"start": 292.412,
+"end": 292.512,
+"prob": 0.828,
+"burst": 55
+},
+{
+"w": "what",
+"start": 292.553,
+"end": 292.694,
+"prob": 0.959,
+"burst": 55
+},
+{
+"w": "people",
+"start": 292.754,
+"end": 293.016,
+"prob": 0.95,
+"burst": 55
+},
+{
+"w": "are",
+"start": 293.076,
+"end": 293.177,
+"prob": 0.766,
+"burst": 55
+},
+{
+"w": "saying.",
+"start": 293.197,
+"end": 293.459,
+"prob": 0.962,
+"burst": 55
+},
+{
+"w": "a",
+"start": 294.001,
+"end": 294.041,
+"prob": 0.583,
+"burst": 56
+},
+{
+"w": "voiceover",
+"start": 294.081,
+"end": 294.544,
+"prob": 0.873,
+"burst": 56
+},
+{
+"w": "that",
+"start": 294.584,
+"end": 294.705,
+"prob": 0.984,
+"burst": 56
+},
+{
+"w": "just",
+"start": 294.745,
+"end": 294.906,
+"prob": 0.828,
+"burst": 56
+},
+{
+"w": "described",
+"start": 294.946,
+"end": 295.389,
+"prob": 0.862,
+"burst": 56
+},
+{
+"w": "what's",
+"start": 295.409,
+"end": 295.549,
+"prob": 0.613,
+"burst": 56
+},
+{
+"w": "happening",
+"start": 295.57,
+"end": 295.912,
+"prob": 0.855,
+"burst": 56
+},
+{
+"w": "on",
+"start": 295.952,
+"end": 296.012,
+"prob": 0.999,
+"burst": 56
+},
+{
+"w": "the",
+"start": 296.052,
+"end": 296.153,
+"prob": 0.883,
+"burst": 56
+},
+{
+"w": "screen",
+"start": 296.173,
+"end": 296.414,
+"prob": 0.908,
+"burst": 56
+},
+{
+"w": "so",
+"start": 296.434,
+"end": 296.575,
+"prob": 0.742,
+"burst": 56
+},
+{
+"w": "all",
+"start": 296.716,
+"end": 296.817,
+"prob": 0.634,
+"burst": 56
+},
+{
+"w": "of",
+"start": 296.837,
+"end": 296.897,
+"prob": 0.442,
+"burst": 56
+},
+{
+"w": "these",
+"start": 296.937,
+"end": 297.098,
+"prob": 0.835,
+"burst": 56
+},
+{
+"w": "things",
+"start": 297.138,
+"end": 297.339,
+"prob": 0.976,
+"burst": 56
+},
+{
+"w": "You",
+"start": 297.66,
+"end": 297.76,
+"prob": 0.848,
+"burst": 57
+},
+{
+"w": "guys",
+"start": 297.781,
+"end": 297.901,
+"prob": 0.292,
+"burst": 57
+},
+{
+"w": "have",
+"start": 297.921,
+"end": 298.041,
+"prob": 0.218,
+"burst": 57
+},
+{
+"w": "to",
+"start": 298.061,
+"end": 298.141,
+"prob": 0.774,
+"burst": 57
+},
+{
+"w": "understand",
+"start": 298.161,
+"end": 298.522,
+"prob": 0.831,
+"burst": 57
+},
+{
+"w": "this",
+"start": 298.542,
+"end": 298.743,
+"prob": 0.593,
+"burst": 57
+},
+{
+"w": "is",
+"start": 299.124,
+"end": 299.224,
+"prob": 0.784,
+"burst": 57
+},
+{
+"w": "YouTube",
+"start": 299.324,
+"end": 300.788,
+"prob": 0.787,
+"burst": 57
+},
+{
+"w": "specifically.",
+"start": 300.848,
+"end": 301.41,
+"prob": 0.849,
+"burst": 57
+},
+{
+"w": "YouTube",
+"start": 301.8,
+"end": 302.26,
+"prob": 0.778,
+"burst": 58
+},
+{
+"w": "is",
+"start": 302.36,
+"end": 302.44,
+"prob": 0.724,
+"burst": 58
+},
+{
+"w": "not",
+"start": 302.5,
+"end": 302.681,
+"prob": 0.908,
+"burst": 58
+},
+{
+"w": "stupid.",
+"start": 302.741,
+"end": 303.141,
+"prob": 0.954,
+"burst": 58
+},
+{
+"w": "They",
+"start": 303.201,
+"end": 303.421,
+"prob": 0.849,
+"burst": 58
+},
+{
+"w": "know",
+"start": 303.681,
+"end": 303.981,
+"prob": 0.753,
+"burst": 58
+},
+{
+"w": "when",
+"start": 304.402,
+"end": 304.542,
+"prob": 0.911,
+"burst": 58
+},
+{
+"w": "people",
+"start": 304.602,
+"end": 304.922,
+"prob": 0.908,
+"burst": 58
+},
+{
+"w": "are",
+"start": 305.242,
+"end": 305.362,
+"prob": 0.763,
+"burst": 58
+},
+{
+"w": "doing",
+"start": 305.442,
+"end": 305.782,
+"prob": 0.989,
+"burst": 58
+},
+{
+"w": "these",
+"start": 305.862,
+"end": 306.403,
+"prob": 0.839,
+"burst": 58
+},
+{
+"w": "like",
+"start": 306.463,
+"end": 306.643,
+"prob": 0.845,
+"burst": 58
+},
+{
+"w": "cheeky",
+"start": 306.803,
+"end": 307.323,
+"prob": 0.876,
+"burst": 58
+},
+{
+"w": "Lazy",
+"start": 307.783,
+"end": 308.184,
+"prob": 0.869,
+"burst": 58
+},
+{
+"w": "shit",
+"start": 308.304,
+"end": 308.544,
+"prob": 0.844,
+"burst": 58
+},
+{
+"w": "on",
+"start": 308.724,
+"end": 308.804,
+"prob": 0.845,
+"burst": 58
+},
+{
+"w": "up",
+"start": 308.864,
+"end": 308.984,
+"prob": 0.899,
+"burst": 58
+},
+{
+"w": "late",
+"start": 309.164,
+"end": 309.324,
+"prob": 0.602,
+"burst": 58
+},
+{
+"w": "and",
+"start": 309.424,
+"end": 309.524,
+"prob": 0.661,
+"burst": 58
+},
+{
+"w": "they",
+"start": 309.564,
+"end": 309.705,
+"prob": 0.973,
+"burst": 58
+},
+{
+"w": "upload",
+"start": 309.785,
+"end": 310.165,
+"prob": 0.858,
+"burst": 58
+},
+{
+"w": "these",
+"start": 310.325,
+"end": 310.545,
+"prob": 0.789,
+"burst": 58
+},
+{
+"w": "Lit",
+"start": 311.946,
+"end": 312.186,
+"prob": 0.9,
+"burst": 58
+},
+{
+"w": "like",
+"start": 312.346,
+"end": 312.526,
+"prob": 0.817,
+"burst": 58
+},
+{
+"w": "absolute",
+"start": 312.746,
+"end": 313.146,
+"prob": 0.842,
+"burst": 58
+},
+{
+"w": "trash",
+"start": 313.207,
+"end": 313.587,
+"prob": 0.888,
+"burst": 58
+},
+{
+"w": "of",
+"start": 313.667,
+"end": 313.767,
+"prob": 0.922,
+"burst": 58
+},
+{
+"w": "videos",
+"start": 313.807,
+"end": 314.167,
+"prob": 0.872,
+"burst": 58
+},
+{
+"w": "onto",
+"start": 314.247,
+"end": 314.447,
+"prob": 0.885,
+"burst": 58
+},
+{
+"w": "YouTube",
+"start": 314.507,
+"end": 314.907,
+"prob": 0.733,
+"burst": 58
+},
+{
+"w": "or",
+"start": 315.068,
+"end": 315.148,
+"prob": 0.726,
+"burst": 58
+},
+{
+"w": "not",
+"start": 315.168,
+"end": 315.308,
+"prob": 0.647,
+"burst": 58
+},
+{
+"w": "in",
+"start": 315.388,
+"end": 315.448,
+"prob": 0.966,
+"burst": 58
+},
+{
+"w": "order",
+"start": 315.488,
+"end": 315.708,
+"prob": 0.862,
+"burst": 58
+},
+{
+"w": "for",
+"start": 315.768,
+"end": 315.908,
+"prob": 0.993,
+"burst": 58
+},
+{
+"w": "that",
+"start": 315.968,
+"end": 316.208,
+"prob": 0.637,
+"burst": 58
+},
+{
+"w": "in",
+"start": 316.668,
+"end": 316.729,
+"prob": 0.941,
+"burst": 58
+},
+{
+"w": "order",
+"start": 316.769,
+"end": 316.949,
+"prob": 0.914,
+"burst": 58
+},
+{
+"w": "for",
+"start": 316.989,
+"end": 317.109,
+"prob": 0.985,
+"burst": 58
+},
+{
+"w": "in",
+"start": 317.569,
+"end": 317.629,
+"prob": 0.821,
+"burst": 58
+},
+{
+"w": "order",
+"start": 317.669,
+"end": 317.829,
+"prob": 0.75,
+"burst": 58
+},
+{
+"w": "to",
+"start": 317.849,
+"end": 317.909,
+"prob": 0.745,
+"burst": 58
+},
+{
+"w": "get",
+"start": 317.949,
+"end": 318.069,
+"prob": 0.869,
+"burst": 58
+},
+{
+"w": "their",
+"start": 318.109,
+"end": 318.229,
+"prob": 0.944,
+"burst": 58
+},
+{
+"w": "channel",
+"start": 318.269,
+"end": 318.57,
+"prob": 0.932,
+"burst": 58
+},
+{
+"w": "monetized",
+"start": 318.61,
+"end": 319.13,
+"prob": 0.734,
+"burst": 58
+},
+{
+"w": "right",
+"start": 319.75,
+"end": 319.891,
+"prob": 0.353,
+"burst": 59
+},
+{
+"w": "they're",
+"start": 320.311,
+"end": 320.572,
+"prob": 0.687,
+"burst": 59
+},
+{
+"w": "they're",
+"start": 320.632,
+"end": 320.852,
+"prob": 0.585,
+"burst": 59
+},
+{
+"w": "doubling",
+"start": 320.992,
+"end": 321.353,
+"prob": 0.898,
+"burst": 59
+},
+{
+"w": "on",
+"start": 321.533,
+"end": 321.714,
+"prob": 0.856,
+"burst": 59
+},
+{
+"w": "down",
+"start": 321.854,
+"end": 322.094,
+"prob": 0.918,
+"burst": 59
+},
+{
+"w": "on",
+"start": 322.134,
+"end": 322.174,
+"prob": 0.968,
+"burst": 59
+},
+{
+"w": "that",
+"start": 322.215,
+"end": 322.355,
+"prob": 0.849,
+"burst": 59
+},
+{
+"w": "because",
+"start": 322.395,
+"end": 322.635,
+"prob": 0.916,
+"burst": 59
+},
+{
+"w": "they",
+"start": 322.735,
+"end": 322.896,
+"prob": 0.897,
+"burst": 59
+},
+{
+"w": "have",
+"start": 322.936,
+"end": 323.076,
+"prob": 0.89,
+"burst": 59
+},
+{
+"w": "to",
+"start": 323.116,
+"end": 323.196,
+"prob": 0.876,
+"burst": 59
+},
+{
+"w": "pay",
+"start": 323.336,
+"end": 323.557,
+"prob": 0.772,
+"burst": 59
+},
+{
+"w": "money",
+"start": 323.677,
+"end": 323.938,
+"prob": 0.833,
+"burst": 59
+},
+{
+"w": "to",
+"start": 324.058,
+"end": 324.178,
+"prob": 0.83,
+"burst": 59
+},
+{
+"w": "creators",
+"start": 324.258,
+"end": 324.739,
+"prob": 0.816,
+"burst": 59
+},
+{
+"w": "so",
+"start": 324.759,
+"end": 324.879,
+"prob": 0.831,
+"burst": 59
+},
+{
+"w": "they're",
+"start": 324.899,
+"end": 325.12,
+"prob": 0.641,
+"burst": 59
+},
+{
+"w": "going",
+"start": 325.14,
+"end": 325.24,
+"prob": 0.942,
+"burst": 59
+},
+{
+"w": "to",
+"start": 325.26,
+"end": 325.3,
+"prob": 0.916,
+"burst": 59
+},
+{
+"w": "be",
+"start": 325.36,
+"end": 325.44,
+"prob": 0.869,
+"burst": 59
+},
+{
+"w": "keeping",
+"start": 325.54,
+"end": 325.841,
+"prob": 0.931,
+"burst": 59
+},
+{
+"w": "a",
+"start": 326.221,
+"end": 326.262,
+"prob": 0.615,
+"burst": 59
+},
+{
+"w": "lot",
+"start": 326.342,
+"end": 326.562,
+"prob": 0.988,
+"burst": 59
+},
+{
+"w": "more",
+"start": 326.622,
+"end": 326.823,
+"prob": 0.851,
+"burst": 59
+},
+{
+"w": "you",
+"start": 326.843,
+"end": 327.243,
+"prob": 0.478,
+"burst": 59
+},
+{
+"w": "know",
+"start": 327.263,
+"end": 327.343,
+"prob": 0.002,
+"burst": 59
+},
+{
+"w": "a",
+"start": 327.363,
+"end": 327.383,
+"prob": 0.001,
+"burst": 59
+},
+{
+"w": "higher",
+"start": 327.664,
+"end": 328.025,
+"prob": 0.688,
+"burst": 59
+},
+{
+"w": "grade",
+"start": 328.105,
+"end": 328.425,
+"prob": 0.899,
+"burst": 59
+},
+{
+"w": "of",
+"start": 328.465,
+"end": 328.566,
+"prob": 0.9,
+"burst": 59
+},
+{
+"w": "check",
+"start": 328.646,
+"end": 328.906,
+"prob": 0.953,
+"burst": 59
+},
+{
+"w": "than",
+"start": 329.006,
+"end": 329.207,
+"prob": 0.374,
+"burst": 59
+},
+{
+"w": "instagram",
+"start": 329.267,
+"end": 329.848,
+"prob": 0.886,
+"burst": 59
+},
+{
+"w": "or",
+"start": 329.948,
+"end": 330.028,
+"prob": 0.749,
+"burst": 59
+},
+{
+"w": "like",
+"start": 330.068,
+"end": 330.208,
+"prob": 0.929,
+"burst": 59
+},
+{
+"w": "TikTok",
+"start": 330.248,
+"end": 330.689,
+"prob": 0.658,
+"burst": 59,
+"fixed": true
+},
+{
+"w": "and",
+"start": 330.729,
+"end": 330.829,
+"prob": 0.663,
+"burst": 59
+},
+{
+"w": "stuff",
+"start": 330.87,
+"end": 331.07,
+"prob": 0.998,
+"burst": 59
+},
+{
+"w": "So",
+"start": 331.742,
+"end": 331.905,
+"prob": 0.997,
+"burst": 60
+},
+{
+"w": "So",
+"start": 333.78,
+"end": 333.9,
+"prob": 0.835,
+"burst": 61
+},
+{
+"w": "what",
+"start": 333.92,
+"end": 334.08,
+"prob": 0.849,
+"burst": 61
+},
+{
+"w": "does",
+"start": 334.1,
+"end": 334.321,
+"prob": 0.688,
+"burst": 61
+},
+{
+"w": "count",
+"start": 334.341,
+"end": 334.621,
+"prob": 0.548,
+"burst": 61
+},
+{
+"w": "your",
+"start": 334.641,
+"end": 334.821,
+"prob": 0.863,
+"burst": 61
+},
+{
+"w": "commentary,",
+"start": 334.881,
+"end": 335.522,
+"prob": 0.908,
+"burst": 61
+},
+{
+"w": "your",
+"start": 335.542,
+"end": 335.722,
+"prob": 0.755,
+"burst": 61
+},
+{
+"w": "analysis,",
+"start": 335.782,
+"end": 336.463,
+"prob": 0.875,
+"burst": 61
+},
+{
+"w": "like,",
+"start": 336.523,
+"end": 336.783,
+"prob": 0.695,
+"burst": 61
+},
+{
+"w": "you",
+"start": 337.204,
+"end": 337.284,
+"prob": 0.986,
+"burst": 61
+},
+{
+"w": "know,",
+"start": 337.324,
+"end": 337.464,
+"prob": 0.837,
+"burst": 61
+},
+{
+"w": "your",
+"start": 337.504,
+"end": 337.945,
+"prob": 0.736,
+"burst": 61
+},
+{
+"w": "different",
+"start": 337.985,
+"end": 338.365,
+"prob": 0.926,
+"burst": 61
+},
+{
+"w": "framing,",
+"start": 338.465,
+"end": 338.966,
+"prob": 0.933,
+"burst": 61
+},
+{
+"w": "your",
+"start": 338.986,
+"end": 339.146,
+"prob": 0.72,
+"burst": 61
+},
+{
+"w": "transformation,",
+"start": 339.166,
+"end": 340.007,
+"prob": 0.899,
+"burst": 61
+},
+{
+"w": "whether",
+"start": 340.207,
+"end": 340.447,
+"prob": 0.45,
+"burst": 61
+},
+{
+"w": "it",
+"start": 340.467,
+"end": 340.527,
+"prob": 0.688,
+"burst": 61
+},
+{
+"w": "can",
+"start": 340.587,
+"end": 340.728,
+"prob": 0.995,
+"burst": 61
+},
+{
+"w": "be",
+"start": 340.748,
+"end": 340.848,
+"prob": 0.974,
+"burst": 61
+},
+{
+"w": "editing,",
+"start": 340.928,
+"end": 341.308,
+"prob": 0.777,
+"burst": 61
+},
+{
+"w": "you",
+"start": 341.649,
+"end": 341.709,
+"prob": 0.016,
+"burst": 61
+},
+{
+"w": "know,",
+"start": 341.729,
+"end": 341.849,
+"prob": 0.288,
+"burst": 61
+},
+{
+"w": "referencing",
+"start": 341.869,
+"end": 342.289,
+"prob": 0.973,
+"burst": 61
+},
+{
+"w": "other",
+"start": 342.349,
+"end": 342.51,
+"prob": 0.88,
+"burst": 61
+},
+{
+"w": "clips.",
+"start": 342.57,
+"end": 342.83,
+"prob": 0.93,
+"burst": 61
+},
+{
+"w": "That's",
+"start": 343.314,
+"end": 343.639,
+"prob": 0.854,
+"burst": 62,
+"fixed": true
+},
+{
+"w": "what",
+"start": 343.639,
+"end": 343.964,
+"prob": 0.854,
+"burst": 62,
+"fixed": true
+},
+{
+"w": "counts.",
+"start": 343.964,
+"end": 344.289,
+"prob": 0.854,
+"burst": 62,
+"fixed": true
+},
+{
+"w": "You",
+"start": 344.64,
+"end": 344.72,
+"prob": 0.995,
+"burst": 63
+},
+{
+"w": "don't",
+"start": 344.74,
+"end": 344.88,
+"prob": 0.792,
+"burst": 63
+},
+{
+"w": "have",
+"start": 344.901,
+"end": 345.001,
+"prob": 0.95,
+"burst": 63
+},
+{
+"w": "to",
+"start": 345.041,
+"end": 345.081,
+"prob": 0.992,
+"burst": 63
+},
+{
+"w": "put",
+"start": 345.161,
+"end": 345.321,
+"prob": 0.867,
+"burst": 63
+},
+{
+"w": "your",
+"start": 345.361,
+"end": 345.501,
+"prob": 0.757,
+"burst": 63
+},
+{
+"w": "face",
+"start": 345.581,
+"end": 345.882,
+"prob": 0.984,
+"burst": 63
+},
+{
+"w": "on",
+"start": 346.122,
+"end": 346.202,
+"prob": 0.951,
+"burst": 63
+},
+{
+"w": "these",
+"start": 346.242,
+"end": 346.423,
+"prob": 0.707,
+"burst": 63
+},
+{
+"w": "clips,",
+"start": 346.483,
+"end": 346.743,
+"prob": 0.734,
+"burst": 63
+},
+{
+"w": "by",
+"start": 346.783,
+"end": 346.903,
+"prob": 0.904,
+"burst": 63
+},
+{
+"w": "the",
+"start": 346.963,
+"end": 347.043,
+"prob": 0.971,
+"burst": 63
+},
+{
+"w": "way.",
+"start": 347.084,
+"end": 347.224,
+"prob": 0.918,
+"burst": 63
+},
+{
+"w": "You",
+"start": 347.564,
+"end": 347.684,
+"prob": 0.874,
+"burst": 63
+},
+{
+"w": "have",
+"start": 347.724,
+"end": 347.885,
+"prob": 0.893,
+"burst": 63
+},
+{
+"w": "to",
+"start": 347.905,
+"end": 347.965,
+"prob": 0.958,
+"burst": 63
+},
+{
+"w": "just",
+"start": 348.005,
+"end": 348.165,
+"prob": 0.898,
+"burst": 63
+},
+{
+"w": "offer",
+"start": 348.265,
+"end": 348.506,
+"prob": 0.83,
+"burst": 63
+},
+{
+"w": "fresh",
+"start": 348.586,
+"end": 348.806,
+"prob": 0.763,
+"burst": 63
+},
+{
+"w": "new",
+"start": 348.846,
+"end": 348.966,
+"prob": 0.992,
+"burst": 63
+},
+{
+"w": "perspectives",
+"start": 349.006,
+"end": 349.627,
+"prob": 0.897,
+"burst": 63
+},
+{
+"w": "with",
+"start": 349.687,
+"end": 349.847,
+"prob": 0.819,
+"burst": 63
+},
+{
+"w": "transformative",
+"start": 349.907,
+"end": 350.749,
+"prob": 0.885,
+"burst": 63
+},
+{
+"w": "enough",
+"start": 350.809,
+"end": 351.009,
+"prob": 0.904,
+"burst": 63
+},
+{
+"w": "editing",
+"start": 351.109,
+"end": 351.39,
+"prob": 0.963,
+"burst": 63
+},
+{
+"w": "that",
+"start": 351.43,
+"end": 351.57,
+"prob": 0.922,
+"burst": 63
+},
+{
+"w": "it",
+"start": 351.61,
+"end": 351.65,
+"prob": 0.478,
+"burst": 63
+},
+{
+"w": "passes.",
+"start": 351.922,
+"end": 352.436,
+"prob": 0.951,
+"burst": 64
+},
+{
+"w": "right",
+"start": 354.5,
+"end": 354.7,
+"prob": 0.781,
+"burst": 65
+},
+{
+"w": "my",
+"start": 355.001,
+"end": 355.181,
+"prob": 0.874,
+"burst": 65
+},
+{
+"w": "channel",
+"start": 355.221,
+"end": 355.541,
+"prob": 0.899,
+"burst": 65
+},
+{
+"w": "is",
+"start": 355.601,
+"end": 355.681,
+"prob": 0.712,
+"burst": 65
+},
+{
+"w": "filled",
+"start": 355.701,
+"end": 355.922,
+"prob": 0.863,
+"burst": 65
+},
+{
+"w": "with",
+"start": 355.942,
+"end": 356.062,
+"prob": 0.99,
+"burst": 65
+},
+{
+"w": "them",
+"start": 356.082,
+"end": 356.202,
+"prob": 0.835,
+"burst": 65
+},
+{
+"w": "like",
+"start": 356.242,
+"end": 356.362,
+"prob": 0.9,
+"burst": 65
+},
+{
+"w": "i",
+"start": 356.382,
+"end": 356.402,
+"prob": 0.003,
+"burst": 65
+},
+{
+"w": "all",
+"start": 356.743,
+"end": 356.863,
+"prob": 0.871,
+"burst": 65
+},
+{
+"w": "the",
+"start": 356.903,
+"end": 356.963,
+"prob": 0.996,
+"burst": 65
+},
+{
+"w": "shorts",
+"start": 357.003,
+"end": 357.223,
+"prob": 0.861,
+"burst": 65
+},
+{
+"w": "i",
+"start": 357.363,
+"end": 357.443,
+"prob": 0.98,
+"burst": 65
+},
+{
+"w": "make",
+"start": 357.483,
+"end": 357.684,
+"prob": 0.869,
+"burst": 65
+},
+{
+"w": "are",
+"start": 358.104,
+"end": 358.204,
+"prob": 0.696,
+"burst": 65
+},
+{
+"w": "like",
+"start": 358.685,
+"end": 358.845,
+"prob": 0.833,
+"burst": 65
+},
+{
+"w": "you",
+"start": 359.185,
+"end": 359.386,
+"prob": 0.914,
+"burst": 65
+},
+{
+"w": "will",
+"start": 359.446,
+"end": 359.646,
+"prob": 0.974,
+"burst": 65
+},
+{
+"w": "know",
+"start": 359.666,
+"end": 359.806,
+"prob": 0.426,
+"burst": 65
+},
+{
+"w": "i",
+"start": 359.926,
+"end": 360.006,
+"prob": 0.952,
+"burst": 65
+},
+{
+"w": "genuinely",
+"start": 360.126,
+"end": 360.627,
+"prob": 0.916,
+"burst": 65
+},
+{
+"w": "i",
+"start": 360.827,
+"end": 360.927,
+"prob": 0.96,
+"burst": 65
+},
+{
+"w": "like",
+"start": 361.068,
+"end": 361.248,
+"prob": 0.886,
+"burst": 65
+},
+{
+"w": "the",
+"start": 361.308,
+"end": 361.408,
+"prob": 0.884,
+"burst": 65
+},
+{
+"w": "past",
+"start": 361.448,
+"end": 361.688,
+"prob": 0.978,
+"burst": 65
+},
+{
+"w": "10",
+"start": 361.748,
+"end": 361.928,
+"prob": 0.894,
+"burst": 65
+},
+{
+"w": "shorts",
+"start": 361.969,
+"end": 362.169,
+"prob": 0.733,
+"burst": 65
+},
+{
+"w": "look",
+"start": 362.189,
+"end": 362.329,
+"prob": 0.881,
+"burst": 65
+},
+{
+"w": "at",
+"start": 362.349,
+"end": 362.409,
+"prob": 0.65,
+"burst": 65
+},
+{
+"w": "my",
+"start": 362.429,
+"end": 362.529,
+"prob": 0.866,
+"burst": 65
+},
+{
+"w": "past",
+"start": 362.549,
+"end": 362.769,
+"prob": 0.964,
+"burst": 65
+},
+{
+"w": "10",
+"start": 362.809,
+"end": 362.99,
+"prob": 0.884,
+"burst": 65
+},
+{
+"w": "shorts",
+"start": 363.03,
+"end": 363.21,
+"prob": 0.801,
+"burst": 65
+},
+{
+"w": "you",
+"start": 363.652,
+"end": 363.774,
+"prob": 1.0,
+"burst": 66
+},
+{
+"w": "will",
+"start": 363.815,
+"end": 364.018,
+"prob": 0.934,
+"burst": 66
+},
+{
+"w": "not",
+"start": 364.059,
+"end": 364.242,
+"prob": 0.825,
+"burst": 66
+},
+{
+"w": "find",
+"start": 364.323,
+"end": 364.567,
+"prob": 0.867,
+"burst": 66
+},
+{
+"w": "That",
+"start": 365.115,
+"end": 365.38,
+"prob": 0.685,
+"burst": 67
+},
+{
+"w": "clip",
+"start": 365.483,
+"end": 365.707,
+"prob": 0.978,
+"burst": 67
+},
+{
+"w": "in",
+"start": 366.64,
+"end": 366.741,
+"prob": 0.934,
+"burst": 68
+},
+{
+"w": "that",
+"start": 366.801,
+"end": 366.981,
+"prob": 0.953,
+"burst": 68
+},
+{
+"w": "same",
+"start": 367.042,
+"end": 367.242,
+"prob": 0.9,
+"burst": 68
+},
+{
+"w": "style,",
+"start": 367.282,
+"end": 367.543,
+"prob": 0.908,
+"burst": 68
+},
+{
+"w": "in",
+"start": 367.663,
+"end": 367.743,
+"prob": 0.982,
+"burst": 68
+},
+{
+"w": "that",
+"start": 367.783,
+"end": 367.964,
+"prob": 0.838,
+"burst": 68
+},
+{
+"w": "same",
+"start": 368.024,
+"end": 368.225,
+"prob": 0.773,
+"burst": 68
+},
+{
+"w": "reference,",
+"start": 368.325,
+"end": 368.686,
+"prob": 0.985,
+"burst": 68
+},
+{
+"w": "in",
+"start": 368.726,
+"end": 368.806,
+"prob": 0.982,
+"burst": 68
+},
+{
+"w": "that",
+"start": 368.846,
+"end": 368.987,
+"prob": 0.849,
+"burst": 68
+},
+{
+"w": "same",
+"start": 369.047,
+"end": 369.227,
+"prob": 0.977,
+"burst": 68
+},
+{
+"w": "framing",
+"start": 369.428,
+"end": 369.729,
+"prob": 0.956,
+"burst": 68
+},
+{
+"w": "again.",
+"start": 369.869,
+"end": 370.13,
+"prob": 0.958,
+"burst": 68
+},
+{
+"w": "ever",
+"start": 370.762,
+"end": 370.943,
+"prob": 0.872,
+"burst": 69
+},
+{
+"w": "on",
+"start": 371.125,
+"end": 371.206,
+"prob": 0.86,
+"burst": 69
+},
+{
+"w": "YouTube.",
+"start": 371.246,
+"end": 371.649,
+"prob": 0.583,
+"burst": 69
+},
+{
+"w": "that's",
+"start": 373.59,
+"end": 373.871,
+"prob": 0.886,
+"burst": 70
+},
+{
+"w": "that's",
+"start": 374.152,
+"end": 374.333,
+"prob": 0.894,
+"burst": 70
+},
+{
+"w": "why",
+"start": 374.353,
+"end": 374.493,
+"prob": 0.833,
+"burst": 70
+},
+{
+"w": "youtube",
+"start": 374.533,
+"end": 374.854,
+"prob": 0.56,
+"burst": 70
+},
+{
+"w": "has",
+"start": 374.935,
+"end": 375.236,
+"prob": 0.897,
+"burst": 70
+},
+{
+"w": "a",
+"start": 375.256,
+"end": 375.276,
+"prob": 0.0,
+"burst": 70
+},
+{
+"w": "reason",
+"start": 375.536,
+"end": 375.837,
+"prob": 0.943,
+"burst": 70
+},
+{
+"w": "for",
+"start": 375.898,
+"end": 376.078,
+"prob": 0.851,
+"burst": 70
+},
+{
+"w": "put",
+"start": 376.199,
+"end": 376.439,
+"prob": 0.817,
+"burst": 70
+},
+{
+"w": "for",
+"start": 376.971,
+"end": 377.112,
+"prob": 0.935,
+"burst": 71
+},
+{
+"w": "it",
+"start": 377.152,
+"end": 377.192,
+"prob": 0.416,
+"burst": 71
+},
+{
+"w": "to",
+"start": 377.233,
+"end": 377.293,
+"prob": 0.733,
+"burst": 71
+},
+{
+"w": "push",
+"start": 377.414,
+"end": 377.676,
+"prob": 0.749,
+"burst": 71
+},
+{
+"w": "my",
+"start": 377.716,
+"end": 377.837,
+"prob": 0.966,
+"burst": 71
+},
+{
+"w": "shorts.",
+"start": 377.878,
+"end": 378.14,
+"prob": 0.746,
+"burst": 71
+},
+{
+"w": "No.",
+"start": 381.427,
+"end": 381.636,
+"prob": 0.711,
+"burst": 72
+},
+{
+"w": "And",
+"start": 383.17,
+"end": 383.271,
+"prob": 0.785,
+"burst": 73
+},
+{
+"w": "this",
+"start": 383.331,
+"end": 383.592,
+"prob": 0.844,
+"burst": 73
+},
+{
+"w": "is",
+"start": 383.612,
+"end": 383.652,
+"prob": 0.572,
+"burst": 73
+},
+{
+"w": "also",
+"start": 383.713,
+"end": 383.913,
+"prob": 0.807,
+"burst": 73
+},
+{
+"w": "another",
+"start": 383.934,
+"end": 384.154,
+"prob": 0.832,
+"burst": 73
+},
+{
+"w": "thing,",
+"start": 384.175,
+"end": 384.355,
+"prob": 0.799,
+"burst": 73
+},
+{
+"w": "you",
+"start": 384.395,
+"end": 384.476,
+"prob": 0.995,
+"burst": 73
+},
+{
+"w": "are",
+"start": 384.536,
+"end": 384.636,
+"prob": 0.82,
+"burst": 73
+},
+{
+"w": "not",
+"start": 384.697,
+"end": 384.857,
+"prob": 0.79,
+"burst": 73
+},
+{
+"w": "a",
+"start": 384.877,
+"end": 384.897,
+"prob": 0.0,
+"burst": 73
+},
+{
+"w": "clipper.",
+"start": 385.098,
+"end": 385.42,
+"prob": 0.931,
+"burst": 73
+},
+{
+"w": "Here's",
+"start": 387.3,
+"end": 387.521,
+"prob": 0.768,
+"burst": 74
+},
+{
+"w": "the",
+"start": 387.541,
+"end": 387.601,
+"prob": 0.981,
+"burst": 74
+},
+{
+"w": "mindset",
+"start": 387.641,
+"end": 388.022,
+"prob": 0.694,
+"burst": 74
+},
+{
+"w": "shift",
+"start": 388.063,
+"end": 388.283,
+"prob": 0.772,
+"burst": 74
+},
+{
+"w": "like",
+"start": 388.303,
+"end": 388.484,
+"prob": 0.792,
+"burst": 74
+},
+{
+"w": "everyone",
+"start": 388.945,
+"end": 389.326,
+"prob": 0.824,
+"burst": 74
+},
+{
+"w": "can",
+"start": 389.367,
+"end": 389.507,
+"prob": 0.948,
+"burst": 74
+},
+{
+"w": "be",
+"start": 389.547,
+"end": 389.647,
+"prob": 0.844,
+"burst": 74
+},
+{
+"w": "a",
+"start": 389.687,
+"end": 389.708,
+"prob": 0.991,
+"burst": 74
+},
+{
+"w": "clipper",
+"start": 389.768,
+"end": 390.028,
+"prob": 0.727,
+"burst": 74
+},
+{
+"w": "I",
+"start": 390.129,
+"end": 390.189,
+"prob": 0.938,
+"burst": 74
+},
+{
+"w": "can",
+"start": 390.209,
+"end": 390.309,
+"prob": 0.936,
+"burst": 74
+},
+{
+"w": "I",
+"start": 391.524,
+"end": 391.584,
+"prob": 0.682,
+"burst": 75
+},
+{
+"w": "can",
+"start": 391.604,
+"end": 391.745,
+"prob": 0.99,
+"burst": 75
+},
+{
+"w": "get",
+"start": 391.785,
+"end": 391.946,
+"prob": 0.882,
+"burst": 75
+},
+{
+"w": "a",
+"start": 391.966,
+"end": 391.986,
+"prob": 0.0,
+"burst": 75
+},
+{
+"w": "new",
+"start": 392.287,
+"end": 392.448,
+"prob": 0.623,
+"burst": 75
+},
+{
+"w": "person.",
+"start": 392.488,
+"end": 392.829,
+"prob": 0.948,
+"burst": 75
+},
+{
+"w": "they",
+"start": 393.291,
+"end": 393.432,
+"prob": 0.913,
+"burst": 76
+},
+{
+"w": "can",
+"start": 393.452,
+"end": 393.593,
+"prob": 0.732,
+"burst": 76
+},
+{
+"w": "you",
+"start": 393.613,
+"end": 393.694,
+"prob": 0.489,
+"burst": 76
+},
+{
+"w": "know",
+"start": 393.714,
+"end": 393.855,
+"prob": 0.614,
+"burst": 76
+},
+{
+"w": "start",
+"start": 393.875,
+"end": 394.077,
+"prob": 0.88,
+"burst": 76
+},
+{
+"w": "to",
+"start": 394.097,
+"end": 394.178,
+"prob": 0.946,
+"burst": 76
+},
+{
+"w": "upload",
+"start": 394.218,
+"end": 394.52,
+"prob": 0.758,
+"burst": 76
+},
+{
+"w": "shorts",
+"start": 394.561,
+"end": 394.823,
+"prob": 0.851,
+"burst": 76
+},
+{
+"w": "five",
+"start": 394.903,
+"end": 395.105,
+"prob": 0.997,
+"burst": 76
+},
+{
+"w": "shorts",
+"start": 395.165,
+"end": 395.407,
+"prob": 0.866,
+"burst": 76
+},
+{
+"w": "a",
+"start": 395.447,
+"end": 395.468,
+"prob": 0.751,
+"burst": 76
+},
+{
+"w": "day",
+"start": 395.508,
+"end": 395.629,
+"prob": 0.956,
+"burst": 76
+},
+{
+"w": "clip",
+"start": 396.212,
+"end": 396.433,
+"prob": 0.975,
+"burst": 77
+},
+{
+"w": "random",
+"start": 396.474,
+"end": 396.796,
+"prob": 0.959,
+"burst": 77
+},
+{
+"w": "podcast",
+"start": 396.836,
+"end": 397.3,
+"prob": 0.81,
+"burst": 77
+},
+{
+"w": "uploaded",
+"start": 397.34,
+"end": 397.723,
+"prob": 0.709,
+"burst": 77
+},
+{
+"w": "onto",
+"start": 397.985,
+"end": 398.206,
+"prob": 0.887,
+"burst": 77
+},
+{
+"w": "YouTube.",
+"start": 398.267,
+"end": 398.67,
+"prob": 0.507,
+"burst": 77
+},
+{
+"w": "Anyone",
+"start": 399.411,
+"end": 399.712,
+"prob": 0.843,
+"burst": 78
+},
+{
+"w": "can",
+"start": 399.752,
+"end": 399.892,
+"prob": 0.946,
+"burst": 78
+},
+{
+"w": "do",
+"start": 399.952,
+"end": 400.073,
+"prob": 0.92,
+"burst": 78
+},
+{
+"w": "that.",
+"start": 400.113,
+"end": 400.273,
+"prob": 0.952,
+"burst": 78
+},
+{
+"w": "That",
+"start": 400.293,
+"end": 400.454,
+"prob": 0.82,
+"burst": 78
+},
+{
+"w": "doesn't",
+"start": 400.494,
+"end": 400.815,
+"prob": 0.553,
+"burst": 78
+},
+{
+"w": "that",
+"start": 400.855,
+"end": 400.976,
+"prob": 0.987,
+"burst": 78
+},
+{
+"w": "doesn't",
+"start": 401.016,
+"end": 401.256,
+"prob": 0.864,
+"burst": 78
+},
+{
+"w": "require",
+"start": 401.276,
+"end": 401.577,
+"prob": 0.921,
+"burst": 78
+},
+{
+"w": "talent.",
+"start": 401.618,
+"end": 401.939,
+"prob": 0.992,
+"burst": 78
+},
+{
+"w": "What",
+"start": 401.959,
+"end": 402.099,
+"prob": 0.912,
+"burst": 78
+},
+{
+"w": "requires",
+"start": 402.139,
+"end": 402.581,
+"prob": 0.911,
+"burst": 78
+},
+{
+"w": "talent",
+"start": 402.621,
+"end": 402.962,
+"prob": 0.974,
+"burst": 78
+},
+{
+"w": "is",
+"start": 403.323,
+"end": 403.423,
+"prob": 0.708,
+"burst": 78
+},
+{
+"w": "going",
+"start": 403.483,
+"end": 403.744,
+"prob": 0.855,
+"burst": 78
+},
+{
+"w": "viral",
+"start": 403.784,
+"end": 404.085,
+"prob": 0.566,
+"burst": 78
+},
+{
+"w": "consistently",
+"start": 404.125,
+"end": 404.767,
+"prob": 0.865,
+"burst": 78
+},
+{
+"w": "again",
+"start": 404.888,
+"end": 405.108,
+"prob": 0.922,
+"burst": 78
+},
+{
+"w": "and",
+"start": 405.129,
+"end": 405.209,
+"prob": 0.942,
+"burst": 78
+},
+{
+"w": "again",
+"start": 405.269,
+"end": 405.45,
+"prob": 0.913,
+"burst": 78
+},
+{
+"w": "And",
+"start": 406.612,
+"end": 406.713,
+"prob": 0.823,
+"burst": 79
+},
+{
+"w": "a",
+"start": 406.855,
+"end": 406.896,
+"prob": 0.972,
+"burst": 79
+},
+{
+"w": "clipper",
+"start": 406.936,
+"end": 407.241,
+"prob": 0.725,
+"burst": 79
+},
+{
+"w": "doesn't",
+"start": 407.281,
+"end": 407.504,
+"prob": 0.904,
+"burst": 79
+},
+{
+"w": "do",
+"start": 407.545,
+"end": 407.646,
+"prob": 1.0,
+"burst": 79
+},
+{
+"w": "that.",
+"start": 407.687,
+"end": 407.829,
+"prob": 0.933,
+"burst": 79
+},
+{
+"w": "Your",
+"start": 409.09,
+"end": 409.412,
+"prob": 0.589,
+"burst": 80
+},
+{
+"w": "job",
+"start": 409.432,
+"end": 409.693,
+"prob": 0.836,
+"burst": 80
+},
+{
+"w": "is",
+"start": 409.854,
+"end": 409.954,
+"prob": 0.817,
+"burst": 80
+},
+{
+"w": "a",
+"start": 410.075,
+"end": 410.115,
+"prob": 0.983,
+"burst": 80
+},
+{
+"w": "viral",
+"start": 410.236,
+"end": 410.698,
+"prob": 0.691,
+"burst": 80
+},
+{
+"w": "moment",
+"start": 410.919,
+"end": 411.16,
+"prob": 0.451,
+"burst": 80
+},
+{
+"w": "detector.",
+"start": 411.18,
+"end": 411.743,
+"prob": 0.476,
+"burst": 80
+},
+{
+"w": "Your",
+"start": 416.293,
+"end": 416.434,
+"prob": 0.832,
+"burst": 81
+},
+{
+"w": "job",
+"start": 416.454,
+"end": 416.675,
+"prob": 0.975,
+"burst": 81
+},
+{
+"w": "isn't",
+"start": 416.715,
+"end": 416.916,
+"prob": 0.51,
+"burst": 81
+},
+{
+"w": "cutting,",
+"start": 416.957,
+"end": 417.279,
+"prob": 0.967,
+"burst": 81
+},
+{
+"w": "your",
+"start": 417.319,
+"end": 417.48,
+"prob": 0.884,
+"burst": 81
+},
+{
+"w": "job",
+"start": 417.56,
+"end": 417.922,
+"prob": 0.936,
+"burst": 81
+},
+{
+"w": "is",
+"start": 418.124,
+"end": 418.224,
+"prob": 0.788,
+"burst": 81
+},
+{
+"w": "deciding.",
+"start": 418.305,
+"end": 419.009,
+"prob": 0.99,
+"burst": 81
+},
+{
+"w": "hey",
+"start": 419.43,
+"end": 419.651,
+"prob": 0.774,
+"burst": 82
+},
+{
+"w": "this",
+"start": 419.771,
+"end": 419.992,
+"prob": 0.929,
+"burst": 82
+},
+{
+"w": "will",
+"start": 420.052,
+"end": 420.253,
+"prob": 0.825,
+"burst": 82
+},
+{
+"w": "do",
+"start": 420.293,
+"end": 420.414,
+"prob": 0.991,
+"burst": 82
+},
+{
+"w": "well",
+"start": 420.494,
+"end": 420.715,
+"prob": 0.792,
+"burst": 82
+},
+{
+"w": "this",
+"start": 420.795,
+"end": 420.996,
+"prob": 0.861,
+"burst": 82
+},
+{
+"w": "will",
+"start": 421.016,
+"end": 421.216,
+"prob": 0.827,
+"burst": 82
+},
+{
+"w": "do",
+"start": 421.256,
+"end": 421.357,
+"prob": 0.992,
+"burst": 82
+},
+{
+"w": "well",
+"start": 421.377,
+"end": 421.537,
+"prob": 0.987,
+"burst": 82
+},
+{
+"w": "oh",
+"start": 421.638,
+"end": 421.718,
+"prob": 0.917,
+"burst": 82
+},
+{
+"w": "maybe",
+"start": 421.778,
+"end": 422.019,
+"prob": 0.896,
+"burst": 82
+},
+{
+"w": "if",
+"start": 422.039,
+"end": 422.099,
+"prob": 0.996,
+"burst": 82
+},
+{
+"w": "i",
+"start": 422.159,
+"end": 422.24,
+"prob": 0.894,
+"burst": 82
+},
+{
+"w": "rearrange",
+"start": 422.28,
+"end": 422.822,
+"prob": 0.892,
+"burst": 82
+},
+{
+"w": "the",
+"start": 422.882,
+"end": 422.962,
+"prob": 0.983,
+"burst": 82
+},
+{
+"w": "clip",
+"start": 423.002,
+"end": 423.203,
+"prob": 0.991,
+"burst": 82
+},
+{
+"w": "in",
+"start": 423.243,
+"end": 423.323,
+"prob": 0.826,
+"burst": 82
+},
+{
+"w": "that",
+"start": 423.384,
+"end": 423.624,
+"prob": 0.872,
+"burst": 82
+},
+{
+"w": "way",
+"start": 423.725,
+"end": 423.925,
+"prob": 0.878,
+"burst": 82
+},
+{
+"w": "maybe",
+"start": 424.267,
+"end": 424.507,
+"prob": 0.928,
+"burst": 82
+},
+{
+"w": "it",
+"start": 424.527,
+"end": 424.588,
+"prob": 0.934,
+"burst": 82
+},
+{
+"w": "will",
+"start": 424.608,
+"end": 424.768,
+"prob": 0.843,
+"burst": 82
+},
+{
+"w": "do",
+"start": 424.808,
+"end": 424.929,
+"prob": 0.996,
+"burst": 82
+},
+{
+"w": "well",
+"start": 424.989,
+"end": 425.17,
+"prob": 0.972,
+"burst": 82
+},
+{
+"w": "Think",
+"start": 425.66,
+"end": 425.882,
+"prob": 0.72,
+"burst": 83
+},
+{
+"w": "about",
+"start": 425.942,
+"end": 426.184,
+"prob": 0.946,
+"burst": 83
+},
+{
+"w": "it",
+"start": 426.204,
+"end": 426.284,
+"prob": 0.661,
+"burst": 83
+},
+{
+"w": "in",
+"start": 426.445,
+"end": 426.506,
+"prob": 0.998,
+"burst": 83
+},
+{
+"w": "that",
+"start": 426.626,
+"end": 426.868,
+"prob": 0.998,
+"burst": 83
+},
+{
+"w": "way.",
+"start": 426.928,
+"end": 427.17,
+"prob": 0.856,
+"burst": 83
+},
+{
+"w": "because",
+"start": 429.911,
+"end": 430.172,
+"prob": 0.926,
+"burst": 84
+},
+{
+"w": "the",
+"start": 430.212,
+"end": 430.333,
+"prob": 0.919,
+"burst": 84
+},
+{
+"w": "editing",
+"start": 430.413,
+"end": 430.735,
+"prob": 0.924,
+"burst": 84
+},
+{
+"w": "no",
+"start": 430.795,
+"end": 430.895,
+"prob": 0.861,
+"burst": 84
+},
+{
+"w": "matter",
+"start": 430.936,
+"end": 431.157,
+"prob": 0.973,
+"burst": 84
+},
+{
+"w": "how",
+"start": 431.237,
+"end": 431.518,
+"prob": 0.944,
+"burst": 84
+},
+{
+"w": "crazy",
+"start": 431.599,
+"end": 431.92,
+"prob": 0.933,
+"burst": 84
+},
+{
+"w": "of",
+"start": 431.961,
+"end": 432.041,
+"prob": 0.938,
+"burst": 84
+},
+{
+"w": "an",
+"start": 432.182,
+"end": 432.282,
+"prob": 0.793,
+"burst": 84
+},
+{
+"w": "editing",
+"start": 432.423,
+"end": 432.684,
+"prob": 0.974,
+"burst": 84
+},
+{
+"w": "style",
+"start": 432.724,
+"end": 432.945,
+"prob": 0.922,
+"burst": 84
+},
+{
+"w": "you",
+"start": 432.966,
+"end": 433.106,
+"prob": 0.881,
+"burst": 84
+},
+{
+"w": "have",
+"start": 433.146,
+"end": 433.327,
+"prob": 0.94,
+"burst": 84
+},
+{
+"w": "or",
+"start": 433.408,
+"end": 433.488,
+"prob": 0.822,
+"burst": 84
+},
+{
+"w": "anything",
+"start": 433.528,
+"end": 433.79,
+"prob": 0.946,
+"burst": 84
+},
+{
+"w": "it",
+"start": 434.222,
+"end": 434.283,
+"prob": 0.778,
+"burst": 85
+},
+{
+"w": "will",
+"start": 434.323,
+"end": 434.505,
+"prob": 0.995,
+"burst": 85
+},
+{
+"w": "not",
+"start": 434.546,
+"end": 434.707,
+"prob": 0.976,
+"burst": 85
+},
+{
+"w": "go",
+"start": 434.748,
+"end": 434.91,
+"prob": 0.872,
+"burst": 85
+},
+{
+"w": "viral",
+"start": 434.95,
+"end": 435.335,
+"prob": 0.76,
+"burst": 85
+},
+{
+"w": "because",
+"start": 435.375,
+"end": 435.638,
+"prob": 0.931,
+"burst": 85
+},
+{
+"w": "It's",
+"start": 436.351,
+"end": 436.492,
+"prob": 0.674,
+"burst": 86
+},
+{
+"w": "the",
+"start": 436.714,
+"end": 436.936,
+"prob": 0.916,
+"burst": 86
+},
+{
+"w": "clip",
+"start": 437.178,
+"end": 437.52,
+"prob": 0.937,
+"burst": 86
+},
+{
+"w": "is",
+"start": 437.701,
+"end": 437.782,
+"prob": 0.732,
+"burst": 86
+},
+{
+"w": "the",
+"start": 437.863,
+"end": 438.004,
+"prob": 0.844,
+"burst": 86
+},
+{
+"w": "idea.",
+"start": 438.225,
+"end": 438.749,
+"prob": 0.965,
+"burst": 86
+},
+{
+"w": "that",
+"start": 439.264,
+"end": 439.515,
+"prob": 0.785,
+"burst": 87
+},
+{
+"w": "that",
+"start": 439.91,
+"end": 440.091,
+"prob": 0.845,
+"burst": 88
+},
+{
+"w": "is",
+"start": 440.151,
+"end": 440.251,
+"prob": 0.83,
+"burst": 88
+},
+{
+"w": "in",
+"start": 440.291,
+"end": 440.372,
+"prob": 0.839,
+"burst": 88
+},
+{
+"w": "front",
+"start": 440.392,
+"end": 440.552,
+"prob": 0.994,
+"burst": 88
+},
+{
+"w": "of",
+"start": 440.572,
+"end": 440.633,
+"prob": 0.75,
+"burst": 88
+},
+{
+"w": "youtube's",
+"start": 440.673,
+"end": 441.094,
+"prob": 0.751,
+"burst": 88
+},
+{
+"w": "eyes",
+"start": 441.194,
+"end": 441.315,
+"prob": 0.887,
+"burst": 88
+},
+{
+"w": "that",
+"start": 441.375,
+"end": 441.555,
+"prob": 0.83,
+"burst": 88
+},
+{
+"w": "tells",
+"start": 441.636,
+"end": 441.917,
+"prob": 0.905,
+"burst": 88
+},
+{
+"w": "youtube",
+"start": 441.977,
+"end": 442.378,
+"prob": 0.605,
+"burst": 88
+},
+{
+"w": "that",
+"start": 442.458,
+"end": 442.639,
+"prob": 0.73,
+"burst": 88
+},
+{
+"w": "hey",
+"start": 442.699,
+"end": 442.859,
+"prob": 0.919,
+"burst": 88
+},
+{
+"w": "we",
+"start": 443.39,
+"end": 443.49,
+"prob": 0.76,
+"burst": 89
+},
+{
+"w": "have",
+"start": 443.51,
+"end": 443.631,
+"prob": 0.86,
+"burst": 89
+},
+{
+"w": "to",
+"start": 443.651,
+"end": 443.711,
+"prob": 0.893,
+"burst": 89
+},
+{
+"w": "push",
+"start": 443.751,
+"end": 443.951,
+"prob": 0.833,
+"burst": 89
+},
+{
+"w": "this",
+"start": 443.971,
+"end": 444.091,
+"prob": 0.396,
+"burst": 89
+},
+{
+"w": "clip",
+"start": 444.111,
+"end": 444.352,
+"prob": 0.862,
+"burst": 89
+},
+{
+"w": "or",
+"start": 444.552,
+"end": 444.632,
+"prob": 0.751,
+"burst": 89
+},
+{
+"w": "we",
+"start": 444.672,
+"end": 444.772,
+"prob": 0.952,
+"burst": 89
+},
+{
+"w": "have",
+"start": 444.792,
+"end": 444.953,
+"prob": 0.93,
+"burst": 89
+},
+{
+"w": "to",
+"start": 444.993,
+"end": 445.133,
+"prob": 0.891,
+"burst": 89
+},
+{
+"w": "like",
+"start": 445.333,
+"end": 445.514,
+"prob": 0.392,
+"burst": 89
+},
+{
+"w": "completely",
+"start": 445.574,
+"end": 446.034,
+"prob": 0.892,
+"burst": 89
+},
+{
+"w": "get",
+"start": 446.074,
+"end": 446.235,
+"prob": 0.793,
+"burst": 89
+},
+{
+"w": "rid",
+"start": 446.295,
+"end": 446.435,
+"prob": 0.788,
+"burst": 89
+},
+{
+"w": "of",
+"start": 446.475,
+"end": 446.535,
+"prob": 0.776,
+"burst": 89
+},
+{
+"w": "this",
+"start": 446.595,
+"end": 446.756,
+"prob": 0.771,
+"burst": 89
+},
+{
+"w": "on",
+"start": 446.996,
+"end": 447.216,
+"prob": 0.838,
+"burst": 89
+},
+{
+"w": "off",
+"start": 447.377,
+"end": 447.537,
+"prob": 0.924,
+"burst": 89
+},
+{
+"w": "the",
+"start": 447.557,
+"end": 447.637,
+"prob": 0.782,
+"burst": 89
+},
+{
+"w": "surface",
+"start": 447.677,
+"end": 448.038,
+"prob": 0.881,
+"burst": 89
+},
+{
+"w": "like",
+"start": 448.078,
+"end": 448.278,
+"prob": 0.7,
+"burst": 89
+},
+{
+"w": "shadow",
+"start": 448.398,
+"end": 448.668,
+"prob": 0.806,
+"burst": 89,
+"fixed": true
+},
+{
+"w": "ban",
+"start": 448.668,
+"end": 448.939,
+"prob": 0.806,
+"burst": 89,
+"fixed": true
+},
+{
+"w": "it",
+"start": 448.979,
+"end": 449.039,
+"prob": 0.616,
+"burst": 89
+},
+{
+"w": "or",
+"start": 449.099,
+"end": 449.159,
+"prob": 0.928,
+"burst": 89
+},
+{
+"w": "something",
+"start": 449.199,
+"end": 449.5,
+"prob": 0.988,
+"burst": 89
+},
+{
+"w": "right",
+"start": 455.48,
+"end": 455.641,
+"prob": 0.879,
+"burst": 90
+},
+{
+"w": "and",
+"start": 455.761,
+"end": 455.881,
+"prob": 0.495,
+"burst": 90
+},
+{
+"w": "and",
+"start": 456.001,
+"end": 456.082,
+"prob": 0.942,
+"burst": 90
+},
+{
+"w": "i've",
+"start": 456.142,
+"end": 456.282,
+"prob": 0.697,
+"burst": 90
+},
+{
+"w": "told",
+"start": 456.322,
+"end": 456.583,
+"prob": 0.952,
+"burst": 90
+},
+{
+"w": "you",
+"start": 456.623,
+"end": 456.783,
+"prob": 0.896,
+"burst": 90
+},
+{
+"w": "the",
+"start": 456.883,
+"end": 456.984,
+"prob": 0.977,
+"burst": 90
+},
+{
+"w": "solution",
+"start": 457.024,
+"end": 457.485,
+"prob": 0.832,
+"burst": 90
+},
+{
+"w": "for",
+"start": 457.545,
+"end": 457.705,
+"prob": 0.851,
+"burst": 90
+},
+{
+"w": "this",
+"start": 457.765,
+"end": 457.906,
+"prob": 0.952,
+"burst": 90
+},
+{
+"w": "right",
+"start": 457.966,
+"end": 458.166,
+"prob": 0.841,
+"burst": 90
+},
+{
+"w": "the",
+"start": 458.226,
+"end": 458.387,
+"prob": 0.784,
+"burst": 90
+},
+{
+"w": "the",
+"start": 458.607,
+"end": 458.707,
+"prob": 0.715,
+"burst": 90
+},
+{
+"w": "IShowSpeed",
+"start": 458.788,
+"end": 459.329,
+"prob": 0.589,
+"burst": 90,
+"fixed": true
+},
+{
+"w": "example",
+"start": 459.389,
+"end": 459.79,
+"prob": 0.945,
+"burst": 90
+},
+{
+"w": "If",
+"start": 460.521,
+"end": 460.883,
+"prob": 0.874,
+"burst": 91
+},
+{
+"w": "he",
+"start": 461.205,
+"end": 461.326,
+"prob": 0.992,
+"burst": 91
+},
+{
+"w": "uploaded",
+"start": 461.99,
+"end": 462.433,
+"prob": 0.856,
+"burst": 91
+},
+{
+"w": "the",
+"start": 462.553,
+"end": 462.654,
+"prob": 0.938,
+"burst": 91
+},
+{
+"w": "iPhone",
+"start": 462.775,
+"end": 463.036,
+"prob": 0.59,
+"burst": 91
+},
+{
+"w": "Duo",
+"start": 463.057,
+"end": 463.318,
+"prob": 0.714,
+"burst": 91
+},
+{
+"w": "clip",
+"start": 463.358,
+"end": 463.54,
+"prob": 0.826,
+"burst": 91
+},
+{
+"w": "you",
+"start": 463.881,
+"end": 463.962,
+"prob": 0.997,
+"burst": 92
+},
+{
+"w": "could",
+"start": 463.982,
+"end": 464.103,
+"prob": 0.896,
+"burst": 92
+},
+{
+"w": "have",
+"start": 464.143,
+"end": 464.264,
+"prob": 0.874,
+"burst": 92
+},
+{
+"w": "gone",
+"start": 464.304,
+"end": 464.526,
+"prob": 0.861,
+"burst": 92
+},
+{
+"w": "back",
+"start": 464.607,
+"end": 464.829,
+"prob": 0.998,
+"burst": 92
+},
+{
+"w": "you",
+"start": 465.47,
+"end": 465.571,
+"prob": 0.224,
+"burst": 93
+},
+{
+"w": "know",
+"start": 465.591,
+"end": 465.771,
+"prob": 0.48,
+"burst": 93
+},
+{
+"w": "flashback",
+"start": 465.811,
+"end": 466.433,
+"prob": 0.907,
+"burst": 93
+},
+{
+"w": "to",
+"start": 466.633,
+"end": 466.734,
+"prob": 0.99,
+"burst": 93
+},
+{
+"w": "the",
+"start": 466.754,
+"end": 466.834,
+"prob": 0.895,
+"burst": 93
+},
+{
+"w": "previous",
+"start": 466.894,
+"end": 467.335,
+"prob": 0.806,
+"burst": 93
+},
+{
+"w": "iphone",
+"start": 467.516,
+"end": 467.897,
+"prob": 0.79,
+"burst": 93
+},
+{
+"w": "17",
+"start": 468.037,
+"end": 468.579,
+"prob": 0.856,
+"burst": 93
+},
+{
+"w": "release",
+"start": 468.619,
+"end": 468.94,
+"prob": 0.914,
+"burst": 93
+},
+{
+"w": "reference",
+"start": 469.441,
+"end": 469.824,
+"prob": 0.582,
+"burst": 94
+},
+{
+"w": "it",
+"start": 469.905,
+"end": 469.986,
+"prob": 0.925,
+"burst": 94
+},
+{
+"w": "back",
+"start": 470.067,
+"end": 470.349,
+"prob": 0.994,
+"burst": 94
+},
+{
+"w": "you",
+"start": 470.803,
+"end": 470.905,
+"prob": 0.98,
+"burst": 95
+},
+{
+"w": "know,",
+"start": 470.945,
+"end": 471.17,
+"prob": 0.91,
+"burst": 95
+},
+{
+"w": "Okay.",
+"start": 472.682,
+"end": 473.006,
+"prob": 0.652,
+"burst": 96
+},
+{
+"w": "run",
+"start": 473.911,
+"end": 474.092,
+"prob": 0.881,
+"burst": 97
+},
+{
+"w": "another",
+"start": 474.132,
+"end": 474.493,
+"prob": 0.623,
+"burst": 97
+},
+{
+"w": "podcast",
+"start": 474.554,
+"end": 475.216,
+"prob": 0.821,
+"burst": 97
+},
+{
+"w": "where",
+"start": 475.256,
+"end": 475.477,
+"prob": 0.518,
+"burst": 97
+},
+{
+"w": "people",
+"start": 475.658,
+"end": 475.899,
+"prob": 0.98,
+"burst": 97
+},
+{
+"w": "are",
+"start": 475.939,
+"end": 476.019,
+"prob": 0.57,
+"burst": 97
+},
+{
+"w": "saying",
+"start": 476.039,
+"end": 476.22,
+"prob": 0.943,
+"burst": 97
+},
+{
+"w": "oh",
+"start": 476.401,
+"end": 476.521,
+"prob": 0.66,
+"burst": 97
+},
+{
+"w": "speed",
+"start": 476.561,
+"end": 476.883,
+"prob": 0.873,
+"burst": 97
+},
+{
+"w": "also",
+"start": 476.923,
+"end": 477.144,
+"prob": 0.957,
+"burst": 97
+},
+{
+"w": "got",
+"start": 477.184,
+"end": 477.344,
+"prob": 0.56,
+"burst": 97
+},
+{
+"w": "the",
+"start": 477.364,
+"end": 477.425,
+"prob": 0.961,
+"burst": 97
+},
+{
+"w": "iphone",
+"start": 477.505,
+"end": 477.806,
+"prob": 0.755,
+"burst": 97
+},
+{
+"w": "duo",
+"start": 477.826,
+"end": 478.127,
+"prob": 0.534,
+"burst": 97
+},
+{
+"w": "he",
+"start": 478.208,
+"end": 478.308,
+"prob": 0.942,
+"burst": 97
+},
+{
+"w": "got",
+"start": 478.348,
+"end": 478.549,
+"prob": 0.861,
+"burst": 97
+},
+{
+"w": "it",
+"start": 478.569,
+"end": 478.609,
+"prob": 0.818,
+"burst": 97
+},
+{
+"w": "He",
+"start": 479.211,
+"end": 479.331,
+"prob": 0.868,
+"burst": 98
+},
+{
+"w": "got",
+"start": 479.371,
+"end": 479.512,
+"prob": 0.843,
+"burst": 98
+},
+{
+"w": "it",
+"start": 479.532,
+"end": 479.592,
+"prob": 0.738,
+"burst": 98
+},
+{
+"w": "so",
+"start": 479.673,
+"end": 479.834,
+"prob": 1.0,
+"burst": 98
+},
+{
+"w": "quick",
+"start": 479.954,
+"end": 480.195,
+"prob": 0.916,
+"burst": 98
+},
+{
+"w": "and",
+"start": 480.236,
+"end": 480.316,
+"prob": 0.984,
+"burst": 98
+},
+{
+"w": "then",
+"start": 480.396,
+"end": 480.537,
+"prob": 0.986,
+"burst": 98
+},
+{
+"w": "he,",
+"start": 480.577,
+"end": 480.718,
+"prob": 0.957,
+"burst": 98
+},
+{
+"w": "you",
+"start": 481.06,
+"end": 481.14,
+"prob": 0.979,
+"burst": 98
+},
+{
+"w": "know,",
+"start": 481.16,
+"end": 481.361,
+"prob": 0.686,
+"burst": 98
+},
+{
+"w": "like,",
+"start": 481.401,
+"end": 481.602,
+"prob": 0.826,
+"burst": 98
+},
+{
+"w": "you",
+"start": 482.024,
+"end": 482.185,
+"prob": 0.691,
+"burst": 98
+},
+{
+"w": "understand",
+"start": 482.225,
+"end": 482.547,
+"prob": 0.856,
+"burst": 98
+},
+{
+"w": "what",
+"start": 482.567,
+"end": 482.687,
+"prob": 0.722,
+"burst": 98
+},
+{
+"w": "I'm",
+"start": 482.707,
+"end": 482.848,
+"prob": 0.417,
+"burst": 98
+},
+{
+"w": "saying?",
+"start": 482.888,
+"end": 483.109,
+"prob": 0.934,
+"burst": 98
+},
+{
+"w": "offer",
+"start": 483.511,
+"end": 483.792,
+"prob": 0.6,
+"burst": 99
+},
+{
+"w": "fresh",
+"start": 483.913,
+"end": 484.174,
+"prob": 0.985,
+"burst": 99
+},
+{
+"w": "new",
+"start": 484.234,
+"end": 484.355,
+"prob": 0.999,
+"burst": 99
+},
+{
+"w": "perspectives.",
+"start": 484.395,
+"end": 485.219,
+"prob": 0.94,
+"burst": 99
+},
+{
+"w": "so",
+"start": 485.68,
+"end": 485.801,
+"prob": 0.989,
+"burst": 100
+},
+{
+"w": "that",
+"start": 485.841,
+"end": 486.041,
+"prob": 0.956,
+"burst": 100
+},
+{
+"w": "youtube",
+"start": 486.442,
+"end": 486.803,
+"prob": 0.641,
+"burst": 100
+},
+{
+"w": "has",
+"start": 486.823,
+"end": 486.963,
+"prob": 0.902,
+"burst": 100
+},
+{
+"w": "a",
+"start": 487.003,
+"end": 487.023,
+"prob": 0.967,
+"burst": 100
+},
+{
+"w": "reason",
+"start": 487.083,
+"end": 487.344,
+"prob": 0.886,
+"burst": 100
+},
+{
+"w": "to",
+"start": 487.384,
+"end": 487.504,
+"prob": 0.821,
+"burst": 100
+},
+{
+"w": "push",
+"start": 487.564,
+"end": 487.805,
+"prob": 0.971,
+"burst": 100
+},
+{
+"w": "it",
+"start": 487.865,
+"end": 487.945,
+"prob": 0.821,
+"burst": 100
+},
+{
+"w": "because",
+"start": 488.005,
+"end": 488.246,
+"prob": 0.928,
+"burst": 100
+},
+{
+"w": "youtube",
+"start": 488.306,
+"end": 488.707,
+"prob": 0.59,
+"burst": 100
+},
+{
+"w": "pushes",
+"start": 488.747,
+"end": 489.067,
+"prob": 0.821,
+"burst": 100
+},
+{
+"w": "unique",
+"start": 489.208,
+"end": 489.548,
+"prob": 0.758,
+"burst": 100
+},
+{
+"w": "content",
+"start": 489.608,
+"end": 490.069,
+"prob": 0.798,
+"burst": 100
+},
+{
+"w": "now",
+"start": 490.109,
+"end": 490.27,
+"prob": 0.573,
+"burst": 100
+},
+{
+"w": "millions",
+"start": 490.991,
+"end": 491.432,
+"prob": 0.867,
+"burst": 101
+},
+{
+"w": "of",
+"start": 491.492,
+"end": 491.573,
+"prob": 0.998,
+"burst": 101
+},
+{
+"w": "pieces",
+"start": 491.633,
+"end": 491.894,
+"prob": 0.83,
+"burst": 101
+},
+{
+"w": "get",
+"start": 492.255,
+"end": 492.375,
+"prob": 0.995,
+"burst": 101
+},
+{
+"w": "uploaded",
+"start": 492.435,
+"end": 492.837,
+"prob": 0.904,
+"burst": 101
+},
+{
+"w": "per",
+"start": 492.877,
+"end": 493.037,
+"prob": 0.874,
+"burst": 101
+},
+{
+"w": "day",
+"start": 493.077,
+"end": 493.238,
+"prob": 0.935,
+"burst": 101
+},
+{
+"w": "they",
+"start": 493.539,
+"end": 493.699,
+"prob": 0.722,
+"burst": 101
+},
+{
+"w": "have",
+"start": 493.8,
+"end": 494.06,
+"prob": 0.974,
+"burst": 101
+},
+{
+"w": "to",
+"start": 494.1,
+"end": 494.221,
+"prob": 0.83,
+"burst": 101
+},
+{
+"w": "do",
+"start": 494.281,
+"end": 494.401,
+"prob": 0.994,
+"burst": 101
+},
+{
+"w": "this",
+"start": 494.462,
+"end": 494.622,
+"prob": 0.978,
+"burst": 101
+},
+{
+"w": "they",
+"start": 494.682,
+"end": 494.843,
+"prob": 0.84,
+"burst": 101
+},
+{
+"w": "are",
+"start": 494.943,
+"end": 495.063,
+"prob": 0.755,
+"burst": 101
+},
+{
+"w": "forced",
+"start": 495.184,
+"end": 495.485,
+"prob": 0.988,
+"burst": 101
+},
+{
+"w": "to",
+"start": 495.525,
+"end": 495.645,
+"prob": 0.846,
+"burst": 101
+},
+{
+"w": "do",
+"start": 495.725,
+"end": 495.866,
+"prob": 0.851,
+"burst": 101
+},
+{
+"w": "this",
+"start": 495.926,
+"end": 496.087,
+"prob": 0.839,
+"burst": 101
+},
+{
+"w": "because",
+"start": 496.147,
+"end": 496.428,
+"prob": 0.825,
+"burst": 101
+},
+{
+"w": "they",
+"start": 496.468,
+"end": 496.628,
+"prob": 0.846,
+"burst": 101
+},
+{
+"w": "cannot",
+"start": 496.668,
+"end": 497.03,
+"prob": 0.996,
+"burst": 101
+},
+{
+"w": "Have,",
+"start": 497.691,
+"end": 497.954,
+"prob": 0.844,
+"burst": 102
+},
+{
+"w": "you",
+"start": 498.276,
+"end": 498.357,
+"prob": 0.857,
+"burst": 102
+},
+{
+"w": "know.",
+"start": 498.377,
+"end": 498.518,
+"prob": 0.87,
+"burst": 102
+},
+{
+"w": "One",
+"start": 499.351,
+"end": 499.511,
+"prob": 0.692,
+"burst": 103
+},
+{
+"w": "one",
+"start": 500.092,
+"end": 500.212,
+"prob": 0.907,
+"burst": 103
+},
+{
+"w": "short",
+"start": 500.252,
+"end": 500.512,
+"prob": 0.776,
+"burst": 103
+},
+{
+"w": "and",
+"start": 500.572,
+"end": 500.672,
+"prob": 0.889,
+"burst": 103
+},
+{
+"w": "like",
+"start": 500.873,
+"end": 501.033,
+"prob": 0.791,
+"burst": 103
+},
+{
+"w": "56",
+"start": 501.093,
+"end": 501.694,
+"prob": 0.908,
+"burst": 103
+},
+{
+"w": "other",
+"start": 501.794,
+"end": 501.994,
+"prob": 0.81,
+"burst": 103
+},
+{
+"w": "variants",
+"start": 502.034,
+"end": 502.475,
+"prob": 0.819,
+"burst": 103
+},
+{
+"w": "of",
+"start": 502.535,
+"end": 502.615,
+"prob": 0.897,
+"burst": 103
+},
+{
+"w": "it",
+"start": 502.675,
+"end": 502.735,
+"prob": 0.867,
+"burst": 103
+},
+{
+"w": "also",
+"start": 503.116,
+"end": 503.376,
+"prob": 0.945,
+"burst": 103
+},
+{
+"w": "going",
+"start": 503.396,
+"end": 503.616,
+"prob": 0.819,
+"burst": 103
+},
+{
+"w": "viral",
+"start": 503.636,
+"end": 503.957,
+"prob": 0.607,
+"burst": 103
+},
+{
+"w": "at",
+"start": 503.977,
+"end": 504.037,
+"prob": 0.861,
+"burst": 103
+},
+{
+"w": "the",
+"start": 504.077,
+"end": 504.177,
+"prob": 0.924,
+"burst": 103
+},
+{
+"w": "same",
+"start": 504.217,
+"end": 504.418,
+"prob": 0.992,
+"burst": 103
+},
+{
+"w": "time.",
+"start": 504.498,
+"end": 504.698,
+"prob": 0.902,
+"burst": 103
+},
+{
+"w": "It's",
+"start": 504.738,
+"end": 504.878,
+"prob": 0.819,
+"burst": 103
+},
+{
+"w": "just",
+"start": 504.918,
+"end": 505.098,
+"prob": 0.936,
+"burst": 103
+},
+{
+"w": "not",
+"start": 505.159,
+"end": 505.319,
+"prob": 0.889,
+"burst": 103
+},
+{
+"w": "profitable",
+"start": 505.339,
+"end": 505.799,
+"prob": 0.888,
+"burst": 103
+},
+{
+"w": "for",
+"start": 505.839,
+"end": 505.96,
+"prob": 0.973,
+"burst": 103
+},
+{
+"w": "them",
+"start": 506.0,
+"end": 506.12,
+"prob": 0.966,
+"burst": 103
+},
+{
+"w": "They're",
+"start": 506.91,
+"end": 507.151,
+"prob": 0.708,
+"burst": 104
+},
+{
+"w": "not",
+"start": 507.191,
+"end": 507.352,
+"prob": 0.829,
+"burst": 104
+},
+{
+"w": "going",
+"start": 507.372,
+"end": 507.533,
+"prob": 0.766,
+"burst": 104
+},
+{
+"w": "to",
+"start": 507.553,
+"end": 507.613,
+"prob": 0.742,
+"burst": 104
+},
+{
+"w": "pay",
+"start": 507.633,
+"end": 507.854,
+"prob": 0.715,
+"burst": 104
+},
+{
+"w": "lazy",
+"start": 508.035,
+"end": 508.397,
+"prob": 0.856,
+"burst": 104
+},
+{
+"w": "creators.",
+"start": 508.457,
+"end": 509.039,
+"prob": 0.82,
+"burst": 104
+},
+{
+"w": "so",
+"start": 517.22,
+"end": 517.361,
+"prob": 0.962,
+"burst": 105
+},
+{
+"w": "how",
+"start": 517.401,
+"end": 517.582,
+"prob": 0.927,
+"burst": 105
+},
+{
+"w": "to",
+"start": 517.602,
+"end": 517.662,
+"prob": 0.728,
+"burst": 105
+},
+{
+"w": "do",
+"start": 517.723,
+"end": 517.803,
+"prob": 0.924,
+"burst": 105
+},
+{
+"w": "this",
+"start": 517.843,
+"end": 517.984,
+"prob": 0.84,
+"burst": 105
+},
+{
+"w": "actually",
+"start": 518.104,
+"end": 518.385,
+"prob": 0.947,
+"burst": 105
+},
+{
+"w": "every",
+"start": 518.425,
+"end": 518.606,
+"prob": 0.952,
+"burst": 105
+},
+{
+"w": "time",
+"start": 518.666,
+"end": 518.867,
+"prob": 0.921,
+"burst": 105
+},
+{
+"w": "every",
+"start": 519.229,
+"end": 519.369,
+"prob": 0.958,
+"burst": 105
+},
+{
+"w": "single",
+"start": 519.389,
+"end": 519.65,
+"prob": 0.604,
+"burst": 105
+},
+{
+"w": "time",
+"start": 519.67,
+"end": 519.871,
+"prob": 0.869,
+"burst": 105
+},
+{
+"w": "you",
+"start": 519.891,
+"end": 520.072,
+"prob": 0.737,
+"burst": 105
+},
+{
+"w": "you",
+"start": 520.112,
+"end": 520.193,
+"prob": 0.991,
+"burst": 105
+},
+{
+"w": "know",
+"start": 520.233,
+"end": 520.333,
+"prob": 0.987,
+"burst": 105
+},
+{
+"w": "you're",
+"start": 520.353,
+"end": 520.594,
+"prob": 0.775,
+"burst": 105
+},
+{
+"w": "clipping",
+"start": 520.835,
+"end": 521.096,
+"prob": 0.928,
+"burst": 105
+},
+{
+"w": "let's",
+"start": 521.136,
+"end": 521.277,
+"prob": 0.403,
+"burst": 105
+},
+{
+"w": "say",
+"start": 521.297,
+"end": 521.417,
+"prob": 0.498,
+"burst": 105
+},
+{
+"w": "IShowSpeed",
+"start": 521.458,
+"end": 521.96,
+"prob": 0.447,
+"burst": 105,
+"fixed": true
+},
+{
+"w": "IShowSpeed",
+"start": 522.712,
+"end": 523.294,
+"prob": 0.749,
+"burst": 106,
+"fixed": true
+},
+{
+"w": "you",
+"start": 523.314,
+"end": 523.394,
+"prob": 0.874,
+"burst": 106
+},
+{
+"w": "know,",
+"start": 523.435,
+"end": 523.535,
+"prob": 0.39,
+"burst": 106
+},
+{
+"w": "upload",
+"start": 523.575,
+"end": 523.856,
+"prob": 0.649,
+"burst": 106
+},
+{
+"w": "something",
+"start": 523.897,
+"end": 524.178,
+"prob": 0.927,
+"burst": 106
+},
+{
+"w": "brand",
+"start": 524.218,
+"end": 524.459,
+"prob": 0.837,
+"burst": 106
+},
+{
+"w": "new.",
+"start": 524.499,
+"end": 524.64,
+"prob": 0.684,
+"burst": 106
+},
+{
+"w": "Think",
+"start": 525.16,
+"end": 525.361,
+"prob": 0.988,
+"burst": 107
+},
+{
+"w": "of",
+"start": 525.421,
+"end": 525.501,
+"prob": 0.944,
+"burst": 107
+},
+{
+"w": "the",
+"start": 525.541,
+"end": 525.641,
+"prob": 0.84,
+"burst": 107
+},
+{
+"w": "generic",
+"start": 525.722,
+"end": 526.203,
+"prob": 0.912,
+"burst": 107
+},
+{
+"w": "angle,",
+"start": 526.263,
+"end": 526.744,
+"prob": 0.766,
+"burst": 107
+},
+{
+"w": "what",
+"start": 526.864,
+"end": 527.025,
+"prob": 0.819,
+"burst": 107
+},
+{
+"w": "comes",
+"start": 527.105,
+"end": 527.345,
+"prob": 0.772,
+"burst": 107
+},
+{
+"w": "onto",
+"start": 527.506,
+"end": 527.706,
+"prob": 0.9,
+"burst": 107
+},
+{
+"w": "your",
+"start": 527.746,
+"end": 527.867,
+"prob": 0.931,
+"burst": 107
+},
+{
+"w": "mind",
+"start": 527.907,
+"end": 528.107,
+"prob": 0.925,
+"burst": 107
+},
+{
+"w": "exactly",
+"start": 528.328,
+"end": 528.929,
+"prob": 0.867,
+"burst": 107
+},
+{
+"w": "when",
+"start": 528.989,
+"end": 529.17,
+"prob": 0.889,
+"burst": 107
+},
+{
+"w": "that",
+"start": 529.21,
+"end": 529.37,
+"prob": 0.935,
+"burst": 107
+},
+{
+"w": "video",
+"start": 529.51,
+"end": 530.593,
+"prob": 0.609,
+"burst": 107
+},
+{
+"w": "gets",
+"start": 530.994,
+"end": 531.154,
+"prob": 0.864,
+"burst": 107
+},
+{
+"w": "uploaded",
+"start": 531.194,
+"end": 531.515,
+"prob": 0.602,
+"burst": 107
+},
+{
+"w": "by",
+"start": 531.555,
+"end": 531.675,
+"prob": 0.749,
+"burst": 107
+},
+{
+"w": "speed",
+"start": 531.696,
+"end": 532.056,
+"prob": 0.742,
+"burst": 107
+},
+{
+"w": "or",
+"start": 532.157,
+"end": 532.237,
+"prob": 0.708,
+"burst": 107
+},
+{
+"w": "any",
+"start": 532.317,
+"end": 532.457,
+"prob": 0.81,
+"burst": 107
+},
+{
+"w": "other",
+"start": 532.477,
+"end": 532.658,
+"prob": 0.864,
+"burst": 107
+},
+{
+"w": "big",
+"start": 532.698,
+"end": 532.858,
+"prob": 0.61,
+"burst": 107
+},
+{
+"w": "stream",
+"start": 532.878,
+"end": 533.119,
+"prob": 0.576,
+"burst": 107
+},
+{
+"w": "or",
+"start": 533.159,
+"end": 533.239,
+"prob": 0.764,
+"burst": 107
+},
+{
+"w": "anything.",
+"start": 533.299,
+"end": 533.58,
+"prob": 0.904,
+"burst": 107
+},
+{
+"w": "Got",
+"start": 535.434,
+"end": 535.597,
+"prob": 0.96,
+"burst": 108
+},
+{
+"w": "that",
+"start": 535.638,
+"end": 535.8,
+"prob": 0.914,
+"burst": 108
+},
+{
+"w": "in",
+"start": 535.821,
+"end": 535.882,
+"prob": 0.883,
+"burst": 108
+},
+{
+"w": "your",
+"start": 535.922,
+"end": 536.044,
+"prob": 0.875,
+"burst": 108
+},
+{
+"w": "head?",
+"start": 536.085,
+"end": 536.207,
+"prob": 0.858,
+"burst": 108
+},
+{
+"w": "Don't",
+"start": 536.791,
+"end": 537.052,
+"prob": 0.72,
+"burst": 109
+},
+{
+"w": "do",
+"start": 537.092,
+"end": 537.232,
+"prob": 0.874,
+"burst": 109
+},
+{
+"w": "that",
+"start": 537.272,
+"end": 537.393,
+"prob": 0.925,
+"burst": 109
+},
+{
+"w": "because",
+"start": 537.453,
+"end": 537.714,
+"prob": 0.766,
+"burst": 109
+},
+{
+"w": "everyone",
+"start": 537.975,
+"end": 538.376,
+"prob": 0.791,
+"burst": 109
+},
+{
+"w": "else",
+"start": 538.456,
+"end": 538.597,
+"prob": 0.896,
+"burst": 109
+},
+{
+"w": "will",
+"start": 538.637,
+"end": 538.818,
+"prob": 0.834,
+"burst": 109
+},
+{
+"w": "be",
+"start": 538.838,
+"end": 538.958,
+"prob": 0.808,
+"burst": 109
+},
+{
+"w": "doing",
+"start": 538.978,
+"end": 539.239,
+"prob": 0.739,
+"burst": 109
+},
+{
+"w": "that.",
+"start": 539.299,
+"end": 539.44,
+"prob": 0.969,
+"burst": 109
+},
+{
+"w": "what",
+"start": 539.89,
+"end": 540.131,
+"prob": 0.722,
+"burst": 110
+},
+{
+"w": "your",
+"start": 540.171,
+"end": 540.371,
+"prob": 0.842,
+"burst": 110
+},
+{
+"w": "job",
+"start": 540.412,
+"end": 540.632,
+"prob": 0.897,
+"burst": 110
+},
+{
+"w": "is",
+"start": 540.732,
+"end": 540.853,
+"prob": 0.826,
+"burst": 110
+},
+{
+"w": "you",
+"start": 541.133,
+"end": 541.233,
+"prob": 0.333,
+"burst": 110
+},
+{
+"w": "know",
+"start": 541.253,
+"end": 541.354,
+"prob": 0.13,
+"burst": 110
+},
+{
+"w": "go",
+"start": 541.434,
+"end": 541.594,
+"prob": 0.986,
+"burst": 110
+},
+{
+"w": "on",
+"start": 541.634,
+"end": 541.735,
+"prob": 0.618,
+"burst": 110
+},
+{
+"w": "to",
+"start": 541.775,
+"end": 541.855,
+"prob": 0.936,
+"burst": 110
+},
+{
+"w": "Claude",
+"start": 541.875,
+"end": 542.236,
+"prob": 0.835,
+"burst": 110,
+"fixed": true
+},
+{
+"w": "go",
+"start": 542.256,
+"end": 542.296,
+"prob": 0.001,
+"burst": 110
+},
+{
+"w": "on",
+"start": 542.476,
+"end": 542.657,
+"prob": 0.762,
+"burst": 110
+},
+{
+"w": "to",
+"start": 542.677,
+"end": 542.757,
+"prob": 0.764,
+"burst": 110
+},
+{
+"w": "Claude",
+"start": 542.777,
+"end": 543.037,
+"prob": 0.797,
+"burst": 110,
+"fixed": true
+},
+{
+"w": "pro",
+"start": 543.057,
+"end": 543.338,
+"prob": 0.79,
+"burst": 110
+},
+{
+"w": "Claude",
+"start": 543.518,
+"end": 543.779,
+"prob": 0.896,
+"burst": 110,
+"fixed": true
+},
+{
+"w": "max",
+"start": 543.819,
+"end": 544.0,
+"prob": 0.999,
+"burst": 110
+},
+{
+"w": "ask",
+"start": 544.792,
+"end": 544.993,
+"prob": 0.832,
+"burst": 111
+},
+{
+"w": "okay",
+"start": 545.296,
+"end": 545.719,
+"prob": 0.772,
+"burst": 111
+},
+{
+"w": "we've",
+"start": 545.92,
+"end": 546.102,
+"prob": 0.369,
+"burst": 111
+},
+{
+"w": "got",
+"start": 546.122,
+"end": 546.303,
+"prob": 0.731,
+"burst": 111
+},
+{
+"w": "this",
+"start": 546.344,
+"end": 546.465,
+"prob": 0.48,
+"burst": 111
+},
+{
+"w": "brand",
+"start": 546.505,
+"end": 546.686,
+"prob": 0.715,
+"burst": 111
+},
+{
+"w": "new",
+"start": 546.706,
+"end": 546.827,
+"prob": 0.448,
+"burst": 111
+},
+{
+"w": "clip",
+"start": 546.848,
+"end": 547.029,
+"prob": 0.872,
+"burst": 111
+},
+{
+"w": "you",
+"start": 547.46,
+"end": 547.54,
+"prob": 0.918,
+"burst": 112
+},
+{
+"w": "know",
+"start": 547.56,
+"end": 547.72,
+"prob": 0.816,
+"burst": 112
+},
+{
+"w": "brainstorm",
+"start": 548.682,
+"end": 549.282,
+"prob": 0.71,
+"burst": 112
+},
+{
+"w": "ideas",
+"start": 549.383,
+"end": 549.843,
+"prob": 0.866,
+"burst": 112
+},
+{
+"w": "you",
+"start": 550.003,
+"end": 550.063,
+"prob": 0.925,
+"burst": 112
+},
+{
+"w": "know",
+"start": 550.103,
+"end": 550.244,
+"prob": 0.798,
+"burst": 112
+},
+{
+"w": "can",
+"start": 550.264,
+"end": 550.424,
+"prob": 0.907,
+"burst": 112
+},
+{
+"w": "you",
+"start": 550.464,
+"end": 550.604,
+"prob": 0.974,
+"burst": 112
+},
+{
+"w": "can",
+"start": 550.884,
+"end": 550.984,
+"prob": 0.982,
+"burst": 112
+},
+{
+"w": "you",
+"start": 551.025,
+"end": 551.145,
+"prob": 0.883,
+"burst": 112
+},
+{
+"w": "reference",
+"start": 551.225,
+"end": 551.685,
+"prob": 0.826,
+"burst": 112
+},
+{
+"w": "some",
+"start": 551.785,
+"end": 551.946,
+"prob": 0.855,
+"burst": 112
+},
+{
+"w": "other",
+"start": 552.066,
+"end": 552.266,
+"prob": 0.898,
+"burst": 112
+},
+{
+"w": "podcast",
+"start": 552.326,
+"end": 553.007,
+"prob": 0.831,
+"burst": 112
+},
+{
+"w": "of",
+"start": 553.087,
+"end": 553.187,
+"prob": 0.881,
+"burst": 112
+},
+{
+"w": "IShowSpeed",
+"start": 553.207,
+"end": 553.968,
+"prob": 0.469,
+"burst": 112,
+"fixed": true
+},
+{
+"w": "to",
+"start": 553.988,
+"end": 554.108,
+"prob": 0.838,
+"burst": 112
+},
+{
+"w": "attach",
+"start": 554.208,
+"end": 554.589,
+"prob": 0.959,
+"burst": 112
+},
+{
+"w": "it",
+"start": 554.649,
+"end": 554.729,
+"prob": 0.635,
+"burst": 112
+},
+{
+"w": "with",
+"start": 554.769,
+"end": 554.929,
+"prob": 0.879,
+"burst": 112
+},
+{
+"w": "this",
+"start": 555.029,
+"end": 555.25,
+"prob": 0.995,
+"burst": 112
+},
+{
+"w": "you",
+"start": 555.75,
+"end": 555.831,
+"prob": 0.986,
+"burst": 113
+},
+{
+"w": "know",
+"start": 555.871,
+"end": 555.991,
+"prob": 0.91,
+"burst": 113
+},
+{
+"w": "if",
+"start": 556.092,
+"end": 556.192,
+"prob": 0.85,
+"burst": 113
+},
+{
+"w": "for",
+"start": 556.212,
+"end": 556.332,
+"prob": 0.91,
+"burst": 113
+},
+{
+"w": "example",
+"start": 556.353,
+"end": 556.613,
+"prob": 0.692,
+"burst": 113
+},
+{
+"w": "a",
+"start": 556.654,
+"end": 556.794,
+"prob": 0.416,
+"burst": 113
+},
+{
+"w": "speed",
+"start": 556.834,
+"end": 557.115,
+"prob": 0.987,
+"burst": 113
+},
+{
+"w": "wins",
+"start": 557.356,
+"end": 557.637,
+"prob": 0.835,
+"burst": 113
+},
+{
+"w": "an",
+"start": 557.697,
+"end": 557.778,
+"prob": 0.789,
+"burst": 113
+},
+{
+"w": "award",
+"start": 557.838,
+"end": 558.279,
+"prob": 0.909,
+"burst": 113
+},
+{
+"w": "Can",
+"start": 558.68,
+"end": 558.881,
+"prob": 0.877,
+"burst": 114
+},
+{
+"w": "you",
+"start": 558.921,
+"end": 559.121,
+"prob": 0.88,
+"burst": 114
+},
+{
+"w": "go",
+"start": 559.502,
+"end": 559.763,
+"prob": 0.92,
+"burst": 114
+},
+{
+"w": "back",
+"start": 559.903,
+"end": 560.204,
+"prob": 0.938,
+"burst": 114
+},
+{
+"w": "to",
+"start": 560.304,
+"end": 560.425,
+"prob": 0.871,
+"burst": 114
+},
+{
+"w": "his",
+"start": 560.465,
+"end": 560.585,
+"prob": 0.683,
+"burst": 114
+},
+{
+"w": "old",
+"start": 560.766,
+"end": 560.906,
+"prob": 0.885,
+"burst": 114
+},
+{
+"w": "videos",
+"start": 560.946,
+"end": 561.287,
+"prob": 0.688,
+"burst": 114
+},
+{
+"w": "where",
+"start": 561.307,
+"end": 561.447,
+"prob": 0.891,
+"burst": 114
+},
+{
+"w": "he",
+"start": 561.467,
+"end": 561.568,
+"prob": 0.846,
+"burst": 114
+},
+{
+"w": "got",
+"start": 561.608,
+"end": 561.788,
+"prob": 0.921,
+"burst": 114
+},
+{
+"w": "bullied",
+"start": 561.828,
+"end": 562.129,
+"prob": 0.856,
+"burst": 114
+},
+{
+"w": "by",
+"start": 562.169,
+"end": 562.33,
+"prob": 0.968,
+"burst": 114
+},
+{
+"w": "his",
+"start": 562.39,
+"end": 562.51,
+"prob": 0.798,
+"burst": 114
+},
+{
+"w": "mom",
+"start": 562.63,
+"end": 562.951,
+"prob": 0.802,
+"burst": 114
+},
+{
+"w": "and",
+"start": 562.991,
+"end": 563.092,
+"prob": 0.846,
+"burst": 114
+},
+{
+"w": "now",
+"start": 563.152,
+"end": 563.332,
+"prob": 0.961,
+"burst": 114
+},
+{
+"w": "he's",
+"start": 563.392,
+"end": 563.613,
+"prob": 0.902,
+"burst": 114
+},
+{
+"w": "this",
+"start": 563.693,
+"end": 563.874,
+"prob": 0.916,
+"burst": 114
+},
+{
+"w": "big",
+"start": 563.954,
+"end": 564.154,
+"prob": 0.997,
+"burst": 114
+},
+{
+"w": "superstar",
+"start": 564.214,
+"end": 564.836,
+"prob": 0.866,
+"burst": 114
+},
+{
+"w": "you",
+"start": 565.137,
+"end": 565.237,
+"prob": 0.89,
+"burst": 114
+},
+{
+"w": "understand",
+"start": 565.257,
+"end": 565.638,
+"prob": 0.889,
+"burst": 114
+},
+{
+"w": "what",
+"start": 565.678,
+"end": 565.779,
+"prob": 0.876,
+"burst": 114
+},
+{
+"w": "i'm",
+"start": 565.799,
+"end": 565.919,
+"prob": 0.327,
+"burst": 114
+},
+{
+"w": "saying?",
+"start": 565.959,
+"end": 566.2,
+"prob": 0.986,
+"burst": 114
+},
+{
+"w": "You",
+"start": 566.73,
+"end": 566.831,
+"prob": 0.804,
+"burst": 115
+},
+{
+"w": "can",
+"start": 566.851,
+"end": 566.991,
+"prob": 0.991,
+"burst": 115
+},
+{
+"w": "do",
+"start": 567.071,
+"end": 567.232,
+"prob": 0.904,
+"burst": 115
+},
+{
+"w": "all",
+"start": 567.332,
+"end": 567.492,
+"prob": 0.885,
+"burst": 115
+},
+{
+"w": "that",
+"start": 567.553,
+"end": 567.733,
+"prob": 0.83,
+"burst": 115
+},
+{
+"w": "all",
+"start": 567.793,
+"end": 567.913,
+"prob": 0.933,
+"burst": 115
+},
+{
+"w": "this",
+"start": 567.954,
+"end": 568.094,
+"prob": 0.789,
+"burst": 115
+},
+{
+"w": "research",
+"start": 568.134,
+"end": 568.455,
+"prob": 0.364,
+"burst": 115
+},
+{
+"w": "and",
+"start": 568.515,
+"end": 568.615,
+"prob": 0.861,
+"burst": 115
+},
+{
+"w": "Claude",
+"start": 568.675,
+"end": 568.976,
+"prob": 0.802,
+"burst": 115,
+"fixed": true
+},
+{
+"w": "can",
+"start": 569.036,
+"end": 569.197,
+"prob": 0.902,
+"burst": 115
+},
+{
+"w": "help",
+"start": 569.237,
+"end": 569.437,
+"prob": 0.961,
+"burst": 115
+},
+{
+"w": "you",
+"start": 569.477,
+"end": 569.598,
+"prob": 0.921,
+"burst": 115
+},
+{
+"w": "out",
+"start": 569.698,
+"end": 569.818,
+"prob": 0.9,
+"burst": 115
+},
+{
+"w": "a",
+"start": 569.939,
+"end": 569.999,
+"prob": 0.954,
+"burst": 115
+},
+{
+"w": "lot",
+"start": 570.079,
+"end": 570.3,
+"prob": 0.99,
+"burst": 115
+},
+{
+"w": "It's",
+"start": 570.801,
+"end": 570.922,
+"prob": 0.7,
+"burst": 116
+},
+{
+"w": "just",
+"start": 570.943,
+"end": 571.144,
+"prob": 0.896,
+"burst": 116
+},
+{
+"w": "$20",
+"start": 571.427,
+"end": 572.073,
+"prob": 0.288,
+"burst": 116
+},
+{
+"w": "a",
+"start": 572.113,
+"end": 572.154,
+"prob": 0.499,
+"burst": 116
+},
+{
+"w": "month,",
+"start": 572.214,
+"end": 572.477,
+"prob": 0.853,
+"burst": 116
+},
+{
+"w": "you",
+"start": 572.497,
+"end": 572.578,
+"prob": 0.916,
+"burst": 116
+},
+{
+"w": "know?",
+"start": 572.598,
+"end": 572.719,
+"prob": 0.901,
+"burst": 116
+},
+{
+"w": "You",
+"start": 573.701,
+"end": 573.801,
+"prob": 0.744,
+"burst": 117
+},
+{
+"w": "don't",
+"start": 573.821,
+"end": 574.002,
+"prob": 0.775,
+"burst": 117
+},
+{
+"w": "have",
+"start": 574.042,
+"end": 574.202,
+"prob": 0.883,
+"burst": 117
+},
+{
+"w": "to",
+"start": 574.222,
+"end": 574.302,
+"prob": 0.757,
+"burst": 117
+},
+{
+"w": "get",
+"start": 574.322,
+"end": 574.442,
+"prob": 0.846,
+"burst": 117
+},
+{
+"w": "the",
+"start": 574.462,
+"end": 574.542,
+"prob": 0.818,
+"burst": 117
+},
+{
+"w": "$100",
+"start": 574.582,
+"end": 575.023,
+"prob": 0.888,
+"burst": 117
+},
+{
+"w": "or",
+"start": 575.043,
+"end": 575.103,
+"prob": 0.747,
+"burst": 117
+},
+{
+"w": "$200",
+"start": 575.123,
+"end": 575.684,
+"prob": 0.87,
+"burst": 117
+},
+{
+"w": "per",
+"start": 575.724,
+"end": 575.824,
+"prob": 0.955,
+"burst": 117
+},
+{
+"w": "month",
+"start": 575.864,
+"end": 576.045,
+"prob": 0.929,
+"burst": 117
+},
+{
+"w": "plan.",
+"start": 576.065,
+"end": 576.285,
+"prob": 0.759,
+"burst": 117
+},
+{
+"w": "That's",
+"start": 576.325,
+"end": 576.585,
+"prob": 0.894,
+"burst": 117
+},
+{
+"w": "how",
+"start": 576.625,
+"end": 576.746,
+"prob": 0.675,
+"burst": 117
+},
+{
+"w": "you",
+"start": 576.806,
+"end": 576.926,
+"prob": 0.794,
+"burst": 117
+},
+{
+"w": "will",
+"start": 576.966,
+"end": 577.146,
+"prob": 0.784,
+"burst": 117
+},
+{
+"w": "actually",
+"start": 577.246,
+"end": 577.547,
+"prob": 0.908,
+"burst": 117
+},
+{
+"w": "stand",
+"start": 577.567,
+"end": 577.807,
+"prob": 0.814,
+"burst": 117
+},
+{
+"w": "out.",
+"start": 577.867,
+"end": 577.987,
+"prob": 0.99,
+"burst": 117
+},
+{
+"w": "That's",
+"start": 578.047,
+"end": 578.268,
+"prob": 0.922,
+"burst": 117
+},
+{
+"w": "how",
+"start": 578.308,
+"end": 578.428,
+"prob": 0.884,
+"burst": 117
+},
+{
+"w": "you",
+"start": 578.468,
+"end": 578.548,
+"prob": 1.0,
+"burst": 117
+},
+{
+"w": "will",
+"start": 578.568,
+"end": 578.708,
+"prob": 0.901,
+"burst": 117
+},
+{
+"w": "actually",
+"start": 578.789,
+"end": 579.089,
+"prob": 0.898,
+"burst": 117
+},
+{
+"w": "make",
+"start": 579.149,
+"end": 579.309,
+"prob": 0.86,
+"burst": 117
+},
+{
+"w": "money.",
+"start": 579.389,
+"end": 579.61,
+"prob": 0.827,
+"burst": 117
+},
+{
+"w": "Right.",
+"start": 580.071,
+"end": 580.293,
+"prob": 0.838,
+"burst": 118
+},
+{
+"w": "And",
+"start": 580.635,
+"end": 580.716,
+"prob": 0.873,
+"burst": 118
+},
+{
+"w": "January",
+"start": 580.756,
+"end": 581.099,
+"prob": 0.835,
+"burst": 118
+},
+{
+"w": "31st,",
+"start": 581.139,
+"end": 581.603,
+"prob": 0.867,
+"burst": 118
+},
+{
+"w": "everyone",
+"start": 581.643,
+"end": 581.966,
+"prob": 0.847,
+"burst": 118
+},
+{
+"w": "knows",
+"start": 582.006,
+"end": 582.207,
+"prob": 0.97,
+"burst": 118
+},
+{
+"w": "it.",
+"start": 582.228,
+"end": 582.288,
+"prob": 0.33,
+"burst": 118
+},
+{
+"w": "the",
+"start": 582.931,
+"end": 583.032,
+"prob": 0.991,
+"burst": 119
+},
+{
+"w": "requirements",
+"start": 583.072,
+"end": 583.715,
+"prob": 0.948,
+"burst": 119
+},
+{
+"w": "are",
+"start": 583.976,
+"end": 584.097,
+"prob": 0.824,
+"burst": 119
+},
+{
+"w": "getting",
+"start": 584.157,
+"end": 584.378,
+"prob": 0.928,
+"burst": 119
+},
+{
+"w": "doubled.",
+"start": 584.418,
+"end": 584.72,
+"prob": 0.895,
+"burst": 119
+},
+{
+"w": "you",
+"start": 592.88,
+"end": 592.96,
+"prob": 0.897,
+"burst": 120
+},
+{
+"w": "know",
+"start": 593.0,
+"end": 593.12,
+"prob": 0.874,
+"burst": 120
+},
+{
+"w": "and",
+"start": 593.241,
+"end": 593.321,
+"prob": 0.85,
+"burst": 120
+},
+{
+"w": "and",
+"start": 593.421,
+"end": 593.521,
+"prob": 0.912,
+"burst": 120
+},
+{
+"w": "then",
+"start": 593.581,
+"end": 593.781,
+"prob": 0.988,
+"burst": 120
+},
+{
+"w": "do",
+"start": 593.841,
+"end": 593.982,
+"prob": 0.948,
+"burst": 120
+},
+{
+"w": "the",
+"start": 594.022,
+"end": 594.122,
+"prob": 0.851,
+"burst": 120
+},
+{
+"w": "fun",
+"start": 594.182,
+"end": 594.382,
+"prob": 0.867,
+"burst": 120
+},
+{
+"w": "stuff",
+"start": 594.402,
+"end": 594.683,
+"prob": 0.474,
+"burst": 120
+},
+{
+"w": "right",
+"start": 594.743,
+"end": 594.923,
+"prob": 0.806,
+"burst": 120
+},
+{
+"w": "then",
+"start": 595.003,
+"end": 595.243,
+"prob": 0.917,
+"burst": 120
+},
+{
+"w": "then",
+"start": 595.444,
+"end": 595.644,
+"prob": 0.96,
+"burst": 120
+},
+{
+"w": "do",
+"start": 595.684,
+"end": 595.824,
+"prob": 0.988,
+"burst": 120
+},
+{
+"w": "the",
+"start": 595.864,
+"end": 595.984,
+"prob": 0.777,
+"burst": 120
+},
+{
+"w": "editing",
+"start": 596.104,
+"end": 596.425,
+"prob": 0.972,
+"burst": 120
+},
+{
+"w": "style",
+"start": 596.485,
+"end": 596.905,
+"prob": 0.839,
+"burst": 120
+},
+{
+"w": "you",
+"start": 597.326,
+"end": 597.406,
+"prob": 0.978,
+"burst": 120
+},
+{
+"w": "know",
+"start": 597.446,
+"end": 597.586,
+"prob": 0.697,
+"burst": 120
+},
+{
+"w": "incorporate",
+"start": 597.967,
+"end": 598.387,
+"prob": 0.644,
+"burst": 120
+},
+{
+"w": "some",
+"start": 598.427,
+"end": 598.568,
+"prob": 0.912,
+"burst": 120
+},
+{
+"w": "really",
+"start": 598.628,
+"end": 598.848,
+"prob": 0.85,
+"burst": 120
+},
+{
+"w": "good",
+"start": 598.888,
+"end": 599.048,
+"prob": 0.76,
+"burst": 120
+},
+{
+"w": "music",
+"start": 599.088,
+"end": 599.389,
+"prob": 0.936,
+"burst": 120
+},
+{
+"w": "trending",
+"start": 599.429,
+"end": 599.809,
+"prob": 0.907,
+"burst": 120
+},
+{
+"w": "music",
+"start": 599.889,
+"end": 600.21,
+"prob": 0.969,
+"burst": 120
+},
+{
+"w": "And",
+"start": 601.021,
+"end": 601.122,
+"prob": 0.987,
+"burst": 121
+},
+{
+"w": "then,",
+"start": 601.302,
+"end": 601.583,
+"prob": 0.93,
+"burst": 121
+},
+{
+"w": "you",
+"start": 601.723,
+"end": 601.824,
+"prob": 0.926,
+"burst": 121
+},
+{
+"w": "know,",
+"start": 601.844,
+"end": 602.024,
+"prob": 0.854,
+"burst": 121
+},
+{
+"w": "your",
+"start": 602.084,
+"end": 602.265,
+"prob": 0.96,
+"burst": 121
+},
+{
+"w": "short",
+"start": 602.325,
+"end": 602.546,
+"prob": 0.795,
+"burst": 121
+},
+{
+"w": "will",
+"start": 602.586,
+"end": 602.726,
+"prob": 0.836,
+"burst": 121
+},
+{
+"w": "have",
+"start": 602.746,
+"end": 602.987,
+"prob": 0.434,
+"burst": 121
+},
+{
+"w": "such.",
+"start": 603.549,
+"end": 603.79,
+"prob": 0.925,
+"burst": 121
+},
+{
+"w": "a",
+"start": 604.33,
+"end": 604.41,
+"prob": 0.746,
+"burst": 122
+},
+{
+"w": "high",
+"start": 604.51,
+"end": 604.79,
+"prob": 0.936,
+"burst": 122
+},
+{
+"w": "chance",
+"start": 604.87,
+"end": 605.151,
+"prob": 0.926,
+"burst": 122
+},
+{
+"w": "of",
+"start": 605.191,
+"end": 605.251,
+"prob": 0.749,
+"burst": 122
+},
+{
+"w": "going",
+"start": 605.311,
+"end": 605.551,
+"prob": 0.929,
+"burst": 122
+},
+{
+"w": "viral",
+"start": 605.591,
+"end": 605.951,
+"prob": 0.737,
+"burst": 122
+},
+{
+"w": "because",
+"start": 605.991,
+"end": 606.291,
+"prob": 0.877,
+"burst": 122
+},
+{
+"w": "you're",
+"start": 606.331,
+"end": 606.551,
+"prob": 0.85,
+"burst": 122
+},
+{
+"w": "not",
+"start": 606.592,
+"end": 606.732,
+"prob": 0.836,
+"burst": 122
+},
+{
+"w": "going",
+"start": 606.772,
+"end": 606.912,
+"prob": 0.811,
+"burst": 122
+},
+{
+"w": "to",
+"start": 606.932,
+"end": 606.992,
+"prob": 0.74,
+"burst": 122
+},
+{
+"w": "be",
+"start": 607.032,
+"end": 607.132,
+"prob": 0.993,
+"burst": 122
+},
+{
+"w": "like",
+"start": 607.232,
+"end": 607.392,
+"prob": 0.914,
+"burst": 122
+},
+{
+"w": "those",
+"start": 607.432,
+"end": 607.612,
+"prob": 0.847,
+"burst": 122
+},
+{
+"w": "amateurs",
+"start": 607.792,
+"end": 608.152,
+"prob": 0.906,
+"burst": 122
+},
+{
+"w": "you're",
+"start": 608.172,
+"end": 608.353,
+"prob": 0.829,
+"burst": 122
+},
+{
+"w": "going",
+"start": 608.373,
+"end": 608.493,
+"prob": 0.892,
+"burst": 122
+},
+{
+"w": "to",
+"start": 608.513,
+"end": 608.573,
+"prob": 0.728,
+"burst": 122
+},
+{
+"w": "be",
+"start": 608.613,
+"end": 608.713,
+"prob": 0.998,
+"burst": 122
+},
+{
+"w": "someone",
+"start": 609.073,
+"end": 609.393,
+"prob": 0.861,
+"burst": 122
+},
+{
+"w": "who",
+"start": 609.433,
+"end": 609.553,
+"prob": 0.98,
+"burst": 122
+},
+{
+"w": "who",
+"start": 609.753,
+"end": 609.894,
+"prob": 0.848,
+"burst": 122
+},
+{
+"w": "has",
+"start": 609.994,
+"end": 610.254,
+"prob": 0.825,
+"burst": 122
+},
+{
+"w": "a",
+"start": 610.294,
+"end": 610.334,
+"prob": 0.508,
+"burst": 122
+},
+{
+"w": "piece",
+"start": 610.374,
+"end": 610.554,
+"prob": 0.813,
+"burst": 122
+},
+{
+"w": "of",
+"start": 610.574,
+"end": 610.634,
+"prob": 0.749,
+"burst": 122
+},
+{
+"w": "content",
+"start": 610.694,
+"end": 611.054,
+"prob": 0.937,
+"burst": 122
+},
+{
+"w": "that",
+"start": 611.314,
+"end": 611.475,
+"prob": 0.908,
+"burst": 122
+},
+{
+"w": "stands",
+"start": 611.555,
+"end": 612.015,
+"prob": 0.808,
+"burst": 122
+},
+{
+"w": "on",
+"start": 612.255,
+"end": 612.335,
+"prob": 0.838,
+"burst": 122
+},
+{
+"w": "its",
+"start": 612.535,
+"end": 612.655,
+"prob": 0.739,
+"burst": 122
+},
+{
+"w": "own",
+"start": 612.935,
+"end": 613.096,
+"prob": 0.818,
+"burst": 122
+},
+{
+"w": "right",
+"start": 613.116,
+"end": 613.616,
+"prob": 0.427,
+"burst": 122
+},
+{
+"w": "it's",
+"start": 613.636,
+"end": 613.716,
+"prob": 0.227,
+"burst": 122
+},
+{
+"w": "not",
+"start": 613.796,
+"end": 614.016,
+"prob": 0.846,
+"burst": 122
+},
+{
+"w": "some",
+"start": 614.056,
+"end": 614.216,
+"prob": 0.955,
+"burst": 122
+},
+{
+"w": "lazy",
+"start": 614.316,
+"end": 614.676,
+"prob": 0.969,
+"burst": 122
+},
+{
+"w": "ass",
+"start": 614.817,
+"end": 614.977,
+"prob": 0.665,
+"burst": 122
+},
+{
+"w": "you",
+"start": 615.017,
+"end": 615.097,
+"prob": 0.977,
+"burst": 122
+},
+{
+"w": "know",
+"start": 615.137,
+"end": 615.277,
+"prob": 0.826,
+"burst": 122
+},
+{
+"w": "it's",
+"start": 615.537,
+"end": 615.617,
+"prob": 0.262,
+"burst": 122
+},
+{
+"w": "not",
+"start": 615.657,
+"end": 615.817,
+"prob": 0.864,
+"burst": 122
+},
+{
+"w": "one",
+"start": 615.897,
+"end": 615.997,
+"prob": 0.831,
+"burst": 122
+},
+{
+"w": "of",
+"start": 616.017,
+"end": 616.057,
+"prob": 0.98,
+"burst": 122
+},
+{
+"w": "those",
+"start": 616.097,
+"end": 616.237,
+"prob": 0.692,
+"burst": 122
+},
+{
+"w": "videos",
+"start": 616.978,
+"end": 617.338,
+"prob": 0.867,
+"burst": 122
+},
+{
+"w": "where",
+"start": 617.358,
+"end": 617.538,
+"prob": 0.409,
+"burst": 122
+},
+{
+"w": "it's",
+"start": 617.558,
+"end": 617.678,
+"prob": 0.344,
+"burst": 122
+},
+{
+"w": "just",
+"start": 617.738,
+"end": 617.939,
+"prob": 0.903,
+"burst": 122
+},
+{
+"w": "a",
+"start": 618.019,
+"end": 618.079,
+"prob": 0.564,
+"burst": 122
+},
+{
+"w": "random",
+"start": 618.139,
+"end": 618.459,
+"prob": 0.92,
+"burst": 122
+},
+{
+"w": "caption",
+"start": 618.499,
+"end": 618.899,
+"prob": 0.562,
+"burst": 122
+},
+{
+"w": "slapped",
+"start": 618.919,
+"end": 619.219,
+"prob": 0.898,
+"burst": 122
+},
+{
+"w": "on",
+"start": 619.259,
+"end": 619.339,
+"prob": 0.668,
+"burst": 122
+},
+{
+"w": "top",
+"start": 619.419,
+"end": 619.64,
+"prob": 0.907,
+"burst": 122
+},
+{
+"w": "of",
+"start": 619.68,
+"end": 619.72,
+"prob": 0.992,
+"burst": 122
+},
+{
+"w": "the",
+"start": 619.76,
+"end": 619.84,
+"prob": 0.863,
+"burst": 122
+},
+{
+"w": "video",
+"start": 619.88,
+"end": 620.2,
+"prob": 0.935,
+"burst": 122
+},
+{
+"w": "And",
+"start": 620.63,
+"end": 620.691,
+"prob": 0.663,
+"burst": 123
+},
+{
+"w": "it's",
+"start": 620.751,
+"end": 620.831,
+"prob": 0.36,
+"burst": 123
+},
+{
+"w": "just",
+"start": 620.891,
+"end": 621.092,
+"prob": 0.98,
+"burst": 123
+},
+{
+"w": "the",
+"start": 621.373,
+"end": 621.494,
+"prob": 0.913,
+"burst": 123
+},
+{
+"w": "actual",
+"start": 621.674,
+"end": 621.975,
+"prob": 0.957,
+"burst": 123
+},
+{
+"w": "long",
+"start": 622.035,
+"end": 622.236,
+"prob": 0.943,
+"burst": 123
+},
+{
+"w": "form",
+"start": 622.256,
+"end": 622.377,
+"prob": 0.398,
+"burst": 123
+},
+{
+"w": "where",
+"start": 622.397,
+"end": 622.517,
+"prob": 0.329,
+"burst": 123
+},
+{
+"w": "you",
+"start": 622.537,
+"end": 622.638,
+"prob": 0.549,
+"burst": 123
+},
+{
+"w": "just",
+"start": 622.658,
+"end": 622.818,
+"prob": 0.863,
+"burst": 123
+},
+{
+"w": "literally",
+"start": 622.878,
+"end": 623.179,
+"prob": 0.93,
+"burst": 123
+},
+{
+"w": "extracted",
+"start": 623.681,
+"end": 624.367,
+"prob": 0.875,
+"burst": 124
+},
+{
+"w": "and",
+"start": 624.387,
+"end": 624.448,
+"prob": 0.592,
+"burst": 124
+},
+{
+"w": "slapped",
+"start": 624.589,
+"end": 625.052,
+"prob": 0.82,
+"burst": 124
+},
+{
+"w": "onto",
+"start": 625.234,
+"end": 625.516,
+"prob": 0.856,
+"burst": 124
+},
+{
+"w": "the",
+"start": 625.536,
+"end": 625.597,
+"prob": 0.983,
+"burst": 124
+},
+{
+"w": "reel.",
+"start": 625.677,
+"end": 625.879,
+"prob": 0.73,
+"burst": 124
+},
+{
+"w": "it's",
+"start": 626.38,
+"end": 626.621,
+"prob": 0.542,
+"burst": 125
+},
+{
+"w": "not",
+"start": 626.661,
+"end": 626.821,
+"prob": 0.879,
+"burst": 125
+},
+{
+"w": "like",
+"start": 626.861,
+"end": 627.042,
+"prob": 0.797,
+"burst": 125
+},
+{
+"w": "that",
+"start": 627.082,
+"end": 627.222,
+"prob": 0.965,
+"burst": 125
+},
+{
+"w": "you've",
+"start": 627.282,
+"end": 627.502,
+"prob": 0.91,
+"burst": 125
+},
+{
+"w": "done",
+"start": 627.583,
+"end": 627.803,
+"prob": 0.779,
+"burst": 125
+},
+{
+"w": "actual",
+"start": 627.963,
+"end": 628.244,
+"prob": 0.794,
+"burst": 125
+},
+{
+"w": "effort",
+"start": 628.344,
+"end": 628.604,
+"prob": 0.922,
+"burst": 125
+},
+{
+"w": "on",
+"start": 628.705,
+"end": 628.765,
+"prob": 0.944,
+"burst": 125
+},
+{
+"w": "this",
+"start": 628.805,
+"end": 628.985,
+"prob": 0.826,
+"burst": 125
+},
+{
+"w": "so",
+"start": 629.065,
+"end": 629.246,
+"prob": 0.949,
+"burst": 125
+},
+{
+"w": "that's",
+"start": 629.726,
+"end": 630.047,
+"prob": 0.835,
+"burst": 125
+},
+{
+"w": "what",
+"start": 630.087,
+"end": 630.227,
+"prob": 0.83,
+"burst": 125
+},
+{
+"w": "actually",
+"start": 630.308,
+"end": 630.608,
+"prob": 0.743,
+"burst": 125
+},
+{
+"w": "makes",
+"start": 630.668,
+"end": 630.889,
+"prob": 0.835,
+"burst": 125
+},
+{
+"w": "it",
+"start": 630.949,
+"end": 630.989,
+"prob": 0.973,
+"burst": 125
+},
+{
+"w": "go",
+"start": 631.049,
+"end": 631.209,
+"prob": 0.89,
+"burst": 125
+},
+{
+"w": "viral",
+"start": 631.249,
+"end": 631.65,
+"prob": 0.794,
+"burst": 125
+},
+{
+"w": "and",
+"start": 631.69,
+"end": 631.83,
+"prob": 0.632,
+"burst": 125
+},
+{
+"w": "if",
+"start": 631.87,
+"end": 631.91,
+"prob": 0.996,
+"burst": 125
+},
+{
+"w": "you",
+"start": 631.951,
+"end": 632.051,
+"prob": 0.887,
+"burst": 125
+},
+{
+"w": "guys",
+"start": 632.071,
+"end": 632.231,
+"prob": 0.443,
+"burst": 125
+},
+{
+"w": "want",
+"start": 632.271,
+"end": 632.391,
+"prob": 0.775,
+"burst": 125
+},
+{
+"w": "to",
+"start": 632.411,
+"end": 632.512,
+"prob": 0.715,
+"burst": 125
+},
+{
+"w": "learn",
+"start": 633.033,
+"end": 633.293,
+"prob": 0.795,
+"burst": 125
+},
+{
+"w": "more",
+"start": 633.373,
+"end": 633.594,
+"prob": 0.909,
+"burst": 125
+},
+{
+"w": "about",
+"start": 633.634,
+"end": 633.874,
+"prob": 0.881,
+"burst": 125
+},
+{
+"w": "all",
+"start": 634.155,
+"end": 634.275,
+"prob": 0.817,
+"burst": 125
+},
+{
+"w": "this",
+"start": 634.335,
+"end": 634.475,
+"prob": 0.88,
+"burst": 125
+},
+{
+"w": "you",
+"start": 634.515,
+"end": 634.575,
+"prob": 0.72,
+"burst": 125
+},
+{
+"w": "know",
+"start": 634.595,
+"end": 634.716,
+"prob": 0.687,
+"burst": 125
+},
+{
+"w": "youtube",
+"start": 634.736,
+"end": 635.056,
+"prob": 0.588,
+"burst": 125
+},
+{
+"w": "shorts",
+"start": 635.076,
+"end": 635.337,
+"prob": 0.761,
+"burst": 125
+},
+{
+"w": "and",
+"start": 635.377,
+"end": 635.457,
+"prob": 0.778,
+"burst": 125
+},
+{
+"w": "making",
+"start": 635.477,
+"end": 635.697,
+"prob": 0.975,
+"burst": 125
+},
+{
+"w": "money",
+"start": 635.738,
+"end": 635.898,
+"prob": 0.804,
+"burst": 125
+},
+{
+"w": "from",
+"start": 635.938,
+"end": 636.078,
+"prob": 0.83,
+"burst": 125
+},
+{
+"w": "ad",
+"start": 636.098,
+"end": 636.138,
+"prob": 0.002,
+"burst": 125
+},
+{
+"w": "revenue",
+"start": 636.459,
+"end": 636.679,
+"prob": 0.434,
+"burst": 125
+},
+{
+"w": "and",
+"start": 636.699,
+"end": 636.799,
+"prob": 0.599,
+"burst": 125
+},
+{
+"w": "stuff",
+"start": 636.82,
+"end": 636.98,
+"prob": 0.998,
+"burst": 125
+},
+{
+"w": "Make",
+"start": 637.361,
+"end": 637.502,
+"prob": 0.586,
+"burst": 126
+},
+{
+"w": "sure",
+"start": 637.522,
+"end": 637.684,
+"prob": 0.312,
+"burst": 126
+},
+{
+"w": "to",
+"start": 637.704,
+"end": 637.785,
+"prob": 0.61,
+"burst": 126
+},
+{
+"w": "join",
+"start": 637.805,
+"end": 638.026,
+"prob": 0.848,
+"burst": 126
+},
+{
+"w": "my",
+"start": 638.047,
+"end": 638.168,
+"prob": 0.824,
+"burst": 126
+},
+{
+"w": "Skool",
+"start": 638.188,
+"end": 638.43,
+"prob": 0.733,
+"burst": 126,
+"fixed": true
+},
+{
+"w": "It's",
+"start": 638.47,
+"end": 638.571,
+"prob": 0.294,
+"burst": 126
+},
+{
+"w": "$1.",
+"start": 638.672,
+"end": 639.035,
+"prob": 0.505,
+"burst": 126
+},
+{
+"w": "and",
+"start": 640.09,
+"end": 640.231,
+"prob": 0.752,
+"burst": 127
+},
+{
+"w": "it's",
+"start": 640.692,
+"end": 640.812,
+"prob": 0.964,
+"burst": 127
+},
+{
+"w": "it's",
+"start": 640.953,
+"end": 641.073,
+"prob": 0.802,
+"burst": 127
+},
+{
+"w": "literally",
+"start": 641.133,
+"end": 641.434,
+"prob": 0.975,
+"burst": 127
+},
+{
+"w": "it",
+"start": 641.454,
+"end": 641.494,
+"prob": 0.002,
+"burst": 127
+},
+{
+"w": "costs",
+"start": 641.755,
+"end": 642.035,
+"prob": 0.806,
+"burst": 127
+},
+{
+"w": "one",
+"start": 642.135,
+"end": 642.236,
+"prob": 0.71,
+"burst": 127
+},
+{
+"w": "dollar",
+"start": 642.276,
+"end": 642.597,
+"prob": 0.199,
+"burst": 127
+},
+{
+"w": "you",
+"start": 642.637,
+"end": 642.817,
+"prob": 0.954,
+"burst": 127
+},
+{
+"w": "get",
+"start": 642.857,
+"end": 642.978,
+"prob": 0.878,
+"burst": 127
+},
+{
+"w": "a",
+"start": 643.018,
+"end": 643.078,
+"prob": 0.897,
+"burst": 127
+},
+{
+"w": "free",
+"start": 643.098,
+"end": 643.338,
+"prob": 0.748,
+"burst": 127
+},
+{
+"w": "you",
+"start": 643.639,
+"end": 643.759,
+"prob": 0.992,
+"burst": 127
+},
+{
+"w": "get",
+"start": 643.78,
+"end": 643.88,
+"prob": 0.979,
+"burst": 127
+},
+{
+"w": "a",
+"start": 643.92,
+"end": 643.96,
+"prob": 0.584,
+"burst": 127
+},
+{
+"w": "call",
+"start": 644.0,
+"end": 644.241,
+"prob": 0.834,
+"burst": 127
+},
+{
+"w": "with",
+"start": 644.261,
+"end": 644.381,
+"prob": 0.833,
+"burst": 127
+},
+{
+"w": "me",
+"start": 644.401,
+"end": 644.481,
+"prob": 0.817,
+"burst": 127
+},
+{
+"w": "you",
+"start": 644.521,
+"end": 644.662,
+"prob": 0.93,
+"burst": 127
+},
+{
+"w": "get",
+"start": 644.682,
+"end": 644.782,
+"prob": 0.574,
+"burst": 127
+},
+{
+"w": "three",
+"start": 644.822,
+"end": 645.003,
+"prob": 0.826,
+"burst": 127
+},
+{
+"w": "modules",
+"start": 645.043,
+"end": 645.404,
+"prob": 0.461,
+"burst": 127
+},
+{
+"w": "to",
+"start": 645.424,
+"end": 645.504,
+"prob": 0.686,
+"burst": 127
+},
+{
+"w": "get",
+"start": 645.524,
+"end": 645.624,
+"prob": 0.774,
+"burst": 127
+},
+{
+"w": "you",
+"start": 645.664,
+"end": 645.764,
+"prob": 0.856,
+"burst": 127
+},
+{
+"w": "up",
+"start": 645.805,
+"end": 645.885,
+"prob": 0.998,
+"burst": 127
+},
+{
+"w": "and",
+"start": 645.945,
+"end": 646.025,
+"prob": 0.358,
+"burst": 127
+},
+{
+"w": "running",
+"start": 646.065,
+"end": 646.346,
+"prob": 0.897,
+"burst": 127
+},
+{
+"w": "i'll",
+"start": 646.647,
+"end": 646.787,
+"prob": 0.982,
+"burst": 127
+},
+{
+"w": "give",
+"start": 646.807,
+"end": 646.907,
+"prob": 0.876,
+"burst": 127
+},
+{
+"w": "you",
+"start": 646.947,
+"end": 647.048,
+"prob": 0.79,
+"burst": 127
+},
+{
+"w": "a",
+"start": 647.068,
+"end": 647.088,
+"prob": 0.411,
+"burst": 127
+},
+{
+"w": "free",
+"start": 647.128,
+"end": 647.288,
+"prob": 0.864,
+"burst": 127
+},
+{
+"w": "audit",
+"start": 647.348,
+"end": 647.569,
+"prob": 0.558,
+"burst": 127
+},
+{
+"w": "as",
+"start": 647.609,
+"end": 647.689,
+"prob": 0.886,
+"burst": 127
+},
+{
+"w": "well",
+"start": 647.729,
+"end": 647.89,
+"prob": 0.973,
+"burst": 127
+},
+{
+"w": "was",
+"start": 648.721,
+"end": 649.142,
+"prob": 0.683,
+"burst": 128
+},
+{
+"w": "was",
+"start": 649.223,
+"end": 649.383,
+"prob": 0.969,
+"burst": 128
+},
+{
+"w": "there",
+"start": 649.423,
+"end": 649.604,
+"prob": 0.821,
+"burst": 128
+},
+{
+"w": "to",
+"start": 649.644,
+"end": 649.704,
+"prob": 0.972,
+"burst": 128
+},
+{
+"w": "lose",
+"start": 649.765,
+"end": 649.965,
+"prob": 0.966,
+"burst": 128
+},
+{
+"w": "so",
+"start": 650.046,
+"end": 650.267,
+"prob": 0.398,
+"burst": 128
+},
+{
+"w": "make",
+"start": 650.347,
+"end": 650.467,
+"prob": 0.641,
+"burst": 128
+},
+{
+"w": "sure",
+"start": 650.488,
+"end": 650.608,
+"prob": 0.493,
+"burst": 128
+},
+{
+"w": "to",
+"start": 650.628,
+"end": 650.708,
+"prob": 0.897,
+"burst": 128
+},
+{
+"w": "join",
+"start": 650.749,
+"end": 651.01,
+"prob": 0.8,
+"burst": 128
+},
+{
+"w": "Skool",
+"start": 651.251,
+"end": 651.512,
+"prob": 0.813,
+"burst": 128,
+"fixed": true
+},
+{
+"w": "community",
+"start": 651.532,
+"end": 651.913,
+"prob": 0.962,
+"burst": 128
+},
+{
+"w": "as",
+"start": 651.973,
+"end": 652.094,
+"prob": 0.896,
+"burst": 128
+},
+{
+"w": "well",
+"start": 652.114,
+"end": 652.335,
+"prob": 0.876,
+"burst": 128
+},
+{
+"w": "and",
+"start": 652.515,
+"end": 652.596,
+"prob": 0.845,
+"burst": 128
+},
+{
+"w": "i",
+"start": 652.616,
+"end": 652.636,
+"prob": 0.963,
+"burst": 128
+},
+{
+"w": "want",
+"start": 652.676,
+"end": 652.776,
+"prob": 0.831,
+"burst": 128
+},
+{
+"w": "to",
+"start": 652.797,
+"end": 652.837,
+"prob": 0.658,
+"burst": 128
+},
+{
+"w": "catch",
+"start": 652.877,
+"end": 652.977,
+"prob": 0.597,
+"burst": 128
+},
+{
+"w": "you",
+"start": 653.017,
+"end": 653.098,
+"prob": 0.794,
+"burst": 128
+},
+{
+"w": "guys",
+"start": 653.118,
+"end": 653.218,
+"prob": 0.51,
+"burst": 128
+},
+{
+"w": "of",
+"start": 653.974,
+"end": 654.056,
+"prob": 0.884,
+"burst": 129
+},
+{
+"w": "the",
+"start": 654.077,
+"end": 654.139,
+"prob": 0.999,
+"burst": 129
+},
+{
+"w": "next",
+"start": 654.18,
+"end": 654.324,
+"prob": 0.889,
+"burst": 129
+},
+{
+"w": "one.",
+"start": 654.406,
+"end": 654.488,
+"prob": 0.99,
+"burst": 129
+}
+]
+}
+]
+}

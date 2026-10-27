@@ -17,3 +17,8 @@ bug upstream) was fixable without touching his look.
 **How to apply:** find the root cause and fix that; keep his grade, sharpening and look untouched unless he asks; compare
 against his own finals; send test frames of EVERY shot before any full render (his ask, 2026-10-22). Related:
 [[feedback-creators-hand-is-not-a-bug]], [[feedback-every-video-better-than-last]].
+
+**Revise, don't remake (Affan 2026-10-27, batch-5 Onyx reactions):** "don't completely remake the Onyx reaction video, just do the
+revisions, because otherwise a lot of tokens are going to get wasted." I had briefed a from-source rebuild as v2 sequences. A note
+gets a surgical pass instead: duplicate the prepared sequence → ripple-insert or ripple-delete the named spans → re-render only what
+those spans touch → swap a layer in place. No new catalog pass, re-plan or review rounds over unchanged parts.

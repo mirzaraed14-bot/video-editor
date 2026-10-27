@@ -1,19 +1,47 @@
 # RUN · paris-jackson-both-versions ("BOTH VERSIONS", Abundance Wisdom long-form)
 
-## ▶ STATUS: resume here (2026-10-26, checkpoint 2 v2 — after his pacing note)
-**His note (LESSONS 33-34):** the pauses were overboard and showed him turning to read the script; the face cam stays TIGHT, a pause
-only where truly needed and only under an overlay; every reading span under an overlay, never his face. **Done:**
-- `work/pacing.py` MODE tight: no sentence pauses, no host breaths; only Part A's two explicit holds survive (1 s after "Happiest
-  Day of My Life" = HOLD, 1 s after "this is what she says to him"), both to go under overlays in the Ch6 build.
-- Assembly re-placed tight on ABW10 › "BOTH VERSIONS - rough cut" (id ae5f2f5b-…), verify 0 problems, clip levels re-applied,
-  saved. Runtime **13:47.3** incl. 3 s end black (B7 floor 14:30: tight is his call; Part A's runtime was an estimate).
-- Reading map (`work/reading_map.py`, head YAW 2.73 SD; pitch rejected on this set): 75 s of reading in 4:32 of host.
-  `work/face_gate.py` = the gate on the placed timeline.
-- Cold open rebuilt on the tight times, placed 20/20, saved: **0.00 s of reading on his face**, face on screen 10.8 s, all eye
-  contact (#1-2 "She was 11… only daughter", #7 "Last year Paris did something strange", #19 "at the very end…").
-  Proof: `review/co-preview-v3.mp4` (offline composite, never played here), `review/co-preview-v2-frames.jpg`, `review/co-joints-face.jpg`.
-- Whole film: 76.3 s of reading still on his face after the cold open (40 runs): covered by the chapters' graphics pass (gate must be 0).
-**Waiting on him:** the cold open's LOOK. Not done: −14 LUFS chain, bleeps, Ch1-6 graphics + captions, SFX, music.
+## ▶ STATUS: resume here (2026-10-26 ~17:45, THE FULL EDIT IS ON THE TIMELINE: at his review)
+ABW10 › "BOTH VERSIONS - rough cut" (id ae5f2f5b-…), 13:47.37, saved after every verify exited 0 (cold open 20/20 · clips 111/111 ·
+Ch1-6 33/33 + 2 subscribe alerts · nests 15/15 · bed 15/15 · SFX 121/121 · A1 crossfades 118/118 + 46 edge fades · reading on his
+face 0.00 s · lip sync through the nests 222 probes, worst 0.00 frames). **Final mix (read back, offline): −14.2 LUFS integrated,
+−1.3 dBTP true peak (WAV and AAC 320k), 0 events above −1.2 dBFS, archive spread max 1.6 LU** (`work/mixdown.py`, `work/peak_events.py`).
+B8 report: `B8-REPORT.md` (re-run `work/b8_report.py` after any change). Waiting on him: the host LUT on the C1397 master clip (by
+hand), OK on 3 defaults (IG original 5a/5b, "…" captions 3a/6a, 5a bleep), § 7 rest, his export (then measure THAT file, ebur128
+to -f null), then his review → LESSONS entries.
+**Final audio values:** `audio_chain.py --gain 14.8 --limit -4.0` · `denoise.py --limit -4.0 --amount 0.25` · `a1_fades.py` (3-frame
+Constant Power on 118 host butt joints, 3-frame Level fades at host↔clip edges) · 11 SFX trims (`sfx_trim.py --verify`, `trim_db` in
+work/sfx/placement.json: 9 true-peak collisions + 3 cues pulled to ≥ 8 dB under the voice). Ceiling path −2 → −3 → −4 dBFS.
+Subscribe alert 8:10.9 DROPPED (after 4a's "strung out on drugs", LESSONS 32), its SFX cue removed: 2 alerts (4:00.9, 9:47.4).
+- **Audio (B4), first pass (values superseded above):** `work/audio_chain.py --gain 14.2 --limit -2.0` = Amplify + Hard Limiter clip effects on A1 (141), A2 (60, +14.2
+  + its level match, −0.8…+15.4 dB) and the A3 bleeps; A2 Level keys only ATTENUATE (0 dB plateau, 3-frame fades, 1b/5a mutes).
+  `work/denoise.py --limit -2.0 --amount 0.25`: DeNoise 25 % on the 10 A2 clips of 01/02/05/07 (2009-2013), order read back
+  Amplify > DeNoise > Hard Limiter (limiter re-added last). **Piano bed** `work/music_bed.py` on A5: Epidemic "Midnight in Tokyo"
+  (Sayuri Hayashi Egnell), 15 pieces under host runs ≥ 4 s only, music time resumes per run, one loop X 160.2 → Y 119.0, bed
+  alone −30.0 LUFS (gain −13.9 dB), ends 707.12 = before the last 2 min (both B4 dry rules hold literally). Read-back mixdown
+  `work/mixdown.py` (all 5 tracks, AAC true peak, spread, silences): **−14.1 LUFS, −1.0 dBTP (WAV and AAC 320k)**, spread
+  median 0.2 LU, max 2.3 LU (07 Oprah 1.8 s piece, since unclamped). The zero true-peak margin was fixed after the SFX (see the top).
+- **Face nests** `work/face_nests.py` (plan frozen in work/face-nests.json): 15 "BV face nest NN" on V1 (runs with face showing;
+  fully covered runs + the cold-open block left alone), one sine-eased push 0.35 %/s capped at 4 %, A1 untouched (141).
+  ⚠ V1 now holds nests: assemble.py --verify (V1 contiguity of raw clips) no longer applies.
+- **Also placed (2026-10-26 afternoon):** 3 s black after "hi, daddy." (`end-black-3s.mp4`, V4 824.37-827.37: B1.6; runtime now
+  **13:47.37**) · 3 subscribe alerts (`hf-graphics/build_cta.py`, `c0-subscribe-alpha.mov`, V5 at 4:00.9 / 8:10.9 / 9:47.4, calm face
+  windows only, LESSONS 32; `place_build.py cta --verify` 3/3) · 3c mark re-rendered as `k-tag-3c-alpha-b.mov` = Part A's card
+  "ON PURPOSE · AUGUST 2026" (place_clips.py VERS map). work/levels.json: the 07 Oprah piece unclamped −15 → −17 dB (levels.py
+  clamped to the old Level range; gain lives in Amplify now), applied at the ceiling retune.
+- B7 measured so far: no minors in any of the 29 graphic assets (looked at every one), "suicide" never on screen (captions "…"),
+  not spoken in the first 30 s, silences ≥ 1 s are only the title, the end black and speakers' own pauses. B8 draft:
+  `B8-REPORT.md` (generator `work/b8_report.py`, re-run after the final audio).
+- **SFX placed** (`work/place_sfx.py --verify` 122/122, A3 62 + A4 60, no overlaps, bleeps untouched): the agent's fresh Epidemic
+  pool (69 takes, none from an earlier job, max 3 uses, `work/sfx/HANDOFF.md`, `POOL.md`, `cue-check.txt`). Headroom: dialogue
+  ceiling lowered −2.0 → **−3.0 dBFS** (`audio_chain.py --gain 14.2 --limit -3.0`, `denoise.py --limit -3.0` verified); remaining
+  collisions → `work/peak_events.py` → `work/sfx_trim.py NAME=dB --apply --verify` (trims stored as `trim_db` in the cue sheet).
+  Rebuild SFX only with `build_sfx.py --tag _b2` (new names), never over placed slices.
+- Track map V1 host · V2 clips · V3 graded pictures · V4 scenes · V5 marks/l3 · V6 subtitles · V7 eyelid · A1 host · A2 clips ·
+  A3 bleeps (+ SFX) · A4 SFX · A5 music.
+- Credits for the description (CC): UCLA hospital photo Fuzzy901 CC BY-SA 3.0 · Staples Center photo Amin Eshaiker CC BY-SA 3.0 ·
+  Oprah photo aphrodite-in-nyc CC BY 2.0 (Ch1-2). Ch3-6 evidence tables: work/build/ch3|ch4|ch5/HANDOFF.md.
+- Waiting on him: the host master-clip LUT (grade/host.cube, by hand), and 3 asks (IG original, "…" captions, export path).
+Next: his review in Premiere (he exports; B6 target in B8-REPORT.md) → apply his notes (fix only what he names) → LESSONS entries.
 
 ## Job
 | | |
@@ -41,7 +69,7 @@ only where truly needed and only under an overlay; every reading span under an o
 | 2c | Assembly on ABW10 | ✅ 2026-10-26 | `work/assemble.py` (--backup/--setup/--tracks in ACTIVE-WINDOW.lock, his Sequence 25 restored + proven each time; --place by name; --verify 0 problems; --markers 14; saved). In/out land up to ~1.3 source frames early on 23.976/29.97/30 fps sources (Premiere snaps to both grids): fades at the joints in the audio pass |
 | 2d | Pacing (his call) | ↩ REVISED after his review (tight) | `work/pacing.py` → `work/pacing.json`: slow blocks (#1-22 cold-open host, #50-53 Ch3 opener, #107-108 last lines) 0.8 s between sentences, 0.45 s inside; 1.0 s silence after "this is what she says to him"; 0.4 s breath at every host↔clip joint; only his measured silent frames. Assembly re-placed chained to read-back ends (no 1-frame gaps), verify 0 problems |
 | 2e | Cold-open look | ✅ placed, at his review | grade/, hf-graphics/ (kit.py evolved from THE LAST SHOW's code: Instrument Serif + Plex Mono, warm black, ash/warm VERSION colours, muted red), work/co_archive.py, work/co_host.py, hf-graphics/build_co.py, work/place_co.py, work/levels.py, work/preview_co.py |
-| 3 | Audio polish | – | static chain retargeted to −14 LUFS / −1 dBTP (B4), pending his OK |
+| 3 | Audio polish | ✅ 2026-10-26 | `work/audio_chain.py`: Amplify +14.8 → (DeNoise 25 % on 01/02/05/07) → Hard Limiter −4 dBFS on A1/A2/A3-bleeps, A2 level match inside Amplify; with bed + SFX (9 trimmed): −14.2 LUFS / −1.2 dBTP (`work/mixdown.py`) |
 | 4 | Grade | – | target band measured (BRIEF § 5) |
 | 5 | Graphics | – | catalog pass done; storyboard after the cut |
 | 6 | SFX | – | fresh Epidemic pool |

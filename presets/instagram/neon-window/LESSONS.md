@@ -81,3 +81,28 @@ Caught by the 60 fps frame check, the proof sheet and the review pass (all fixed
 4. **A hit is placed by its attack, a swell by its crest.** Three hits had been placed by their 5 ms peak and started 100-140 ms early.
 5. **Repeats get pitch steps, never the same sample 5x.** The thread's five thuds: his asks step up (0.94 -> 1.0 -> 1.06), the
    client's "Yes" sits low (0.89), each a dB louder; and check a "single" library hit is not a double (cd2-thuds-deep is 2 hits each).
+
+## 2026-10-26 · Morgan "claw machines are rigged" IG Short (`projects/_client-scott-clary/morgan-claw-machine/ig/`, "start the ig variant")
+What it did better than the Chris Do IG: Mark Brazil's CURRENT hook (checked @markbrazil 10-26: white bold sans, the promise words on a
+flat red box), his camera floating as a card; transitions carry the motion (3 burns, one blue-edged; a red ink bleed into the $ card,
+FX-15; a 0.3 s settle-in push on every other cut into B-roll or a card; hard silent cuts back to his face) and the only sound; the
+cards are catalog moves (FX-28 dossier readout + FX-35 blur-isolate rows + FX-69/74 "1 in 20" marks; FX-11 $ split + FX-24 dashed arc
+to a notched tag); the bunny returns (FX-79). The catalog pass is in the job's BRIEF.
+1. **B-roll at exactly 60 fps, not x2.** Stock is 23.976 / 25 / 29.97: Chronos x2 gives 47.95 / 50 / 59.94. -> Topaz's tvai_fi with
+   fps=60 on each span used (+0.5 s), frames mapped by TIME (`ig/tools/broll60.py`); qa.py measures frozen steps per shot (worst 4.3 %).
+2. **A tight face crop wants a 4K plate.** Zoom 1.46-1.72 from a 2560 plate upscales his face 6-25 %. -> each cam shot as its own 4K
+   Chronos plate (`ig/tools/cam4k.py`, 239 source frames, a few minutes); the 2560 plate only feeds the small hook card.
+3. **A joint he turns through is ONE Chronos take.** As separate takes the cut gets no in-between frame and the take's last frame is a
+   clone: his eyes stalled, then jumped 32 px (median 9). One take: no stall, 17 px across. (The YT's smooth_through, IG side.)
+4. **Measure the head on the EYES.** YuNet's mouth corners move with speech (+-10 px): the same frames re-encoded flipped a joint
+   verdict. qa.py now steps the eye midpoint across each in-shot joint against the median step around it.
+5. **Frame 0 is the preview.** The hook faded in from black, so IG's first frame was dim text. -> the whole hook (title, red box, cam
+   card) on frame 0; the tag decode and the bunny pop keep the motion.
+6. **An ink bleed is bright and wet, never a dark splat.** First pass: the blot inherited the dark stage (maroon) and a spiky edge
+   (high-frequency noise). -> low-frequency organic edge, 22 px smoothstep feather, a thin white rim, bright red that holds to 60 % of
+   the transition then clears; its radius reaches past the window corners (880 > 800 px).
+7. **A floating object never covers his face**: the payoff bunny sat on his cheek at 300 px; in a tight close-up it goes in the free
+   top corner (905, 300) at 250 px.
+8. **No fire, no crackle under a burn.** A light-leak burn suggests a flame sound, but Epidemic's "burn up / flare" files crackle (6 and
+   4 sharp onsets, > 8 dB in 15 ms, after the crest) or hiss (62 % above 4 kHz): the foley texture that reads cheap on a phone. -> clean
+   whooshes rising into the cut; the check (count onsets after the crest + the share above 4 kHz) runs on every slice before it goes in.

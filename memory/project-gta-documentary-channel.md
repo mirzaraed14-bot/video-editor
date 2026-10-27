@@ -1,6 +1,6 @@
 ---
 name: project-gta-documentary-channel
-description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23, at his review — RUN.md; his face-zoom grammar in facecam CREATOR-HAND.md"
+description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23; video 24 (gta6-day1-mistakes, ABW10) full draft 2026-10-27, at his review — RUN.md; his face-zoom grammar in facecam CREATOR-HAND.md"
 metadata: 
   node_type: memory
   type: project
@@ -64,3 +64,5 @@ comedic beats kept (a first pass that cut the comedic ones was caught by a fresh
 replaced by a screened one-family-per-meaning set (the old kit's most-used clicks were narrow tones, 42-60 dB tonal
 prominence), every comp on screen from frame 0 (his "Number one" glitch), "fuck" cut from the voice 4x (A1 pieces disabled),
 and 8 "27 DAYS" subscribe CTAs (his new ask, overrides the no-CTA default for this channel). Details: RUN.md + facecam LESSONS.
+
+**2026-10-27 — video 24 "14 Mistakes You'll Make On Day 1 Of GTA 6" (job `gta6-day1-mistakes`) full draft on ABW10 › "GTA 24 - 14 Mistakes On Day 1" (new bin "GTA 24 Day 1 Mistakes"), saved, at step 7 (his review); he exports.** Raw X:\Recordings\Onyx\C1409.MP4 (one file), NEW SETUP: sunglasses, Skool neon sign, YouTube plaque, red mic; YuNet still finds his face but the leather chair is a false face (nearest-to-centre picker). His script v2; CTAs "23 DAYS" (upload 27 Oct); he cut the two Phil Hooker setup lines (payoff never recorded). 9:08, 42 graphics + 9 CTAs, 73 zooms, 70 SFX, 241 A1 crossfades. New treatments awaiting his verdict are listed in facecam `LESSONS.md` (2026-10-27). Resume: `projects/gta6-day1-mistakes/RUN.md`. Trap learned: never run audio-polish's gain measurement inside ACTIVE-WINDOW.lock (25 min; he switched sequences meanwhile) — measure outside, apply `--gain N` in a short window (lab-notes 2026-10-27).

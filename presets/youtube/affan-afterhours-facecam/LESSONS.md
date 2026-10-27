@@ -312,3 +312,27 @@ his verdict on review (read his timeline + notes, then mark each KEEP / NEVER / 
   polishes the voice himself after the edit; a future job could offer the enhanced voice in the draft (ask first).
 - **CTA placement learned the hard way:** a top-corner card collides with his hair/forehead under the 130–145 % cut zooms and
   when he leans; LOWER-RIGHT over the torso clears his head through every zoom (measured per 0.2 s, `review/cta-side.py`).
+
+## 2026-10-27 — video 24 "14 Mistakes You'll Make On Day 1 Of GTA 6" (job `gta6-day1-mistakes`, ABW10 › "GTA 24 - 14 Mistakes On Day 1"): NEW TREATMENTS, VERDICT PENDING
+Built on 23's review-1 rules FROM DRAFT 1 (screened SFX, pauses with comedic beats kept, frame-0 gate, censor, lower-right CTAs).
+His answers: script v2 · CTAs "23 DAYS" · the two lines pointing at the unrecorded Phil Hooker payoff CUT · the leaked-gameplay aside
+KEPT (no leak footage) · his recorded order (intro before mistake 1). New, for his verdict (mark KEEP / NEVER / CHANGED):
+- **MISTAKE XX/14 chapter cards with a 14-segment progress rail** (FX-04/65), the 14/14 card pushing into the last segment (FX-73).
+- **Read-along quote cards**: each word lifts from 32 % to full white on the frame he says it (FX-18/27), the catch-phrase pink.
+- **Dossier readouts** (FX-28) for loadout / arsenal / outfit checklist (the SSN joke row struck on "I'm kidding") / register /
+  arrest sheet / body stats; **compare** columns (busy lot vs alley; register vs safe).
+- **Bespoke diagrams**: fuel gauge (ends BEFORE "and your car runs out of gas"), car-value meter, two search zones + neighbourhood
+  (FX-70/24), six stars → RELENTLESS → redacted + NO COMMENT, mission line with a $ padlock.
+- **Funnel counts** (FX-71): "14", "25 YEARS OF 3D GTA".
+- **Dexerto rebuilt as a dark headline card** (FX-54): the headline in type, verbatim, over the page's real photo.
+- **3-frame Constant Power crossfade on every A1 joint** (241) — a smoothness upgrade over 23's hard butt joints.
+- **SFX palette by meaning** (13 families, 83 screened files, 70 cues, none > 2x): chapter = cinematic impact, doc = paper slide,
+  quote = page turn, stroke = marker, strike = scribble-out, air = soft whoosh, punch = low hit, light = big switch, lock = bolt,
+  stamp, fuel = engine sputter, CTA = a phone set down on a table (every phone-vibration file failed the tonal screen).
+- **Process (kept, no verdict needed):** the CTA sits 94 % in the corner (x 1383-1872, y 881-1024) because the zoom repositions push
+  his face DOWN in this setup (4 of 9 CTAs were within 5-29 px of his head at the old corner); every big zoom repositioned off the
+  measured face (the leather chair scores as a face: nearest-box picker); a fresh-eyes honesty round caught 11 wording/credit defects
+  (e.g. "IN YOUR HAND. ALL THE TIME." where Rob only said "one goes in your off-hand"; "25 YEARS OF GTA" is 29 for the series).
+- **Process (2026-10-27, edit-review round 2):** a readout's payoff row must hold ≥ ~1.4 s before the hard cut — key a row to the FIRST
+  word of its phrase ("there was a safe", "two long guns"), not the noun, rather than extending a card over his next joke; a chapter
+  card whose title he does not say needs ≥ ~1.9 s (c02 shipped at 0.73 s in draft 1); a readout row says only what he says (d12).

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 93c0e1a1-25a8-4661-92dc-64c57a7b8258
-  modified: 2026-10-25T02:27:35.074Z
+  modified: 2026-10-26T08:33:08.133Z
 ---
 
 **Rule (Affan, 2026-10-21, Scott D. Clary Marvel Short, IG variant):** after a frame-by-frame study of @markbrazil's last 10 reels
@@ -32,8 +32,9 @@ override Mark's: captions only ! ? and quotes at one constant spot under the lip
 [[feedback-captions-just-below-lips]]), SFX on every graphic ([[feedback-sfx-on-every-graphic]]). Study: 
 `presets/youtube-shorts/onyx-samples/references/markbrazil-study-2026-10-21.md`.
 
-**Newest kit to copy (2026-10-25):** the Chris Do IG Short, `projects/_client-scott-clary/chris-do-sneaker-pricing/ig/` (Mark's
-stage-shot hook, mouth-anchored fixed frame per take, `cue_check.py` proving every SFX crest and its level vs the voice); its lessons
-(nothing near the window top above y 80, a red hero is 1-2 words) are in the preset's LESSONS.md.
+**Newest kit to copy (2026-10-26):** the Morgan IG Short, `projects/_client-scott-clary/morgan-claw-machine/ig/` (run via
+`bash ig/run.sh <script>`: OpenCV): B-roll at exactly 60 fps (`tools/broll60.py`), 4K cam plates per shot (`tools/cam4k.py`),
+transitions (burns / ink bleed / settle-in) carrying the only sound, catalog-move cards, qa.py with per-shot 60 fps and eye-based
+joint checks. Before it: the Chris Do kit (`chris-do-sneaker-pricing/ig/`). Lessons for both: the preset's LESSONS.md.
 
 **Onyx samples (Affan 2026-10-22):** the Instagram version of an Onyx sample now uses this neon-window look too (first: Marketing Against the Grain, `projects/matg-targeting-is-dead/`), with review 1 applied (colour picture, less glow, expensive SFX).

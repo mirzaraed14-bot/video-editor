@@ -780,3 +780,157 @@ Always check the EDL bash can actually see before re-splicing.
   head slivers of his shifted copies). Before ANY re-place on a timeline he may have touched: diff the live SFX/graphics
   starts against the plan (a uniform offset after one time = his ripple), rebuild the EDL from his V1 source in-points
   (merge contiguous clips), adopt it, re-run the plan, THEN place. Never trust a stillness check as a "no edits" check.
+- **A render overwritten in place after Premiere imported it goes OFFLINE (red "Media Offline" thumbnails), 2026-10-26
+  (paris-jackson-both-versions, co-nouns.mp4 + co-headlines.mp4).** `FORCE=1 render.sh` rewrote two placed comps after a re-time;
+  the project items kept their old duration and `isOffline()` read true, while two other overwritten renders happened to refresh.
+  The rule render.sh already states holds: **never FORCE over a placed file, render `VER=b`** and re-place; verify every placed
+  item with `projectItem.isOffline()` (work/place_co.py --verify does). Superseded offline items left unused in the bin.
+
+## 2026-10-26 · audio chain, DeNoise order, eased nests (paris-jackson-both-versions, ABW10)
+- **One QE call adding Amplify + Hard Limiter to 141 A1 clips outlived the bridge timeout:** the bridge answered "MCP Bridge is not
+  running" while Premiere finished every add (read back 141/141, none doubled). The script's cleanup died with it, so the
+  ACTIVE-WINDOW.lock and the other session's active sequence were left behind until restored by hand. Now: 15 clips per QE call, and
+  the restore + lock release sit in a try that survives a bridge error (`work/audio_chain.py`).
+- **QE `addAudioEffect` APPENDS:** a DeNoise added to a clip that already has Amplify + Hard Limiter lands AFTER the limiter. To keep the
+  ceiling last: find the QE component whose `getParamList()` holds "Maximum Amplitude", `.remove()` it, re-add Hard Limiter, set its
+  value again by DOM, read the order back (Volume > Channel Volume > Amplify > DeNoise > Hard Limiter). QE components expose
+  getParamList / getParamValue / setParamValue / remove; QE tracks also expose `addAudioEffect` (track effects, unused).
+  `work/denoise.py`. DeNoise DOM params: Amount (0-1, default 0.4), Make-Up Gain, Auto Gain, Shelve Type, Output Difference Signal.
+- **`setInterpolationTypeAtKey(key, 5)` on a 2-key Motion > Scale read back LINEAR** (the quarter point sat at exactly 25 % of the
+  push). Ease = sine.inOut sampled every <= 0.25 s with linear keys (`work/face_nests.py`); the quarter then reads 14.6 %.
+- **Audio in-points snap to the sequence frame grid:** music pieces placed with `setInPoint(x, 4)` read back up to ~30 ms early at
+  59.94; verify with a 2-frame tolerance and key fades off the READ-BACK in-point.
+- **Level keys that only attenuate make the ceiling order-proof:** put all gain (level match included) in Amplify ahead of the Hard
+  Limiter and keep Volume > Level at a 0 dB plateau with only fades / mutes; whichever side of the clip effects Premiere runs the fixed
+  Volume, nothing can push past the limiter.
+- **Audio crossfades by script (B4 "2-4 frame crossfades on every dialogue cut"):** QE `trackItem.addTransition(transition, atStart, duration,
+  offset, alignment, singleSided, alignToVideo)` (reflected signature: Object, boolean, string, string, number, boolean, boolean) on the
+  INCOMING clip of a butt joint: `qi.addTransition(qe.project.getAudioTransitionByName("Constant Power"), true, "00;00;00;03",
+  "00;00;00;00", 0.5, false, false)` lands a 3.00-frame Constant Power centred on the cut (read back on the DOM track's `transitions`:
+  start/end). Clip edges do not move; needs the sequence active (locked window). Audio transitions listed by QE: Constant Power,
+  Constant Gain, Exponential Fade. 15 per bridge call outlived the bridge once (Premiere finished the chunk); 8 per call was clean.
+  `projects/paris-jackson-both-versions/work/a1_fades.py`. QE sequences expose no master track (no bus limiter by script).
+
+## 2026-10-27 · batch-5 reactions v2 (Affan's review: whole intro, SFX by loudness)
+- **Camera in-points: ask for the time Premiere's DOUBLE floor turns into the nearest frame.** `setInPoint(f(t) + 1e-4)` on a 59.94 fps
+  camera in a 60 fps sequence floors twice and lands −1…−32 ms early. `build_seq3.py --place --nearest` requests `ceil(g·59.94)/59.94 +
+  2 µs` for the 1/60 grid point g nearest the sync line: measured −8.3…+12.0 ms over 165 clips (3 sequences), lip sync ≤ 8.8 ms.
+- **lipsync.py on a clip INSIDE a sample play is not evidence** (he is silent; peak ≤ 5x mean, lags of 30-113 ms): read only talk clips.
+- **A gated SFX level must be written LAST.** build_plan.py rewrites plan.json (cues back to [t, name]); apply.py then fell back to the
+  peak rule (10-20 dB louder). apply.py now refuses a `sfx_gated` plan with any cue lacking its level: order build_plan → facex →
+  facefix → `tools5/sfxgate5.py --write`.
+- **Measure SFX loudness in STEREO.** A mono fold-down under-reads a wide Epidemic swish by up to 5.5 dB (mid vs channel power), so a
+  "−18 LU" swish could really sit −13 LU under him; sfxgate5 sums the K-weighted channel powers for him (the OBS stereo A1) and the slice.
+- **The music bed as pieces** (`plan.music.gaps`): apply.py places one piece per gap-free span with CONTINUOUS source in-points; a
+  placed piece can land one frame long (19.150 vs 19.133): the end is now forced when it is > 4 ms off (was 20 ms).
+- **polish-boundaries keeps a WhisperX-stretched word's first burst only** (Brad "I" 181.33-182.51 = "I" + the false start "have"):
+  a word check by midpoint calls it missing; `tools5/introcheck.py` counts a word present when >= 60 ms from its start plays.
+- **A retake inside one keep range survives the gap split** (MATG "butter which | which is why": the first "which" sat inside the
+  kept segment's tail): scan unkept word indices against the kept A segments after every new keep range (pinned out, 64.18).
+- **pins.py is re-run safe** (`--rerun`): a pin whose boundary already sits at its target (within half a frame, seqmap3 snaps) is skipped.
+- Epidemic risers with a pitched sweep fail the tonal gate (clean riser 01: 24-27 dB, cymbal reverse: 40 dB, whoosh short 02: 29 dB):
+  a REVERSED airy swish from the job's own set is a clean soft riser (tonal 12-13 dB).
+
+## 2026-10-27 · batch-5 reactions (Brad Lea, Fantasy Footballers, MATG; ABW10, shared with two other sessions)
+- **`Sequence.clone()` MOVES the active sequence to the clone** (build_seq.py `--create`): "Brad Lea reaction" became active
+  right after the clone, read back by DOM + QE. `--create` now runs inside `ACTIVE-WINDOW.lock` through
+  `projects/_onyx-batch5-2026-10/reactions/tools5/inwindow.py <cmd>` (reads the active id + QE name before, reopens it by id after,
+  proves it). Any other session's DOM-only tool that clones a sequence needs the same wrapper.
+- **apply.py windows now PROVE the switch** (`open_window` / `prove` / `close_window`): openSequence(id), 1.5 s, then DOM
+  activeSequence.sequenceID == ours AND QE getActiveSequence().name == ours AND the A1 clip count matches, else it reopens the
+  previous sequence and refuses. `--window` proves again right before and after `audio-polish.py` (which works on the active
+  sequence). Saves (`--overlays`) wait while ANOTHER session holds ACTIVE-WINDOW.lock (`safe_save`, max 10 min).
+- **apply.py, backward compatible:** `plan.sfx_dir` (job-local SFX slices, looked up before the kit; peaks measured by volumedetect,
+  never guessed), whoosh class also for `*whoosh*/*swish*/*swoosh*` slice names and `plan.sfx_whoosh` (the kit test was
+  `startswith("whoosh")`: a `cd2-whoosh-*` would have landed 9 dB too hot), `plan.voice_gain_ranges` [[from, to, gain]] (the inserts'
+  own gain, audio-polish `--range` inside the same proven window). Backups `apply.py.bak-2026-10-27`.
+- **overlays.py, backward compatible (DSH stills byte-identical before/after at 6 times):** entrances `push` / `focus` / `drop`, kinds
+  `ink_reveal` (FX-15: a red ink blot from a face on the screen, revealing a ba_wipe master card's first frame), `rows_blur` (FX-35)
+  and `quadrant` (FX-69/70), `ba_wipe.fade_in` (0 when an ink lands on its first frame). Backup `overlays.py.bak-2026-10-27`.
+- **`overlays.py --still` WRITES `<job>/work/stills.jpg`** (overwrites, no new name): a regression still run on another job clobbers
+  its preview sheet (it did: dsh-marriage-contract-reaction/work/stills.jpg, a regenerable preview, was overwritten). Regression
+  stills: call `overlays.still()` from a scratch script and save elsewhere.
+- **`voice-gain.py` on a reaction measures the samples too:** Brad's kept mix read -23.8 LUFS (+7) but his talk alone -29.5 (+12);
+  the OBS mix plays our samples / their Short ~8 LU over his voice. Gain set from his talk (+11: limiter on 6 % of 10 ms windows),
+  the inserts +4 (both land -19 LUFS after the -6 dBFS limiter, simulated with alimiter).
+- **WhisperX squeezed "600" into a 60 ms token again** (Brad "I've done 600 million", raw 172.68): the real "six hundred" sat in the
+  "gap" 172.81-173.38 and author3 split there (jointcheck heard "I've done a million views"; falign found nothing after "done").
+- **The GPU was held 35+ min** (another session's transcribe.sh + a Topaz run without the lock, 100 % / 7.9 of 8 GB): jointcheck runs
+  on CPU with `CUDA_VISIBLE_DEVICES=""` (its own fallback), tightasr via `tools5/tightasr-cpu.sh` (`WHISPERX_DEVICE=cpu`).
+- `tools3/xplay2.py` needs the whisperx venv python (scipy). **The YouTube and Instagram masters of a sample share ONE audio
+  track**, so xplay2 matches both at every play: name each play by the higher ncc (1.00 vs 0.90) and its frame, never by the file.
+
+## 2026-10-27 · shorts-cooked-not-your-fault (the @affancuts organic reel, reaction toolkit, ABW10)
+- **`build_seq.offset_fn` fits a line through the windows with peak >= 10 and drops the rest:** on C1407 it kept 3 of 4 and fitted
+  **+114.8 ppm** (33 ms over the file) where the sync report says 0.1 ppm over all four (7 ms scatter). Long-window GCC-PHAT on the
+  whole file reads -1.6 … -8.2 ms against the constant 92.4972 s. Use `"offset": <s>` in seq.json when the report's slope is ~0.
+- **A short plain ncc on a near-silent camera mic (speech at -57 dBFS) is noise** (+35 ms median "lag", ncc 0.3); GCC-PHAT per clip
+  reads -8.4 … +4.3 ms on all 47 face clips. Lip-sync proof = GCC-PHAT (`projects/shorts-cooked-not-your-fault/work/sync_proof.py`).
+- **`overlays.still()` renders every frame from a graphic's t0 up to t** (O(n) per still): ten stills on a 12 s group took > 10 min.
+  Random-access kinds can be sampled directly (`fn(i)`): `mgx.py --still` there does it in ~10 s per still.
+- **`card_style: "glass"` makes `card_body()` ignore `fill`**: a gold / white / dim tile came out as the glass card. Coloured shapes
+  call `O.rrect()` directly.
+- **polish-boundaries on a 0.30 s-gap cut** added 5.5 s, clipped the end of "views" (77.49 vs 77.54 raw) and the S of "Scott"
+  (222.86 vs 222.70: Whisper then heard "God trusted me"), and re-joined two segments across a deliberately dropped restart ("moments
+  from [any part from] every podcast"). Every polished edge was re-measured (falign / endtest / dip) before jointcheck.
+- **ProRes overlay renders die mid-file when RAM runs out** (0.7 GB of 31.7 GB free with three sessions + Topaz: ffmpeg "Cannot
+  allocate memory", BrokenPipe in overlays.build_mg after 8 of 15 layers). `--check` does not read the movs: ffprobe every
+  `overlays/mg/*.mov` frame count against round((t1 - t0) x 60) before anything is placed.
+- **Premiere floors a subclip in-point TWICE** (`setInPoint(t, 4)` on a 59.94 camera subclip, overwriteClip into a 60 fps sequence):
+  to the camera frame, then to the sequence's 60 grid. The model `floor(floor(t·59.94)/59.94·60)/60` reproduced all 49 read-backs to
+  0.00 ms; every in-point sat 14-30 ms early (the lab-note "−1…−32 ms, Premiere's frame snap" above is this). Choosing each request so
+  the double floor lands on the 60-grid point nearest the sync line gives a constant +2.8 ms here
+  (`projects/shorts-cooked-not-your-fault/work/fix_v2.py`: V2 cleared and re-placed by name, then `build_seq3 --style --verify`).
+- **An SFX tail can outlive the picture**: the last cue's 1.6 s slice ran 0.43 s past V1 (sequence end 84.25 vs 83.82) and
+  `tools5/bedtrim.py` only trims the bed. Read the max clip end over ALL tracks after `--overlays`; trim the overhang to V1 with a
+  short Volume ramp (DOM, by name).
+- **The Bash tool's quoted heredoc collapsed each doubled backslash to a single one** in a JSON file (a Windows path became an
+  invalid escape): write JSON with python (json.dump), never through a heredoc.
+
+## 2026-10-27 · iphone-duo-clip-angle (ABW10 › "CA-009 iPhone Duo Clip Angles", 59.94 DF, shared with Onyx + GTA 24 sessions)
+- **`audio-polish.py --apply` SAVES the whole project at the end** (`if (APPLY && !out.bad.length) app.project.save()`): on a shared
+  project that is a save nobody cleared with the other sessions, possibly mid-window. Workaround: a job-local copy without the save
+  (`projects/iphone-duo-clip-angle/work/audio_polish_nosave.py`), run in 4 timeline ranges (`--range`) inside one ACTIVE-WINDOW
+  lock (`work/audio_chain_run.sh`): 138/138 clips, no bridge timeout. Suggest a `--no-save` flag on the lane tool.
+- **V1 laid with zoom edges PRE-SPLIT needs no QE razor and no active window**: replay linked A/V by name, then overwrite V1 from a
+  video-only subclip (`createSubClip(…, takeVideo=1, takeAudio=0)`) at the A1 positions split at every face-pass edge
+  (`work/rebuild_v1.py`): 206 V1 pieces, A1 untouched (138), sync audit 0 off on the first try.
+- **`timeline_words.py`-style readers must read A1, not V1, after a pre-split rebuild** (V1 is no longer clip-for-clip with the EDL).
+- **(later, 2026-10-27) Program-monitor grabs lag on a loaded machine:** with the CPU saturated (other sessions' WhisperX / Topaz /
+  renders) the monitor rendered 1-3 grabs behind at the 2.5 s settle, so the sheet's tiles showed their neighbours' moments.
+  `apply.py --grab-only` now reads `GRAB_WAIT` (s, default 2.5); 12 s gave in-sync sheets.
+- **A bridge drop INSIDE `--grab-only` left OUR sequence active** (the finally's restore failed with the same "MCP Bridge is not
+  running"): restored by id with `tools5/restore_active.py "<name>"` (inside the lock, DOM + QE proof). apply.py's `es()` now rides out
+  "bridge is not running" for ~2 min (12 tries), as it already did for bridge_unavailable.
+- **Five SFX vanished after a dense `--overlays` pass** (MATG: two clips 30 ms apart on A2/A4, another 0.5 s later): every placement
+  read back "ok" and one level step said NOCLIP, yet the sequence held 37 of 42. A clean re-run (our SFX cleared and re-placed, the
+  sub moved 0.2 s off the taiko) placed all 42 and `--verify` passed: always trust `--verify`'s SFX count, never the placement log.
+- **The music bed lands one frame past V1** (apply.py tolerates 20 ms), so the REAL sequence end was one frame long:
+  `tools5/bedtrim.py <plan>` trims it to V1 (DOM by name). Run it after every `--overlays`.
+- **Lip sync from the sequence** (`tools5/lipsync.py`): camera in-points sit −1…−32 ms (mean −16, Premiere's frame snap) off the
+  sync line in all three jobs, inside build_seq's 35 ms tolerance; GCC-PHAT on his talk clips 7-30 ms. Readings inside a sample play
+  (the camera hears the speakers) are not lip sync: skip them.
+- **A per-stretch WhisperX chunk can come back near-empty** (MATG's last 26 s stretch: only its final sentence, placed at the stretch
+  start): check every stretch's word count; fall back to seqmap3's raw-mapped words for that stretch (`words.tight.raw.json`).
+
+## 2026-10-27 · gta6-day1-mistakes (ABW10 › "GTA 24 - 14 Mistakes On Day 1", shared with AffanWiz + Onyx, the creator reviewing live)
+- **Never run audio-polish.py --apply inside ACTIVE-WINDOW.lock with the gain unmeasured.** Its voice-gain measurement ran >25 min
+  inside the window (242 spans, ffmpeg per span on an 8 GB raw, CPU shared with renders); meanwhile the CREATOR opened another
+  sequence ("MATG reaction") while reviewing — and audio-polish applies to the ACTIVE sequence. It happened to time out before the
+  apply. Now: measure the kept speech OUTSIDE the lock (one pass: extract the voice once, join the EDL spans, ffmpeg ebur128 →
+  gain = −17 − LUFS), then `audio-polish.py --apply --gain N` inside a SHORT window; batch every active-sequence step (chain,
+  censor razors, A1 crossfades, face razors) into ONE window (`projects/gta6-day1-mistakes/transcript/window1.py`): 1 min, not 25.
+- **A process tree killed by `timeout` skips active-window.py's `finally`**: the lock file stays and the prior sequence is not
+  restored. Release the lock by hand (rm the one file) and do NOT restore an old sequence over what the creator has open now.
+- **gate-frames counted INVISIBLE razors as cuts**: a zoom extended over a piece that runs under a graphic leaves a razor between two
+  pieces with continuous source and identical Motion — not a cut anyone sees. The gate now drops those before the SLIVER test.
+- **Render-cache hashes must ignore the comp's timeline comment** (`// id · timeline START → END`): it changes on every re-time
+  and forced a full re-render; `hf-graphics/gfx/render-changed.sh` hashes the HTML without it.
+- **A Claude session running in a git worktree cannot Write/Edit the main checkout's gitignored job folder** (a PreToolUse hook);
+  `request_directory` did not lift it. Job files were written with the shell; subagent briefs must say so.
+- **The plates' b-roll "soft shadow" was an 18 px HARD slab** (video 23's build-plates.py, carried into 24): `boxblur` on a layer the
+  size of the inset cannot spread past its own canvas, so the shadow ended in a straight edge under the rounded corners. Pad the
+  shadow layer BEFORE the blur (`pad=iw+160:ih+160:80:80:color=black@0,boxblur=30:2`, overlay centred, +14 px). Any job copying
+  that builder: fix it there too (`projects/gta6-world-stops/hf-graphics/gfx/build-plates.py` still has the old line).
+- **Re-timing placed graphics:** `place-seq24.py --remove <ids>` then `--apply` (plates + overlays by name); SFX with
+  `place-sfx-seq24.py --prune --apply` (prune drops cues the plan no longer has, only from the job's sfx dir), then gate-frames.

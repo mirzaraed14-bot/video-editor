@@ -40,4 +40,9 @@ night with the Afterhours session doing GTA 23: lock + by-name + ask-before-save
 **2026-10-23 revision 1** (his Tella review, four must-fixes) built, gated and SAVED in ABW10: lip sync (V1 rebuilt from his
 A1), reading covers (face share 34 %), new SFX set `sfx2/` (110 cues / 67 files), a CTA about every minute (one as a chip
 inside t25). Awaiting his re-review; he exports himself (RUN.md, review/REVISION-1.md).
+**2026-10-27: CA-009 "Speed Bought the iPhone Duo. 20 Clippers Got Nothing."** (raw X:\Recordings\Onyx\C1410.MP4 — an AffanWiz
+take despite the folder; job `projects/iphone-duo-clip-angle/`) built in ABW10, NEW bin + sequence "CA-009 iPhone Duo Clip Angles",
+with CA-007's four fixes built in from the start: V1 pre-split from a video-only subclip (sync 0 off), reading measured by head pose
+(sunglasses: reading = a head TURN, yaw), covered 0 s visible, fresh SFX `sfx/` (84 cues/54 files), CTA ~once a minute + plug card,
+music beds on A4 incl. one new bed. 3 edit-review rounds, all gates green; at his review (RUN.md has the resume block + flags).
 Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]], [[feedback-every-video-better-than-last]].

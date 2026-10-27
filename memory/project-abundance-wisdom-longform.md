@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: e83a5461-9372-426b-acd3-91eb82cfebd1
-  modified: 2026-10-26T03:17:27.699Z
+  modified: 2026-10-26T11:07:34.795Z
 ---
 
 **2026-10-26: every new AW long-form starts at `presets/youtube/abundance-wisdom/PLAYBOOK.md`.** It holds the gist of the look and
@@ -17,6 +17,12 @@ a few days before 2026-10-26). It is a starting point, never a style lock: each 
 `projects/paris-jackson-both-versions/`.** BRIEF.md (catalog pass, Beats-THE-LAST-SHOW list, lock conditions) + RUN.md are the state;
 checkpoint 1 sent, waiting on his answers (project, a missing Ch1 host line, 8 IDM downloads). Its own rules: no AI, no stock, no minors
 on frame, "suicide" never as on-screen text.
+**State 2026-10-26 evening: the whole film is on ABW10 › "BOTH VERSIONS - rough cut" (13:47, tight pacing, his call), at his review.**
+Every layer is placed and verified by script: the cold open, the clip layer, Ch1-6 scenes, face nests, the audio chain, DeNoise, the piano bed,
+121 SFX, 3-frame host crossfades, 2 subscribe alerts and the end black. Final mix −14.2 LUFS / −1.3 dBTP. B8 report in `B8-REPORT.md`. He exports. Still waiting on him:
+- the host LUT, which he applies by hand;
+- OK on the IG original, the "…" captions and the 5a bleep.
+After his review: LESSONS entries.
 
 **Nick Walker: DONE (the creator confirmed 2026-10-07).** It was the template for the next long-form.
 

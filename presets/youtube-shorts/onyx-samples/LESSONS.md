@@ -397,3 +397,78 @@ the measured references (`references/batch2-style-research.md`) -> README § v2 
   his live-typed new title on the Short, DSH draws hook → route → payoff along the Short's own progress bar → build_plan.py heroes.
 - **One look per reaction, never repeated in a batch** (accent font, entrance, SFX signature, hero kind): columns E-I recorded in
   each build_plan.py docstring with "what this does better than the last one".
+
+## 2026-10-27 · The @affancuts organic reel "your short form is cooked" (reaction toolkit as a reel): lesson → change → file
+- **He reads the script on the screen he records**: OBS 7-35 s was the Notepad script (with notes about other clients), so the hook
+  is face-only from frame 0 and the screen enters on the first clean page (OBS 38.4) → `projects/shorts-cooked-not-your-fault/build_plan.py` T_SPLIT.
+- **The camera can start before OBS: its pre-roll held REHEARSAL takes** of the same lines (bad mic, no screen): transcribe it once;
+  the OBS takes are the last takes → that job's BRIEF § Inputs (`work/cam-pre.txt`).
+- **Graphics carry the screen's numbers, captions his words**: "around 1000" became the real tile counts (493 TO 1K), "second most
+  popular upload" the Shorts tab's Popular sort (#2 of Shorts: the screen ranks Shorts only), "two months old" (not on screen) no number
+  at all → that job's BRIEF § Number check.
+- **A reel's lesson beats need a stage, not the page**: after the proof the screen was a static grid of old Shorts for 50 s; every
+  lesson line got a graphite stage scene over the panel instead (the page never legible behind "it's the clipper") → mgx.py "stage".
+
+## 2026-10-27 · Reactions v2 (builder's lessons from Affan's review)
+- His intro is part of the pitch, never a trim target → v2 keeps it verbatim (last take, false starts out) and stages the credential
+  span with a steps card + a title card in each look → `projects/<job>/v2/build_plan.py` (steps-cred, title-bread).
+- "Just do the revisions" → a revision re-cuts from the EDL but reuses every render whose inputs are identical (18/25, 15/23, 20/31) and
+  re-renders only new/changed cards + captions → `_onyx-batch5-2026-10/reactions/tools5/mgreuse.py`.
+- SFX "cheap / loud in places" → one cue per graphic entrance, soft airy swishes (3 takes rotated), risers only into the 2 sample
+  reveals, impacts only on 3 value landings, each levelled by loudness against his voice there (swish/riser 19 LU, impact 13 LU under,
+  impact peak 10.5 dB under, spread ≤ 2.5 LU over the class median) → `tools5/sfxgate5.py`; apply.py refuses ungated levels.
+- His own timeline edits are decisions → his bed holes (under their Short + our IG cut on Brad; our YT + IG cuts on FF) and his FF
+  "uh and that's" cut are carried into v2 → `plan.music.gaps` (apply.py), FF `v2/keep.json`.
+
+## 2026-10-27 · Batch-5 reactions (Brad Lea, Fantasy Footballers, MATG; built from raw in ABW10, 3:00 cap): lesson → change → file
+- **The YouTube and Instagram masters of one sample share ONE audio track**, so an audio match cannot tell which look he played:
+  name each play by the higher xplay2 ncc and its frame → each BRIEF § He played; lanes/premiere/lab-notes.md § 2026-10-27.
+- **Tell the story ONCE across the two looks when he plays both**: Brad's YouTube play stopped before the payoff and his Instagram
+  play reached it, so the cut runs hook (YouTube look) → payoff (Instagram look) instead of replaying the opening in each look
+  → `projects/bradlea-ferrari-camry-reaction/keep.json`.
+- **A comment he makes in a pause can move after the play** so our sample runs as one uninterrupted take (FF: 42.8 s, the
+  motion-graphics reason moved after it) → `projects/ff-0-4-bye-week-reaction/keep.json`.
+- **A reaction's inserts are ~8 LU louder than his voice in the OBS mix**: voice-gain.py's kept-mix number under-gains his talk;
+  gain his talk, level-match the inserts (both −19 LUFS after the limiter) → `tools5/gain5.py`, apply.py `voice_gain_ranges`.
+- **Kit stock cues are out (memory feedback-premium-sfx "FIT")**: each reaction cuts its own slices from the premium library sets,
+  gated for tonal prominence (≤ 20 dB) and phone-band presence, placed by attack / crest / end → `tools5/sound5.py`, `<job>/sfx/`,
+  apply.py `sfx_dir` (whooshes 14 dB under the voice peak, hits 5 dB under).
+- **Every reaction gets its own entrance, accent face, hero kind and sound family**: J push / Merriweather Bold Italic / ink_reveal,
+  K focus / Rokkitt Italic / rows_blur, L drop / Bodoni Moda Italic / quadrant → each build_plan.py docstring; overlays.py 2026-10-27.
+
+## 2026-10-27 · Affan's review of the batch-5 reactions + reel ("I like the videos, but these have to be redone so I can send them"): lesson → change → file
+- **His WHOLE intro stays in every reaction, verbatim** (reviewing X → permission → "my name is Affan, I've done 600 million views,
+  I make Shorts for my own channels, I teach it and I do it for my clients, it's my bread and butter, which is why I make these
+  videos" → let's get into it). The reaction is a pitch dressed as an organic post and the prospect is its most important viewer
+  (Scott signed after watching his reaction, which was never uploaded). The intro is never a trim target for the 3:00 cap: cut
+  tangents elsewhere → each reaction's keep.json; memory feedback-reaction-whole-intro.
+- **The SFX read "very very cheap … not expensive, premium, refined, subtle … loud in places"** (all four). The layers were sliced
+  from earlier jobs' kits (cd2/cd3/wd/mg: trailer toms, taiko, heavy thuds) with hits only 5 dB under his voice peak, against the
+  voice-first rule (~8 dB under) → redo per job from a FRESH Epidemic set: soft, airy, low-key cues, no trailer drums, every cue
+  well under the voice; memory feedback-premium-sfx § SUBTLE.
+- **A line that gives the reason for his verdict stays with the verdict**: MATG kept "you are hooked in instantly, because of the
+  stakes" but cut the stakes themselves ("he said you're spending $300,000 to $400,000 a day") → restore it in
+  `projects/matg-targeting-is-dead-reaction/keep.json`.
+- **(reel, v2) Level SFX by LOUDNESS against the voice at that spot, not by peak**: apply.py puts every hit's PEAK 5 dB under the
+  voice peak, so a dense, peaky cue and a long airy one land at very different loudness and some read "loud". The reel's v2 sets
+  each cue's clip Volume so its short-term loudness sits 19.5 LU under his (swish / riser) or ≥ 12 LU under (impact, also peak ≥ 10 dB
+  under), with a 3 LU spread cap per class → `projects/shorts-cooked-not-your-fault/work/sfx2_build.py` + `sfx_v2_place.py`
+  (apply.py has no per-cue level: placed job-local, then `--verify`).
+- **A review note is a REVISION, never a rebuild** (Affan 2026-10-27: "don't completely remake the Onyx reaction video, just do the
+  revisions, otherwise a lot of tokens are going to get wasted"). Duplicate the prepared sequence to "<name> v2", ripple-insert or
+  ripple-delete only the named spans, re-render only the graphics and captions those spans touch, and swap a layer in place (the reel's
+  SFX v2 pattern) → every reaction / reel revision; memory feedback-fix-only-what-he-named.
+
+## 2026-10-27 · his own hand on the v2 reactions + his songs as the beds: lesson → change → file
+- **He trims the reactions further himself, below the 3:00 cap**: after the v2s were handed over he cut FF 170.3 → 149.7 s and MATG
+  173.3 → 157.0 s, and took one SFX out of MATG. Read: 2:50 was still long for him; a reaction can land well under 3:00 when the
+  tangents allow → next batch, aim the cut at ~2:30-2:40 and report what was left out; the plan.json of a hand-edited v2 carries
+  `hand_edited` (never re-run apply.py --overlays/--verify over his edit).
+- **No bed under the clips he plays** (now on Brad too: two more no-bed spans under the inserts, 93.6-101.8 and 121.5-127.0): the
+  sample's own audio plays alone → default for the next reactions: no bed under the inserts that carry their own sound (he left it
+  under FF's Short in v1, so confirm against his next review before making it a preset rule).
+- **He picks the SAMPLES' beds himself** (2026-10-27: Real Slim Shady instrumental = Brad, Big Poppa instrumental = FF, Thelema = MATG,
+  for both looks; "not too loud, don't override the speaker"). I first put them on the REACTION timelines (his "Brad variants" =
+  the sample's yt + ig variants, not the reaction): a song with a sample's name means that SAMPLE. Swap = the kit's own yt_mix.py on
+  each look's spec (re-run on the shipped spec first: bit-exact null), bed 14 LU under the voice in every 3 s window, muxed onto the
+  shipped video (stream copy) → `projects/_onyx-batch5-2026-10/samples_music.py`, `outputs/<job>.sample-<look>.music.mp4`.

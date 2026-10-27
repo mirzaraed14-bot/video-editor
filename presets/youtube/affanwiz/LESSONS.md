@@ -169,3 +169,26 @@ a job teaches something.
   INSIDE a full-frame comp as a chip (same template, scaled .85, top-left above the comp's own rows), never skipped; a fourth CTA
   inside 70 s at the end was retired instead. Every CTA line is his words (his ask + the plug in the take), none invented.
 - He cut two lines himself ("$40 per 100,000"; "CaseOh is also"): his A1 became the EDL (`work/edl_from_a1.py`); his hand wins.
+
+## 2026-10-27 · CA-009 "Speed Bought the iPhone Duo. 20 Clippers Got Nothing." (ABW10 › "CA-009 iPhone Duo Clip Angles") — built with CA-007's fixes in from the start
+- **Reading in SUNGLASSES is a head TURN, not a head drop.** Pitch never held on this take; the scripted lines (cold-open numbers, "212,000
+  views", "Mistake number one", the Oct 1 list) are all head-turned to his left (yaw proxy ≥ 0.27 on ≥ 50 % of a segment), the improvised
+  lines sit at yaw ≈ 0. Measured over the whole RAW before cutting (`projects/iphone-duo-clip-angle/review/tools/pose_raw.py`, calibrated by
+  eye on `review/pose-bins.jpg`), mapped onto the cut (`reading.py`), and asserted in the plan + on the live V2 (`reading_gate.py`): 0 s
+  visible from the first draft. → PLAYBOOK rule 2 now has a yaw half; measure BOTH every job.
+- **Lip sync by construction, not by repair:** replay linked A/V by name, then re-lay V1 from a video-only subclip pre-split at every zoom
+  edge (`work/rebuild_v1.py`): 0 frames off on 206 pieces, no QE razor, no `.end =` anywhere. → the default V1 build for this channel.
+- **The take was improvised AROUND a written script** (CA-009 in creator-shorts/; START-HERE said "no script"): the script is the capture
+  shopping list and the fact sheet, the take decides the cut and the copy. The number was CA-009, not CA-008 (that is Zack D. Films).
+- **On-screen numbers vs live data:** his "23 Shorts, 20 under 5K" is ~100 / 80 today; "212K" is a 61 s HORIZONTAL long-form (now 330K);
+  "crops, flips, speeding it up…" is not YouTube's list (theirs: "minor technical edits", "VO descriptions of what's happening on screen");
+  "requirements doubled" applies to NEW YPP entrants from Feb 1 2027. Shown as his words, credits quote the real source, all flagged.
+- **A real thumbnail never carries a typed label it does not match** (review r1: the 1,200-view card used a Short titled "…Hits 62 MILLION
+  Subscribers…"): pin a real lookalike title, or use a typed card with no real thumbnail.
+- **HyperFrames renders serve gfx/ as the root:** relative `assets/…` in a comp under compositions/ 404s in the RENDER (fonts + images fall
+  back silently) while the probe passes. A junction gfx/assets → compositions/assets fixes it; check a frame from every RENDER, never only the
+  probe. MBLUR_SS=8 is refused at 59.94 (> 240 fps capture cap): SS=4 max. One render is capture-bound (CPU 5 %): 3 parallel slots.
+- **The edit-review loop earned its keep:** 3 rounds, 11 + 4 + 1 verified defects (edge strips under a tilted wall, same-slot swaps,
+  arrowheads 16° off a curve, underlines drawing at 2.5× the spec, a 0.43 s hold on the plug card's last row, a cursor fleck on a crop).
+- **Music:** his four STYLE § 4 beds + ONE new bed (Grizzy, hopeful, the solution section), level-matched by measured LUFS (−9.8 source →
+  −25, same −34.8 as his beds), out under every zoom; laid as pre-cut pieces (no QE razor).

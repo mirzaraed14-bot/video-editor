@@ -3,6 +3,15 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-27: the gate must know clip speed too (ABW10 Seq 30)
+
+- **A slowed clip stretches every word** (his comic beats are 0.8x: `reference-humor-style`): "minus 9,675" held 4.5 s of
+  speech for 7 spoken words, so caption_qa FAILed HANGING although all three decoders heard every word. → the hanging check
+  scales the speech under a cue by the A1 clip speed from `transcript/sequence.json` (slowed clips only; sped-up clips are
+  not tightened). Seq 12 re-checked: still PASS.
+- **Skits: every line of spoken dialogue gets its own quotes, narration none** ("dusra aye ga na / ur ke aye ga achanak" is
+  narration; “wo 678 tha” is a line).
+
 ## 2026-10-23: names come from his screenshots (ABW10 Seq 22)
 
 - **When the reel shows screenshots, read them before writing a single name.** Seq 22's V5 carried 13 of them: the photo
