@@ -117,7 +117,9 @@ def main():
     if fps_out != fps:
         pic = os.path.join(w, f"picture.whip{int(fps_out)}.mov")
         if "picture" not in skip or not os.path.exists(pic):
-            segs = sorted({s["f0"] for s in spec["shots"]} | set(spec.get("head_lock", [])))
+            inA = lambda j: any(s["kind"] == "A" and s["f0"] < j < s["f1"] for s in spec["shots"])   # 2026-10-28: a head-lock joint inside a
+            # card / B shot split a near-static card into its own take, and Chronos returned it empty (Patron): only face-shot joints
+            segs = sorted({s["f0"] for s in spec["shots"]} | {j for j in spec.get("head_lock", []) if inA(j)})
             sh([sys.executable, os.path.join(REPO, "workflows", "topaz-iris.py"), os.path.join(w, "picture.whip.mp4"), pic, "--no-enhance",
                 "--no-stab", "--fps-mult", str(int(round(fps_out / fps))), "--segments", ",".join(map(str, segs))])
     if "overlay" not in skip:

@@ -96,6 +96,8 @@ to a notched tag); the bunny returns (FX-79). The catalog pass is in the job's B
    clone: his eyes stalled, then jumped 32 px (median 9). One take: no stall, 17 px across. (The YT's smooth_through, IG side.)
 4. **Measure the head on the EYES.** YuNet's mouth corners move with speech (+-10 px): the same frames re-encoded flipped a joint
    verdict. qa.py now steps the eye midpoint across each in-shot joint against the median step around it.
+   SUPERSEDED 2026-10-28 (Patrón #2-3 below): the eyes move with a head TILT; chain and judge on the face-box centre, prove steadiness
+   with the 4K residual, and keep the window detector as a snap catcher only.
 5. **Frame 0 is the preview.** The hook faded in from black, so IG's first frame was dim text. -> the whole hook (title, red box, cam
    card) on frame 0; the tag decode and the bunny pop keep the motion.
 6. **An ink bleed is bright and wet, never a dark splat.** First pass: the blot inherited the dark stage (maroon) and a spiky edge
@@ -106,3 +108,25 @@ to a notched tag); the bunny returns (FX-79). The catalog pass is in the job's B
 8. **No fire, no crackle under a burn.** A light-leak burn suggests a flame sound, but Epidemic's "burn up / flare" files crackle (6 and
    4 sharp onsets, > 8 dB in 15 ms, after the crest) or hiss (62 % above 4 kHz): the foley texture that reads cheap on a phone. -> clean
    whooshes rising into the cut; the check (count onsets after the crest + the share above 4 kHz) runs on every slice before it goes in.
+
+## 2026-10-28 · Patrón "would never sell more than 20,000 cases" IG Short (`projects/_client-scott-clary/patron-20000-cases/ig/`), 30 fps check
+What it does better than the Morgan IG: Mark Brazil's NEWEST type (his reels moved on in two days: 10-26 = white sans + a red box;
+10-28 = white bold sans with a soft bloom + red glowing serif italic, numbers as stat lockups: tiny caps label / big serif number /
+tiny caps label); ONE chart that keeps its state across five reprises (FX-73 + FX-70), the payoff a pull-out; the bottle returns three
+times; a glass-glint light sweep (new); 15 different subtle swishes. The catalog pass is in the job's BRIEF.
+1. **Re-check the reference before EVERY video**, even two days on: Mark's title treatment had changed (rule 5 is not a formality).
+2. **Chain takes on the FACE BOX, not the eyes.** At a head TILT the eyes drop 43 px while the head barely moves; a frame that followed
+   the eyes jumped the whole room (the lamp moved 15 px). -> `head()` = YuNet's box centre; a joint is a jump above 15 4K px and 2x the
+   steps beside it (s08 698, s22 1838 / 1880 moved; s16 1335, the tilt, did not).
+3. **Prove head steadiness from the 4K data; the window detector only catches gross snaps.** The proof: at each joint inside a cam
+   shot, residual = (face-box step - the anchor shift applied) x window scale; here every joint <= 10.4 px (the three real jumps 0.0,
+   the 1335 tilt 10.4 vs 8.4 px of motion beside it) -> keep it <= ~9-12 px (`ig/work/residual.py`). YuNet on a 600 px face filling
+   the window gives 10-25 px of landmark noise (it said 22-28 where a gridded before/after pair showed no jump), so qa.py detects at
+   half size and fails only a step >= 30 px and 3x the median around it (the YT's snap was 202 px): a catcher, not the proof.
+4. **A reprise opens on its label, never on an empty chart**: the top label comes up with the words leading in, the number lands on
+   its own word (`lockup(..., t_label=)`). An empty number string must not reach `big()` (it divided by zero at the payoff).
+5. **Subtle mode for Shorts he scores himself**: transition swishes only, each 19-23 dB under the voice beside it (cue_check's subtle
+   bands: LOUD > -18, LOST < -25), no slice with > 12 % of its energy above 6 kHz (the "hiss on a phone" note; two wide swooshes at 22 %
+   were swapped for darker whooshes).
+6. **The shared GPU lock only works if everyone takes it**: a Topaz pass started outside `lock.sh` ran beside a lock-queued one and one
+   segment came back empty. Hold GPU jobs when the main session asks, and stop your own task (TaskStop) rather than killing PIDs.

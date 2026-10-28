@@ -146,3 +146,49 @@ Notes resolved in `projects/cbum-last-show/review/critique-2026-10-21-redo/NOTES
     feedback-cover-phone-reading, now explicitly for AW long-form).** → measure head pitch AND yaw on the final cut
     (`work/look_down.py`, `workflows/eye-line.py`) and lay a full-frame graphic over every reading run before he sees it; his face
     shows only where he looks into the lens.
+
+## 2026-10-27 · BOTH VERSIONS review 1 (his notes + his own edits on the sequence)
+35. **He cut every pause himself, including the script's designed holds.** Ten ripple cuts (15 s): three in the cold-open Alvarez clip,
+    six short host gaps, and BOTH 1 s holds Part A asked for. → No designed silent holds in an AW film unless he asks; read his
+    timeline edits (`work/review1/diff.py`: map the old timeline to the new by source time) before touching anything, and keep them.
+36. **No silence over 2 s inside a third-party clip ("they cannot be more than two seconds, otherwise it just gets uncomfortable").** →
+    measure every speech-free stretch from word timings, check it on the source level, and cut it to 1.2-2.0 s with a sync-safe ripple
+    across all tracks (QE extract on a proven clone first), plus a 2-frame crossfade on the new joint; crying counts as content
+    but is still capped at 2 s. `projects/paris-jackson-both-versions/work/review1/extract_gaps.py`.
+37. **Censor every word about drugs, self-harm, suicide, in the audio AND the captions (and redact it in designed type).** → the
+    film's bleep (mute + soft tone), caption "[bleep]", list reported so he can restore one; host lines included.
+    `work/review1/censor.py`.
+38. **A score with an arc, never one flat bed: "mellow, emotional, sad at the beginning… a little intense where it builds… mellow again
+    approaching the end".** → map the chapters' feeling, pick one measured track per section (intensity curve, percussion share,
+    1-4 kHz energy, key), crossfade between sections, duck 6 dB under archive clips, pull fully out under the script's list.
+    `work/review1/score.py` + `music_measure.py`.
+39. **A reveal that lands ~1 s before a hard cut reads as "cut before it finishes".** The build agents met "settled ≥ 1 s before the cut"
+    and it was not enough. → a graphic's last reveal settles ≥ 1.8 s before its cut; measure it on the render
+    (`work/review1/mg_cutoffs.py`), and fix late comps with a time remap of their own timeline (`work/review1/remap_comps.py`).
+40. **Cutaways from other moments of an interview under someone's words look out of sync ("janky… all over the place").** → when a span
+    of picture can't be shown (undated photos), use the film's audio-only word card, never other talking footage.
+41. **Check every clip edge frame by frame for promo / transition frames** (Jay Shetty's "WATCH NOW · Netflix · Spotify" end card,
+    ET's white flash, a blur into a red-carpet photo). → trim, or hold the last clean frame when the word is still running.
+42. **SFX were too loud after a phone-audibility lift.** → no phone lift on a long-form; cap each class against the voice (booms -12,
+    thuds -13, hits -15, strokes/paper -19, swishes -21 dB).
+
+## 2026-10-28 · BOTH VERSIONS review 2 ("very close to upload material")
+43. **A word card whose exit starts before its last word is lit reads as "the animation doesn't finish… it transfers to my camera…
+    it looks like I interrupted" (2f, Oprah).** The audio-only card builder faded every card at a fixed `dur − 0.7 s`, so on a 1.8 s
+    card the last word lit inside the fade and the cut followed 0.13 s later; 1c and the review-1 Willow card had the same flaw. →
+    the exit is keyed off the LAST REVEAL (fully lit, held, then out), never off the comp's end; a gate reads every placed comp's own
+    timeline against its cut (`projects/paris-jackson-both-versions/work/review2/reveal_check.py`), because the motion check skipped the
+    word cards. Into his face: hold, then dissolve (≥ 1.5 s of face left); if his face window is too short for that, her line hangs over
+    his VO into the next scene (and anything that fades in after the card gets black under it, or his face flashes through the fade).
+    He approved that handoff on 2f ("keep it: her line holds over my voice into Chapter 3").
+44. **The paper / writing / scribble textures still read loud after review 1's caps ("tone it down three, four decibels").** → those
+    classes sit 3.5 dB under review 1 (strokes / paper ≈ −22.5 dB vs the voice); applied RELATIVE to the live level, by name, so his
+    hand-set levels stay (he had pulled one page-turn 15 dB himself). It also answers the phone-band question: quieter wins.
+45. **The film ends on a fade to black, not a hard cut** (his ask; Part A had "HARD CUT on 'hi, daddy'"). → the last frame held under
+    a slow push (the next words start 0.2 s later, so no more footage), a black solid eased 0 → 100 % over 1.6 s, then the end black.
+46. **A viewer must know who is talking and who they mean: "I didn't know he was Ozzy Osbourne's son."** Jack was never named, and 5d
+    ("when my dad passed") is HIM speaking, not Paris. → every third-party speaker gets a name at first sight; when a speaker refers to
+    someone famous, a small callout stems from the speaker's head (measured off the ear, clear of his hands) to a REAL photo + name +
+    relation + dates, in the lower-third type, with the lower-third whoosh.
+47. **His own edits this round: the score runs under the cold open too** (he laid the score's opening under 0-30.8 s and started Ch1's
+    section 2.6 s later), and the tabloid page-turn went −15 dB by hand. → AW long-forms: music from frame 0.

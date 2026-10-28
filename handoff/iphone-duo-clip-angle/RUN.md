@@ -1,5 +1,12 @@
 # RUN — iphone-duo-clip-angle (AffanWiz CA-009 · ABW10 · "CA-009 iPhone Duo Clip Angles")
 
+## ▶ 2026-10-28 — long-form UPLOADED (Affan). Shorts batch: 2 Shorts in the Scott Clary YouTube format
+- My picks: `shorts/PICKS.md`.
+- **Short 1 is HIS OWN text sequence instead (v3, "build this")**, code-built at `clips/reupload-wont-go-viral/` (BRIEF.md there is
+  the resume doc). FINAL delivered 2026-10-28: `X:\Claude Projects\Exports\affanwiz-reupload-wont-go-viral.final.mp4` + thumbnail. Prediction locked in the new `presets/youtube-shorts/affanwiz/RESULTS.md` (row 1).
+- **Short 2:** not chosen yet (Pick 1 "Same stream, 23 clips" is still open).
+- No ABW10 sequence was made: his text sequence replaced that step, and the format is code-built.
+
 ## ▶ STATUS: resume here (2026-10-27) — DRAFT COMPLETE on ABW10 › "CA-009 iPhone Duo Clip Angles", at his review (step 7)
 Steps 1–6 + music DONE, every gate green (read back by name, 2026-10-27 ~13:30):
 - **Cut** 138 segs, 7:25.8 (`transcript/cuts.json`); A1 = EDL clip for clip; dead-air gate PASS.

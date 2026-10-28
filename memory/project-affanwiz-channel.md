@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26a2857f-411a-4f2c-917d-fb6059e77b46
-  modified: 2026-10-23T03:23:39.666Z
+  modified: 2026-10-28T10:31:02.509Z
 ---
 
 **AffanWiz** (named 2026-09-23) is the creator's English personal brand, long-form YouTube with them on camera,
@@ -45,4 +45,18 @@ take despite the folder; job `projects/iphone-duo-clip-angle/`) built in ABW10, 
 with CA-007's four fixes built in from the start: V1 pre-split from a video-only subclip (sync 0 off), reading measured by head pose
 (sunglasses: reading = a head TURN, yaw), covered 0 s visible, fresh SFX `sfx/` (84 cues/54 files), CTA ~once a minute + plug card,
 music beds on A4 incl. one new bed. 3 edit-review rounds, all gates green; at his review (RUN.md has the resume block + flags).
+**2026-10-28: CA-009 uploaded; AffanWiz SHORTS start**, in the Scott Clary YouTube format: code-built with the onyx-samples-youtube
+kit, no music (he scores it), swishes only, hook card 0–3 s, face ≤ 4 s. They live in their own channel folder
+`presets/youtube-shorts/affanwiz/` (ENGINE/FINDINGS/RESULTS, prediction locked before upload); jobs go in `projects/<long-form>/clips/<name>/`.
+- He sent his own text sequence (v3). It is built as `clips/reupload-wont-go-viral/`. He approved the check and the 60 fps FINAL was
+  delivered 2026-10-28 (Exports `affanwiz-reupload-wont-go-viral.final.mp4` + thumbnail).
+- Later the same day he re-ordered it (v2: his conclusion moved to the top, his duplicate spoken hook cut, abrupt end on the list). The v2
+  is exported NEXT TO the v1 final (`...v2-reordered.final.mp4`). It was rebuilt without a new Topaz run: the shipped segments were
+  re-ordered and the Iris frames split with the segment muxer (BRIEF.md has the recipe).
+- Kit note: for a fast-moving speaker, use the chained head lock (`head_track: false`, `head_chain_n: 2`) and run the head-snap gate.
+- Credit tag on his Shorts = VIRAL FACELESS CREATOR / 530K+ SUBSCRIBERS, never his name ("no one cares who I am", 2026-10-28;
+  ENGINE.md). Still open: a Skool CTA or none.
+- Small text fixes on a delivered Short: re-render ONLY the overlay (`yt_build.py <job> <ver> --skip picture,mix`), never the
+  whole video (he asked for lean fixes, 2026-10-28).
+- Short 2 is not chosen yet (candidate: "Same stream, 23 clips", `shorts/PICKS.md`).
 Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]], [[feedback-every-video-better-than-last]].

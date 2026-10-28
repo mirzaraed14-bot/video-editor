@@ -934,3 +934,29 @@ Always check the EDL bash can actually see before re-splicing.
   that builder: fix it there too (`projects/gta6-world-stops/hf-graphics/gfx/build-plates.py` still has the old line).
 - **Re-timing placed graphics:** `place-seq24.py --remove <ids>` then `--apply` (plates + overlays by name); SFX with
   `place-sfx-seq24.py --prune --apply` (prune drops cues the plan no longer has, only from the job's sfx dir), then gate-frames.
+
+## 2026-10-27 · INCIDENT: a test deleted another session's sequence (paris-jackson-both-versions, review 1)
+- **`app.project.sequences` is ordered by sequence ID, NOT by creation.** A clone test took `sequences[numSequences - 1]` as "the clone
+  just made"; it was another session's "Fantasy Footballers reaction" (highest UUID). The script renamed it, ran QE extracts on it
+  (they did nothing: 0 s) and `deleteSequence`d it. The real clone ("<name> Copy", a lower UUID) stayed. Restored with
+  `app.project.importSequences(<copy of the last saved .prproj>, [id])` from the save made minutes before (no Undo: another session's
+  latest step could have been undone instead). That import kept Premiere busy ("not responding") for minutes.
+- **Rules now:** find a clone as the ONE new sequence ID after `clone()`, named exactly "<source> Copy"; never rename anything you did not
+  just make; delete only an ID you created in this run AND whose name you checked. `clone()` makes the clone ACTIVE: restore the
+  sequence that was active before the test, by ID.
+- **QE `sequence.extract(inTC, outTC)`** (two timecode strings, the sequence's display format: 59.94 DF here "HH;MM;SS;FF"): the ripple
+  extract across the targeted tracks. Prove it on a correctly identified clone before the real sequence.
+
+## 2026-10-28 · frame grabs on a 59.94 DF sequence, PNG gamma in HyperFrames (paris-jackson-both-versions, review 2)
+- **`premiere-bridge.mjs frame` grabs the WRONG frame on a drop-frame sequence, and on this transport it does not run at all.**
+  (a) It builds a NON-drop "HH:MM:SS:FF" from the frame count; on a 59.94 DF sequence QE reads it as a DF label, so the grab lands
+  early by 4 frames per elapsed minute (minus the tenth): 0.4 s at 6 min, 0.8 s at 13 min. Build the DF label: f += 36·⌊f/35964⌋ +
+  4·⌊(f mod 35964 − 4)/3596⌋ (when f mod 35964 > 4), separators ";". Proven by a dissolve landing exactly where its keys are.
+  (b) Its ExtendScript carries `//` comments; the file transport collapses newlines, so CEP evalScript fails ("host-side scripting
+  failure"). Workaround: `projects/paris-jackson-both-versions/work/review2/grab_frames.py` (comment-free QE call, DF label, under
+  ACTIVE-WINDOW.lock). Fixing the bridge itself is open.
+- **`exportFramePNG` wants a BACKSLASH Windows path.** "X:/dir/name" throws "Unknown error exception"; "X:\dir\name" works (spaces
+  are fine). And a dot in the name is taken as the extension: "end-790.60" writes "end-790.png" (grabs silently overwrite each other).
+- **A PNG from ffmpeg carries gAMA/cHRM chunks; Chrome (HyperFrames) applies them, and the frame renders ~24 % darker** (a held frame
+  of a graded card: mean 51.7 → 39.4). Re-save through PIL (`Image.open(p).convert('RGB').save(p)`: no chunks) before an <img> in a
+  comp; after: 49.9. Any comp that shows a frame grabbed by ffmpeg next to the same footage needs this, or the cut into it jumps.

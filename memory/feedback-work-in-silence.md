@@ -18,6 +18,7 @@ to be disturbed". A VLC window from another session (a Scott Clary final) was al
 - Never play audio or video aloud: no ffplay, VLC or `start <file>`, and never Premiere playback for checking.
 - Measure with ffmpeg to files or to `-f null` only.
 - Never leave a YouTube or other autoplaying page open in the built-in browser or Chrome. For facts use WebSearch/WebFetch, and close any media tab you open at once.
+- 2026-10-28, again: opening his Tella share link in the built-in browser autoplayed it with sound ("bruv why can i hear it"). Never open a video page (Tella, Loom, YouTube) in a browser to fetch it: curl the page HTML for the stream URL ([[feedback-walkthrough-videos]]).
 - Put the silence rule in every subagent brief.
 - If he hears sound, check the built-in browser tabs (`tabs_context`, then pause the media with JS) and the running players first.
 

@@ -22,7 +22,26 @@ Every layer is placed and verified by script: the cold open, the clip layer, Ch1
 121 SFX, 3-frame host crossfades, 2 subscribe alerts and the end black. Final mix −14.2 LUFS / −1.3 dBTP. B8 report in `B8-REPORT.md`. He exports. Still waiting on him:
 - the host LUT, which he applies by hand;
 - OK on the IG original, the "…" captions and the 5a bleep.
-After his review: LESSONS entries.
+**2026-10-27: his review 1 is applied (REVIEW-1.md, LESSONS 35-42).** The film is now 13:13. His own 10 pause cuts are kept. The changes:
+- a scored music arc on A5;
+- 21 censors;
+- in-clip pauses capped at 2 s;
+- late reveals re-timed;
+- Willow's cutaways replaced by a word card;
+- the promo frames cut;
+- quieter SFX.
+
+Final mix: −14.2 LUFS, −1.3 dBTP AAC. He watches next, then exports.
+
+Live state is in work/review1/live.json (the old placement JSONs predate his cuts).
+
+**2026-10-28: review 2 applied (REVIEW-2.md, LESSONS 43-47): "very close to upload material".** His notes:
+- the Oprah word card's ending: it now finishes its line and carries into Chapter 3;
+- paper SFX −3.5 dB;
+- a fade to black at the end;
+- an Ozzy callout on Jack.
+
+His own edits (score under the cold open, a tabloid cut) are kept. Runtime is now 13:14. He watches, then exports. The live snapshot is work/review2/live-r2-after.json, and the frame proof is work/review2/frames/.
 
 **Nick Walker: DONE (the creator confirmed 2026-10-07).** It was the template for the next long-form.
 

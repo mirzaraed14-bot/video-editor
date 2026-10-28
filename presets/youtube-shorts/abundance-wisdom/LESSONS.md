@@ -865,6 +865,17 @@ Six corrections, all now rules:
   the crop sheet (`tools/crop_sheet.py`, first/mid/last frame per row as framed) BEFORE placing and pin `framing.json`.
   Also: `plan_placement.py` needs `uv run --with opencv-contrib-python-headless --with numpy`; a beat's `drop_candidate`
   must be an int; a "laugh" in a pause can be a room VOICE ("yeah, that's"): the re-ASR of the readback found it.
+- 2026-10-28 (Derek "daughters", code build from his Tella): **never open his Tella link in a browser** (it autoplays WITH SOUND
+  and interrupted him): curl the share page, the signed `prod-stream ... manifest.m3u8` is in the HTML. **His guide timecode
+  is read in seconds, not minutes**: one ffmpeg crop pass (program-monitor timecode + the sequence duration) + rapidocr in one
+  batch (11 s for 613 frames; per-frame ffmpeg seeks into the HLS copy took 40+ min). The duration showed he recorded on a
+  LIFTED layout (gaps) and closed them at the end: map "this" against HIS current clips, not the raw placement.
+  **Captions from a mixed A1 drift** where a crowd roars (wav2vec2 put "I said, homie" ~2 s early): build the caption
+  words.json from each SOURCE transcript mapped through his A1 in/outs (pure arithmetic). `finish.py` letterboxes every
+  'overlay' unless it carries `'full': True` (his "only this one is letterbox" = full on all the others). A Zoom-call
+  panel (956x540 of a 1920x1080 frame) fills 9:16 at 3.6; measure eyes/mouth with YuNet before choosing a deeper scale
+  (4.46 cut his eyes off). Broadcast "reaction" shots: the call itself is often only on a super-wide; the first FRONT
+  close-up of the athlete came 15 s later (medal presentation) — check the next camera before settling for a back shot.
 - 2026-10-26 (MJ × Joe appointment, code build): **a source decides where its face can sit.** With one caption line (lips
   ~y835), a face that sits HIGH in its 16:9 frame (podcast mediums: Art Of Dialogue bodyguard, Fiddes) exposes a mirror strip
   at the top at 177.87 % — scale it up instead (2.4 / 1.95 / 2.75 = tight, his taste); a face that sits LOW with a bug under it
@@ -885,3 +896,65 @@ Six corrections, all now rules:
   **Outcome (2026-10-27):** v2 (only those three notes changed) was UPLOADED as delivered, no second round. The 4th code build
   shipped after one review: his Tella direction video + sequencing-first held the creative calls, so the notes were
   source/framing/music, not taste.
+- 2026-10-28 (Flex Wheeler "told doctors to take his leg", `projects/flex-wheeler-leg/`, CANCELLED before intake): **a brief
+  can be locked on story and still die on source quality.** Both sources were a 2020 podcast (probably a remote call) and his
+  own 2021 vlog with music under it. The brief flagged the picture as its lock 1 ("check that Flex's face holds at 1080×1920")
+  but left the check for after the download. When he opened the links he dropped the short: "the source video quality is very
+  bad the audio is very bad". Change: on a new brief, hand him the source links FIRST, before working the cut (this PC can't open
+  YouTube, so he is the one who can watch them). Flag the risky ones in the same line: a remote call, a phone vlog, music or
+  noise under the voice, an old upload. He decides go / no-go before any sequencing. A rescue plan (stills over his audio, punch-ins ≤115 %) cannot fix bad audio.
+- 2026-10-28 (Janet "couldn't cry", `projects/janet-couldnt-cry/`, intake): **YouTube downloads worked again**: B2's plain
+  yt-dlp commands (no cookies, yt-dlp 2026.08.19) fetched all four sources, the 1.4 GB 4K one included. "Blocked" is not
+  permanent: try the brief's commands once before asking him to drop files in (never with cookies/proxies). AV1 comes down
+  for most 2009-2011 uploads: transcode before a Premiere import.
+- 2026-10-28 (same): **a fan clip of a broadcast can be a LONGER cut of the same interview with different camera cutting.**
+  The Dateline restore (DL) puts the hook line on a wide two-shot and "I was in Paris" on a Jackson 5 CHILDHOOD montage; the
+  2011 fan upload (WR) holds the same takes on Janet's close-up. Band-passed envelope cross-correlation found the same audio
+  (r 0.81-0.96, a per-piece offset because the broadcast trimmed pauses) → keep one audio, swap the picture per piece
+  (`win/xcorr.py`). Check what is on screen UNDER every word of a quote, not only at the brief's in-point.
+- 2026-10-28 (same): **when the GPU is shared** (other sessions' Topaz / renders at 100 %), full-source WhisperX crawls (8 min
+  of audio > 20 min); CPU faster-whisper large-v3 int8 on just the beat windows (+-10 s) took ~5 min for all of them
+  (`win/win_asr.py`).
+- 2026-10-28 (Derek "daughters", HIS REVIEW of v1): **(1) "lot of artifacts in some places"** = the 2026 OlympiaTV finals
+  upload is INTERLACED (ffmpeg idet: TFF 120/120) while its header says progressive (3.8 Mb/s): every moving edge combed
+  into horizontal tears, then the zoom and his sharpen magnified them. Run `idet` on EVERY broadcast/event source before
+  placing it; fix = `bwdif=mode=send_field:parity=tff` (59.94 progressive, smoother on the 60 fps timeline) + a light
+  `hqdn3d=1.5:1.5:4:4` into an intermediate, then re-render only those overlay frames (`assemble.py` "seg"). **(2) "Derek
+  looks too red"** (his vlog corridor, warm tungsten): graded skin sat 0.87-0.97, R/G 3.2-3.4 → pre-grade `sat_level`
+  {'jrn': 0.45} → sat 0.66-0.68, R/G 1.9 (`build/skin_png.py`), his AE grade untouched — the same "very red" fix as MJ Kids
+  Saw's Katherine. Measure every face source's graded skin on the test stills BEFORE sending them (target ~0.4-0.5 luma,
+  sat 0.6-0.7, R/G 1.4-2.0); this one was visible on my own v1 sheet.
+- 2026-10-28 (Derek "daughters", HIS REVIEW of v2): **"10-14 sec the captions are mismatched, speakers are saying something
+  else"** = WhisperX word times on broadcast PA audio (announcer over a crowd): it cannot align "$100,000" (no letters), so it
+  squeezed the number into 0.5 s and put the announcer's next word "and" 0.4 s later, INSIDE his cut, when the real "and"
+  (forced wav2vec2 on the spoken form "one hundred thousand dollars") sits 0.6 s AFTER his A1 cut. Result: an AND card shown
+  during "...thousand dollars", a word nobody says. Every ASR pass agreed on the TEXT; only the times were wrong, so a text
+  re-ASR does not catch it. **Gate:** for every broadcast/PA clip and every spoken number, force-align the known text with
+  numbers written out (`projects/derek-lunsford-daughters/tools/force_align.py <media> <start> <dur> "<text>" <out>`), map it
+  through his A1 in/outs, and drop any caption word that falls outside its clip; end a clip's last card ON the cut.
+
+- 2026-10-28 (Janet "couldn't cry", raw sequence): **a word every A1 re-ASR misses at a piece's END was cut off, not
+  misheard.** "about his death" read "about his." in every pass; the real "death." sat 0.25 s after "his" (1614.30-1614.53),
+  past an out placed from the window-ASR's stretched word times. Before placing, re-ASR each piece ALONE plus one with
+  0.5 s more context: a word the context run hears and the piece run doesn't is outside the piece. The same pass found a
+  "to ... to cry" stutter that the long-window ASR had merged.
+- 2026-10-28 (same): **a restore compilation can use a speech as silent B-roll.** the detail.'s 4K "Janet's own words" laid
+  the BET speech picture under Dateline audio, so audio correlation found nothing; picture-motion alignment
+  (`projects/janet-couldnt-cry/win/vis_align.py`) placed it at BET 0-17.2 s only, too short for the beat. Check a "better
+  copy" covers the beat's PICTURE and AUDIO before promising it.
+- 2026-10-28 (same): **crowd/applause hides pauses from a whole-window floor.** BET's 3 s pause after "My" and the
+  joined-beat "quiet" runs were both wrong at the beat floor; a +-3 s local floor at 10 ms (`win/strip.py`) shows the real
+  edges. Judge B1.1 gaps on the SOURCE floor; the joined-cut floor counts soft word tails as silence.
+- 2026-10-28 (Janet "couldn't cry", code build v1): **a tight, low close-up decides the caption line.** DL's 4:3 close-up
+  (face ~40 % of frame height, nose at 56 %) cannot put the lips over a mid-frame caption line without a 125 %+ punch or an
+  exposed edge; a line at ~64 % (y1250-1290, the brief's 62-68 %) sat just under the lips on EVERY source (DL, WR, BET
+  letterbox, his message). Measure each source's natural mouth y at fill-height before picking caption_shift.
+- 2026-10-28 (same): **head lock with a cover clamp.** The lock holds the nose at (540, Y) only while the picture still
+  covers the frame (`projects/janet-couldnt-cry/build/stage_a.py` cover_clamp; DL's 'content_x' = the 4:3 picture inside
+  its pillarbox); past that the face moves in frame instead of a Motion Tile mirror. Needed when a speaker lowers and lifts
+  her head inside one shot (S12: 550 src px of travel).
+- 2026-10-28 (same): **a fan clip of the same interview is a cover layer, not a source swap.** Where he laid WR's close-up
+  on V2 over DL's wide / childhood montage, the shot list uses the visible layer and the audio stays DL's (his A1); each
+  cover starts at DL time minus the measured offset (<= 1 frame).
+- 2026-10-28 (same): **edge checks on a 30 fps export: seek to f/30 - 5 ms.** Seeking to (f + 0.5)/30 returns frame f+1 and
+  shows a false "stray frame" before every cut (`projects/janet-couldnt-cry/win/final_edges.py`).

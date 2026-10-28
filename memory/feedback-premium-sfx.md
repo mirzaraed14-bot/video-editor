@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: dba6d668-1b25-43d5-a8b2-d5bc637b60ae
-  modified: 2026-10-26T07:34:35.354Z
+  modified: 2026-10-28T01:50:46.396Z
 ---
 
 Affan on SAME NIGHT cold open v2 (2026-10-08): the magic-shimmer SFX on the Sandow lift was "so goofy… I want this video
@@ -40,8 +40,10 @@ whoosh crested on the cut; a value landing = a hit on its first VISIBLE frame; a
 the face silent), levels near the Chris Do IG mix. Template: projects/_client-scott-clary/morgan-claw-machine/yt/sound.py + cue_check.py.
 
 **UNDER HIS MUSIC (Affan 2026-10-26, Morgan claw after v3):** "remove the sfx except for the transition ones, once I put music it's
-like too much". On a Short he scores himself, the card hits and swells crowd his bed: v4 kept only the whip-cut whooshes. One data
-point so far; if it repeats, transition-only is the default when he adds the music.
+like too much". On a Short he scores himself, the card hits and swells crowd his bed: v4 kept only the whip-cut whooshes. REPEATED
+2026-10-28 (Patrón: "crisp premium expensive but subtle ... I'm gonna put a music bed"), so it is now the DEFAULT for Shorts he scores
+himself: transition swishes only, short (loud part <= 0.35 s), 19-23 dB under his voice, HP 150 Hz, nothing whose body sits above 6 kHz.
+Template: projects/_client-scott-clary/patron-20000-cases/yt/sound.py.
 
 **VARIETY (Affan 2026-10-21, THE LAST SHOW redo, rated the SFX "2 out of 10"):** "this Vegas whoosh air sound effect so many times…
 annoying… way more variety… not just spam [one] sound effect again and again". The redo had 293 cues sliced from SAME NIGHT's handful
@@ -56,3 +58,17 @@ trailer toms, taiko, heavy thuds, deep whooshes), 38-47 cues per video, hits 5 d
 job, soft and airy (gentle swishes, light risers, high-passed soft impacts; still no taps/foley per PHONE BAND), no trailer drums or big booms on a talking reaction,
 and every cue clearly under the voice (hits ≥ 8 dB under the voice peak, whooshes far lower); fewer big moments, none louder than the
 rest. Lesson: presets/youtube-shorts/onyx-samples/LESSONS.md § 2026-10-27 review.
+
+**SUPERHERO (Affan 2026-10-28, "Shorts cooked" reel, THIRD strike on Onyx SFX: "they sound like they're from a superhero movie ...
+each motion graphic of mine has some super powers ... refined premium subtle ... expensive ... belong to the motion graphic"):** lowering
+levels (v2) did not fix it because the takes were still Scifi Impact / Ethereal Fantasy Ghost / Fire Reversed / Eerie Metallic / risers /
+stingers. For Onyx reels + reactions the palette is ONE family: the soft airy / cloth swishes of the Patrón Short he approved that day
+(patron-20000-cases/yt/sound.py), in three sizes (pill/chip = short cloth swish, title/card = light airy, bar/grid/split cut = longer
+airy), ONE cue per graphic entrance, crest on the move's fastest frame, silent on text swaps / colour changes / stamps / cuts to the face;
+peak 15 dB under the local voice peak and >= 19 LU under. Reject takes by title first (Scifi, Fantasy, Magic, Cinematic, Trailer, Impact,
+Riser, Stinger, Hit, Boom, Eerie, Metallic, Fire, Ghost, Ethereal), then measure vs the Patrón slices (tonal p90 <= ~13). Recipe:
+projects/shorts-cooked-not-your-fault/work/sfx3_build.py; lesson in onyx-samples LESSONS § 2026-10-28.
+
+**2026-10-28 (AW long-form, BOTH VERSIONS review 2):** "the scrubbing, the writing, the paper sound effects are just a little bit loud…
+three, four decibels": paper / pencil / marker / page-turn textures sit ~3.5 dB under the review-1 caps (≈ −22.5 dB vs the voice).
+Apply it relative to the live level so his own hand-set levels stay. Quieter beats the phone-band audibility target (AW LESSONS 44).

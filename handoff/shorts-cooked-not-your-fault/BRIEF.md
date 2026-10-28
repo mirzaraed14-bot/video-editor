@@ -1,6 +1,28 @@
 # shorts-cooked-not-your-fault: ORGANIC REEL for Affan's @affancuts page (ABW10 "Shorts cooked reel")
 
 ## ▶ STATUS: resume here
+- **2026-10-28 ≈16:40 PKT: "episodes" JOINT FIXED on "Shorts cooked reel", ABW10 saved. Picture now ends 84.433 (1:24.4).** His note
+  "at the end buried is cut out midway": the keep "all of your episodes." ended at OBS 274.283 (a pins round had cut it from 274.994),
+  0.17 s into "episodes" (voice energy runs to 274.88), so the "still buried in all of your episodes" line stopped on "e-" and the STILL
+  buried card dropped with it. Keep end → 274.9 (+37 frames at 81.0333): offline `work/v3cut_offline.py` (cuts.json, words.tight.json,
+  `work/dump-v3.json`; backups `work/pre-v3cut/`), `BP_DUMP=work/dump-v3.json python build_plan.py` (gated: every graphic before the joint
+  unchanged, after it +0.6167), new renders `overlays/captions-v3.mov` (identical to the old one to 80.4 s and after the joint) +
+  `overlays/mg/low-buried-v3.mov` (to 81.65); Premiere `work/v3cut_place.py --apply` (room → pieces laid in empty space → back; never
+  `.end` to extend), the A1 piece's house chain via audio-polish `--range`, his Thelema (he had trimmed it to 83.82) continued by a new
+  piece of the same song (same level, his Lowpass cutoff copied; his clip gave up 2 frames to an mp3 in-point floor, content continuous).
+  Read back = dump-v3 exactly; lip sync worst 2.8 ms; no gaps. Backup `work/pre-v3cut-Shorts_cooked_reel-1028.xml`. Acoustic scan of the
+  other joints: no other clear mid-word cut (0:29.8 "interviewing" and 0:58.4 "produce" end within ~20 ms of the word edge; left).
+- **2026-10-28 ≈15:50 PKT: v3 APPLIED ON "Shorts cooked reel" (v1 = HIS working sequence), ABW10 saved.** He reviewed v1 (not v2), had
+  laid his own bed on A3 (`Thelema.mp3`, 0-196.07 s, so the sequence now ends at 3:16; picture still ends 83.82 s). His notes: (1) "too
+  much text at the beginning, remove the stylized text from the bottom"; (2) the SFX "sound like they're from a superhero movie ... each
+  motion graphic of mine has some super powers" → "refined premium subtle ... expensive ... belong to the motion graphic".
+  Done, ONLY those two: V4 `hook.mov` → `hook-ghost.mov` (the COOKED ghost alone, same 394 frames; `mgx.py` hook_big now accepts
+  `phases: []`; captions untouched); A2/A4: v1's 38 cues (stabs, crunches, +5.8 dB stingers, risers, impacts) → 18 soft swishes, one per
+  graphic entrance, sized to the move (small cloth swish on pills/chips, light airy on titles/cards, longer airy on bars/grids/the split
+  cut), peaks 15 dB under his local voice peak, 21.8-31.5 LU under (`work/sfx3_build.py` → `work/sfx3-gates.txt` ALL PASS; 6 fresh takes,
+  every slice tonal 10.3-12.6 = inside the Patrón swishes he approved the same day; `work/v3_place.py` read back 18/18). V1-V3, V5, A1, A3
+  untouched; backup `work/pre-v3-Shorts_cooked_reel-1028.xml`; plan.json `hand_edited` (never re-run apply.py --window/--overlays/--verify
+  on it). v2 "Shorts cooked reel v2" left as it was. NEXT = his listen; he exports.
 - **2026-10-27 ≈13:00 PKT: v2 PREPARED — "Shorts cooked reel v2"** (same bin; v1 "Shorts cooked reel" kept untouched: re-dumped,
   identical to its 12:05 state, and no export of the reel anywhere in Exports / E:\Shorts / Downloads, so he had not edited or
   exported it). Affan's review note (the only one for the reel): the SFX read "very very cheap … not expensive, premium, refined,

@@ -3,6 +3,15 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-28: a sung chant is not missing words (ABW10 Seq 33)
+
+- **A sung or drawn-out phrase fails HANGING with nothing missing** ("good morning teacher / assalam o alaikum", 2.1–2.4 s for
+  3 words, sung once: ur + hi + en re-decodes agree). → `caption_qa.py` reads `<job>/qa-allow.json`
+  (`{"hanging": [{"t": <cue start>, "reason": "..."}]}`) and prints those cues as ALLOWED with the reason. Use it only after a
+  three-language re-decode proves the words are all there; splitting the line is still right when it matches the delivery
+  (Seq 22's slow list, Seq 24's "banger").
+- **His spelling of baithe is "bethe"** (roman-urdu.md), also when Whisper hears a fast "bethe bethe" as پیٹے پیٹے.
+
 ## 2026-10-27: the gate must know clip speed too (ABW10 Seq 30)
 
 - **A slowed clip stretches every word** (his comic beats are 0.8x: `reference-humor-style`): "minus 9,675" held 4.5 s of

@@ -235,3 +235,49 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   music bed the card hits, swells and sub-booms crowd the mix; v4 keeps only the whip-cut whooshes (cuts back to the face stay silent).
   One Short so far: a lesson, not yet a rule. If it repeats, make transition-only the default for Shorts he scores himself, and
   ship the full design as a stem he can pull from.
+- 2026-10-28 (Scott Clary x John Paul DeJoria, `projects/_client-scott-clary/patron-20000-cases/`, Affan's own text sequence, check v1 ->
+  v2): (1) **WhisperX cannot align digits** ("1989", "20,000", "2018", "3,500,000" are interpolated): word times drifted up to 1.5 s around
+  the numbers, so two cut edges clipped "cases a year" / "we were doing" and the captions ran a second early. Cross-check the number
+  stretches against faster-whisper word times + the RMS (the job's `work/fix_words.py` fixes them in words.json; it also splits
+  "3,500,000" into its five spoken words, because the caption rule turns "3.5M" into 30 characters). (2) **The name tag ran off the
+  frame** ("that tag is not completely visible ... it's like cut out"): the default tag (x 330, dx -60) hangs its label LEFT of the dot
+  and a 450 px label fell off the edge. Set `yt/tag.json` from the head position and the label's measured width, and check its bounds
+  on the proof sheet; the prop must not land on it. (3) **Transition SFX under his music = subtle**: "crisp premium expensive but
+  subtle ... I'm gonna put a music bed": short airy swishes (loud part 0.15-0.35 s, not 0.5-1 s builds), 19-23 dB under his voice
+  (Morgan v4 sat 12-19), HP 150 Hz; a bright flyby swish measured -28 dB in the phone band (its body above 6 kHz = hiss on a phone): out.
+  (4) **The sharpen pass, asked a second time** ("a slight tinge of sharpen and unsharp mask throughout"): now the standard finishing
+  step, `workflows/sharpen-picture.py <job>` (cards excluded, from an untouched raw, never stacks), CLIENT-SHORT-RECIPE § 5.
+- 2026-10-28 (Patrón 60 fps final, tool bug): the Topaz Chronos pass failed twice on the same take ("IndexError" in topaz-iris.py probe =
+  an EMPTY output file): frames 260-318, a nearly static stretch of the $37.95 price card. yt_build split the 60 fps pass at every
+  `head_lock` joint, and build_spec had locked every audio joint, including the ones inside cards and B-roll, so a static card slice
+  became its own take and Chronos (rdt duplicate removal) returned nothing. Fixed twice over: yt_build.py splits only at shot starts +
+  joints inside A shots (backup kit/yt_build.py.bak-2026-10-28), and the Patrón build_spec locks only joints inside A shots (`IN_A`).
+- 2026-10-28 (same night, two sessions on one GPU): the IG session's Topaz jobs queue on the shared lock
+  (`projects/_onyx-batch2-2026-10/lock.sh gpu`), but `yt_build.py`'s Topaz step (workflows/topaz-iris.py) does not take it, so an IG
+  plate started alongside the YT 60 fps pass. When two sessions render, wrap the YT final in the lock (or message the other session
+  to hold) before the Topaz step.
+- 2026-10-28 (Patrón 60 fps QA, the eye-step gate caught it before delivery): at the jump cut at 61.27 s his eyes stepped +58 px and
+  stayed (Morgan's snap, smaller). The source had a REAL 32 px jump there plus a steady leftward drift on both sides; `head_track`'s
+  Gaussian average is one-sided at a take's edge, so both takes lagged the drift in opposite directions and the lock over-corrected.
+  Kit fix (yt_picture.py `track_eye`, backup .bak-2026-10-28): within 2 sigma of a take edge it blends in a Gaussian-weighted LINEAR
+  fit (no edge bias for steady motion); mid-take stays the calm average. The joint-unlock rule (`smooth_through`) still applies.
+  Gate, every Short with jump cuts in a face shot: eye x-steps across each joint on the DELIVERED frames; a step that stays > ~25 px
+  is a snap (a one-frame blip that reverts is the detector).
+- 2026-10-28 (AffanWiz CA-009 Short "re-upload won't go viral", `projects/iphone-duo-clip-angle/clips/reupload-wont-go-viral/`, his
+  own text sequence; the first Short cut from HIS long-form; check v1).
+  - **(1) Head tracking lags a fast head at jump cuts.** `head_track` (sigma 12) placed the eyes 100-140 px off the pin at three
+    in-shot joints where he moved quickly in short takes, then drifted back: a visible snap on the delivered frames
+    (`work/head_snap_gate.py`). The offline replay `work/track_sim.py` showed sigma 3 still 132 px, so smoothing is not the cause.
+    - Fix: `head_track: false` (the chained lock, each take starting where the last ended) plus the new opt-in spec key
+      `head_chain_n: 2`. yt_picture.py matched each cut on a 4-frame median; 2 frames gives max 70 px at a joint where he moves
+      31 px/frame, else <= 24 px.
+    - Default 4 is unchanged, so other jobs render bit-identical (backup kit/yt_picture.py.bak-2026-10-28).
+    - Rule: on a Short whose speaker moves a lot, run the head-snap gate before sending any check.
+  - **(2) A tight 1080p webcam framing** (face box 38 % of the height) leaves the lips ~350 px above the 1092 seam at z0 1.0. z0 1.15
+    puts them just above it; the hair top stays ~130 px down, so keep pushes <= 1.13.
+  - **(3) The default name tag ran off the right edge again** (a 21-character credit line). Place `yt/tag.json` from the measured head
+    with the label opening INTO the frame, and check its bounds on a full-size frame before the proof sheet.
+  - **(4) The kit's starred profanity** ("S**T", `audio.mute`) renders through the caption cleaner, and quotes may span chunks
+    ('IS LIKE "HUH?' ... 'IT'S NICE"'): both verified on full-size frames.
+  - **(5) This room's noise floor is -42..-46 dBFS**, so the -42 dBFS run rule caught only fragments of each pause. The job's
+    make_edl cuts each inter-word gap from its first to last quiet frame, with a threshold relative to the gap's own floor.

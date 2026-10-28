@@ -13,6 +13,8 @@
   python workflows/mg-cards.py dayrate  OUT.mp4 --steps 250@0,300@2.6,400@3.0,600@3.4,800@3.8 [--label "HIS DAY RATE"]
   python workflows/mg-cards.py clawmenu OUT.mp4 --t1 0.6 --t2 2.4 --t3 3.6 --t4 4.8 [--dur 6]   (a claw machine's operator menu)
   python workflows/mg-cards.py bunnycost OUT.mp4 --src BUNNY_CARD.png --t1 1.2 --t2 3.2 --t3 4.0 [--dur 5]   ($100 in vs a 50-cent bunny)
+  python workflows/mg-cards.py pricetags OUT.mp4 --t1 0.3 --t2 4.8 [--dur 6]   (Patron $37.95 vs the average 1989 tequila's $5, to scale)
+  python workflows/mg-cards.py cases OUT.mp4 --mode A|B|C|D --t1 .. [--t2 .. --t3 ..] [--dur 4]   (Patron cases a year: one chart, four returns)
 
 dots      a field of N white dots on navy; one dot turns teal and the camera eases in on it; the label rises in under it.
 counter   a number rolls up from 1 to --to (ease-in-out), each change sliding up with a fading ghost; the final number turns teal.
@@ -588,10 +590,122 @@ def bunnycost(a):
     out.stdin.close(); out.wait()
 
 
+def pricetags(a):
+    """$37.95 vs $5 (John Paul DeJoria, 2026-10-28: "it was $37.95 a bottle. The average tequila in 1989 was around $5 a bottle"): a tall
+    teal PATRON bar rises on --t1 while its price counts up to $37.95; a stubby grey bar for the average 1989 tequila rises on --t2 with
+    "$5". Heights are to scale (7.6 : 1). Everything sits above the caption band (y < 980)."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    big, mid = ImageFont.truetype(ANTON, 150), ImageFont.truetype(ANTON, 54)
+    base, top = 960, 530; Hp = base - top; Ha = Hp * 5 / 37.95                  # $37.95 tops out at y ~230: clear of the top 200 px
+    cols = [(330, Ha, "$5", "AVERAGE TEQUILA, 1989", a.t2, (96, 112, 140)), (750, Hp, "$37.95", "PATRON", a.t1, TEAL)]
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        g = eout(s / 0.35)
+        d.line((120, base, 120 + (w - 240) * g, base), fill=(70, 86, 112), width=4)                   # the floor draws in
+        label(d, "A BOTTLE", w / 2, 1240, 64, (150, 165, 190), eout((s - 0.1) / 0.3), eout((s - 0.1) / 0.3))
+        for cx, bh, price, name, tt, col in cols:
+            p = eout((s - tt) / 0.45)
+            if p <= 0:
+                continue
+            hh = bh * p
+            d.rounded_rectangle((cx - 110, base - hh, cx + 110, base), radius=16, fill=col)
+            if price == "$37.95":
+                v = 37.95 * ease(min((s - tt) / 0.5, 1)); txt = "$37.95" if s - tt >= 0.5 else f"${int(v)}"   # whole dollars while it climbs (a "$0.50" flash read as a price)
+            else:
+                txt = price
+            tw = d.textlength(txt, font=big); y = base - hh - 300
+            d.text((cx - tw / 2, y + 40 * (1 - p)), txt, font=big, fill=tuple(int(c * min(1, p * 1.5)) for c in (col if col == TEAL else WHITE)))
+            nw = d.textlength(name, font=mid)
+            d.text((cx - nw / 2, y + 170 + 40 * (1 - p)), name, font=mid, fill=tuple(int(c * min(1, p * 1.5)) for c in (205, 214, 228)))
+        out.stdin.write(push(im, t, 0.03).tobytes())
+    out.stdin.close(); out.wait()
+
+
+def _dash(d, x0, x1, y, col, width=6, dash=26, gap=16, p=1.0):
+    x, xe = x0, x0 + (x1 - x0) * p
+    while x < xe:
+        d.line((x, y, min(x + dash, xe), y), fill=col, width=width); x += dash + gap
+
+
+def cases(a):
+    """PATRON, CASES A YEAR (John Paul DeJoria, 2026-10-28): ONE chart that returns four times (catalog FX-73 reprise + FX-70 benchmark),
+    only his spoken numbers on it.  --mode A: the wine distributor's bar rises to 1,000 (--t1), "12,000 BOTTLES" (--t2), a dashed
+    GOAL 50,000 line (--t3).  B: the big distributor's verdict, a red dashed ceiling at 20,000 draws across on --t1 ("NEVER MORE THAN
+    20,000").  C: SEAGRAM'S bar punches through the ceiling to 50,000 on --t1.  D: from --t1 the axis rescales while the 2018 bar
+    rockets to 3,500,000 (the counter under the caption band lands on --t2); the ceiling and the old bars collapse to a hairline."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS); m = a.mode
+    base, top = 960, 380; H = base - top; X0, X1 = 110, w - 110
+    fv, fl, fh, fbig = ImageFont.truetype(ANTON, 64), ImageFont.truetype(ANTON, 40), ImageFont.truetype(ANTON, 52), ImageFont.truetype(ANTON, 190)
+    GREYB, DIM = (96, 112, 140), (150, 165, 190)
+    for i in range(N):
+        s = i / FPS; t = i / (N - 1)
+        im = Image.new("RGB", (w, h), NAVY); d = ImageDraw.Draw(im)
+        r = ease((s - a.t1) / max(a.t2 - a.t1, 0.3)) if m == "D" else 0.0
+        vmax = 60000 + (3800000 - 60000) * r
+        Y = lambda v: base - H * v / vmax
+        hp = eout(s / 0.3)
+        tt_ = "PATRON  ·  CASES A YEAR"; tw = d.textlength(tt_, font=fh)
+        d.text((w / 2 - tw / 2, 236 + 20 * (1 - hp)), tt_, font=fh, fill=tuple(int(c * hp) for c in DIM))
+        for k in range(1, 4):                                                          # faint gridlines (they sink on the rescale)
+            gy = Y(15000 * k)
+            if top - 5 < gy < base - 8:
+                d.line((X0, gy, X1, gy), fill=(24, 36, 56), width=2)
+        d.line((X0, base, X1, base), fill=(70, 86, 112), width=4)
+        bars = [(270, 1000, "WINE DISTRIBUTOR", GREYB, a.t1 if m == "A" else -9)]
+        if m in ("C", "D"):
+            bars.append((540, 50000, "SEAGRAM'S", TEAL if m == "C" else GREYB, a.t1 if m == "C" else -9))
+        if m == "D":
+            bars.append((810, 3500000, "2018", TEAL, a.t1))
+        for cx, v, name, col, tt in bars:
+            p = eout((s - tt) / 0.5)
+            if p <= 0:
+                continue
+            ov = 1 + 0.06 * math.sin(math.pi * min(max((s - tt) / 0.5, 0), 1)) if (m == "C" and name == "SEAGRAM'S") else 1.0   # a small overshoot
+            if m == "D" and name == "2018":
+                vv = 50000 + (3500000 - 50000) * r
+            else:
+                vv = v * p * ov
+            y = min(Y(vv), base - 6)
+            d.rounded_rectangle((cx - 95, y, cx + 95, base), radius=12, fill=col)
+            nw = d.textlength(name, font=fl); d.text((cx - nw / 2, base + 14), name, font=fl, fill=DIM)
+            if not (m == "D" and name == "2018") and not (m == "D" and r > 0.35):
+                txt = f"{v:,}"; vw = d.textlength(txt, font=fv)
+                d.text((cx - vw / 2, y - 84), txt, font=fv, fill=tuple(int(c * p) for c in (WHITE if col != TEAL else TEAL)))
+        if m == "A":                                                                   # 12,000 bottles + the goal
+            q = eout((s - a.t2) / 0.3)
+            if q > 0:
+                label(d, "12,000 BOTTLES", 270, Y(1000) - 170, 44, DIM, q, q)
+            g = eout((s - a.t3) / 0.6)
+            if g > 0:
+                _dash(d, X0, X1, Y(50000), TEAL, 5, p=g)
+                d.text((X1 - d.textlength("GOAL: 50,000", font=fl), Y(50000) - 56), "GOAL: 50,000", font=fl, fill=tuple(int(c * g) for c in TEAL))
+        cy = Y(20000)
+        if m == "B":                                                                   # the ceiling draws across, red
+            g = eout((s - a.t1) / 0.55)
+            if g > 0:
+                _dash(d, X0, X1, cy, RED, 7, p=g)
+                lt = "NEVER MORE THAN 20,000"; lw = d.textlength(lt, font=fh)
+                d.text((w / 2 - lw / 2, cy - 92 + 24 * (1 - g)), lt, font=fh, fill=tuple(int(c * g) for c in RED))
+        elif m in ("C", "D"):
+            dim = r > 0.15
+            _dash(d, X0, X1, cy, (120, 50, 56) if dim else RED, 3 if dim else 7)
+            if m == "C" or s < a.t1:                                                   # right side: clear of the SEAGRAM'S bar
+                lt = "NEVER MORE THAN 20,000"; lw = d.textlength(lt, font=fl)
+                d.text((X1 - lw, cy - 56), lt, font=fl, fill=(120, 50, 56) if dim else RED)
+        if m == "D":                                                                   # the counter under the caption band
+            v = 50000 + (3500000 - 50000) * r; v = 3500000 if s >= a.t2 else int(round(v / 1000) * 1000)
+            txt = f"{v:,}"; tw2 = d.textlength(txt, font=fbig); q = eout((s - a.t1 + 0.2) / 0.3)
+            d.text((w / 2 - tw2 / 2, 1215), txt, font=fbig, fill=tuple(int(c * q) for c in (TEAL if s >= a.t2 else WHITE)))
+            label(d, "CASES A YEAR, 2018", w / 2, 1430, 56, DIM, q, q)
+        out.stdin.write(push(im, t, 0.04).tobytes())
+    out.stdin.close(); out.wait()
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral", "craigslist", "inspection", "inspectors",
-                                     "sneaker", "replies", "dayrate", "clawmenu", "bunnycost"]); ap.add_argument("out")
+                                     "sneaker", "replies", "dayrate", "clawmenu", "bunnycost", "pricetags", "cases"]); ap.add_argument("out")
     ap.add_argument("--t3", type=float, default=0.0); ap.add_argument("--t4", type=float, default=0.0)
     ap.add_argument("--steps", default="")
     ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
@@ -601,5 +715,5 @@ if __name__ == "__main__":
     ap.add_argument("--src"); ap.add_argument("--cx", type=float, default=0.5); ap.add_argument("--dur", type=float, default=3.0); ap.add_argument("--w", type=int, default=1080); ap.add_argument("--h", type=int, default=1920)
     a = ap.parse_args()
     {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral, "craigslist": craigslist, "inspection": inspection, "inspectors": inspectors,
-     "sneaker": sneaker, "replies": replies, "dayrate": dayrate, "clawmenu": clawmenu, "bunnycost": bunnycost}[a.kind](a)
+     "sneaker": sneaker, "replies": replies, "dayrate": dayrate, "clawmenu": clawmenu, "bunnycost": bunnycost, "pricetags": pricetags, "cases": cases}[a.kind](a)
     print("done", a.out)

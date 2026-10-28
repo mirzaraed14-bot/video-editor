@@ -1,6 +1,83 @@
 # RUN — "Why Derek Lunsford Just Wanted His Daughters After Losing Mr. Olympia 💔" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-26 ~19:40) — RAW SEQUENCE PLACED, waiting on his review
+## ▶ STATUS: resume here (2026-10-28 ~15:00 PST) — v3 EXPORTED (captions fixed at 10–14 s), waiting on his review + the 2023 download
+- **`X:\Claude Projects\Exports\Derek Daughters v3 (2023 pending).mov`** (v1, v2 kept beside it): 1049 f @30, 34.967 s, 39.8 Mb/s,
+  -14.0 LUFS, -2.6 dBTP, QA PASS. Proof `proof/capfix/v3_10_15_said.jpg` (10 fps, measured spoken word under each frame):
+  every card on its word. Whole-caption check: no other caption word falls outside its A1 clip.
+
+## (previous) STATUS (2026-10-28 ~09:10 PST) — v3 RENDERING (captions only: his note "10–14 s captions mismatched")
+- His note on v2: "10 - 14 sec the captions are mismatched … speakers are saying something else you've typed". Cause = WhisperX
+  word times on the OL broadcast PA: it could not align "$100,000" (no letters) and squeezed it into 0.5 s, then placed the
+  announcer's "and" at OL 4000.18. Forced wav2vec2 on the spoken form (`tools/force_align.py`, `win/capfix/fa_w{8,9,10}.json`):
+  "one hundred thousand dollars" = OL 3999.29–4000.77, **"and" = OL 4001.63, AFTER his A1 cut (4001.02): never heard**.
+  So the AND card (12.08–12.80) showed during "…thousand dollars" + crowd. Fix (`captions/transcript/words.json`, backup
+  `words.pre-capfix.json`): AND card deleted; $100K 11.18–12.80; DEREK LUNSFORD 12.80–13.68 (measured 12.81–13.64, unchanged);
+  WOW! 13.68–14.65 (was running 0.2 s onto Nick); I SAID from the 14.65 cut. THE THIRD PLACE / AWARD measured within 0.1 s:
+  unchanged. Picture + audio = v2 (`build/run_v3.sh`: captions → finish → export).
+- Not changed (his edit): the "De-" of "Derek" is clipped by his own A1 cut at 12.75. "$100K" kept as digits (the channel writes
+  numbers as digits); the spoken form "ONE HUNDRED / THOUSAND DOLLARS" is the option if he still reads it as wrong.
+
+## (previous) STATUS (2026-10-28 ~08:25 PST) — v2 EXPORTED (his v1 notes fixed), waiting on his review + the 2023 download
+- **`X:\Claude Projects\Exports\Derek Daughters v2 (2023 pending).mov`** (v1 kept beside it): 1049 f @30, 34.967 s, 39.8 Mb/s,
+  -14.0 LUFS, -2.6 dBTP, QA PASS. Checked on his three screenshots' moments (`proof/v2_check.jpg`): no combing, natural skin.
+
+## (previous) STATUS (2026-10-28 ~08:00 PST) — v2 RENDERING (his v1 notes: artifacts + "Derek too red")
+- His v1 notes (screenshots: the front reaction, the walk-off "HIS POSING ROUTINE", a corridor close-up): (1) "lot of artifacts
+  in some places", (2) "derek looks too red in this shot". Only these change:
+  1. OL (2026 finals) is INTERLACED (idet TFF 120/120; header says progressive): OWALK + OFRONT now read
+     `build/overlays/src/OL_{OW,OF}_bwdif.mp4` (bwdif send_field 59.94 + hqdn3d 1.5:1.5:4:4; OL from 3560.1 / 4019.75);
+     Stage A re-rendered for frames 625-879 + 969-1249 only (`renders/seg_O{F,W}_v2.mov`, `build/assemble_plan_v2.json`).
+     Compare `proof/ol_deint_compare.jpg`. Every other source is progressive (idet).
+  2. Corridor skin: `sat_level {'jrn': 0.45}` (pre-grade, his grade untouched): sat 0.87-0.97 / R/G 3.2-3.4 -> 0.66-0.68 / 1.9
+     (`proof/skin/compare_v1_vs_045.jpg`). FaceTime (jrnft 0.45/1.7) and Nick (0.75/1.95) unchanged.
+- Running `build/run_v2.sh`: assemble → `outputs/dd_v2_60.mp4` → `outputs/Derek Daughters v2 (2023 pending).mov` → copy to Exports.
+- Still owed: the 2023 win download (O23 recipe below).
+
+## (previous) STATUS (2026-10-28 ~07:55 PST) — v1 EXPORTED for review (2023-win slot black); waiting on his download + review
+- **`X:\Claude Projects\Exports\Derek Daughters (2023 pending).mov`** (= `outputs/`): 1080x1920 30 fps, 1049 f, 34.967 s,
+  H.264 42.7 Mb/s BT.709, AAC 48 kHz, **-14.0 LUFS, -2.6 dBTP, QA PASS**. From `outputs/dd_v1_60.mp4`. Hook lip sync checked
+  (`proof/sync_hook_mouth.jpg`: "beat"/"me" closures within a frame). NOT in Final Renders yet (the brief's
+  `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Derek Daughters.mov` goes there once the 2023 clip is in).
+- Next: his 2023 download → O23 (recipe in the block below) → finish render → export to Final Renders + Exports; his notes →
+  change only what he names → LESSONS.
+
+## (previous) STATUS (2026-10-28 ~07:30 PST) — FULL RENDER v1 RUNNING; 2023-win slot black until he downloads it
+- Picture: `renders/dd_picture.mov` (2098 f) = `build/assemble_plan.json`: Topaz `renders/dd_topaz_v2.mov` (his chain; H1 re-Topazed
+  after the hook fix: `renders/segH1_aligned.mov` spliced, `build/ranges_H1.json`) + Stage A v2 overlay frames (`renders/dd_stageA_v2.mov`).
+- Fixes found on the test stills: hook panel at 3.6 / Y960 (4.46 cut his eyes: eyes y378, mouth y472, panel top 270, measured);
+  OFRONT = OL 4023.9 (front close-up with the bronze; the 4014 line-up shows his back in the hugs). Topaz frames checked: no watermark.
+- Test frames sent to him: `proof/test_v1_grid.jpg`. Running: `finish.py render` → `outputs/dd_v1_60.mp4` (+ `renders/dd_audio.wav`)
+  → `export.py` → review copy `X:\Claude Projects\Exports\Derek Daughters (2023 pending).mov`; Final Renders only once the 2023 clip is in.
+- 2023 slot (O23, tl 2.45–3.63): on his download → picks.json O23 (src, s0, speed 0.5, scale, centre) + kind 'overlay' full →
+  re-render Stage A frames 147-218 only → splice into dd_picture.mov (overlays skip Topaz) → finish render → export.
+
+## (previous) STATUS (2026-10-28 ~07:45) — CODE BUILD RUNNING (his OK on the daughters overlay; 2023 win still owed)
+- His answer: "Yes, the daughters can be on screen in that overlay. Use the best high-quality shot of Derek with them." →
+  JRN 4594.0 (Derek smiling down at his baby daughter), letterbox. Transitions = my reading (unnamed cuts = straight cuts).
+- Build = `build/` (copied from Joe Appointment). Done: catalog pass (BRIEF.md); his A1 `seqref/raw/a1.wav` (22 clips, 34.98 s);
+  captions `captions/captions.txt` → `caps_capcut.mov` (50 captions, 2100 f; words = SOURCE transcripts mapped through his A1,
+  the mixed-A1 ASR drifted ~2 s; "$100,000" → "$100K"; "No." skipped); `build/timeline.json` + `build/overlays/picks.json`
+  (`make_timeline.py`: 19 shots, 13 zooms, 11 transitions, 4 cards); `stage_a.py track` (C2 walk-in = static anchor);
+  framing `proof/stageA_sheet_v2.jpg`; audio `renders/dd_audio.wav` (`audio.py`: level-matched to the corridor, NR on JRN,
+  fresh Epidemic set `build/sfx/SOURCES.md`, NO music, -14.00 LUFS).
+- Overlay picks: O23 = PENDING (black) until he downloads the 2023 win; O25 NPC 2025 2336.5 @0.5x (fist pump); ONICK Arnold 2026
+  2341.4 (head down); OBACK JRN 4106.27; OFRONT OL 4015.45 (front, he steps forward waving on "WOW"); OWALK OL 3562.18; ODAU
+  JRN 4594.0 letterbox; OOFF JRN 4225.35 (walking away hand in hand with his wife: OL 4282-4289 turned out to be NICK).
+- Running: `build/run_picture.sh` (Stage A → topaz_his → align) → then assemble (Topaz faces + Stage A overlays) → centers →
+  test stills of every shot → full finish render → 30 fps export `Derek Daughters.mov`.
+
+## (previous) STATUS (2026-10-28 ~06:50) — HIS EDIT + DIRECTION VIDEO RESOLVED, waiting on 3 answers, then CODE BUILD
+- He re-edited the raw cut to **34.98 s** (dump `seqref/seq_his.tsv`) and sent a Tella (`brief/raw/guide.mp4`): resolved
+  into BRIEF.md § HIS SEQUENCE + DIRECTION VIDEO (per-clip picture / zoom / transition table).
+- Assets found on disk: 2025 win (NPC 2025 finals 2331–2341), Nick sad (2026 Arnold 2340–2347), front reaction (OL 4014.1+),
+  Derek off stage candidate (OL 4282–4289), hook = DL-PRE interview 1489.90–1496.88 (audio from the cold open, +1468.47 s).
+- Asked him: (1) daughters overlay = minors on frame (brief rule 4) — OK, and which footage/photo; (2) download Derek's
+  2023 win (candidates G53HEqGrMNk / T-aapR4Ro1k); (3) confirm the transitions reading. Cost quoted: code build ~4–6 % of week.
+- Next on his answers: the code build (method `projects/mj-kids-saw-day-he-died/build/`, his order: build → test frames → his OK → full render).
+- Incident: opening his Tella link in the built-in browser autoplayed it WITH SOUND ("bruv why can i hear it"); closed; the
+  Tella recipe in memory is now curl-only.
+
+## (previous) STATUS (2026-10-26 ~19:40) — RAW SEQUENCE PLACED, waiting on his review
 - **ABW10 › bin "Derek Daughters" › "Derek Daughters - raw cut"** (clone of "Onyx reaction template (empty)", 1080x1920
   60 fps): **52.27 s**, V1/A1 33 clips, V2 4 picture-only covers, 7 beat markers. Readback (`premiere/readback.tsv`):
   0 flags (every in-point within one source frame, V/A identical, covers where planned). Active sequence restored to

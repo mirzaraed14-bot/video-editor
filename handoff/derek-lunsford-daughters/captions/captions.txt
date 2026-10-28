@@ -1,0 +1,53 @@
+# Abundance Wisdom captions: ABW10 "Derek Daughters - raw cut" (HIS edit, 0-34.98 s; DL-PRE -> JRN FaceTime -> OL announcer -> NW Nick -> JRN corridor). Built in code.
+# Column 1 = OUTPUT of make_plan.py. Max 3 words, no commas / full stops. <red> = the brief's red words; <blue> = names; <yellow> = numbers.
+# words.json = the SOURCE transcripts mapped through his A1 in/outs (the mixed-A1 ASR drifted ~2 s over the crowd); "No." after "daddy?" skipped.
+# 2026-10-28 his note "10-14 s mismatched": the announcer's "and" is after his A1 cut (forced wav2vec2: OL 4001.63 vs cut 4001.02), so the AND card is gone; $100K now holds over "one hundred thousand dollars"; WOW! ends on the 14.65 cut.
+ 0.000- 0.467  YOU'RE <red>NEVER</>
+ 0.467- 0.933  <red>GOING TO BEAT</>
+ 0.933- 1.700  <red>ME</> IF I
+ 1.700- 2.067  HAVE ANYTHING
+ 2.067- 2.233  TO DO
+ 2.233- 2.467  WITH IT
+ 2.467- 2.967  IF I'M STILL
+ 2.967- 3.650  AROUND
+ 3.650- 4.583  IF I'M COMPETING
+ 4.583- 5.650  EVERY SINGLE YEAR
+ 5.650- 6.250  <red>NOBODY HAS</>
+ 6.250- 6.633  <red>A CHANCE</>
+ 6.633- 7.217  ARE YOU ROOTING
+ 7.217- 8.017  <red>FOR DADDY?</>
+ 8.017- 8.817  <red>I LOVE YOU</>
+ 8.817- 9.917  THE <red>THIRD PLACE</>
+ 9.917-10.433  AWARD
+10.433-11.183  THE CHECK FOR
+11.183-12.800  <yellow>$100K</>
+12.800-13.683  <blue>DEREK LUNSFORD</>
+13.683-14.650  WOW!
+14.650-15.267  I SAID
+15.267-17.050  <red>HOMIE GOT THIRD</>
+17.050-17.500  AND HE'S IN
+17.500-18.650  HIS POSING ROUTINE
+18.650-19.550  THROWING <red>THREES</>
+19.550-20.483  <red>UP</> FOR THIRD
+20.483-20.817  BOY
+20.817-21.367  GOING FROM
+21.367-22.283  <red>CHAMPION TO THIRD</>
+22.283-23.617  JUST PROCESSING
+23.617-24.050  JUST THINKING
+24.050-24.700  ABOUT <red>MY DAUGHTERS</>
+24.700-25.100  AT HOME
+25.100-25.750  MISSING THEM
+25.750-26.050  EVEN THOUGH
+26.050-26.900  THEY'RE YOUNG
+26.900-27.517  <red>DADDY HASN'T</>
+27.517-28.800  <red>REALLY BEEN AROUND</>
+28.800-30.150  LAST TWO MONTHS
+30.150-30.700  JUST LOOKING
+30.700-31.383  FORWARD TO
+31.383-32.267  GETTING BACK
+32.267-32.600  SOON AS I
+32.600-33.183  CAME OFF STAGE
+33.183-33.450  I WAS LIKE
+33.450-33.800  <red>I JUST WANT</>
+33.800-34.133  <red>TO GO BE</>
+34.133-34.983  <red>WITH MY DAUGHTERS</>

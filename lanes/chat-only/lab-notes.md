@@ -16,3 +16,11 @@ A native-Windows Python resolves `/tmp/video-editor/<job>/cuts.json` against the
 (Git Bash) reads `C:\Users\<you>\AppData\Local\Temp\video-editor\...`. A re-cut written from Python silently left splice
 replaying the stale EDL. Workaround: write the EDL from bash, or resolve the path with `cygpath -w /tmp/video-editor/<job>` first.
 (A stray `X:\tmp\video-editor\rationalmale-hacked\cuts.json` from this mistake is safe to delete.)
+
+## 2026-10-28 · YT Shorts kit: head tracking lags a fast head at jump cuts (CA-009 Short)
+- **Symptom:** `head_track` (track_eye, sigma 12, linear edge blend) left the eyes 100-140 px off at three in-shot joints of a
+  fast-moving speaker (short takes, a hand gesture). An offline replay at sigma 3 still gave 132 px.
+- **Workaround:** `head_track: false` (the chained eye lock) plus the new opt-in spec key `head_chain_n: 2` (default 4) in
+  kit/yt_picture.py `eye_track`.
+- **Gate:** step the eye midpoint across each in-A joint on the delivered frames. Script:
+  `projects/iphone-duo-clip-angle/clips/reupload-wont-go-viral/work/head_snap_gate.py`.

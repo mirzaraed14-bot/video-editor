@@ -23,11 +23,7 @@ one"), and those only resolve against the picture.
    into the channel preset's `PLAYBOOK.md` or `LESSONS.md`. Nothing stays only in chat. See
    [[feedback-long-term-self-improving]].
 
-**Getting the file:** yt-dlp has a native `loom` extractor, so a Loom share link is enough. **Tella (solved
-2026-09-30):** yt-dlp's generic extractor only gets the 5 s `thumb.mp4` preview. Open the share link in the
-built-in browser, press play, read `performance.getEntriesByType('resource')` for the signed
-`prod-stream.tella.tv/media/manifest.m3u8?...` URL, then `ffmpeg -i "<that url>" -map 0:v:0 -map 0:a:0? -c copy
-guide.mp4` (~1.5 min for 13 min). The creator mutes the screen audio on purpose, so the audio is their direction
+**Getting the file:** yt-dlp has a native `loom` extractor, so a Loom share link is enough. **Tella (revised 2026-10-28): NEVER open the share link in a browser** — the page autoplays WITH SOUND (it interrupted Affan mid-work; JS mute found no <video>, the player lives elsewhere). The signed stream URL is in the page HTML: `curl -sL -A Mozilla/5.0 <share link>` → grep `prod-stream.tella.tv/media/manifest.m3u8?...` → unescape `&amp;` → `ffmpeg -i "<that url>" -map 0:v:0 -map 0:a:0? -c copy guide.mp4` (~1.5 min for 13 min). yt-dlp's generic extractor only gets the 5 s `thumb.mp4` preview. The creator mutes the screen audio on purpose, so the audio is their direction
 only; their timeline timecode (top-left of the timeline panel), read at each narration segment, maps every "here"
 to a clip. Overlay slots are marked by dragging the face clips up to V2. Caveat to state honestly: frames are sampled, not watched as motion, so a note
 about how a MOVE feels (easing, how a transition reads) needs to be said in words as well as shown.

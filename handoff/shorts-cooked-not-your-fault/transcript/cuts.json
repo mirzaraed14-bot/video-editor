@@ -444,13 +444,14 @@
   {
    "clip": "2026-10-26 20-15-52.mp4",
    "start": 273.55,
-   "end": 274.283333,
+   "end": 274.9,
    "transcript": "all of your episodes.",
    "_refine": {
     "orig_start": 273.572,
     "orig_end": 274.994
    },
-   "no_refine": true
+   "no_refine": true,
+   "v3_fix": "2026-10-28: end 274.283333 -> 274.9 ('episodes' was cut mid-word; voice energy ends 274.88)"
   },
   {
    "clip": "2026-10-26 20-15-52.mp4",

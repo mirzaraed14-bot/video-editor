@@ -51,3 +51,8 @@ the DAMAGED sequence because its tab stayed open: close a replaced sequence's ta
 **Later the same day:** "thats not shaun brh": a man named by elimination (his bib never legible) was wrong. Name only men proven by a
 legible bib or a matching reference photo, and send the evidence. He also asked for "little subscribe alerts… fit the aesthetic…
 not too often": about 3 per 11 min, 3 s, lower-left in the film's tag style, calm face windows only (AW LESSONS 31-32).
+
+**2026-10-28 (BOTH VERSIONS review 2):** "add the fade out" at the very end: the film ends on a fade to black (last frame held under a
+slow push, black eased over ~1.6 s), never a hard cut into the end black. And "I didn't know he was Ozzy Osbourne's son": name every
+third-party speaker at first sight, and when one refers to someone famous, stem a small callout from the speaker's head to a REAL
+photo + name + relation + dates (AW LESSONS 45-46).

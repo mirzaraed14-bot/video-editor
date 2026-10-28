@@ -331,6 +331,16 @@ def main():
         V = np.array([v for _, v in near]); V = np.array([np.median(V[max(0, i - 4):i + 5], axis=0) for i in range(len(V))])  # outliers out
         w = np.array([math.exp(-((k - n_abs) ** 2) / (2 * SIG * SIG)) for k, _ in near])
         ex, ey, iod = (float(np.dot(w, V[:, i]) / w.sum()) for i in range(3))
+        # Near a take's edge (a head-lock joint or the shot's start/end) the window is one-sided, so a plain average lags a head that is
+        # drifting, and the two takes of a jump cut lag in OPPOSITE directions: the crop snapped 58 px at a joint on Patron (2026-10-28,
+        # the Morgan 202 px snap had the same cause). Within 2 sigma of the edge, blend in a Gaussian-weighted LINEAR fit (it has no edge
+        # bias for steady motion); mid-take stays the calm average.
+        edge = min(n_abs - a, b - 1 - n_abs); al = min(max(1 - edge / (2 * SIG), 0.0), 1.0)
+        ks = np.array([k for k, _ in near], float) - n_abs
+        if al > 0 and len(near) >= 5 and ks.max() - ks.min() >= 6:
+            X = np.stack([np.ones_like(ks), ks], 1)
+            coef = np.linalg.solve(X.T @ (w[:, None] * X) + 1e-9 * np.eye(2), X.T @ (w[:, None] * V[:, :3]))
+            ex, ey, iod = (float((1 - al) * m + al * c) for m, c in zip((ex, ey, iod), coef[0]))
         sc = float(np.clip(ref / iod, 0.85, 1.15)) if iod > 0 and spec.get("head_track_scale") else 1.0   # size-following made it pump in and out
         return ex, ey, sc                                  # the EYES themselves: set fy_out to the eye line (~0.32)
 
@@ -358,7 +368,8 @@ def main():
                 for a, b, R in takes:
                     if R is None:
                         chain.append((a, b) + (prev[:3] if prev else (md(allr[:, 0]), md(allr[:, 1]), 1.0))); continue
-                    h, t = R[:4], R[-4:]
+                    NC = int(spec.get("head_chain_n", 4))   # frames matched each side of a cut (opt-in 2: a fast-moving head, CA-009 Short 2026-10-28)
+                    h, t = R[:NC], R[-NC:]
                     if prev is None:
                         A = (md(R[:, 0]), md(R[:, 1])); sc = 1.0
                     else:

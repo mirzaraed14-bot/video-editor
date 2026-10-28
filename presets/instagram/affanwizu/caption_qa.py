@@ -155,10 +155,17 @@ def main():
         tot = sum(max(0.0, min(c["e"], t1) - max(c["s"], t0)) for c in a1)
         if not tot: return 1.0
         return sum(max(0.0, min(c["e"], t1) - max(c["s"], t0)) * abs(c.get("sp", 1) or 1) for c in a1) / tot
+    # <job>/qa-allow.json: cues checked BY EAR and held long on purpose (a sung chant, a drawn-out word), each with its reason:
+    # {"hanging": [{"t": 0.0, "reason": "..."}]}. Shown as ALLOWED, never silently dropped (ABW10 Seq 33's sung chant).
+    allowf = os.path.join(job, "qa-allow.json")
+    allow = json.load(open(allowf, encoding="utf-8")).get("hanging", []) if os.path.exists(allowf) else []
+    allowed = lambda t: next((a["reason"] for a in allow if abs(a["t"] - t) < 0.06), None)
     fails, warns = [], []
     for t0, t1, txt in cues:
         n = spoken_words(txt); c = cover(t0, t1) * min(1.0, at_speed(t0, t1))
-        if c > PER_WORD * n + SLACK:
+        if c > PER_WORD * n + SLACK and allowed(t0):
+            warns.append(f"{t0:7.2f}  ALLOWED  {c:.2f}s of speech under \"{txt}\" (limit {PER_WORD * n + SLACK:.2f}s): {allowed(t0)}")
+        elif c > PER_WORD * n + SLACK:
             fails.append(f"{t0:7.2f}-{t1:6.2f}  HANGING  {c:.2f}s of speech under {n} word(s) ({c / n:.2f}s/word, limit "
                          f"{PER_WORD * n + SLACK:.2f}s): \"{txt}\"  → words are missing here; re-decode this span")
         if len(txt.split()) > 5: warns.append(f"{t0:7.2f}  {len(txt.split())} words (max 5): \"{txt}\"")

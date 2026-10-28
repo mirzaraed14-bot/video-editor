@@ -472,3 +472,36 @@ the measured references (`references/batch2-style-research.md`) -> README § v2 
   the sample's yt + ig variants, not the reaction): a song with a sample's name means that SAMPLE. Swap = the kit's own yt_mix.py on
   each look's spec (re-run on the shipped spec first: bit-exact null), bed 14 LU under the voice in every 3 s window, muxed onto the
   shipped video (stream copy) → `projects/_onyx-batch5-2026-10/samples_music.py`, `outputs/<job>.sample-<look>.music.mp4`.
+
+## 2026-10-28 · Review of the "Shorts cooked" reel (@affancuts): lesson → change → file
+Affan, verbatim (third SFX strike): *"too much text at the beginning remove the stylized text from the bottom ... the sound effects
+are sounding so cheap they sound like they're from a superhero movie ... I want my sound effects for Onyx reels to be refined premium
+subtle sound they should sound expensive and they should sound like they belong to the motion graphic right now it sounds like each
+motion graphic of mine has some super powers"*.
+- **"Superhero" = the cinematic / trailer / designed families, at ANY level.** v1 had stabs, crunches, +5.8 dB stingers ("m-accent"),
+  risers into the bars and crack + sub impacts; v2 had turned them down but its takes were still Scifi Impact, Ethereal Fantasy Ghost,
+  Fire Reversed, Eerie Bright Metallic, Tonal Flyby, Wind Rising Sudden Stop. Quieter did not fix it: the CHARACTER did. → Onyx reels
+  and reactions use ONE family: soft airy / cloth swishes (the Patrón swishes he approved the same day,
+  `projects/_client-scott-clary/patron-20000-cases/yt/sound.py`), never a riser, impact, stab, stinger, crunch, sub or boom. Reject a
+  take by title before downloading (Scifi, Fantasy, Magic, Cinematic, Trailer, Impact, Riser, Stinger, Hit, Boom, Eerie, Metallic, Fire,
+  Ghost, Ethereal), then by measurement against the approved slices (`sfx_measure.py`: tonal p90 ≤ ~13 (Patrón 10.4-12.8), phone-vs-full
+  no worse than ~-5 dB, little above 6 kHz) → `projects/shorts-cooked-not-your-fault/work/sfx3_build.py` + `sfx3_measure.py`.
+- **"Belong to the motion graphic" = one cue per graphic ENTRANCE, sized to the move, crest on its fastest frame.** Three sizes of the
+  same family: a short soft cloth swish when a pill / chip / ring lands, a light airy swish when a title or card rises, a longer airy one
+  when a bar grows, a grid cascades or the frame cuts to the split. Text swaps inside a stage, colour changes, stamps, "marks" and cuts back
+  to the face stay silent. The reel went 38 → 18 cues.
+- **Level: peak 15 dB under his LOCAL voice peak (Patrón v2: 14-16) and never closer than 19 LU** to his short-term loudness; the reel's
+  landed 21.8-31.5 LU under. Spread ≤ 3 LU.
+- **Frame 0 carries ONE text layer plus the captions.** The hook block (two stylized lines in Bebas + the gold italic accent) on top of the
+  live captions and the COOKED ghost was "too much text": the stylized block went, the ghost and captions stayed (`hook-ghost.mov`; mgx
+  hook_big accepts `phases: []`). → next reel/reaction hooks: the captions carry the words, a ghost word or one short label may sit above,
+  never a second copy of the sentence.
+- **Check which sequence he is in before revising.** He reviewed and kept working in v1 (`Shorts cooked reel`, where he had laid Thelema
+  on A3), not the v2 I had prepared; the fix went onto HIS sequence by name (backup FCP XML first, his A3 untouched, plan.json
+  `hand_edited`) → read `app.project.activeSequence` + diff every candidate sequence against its last dump before any revision.
+- **A word cut mid-way survives the Whisper joint proof** ("at the end buried is cut out midway"): the reel's last "buried" line ended
+  0.17 s into "episodes" (a pins round had pulled the keep end from 274.99 to 274.28) and the large-v3 joint check still "heard"
+  episodes, because ASR completes a word from its first syllable. → every keep end also gets an ACOUSTIC check: the source voice energy
+  must have dipped before the cut (no speech-level energy in the last 60 ms that continues past it), and a WhisperX word may not end
+  > 40 ms after the cut; a hit is opened to the word's energy end. Fix pattern on his timeline (no `.end` extension; pieces laid into
+  room, then the rest slid back): `projects/shorts-cooked-not-your-fault/work/v3cut_offline.py` + `v3cut_place.py`.

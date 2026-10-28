@@ -18,7 +18,10 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 
 ## Channel overrides (decided by Affan)
 - The look: the YouTube "Sean Ryan" kit (onyx-samples-youtube), watermark "SUCCESS STORY WITH SCOTT D. CLARY", no CTA, no Onyx.
-- **No music bed** in our export: Affan adds it. SFX on every graphic.
+- **No music bed** in our export: Affan adds it. **SFX = subtle transition swishes only** (Affan 2026-10-26 Morgan: "remove the sfx
+  except for the transition ones, once I put music it's like too much"; 2026-10-28 Patrón: "crisp premium expensive but subtle"):
+  short airy swishes crested on each whip INTO B-roll / a card, 19-23 dB under the voice, cuts back to the face silent
+  (template `projects/_client-scott-clary/patron-20000-cases/yt/sound.py`). Supersedes 2026-10-19's "SFX on every graphic".
 - **Never the Abundance Wisdom grade / letterbox look** (faceless videos only, 2026-10-19). AW head lock is welcome.
 - His sequencing is followed exactly; popular faces beat brand faces ("50 Cent, not LL Cool J").
 - **Open on the guest's own cam, and the hook card runs from 0 to ~3 s** (Affan 2026-10-21, Marvel vs RDJ: "i want peters cam at the
@@ -27,8 +30,11 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 - **Face cam never more than ~4 s without an overlay or MG; constant rotation of overlays; stronger, quicker zooms; the hook card's
   top line as big as the second** (Affan 2026-10-23, War Dogs: "if the person is there from the face cam for more than four seconds
   the retention will drop off").
-- **No dead air**: every pause >= 0.25 s inside a kept line is cut to ~0.16 s (measured, `work/cut/make_edl.py` PAUSES), except a
-  deliberate dramatic beat (2026-10-21: "why are there so many pauses").
+- **YouTube-tight** (Affan 2026-10-26, Morgan: "YouTube Shorts are very very tight, even the slightest pauses are removed"): every
+  quiet run (10 ms RMS < -42 dBFS, >= 0.08 s) inside a kept line is cut to 0.07 s, 0.035 s kept beside each word (energy only), AND a
+  verbatim faster-whisper pass removes the stumbles WhisperX drops ("a- the- the claw"): CLIENT-SHORT-RECIPE § 2. (Was: pauses
+  >= 0.25 s to ~0.16 s, 2026-10-21.)
+- **Sharpen every Short** (asked twice, 2026-10-26 / 10-28): `workflows/sharpen-picture.py <job>` after each render, cards excluded.
 - **Every picture is sharp at phone size**: a soft or compressed still is replaced by a 4K source, not just upscaled ("what is that
   low quality image of iron man").
 - A line whose words can read backwards on screen gets a picture that fixes the meaning, never a caption that changes his words:
