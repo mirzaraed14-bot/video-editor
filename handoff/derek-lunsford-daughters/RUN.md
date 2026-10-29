@@ -1,6 +1,12 @@
 # RUN — "Why Derek Lunsford Just Wanted His Daughters After Losing Mr. Olympia 💔" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-28 ~15:00 PST) — v3 EXPORTED (captions fixed at 10–14 s), waiting on his review + the 2023 download
+## ▶ STATUS (2026-10-29) — UPLOADED (Affan, relayed by the parent session). Job closed.
+- Last export from this job: v3 (`X:\Claude Projects\Exports\Derek Daughters v3 (2023 pending).mov`), 2023-win slot
+  (tl 2.45-3.63) still black there; he finished/uploaded from his side, so whether that slot was filled is his file, not this job.
+- Lessons: AW LESSONS 2026-10-26/28 Derek entries (speakers by pitch, Tella curl, interlaced OL -> bwdif, skin sat_level,
+  broadcast caption force-align). Nothing open here.
+
+## (previous) STATUS (2026-10-28 ~15:00 PST) — v3 EXPORTED (captions fixed at 10–14 s), waiting on his review + the 2023 download
 - **`X:\Claude Projects\Exports\Derek Daughters v3 (2023 pending).mov`** (v1, v2 kept beside it): 1049 f @30, 34.967 s, 39.8 Mb/s,
   -14.0 LUFS, -2.6 dBTP, QA PASS. Proof `proof/capfix/v3_10_15_said.jpg` (10 fps, measured spoken word under each frame):
   every card on its word. Whole-caption check: no other caption word falls outside its A1 clip.

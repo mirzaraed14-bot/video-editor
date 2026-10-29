@@ -38,3 +38,5 @@ gave video frames with the same MD5 as his own Topaz files (`projects/aw-code-tr
 "run Topaz like he does" needs no app and no click: copy the commands from his latest log. ~40 min for 44 s at 1080x1920.
 
 Order matters: interpolation BEFORE Iris, in one pass (`--out-scale 2` without `--no-fi`). Iris output makes repeated frames non-identical, so Chronos run on an Iris file misses them (Rollo 2026-10-06: held webcam frames 30 % -> 15 % only).
+
+**Login token can lapse mid-run (2026-10-24):** headless tvai keeps going but stamps a "Topaz Labs" WATERMARK (stderr: "Critical error refreshing token Could not establish connection"); only he can sign back in (open Topaz Video AI). Check a frame of every Topaz output for the watermark; afterwards re-run only the dirty step. Never work around the licence.

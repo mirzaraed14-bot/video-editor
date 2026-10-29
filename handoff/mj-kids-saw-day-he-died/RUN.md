@@ -1,6 +1,9 @@
 # RUN — "What Michael Jackson's Kids Saw The Day He Died 💔" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-24 ~22:45) — v2 EXPORTED, waiting on his review
+## ▶ STATUS (2026-10-29) — v2 UPLOADED. Job closed.
+- Affan uploaded v2 (`Final Renders\MJ Kids Saw.mov`) with no further notes; session retired. Lessons: AW `LESSONS.md` 2026-10-24 entries.
+
+## (previous) STATUS (2026-10-24 ~22:45) — v2 EXPORTED, waiting on his review
 - **`E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\MJ Kids Saw.mov`** (+ `X:\Claude Projects\Exports\MJ Kids Saw.mov`),
   v1 kept beside both as `MJ Kids Saw v1.mov`. 1088 f @30, 36.267 s, 42.7 Mb/s BT.709, 48 kHz, -13.8 LUFS, -3.1 dBTP, QA PASS.
   From `outputs/mjk_v2_60.mp4`; sheet `proof/final_v2_sheet.jpg`; test `renders/test_v2/ALL-SHOTS-v2-test.jpg`.

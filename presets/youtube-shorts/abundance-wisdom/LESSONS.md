@@ -896,6 +896,11 @@ Six corrections, all now rules:
   **Outcome (2026-10-27):** v2 (only those three notes changed) was UPLOADED as delivered, no second round. The 4th code build
   shipped after one review: his Tella direction video + sequencing-first held the creative calls, so the notes were
   source/framing/music, not taste.
+  **Build notes not logged above (2026-10-29 close-out):** warm-lit TV skin (NewsOne JJ restaurant: luma 0.32-0.41, sat
+  0.84-0.88, R/G 2.0-2.5) read orange through his grade → per-source `gamma_level` 0.74 + `sat_level` 0.58 in
+  `build/make_timeline.py` (→ 0.42-0.49 / 0.51-0.55 / 1.42-1.52); measure skin on a stage-A frame before the full render.
+  `rough-cut/scripts/transcribe.sh` finds only video containers in raw/ (a .wav = "no clips found"): wrap audio as
+  `ffmpeg -c:a pcm_s16le x.mov`. faster-whisper on CUDA failed on cublas64_12.dll here → device cpu, int8.
 - 2026-10-28 (Flex Wheeler "told doctors to take his leg", `projects/flex-wheeler-leg/`, CANCELLED before intake): **a brief
   can be locked on story and still die on source quality.** Both sources were a 2020 podcast (probably a remote call) and his
   own 2021 vlog with music under it. The brief flagged the picture as its lock 1 ("check that Flex's face holds at 1080×1920")
@@ -945,10 +950,17 @@ Six corrections, all now rules:
 - 2026-10-28 (same): **crowd/applause hides pauses from a whole-window floor.** BET's 3 s pause after "My" and the
   joined-beat "quiet" runs were both wrong at the beat floor; a +-3 s local floor at 10 ms (`win/strip.py`) shows the real
   edges. Judge B1.1 gaps on the SOURCE floor; the joined-cut floor counts soft word tails as silence.
-- 2026-10-28 (Janet "couldn't cry", code build v1): **a tight, low close-up decides the caption line.** DL's 4:3 close-up
-  (face ~40 % of frame height, nose at 56 %) cannot put the lips over a mid-frame caption line without a 125 %+ punch or an
-  exposed edge; a line at ~64 % (y1250-1290, the brief's 62-68 %) sat just under the lips on EVERY source (DL, WR, BET
-  letterbox, his message). Measure each source's natural mouth y at fill-height before picking caption_shift.
+- 2026-10-28 (Janet "couldn't cry", HIS REVIEW of v1, REVISED): **the caption line is HIS height, never one source's.**
+  v1 put the line at ~64 % (y1250-1290, caption_shift -220, the brief's 62-68 %) so DL's tight, low 4:3 close-up kept its
+  lips above it, then placed BET and Michael's message LOW to match. His note: "the caption should be here" (his mouse on
+  the hook's nostril line = y1060, 55 %), "drag this footage up ... so it still sits under her lips", "all of these things
+  are placed too low just because the captions are placed too low". Fix = caption_shift -10 and the two letterboxed
+  sources lifted 210 px with their bands and zoom pivots (a finish-side translate of the reviewed picture, `lift` in
+  `projects/janet-couldnt-cry/build/finish.py`, no Stage A / Topaz re-run). Rule: his approved finals carry the line at
+  y940-980 (Joe v3, MJ Kids Saw) to y1092-1129 (MJ Siblings), measured on their frames (`projects/janet-couldnt-cry/win/
+  ref_*.png`); start there, move letterboxed / placeable sources to put the lips over it, and let a full-bleed close-up
+  that cannot move carry the line on its nostril / upper-lip line (his own mark on the hook; UPLOADED that way
+  2026-10-29 after this one review) rather than drag the whole short's line down. A brief's % number does not override his own position.
 - 2026-10-28 (same): **head lock with a cover clamp.** The lock holds the nose at (540, Y) only while the picture still
   covers the frame (`projects/janet-couldnt-cry/build/stage_a.py` cover_clamp; DL's 'content_x' = the 4:3 picture inside
   its pillarbox); past that the face moves in frame instead of a Motion Tile mirror. Needed when a speaker lowers and lifts
@@ -958,3 +970,21 @@ Six corrections, all now rules:
   cover starts at DL time minus the measured offset (<= 1 frame).
 - 2026-10-28 (same): **edge checks on a 30 fps export: seek to f/30 - 5 ms.** Seeking to (f + 0.5)/30 returns frame f+1 and
   shows a false "stray frame" before every cut (`projects/janet-couldnt-cry/win/final_edges.py`).
+- 2026-10-29 (MJ siblings): **v6 UPLOADED** — confirms the shipping recipe: his AE stack (layer-43 look + PRE sharpen bands +
+  Sharpen 40) unchanged, on a one-pass BT.709-tagged picture; overlays skip Topaz; despeckle only on Topaz-speckled faces;
+  zoom pivots on the lip line with a shallower depth when a face is too big; test frames of every shot before the render.
+- 2026-10-29 (MJ kids saw): **v2 UPLOADED** with no further notes after his four v1 fixes (SD Murray overlays at near-minimum
+  full-bleed + <= 115 % push, per-segment lip-sync on the AP package, captions on the middle line, a well-lit overlay swapped in
+  for a dark one). Courtroom shorts can ship from trial footage already on disk when YouTube is blocked (`projects/mj-kids-saw-day-he-died/`).
+- 2026-10-29 (Katherine "never got over him", `projects/katherine-never-got-over-him/`, raw sequence): **a word ASR hears at a
+  piece's head ALONE is often invented; the JOINED cut decides.** Pieces read alone opened on "Then when", "And I go", "But I"
+  (abrupt starts); with the previous piece in front, two were artifacts and two were real leaks: Jermaine's piece ran 0.17 s
+  into a voiced "be-cause" (no gap, so the level strip showed nothing) and Michael's own "But" sat 0.15 s before "I". Check
+  every head with the PREVIOUS piece in front and every tail with the NEXT piece after (`win/asr_a1.py` + a joined-context pass),
+  not only each piece with its own context.
+- 2026-10-29 (same): **a burned-in subtitle bar can be cropped out instead of covered**: KAT's bar = rows 788-939 on every frame,
+  so 250 % with the frame ending on row 784 never shows it (brief: never two sets of subtitles). That crop is ~430 px for a
+  ~340 px face, so a fixed position clips her when the camera drifts: Position keys from a 5 fps YuNet face track
+  (`premiere/fix_framing.py` → `kat_keys.js`, key time = media time). Also: a slowed cover clip is rendered with `-t` BEFORE
+  `-i` (after `-i` it caps the retimed OUTPUT: a 1.73 s slot got a 1.40 s file), and a cover over a shot that DISSOLVES out
+  runs to the dissolve's last blended frame (PHM crowd → Michael, 1536.64), or the crowd ghosts for 2 frames.

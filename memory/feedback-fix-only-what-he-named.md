@@ -22,3 +22,8 @@ against his own finals; send test frames of EVERY shot before any full render (h
 revisions, because otherwise a lot of tokens are going to get wasted." I had briefed a from-source rebuild as v2 sequences. A note
 gets a surgical pass instead: duplicate the prepared sequence → ripple-insert or ripple-delete the named spans → re-render only what
 those spans touch → swap a layer in place. No new catalog pass, re-plan or review rounds over unchanged parts.
+
+**Lean revisions on code builds (Affan 2026-10-28, Janet short):** "don't make any major changes, don't do complete renders, be as
+lean as possible." A review note on a code-built short is applied as DATA over the reviewed picture: timeline values + one finish
+render (e.g. a finish-side `lift` translate for letterboxed shots), never a Stage A / Topaz / caption / audio re-run unless the note
+touches them. Prove unchanged shots match the reviewed export outside the changed region before shipping.

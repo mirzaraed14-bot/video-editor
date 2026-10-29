@@ -1,6 +1,8 @@
 # RUN — "How Michael Jackson's Siblings Found Out He Died 💔" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-22 ~13:00) — v6 EXPORTED, waiting on his review
+## ▶ STATUS (2026-10-29): UPLOADED — v6 is the shipped cut. Job closed; nothing pending.
+
+## (previous) STATUS (2026-10-22 ~13:00) — v6 EXPORTED, waiting on his review
 **`X:\Claude Projects\Exports\mj-siblings-found-out.v6.mp4`** (3495 f, -14.1 LUFS, -2.9 dBTP). His v5 note: "the whole
 grading is so soft... I told you to just reduce the blackness" -> v6 = HIS AE stack restored (layer-43 look + PRE sharpen
 bands + Sharpen 40, `grade_mode` 'ae', sat_level cleared; v5 values kept as `sat_level_v5`) on the drift-free one-pass

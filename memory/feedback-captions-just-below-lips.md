@@ -22,3 +22,9 @@ the FRAMING consistent (face at the same height in every speaker shot) so that o
 band instead of moving the caption. Punctuation and animation rules: [[feedback-caption-punctuation]]. Related: [[project-onyx-sample-shorts]].
 
 **Split formats (2026-10-12):** when the video has split screens, the one constant position is the split LINE, not the lips: see [[feedback-split-screen-white-line]].
+
+**His height (Janet short review, 2026-10-28):** I put the line at 64 % (y1270) to keep one tight, low close-up's lips above it and
+placed the letterboxed sources low to match; he pointed with his mouse: "the caption should be here" (y≈1060, 55 %) and "all of
+these things are placed too low just because the captions are placed too low". His approved finals measure y940-1130. Start the
+line there; move what can move (letterboxes, placed overlays) to put the lips over it; a full-bleed close-up that cannot move
+carries the line on its nostril / upper-lip line (he uploaded it that way). A brief's % never overrides his height.

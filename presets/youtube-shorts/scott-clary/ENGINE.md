@@ -5,7 +5,8 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 
 ## The line for one Short
 1. **Pick** (Claude): read the episode transcript in full (the show's RSS `podcast:transcript` VTT, never YouTube), score candidates on
-   the viral bar (`projects/_onyx-batch3-2026-10/VIRAL-BAR.md`, gates A-E), give them to Affan as text (hook, beats with times, button).
+   the **pick test below FIRST**, then the viral bar (`projects/_onyx-batch3-2026-10/VIRAL-BAR.md`, gates A-E). Give them to Affan as
+   text (hook, beats with times, button), with each one's pick-test score.
 2. **Freshness** (Claude + Affan): web search for the story AT THIS ANGLE (no YouTube requests from this machine); Affan scrolls
    Scott's own Shorts tab for the episode before posting. A prior Short on the same story + angle disqualifies it.
 3. **Lock the prediction** in RESULTS.md BEFORE upload: view range at 7 days + the single biggest failure reason, Claude AND Affan,
@@ -15,6 +16,39 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 5. **Title + thumbnail** ship with the Short (format below).
 6. **After 7 days** (never sooner): views, stayed-to-watch, average view %, subs gained, feed share into RESULTS.md, then the
    post-mortem: name the assumption that failed or held, and move it into FINDINGS.md (validated, or FALSIFIED with the date).
+   Log the title and cover **as posted** too: on 10-29 none matched the rows we wrote.
+
+## What the first results changed (2026-10-29; ranked by expected impact; evidence in FINDINGS § F1-F6 tested)
+Bombas did 563K. The other seven did 0.3-13K. These rules are what separates them. They are HYPOTHESES, from one hit plus AW's
+three-part factor, and they are scored on every new Short until results promote them or kill them.
+1. **Pick test: the famous guest HIMSELF was wrong, lost, or was hurt, about a subject a stranger already knows.** Score each
+   candidate 0-3, one point per part (half points allowed):
+   - (a) **held belief:** a comment a stranger could type before watching ("a Shark knows what sells").
+   - (b) **he speaks it:** the person the belief is about says it himself, on camera, with a face a stranger recognises. A
+     semi-known face, or the subject with an unknown face, scores ½. An insider telling a celebrity's story scores 0.
+   - (c) **it cost him:** he was wrong, lost, or was hurt, and that reverses (a).
+
+   A win, a brag, a vindication ("they said I'd fail") or advice scores 0 on (c). **A story Claude proposes under 2 goes to the
+   bench, not to Affan.** A story Affan picks gets its score written next to it, and the call stays his (his sequencing is followed
+   exactly). Evidence: Bombas is the only 3 (563K), and every other Short is ≤ 1.5 (0.3-13K); the per-Short scores are in FINDINGS.
+   On AW, three parts gave 1M+ three times out of three.
+2. **Never open on the host.** Frame 1 is the guest himself, speaking his own stake line; never Scott's question or compliment with
+   the guest listening. Evidence: FUBU vs Bombas, same guest, episode, kit and week, 10K vs 563K, and FUBU opened on Scott's
+   compliment. The Serhant calendar opened on Scott's question (5K). A household noun in line 1 is good hygiene but does not separate
+   the Shorts on its own: Marvel ("Robert Downey Jr.") and War Dogs ("the film War Dogs") had one and did 5.5K / 13K.
+3. **A familiar subject, an untold story.** The freshness search tests the STORY, never the guest. A guest's signature story (the
+   FUBU 50 shirts, RDJ's casting) caps out however famous it is: 10K and 5.5K. Bombas the brand is known by everyone, but Daymond's
+   telling of it is not indexed anywhere.
+4. **Receipts on screen** (Affan's idea, 10-29): show the real event in the first 3-5 s (the actual Shark Tank pitch, the film
+   scene, the product, the person), and make every insert a real, nameable thing. Avoid generic stock; use a data card only for a
+   number he says. Bombas did exactly this: the real Shark Tank pitch at 3 s, zero stock, zero cards. It does not separate the Shorts
+   on its own, because FUBU and Marvel also had real pictures. It is how a story that passes the pick test reaches its ceiling.
+   Bombas carried a few seconds of ABC's real Shark Tank pitch under his voice and drew **no copyright claim** (Affan, 2026-10-29):
+   use real broadcast footage the same way (a few seconds per clip, under his voice).
+5. **Packaging** (the rule waits on who uploads; ask Affan): the title is the name + the loss or money + the reversal ("Daymond John
+   Almost LOST $250M"), never "Why / How / Tactic". Every "Why/How/Tactic" title we posted sits at 10K or less. The cover is a real
+   picture from the Short (the sock wall, the War Dogs poster, the mugshots), never a podcast face frame. The three picture covers
+   did 563K / 13K / 5.5K; the five face covers did 10K / 5K / 3.2K / 1.2K / 322. Confounded with the story.
 
 ## Channel overrides (decided by Affan)
 - The look: the YouTube "Sean Ryan" kit (onyx-samples-youtube), watermark "SUCCESS STORY WITH SCOTT D. CLARY", no CTA, no Onyx.

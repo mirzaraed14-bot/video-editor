@@ -35,3 +35,5 @@ PLAYBOOK batch-mode section.
 **Still blocked 2026-10-21** (429 + "confirm you're not a bot" on the first plain `yt-dlp -F`): when he says "download them
 yourself", try ONE plain request, then hand back. He pulls with SnapDownloader into `E:\Bullshit Folder` (often `Henry\`),
 and those uploads are often 360p/480p with no higher option.
+
+**Search his drives FIRST (Affan 2026-10-24: "have you checked in my machine before suggesting? I dont want to download twice"):** before asking him to download anything, `find` E:\, X:\ and C:\Users\affan by title words (~15 s); his pulls live in `E:\Bullshit Folder\` (often `Henry\`). A local copy can be BETTER than the briefs link (Pariss original vertical IG video vs the news package wrapping it). When he must download, give him the highest-quality upload of each (the original channels) and say which part of a long video is needed.

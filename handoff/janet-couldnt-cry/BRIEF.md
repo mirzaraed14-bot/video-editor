@@ -1,7 +1,25 @@
 # BRIEF: "Why Janet Jackson Couldn't Cry For Michael 💔" (Abundance Wisdom short, MJ × Janet)
 
-## ▶ STATUS: resume here (2026-10-28 ~19:45): v1 EXPORTED (`Final Renders\Janet Couldnt Cry.mov` + Exports copy), at his review
+## ▶ STATUS: resume here (2026-10-28 ~23:40): HIS REVIEW 1 applied (§ HIS REVIEW 1) → the review-1 export (`janet_v3_60.mp4` → `Janet Couldnt Cry.mov`; the file he reviewed = `Janet Couldnt Cry (v2).mov`); state in RUN.md
 - Built from his re-edit (38.83 s) and his Tella direction (§ below); report `B8-REPORT.md`; state + re-render recipe RUN.md.
+
+## HIS REVIEW 1 (Tella 2026-10-28 "Video Editing Revisions 🎬", 1:35)
+Source: https://www.tella.tv/video/affans-video-bmmv4x8b → `brief/review1/guide.mp4` (stream URL from the page HTML, never
+opened in a browser; his voice is quiet, −20.9 LUFS, transcribed from a dynaudnorm copy `guide_boost.wav`), transcript
+`brief/review1/guide_words.json`, frames `brief/review1/frames/` (cursor crops `cur_*.jpg`). He reviewed the v1 export in
+Premiere ("Janet Couldnt Cry - new cut"), playhead at 00:00:00:00 on the WR hook.
+- **"only two revisions"**:
+  1. **"the caption should be here where I'm placing my mouse"** (0–8 s): his cursor tip hovers on the hook's nostril line,
+     tella y≈553 in a monitor spanning y89–930 → export **y≈1060** (v1 caption centre 1270.5) = **up 210 px**.
+  2. **"drag this Janet Jackson footage up so the captions don't sit on her eyes ... or a bit more so it still sits under
+     her lips with the new caption positioning"** (26–50 s, on screen: the BET letterbox) + **"same goes with this Michael
+     Jackson footage"** (60–75 s: his video message) + "all of these things are placed too low just because the captions
+     are themselves placed too low".
+- **"we're pretty much good to go ... don't make any major changes, don't do complete renders, be as lean as possible."**
+- **Resolved:** caption_shift −220 → −10 (measured caption centre y1058.5 on the hook still); BET (B1–B7) and Michael's
+  message (M1–M2) lifted 210 px as an exact finish-side shift of the reviewed picture (`lift`), bands [483,1241] and
+  [506,1410], their zoom pivots 1190 → 980, the BET AWARDS card y0 430 → 220 (same gap to the band, ink top y249). Full-bleed
+  close-ups, overlays, cards otherwise, audio, captions text, Topaz picture: unchanged. One finish render, no Stage A/Topaz.
 
 ## (previous) STATUS (2026-10-28 ~19:00): HIS DIRECTION VIDEO RESOLVED → code build next
 - His Tella (6:37, "you can now get to work") is resolved into § HIS DIRECTION below; his re-edit of the raw cut (38.83 s)

@@ -14,8 +14,43 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 | 7 | Chris Do: a $150 sneaker told him everything about pricing (`chris-do-sneaker-pricing`) | 2026-10-24 (60 fps, v1, approved first pass 2026-10-25) | 33.9 s | Chris Do's cam: "Anything that has a higher price has a perceived higher value." + promise card WHY CHARGING MORE / GETS BETTER CLIENTS 0-3 s + EMMY WINNER / CHRIS DO pointer | **4K-40K** · the opener is an abstract principle with no face anyone knows and no story yet: if the sneaker (2-3 s in) doesn't land before the swipe, it reads as generic pricing advice (locked 2026-10-24) | | | | | | | | |
 | 8 | John Morgan: a billionaire admits his claw machines are rigged (`morgan-claw-machine`) | 2026-10-26 (60 fps, v3 after Affan's review: casino beat out, tight cuts, premium SFX) | 38.2 s (v1/v2 51.0 s) | Morgan's cam: "All he did was pay a hundred bucks for a 50 cent bunny." + WHY YOU NEVER WIN / THE CLAW MACHINE card 0-3 s + BILLIONAIRE pointer | **20K-300K** · Morgan is a regional face (his ads), not a national one: if "billionaire" + the claw don't land in 2 s, it reads as a random old man; and "rigged" may be read as a payout-rate fact viewers already know (locked 2026-10-26) | | | | | | | | |
 | 9 | John Paul DeJoria: they said Patrón would never sell more than 20,000 cases (`patron-20000-cases`) | 2026-10-28 (60 fps, approved from 30 fps check v2: tag fix, sharpen, subtle swishes) | 67.4 s | DeJoria's cam: "We started luxury tequila here. Patrón tequila, the highest end ever the United States ever knew" + THEY SAID PATRÓN / WOULD NEVER SELL card 0-3 s + BILLIONAIRE pointer + the bottle | **10K-150K** · the longest Short yet (~67 s) on his most-told story: if the $37.95 price beat (5-14 s) feels like a known bio, viewers swipe before the 20,000 verdict (45 s) that makes it fresh (locked 2026-10-28) | | | | | | | | |
+| 10 | Daymond John: mocked Kevin O'Leary's card chain, then did a deal with Tom Brady (`daymond-card-chain`; Affan's own sequence) | 2026-10-29 (30 fps check, awaiting Affan's OK) | 51.2 s (check) | Daymond's cam: "You've seen Kevin O'Leary walking around with this stupid little Mr. T chain with a little card in there?" + HE MOCKED KEVIN'S / $30M CARD CHAIN card 0-3 s + SHARK TANK INVESTOR / DAYMOND JOHN tag, the necklace by "chain" | **20K-200K** · at ~60 s it is the second-longest Scott Short (Patrón: 67.4 s, verdict at 0:45, ~5K), and the Brady payoff lands at ~57 s. The 17 s "five years ago" flashback at ~10-27 s is where a cold viewer leaves. (Claude's 33 s order was 30K-300K. The pick test is 2.5 either way, and the hook is the same.) (locked 2026-10-29, verbatim from `research/daymond-card-chain.md`) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
+
+**2026-10-29 read (Affan's Shorts-tab screenshot; NOT 7-day numbers).** Post dates were not given. The tab lists newest first:
+Morgan, Chris Do, War Dogs, Marvel, Serhant calendar, Serhant pitches, Bombas, FUBU, which matches the delivery order. Age is a
+ceiling (each was posted on or after delivery). The 7-day columns above stay empty until there is a dated number at day 7 or
+later. Studio numbers (stayed %, avg view %, feed share, the retention graph) were not sent. Patrón (row 9) is not on the tab yet.
+
+| # | Posted title (not our title row) | Cover as posted | Views 10-29 | Age ≤ | vs locked prediction |
+|---|---|---|---|---|---|
+| 1 | Daymond John's $1B Jersey Marketing Tactic | Daymond's face frame | 10K | 14 d | inside the unlocked 5K-40K |
+| 2 | Daymond John Almost LOST $250M | the sock-wall split frame | **563K** | 12 d | 9× over the unlocked 8K-60K |
+| 3 | Why Billionaires Have So Much Free Time - ... | Ryan's face frame | 5K | 10 d | inside 3K-30K (low) |
+| 4 | How Ryan Serhant Became The Best ... | Ryan's face frame | 3.2K | 10 d | on the 3K floor |
+| 5 | How RDJ SAVED Marvel From Destruction | the mugshots frame | 5.5K | 8 d | **below** 10K-150K (open to 14 d) |
+| 6 | David Packouz's Real $300M War Dogs Story | the War Dogs poster frame | 13K | 6 d | below 15K-150K, open |
+| 7 | Why Charging More Simply Works | Chris's face frame | 322 | 5 d | far below 4K-40K, open |
+| 8 | Arcade Claw Machines Are RIGGED?! - John ... | Morgan's face frame | 1.2K | 3 d | far below 20K-300K, open |
+
+Mean ~75K, median ~5.3K, mean without Bombas ~5.5K. Re-read every open row at 14 days (a row is flat when its last 48 h add
+< 5 % of its total; AW rule). Post-mortem and the failed assumption are in FINDINGS § "F1-F6 tested against the other 7".
+
+**Pick-test scores, PRE-REGISTERED 2026-10-29, before posting or making** (ENGINE § What the first results changed, rule 1:
+held belief / he speaks it / it cost him, 0-3). They are written so the test can fail: if a 2.5 does under 13K, or a 1 does over
+100K, the rule is wrong and goes to FALSIFIED.
+| Short | Score | Expected band if the rule holds |
+|---|---|---|
+| 9 Patrón (made; vindication, not a cost) | 1 | ≤ 15K, the FUBU / War Dogs band (its locked 10K-150K stays as written) |
+| Scaramucci "11 days" (TOP-MOMENTS #1) | 2.5 | 50K+ |
+| DeJoria "the note" (wow-stories #1) | 2.5 | 50K+ (a second DeJoria; sequel discount) |
+| Pincus "ignored Facebook" (TOP-MOMENTS #5) | 2 | 20K+ |
+| Daymond × O'Leary "Santa Claus" (TOP-MOMENTS #4) | 1.5 | ≤ 20K despite the Shark Tank niche |
+| Daymond: mocked Kevin O'Leary's card chain, then did a Tom Brady card deal (`research/daymond-card-chain.md`; added 10-29, Claude's pick for today) | 2.5 | 50K+ |
+
+Same day, after the table: the freshness search found Scaramucci's "11 days" story widely told (AOL 2026, Washington Post 2019,
+Uproxx 2017, his own book). It fails ENGINE rule 3 and goes to the bench. Its score above stays as registered.
 
 **2026-10-24 (Affan, in chat):** the Bombas Short ("Daymond John Almost LOST $250M") is at **378K** (238K on 10-22, still climbing). Baseline: Scott's Shorts were averaging **in the 900s** before Onyx. Used as the proof line in Onyx approval replies (Moonshots, 2026-10-24).
 

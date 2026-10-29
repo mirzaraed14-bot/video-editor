@@ -1,6 +1,8 @@
 # RUN — "Why Michael Jackson's Daughter Won't Post On His Birthday 💔" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-24 ~12:10) — v1 EXPORTED, waiting on his review
+## ▶ STATUS (2026-10-29): UPLOADED — v1 (`X:\Claude Projects\Exports\paris-wont-post-birthday.v1.mp4`) went out as built; job closed, session retired. Lessons: the AW LESSONS.md (2026-10-24 entries).
+
+## (previous) STATUS (2026-10-24 ~12:10) — v1 EXPORTED, waiting on his review
 **`X:\Claude Projects\Exports\paris-wont-post-birthday.v1.mp4`** (= `outputs/paris-wont-post-birthday.v1.mp4`): 31.50 s,
 1890 f, 1080x1920 60 fps, AAC 48 kHz, **-13.8 LUFS, -2.9 dBTP measured on the mp4**. He approved the test frames
 (`renders/ALL-SHOTS-test-v1.jpg`) and signed back in to Topaz; only prob-4 was re-run (`build/topaz_step3.py`, the step-2

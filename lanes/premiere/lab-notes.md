@@ -960,3 +960,11 @@ Always check the EDL bash can actually see before re-splicing.
 - **A PNG from ffmpeg carries gAMA/cHRM chunks; Chrome (HyperFrames) applies them, and the frame renders ~24 % darker** (a held frame
   of a graded card: mean 51.7 → 39.4). Re-save through PIL (`Image.open(p).convert('RGB').save(p)`: no chunks) before an <img> in a
   comp; after: 49.9. Any comp that shows a frame grabbed by ffmpeg next to the same footage needs this, or the cut into it jumps.
+- **Premiere's auto-save blocks the bridge (2026-10-29).** While the title bar reads "Auto Saving Project: ABW10.prproj" every
+  `execute_extendscript` / `ping` times out ("bridge_unavailable") although the process reports Responding; a big project
+  (130 sequences, from a deeply nested Auto-Save path) held it 10+ minutes. A failed read-back then looks like "the sequence
+  changed": check the reply is not an error before comparing. Wait it out with a background ping loop; never restart Premiere.
+  Kane job, same day: a `create_seq.js` clone sent as the save began timed out at 45 s yet COMPLETED after it (the sequence
+  existed at 14:31); the calls chained after it never ran, and Premiere showed "Not Responding" at ~0 % CPU until then.
+  So: one call per command (never chain on a failed one), read the state after recovery, resend only what is missing,
+  and check the window title for "Auto Saving" before every call.

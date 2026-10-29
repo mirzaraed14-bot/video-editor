@@ -1,6 +1,28 @@
 # RUN: "Why Janet Jackson Couldn't Cry For Michael 💔" (Abundance Wisdom short, MJ × Janet)
 
-## ▶ STATUS: resume here (2026-10-28 ~19:45): v1 EXPORTED, waiting on his review
+## ▶ STATUS (2026-10-29): UPLOADED (the review-1 export, after one review; reported by the parent session)
+- Job closed: nothing pending. Lessons in `presets/youtube-shorts/abundance-wisdom/LESSONS.md` (2026-10-28 Janet entries).
+
+## (previous) STATUS (2026-10-28 ~23:45): HIS REVIEW 1 APPLIED + EXPORTED, waiting on his OK
+- **`Final Renders\Janet Couldnt Cry.mov`** + identical `X:\Claude Projects\Exports\Janet Couldnt Cry.mov` (= `outputs/`,
+  MD5 2119ecbc…): 1080x1920 30 fps, 1165 f, 38.833 s, 38.4 Mb/s, −13.7 LUFS, −3.1 dBTP, export QA PASS; from
+  `outputs/janet_v3_60.mp4`. The version he reviewed is kept as `Janet Couldnt Cry (v2).mov` in both folders (MD5 6318d0ef…),
+  the never-reviewed first export as `outputs/Janet Couldnt Cry (v1).mov`. Checks: 24 cuts clean on the 30 fps file
+  (`proof/final_edges.jpg`); unchanged shots match v2 outside the caption rows to encode noise (mean |d| 1.0-1.8 of 255),
+  only BET + the message moved; caption centre y1058.5 vs his cursor y≈1060; before/after `proof/r1/review1_before_after.jpg`.
+- Next: his OK → upload is his; any further note → change only what he names (recipe below, picture stays
+  `renders/janet_picture_v2.mov`).
+
+## (previous) STATUS (2026-10-28 ~23:40): HIS REVIEW 1 applied, v2 rendering
+- His review (BRIEF.md § HIS REVIEW 1): captions up 210 px to his mouse; BET + Michael's message lifted 210 px with them.
+  Done as data only: `build/make_timeline.py` (LIFT, BET_BAND_R1 / MJM_BAND_R1, caption_shift −10, BET card y0 220, BET/MJM
+  zoom pivots y980), `build/finish.py` (`lift` = exact shift before the letterbox), centers.json / zoom_layers.json rebuilt
+  (pivots only; centers.py's cv2 is missing in the GPU venv, so its override step was applied directly). v1 copies of every
+  build file: `build/*.v1.*`. Stills `proof/r1/`. Render: `finish.py render ../renders/janet_picture_v2.mov
+  ../captions/caps_capcut.mov ../outputs/janet_v3_60.mp4 --audio ../renders/janet_audio.wav` → `export.py` → final_edges →
+  the reviewed v1 kept as `Janet Couldnt Cry (v2).mov` (name = second delivered file) in both folders, the new file replaces it.
+
+## (previous) STATUS (2026-10-28 ~19:45): v1 EXPORTED, waiting on his review
 - **`E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Janet Couldnt Cry.mov`** + identical copy in
   `X:\Claude Projects\Exports\` (= `outputs/Janet Couldnt Cry.mov`, MD5 6318d0ef…): 1080x1920 30 fps, 1165 f, 38.833 s,
   38.3 Mb/s BT.709, AAC 48 kHz, **−13.7 LUFS, −3.1 dBTP, export QA PASS**. From `outputs/janet_v2_60.mp4` (picture
