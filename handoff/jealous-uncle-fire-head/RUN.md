@@ -11,7 +11,9 @@
   00:00, `caption_qa.py` PASS (1 warn: 14.76 "aisa" = Urdu "career ho to aisa", all 3 decoders agree). He drags the .srt onto
   Sequence 35 at 00:00 and applies the "affanwizu yellow" Track Style. Every line quoted (all the uncle's dialogue).
   Flag for him: 7.84 "haan yar sahi hai yar" (WhisperX dropped it; ur + hi + en hear it), 16.55 "warna" (Whisper: wonda/banda).
-- Earlier the same day: the three layers were placed + verified on V2–V4 (below); the swap replaced them.
+- Earlier the same day: the three layers were placed + verified on V2–V4 (below); the swap replaced them. Since the fire is
+  now baked into V1, "B" (or any fire change) = re-bake (`work/bake.py`, flame/core rows < 420 zeroed for B) + re-run
+  `swap.py`; the Crop Top trick below applied only to the layer version.
 
 (previous status) He answered the A/B stills
 "Looks good to me" → version A (flames rise into the top bar). V2 light / V3 flame / V4 core placed 0 → 22.05 s, blend modes
