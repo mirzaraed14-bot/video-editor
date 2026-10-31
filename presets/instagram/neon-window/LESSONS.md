@@ -235,3 +235,19 @@ an assert that every line carries exactly its chunk's words). README § Captions
    rows the stack uses (x 0.35) and keeping the red marks bright at the bottom made both legible.
 3. A hook that fades out before a stage beat fades in leaves black frames: overlap them (hook out over 0.14 s, the lead-in rising 0.12 s
    early).
+
+## 2026-10-31 · Roofing Insights IG sample (Onyx batch 6, `projects/roofing-cash-you-hide/ig/`), builder lessons
+1. **Frame 0 shows the first caption line at full strength**: the 14 px rise starts at alpha 0, so a line timed to 0.00 was invisible on the
+   preview frame; `draw_captions` now places a block that starts on frame 0 already risen.
+2. **Two people on two cameras = one tracker per person** (`FACES[who]`, `SID_WHO[sid]`), each take pinned at its edges; ZB 1.45 puts a
+   studio close-up's face (~385 of 1080 px) at ~540 px in the window, mouth at y 570, lips >= 26 px over the caption top.
+3. A guest's credit stack (mono role + a two-line name) sits top-right under the bug: a cap brim fills the window's top middle on a tight
+   close-up and a left-side stack landed on it.
+
+## 2026-10-31 · Drinkin' Bros x Tom Berenger IG sample (Onyx batch 6, `projects/drinkinbros-berenger-inception/ig/`), builder lessons
+1. **A webcam that frames the guest LOW** (mouth at 53-66 % of the source height) cannot reach MOUTH_Y inside the source: lips_check read
+   -173 px. `inside(..., floor=False)` lets his window run past the source's bottom (black under his black tee, melted by CAM_LOW).
+2. **Two tracked faces in one kit**: faces.json keyed per person (`FACES[key]`), a shot -> key map (`SIDKEY`), and a `freeze` on a cam
+   shot (Ross's window holds his frame 124 over the program's 5-frame flash of the guest).
+3. **The hook's listening card from frames outside the cut**: a separate clip of the guest's silent reaction (51 frames before the program
+   cut away), shown at 0.9x over the 57-frame hook; declared in the BRIEF as a cutaway.

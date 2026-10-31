@@ -342,3 +342,31 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   right before the punchline** ("They- these two met") was only caught by the reviewer's ear-proxy: run the faster-whisper prompt pass on
   each segment's first 0.3 s too, not only on the joints. (4) A close webcam host who leans in ("NO!") drops his mouth onto the seam
   captions at z0 1.0: give that shot its own z0 1.3 / fy_out 0.28 (a different person's shot either side, so no same-camera punch-in).
+
+- 2026-10-31 (Onyx batch 6, Roofing Insights x Justin Escajeda, `projects/roofing-cash-you-hide/`, builder lessons; a two-camera studio interview):
+  (1) **A tight-pause pass on the 10 ms RMS cuts WEAK FRICATIVES as pauses**: the first pass removed the /s/ of "say", the /th/ of "thirty"
+  and the /sh/ of "showed" (quiet on RMS, 80-98 % of their energy above 3 kHz). `work/cut/make_edl.py` now keeps any frame within 0.2 s
+  of a run's edge that has > 40 % of its energy above 3 kHz and sits 6 dB over the run's floor (the HF-share guard); breaths mid-pause still go.
+  (2) **WhisperX can hide a whole stumble inside ONE stretched word** ("you're" 0.86 s = "and you're- and you're hiding- and you're"): only
+  the verbatim faster-whisper pass on the spliced cut showed it; keep the last take. (3) **splice.sh's frame-grid snap moves a measured edge
+  up to ±21 ms**: a start snapped 7 ms past a glide onset lost "You" on the plain decode; choose the frame side yourself (EDGE overrides in
+  make_edl) and re-run the verbatim pass after every splice. (4) Studio close-ups (face box ~36 % of 1080) at z0 1.12 with the eye line at
+  0.32 keep the lower lip ~65 px over the 1092 seam captions (no seam move: CrossExamined's 1180 was for a 43 % webcam face). (5) **Two
+  people on two cameras: the reverse shot is a plain cut, whips only into pictures**; name tags over the chest under the seam when the face
+  fills the frame's middle. (6) **Verify the button's speaker BY VOICE, even when the content "obviously" belongs to the guest**: the
+  sequencing and my read gave "if you did not show profit for 30 years, that was your pension" to the guest (his speech ran into it with
+  no gap), the show's camera was on the host, and wespeaker settled it in two minutes (host 0.78 / guest −0.10, `work/cut/spk.py`):
+  the host sums it up. The TCO lesson again: the camera was right, the transcript reading was wrong. (7) Spec anchors by word text bit twice: `wf("and")` took "profit AND loss" and
+  `wf("cash")` took "much in CASH": anchor on a unique neighbour ("keeping") and assert the edges.
+
+- 2026-10-31 (Onyx batch 6, Drinkin' Bros x Tom Berenger, `projects/drinkinbros-berenger-inception/`, builder lessons):
+  (1) **A SPLIT top ignores `fx_out`**: `yt_picture.py` renders every split top at fx 0.5 (only A shots and FACE-SPLIT bottoms read it), so
+  "frame the face right to make room for a name tag" does nothing; a tag beside a centred close-up lands on the eye. Put it on the chest
+  (dot left of the neck, label between the chin and the seam captions) or use an A shot. (2) **A head that moves through a cut pause hits
+  the crop's edge**: at z0 1.0 a 1080p webcam leaves no vertical room, so when he raised his head ~110 px across the punchline pause the
+  lock could not follow (99 px eye step); z0 1.2 + fy_out 0.36 fit both takes. Compute the room from both takes' eye y. (3) **A click or
+  a lip smack inside a pause splits the quiet run** and the tight pass keeps the whole pause (two 0.27-0.29 s gaps): read the 5 ms
+  envelope of every gap > 0.2 s and FORCE the cut. (4) **Derive every shot edge from the EDL** (`J(raw)` = the joint where a piece
+  starts, `RAW(raw)` = a raw second's cut frame) and write them into spec.json for the IG: the QA re-cut then re-timed both looks with no
+  hand edits. (5) Two button splits back to back = a hard cut on the same camera: one split with a bottom clip that cuts inside it keeps
+  the head lock chained.

@@ -59,5 +59,6 @@
 - [No promo frames](feedback-no-promo-frames.md) — Affan 2026-10-27: check every clip edge frame by frame; never a 1-2 frame "watch on Spotify/YouTube" promo
 - [Scott Shorts 20K guarantee](project-scott-clary-shorts-guarantee.md) — Affan 2026-10-29: our LAST 12 Scott Shorts must average 20K by end of month two or Onyx works free; Bombas 563K vs the rest 0.3-13K; every pick runs the self-own pick test (ENGINE § What the first results changed)
 - [Labels at the bottom](feedback-labels-at-bottom.md) — Affan 2026-10-31: every label/name/date card sits LOW (top ~y1260-1280, under the captions, above y1620), never the top band; beats any brief's "top third"
+- [Motion effects need clips](feedback-motion-effects-need-clips.md) — Affan 2026-10-31: head-fire OK'd from stills, rejected in motion (wiggle, snapping, bonfire); approve VFX from a real-speed clip of the fastest spans
 - [IG captions: whole line, subtle rise](feedback-captions-whole-line-subtle.md) — Affan 2026-10-31: IG captions = one ~4-word line that appears whole with a very subtle eased rise; no word-by-word reveal (too much with heavy MG)
 - [Onyx samples: 30 fps, no Topaz](feedback-onyx-samples-30fps-no-topaz.md) — Affan 2026-10-31: prospect samples ship at native 30 fps, no Iris/Chronos/60 fps; the QA'd render is the final (saves usage)

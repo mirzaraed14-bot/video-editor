@@ -1,6 +1,14 @@
 # jealous-uncle-fire-head — ABW10 · Sequence 35 (head on fire, whole reel)
 
-▶ **STATUS 2026-10-31 ~20:30: FIRE VERSION SWAPPED ONTO V1 + CAPTIONS DELIVERED, at his review.**
+▶ **STATUS 2026-10-31 ~22:30: REVIEW 1 = "so unrealistic" (Tella, REVIEW-1.md). v2 preview sent for his OK
+(`work/v2/fire2.py` → `work/v2/preview-v2.mp4`): hair-matte-anchored licks, no spring, burning hair edge, heat haze.
+V1 still holds the v1 bake: swap v2 in only after his OK (`fire2.py --master` → `outputs/jealous-uncle-fire-v2.mov` → swap.py
+with FIRE pointed at it). Asked: the AI route (fire that truly burns into the hair = an AI video edit that redraws the head
+region, against his "don't regenerate" rule): FLUX 3 Video Edit ≈ 22 credits (1/s, ≤ 15 s per pass) or Seedance 2.5
+video_edit ≈ 155 (720p). Nothing sent, nothing spent. Lesson: a motion effect is approved from a real-speed CLIP, never
+stills (memory feedback-motion-effects-need-clips).**
+
+(before review 1) **2026-10-31 ~20:30: FIRE VERSION SWAPPED ONTO V1 + CAPTIONS DELIVERED.**
 - **Swap** ("swap my video in premiere with the fire version"): `outputs/jealous-uncle-fire.mov` (the BAKE: Premiere-exact
   frames + the three layers by Premiere's measured math, `work/bake.py`; ProRes 4444, video only, 1323 frames) now fills V1
   cut-for-cut: 9 clips at his exact cut points, inPoint = start (`work/pr/swap.py`; setIn/OutPoint floor → +0.5 ms). V2–V4
