@@ -1,6 +1,13 @@
 # jealous-uncle-fire-head — ABW10 · Sequence 35 (head on fire, whole reel)
 
-▶ **STATUS 2026-10-31 ~22:30: REVIEW 1 = "so unrealistic" (Tella, REVIEW-1.md). v2 preview sent for his OK
+▶ **STATUS 2026-10-31 ~23:45: v2 APPROVED ("this looks good put it on my sequence") and SWAPPED onto V1.**
+`outputs/jealous-uncle-fire-v2.mov` (ProRes 4444, 1323 frames, same deterministic render as the approved preview) fills V1
+cut-for-cut: 9 clips at his exact cut points, inPoint = start (read back), A1 unchanged, V2–V4 empty. NOT saved, NOT exported.
+Pending: the Premiere frame-grab check (`uv run work/pr/swapcheck2.py`) needs Sequence 35 ACTIVE; he was on Sequence 34, so
+it was not run (never switch his active sequence). The same placement on v1 was verified frame-exact (22 grabs, 0.39/255).
+Captions (`jealous-uncle-fire-head.srt`) still for him to drag on at 00:00.
+
+(review 1) **REVIEW 1 = "so unrealistic" (Tella, REVIEW-1.md). v2 preview sent for his OK
 (`work/v2/fire2.py` → `work/v2/preview-v2.mp4`): hair-matte-anchored licks, no spring, burning hair edge, heat haze.
 V1 still holds the v1 bake: swap v2 in only after his OK (`fire2.py --master` → `outputs/jealous-uncle-fire-v2.mov` → swap.py
 with FIRE pointed at it). Asked: the AI route (fire that truly burns into the hair = an AI video edit that redraws the head
