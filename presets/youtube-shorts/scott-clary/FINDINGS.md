@@ -98,21 +98,127 @@ first 5 s); each `outputs/<job>.transcript.json`; and the AW evidence (`X:\Claud
 
 - **Re-scored 2026-10-29 with the pick test (ENGINE § Pick test): held belief / he speaks it / it cost him, 0-3.** These
   scores are pre-registered in RESULTS.md before any of them is made:
-  - **Daymond: the card chain (found 10-29, `research/daymond-card-chain.md`): 2.5, the pick for today.** Held: Kevin O'Leary's
+  - **Daymond: the card chain (found 10-29, `research/daymond-card-chain.md`): 2.5, made 10-29 (RESULTS row 10, Affan's sequence).** Held: Kevin O'Leary's
     $25-30M card necklace (Oscars 2026) read as a ridiculous flex. Daymond says exactly that ("the guy's fried, he's extra crispy"),
     then his daughter wants Pokémon cards and he does a Tom Brady card deal himself. Household face, Shark vs Shark, zeitgeist. The
     pride cost is only ½. It is the third Short from this episode.
   - Scaramucci "11 days" (TOP-MOMENTS #1): 2.5, but **benched 10-29 on freshness** (widely told; see the Freshness log). Held: the 11-day Mooch joke. Own voice, studio. Cost: the marriage, his son's birth
     missed, fired in public. Real footage exists (the briefing room, Colbert).
   - DeJoria "the note" (wow-stories #1): 2.5. Held: "billionaires were born rich". Own voice. Cost: his wife left a toddler on a pile
-    of clothes and emptied the account. It is the second DeJoria after Patrón.
-  - Pincus "ignored Facebook" (TOP-MOMENTS #5): 2, the Bombas mirror. A founder was WRONG about a brand everyone knows. Pincus's
-    face is not a household one.
+    of clothes and emptied the account. It is the second DeJoria after Patrón. **Benched 10-30 on freshness**: it is his signature
+    origin story (Fox News, Big Think, Evaint, Graham Bensinger, Young and Profiting). Only the Hell's Angels coda is rare.
+  - **Pincus "ignored Facebook" (TOP-MOMENTS #5; `research/viral2/screen-R2.md` § PINC-1): 2, the pick for 2026-10-30.** The Bombas
+    mirror: a founder was WRONG about a brand everyone knows. Zuckerberg and Sean Parker demo the Facebook in his office; "they got
+    this"; he "willfully ignored it"; the button is "It's impressive." It is the best story left in the bank, not a 2.5: Pincus's face
+    is not a household one, so the famous names (Zuckerberg, Sean Parker, Friendster) have to carry frame 1. In person, ~47-57 s.
+    Pre-mortem: **5K** because a stranger doesn't know Pincus or Tribe, the hook is a name-drop, and the lesson ending reads as a talk.
+    **500K** because "Zuckerberg showed me Facebook and I ignored it" is a regret anyone can repeat, The Social Network made both
+    faces household, and Zynga later made its fortune ON Facebook (FarmVille).
+  - **After 10-30 the bank has no fresh 2.5 left:** Scaramucci and DeJoria are benched on freshness, and the card chain is made.
+    Coverage on 10-30 (Affan asked "have you gone through all his famous people?"; the answer was no):
+    - Scott's feed has **658 full-length guest episodes** (≥ 20 min, not the "Lessons" re-cuts) and ~618 guests.
+    - Read in full before 10-30: **45**. That is R1-R8 (31) + Chris Do + the 10-21 wow-stories set (9 new) + Daymond, Serhant
+      and Lubetzky.
+    - The 10-29 pick-test re-score covered only TOP-MOMENTS and wow-stories, never R5-R8.
+    - The fame ranking (`guests-ranked.tsv`) is Wikipedia views for the NAME, so it has collisions. Paul Allen is the Ancestry
+      founder, scored as Microsoft's. Terry Jones is Travelocity, scored as Monty Python. Chris Wallace and Jim Jordan are the same
+      problem. Judge (b) by hand, never by that rank.
+  - **R5-R8 re-scored with the pick test (10-30, inline).** No household face anywhere, so (b) ≤ ½.
+    - Harary "Spin Master passed on Beyblade" ½/½/1 = **2**: Beyblade is a childhood brand of today's 20-somethings.
+    - Wainwright "Pets.com CEO told she was unemployable, and believed it" ½/½/1 = **2**.
+    - Croak "said no to $35-60M for Silly Bandz, then lost it in startups" ½/½/1 = **2**.
+    - Kusin's margin call 1.5. Randolph (both) 1. Namer's Oscars fence 1. Frankfort, Foster, Rosenfield ≤ 1. Croak's Walmart
+      bluff ½.
+    - Each 2 ties with Pincus; Pincus has the more famous subject (Facebook, Zuckerberg).
+  - **R9-R15 (10-30): 27 more famous-guest episodes, read in full by 7 Sonnet readers** (`research/viral2/screen-R9..R15.md`,
+    transcripts in `tx/`). Coverage is now **72 of 658**. No face a random 20-year-old knows anywhere in the batch, so (b) ≤ ½
+    everywhere. Nothing reaches 3.
+    - **Kara Goucher, "syringes in the fridge" (00:34:59-00:36:22): 1/½/1 = 2.5. Benched on freshness.** It is the spine of her
+      memoir *The Longest Race* (2023), and the fridge syringes are in print (CU Boulder alumni profile 2026, OPB excerpt, BBC
+      2019). Her second 2.5, the assault on the flight to Korea, is a sexual-assault story: not proposed.
+    - **Paul Allen (Ancestry.com, NOT Microsoft's), MBA and term sheets: the reader scored 2.5, re-scored 2.** (a) is ½: no stranger
+      holds a belief about Ancestry's founder.
+    - **The 2.0 tier:**
+      - Matt Gutman's on-air Kobe error and month's suspension: sensitive, and widely reported in 2020.
+      - Ross Mandell's prison and his daughters: legal risk.
+      - Paul Allen's MyFamily.com "six years before Facebook".
+      - Tobi Pearce's $50M deal pulled 36 h before the wire.
+      - Dan Peña's father and his sons' jail cell (very profane episode).
+      - Mark Manson's bestseller-to-burnout.
+      - Neil Patel's kids returning toys so he'd stay home.
+      - Anthony O'Neal "single because I chased money".
+      - Dave Asprey's $6M at 26, lost at 28 (signature).
+    - **Nothing usable:** Voss, Baker, Davis, Kleinfeld, Novak, Fain, Terry Jones, Jaspreet Singh, Vivian Tu, Gil Dezer,
+      Lisa Bilyeu, Sonnenfeldt, Rambin, Colston, Godin, Pronger, Naveen Jain (best ≤ 1.5).
+    - **Verdict: Pincus stays the 10-30 pick.** He ties the 2.0 tier but has the most famous subject (Facebook, Zuckerberg, Sean
+      Parker) and an un-indexed telling. Goucher's 2.5 is benched for three reasons:
+      - the Oregon Project was a major 2015-19 scandal and is the spine of her book, whereas the Facebook demo is one mention in
+        one article;
+      - her core cut carries "I don't like it when Alberto talks to me like that" (harassment-adjacent);
+      - doping and testosterone may fall under Affan's drug-word censor rule.
+      Affan can overrule.
+    - **How the 27 were chosen:** the Wikipedia-ranked top ~70 (217 guests matched, with name collisions) plus a title sweep for
+      famous names and keywords. This is NOT every recognisable guest. A hand read of all 547 unread guest names on 10-30 found
+      social-media-famous faces with no Wikipedia match, still unscreened:
+      - social-media famous: Wallo267, Simon Squibb, Jason Tartick (The Bachelorette), Dr. Eric Berg, Dan Martell, Jim Kwik,
+        Sahil Bloom, Aaron Marino, Evan Carmichael, Hala Taha;
+      - TV and politics: Soledad O'Brien, Ben Shapiro, Dennis Prager;
+      - founders and authors: Spencer Rascoff (Zillow), Guy Kawasaki, Scott Harrison (charity: water), Steven Gundry, Jack
+        Canfield, Joe Vitale, Dave Liniger (RE/MAX), Kara Goldin (Hint), Rachel Cruze, George Kamel, John Delony.
+      Also still unread: second episodes of Jain, Tu, Dezer, Cardone (2020), Asprey and Godin, plus Eric Ries, Dean Graziosi, Chris
+      Dixon, Sam Jaeger, Charles Duhigg, Natalie Dawson, Elena Cardone, Rebecca Minkoff, Joe De Sena, Melissa Urban, Theresa Payton
+      and Charlie Rocket. That is the next screen.
+    - **Every 2+ candidate run through ALL the gates (10-30, Affan: "which passes our gates?").** The gates:
+      - pick test ≥ 2 (rule 1);
+      - fresh: the story at this angle is not indexed (rule 3; web search, FINDINGS § Freshness log);
+      - frame 1 is the guest's own stake line (rule 2);
+      - real receipts exist (rule 4);
+      - VIRAL-BAR B-E: a universal stake, a loop opened in beat 1, a concrete vehicle, a title that promises a reversal;
+      - verifiable, and clear of the censor rule (drugs, self-harm) and of sexual or legal risk;
+      - the set (in person vs webcam; noted, not a gate).
+
+      | Candidate | Score | Fresh | Own hook | Receipts | B-E | Set | Risk | Verdict |
+      |---|---|---|---|---|---|---|---|---|
+      | **Pincus**: Zuckerberg showed him Facebook, he ignored it | 2 | ✓ (only the demo fact is in Fast Company) | ✓ "Zuckerberg walked in my door…" | ✓ 2004 photos, TheFacebook, Tribe, FarmVille | ✓ | in person | one f-word (a clean variant exists) | **PASS** |
+      | **Harary**: Spin Master passed on Beyblade, Hasbro signed it | 2 | ✓ (one podcast blurb only) | ✓ "we missed hundreds and hundreds of millions of dollars of toy sales" | ✓ Beyblade, the anime, Takara Tomy, Hasbro | ✓ | in person | his figures: none on screen | **PASS** |
+      | **Paul Allen (Ancestry)**: talked out of Harvard, didn't understand his term sheets, "a 20 times bigger exit" | 2 (2.5 if "you don't need an MBA" counts as the held belief) | ✓ | ~ the stake line is the payoff, so open on the MBA belief | ✓ Ancestry, Harvard, Blackstone's $4.7B | ✓ | Scott's studio | always say "Ancestry.com founder" (name collision); cut before his hedge | **PASS** |
+      | **Pearce**: 36 h from a $50M wire, the buyer pulled out | 2 | ✓ | ✓ "36 hours out from … the first 50 mil" | weak: the Sweat app only, no picture of the event | ✓ | in person | his account; end before "we sold later" | **PASS (weak receipts)** |
+      | Paul Allen: MyFamily.com six years before Facebook | 2 | ✓ | ✓ | ✓ (Wayback) | ✓ | studio | half brag | alternate to the above (same episode) |
+      | Patel: his kids tried to return their toys | 2 | ✓ | ✓ | ✗ stock only | ✓ | **webcam** | "2025" dates it | FAIL |
+      | Peña: "Dan, just tell me it's not drugs" | 2 | ✓ | ✗ the hook word falls under the censor rule | castle only | ✓ | in person | garbled facts about his mother | FAIL |
+      | Goucher, Wainwright, Gutman, Asprey, Manson, Croak | 2-2.5 | ✗ told (memoirs, 2020 news, TIME 2015, podcasts) | | | | | Gutman: the Kobe and Gianna deaths | FAIL on freshness |
+      | Mandell (prison) | 2 | | | | | | unverifiable, legal | FAIL |
+      | O'Neal (single), Patel (trust), Peña (sons in jail) | 2 | | | | ✗ a statement, no vehicle / sensitive | | | FAIL |
+
+      **Four pass: Pincus, Harary, Paul Allen (Ancestry), Pearce.** That is the order to make them in. Pincus has the most famous
+      subject. Beyblade is the strongest nostalgia noun for 18-28-year-olds. Ancestry has the best held belief ("you don't need an
+      MBA"). Pearce has the best number but the weakest receipts.
+    - **What the batch says about the channel:** Scott's catalogue holds very few household faces, and a stranger-known face is
+      half the Bombas factor. The guarantee cannot rest on finding more Daymonds in the back catalogue. It rests on the
+      next famous guests he records (watch his upload feed for them), plus the 2.0 tier made with the strongest receipts.
   - Daymond × Kevin O'Leary "Santa Claus" (TOP-MOMENTS #4): 1.5. The Shark Tank niche and two household faces, but it is a roast with
     no cost, and the third Short from this episode.
   - Patrón (made, not yet posted): 1. Experts said it was too expensive and he was proven right: a vindication, not a cost.
 
 ## Freshness log
+- 2026-10-30, web search (not YouTube), on the 2.0 tier:
+  - **Told:**
+    - Wainwright "unemployable": her 2025 memoir, a Fashionista excerpt, HerMoney.
+    - Gutman's Kobe error: everywhere in Jan 2020 (Fox, Mediaite, Adweek, Wikipedia).
+    - Asprey "$6M at 26, lost by 28": TIME 2015 and many podcasts.
+    - Manson's burnout: High Performance "why my bestseller broke me", New York Magazine "The guru burns out", Lewis Howes.
+    - Croak turning down $50-60M: podcasts, including Scott's own "Lessons" re-cut, framed as no regret.
+  - **Not indexed:** Pincus's telling, Harary passing on Beyblade (one School of Hard Knocks episode blurb names it), Paul Allen's
+    Harvard dean and term sheets, Pearce's pulled $50M deal, Patel's toys, Peña's father at the castle.
+  - **Not verifiable:** Mandell's prison and daughters (no source even confirms the prison term).
+- 2026-10-30, web search (not YouTube): Kara Goucher's Oregon Project story, fridge syringes included, is in her memoir (*The Longest
+  Race*, 2023), the CU Boulder alumni profile (2026), the OPB book excerpt (2023), and BBC and Running Magazine coverage (2019):
+  benched. Her exact "gold medal for compartmentalization" line was not found indexed.
+- 2026-10-30, web search (not YouTube): DeJoria's wife, the note, the emptied account and living in his car are told everywhere,
+  in his own interviews (Fox News, Big Think, Evaint, Graham Bensinger, Young and Profiting): benched. Pincus: a Fast Company piece
+  on his 2026 book mentions the 2004 TheFacebook demo, and Bloomberg (2012) and Vator (2009) have his "Tribe didn't fail fast"
+  lesson. His "they got this … willfully ignored it … it's impressive" telling is not indexed. The fresh part is the moment,
+  not the fact.
 - 2026-10-29, web search (not YouTube): Bombas's Sesame Street sock line is public (License Global), but Daymond's telling (calling
   them idiots, "Daddy, put on your Elmos", the tear) is not indexed anywhere. The FUBU 50-shirt / big-guys story is everywhere
   (Trainual, Tim Ferriss 2011, Britannica, newsletters).
@@ -129,6 +235,11 @@ first 5 s); each `outputs/<job>.transcript.json`; and the AW evidence (`X:\Claud
   $525M collateral or the Disney sale. Scott's own Shorts tab still unchecked.
 
 ## Fact-check log
+- 2026-10-30: **Pincus DID invest in Facebook.** Reports put him in the 2004 seed round at ~$38-40K (Summify, Vietnamese press), or in
+  May 2005 (CNBC, Seedtable). So "he ignored Facebook" is false and a commenter will dismantle it. What he ignored was the LESSON:
+  Facebook's .edu trust model. He kept Tribe open to everyone ("people showed me what worked, and I still willfully ignored it").
+  Every title, card and caption must say that, e.g. "Zuckerberg showed him why Facebook would win. He ignored it." and never "he
+  passed on Facebook".
 - 2026-10-21: Marvel's 2005 film facility = $525M (Merrill Lynch), borrower MVL Film Finance LLC, theatrical film rights to ten
   characters pledged, non-recourse (SEC 8-K, Sept 2005). Disney's Marvel price was ~$4B ($4.24B at close); Cuneo says $4.5B.
 - 2026-10-19: "3,000 other agents" matches Inman (2010 open casting call); Sell It Like Serhant premiered April 2018 (Bravo).

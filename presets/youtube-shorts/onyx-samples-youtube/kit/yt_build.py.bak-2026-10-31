@@ -1,0 +1,153 @@
+"""yt_build.py: build a whole YouTube-look sample from its spec (PLAYBOOK § 5), about 2-3 minutes end to end.
+
+  python presets/youtube-shorts/onyx-samples-youtube/kit/yt_build.py projects/<job> <version> [--preview] [--skip picture,overlay,mix]
+
+Runs, in order: yt_picture.py (pass 1) → workflows/whip-slide.py → yt_captions.py → yt_overlay.py → HyperFrames render
+(transparent ProRes 4444) → yt_mix.py → the ffmpeg composite (in RGB so caption colours stay exact, BT.709 tagged) →
+`<job>/outputs/<job>.sample-yt.<version>.mp4`. `--preview` also writes a 720p copy under 30 MB for phone review.
+`--skip` reuses an earlier step's output (e.g. `--skip picture` after a caption-only change).
+
+Before anything renders it prints two spec-only reports (2026-10-14, STYLE-RESEARCH § D3, D8, D9, D11):
+  payoff   shots (an A shot joined to the previous A of the same face by a "cut" counts as one), mean shot length before and after
+           `audio.turn_t` (50 % of the runtime when unset), the last shot, the first B-roll, the runtime. WARNS when the mean after
+           the turn is < 3.0 s (target >= 3.5 s: fast set-up, slow payoff; batch 2 ran 1.99-2.66 s) or the last shot < 3.0 s; notes a
+           first B-roll after 0.7 s and a runtime over 45 s (32-45 s by default). `"allow_fast_payoff": "<reason>"` in the spec
+           replaces the warning with the reason.
+  sfx      kit/yt_cues.py: the spec's cues + the auto cues (hook pair, DOC highlights / slaps, marks, charts, fx), and ASSERTS that a
+           hook card has its pair (a whoosh + a hit on the landing; batch 2 shipped 3 of 4 hooks with a whoosh only) and that every
+           auto-cue file exists; `"audio": {"hook_sfx": "spec"}` downgrades the hook assertion to a warning (remixing a shipped job).
+A watermark that is not just the show's name ("NAME · ROLE") is flagged (README § 6).
+"""
+import os, shutil, subprocess, sys   # npx is npx.cmd on Windows: resolved with shutil.which
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import yt_cues
+
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+KIT = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.abspath(os.path.join(KIT, "..", "..", "..", ".."))
+
+
+def sh(cmd, cwd=None):
+    print("·", " ".join(str(c) for c in cmd[:4]), "…", flush=True)
+    p = subprocess.run(cmd, cwd=cwd)
+    if p.returncode:
+        sys.exit(f"yt_build: step failed: {' '.join(str(c) for c in cmd)}")
+
+
+def fps_arg(fps):
+    """HyperFrames wants NTSC rates as a fraction ("30000/1001", never "29.97002997"), whole rates as "30" (never "30.0")."""
+    for num, den in ((24000, 1001), (30000, 1001), (60000, 1001)):
+        if abs(fps - num / den) < 1e-6:
+            return f"{num}/{den}"
+    return str(int(round(fps))) if abs(fps - round(fps)) < 1e-6 else str(fps)
+
+
+def payoff(spec):
+    """The slow-payoff report (D3) and the runtime note (D8): (lines, warnings)."""
+    fps, whips = spec["fps"], spec.get("whip_dirs", {})
+    dur = spec["frames"] / fps
+    turn = spec.get("audio", {}).get("turn_t")
+    tnote = ""
+    if turn is None:
+        turn, tnote = 0.5 * dur, " (no audio.turn_t: 50 % assumed)"
+    shots = []
+    for s in spec["shots"]:
+        if (shots and whips.get(s["id"]) == "cut" and s["kind"] == "A" and shots[-1]["kind"] == "A"
+                and s.get("face") == shots[-1]["face"]):
+            shots[-1]["f1"] = s["f1"]                              # same camera, no whip: one shot on screen
+        else:
+            shots.append(dict(kind=s["kind"], face=s.get("face"), f0=s["f0"], f1=s["f1"]))
+    L = lambda x: (x["f1"] - x["f0"]) / fps
+    pre = [L(x) for x in shots if x["f0"] / fps < turn - 1e-6]
+    post = [L(x) for x in shots if x["f0"] / fps >= turn - 1e-6]
+    mean = lambda v: sum(v) / len(v) if v else 0.0
+    fb = next((x["f0"] / fps for x in shots if x["kind"] != "A"), None)
+    lines = [f"payoff: {len(shots)} shots; before the turn ({turn:.2f} s{tnote}) {len(pre)} at a mean {mean(pre):.2f} s, after it {len(post)} "
+             f"at {mean(post):.2f} s; last shot {L(shots[-1]):.2f} s ({shots[-1]['kind']}); first B-roll "
+             f"{'none' if fb is None else f'{fb:.2f} s'}; runtime {dur:.1f} s"]
+    warn = []
+    if post and mean(post) < 3.0:
+        warn.append(f"mean shot after the turn {mean(post):.2f} s < 3.0 s (D3: >= 3.5 s, fast set-up then a slow payoff)")
+    if L(shots[-1]) < 3.0:
+        warn.append(f"last shot {L(shots[-1]):.2f} s < 3.0 s (D3: hold the payoff face or image)")
+    if spec.get("allow_fast_payoff") and warn:
+        lines.append(f"payoff: fast payoff ALLOWED ({spec['allow_fast_payoff']}): " + "; ".join(warn))
+        warn = []
+    if fb is not None and fb > 0.7:
+        lines.append(f"payoff: note: first B-roll at {fb:.2f} s (README § 3: by ~0.7 s)")
+    if dur > 45.5:
+        lines.append(f"payoff: note: runtime {dur:.1f} s > 45 s (D8: 32-45 s by default; 55 s only when the payoff needs it)")
+    return lines, warn
+
+
+def main():
+    job, version = os.path.abspath(sys.argv[1]), sys.argv[2]
+    skip = set()
+    if "--skip" in sys.argv:
+        skip = set(sys.argv[sys.argv.index("--skip") + 1].split(","))
+    name = os.path.basename(job)
+    import json
+    spec = json.load(open(os.path.join(job, "yt", "spec.json"), encoding="utf-8"))
+    fps, dur = spec["fps"], spec["frames"] / spec["fps"]
+    w = os.path.join(job, "yt", "work")
+    p_lines, p_warn = payoff(spec)
+    for l in p_lines:
+        print(l)
+    for x in p_warn:
+        print("WARNING payoff:", x)
+    probs, c_lines = yt_cues.check(spec)
+    for l in c_lines:
+        print(l)
+    wm = spec.get("watermark", "")
+    if any(c in wm for c in "·•|-–—") or len(wm) > 30:
+        print(f"note: watermark '{wm}' is more than the show's name (README § 6: the show's name only, ~414 px wide)")
+    if probs:
+        sys.exit("yt_build: " + "; ".join(probs))
+    if "picture" not in skip:
+        sh(["uv", "run", "-q", os.path.join(KIT, "yt_picture.py"), job, "--stills"])
+        sh(["uv", "run", "-q", os.path.join(REPO, "workflows", "whip-slide.py"), os.path.join(w, "picture.mp4"), os.path.join(w, "shots.json"),
+            os.path.join(w, "picture.whip.mp4")])
+    fps_out = spec.get("fps_out", fps)             # 60 fps delivery (AW, Affan 2026-10-19): Chronos doubles the finished picture per shot
+    pic = os.path.join(w, "picture.whip.mp4")
+    if fps_out != fps:
+        pic = os.path.join(w, f"picture.whip{int(fps_out)}.mov")
+        if "picture" not in skip or not os.path.exists(pic):
+            inA = lambda j: any(s["kind"] == "A" and s["f0"] < j < s["f1"] for s in spec["shots"])   # 2026-10-28: a head-lock joint inside a
+            # card / B shot split a near-static card into its own take, and Chronos returned it empty (Patron): only face-shot joints
+            segs = sorted({s["f0"] for s in spec["shots"]} | {j for j in spec.get("head_lock", []) if inA(j)})
+            sh([sys.executable, os.path.join(REPO, "workflows", "topaz-iris.py"), os.path.join(w, "picture.whip.mp4"), pic, "--no-enhance",
+                "--no-stab", "--fps-mult", str(int(round(fps_out / fps))), "--segments", ",".join(map(str, segs))])
+    if "overlay" not in skip:
+        sh([sys.executable, os.path.join(KIT, "yt_captions.py"), job]) if "captions" not in skip else None
+        cs = spec.get("captions", {})
+        if spec.get("faces") and not cs.get("fixed_y") and not cs.get("on_seam"):  # captions just under the lips, per shot (Affan, 2026-10-06);
+                                                                                     # on_seam: the split line, constant (Affan, 2026-10-12)
+            sh([shutil.which("uv") or "uv", "run", "-q", os.path.join(REPO, "presets", "youtube-shorts", "onyx-samples", "kit", "ig_capy.py"), job, "--dir", "yt"])
+        sh([sys.executable, os.path.join(KIT, "yt_overlay.py"), job])
+        sh([shutil.which("npx") or "npx", "--yes", "hyperframes@0.8.16", "render", ".", "--format", "mov", "--fps", fps_arg(fps_out), "-o", "../work/overlay.mov", "--quiet"],
+           cwd=os.path.join(job, "yt", "hf-overlay"))
+    if "mix" not in skip:
+        sh([sys.executable, os.path.join(KIT, "yt_mix.py"), job])
+    out = os.path.join(job, "outputs", f"{name}.sample-yt.{version}.mp4")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    fc = ("[0:v]scale=in_color_matrix=bt709:in_range=tv:out_range=full,format=gbrp[p];[1:v]scale=in_color_matrix=bt601:out_range=full,format=gbrap[o];"
+          "[p][o]overlay=format=gbrp:shortest=1,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p,"
+          "setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709[v]")
+    sh(["ffmpeg", "-v", "error", "-y", "-i", pic, "-i", os.path.join(w, "overlay.mov"), "-i", os.path.join(w, "mix.wav"),
+        "-filter_complex", fc, "-map", "[v]", "-map", "2:a", "-c:v", "libx264", "-crf", "16", "-preset", "slow", "-c:a", "aac", "-b:a", "320k",
+        "-ar", "48000", "-movflags", "+faststart", "-t", f"{dur:.4f}", out])
+    if "--preview" in sys.argv:
+        sh(["ffmpeg", "-v", "error", "-y", "-i", out, "-vf", "scale=720:1280:flags=lanczos", "-c:v", "libx264", "-crf", "23", "-preset", "slow",
+            "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out.replace(".mp4", ".preview.mp4")])
+    print(f"✓ {out}")
+    for x in p_warn:
+        print("WARNING payoff:", x)
+
+
+if __name__ == "__main__":
+    main()

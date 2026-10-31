@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: d3d74054-8117-4f44-bcac-6f8a02738576
-  modified: 2026-10-29T06:36:12.302Z
+  modified: 2026-10-30T18:09:57.396Z
 ---
 
 Scott D. Clary (Success Story) signed 2026-10-15. Affan's guarantee (told 2026-10-29): if OUR Shorts don't average 20,000 views by
@@ -21,3 +21,10 @@ and wants the Bombas result to be repeatable.
 wrong, lost or hurt; under 2 of 3 goes to the bench), then frame 1 = the famous face SPEAKING his stake line. Rules and evidence:
 presets/youtube-shorts/scott-clary/ENGINE.md § "What the first results changed" and FINDINGS.md § "F1-F6 tested". Pre-registered
 scores for the next picks are in RESULTS.md. Related: [[feedback-viral-pick-bar]], [[project-onyx-sample-shorts]].
+
+On 2026-10-30 Affan asked "have you gone through all his famous people podcasts before this decision?" The answer was no: only 45
+of 658 full episodes had been read. After a 27-episode screen it is 72. Those were chosen by Wikipedia rank plus a title sweep,
+which misses social-media-famous guests (Wallo267, Simon Squibb, Jason Tartick…). The unscreened list is in FINDINGS § Story bank.
+So far there is no fresh 2.5, and the 2.0 tier is where the picks come from. When proposing "the best story left", say how many
+episodes it was chosen from and how they were chosen. Read the guest NAMES by hand, never only a fame rank, and watch Scott's NEW
+uploads for famous guests.

@@ -642,6 +642,12 @@ Always check the EDL bash can actually see before re-splicing.
   clip of a 215.7 s file read in=250.04 s; the real source in point is in × `getSpeed()` = 200.03 s (`outPoint - inPoint` equals the
   timeline duration, not the source span). Anything that pulls source media off `inPoint` must multiply by `clip.getSpeed()`
   (and check `isSpeedReversed()`): `presets/instagram/affanwizu/sequence_reference.py` does.
+- **…and the frame Premiere SHOWS on such a clip is not the model frame (ABW10 Seq 35, 2026-10-31, 0.9x 59.94 in a 60 sequence).**
+  Measured on 86 program grabs (`exportFramePNG`) matched to source frames: displayed source frame j = floor(m + δ), with
+  m = (inPoint × speed + (t − start) × speed) × 59.94 and δ PER CLIP between −0.09 and −0.69 (one δ for all clips fits only 71 of 76).
+  The `sequence_reference.py` rebuild (setpts + fps) runs about 1.5 frames AHEAD of Premiere. Fine for captions; for anything
+  that follows MOTION (head tracking, a fire on the head, a mask), decode the exact frames instead:
+  `projects/jealous-uncle-fire-head/work/frames.py` (+ `work/sync/` grab, fit, verify: 86/86 exact).
 - **A head trim by `trackItem.start = x` reads back a STALE inPoint too** (cbum-last-show 2026-10-20, seg 4 trimmed 49 frames: inPoint
   still 83.267, it plays from 84.085; outPoint unchanged and right). So after ANY `.start` / `.end` trim, the true source range is
   `outPoint - (end - start)` (head trim) or `inPoint + (end - start)` (tail trim). Better still, keep the plan as the record and

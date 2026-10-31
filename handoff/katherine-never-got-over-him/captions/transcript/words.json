@@ -1,0 +1,709 @@
+{
+ "language": "en",
+ "clips": [
+  {
+   "clip": "a1.mov",
+   "path": "X:/Claude Projects/video-editor-client/video-editor/projects/katherine-never-got-over-him/captions/raw/a1.mov",
+   "duration": 30.867,
+   "words": [
+    {
+     "w": "He",
+     "start": 0.111,
+     "end": 0.171,
+     "prob": 0.52
+    },
+    {
+     "w": "should",
+     "start": 0.211,
+     "end": 0.371,
+     "prob": 0.816
+    },
+    {
+     "w": "have",
+     "start": 0.391,
+     "end": 0.491,
+     "prob": 0.759
+    },
+    {
+     "w": "been",
+     "start": 0.511,
+     "end": 0.671,
+     "prob": 0.829
+    },
+    {
+     "w": "burying",
+     "start": 0.811,
+     "end": 1.232,
+     "prob": 0.839
+    },
+    {
+     "w": "me.",
+     "start": 1.272,
+     "end": 1.492,
+     "prob": 0.994
+    },
+    {
+     "w": "I",
+     "start": 1.692,
+     "end": 1.752,
+     "prob": 0.676
+    },
+    {
+     "w": "shouldn't",
+     "start": 1.772,
+     "end": 1.992,
+     "prob": 0.687
+    },
+    {
+     "w": "have",
+     "start": 2.012,
+     "end": 2.092,
+     "prob": 0.669
+    },
+    {
+     "w": "been",
+     "start": 2.112,
+     "end": 2.252,
+     "prob": 0.896
+    },
+    {
+     "w": "burying",
+     "start": 2.292,
+     "end": 2.612,
+     "prob": 0.675
+    },
+    {
+     "w": "my",
+     "start": 2.653,
+     "end": 2.793,
+     "prob": 0.906
+    },
+    {
+     "w": "child.",
+     "start": 2.833,
+     "end": 3.233,
+     "prob": 0.801
+    },
+    {
+     "w": "She's",
+     "start": 3.333,
+     "end": 3.773,
+     "prob": 0.625
+    },
+    {
+     "w": "taking",
+     "start": 3.793,
+     "end": 4.133,
+     "prob": 0.485
+    },
+    {
+     "w": "it",
+     "start": 4.153,
+     "end": 4.193,
+     "prob": 0.003
+    },
+    {
+     "w": "real",
+     "start": 4.333,
+     "end": 4.854,
+     "prob": 0.568
+    },
+    {
+     "w": "hard.",
+     "start": 4.934,
+     "end": 5.314,
+     "prob": 0.856
+    },
+    {
+     "w": "You",
+     "start": 5.354,
+     "end": 5.534,
+     "prob": 0.431
+    },
+    {
+     "w": "start",
+     "start": 5.574,
+     "end": 5.914,
+     "prob": 0.822
+    },
+    {
+     "w": "talking",
+     "start": 5.934,
+     "end": 6.235,
+     "prob": 0.572
+    },
+    {
+     "w": "about",
+     "start": 6.275,
+     "end": 6.495,
+     "prob": 0.798
+    },
+    {
+     "w": "Michael,",
+     "start": 6.555,
+     "end": 6.875,
+     "prob": 0.516
+    },
+    {
+     "w": "she",
+     "start": 6.895,
+     "end": 7.015,
+     "prob": 0.984
+    },
+    {
+     "w": "starts",
+     "start": 7.055,
+     "end": 7.375,
+     "prob": 0.774
+    },
+    {
+     "w": "crying.",
+     "start": 7.395,
+     "end": 7.695,
+     "prob": 0.358
+    },
+    {
+     "w": "Then",
+     "start": 7.715,
+     "end": 7.815,
+     "prob": 0.123,
+     "skip": true,
+     "note": "a breath/fragment on the Joe->Jermaine cut (7.70); not in faster-whisper; not captioned"
+    },
+    {
+     "w": "when",
+     "start": 7.835,
+     "end": 7.936,
+     "prob": 0.956
+    },
+    {
+     "w": "I",
+     "start": 7.976,
+     "end": 8.016,
+     "prob": 0.504
+    },
+    {
+     "w": "called",
+     "start": 8.076,
+     "end": 8.256,
+     "prob": 0.811
+    },
+    {
+     "w": "my",
+     "start": 8.276,
+     "end": 8.356,
+     "prob": 0.993
+    },
+    {
+     "w": "mother",
+     "start": 8.416,
+     "end": 8.616,
+     "prob": 0.784
+    },
+    {
+     "w": "back,",
+     "start": 8.676,
+     "end": 8.916,
+     "prob": 0.98
+    },
+    {
+     "w": "I",
+     "start": 8.956,
+     "end": 9.016,
+     "prob": 0.422
+    },
+    {
+     "w": "heard",
+     "start": 9.056,
+     "end": 9.176,
+     "prob": 0.894
+    },
+    {
+     "w": "the",
+     "start": 9.216,
+     "end": 9.316,
+     "prob": 0.823
+    },
+    {
+     "w": "most",
+     "start": 9.356,
+     "end": 9.496,
+     "prob": 0.718
+    },
+    {
+     "w": "horrible",
+     "start": 9.597,
+     "end": 9.957,
+     "prob": 0.904
+    },
+    {
+     "w": "tone",
+     "start": 10.017,
+     "end": 10.257,
+     "prob": 0.604
+    },
+    {
+     "w": "in",
+     "start": 10.297,
+     "end": 10.357,
+     "prob": 0.718
+    },
+    {
+     "w": "her",
+     "start": 10.397,
+     "end": 10.497,
+     "prob": 0.756
+    },
+    {
+     "w": "voice",
+     "start": 10.537,
+     "end": 10.737,
+     "prob": 0.856
+    },
+    {
+     "w": "when",
+     "start": 10.777,
+     "end": 10.877,
+     "prob": 0.992
+    },
+    {
+     "w": "she",
+     "start": 10.917,
+     "end": 11.057,
+     "prob": 0.758
+    },
+    {
+     "w": "said,",
+     "start": 11.097,
+     "end": 11.318,
+     "prob": 0.87
+    },
+    {
+     "w": "he's",
+     "start": 11.378,
+     "end": 11.558,
+     "prob": 0.792
+    },
+    {
+     "w": "dead.",
+     "start": 11.758,
+     "end": 12.138,
+     "prob": 0.894
+    },
+    {
+     "w": "I've",
+     "start": 12.298,
+     "end": 12.458,
+     "prob": 0.644
+    },
+    {
+     "w": "never",
+     "start": 12.478,
+     "end": 12.638,
+     "prob": 0.898
+    },
+    {
+     "w": "heard",
+     "start": 12.678,
+     "end": 12.798,
+     "prob": 0.879
+    },
+    {
+     "w": "this",
+     "start": 12.858,
+     "end": 12.978,
+     "prob": 0.873
+    },
+    {
+     "w": "tone",
+     "start": 13.038,
+     "end": 13.199,
+     "prob": 0.879
+    },
+    {
+     "w": "in",
+     "start": 13.239,
+     "end": 13.279,
+     "prob": 0.888
+    },
+    {
+     "w": "her",
+     "start": 13.299,
+     "end": 13.379,
+     "prob": 0.243
+    },
+    {
+     "w": "voice,",
+     "start": 13.419,
+     "end": 13.599,
+     "prob": 0.956
+    },
+    {
+     "w": "but",
+     "start": 13.619,
+     "end": 13.739,
+     "prob": 0.837
+    },
+    {
+     "w": "her",
+     "start": 13.759,
+     "end": 13.899,
+     "prob": 0.786,
+     "note": "faster-whisper 3/3 decodes: \"but her to say this\" (WhisperX: \"but heard her say this\")"
+    },
+    {
+     "w": "to",
+     "start": 13.939,
+     "end": 14.019,
+     "prob": 0.162,
+     "note": "see above"
+    },
+    {
+     "w": "say",
+     "start": 14.159,
+     "end": 14.359,
+     "prob": 0.659
+    },
+    {
+     "w": "this.",
+     "start": 14.419,
+     "end": 14.599,
+     "prob": 0.854
+    },
+    {
+     "w": "And",
+     "start": 14.639,
+     "end": 14.699,
+     "prob": 0.015
+    },
+    {
+     "w": "I",
+     "start": 14.719,
+     "end": 14.82,
+     "prob": 0.735
+    },
+    {
+     "w": "go",
+     "start": 14.84,
+     "end": 14.96,
+     "prob": 0.891
+    },
+    {
+     "w": "straight",
+     "start": 15.0,
+     "end": 15.24,
+     "prob": 0.798
+    },
+    {
+     "w": "to",
+     "start": 15.26,
+     "end": 15.36,
+     "prob": 0.653
+    },
+    {
+     "w": "my",
+     "start": 15.4,
+     "end": 15.5,
+     "prob": 0.822
+    },
+    {
+     "w": "mother,",
+     "start": 15.56,
+     "end": 15.78,
+     "prob": 0.907
+    },
+    {
+     "w": "and",
+     "start": 15.84,
+     "end": 15.94,
+     "prob": 0.829
+    },
+    {
+     "w": "I",
+     "start": 15.98,
+     "end": 16.08,
+     "prob": 0.628
+    },
+    {
+     "w": "consoled",
+     "start": 16.16,
+     "end": 16.661,
+     "prob": 0.82
+    },
+    {
+     "w": "her.",
+     "start": 16.721,
+     "end": 16.901,
+     "prob": 0.888
+    },
+    {
+     "w": "And",
+     "start": 16.941,
+     "end": 17.001,
+     "prob": 0.793
+    },
+    {
+     "w": "still",
+     "start": 17.281,
+     "end": 17.481,
+     "prob": 0.898
+    },
+    {
+     "w": "to",
+     "start": 17.501,
+     "end": 17.621,
+     "prob": 0.886
+    },
+    {
+     "w": "this",
+     "start": 17.641,
+     "end": 17.741,
+     "prob": 0.573
+    },
+    {
+     "w": "day,",
+     "start": 17.781,
+     "end": 17.961,
+     "prob": 0.934
+    },
+    {
+     "w": "she",
+     "start": 18.001,
+     "end": 18.121,
+     "prob": 0.771
+    },
+    {
+     "w": "don't",
+     "start": 18.161,
+     "end": 18.382,
+     "prob": 0.311
+    },
+    {
+     "w": "even",
+     "start": 18.542,
+     "end": 18.722,
+     "prob": 0.816
+    },
+    {
+     "w": "remember",
+     "start": 18.762,
+     "end": 19.382,
+     "prob": 0.757
+    },
+    {
+     "w": "me",
+     "start": 19.402,
+     "end": 19.502,
+     "prob": 0.932
+    },
+    {
+     "w": "hugging",
+     "start": 19.542,
+     "end": 19.842,
+     "prob": 0.867
+    },
+    {
+     "w": "her.",
+     "start": 19.882,
+     "end": 19.982,
+     "prob": 0.914
+    },
+    {
+     "w": "My",
+     "start": 20.063,
+     "end": 20.183,
+     "prob": 0.836
+    },
+    {
+     "w": "mother's",
+     "start": 20.223,
+     "end": 20.563,
+     "prob": 0.8
+    },
+    {
+     "w": "wonderful.",
+     "start": 20.763,
+     "end": 21.343,
+     "prob": 0.919
+    },
+    {
+     "w": "To",
+     "start": 21.443,
+     "end": 21.543,
+     "prob": 0.839
+    },
+    {
+     "w": "me,",
+     "start": 21.583,
+     "end": 21.683,
+     "prob": 0.777
+    },
+    {
+     "w": "she's",
+     "start": 21.723,
+     "end": 21.904,
+     "prob": 0.874
+    },
+    {
+     "w": "perfection.",
+     "start": 21.984,
+     "end": 22.664,
+     "prob": 0.901
+    },
+    {
+     "w": "Every",
+     "start": 22.844,
+     "end": 23.064,
+     "prob": 0.842
+    },
+    {
+     "w": "morning",
+     "start": 23.104,
+     "end": 23.444,
+     "prob": 0.8
+    },
+    {
+     "w": "that",
+     "start": 23.505,
+     "end": 23.645,
+     "prob": 0.779
+    },
+    {
+     "w": "I",
+     "start": 23.685,
+     "end": 23.785,
+     "prob": 0.823
+    },
+    {
+     "w": "wake",
+     "start": 23.825,
+     "end": 24.065,
+     "prob": 0.656
+    },
+    {
+     "w": "up,",
+     "start": 24.185,
+     "end": 24.285,
+     "prob": 0.479
+    },
+    {
+     "w": "my",
+     "start": 24.485,
+     "end": 24.645,
+     "prob": 0.979
+    },
+    {
+     "w": "baby's",
+     "start": 24.745,
+     "end": 25.105,
+     "prob": 0.76
+    },
+    {
+     "w": "on",
+     "start": 25.206,
+     "end": 25.286,
+     "prob": 0.95
+    },
+    {
+     "w": "my",
+     "start": 25.326,
+     "end": 25.466,
+     "prob": 0.978
+    },
+    {
+     "w": "mind.",
+     "start": 25.506,
+     "end": 25.846,
+     "prob": 0.898
+    },
+    {
+     "w": "Oh,",
+     "start": 26.226,
+     "end": 26.326,
+     "prob": 0.581
+    },
+    {
+     "w": "gosh,",
+     "start": 26.346,
+     "end": 26.666,
+     "prob": 0.481
+    },
+    {
+     "w": "I'm",
+     "start": 26.686,
+     "end": 26.826,
+     "prob": 0.44
+    },
+    {
+     "w": "sorry.",
+     "start": 26.886,
+     "end": 27.247,
+     "prob": 0.964
+    },
+    {
+     "w": "\"tears",
+     "start": 27.3,
+     "end": 27.62,
+     "prob": 1.0,
+     "pseudo": true,
+     "note": "his note 2: a \"tears up\" card over her silence (room tone 27.35-28.15, voiced again 28.15)"
+    },
+    {
+     "w": "up\"",
+     "start": 27.64,
+     "end": 28.1,
+     "prob": 1.0,
+     "pseudo": true
+    },
+    {
+     "w": "I'm",
+     "start": 28.173,
+     "end": 28.335,
+     "prob": 0.857
+    },
+    {
+     "w": "sorry,",
+     "start": 28.457,
+     "end": 28.904,
+     "prob": 0.828
+    },
+    {
+     "w": "I",
+     "start": 28.924,
+     "end": 28.945,
+     "prob": 0.02
+    },
+    {
+     "w": "didn't",
+     "start": 29.107,
+     "end": 29.798,
+     "prob": 0.665
+    },
+    {
+     "w": "intend",
+     "start": 29.839,
+     "end": 30.164,
+     "prob": 0.914
+    },
+    {
+     "w": "to",
+     "start": 30.204,
+     "end": 30.286,
+     "prob": 0.935
+    },
+    {
+     "w": "do",
+     "start": 30.326,
+     "end": 30.489,
+     "prob": 0.975
+    },
+    {
+     "w": "this.",
+     "start": 30.529,
+     "end": 30.732,
+     "prob": 0.393
+    }
+   ]
+  }
+ ]
+}

@@ -32,10 +32,20 @@ override Mark's: captions only ! ? and quotes at one constant spot under the lip
 [[feedback-captions-just-below-lips]]), SFX on every graphic ([[feedback-sfx-on-every-graphic]]). Study: 
 `presets/youtube-shorts/onyx-samples/references/markbrazil-study-2026-10-21.md`.
 
-**Newest kit to copy (2026-10-28):** the Patrón IG Short, `projects/_client-scott-clary/patron-20000-cases/ig/` (run via
+**Newest kit to copy (2026-10-31):** the Pincus IG Short, `projects/_client-scott-clary/pincus-ignored-facebook/ig/` (30 fps check
+2026-10-31): Mark Brazil's 10-31 type (small sans name label over a big BOLD SANS title, key words on a red box), a two-card hook (his
+camera + the receipt dealt on its word), screen-bezel pages with read-along highlighters, the frame reader fixed for h264 too (seek half
+a frame early AND `-fps_mode passthrough`), per-frame HEAD TRACKING pinned at every take's edge (for speakers who lean; per-shot `pin`
+where the 4K frame stops the crop), `work/residual.py` + `work/check/sync2.py` / `sync60.py` (head and lip-sync proof). Before it: the
+Daymond card-chain IG (2026-10-29: card flips, graded slabs; its reader lacks passthrough, fine on its ProRes base). Before that: the Patrón IG Short,
+`projects/_client-scott-clary/patron-20000-cases/ig/` (run via
 `bash ig/run.sh <script>`: OpenCV): Mark Brazil's 10-28 type (white bold sans + red glowing serif, stat lockups), one chart with state
 across reprises, per-TAKE frames chained on the face box (`work/residual.py` proves steadiness from the 4K data), subtle transition-only
 swishes (19-23 dB under the voice), `tools/plates.py` (4K cam plates, B-roll at exactly 60 fps, the hook). Before it: the Morgan kit
 (`morgan-claw-machine/ig/`) and the Chris Do kit. Lessons for all: the preset's LESSONS.md.
 
 **Onyx samples (Affan 2026-10-22):** the Instagram version of an Onyx sample now uses this neon-window look too (first: Marketing Against the Grain, `projects/matg-targeting-is-dead/`), with review 1 applied (colour picture, less glow, expensive SFX).
+
+**Captions since 2026-10-31 (standing):** one whole line of up to ~4 words, appearing at once with a subtle eased 14 px rise, never
+word by word: [[feedback-captions-whole-line-subtle]]. Implemented in the Pincus kit's `ig/build.py` (`CHUNKS`, `make_blocks`,
+`draw_captions`); the preset README § Captions and LESSONS 2026-10-31 carry it.

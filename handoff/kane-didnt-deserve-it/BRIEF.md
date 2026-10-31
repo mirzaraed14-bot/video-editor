@@ -1,6 +1,143 @@
 # BRIEF: "Why They Said Harry Kane Didn't Deserve The Ballon d'Or 😳" (Abundance Wisdom short, football)
 
-## ▶ STATUS: resume here (2026-10-29 ~14:55 PST): RAW SEQUENCE PLACED (48.70 s), waiting on his pass + direction
+## ▶ STATUS: resume here (2026-10-29 ~19:30 PST): DELIVERED v2 (Final Renders + Exports), waiting on his review
+- Built in code on his "start" + "handle everything yourself" (18:15). State + recipe: RUN.md. Report: REPORT.md.
+
+## (previous) STATUS (2026-10-29 ~17:30 PST): HIS TELLA DIRECTION RESOLVED → waiting on his footage + 2 answers
+- His walkthrough (https://www.tella.tv/video/affans-video-f4hkf37h, "Harry Kane Video Editing Instructions", 9:11,
+  recorded 16:35) is resolved against his timeline in **§ HIS DIRECTION** below. His re-cut is the spec (41.55 s,
+  `premiere/his_v1_edl.md`).
+- Waiting on him: (1) **kids overlay vs the brief's hard rule 5** (no minors), (2) **is the smiling blonde woman his wife**
+  (`proof/wife_candidates.jpg`), (3) **downloads** for the kick, goal and trophy overlays (§ Open with Affan, round 3).
+- Then the code build (RUN.md § NEXT). Nothing touched in ABW10 since his save; his sequence was only READ.
+
+## HIS DIRECTION (Tella, 2026-10-29 16:35), resolved against his timeline
+Ingest: `review/guide.mp4` (Tella stream, never the browser) → `review/guide.json` (`win/asr_guide.py`, GPU; 338-444 s
+re-run without VAD, the first pass hallucinated there). Every "this / here" was read off his timeline at the moment he said
+it: `review/frames/tr_*.png` (transitions), `zm_*.png` (zooms), `pm_*.png` (overlays, program monitor), built by
+`win/tl_sheet.py` / `win/pm_sheet.py`. Timeline TC is 60 fps (`ss:ff`, ff/60).
+
+**The cut = his re-edit** (read back read-only, `premiere/readback_all.js` → `his_v1.tsv` → `his_v1_edl.md`; true out =
+in + span, Premiere's outPoint reads ~0.19 s late). **41.55 s**. Changes vs my raw cut: B1 starts on "He's" at 61.35 /
+63.35; B3 tail to 102.05; B5 first piece to 203.40, last to 206.37; B6 second piece from 557.22 ("Harry's the top man");
+B7 restructured: "...behind the scenes. All that sacrifice (73.80-74.80), the time that, I'd love to be spending with my
+kids, with my family and my wife, but it's all part of the dedication if you want to be at the very top level" (ends
+85.12; "saunas, ice baths" and "some time and things" out); **B8 = "Here it is. We've done it" (549.80-551.30, no "So,")**;
+my B7 Ronaldo cover removed. Words re-ASR'd from his rebuilt A1: `win/verify_his.py` → `seqref/his_a1.wav`.
+Runtime is under the brief's 48-55 s and B8 lost "So,": both his edit, noted once, not re-asked.
+
+**1. Lip sync** ("the lips need to be synced… the lips and the audio are kind of not synced", said on B1).
+Measured on ASH at three bilabials (`win/plosive_check.py`, mouth tiles + 5 ms energy; word times from `win/force_align.py`):
+"Ballon" b closure audio 61.73-61.77 vs lips 61.52-61.58; "my" m audio ~63.53-63.57 vs lips ~63.36-63.40; "opinion" p audio
+63.76-63.84 vs lips 63.60-63.68 → **ASH picture runs ~0.16-0.20 s AHEAD of its audio** (zero offset is contradicted at all
+three: open teeth on every audio closure). Container start times are all 0. **Fix in the build: ASH picture in = audio in −
+~0.17 s** (tune on re-tiled frames). **BAYERN (the B8 payoff picture) is in sync:** "my biggest" m closure audio
+646.62-646.66 vs lips 646.60-646.68 (`review/frames/bay_biggest.png`; the B8 cover is synced to SPEECH by audio xcorr, so
+BAYERN's own A/V is what matters). The other talkers (UNCLE, BRAZ, TS, SKY) get the same plosive check before render.
+**2. Uncle (B2):** "make sure that it's head tracked" → head lock on the three uncle pieces (handheld; he hand-split 3.88-4.28
+to reframe); "this is Spanish, do your due diligence" → the B2 English captions checked word by word against the Spanish.
+
+**3. Overlays.** V2 slots = face clips he dragged up to V2 (replace their picture, keep the audio below). The BAYERN clips
+on V2 are real picture and stay.
+| slot | timeline (s) | words | picture | zoom |
+|---|---|---|---|---|
+| O1 | 5.88-7.23 | "There's nothing he does that" | NEW: **4K full-screen (not letterbox) Kane mid-kick** | out |
+| O2 | 12.52-14.33 | "and a London-born player won" | BAYERN 8.20 hands-to-face, **his reposition** (x 0.61), "like this or zoomed in more" | out |
+| O3 | 23.77-25.30 | "People see the end product" | **him receiving the Ballon d'Or** (BAYERN 51.52-57.80, Ronaldo hands it over) | out |
+| O4 | 25.30-26.52 | "they see me scoring goals" | NEW: **his most famous goal, slow motion** | out |
+| O5 | 26.52-29.38 | "on the pitch… winning games and trophies, but" | NEW: **Kane holding a TEAM trophy, slow motion** ("not slow motion… actually do slow motion": last word wins); NOT Ballon d'Or footage | one zoom out across |
+| O6 | 33.47-36.17 | "the time that I'd love to be spending with my kids, with my family and" | NEW: **Kane with his kids, playing, having a good time** (conflicts with hard rule 5, asked) | one zoom out |
+| O7 | 36.17-37.87 | "my wife, but it's all part of" | **his wife in the audience smiling, looking at him** (he extended this slot past the V1 cut to 37.87) | out |
+| B8 | 40.05-41.55 | "Here it is. We've done it" | BAYERN synced lectern (656.43), **zoom out, no overlay on top** | out |
+Face shots he wants as they are: "his actual overlay" = Kane's own face from 37.87 ("very top level").
+
+**4. Zooms** (one continuous move per group, across the joints, never per-clip keys):
+B1 0-1.95 in · B2 1.95-5.88 one stretched OUT · O1 out · B3 7.23-9.80 in · B4 9.80-12.77 in · O2 out · B5 14.33-17.43 in ·
+B6 17.43-23.77 one stretched in · O3 out · O4 out (the VAD pass heard "zoom on"; settled by MFCC-DTW against his own 14
+clear "zoom in/out" takes, 12/14 leave-one-out correct: O3 out by 0.25, O4 out by 0.11; every overlay he named zooms out) · O5 out · B7 face 29.38-33.47 in · O6 out · O7 out · B7 face 37.87-40.05 in · B8 out.
+
+**5. Transitions** = his label-colour code (README § transitions: **Purple** −90 brightness dip · **Dark Green** +30 flash ·
+**Peach** uni.Exposure Blur 50→0 over 0.5 s · **Cyan** Gaussian Blur 50→0 over 0.7 s). Where he corrected himself, the last
+word wins. Every cut he did not name stays a straight cut (B1 1.15, B2 3.88/4.28, B3 8.62, B5 15.13/16.38, B7 32.47).
+| # | cut (s) | from → into | colour |
+|---|---|---|---|
+| 1 | 1.95 | ASH → UNCLE | purple |
+| 2 | 5.88 | UNCLE → O1 kick | peach |
+| 3 | 7.23 | O1 → ASH | cyan |
+| 4 | 9.80 | ASH → BRAZ host | purple |
+| 5 | 10.17 | BRAZ → BRAZ (jump) | dark green |
+| 6 | 12.52 | BRAZ → O2 hands-to-face | dark green |
+| 7 | 14.33 | O2 → TS | purple |
+| 8 | 17.43 | TS → Alan Brazil | dark green |
+| 9 | 19.58 | Brazil → Brazil (jump) | dark green |
+| 10 | 23.77 | Brazil → O3 award | peach |
+| 11 | 25.30 | O3 → O4 goal | cyan |
+| 12 | 26.52 | O4 → O5 trophy | cyan |
+| 13 | 29.38 | O5 → Kane face | purple |
+| 14 | 33.47 | Kane face → O6 kids | purple |
+| 15 | 36.17 | O6 → O7 wife | cyan |
+| 16 | 37.87 | O7 → Kane face | cyan |
+| 17 | 40.05 | Kane face → B8 lectern | dark green |
+
+**6. Captions:** "not just white and red": white + blue, white + pink, white + green… varied through the short, **gradient
+styles, never flat** (README § 8 "Colour MIX", the same rule he gave on Katherine today). Height stays his y≈1060.
+**Everything he did not mention stays as the brief says:** grade (B1-5 cold/desat, B6-8 warm from B6's first frame), labels,
+−14 LUFS / ≤ −1 dBTP, no music, export to both paths.
+
+## Catalog pass (CLAUDE.md learning loop: required before any edit)
+Done 2026-10-29 ~18:15: all 151 lines of `research/effects-catalog/CATALOG.md` read and all 137 stills looked at (the
+contact sheets `projects/janet-couldnt-cry/win/cat/cat_0-6.jpg`). His direction names every overlay, zoom and
+transition, so the catalog only shapes HOW those land, never adds moves.
+- **Fits, used inside his direction:**
+  - FX-77 Clock in Flight + FX-78 Cinema Vignette Montage → his slow-motion goal and trophy overlays (O4, O5) as true slow
+    motion with a soft oval vignette and crushed blacks, warm-dark (they sit after the B6 grade switch).
+  - FX-50 Filmography Mirror → the kick, goal, trophy and award overlays are his own career footage cut in as his life
+    while he talks about it.
+  - FX-40 Slow-Burn Portrait → his zoom-in groups on Kane's own close-ups (slow creep, no text).
+- **Fits, held back (his look is set):** FX-42 Kin Tag (the AW labels stay); FX-37 Ghost Dissolve and FX-38 Hard Push
+  Slide (he named every transition); FX-58 Speaker-Coded Subs (AW captions are locked); FX-75 Scorebug Punch-In (no score
+  story here).
+- **New to the channel here:** native-60 fps slow motion (O1/O4 from the 1440p60 pack: no interpolated frames) with the
+  FX-78 vignette.
+- **Doesn't fit a 42 s face-led short:** maps, charts, documents, host sets, CG, chapter cards, CRT/phone props, stepped
+  motion (FX-01–13, 15–36, 41, 43–49, 51–76, 79–81).
+- **What the last one leaned on (Janet):** label transitions, the SD letterbox over a blurred fill, a greyed-out still-like
+  overlay, four ≥1080p moving overlays. **This one is better by:** five moving overlays, two in native-60 fps slow motion;
+  a measured A/V offset fixed at the source (Ashton's lips land on his words); the two-phase grade carries the story turn
+  (cold doubters → warm answer on B6's first frame).
+
+## HIS ANSWER, round 4 (2026-10-29 ~23:00): "Use the kids"
+- Hard rule 5 is lifted for **O6 only**: Kane with his kids, playing (his Tella). Source: his download of
+  https://www.youtube.com/watch?v=WSBoUJE9kjw (Kane kicks a ball with his son on the Allianz Arena pitch, 2026 title);
+  alt https://www.youtube.com/watch?v=Gsj5-l9ZdKE. Wife (O7): CONFIRMED by him 2026-10-30 ("Yes, that's her"). State: RUN.md.
+- 23:15 he downloaded it ("done") and added: **"if its low quality do letterbox format on it"**. It is (a fan's zoomed
+  phone shot, 1080p30 at 1.6 Mb/s): O6 = his letterbox (native 100 %, 1044 px band lifted 150 px, blurred 220 % twin,
+  glow bars), source 9.20-11.63 at 0.9x (his son dribbles, Kane points, they meet).
+
+## Open with Affan, round 3 (2026-10-29 ~17:30)
+1. **Kids overlay (O6) vs the brief's hard rule 5** ("No minors on frame. No Kane children"; beat 7 also says "No footage
+   of his children"). Default: **hold O6 until he answers**; if the rule stands, O6 = Kane with Kate / family adults.
+2. **O7: is she his wife?** BAYERN cuts to a blonde woman in the stalls at 10:32, 10:41-10:44, **10:50-10:54 (big smile,
+   default)**, 10:59-11:02 (`proof/wife_candidates.jpg`). No children in those frames.
+3. **Downloads (SnapDownloader, highest quality, 2160p where offered; YouTube is still blocked for me):**
+   - O1 kick: https://www.youtube.com/watch?v=79oXmnxr2uk ("Harry Kane England 2026 Free Clips Pack, 4K UHD"); alt
+     https://www.youtube.com/watch?v=1FToxy5aoj0 (4K, upscaled).
+   - O4 goal: the halfway-line goal v Darmstadt (28 Oct 2023), https://www.youtube.com/watch?v=OM8hOlK9hPs ("Kane scores
+     from OWN half!"); alt https://www.youtube.com/watch?v=9jqtkyvYJJk. Alt goal: the DFB-Pokal final spin-and-finish (23 May 2026).
+   - O5 team trophy: DFB-Pokal 2026 lift, https://www.youtube.com/watch?v=2W8B6LwyAd0 ("FULL CEREMONY, Harry Kane & FC Bayern
+     lift the DFB-Pokal"); alt his FIRST trophy, the 2025 Meisterschale, https://www.youtube.com/watch?v=Uf5lttOj8tw. Every
+     frame I use gets checked for children (his kids were on the pitch at the 2025 celebration).
+   - O6 kids: only after (1).
+   - **18:10 his reply: OM8hOlK9hPs (goal) and 2W8B6LwyAd0 (DFB-Pokal ceremony) are "unavailable in my country"**; the rest
+     are downloading (the 4K kick pack is already in `E:\Bullshit Folder\Henry\`, .mkv). Replacements sent: goal
+     https://www.youtube.com/watch?v=9jqtkyvYJJk (beIN) → https://www.youtube.com/watch?v=b_TmJoQvwvc → full 8-0 highlights
+     https://www.youtube.com/watch?v=xwK0qaa1ZiM; trophy https://www.youtube.com/watch?v=Cjfi6xRSfGE (FC Bayern's own
+     "KANE HAT-TRICK WINS US THE CUP!", lift expected near the end) → https://www.youtube.com/watch?v=BNjuFmupf1Q → the 2025
+     Meisterschale alt Uf5lttOj8tw. Channel geo-blocks can't be checked from here (YouTube is blocked for me, never bypassed).
+4. Cost: this ingest ~1 %; the build with the new overlays, slow motion (Topaz interpolation), 17 transitions, the zoom
+   groups and the lip-sync fix ≈ **5-6 % (~$110-135)**, up from the 4-5 % quoted before his direction.
+
+## (previous) ▶ STATUS: resume here (2026-10-29 ~14:55 PST): RAW SEQUENCE PLACED (48.70 s), waiting on his pass + direction
 - All his answers are below (§ HIS ANSWER to round 2 + his "Yes, short" = B8 on FC Bayern's synced picture, short
   version, Ashton's own line for the hook). State + next steps: RUN.md.
 

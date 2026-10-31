@@ -130,3 +130,84 @@ times; a glass-glint light sweep (new); 15 different subtle swishes. The catalog
    were swapped for darker whooshes).
 6. **The shared GPU lock only works if everyone takes it**: a Topaz pass started outside `lock.sh` ran beside a lock-queued one and one
    segment came back empty. Hold GPU jobs when the main session asks, and stop your own task (TaskStop) rather than killing PIDs.
+   (2026-10-31 #5: TaskStop ends the shell, not a running render's children; let it finish or give the restart its own output.)
+
+## 2026-10-29 · Daymond John "$30M card chain" IG Short (`projects/_client-scott-clary/daymond-card-chain/ig/`), 30 fps check
+What it does better than the Patrón IG: Mark Brazil's type moved AGAIN (10-29: a small white sans line over a big white serif-italic
+line, the key word on a red box); the receipts are CARDS because the story is cards (the hook's camera card flips over to Kevin wearing
+the necklace, Aoki and Gary flip in as graded slabs, every other receipt floats as an artifact card, the necklace returns full-window);
+13 swishes sized to their motion (flip / burn / settle families). The catalog pass and the 1 % list are in the job's BRIEF.
+1. **A card flip passes through zero width.** `soft_shadow(rx = width x sx)` divided by zero on the flip's first frame (sx = 0): NaN
+   pixels, cast to uint8 = a garbage column. numpy only warns ONCE per line, so the log showed one warning for three flips. -> any
+   radius / scale that an ease can drive to 0 returns early (`rx < 1`), and a `RuntimeWarning` in a render log is a defect: patch the
+   frames it touched (`--patch`).
+2. **The hook may run to the YT's shot edge when its picture IS the hook.** The 0-3 s rule moved to 0-3.70 s here because the flip to
+   Kevin wearing the necklace is the hook's payoff picture; captions start after it (3.75 s). Name the choice in the BRIEF.
+3. **A hook card must never read the frames the podcast cut away from.** The cold open's cam card reads frames 0-51 only
+   (`min(frame, WIDE x fps - 1)`); the wide shot (52-165) is covered by the flip and the necklace. The 60 fps hook plate is cut to
+   the same 0-51.
+4. **Swish takes are checked one by one, not by family.** Two "soft" Epidemic takes crackled or vanished on a phone (-32 dB); dry
+   whooshes from earlier fresh sets replaced them, and two that measured LOUD were trimmed by dB until cue_check read 19-23.
+5. **Seek half a frame early.** `Source._open` passed `-ss {i/fps:.4f}`: 761/30 rounds UP to 25.3667 and ffmpeg starts at frame 762,
+   so every shot whose reader opened on a frame = 2 mod 3 (at 30 fps) read ONE FRAME AHEAD: lips 33 ms early, a frame of the podcast's
+   wide shot inside the hook card, and the head-lock anchor switching one frame after the picture = a 25-34 px head jump at real
+   joints (qa read 26.8 / 27.2 px, under its 30 px snap bar). -> `-ss (i - 0.5) / fps`. Patrón and Morgan's ig/build.py carry the old
+   line: Patrón's shipped 60 fps final reads each cam shot from frame 0 of its own plate (unaffected; a B-roll clip may start one
+   frame late, harmless), its 30 fps check read the cut mid-file (exposed); Morgan not checked. A `--patch` run reopens readers
+   mid-shot, so the bug showed there first. INCOMPLETE for an h264 base: add `-fps_mode passthrough` too (2026-10-31 #6).
+6. **Ease a push between REACHABLE end centres.** Clamping the crop centre each frame stopped the Oscars push dead when it met the
+   photo's edge mid-move (a jolt qa flagged as a stray change at 23.4 s). -> clamp the two end centres at their own zoom, ease between
+   them (the chord stays inside: the crop side is convex in z).
+
+## 2026-10-31 · Mark Pincus "he ignored it" IG Short (`projects/_client-scott-clary/pincus-ignored-facebook/ig/`), 30 fps check
+What it does better than the Daymond IG: Mark Brazil's type moved AGAIN (10-31, "Ronnie Fieg / 15 Years of Kith": a small sans name
+label over a big BOLD SANS title, the key words on a red box, no serif); the hook deals the receipt BESIDE his card on its word (his
+card carries the credit, so "Zuckerberg" lands on frame 0 without the credit naming the wrong face), then TheFacebook grows into the
+screen; five read-along highlighters on the web pages (FX-34) and a hand-drawn circle on Parker; his head pinned at every jump cut.
+1. **A speaker who leans needs TRACKING, not one fixed frame per take.** Pincus moves 200-300 4K px inside a take: a fixed frame put
+   his lips under the captions (-103 px) and one take off the top of the frame. The approved YT tracks every frame (Affan 2026-10-20);
+   so does this: a calm Gaussian (sigma 12 frames) of the FACE-BOX centre inside each take (every cut joint bounds one), plus the
+   shot's mouth offset, clamped to the 4K frame.
+2. **Pin each take's EDGES to the head actually there.** Free per-take averages left the two sides of a cut up to 112 px apart (a
+   visible head jump). -> on the first and last frame of a take the track equals the detection there, a cosine fade over 15 frames
+   (half the take when it is short, so both edges land): every measurable joint 0-2 px (the 15th is under his hand). Proof:
+   `ig/work/residual.py` (track step vs face step) + `ig/work/check/sync2.py` (frame matching).
+   Where the 4K frame stops the crop (he sits high in s09 and leans back 222 px at 954 in s11: at the common mouth pin the crop
+   met the frame's top and the head jumped ~100 px at 954), give that SHOT its own pin (`"pin": 410`): both takes stay inside
+   the frame and the cut is seamless; the shot is entered from a receipt, so its higher framing is not a same-camera punch-in.
+3. **Hands read as faces.** YuNet scored his raised hand as a face for 7-10 frames at a time (x ~1000 px off, boxes 15-27 % too big):
+   out by x distance from the take's median and by box size; his real fast moves are vertical and stay in.
+4. **A fast move at a take's start bends a line fit.** He sits up 330 px in 17 frames at 197: the edge fit is quadratic, and the edge
+   pin uses the detection ON the edge frame.
+5. **TaskStop on Windows ends the shell, not its children.** A stopped `run.sh build.py` chain kept rendering (uv -> python ->
+   ffmpeg) and a second build wrote the same picture file. Let a running chain finish, or give a restart its own output path.
+6. **Seek half a frame early AND decode in passthrough.** With an h264 base (this cut), `-ss (i - 0.5)/fps` leaves a half-frame gap
+   that ffmpeg's constant-rate rawvideo output fills by sending the FIRST FRAME TWICE (601 frames from a seek at 711, not 600), so
+   after every reader reopen the picture ran one frame late, and the head pin landed a frame off at the joints (QA read 32-44 px
+   "snaps" that the face data said were 0). -> `-fps_mode passthrough` on the reader. Daymond's ProRes base did not duplicate (its
+   check and final are unaffected). Found by `ig/work/check/sync2.py`; read its WHOLE output (a `tail` hid the per-shot summary).
+
+### 2026-10-31 · Affan's note on the Pincus IG check (STANDING RULE for every IG variant)
+**Captions: one solid line, no word-by-word reveal.** His words: "we are not going to do the ... caption animation ... where the caption
+appears one by one ... we're just going to do one solid caption line ... 4 words per caption layer and a slight bump animation which goes
+from down to up just a little bit ... very subtle but it looks very smooth easy eased ... there's too much going on right now in the
+videos that we are making with the motion graphics ... we need to simplify our caption animation a lot more". Everything else on that
+check was approved as is.
+-> each caption is ONE line of up to ~4 words (chunked on the phrasing, never split in two), it appears WHOLE on its first spoken word and
+rises 14 px into place over 0.3 s, eased in and out, fading up in 0.12 s; the next line replaces it. Position, type, the red Playfair hero
+(1-2 words), the punctuation rule and starred profanity stay. Kit: the Pincus `ig/build.py` (`CHUNKS`, `make_blocks`, `draw_captions`,
+an assert that every line carries exactly its chunk's words). README § Captions updated.
+7. **A podcast stream can be 25 fps dressed as 30.** The Pincus RSS 4K stream repeats a frame every 5th frame (a step of ~0.1 vs
+   0.7-3.0). Chronos x2 replaces each repeat with a properly timed in-between frame (the 60 fps final moves more smoothly than the 30 fps
+   check), so a 60 fps sync test must leave the repeats out or it reads them as a lag (`sync60.py`: REPEAT). The same Topaz behaviour is
+   in the Pincus YT final.
+
+## 2026-10-31 · Kevin Pollak IG sample (Onyx batch 6, `projects/stillhere-pollak-acting-class/ig/`), builder lessons
+1. **A 1080p podcast source builds the 30 fps check from the cut itself** (`SC` = 1, faces in 1080p px), the 60 fps final from the
+   Topaz 4K plate (`SC` = 2): one `base_frame(t)` switch, the tracking and the window math unchanged.
+2. **A shot's zoom keys by word text must anchor repeated words** (`wt("what", wt("have"))`): the first "what" put a key 18 s
+   early and the zoom stepped 27 px in one frame at 767 (QA r1). The stage stacks keyed to word starts landed ~0.2 s late where
+   WhisperX ran late: re-time those words from the envelope, never the stack.
+3. **Stage stacks follow the caption punctuation rule** (they ARE the caption on their beat): no commas (QA r1).
+4. **Faces for IG cam shots that the YT covers with cards** are not in the YT faces.json: scan an IG-only spec (`ig/spec.json`,
+   A shots over every cam span, `yt_faces.py --dir ig`).

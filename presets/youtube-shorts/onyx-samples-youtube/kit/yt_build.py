@@ -85,6 +85,56 @@ def payoff(spec):
     return lines, warn
 
 
+def split_edges(job, spec, pic, have):
+    """Chronos take edges INSIDE SPLIT shots (2026-10-31, Pincus): the takes below start only at shot starts and at head-lock joints
+    inside A shots, so a SPLIT's face jump cuts and its B-roll panel's photo cuts were each blended into a morph frame at 60 fps.
+      1) the base cut's joints, from transcript/cuts.json (only where the source jumps, and only when its frames add up to the spec's);
+      2) a hard cut inside the B-roll panel itself (a prebuilt panel of stills, a counter): that panel's mean frame difference > 15
+         and > 8x the median of its 6 neighbours on each side (whip tails, pushes and moving MGs stay below it; measured on 7 jobs).
+    An edge closer than 4 frames to another is dropped: Topaz fails on a 3-frame take (LESSONS 2026-10-12)."""
+    import json
+    import numpy as np
+    splits = [s for s in spec["shots"] if s["kind"] == "SPLIT"]
+    if not splits:
+        return []
+    fps, inS = spec["fps"], lambda j: any(s["f0"] < j < s["f1"] for s in splits)
+    cand = set()
+    cp = os.path.join(job, "transcript", "cuts.json")
+    if os.path.exists(cp):
+        c = json.load(open(cp, encoding="utf-8"))
+        segs = c.get("segments", []) if isinstance(c, dict) else c
+        acc, js = 0.0, []
+        for p, q in zip(segs, segs[1:] + [None]):
+            acc += (p["end"] - p["start"]) * fps
+            if q and not (q.get("clip") == p.get("clip") and abs(q["start"] - p["end"]) * fps < 0.5):
+                js.append(round(acc))
+        if segs and round(acc) == spec["frames"]:
+            cand |= {j for j in js if inS(j)}
+        else:
+            print(f"note: transcript/cuts.json adds up to {acc:.1f} frames, not the spec's {spec['frames']}: no base joints for the SPLIT shots")
+    sp = {"seam": 1092, "bob_amp": 11, **spec.get("split", {})}
+    sw, sh_ = 135, 240
+    seam, band = sp["seam"] * sh_ / 1920, int(np.ceil((sp["bob_amp"] + 8) * sh_ / 1920))
+    for s in splits:
+        if (s.get("bottom") or {}).get("face"):                  # a FACE SPLIT: both panels are the base, its joints cover them
+            continue
+        a, b = s["f0"], s["f1"]
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", pic, "-vf", f"select='between(n,{a},{b - 1})',scale={sw}:{sh_},format=gray",
+                              "-fps_mode", "passthrough", "-f", "rawvideo", "-"], capture_output=True, check=True).stdout
+        fr = np.frombuffer(raw, np.uint8).reshape(-1, sh_, sw).astype(np.float32)
+        panel = fr[:, :int(seam) - band] if s.get("flip") else fr[:, int(seam) + band:]
+        d = np.abs(np.diff(panel, axis=0)).mean(axis=(1, 2))   # d[i]: frame a+i -> a+i+1
+        for i in range(len(d)):
+            nb = np.concatenate([d[max(0, i - 6):i], d[i + 1:i + 7]])
+            if d[i] > 15 and d[i] > 8 * (float(np.median(nb)) if len(nb) else 0.0):
+                cand.add(a + i + 1)
+    out, taken = [], set(have) | {0, spec["frames"]}
+    for j in sorted(cand - taken):
+        if min(abs(j - t) for t in taken) >= 4:
+            out.append(j); taken.add(j)
+    return out
+
+
 def main():
     job, version = os.path.abspath(sys.argv[1]), sys.argv[2]
     skip = set()
@@ -120,6 +170,10 @@ def main():
             inA = lambda j: any(s["kind"] == "A" and s["f0"] < j < s["f1"] for s in spec["shots"])   # 2026-10-28: a head-lock joint inside a
             # card / B shot split a near-static card into its own take, and Chronos returned it empty (Patron): only face-shot joints
             segs = sorted({s["f0"] for s in spec["shots"]} | {j for j in spec.get("head_lock", []) if inA(j)})
+            add = split_edges(job, spec, os.path.join(w, "picture.whip.mp4"), segs)
+            if add:
+                print(f"Chronos: {len(add)} more take edges inside SPLIT shots: {add}")
+            segs = sorted(set(segs) | set(add))
             sh([sys.executable, os.path.join(REPO, "workflows", "topaz-iris.py"), os.path.join(w, "picture.whip.mp4"), pic, "--no-enhance",
                 "--no-stab", "--fps-mult", str(int(round(fps_out / fps))), "--segments", ",".join(map(str, segs))])
     if "overlay" not in skip:

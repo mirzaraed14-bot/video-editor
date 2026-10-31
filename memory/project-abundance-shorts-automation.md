@@ -90,3 +90,41 @@ grade fitted from his own pre/post pair. Details: the job's RUN.md + AW shorts L
 **2026-10-29:** MJ siblings v6 UPLOADED (his AE grade + sharpening on the drift-free one-pass picture; 2 review rounds).
 
 2026-10-24..29: 'MJ Kids Saw' (projects/mj-kids-saw-day-he-died/, 4th code build): raw sequence -> HIS re-edit in Premiere -> his Tella direction video -> build; v2 UPLOADED 2026-10-29. Approval buttons must say only 'approved' (one that bundled 'start the code build' made him stop it).
+
+**2026-10-29 — "Katherine never got over him"** (`projects/katherine-never-got-over-him/`, ABW10 "Katherine Never Got Over
+Him - raw cut"): I placed a 58 s raw sequence from his locked brief; he re-cut it HIMSELF to 30.9 s and sent a Tella
+(direction 1: no overlays, captions middle, lift faces above them, zoom groups, purple/green/exposure transitions, caption
+colour MIX). His cut is the spec; resolved in BRIEF.md § HIS DIRECTION 1. Lift look C (AW fill + glow) at band pick 2 (375 px); v1 built in code + EXPORTED 21:15 to Final Renders + Exports (QA PASS), at his review.
+
+**2026-10-29 — "Kane didn't deserve it"** (`projects/kane-didnt-deserve-it/`, football, 7th code build): raw sequence placed
+in ABW10 from his locked brief; he re-cut it himself to 41.55 s + Tella direction (7 overlay slots, 17 colour transitions,
+lip sync, colour MIX); "start" + "handle everything yourself" → built and DELIVERED v1 ~19:15 (Final Renders + Exports,
+REPORT.md). Defaults to confirm with him: no-minors rule kept (O6 = family in the stalls), the stalls woman = his wife,
+an England 2026 goal instead of the Darmstadt halfway goal (YouTube blocked). 23:44 v3 DELIVERED (v2 kept as '(v2)'): his "Use the kids" + "if it's low quality do letterbox format on it" -> O6 = Kane playing with his son (his download of a fan phone shot) in his letterbox, no Iris (it marred the boy's tiny face), sat levelled; only O6 changed. 2026-10-30 he confirmed the stalls woman is his wife. Waiting on his review.
+
+**2026-10-31 — "Why Patrick Stewart's Father Was So Angry"** (`projects/patrick-stewart-father-angry/`, 8th code build,
+urgent tribute: Patrick Stewart died 28 Oct 2026): his locked brief v11 → sequence PREVIEW as a plain MP4 (73.5 s) → his
+Tella 1 (cut B6's "weekend alcoholic … no authority at all", father's photo on that line, "passed away" opener card drawn
+from his head, Higgsfield-restore every father photo, CP letterboxed, more caption colours, Topaz jitter passes 2,
+< 60 s wished for his song choice) → built and DELIVERED v1 ~12:40 (61.67 s, Final Renders + Exports, REPORT.md).
+His note on v1: cut "because he just made me angry and fearful when he was around" → v2 DELIVERED ~13:30, 57.77 s
+(v1 kept as "(v1 61.7s)"). At his review: the opener card look.
+
+
+**2026-10-31 — "Why Everyone Underestimated Michael Jackson"** (`projects/mj-outthink-them/`, 9th code build): his locked
+brief v3 → sequence PREVIEW (45.1 s) → his Tella 1 (London letterboxed, HD + Higgsfield Katherine/Joe, two lines cut,
+Eddie desaturated + pulled back on Michael's voice, purple dip, Bashir lip sync measured in sync) → v1 ~17:40 (41.37 s)
+→ my QA found a 0.56 s pause in Eddie's last line → v2 DELIVERED ~18:00 (40.80 s, `MJ Outthink Them.mov` in Final Renders +
+Exports, MD5 6f813097…, v1 kept as "(v1 41.4s)", REPORT.md). At his review. Start points:
+RUN.md / BRIEF.md (DECISIONS 13-22) in the job folder.
+
+**2026-10-31 — "Why Conrad Murray Says He Didn't Kill Michael Jackson"** (`projects/conrad-murray-didnt-kill-mj/`, 10th code
+build): his locked brief v3 → defaults sent (censor, no music, his height, Proteus) → sequence PREVIEW (49.2 s) → his
+answers "do it like dr*g addict" + "Audible, caption only" → his Tella (reporter on screen whenever Murray isn't visibly
+speaking, the 360p courtroom + CNN Katherine letterboxed, labels as animated lower thirds at the BOTTOM, colour MIX + purple,
+60 Minutes zooms OUT, the "Jackson" trim clipped the name → fixed) → DELIVERED ~18:30 (49.37 s, `Conrad Murray Guilty.mov`
+in Final Renders + Exports, sha256 cf0d0a43…, REPORT.md). Found on the sources: the brief's "None. None. Absolutely nothing."
+is partly Hayes (voice match `win/who.py`). No Topaz on the final picture (shared GPU): flow in-betweens in Stage A. At his
+review. Start points: RUN.md / BRIEF.md (DECISIONS 15-24) in the job folder.
+→ his v2 note "labels at the bottom" → v3 DELIVERED ~18:35 (cards only; MD5 5d465250…, v2 kept). splice_multi.py
+darkened ~4-5 luma levels per pass (raw writer without an input range): fixed in this job's kit only.

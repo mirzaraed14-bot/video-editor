@@ -144,6 +144,9 @@ def main():
         tag_divs.append(f'<div id="gl{i}" class="glint" style="left:{g["x"] - z / 2}px;top:{g["y"] - z / 2}px;width:{z}px;height:{z}px"></div>')
         tag_js.append(f'tl.fromTo("#gl{i}", {{autoAlpha: 0, scale: 0.2, rotation: -30}}, {{autoAlpha: 1, scale: 1, rotation: 0, duration: 0.18, ease: "power2.out"}}, {g["t"]});'
                       f'tl.to("#gl{i}", {{autoAlpha: 0, scale: 0.4, rotation: 25, duration: 0.3, ease: "power2.in"}}, {g["t"] + 0.32});')
+    # a hook of N lines (Pincus 2026-10-31, a 4-line credit): every line white but the LAST, which takes the gold gradient (2 lines: as before)
+    hl_white = ", ".join(f"#hl{i + 1} .fill" for i in range(max(1, len(lines) - 1)))
+    hl_gold = f"#hl{max(2, len(lines))} .fill"
     comp_id = "onyx-yt-overlay"
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -162,8 +165,8 @@ html, body {{ margin: 0; background: transparent; }}
   line-height: 1; white-space: nowrap; }}
 .hl span {{ position: absolute; left: 0; width: {W}px; text-align: center; }}
 .hl .stroke {{ color: #000; -webkit-text-stroke: 13px #000; text-shadow: 5px 7px 0 rgba(0,0,0,0.85); }}
-#hl1 .fill {{ color: #FFFFFF; }}
-#hl2 .fill {{ background: linear-gradient(180deg, #F39A10 0%, #F6B412 45%, #F7D428 100%); -webkit-background-clip: text; background-clip: text;
+{hl_white} {{ color: #FFFFFF; }}
+{hl_gold} {{ background: linear-gradient(180deg, #F39A10 0%, #F6B412 45%, #F7D428 100%); -webkit-background-clip: text; background-clip: text;
   color: transparent; }}
 .tag {{ position: absolute; inset: 0; visibility: hidden; }}
 .tdot {{ position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #19D3C5; box-shadow: 0 0 14px rgba(25,211,197,0.9); }}

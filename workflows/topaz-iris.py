@@ -15,6 +15,10 @@ C:/ProgramData/Topaz Labs LLC/Topaz Video AI/presets), as he set it in the app o
                                                                       #   indices where a new take starts) so the stabiliser
                                                                       #   and the duplicate-frame interpolation never cross a cut
   --no-stab / --no-fi   switch those stages off (e.g. a static tripod shot, or cartoons)
+  --reduce N            the stabiliser's "Reduce jittery motions" with N passes (tvai_stb reduce=N; default 0 = his
+                        original recipe). Affan 2026-10-31 (Patrick Stewart Tella): "jittery motion, number of passes two"
+                        after feeling jitter on the Kane short; his own 2026-10-10 export log carries reduce=2. Never 3+
+                        (AW LESSONS 2026-10-20: the lips slow down and the captions can't keep up).
   --no-enhance          no Iris: only the frame interpolation (duplicate frames replaced) and/or stabilisation, output = input
                         size (a native-4K source Iris does not improve; Affan 2026-10-06: "if the quality difference isn't there
                         don't enhance but apply interpolation"). A take that comes back with a different frame count is redone
@@ -59,7 +63,7 @@ def run(cmd, env):
         sys.exit("topaz-iris: ffmpeg failed:\n" + p.stderr[-3000:])
 
 
-def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True, mult=1):
+def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True, mult=1, reduce=0):
     w, h, fps, n = probe(src)
     num, den = (int(x) for x in (fps.split("/") + ["1"])[:2]); fps_out = f"{num * mult}/{den}"   # --fps-mult: Chronos makes the new frames
     down_w = int(round(w * out_scale / 4 / 2)) * 2        # Iris runs x4: pre-scale so the output is out_scale x the input
@@ -68,7 +72,7 @@ def enhance(src, dst, out_scale, stab, fi, env, tmp, iris=True, mult=1):
         cpe = os.path.join(tmp, f"cpe-{os.getpid()}-{abs(hash(src)) % 10**8}.json")
         run([TFFMPEG, "-hide_banner", "-nostdin", "-y", "-nostats", "-i", src, *SWS, "-filter_complex",
              CPE.format(cpe=esc(cpe)), "-f", "null", "-"], env)
-        chain.append(STB.format(cpe=esc(cpe)))
+        chain.append(STB.format(cpe=esc(cpe)).replace(":reduce=0:", f":reduce={reduce}:"))
     if fi:
         chain.append(FI if mult == 1 else FI.replace("rdt=0.01:", f"rdt=0.01:fps={num * mult / den:g}:"))
     chain += ([f"scale={down_w}:-2", IRIS] if iris else []) + ["scale=out_color_matrix=bt709"]
@@ -88,6 +92,7 @@ def main():
     ap.add_argument("--segments", default="")
     ap.add_argument("--no-stab", action="store_true"); ap.add_argument("--no-fi", action="store_true")
     ap.add_argument("--fps-mult", type=int, default=1)     # 2 = double the frame rate with Chronos (30 -> 60), per take so it never blends across a cut
+    ap.add_argument("--reduce", type=int, default=0)          # stabiliser jitter passes (his 2026-10-31 setting: 2)
     ap.add_argument("--no-enhance", action="store_true")      # frame interpolation (and/or stabilisation) only: no Iris, output = input size
     a = ap.parse_args()
     if not os.path.exists(TFFMPEG):
@@ -105,10 +110,12 @@ def main():
                             "-an", "-c:v", "ffv1", "-r", fps, seg], check=True)
             out = os.path.join(tmp, f"up{i:02d}.mov")
             M = a.fps_mult
-            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance, mult=M)
+            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance, mult=M,
+                                                  reduce=a.reduce)
             flag = "" if on == inn * M else f"  ⚠ frame count {inn} -> {on}"
             if on != inn * M and not a.no_fi:      # Chronos can return a static take short (Harbinger lost 8 frames): redo it without FI
-                (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, False, env, tmp, iris=not a.no_enhance)
+                (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, False, env, tmp, iris=not a.no_enhance,
+                                                      reduce=a.reduce)
                 if M > 1:                         # ... and repeat each frame M times so the timeline still matches
                     dup = out.replace(".mov", "-dup.mov"); num, den = (int(x) for x in (probe(out)[2].split("/") + ["1"])[:2])
                     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-vf", f"fps={num * M}/{den}", "-c:v", "prores_ks", "-profile:v", "3",

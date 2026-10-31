@@ -1,6 +1,108 @@
 # RUN: "Why They Said Harry Kane Didn't Deserve The Ballon d'Or 😳" (Abundance Wisdom short, football)
 
-## ▶ STATUS: resume here (2026-10-29 ~14:55 PST): RAW SEQUENCE PLACED in ABW10, waiting on his pass + direction
+## ▶ STATUS: resume here (2026-10-30): v3 DELIVERED (O6 = the kids, letterboxed), waiting on his review
+- His answer 2026-10-30: **"Yes, that's her"**: the O7 stalls woman (BAYERN 650.6) IS his wife. No open questions left;
+  the only pending call is his own review (incl. whether O6 should have Topaz Iris: REPORT § 6).
+- **Delivered file now = v3** (MD5 56c55b4d…, 1246 f, 41.55 s, 48.0 Mb/s, −13.8 LUFS, −3.1 dBTP, QA PASS, 24 cuts clean
+  `proof/final_edges.jpg`, O6 edges `proof/final_o6_edges.jpg`) in Final Renders + Exports; v2 kept as `(v2)` in both
+  (MD5 dfa9da57…), v1 as `(v1)`. Only O6 changed: v2 vs v3 60 fps masters differ < 1/255 outside frames 2008-2170 (re-encode
+  noise), audio bit-identical (`renders/kane_audio.wav` reused).
+- His 23:15 "done" (file `raw/new/KIDS_Kane_son_AllianzArena.mp4`, 1080p30 1.6 Mb/s fan phone) + "if its low quality do
+  letterbox format on it". Build: `make_timeline.py` v3 (O6 overlay without 'full', band [290, 1334] = his 440-1484 lifted
+  150 px, twin 2.2 blur 18, zoom pivot [540, 812], sat_level O6 0.62; pick KIDS 9.20 0.9x scale 1.0 centre [870, 690]) →
+  `stage_a.py render renders/kids_fix.mov 2008:2170` → **no Topaz** (Iris drew a dark band over the boy's 40 px face:
+  `proof/kids_face_topaz_vs_raw.png`) → `splice_ranges.py` v3 picture + kids_fix → `renders/kane_picture_v4.mov` →
+  `finish.py render` → `outputs/kane_v4_60.mp4` → `export.py`. Measured: son's chin ≥ ~60 px above the caption line; top
+  glow bar y203 (first frame) → y288; chroma 0.37-0.45 (other shots 0.15-0.43). Sheets `proof/kids_finish_v3.jpg`,
+  `proof/kids_caption_clearance.jpg` (that one is pre-saturation-fix).
+- Previous data kept: `build/timeline.v2.json`, `overlays/picks.v2.json`, `centers.v2.json`, `zoom_layers.v2.json`.
+
+## (previous) STATUS (2026-10-29 ~23:15 PST): HIS ANSWER "Use the kids" → O6 swap, WAITING ON HIS DOWNLOAD
+- His words (2026-10-29 ~23:00): **"Use the kids"**: brief hard rule 5 (no Kane children) is LIFTED for O6 only
+  (33.47-36.17, "time that I'd love to be spending with my kids, with my family"); his Tella ask = Kane with his kids,
+  playing, having a good time. Every other overlay stays as delivered (fix only what he named).
+- No kids footage anywhere local: TROPHY (Sky 2025) has only mascot children (25-29 s), BAYERN ceremony / SKY / PACK have
+  none; drives searched (`E:\Bullshit Folder\Henry\` = the job's own files). Dailymotion: 5 candidates pulled into
+  `review/kids_dl/` (sheets there), none with his kids.
+- Asked him to download (YouTube is blocked for me, never bypassed): **https://www.youtube.com/watch?v=WSBoUJE9kjw**
+  ("Bayern Star Harry Kane kickt mit Sohn in der Allianz Arena": Kane kicking a ball with his son Louis on the pitch
+  after the 2026 title v Stuttgart); alt https://www.youtube.com/watch?v=Gsj5-l9ZdKE (FC Bayern "Kane Hat-trick at the
+  Title Party", 2026 title party, family photo on the pitch).
+- NEXT on the file: probe → contact sheet → pick ~2.7 s of play (0.9x if 25/30 fps, native slow-mo if 50/60) →
+  `build/make_timeline.py` O6 pick (keep his zoom out + the purple in / cyan out transitions) → `stage_a.py render` frames
+  2008:2170 (60 fps timeline, 33.467-36.167 s, same convention as O1 = 353:434) → Topaz only if the source is SD →
+  `splice_ranges.py` → `finish.py render` → `export.py` → `win/final_edges.py` → deliver, keep v2 as `(v2)`.
+
+## (previous) STATUS (2026-10-29 ~19:30 PST): DELIVERED (v2 replaces v1), waiting on his review + 2 answers
+- **Delivered file now = v2** (MD5 dfa9da57…, 48.2 Mb/s, −13.8 LUFS, −3.1 dBTP, QA PASS, 24 cuts clean) from
+  `outputs/kane_v3_60.mp4`: picture `renders/kane_picture_v3.mov` = v2 picture + the uncle (frames 117-353) re-framed
+  (scale 2.0, nose y600, zoom 0.97 on the caption line, 160 px mirror-filled lift: `make_timeline.py` v2c,
+  `stage_a.py` expose_bottom) through `workflows/topaz-iris.py --no-stab` (the stabiliser smeared his handheld face),
+  spliced (`renders/unc_ranges.json`); audio: no swish on B6 (DRY). The first delivery is kept as `(v1)` in both folders
+  (MD5 ee2b00c2…). Lip sync on the final render: `proof/lip_final_others.png` (Kane, Brazil, host OK; uncle's lips hidden).
+  Mixed-audio per-piece re-ASR: no cut-filler fragment at any handle (`win/asr_mix_pieces.py`).
+
+## (previous) STATUS (2026-10-29 ~19:15 PST): v1 DELIVERED
+- **`Final Renders\Kane Didnt Deserve It.mov`** + identical `X:\Claude Projects\Exports\Kane Didnt Deserve It.mov` (= `outputs/`,
+  MD5 ee2b00c2…): 1080x1920 30 fps, 1246 f, 41.55 s, 46.6 Mb/s, −13.8 LUFS, −3.1 dBTP, export QA PASS. From
+  `outputs/kane_v2_60.mp4` (picture `renders/kane_picture_v2.mov` = Topaz picture + O1 re-rendered from 75.25 via
+  `build/splice_ranges.py`, `renders/o1_ranges.json`). The never-delivered first export (1 stray wide frame at O1) is
+  `outputs/Kane Didnt Deserve It (v0 stray frame).mov`. Report: `REPORT.md` (brief § 9 + what differs and why).
+- Open with him: kids overlay vs rule 5 (default kept: O6 = family in the stalls); is the stalls woman his wife; O4 = an
+  England 2026 goal (the Darmstadt goal is only a 720p wide shot here).
+- A note → change ONLY what he names (memory: data + ONE finish render): `build/make_timeline.py` → (overlay pick change:
+  `stage_a.py render <seg> a:b` + `splice_ranges.py`; face/framing change: Stage A + Topaz + align_frames) → `finish.py render`
+  → `export.py` → `win/final_edges.py` → copy to both folders (keep the reviewed file as `(v1)`).
+
+## (previous) STATUS (2026-10-29 ~18:35 PST): CODE BUILD RUNNING (he said "start", then "handle everything yourself")
+- His 18:15 messages: "start" + "I'm going for two three hours so handle everything yourself like all the downloads". Defaults
+  taken (stated to him): brief rule 5 KEPT (no children; O6 = his family in the stalls, BAYERN 641.5), O7 = the 10:50
+  smile (identity for him to confirm), O4 goal = a 1440p60 England 2026 goal (the Darmstadt halfway-line goal only exists
+  here as a 720p wide shot from Dailymotion `raw/new/GOAL_dm_x8p6v48.mp4` ~64-66 s: unusable full-screen vertical).
+- Downloads: YouTube geo-blocks (9jqtkyvYJJk, b_TmJoQvwvc) and the bot check (rest) → not bypassed. His SnapDownloader
+  files: 4K pack (1440p60 VP9) → `raw/new/PACK_Kane_England2026_1440p60.mkv`; Sky Sports Bundesliga 2025 trophy →
+  `raw/new/TROPHY_Bundesliga2025_SkySports.mp4` (ASCII copies of `E:\Bullshit Folder\Henry\…`).
+- Catalog pass: BRIEF.md § Catalog pass. Picks: `build/make_timeline.py` (picks + timeline + centers.json), sheets
+  `review/src/*.jpg`, framing `proof/stageA_sheet2.jpg`.
+- DONE: `build/a1_his.py` → `seqref/his_a1_xf.wav` (2-frame equal-power crossfades, 22 cuts); `stage_a.py track`
+  (17 face shots, 0 misses) → `renders/kane_stageA.mov` (2493 f); ASH lip sync on the render within ~1 frame
+  (`proof/lip_ash_*_render.png`, picture slipped 0.18 s); captions (`captions/cap_words.py` force-aligned words,
+  `captions.txt` colour MIX, `big:` = B2 English 1.35x two lines, `render_caps.py` local `_draw_big`, shared engine
+  untouched) → `captions/caps_code.mov`; audio `build/audio.py` → `renders/kane_audio.wav` (−13.8 LUFS pre-encode, fresh
+  Epidemic swishes `build/sfx/SOURCES.md` 21 dB under, cyan silent, no music; speaker gain handed over as a 20 ms curve,
+  not Janet's ramp-to-zero); finish.py: `temperature` keys (cold −1 → warm +1 on B6 frame 1) + single-line cards;
+  zoom layers built.
+- DONE 18:45: Topaz (`../aw-code-trial-parents/stageB/topaz_his.py`, 15 min, no watermark: `review/frames/topaz_check.jpg`,
+  before/after `proof/topaz_vs_stageA_31s.jpg`) → `align_frames.py` (2495 → 2493: dropped 1525/2493/2494, held 1538) →
+  `renders/kane_picture.mov`; `capcut_pass.py` → `captions/caps_capcut.mov` (2493 f); test stills `proof/test_v1*.jpg`
+  (captions measured at y1040-1090; the '·' card bug was finish.py reading timeline.json as cp1252: fixed, utf-8).
+- RUNNING (~18:55): full finish → `outputs/kane_v1_60.mp4`.
+- NEXT: check the Topaz output for a WATERMARK (lapsed login) → `build/align_frames.py renders/kane_stab_chr2_iris3_prob4.mov
+  renders/kane_stageA.mov renders/kane_picture.mov` → `captions/capcut_pass.py caps_code.mov caps_capcut.mov` (GPU venv) →
+  `build/finish.py stills` on every shot → `finish.py render ../renders/kane_picture.mov ../captions/caps_capcut.mov
+  ../outputs/kane_v1_60.mp4 --audio ../renders/kane_audio.wav` → `build/export.py outputs/kane_v1_60.mp4 renders/kane_audio.wav
+  "outputs/Kane Didnt Deserve It.mov"` → edges check → copy to `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\`
+  + `X:\Claude Projects\Exports\` → § 9 report.
+
+## (previous) ▶ STATUS: resume here (2026-10-29 ~17:30 PST): HIS RE-CUT + TELLA DIRECTION IN, waiting on footage + 2 answers
+- He re-cut "Kane Didnt Deserve It - raw cut" himself (41.55 s, saved) and recorded a Tella walkthrough. Both are resolved
+  in BRIEF.md § HIS DIRECTION (overlay slots, zoom groups, 17 colour-coded transitions, lip sync, captions). His sequence
+  was only READ (`premiere/readback_all.js`, one call, title checked for autosave first) → `premiere/his_v1.tsv`,
+  `his_v1_edl.md`; his words re-ASR'd from the rebuilt A1 (`win/verify_his.py`).
+- Measured: **ASH picture leads its audio by ~0.16-0.20 s** (three bilabials, BRIEF § 1); **BAYERN lectern (B8) in sync**
+  (m of "my", 646.6). O4 zoom settled = out (MFCC-DTW vs his own takes). Other talkers not yet checked
+  (my first ROIs missed the mouths: BRAZ Alan's mouth ≈ (954, 465), SKY presser ≈ (945, 285) in source px).
+- Waiting on him: kids overlay vs hard rule 5; wife confirm (`proof/wife_candidates.jpg`); downloads for O1 kick, O4 goal,
+  O5 trophy (links in BRIEF § round 3). 18:10: the 4K kick pack is in `E:\Bullshit Folder\Henry\` (.mkv); the goal and
+  DFB-Pokal links are geo-blocked for him, replacements in BRIEF § round 3.
+- NEXT (on his files): probe them (res/fps; 2160p for O1 full-bleed) → pick the moments (frame check for children) → code
+  build from `projects/janet-couldnt-cry/build/` driven by `his_v1_edl.md`: catalog pass in BRIEF.md first (CLAUDE.md
+  learning loop) → ASH picture slipped ~0.17 s + plosive check on every talker → Stage A framing (uncle head lock; his V1
+  positions as the start point) → Topaz (SD sources; interpolation for O4/O5 slow motion) → zoom groups → his 17
+  transitions (`transition_pass` kinds) → grade (cold B1-5, warm from B6) → labels → captions (gradient MIX, y≈1060, B2
+  English two lines) → audio −14 LUFS / ≤ −1 dBTP, no music → export both paths.
+
+## (previous) ▶ STATUS: resume here (2026-10-29 ~14:55 PST): RAW SEQUENCE PLACED in ABW10, waiting on his pass + direction
 - **ABW10 › bin "Kane Didnt Deserve It" › "Kane Didnt Deserve It - raw cut"** (clone of "Onyx reaction template (empty)",
   1080x1920 60 fps): V1/A1 26 clips, V2 4 picture-only covers (A2 empty), 8 beat markers (name + card + warning).
   **48.70 s**. His active Sequence 34 restored. **Not saved** (he saves). In/out table: `premiere/inout_table.md`.

@@ -63,7 +63,9 @@ point). Affan's instructions for it:
   agents read published text first (podcast RSS `podcast:transcript`, show sites) and LIST their YouTube pulls; the main session
   runs ONE spaced queue (≥ 60 s apart). A block sets `.locks/youtube.BLOCKED` (lock.sh then fails fast, exit 75); one probe after
   ~45 min, then the queue.
-- **Topaz on the speaker footage of every sample** (Affan, 2026-10-06: "still do topaz because it makes the footage very smooth; if the
+- **SUPERSEDED 2026-10-31 (Affan: "no need for 60 fps, it'll just consume usage; 30 fps is good enough for prospecting"): Onyx
+  samples ship at the source's native rate with NO Topaz (no Iris, no Chronos); the QA'd render is the final.** The old rule, kept for
+  client work only: **Topaz on the speaker footage of every sample** (Affan, 2026-10-06: "still do topaz because it makes the footage very smooth; if the
   quality difference isn't there don't enhance but apply interpolation"): his frame interpolation (Chronos, replace duplicate
   frames) ALWAYS, per take (`--segments` at every joint and camera cut); his Iris enhancement only where it shows (≤1080p
   sources, `--out-scale 2`). A native-4K source gets `--no-enhance --no-stab` (Iris softened Rob Dial's 4K beard and flattened

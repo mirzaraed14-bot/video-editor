@@ -3,6 +3,12 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+## 2026-10-31 — labels at the bottom, every time (MJ Outthink Them v2 review)
+
+- **Label motion graphics go at the BOTTOM, never the top** ("I told you… Nobody looks at the top"). MJ Outthink, Patrick
+  and Kane shipped their cards at y0 230 because their editor briefs say "small, top third"; Conrad's sat at 1262 and was
+  right. The rule now lives in README § 8 and beats the brief. → change: MJ Outthink labels moved to the low band (v3).
+
 ## 2026-10-14 — MJ "Son told Tyson" raw cut (`projects/mj-skin-son-tyson`, ABW8 Sequence 53)
 
 - **A podcast with a burned-in ad banner** (Hotboxin': TYSONPRO.COM across the bottom 232 px): scale so the 9:16 frame ends
@@ -988,3 +994,224 @@ Six corrections, all now rules:
   (`premiere/fix_framing.py` → `kat_keys.js`, key time = media time). Also: a slowed cover clip is rendered with `-t` BEFORE
   `-i` (after `-i` it caps the retimed OUTPUT: a 1.73 s slot got a 1.40 s file), and a cover over a shot that DISSOLVES out
   runs to the dissolve's last blended frame (PHM crowd → Michael, 1536.64), or the crowd ghosts for 2 frames.
+- 2026-10-29 (Katherine "never got over him", his Tella direction 1): **caption colours were drifting to white + red only;
+  he wants a MIX.** White constant, ONE accent per caption, varied through the short by meaning: pink love · yellow
+  happiness · red evil/bad · blue mellow/emotional · green very positive · orange too. Now in README §8 ("Colour MIX").
+- 2026-10-29 (same): **his re-cut is the spec.** He took the 58 s raw sequence to 30.9 s himself (dropped beat 4 and the
+  Larry King line, extended two Jermaine edges, let Katherine's ending run continuous and fade out). Build from a read-only
+  dump of HIS sequence (`premiere/his_dump.js`; real out = inPoint + duration, the dump's outPoint runs ~0.17 s long), never
+  re-place over it. Zooms are grouped per run of same-shot jump cuts (he named them by selecting the clips), and each
+  transition sits on a zoom-group boundary.
+- 2026-10-29 (same): **check placed framing against FRAMES, not just against the plan.** v2's verify passed while one Jermaine
+  piece (88.8–90.4, camera reframed so he sits at x≈0.2) was framed on the cabinet and his hand: the face track had locked
+  onto the wrong side. A contact sheet of every placed clip's first/mid/last frame catches it; the plan comparison cannot.
+- 2026-10-29 (same): **"captions in the middle + bump the face up"** = his Janet line (y≈1058) with the lips lifted just
+  above it. A full-bleed close-up can only lift by exposing what is below the picture (Katherine: her burned-in subtitle
+  bar; Joe: past the frame at the 115 % cap), so the lift needs a bottom band; test frames of B black band vs C AW §4 fill +
+  glow line went to him (`projects/katherine-never-got-over-him/proof/lift_options.jpg`). **He picked C** (the AW §4
+  dimmed 198 % fill at 43 % + glow line under the lifted picture): default for any future lift that exposes a bottom band.
+- 2026-10-29 (same, note 2): **a silent crying pause gets a stage-direction caption.** "The silent pause where Katherine is
+  crying you will put a caption of quote unquote tears up." → a "tears up" card over the measured room-tone span only
+  (level strip of his A1, not the ASR word gap, which put her next word 0.3 s early), same line and style as the speech, one
+  accent (blue = emotional). If it repeats on another short, it becomes a README §8 rule for any wordless emotional beat.
+- 2026-10-29 (same, build): **the lift's band size is set by the LOWEST lip, not one test frame.** With a fixed band (his
+  workflow: the mask is fixed in frame space), each source row lands at edge − (clean rows below it) × scale, so a speaker
+  who bows (Katherine crying, lips 130 source rows lower) needs a 560–585 px band to keep the lips clear in every frame.
+  Measure the setup's lip range first (`build/geom.py`), and if the band grows past the test, show both settings on the
+  deciding frames. He chose the tested ~375 px band: lips clear while upright, the caption meets the mouth only in a bow.
+  The lifted setups lock x only (y static per camera), so the picture doesn't swim under the band → `projects/katherine-
+  never-got-over-him/proof/lift_choice.jpg`, `build/geom.py`.
+- 2026-10-29 (same, build): **a speaker who turns to profile is locked on the centre of the head, not the nose.** A nose
+  lock at x540 cut the back of Jermaine's head on the left edge in clips 7–9. Lock nose + the smoothed face-box offset
+  (`build/head_dx.py`, σ 0.25 s): his head stays whole and centred → `projects/katherine-never-got-over-him/build/`.
+- 2026-10-29 (same, build): **pre-grade skin levelling again** (3rd code build in a row: Joe Appointment, Janet, Katherine):
+  layer 43 took Katherine to sat 0.61–0.66 / R/G 1.82–1.93, Joe 0.59 / 1.82, Michael 0.65. Fixed with sat_level kat 0.72 /
+  jow 0.70 / oprah 0.72 / jerm 0.9 + gamma 0.85, giving 0.47–0.59 / 1.50–1.70. **Now the default: measure skin on the first stills
+  of every build (`build/skin_png.py`) and level before the grade.**
+
+- 2026-10-29 (Kane "didn't deserve it", his Tella direction): **the caption colour MIX is a cross-short rule, not a
+  Katherine one-off.** He gave it again unprompted on a second short the same day ("white and blue, white and pink, white
+  and green… not just one colour combo", "gradient colours, not plain colours") → README §8 "Colour MIX" applies to every
+  AW short.
+- 2026-10-29 (same): **a downloaded source can carry its own A/V offset.** His note "the lips and the audio are not synced"
+  on B1: Ashton's SnapDownloader file has the picture ~0.16-0.20 s AHEAD of its audio (container start times all 0, so
+  ffprobe does not show it). Measured at bilabials: `projects/kane-didnt-deserve-it/win/plosive_check.py` tiles the mouth
+  at every 25 fps frame over a 5 ms energy strip; the lips must be shut during the audio's b/p/m closure. A mouth-ROI
+  frame-difference xcorr was too weak to trust (r ≈ 0.1, sign flipped between windows). Check every talking source this
+  way before render; fix by slipping that source's picture against its audio, never by moving the cut.
+- 2026-10-29 (same): **transitions dictated as colours.** "This will be purple fading into this": he selects clip A, says
+  the colour, selects clip B. The colour is his label code (README § transitions: purple dip, dark green flash, peach
+  exposure blur, cyan gaussian). Map each to its cut by the white selection outline + the timeline TC in the frame; a cut he
+  does not name stays straight; he also names same-camera jump cuts. Self-corrections ("purple… dark green actually"):
+  the last word wins.
+- 2026-10-29 (Kane "didn't deserve it", code build): **an overlay's first frame can belong to the shot before it.** The
+  clip pack's penalty starts at 75.233; a 0.1 s contact sheet read "75.2 = close angle" and the build started at 75.20, so
+  the first exported frame showed the wide angle. Find the cut at 1/60 s steps before setting any overlay `s0`, start 1-2
+  frames inside the shot, and read the exported cuts (`win/final_edges.py`) before delivery: that check caught it.
+- 2026-10-29 (same): **Janet's build kit, two latent bugs fixed in the Kane copy:** (1) `finish.py` read timeline.json as
+  cp1252, so any non-ASCII card text (·) came out as "Â·": open it with utf-8; (2) `audio.py` ramped every speaker block to
+  ZERO over 20 ms at its edge, a ~40 ms dip at each speaker change: hand the per-speaker gain over as a smoothed curve.
+- 2026-10-29 (same): **a bigger caption for one beat** (the brief's English-only uncle lines): `big:` in captions.txt →
+  make_plan `big` flag → render_caps multiplies the pop scale (1.35) and the stacked pitch, through a local copy of the
+  engine's draw(); the shared trial engine stays untouched.
+- 2026-10-29 (same): **when YouTube blocks a pick** (geo-block or the bot check, never bypassed), the same broadcast may be
+  on Dailymotion (yt-dlp, plain) but often only as wide league highlights; judge it for a full-screen 9:16 crop before
+  using it, and say what was swapped in the report.
+- 2026-10-29 (Kane, same): **check the caption line against EVERY speaker's mouth on the final, not one test still.** The
+  uncle's handheld face sits low in his frame; at the standard full-bleed size the line sat ON his mouth for 4 s, missed by
+  the per-shot still sheet (one frame per shot). Fix by his rule (lift the face, never the line): bigger scale within the
+  ~115 % SD cap, nose held higher, zoom pivoted ON the caption line, and a bottom mirror-filled lift inside the UI band.
+  Topaz's stabiliser smeared that handheld face: re-run that segment `topaz-iris.py --no-stab`.
+- 2026-10-29 (Kane, his review answers): **"Use the kids" + "if it's low quality do letterbox format on it".** A brief's
+  hard rule (no minors) can be lifted by him for ONE slot; it stays in force everywhere else and the report says so. The
+  kids footage existed nowhere local or on Dailymotion; his SnapDownloader file was a fan's zoomed phone shot (1080p30,
+  1.6 Mb/s, figures ~600 px tall). **His letterbox for a low-quality overlay** in the code kit = an overlay shot WITHOUT
+  `'full'` + its own `band` / `twin_scale` / `twin_blur`, source at native 100 % (README § 4, 1044 px band) so nothing is
+  upscaled. Three numbers to get right before rendering: (1) lift the band until the smallest face clears the caption line
+  (here 150 px: the son's chin ~60 px above y1040); (2) a lifted band moves the twin's centre, so the twin must reach
+  `2 * max(cy, 1920 - cy) / band_h` (2.12 here), not 1920 / band_h; (3) pivot the overlay's zoom on the band centre, or the
+  115 % first frame pushes the top glow bar into the top-200 safe zone (measured y203 → y288). **Topaz Iris on tiny faces
+  in a phone shot draws artifacts** (a dark "goggles" band across a 40 px child's face, a shirt number rewritten): compare a
+  2x crop of the smallest face before and after Iris. PENDING HIS REVIEW: v3 shipped O6 without Iris (his standing rule
+  is Iris on every <=1080p source); his answer decides whether this becomes a rule. **A grass pitch through the warm grade goes neon** (chroma 0.59 vs 0.15-0.43 on every other shot): level it with
+  the per-source `sat_level` (0.62) before the grade, measured against the other shots, never by touching his grade.
+
+- 2026-10-31 (Patrick Stewart "father so angry", his Tella 1 on my SEQUENCE PREVIEW, `projects/patrick-stewart-father-angry/`):
+  **a sequence preview as a plain MP4 before any build worked**: he answered it with one Tella (one cut, five picture
+  notes, "apart from that you can start"), so the build ran once on a locked cut. Keep it for brief-driven shorts.
+- (same) **Under 60 s matters to him because of MUSIC**: "if the video is over a minute the song selection ... starts to
+  get blocked" (YouTube Shorts over 60 s lose most licensed songs). Flag every cut that lands over 60 s with the exact
+  word cut that would get under it. Tightening every joint to the MEASURED acoustic edge gained nothing here
+  (`seq/edl.edgetest.py`: 61.9 vs 61.73 s): wav2vec2 + 0.08 / 0.10 s pads already sit on the speech; time comes from words.
+- (same) **A line ABOUT the father plays over the FATHER's picture, not the subject listening** ("for this part you need
+  to use his father's, not his overlay"): when the words are about someone we have a photo of, the photo wins the cover.
+- (same) **Caption colour MIX, third time asked** ("a lot of coloured captions, not just one colour caption, like I've told
+  you before"): count it in QA: 37 of 88 captions coloured (1 in 2.4) over all six accents, never one colour twice in a
+  row unless it is one phrase split across two captions.
+- (same) **Topaz jitter = the stabiliser's "Reduce jittery motions" passes = `tvai_stb ... reduce=N`**: he wants 2 ("just
+  below three"), his own 2026-10-10 export log carries reduce=2; `workflows/topaz-iris.py --reduce 2` (default 0). Run
+  it per shot (`--segments` at every shot start, `--no-enhance` for 1080p) on the 60 fps Stage A, where 25p repeats are
+  exact copies for Chronos.
+- (same) **Father photos through Higgsfield, his ask ("Topaz doesn't really do a good job of scaling pictures")**: what
+  worked = `nano_banana_2_1` 4k, the soft photo as image 1 + "restore, keep EVERYTHING, use the other images ONLY for his
+  facial features" (3 credits). What failed: (1) the plain `upscale_image` (bytedance 4k) left a soft ghost and drew
+  letter-like marks by the eyes; (2) giving a YOUNG portrait older references aged him and reframed it 16:9 → restore a
+  young photo with NO references and the source pre-cropped to the output aspect (5:4). Check every restore at full size
+  for rewritten badges / faces (the regiment beret badge came back as a plausible winged badge: unverifiable, say so).
+- (same) **Brief rule "nothing about his death" can be lifted by him for one card**: his opener note asked for "passed
+  away"; the card states the date (28 OCTOBER 2026, checked in three outlets), never "yesterday" (false on publish day).
+- (same) **The opener "motion graphic in my own style that originates from his head"** = a glow ring on the ear (tracked
+  through the zoom-out: point → pivot + (p − pivot) / z), a glow line drawn down the frame edge that turns into the
+  card's top rule (AW §5 glow bar), the lt_card NAME / hairline / gold line rising in under the caption line over a soft
+  dark scrim (his white shirt behind it). `build/finish.py opener()`. PENDING HIS REVIEW.
+- (same) **An over-exposed SD source under his AE grade turns orange and "painted"** (AMN09 360p stage light: cheek luma
+  0.89, 7 % clipped): level it BEFORE the grade with exposure (`gain_level` 0.62), a slight soften against the PRE
+  sharpen bands (`pre_blur` 1.6 px), desaturation (`sat_level` 0.45) + grain = the brief's "desaturated archive grade".
+- (same) **Burned-in lower third on a full-bleed crop: the clean rows must FILL the frame**: LW's bar starts at row 912, so
+  `content_y` [0, 905] needs scale >= 1920 / 905 = 2.12 (at 1.9 the clamp centred and showed the bar). And a head lock
+  that would drop a high face toward the caption line by mirror-filling the TOP band reflects the top of his head into
+  it: never `expose_top` on a face whose crown is near the frame top (rejected sheet `proof/stageA_sheet_exposetop.jpg`).
+- (same) **The trial engine's caption turbulence field is 60 s long** (`aw_render.TURB['dur']`): a 61.7 s short crashed at
+  61.2 s; lengthen it in the job's finish.py (`R.TURB['dur'] = ...`), never in the shared engine.
+- (same, build) **Skin levelling, 4th build in a row: measure on the EXPORT, not only on test stills.** The finish test
+  frames looked fine, the first export measured LW R/G 2.21 / LIFE 1.96-2.08 / WDY2 1.87 (his 1.50-1.70): sat_level LW
+  0.55, LIFE 0.62, WDY2 0.75 + gamma 0.85, re-rendered as 3 frame ranges (`finish.py render --frames a:b`) and spliced
+  (`build/splice_multi.py`), not a full re-render. Pink / red-lit sets (Loose Women, BBC theatre) need it most.
+- (same, build) **Topaz per shot is measurable, so measure it**: `win/hold_scan.py` (runs of >= 3 identical frames the
+  input did not have) + a high-pass wobble metric. Chronos + stabiliser evened every talking shot, but on a near-still
+  listener (LW) and a handheld 29.97p crowd video (CP) it ADDED holds / wobble: those keep Stage A. A 29.97 source needs
+  no interpolation for a 30 fps export at all.
+- (same, his v1 note) **Under 60 s: HE picks the line, and he picked a MEANING cut, not the shortest tail.** Offered "my
+  father. Understand him," (−1.7 s); he cut "because he just made me angry and fearful when he was around" (−3.9 s,
+  57.77 s). Next time offer two or three candidate lines with their seconds, including mid-beat explanations, not one.
+  A late cut re-renders cheaply in the code kit: picture = old frames minus the removed range, finish only from the last
+  transition before the cut, splice (pin anything random-seeded by length, e.g. the caption turbulence field).
+
+**2026-10-31 — "Why Everyone Underestimated Michael Jackson"** (`projects/mj-outthink-them/`, 9th code build): his locked
+brief v3 → sequence PREVIEW (45.1 s) → his Tella 1 (letterbox the London footage, HD + Higgsfield parent photos, cut
+"shrewd behind it all" and "girl is mine / publishing's mine", Eddie's colour follows Michael's voice, purple dip, Bashir
+lip sync, transitions + zooms "you know my rules") → built and DELIVERED v1 ~17:40 (41.37 s, Final Renders + Exports,
+REPORT.md). At his review.
+- **A Tella on a preview records the preview's SOUND too**: the transcript interleaves the clip's words with his notes. The
+  preview's burned tag (beat · source · in-point / preview seconds) read off the Tella frames at 1, 2 and 4 per second
+  (`brief/tella/f/labels*.png`) maps every Tella second to a preview frame, so each "this" resolves to an exact moment.
+  Keep the tag on every sequence preview.
+- **"Fade the colours when he's pretending to be Michael"**: an impressionist's voices separate by pitch + the story
+  (`win/pitch.py`: Eddie's own 80-130 Hz; his Michael 140-250, his Paul 180-400). Saturation keys on the line cuts with
+  0.2 s fades (faded = 0.22, not grey), and the zoom as chained KEYS in one layer (push-in, +0.04 pull-back per Michael
+  line; `finish.py z_at` 'keys'): no reset across the same-camera jump cuts.
+- **A 115 px face in a 640x358 stage video cannot take a hard head lock**: the track noise (10-17 Proteus px) shakes the
+  picture. Gaussian on the nose track (sigma 6 source frames, `build/smooth_track.py`) keeps the follow; a letterboxed
+  lock clamps to the BAND, not the frame (`stage_a.py band_clamp`).
+- **Caption base when the talkers' sources frame the head high** (Eddie / Matt / Bashir: the cover clamp leaves lips at
+  y720-850): raise the ONE base inside his y940-1130 (`caption_shift` −85 → ~y950-1000) and move the letterboxes and
+  photos up to it; a finish-side `lift` (90 px) moves a letterboxed source without re-rendering Stage A / Topaz.
+- **An HD interview frame cropped 9:16 is an extreme close-up once letterboxed** (Katherine cut at the eyebrows): crop the
+  WIDE frame instead (logo and background photo frames out), upscale that (Higgsfield 4K, 2 credits) and band it.
+- **Whisper invents grammar at a joint** ("He's / There's two sides to him" after "lipstick", "going to", "are you",
+  "can" for "do"): settle every caption word with forced-alignment hypotheses (`win/fa_hyp.py`) + windowed Whisper on the
+  source, and prove the joint with a 5 ms strip (the "he's" scored 0.08: it was the /t/ aspiration of "two").
+- **"His lips are not synced" on a question asked off camera**: measure the bilabials (`win/plosive_check.py`, fps-aware):
+  in sync within a frame on 7 events (no slip). The interviewer's voice over the subject's closed mouth is what reads as
+  unsynced; say so in the report rather than slipping a synced source.
+- **One 8 GB card, four sessions**: wait on the holder's pid with a background until-loop (+ ≥ 4.5 GB free), let the parent
+  order the queue, run Topaz + finish back to back, then send "card free". Chronos stuttered the near-still listener
+  shot (Bashir's question): keep Stage A there (`win/hold_scan.py`), Patrick's rule held.
+- (same, my QA after v1) **Scan the FILE for silences, every build**: a 0.56 s room-tone pause sat inside Eddie's last line
+  because wav2vec2 stretched "that's" over it (the third stretched word in two days: Patrick's "And", this job's payoff
+  "that"), so the piece never split at the pause. A 10 ms RMS scan at 22 dB under speech (> 0.25 s runs) found it (0.66 s)
+  and proves it gone in v2. Fix = measured OVERRIDE + EDGES in seq/edl.py, then the late-cut recipe (picture minus the
+  frames, finish from the zoom group's changed key only, splice). Whisper's segment gaps in a re-ASR are the cheap tell.
+
+- 2026-10-31 (Conrad Murray "didn't kill MJ", `projects/conrad-murray-didnt-kill-mj/`, his Tella on my SEQUENCE PREVIEW):
+  **a brief written from YouTube captions doesn't know who speaks.** The brief gave "None. None. Absolutely nothing." to
+  Murray; a two-speaker voice match on the same recording (`win/who.py`: MFCC GMMs trained on known Hayes / known Murray
+  speech, LLR per word) showed Murray "None." / Hayes "None? Absolutely nothing?" / Murray "Nothing." Run it on every
+  interview exchange the brief attributes; lips can't settle it when the broadcaster laid a reaction shot under the line.
+- (same) **"If the camera shot is not actually at him it's not worth it, keep it at the reporter"** (his Tella): never put
+  a silent listening shot of the subject under the subject's own words ("he's not speaking but he's speaking, the viewer
+  will be confused"); the interviewer on screen is right, and a wide two-shot avoids a same-camera jump between two of her
+  close-ups. The reverse (the subject listening under the interviewer's words) is fine (B1 hook).
+- (same) **A level dip is not a word edge.** My "Jackson" edge (9:58.72) came from a dip in the level strip: it was the
+  /k/-/s/ closure INSIDE the name, and the ASR join test "heard" Jackson anyway (it fills names in). He heard "Jacks-".
+  Find edges with wav2vec2 CHARACTER alignment + the spectral centroid (s = 3-5 kHz, n = ~1 kHz) before trusting a dip.
+- (same) **Letterbox = his answer for low-quality sources, per shot** (360p courtroom, CNN 720p Katherine), and they
+  ZOOM IN while the 60 Minutes HD parts ZOOM OUT ("this is too zoomed in already"). Build the band from the source's
+  CLEAN rows only (top + content_y * scale), so a burned-in lower third can't enter it, and set the band top so the top
+  glow bar is still below y200 at the END of the push (a 1.16 push moved it from 230 to 173).
+- (same) **Labels = lower thirds from the BOTTOM with "a little nice animation integrated with my AW style"**: the card's
+  rule as his glow bar drawing out from the centre, the name rising, the role/year following (`finish.py lower_thirds`).
+- (same) **His height, measured per shot, not per camera**: the mouth corners must sit at <= 950 (listening), 920 (talking)
+  or 890 (a subject who opens wide), the caption block being y~1020-1070 (`win/shot_y.py`); one height per same-camera
+  run (head steady across cuts), the most-lifted one. When a lift exposes the bottom, fill it with the blurred REAL bottom
+  edge stretched down and darkened (`stage_a.soft_fill`): the Motion-Tile mirror drew a collar "V" and, blurred, his lips.
+- (same) **Skin levelled per camera SETUP, not per file**: Hayes and Murray share the 60M file but measured R/G 2.17 vs
+  2.7-2.8 under his grade; `sat_level` keyed by setup (M60 0.46 + gamma 0.85, H60 0.55, M911 0.72, H911 0.85) -> 1.5-1.7.
+- (same) **Purple added to the caption styles** (his Tella: "white and purple"): his "pink" is already violet-magenta
+  (#9D10C0 -> #DE64F1), so purple = a blue-violet (#5C28D6 -> #B08CFF) to read apart from it.
+- (same) **Write the catalog pass BEFORE Stage A** (it was written during the build here; it changed nothing, but the rule
+  is before the first edit).
+- (same) **YouTube: one bot check (HTTP 429) cleared on a plain retry 3 min later; subtitle requests kept 429ing**:
+  download video and subs separately so a sub error never aborts the video.
+- (same, build) **Topaz on a SHARED GPU can take hours** (the per-shot stb + Chronos pass ran 7 of 49 segments in 25 min
+  while another session's finish render held the card). For tripod interviews the head lock already steadies; the 25p
+  cadence can be evened IN Stage A with the engine's Horn-Schunck flow in-betweens (`stage_a.interp_frame`, flows cached
+  per frame pair, ~2 fps). **Never interpolate across a source cut**: a flow blend of Hayes into Murray made a warped frame
+  at two cuts inside the 911 clip (final QA, frame by frame); detect the cut by the frame difference and hold the shot's own
+  frame (and its head-lock anchor).
+- (same, QA) **`fps=1` contact sheets sample the LAST frame of each second (k + 0.47 s)**: "9 s" showing Murray was 9.47,
+  after the 9.43 cut. Pull exact frames by number (`select=eq(n,…)`) before chasing a "wrong picture".
+- (same, audio) **A whispered answer can vanish under a transition swish's pre-roll** (Murray's 2nd "Yes", RMS -33 dB vs
+  ~-13 dB speech): the final-mix re-ASR caught it. Fix = that piece +8 dB and the swish STARTING on the cut; a label that
+  enters with a transition shares its swish. Re-ASR the final mix every time; ASR in long windows drops quiet short words
+  from context, so confirm a "missing" word in an isolated window before changing anything.
+- (same, his note on v2) **Labels go at the BOTTOM** (README § 8, memory feedback-labels-at-bottom): v3 moved the four
+  name cards from y0 230 to y0 1270 (London: y0 1385, on the twin fill under its band) and re-rendered ONLY the card
+  frame ranges (`finish.py render --frames`, `build/splice_multi.py`). And **`caption_shift` is positive-UP**
+  (`finish.py` samples pre(y + s)): my −85 meant to raise the line moved it DOWN to ~y1135; measure the caption text rows
+  on a test still after ANY shift change (white-pixel rows), never trust the sign from memory.
+- (same, v3) **`build/splice_multi.py` / `splice_ranges.py` darkened every frame ~4-5 luma levels per pass**: the raw
+  yuv420p writer had no input range, so ffmpeg range-converted on the way in (63.8 → 60.2). Caught only because the
+  v2 → v3 frame diff showed EVERY frame changed, not just the card windows. Fix: `-color_range tv -colorspace bt709`
+  BEFORE `-f rawvideo -i -` in the writer (patched in mj-outthink-them; every other job's kit copy still has it). After
+  any splice, diff old vs new frame by frame: only the replaced ranges may change.

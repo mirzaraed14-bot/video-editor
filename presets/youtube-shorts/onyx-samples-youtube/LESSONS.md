@@ -281,3 +281,26 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
     ('IS LIKE "HUH?' ... 'IT'S NICE"'): both verified on full-size frames.
   - **(5) This room's noise floor is -42..-46 dBFS**, so the -42 dBFS run rule caught only fragments of each pause. The job's
     make_edl cuts each inter-word gap from its first to last quiet frame, with a threshold relative to the gap's own floor.
+- 2026-10-31 (Scott Clary Pincus, client job): **`yt_build.py` never splits Chronos inside a SPLIT shot.** Its 60 fps segments are the shot
+  starts plus head-lock joints inside A shots only, so the face jump cuts in a SPLIT's top (Pincus: frames 27, 48, 122) and the bottom
+  panel's hard cuts (48, 73) would be blended into one morph frame each. **Workaround used:** run `workflows/topaz-iris.py` by hand
+  on the UNSHARPENED `picture.whip.raw.mp4` (when the check was sharpened) with those frames added to `--segments`, sharpen, then
+  `yt_build.py <job> final --skip picture,overlay`. **FIXED the same day** (Affan: "Yes, fix the kit"): `yt_build.split_edges()`
+  adds, inside SPLIT shots only, the base cut's joints from `transcript/cuts.json` (where the source jumps, and only if its frames add
+  up to the spec's) and the B-roll panel's own hard cuts (panel frame difference > 15 and > 8x its neighbours' median), dropping any
+  edge < 4 frames from another. Regression on every 60 fps spec: the non-split jobs (Daymond, Chris Do, Morgan, Patron, War Dogs)
+  and Bombas get identical edges; Pincus gets exactly the hand-run 27/48/73/122; Marvel's detected panel cuts 781/956 equal its
+  `s06-bottom.mp4.json` part edges. Backup `kit/yt_build.py.bak-2026-10-31`. Detail: `projects/_client-scott-clary/pincus-ignored-facebook/BRIEF.md` ▶ STATUS.
+
+- 2026-10-31 (Onyx batch 6, Still Here Hollywood x Kevin Pollak, `projects/stillhere-pollak-acting-class/`, builder lessons):
+  (1) **A zoom key found by word text takes the FIRST match**: `wf("what")` on the last shot ("what it took") returned "what you got"
+  18 s earlier, so the keys ran out of order (the IG copy stepped the picture 27 px in one frame; QA r1). Anchor every repeated word
+  with `after=` and assert the keys increase. (2) **`head_lock` must cover SPLIT tops too** when the top is tracked (`"track": true`):
+  build_spec's `IN_A` took A shots only and the split's jump cut at 294 snapped the head 90 px. (3) **WhisperX ran 0.2-0.25 s LATE**
+  on a few words of this 1080p podcast ("yes", "I hate school"): the kit's YT captions survived (onset snap), but anything keyed to the
+  raw stamps (IG lines, stage type) landed after the voice: re-time from the cut's 10 ms envelope in the job's transcript patch.
+  (4) **Mixkit's 1080/1440/2160 files now answer 403 for many clips** (720 still 200): check HEAD before planning a full-bleed shot;
+  a 720p clip fits a SPLIT bottom (1080x828) at 1.15x. (5) Bing via curl is still region-skewed (Kevin Hart for "Kevin Pollak");
+  the built-in browser's Bing Images page + `a.iusc` m JSON works (Pincus `work/receipts/fetch.py` downloads the picks).
+  (6) A section re-encoded from an input-side seek between frames starts its VIDEO one frame late (start_time 0.033 vs audio 0);
+  seek on a frame boundary (k * 1001 / 30000) and both streams start at 0.

@@ -1,6 +1,61 @@
 # RUN: "Why Michael Jackson's Mother Never Got Over Him 💔" (Abundance Wisdom short, Katherine × Michael)
 
-## ▶ STATUS: resume here (2026-10-29 ~14:45): RAW SEQUENCE v2 PLACED in ABW10 + verified, waiting on his pass
+## ▶ STATUS: resume here (2026-10-29 ~21:15): v1 EXPORTED, waiting on his review
+- **`E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Katherine Never Got Over Him.mov`** + identical
+  `X:\Claude Projects\Exports\Katherine Never Got Over Him.mov` (= `outputs/`, MD5 9d221391…; v2 = the exposure fade at 0.3, the never-reviewed full-peach v1 kept as `outputs/Katherine Never Got Over Him (v1).mov`, MD5 0044fcb7…): 1080x1920 30 fps, 926 f,
+  30.867 s, 39.8 Mb/s BT.709, AAC 48 kHz, **−14.2 LUFS, −3.2 dBTP, export QA PASS**. From `outputs/kat_v2_60.mp4`. Jitter + bilabial sync QA in B9-REPORT.md.
+  Checks: 13 cuts clean on the 30 fps file (`proof/final_edges.jpg`), fade to black by the last frame (luma 2.3), "tears up"
+  frame `proof/final_tears_up.jpg`, finish stills of every shot `proof/test_v3_big.jpg`, skin sat 0.47–0.59 / R/G 1.50–1.70.
+  **B9 report: `B9-REPORT.md`.**
+- Fixes made during the build (tell him): Jermaine in profile → locked on the CENTRE of his head (`build/head_dx.py`;
+  a nose lock cut the back of his head on clips 7–9); skin levelled before his grade (v0 too red); v1 renders kept in
+  `renders/v1/` (the nose-locked Jermaine).
+- Re-render after a note (change ONLY what he names): `build/make_timeline.py` (or `captions/captions.txt` → `make_plan.py`
+  → `render_caps.py render caps_code.mov` → `capcut_pass.py`; or `build/audio.py`) → Stage A only if framing/sources change
+  (`stage_a.py render` → `topaz_his.py` → `align_frames.py`) → `finish.py render ../renders/kat_picture.mov
+  ../captions/caps_capcut.mov ../outputs/kat_v3_60.mp4 --audio ../renders/kat_audio.wav` (from build/, GPU venv) →
+  `python build/export.py …` → `win/final_edges.py` → both folders (keep the reviewed v2 as `(v2).mov`).
+
+## (previous) STATUS (2026-10-29 ~20:45): CODE BUILD RUNNING (his "go" ~17:50)
+- **Done:** catalog pass (BRIEF.md § Catalog pass) · `build/` = copy of Janet's kit (stage_a, finish, align_frames, audio,
+  export, a1_his) + `make_timeline.py` (his 14 clips from raw, 7 zooms, 6 transitions, fade 30.467→30.867) · `stage_a.py
+  track` (14 shots, 0 misses) · `geom.py` → `framing.json` (**his lift pick 2, ~18:10**: band edge y1545 = 375 px for
+  Katherine + Joe, x locked / y static per camera; pick 1 "lips clear every frame" needed 560–585 px; `proof/lift_choice.jpg`)
+  · Oprah 115 % (2.0455) full lock · Jermaine his 400.2 %, locked (clip 9 now on HIM) · Stage A `renders/kat_stageA.mov`
+  (1852 f) · A1 from RAW `seqref/raw/a1.wav` (`build/a1_his.py`, 2-frame crossfades) · captions: WhisperX words
+  (`captions/transcript/words.json`; edits: "Then" 7.71 skipped, "but her to say this" = faster-whisper 3/3, the "tears
+  up" pseudo-words 27.30–28.10; original `words.asr.json`) → `captions.txt` (45 captions, 12 coloured: red/blue/orange/
+  pink/yellow/green, one accent each) → `caps_code.mov` → `caps_capcut.mov` (1852 f) · audio `renders/kat_audio.wav`
+  (−14.2 LUFS pre-export, swishes 21 dB under, fresh Epidemic set `build/sfx/SOURCES.md`, no music; Jermaine +11.1 dB
+  level match) · zoom layers (`centers.json` = framing pivots; clip 13 ease 0.45 pull-out) · skin levelled before his
+  grade (sat kat 0.72 / jow 0.7 / oprah 0.72 / jerm 0.9 + gamma 0.85; v0 was sat 0.59–0.66, R/G 1.8–1.9).
+- **Running:** Topaz (`../aw-code-trial-parents/stageB/topaz_his.py renders/kat_stageA.mov renders kat`).
+- **Next:** `build/align_frames.py renders/kat_stab_chr2_iris3_prob4.mov renders/kat_stageA.mov renders/kat_picture.mov`
+  → watermark check → `finish.py stills` (every shot) → `finish.py render ../renders/kat_picture.mov
+  ../captions/caps_capcut.mov ../outputs/kat_v1_60.mp4 --audio ../renders/kat_audio.wav` → `export.py` → edges check →
+  `Katherine Never Got Over Him.mov` to Final Renders + `X:\Claude Projects\Exports\` → B9 report.
+
+## (previous) STATUS (2026-10-29 ~17:30): HIS RE-CUT 30.87 s + TELLA DIRECTION 1 resolved + band C → waiting on his go
+- **He re-cut "Katherine Never Got Over Him - raw cut" himself (ABW10, seq ID 7d093e80-…): 30.87 s, 14 clips, V1/A1 only.**
+  Read-only dump `premiere/his_cut.tsv` (`premiere/his_dump.js`; real out = inPoint + duration). His A1 rebuilt from
+  `seq_src/` + re-ASR'd: `win/his_a1.py` → `seqref/a1_his.wav`, `win/his_a1.json` (the words, no leaks; tails checked).
+  **His cut is the spec now.** The re-place recipe below is VOID: never `clear_ours.js` / `place.jsx` over his sequence.
+- His Tella (`guide/guide.mp4`, 4:37) resolved into BRIEF.md § HIS DIRECTION 1: no overlays; captions in the middle
+  (y≈1058, Janet's line); lift Katherine's + Joe's faces so the lips sit above the captions; 7 zoom groups (the ending
+  zooms in on 11–12, then 13 smoothly zooms out); transitions purple 3.267 / purple 7.70 / dark green 17.133 / purple 20.05
+  / dark green 22.733 / slight exposure 25.883 / fade out at the end; caption colours mixed, one accent per caption.
+- **Lift look = C (his pick, 17:30):** under the lifted KAT/Joe picture, the AW §4 dimmed 198 % fill at 43 % + glow line
+  (`proof/lift_options.jpg` panel C; KAT's bar and Joe's picture edge both come in at ~280–375 px).
+- **Note 2 (17:40):** a caption **"tears up"** over Katherine's silent crying pause, 27.30 → 28.15 seq (measured room tone
+  27.35–28.15 after "Oh gosh, I'm sorry"; "I'm sorry" resumes 28.15), same line/style, blue accent on "tears" (BRIEF note 7).
+- Waiting on: the go for the code build (~3–4 % of the weekly cap: 31 s, no cards, no cover).
+- Build next (on his go): copy `projects/janet-couldnt-cry/build/` → shot list from `premiere/his_cut.tsv` → Topaz
+  (Iris ≤ 1080p; interpolation) → head lock where it helps → framing (lift + band C; **fix clip 9's JERM framing**:
+  my v2 put it on the cabinet, Position −0.1976; he sits at x≈0.20–0.30) → zooms pivot on the lip line → transitions →
+  captions (y≈1058, Gretaros, mixed accents per AW §8, + the "tears up" card 27.30–28.15) → grade → audio −14 LUFS / ≤ −1 dBTP, no music → SFX (soft swishes on
+  the transitions) → test frames of every shot → render → export both folders → B9 report.
+
+## (previous) STATUS (2026-10-29 ~14:45): RAW SEQUENCE v2 PLACED in ABW10 + verified, waiting on his pass
 - **ABW10 › bin "Katherine Never Got Over Him" › "Katherine Never Got Over Him - raw cut"** (clone of "Onyx reaction
   template (empty)", 1080x1920 60 fps): **58.38 s**, V1/A1 31 clips, V2 = the Katherine backstage cover (picture only, its
   audio removed), 6 beat markers (name + card + warning), 78 Position keys on the 8 KAT clips. **Not saved** (he saves).
@@ -39,7 +94,9 @@
 |---|---|---|
 | 1 | Intake: five sources → `raw/` (copies) + `seq_src/` windows | ✅ (align 0–1 ms, `win/align_check.py`) |
 | 2 | Words + pieces by ear-proxy + runtime | ✅ 58.38 s (v2), no trims needed |
-| 2b | Raw sequence in ABW10 | ✅ v2 placed + verified 58.38 s (14:45) · his pass next |
+| 2b | Raw sequence in ABW10 | ✅ v2 placed 58.38 s (14:45) → **he re-cut it to 30.87 s** (his cut = the spec) |
+| 2c | His Tella direction 1 | ✅ resolved into BRIEF.md § HIS DIRECTION 1 (17:15) · lift look C (17:30), band pick 2 (18:10) · go 17:50 |
+| 3–8 | Code build → export | ✅ v1 exported 21:15 (QA PASS, both folders), B9-REPORT.md · waiting on his review |
 | 3 | Audio: 4 eras level-matched, −14 LUFS / ≤ −1 dBTP on the encoded file, 2–4 frame crossfades | pending (build) |
 | 4 | Grade: his warm MJ-family stack | pending |
 | 5 | Picture + graphics: 3 labels + 1 card, captions w/ red words, B6 push 100→110 % | pending |
@@ -98,3 +155,5 @@ this", "I think"; JOW "Mm-hmm", ", you know" ×2, the "she's…" false start, ",
   sheet (`-t` after `-i` truncated the retimed file to 1.40 s) → fixed (1.80 s); cover extended to 36.68 past the dissolve.
 - ~13:55: placed v1 (58.82 s), verified; read-back A1 re-ASR → v2 edges. ~14:20: re-place blocked by an auto-save; Premiere
   froze ~14:30 and recovered (Affan: "we're back"). ~14:40: v2 re-placed (untouched check first), verified, 58.38 s.
+- ~16:30: his Tella + his re-cut (30.87 s). Read his sequence read-only, rebuilt + re-ASR'd his A1, resolved every note against
+  his timeline frames, measured lip heights, rendered the lift test (`proof/lift_options.jpg`). Found my clip-9 framing bug.

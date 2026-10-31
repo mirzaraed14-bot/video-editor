@@ -68,6 +68,8 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
   scan faces with `yt_faces.py --step 1`) and **`zoomkeys` per speaker shot** (eased, zoom only on emphasised lines and back out; a quick
   zoom-in after a whip; never a scale jump at a cut). Splits are not tracked (Affan 2026-10-20 Tella feedback); `fps_out=60` makes `yt_build.py` double the finished picture with
   Topaz Chronos per shot (`topaz-iris.py --fps-mult 2`, never across a cut) and render the captions at 60. Both on by default for Scott.
+  Inside a SPLIT, the takes also break at its base-cut joints and its B-roll panel's own hard cuts (2026-10-31, `split_edges`; the build
+  log prints them as "Chronos: N more take edges inside SPLIT shots").
 - **Before the build (Scott):** freshness check + locked prediction + pre-mortem + title + thumbnail in
   `presets/youtube-shorts/scott-clary/RESULTS.md` (ENGINE.md has the line; `thumbnail.py` draws the locked cover format).
 

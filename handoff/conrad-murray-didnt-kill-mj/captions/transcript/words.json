@@ -1,0 +1,796 @@
+{
+"_about": "timeline seconds, win/fa words (+ seq/edl.py overrides) through seq/edl.json",
+"clips": [
+{
+"duration": 49.3667,
+"words": [
+{
+"w": "Michael",
+"who": "HAYES",
+"start": 0.08,
+"end": 0.46
+},
+{
+"w": "Jackson",
+"who": "HAYES",
+"start": 0.701,
+"end": 1.262
+},
+{
+"w": "died",
+"who": "HAYES",
+"start": 1.447,
+"end": 2.008
+},
+{
+"w": "because",
+"who": "HAYES",
+"start": 2.18,
+"end": 2.621
+},
+{
+"w": "you",
+"who": "HAYES",
+"start": 2.813,
+"end": 3.013
+},
+{
+"w": "killed",
+"who": "HAYES",
+"start": 3.074,
+"end": 3.394
+},
+{
+"w": "him",
+"who": "HAYES",
+"start": 3.434,
+"end": 3.575
+},
+{
+"w": "I",
+"who": "MURRAY",
+"start": 3.747,
+"end": 3.827
+},
+{
+"w": "did",
+"who": "MURRAY",
+"start": 3.847,
+"end": 3.967
+},
+{
+"w": "not",
+"who": "MURRAY",
+"start": 4.027,
+"end": 4.207
+},
+{
+"w": "kill",
+"who": "MURRAY",
+"start": 4.247,
+"end": 4.448
+},
+{
+"w": "Michael",
+"who": "MURRAY",
+"start": 4.488,
+"end": 4.768
+},
+{
+"w": "Jackson",
+"who": "MURRAY",
+"start": 4.809,
+"end": 5.209
+},
+{
+"w": "You",
+"who": "HAYES",
+"start": 5.38,
+"end": 5.52
+},
+{
+"w": "had",
+"who": "HAYES",
+"start": 5.58,
+"end": 5.761
+},
+{
+"w": "your",
+"who": "HAYES",
+"start": 5.801,
+"end": 5.921
+},
+{
+"w": "cell",
+"who": "HAYES",
+"start": 6.001,
+"end": 6.241
+},
+{
+"w": "phone",
+"who": "HAYES",
+"start": 6.281,
+"end": 6.602
+},
+{
+"w": "I",
+"who": "MURRAY",
+"start": 6.78,
+"end": 6.84
+},
+{
+"w": "had",
+"who": "MURRAY",
+"start": 6.86,
+"end": 7.0
+},
+{
+"w": "my",
+"who": "MURRAY",
+"start": 7.02,
+"end": 7.141
+},
+{
+"w": "cell",
+"who": "MURRAY",
+"start": 7.161,
+"end": 7.341
+},
+{
+"w": "phone",
+"who": "MURRAY",
+"start": 7.381,
+"end": 7.501
+},
+{
+"w": "You",
+"who": "HAYES",
+"start": 7.68,
+"end": 7.82
+},
+{
+"w": "didn't",
+"who": "HAYES",
+"start": 7.88,
+"end": 8.14
+},
+{
+"w": "call",
+"who": "HAYES",
+"start": 8.26,
+"end": 8.581
+},
+{
+"w": "911",
+"who": "HAYES",
+"start": 8.681,
+"end": 9.362
+},
+{
+"w": "I",
+"who": "MURRAY",
+"start": 9.547,
+"end": 9.627
+},
+{
+"w": "did",
+"who": "MURRAY",
+"start": 9.647,
+"end": 9.768
+},
+{
+"w": "not",
+"who": "MURRAY",
+"start": 9.788,
+"end": 9.928
+},
+{
+"w": "call",
+"who": "MURRAY",
+"start": 9.948,
+"end": 10.128
+},
+{
+"w": "911",
+"who": "MURRAY",
+"start": 10.168,
+"end": 10.769
+},
+{
+"w": "You",
+"who": "HAYES",
+"start": 10.83,
+"end": 10.97
+},
+{
+"w": "called",
+"who": "HAYES",
+"start": 11.01,
+"end": 11.471
+},
+{
+"w": "his",
+"who": "HAYES",
+"start": 11.491,
+"end": 12.292
+},
+{
+"w": "assistant",
+"who": "HAYES",
+"start": 12.48,
+"end": 13.041
+},
+{
+"w": "Yes",
+"who": "MURRAY",
+"start": 13.213,
+"end": 13.453
+},
+{
+"w": "To",
+"who": "HAYES",
+"start": 13.613,
+"end": 13.733
+},
+{
+"w": "call",
+"who": "HAYES",
+"start": 13.773,
+"end": 14.113
+},
+{
+"w": "security",
+"who": "HAYES",
+"start": 14.374,
+"end": 15.015
+},
+{
+"w": "Yes",
+"who": "MURRAY",
+"start": 15.18,
+"end": 15.381
+},
+{
+"w": "That",
+"who": "SHAFER",
+"start": 15.547,
+"end": 15.787
+},
+{
+"w": "is",
+"who": "SHAFER",
+"start": 15.98,
+"end": 16.08
+},
+{
+"w": "so",
+"who": "SHAFER",
+"start": 16.301,
+"end": 16.641
+},
+{
+"w": "egregious",
+"who": "SHAFER",
+"start": 16.813,
+"end": 17.314
+},
+{
+"w": "that",
+"who": "SHAFER",
+"start": 17.48,
+"end": 17.681
+},
+{
+"w": "I",
+"who": "SHAFER",
+"start": 17.861,
+"end": 17.921
+},
+{
+"w": "actually",
+"who": "SHAFER",
+"start": 18.001,
+"end": 18.341
+},
+{
+"w": "find",
+"who": "SHAFER",
+"start": 18.421,
+"end": 18.661
+},
+{
+"w": "it",
+"who": "SHAFER",
+"start": 18.701,
+"end": 18.761
+},
+{
+"w": "difficult",
+"who": "SHAFER",
+"start": 18.947,
+"end": 19.387
+},
+{
+"w": "to",
+"who": "SHAFER",
+"start": 19.467,
+"end": 19.587
+},
+{
+"w": "even",
+"who": "SHAFER",
+"start": 19.707,
+"end": 19.908
+},
+{
+"w": "comprehend",
+"who": "SHAFER",
+"start": 19.968,
+"end": 20.608
+},
+{
+"w": "that",
+"who": "SHAFER",
+"start": 20.78,
+"end": 20.92
+},
+{
+"w": "you",
+"who": "SHAFER",
+"start": 20.96,
+"end": 21.06
+},
+{
+"w": "could",
+"who": "SHAFER",
+"start": 21.08,
+"end": 21.22
+},
+{
+"w": "have",
+"who": "SHAFER",
+"start": 21.26,
+"end": 21.4
+},
+{
+"w": "a",
+"who": "SHAFER",
+"start": 21.44,
+"end": 21.48
+},
+{
+"w": "patient",
+"who": "SHAFER",
+"start": 21.6,
+"end": 22.121
+},
+{
+"w": "who",
+"who": "SHAFER",
+"start": 22.313,
+"end": 22.434
+},
+{
+"w": "has",
+"who": "SHAFER",
+"start": 22.474,
+"end": 22.614
+},
+{
+"w": "arrested",
+"who": "SHAFER",
+"start": 22.654,
+"end": 23.134
+},
+{
+"w": "and",
+"who": "SHAFER",
+"start": 23.313,
+"end": 23.433
+},
+{
+"w": "you",
+"who": "SHAFER",
+"start": 23.453,
+"end": 23.593
+},
+{
+"w": "call",
+"who": "SHAFER",
+"start": 23.653,
+"end": 23.993
+},
+{
+"w": "and",
+"who": "SHAFER",
+"start": 24.113,
+"end": 24.193
+},
+{
+"w": "you",
+"who": "SHAFER",
+"start": 24.233,
+"end": 24.474
+},
+{
+"w": "leave",
+"who": "SHAFER",
+"start": 24.647,
+"end": 24.927
+},
+{
+"w": "a",
+"who": "SHAFER",
+"start": 25.007,
+"end": 25.087
+},
+{
+"w": "voice",
+"who": "SHAFER",
+"start": 25.348,
+"end": 25.708
+},
+{
+"w": "message",
+"who": "SHAFER",
+"start": 25.788,
+"end": 26.208
+},
+{
+"w": "for",
+"who": "SHAFER",
+"start": 26.38,
+"end": 26.5
+},
+{
+"w": "someone",
+"who": "SHAFER",
+"start": 26.54,
+"end": 26.9
+},
+{
+"w": "It's",
+"who": "SHAFER",
+"start": 27.08,
+"end": 27.241
+},
+{
+"w": "just",
+"who": "SHAFER",
+"start": 27.381,
+"end": 27.681
+},
+{
+"w": "inconceivable",
+"who": "SHAFER",
+"start": 27.961,
+"end": 28.862
+},
+{
+"w": "to",
+"who": "SHAFER",
+"start": 29.047,
+"end": 29.207
+},
+{
+"w": "me",
+"who": "SHAFER",
+"start": 29.227,
+"end": 29.527
+},
+{
+"w": "We",
+"who": "CLERK",
+"start": 29.713,
+"end": 30.014
+},
+{
+"w": "the",
+"who": "CLERK",
+"start": 30.18,
+"end": 30.3
+},
+{
+"w": "jury",
+"who": "CLERK",
+"start": 30.361,
+"end": 30.681
+},
+{
+"w": "find",
+"who": "CLERK",
+"start": 30.78,
+"end": 31.04
+},
+{
+"w": "the",
+"who": "CLERK",
+"start": 31.06,
+"end": 31.16
+},
+{
+"w": "defendant",
+"who": "CLERK",
+"start": 31.2,
+"end": 31.701
+},
+{
+"w": "Conrad",
+"who": "CLERK",
+"start": 31.88,
+"end": 32.421
+},
+{
+"w": "Robert",
+"who": "CLERK",
+"start": 32.501,
+"end": 32.781
+},
+{
+"w": "Murray",
+"who": "CLERK",
+"start": 32.841,
+"end": 33.162
+},
+{
+"w": "guilty",
+"who": "CLERK",
+"start": 33.347,
+"end": 33.808
+},
+{
+"w": "of",
+"who": "CLERK",
+"start": 33.98,
+"end": 34.1
+},
+{
+"w": "the",
+"who": "CLERK",
+"start": 34.12,
+"end": 34.22
+},
+{
+"w": "crime",
+"who": "CLERK",
+"start": 34.26,
+"end": 34.661
+},
+{
+"w": "of",
+"who": "CLERK",
+"start": 34.847,
+"end": 34.907
+},
+{
+"w": "involuntary",
+"who": "CLERK",
+"start": 34.967,
+"end": 35.709
+},
+{
+"w": "manslaughter",
+"who": "CLERK",
+"start": 35.749,
+"end": 36.41
+},
+{
+"w": "What",
+"who": "HAYES",
+"start": 36.58,
+"end": 36.74
+},
+{
+"w": "responsibility",
+"who": "HAYES",
+"start": 36.8,
+"end": 37.601
+},
+{
+"w": "do",
+"who": "HAYES",
+"start": 37.78,
+"end": 38.02
+},
+{
+"w": "you",
+"who": "HAYES",
+"start": 38.06,
+"end": 38.2
+},
+{
+"w": "take",
+"who": "HAYES",
+"start": 38.28,
+"end": 38.581
+},
+{
+"w": "For",
+"who": "HAYES",
+"start": 38.747,
+"end": 39.548
+},
+{
+"w": "his",
+"who": "HAYES",
+"start": 39.588,
+"end": 39.708
+},
+{
+"w": "death",
+"who": "HAYES",
+"start": 39.769,
+"end": 40.029
+},
+{
+"w": "None",
+"who": "MURRAY",
+"start": 40.213,
+"end": 40.423
+},
+{
+"w": "None",
+"who": "HAYES",
+"start": 40.613,
+"end": 40.893
+},
+{
+"w": "Absolutely",
+"who": "HAYES",
+"start": 41.08,
+"end": 41.48
+},
+{
+"w": "nothing",
+"who": "HAYES",
+"start": 41.5,
+"end": 41.79
+},
+{
+"w": "Nothing",
+"who": "MURRAY",
+"start": 41.888,
+"end": 42.308
+},
+{
+"w": "Michael",
+"who": "MURRAY",
+"start": 42.477,
+"end": 42.778
+},
+{
+"w": "Jackson",
+"who": "MURRAY",
+"start": 42.822,
+"end": 43.267
+},
+{
+"w": "is",
+"who": "MURRAY",
+"start": 43.347,
+"end": 43.557
+},
+{
+"w": "a",
+"who": "MURRAY",
+"start": 43.601,
+"end": 43.641
+},
+{
+"w": "drug",
+"who": "MURRAY",
+"start": 43.681,
+"end": 43.962
+},
+{
+"w": "addict",
+"who": "MURRAY",
+"start": 44.062,
+"end": 44.343
+},
+{
+"w": "for",
+"who": "KATHERINE",
+"start": 44.513,
+"end": 44.734
+},
+{
+"w": "a",
+"who": "KATHERINE",
+"start": 44.754,
+"end": 44.774
+},
+{
+"w": "person's",
+"who": "KATHERINE",
+"start": 44.947,
+"end": 45.348
+},
+{
+"w": "life",
+"who": "KATHERINE",
+"start": 45.428,
+"end": 45.689
+},
+{
+"w": "four",
+"who": "KATHERINE",
+"start": 45.88,
+"end": 46.1
+},
+{
+"w": "years",
+"who": "KATHERINE",
+"start": 46.16,
+"end": 46.501
+},
+{
+"w": "in",
+"who": "KATHERINE",
+"start": 46.601,
+"end": 46.681
+},
+{
+"w": "jail",
+"who": "KATHERINE",
+"start": 46.741,
+"end": 47.041
+},
+{
+"w": "is",
+"who": "KATHERINE",
+"start": 47.102,
+"end": 47.182
+},
+{
+"w": "not",
+"who": "KATHERINE",
+"start": 47.242,
+"end": 47.442
+},
+{
+"w": "enough",
+"who": "KATHERINE",
+"start": 47.502,
+"end": 47.762
+},
+{
+"w": "I'll",
+"who": "KATHERINE",
+"start": 47.947,
+"end": 48.107
+},
+{
+"w": "never",
+"who": "KATHERINE",
+"start": 48.147,
+"end": 48.327
+},
+{
+"w": "see",
+"who": "KATHERINE",
+"start": 48.347,
+"end": 48.507
+},
+{
+"w": "my",
+"who": "KATHERINE",
+"start": 48.527,
+"end": 48.668
+},
+{
+"w": "son",
+"who": "KATHERINE",
+"start": 48.728,
+"end": 48.948
+},
+{
+"w": "again",
+"who": "KATHERINE",
+"start": 48.988,
+"end": 49.268
+}
+]
+}
+]
+}

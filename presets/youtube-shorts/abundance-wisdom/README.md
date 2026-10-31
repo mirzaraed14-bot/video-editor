@@ -187,6 +187,15 @@ placed back in AE. Measured on the reference short (46 captions over 39.3 s):
 **Density (the creator's Eminem edit):** about **one caption in three** carries a colour; red only for the real
 insult or wound; numbers mostly stay white.
 
+**Colour MIX — the creator, 2026-10-29 (Tella on the Katherine short; overrides "red only" habits):** the last few shorts
+went white + red only; he wants a **mixture across every short**. Rules:
+- **White is constant.** Every caption is white plus **at most ONE accent colour**; never two accents in one caption
+  (no blue + pink in the same caption).
+- **Vary the accent through the short** (white + orange, white + blue, white + pink… all the way through), chosen by meaning:
+  **pink** = love, affection · **yellow** = happiness, sunshine · **red** = evil, bad · **blue** = mellow, emotional
+  (his meaning; it extends Light Blue's names/places use above) · **green** = very positive · **orange** in the mix too.
+- Still about one caption in three coloured (density above); red stays rare because it now means evil/bad, not "emphasis".
+
 **Punctuation: none except `?` and `!`.** No commas, no full stops — confirmed by the creator
 2026-09-21. (Quotes around a quoted insult are still fine.)
 
@@ -214,6 +223,11 @@ carries 12 styles; the caption set is:
 - **Asterisks + italic = non-speech annotation** (\*SAYS IT AGAIN\*, \*FRUSTRATED\*).
 - Quotes kept around quoted insults (“WACKO JACKO”, “HE'S A JACKO”).
 - Names spelled correctly even where the audio is unclear.
+
+**Labels (name / role lower thirds, date and source cards) sit at the BOTTOM, always** (Affan 2026-10-31: "Nobody looks
+at the top"). Card top ~y1260-1280 (`finish.py lt_card` default 1280), below the caption block, never into the bottom
+300 px (y > 1620), never on a mouth; on a letterboxed shot it may sit on the black under the band. This overrides an
+editor brief that says "top third".
 
 ## 9. Audio
 
