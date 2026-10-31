@@ -3,6 +3,17 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-10-31: a dropped reply hides inside a STRETCHED word (ABW10 Seq 35, jealous-uncle skit)
+
+- **WhisperX dropped a whole 1 s reply ("haan yar sahi hai yar") and stretched the next word ("beta", 0.86 s) over the hole**,
+  so `words.json` had no gap and `transcript_check.py` printed "OK: transcript complete". Only the English listener
+  (`codeswitch.json`) heard it; ur + hi + en wide re-decodes confirmed it. → habit: read `codeswitch.json` line by line
+  against the draft every job, and treat any single WhisperX word longer than ~0.6 s as a suspect gap. Line starts at a
+  disputed boundary come from the speech envelope (20 ms RMS), not from faster-whisper's word times (0.1-0.3 s early here).
+- **Whisper's ونڈا / بھنڈا / بندہ at a clause start was "warna"** (wide ur window + en "Otherwise" twice).
+- **A reel that is ALL one character's dialogue quotes every line** (skit rule), the quoted thing inside it ("ke mai videos
+  banata hun") included, one pair per line.
+
 ## 2026-10-28: a sung chant is not missing words (ABW10 Seq 33)
 
 - **A sung or drawn-out phrase fails HANGING with nothing missing** ("good morning teacher / assalam o alaikum", 2.1–2.4 s for

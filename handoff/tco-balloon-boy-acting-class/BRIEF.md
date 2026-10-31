@@ -1,6 +1,38 @@
 # tco-balloon-boy-acting-class: Onyx sample Short for True Crime Obsessed (Patrick Hinds & Gillian Pensavalle) (batch 6, TOP priority)
 
 ## ▶ STATUS: resume here
+- **2026-10-31 ≈20:10 DONE: BOTH FINALS DELIVERED** (30 fps native per Affan 18:30, no Topaz): `outputs/tco-balloon-boy-acting-class.sample-yt.final.mp4`
+  (= yt v4) and `.sample-ig.final.mp4` (= ig v3), copied to `X:\Claude Projects\Exports\tco-balloon-boy-acting-class.yt.final.mp4` / `.ig.final.mp4`
+  with `.yt.proof-sheet.jpg` / `.ig.proof-sheet.jpg`; 1080x1920, 30 fps, 1120 frames, 37.33 s, −12.1 LUFS, −2.2 dBTP, AAC 256k.
+  QA: ONE sonnet reviewer (r1, 8 findings), every confirmed defect fixed and re-verified on frames (`yt/work/verify_v4.jpg`,
+  `ig/work/verify_v3.jpg`); cue checks PASS (YT swishes 19.0-22.6 dB under the voice, IG 18.6-22.0, subtle band); a faster-whisper read of
+  the final button: "These two met in an acting class in 1997. That's all. Oh, really?" with no false start and nothing after.
+  `workflows/graphics-qa.py` does not apply (no hf-graphics plan in this kit). To rebuild: `work/cut/make_edl.py` → splice.sh
+  (AMPLIFY_DB −2) → `work/cut/patch_transcript.py` → `work/cut/cammap.py` + segstarts → `yt/build_spec.py` → yt_faces (yt + `--dir ig`,
+  ig/spec.json from the YT shots) → `yt_build.py <job> vN` → `bash ig/run.sh build.py` → `bash ig/run.sh sound.py --mux --v N` → `work/finals.sh`.
+- FLAGS for Affan / the main session: (1) the sides were INVERTED in SEQUENCING (★ below; the sent title "She swore Balloon Boy was
+  real" is backwards: HE did); (2) "1997" is the year the Heenes MARRIED per Wikipedia (they met at an acting school in LA), spoken by
+  Gillian, captioned as said, on no card; (3) the frame-0 news alert is a 2009 KMGH / Fox News broadcast frame (licensing flag);
+  (4) beat 1 keeps Patrick's overlapping "Oh my God, really?" (it is under Gillian's "I've ever seen"); (5) NO beat before the button and NO
+  hold after "Oh, really?" (the false start "They-" was cut; the source has no silent tail): the brief's timing ask is not met, a 0.4-0.5 s
+  silent freeze on the last two-up frame is the only option (Affan's call); (6) no music bed (he scores the samples).
+- **20:00 QA r1 (ONE sonnet reviewer, defects only, on YT v3 + IG v2; scratch in the session scratchpad review/tco/) → fixed:**
+  (1) HIGH: Patrick's two "NO!" shots (s08, s12) put the seam caption on his open mouth (he leans in): z0 1.3 + fy_out 0.28 on those two;
+  (2) the cut ended 14 ms into "really?" (out 62.40): out-point 62.4333 (her "That's" starts 62.434; fw at 62.42 / 62.47 hears none of it);
+  (3) the YT marks panel showed headless figures: the mg-marks camera pulled back (the whole trio, X marks at panel y ~500);
+  (4) the watermark sat on Patrick's hairline in the YT two-ups: bottom panel fy_out 0.40 → 0.44;
+  (5) IG: 2 near-blank frames between the hook and the first stack: the hook leaves in 0.14 s and the stack's lead-in starts rising
+      0.12 s early; (7) the IG tags' decode shortened 0.42 → 0.30 s;
+  (8) a FALSE START "They- these two met" before the button (58.81-58.95, voiced; fw with the prompt reads "They -"): the button now
+      starts after it (58.967), so the cut is 37.33 s / 1120 frames.
+  Kept by design (reported, not defects): the IG leaves "This is" uncaptioned under the title (the standing no-captions-under-the-hook
+  rule) and the 2009 lockup shows "2009" for "in 2009".
+- **19:55 YT v3 built** (`outputs/…sample-yt.v3.mp4`, 1123 f, 37.43 s, 30 fps, −12.1 LUFS, −2.3 dBTP; proof `yt/work/proof_v3.jpg`): 20
+  shots, 8 whips (only into / out of pictures; the cuts between the hosts and into their two-ups are the show's own hard cuts), 49
+  caption chunks (Gillian magenta, Patrick the house white → red; 18 wiped, 37 %), 2 name tags, 7 swishes 19.0-22.6 dB under the voice
+  (yt/cue_check.py; subtle band 19-23; its "WEAK on a phone" flags are the louder Pincus band). Lip sync on the cut (work/cut/avsync_cut.py,
+  mouth box from the landmarks vs the voice): best lag 0 / 0 / +1 / +2 frames on Patrick's four clean spans. IG rendering
+  (`ig/build.py`, 30 fps). Next: IG mux + cue check, ONE sonnet reviewer on both, fix, finals.
 - **18:47 THE CUT IS DONE** (`outputs/tco-balloon-boy-acting-class.mp4`, 1125 f, 37.50 s, 30 fps; `work/cut/make_edl.py`, every
   edge pinned; AMPLIFY_DB −2; audio-qa: timeline exact, joints clean, limiter transparent; the two "ambience holes" (0.77 s, 5.03 s) are
   joints into the hosts' GATED digital silence (−70..−80 dBFS between words), not crossfade dips). Verbatim faster-whisper pass on the
@@ -50,21 +82,24 @@
 
 ## The beats (followed EXACTLY; found by their WORDS; nothing added, nothing re-ordered)
 Hook card 0-3 s: "BALLOON BOY, 2009 · 'OUR SON FLOATED AWAY.' HE WAS IN THE ATTIC." (the hook font has no "·": set as "/")
-1. HOOK (Patrick, feed 0:12:22): "this is the most poorly written, poorly acted thing I've ever seen."
-2. (Gillian): "we all thought this was a hoax in 2009. And I thought this was like the unraveling of how it wasn't a hoax."
-3. (feed 0:12:47): "do you think this was a hoax? No. What? No. Wait. Come on. No."
-4. (feed 0:13:16, Patrick … Gillian): "This is all completely manufactured, I believe" … "All right, convince me."
-5. (feed 0:17:35, Patrick per SEQUENCING; VERIFY BY VOICE): "everyone just happens to stop right in the middle, right in the perfect
+1. HOOK (VOICE: Gillian; SEQUENCING said Patrick, see ★ above; feed 0:12:22): "this is the most poorly written, poorly acted thing I've ever seen."
+2. (VOICE: Patrick): "we all thought this was a hoax in 2009. And I thought this was like the unraveling of how it wasn't a hoax."
+3. (VOICE: Gillian asks, Patrick "No.", Gillian "What?", Patrick "No. Wait.", Gillian "Come on.", Patrick "No."; feed 0:12:47): "do you think this was a hoax? No. What? No. Wait. Come on. No."
+4. (VOICE: Gillian … Patrick; feed 0:13:16): "This is all completely manufactured, I believe" … "All right, convince me."
+5. (VOICE: Gillian; SEQUENCING said Patrick; feed 0:17:35): "everyone just happens to stop right in the middle, right in the perfect
    spot of the camera … It's almost like they have marks on their lawn."
-6. (feed 0:18:04, Gillian; drop if long): "I want to pause the recording and watch the documentary again, looking at it from this perspective."
-7. BUTTON (feed 0:18:19, speaker by ear): "These two met in an acting class in 1997. That's all." (+ "Oh really?" if clean)
-- Speakers: Patrick = hoax, Gillian = not a hoax (confirm by voice AND face; speaker embedding per chunk against clean solo spans).
-  If beat 5 is Gillian's, it is reported, never re-framed silently.
+6. (VOICE: Patrick; kept, the cut is 37.3 s; feed 0:18:04): "I want to pause the recording and watch the documentary again, looking at it from this perspective."
+7. BUTTON (VOICE: Gillian; "Oh, really?" = Patrick, kept; feed 0:18:19): "These two met in an acting class in 1997. That's all." (+ "Oh really?" if clean)
+- Speakers as SENT: Patrick = hoax, Gillian = not a hoax. **By voice AND face they are the other way round** (★ in ▶ STATUS): Gillian =
+  HOAX, Patrick = NOT A HOAX. The words and order are untouched; the labels on screen follow the voices; reported to the main session.
 
 ## Decisions (with reasons)
-- **Comedy timing is the product** (task brief): the overlap in beat 3 stays if it is clean; a beat of reaction before the button;
-  after the button, "Oh really?" if clean, then ~0.6-1.0 s of the listener's face, then the cut. This OVERRIDES the YT README § 9
-  "end ≤ 0.1 s after the last word" and the tight-pause pass in those three places (pinned, `no_refine`, out of the tight pass).
+- **Comedy timing is the product** (task brief): beat 3's exchange keeps its rhythm (its silences shortened by hand, out of the tight pass),
+  beat 1 keeps the overlap. **What shipped vs the brief's "a beat before the button" and "hold the reaction, then cut": NOT MET, reported.**
+  The pre-button pause was her own 0.3 s, but QA r1 found a false start "They-" in it, so the button now starts ~5 frames after
+  "perspective."; and the source has NO silent hold after "Oh, really?" (her "That's all they just met" starts ~20 ms after his "really?"),
+  so the cut ends on "really?" (the clean loop into her first line). The only way to a hold is a silent 0.4-0.5 s FREEZE on the last two-up
+  frame: offered as an option for Affan (a taste call; it costs the loop), not built.
   In the stumble pass an interjection in crosstalk is the other host, never a stumble.
 - **No card steps on the punchline.** The button plays on the faces; the only sound there is at most one soft swish.
 - **No "1997" on any card**: the year is the host's claim (main session's GATE 5); the caption carries his/her words, a card says
@@ -99,6 +134,20 @@ Hook card 0-3 s: "BALLOON BOY, 2009 · 'OUR SON FLOATED AWAY.' HE WAS IN THE ATT
 3. **Comedy timing as a measured rule**: the punchline lands on faces with a held reaction (no card, no hit), the overlap kept intact;
    the first sample where the cut is tuned for a laugh rather than tightness.
 
+## IG variant (neon window; `ig/build.py`, kit = the Pincus IG via the Still Here job)
+- Same cut, beats and pictures as the YT. Hook on frame 0: Mark Brazil's 10-31 title ("Balloon Boy, 2009" / "Our son floated away" /
+  He was [in the attic] on a red box) over the 2009 news alert as a float card; no captions under it (0-2.1 s).
+- Stage stacks (the stack IS the caption) for three moments: "the most poorly written / *poorly acted* / thing", "Do you think this was
+  a / *hoax?*" (GILLIAN, TO PATRICK), "It's almost like they have / *marks on / their lawn*" over the drawn legs on their red X marks.
+- The 2009 search photo as a float card under a stat lockup (OCTOBER 15 / *2009* / FORT COLLINS, COLORADO).
+- Each host on her / his own camera (tracked on the face box, pinned at every take's edge, mouth at window y 536); the show's TWO-UP kept
+  side by side as two portrait panels with a white line; the rewind as a horizontal split under Patrick (white line, captions on it).
+- Mono name tags (red bar flickers on, the name and the side decode in): PATRICK HINDS / SAYS: NOT A HOAX, GILLIAN PENSAVALLE / SAYS: HOAX.
+- Captions: one whole line ≤ 4 words, 14 px eased rise, white Inter + one red Playfair hero ("acting class" closes the loop on "poorly acted").
+- **Better than the Pollak IG (the 1 %):** (1) two people in one window: the show's own two-up becomes a designed side-by-side with the
+  white line, the argument visible at once; (2) a drawn reconstruction (the viewfinder backyard, the marks, the rewind) instead of photos
+  of places; (3) each host's side named on screen as a decoding tag, so a stranger follows the fight from the first line.
+
 ## GATE 5 (facts on screen) — to verify before any card renders
 - Balloon Boy: 15 Oct 2009, Fort Collins, Colorado; the parents (Richard and Mayumi Heene) said their 6-year-old son Falcon was in the
   balloon; he was found hiding in the attic (of the garage). The hook's 'OUR SON FLOATED AWAY.' is a PARAPHRASE in quote marks
@@ -108,6 +157,12 @@ Hook card 0-3 s: "BALLOON BOY, 2009 · 'OUR SON FLOATED AWAY.' HE WAS IN THE ATT
 ## Sources
 | Use | File | From |
 |---|---|---|
+| Frame 0 (YT DOC on a screen card; IG hook float card): the 2009 live news alert "ALERT / 6-YEAR-OLD BOY TRAPPED ALONE INSIDE BALLOON", Ft. Collins, CO, 12:49 PM, KMGH | `yt/assets/broll/b-news-alert.jpg` (1920x1080) | foxnews.com/us/balloon-boy-hoax gallery (a57.foxnews.com …/1920/1080/Child-Trapped-in-Flying-Balloon10.jpg), the 15 Oct 2009 broadcast frame (KMGH / Fox News). LICENSING flag: a TV news frame, as the Pollak TV frame / the Daymond press stills |
+| "in 2009" (YT FX-41 year ghost card; IG float card under the stat lockup): Colorado Army National Guard aviators searching for Falcon from a UH-60 Black Hawk, 15 Oct 2009 | `yt/assets/broll/b-search-2009.jpg` = `work/img/cand/dvids213676.jpg` (3872x2592) | Wikimedia Commons via the en.wikipedia API, DVIDS 213676, Sgt. Benjamin Crane, PUBLIC DOMAIN (credit printed small on the YT card) |
+| The backyard in a camcorder viewfinder, its tape X marks, its rewind (FX-21 / FX-55; both looks) | `yt/assets/broll/mg-backyard.mp4`, `mg-marks.mp4`, `mg-rewind.mp4`, `mg-2009.mp4` | built: `yt/cards.py` (PIL line drawing; the IG draws the same set square via the same functions). An illustration, never the family's video |
+| Their own two-up (both hosts live) | the cut itself (frames 99-151, 417-449, 857-892, 1090-1123) | their episode |
+| Swishes | `assets/sfx/epidemic/tco-cloth-var / tco-soft-airy / tco-swoosh-light / tco-deep-rustle` (sliced by `yt/sound.py`) | Epidemic (Download log x1-x8) |
+Not used: no YouTube B-roll (no NEEDS-YOUTUBE.md), no Netflix footage or audio (the doc insert under frames 708-793 is covered by the drawing), no stock person, no Higgsfield.
 
 ## Download log (logged BEFORE each pull)
 | # | File | Source | Size | Why |

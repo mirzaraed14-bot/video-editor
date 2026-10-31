@@ -1,6 +1,19 @@
 # jealous-uncle-fire-head — ABW10 · Sequence 35 (head on fire, whole reel)
 
-▶ **STATUS 2026-10-31 ~19:00: PLACED + VERIFIED in ABW10 · Sequence 35, at his review.** He answered the A/B stills
+▶ **STATUS 2026-10-31 ~20:30: FIRE VERSION SWAPPED ONTO V1 + CAPTIONS DELIVERED, at his review.**
+- **Swap** ("swap my video in premiere with the fire version"): `outputs/jealous-uncle-fire.mov` (the BAKE: Premiere-exact
+  frames + the three layers by Premiere's measured math, `work/bake.py`; ProRes 4444, video only, 1323 frames) now fills V1
+  cut-for-cut: 9 clips at his exact cut points, inPoint = start (`work/pr/swap.py`; setIn/OutPoint floor → +0.5 ms). V2–V4
+  emptied (the layers would double the fire). A1 audio unchanged (read back). Proof: 22 Premiere frames incl. both sides of
+  all 8 cuts vs the verified layered frames: 0.39/255 worst mean (`work/pr/swapcheck.py`). Backup of his V1 before the swap:
+  `work/pr/seq35-before-swap.xml` (FCP XML) + `.json`. NOT saved, NOT exported.
+- **Captions:** `jealous-uncle-fire-head.srt`, 19 cues, yellow deep-talks, baseline **y1277** (chin 1162 + 115), first cue
+  00:00, `caption_qa.py` PASS (1 warn: 14.76 "aisa" = Urdu "career ho to aisa", all 3 decoders agree). He drags the .srt onto
+  Sequence 35 at 00:00 and applies the "affanwizu yellow" Track Style. Every line quoted (all the uncle's dialogue).
+  Flag for him: 7.84 "haan yar sahi hai yar" (WhisperX dropped it; ur + hi + en hear it), 16.55 "warna" (Whisper: wonda/banda).
+- Earlier the same day: the three layers were placed + verified on V2–V4 (below); the swap replaced them.
+
+(previous status) He answered the A/B stills
 "Looks good to me" → version A (flames rise into the top bar). V2 light / V3 flame / V4 core placed 0 → 22.05 s, blend modes
 read back 2 / 22 / 18, V1's 9 clips unchanged. NOT saved (his project), NOT exported (he exports).
 Proof (`work/pr/verify.py`, 86 Premiere program frames = both sides of every cut, the fastest moves, 7 per clip): inside the

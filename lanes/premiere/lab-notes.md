@@ -648,6 +648,10 @@ Always check the EDL bash can actually see before re-splicing.
   The `sequence_reference.py` rebuild (setpts + fps) runs about 1.5 frames AHEAD of Premiere. Fine for captions; for anything
   that follows MOTION (head tracking, a fire on the head, a mask), decode the exact frames instead:
   `projects/jealous-uncle-fire-head/work/frames.py` (+ `work/sync/` grab, fit, verify: 86/86 exact).
+- **`projectItem.setInPoint` / `setOutPoint(seconds, 4)` FLOOR to the frame (2026-10-31, Seq 35 swap):** 7.8333 s (= frame 470
+  at 60 fps, 469.99998 in float) read back as 7.8167, and an out point one frame short left a 1-frame sliver of the old clip
+  after `overwriteClip`. Pass `seconds + 0.0005` (under half a frame) and read every start / end / inPoint back. The
+  overwrite position itself landed right. `projects/jealous-uncle-fire-head/work/pr/swap.py`.
 - **Opacity > Blend Mode values are NOT menu order (Premiere 25, 2026-10-31): Normal = 18, Screen = 22, Color Dodge = 2.**
   Measured by stepping 0–35 on a test clip and scoring each program grab against the predicted composite
   (`projects/jealous-uncle-fire-head/work/pr/blendmodes.py`; errors 0.18 and 0.30 per 255 at the winners). The vendored

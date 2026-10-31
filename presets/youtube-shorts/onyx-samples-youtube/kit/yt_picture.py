@@ -302,6 +302,31 @@ def main():
     HT = bool(spec.get("head_track"))      # per-frame head tracking (the AW head lock): the head stays pinned on every frame
 
     def track_eye(key, n_abs, r0, r1):
+        """Head tracking + (opt-in, spec "head_edge_pin": P frames, CrossExamined 2026-10-31) an EDGE PIN: on the first and last frame of
+        every take the track equals the eyes actually there (median of the 3 detections nearest the edge, so one bad box never wins),
+        faded in over P frames with a cosine (the IG kit's Pincus pin, LESSONS neon-window 2026-10-31 #2). Without it a take whose head
+        moves fast right after a joint got a one-sided edge fit that overshot: the eyes snapped 80 px at a jump cut and drifted back
+        over 4 frames (CrossExamined v4, joint 171). Specs without the key render bit-identical (the pin is skipped)."""
+        v = _track_core(key, n_abs, r0, r1)
+        P0 = float(spec.get("head_edge_pin", 0))
+        if not v or not P0:
+            return v
+        E, bounds = fits[("track", key, r0, r1)][:2]
+        a = max(x for x in bounds if x <= n_abs); b = min([x for x in bounds if x > n_abs] or [r1])
+        P = max(1.0, min(P0, (b - 1 - a) / 2))
+        ex, ey, sc = v
+        for e, d in ((a, n_abs - a), (b - 1, b - 1 - n_abs)):
+            if d < P:
+                ks = sorted([k for k in E if a <= k < b and abs(k - e) <= 3], key=lambda k: abs(k - e))[:3]
+                if not ks:
+                    continue
+                px, py = float(np.median([E[k][0] for k in ks])), float(np.median([E[k][1] for k in ks]))
+                sx, sy, _ = _track_core(key, e, r0, r1)
+                wgt = 0.5 + 0.5 * math.cos(math.pi * d / P)
+                ex += (px - sx) * wgt; ey += (py - sy) * wgt
+        return ex, ey, sc
+
+    def _track_core(key, n_abs, r0, r1):
         """Head TRACKING (Affan 2026-10-20: "where is the damn head tracking"): on every frame the eye midpoint goes to the same output
         point and the inter-eye distance to the same size, from a Gaussian-weighted average of the detections within +-8 frames INSIDE the
         take (never across a cut, sigma 3 frames: no jitter, no lag you can see). Pinned on every frame, so every cut is seamless too.

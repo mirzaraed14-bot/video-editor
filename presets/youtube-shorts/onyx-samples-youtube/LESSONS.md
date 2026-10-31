@@ -304,3 +304,41 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   the built-in browser's Bing Images page + `a.iusc` m JSON works (Pincus `work/receipts/fetch.py` downloads the picks).
   (6) A section re-encoded from an input-side seek between frames starts its VIDEO one frame late (start_time 0.033 vs audio 0);
   seek on a frame boundary (k * 1001 / 30000) and both streams start at 0.
+
+- 2026-10-31 (Onyx batch 6, CrossExamined x Jay Richards, `projects/crossexamined-300k-house-check/`, builder lessons):
+  (1) **A webcam guest whose face is ~43 % of the source height is a close-up in ANY full-height 9:16 crop**, and at the default
+  1092 seam (z0 1.2) the captions sat on his mouth. The fix was the caption line, not the zoom: `split.seam` 1180 for the whole video
+  (watermark at seam + 92, hook at y 1392-1488, split bottoms 740 px with content in panel y 140-440), A z0 1.04 with the eye line at
+  0.33 keeps the LOWER lip (mouth corners + 0.13 face h) >= 20 px over the caption top up to z 1.09. Measure eyes / mouth / face h
+  from faces.json and solve for z0 + fy_out before the first render. (2) **`head_track`'s one-sided edge fit overshoots when the head
+  moves fast right after a joint**: the eyes snapped 56-80 px at joint 171 and drifted back over 4 frames. New opt-in spec key
+  `head_edge_pin` (frames; 12 here) in `kit/yt_picture.py` (backup `.bak-2026-10-31`): the track equals the eyes actually there on each
+  take's first and last frame (median of the 3 nearest detections), faded over P frames: 171 → 7 px vs 13 around. Specs without the
+  key render bit-identical. (3) **A tight pause pass can create a 60 ms cut inside a word pair** ("but | think"): a 5-frame take, two
+  head hops. `make_edl.py` MIN_CUT 0.08 (a 30-60 ms "quiet" run is a stop closure or a weak fricative, never a pause). (4) **A built
+  object carries only the speaker's numbers**: the reviewer flagged a cheque number, a MICR line and cents as invented numerals; the
+  check now prints only $300,000. (5) Split-bottom cards: anything in panel y < 130 collides with the seam captions + watermark; a dark
+  scrim (opaque to panel y 70, smooth to clear by 270) keeps a big object readable under them.
+
+- 2026-10-31 (Onyx batch 6, BiggerPockets Money x Tad Fallows, `projects/bpmoney-umbrella-policy/`, builder lessons):
+  (1) **Check the episode's LAYOUT over the beat span before a pick is sent, not only "video ✓":** YouTube's edit of OAY3d8zRPDo shows
+  a full-screen SLIDE (+ the guest in a 576x324 webcam tile) over every approved word (scene detect: one layout from 489.5 to 622.9 s);
+  YouTube serves nothing above 1080p for it. `ffmpeg … select='gt(scene,0.15)'` + a 1/4 fps sheet over the span answers it in a minute.
+  (2) **A tile-only guest is built, never blown up:** his call frame (tile x 1.70, pushed <= 1.10, mouth pinned so the constant caption
+  line sits under his lips) over a blurred plate of his own room, and a live 0.8x corner inset over the cards (FX-29/57/53;
+  `projects/bpmoney-umbrella-policy/yt/panels.py`), placed in the kit as B shots (z0 1, r 0, no grade; grade the stock per shot).
+  (3) A label riding the top of a GROWING bar crosses the caption line and the watermark: anchor it low in the bar (QA r1).
+  (4) A count-up label shows numbers he never says ($2 / $7 / $9 MILLION for a frame each): on a money claim let the label RISE whole.
+  (5) Per-cue `under`: the slice defaults left 8 of 13 swishes LOST (-25..-30 dB beside the voice); set under = default + (measured + 21)
+  from cue_check.py and every cue lands at -21.
+
+- 2026-10-31 (Onyx batch 6, True Crime Obsessed x Balloon Boy, `projects/tco-balloon-boy-acting-class/`, builder lessons; a two-host banter scene):
+  (1) **Verify every speaker BY VOICE before a colour, a tag or a "who says it" goes on screen.** The miner and the sent sequencing had the
+  hosts' sides INVERTED (the skeptic was the woman, not the man); wespeaker embeddings on 1.5 s windows, 2-means, each cluster named by the
+  show's own camera (76/0 and 41/0 co-occurrences) settled it in a minute (`work/cut/spk.py`); pitch alone failed (an excited male host
+  reads 250-330 Hz). (2) **A two-up source is a FACE SPLIT for free**: both faces live in one frame; each panel's crop must stay inside its
+  own half (bottom panel 1080x828 needs z0 >= 1.57, top >= 1.18 on a 960-px half) and `face_x` is a FILTER in yt_faces (faces > 12 % of
+  the width from the hint are dropped), so set it only on shots that are entirely two-up, never on a single-cam shot. (3) **A false start
+  right before the punchline** ("They- these two met") was only caught by the reviewer's ear-proxy: run the faster-whisper prompt pass on
+  each segment's first 0.3 s too, not only on the joints. (4) A close webcam host who leans in ("NO!") drops his mouth onto the seam
+  captions at z0 1.0: give that shot its own z0 1.3 / fy_out 0.28 (a different person's shot either side, so no same-camera punch-in).

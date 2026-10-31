@@ -1,9 +1,48 @@
 # crossexamined-300k-house-check: Onyx sample Short for CrossExamined (Frank Turek) (batch 6)
 
 ## ▶ STATUS: resume here
-- **2026-10-31 18:55: BRIEF + catalog pass written; source section cut + transcribed (CPU int8, `work/transcribe.log`); A/V sync
-  checked; faster-whisper slice pass done (`work/cut/fw_slices_r1.txt`), joint tests running (`work/cut/fw_join_r1.txt`); B-roll
-  candidates being pulled (Mixkit previews). Next: the EDL (`work/cut/make_edl.py`) → splice → tight pass → transcript patch.**
+- **2026-10-31 20:40: FINALS DELIVERED, awaiting the main session / Affan's review.** `outputs/crossexamined-300k-house-check.sample-yt.final.mp4`
+  (= YT v5) and `.sample-ig.final.mp4`, copies `X:\Claude Projects\Exports\crossexamined-300k-house-check.yt.final.mp4` / `.ig.final.mp4`
+  (md5-identical), proof sheets `outputs/…sample-yt.proof-sheet.jpg` / `…sample-ig.proof-sheet.jpg`. Both: H.264 1080x1920 24 fps,
+  807 f, 33.625 s (ends 0.055 s after "houses."), AAC, −12.1 LUFS, TP −2.3 / −2.2, decode clean; swishes 18-23 dB under his voice
+  (`yt/cue_check.py`, `ig/cue_check.py` PASS subtle).
+  **QA r1 (one sonnet reviewer, defects only; scratch `work/review/`) → fixed:** (1) head hops at the jump cuts: the 60 ms cut
+  "but | think" (raw 36.02-36.08) made a 5-frame take → removed (`make_edl.py` MIN_CUT 0.08; the cut is now 15 segments, 807 f);
+  the YT eye track overshot 56-80 px right after joint 171 (a one-sided edge fit while his head moves fast) → **kit opt-in
+  `head_edge_pin`** (`kit/yt_picture.py`, backup `.bak-2026-10-31`; specs without the key render bit-identical), spec 12 frames:
+  eye step at 171 now 7 px vs 13 around, 340: 8, 546: 12 px (`work/headgate.py` on the delivered frames); IG: the edge pin takes the
+  median of the 3 detections nearest the edge (an outlier box at 170) and head x follows the EYES (he turns his head across 171:
+  box 16 px, eyes 38 px) → 18 px vs 10 around; 504: 4 px. (2) invented numerals on the check (cheque No., MICR line, cents, 00/100)
+  → removed (`work/gfx.py`): the check carries only his $300,000. (3) the YT memo split showed "$ 30" at the right edge → the amount
+  box sits off-frame. (4) IG credit now "Dr. Jay Richards / Heritage Foundation". (5) IG PRICE-tag swish over "the" → 3 dB down.
+  (6) IG: the opening words were uncaptioned under the hook title → captions now run from frame 0 (CLAUDE.md Rules: "never suppress
+  them under a hook"; the coordinator's TFTS fix), the hook's two cards shrunk to 460x330 between the title and the caption line.
+  Kept by design: two YT
+  chunks lead their word by 0.20-0.21 s (the kit's lead + joint pin; 1 frame over the 0.18 s spec); "DR JAY RICHARDS" (the kit's
+  caption cleaner drops the period in the tag); the leak burns' 1-2 bright frames (designed).
+  `workflows/graphics-qa.py` does not apply (no graphics-plan.json on this kit path); the kit's gates + `yt/cue_check.py`,
+  `ig/cue_check.py`, `ig/build.py` lips_check, `work/headgate.py` and full-res frame checks (f285 big number vs caption + watermark:
+  clear; f325 memo split: the amount box off-frame, the watermark over the dark scrim) stood in for it.
+  OPEN for Affan: IG captions now run under the hook (coordinator, CLAUDE.md Rules) vs his War Dogs note "no captions while the hook
+  text is up" (neon-window LESSONS 2026-10-31 #1).
+- 2026-10-31 19:40: YT v3 + IG v1 built (24 fps, 805 f, 33.54 s), then ONE sonnet reviewer.
+  YT: `outputs/…sample-yt.v3.mp4` (v1: A shots at z0 1.2 put the captions on his mouth → **the caption line / split seam moved to
+  y 1180 for the whole video**, A z0 1.04 with the eye line at 0.33: his webcam face is 43 % of the source height, so this is the
+  widest full-height crop; v2: the memo split's check sat under the captions + watermark → a dark scrim over the panel's top).
+  Swishes 19-23 dB under the voice (`yt/cue_check.py`; a few read "WEAK" on that script's −20 phone bar, which is the old loud bar;
+  the subtle Onyx band is ig/cue_check's −28). The kit captions "$300,000" as "$300K" (numerals rule); the cards print "$300,000".
+  IG: `ig/build.py` (Pincus/Pollak kit + this beat plan + `work/gfx.py` objects) → `ig/work/picture24.mp4` → `ig/sound.py --mux` →
+  `outputs/…sample-ig.v1.mp4`; `ig/cue_check.py` PASS subtle (loudest −18.0 dB). Mouth at window y 540 (lips_check ≥ 20 px).
+  The cut: `work/cut/make_edl.py` pieces → splice refine → polish → `tight` (TH −31 dBFS, quiet runs ≥ 0.08 s → 0.07 s, MIN_CUT 0.06 so
+  a weak fricative inside a word is never cut) + FORCED cuts "uh" (raw 55.80-56.27) and "crazy" (64.52-65.14); AMPLIFY_DB −2
+  (Onyx default). 16 segments. audio-qa: timeline exact, 15 joints clean, limiter transparent; 2 "ambience holes" (8.62 s, 14.92 s)
+  = room-tone dips at joints. Verbatim faster-whisper on the cut (`work/cut/fw_cut_v1.txt`, `fw_cut_v1b.txt`, GPU under the lock)
+  reads the approved beats; his drawn "a— massive" stays (continuous voice, no gap to cut). `work/cut/patch_transcript.py` (RUN
+  AFTER EVERY SPLICE): drops the phantom "which", adds "our" (parents), re-times "for" / "$300,000" / "say" from the envelope.
+  Camera in the cut: Jay full 0-358, the show's two-up 358-472 (covered by the inflate card), Jay full 472-805; joints
+  `work/cut/segstarts.txt`. Faces scanned every frame (`yt/work/faces.json`, copied to `ig/work/`): eyes y ≈ 413, mouth ≈ 597 px.
+  YT spec: `yt/build_spec.py` (13 shots: 3 face A, 2 FIT real footage + 1 B, 2 SPLIT, 5 built cards from `yt/cards.py` +
+  `work/gfx.py`), 49 chunks, 13 soft swishes (`yt/sound.py`), head lock [171, 176, 338, 544].
 - **CHANGE from Affan (coordinator 18:30), overriding BUILDER-BRIEF steps 3 + 6: NO Topaz (no Iris, no Chronos) and NO 60/48 fps.**
   Both looks build at the source's native **24 fps** straight from the 1080p cut; the QA'd render IS the final. No GPU needed
   (WhisperX / faster-whisper stay on CPU).
@@ -87,15 +126,39 @@ buy homes." (reads as one thought).
 4. IG: Mark Brazil's 10-31 type (small sans label over big bold sans, key words on a red box) for the stage beats, where Pollak's IG
    used the older Playfair stacks.
 
+## IG variant (neon window; `ig/build.py`)
+- Same cut, beats, shot edges (read from yt/spec.json) and objects as the YT. Hook 0-1.88 s on frame 0: Mark Brazil's 10-31 title
+  ("Dr. Jay Richards / Heritage Foundation" / "Why houses" / [cost so much] on a red box) over his camera card + the US Capitol card
+  dealt on "government" (two 460x330 cards above the caption line); captions run from frame 0. Then float cards of the real footage (hands signing, house keys), his camera (tracked, pinned at every
+  take's edge), the stage beats carrying the check (dealt, "$300,000" on a red box, memo circled), the inflate stage (suburb card +
+  PRICE tag), his camera on "Houses as a percentage of our income" (the YT's split becomes cam → stage at the "income | end" joint),
+  the massive stage (tag vs pay stub), the 1973 suburb full-window with "1970s", the callback stamp, the last line on his face.
+  Three warm leak burns where the source changes (to the footage, to the check, to the 1973 photo).
+- Captions: one whole line ≤ 4 words, a 14 px eased rise (Affan 2026-10-31), white Inter + one red Playfair hero per line.
+- **Better than the Pollak IG (the 1 %):** the stage beats carry ONE object through its states (check → memo → tag → callback) instead
+  of type stacks; the real footage plays as moving float cards (not stills); the comparison to the 1970s is a real 1973 photo with
+  the SAME tag, small.
+
 ## GATE 5 (facts on screen)
 - $300,000: his number ("a check for $300,000"). "1970s": his words. "HOUSE ONLY" / "HOUSES ONLY": his condition ("the only thing they
   could use it for would be to buy a house"). Nothing else numeric.
 - Credit: Wikipedia (above). No agency, program, party or politician named or pictured.
+- Illustrations, not data: the check's memo "A house only" is his condition in plain words; the PRICE tag inflating ("inflate the cost
+  of housing"), the tag dwarfing a pay stub labelled OUR INCOME ("houses as a percentage of our income ... a massive, massive amount")
+  and the same tag SMALL on the 1973 suburb ("compared to ... the 1970s") carry no numbers, axes or percentages (no ratio is claimed).
+- The check reads "THE GOVERNMENT" (his words: "the government sent everyone a check"), no seal, no agency, no bank.
 
 ## Sources (yt/assets/broll; the IG reads the same files)
 | Use | File | From |
 |---|---|---|
-| (filled as each is chosen) | | |
+| "government" — the US Capitol, a hyperlapse drive up to it (FIT float frame: 720p, never blown up) | b-capitol-11800.mp4 (1280x720 29.97, src_in 0.6) | Mixkit 11800 (free licence; the 1080 file answers 403) |
+| "mortgage market" — hands signing papers at a table (no face) | b-sign-307.mp4 (1920x1080 23.976, src_in 1.0) | Mixkit 307 (free licence) |
+| "help people buy homes" — a hand holding up house keys (FIT with a crop that leaves her blurred face out) | b-keys-15065.mp4 (1280x720, src_in 6.0, crop x 0.02-0.62, y 0.36-1.0) | Mixkit 15065 (free licence) |
+| the inflate card's house (a float frame over its own blur) | b-suburb-24945.mp4 (1280x720, src_in 2.0) | Mixkit 24945 (free licence) |
+| "in the 1970s" — a new suburban development near the Potomac River, April 1973 (FX-41 over it) | b-1973-suburb-547211.jpg (2001x3000) | NARA 547211, DOCUMERICA (US EPA), public domain, via upload.wikimedia.org |
+| the check, the memo, the price tag, the pay stub, the stamp | mg-check / mg-memo / mg-inflate / mg-massive / mg-seventies / mg-callback.mp4 | built: `yt/cards.py` + `work/gfx.py` (LibreBaskerville, Dancing Script, IBM Plex Mono, Anton) |
+| Swishes | assets/sfx/epidemic/cx-cloth-blanket, cx-low-long02, cx-whooshs, cx-short-low-dry (sliced by `yt/sound.py`) | Epidemic (Download log x1-x6) |
+Pulled, not used: b-roofs-48394.mp4, b-bills-18262.mp4 (the plan changed to built cards). No YouTube B-roll needed (no NEEDS-YOUTUBE.md).
 
 ## Download log (logged BEFORE each pull)
 | # | File | Source | Size | Why |

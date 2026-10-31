@@ -211,3 +211,27 @@ an assert that every line carries exactly its chunk's words). README § Captions
 3. **Stage stacks follow the caption punctuation rule** (they ARE the caption on their beat): no commas (QA r1).
 4. **Faces for IG cam shots that the YT covers with cards** are not in the YT faces.json: scan an IG-only spec (`ig/spec.json`,
    A shots over every cam span, `yt_faces.py --dir ig`).
+
+## 2026-10-31 · CrossExamined IG sample (Onyx batch 6, `projects/crossexamined-300k-house-check/ig/`), builder lessons
+1. **Batch 6 (TFTS, CrossExamined): captions run from frame 0, under the hook title too**, by the coordinator's call citing CLAUDE.md
+   Rules ("never suppress them under a hook or graphic unless told"). This CONFLICTS with Affan's own War Dogs review note above ("no
+   captions while the hook text is up"), which still stands in the README and memory: OPEN for Affan to decide. Layout used: the hook's
+   cards shrink (two 460x330 landscape cards) to sit between the title and the caption line.
+2. **Pin head x on the EYES, y on the face box** when the speaker TURNS across a joint: the box centre moved 16 px but the eyes 38 px
+   at joint 171, and a box-pinned crop let the eyes jump 47 px (now 18 px vs 10 around). A tilt moves the eyes in y (the Patrón
+   lesson), so y stays on the box. And the take-edge pin takes the MEDIAN of the 3 detections nearest the edge: one outlier box on the
+   edge frame was pinned exactly.
+3. **Derive the frame count from the cut** (`N30` from ffprobe of outputs/<job>.mp4): a re-cut added 2 frames and the hard-coded 805
+   truncated the last word's tail by 0.08 s.
+4. A stage beat can carry ONE object through its states (the check dealt → memo circled → flown into a PRICE tag that inflates →
+   returned stamped) with the shared drawing module `work/gfx.py`, so the YT cards and the IG window show the same object.
+
+## 2026-10-31 · True Crime Obsessed IG sample (Onyx batch 6, `projects/tco-balloon-boy-acting-class/ig/`), builder lessons
+1. **Two hosts, one window: keep the show's two-up SIDE BY SIDE** (two portrait panels, a 6 px white line, each crop inside its own half,
+   each mouth on the window's mouth line); a stacked top/bottom split cannot fit a whole face in a 361 px panel without crossing into the
+   other host's half. Each host gets their own tracker (faces.json per key) and a line of captions never sits on the OTHER host's face:
+   it ends at the show's cut to them, but never before its own last word (`make_blocks`).
+2. A drawn picture behind stage type needs its own camera and a dim ramp: white silhouettes under red Playfair read as noise; dimming the
+   rows the stack uses (x 0.35) and keeping the red marks bright at the bottom made both legible.
+3. A hook that fades out before a stage beat fades in leaves black frames: overlap them (hook out over 0.14 s, the lead-in rising 0.12 s
+   early).
