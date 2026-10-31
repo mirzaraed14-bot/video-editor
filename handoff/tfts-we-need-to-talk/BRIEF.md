@@ -7,7 +7,12 @@
   - YT: `outputs/tfts-we-need-to-talk.sample-yt.final.mp4` (= `…sample-yt.v10.mp4`) = `X:\Claude Projects\Exports\tfts-we-need-to-talk.yt.final.mp4`
     (md5 93483ea6…), proof `outputs/…sample-yt.proof-sheet.jpg`.
   - IG: `outputs/tfts-we-need-to-talk.sample-ig.final.mp4` (= `…sample-ig.check30.mp4`) = `X:\Claude Projects\Exports\tfts-we-need-to-talk.ig.final.mp4`
-    (md5 d8609a7c…), proof `outputs/…sample-ig.proof-sheet.jpg`.
+    (md5 a93b1385…, re-delivered ~19:10), proof `outputs/…sample-ig.proof-sheet.jpg`. **IG fix (coordinator, CLAUDE.md Rules:
+    "Captions run the whole short-form video ... never suppress them under a hook"):** captions now run from frame 0 (one ~4-word
+    line, whole, subtle rise, on the same constant line); the hook's camera card moved down under the caption line (title 70-330,
+    captions on 522, card 590-1010) and the hook now CUTS to the full-window cam at 3.20 s (a growing card carried his face up
+    through the caption line), so its growth swish is gone (11 cues). The previous IG = `outputs/…sample-ig.v-uncaptioned-open.mp4`
+    (md5 d8609a7c…). The YT final is unchanged.
   - Both: 1080x1920 H.264 29.97 fps, 947 frames, 31.60 s, AAC 48 k, -12.1 LUFS, peak -2.2 dBFS, decode clean; 12 soft swishes each
     18-22 dB under the voice; no music bed.
   - Final gate (after the 18:30 delivery, re-delivered 18:55): eye steps across every in-shot joint on the delivered frames
@@ -16,7 +21,7 @@
     31-50 px). Left, judged by guide-line pairs (`work/look/gate_pairs.jpg`): YT 506/588 and IG 378/588 read 43-58 px on the EYE
     midpoint, but they are head TURNS between takes; the head's height, size and outline hold (Patron LESSONS: judge on the head, not
     the eyes, when the head turns).
-- Flags for Affan: (1) the IG opening line plays uncaptioned under the hook title (0-3.25 s, the neon-window hook rule); (2) lip sync
+- Flags for Affan: (1) [RESOLVED ~19:10: the IG opening line is now captioned from frame 0]; (2) lip sync
   measured ambiguous (my correlation -3/-4 frames incl. the natural lead, the reviewer's 0 to +2): not shifted; (3) Stan's tag says
   STANFORD NEGOTIATION LECTURER (Stanford lists him as a Lecturer; the episode: "teaches a very popular Stanford negotiation course"),
   never "professor"; (4) "kind of" kept and Matt's "Well," kept (trims either jumped Stan's head or made "one" read "when");

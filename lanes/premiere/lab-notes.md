@@ -648,6 +648,18 @@ Always check the EDL bash can actually see before re-splicing.
   The `sequence_reference.py` rebuild (setpts + fps) runs about 1.5 frames AHEAD of Premiere. Fine for captions; for anything
   that follows MOTION (head tracking, a fire on the head, a mask), decode the exact frames instead:
   `projects/jealous-uncle-fire-head/work/frames.py` (+ `work/sync/` grab, fit, verify: 86/86 exact).
+- **Opacity > Blend Mode values are NOT menu order (Premiere 25, 2026-10-31): Normal = 18, Screen = 22, Color Dodge = 2.**
+  Measured by stepping 0–35 on a test clip and scoring each program grab against the predicted composite
+  (`projects/jealous-uncle-fire-head/work/pr/blendmodes.py`; errors 0.18 and 0.30 per 255 at the winners). The vendored
+  `set_blend_mode` passes the raw value straight to `setValue`, so a guessed number silently gives another mode. Extend the
+  table by measurement, never by counting the dropdown.
+- **`compositeLinearColor: true` (sequence settings) changes only the ALPHA mix:** a Normal clip with partial alpha blends in
+  linear light (gamma 2.4 fits best, 1.6/255 mean vs 4.3 for a gamma-space mix), while Screen and Color Dodge act on the
+  encoded values exactly. Read it with `seq.getSettings().compositeLinearColor`; it is his setting, never change it.
+- **`exportFramePNG` keeps the sequence's transparency:** where nothing opaque is underneath (an empty black bar), the PNG holds
+  un-premultiplied RGB + alpha, so an alpha layer there reads fully opaque once the alpha is dropped. Score alpha-layer
+  tests inside the picture only. Also proven that day: `trackItem.disabled` is settable (isolate one layer per grab), and
+  test project items can be removed by moving them into a temporary bin and calling `deleteBin()` on it.
 - **A head trim by `trackItem.start = x` reads back a STALE inPoint too** (cbum-last-show 2026-10-20, seg 4 trimmed 49 frames: inPoint
   still 83.267, it plays from 84.085; outPoint unchanged and right). So after ANY `.start` / `.end` trim, the true source range is
   `outPoint - (end - start)` (head trim) or `inPoint + (end - start)` (tail trim). Better still, keep the plan as the record and
