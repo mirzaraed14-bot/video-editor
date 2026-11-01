@@ -13,6 +13,25 @@ So any 12 in a row need 240K between them. Bombas leaves that window after our 5
 non-Bombas pace (~5.5K a Short ≈ 66K per 12), every window needs **one ~175K+ hit or a 20K median**. A hit is the cheaper path: pick
 for the Bombas shape, every day.
 
+**2026-11-01, Affan is worried** ("I really thought by now I'd be averaging 20,000… they're still 5,000, 3,000"). The read given to him:
+- **It isn't the edit.** FUBU and Bombas had the same face, episode, kit, editor and week, and got 10K vs 563K. The difference was the
+  story (F1 + F3), not the craft.
+- **The window today is fine; Bombas rolling out is the risk.** The posted mean was ~75K on 10-29. The guarantee is a MEAN, so it is
+  won by one hit per 12, never by a 20K median.
+- **The real cause: few faces strangers know.** Scott's guests are mostly faces strangers don't know. Shorts 3-8 were picked before
+  the pick test existed (10-29), so the test is still unproven. Card chain (2.5) and Pincus (2) are its first tests.
+- **The new feed has no famous guest.** The live feed on 11-01 has one full episode since 10-16: Matt Ebert, Crash Champions.
+- **Scaramucci's "working for Trump was the stupidest decision I ever made" (43:39) is benched.** It has a famous face and a self-own,
+  but the regret angle is widely told ("my biggest mistake", "a catastrophic mistake": Raw Story, Hearts and Minds, Wharton 2021),
+  and it is political.
+- **Next levers, in order:**
+  1. Stayed-to-watch % from Studio for every posted Short. It is never received, and it is the only way to tell a hook failure
+     from a distribution one.
+  2. Screen the faces Shorts viewers DO know from their feed (Simon Squibb, Wallo267, Dr. Eric Berg, Jim Kwik, Sahil Bloom, Dan
+     Martell, Hala Taha, Aaron Marino, Evan Carmichael, Jason Tartick). This is F1 on the Shorts audience itself.
+  3. Ask Scott for famous guests' raw as soon as they are recorded.
+  4. Agree with Scott at what age each Short's views are counted. A Short posted the day before the deadline has one day of views.
+
 ## The Daymond factor (Affan 2026-10-22, from the Bombas Short at 238K; ONE observation, curve open: hypotheses, not findings)
 Frame-by-frame (`projects/_client-scott-clary/bombas-shark-was-wrong`, 38.7 s): 0 s "I have the number one invested Shark Tank
 product ever" + FUBU FOUNDER / SHARK TANK INVESTOR card -> 3 s "Bombas" (the sock, the Tank pitch footage) -> his own big idea with

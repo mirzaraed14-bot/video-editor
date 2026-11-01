@@ -505,3 +505,16 @@ motion graphic of mine has some super powers"*.
   must have dipped before the cut (no speech-level energy in the last 60 ms that continues past it), and a WhisperX word may not end
   > 40 ms after the cut; a hit is opened to the word's energy end. Fix pattern on his timeline (no `.end` extension; pieces laid into
   room, then the rest slid back): `projects/shorts-cooked-not-your-fault/work/v3cut_offline.py` + `v3cut_place.py`.
+
+
+## 2026-11-01 · Batch-6 reactions (TCO, BP Money, Roofing; built from raw in ABW10 at ~90 % weekly usage): lesson → change → file
+- **He talks over their Short while it replays or scrubs**: TCO's "very vague title" line sat under their Short's replay at -18.7 LUFS vs his
+  -29 talk, unusable; measure every kept talk segment's loudness before trusting it as talk (> -25 LUFS = an insert under it) → the line is
+  cut and reported; `projects/tco-balloon-boy-acting-class-reaction/keep.json` cut_for_cap.
+- **Their Short is not always louder than his voice**: BP / Roofing played their Short 9-15 LU under our samples in the OBS mix, so one
+  insert gain under-plays it; per-range gains from measured LUFS (`voice_gain_ranges`, +9..+14 dB) → each build_plan.py `INS`.
+- **The Claude app is on his screen between plays** (retention, closing and outro stretches): a contact sheet of every talk stretch before the
+  plan, and `switches.json` drives the view and face-beat edges (a face beat ending within 0.15 s of a switch ends ON it) → each BRIEF.
+- **SFX for reactions = the sample's own approved soft swish set**, sized S/M/L, one cue per entrance, gated ≥ 19 LU under his voice AND peak
+  ≥ 15 dB under (`_onyx-batch6-2026-10/reactions/tools6/sfxgate6.py`): no downloads, no "superhero" layers.
+- **Cut length**: 2:39.8 / 2:51.7 / 2:46.9 with the whole intro verbatim; Roofing's and BP's intros run 35-49 s, so the critique beats carry the cap.

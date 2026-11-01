@@ -3,6 +3,15 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-02: re-decode in 10 s windows, never the whole cut (ABW10 Seq 37)
+
+- **A single faster-whisper pass over a 45 s cut (vad off) hallucinated after ~30 s** (hi turned into nonsense from 19 s, ur jumped
+  from 33.5 to 44.7 s). → re-decode in overlapping ~10 s windows (`projects/abw10-seq37-short/work/redecode.py`). Note: the venv
+  python with `-I` ignores PYTHONUTF8, so the script must `sys.stdout.reconfigure(encoding="utf-8")`.
+- **A deliberate list repeated for the joke trips LOOP** ("football chal rha hota hai" ×2, "hockey chal rha hota hai" ×2):
+  real when every decoder hears the same count; keep it, one line per repeat, and say so in the hand-off.
+- **اجتماعی "ijtimai" is heard as استعمائی / इस्तेमाई "istemaai"** by every decoder (even prompted toward English). Flag it.
+
 ## 2026-10-31: a dropped reply hides inside a STRETCHED word (ABW10 Seq 35, jealous-uncle skit)
 
 - **WhisperX dropped a whole 1 s reply ("haan yar sahi hai yar") and stretched the next word ("beta", 0.86 s) over the hole**,

@@ -251,3 +251,21 @@ an assert that every line carries exactly its chunk's words). README § Captions
    shot (Ross's window holds his frame 124 over the program's 5-frame flash of the guest).
 3. **The hook's listening card from frames outside the cut**: a separate clip of the guest's silent reaction (51 frames before the program
    cut away), shown at 0.9x over the 57-frame hook; declared in the BRIEF as a cutaway.
+
+## 2026-11-01 · Ronnen Harary "said no to Beyblade" IG Short (`projects/_client-scott-clary/harary-beyblade/ig/`), 30 fps check
+What it does better than the Pincus IG: the hook IS Mark Brazil's cover (his face full-window, a big bold sans claim low over his chest,
+the key word on a red box), claim only; 13 physical receipts, one per beat, with three card flips between neighbouring receipts; the
+Takara mark circled ON the tilted, pushing card; crisp swishes chosen by envelope.
+1. **Hook = the claim only, on the IG too** (Affan 2026-11-01 on the YT check: "too much text at the beginning"): "He said no to /
+   [Beyblade]", no name label, no credit, no tag. Mark's 10-31 layout without its name label. Over his own face it reads as his cover.
+2. **Choose transition sounds by ENVELOPE, not by name.** Affan rejected the airy winds (slow rise and decay); the approved set attacks
+   in ~0.1 s and is gone ~0.1-0.2 s after its crest. `ig/work/env.py` measures attack / decay / tonal / crackle / hiss per take: eight
+   takes qualified (the job's three hb2-* + five library takes); the shortest go on card flips, the longest tail on the burn, and no take
+   plays twice in a row ("bright" swishes fail: 99.7 % of their energy above 6 kHz).
+3. **A mark drawn on a card moves WITH the card.** The circle's centre goes through paste_card's own rotation (the tilt), the push's scale
+   and the bob (`card_point`), so it stays on the Takara mark while the card drifts.
+4. **A wide shot inside the cut stays off every plate**: the first cam shot is cut frames 0-79 only (the wide two-shot is 80-114, under
+   the Dranzer receipt), in the build AND in plates.py, so neither the 30 fps check nor the 60 fps final can reach it.
+5. Final (Affan on the check: "looks good"): one 60 fps build from the plates, as approved. This RSS stream also repeats a frame every
+   5th frame (2026-10-31 #7: sync60.py leaves them out). A bars "FAIL" of ONE pixel at luma 4/255 on the window's edge, in the final
+   encode only, with the rendered picture clean there, is x264 smearing a bright edge: check picture<fps>.mp4 before chasing it.

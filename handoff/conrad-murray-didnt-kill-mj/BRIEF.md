@@ -1,6 +1,6 @@
 # BRIEF: "WHY CONRAD MURRAY SAYS HE DIDN'T KILL MICHAEL JACKSON 😳" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-31 ~18:30): DELIVERED `Conrad Murray Guilty.mov` (49.37 s) after his Tella (DECISIONS 15–24); at his review (RUN.md, REPORT.md)
+## ▶ STATUS: resume here (2026-10-31 evening): v2 DELIVERED with his review 1 (R1–R6); at his review (RUN.md, REPORT.md)
 - Sent: `X:\Claude Projects\Exports\Conrad Murray Guilty - SEQUENCE PREVIEW.mp4` (= `seq/preview.mp4`, 49.23 s, censor
   default ON) + `… SEQUENCE PREVIEW (beat 5 uncensored).mp4` (8 s). In/outs: `seq/inout.md`. What the sources forced:
   DECISIONS 8–14 below (all visible in the preview, all his call).
@@ -106,6 +106,28 @@ Supersedes the brief and DECISIONS 1–14 where they differ. Each note → what 
     on the full-bleed frame (z 1.0), BlurMoCurves curve (README § 3), never a push past the native crop on 60M.
 - **Not mentioned = stands:** DECISION 8 (Murray's own "Nothing." stays: he played "Absolutely nothing. Nothing." without a
   note), DECISION 13 (pauses tightened per rule 1), DECISION 12 (KATPM 720p part 2), DECISION 1 (DR*G, audible).
+
+### His REVIEW 1 of v1 (2026-10-31 evening; `brief/tella2/review.mp4`, 1:49, transcript `brief/tella2/review.json`, frames
+### `proof/tella2/sheet.jpg`; he plays v1 in Premiere). Each note → the change. Supersedes DECISION 24's lift logic.
+R1. **No forced lifts: captions may sit on the nose** (tella 6–47, frames tella 9–30 = B1 Murray "YOU KILLED HIM", 38–44 =
+    Hayes / Murray in the 911 clip): "this weird artifact … I haven't set anything in stone that the captions will always be
+    below the lips … you can drag this footage down so the captions are on his nose … there's no need to forcefully move the
+    footage upwards and have these weird-ass artifacts … log this into the lessons … it's not an obligation". → Every face shot
+    back to its NATURAL full-bleed framing (no Y lifts, no exposed bottom, no soft fill), Murray's 911 close-up back to 1.80.
+R2. **Letterbox: the caption ON him** (tella 47–60, frames tella 50–61 = Shafer): "move this whole letterbox video down so
+    that this caption appears on his tie or something". → Shafer + IV-demo band moved DOWN (top 395) so the caption line
+    crosses his tie, inside the picture.
+R3. **The verdict "Topaz" is just higher fps with the same pixelation** (tella 63–73, frames tella 64–72 = VERD "CONRAD
+    ROBERT MURRAY"): right, the 720p CBS verdict had NO upscale (only the flow in-betweens). → Topaz Proteus x2 on VERD
+    (no Iris, the brief), placed at 1.35 (= the same 2.7x of the source).
+R4. **If dragging footage down leaves black at the top: white lines + blur the rest** (tella 73–97): his fallback for a
+    dragged-down shot = the AW letterbox treatment (glow line on the picture edge + blurred fill), never black. With R1
+    (natural framing) no full-bleed shot exposes anything; kept as the rule.
+R5. **Katherine: drag her down too, and the white line is not on the border of the video** (tella 97–105, frames tella
+    99–102): her CNN source carries 28 black rows on top, so the band's top bar sat above a black strip. → band from the
+    first real row (content_y 58 of the x2 Proteus file), moved down (top 330) so the caption sits on her chin / neck.
+R6. "There's so many revisions here to do" (tella 105–107) → all of R1–R5 in ONE finish render (memory: a note = data + one
+    finish render).
 
 ## CATALOG PASS (2026-10-31 ~17:50; CLAUDE.md learning loop 5)
 Read `research/effects-catalog/CATALOG.md` (FX-01..81) and looked at all 137 reference stills (`proof/catalog/page1-4.jpg`).

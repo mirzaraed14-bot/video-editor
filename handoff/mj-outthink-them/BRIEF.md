@@ -1,6 +1,10 @@
 # BRIEF: "WHY EVERYONE UNDERESTIMATED MICHAEL JACKSON 😳" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-31 ~18:35): v3 DELIVERED (labels at the bottom, his note on v2) → at his review
+## ▶ STATUS: resume here (2026-11-01): v4 DELIVERED (his caption corrections on v3) → at his review
+- 24. **Words, his ear (v3 note):** "and THAT MF come on say" · "how COULD you buy the Beatles" ×2 · "YOU said sixty" (my
+  DECISION 10 / caption picks "my boy", "do", "he" were wrong).
+
+## (previous) ▶ STATUS: resume here (2026-10-31 ~18:35): v3 DELIVERED (labels at the bottom, his note on v2) → at his review
 - 23. **Labels at the BOTTOM** (his v2 note, beats brief § 4 "top third"): card top y1270 (London y1385 under its band).
 
 ## (previous) ▶ STATUS: resume here (2026-10-31 ~18:00): v2 DELIVERED (40.80 s; v1 41.37 s kept beside it) → at his review. Build notes: RUN.md; report: REPORT.md

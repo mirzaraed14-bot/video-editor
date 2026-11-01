@@ -1,6 +1,14 @@
 # RUN: "Why Conrad Murray Says He Didn't Kill Michael Jackson 😳" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-31 ~18:30): DELIVERED — `Conrad Murray Guilty.mov` (49.37 s) in Final Renders + Exports
+## ▶ STATUS: resume here (2026-10-31 evening): v2 DELIVERED (his review 1, BRIEF R1–R6) — at his review
+- His review Tella `brief/tella2/review.mp4` (1:49) → BRIEF R1–R6: natural framing everywhere (no lifts / fills, M911 back
+  to 1.80), letterbox bands DOWN (Shafer top 395: caption on his tie; Katherine top 330 from her first real row 58 of the x2
+  file: the bar now on the picture edge), the verdict Proteus x2 (`renders/VERD_prob2_35.mov`, scale 1.35). Timeline v1 kept
+  `build/make_timeline.v1.py` / `timeline.v1.json`; v1 file kept `outputs/Conrad Murray Guilty (v1).mov`.
+- DONE: v2 = `Conrad Murray Guilty.mov` in Final Renders + Exports (sha256 ffb14eeb…), v1 kept as "(v1)" in both;
+  49.37 s, -14.0 LUFS / -1.6 dBTP; 48 cuts clean (`proof/final_edges.jpg`), REPORT.md v2 section. NEXT: his review.
+
+## (previous) STATUS (2026-10-31 ~18:30): DELIVERED v1
 - `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Conrad Murray Guilty.mov` = `X:\Claude Projects\Exports\Conrad
   Murray Guilty.mov` = `outputs/Conrad Murray Guilty.mov` (sha256 cf0d0a43…): H.264 38.7 Mb/s 1080×1920 30 fps, PCM 48 kHz,
   -14.0 LUFS / -1.6 dBTP. § 8 QA + § 9 answers in REPORT.md. Lessons appended to the AW LESSONS.md (12).

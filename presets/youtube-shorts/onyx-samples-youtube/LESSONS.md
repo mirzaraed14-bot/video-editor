@@ -370,3 +370,11 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   starts, `RAW(raw)` = a raw second's cut frame) and write them into spec.json for the IG: the QA re-cut then re-timed both looks with no
   hand edits. (5) Two button splits back to back = a hard cut on the same camera: one split with a bottom clip that cuts inside it keeps
   the head lock chained.
+- 2026-11-01 (Scott D. Clary, Harary "Spin Master passed on Beyblade", `projects/_client-scott-clary/harary-beyblade/`, Affan's review of
+  the 30 fps check: "looks good ... do the final"): (1) **The hook is the claim only**: "remove ... his name and everything ... there's
+  too much text at the beginning": HE SAID NO TO / BEYBLADE (BEYBLADE coloured), the credit lines under it (RONNEN HARARY / SPIN MASTER
+  (PAW PATROL)) cut. One review, so a lesson, not yet a rule (ENGINE still says the card is the credit). (2) **Airy wind swishes read
+  "not premium"**: Epidemic "Airy, Wind 03 / Wind 04 / Long 05" rise and decay over ~0.35 s each way. Replaced by short, crisp swishes
+  matched to the MEASURED shape of the Patrón set he approved (attack to crest ~0.1 s, gone ~0.1-0.2 s after it): "Swish, Short,
+  Classic, Noise, Filter, Dry", "Whoosh, Classic, Dark, Fast 03", "Whoosh, Short, Fast Passby" (tail faded). Pick a swish by its
+  envelope (10 / 20 dB rise and decay around the crest), not by the word "airy". Levels 19-22 dB under his voice (cue_check).

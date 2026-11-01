@@ -1215,3 +1215,25 @@ REPORT.md). At his review.
   v2 → v3 frame diff showed EVERY frame changed, not just the card windows. Fix: `-color_range tv -colorspace bt709`
   BEFORE `-f rawvideo -i -` in the writer (patched in mj-outthink-them; every other job's kit copy still has it). After
   any splice, diff old vs new frame by frame: only the replaced ranges may change.
+- 2026-10-31 (Conrad Murray, HIS REVIEW 1 of v1) — lesson → change → file:
+  (1) **NEVER lift footage to keep captions under the lips**: "I haven't set anything in stone that the captions will always
+  be below the lips … drag this footage down so the captions are on his nose … no need to forcefully move the footage
+  upwards and have these weird-ass artifacts … log this into the lessons". My per-shot lifts (`win/shot_y.py`, up to
+  600 px) + the stretched `soft_fill` read as artifacts → every full-bleed face back to its natural framing, nothing exposed
+  (`build/make_timeline.py`: Y_override / expose_bottom cleared, shot_y off). This SUPERSEDES the 10-31 "his height,
+  measured per shot" lesson above for full-bleed shots.
+  (2) **Letterbox: the caption sits ON the person** ("move this whole letterbox video down so that this caption appears on
+  his tie"): band tops 395 (Shafer) / 330 (Katherine), not up near the top with the caption in the empty fill under it.
+  (3) **"Higher fps footage with the same pixelation" = no real upscale**: the 720p CBS verdict had only the flow
+  in-betweens; Proteus x2 on it (`renders/VERD_prob2_35.mov`, scale 1.35 = the same 2.7x). Every sub-1080p source gets a
+  Proteus pass, not just the 360p ones.
+  (4) **A letterbox band must start on the first REAL row**: the CNN Katherine source carries 28 black rows on top, so the
+  glow bar floated above a black strip ("the white line is not even on the border of the video"); measure the black rows
+  (content_y) before building a band.
+  (5) **If footage is dragged down and exposes black**: his white glow line on the picture edge + blurred fill, never black.
+- (2026-11-01, his note on v3) **wav2vec2 hypothesis scoring is NOT an ear on an impressionist's voice**: on Eddie's
+  falsetto Michael / Paul lines it picked "HE said", "how DO you" and "and MY BOY" — all three wrong ("YOU said", "how
+  COULD you", "and THAT MF"). It favours the shorter / smaller-phoneme reading and never sees slurred swears. When the
+  Whisper windows disagree on a function word or a mumble in an impression, list the open words in the PREVIEW message
+  for his ear (he hears it in the sequence preview anyway) instead of settling them silently; caption-only fixes then
+  cost one caption re-render + one short finish range, not a re-cut.

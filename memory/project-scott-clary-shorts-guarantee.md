@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: d3d74054-8117-4f44-bcac-6f8a02738576
-  modified: 2026-10-30T18:09:57.396Z
+  modified: 2026-11-01T06:34:24.023Z
 ---
 
 Scott D. Clary (Success Story) signed 2026-10-15. Affan's guarantee (told 2026-10-29): if OUR Shorts don't average 20,000 views by
@@ -28,3 +28,11 @@ which misses social-media-famous guests (Wallo267, Simon Squibb, Jason Tartick�
 So far there is no fresh 2.5, and the 2.0 tier is where the picks come from. When proposing "the best story left", say how many
 episodes it was chosen from and how they were chosen. Read the guest NAMES by hand, never only a fame rank, and watch Scott's NEW
 uploads for famous guests.
+
+On 2026-11-01 Affan was upset that the Shorts were still at 3-5K. The answer (FINDINGS § Channel goal, 11-01):
+- it's the story, not the edit: FUBU vs Bombas had the same kit, 10K vs 563K;
+- the mean is won by one hit per 12;
+- the levers are Studio stayed-to-watch %, screening the feed-famous faces (Squibb, Wallo267, Berg, Kwik…), raw from Scott's
+  famous guests, and agreeing at what age the views are counted.
+
+When he's discouraged, lead with the evidence, not comfort.

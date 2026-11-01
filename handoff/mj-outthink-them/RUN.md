@@ -1,6 +1,15 @@
 # RUN: "Why Everyone Underestimated Michael Jackson 😳" (Abundance Wisdom short)
 
-## ▶ STATUS: resume here (2026-10-31 ~18:35): DELIVERED v3 (labels at the bottom) → at his review
+## ▶ STATUS: resume here (2026-11-01): DELIVERED v4 (his caption corrections) → at his review
+- His note on v3 (screenshots of three captions): "its not my boy its 'that mf' and this is how could you, same goes with
+  the second how do you, and this is you said 60 not he said 60". v4 = ONLY those captions: `captions/make_words.py` SAID
+  (my/boy → that/MF, do → could ×2, "he" fix removed) + `captions.txt` (v3 kept: `captions.v3.txt`) → `caps_capcut_v6.mov`
+  → finish re-rendered for frames 1748-2010 only (`outputs/cap_v4_1748.mp4`) → fixed `splice_multi.py` onto v3's finish
+  (diff: only frames 1767-1993 change) → **`MJ Outthink Them.mov` MD5 022bca9394fe41135e40cd0fa10fd27e** in Final Renders +
+  Exports; v3 kept as `(v3 40.8s)`, v2 `(v2 40.8s)`, v1 `(v1 41.4s)`. -14.0 LUFS / -1.6 dBTP. No phone copy (not asked).
+- Audio unchanged: "that mf" stays audible as in the VladTV source (only the "next f***ing day" f-word is bleeped).
+
+## (previous) ▶ STATUS: resume here (2026-10-31 ~18:35): DELIVERED v3 (labels at the bottom) → at his review
 - His note on v2 (via the parent, verbatim in memory feedback-labels-at-bottom): labelling motion graphics at the BOTTOM.
   v3 = ONLY that: `lower_thirds` y0 230 → 1270 (London 1385, on the twin fill under its band); finish re-rendered for
   the card ranges only (`outputs/lt_v3_{0,380,592,1018}.mp4`) + `build/splice_multi.py` onto v2's finish →

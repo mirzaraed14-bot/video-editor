@@ -990,3 +990,14 @@ Always check the EDL bash can actually see before re-splicing.
   existed at 14:31); the calls chained after it never ran, and Premiere showed "Not Responding" at ~0 % CPU until then.
   So: one call per command (never chain on a failed one), read the state after recovery, resend only what is missing,
   and check the window title for "Auto Saving" before every call.
+
+
+## 2026-11-01 · batch-6 reactions (TCO / BP Money / Roofing, ABW10)
+- **The program monitor moved**: `apply.py --grab-only` screenshots (2576x1408) now hold the frame at x 1816-2452, y 124-1256, not 1880-2518 /
+  125-1259, so `tools3/grabsheet.py` clipped ~60 px off every frame's left edge (cards looked cut). Workaround:
+  `projects/_onyx-batch6-2026-10/reactions/tools6/grabsheet6.py <job> [x0,y0,x1,y1]`.
+- **The reaction caption layer carries the seam line, so it depends on the face beats**: after a face-beat change the old `captions.mov`
+  drew the seam line across a face-only frame. Re-render `overlays.py --captions`, then `projectItem.refreshMedia()` on that job bin's
+  `captions.mov` (plain ExtendScript walking rootItem; `bin()`/`item()` exist only in apply.py's head) and re-place it with `--overlays`.
+  Any re-rendered MG that is already imported: give it a NEW id (`<id>2`), never overwrite the imported file.
+- `build_seq3.py --create` leaves the NEW sequence active; restore the previous one (`tools5/restore_active.py`) after each reaction.

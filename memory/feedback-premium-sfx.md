@@ -72,3 +72,7 @@ projects/shorts-cooked-not-your-fault/work/sfx3_build.py; lesson in onyx-samples
 **2026-10-28 (AW long-form, BOTH VERSIONS review 2):** "the scrubbing, the writing, the paper sound effects are just a little bit loud…
 three, four decibels": paper / pencil / marker / page-turn textures sit ~3.5 dB under the review-1 caps (≈ −22.5 dB vs the voice).
 Apply it relative to the live level so his own hand-set levels stay. Quieter beats the phone-band audibility target (AW LESSONS 44).
+
+**2026-11-01 (Scott Short, Harary):** slow airy wind swishes (rise + decay ~0.35 s each way) "just doesn't sound premium". Premium =
+short and crisp: attack to crest ~0.1 s, gone ~0.1-0.2 s after (the measured shape of the approved Patrón set). Choose swishes by that
+envelope, not by "airy" in the title. Lesson: onyx-samples-youtube LESSONS 2026-11-01.

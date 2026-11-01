@@ -124,7 +124,10 @@ answers "do it like dr*g addict" + "Audible, caption only" → his Tella (report
 speaking, the 360p courtroom + CNN Katherine letterboxed, labels as animated lower thirds at the BOTTOM, colour MIX + purple,
 60 Minutes zooms OUT, the "Jackson" trim clipped the name → fixed) → DELIVERED ~18:30 (49.37 s, `Conrad Murray Guilty.mov`
 in Final Renders + Exports, sha256 cf0d0a43…, REPORT.md). Found on the sources: the brief's "None. None. Absolutely nothing."
-is partly Hayes (voice match `win/who.py`). No Topaz on the final picture (shared GPU): flow in-betweens in Stage A. At his
-review. Start points: RUN.md / BRIEF.md (DECISIONS 15-24) in the job folder.
+is partly Hayes (voice match `win/who.py`). No Topaz on the final picture (shared GPU): flow in-betweens in Stage A.
+His review 1 (no forced face lifts / fills, letterboxes down so captions sit on the person, Katherine's band on her first
+real row, the verdict Proteus x2) → v2 DELIVERED the same evening (v1 kept as "(v1)"). At his review. Start points: RUN.md / BRIEF.md (DECISIONS 15-24) in the job folder.
 → his v2 note "labels at the bottom" → v3 DELIVERED ~18:35 (cards only; MD5 5d465250…, v2 kept). splice_multi.py
 darkened ~4-5 luma levels per pass (raw writer without an input range): fixed in this job's kit only.
+→ 2026-11-01 his caption corrections on v3 ("that mf", "how could you" x2, "you said 60") → v4 DELIVERED (captions only,
+MD5 022bca93…, v3 kept). Forced-alignment word picks on Eddie's impressions were wrong 3 of 3: put open words to him.

@@ -28,3 +28,12 @@ placed the letterboxed sources low to match; he pointed with his mouse: "the cap
 these things are placed too low just because the captions are placed too low". His approved finals measure y940-1130. Start the
 line there; move what can move (letterboxes, placed overlays) to put the lips over it; a full-bleed close-up that cannot move
 carries the line on its nostril / upper-lip line (he uploaded it that way). A brief's % never overrides his height.
+
+**"Below the lips" is NOT an obligation; never lift footage for it (Conrad Murray review, 2026-10-31):** I lifted full-bleed
+faces up to 600 px so captions cleared the lips, and filled the exposed bottom with a stretched blur; he: "this weird artifact
+… I haven't set anything in stone that the captions will always be below the lips … you can drag this footage down so the
+captions are on his nose … there's no need to forcefully move the footage upwards and have these weird-ass artifacts".
+**How to apply:** full-bleed faces stay at their NATURAL framing (picture covering the frame, nothing exposed); the caption
+may sit on the nose or mouth. Letterboxed footage moves DOWN so the caption sits ON the person (tie, chest, chin), not in
+the empty fill under the band. If a shot is ever dragged down and exposes black at the top, use his letterbox treatment
+(white glow line on the picture edge + blurred fill), never black and never a stretched fill.
