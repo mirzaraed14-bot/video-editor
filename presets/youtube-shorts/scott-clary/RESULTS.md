@@ -17,6 +17,7 @@ Affan fills "Posted" and the 7-day numbers (or pastes the analytics screenshot a
 | 10 | Daymond John: mocked Kevin O'Leary's card chain, then did a deal with Tom Brady (`daymond-card-chain`; Affan's own sequence) | 2026-10-29 (60 fps final delivered after Affan's OK of the check; not uploaded) | 51.2 s | Daymond's cam: "You've seen Kevin O'Leary walking around with this stupid little Mr. T chain with a little card in there?" + HE MOCKED KEVIN'S / $30M CARD CHAIN card 0-3 s + SHARK TANK INVESTOR / DAYMOND JOHN tag, the necklace by "chain" | **20K-200K** · at ~60 s it is the second-longest Scott Short (Patrón: 67.4 s, verdict at 0:45, ~5K), and the Brady payoff lands at ~57 s. The 17 s "five years ago" flashback at ~10-27 s is where a cold viewer leaves. (Claude's 33 s order was 30K-300K. The pick test is 2.5 either way, and the hook is the same.) (locked 2026-10-29, verbatim from `research/daymond-card-chain.md`) | | | | | | | | |
 | 11 | Mark Pincus: Zuckerberg showed him why Facebook would win, and he ignored it (`pincus-ignored-facebook`; Claude's sequence, approved by Affan 2026-10-31) | 2026-10-31 (60 fps final delivered after Affan's OK of the check; not uploaded) | 43.7 s | Pincus's own cam on top of a split from frame 1: "Zuckerberg walked in my door, he and Sean Parker showed me the Facebook" + BEFORE FARMVILLE / HE RAN HIS OWN / SOCIAL NETWORK / MARK PINCUS card 0-3 s over him; below, young Zuckerberg (May 2004) on frame 1, Parker (2005) by "Sean Parker", TheFacebook's 2004 home page by "the Facebook" | **10K-100K.** Biggest failure reason: Pincus's face and "Tribe" mean nothing to a stranger. If the real Zuckerberg photo and the hook card don't land by ~2 s, it reads as "another founder story" and gets swiped. Pre-mortem: FINDINGS § Story bank. (locked 2026-10-31, verbatim from `research/pincus-ignored-facebook.md` § Prediction) | | | | | | | | |
 | 12 | Ronnen Harary: Spin Master passed on Beyblade, and Hasbro signed it (`harary-beyblade`; Affan's own sequence v2, "Build mine as is") | 2026-11-01 (60 fps final delivered after Affan's review of the check: hook = HE SAID NO TO / BEYBLADE only, crisper swishes; not uploaded) | 55.1 s | Harary's own cam: "we missed hundreds and hundreds of millions of dollars of toy sales." + HE SAID NO TO / BEYBLADE card 0-3 s (the check's credit lines cut on Affan's note); a 2001 Takara Dranzer top from 2.67 s ("I got presented Beyblade") | **8K-80K.** Biggest failure reason: Harary is a stranger, Spin Master isn't a name people know, and the hook is his money line, not a picture. If a real spinning Beyblade and the hook card don't land by ~2 s, it reads as a stranger's anecdote. The Bakugan half (~30 s, a less-known toy and a comeback) is where a cold viewer leaves. (locked 2026-11-01, verbatim from `research/harary-beyblade.md` § Prediction) | | | | | | | | |
+| 13 | Simon Squibb: Helen was right and I was wrong (`simon-squibb-payroll`; Affan's sequence v1, "Keep it as is") | 2026-11-03 (60 fps final delivered after Affan's OK of the 30 fps check v2: hook = a question on the caption line, the silent pause before "resisted" removed; not uploaded) | 52.6 s | Squibb's own cam, clean, frame 1: "When I was younger, like maybe 25, 26 years old, I had a financial problem in the business." + WHY PAY YOUR EMPLOYEES / BEFORE YOURSELF? card 0-3 s on the caption line (check v2, Affan's note; v1 was HE WANTED TO PAY / HIMSELF FIRST, low band), no captions or watermark under it (ENGINE rule 6) | **3K-40K.** Biggest failure reason: his face is known on short-form feeds but not to everyone, and the story has no famous noun or picture. If the viewer doesn't place him in the first second, it is a stranger's payroll story and gets swiped like Harary (46.8 %). The kept brag ending ("I have never missed a … payment") softens the self-own that is its whole point. (locked 2026-11-03, verbatim from `research/simon-squibb-payroll.md` § Prediction) | | | | | | | | |
 
 These ranges have no channel baseline yet (first predictions on this channel); the first four results set it.
 
@@ -67,6 +68,31 @@ is the pick for 10-30. Its row and locked prediction go in when it is delivered.
 
 Same day, the gate run (FINDINGS § Story bank): Wainwright and Gutman fail freshness. Their rows above stay as registered. Four
 pass every gate: Pincus, Harary, Paul Allen (Ancestry) and Pearce.
+
+**2026-11-03 read: Scott's YouTube Studio AI export** (`E:\Bullshit Folder\Scott Analytics.pdf`, via `projects/_client-scott-clary/STUDIO-STATS-PROMPT.md`; numbers as of ~11-02, NOT 7-day). The first stayed-to-watch numbers we have. Per-time curves, traffic sources and retention points came back "n/a".
+| Short (posted title) | Posted (EST) | Views | Engaged | Viewed vs swiped | APV | AVD | Likes |
+|---|---|---|---|---|---|---|---|
+| 2 Bombas "Daymond John Almost LOST $250M" | Oct 18 08:02 | 624,584 | 339,839 | **73.7 %** | **92.9 %** | 36 s | 12,062 |
+| 10 Card chain "Tom Brady & Daymond John's $20M Investment" | Oct 29 19:02 | 2,765 | 1,448 | 64.9 % | 70.4 % | 36 s | 75 |
+| 11 Pincus "How Mark Pincus MISSED OUT On $1.6T" | Oct 31 19:02 | 1,357 | 794 | 64.0 % | 72.8 % | 32 s | 8 |
+| 12 Harary "How $1B Bakugan Toy Was Born" | Nov 1 20:16 | 244 | 94 | 46.8 % | 75.2 % | 42 s | 5 |
+| 9 Patrón "The $37 Tequila That Turned Into $5B" | Oct 28 04:02 | **7** | 3 | 50.0 % | 51.8 % | 35 s | 1 |
+- Not in the export: FUBU, both Serhants, Marvel, War Dogs, Chris Do, Morgan.
+- The card chain went up with a new title, "$20M Investment". That number has no source in our files.
+- Patrón has 7 views in 6 days: YouTube is not showing it at all (see FINDINGS 11-03).
+- The rest of the channel in the same window:
+  - the other editor's quote Shorts: 15-43 % viewed, 26-1,095 views;
+  - Scott's news Shorts: Binance "$5 Billion" hack 64.4 % / 3,878; DoorDash-Instacart 68.7 % / 2,317.
+- Channel all-time top 5:
+  1. Bombas, 624,695;
+  2. **Matt Gutman** (2024-07-16), 595,627;
+  3. **Gary Vee** "Stop forcing deep connections" (2026-04-24), 299,084;
+  4. **Gary Vee** "Stop blaming everyone else" (2026-04-17), 258,862;
+  5. a quote Short (2025-10-09), 95,632.
+- Weekly Shorts views:
+  - Sep 6-Oct 11: 12-20K a week from 16-18 uploads (the baseline);
+  - week of Oct 18: 478,705; week of Oct 25: 209,161 (Bombas);
+  - Aug 16-Sep 5: 92K / 208K / 135K (source not in the export).
 
 **2026-10-24 (Affan, in chat):** the Bombas Short ("Daymond John Almost LOST $250M") is at **378K** (238K on 10-22, still climbing). Baseline: Scott's Shorts were averaging **in the 900s** before Onyx. Used as the proof line in Onyx approval replies (Moonshots, 2026-10-24).
 
@@ -124,5 +150,6 @@ Freshness: the story sits in his book's lottery chapter, not his famous origin s
 | 9 | The $37 Tequila That Turned Into $5B (Affan's pick, 2026-10-28; $5B = the 2018 Bacardi deal, ~$5.1B) | `projects/_client-scott-clary/patron-20000-cases/thumbnail.jpg` ("TOO EXPENSIVE / TO SELL", teal EXPENSIVE; photo: DeJoria at a back bar, CNBC press photo 103519094: licensing flag, swap for an owned / press-kit photo before posting) |
 | 11 | How Mark Pincus MISSED OUT On $1.6T (Affan's FINAL pick, 2026-10-31, kept after the two flags below ("Keep mine"), after "He IGNORED Zuckerberg's Facebook Idea"; ours was "Zuckerberg Showed Him Why Facebook Would Win. He Ignored It."; $1.6T = Meta's market cap, ~$1.64T at the 23 Oct 2026 close. Flags raised with him: a "How" opener (ENGINE rule 5: every How/Why title sits at 10K or less), and he INVESTED in Facebook (FINDINGS § Fact-check log 2026-10-30), so "missed out" must read as his own network losing, not as passing on the investment; offered "Mark Pincus Had a Social Network Before Zuckerberg. He MISSED OUT On $1.6T") | `projects/_client-scott-clary/pincus-ignored-facebook/thumbnail.jpg` ("HE IGNORED / IT", teal IGNORED; photo: young Zuckerberg, 14 May 2004) |
 | 12 | How $1B Bakugan Toy Was Born (Affan's pick, 2026-11-01; ours was "The Paw Patrol Company Said NO To Beyblade. Hasbro Said Yes.", after the pick file's "Spin Master Passed On Beyblade. Then Hasbro Signed It.". Flags raised with him: a "How" opener (ENGINE rule 5: every How/Why title sits at 10K or less); $1B is his own estimate ("a billion dollar franchise"; the pick kept figures off-screen); the title is about Bakugan while the hook and cover are about Beyblade, and the prediction names the Bakugan half as where a cold viewer leaves) | `projects/_client-scott-clary/harary-beyblade/thumbnail.jpg` ("WE PASSED / ON IT", teal PASSED; photo: the Bakuten Shoot Beyblade 2001 key art; carries the anime's own wordmark; logo-free alternative work/look/thumb_dranzer.jpg) |
+| 13 | Simon Squibb Wanted To Pay Himself First. His Partner Said No. (OUR PROPOSAL, 2026-11-03: the name + the loss + the reversal, ENGINE rule 5; Affan writes the final title) | `projects/_client-scott-clary/simon-squibb-payroll/thumbnail.jpg` ("SHE WAS / RIGHT", teal RIGHT; photo: Entrepreneur Middle East's 3840x2160 "Simon Squibb SIF 2026" press still: licensing flag, swap for an owned / press-kit photo before posting) |
 
 Licensing flag (2026-10-19): the #4 thumbnail photo is a Getty image (gettyimages-2158515218, via CBS); swap it for an official Netflix / SERHANT press still before posting. The #3 photo comes from Parade (credit not shown on the page).

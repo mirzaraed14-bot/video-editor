@@ -3,6 +3,96 @@
 One entry per thing a job taught. Newest first. Numbers belong in [README.md](README.md),
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
+
+## 2026-11-03 · subscribe CTA review 1: glow it, and research before a concept
+
+**Lesson → change made → file:**
+1. **A graphic without his glow reads as "slapped on".** He liked the mid pill's size and subtlety. It needed the channel's
+   glow: his Red Shade Deep Glow as a soft hue, a flare on the click, and the hue dying into SUBSCRIBED.
+   - → `cta/cta.py` Button halos + `red_glow()`.
+2. **A text card is not a concept.** The first end screen (glow bars, headline, pill) he "didn't like at all". Research
+   first, then build ONE scene with phases, a visual that is not type, and a camera move.
+   - Road to 1M: his gold plaque, the count to 1,000,000, and the subscribe feeding the plaque.
+   - → `cta/cta.py` `end_frame()`, README § 12.
+
+## 2026-11-03 · subscribe CTA on every AW Short (his ask, 540K → 1M)
+
+**Lesson → change made → file:**
+1. **Every AW Short now carries the subscribe CTA: two subtle mid prompts in a ~40 s Short and a subscribe end screen.**
+   He wants them in the channel's own look, never a stock YouTube sticker.
+   - Built in his look: Gretaros, the caption glow stack, the glow bars, Red Shade, caption gold, the label motion.
+   - Mid: 2.8 s red SUBSCRIBE pill in the label band (y 1392), tapped by a cursor, turns into SUBSCRIBED.
+   - End: 3.5 s black screen with WANT MORE STORIES / LIKE THIS?, the pill, and ABUNDANCE WISDOM.
+   - First preview: Conrad + 2 mids + end (`E:\Shorts\Abudance Wisdom Shorts Exports\CTA\AW subscribe CTA preview (Conrad).mp4`).
+     It waits on his OK; Harry Diana is the first Short to ship with it.
+   - → README § 12, `cta/cta.py`, SESSION-START ground rules.
+
+## 2026-11-03 · Paris Shock Therapy review 1: "serious Higgsfield upscale" on sourced overlays
+
+**Lesson → change made → file:**
+1. **Sourced overlays get a Higgsfield upscale BEFORE they go in. This is his ask, not an option to offer.**
+   - Stills: `upscale_image` bytedance 4K (2 credits flat), then lanczos down to the PLAYED size, so the finish never
+     minifies by 3×.
+   - Clips: `upscale_video` Topaz 2160p (5 credits for 2.7 s) on the exact 9:16 crop that plays. Upload a short excerpt
+     with handles, not the whole source.
+   - → `build/make_timeline.py` S3 / S6.
+2. **An upscale doesn't save a hot source from his grade.** The sunlit paparazzi clip still blew out and went crunchy
+   under his PRE sharpen bands. A pre-grade gain 0.66 / gamma 1.08 / pre_blur 1.0 on that shot fixed it (Patrick's AMN09
+   was 0.62 / 1.1).
+   - Check every bright overlay in a finished still before the full render.
+   - → timeline `gain_level` / `gamma_level` / `pre_blur`, keyed by shot id.
+
+## 2026-11-02 · Paris Shock Therapy code build (projects/paris-shock-therapy)
+
+**Lesson → change made → file:**
+
+1. **A source whose audio is late gets its PICTURE slipped in Stage A, never at render time.**
+   - The slip goes into each shot's `s0` before `stage_a.py track`, so the nose track and the shown frames agree.
+   - ET's On Purpose package: picture 6 frames earlier; ET's lag was +7 frames, now +1.2 / −0.2.
+   - Measure on LONG spans (5–7 s). 2.5 s spans give false peaks.
+   - → `build/make_timeline.py` SLIP; `win/lipsync_mesh_v.py` measures a vertical file.
+2. **The slip exposes the source's own cuts.** Hold the first (or last) clean frame as a `freeze` shot, landed under the
+   creator's flash on that cut.
+   - Head holds start ≥ 0.3 source frame into the clean shot. Tail holds stop a full frame early, because `interp_frame`
+     returns the PRE-cut frame when it detects a cut.
+   - → `build/make_timeline.py`.
+3. **A read-back of his re-cut:** the dump's out column runs 5–6 frames long. Source span = in + (t1 − t0); the last
+   piece then ends on ET's own cut. → `build/make_timeline.py`.
+4. **Head lock on a fast-moving face jitters.** Where lock error > 3 source px, smooth the anchor path (Gaussian, sigma 3
+   frames): a follow, not a lock.
+   - Red Table Talk read 3.5–11.7 px; On Purpose 0.9–2.5.
+   - → `build/track.json` post-pass (`track.raw.json` kept).
+5. **Skin:** On Purpose 2026 reads R/G 1.86–1.91 under his grade.
+   - sat_level 0.72 brings it to 1.62–1.64; Jay 1.74 → 0.85; RTT 1.73–1.75 → 0.85.
+   - → timeline `sat_level`.
+6. **Overlay windows:**
+   - Frame-diff scan every window for hidden cuts: PNC 2–3 s shots, X17 flashes.
+   - Find burned-in subtitle rows by bright-pixel rows.
+   - The Stage A sheet shows the UNMASKED layer, so subtitles outside the band look present but are masked in the
+     finish.
+   - → BRIEF § OVERLAYS PICKED.
+
+
+## 2026-11-02 — Paris "Shock Therapy" raw cut (`projects/paris-shock-therapy`, ABW10, 30 fps)
+
+- **"It's a bit unsynced" was real: ET's On Purpose package carries its audio ~0.20 s LATE** against the lips (his Tella,
+  said twice). Two mouth measures agreed (+229 ms raw, vs a +30…65 ms natural lead on RTT), and a bilabial strip
+  confirmed it ("sharp pain": lips open 0.21 s before the vowel). News packages re-cut podcasts and can slip sync, so
+  measure every talking source before the build (`projects/paris-shock-therapy/win/lipsync_mesh.py`, MediaPipe 0.10.14).
+- **His transitions come spoken, not labelled:** "this will be purple / dark green / cyan fading into this" while a clip
+  is selected = that type at the SELECTED clip's out. Pin each one by the program-monitor timecode and the outlined clip
+  (`win/tl_sheet.py`).
+
+- **An ellipsis in a brief's quote is not always a cut.** Beat 5's "…" hides no words; beat 4's hid a whole sentence
+  whose two splice points ran through unbroken speech (one under ET's music). Test both joins by level and re-ASR
+  before cutting. When neither is clean, keep the exact words and offer the short version; the brief's runtime then
+  landed (47.5 s vs ~47).
+- **ET packages hide unusable picture under the quoted lines:** Willow reaction shots, undated Instagram photos, album
+  art, lower-thirds. Sheet every shot under every range BEFORE sequencing, and cover with unused shots of the same
+  show, looking down where possible.
+- **A brief's "if it isn't clean" fallback can be about the head, not the hard words:** here "kill myself every day"
+  was clear, but "…a lot of pressure" was fused to the "and" before it. The fallback start was the clean one.
+
 ## 2026-10-31 — labels at the bottom, every time (MJ Outthink Them v2 review)
 
 - **Label motion graphics go at the BOTTOM, never the top** ("I told you… Nobody looks at the top"). MJ Outthink, Patrick

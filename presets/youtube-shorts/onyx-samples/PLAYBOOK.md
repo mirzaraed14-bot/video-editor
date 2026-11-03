@@ -94,6 +94,10 @@ every milestone. `reference/` holds the show's own Shorts (the one named in the 
 past hits on the same topic). `raw/` holds only the source section we cut from.
 
 ### 1. Find and pull the source
+> **LOCKED (Affan, 2026-11-02): the sample IS the permitted Short, enhanced.** "Every single time we ask for permission for a short
+> that we're going to review, we're going to enhance that exact video so that the point is better portrayed." Same moment, same point,
+> re-cut so it lands (hook, tightening, context from the episode, our captions + MGs). No back-catalogue mining (batch 6's MINER-BRIEF-v2
+> detour cost 8 rejected picks). Memory: feedback-onyx-sample-is-the-permitted-short.
 1. Start from the Short named in the permission email (the tracker's "Short named in email" column). Download it to
    `reference/` (yt-dlp, forced H.264: `-f "bv*[vcodec^=avc1]+ba[ext=m4a]/b[vcodec^=avc1]"`) and transcribe it.
 2. Find the full episode it was cut from: the channel's search (`/@<channel>/search?query=<keyword>`), then the

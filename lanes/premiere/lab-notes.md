@@ -1001,3 +1001,97 @@ Always check the EDL bash can actually see before re-splicing.
   `captions.mov` (plain ExtendScript walking rootItem; `bin()`/`item()` exist only in apply.py's head) and re-place it with `--overlays`.
   Any re-rendered MG that is already imported: give it a NEW id (`<id>2`), never overwrite the imported file.
 - `build_seq3.py --create` leaves the NEW sequence active; restore the previous one (`tools5/restore_active.py`) after each reaction.
+
+## 2026-11-02 · paris-shock-therapy raw cut (ABW10 › "Paris Shock Therapy - raw cut", 30 fps)
+- **A 30 fps sequence from his 60 fps template:** clone the EMPTY template, then `st = S.getSettings(); t = new Time();
+  t.ticks = "8467200000"; st.videoFrameRate = t; st.videoDisplayFormat = 104; S.setSettings(st)`. On the empty clone it took
+  (read back 30.00 fps, timebase 8467200000, display 104). The placement tools now take `--fps 30` (`resolve_beats.py`,
+  `plan_placement.py`; default 60).
+- **At 30 fps Premiere floors every placed in-point to the SEQUENCE grid (1/30 s), not the source's 29.97 grid:** 27.0271
+  read back 27.0000, 107.7411 → 107.7333 (up to 33 ms early, ends move with them). An in-point planned exactly ON a
+  source camera cut (8.5085) floored to 8.5000 and can show the previous shot's frame. Plan cut-anchored in-points at
+  or above the next 1/30 grid point (8.5334), or cover the frame. Verify in-points from the read-back, never from the plan.
+- **`track.overwriteClip(item, t)` works on a sequence that is NOT active:** a one-frame V2 hold was laid, ended
+  (`clip.end` in exact ticks) and given its Motion without `openSequence`. His active sequence stayed put
+  (`fix_b2_head.js`). That is the way to patch a placed raw cut without a second switch window.
+- **ET blur transitions start before scdet sees a cut:** focus (mean |Laplacian|) dropped 15 → 4 one frame before the
+  detected cut. Find the last SHARP frame per frame (`projects/paris-shock-therapy/win/focus.py`) before choosing a hold.
+
+
+## 2026-11-02 · batch-6 reactions v2, R2 builder (CrossExamined + TFTS, ABW10, shared with R1 / R3)
+- **`tools3/tightasr.sh` takes the GPU lock ITSELF** (`lock.sh gpu transcribe.sh` inside): wrapping it in `lock.sh gpu` deadlocks, and the stale
+  outer lock then blocks every other builder's GPU job until killed (R3's jointcheck waited). Run it bare.
+- **WhisperX full-file stamps can be seconds off in a reaction recording**: CrossExamined's intro ("Gentlemen, today we are going to be
+  reviewing CrossExamined") was stamped at 12-20 s, really 28.8-32.0 (other Shorts autoplayed under it; his mouth on the camera was closed);
+  TFTS words 343-362 sat 5.6 s early. Proof: a per-stretch large-v3 of the FINAL cut diffed against the keep entries
+  (`projects/_onyx-batch6-2026-10/reactions/tools6r2/cutdiff.py`), then window ASR (`tools3/endtest.py`) to re-time the entry by hand.
+- `polish-boundaries` cut "subscribers." at a dip INSIDE the word (409.07 vs the voice to 409.46): cutdiff caught it; pinned.
+- **`build_seq3 --place --clear`: the bridge dropped ("MCP Bridge is not running") right after the clear**: the sequence was saved EMPTY.
+  `--place --resume` on the empty sequence rebuilt it. A full re-place can also leave a zero-length V2 clip at the sequence end (verify:
+  "V2 @end cam in ..."): `tools6r2/replace_seq.sh` removes it and re-dumps.
+- **Per-clip voice gain without a second active window**: `--window` puts Amplify + Hard Limiter on every A1 clip at one gain; then
+  `tools6r2/gainset.py` writes each clip's own Amplify by DOM on the NAMED (not active) sequence, read back.
+
+## 2026-11-02 · repeated "File Import Failure" modals during the batch-6 reactions (ABW10, three builders sharing Premiere)
+- Affan was clicking Cancel on import-failure modals by hand all afternoon to keep the bridge alive (each modal = "MCP Bridge
+  is not running" for every queued call; R3's Still Here place died mid-scale on one).
+- **`lanes/premiere/dialog-watch.py`** (run it in the background whenever builders share Premiere): polls Premiere's visible
+  top-level windows every 1 s, logs every non-main dialog (title, child texts, a PrintWindow grab, the premiere.lock owner =
+  whose call raised it) to `projects/_onyx-batch6-2026-10/premiere-dialogs.log`, and WM_CLOSEs only import-failure ones.
+  Save prompts, export and missing-media dialogs are logged and left for the creator.
+- Import rules handed to every builder: no `changeMediaPath` at all (import the re-render under a NEW name, replace, then remove);
+  before `importFiles` the file is finished (size stable 3 s), ffprobe + full decode pass, magic bytes match, ASCII name,
+  `new File('X:/…').fsName`, one file per call; one failure = re-encode to a new name, never retry the same file, never loop.
+- **Likely cause found (R2, CrossExamined):** 10 MG movs + captions.mov were re-rendered IN PLACE (same names, files Premiere
+  already held) and then `refreshMedia` ran on the bin's 37 items. That means one modal per changed item. R1 had made no
+  Premiere calls. Rule: never overwrite a file Premiere has imported; a re-render gets a new name and the clip is replaced.
+- **Second cause: two sessions driving Premiere at once.** The AW Shorts session (harry-diana-photos `premiere/run_window.py`)
+  ran create + place.jsx at 15:30:33 while the Onyx R2 builder held `premiere.lock`. Its import came back "bridge not running"
+  and the active sequence flipped between the two jobs. The watcher's 15:30 'Import Files' and 15:34 'Save Project' grabs were
+  progress windows, not failures (left open, as they should be). **Every session that touches Premiere takes the ONE shared lock**
+  (`projects/_onyx-batch2-2026-10/.locks/premiere.lock`, mkdir = take, `owner` file, remove = release) for each window.
+- **Outcome (R2, 15:30-15:45):** the bin readback found 5 of 37 items OFFLINE after the cancelled refresh modals (captions.mov,
+  title-iglook, play-ig, score-recent, title-outro; two with a stale duration). All 28 in-place re-renders were re-imported as
+  `<id>-r1.mov` / `captions-r1.mov` (copies checked by ffprobe + full decode + stable size + magic bytes, one `importFiles` per file,
+  zero failures), placed, verified, grabbed; then the 28 superseded items were removed from the bin only after a scan of EVERY
+  sequence proved none used them (files on disk kept). Tools: `projects/_onyx-batch6-2026-10/reactions/tools6r2/readbin.py`
+  (isOffline + duration vs disk), `preimport.py` (refuses to overwrite a name that is already imported), `retire.py`.
+
+## 2026-11-02 · batch-6 reactions v2, R3 builder (Drinkin' Bros + Still Here, ABW10): re-placing a reaction after its review
+- **apply.py --overlays is NOT a re-place.** Run on a laid sequence it (a) keeps a same-name clip at a graphic's start ('exists') even if
+  the .mov behind it was re-rendered, (b) removes only the clip AT each new start, so a graphic that moved later, shrank or was dropped
+  leaves its old clip behind, (c) clears only the SFX names of the CURRENT plan, so a sound dropped from the plan stays on A2/A4 together
+  with the tail fragments overwriteClip chopped off it (DB r2: 8 stray page/tick clips). Workaround used:
+  `projects/_onyx-batch6-2026-10/reactions/tools6r3/clear6.py` (empties the frame/MG/caption video tracks and every .wav on A2/A4 of
+  that job's own sequence) before --overlays, every changed graphic under a NEW id/file name (`<id>-r2`, `-r3`: build_plan compares
+  with the placed plan snapshot `work/plan.rN.json`, named boxes included), the caption layer under a new name via the new plan key
+  `captions_file` (apply.py now honours it, default `captions.mov`; overlays.py already did). No changeMediaPath.
+- **A beat that goes from face-only back to a split is not undone by --layout** (it only styles face-only beats and only switches
+  screen clips OFF): `tools6r3/unface6.py <plan> <placed plan>` restores the split style (FACE_SPLIT scale/position, no crop) and
+  re-enables the screen clips.
+- The bridge dropped once inside build_seq3 --style (V1 clips 24-47, ≈15:22, not an import): ping, read back, then resume only the
+  remaining steps (`prem6.sh ... place2`: style, verify, dump, syndump compare = IDENTICAL, razor) with `ACT_OVERRIDE` so the
+  sequence that was active BEFORE the interrupted run is the one restored.
+- `build_seq.es()` hands back parsed JSON (dict / list) when the script returns a JSON string: parse defensively.
+- Music bed ride: `tools6r3/bedride6.py` writes audio6's ±4 dB ride (a key per second) on the bed clip after --overlays; a re-run
+  of --overlays resets only the first and tail keys, so run bedride6 after every --overlays.
+
+- **2026-11-02 (R1 reactions v2) · `build_seq3.py --create` leaves the NEW sequence active**, so `apply.py --window` then "restores" the
+  new sequence to itself and Affan's own active sequence (Paris Shock Therapy - raw cut) is lost. Workaround: record the active sequence the
+  moment the lock is taken and restore it last (`_onyx-batch6-2026-10/reactions/tools7r1/active7.py get/set`, wired into `place7.sh`).
+- **2026-11-02 · "MCP Bridge is not running" for ~1 s at 16:04** while another session's "Save Project" dialog was up: the first ES call of
+  a window failed, nothing had landed; a ping 20 s later answered. Rule kept: ping, read back, never re-run a place blind.
+
+## 2026-11-03 · gta6-feels-bigger (ABW10 › "GTA 26 - Feels Bigger Than It Is", shared with the CA-010 session)
+- **"MCP Bridge is not running" mid-batch, three times** (the EDL replay, the audio window, a 30-clip readback): nothing half-landed
+  each time. Resume the replay with `FROM=<piece>` after a read-back. Readbacks retry 3× and fall back to the last good cache
+  (`review/composite-check.py`). A window step must treat any reply that is not the expected shape (e.g. `\d+/\d+`) as UNKNOWN, never as
+  done (`window1.py` reported a chain as applied on an error string; the read-back proved it had landed).
+- **`audio-polish.py` takes an INTEGER gain**: measured +4.2 dB → applied 4 (Amplify reads back 0.69444 = +4 dB, Hard Limiter 0.94 = −6 dBFS).
+- **Graphic edges snap to the LIVE V1 cuts, read AFTER the cut-zoom pass**: the zoom razors are cuts too. Three cards that snapped to the
+  pre-zoom EDL ended 14-27 frames before a zoom razor, a sliver of un-zoomed face (`gate-frames.py` SLIVER). Re-read V1 from Premiere,
+  give the end snap 0.5 s, re-place.
+- **`music-dropouts.py --music-track` is 1-based** (A4 = 4; 3 read A3, the SFX track, "already silent").
+- Render side (HyperFrames 0.8.16 on this machine): `--no-browser-gpu` cuts a comp from 8-9 min to ~4 min while WhisperX/Topaz hold the GPU
+  (the GPU probe waits ~5 min). "Failed to run ffmpeg -version (exit code 0)" is transient under load: re-render the one comp.
+  Letterboxed trailer sources need a crop AFTER the cover scale, or the blurred plate keeps the bars (`build-plates.py` `blurred()`).

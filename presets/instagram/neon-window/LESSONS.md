@@ -269,3 +269,36 @@ Takara mark circled ON the tilted, pushing card; crisp swishes chosen by envelop
 5. Final (Affan on the check: "looks good"): one 60 fps build from the plates, as approved. This RSS stream also repeats a frame every
    5th frame (2026-10-31 #7: sync60.py leaves them out). A bars "FAIL" of ONE pixel at luma 4/255 on the window's edge, in the final
    encode only, with the rendered picture clean there, is x264 smearing a bright edge: check picture<fps>.mp4 before chasing it.
+
+## 2026-11-02 · Roofing Insights IG sample, REVISION 1 (`projects/roofing-cash-you-hide/ig/`), builder lessons
+1. **The credential is the cover**: no hook title; the guest's own camera from frame 0 with "JUSTIN ESCAJEDA" (mono 30) over "Owns
+   [13 companies]" (Mark 10-31 type, the key words on the red box) LOW in the window under the caption line, on a soft plate (white
+   hoodie), drawn complete on frame 0 (the preview) and fading out before the first stage: no entrance, so no cue.
+2. A stage that opens ON a word must not deal from 600 px below: it crossed the caption line for 5 frames; a 50 px settle + fade.
+3. A take joint the tracker cannot hide (two takes 6 s apart, 30 px) is covered by a stage beat (the return dealt on "You always get the
+   story like"), which is also one more refined MG.
+
+
+## 2026-11-02 · Smart Passive Income x Pat Flynn IG sample (Onyx batch 6, ENHANCE mode, `projects/spi-tofu-mofu-bofu/ig/`), builder lessons
+1. **A native 9:16 selfie in the window**: the window is a square of the vertical frame; S0 1.0 (window px per source px) covers the 1044
+   window with 36 source px of horizontal room. 1.05 plus 1.08-1.11 pushes put the caption line on his mouth: S0 1.0, pushes <= 1.06, the
+   mouth pinned at window y 525 (his face is 620 px tall).
+2. **YuNet jitters 60-140 px frame to frame on a dark beard** (box height 580-715 within 5 frames): the lips gate on raw detections fails on
+   noise. Gate on a +-6-frame median of (mouth + 0.13 face h); the tracker already smooths. Look at the flagged frames before moving anything.
+3. **Pre-rendered stage clips**: the funnel MGs render once per variant (`work/mg.py --variant ig`, 1044 x 1044, funnel in window y 100-620,
+   clear of the bug and the caption band) and the IG reads them frame for frame (`stage_frame`), so the YT and the IG show the same object.
+4. **No light-leak burn inside the hook**: v1 burned into the first stage at 0.87 s, a full yellow wash in second one; the first burn now
+   sits on the first real footage (the creator's camera, 9.1 s).
+
+## 2026-11-02 · Brotherly Love x Starwalker IG sample (Onyx batch 6, ENHANCE mode, `projects/brotherlylove-protein-average-joe/ig/`), builder lessons
+1. **A remote OUTDOOR call (white sky under a tree) needs a stronger relight than a studio**: `J_MASK` (top 48 % falling to 0.85, a side
+   vignette up to 0.72) on that speaker's cam shots only; the studio host keeps `CAM_MASK`.
+2. **A host who leans down on his last word** (mouth 573 -> 664 source px in 0.5 s) beats the calm tracker: the lips gate read -41 px;
+   per-shot `pin` 500-520 (his face higher in the window) and gentler zoom keys fixed it without touching the tracker.
+3. A floating corner card over a face goes under the bug if its top is < y 96 (the bug ends at y 74): QA r1.
+4. A still card under the hook title must end above the caption line (window y 690): 880 px wide at cy 468 (QA r1: the 960 card's bottom
+   straddled the caption and the red hero sat on yellow grass).
+5. **The kit's `float_card` opens on an EMPTY frame** (inherited from the Pincus / CrossExamined / Roofing IG kits): `k = (t - t0) / 0.32`
+   gives alpha = ease_out(0) = 0 on a card's first frame, so a cut into a float card shows one frame of empty stage (QA r1: f471, f636, f1651
+   read as a blink). Fix: `k = (t - t0 + 2.0 / FPS) / 0.32` (the card opens ~40 % in). Check every builder that copied the kit.
+

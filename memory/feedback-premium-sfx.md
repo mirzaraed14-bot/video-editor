@@ -76,3 +76,7 @@ Apply it relative to the live level so his own hand-set levels stay. Quieter bea
 **2026-11-01 (Scott Short, Harary):** slow airy wind swishes (rise + decay ~0.35 s each way) "just doesn't sound premium". Premium =
 short and crisp: attack to crest ~0.1 s, gone ~0.1-0.2 s after (the measured shape of the approved Patrón set). Choose swishes by that
 envelope, not by "airy" in the title. Lesson: onyx-samples-youtube LESSONS 2026-11-01.
+
+
+## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)
+- [Premium SFX](feedback-premium-sfx.md) — Affan 2026-10-08: refined cinematic SFX only, MORE of them, never goofy/magic/UI/trilling; 2026-10-21: VARIETY, a fresh wide Epidemic set per job, never one whoosh 71x (rated 2/10); 2026-10-25: "expensive" = audible on a PHONE: no taps/foley, high-passed hits + one sub layer, cue_check.py phone band; 2026-10-26: FIT: never the kit's stock cues, each sound sized to its motion (Morgan yt/sound.py); 2026-10-27: SUBTLE: batch-5 reactions read 'very very cheap' and loud: fresh soft set, no trailer drums, hits ≥ 8 dB under the voice; 2026-10-28: Shorts he scores himself = transition swishes only, 19-23 dB under the voice (default); 2026-10-28 SUPERHERO (3rd Onyx strike): risers/impacts/stingers/sci-fi takes read 'superhero' at any level: Onyx = Patrón soft swishes only, one per graphic entrance, sized to the move

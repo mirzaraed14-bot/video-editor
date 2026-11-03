@@ -93,6 +93,11 @@ than sprinkled evenly.
 3. Find the video's single biggest claim and cut it into three or four staccato pieces at natural word breaks.
 4. Leave every date, number, name and explanation completely alone.
 5. Never invent a joke in the edit. Nothing here is a graphic, a sound effect or a zoom gag. It is all speed.
+6. **Zooms on a joke (his re-cut of video 26, 2026-11-03):** the setup stays at 100 and the FIRST zoom lands on the punch ("…insane or
+   **not.**" 155 → "I didn't have a joke there." 190). He took off the draft's 130 → 140 rungs on "is going to be insane / or".
+7. **Tags and stumbles (same re-cut):** a tag line that only restates the joke before it gets no slow-down and no zoom ("Finally, someone
+   said it." lost its 0.8x + 160, "Don't know, man." its 125; he cut both lines). A lost-my-place stumble may be the joke: he restored
+   "You're mo-" with the 2.8 s silent look before it and punched it at 182 % for 0.38 s.
 
 **Still unmeasured:** the cut-zoom scale values and their hold lengths. Premiere 25.0 stores keyframes as encoded
 parameter blobs in the `.prproj` and the live project has moved on to `ABW8`, so the zoom magnitudes could not be

@@ -6,6 +6,13 @@ Written 2026-10-18 when the long working session was retired. One page so a new 
 - **Quote the cost before each job and stay inside it.** Batch steps into few tool calls; no advisor calls, no subagents
   and no full-size image reads on routine passes; read only the PLAYBOOK section you need.
 - **Never save his projects** (ABW8/ABW10 .prproj, ABW9.aep): he saves. **Never export**: he exports himself.
+- **Premiere is shared between sessions (2026-11-02): take the lock for every Premiere window** (create, import, place,
+  fix, readback, save): `mkdir` `projects/_onyx-batch2-2026-10/.locks/premiere.lock` with a 15 s retry loop, write your
+  name + time into `owner`, remove the dir when the window ends. Never overwrite a file Premiere has already imported (a
+  re-render gets a new name). `lanes/premiere/dialog-watch.py` closes import-failure modals: don't run your own closer.
+  Details: `lanes/premiere/lab-notes.md` 2026-11-02.
+- **Every AW Short carries the subscribe CTA (Affan 2026-11-03):** two subtle mid prompts in a ~40 s Short plus the
+  subscribe end screen, from `cta/cta.py` / `E:\Shorts\Abudance Wisdom Shorts Exports\CTA\`. Placement + levels: README § 12.
 - **Never `app.open` in AE** and never close/restart AE or Premiere. AE scripts run in his open ABW9:
   `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\ABW9.aep`.
 - Captions: max 3 words per layer, about 1 in 3 coloured (`<red>`, `<yellow>`, `<blue>`), no commas or full stops (? ! ok,

@@ -11,7 +11,7 @@ crop is slid sideways onto the face so the review pass never shows half a head. 
 contains a camera cut, it is split at the cut so each shot gets its own crop (a 'join' row: the placer
 razors the one placed clip there). edl.json "covers" become picture-only V2 rows ('track': 2).
 
-usage: python plan_placement.py <job_dir> [split source_time ...]
+usage: python plan_placement.py <job_dir> [--fps 30] [split source_time ...]
        splits are given as clip@seconds, e.g. bashir16@25.20 sixtymin@509.80
 """
 import json, math, os, subprocess, sys, tempfile
@@ -139,4 +139,7 @@ def main(job, splits):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2:])
+    a = sys.argv[1:]
+    if '--fps' in a:                                     # the SEQUENCE fps (default 60)
+        i = a.index('--fps'); FPS = float(a[i + 1]); del a[i:i + 2]
+    main(a[0], a[1:])

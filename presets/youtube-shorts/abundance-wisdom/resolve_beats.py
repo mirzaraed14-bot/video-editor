@@ -217,4 +217,6 @@ def main(job, fps=60.0):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    a = sys.argv[1:]
+    fps = float(a[a.index('--fps') + 1]) if '--fps' in a else 60.0   # the SEQUENCE fps (30 for a 30 fps sequence)
+    main(a[0], fps)

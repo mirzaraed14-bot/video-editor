@@ -23,3 +23,7 @@ to be disturbed". A VLC window from another session (a Scott Clary final) was al
 - If he hears sound, check the built-in browser tabs (`tabs_context`, then pause the media with JS) and the running players first.
 
 Related: [[feedback-usage-budget]].
+
+**2026-11-02 repeat (Tella walkthrough):** muting + pausing the Tella `<video>` via JS was NOT enough: the page kept playing audio in the
+built-in browser while the manifest was downloaded and Affan heard it ("bruv I'm getting disturbed"). Rule: grab the manifest URL, then
+CLOSE THE TAB IMMEDIATELY (tabs_close) in the same step, before any download or transcription; never leave a media page open.

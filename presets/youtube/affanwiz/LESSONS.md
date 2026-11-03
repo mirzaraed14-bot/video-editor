@@ -192,3 +192,95 @@ a job teaches something.
   arrowheads 16° off a curve, underlines drawing at 2.5× the spec, a 0.43 s hold on the plug card's last row, a cursor fleck on a crop).
 - **Music:** his four STYLE § 4 beds + ONE new bed (Grizzy, hopeful, the solution section), level-matched by measured LUFS (−9.8 source →
   −25, same −34.8 as his beds), out under every zoom; laid as pre-cut pieces (no QE razor).
+
+## 2026-11-02 · CA-009's verdict read off his finished ABW10 sequence (read-only), at the start of CA-010
+- **He kept the whole graphics language** (V3 37 = all 36 graphics + the chip), **81 of 84 SFX**, the beds (50 pieces), and replaced A1 with his
+  own Enhance-Speech bounce (`CA-009iPhoneDuoClipAngles-esv2-16p-bg-10p-music-10p.mp3`). → the STYLE v2 build + CA-007 fixes are the right default.
+- **He cut 1.6 % more** (7:25.8 → 7:18.6; V1 206 → 197). Affan Afterhours GTA 24 the same week: −1.8 %. → tighten word edges / mid-line pauses
+  ~2 % on the first draft; check every joint by re-transcribing the cut audio (`projects/viral-clip-method/review/tools/joint_asr.py`).
+- **The recording folder is not the channel**: CA-009 arrived from `X:\Recordings\Onyx\`, CA-010 from `X:\Recordings\Afterhours\` (and was briefed
+  as a GTA edit). Transcribe first, match the take against `creator-shorts/CA-NNN-*`, then pick the preset.
+
+## 2026-11-02 · CA-010 rough cut: the fresh-eyes second pass found what word timings hide
+- **WhisperX alignment hides real stumbles.** It squeezes words to 20 ms or stretches them over pauses, so "uh"s, "I- I", "in the- in one",
+  "that- that doesn't ha-" sit inside kept spans, and a killed word filed after the edge escapes the leak sweep. The joint ASR alone missed them.
+  On CA-010 the Sonnet mechanical reviewer found **43** with an unaligned-voiced-run scan on the 10 ms envelope plus a whole-segment ASR.
+  The flow reviewer found 5 more retakes and stumbles. Net: 13:20 → 12:41 (−4.9 %), well past his usual −1.6 %.
+  → For every take of his: run the envelope scan of each kept segment for voiced runs no aligned word covers (tools:
+  `projects/viral-clip-method/review/fresh-eyes/`), then re-hear every changed joint.
+- **Every fix is written as a raw-time edit, not a word index**: REMOVE (a, b), EARLIER_IN, ADD, in a pass after the word edges
+  (`projects/viral-clip-method/transcript/build-cuts.py` § FRESH-EYES MECHANICAL PASS). Word-index pins cannot express a sound no word covers.
+- **The disfluency-prompted ASR invents "uh" at joins** (the "through my, uh, faceless" case). Before cutting a real word, re-hear with
+  `PROMPT=""` (`review/tools/hear_cut.py` now reads it). Whisper also silently drops swear words ("bullshit") in a whole-cut pass.
+- **Flow findings vs the channel rule:** kept his "small little recap" / "short and sweet" remarks and "number one" with no "two". These are
+  improvised bits (PLAYBOOK § 2); they were offered to him as optional trims, not cut.
+
+## 2026-11-03 · CA-010 draft (viral-clip-method): what the build taught
+- **His own Shorts as plates need cleaning, twice over.**
+  - A centre 16:9 crop of a 1080x1920 AW Short shows the burned-in captions through a σ≈26 blur. Take the band ABOVE the captions.
+  - The Shorts fade through black between shots (8–16 frames), so a straight plate "breathes" to black. Drop every frame whose
+    black-referenced luma is < 60 % or > 150 % of the Short's median, ± 4 frames.
+  - Tool: `projects/viral-clip-method/assets/video/make_clean.py`, plates via `hf-graphics/gfx/build-plates.py` (SRC = the clean files).
+  - The letterbox-edge lines that move per shot are accepted texture.
+- **Snap graphic edges to the ZOOM razors too**, not only to the EDL cuts. `review/gate-frames.py` caught 3 slivers 14–20 frames off a
+  zoom edge. `build-plan.py` now reads `transcript/face-pass.json` razors into its CUTS.
+- **A rule-4 CTA cadence needs the plan to check the gaps**, not only target times: two gaps of 86 s and 103 s slipped through because the
+  face windows near the targets were taken. Fix: move a card into the nearest ≥ 3.6 s window, or add one there.
+- **Labels vs quotes (round-1 ruling):** labels inside graphics may condense or address the viewer. Quote marks only ever wrap his
+  EXACT words.
+- **Readable lines rise on their clause start, never on their last word** (g04/g11/g48: lines visible 0.3 s). Titles rise on the
+  word that says them, not at frame 0 (g08/g14 were 0.9–1.1 s early).
+- **Tooling:** `workflows/graphics-qa.py` needs `PYTHONUTF8=1` on Windows when the plan carries curly quotes. Renders before a comp's
+  `gfx/assets/` existed fell back to system fonts while the probe looked fine: always check one frame out of the RENDER.
+- **Usage:** 3 Sonnet builders + 6 Sonnet review passes (3 rounds) built and converged 64 overlays + 46 plates. The builders reused CA-009's
+  helper code only.
+- **Shared ABW10:** the Onyx batch also uses `projects/_onyx-batch2-2026-10/.locks/premiere.lock`. Take it too around saves.
+- **A new music bed is checked for vocals BEFORE it is laid.** Read the Epidemic `vocal type` tag through the connector
+  (`SearchSimilarToRecording` / search results carry `tags`); a bed must say "no vocals".
+  - Twice in one job a vocal take nearly went under his voice: the vocal Grizzy (the instrumental is "Grizzy (Instrumental Version)"),
+    then "Pacific Coast Cruisin", tagged "vocal presence".
+  - CA-010 ships 'fresh perspectives' (no vocals) as the sixth bed. His five beds hold 722 s, so a video longer than ~12 min needs one more bed.
+
+## 2026-11-03 · CA-010 after the hand-off: his edits + the head-steady lock (viral-clip-method)
+- **His edits after the 15:08 hand-off are data** (read back by name at 17:15, before any write):
+  - Two V1 trims, both rippled through every track: the tail of "…if you are building a short channel, there might have be(en)…" (raw
+    324.2–329.9, −0.52 s) and "…transferred into another niche." (raw 566.1–568.0, −0.57 s). Lesson → a line that trails off into a
+    half-word or a restated clause gets its tail cut in the rough cut, not left for him. File: the next job's `build-cuts.py` KEEP rows.
+  - He replaced A1 with his own **Enhance Speech v2** export of the timeline (one mp3, razored once). So our audio chain on A1 is
+    temporary on this channel. The replacement sits a constant 40–50 ms behind the picture as ffmpeg decodes it (cause unknown:
+    not the MP3 padding, which ffmpeg strips); report it, never fix his A1.
+  - Tools that assume A1 = camera audio (`work/sync_audit.py`) report "all out of sync" on his A1. Prove sync by cross-correlating
+    his A1 against the camera audio instead.
+- **The head-steady lock on a 1080p long-form = STATIC Scale + Position per V1 piece** (`projects/viral-clip-method/work/head_steady.py`):
+  - The eyes are matched across every visible same-scale jump cut by least squares, with a pull back to his framing. Razors inside
+    one take share a transform; joints under a full-frame graphic are free.
+  - **One base scale per run between graphics** (100–108 %, the smallest that locks the run): a graphic hides the change, so a run with
+    no jump keeps 100 %. A 1080p source never goes past ~111 %.
+  - **His cut zooms must still read:** each zoom stays ≥ 1.15× (here ≥ 1.20×) the base beside it, so a run next to a 125 % zoom is
+    capped near 104 %. That cap is what leaves most of the remaining jumps.
+  - **A head TURN is not a lean:** an eye-gap change beyond ±12 % matches position only. Without that, six turned pieces went to 120 %.
+  - **Side cards:** the reframe moved his head toward s02/s03 (45 → −28 px). Holding the card-side EAR's on-screen x (not freezing the
+    piece) kept every card within 6 px of its draft clearance and kept more jumps locked.
+  - **One take on both sides of a cut zoom keeps ONE framing** (a transform-equality tie, not a head match). The first apply solved
+    each side toward its other neighbour and gave 20 of 33 such pairs different framings: a new shift at the cut back from the zoom.
+  - CA-010: before, 6 of 51 visible jumps within dy ≤ 12 / dx ≤ 20 px / size ≤ 5 %; after, 35 of 51 (median dy 22 → 2–3 px).
+  - He moves a lot inside a piece (median 24 px up/down, 44 px sideways over 2 s), so a static lock can match one side of a piece
+    perfectly but not always both.
+  - Next time, consider this at the face pass: build it from the start, and shoot tighter (or in 4K) for the headroom.
+
+## 2026-11-03 · CA-010 UPLOADED: what he changed before posting (viral-clip-method)
+Read back by name on ABW10 › "CA-010 Viral Clip Method" after he said he uploaded (read only, no writes): every clip's start/end/in on
+V1–V3 and A1–A4, V1 Motion vs the head-steady plan, V2/V3 Motion, opacity, enable flags, track mutes, every SFX and bed level.
+- **After my 17:43 save he changed nothing.** He posted the head-steady lock as built: 320 V1 pieces at the plan's static framing
+  (`work/head_steady.py --verify` 0 mismatches), with the 16 joints that still move left as they were.
+  Lesson → a static per-piece head lock is acceptable to him on a long-form. Next job, build it at the face pass instead of after the
+  hand-off. File: `presets/youtube/affanwiz/PLAYBOOK.md` (face pass), the next job's face pass.
+- **One change after the 15:08 hand-off that the 17:15 read-back missed** (that diff compared clip times, not levels): **he raised
+  the cold-open bed.** Loungin's first piece (0–9.3 s, under the g01 opening graphic) went from −20 to −10.5 dB clip level (+9.5 dB).
+  The rest of the opening section stays at −20, and every other bed keeps its level. My 15:03 gate had checked it at −20.
+  Lesson → on AffanWiz the music under the opening graphic sits ~10 dB above the body bed: the open is scored to hit, then the bed
+  drops under his voice. This is one instance, so it stays a lesson until CA-011 repeats it.
+  File: `work/place_music.py` SECTIONS (a separate first piece for the opening graphic) on the next job.
+- **Everything else shipped as delivered:** all 46 plates and 64 overlays (side cards and Skool CTAs included), all 109 SFX at our
+  levels and his 5 beds + 'fresh perspectives' at theirs. His whole hand on CA-010 was the two trims (−1.07 s), his Enhance Speech A1,
+  and that +9.5 dB on the open.

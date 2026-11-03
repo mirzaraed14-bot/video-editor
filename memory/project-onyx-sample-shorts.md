@@ -109,3 +109,23 @@ He exports; review not in yet. Numbers he says on camera are checked against the
 2026-10-27 review → "<name> v2" ×3 + reel v2 (whole intro, MATG stakes line, subtle SFX). He then hand-trimmed the v2s himself (FF 2:29.7,
 MATG 2:37.0, more no-bed spans) and picked his own songs for the SAMPLES (Real Slim Shady = Brad, Big Poppa = FF, Thelema = MATG, yt + ig; I misread them as reaction
 beds first): Exports/<job>.<yt|ig>.music.mp4 via _onyx-batch5-2026-10/samples_music.py. Never re-run apply.py over a hand-edited v2.
+
+**2026-11-03: batch 6 delivered to Drive** (`G:\My Drive\Onyx Batch 3 Nov\`, 7 shows × reaction .mov + YT/IG clip with his song).
+Affan wants the videos to PLAY INSIDE the email (Drive links → "request access" + redirect warnings): email-size H.264 copies
+(`_onyx-batch6-2026-10/email_attach.py`, each < 9.5 MB for Chrome file_upload, ≈18 MB per show), attached in Gmail web; the
+Gmail connector can't carry video. Drafting prompt: `_onyx-batch6-2026-10/EMAIL-DRAFTS-PROMPT.md`. His Josh Trent follow-up
+("feel free to upload the shorts… cool flex… haha", Josh then asked for a call) is now format **U1**, 1-3 days after every pitch.
+
+
+## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)
+- [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + Affan's reaction video for podcast outreach; page = his personal brand @affancuts (2026-10-26, brief Hormozi Business/my-businesses/onyx-organic-page-brief.md); BOTH looks for every yes since 2026-10-24 (YouTube + IG neon window, one moment); before that the priority platform picked the look: Instagram = minimal motion graphics (onyx-samples/, pilot mfm-nursery-rhymes), YouTube = B-roll storytelling (onyx-samples-youtube/ = "Sean Ryan style"); fully automatic MP4; review 2 (2026-10-07): MFM perfect, per-video revisions in BATCH.md; reaction videos Seq 33-35 prepared in ABW8 (he exports), Rob's next; 2026-10-08: Harbinger, Pomp, Rich Roll FINAL in ~/Downloads; reactions Seq 37 (Pomp) + 38 (Rich Roll) prepared 2026-10-08; 2026-10-13: 4 reactions to batch 2 (Jeremy, Victor, Scott, Jay) PREPARED in ABW8; 2026-10-19: 5 batch-3 reactions PREPARED in ABW10 from raw, each ≤ 3:00 (REACTIONS-RUN.md); 2026-10-27: batch-5 reactions (Brad, FF, MATG) + his @affancuts reel "Shorts cooked" (≤ 1:30) PREPARED in ABW10
+
+2026-11-03 (Affan): his commercial songs stay on the upload versions of the samples. He has uploaded these songs 1000+ times, and YouTube only flags a song use over a minute; samples are under a minute, so never make song-free copies. The batch 6 S3 drafts were created in-session (ids in projects/_onyx-batch6-2026-10/EMAIL-DRAFTS.md); the videos are attached via Chrome.
+
+2026-11-03 evening (Affan): sample emails carry DRIVE LINKS shared "Anyone with the link: Viewer", never attachments (format S6).
+- Gmail can't play mp4 attachments: on the web it says "Could not preview the file", and the phone app downloads them first.
+- Affan: "people will be skeptical to download things from me".
+- Roofing went out with attachments before this was found.
+- Batch 6's 21 Drive files are public-by-link; the ids are in `projects/_onyx-batch6-2026-10/drive-links.json`.
+- Links go into drafts through Gmail web (Chrome), never the connector.
+- Check each link logged out with curl before an email goes out.

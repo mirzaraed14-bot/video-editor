@@ -92,10 +92,22 @@ def main():
               for c in cap["chunks"]]
     hb = "\n".join(f'<filter id="hook-hb{i + 1}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="{bv} 0"/></filter>'
                    for i, bv in enumerate(BLURS))
+    # hook "gold_words": ["FIRST"] colours only those words in the kit's gold (every line white otherwise; Simon Squibb 2026-11-03: "FIRST coloured");
+    # without it the LAST line is gold, as before
+    gold_words = {g.upper() for g in hook.get("gold_words", [])}
+    gold_fill = lambda txt: " ".join(f'<span class="gold">{w}</span>' if w.strip(".,!?").upper() in gold_words else w for w in txt.split(" ")) if gold_words else txt
     hook_divs = "".join(
         f'<div id="hl{i + 1}" class="hl" style="top:{ys[i] - sizes[i] * 0.62:.0f}px;font-size:{sizes[i]}px;height:{sizes[i] * 1.3:.0f}px" '
-        f'data-layout-allow-overflow><span class="stroke">{txt}</span><span class="fill">{txt}</span></div>' for i, txt in enumerate(lines))
+        f'data-layout-allow-overflow><span class="stroke">{txt}</span><span class="fill">{gold_fill(txt)}</span></div>' for i, txt in enumerate(lines))
     wm = spec.get("watermark", "")
+    # ONE text block in 0-3 s (ENGINE rule 6, Affan 2026-11-03): "watermark_t0" (s) keeps the watermark off until the hook card has left
+    # (it then fades in over 0.3 s) and "captions": {"t0": s} drops every caption chunk that ends before t0 and starts the one it cuts
+    # into at t0. Both default to off: a spec without them renders as before.
+    wm_t0 = float(spec.get("watermark_t0", 0) or 0)
+    wm_js = f'tl.set("#wm-layer", {{autoAlpha: 0}}, 0); tl.to("#wm-layer", {{autoAlpha: 1, duration: 0.3, ease: "power1.out"}}, {wm_t0});' if wm_t0 else ""
+    cap_t0 = float(spec.get("captions", {}).get("t0", 0) or 0)
+    if cap_t0:
+        chunks = [dict(c, start=max(c["start"], cap_t0)) for c in chunks if c["end"] > cap_t0 + 0.12]
     # captions.on_seam (Affan 2026-10-12): ONE constant caption line for the whole video, ON the split seam's white line, so a split
     # that arrives later finds the captions already there; captions.y pins any other constant glyph centre
     cs = spec.get("captions", {})
@@ -135,18 +147,19 @@ def main():
     for i, g in enumerate(spec.get("stamps", [])):
         col = g.get("color", "#E5383B")
         tag_divs.append(f'<div id="st{i}" class="stamp" style="left:{g["x"]}px;top:{g["y"]}px;color:{col};border-color:{col};'
-                        f'">{clean(g["text"])}</div>')
+                        f'{"font-size:" + str(g["size"]) + "px;" if g.get("size") else ""}">{clean(g["text"])}</div>')
         tag_js.append(f'tl.set("#st{i}", {{xPercent: -50, yPercent: -50, rotation: {g.get("angle", -8)}}}, 0);'
                       f'tl.fromTo("#st{i}", {{autoAlpha: 0, scale: 2.4}}, {{autoAlpha: 1, scale: 1, duration: 0.16, ease: "power4.in"}}, {g["t"]});'
-                      f'tl.to("#st{i}", {{keyframes: [{{x: -9, duration: 0.04}}, {{x: 7, duration: 0.04}}, {{x: -4, duration: 0.04}}, {{x: 0, duration: 0.05}}]}}, {g["t"] + 0.16});')
+                      f'tl.to("#st{i}", {{keyframes: [{{x: -9, duration: 0.04}}, {{x: 7, duration: 0.04}}, {{x: -4, duration: 0.04}}, {{x: 0, duration: 0.05}}]}}, {g["t"] + 0.16});'
+                      + (f'tl.to("#st{i}", {{autoAlpha: 0, scale: 0.94, duration: 0.14, ease: "power2.in"}}, {g["t1"]});' if g.get("t1") else ""))   # t1: the stamp leaves (default: it holds to the end)
     for i, g in enumerate(spec.get("glints", [])):
         z = g.get("size", 90)
         tag_divs.append(f'<div id="gl{i}" class="glint" style="left:{g["x"] - z / 2}px;top:{g["y"] - z / 2}px;width:{z}px;height:{z}px"></div>')
         tag_js.append(f'tl.fromTo("#gl{i}", {{autoAlpha: 0, scale: 0.2, rotation: -30}}, {{autoAlpha: 1, scale: 1, rotation: 0, duration: 0.18, ease: "power2.out"}}, {g["t"]});'
                       f'tl.to("#gl{i}", {{autoAlpha: 0, scale: 0.4, rotation: 25, duration: 0.3, ease: "power2.in"}}, {g["t"] + 0.32});')
     # a hook of N lines (Pincus 2026-10-31, a 4-line credit): every line white but the LAST, which takes the gold gradient (2 lines: as before)
-    hl_white = ", ".join(f"#hl{i + 1} .fill" for i in range(max(1, len(lines) - 1)))
-    hl_gold = f"#hl{max(2, len(lines))} .fill"
+    hl_white = ", ".join(f"#hl{i + 1} .fill" for i in range(len(lines) if gold_words else max(1, len(lines) - 1)))
+    hl_gold = ".hl .fill .gold" if gold_words else f"#hl{max(2, len(lines))} .fill"
     comp_id = "onyx-yt-overlay"
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -168,13 +181,14 @@ html, body {{ margin: 0; background: transparent; }}
 {hl_white} {{ color: #FFFFFF; }}
 {hl_gold} {{ background: linear-gradient(180deg, #F39A10 0%, #F6B412 45%, #F7D428 100%); -webkit-background-clip: text; background-clip: text;
   color: transparent; }}
+.hl .fill .gold {{ position: static; display: inline; width: auto; left: auto; }}
 .tag {{ position: absolute; inset: 0; visibility: hidden; }}
 .tdot {{ position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #19D3C5; box-shadow: 0 0 14px rgba(25,211,197,0.9); }}
 .tdiag, .thor {{ position: absolute; height: 4px; background: #FFFFFF; transform-origin: left center; box-shadow: 0 2px 6px rgba(0,0,0,0.45); }}
 .tlab {{ position: absolute; white-space: nowrap; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)); }}
 .tsm {{ font-family: "YT Montserrat", sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 0.18em; color: #19D3C5; }}
 .tbig {{ font-family: "YTC Anton", sans-serif; font-size: 58px; line-height: 1.02; color: #FFFFFF; letter-spacing: 0.01em; }}
-.stamp {{ position: absolute; visibility: hidden; font-family: "YTC Anton", sans-serif; font-size: 112px; letter-spacing: 0.06em; padding: 4px 26px;
+.stamp {{ position: absolute; visibility: hidden; white-space: nowrap; font-family: "YTC Anton", sans-serif; font-size: 112px; letter-spacing: 0.06em; padding: 4px 26px;
   border: 10px solid; border-radius: 14px; background: rgba(255,255,255,0.08); text-shadow: 0 0 2px rgba(0,0,0,0.3); mix-blend-mode: normal; }}
 .glint {{ position: absolute; visibility: hidden; background: #FFFFFF; filter: drop-shadow(0 0 12px #CFF7FF) drop-shadow(0 0 26px #9EE7FF);
   clip-path: polygon(50% 0%, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0% 50%, 42% 42%); }}
@@ -202,6 +216,7 @@ html, body {{ margin: 0; background: transparent; }}
   const COMP = "{comp_id}";
   const tl = gsap.timeline({{ paused: true }});
   ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps}, palette: {json.dumps(spec.get("captions", {}).get("palette"))}{cap_y} }});
+  {wm_js}
   {json.dumps(steps)}.forEach(([t, x, b]) => {{
     tl.set("#hook", {{ x: x, filter: b ? "url(#hook-hb" + b + ")" : "none" }}, t);
   }});

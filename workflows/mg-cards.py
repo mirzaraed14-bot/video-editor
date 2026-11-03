@@ -98,8 +98,8 @@ def counter(a):
             num = num.filter(ImageFilter.GaussianBlur(min(1.5 + speed * 1.5, 7)))       # motion blur while it rolls
         if pop != 1.0:
             nw, nh = round(w * pop), round(520 * pop); num = num.resize((nw, nh), Image.LANCZOS).crop(((nw - w) // 2, (nh - 520) // 2, (nw - w) // 2 + w, (nh - 520) // 2 + 520))
-        im.paste(num, (0, int(h * 0.30)))
-        label(ImageDraw.Draw(im), a.label, w / 2, h * 0.62, 84, WHITE, eout(t / 0.25), eout(t / 0.25))
+        im.paste(num, (0, int(h * (0.30 + a.dy))))
+        label(ImageDraw.Draw(im), a.label, w / 2, h * (0.62 + a.dy), 84, WHITE, eout(t / 0.25), eout(t / 0.25))
         out.stdin.write(push(im, t, 0.04).tobytes())
     out.stdin.close(); out.wait()
 
@@ -709,6 +709,7 @@ if __name__ == "__main__":
     ap.add_argument("--t3", type=float, default=0.0); ap.add_argument("--t4", type=float, default=0.0)
     ap.add_argument("--steps", default="")
     ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
+    ap.add_argument("--dy", type=float, default=0.0)   # counter: shift the number + label up (negative) as a fraction of the height (Squibb 2026-11-03: clear of the caption line)
     ap.add_argument("--money", action="store_true"); ap.add_argument("--mode", default="open")
     ap.add_argument("--r0", type=float, default=0.0); ap.add_argument("--r1", type=float, default=1.6)
     ap.add_argument("--n", type=int, default=3000); ap.add_argument("--to", type=int, default=50); ap.add_argument("--label", default="")

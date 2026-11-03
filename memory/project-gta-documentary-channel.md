@@ -1,6 +1,6 @@
 ---
 name: project-gta-documentary-channel
-description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23; video 24 (gta6-day1-mistakes, ABW10) full draft 2026-10-27, at his review — RUN.md; his face-zoom grammar in facecam CREATOR-HAND.md"
+description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23; video 24 (gta6-day1-mistakes, ABW10) full draft 2026-10-27; video 26 (gta6-feels-bigger, ABW10) review 1 applied 2026-11-03 (he re-cut zooms/jokes himself; reading spans filled), at his review — RUN.md; his face-zoom grammar in facecam CREATOR-HAND.md"
 metadata: 
   node_type: memory
   type: project
@@ -66,3 +66,17 @@ prominence), every comp on screen from frame 0 (his "Number one" glitch), "fuck"
 and 8 "27 DAYS" subscribe CTAs (his new ask, overrides the no-CTA default for this channel). Details: RUN.md + facecam LESSONS.
 
 **2026-10-27 — video 24 "14 Mistakes You'll Make On Day 1 Of GTA 6" (job `gta6-day1-mistakes`) full draft on ABW10 › "GTA 24 - 14 Mistakes On Day 1" (new bin "GTA 24 Day 1 Mistakes"), saved, at step 7 (his review); he exports.** Raw X:\Recordings\Onyx\C1409.MP4 (one file), NEW SETUP: sunglasses, Skool neon sign, YouTube plaque, red mic; YuNet still finds his face but the leather chair is a false face (nearest-to-centre picker). His script v2; CTAs "23 DAYS" (upload 27 Oct); he cut the two Phil Hooker setup lines (payoff never recorded). 9:08, 42 graphics + 9 CTAs, 73 zooms, 70 SFX, 241 A1 crossfades. New treatments awaiting his verdict are listed in facecam `LESSONS.md` (2026-10-27). Resume: `projects/gta6-day1-mistakes/RUN.md`. Trap learned: never run audio-polish's gain measurement inside ACTIVE-WINDOW.lock (25 min; he switched sequences meanwhile) — measure outside, apply `--gain N` in a short window (lab-notes 2026-10-27).
+
+
+**2026-11-03 — video 26 "Why GTA 6 Will Feel MUCH Bigger Than It Is" (job `gta6-feels-bigger`) full draft on ABW10 › "GTA 26 - Feels Bigger Than It Is" (bin "GTA 26 Feels Bigger"), saved, at step 7 (his review); he exports.** Raw X:\Recordings\Afterhours\C1425.MP4 only (C1427 = AffanWiz CA-010, his answer). Same room as 24, framed closer, and his hands sweep the lower right, so the "15 DAYS" CTAs (upload 4 Nov) were moved to hand-clear windows (`review/cta-scan.py`). Two Sonnet edit-review rounds (content 15 / visual 18 defects) converged; the builder fixes are worth porting (LESSONS 2026-11-03). New treatments await his KEEP/NEVER verdict in facecam LESSONS: baked 0.8x joke slow-downs, CITY redaction reveal, quiet part cards, footprint grid, receipts tags.
+
+
+## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)
+- [GTA channel: two formats](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md (audit 2026-10-08; creator's own grammar in facecam/CREATOR-HAND.md)**; Affan Afterhours; the GTA 6 EXPLAINER is the default (doc format PAUSED); episode 2 "Travis Scott" SHIPPED 2026-09-20 (POSTMORTEM.md); video 3 = the FACE-CAM style, presets/youtube/affan-afterhours-facecam/ (measured 2026-09-21); video 22 (IGN missions) SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10 › "GTA 23 - The Day The World Stops") review 1 applied + saved 2026-10-23 (pauses, premium SFX v2, frame-0, censor, 8 CTAs); video 24 (gta6-day1-mistakes, ABW10 › "GTA 24 - 14 Mistakes On Day 1") full draft 2026-10-27, at his review — RUN.md + facecam LESSONS
+
+**Video 26 review 1 (2026-11-03):** he revised the cut zooms + jokes HIMSELF and asked to learn from them (never undo them). Measured
+lessons in facecam LESSONS.md (2026-11-03 review 1): zoom = the WHOLE payoff phrase (snap outward), no ladder on a joke's setup, no zoom on
+bridge lines, weak tag asides cut, a stumble may be kept + punched 182 %. He also flagged uncovered script-reading spans: the 0.45 yaw
+threshold was too high; gate reading with look-read's Otsu threshold on the PLACED timeline (review/his-review-1/yaw-gaps.py).
+Fills f01/f02 (17:13) + f03 at 4:01.6 on his "yes, fill it" (19:35) placed and saved on ABW10; a reading fill ends where yaw returns to ~0
+(a half turn is still reading). A4 bed restored under the 3 covered zooms on his yes (saved 19:51). Censor at 7:07.1: he said "Leave it audible" (2026-11-03). Outro stays on his face (his call). Review 1 fully closed; next = his notes or his export.

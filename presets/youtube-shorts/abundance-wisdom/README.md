@@ -263,3 +263,31 @@ by Anchor keys alone, so re-sliding Position later keeps it. Procedure + proof: 
 
 The reference short ends on a **still photo** (a Higgsfield-enhanced PNG, 2048×2048, placed at 95 %
 scale, x 449) held for 3 s under the closing captions — not on footage.
+
+## 12. Subscribe CTA (every AW Short from 2026-11-03)
+
+Affan, 2026-11-03 (540K subscribers, going for the 1M play button): a **subtle subscribe prompt that plays along the
+video, two times in a ~40 s Short, plus a subscribe end screen**, "in our own aesthetic so it doesn't stand out like a
+sore thumb". Kit: [`cta/cta.py`](cta/cta.py) (Gretaros, the caption glow stack, his Deep Glow, Red Shade + caption gold,
+the label card's rise in / rise out). Renders: `E:\Shorts\Abudance Wisdom Shorts Exports\CTA\`
+(`aw-cta-mid-30/60.mov` ProRes 4444 alpha, `aw-cta-end-30/60.mov`, the two `-sfx.wav` cue tracks). Frames:
+[`cta/aw-cta-sheet-mid.png`](cta/aw-cta-sheet-mid.png), [`cta/aw-cta-sheet-end.png`](cta/aw-cta-sheet-end.png).
+
+| | mid (×2) | end: "Road to 1M" |
+|---|---|---|
+| What | small red **SUBSCRIBE** pill (bell + word) with a soft **red glow** rises in, a cursor taps it, it **flares red**, turns grey **SUBSCRIBED** while the hue dies and the bell rings, it rises out | black beat → a gold light streak turns **his gold play button plaque** (engraved ABUNDANCE WISDOM, perspective flip, gold dust at two depths) into view; **WANT MORE STORIES / LIKE THIS?** rise in; the count rolls **0 → 540,000** over **ROAD TO 1,000,000** and a gold bar; the red pill pops and is tapped: it flares, the count ticks **+1**, the subscribe's gold sparks stream up into the plaque and it shines; slow camera push; fade to black |
+| Length | 2.8 s | 4.0 s, appended AFTER the last line (after the video's own fade) |
+| Where | centre y **1392** (the label band, under the captions, above y 1620); on a letterboxed shot it sits on the black under the band. Move it (`cta.frame('mid', u, cy=...)`) off a glow bar or a mouth | full frame |
+| When | ~35–45 % and ~70–80 % into the Short (one under ~25 s, two for 25–60 s). Never in the 0–5 s hook, never over a label card or another low-band graphic, never in the last 3 s, never on the payoff line | after the end |
+| Sound | one soft swish on the entrance (his approved Patrón `s5-classic`), the tap silent | `s3-wide` on the streak, `s5-classic` on the pill; tap, count and sparks silent (no foley, no "magic") |
+| Level | cue peak ~15–19 dB under the local voice peak (Conrad preview: mid WAV −12.6 dB → −14.6 dBFS against +1.4 dBFS voice peaks) | same absolute level (preview: −15.6 dB on the WAV) |
+
+**The subscriber count is baked in:** re-render the end with his current number before a Short ships
+(`cta.py render --only end --subs <N>`; 540,000 on 2026-11-03). Code builds composite it per frame (`rgb, a =
+cta.frame(...)`, premultiplied; set `cta.SUBS` and `cta.FPS`) or overlay the 30 fps .mov; Premiere sequences take the .mov
+at their own frame rate. No music under the end screen (music is his job). AW Shorts only: never on Onyx / Scott Clary /
+client Shorts.
+
+**Review v1 (2026-11-03):** the mid pill was "nice and subtle" but "slapped on" → his red Deep Glow + the click flare; the
+first end screen (glow bars + text + pill) he "didn't like at all ... search the whole Internet before coming up with a
+concept" → Road to 1M (research: show the viewer what the subscribe does; milestone gold; FX-71 Funnel Count).

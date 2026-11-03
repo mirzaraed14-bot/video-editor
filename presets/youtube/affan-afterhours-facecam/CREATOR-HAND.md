@@ -51,6 +51,10 @@ emphasis word is razored out and its Motion > Scale typed in; the next clip goes
   x 0.354; 5:26.6 at 149 % x 0.435; PC 0:24.5 at 294 %), or shift down (y 0.56–0.61) to keep the eyes in frame.
 - **Zoom LADDERS:** consecutive clips stepping **110 → 120 → 130 → 140**, each rung 0.7–2 s, on a build-up line
   (PC 3:48.9–3:52 and 5:01.5–5:06). +10 per rung. Use on a list or an escalating sentence.
+- **Zoom span = the WHOLE payoff phrase** (his own re-cut of video 26, 2026-11-03, LESSONS): the zoom starts on the phrase's first word
+  and holds through its last ("roads smaller", "wide, it's deep", "size into mystery", "Los Santos was a racetrack"); a contrast pair
+  sits in ONE zoom. Snap edges OUTWARD to V1 cuts, never to the nearest cut (that ate an edge word in 5 of the draft's 64 zooms). He
+  kept every draft scale value: the sizes were right, the edges were not. Ladders never climb through a joke's setup (HUMOR.md, 6).
 - **Two-level nesting:** cut zooms live INSIDE the nest (static scales on the sub-clips) and the nest carries the
   110 preset — so a zoom inside a pushing nest compounds (130 × 1.08 at that moment).
 - **The STRETCH GAG (in all three videos):** Uniform Scale OFF, **Scale Width 248–928 %** with the height left at

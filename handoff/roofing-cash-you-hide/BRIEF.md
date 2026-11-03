@@ -1,6 +1,33 @@
 # roofing-cash-you-hide: Onyx sample Short for Roofing Insights (Dmitry Lipinskiy) (batch 6)
 
 ## ▶ STATUS: resume here
+- **2026-11-02 ≈11:25: REVISION 1 DELIVERED, awaiting the main session / Affan's review** (his Tella 2026-11-02 ≈ 8:49-9:42,
+  § Revision 1 below). Finals (md5-identical copies): `outputs/roofing-cash-you-hide.sample-yt.final.mp4` = Exports
+  `roofing-cash-you-hide.yt.final.mp4` (= render `…sample-yt.r1f.mp4` + a 70 ms tail fade, md5 cf928a30, 29.0 MiB) and
+  `…sample-ig.final.mp4` = Exports `.ig.final.mp4` (= `…sample-ig.r1g.mp4`, md5 aa453df8, 11.7 MiB); phone copy Exports
+  `roofing-cash-you-hide.yt.phone.mp4` (19.2 MiB; the YT final is 30.4 MB decimal); proof sheets in outputs + Exports. Both: H.264
+  1080x1920 23.976, 776 f, 32.37 s, −12.4 LUFS, peak −2.2. Finalize = `python work/finalize_r1.py <yt render> <ig render>`.
+  v1 kept: outputs `…sample-yt.delivered.v1.mp4` / `…sample-ig.delivered.v1.mp4` (the `.v1.mp4` names there are the 10-31 drafts),
+  Exports `roofing-cash-you-hide.yt.v1.mp4` / `.ig.v1.mp4` / `.yt.v1.phone.mp4`; every v1 build input in `work/v1-backup/`.
+  **What changed:** frame 0 = Justin on his own camera saying the move ("If you have been manufacturing your tax returns…"), his
+  credential LOW under the captions from frame 0 (YT tag "JUSTIN ESCAJEDA / OWNS 13 COMPANIES", lands by 0.8 s; IG "JUSTIN ESCAJEDA /
+  Owns [13 companies]" from frame 0); the host's "You own 13 companies." is out of the audio; no hook title; the rest in v1 order;
+  11 envelope-chosen soft swishes (13 YT cues / 11 IG, none twice in a row, every cue −21 dB vs the voice beside it); new MGs: the
+  return under the red pen (YT split on "100 percent", IG stage), the IG return dealt on "You always get the story like".
+  **QA r1 (one sonnet reviewer on r1b/r1c, `work/review/r1/`; the fixes after it were self-verified: head gate, proofs, cue_check,
+  verbatim pass, not re-reviewed) fixed:** (1 HIGH) the head jumped 50-88 px at the joint 66 inside Justin's opening
+  shot → the P&L now enters on "and you're baking" (covers it; his face 0-2.75 s); (3 MED) 30 px at 530, (5) 15 px at 632 and then 39 px
+  at 492 → those three tight cuts are KEPT OUT (`make_edl.py` SKIP, +0.2 s: Dmitry's lines play as continuous takes); (6, 7) cues on
+  cuts to a face moved onto the motion (the return dealt, the PROFIT line drawing); (9) the phone float frame out of the top 200 px band
+  (z0 0.9); (10) IG SALE PRICE tag clear of the bug; (14) IG name line 24 → 30 px; (16) IG bars stage pushes 14 %; IG take joint 364
+  (30 px) covered by the return stage. Head gate after: every in-shot joint ≤ 24 px (364 = two takes 6 s apart, YT only, under the bar).
+  **Kept (reported, by design):** "WHO'S GOING TO" captioned as v1 (faster-whisper hears "gonna"); "what are your tax returns say" (a
+  tie, as v1); the uncuttable "like" in "If someone, like, never" not captioned; real banknote digits in the cash B-roll; Dmitry's
+  payoff chunks wipe white → yellow (README § 5); the YT credential tag animates in over 0-0.8 s and is fully legible ~0.76-2.45 s (~1.7 s +
+  the wipe; the kit's tag; a negative tag t0 was TRIED (r1h) and shifts the whole GSAP timeline: every caption 0.35 s late, reverted;
+  the source rebuilds the delivered final bit-exact, `r1i` = `r1f`); the IG frame 0 has Justin mid-blink (the cut's real first frame).
+  **OPEN for Affan:** the v1 hook title "WHAT A BUYER / CHECKS FIRST" is gone (the credential is the open's one text layer); YT credential
+  name line is the kit's small tag type.
 - **≈22:55: the BUTTON IS DMITRY (the host), verified by VOICE** (`work/cut/spk.py`, wespeaker cosine vs single-camera centroids: button
   99.80-102.88 = Dmitry 0.78 / Justin −0.10; "you may still have assets…" before it = Justin 0.87; control Dmitry span 0.89). SEQUENCING
   and my content read both said "guest": the show's camera (on Dmitry) was right. YT v5 = the last five chunks in Dmitry's yellow
@@ -71,7 +98,50 @@ oofing-cash-you-hide.yt.final.mp4` / `.ig.final.mp4`
 - Deliver: `outputs/roofing-cash-you-hide.sample-yt.final.mp4` / `.sample-ig.final.mp4`, copies
   `X:\Claude Projects\Exports\roofing-cash-you-hide.yt.final.mp4` / `.ig.final.mp4`, a proof sheet each.
 
-## The beats (followed exactly; found by their WORDS; raw seconds from WhisperX, edges to be measured on the envelope)
+## Revision 1 (Affan's Tella review 2026-11-02, `projects/_onyx-batch6-2026-10/feedback/tella-2026-11-02/`, ≈ 8:49-9:42)
+- **His note:** "frame it in a way that he delivers value directly and he doesn't talk about his personal interest. The first comments
+  will be like, who are you, why should we believe you… he's talking himself… 'you own 13 companies'… [establish the authority] of this
+  person because even I don't know who he is." General notes from the same review that fit a sample: SFX "copy-pasted into every motion
+  graphic… doesn't feel premium" (varied, sized to each motion); captions below the lips; "a lot more overlays and motion graphics", more
+  premium and refined; first word on frame 0 (no lead-in silence).
+- **The new order (verbatim words, re-ordered; nothing added):**
+  1. (Justin) beat 4 WHOLE, first: "If you have been manufacturing your tax returns and you're baking personal costs into your profit and
+     loss statements, and you're keeping cash, you've probably already spent what you would have made on the sale." Justin's own close-up
+     camera runs raw 49.28-57.22, so a stranger sees and hears HIM deliver the move from frame 0, with his credential under the captions.
+  2. (Dmitry) "So when someone calls you to buy their business, what are you looking for?"
+  3. (Justin) "what are your tax returns say? You always get the story like, my taxes say this, but I've done this much in cash."
+  4. (Dmitry) "But isn't that because people try not to pay tax?" / (Justin) "100 percent. But here's the problem."
+  5. (Dmitry) "If someone never showed profit, what does it really mean?"
+  6. BUTTON (Justin) "Who's going to buy that?" … (Dmitry) "if you did not show profit for 30 years, that was your pension"
+  Out: the host's "You own 13 companies." (it becomes the card). Why the whole of beat 4 and not only its cash clause: the cash clause
+  is the consequent of the "If you have been manufacturing…" conditional; lifted alone it would leave beat 4 dangling into Dmitry's "If
+  someone…" (two stacked "if"s), and the cash/sale pieces sit inside the WIDE (no face for the credential). "But here's the problem."
+  now leads into Dmitry's "If someone never showed profit" → "Who's going to buy that?" (the problem, asked and answered).
+- **Credential (labels at the bottom, feedback-labels-at-bottom):** "JUSTIN ESCAJEDA" over "OWNS 13 COMPANIES" (the host's words + the
+  episode title "He Owns 13 Companies…"), low, under the caption line, on his face from frame 0. It replaces the v1 hook title "WHAT A
+  BUYER / CHECKS FIRST" (frame 0 = one text layer + the captions: Harary 11-01 "too much text at the beginning"). IG: the same credential
+  low in the window (Mark 10-31 type), on his face; the v1 IG hook credited the HOST, gone.
+- **Catalog pass (rule 5):** CATALOG.md and `research/effects-catalog/shots/` unchanged since 2026-10-08 (137 stills): the 2026-10-31 full
+  pass below stands. r1 adds FX-55 a second time as a SPLIT under Justin ("100 percent": the red pen striking the return's figures), and
+  the FX-42 tag becomes the credential (not just a name).
+- **What r1 does better than v1 (rule 5):** (1) the guest's own value line in second 1, on his own face, with WHY to believe him on
+  screen (v1 opened on the host flattering him); (2) eleven different sounds, each sized to its move (v1: three, rotated); (3) one more
+  built MG (the split under the red pen), Justin's first answer no longer carries a name-only tag.
+- **SFX (r1):** v1's three slices (rf-deep-drawer / rf-low / rf-wind-soft04, the last an airy wind of the kind Affan rejected 11-01)
+  retired. r1 = eleven library takes chosen by ENVELOPE (Harary `ig/work/env.py`: attack ~0.1 s, gone 0.1-0.2 s after the crest; tonal
+  p90 7.7-11.4, < 1.3 % above 6 kHz), three sizes: S `ph-cloth-01/02`, `pt2-short-midlow`, `mg-whoosh-dry` (tags, chips, the chart, 30
+  YEARS); M `hb2-swish-classic-filter` (= Patrón's swish classic), `hb2-dark-fast03`, `pi-short-wide-dry`, `cd3-whoosh-dry`,
+  `mg-whoosh-classic` (cards, B-roll whips); L `cx-short-low-dry`, `hb2-fast-passby` (a split arrives, the closing card). No download.
+  YT 14 cues / IG 11, none twice in a row, none more than twice (`yt/sound.py`, `yt/build_spec.py` EV, `ig/sound.py` PICK).
+- **Cut r1c** (`work/cut/make_edl.py`, AMPLIFY_DB=10 as v1; QA r1 kept three in-sentence pauses OUT of the tight pass, `SKIP`):
+  21 segments, 776 f @ 23.976 = 32.37 s; audio-qa ✓ (timeline exact, 20 joints clean, ambience continuous, limiter transparent).
+  Verbatim faster-whisper large-v3 on the cut, with and without the filler prompt (`work/cut/fw_cut_r1.txt`, `fw_cut_r1b.txt`, and on the FINAL
+  splice `fw_cut_r1c.txt`): every word, "If" at 0.00 both ways; the only differences from the captions are v1's known ties ("are"/"do",
+  "that"/"it"), the uncaptioned "like" and "going to"/"gonna". `patch_transcript.py` windows re-derived (116 words). Camera cuts DERIVED from the EDL in
+  `yt/build_spec.py` (CAMMAP, written to spec.json `cam`, read by the IG): Justin 0-127, WIDE 127-249, Dmitry 249-330, Justin 330-478,
+  Dmitry 478-550, Justin 550-590, Dmitry 590-678, Justin 678-702, Dmitry 702-776. Faces re-scanned (`yt_faces.py --step 1`);
+  `work/faces_fix.py` drops YuNet false faces (r1's f70 = his hand). IG lips gate: tightest 20 px (Dmitry's "pay tax" zoom eased to 1.07).
+
 1. HOOK (Dmitry, re-ordered): "You own 13 companies." (hook 16.75-17.91; the earlier "you bought 13 companies," dropped per the beat)
    … "So when someone calls you to buy their business, [because now you're known for it in the area,] what are you looking for?"
    (main 3.04-6.11 + 8.19-8.91; the beat's "…" = the bracketed words out; "Are you looking for revenue, people, brand?" after it out)

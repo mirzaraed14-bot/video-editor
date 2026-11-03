@@ -34,6 +34,8 @@ def main():
             if u in seen:
                 continue
             seen.add(u)
+            if re.search(r"(ytimg\.com|youtube\.com|youtu\.be|yt3\.|ggpht\.com)", u):   # no YouTube requests from this machine (a Bing hit can be a YouTube thumbnail)
+                continue
             for cand in ([u.replace("/736x/", "/originals/"), u] if "pinimg.com/736x/" in u else [u]):
                 try:
                     b = get(cand); im = Image.open(io.BytesIO(b)); im.load(); u = cand

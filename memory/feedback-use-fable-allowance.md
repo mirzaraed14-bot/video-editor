@@ -17,3 +17,9 @@ work against stated criteria (running a template's scripts, scanning sheets agai
 Small leftovers stay in the main session (an agent's startup can cost more than the work). Gate agent output at judgment
 points (e.g. captions: the agent writes captions.txt + the mishear table, the main session reviews, then renders).
 Related: [[feedback-usage-budget]].
+
+- **2026-11-02, said again (Onyx batch 6, after 23 % of the week went on day one):** "use Opus where is needed… you don't have to use
+  opus for everything… otherwise use sonnet". The batch-6 builders all ran on Opus, which was the mistake. **Builders default to SONNET**
+  (cutting, kit scripts, renders, placing, QA against the brief); Opus only for the judgment pieces: the sequencing/teardown of a sample,
+  creative calls a reviewer can't settle, adjudicating conflicting evidence. Where a Sonnet builder is unsure, it hands the question
+  back to main, and main uses the **advisor** rather than spawning an Opus agent.

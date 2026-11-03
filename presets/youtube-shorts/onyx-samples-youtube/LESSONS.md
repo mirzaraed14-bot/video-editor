@@ -378,3 +378,82 @@ Each entry: **lesson → change made → file.** A lesson that repeats becomes a
   matched to the MEASURED shape of the Patrón set he approved (attack to crest ~0.1 s, gone ~0.1-0.2 s after it): "Swish, Short,
   Classic, Noise, Filter, Dry", "Whoosh, Classic, Dark, Fast 03", "Whoosh, Short, Fast Passby" (tail faded). Pick a swish by its
   envelope (10 / 20 dB rise and decay around the crest), not by the word "airy". Levels 19-22 dB under his voice (cue_check).
+
+- 2026-11-02 (Onyx batch 6, Roofing Insights x Justin Escajeda REVISION 1, `projects/roofing-cash-you-hide/`, Affan's Tella: "frame it in a
+  way that he delivers value directly… who are you, why should we believe you… even I don't know who he is"): (1) **Value first = move the
+  WHOLE conditional, not its consequent.** The cash/sale clause was the "then" of "If you have been manufacturing your tax returns…";
+  lifting it alone would have left the "if" dangling into the host's next "If…" and put the open on the WIDE (no face for a credential).
+  Beat 4 whole went first, on the guest's own close-up, and the host's flattering "You own 13 companies" became a LOW credential tag
+  ("JUSTIN ESCAJEDA / OWNS 13 COMPANIES", under the seam captions) instead of a hook title: frame 0 = his face + captions + the tag.
+  (2) **A tight-pause cut inside a face shot is a same-camera jump cut**: the head lock holds the EYES, not a head that turns or leans
+  in a 0.08-0.12 s pause (39 / 30 / 15 px steps in the QA). Keep such sub-0.15 s pauses out of the tight pass (`make_edl.py` SKIP) or end
+  the face shot on the joint (the opener's take joint 66 is now the P&L's entrance). (3) **SFX variety**: 11 takes chosen by envelope for
+  13 cues, each sized to its move; a cue on a hard cut to a face is moved onto the next real motion (the document dealt, the line drawing).
+  (4) Derive every camera cut from the EDL (`CAMMAP` through cuts.json, written to spec.json `cam`, read by the IG): a re-splice for a QA
+  fix then re-times both looks with no hand-typed frame numbers. (5) **Never a negative `tags` t0** (to have a tag built on frame 0): GSAP then
+  shifts the WHOLE overlay timeline, every caption 0.35 s late (measured on frames, r1h); a tag at t0 0 is legible from ~0.76 s.
+
+
+- 2026-11-02 (Onyx batch 6, Smart Passive Income x Pat Flynn ENHANCED, `projects/spi-tofu-mofu-bofu/`, builder lessons; the first sample built
+  from the prospect's OWN Short as the source: a 2:04 native vertical selfie, no episode):
+  (1) **Their Short as the source: scan EVERY frame for burned-in text before planning a shot** (`work/textscan.py`: near-white, low-saturation
+  pixels per sixth of the height, per frame). Two overlays were found (a TOFU/MOFU/BOFU stack over his whole face 1.47-7.47 s, a "Manychat"
+  wordmark 52.40-55.20 s); every other "white run" was his T-shirt print (checked on a full-size frame). build_spec ASSERTS no face shot
+  touches a burn span or one of their own hard cuts (`work/cut/their_cuts.json`): our MGs cover both burns.
+  (2) **A gated phone track**: their pauses are DIGITAL silence; a joint that keeps zeros reads as a dropout (audio-qa "zero-gaps"):
+  `make_edl.py` keeps the margins outside any < -90 dB run. And the Roofing HF-share fricative guard MISFIRES at digital silence's edges
+  (0/0 → 66 % "above 3 kHz"): a fricative must also be audible (> -70 dB).
+  (3) **Decode in short context too.** The long verbatim pass invented "robot and And nobody" (every short decode, medium.en and small.en hear
+  one "and"), but short decodes also found two REAL stumbles WhisperX had hidden: "is- is the creator" (the burst before "creator" holds "is
+  the": 10.467 / 10.533 / 10.567 all decode "Is the creator"; 10.600 reads "The creator") and a false start "Not if-". Tie-break with
+  medium.en + small.en (`work/cut/fw_tie.py`) before cutting.
+  (4) **Keep the set-up line that makes a mishear impossible**: without "You shouldn't scale everything." every model heard "a person who
+  SKILLS everything"; with it, "scales" reads both ways (+1.2 s).
+  (5) **A big-face selfie** (face box 620 of 1920 px, mouth corners at y ~1044): A z0 1.16 with the eye line at 0.32 puts the lower lip ~70
+  px over the 1092 seam captions and leaves room for the head lock; at z0 1.0 the line sits on his mouth.
+  (6) **Built MGs in numpy: blend on the bounding box only.** Full-frame float masks and blends cost 1.9 s per 1080x1920 frame (an hour for
+  the job's 1,300 MG frames); ROI masks (`work/gfx.py` `Mk`: poly / lines / union / soften / fill / glow on the box) cost 0.1-0.35 s.
+  (7) **A brand site behind Cloudflare** (manychat.com answered "Verify you are human" to page-record.mjs; nothing touched, the still deleted)
+  and Bing via curl returning junk: the REAL wordmark was keyed from their own burned-in overlay (median of 60 frames, min-channel +
+  saturation matte, `assets/manychat-wordmark.png`). A product's UI flow (comment → DM) is a built SKELETON (bars, no invented copy).
+  (8) **One object, thirteen states** (FX-73): the funnel built on the acronyms, then top-only / bottom-only / middle pulled out + one red ring
+  / people pouring, leaking, the path broken / the glue back / the real wordmark in it / AUTOMATE everything struck / complete. A re-cut
+  re-times every state: `work/mg.params.json` is written by build_spec from his words.
+  (9) A music bed and the kit's `cue_check.py`: its "whole SFX bus" line measures premix minus voice, i.e. the BED too (+2.2 dB "FAIL" in a
+  voice gap); judge the per-cue lines. Per-cue trims to a target (S/M -20, L -19 vs the voice beside it) in `yt/sfx/trim.json`.
+
+- 2026-11-02 (Onyx batch 6, ENHANCE mode, The Brotherly Love Pod x Starwalker, `projects/brotherlylove-protein-average-joe/`, builder lessons):
+  (1) **Cutting a whole phrase inside a face shot moves the head**: dropping "and understand, and" (1.25 s) stepped Jason's eyes 40 px
+  at the joint (head gate on v1). Keep the words when the source Short kept them (only the doubled "and" goes, 0.25 s), and put a
+  LAYOUT change ON a joint you cannot keep (the whole call as a FIT on "and that farmer…"). (2) **Two mics, one voice level**: the show's
+  studio mic was brick-walled 4.7 LU over the remote call. A static gain step baked into the raw IN A CUT-OUT PAUSE (raw × 0.58 before
+  34 s) levels them; raising the quiet call instead clipped its peaks in s16 PCM. Then the splice's measured gain + the −6 dBFS limiter
+  give constant −6 dBFS voice peaks, and the kit's master must not push them back up: `target_i` ≈ the cut's own LUFS (−16.6) and
+  `target_tp` −5.7. (3) **A bed moves every cue level**: under a lo-fi bed 8 LU below the voice, swishes at the old 19-23 dB-under level
+  read WEAK in the phone band (−20..−27 dB): per-cue trims from `yt/cue_check.py` (phone ≥ −16.5, full ≤ −11.5, at most +8 dB), cue_check
+  subtracting the bed (`yt/work/bed-level.wav`) from the bus. (4) **A marker-stroke slice starts WITH the stroke** (its "crest" offset is
+  the END of a 0.6 s rise): event time = draw start + offset. (5) WhisperX hid "and, you know," inside one 0.74 s "and" and "a genuine- a
+  genuinely" inside one 0.96 s "genuinely": every long-span flag gets two-model slice reads (`work/cut/fw_slices.py`) before the cut locks.
+  (6) A 24-character tag big line at the default x (250) ran to x 995 (YouTube's buttons): x 185. Float-frame cards: top edge ≥ y 200.
+  (7) **The client's own site is a B-roll source**: their Shopify homepage videos (`/cdn/shop/videos/.../*.HD-1080p*.mp4`, read in the
+  built-in browser, no media played) and banner stills downloaded with curl even while the HTML answered 429; Mixkit had no meat-aisle
+  clip (built a chilled shelf instead).
+  (8) **Match the permitted Short's loudness, not only the voice rule** (main 11-02): ENHANCE samples play side by side with their Short
+  in Affan's reaction, so a −16.7 LUFS sample against their −14.5 reads weaker. The −6 dBFS rule keeps the VOICE LEVEL constant; the master
+  then goes to −14 LUFS / ≤ −1.5 dBTP with one static gain into the kit's limiter (`target_i` / `target_tp`), a mix-only rebuild.
+
+- 2026-11-03 (Scott client Short 13, Simon Squibb payroll, `projects/_client-scott-clary/simon-squibb-payroll/`, builder lessons): (1) **Topaz Iris
+  2x dies on a take of 3 frames or fewer** ("No filtered frames ... topaz-iris: ffmpeg failed"): the YouTube-tight cut leaves several, so the Topaz
+  `--segments` list merges takes under 6 frames into the next one (`work/cut/topaz_segments.txt`); the first run also queued 25 min behind another
+  session's GPU lock. (2) A 1080p60 webcam download can carry ~24 UNIQUE frames/s in the 60p container (3:2 pulldown: YDIF gaps alternate 3 and 2),
+  not 30p doubled: `fps=30` is still the cut, and 60 fps QA must leave repeat frames out. (3) A `B` shot needs `src_in` (KeyError at yt_picture).
+  (4) ENGINE rule 6 (ONE text block in 0-3 s) needed new opt-in kit keys in `yt_overlay.py`: `watermark_t0`, `captions.t0`, `hook.gold_words`, a
+  stamp's `t1` / `size`; `.stamp` now has `white-space: nowrap` (GLOBAL: a stamp wider than the room right of its left:540 wrapped onto two lines), and
+  the hook's gold span needs `.hl .fill .gold { position: static }` (the `.hl span` absolute rule broke it). (5) A webcam face at ~50 % of the source
+  height: z0 1.0 is the full-height crop, so the eye line cannot be raised; z0 1.12 + `fy_out` 0.41 raises it ~100 px so the hook and stamps land on
+  the chin, not the mouth. (6) `mg-cards.py counter` hard-codes the number at 30 % and the label at 62 % of the height (over this kit's caption
+  line): `--dy -0.16`. (7) TikTok's profile page through headless Chrome raised a puzzle CAPTCHA over the loaded header: crop what rendered (tone lift
+  only), never solve or hide the modal, never retry; Bing via curl returns off-topic wallpapers for a specific object (an airplane oxygen mask) and
+  the Commons API was unreachable, so a nameable-object receipt can come back empty; `workflows/img-candidates.py` now skips YouTube / yt3 / ggpht hosts.
+  (8) **A built text card must not state what a spoken plan did not do**: "FOUNDERS PAID / STAFF DELAYED" read backwards (the founders were NOT paid
+  first; Helen said no): present tense + a "HIS PLAN" kicker.

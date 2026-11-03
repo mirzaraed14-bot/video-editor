@@ -6,7 +6,7 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 ## The line for one Short
 1. **Pick** (Claude): read the episode transcript in full (the show's RSS `podcast:transcript` VTT, never YouTube), score candidates on
    the **pick test below FIRST**, then the viral bar (`projects/_onyx-batch3-2026-10/VIRAL-BAR.md`, gates A-E). Give them to Affan as
-   text (hook, beats with times, button), with each one's pick-test score.
+   text (hook, beats with times, button), with each one's pick-test score AND its **Bombas benchmark scorecard** (below).
 2. **Freshness** (Claude + Affan): web search for the story AT THIS ANGLE (no YouTube requests from this machine); Affan scrolls
    Scott's own Shorts tab for the episode before posting. A prior Short on the same story + angle disqualifies it.
 3. **Lock the prediction** in RESULTS.md BEFORE upload: view range at 7 days + the single biggest failure reason, Claude AND Affan,
@@ -49,6 +49,36 @@ three-part factor, and they are scored on every new Short until results promote 
    Almost LOST $250M"), never "Why / How / Tactic". Every "Why/How/Tactic" title we posted sits at 10K or less. The cover is a real
    picture from the Short (the sock wall, the War Dogs poster, the mugshots), never a podcast face frame. The three picture covers
    did 563K / 13K / 5.5K; the five face covers did 10K / 5K / 3.2K / 1.2K / 322. Confounded with the story.
+
+6. **Frame 1 (Affan's OK 2026-11-03, after Harary stayed at 46.8 % viewed vs Pincus 64.0 %; FINDINGS § 2026-11-03):**
+   - **The famous thing is on screen from frame 1** when the speaker is a stranger: the Pincus split, his cam on top and the real
+     photo below, never a first receipt at 2.7 s.
+   - **ONE text block in the first 3 s.** The captions and the watermark never stack on the hook card: they sit clear of it, or wait
+     until it leaves. This is the only exception to "captions run the whole Short".
+   - **The cover we deliver is the cover that gets posted.** Harary went up with a face frame.
+
+## The Bombas benchmark (Affan, 2026-11-02: "our record to beat … reference that short with every short idea")
+"Daymond John Almost LOST $250M" (`projects/_client-scott-clary/bombas-shark-was-wrong`, 38.7 s) is Scott's most-viewed Short ever
+(563K on 10-29, 600K+ by 11-02). **Every idea is scored against it, factor by factor, BEFORE it goes to Affan**, and gets a verdict:
+better, on par or worse, plus the gap it would have to close. The scorecard goes in the pick file and in the message to Affan.
+| # | Factor | What Bombas has |
+|---|---|---|
+| B1 | A face strangers know SPEAKS in frame 1 | Daymond John, on his own cam, from 0 s |
+| B2 | A superlative or money in his first line | "I have the number one invested Shark Tank product ever" |
+| B3 | A held belief, reversed | "a Shark knows what sells" |
+| B4 | HE was wrong, lost or was hurt | called the founders "idiots"; his 2-year-old proved him wrong |
+| B5 | A familiar subject, an untold telling | Bombas / Sesame Street known by everyone; his telling not indexed |
+| B6 | The real event on screen by ~3 s, moving if it exists | ABC's real Shark Tank pitch at 3 s; zero stock, zero data cards |
+| B7 | Celebrity and brand nouns all the way through | Flavor Flav, Snoop Dogg, Sesame Street, Elmo |
+| B8 | An on-camera emotional or comic turn | the tear that is about money |
+| B9 | The payoff is a small physical image, then one line | "Daddy, put on your Elmos" → "it's not for me to object, it's for me to understand" |
+| B10 | Tight, one subject from hook to button | 38.7 s, Bombas only |
+| B11 | Packaging: title = name + money + loss; cover = a real picture from the Short | "Daymond John Almost LOST $250M"; the sock-wall frame |
+
+Score each ✓ 1 / ½ / ✗ 0 (Bombas = 11). **On par needs B1 and B4, the only two factors unique to the hit (FINDINGS § F1-F6
+tested), plus 9 or more of 11. "Better" needs all of that plus something Bombas lacks** (e.g. moving footage of the event inside a
+known celebrity's own telling). Anything without B1 is "worse" however high its total, until a Short without B1 passes 100K: then
+B1 is re-weighted here, dated. One hit is the basis, so the benchmark predicts direction, not magnitude.
 
 ## Channel overrides (decided by Affan)
 - The look: the YouTube "Sean Ryan" kit (onyx-samples-youtube), watermark "SUCCESS STORY WITH SCOTT D. CLARY", no CTA, no Onyx.

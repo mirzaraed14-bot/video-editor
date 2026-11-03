@@ -1,10 +1,38 @@
 {
  "segments": [
   {
-   "clip": "hook_section.mkv",
-   "start": 16.725041666666666,
-   "end": 17.934583333333332,
-   "beat": "b1",
+   "clip": "main_section.mkv",
+   "start": 49.29925,
+   "end": 52.052,
+   "beat": "b4",
+   "no_refine": true
+  },
+  {
+   "clip": "main_section.mkv",
+   "start": 54.30425,
+   "end": 55.221833333333336,
+   "beat": "b4",
+   "no_refine": true
+  },
+  {
+   "clip": "main_section.mkv",
+   "start": 55.597208333333334,
+   "end": 58.433375,
+   "beat": "b4",
+   "no_refine": true
+  },
+  {
+   "clip": "main_section.mkv",
+   "start": 60.47708333333333,
+   "end": 61.603208333333335,
+   "beat": "b4",
+   "no_refine": true
+  },
+  {
+   "clip": "main_section.mkv",
+   "start": 63.438375,
+   "end": 66.191125,
+   "beat": "b4",
    "no_refine": true
   },
   {
@@ -59,20 +87,6 @@
   {
    "clip": "main_section.mkv",
    "start": 33.158125,
-   "end": 33.82545833333333,
-   "beat": "b3",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 33.908875,
-   "end": 35.49379166666667,
-   "beat": "b3",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 35.618916666666664,
    "end": 36.327958333333335,
    "beat": "b3",
    "no_refine": true
@@ -93,41 +107,6 @@
   },
   {
    "clip": "main_section.mkv",
-   "start": 49.29925,
-   "end": 52.052,
-   "beat": "b4",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 54.30425,
-   "end": 55.221833333333336,
-   "beat": "b4",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 55.597208333333334,
-   "end": 58.433375,
-   "beat": "b4",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 60.47708333333333,
-   "end": 61.603208333333335,
-   "beat": "b4",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 63.438375,
-   "end": 66.191125,
-   "beat": "b4",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
    "start": 86.54479166666667,
    "end": 87.29554166666667,
    "beat": "b5",
@@ -143,13 +122,6 @@
   {
    "clip": "main_section.mkv",
    "start": 88.63020833333333,
-   "end": 89.00558333333333,
-   "beat": "b5",
-   "no_refine": true
-  },
-  {
-   "clip": "main_section.mkv",
-   "start": 89.13070833333333,
    "end": 89.63120833333333,
    "beat": "b5",
    "no_refine": true

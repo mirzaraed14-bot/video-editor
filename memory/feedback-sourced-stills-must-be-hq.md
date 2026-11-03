@@ -30,3 +30,10 @@ look waxy and fake (the real Efraim Diveroli with a rifle), and a tight 9:16 cro
 means a genuinely high-res source, not an AI upscale of a soft one: when only a soft photo exists, find another picture, or show it
 in a panel over a blurred copy (as the 720p diamond clip was) instead of filling 9:16. Check every overlay's actual crop at full
 size before the render. See [[feedback-face-cam-max-4s]].
+
+**Update 2026-11-03 (AW Paris Shock Therapy, Affan on v1: "both these images need to run through a serious higgsfield upscale
+before making it into the video"):** it applies to sourced overlay CLIPS too, not only stills, and on AW Shorts it is the default
+step, not an offer. A soft sourced photo AND a soft paparazzi clip both got it: `upscale_image` bytedance 4K (2 credits) → lanczos
+down to the played size; `upscale_video` Topaz 2160p on the exact played 9:16 crop, short excerpt with handles (5 credits / 2.7 s).
+Then check the result UNDER HIS GRADE in a finished still: a hot source still blew out and needed a pre-grade level (AW LESSONS
+2026-11-03). The War Dogs caution still holds for tiny press photos of real people (waxy): judge the upscale at full size.

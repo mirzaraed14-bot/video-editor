@@ -518,3 +518,42 @@ motion graphic of mine has some super powers"*.
 - **SFX for reactions = the sample's own approved soft swish set**, sized S/M/L, one cue per entrance, gated ≥ 19 LU under his voice AND peak
   ≥ 15 dB under (`_onyx-batch6-2026-10/reactions/tools6/sfxgate6.py`): no downloads, no "superhero" layers.
 - **Cut length**: 2:39.8 / 2:51.7 / 2:46.9 with the whole intro verbatim; Roofing's and BP's intros run 35-49 s, so the critique beats carry the cap.
+
+## 2026-11-02 · Batch-6 reactions v2, R2 builder (CrossExamined, TFTS; REACTIONS-V2 standard): lesson → change → file
+- **His caption sits right under his lips only if the FACE is placed by the lips**: every face-only beat is framed so his lower lip (YuNet mouth
+  corners + 0.13 × face height) lands on y 930, which puts the caption block top (~998) 68 px under it on every beat → `_onyx-batch6-2026-10/reactions/tools6r2/r2geom.py` + `facey.py`.
+- **One loud click sets a whole phrase low**: a phrase's peak from the 99.95th percentile (not the max) before the −6 dBFS drive; inserts
+  loudness-matched to his talk → `tools6r2/gainplan.py`, `gainset.py` (per-A1-clip Amplify, read back).
+- **WhisperX can stamp a line 6-16 s early over another Short's autoplay**: a per-stretch large-v3 diff of the tight cut against the plan's
+  words catches it; re-time from window ASR + his mouth on camera → `tools6r2/cutdiff.py`, each job's `work/mk_keep.py` (explicit times).
+- **His Claude app hides under translucent cards and fades**: sample backdrops and stage cards are OPAQUE for their whole duration (only the
+  card fades), and a scan of every visible panel frame at 8 fps flags any non-YouTube/Films frame → `tools6r2/privscan.py`, `mgr2.py`.
+- **Re-rendering a mov Premiere already imported, then refreshing it, raised one modal per item and left 5 OFFLINE** (Affan cancelled them):
+  a re-render enters Premiere under a NEW name (`plan.rev` / `g.rev` → `<id>-r1.mov`), after ffprobe + full decode + stable size, one
+  importFiles per file; the superseded items leave the bin only after the swap is verified and no sequence uses them →
+  `tools6r2/preimport.py`, `applyr2.py`, `retire.py`, `readbin.py`; lab-notes 2026-11-02.
+- **An accent word glued to punctuation renders with a stray space** ("THE *packaging*:" → "packaging :"; `wrap_rich` splits the run):
+  put the punctuation INSIDE the accent run ("*packaging:*", "*results?*") → each job's `build_plan.py`.
+
+## 2026-11-02 · Batch-6 reactions v2, R1 builder (TCO, BP Money, Roofing; REACTIONS-V2 standard): lesson → change → file
+- **Their Short as a CARD, re-boxed to its picture**: the player box starts BELOW the browser's downloader bar and the player controls and ends
+  ABOVE the scrub preview he raises while scrubbing (TCO y 330-1120, BP 420-975, Roofing 380-1300); the card sits right of centre and every
+  label lives in the left gutter (≥ 30 px, y ≥ 230) → each job's `v2/build_plan.py` (PLAYER, views_named "short", GX).
+- **A still mouse arrow on a face is debris, a moving one is his pointing**: TCO's arrow parked on Patrick's chin for the whole hook was
+  patched out with ffmpeg delogo in a cursor-free clip laid exactly over the card hole (`work/clean-hook.mp4`); BP's and Roofing's arrows
+  that travel to the header / the guest stay → TCO `v2/build_plan.py` [R2-1], mg7 "video" item.
+- **The sample plays sat in the top 200 px band with a 26 px tag** (the shared `ba_frames` card is 520x924 at y 79): a job-local card 450x800
+  at y 230-1030, the tag a 30-34 px gutter label → `_onyx-batch6-2026-10/reactions/tools7r1/mg7.py` `ba7_frames` (plan `card`, `tag_l`).
+- **"Audible the whole way" = the bed under the plays too**: v1-style gaps re-entered with a 1 ms step; one continuous flat bed at 8 LU under
+  his talk, which lands 6-9 LU under the (level-matched) plays → `tools7r1/lvl7.py` (`bed_under_plays`), `mix7.py`.
+- **SFX by class, not by rotation**: swish only on slides/rises, stroke (crayon/chalk/pencil) on scissor type and drawn rings, pop on pops,
+  tick on counts, card/hit on landings; 18-21 Epidemic sounds per reaction, none on > 20 % of cues; every peak ≥ 8 dB under the local voice
+  peak INCLUDING overlapping cues summed (a bus pass lowers the pair) → `tools7r1/sfx7.py` (PKU, bus), `sfxsets.json`.
+- **A revised sample in a reaction recorded before the revision**: play the NEW file with its OWN audio (a pre-levelled `play-*` cue on A2,
+  `tools7r1/play7.py`) and mute the OBS audio under it (lvl7 `mute_plays` → Amplify −96 on those A1 clips); his face under the play = raw
+  spans where he watched silently; where he names the OLD frame, show his screen recording of it → Roofing `v2/build_plan.py`.
+- **Captions print his critique even when the cards don't**: the plan's copy audit covers cards; the one clause Affan himself called the
+  insult ("very generic title") was cut from Roofing; his "respectfully, no one knows who he is" stays (the argument) → Roofing `v2/cutspec.json`.
+- **Placement in ONE scripted window under the lock**: preflight every file (stable size, magic, ffprobe, full decode, ASCII), build_seq3 →
+  dump + compare → apply layout/window → voice7 → overlays (one import per call) → verify → restore the active sequence recorded at lock
+  time; a copy fix re-enters under a NEW graphic id (o04-rule2) → `tools7r1/place7.sh`, `preflight7.py`, `active7.py`.

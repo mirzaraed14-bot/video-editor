@@ -336,3 +336,95 @@ KEPT (no leak footage) · his recorded order (intro before mistake 1). New, for 
 - **Process (2026-10-27, edit-review round 2):** a readout's payoff row must hold ≥ ~1.4 s before the hard cut — key a row to the FIRST
   word of its phrase ("there was a safe", "two long guns"), not the noun, rather than extending a card over his next joke; a chapter
   card whose title he does not say needs ≥ ~1.9 s (c02 shipped at 0.73 s in draft 1); a readout row says only what he says (d12).
+
+## 2026-11-03 — video 26 "Why GTA 6 Will Feel MUCH Bigger Than It Is" (job `gta6-feels-bigger`, ABW10 › "GTA 26 - Feels Bigger Than It Is"): NEW TREATMENTS, VERDICT PENDING
+Built on 23's review-1 rules + 24's process from draft 1. His answers: C1425 only (C1427 = AffanWiz CA-010) · CTAs "15 DAYS" (uploads
+4 Nov) · Sonnet subagents for the two gates · GTA 5 B-roll fallbacks (official GTA V video; designed day dial + painted door). New, for his
+verdict (mark KEEP / NEVER / CHANGED):
+- **Joke slow-downs IN the edit, baked** (0.8x, pitch kept, `media/slow-0N.mov` laid in place of the raw span): "Finally, someone said it."
+  and "Everyone's going to the strip club." (Premiere 2025's scripted setSpeed desyncs V1/A1, lab-notes 2026-10-22; a baked clip can't.)
+- **The CITY redaction reveal** (the thumbnail, live) on the beat after "on a map that big?" ("More city." was never recorded).
+- **Quiet part cards** (ghost numeral, PART n OF 6, six dots) instead of 24's MISTAKE rail + cinematic impact; SFX = a card slide + one card set down.
+- **The 2012 → 2026 headline push** (FX-54 rebuilt headlines, FX-38 push edge to edge, FX-55 underlines on "Bigger than" vs "Nearly").
+- **The footprint grid** (abstract blocks, never a real map): roads narrow → the freed metres fill with city; returns under fog (REPORTED) and
+  as the stack (FX-73 reprise push-in).
+- **FX-22 red-isolate road** on Trailer 1's Ocean Drive frame; **FX-08 interior tiles** (one → ten doors); **day dials**; **hour bars** with a tag per bar.
+- **Receipts in the script's vocabulary**: CONFIRMED / REPORTED / OUR READ + source + date on every card.
+- **SFX palette by meaning, 8 families, 36 screened files** (card · quote · air · reveal · stroke · row · count · cta), no impacts/risers/stingers,
+  phone-band checked (5 weak files kept as layers only).
+- **Process (kept, no verdict needed):** reading cover measured BEFORE the plan (pitch = one bell curve again; 11 yaw turns, all on quote
+  lines → all under cards); comedic beats kept at his ON-CAMERA length (frames showed the long raw gaps are him looking off to read, so the
+  look-away tail goes, the reaction stays); 35+ in-take stutters fixed by span ASR on the joined audio (verbatim guard → gaps.py → asr-span.py).
+- **Process lessons from the build (no verdict needed):**
+  - Graphic edges snap to the LIVE V1 cuts, read AFTER the face pass. The zoom razors are cuts too: three cards ended 14–27 frames before a
+    zoom razor, which showed a sliver of un-zoomed face (gate-frames SLIVER). Re-read `v1-cuts.json` from Premiere after the zooms land,
+    and give the end snap 0.5 s after the end.
+  - Contact-sheet tile labels can drift from the real time: T2 "5 s" was the R* logo, T2 "150 s" a man in a room. Extract the exact
+    in-point frame (and scene-detect the span) before a b-roll pick ships (`review/broll/fix/`).
+  - CTA windows get measured for head AND hands across the whole take BEFORE they are anchored (`review/cta-scan.py`, a 5 fps detection
+    cache), not after placement. In this framing his hands sweep into the lower right on most explanation beats.
+  - Edit-review found builder bugs that every future job inherits, now fixed in this job's `build-comps.py` (port them):
+    - a quote card's big opening glyph plus stripped inner marks made PARTIAL quotes read as verbatim. Keep the plan's inner
+      marks, and give the glyph only to a card that is one verbatim quote end to end;
+    - the read-along aligner's 7-word look-ahead missed words he says after an aside. 12 words times them, and changes no fully
+      matched card;
+    - `riseIn` tweens opacity to 1, so a CSS dim on the same element is undone. Put the dim on a wrapper;
+    - a count must LAND on its word (start 0.62 s before), and its anchor must not reuse the moved `A()` cursor (n03 counted on the
+      shout, not on the first "600");
+    - a card that prints its credit under the text must not print it again bottom-left.
+    - an SVG element rotated by GSAP needs `svgOrigin` (CSS `transform-origin` is ignored on a `<line>`): the day-dial hands spun off
+      the dial during every sweep, and no review frame caught it because the frames sat after the sweep. Check a moving part MID-motion;
+    - a review frame at 60 % and the end can miss a whole first shot (b07's minimap) and a mid-sweep state: sample each shot of a
+      two-shot insert and each sweep.
+
+## 2026-11-03 — video 26 review 1 (his own revision of the cut zooms + "fill these blank spaces")
+He re-cut the zooms and the jokes himself on ABW10 › "GTA 26 - Feels Bigger Than It Is" and said "your cut zoom's placement and your humor
+placement is not that great right now… don't change them, just learn how I do things". Measured by diffing his live V1 against the draft in
+RAW time, word by word (`projects/gta6-feels-bigger/review/his-review-1/`: `zoomwords.py`, `zooms.json`, `live.json`). He changed NO zoom
+value (every scale he kept is the draft's number): what he fixed is WHERE a zoom starts and ends, and WHICH lines get one.
+Format: lesson → change → file.
+- **A cut zoom covers the WHOLE payoff phrase, first word to last.** Five draft zooms started a word late or ended a word early, and he
+  stretched each over the full phrase: "roads **smaller**" (130 held through "smaller", +0.38 s), "**wide,** it's deep" (140 starts on the
+  setup word of the contrast), "**size** into **mystery**" (130 from "size" to "mystery"), "**Los** Santos was a racetrack" (120 starts on
+  "Los"), "What's in it **is**". Cause: the face pass snapped each edge to the NEAREST V1 cut within 0.35 s, and the nearest cut was often
+  inside the phrase. → snap OUTWARD only (start to the cut at/before the first word's onset, end to the cut at/after the last word's
+  offset); a contrast pair ("not X, it's Y") sits in ONE zoom. → `CREATOR-HAND.md` § 1 (zoom-span bullet ADDED); the next job's face-pass `--plan` snap.
+- **No ladder on a setup line; the first zoom lands on the punch.** "Either this game is going to be insane or not. I didn't have a joke
+  there.": the draft laddered 130 → 140 → 155 → 190 from "is going to be insane"; he took the 130 and 140 off and kept 155 on "not." and 190
+  on "I didn't have a joke there." Ladders stay for lists and escalating builds (CREATOR-HAND § 1), never for the setup of a joke.
+  → `HUMOR.md` How to apply 6 (ADDED).
+- **A zoom marks a punch or a claim, not a transition.** He removed the 125 on "But the roads aren't even the big one" (a bridge line).
+- **He cut weak asides, zoom and all:** "Finally, someone said it." (the draft's 160 + its baked 0.8x slow-down: slow-01 is gone, slow-02
+  "Everyone's going to the strip club." stays), "Don't know, man." (125), "where you pull out a gun. So" (160). Each one restates the beat
+  before it. The brief's "keep every improvised line" stays (he cuts on review, as here); what changes is the EMPHASIS: no slow-down
+  and no zoom on a tag line that restates the joke before it. → `HUMOR.md` How to apply 7 (ADDED).
+- **The stumble can be the joke.** He RESTORED a false start the draft had cut ("You're mo-", raw 440.7) plus the 2.8 s silent look before
+  it (him turned to the script, lost), and punched it at **182 %** for 0.38 s, then cut to "But the roads…". → `HUMOR.md` How to apply 7
+  (ADDED): a lost-my-place beat may be kept and punched (a big hit, 160–215 band) instead of tightened.
+- **A borrowed reaction as a punch:** in place of "you pull out a gun. So" he laid 1.3 s of the outro ("videos. I'm…", raw 1030.4) at 160 %.
+  Why is not readable off the timeline; log it, ask before copying the move.
+- **Cold open pace:** he cut the 1.06 s silent beat after the CITY reveal (draft 0:11.8) and deleted its reveal SFX (reveal-01). The reveal
+  graphic stays. Read off his cut, not said: the reveal itself kept, its held beat and its SFX dropped (cut straight on).
+- **Reading cover (his note: "I'm just looking at the screen reading the script"):** two face spans showed him turned to the script
+  screen: 7:48.0–7:53.3 ("flooring it through Los Santos…", yaw turned 96 % of it) and 8:00.9–8:03.2 ("Nobody outside Rockstar…").
+  Filled on his live timeline: f01 (GTA V gameplay at speed → GTA VI Trailer 2 narrow mural street, continuing b09's inset) and f02 (an
+  OUR READ card, "the whole thing" pink on his word). Why the gate missed them: the draft's turn list used |yaw − median| ≥ 0.45, and his
+  sustained reading turn sits at 0.30–0.50 (mean 0.35). → look-read's own Otsu threshold (0.21) with runs ≥ 0.6 s, checked by eye, AND
+  re-run on the PLACED timeline as a final gate (`review/his-review-1/yaw-gaps.py` does exactly that on every face-only gap).
+- **Builder bugs found while building the fills (fixed in this job; port them):** a multi-shot b-roll padded EVERY part by 2 frames, so
+  each shot change landed 2 frames after its credit swap and a shot ending right after its slot flashed a frame of the next shot
+  (`build-plates.py`: only the last part is padded); a card with no credit printed an empty rule + credit line (`build-comps.py card()`).
+- **A reading turn ends where the yaw comes back to ~0, not where it drops under the threshold.** 4:01.6 ("His example wasn't a mission…",
+  filled as f03 on his "yes, fill it"): full turn 240.0–245.4, then a HALF turn (0.14–0.36) to 246.2, then 0 on his own razor at 246.279.
+  The half turn is still the script glance, so the fill ran to his razor; his 135 on the reaction line after it stays on his face.
+  → end a reading fill on the first V1 cut where |yaw − median| < 0.1 (`review/his-review-1/fills-plan.py` f03).
+- **Size the SFX palette for review fills.** By review 1 every card, quote and stroke file was at its 2× cap. Re-running the screen would
+  renumber files already placed in Premiere, so a late file is screened ON ITS OWN (`projects/gta6-feels-bigger/sfx/screen-add.py` →
+  card-08). Next job: fetch 2–3 spares per family up front.
+- **A cut zoom hidden under a full-frame graphic keeps the bed.** The drop-out exists so the zoomed punch lands on voice alone
+  (PLAYBOOK § Music); under a card or b-roll the zoom is not seen, so the silent bed read as a mistake. He said restore it under all
+  three fills. → `music-dropouts.py` should skip a zoom span fully covered by V2+ (next job), here `review/his-review-1/restore-bed.py`
+  extended the piece before each gap (the source is continuous, one END trim each). A visible zoom right after a fill keeps its drop-out.
+- **Profanity censor: his call, per video.** The v26 brief said "censor fuck only"; his own edit dropped the bleep ("How the fuck is that
+  possible?", 7:07.1, an improvised reaction on his 140 zoom) and asked, he said "Leave it audible". A one-off for now: ask on the
+  next brief, never re-add a censor he removed.

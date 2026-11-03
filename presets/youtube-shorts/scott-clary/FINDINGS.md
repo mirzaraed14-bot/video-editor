@@ -88,6 +88,64 @@ first 5 s); each `outputs/<job>.transcript.json`; and the AW evidence (`X:\Claud
   and Patrón (10K-150K), all scored on "rich or famous + an entertaining story". I overrated fame and entertainment, underrated F3,
   and never locked the two Daymond Shorts. Marvel (8 d) sits below its range. The others are open until each is 14 days old.
 
+### 2026-11-03: the first Studio numbers (RESULTS § 2026-11-03 read)
+- **The swipe decides the reach.** The bands below are channel-wide, our Shorts and the others'.
+  | Viewed vs swiped | Views | Shorts |
+  |---|---|---|
+  | under ~35 % | under ~1K | the quote Shorts |
+  | ~64-69 % | 1.4-4K | Pincus, card chain, Scott's news Shorts |
+  | 73.7 %, with 92.9 % APV | 624K | Bombas |
+  Our best two stories are ~9 points short of Bombas on the swipe and ~20 points short on APV. These are ages of 1-6 days, not
+  7-day numbers.
+- **Harary 46.8 % vs Pincus 64.0 %:** frame 1 is the visible difference. Harary opened on a stranger plus "HE SAID NO TO BEYBLADE",
+  Pincus on Zuckerberg's photo and his name in the first words. n=1 each.
+- **Harary at ~575 views on 11-03 (Affan: "how is this even possible, in my lowest of the lows I don't get 500").**
+  - **Frame 1** (`harary-beyblade/work/look/final_hook.jpg`): a face strangers don't know; three text blocks stacked in the lower
+    middle (the caption "WE MISSED", the watermark, the hook card "HE SAID NO TO BEYBLADE"); the first Beyblade only at 2.67 s.
+  - **Pincus** (64 % viewed) had Zuckerberg's real photo on screen from frame 1, in the split under his cam.
+  - **The feed cover is a face frame**, not our key-art cover (on this channel, face covers did 322-10K).
+  - **The title promises the win** ("How $1B Bakugan Toy Was Born"); the hook promises the miss (Beyblade).
+  - **My part:** I proposed it at "worse, 7/11, no known face", and the 46.8 % swipe-stay is that gap showing up in the first second.
+  - **Proposed for every next build** (Affan's OK needed, so not in ENGINE yet):
+    1. A stranger speaking = the famous thing on screen from frame 1 (the Pincus split).
+    2. ONE text block in the first 3 s: captions and the watermark never stack on the hook card.
+    3. The cover we deliver is the one that gets posted.
+- **Patrón: 7 views in 6 days, a distribution failure, not a hook failure.** Check its Studio row for an age restriction
+  (alcohol), visibility, or a claim. It was posted at 04:02.
+- **B1 on this channel's own top 5:**
+  - **Gary Vee** advice Shorts did 259K and 299K: B1 ✓ with B4 ✗. A known face carries even advice to ~300K here.
+  - **Matt Gutman** (B1 ½, an ABC correspondent) did 595K in July 2024. What it shows is unknown here; ask Affan. If it is his live-TV
+    panic attack or the Kobe error with the broadcast moment on screen, then real televised footage of the event (B6 moving) is a
+    second route to on par.
+  - **Read:** B1 (or the real televised moment) is the gate, and B4 multiplies it. That puts ENGINE's "a Short without B1 passes
+    100K" trigger in play: re-weight once the Gutman Short's content is known.
+- **Gary Vee V2** (screen-R1, 10-22, scored before the pick test existed): "I would blame a bad employee… Ricky… lazy… I'd fire him…
+  what a ungrateful [f-word]… It was in my 30s when I started being like, wait a minute… I'm contributing to this" (est 0:17:46-0:18:39).
+  - **Re-scored under the pick test: 3** (1/1/1).
+  - **Bombas ~8.5/11, the closest to on par yet.** It has B1, B3 and B4; B2 is weak (no money line) and B9 is a line, not an image.
+  - **Fresh** (web 11-03: not indexed).
+  - **Risks:** heavy profanity, so bleeps; the same episode as the two Gary Shorts above, and "Stop blaming everyone else" is the
+    THEME, so Affan checks that the Ricky story isn't in it; no video in the feed, so it needs the YouTube video.
+
+### Bombas benchmark scorecards (ENGINE § The Bombas benchmark; written 2026-11-02, BEFORE any 7-day result of these three)
+| Factor | Bombas | Pincus (made) | Harary (made) | Paul Allen (planned) |
+|---|---|---|---|---|
+| B1 known face speaks, frame 1 | ✓ | ½ semi-known face; Zuckerberg's photo | ✗ stranger | ✗ stranger (and the name collides with Microsoft's) |
+| B2 superlative / money, line 1 | ✓ | ½ famous names, no money | ✓ "hundreds and hundreds of millions" | ½ only if it opens on "a 20 times bigger exit" |
+| B3 held belief reversed | ✓ | ½ | ½ ("spinning tops, they're old" cut by Affan) | ✓ "you don't need an MBA" |
+| B4 he was wrong / it cost him | ✓ | ✓ "willfully ignored it" | ✓ passed on Beyblade | ✓ lost control, "20 times bigger exit" |
+| B5 familiar subject, untold | ✓ | ✓ | ✓ | ½ Ancestry known, but the subject is term sheets |
+| B6 real event by ~3 s | ✓ moving | ½ real stills | ½ real stills, no spinning footage | ½ stills (1998 site, Harvard) |
+| B7 celebrity / brand nouns | ✓ | ✓ | ✓ | ½ Harvard, Ancestry |
+| B8 on-camera turn | ✓ | ½ "It's impressive." | ½ "a car without tires" | ½ the dean's "you will hate your first year" |
+| B9 payoff = an image + a line | ✓ | ½ | ½ | ½ |
+| B10 tight, one subject | ✓ 38.7 s | ✓ 43.7 s | ½ 55.1 s, two toys | ½ ~58-65 s raw (needs ≤ 45) |
+| B11 title + cover | ✓ | ½ "How…" title, real photo | ½ "How $1B Bakugan Toy Was Born" (a win, no loss), real key art | ✓ if titled "Ancestry.com founder" + loss |
+| **Total / verdict** | **11** | **7.5, worse** (B1) | **7, worse** (B1) | **~6.5, worse** (B1) |
+Read: all three are well under Bombas, and the gap is B1 every time. Nothing left in the screened bank has B1. The only way to
+an "on par" pick is a guest strangers know: the feed-famous screen (§ Channel goal, 11-01 levers) or Scott's new famous guests.
+Test: if any of the three passes 100K, B1 is weaker than this table says (re-weight it in ENGINE, dated).
+
 ## Validated on this channel
 (none yet: the first results arrive 7 days after the first logged upload)
 
@@ -215,11 +273,37 @@ first 5 s); each `outputs/<job>.transcript.json`; and the AW evidence (`X:\Claud
     - **What the batch says about the channel:** Scott's catalogue holds very few household faces, and a stranger-known face is
       half the Bombas factor. The guarantee cannot rest on finding more Daymonds in the back catalogue. It rests on the
       next famous guests he records (watch his upload feed for them), plus the 2.0 tier made with the strongest receipts.
+  - **R16-R20 (2026-11-02, Affan: "Yes, screen them"): the 10 feed-famous guests, 12 full episodes, 5 Sonnet readers**
+    (`research/viral2/screen-R16..R20.md`, transcripts in `tx3/`). Coverage is now **84 of 658**. Each candidate has a full Bombas
+    scorecard.
+    - **B1 per guest:**
+      - Simon Squibb ✓ soft (his own "14 million followers and 400 million views a month"; the episode streamed live on TikTok);
+      - Wallo267, Evan Carmichael, Jim Kwik, Dan Martell, Aaron Marino, Jason Tartick, Dr. Eric Berg, Sahil Bloom and Hala Taha ½.
+      - Feed reach is not face recognition. Only Squibb's number is short-form scale.
+    - **Nothing is on par with Bombas.** The best by pick test:
+      | Candidate | Pick | Bombas | Fresh (web, 11-02) | Note |
+      |---|---|---|---|---|
+      | **Squibb S1**: told Helen to pay the founders first, "she was right and I was wrong", three weeks with no rent or food (57:18-58:22) | 2.5 | 6.0 | ✓ not indexed (may be on his own TikTok) | the ONLY candidate with B1 ✓ and B4 ✓; gaps: no famous nouns, no footage, no money figure; "bullshit" once |
+      | **Marino AM-1**: pitched Shark Tank, "nine million people watching", "I sold one style system" (23:16-24:25) | 2.5 | **7.5** (the highest) | ✗ told: Looper and Shark Tank Blog both report "sold one DVD set" | the Shark Tank world; he contradicts himself at 36:12 ("didn't sell any"); Affan's Shorts-tab check decides |
+      | Hala H1: MTV filmed them all summer, then pulled the plug | 2.0 | 6.5 | unchecked | ends before her podcast |
+      | Kwik K1: down to 117 lb in hospital | 2.0 | 6.5 | likely signature | |
+      | Tartick TAR-1: fainted mid-pitch to a CEO | 2.0 | 5.5 | the faint opens his book | "beta blockers", "Xanax" to bleep |
+      | Martell DM-1: the doctor laughed, it was shingles | 2.0 | 5.5 | unchecked | medical attribution |
+    - **Benched:** Squibb homeless at 15 (signature, "drug addict"), Wallo (nothing above 1.5; "people have heard your story"),
+      Carmichael, Berg, Sahil's "15 more times" (signature), Martell's juvenile detention (drug, suicide and weapon words), Marino's
+      $500K debt (signature, f-word, 9/11 aside).
+    - **Verdict:** the feed-famous screen raises B1 to a soft ✓ for one guest only. Scott's catalogue has no on-par story left.
+      Squibb S1 is the one pick that tests the Bombas factor pair (B1 + B4), so make it next. Marino AM-1 is the strongest total,
+      if the Shorts-tab check finds no prior Short on it.
   - Daymond × Kevin O'Leary "Santa Claus" (TOP-MOMENTS #4): 1.5. The Shark Tank niche and two household faces, but it is a roast with
     no cost, and the third Short from this episode.
   - Patrón (made, not yet posted): 1. Experts said it was too expensive and he was proven right: a vindication, not a cost.
 
 ## Freshness log
+- 2026-11-02, web search (not YouTube), on the R16-R20 tops:
+  - **Told:** Marino's "sold one" after Shark Tank (Looper, "Whatever happened to Aaron Marino's Alpha M."; Shark Tank Blog).
+  - **Not found:** Squibb's Helen and payroll story (no web hit; possibly on his own TikTok, which this machine can't check).
+  - **Told:** Scaramucci's regret about working for Trump (11-01: Raw Story, Hearts and Minds, Wharton 2021).
 - 2026-10-30, web search (not YouTube), on the 2.0 tier:
   - **Told:**
     - Wainwright "unemployable": her 2025 memoir, a Fashionista excerpt, HerMoney.

@@ -29,3 +29,8 @@ On credits (until a reset) pause rather than cut quality. Related: [[feedback-us
   time, you can run agents and sub agents… I'm gonna tell you myself when it starts to get a bit tight on the usage". So when the weekly
   plan is low, **speed beats frugality**. Use agents/subagents freely for real work and don't stall on cost estimates. HE signals when it
   gets tight, and that is the switch back to the 10-15 rules. Still report usage at the job's gates.
+- 2026-11-02 (Onyx batch 6, the FIRST day of a new weekly window): weekly went 9 % → 23 % between 13:34 and ~17:00 (5-hour window 32 %).
+  Load: 5 Opus builders in parallel (3 reactions + 2 enhanced samples; the Brotherly Love sample alone ≈ 850K subagent tokens), plus
+  the AW Shorts sessions. Affan: "gaddayum its the first day of our weekly limit and we're at 23% already". That's **the tight signal**, so
+  the 10-15 rules are back on: running agents were told to finish the current item with no extra review rounds or tools and then stop.
+  No new agents without asking. Every interim notification is a full-context main turn, so answer those in one line.

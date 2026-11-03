@@ -20,3 +20,8 @@ on emphasis, eased in and back out (he liked the zoom-out on the last line and a
 **How to apply:** on every Short built from his jump-cut sequences (Scott Clary and Onyx samples), turn on the kit's chained eye head
 lock (`head_lock` = joints snapped by `workflows/cut-frames.py`, A shots at z0 1.2) and check eye-line close-ups with a guide line before
 delivery. Related: [[feedback-no-same-camera-punch-ins]].
+
+**Long-form Premiere version (CA-010, 2026-11-03, his "Yes, add it"):** static Scale/Position per V1 piece, no keyframes, solved so the eyes
+match across every visible same-scale jump cut; one base scale per run between full-frame graphics (≤ ~111 % on 1080p), his cut zooms kept
+≥ 1.15× the base, side cards' ear clearance held. Tool + method: `projects/viral-clip-method/work/head_steady.py`, AffanWiz LESSONS
+(CA-010 after the hand-off). Build it at the face pass, not after: the brief rule went unapplied in the first CA-010 draft.
