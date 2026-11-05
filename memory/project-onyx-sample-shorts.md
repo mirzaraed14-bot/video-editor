@@ -136,7 +136,13 @@ Gmail connector can't carry video. Drafting prompt: `_onyx-batch6-2026-10/EMAIL-
 - Defaults he left standing: no corner label, no music.
 - Folder: `projects/_onyx-organic-2026-11/<job>/`. Each job has a RUN.md with its state. Batch status is in `SEQUENCING.md`.
 - All six 30 fps checks were sent 2026-11-04. The 60 fps finals render only after his OK, then go to X:\Claude Projects\Exports\.
+- 2026-11-05: all six 60 fps finals are in X:\Claude Projects\Exports\ as `affancuts-<job>-ig.final.mp4` + `-ig.cover.jpg`, not uploaded (he uploads). Short 1 also has `...final.header.mp4`: his experiment of a profile header above the window (picture, Affan / @affancuts, his hook line; `full-episodes-wont-save-you/ig/header.py`, added at the mux, no re-render).
+- Still unanswered, built as is: made-up view counts on Shorts 2 (1M+, 500K+) and 4 (2.4M), Short 2's caption "reviews", whether his new 0.3 s pause-cut rule applies to these six.
 - Kit lessons are in presets/instagram/neon-window/LESSONS.md (2026-11-04 entry): the 59.94 timebase and the local-median tracker.
 - Open questions:
   - Is C1438 (Urdu, about fake call-centre accents) the "7th video"?
   - Short 5's receipt: does he want a real AW like-count screenshot?
+
+## Batch 7 (2026-11-05): restructured samples
+Tracker `projects/_onyx-batch7-2026-11/BATCH.md`, sequencing `SEQUENCING.md`, builder brief `BUILDER-BRIEF.md`. Yes list = heretics, On That Note, Melanin Money, Rise Above, Remnant Radio (all 11-04), Barbell Logic (11-02). Affan picked: heretics = Drea de Matteo's Sopranos money story (not the permitted Short, top priority), John Legend and Melanin restructured from the permitted Short, Rise Above = death row guard (pharmacy story rejected). All three built are with him for notes and songs.
+

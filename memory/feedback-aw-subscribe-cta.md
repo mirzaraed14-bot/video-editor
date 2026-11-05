@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 0ac70c57-b1cb-4865-b958-7d9d45bd812d
-  modified: 2026-11-04T12:06:24.930Z
+  modified: 2026-11-05T13:09:45.600Z
 ---
 
 Affan, 2026-11-03: "a universal thing that we are going to be doing in our shorts from now on ... a small call to action to
@@ -35,5 +35,6 @@ as part of the video.
   don't need a better one for this video ... fade out this video". The mid prompts stay; he placed them himself at 21 s and
   35 s of 41.6 s. Shorts end as their brief says (Harry: a 0.6 s picture fade). Two end concepts are now rejected. A third
   is built only when he asks, and approved from a real-speed clip before it touches a Short.
+- **2026-11-05 (La Toya v2): "Keep it under the bar".** On a Short whose bottom bar sits at y1470, the pill stays under the bar (solid y1544-1620, `mid_dy` 190) rather than moving up onto her chin. A few frames of contact with the growing bar at a shot's end, and the cursor dipping below y1620, are accepted. README § 12.
 
 Related: [[feedback-labels-at-bottom]], [[project-abundance-shorts-automation]], [[feedback-premium-sfx]].

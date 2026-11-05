@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-12T00:55:33.063Z
+  modified: 2026-11-05T12:49:26.095Z
 ---
 
 Affan, 2026-10-12, as a general rule for ALL videos: "I never want you to stick to just one editing style and lock it in every
@@ -36,3 +36,5 @@ style catalog… analyze it frame by frame… with every single video I need 5 %
 expensive look." So the floor is 5 % (on smoothness, premium feel and the expensive look). Before every edit, read the WHOLE FX catalog
 (CATALOG.md + all 137 reference stills in research/effects-catalog/shots/) and write a catalog pass into the BRIEF. No edit starts before that section exists (CLAUDE.md learning loop #5). A playbook is the
 gist and the starting point, never the style: presets/youtube/abundance-wisdom/PLAYBOOK.md.
+
+**Restated 2026-11-05 about the Scott Shorts:** "every short of ours kind of is the same thing ... not just redo the wheel ... just pick out a different moment, I don't want that." The Scott recipe's "no research" budget line had let every Short skip this. Now the analysis session writes at least 2 moves new to the channel into presets/youtube-shorts/scott-clary/UPGRADES.md before each build, from the catalog and research/shorts-style-radar.md (a study of other channels' frames + numbers, method in [[feedback-bolt-motivation-look]]). Sonnet builds them, each new VFX with a test clip and a kill switch.

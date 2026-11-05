@@ -42,7 +42,7 @@ the source FILE's full frame (measure them on the file, before any crop) unless 
           "crop": [x0, y0, x1, y1] (fractions, the front card), "look": "paper" (radius 10) | "screen" (14 px near-black bezel,
           radius 30, a faint glare, a light edge), "w": 900 (card width px at rest), "max_h": 860, "fg_y": 660 (card centre y; keep
           the card above the caption line), "tilt": -3 (deg, + = clockwise; D1: 3-5 deg), "push": 0.07 (scale per s,
-          D1: 6-8 %/s, centred on "focus" [fx, fy] = the first highlight's centre by default, which glides "drift" 0.7 of the
+          D1: 6-8 %/s; optional "push_hold": s = the card sits still that long, then pushes eased in-out over the rest (H1 v2 jet), centred on "focus" [fx, fy] = the first highlight's centre by default, which glides "drift" 0.7 of the
           way to the frame's centre over the shot), "stack_step": [-40, -40, 3]
           (px, px, deg per layer behind the front, fanned the tilt's way), "at" on a stack layer = it SLAPS in then (7 % big,
           1.4 deg off, settles in 0.24 s; a thud-thin cue), "bg": "self" (the BACK-most layer's whole source, blurred 28 px, x

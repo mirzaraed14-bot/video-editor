@@ -25,8 +25,10 @@ if not os.path.exists(raw) or not ours:              # a fresh render (not our o
 cards = [(x["f0"] * k, x["f1"] * k - 1) for x in spec["shots"] if x["kind"] == "B" and os.path.basename(x["src"]).startswith("mg-")]
 keep = "+".join(f"between(n\\,{a}\\,{b})" for a, b in cards)
 en = f":enable='not({keep})'" if keep else ""
-vf = (f"unsharp=luma_msize_x=7:luma_msize_y=7:luma_amount=0.45:chroma_amount=0{en},"
-      f"unsharp=luma_msize_x=3:luma_msize_y=3:luma_amount=0.35:chroma_amount=0{en}")
+arg = lambda name, d: float(sys.argv[sys.argv.index(name) + 1]) if name in sys.argv else d
+MASK, SHARP = arg("--mask", 0.45), arg("--sharp", 0.35)   # Scott Shorts since 2026-11-05 (H1 "put some sharpen and unsharp mask on it", on top of grade-picture.py): --mask 0.55 --sharp 0.40
+vf = (f"unsharp=luma_msize_x=7:luma_msize_y=7:luma_amount={MASK}:chroma_amount=0{en},"
+      f"unsharp=luma_msize_x=3:luma_msize_y=3:luma_amount={SHARP}:chroma_amount=0{en}")
 enc = (["-c:v", "prores_ks", "-profile:v", "3", "-pix_fmt", "yuv422p10le"] if pic.endswith(".mov")
        else ["-c:v", "libx264", "-crf", "12", "-preset", "medium", "-pix_fmt", "yuv420p"])
 tmp = pic + ".tmp" + os.path.splitext(pic)[1]

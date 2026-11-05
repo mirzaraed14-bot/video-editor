@@ -106,7 +106,8 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
   topaz-iris.py, final v1).
 
 ## 5. One check, then final (4 calls)
-- **Sharpen, every Scott Short (Affan asked twice, 2026-10-26 / 10-28):** after each yt_build render, `python workflows/sharpen-picture.py projects/<job>` then `yt_build.py <job> <version> --skip picture,overlay`. The 30 fps check gets it too (he judges the look on it).
+- **POP grade + sharpen, every Scott Short (grade: Affan 2026-11-05; sharpen: asked 2026-10-26 / 10-28 / 11-05):** after each yt_build render, `uv run workflows/grade-picture.py projects/<job>`, then `python workflows/sharpen-picture.py projects/<job> --mask 0.55 --sharp 0.40`, then `yt_build.py <job> <version> --skip picture,overlay`. The 30 fps check gets both (he judges the look on it). Other clients: sharpen at its defaults unless he asks for the grade.
+- **The 1 % (Scott, 2026-11-05):** "no research" in the budget line above doesn't mean no new moves. The analysis session hands the builder at least 2 moves new to the channel (`presets/youtube-shorts/scott-clary/UPGRADES.md`). A new VFX gets a real-speed test clip before the full render.
 - **Before sending a check:** the proof sheet must show the name tag fully inside the frame and nothing landing on it (`yt/tag.json` from the measured head + label width), and every number caption on its spoken word (WhisperX interpolates digits: cross-check with faster-whisper + RMS).
 - ONE 16-frame sheet (`select=eq(n\,…)`, `scale=270:480,tile=8x2`). The v1 defects last time: captions on the lips, a face cropped,
   the subject outside a 16:9 → 9:16 crop (set `cx`), a missing glyph. Fix in the spec, re-run `build_spec.py` (it picks up

@@ -8,6 +8,7 @@ written. No channel baseline yet: the first results set it.
 | 1 | Re-uploads won't go viral (`projects/iphone-duo-clip-angle/clips/reupload-wont-go-viral`, Affan's own sequence from CA-009) | 2026-10-28 (60 fps final, check v1 approved; cover YOUTUBE ISN'T / STUPID) | 74.1 s | his cam: "You guys have to keep in mind these platforms, Instagram and YouTube, they're not stupid" + WHY RE-UPLOADS / DON'T GO VIRAL card 0–3 s | **2K–25K** · an advice monologue to camera (the AW-VIRAL-STUDY ABST band) on a topic every clipping channel covered after YouTube's Oct 1 post, at 74 s: the first line is a warning, not a picture, so non-clippers swipe at second 2 (locked 2026-10-28) | | | | | | | | |
 | 1b | Same Short, **v2 order** (Affan 2026-10-28, before upload): his "YouTube specifically is not stupid … monetized" moved to the top, his spoken hook cut as the same line, ends abruptly on the DOESN'T COUNT list (`work/cut/reorder_v2.py`) | 2026-10-28 (60 fps v2) | 69.8 s | his cam: "YouTube specifically is not stupid. They know when people are doing these cheeky lazy s**t" + the same card | **3K–30K** · same niche-only advice band, but the opener now calls out lazy uploaders (H3: talking AT a third party) and the abrupt end on the list invites a rewatch; biggest risk unchanged: a claim, not a picture, in the first 2 s (locked 2026-10-28) | | | | | | | | |
 | 2 | How I find Shorts YouTube is forced to push (`projects/viral-clip-method/clips/find-viral-angles`, sequence v3 from CA-010, approved 2026-11-04 "Yes, use defaults") | (building) | ≈ 45 s | his cam: "How do I find moments that YouTube is basically forced to push?" + MOMENTS YOUTUBE IS / FORCED TO PUSH card 0–3 s, the tag after | **4K–40K** · still advice-shaped (H1: a concrete story beats advice) and the Claude payoff narrows it to Shorts creators; MJ is on screen by ≈ 4 s, the answer starts at once, and the NFL line makes it any niche (locked 2026-11-04) | | | | | | | | |
+| 3 | What level Shorts creator are you? (`projects/what-level-shorts-creator`, script CA-011-SHORT-v2-levels, sequence v1 approved 2026-11-05 "Yes, use defaults") | (building) | ≈ 36 s | his cam, four fingers up: "Four levels of Shorts creators" + the empty level bar + 4 LEVELS / MOST ARE STUCK AT 2 below the captions | **3K–50K** · it only pulls Shorts creators, and if the bar doesn't read in the first second it looks like a man talking; the button is a question, so comments are the upside (locked 2026-11-05). His script's own 14-day engine line (5K–80K) is separate and stays in the script file | | | | | | | | |
 
 ## Pre-mortems
 **1 · Re-uploads won't go viral (written 2026-10-28).**
@@ -30,3 +31,13 @@ written. No channel baseline yet: the first results set it.
   - "moments YouTube is forced to push" is the exact wish of every faceless channel, and the answer starts in the next second;
   - 30 million people on one niche is a big, concrete number;
   - the prompt is on screen to screenshot, so it gets saves and shares.
+
+**3 · What level Shorts creator are you? (written 2026-11-05).**
+- **Got 5K because:**
+  - it speaks only to Shorts creators, and anyone else swipes on "four levels of Shorts creators";
+  - a level list is advice-shaped (H1), with no scene and no turn;
+  - the level bar is too small or unclear on a phone, so the first seconds read as a man talking.
+- **Got 5M because:**
+  - everyone places themselves, so "level 1" comments push it;
+  - "19 crisp dollars" for 100K views and "20 million views every month" are numbers people send to each other;
+  - "they're your proof" is the turn: the views aren't the paycheck.

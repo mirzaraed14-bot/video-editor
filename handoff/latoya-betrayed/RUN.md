@@ -1,5 +1,22 @@
 # La Toya Betrayed — RUN
 
+## ▶ STATUS 2026-11-05 ~20:15: v3 DELIVERED (his note: no face on "Yes"), waiting for his review. RESUME HERE
+- File, QA and everything still open: top of [REPORT.md](REPORT.md). v1 and v2 kept as `(v1)` and `(v2)`.
+- Next export: `outputs/LaToya Betrayed v3.mov` is the latest. `renders/stageA.mov` still holds the v2 opening, so re-render Stage A 0:500 (`renders/stageA_p0.mov`) or in full before touching the opening again.
+
+## ▶ STATUS 2026-11-05 ~18:05: v2 delivered, his review followed
+- File, QA and everything still open: top of [REPORT.md](REPORT.md).
+- **Waiting on him:** his verdict on v2 and the Bolt look (it decides the other Shorts). Subscribe prompt RULED 2026-11-05: "Keep it under the bar", the delivered file stands.
+- If a prompt ever moves, it's a re-export only: set `cta.mid_dy` in `build/make_timeline.py` and in `build/timeline.json`, then `python build/export_cta.py renders/finish.mp4 renders/mix.wav "outputs/LaToya Betrayed v2.mov"` (CRF 5 is now the default) and recopy to Final Renders and Exports. Don't re-run make_timeline without fit_y + `finish.py centers`.
+- After his review: read ABW10 if he edited the timeline, append LESSONS.
+
+## ▶ STATUS 2026-11-05 ~17:30: his REVIEW 2 in; v2 being built
+- Phase 1 done and checked by Opus + the advisor (second try answered): 4 corrections in `BUILD-V2.md` § Phase 1b. D0 went 1.21 → 1.60 (720p source ~3.2×, tighter and softer than v1) so her nose can reach the caption.
+- His Tella 2 resolved in `REVIEW-2.md`. Build spec for v2: `BUILD-V2.md` (Sonnet builder executes; Phase 1 stops at test frames for the Opus session's check; Phase 2 = full render + QA).
+- Decisions: SLIP 0 (the raw Dr. Drew IS in sync; my -0.16 s slip caused his note); Topaz Iris x2 + blend .2 per segment, never across a cut; grade_mode 'bolt' (research/bolt-motivation-look.md, build/bolt_look.py); band [370,1470], nose on the caption y1061; O3/O4/O7/O8 real photos (assets/*_hf.png, Higgsfield 8 credits); DeepFilterNet under Barbara's question (audio_r2/q_dfn.wav).
+- Premiere was closed at 15:37, so ABW10 couldn't be re-read; he mentioned no timeline edit. premiere/his1/readback.tsv stays the spec.
+- v1 is delivered and kept. When v2 ships, v1 becomes "LaToya Betrayed (v1).mov" (Harry's naming).
+
 ## ▶ STATUS: resume here (2026-11-04 23:05): v1 DELIVERED, waiting for his review
 - **File:** `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\LaToya Betrayed.mov` = `X:\Claude Projects\Exports\LaToya
   Betrayed.mov` = `outputs/LaToya Betrayed.mov`, sha256 0579ac3f321ebcdc…

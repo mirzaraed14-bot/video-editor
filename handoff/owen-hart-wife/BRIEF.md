@@ -233,6 +233,28 @@ Owen still + MG. § 3 B4 label "BRET HART · OWEN'S BROTHER" and § 5 "Bret is l
 listening shot" → the two overlays above. Hard rule 6: the stretcher still is his explicit exception ("Use the stretcher"); the fall itself and the post-fall ring stay out. Rule 5 (no minors) stays.
 **Fact for the MG:** Owen fell about **78 feet** (24 m) into the ring (he said "~70 feet").
 
+# TELLA 2 = HIS REVIEW OF v1 (Affan, 2026-11-05; `guide/tella2.mp4`, `guide/tella2.json`, 6:05, watching the final in a player)
+
+**His verdict:** "your overlay choice is absolutely horrendous", "a lot of mistakes here", "the past three videos you've made, they
+haven't really impressed me". **Process:** Opus for research + decisions, Sonnet for execution; use the advisor; "don't cheap out on
+the credits and deliver me a poor video"; be efficient (58 % of the week used on Thursday), "but don't deliver me a bad video".
+
+| Where | His words | What it means |
+|---|---|---|
+| S02 Martha 2020 (2.70-6.63) | "this footage is good but it should be letterboxed, this is too zoomed in ... a little bit zoomed out, not too zoomed out ... the footage is very jittery, not very smooth" | Letterbox at the AW band. No slow follow: one still anchor. |
+| JR 6.63-7.77, 9.40-14.23 | "I want to fill out the screen with the blurred background" / "again black screen here" | The 198 % twin of a 608 px band only covers y356-1560: scale the twin so it fills the frame. |
+| O2 "an entrance from the ceiling" | "absolutely horrendous, I don't even know who this guy is ... you can definitely create an AI image of Owen actually making his entrance ... I'm sure there are already images of Owen Hart on the top ... use Higgsfield to upscale" | Recognisable Owen. REAL first (wwe.com clips of Owen's entrance, his own "cleverly use some other overlay" logic). The AI route conflicts with the brief's rule 2 ("no AI faces") and would be a likeness of a real man just before his death: only on his yes, asked in one line. |
+| Captions at JR (11-16 s) | "the captions are changing faster than the person is speaking" | Whisper's word times run early on his drawn-out speech (it stamps "responsibility" 12.79, his cut's piece starts 13.30). Re-time by forced alignment. |
+| O3 "Owen Hart has died" | "not a good overlay ... a lot more like memorial type picture, not a random paparazzi image ... an image of him smiling ... that make viewers emotional" | Replaces the arrival photo (his own earlier pick was the fallback for the stretcher). |
+| O4 "pushed wrestlers out the door" | "absolutely horrendous ... who is this guy ... crisp overlays, highest quality possible ... wrestlers from that era like Undertaker or Batista ... in the ring and they just look shocked. It doesn't have to be Owen Hart, we can cleverly use some other overlay and make it look like those wrestlers are shocked about Owen Hart" | Famous + crisp + shocked. Any night. |
+| O5 "none of the performers" | "what are these lines ... not good at all ... a proper solid video of any performance from that era, solid footage" | Replace. Clean picture edges. |
+| S26 Landsberg | "this guy should be placed in the middle, why is he placed all the way to the right" | Centre him. |
+| O7 "He was everything to me" | "why are you using so blurred images when you have access to my Higgsfield account ... enhance this so it looks very crisp and upscaled and real ... look at the white glowing line, it's literally below it ... the whole purpose of the white solid lines is to put it over these changes where the image is ending in the borders" | Crisp image. **The white line must sit ON the picture's edge**: no dark strip of the clip's own border between the picture and the line, on any letterbox. |
+
+**ANSWERED 2026-11-05: "Keep real Owen"** (O2 = Owen smiling on the King of the Ring throne, official WWE 1994; no AI image, brief rule 2 stands).
+
+No note on: the hook still + pointer MG, GMA, Bret, Vince's face, the two CTA pills (he paused on the moved one without comment), O8, O9, O10. Fix only what he named.
+
 ### CATALOG PASS (2026-11-04, BEFORE the build; CLAUDE.md learning loop 5)
 I read `research/effects-catalog/CATALOG.md` (FX-01 to FX-81) and looked at all 137 reference stills
 (`projects/conrad-murray-didnt-kill-mj/proof/catalog/page1-4.jpg`). The look stays HIS: AW glow bars, Gretaros captions,

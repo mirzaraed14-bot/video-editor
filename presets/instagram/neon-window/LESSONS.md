@@ -323,6 +323,11 @@ Kit = the Squibb IG build, ported. Not reviewed by Affan yet: these are the buil
    slammed on a cue card (Short 4), an open loop that tries to close and springs back (Short 6).
 
 
+
+After the 60 fps finals (2026-11-05):
+- **`qa.py`'s snap test is stricter at 60 fps**: it allows `max(30 px, 3 x median step)`, and the median halves at 60. Three joints that passed on the 30 fps check flagged on the final (30.6, 31.3, 45.1 px). Same picture, so compare with the check and look at the frames before calling it a regression.
+- **A mono decode tag's scramble letters differ per fps**, so a final-vs-check PSNR dips to ~26 dB only on the tag's in and out frames. Look at the pair; it isn't a defect.
+- **New layout on trial (Affan, Short 1): a profile header above the window** (avatar with a red ring, name, handle, a hook line) in the top band, y 200-420. Static, so no swish, and laid on at the mux, so no re-render: `full-episodes-wont-save-you/ig/header.py`, `sound.py --mux --header`. His verdict decides whether it spreads.
 ## 2026-11-04 · Robert Herjavec "DWTS scared him more than a 203 mph crash" IG Short (`projects/_client-scott-clary/herjavec-dwts-crash/ig/`), 30 fps check, builder lessons
 Kit = the Squibb IG build ported to a two-camera, bright-room, receipt-photo job. Not reviewed by Affan yet: these are the builder's own findings.
 1. **Two speakers on two cameras: one tracker each and ONE face size.** `FACES[key]` per camera (`cam` Robert, `scott` Scott), and the framing zoom per speaker from the median face-box height (`TARGET_H` 400 window px): Scott's wide seat then reads the same size as Robert's mid-shot (one shared ZB would have made one of them tiny). Scott's captions are cyan end to end, Robert's emphasis is the red hero.

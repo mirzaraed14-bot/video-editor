@@ -510,7 +510,8 @@ class Doc:
         w_out, max_h, cy = s.get("w", 900), s.get("max_h", 860), s.get("fg_y", 660)
         tilt = s.get("tilt", -3.0)
         sdx, sdy, sdeg = s.get("stack_step", [-40, -40, 3])
-        grow = (1 + self.push * dur) * 1.07                       # the largest the card gets: the push plus a slap's overshoot
+        self.hold = float(s.get("push_hold", 0.0))                # optional (H1 v2, the jet): the card sits still this many seconds, THEN pushes (eased in-out) over the rest of the shot
+        grow = (1 + self.push * max(dur - self.hold, 0.0)) * 1.07  # the largest the card gets: the push plus a slap's overshoot
         self.layers = []
         for i, e in enumerate(entries):
             full = load_rgb(SRC(e["src"]))
@@ -636,8 +637,13 @@ class Doc:
         """The DOC picture at time t (uint8 HxWx3). Also sets self.M_front for the marks."""
         out = self.bg.copy()
         u = t - self.t0
+        if self.hold > 0:                                          # a held start, then an eased push over the remaining time
+            d2 = max(self.dur - self.hold, 1e-6); v = min(max((u - self.hold) / d2, 0.0), 1.0)
+            u, g = float(smooth(0, 1, v)) * d2, float(smooth(0, 1, v))
+        else:
+            g = float(smooth(0, 1, u / max(self.dur, 1e-6)))
         sc = 1 + self.push * u
-        dx = (W / 2 - self.F[0]) * self.drift * float(smooth(0, 1, u / max(self.dur, 1e-6)))
+        dx = (W / 2 - self.F[0]) * self.drift * g
         G = np.array([[sc, 0, self.F[0] * (1 - sc) + dx], [0, sc, self.F[1] * (1 - sc)], [0, 0, 1]])
         self.M_front = G @ self.rest(self.front)                 # marks follow the front card (set before it slaps in, too)
         for L in self.layers:

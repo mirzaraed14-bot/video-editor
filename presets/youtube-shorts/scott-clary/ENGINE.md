@@ -11,7 +11,9 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
    Scott's own Shorts tab for the episode before posting. A prior Short on the same story + angle disqualifies it.
 3. **Lock the prediction** in RESULTS.md BEFORE upload: view range at 7 days + the single biggest failure reason, Claude AND Affan,
    plus the pre-mortem (3 reasons it got 5K, 3 reasons it got 5M). Never edited afterwards.
-4. **Affan sequences** it in Premiere and records a Tella walkthrough; **Claude builds** it with
+4. **The 1 % (Affan 2026-11-05):** before the build, the analysis session writes at least 2 moves this channel has never used into
+   `UPGRADES.md` and the BRIEF, from the catalog and `research/shorts-style-radar.md`. A new moment is not an improvement.
+   **Affan sequences** it in Premiere and records a Tella walkthrough; **Claude builds** it with
    `presets/youtube-shorts/onyx-samples-youtube/CLIENT-SHORT-RECIPE.md`.
 5. **Title + thumbnail** ship with the Short (format below).
 6. **After 7 days** (never sooner): views, stayed-to-watch, average view %, subs gained, feed share into RESULTS.md, then the
@@ -53,9 +55,10 @@ three-part factor, and they are scored on every new Short until results promote 
 6. **Frame 1 (Affan's OK 2026-11-03, after Harary stayed at 46.8 % viewed vs Pincus 64.0 %; FINDINGS § 2026-11-03):**
    - **The famous thing is on screen from frame 1** when the speaker is a stranger: the Pincus split, his cam on top and the real
      photo below, never a first receipt at 2.7 s.
-   - **ONE text block in the first 3 s.** The captions and the watermark never stack on the hook card: they sit clear of it, or wait
-     until it leaves. This is the only exception to "captions run the whole Short".
+   - ~~ONE text block in the first 3 s.~~ **Dropped by Affan 2026-11-05 (H1 review 1): "get the captions back in the starting, go to our normal format, the hook text will be below."** Captions and watermark run from
+     frame 1 on the seam, the hook card sits below them (y 1340 / 1436). H2 shipped with one block and H1 with the normal format: if both post, compare their stayed-to-watch at 7 days.
    - **The cover we deliver is the cover that gets posted.** Harary went up with a face frame.
+   - **The hook may name a famous guest (Affan 2026-11-05):** "Robert Herjavec exposes himself / almost became greedy". This overrides "claim only, no name lines" for a face strangers know. One key word coloured.
 
 ## The Bombas benchmark (Affan, 2026-11-02: "our record to beat … reference that short with every short idea")
 "Daymond John Almost LOST $250M" (`projects/_client-scott-clary/bombas-shark-was-wrong`, 38.7 s) is Scott's most-viewed Short ever
@@ -99,6 +102,9 @@ B1 is re-weighted here, dated. One hit is the basis, so the benchmark predicts d
   quiet run (10 ms RMS < -42 dBFS, >= 0.08 s) inside a kept line is cut to 0.07 s, 0.035 s kept beside each word (energy only), AND a
   verbatim faster-whisper pass removes the stumbles WhisperX drops ("a- the- the claw"): CLIENT-SHORT-RECIPE § 2. (Was: pauses
   >= 0.25 s to ~0.16 s, 2026-10-21.)
+- **Tight means tight (Affan 2026-11-05, H1: "this tiny silence ... very tightly cut with jump cuts"):** the rule above applies inside face shots too. The H2 and H1 v1 exception (0.45 s on the face) left a 0.41 s hole he heard. Head steadiness comes from
+  `head_track` + `head_lock` at the joints, never from keeping pauses.
+- **POP grade on every Short (Affan 2026-11-05, H1: "very plain ... not color graded at all ... poppy ... bland"):** `uv run workflows/grade-picture.py <job>` then `workflows/sharpen-picture.py <job> --mask 0.55 --sharp 0.40`, on every render including the 30 fps check. Measured reason and references: `research/shorts-style-radar.md`. Skin stays real (hue ~16-26, no orange). He approved the H1 v2 check as a whole on 2026-11-05 ("approved and also start the IG build"), so these numbers stand until a note changes them; he made no separate comment on the grade.
 - **Sharpen every Short** (asked twice, 2026-10-26 / 10-28): `workflows/sharpen-picture.py <job>` after each render, cards excluded.
 - **Every picture is sharp at phone size**: a soft or compressed still is replaced by a 4K source, not just upscaled ("what is that
   low quality image of iron man").

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7173e089-1e87-4811-944b-8e4043fa359d
-  modified: 2026-10-20T01:52:33.233Z
+  modified: 2026-11-05T15:14:35.817Z
 ---
 
 Goal: automate the full Abundance Wisdom shorts edit (soundbite stitching → head-lock → Topaz → captions → zooms/transitions → audio → export) to match the user's hand edits. Started 2026-09-14.
@@ -170,3 +170,6 @@ code build from his 51.03 s re-cut + Tella 1 (10 overlays, pointer MG hook, arri
 reviews 2+3 ported (transition zoom per shot change, pre_sharp), NO end screen, CTA mids 23.7 / 36.25 (moved off Bret's
 face onto a letterbox overlay, like his Harry pills). Final Renders + Exports, sha256 dc68aaa7…, −14.1 LUFS / −1.6 dBTP,
 39 Higgsfield credits. Open: JR desk crowd fans of unclear age (blur offered). At his review; start at the job's RUN.md.
+→ 2026-11-05 ~17:45 Owen Hart Wife v2 DELIVERED after his Tella 2 ("overlay choice horrendous", "past three videos haven't impressed me"): real, crisp, recognisable overlays (official wwe.com clips: Undertaker + Heyman WM30, Rock/Austin Backlash 1999, Owen on the KOTR throne; his call: no AI), Higgsfield memorial portrait + In Memory card, white lines on the picture edge, JR blur fill, Martha letterbox + Chronos on 33 duplicate frames, captions force-aligned. Opus decided, Sonnet built through stills gates. sha256 43d4708e…, v1 kept as (v1), 21 credits. At his review; start at the job's RUN.md.
+→ 2026-11-05 ~18:05 'La Toya Betrayed' (projects/latoya-betrayed) v2 DELIVERED after his Tella 2 ("I really need you to lock in"): lip-sync slip removed (it was my error), per-segment Topaz fixes the clay face, one lower band with the nose on the caption, real press photos, and the Bolt Motivation look on trial ([[feedback-bolt-motivation-look]]). Opus + advisor decided, Sonnet built through stills gates. sha256 36dc0171…, v1 kept as (v1), 8 credits. Subscribe prompt ruled: under the bar.
+→ 2026-11-05 ~20:15 La Toya v3 DELIVERED (his note on v2, angry: "I don't want her face here for like half a second"): Tel Aviv overlay runs through "Yes" into Gordon, face gone, 2 camera-flash frames out, 3 credits. sha256 4b2c2309…, v1 + v2 kept. Open: his Bolt verdict. At his review; start at REPORT.md.

@@ -1,6 +1,30 @@
 # Owen Hart Wife — RUN
 
-## ▶ STATUS: resume here (2026-11-04 19:25): v1 DELIVERED, waiting for his review
+## ▶ STATUS: resume here (2026-11-05 17:45): v2 DELIVERED (his Tella 2), waiting for his review
+- **File:** Final Renders + Exports + `outputs/` `Owen Hart Wife.mov`, sha256 43d4708ef631877298067a2aa23d0f12b0057370532bcd99f48f8ae826838daa, 51.03 s, 36 Mb/s, -14.1 LUFS / -1.6 dBTP, QA PASS. v1 kept beside it as `(v1)`. Report: [REPORT.md](REPORT.md).
+- **Built from:** `renders/stageA_v5.mov` + `renders/caps_capcut.mov` + `renders/mix.wav`. Decisions: `WORK-ORDER-v2.md`; his notes: BRIEF.md § TELLA 2.
+- **A note = data + ONE finish render:** `STAGE=renders/stageA_v5.mov bash build/render_chunks.sh` -> `python build/mix.py renders/mix.wav` -> `python build/export_cta.py renders/finish.mp4 renders/mix.wav outputs/...`. A changed shot: Stage A patch of its frames + splice + `win/splice_check.py`.
+- **Open for him:** JR crowd fans (blur?). Alternative for O4 on disk: 1997 Undertaker, `dl/wwe/kane-*`.
+
+## ▶ previous status (2026-11-05 18:00): v2 EXPORTED, waiting for the coordinator's QA + delivery
+- `outputs/Owen Hart Wife (v2).mov` (QA PASS, -14.1 LUFS / -1.6 dBTP); JR twin_mirror/gain fix in; not copied to the delivery folders.
+
+## ▶ previous status (2026-11-05 17:20): v2 GATE 2 reached (6 fixes applied, stageA_v5.mov, proof/v2b_*); waiting for the go -> Phase 8
+
+## ▶ previous status (2026-11-05 17:05): v2 PHASES 1-7 DONE, STOPPED AT THE TEST-STILLS GATE (waiting for "go" -> Phase 8)
+- Done: dl/ov2 + dl/hf/*_up (O2_throne, O4_taker, O5_rockaustin, O6_heyman; 14 HF credits), assets/memorial_smile.png + inmemory_band.png,
+  renders/DSOTRa.mov (Chronos+Proteus; old = DSOTRa.v1.mov), make_timeline/finish.py patched (old: *.v1.*), HOLD={'O6'} (his_zoom -41 %),
+  renders/stageA_v4.mov (3061 frames, splice_check proof/v2_splice_check.txt), captions/falign.py -> win/asr_a1_fa.json, renders/caps_capcut.mov (new).
+- Proof: proof/v2_gate.jpg, proof/v2_gate_*.png, proof/v2_edges.jpg, proof/v2_caption_table.txt. NOT started: Phase 8 finish render.
+- Open at the gate: VICE bug faint at the bottom-right of the S02 band (x~1060, y~1520); O7 bottom edge has a thin line artifact at y1484.
+
+## ▶ previous status (2026-11-05 ~16:00): HIS REVIEW 1 IN (Tella 2), resolved in BRIEF.md § TELLA 2; RESEARCH RUNNING
+- **Sourcing finds:** wwe.com's own video pages serve official clips up to 1080p with plain curl (`win/wwe_clip.py`, no YouTube): `dl/wwe/`.
+  Pictures: `win/harvest_images.py` -> `assets/web2/` (#59 smiling studio portrait, thesportster) + `assets/web3/` (#12 B&W close-up, retroist).
+- **Next:** pick overlays from dl/wwe -> advisor -> Higgsfield -> Stage A patch (S02 letterbox, S26 centred, new overlays) -> forced-align captions
+  -> finish (`STAGE=... bash build/render_chunks.sh`) -> export -> QA. Execution by a Sonnet agent, his instruction.
+
+## ▶ previous status (2026-11-04 19:25): v1 DELIVERED, waiting for his review
 - **File:** `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Owen Hart Wife.mov` = `X:\Claude Projects\Exports\Owen Hart Wife.mov`
   = `outputs/Owen Hart Wife.mov`, sha256 dc68aaa79a01c5efd30a5118f60bff2cfde6f6492c7e51425ddb09fa1c11e25d. H.264 1080x1920
   30 fps, 1531 frames, 51.033 s, 34.6 Mb/s, PCM 48 kHz, -14.1 LUFS / -1.6 dBTP, export QA PASS. Report: [REPORT.md](REPORT.md).

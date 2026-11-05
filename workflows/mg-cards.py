@@ -10,6 +10,7 @@
   python workflows/mg-cards.py collateral OUT.mp4 --dur 9.4 --t1 3.0 --t2 6.3 [--r0 0 --r1 1.6]   (the $525M loan and the ten characters that secured it)
   python workflows/mg-cards.py sneaker  OUT.mp4 --src CUTOUT.png --mode real|fake|rule|button [--steps 600@0.9,700@1.3,800@1.7] [--t1 --t2]
   python workflows/mg-cards.py replies  OUT.mp4 --t1 2.2 [--dur 3]     (rates out, Yes / Yes / No. back; "No." lands at --t1)
+  python workflows/mg-cards.py ladder   OUT.mp4 --src PHOTO.jpg --steps 500M@0.1,1.2B@1.1,6B@2.0 [--dur 3]   (a huge number stepping on spoken words over a blurred, darkened photo)
   python workflows/mg-cards.py dayrate  OUT.mp4 --steps 250@0,300@2.6,400@3.0,600@3.4,800@3.8 [--label "HIS DAY RATE"]
   python workflows/mg-cards.py clawmenu OUT.mp4 --t1 0.6 --t2 2.4 --t3 3.6 --t4 4.8 [--dur 6]   (a claw machine's operator menu)
   python workflows/mg-cards.py bunnycost OUT.mp4 --src BUNNY_CARD.png --t1 1.2 --t2 3.2 --t3 4.0 [--dur 5]   ($100 in vs a 50-cent bunny)
@@ -486,6 +487,54 @@ def replies(a):
     out.stdin.close(); out.wait()
 
 
+def ladder(a):
+    """MONEY LADDER (FX-71, Herjavec H1 v2, 2026-11-05): a huge white number steps through --steps ("500M@0.1,1.2B@1.1,6B@2.0": label@seconds), each landing on its spoken
+    word (a quick scale-down settle + a soft glow flash + vertical motion blur, the previous number rising out), each rung a little bigger than the last, centred ~y620, over
+    --src (a photo) blurred and darkened. The labels are the guest's own spoken numbers, printed with a "$"; the numbers stay clear of the caption band (y > ~900)."""
+    w, h = a.w, a.h; out = writer(a.out, w, h); N = round(a.dur * FPS)
+    steps = [(x.split("@")[0], float(x.split("@")[1])) for x in a.steps.split(",")]
+    bg = Image.open(a.src).convert("RGB"); k = max(w / bg.width, h / bg.height); bg = bg.resize((round(bg.width * k), round(bg.height * k)), Image.LANCZOS)
+    bg = bg.crop(((bg.width - w) // 2, (bg.height - h) // 2, (bg.width - w) // 2 + w, (bg.height - h) // 2 + h)).filter(ImageFilter.GaussianBlur(26))
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32); vig = 1 - 0.55 * np.clip(np.sqrt(((xx - w / 2) / (w * 0.75)) ** 2 + ((yy - h * 0.45) / (h * 0.7)) ** 2), 0, 1) ** 2
+    bgn = np.asarray(bg).astype(np.float32) * 0.30 * vig[..., None]
+    sizes = []                                                                   # each rung a little bigger than the last, never wider than 940 px
+    for j, (l, _) in enumerate(steps):
+        sz = int(430 * (1 + 0.11 * j))
+        while ImageFont.truetype(ANTON, sz).getlength("$" + l) > 940:
+            sz -= 10
+        sizes.append(sz)
+    scales = [1.0] * len(steps)
+    cy = 620
+
+    def layer(txt, sc, j=None):
+        j = steps.index(next(x for x in steps if x[0] == txt)) if j is None else j
+        im = Image.new("L", (w, 700), 0); d = ImageDraw.Draw(im); f = ImageFont.truetype(ANTON, max(int(sizes[j] * sc), 20))
+        d.text((w / 2, 350), "$" + txt, font=f, fill=255, anchor="mm"); return im
+
+    for i in range(N):
+        s = i / FPS; t = i / max(N - 1, 1)
+        frame = bgn.copy(); text = np.zeros((h, w), np.float32); glow = np.zeros((h, w), np.float32)
+        cur = [j for j, (_, tt) in enumerate(steps) if s >= tt]
+        if cur:
+            j = cur[-1]; lbl, tt = steps[j]; q = eout((s - tt) / 0.16)
+            sc = scales[j] * (1.22 - 0.22 * q)
+            num = layer(lbl, sc)
+            if q < 1:
+                num = num.filter(ImageFilter.GaussianBlur(7 * (1 - q)))
+            nm = np.asarray(num).astype(np.float32) / 255; y0 = cy - 350 + round(46 * (1 - q))
+            text[y0:y0 + 700, :] = np.maximum(text[y0:y0 + 700, :], nm)
+            gl = np.asarray(num.filter(ImageFilter.GaussianBlur(26))).astype(np.float32) / 255
+            glow[y0:y0 + 700, :] = np.maximum(glow[y0:y0 + 700, :], gl * (0.55 + 0.45 * (1 - q)))
+            if j > 0 and s - tt < 0.2:                                                     # the previous rung rises out
+                pq = eout((s - tt) / 0.2); pn = np.asarray(layer(steps[j - 1][0], scales[j - 1])).astype(np.float32) / 255 * (1 - pq)
+                py = cy - 350 - round(90 * pq); text[py:py + 700, :] = np.maximum(text[py:py + 700, :], pn)
+        frame = frame * (1 - 0.0) + 255 * np.clip(glow, 0, 1)[..., None] * 0.55
+        frame = frame * (1 - text[..., None]) + 255 * text[..., None]
+        im = Image.fromarray(np.clip(frame, 0, 255).astype(np.uint8))
+        out.stdin.write(push(im, t, 0.03).tobytes())
+    out.stdin.close(); out.wait()
+
+
 def dayrate(a):
     """HIS DAY RATE: the number steps through --steps (250@t,300@t,...) on the spoken numbers, each change sliding up with motion
     blur, the last one teal, "/ DAY" under it; under the caption band a bar for each rate rises as it lands (Chris Do, 2026-10-24)."""
@@ -705,7 +754,7 @@ def cases(a):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("kind", choices=["dots", "counter", "calendar", "tvoff", "collateral", "craigslist", "inspection", "inspectors",
-                                     "sneaker", "replies", "dayrate", "clawmenu", "bunnycost", "pricetags", "cases"]); ap.add_argument("out")
+                                     "sneaker", "replies", "dayrate", "clawmenu", "bunnycost", "pricetags", "cases", "ladder"]); ap.add_argument("out")
     ap.add_argument("--t3", type=float, default=0.0); ap.add_argument("--t4", type=float, default=0.0)
     ap.add_argument("--steps", default="")
     ap.add_argument("--t1", type=float, default=3.0); ap.add_argument("--t2", type=float, default=6.3)
@@ -716,5 +765,5 @@ if __name__ == "__main__":
     ap.add_argument("--src"); ap.add_argument("--cx", type=float, default=0.5); ap.add_argument("--dur", type=float, default=3.0); ap.add_argument("--w", type=int, default=1080); ap.add_argument("--h", type=int, default=1920)
     a = ap.parse_args()
     {"dots": dots, "counter": counter, "calendar": calendar, "tvoff": tvoff, "collateral": collateral, "craigslist": craigslist, "inspection": inspection, "inspectors": inspectors,
-     "sneaker": sneaker, "replies": replies, "dayrate": dayrate, "clawmenu": clawmenu, "bunnycost": bunnycost, "pricetags": pricetags, "cases": cases}[a.kind](a)
+     "sneaker": sneaker, "replies": replies, "dayrate": dayrate, "clawmenu": clawmenu, "bunnycost": bunnycost, "pricetags": pricetags, "cases": cases, "ladder": ladder}[a.kind](a)
     print("done", a.out)

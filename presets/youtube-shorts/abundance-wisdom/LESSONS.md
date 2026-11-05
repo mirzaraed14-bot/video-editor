@@ -4,6 +4,41 @@ One entry per thing a job taught. Newest first. Numbers belong in [README.md](RE
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
 
+## 2026-11-05 · La Toya Betrayed review 2: what I got wrong, and the Bolt Motivation look
+
+**Lesson → change made → file** (his note and the measurements: `projects/latoya-betrayed/REVIEW-2.md`):
+1. **I "fixed" lip sync in the wrong place.** Dr. Drew's raw file was IN SYNC; my -0.16 s slip is what he saw in v1. Correlation numbers (r ≤ 0.3) prove nothing on these sources. → Read physical events frame by frame against 5 ms audio energy: lips shut on b/p/m, wide on the vowel, teeth on "th". Use several words, and a second source as the control. Voiced b/m read about -100 ms against the energy rise even in sync; only p is clean. `win/slip_probe.py` measures the slip actually baked into a render. Verify on the OUTPUT before claiming a sync fix.
+2. **The "clay face" is Topaz smearing across a source cut.** A broadcast cut has 1 blended frame; a temporal model spreads it over 2-3 frames and double-exposes two faces. → Upscale each clean run between cuts separately, and fill the blended slot with the last clean frame of the outgoing run. Scan for them first: a frame that equals prev + next mixed, with a big prev-next difference.
+3. **"No clean photo exists" was a thin search, and it cost him a freeze frame.** Google Images showed clean press photos at once; clicking a tile gives the original URL: Parade 1920×1592, NY Daily News 1200×924, i.redd.it 1102×727. → Open the panel and read `naturalWidth` before saying none exist. A frozen video frame is the last resort, and it gets said out loud.
+4. **A voice-over can carry the b-roll's own sound inside the broadcast mix** (Barbara's question over La Toya's Tel Aviv press conference). → Measure the floor in the pauses: -35 dB here vs -60 dB elsewhere. DeepFilterNet took the pauses to -52..-67 dB with the voice level and words intact: `uv run --python 3.10 --with deepfilternet --with torch==2.2.2 --with torchaudio==2.2.2 --with "numpy<2" --with soundfile`.
+5. **The twin only fills the screen if k ≥ max(cy/(cy-b0), (1920-cy)/(b1-cy)).** A short band with the default 1.98 leaves black. QA: no black rows on any shot.
+6. **His bars and captions:** one band for the whole video, [370,1470] here, with the nose ON the caption line (y1061), and the zoom pivot at caption height so it stays there.
+7. **Bolt Motivation is his reference for upscale + grade** (`research/bolt-motivation-look.md`). Real skin texture, sharp eyes, deep blacks, no orange. Our AE grade measured skin hue 29.7, sat .61, mids 117/88/51 against his hue 16-24, sat .44, mids ~105/95/90. → `build/bolt_look.py` + Iris x2 at his preset numbers with `blend=0.2`, on trial on La Toya v2. Don't chase his skin level (Y 118) on a dark-skinned subject: it turns her grey-beige. Only the orange comes out.
+8. **A held frame must keep the OUTGOING shot's framing.** Holding the blended slot wasn't enough: the slot fell inside the next shot's setup, so a held La Toya frame showed in Barbara's framing for 2 frames, a pop. → End the outgoing shot on the first clean frame of the new one; check every frame around the cut on the file. `projects/latoya-betrayed/build/make_timeline.py`, `win/v2_checks.py`.
+9. **In bolt mode, grade the placed layer BEFORE the letterbox.** The S-curve crushes a twin already dimmed: "filled" still read black. With the grade first, opacity 0.55 overshot (giant blurred lips), so 0.33 on faces + `twin_blur` 30. Gate per shot against the previous version on both bands, not by an absolute number. `finish.py frame()`.
+10. **To lift a dark twin, move its centre, not its scale.** A bigger `twin_scale` narrows x as well, onto whatever dark thing is in the middle. `twin_cy` (with k 2.6-3.5) samples the bright part of the picture and stays inside the band. O8 stayed uneven: its photo is dark at the top. `finish.py letterbox()`.
+11. **No grain = half the bitrate.** Without the grain, x264 CRF 12 fell from 32 to 10.9 Mb/s and failed the ≥ 20 Mb/s spec; CRF 5 gives 30.2. Any Short on this look needs it. `build/export_cta.py`.
+12. **§ 12's prompt position assumes a band that ends high.** At band bottom y1470, the bar grows to about y1565 at each shot's end and the 76 px pill has about 70 px above y1620. On La Toya: under the bar, 4 frames of contact, cursor dips below y1620. **His ruling, 2026-11-05: "Keep it under the bar"**, over moving it up onto her chin. → README § 12.
+14. **"Stretch this overlay till the yes" meant no face at all, and I kept half a second of her.** He said it twice, the second time angry: "I don't want her face here for like half a second. It just disturbs the viewer." → On a one-word answer under an overlay, stay on the overlay through the word into the next transition; never cut to the speaker for a beat. If a note reads two ways, take the one that removes the thing.
+15. **A press-conference clip can hide a camera flash.** Extending Tel Aviv brought in a one-frame bleached flash (mean 92 vs 49 next door), with two motion spikes of 44 against a median of 5. It looks like a cut in the numbers: look at the frames. A weaker one sat earlier in the clip (frame 19, only a +3 brightness bump, a blue-white patch on her skin), and it was already in v2 unnoticed by me; the builder caught it on the sheet. A blue-minus-red shift against the two neighbouring frames finds both (+15 and +37 against a median of 0.2). Replaced each with the clean frame before it. Scan any clip that comes from a press event, even for frames already used.
+13. **Test an overlay PNG on PNG.** My first prompt test showed no pill on 3 of 4 tiles: a seek between frames starts the overlay just after t=0 and `overlay -frames:v 1` outputs the base untouched. Extract the frame by `select=eq(n,N)` first. The advisor caught it, after I had already called it passed.
+
+## 2026-11-05 · Owen Hart Wife review 1: "your overlay choice is absolutely horrendous"
+
+**Lesson → change made → file:**
+1. **An overlay must be crisp and readable at a glance. The right night is a bonus.** v1 chose factual footage from that night (Jarrett, a masked Blue Blazer, the back of Austin's head, a paparazzi-style photo) and nobody could read it. v2: Undertaker stunned, Heyman jaw-dropped, a smiling portrait. He had said it himself: "cleverly use some other overlay".
+   - → memory `feedback-aw-overlays-recognisable-crisp`, `projects/owen-hart-wife/BRIEF.md` § TELLA 2.
+2. **WWE footage: wwe.com/videos pages serve official clips up to 1080p with plain curl.** The file sits at `cdn5.wwe.com/wwe/<year>/<name>/<name>_1920x1080.mp4`, with no YouTube involved. Look for a brand's own site when YouTube is blocked.
+   - → `projects/owen-hart-wife/win/wwe_clip.py`, `win/clip_sheet.py`, `win/harvest_images.py`.
+3. **Higgsfield's image upscale rescues a single SD frame.** A 640x480 broadcast card came back crisp with perfect lettering (2 credits). For a static shot, upscale the frame, not the clip.
+4. **"Jittery" can be in the source: count duplicate frames at intake.** DSOTR had 33 of 118 (every other source about 0). Fix: `tvai_fi chr-2 rdt=0.01` before the upscale. Measure on the source: a zoom hides duplicates on the final.
+5. **Whisper word times are not caption times.** When WhisperX crashed on the raw cut, its faster-whisper fallback fed the captions, and 70 of 74 ran early, by up to 34 frames at 60 fps. Captions must come from wav2vec2 forced alignment: if WhisperX dies, align separately.
+   - → `projects/owen-hart-wife/captions/falign.py`.
+6. **The white line goes on the picture's edge, and a letterbox never shows black.** Crop a clip's own border away. A short band needs its twin scaled to fill the frame (1920 / band height); if the lower half of the shot is dark, `twin_mirror` + `twin_gain` keep it from reading as black.
+   - → `projects/owen-hart-wife/build/finish.py letterbox()`.
+7. **With the table zoom the band's bottom line travels up to +25 %.** A label must clear its whole path (`962 + (band_bottom - 962) / 0.8`), or sit inside the band. This corrects the Owen build's item 4 below ("y0 = band bottom"), which only held for the sine ease.
+8. **Opus decisions + a Sonnet build with stills gates worked (his instruction).** The gates caught a red, too-tight Undertaker, the VICE bug and label collisions before any full render. Judge the gate frames at a size that shows them.
+
 ## 2026-11-04 · Owen Hart Wife build (Harry's kit, his re-cut as the spec): kit gotchas
 
 **Lesson → change made → file:**
@@ -65,7 +100,7 @@ procedure in [PLAYBOOK.md](PLAYBOOK.md).
   test the letterbox, and cut two lines and extended the end. → Read the live sequence BEFORE resolving any note
   (`readback.js` → diff against our `v1/readback.tsv`), and drive the build from HIS read-back (`premiere/his1/readback.tsv`),
   never from our plan. File: `projects/latoya-betrayed/REVIEW-1.md`.
-- **"This is very unsynced" was a source offset.** Dr. Drew's YouTube copy has its picture ~0.16 s AHEAD of its audio:
+- **(WRONG, corrected 2026-11-05: the raw file was in sync, this slip caused his next note.)** "This is very unsynced" was a source offset. Dr. Drew's YouTube copy has its picture ~0.16 s AHEAD of its audio:
   at the bilabials ("more", "about") the lips close 4 frames early. MediaPipe xcorr was too weak to call it (r ≤ 0.14).
   → Slip that source's picture in the build (`make_timeline.SLIP`); never move his audio. Check every talking source this way.
 - **Letterbox + head tracking, with burned-in text:**
