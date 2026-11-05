@@ -56,6 +56,8 @@ def main():
     # the hook's timing was measured at 24 fps (0.46 s in, out from 2.33 s, 0.88 s out, gone by 3.2 s): scale to this job's rate
     # (QA 2026-10-06: at 30 fps the raw frame counts ran 2.47 s)
     IN_FRAMES, HOLD_END, OUT_FRAMES = (int(round(n * fps / 24)) for n in (IN_24, HOLD_END_24, OUT_24))
+    if hook.get("hold_end"):                    # opt-in (AffanWiz CA-010 Short 2, 2026-11-04): the card holds until hold_end (s), then slides
+        HOLD_END = max(IN_FRAMES + 1, int(round(float(hook["hold_end"]) * fps)))   # out, so a hook line spoken past 3.2 s keeps its card
     ease_in = lambda p: 1 if p >= 1 else 1 - 2 ** (-10 * p)
     hook_x = {}
     for f in range(IN_FRAMES):
@@ -94,6 +96,8 @@ def main():
                    for i, bv in enumerate(BLURS))
     # hook "gold_words": ["FIRST"] colours only those words in the kit's gold (every line white otherwise; Simon Squibb 2026-11-03: "FIRST coloured");
     # without it the LAST line is gold, as before
+    pop_rep = f', popRep: {int(spec["captions"]["pop_rep"])}' if spec.get("captions", {}).get("pop_rep") else ""   # 59.94 base (2026-11-04)
+    hook_grad = hook.get("grad", "linear-gradient(180deg, #F39A10 0%, #F6B412 45%, #F7D428 100%)")   # the kit gold unless the spec sets one
     gold_words = {g.upper() for g in hook.get("gold_words", [])}
     gold_fill = lambda txt: " ".join(f'<span class="gold">{w}</span>' if w.strip(".,!?").upper() in gold_words else w for w in txt.split(" ")) if gold_words else txt
     hook_divs = "".join(
@@ -179,7 +183,7 @@ html, body {{ margin: 0; background: transparent; }}
 .hl span {{ position: absolute; left: 0; width: {W}px; text-align: center; }}
 .hl .stroke {{ color: #000; -webkit-text-stroke: 13px #000; text-shadow: 5px 7px 0 rgba(0,0,0,0.85); }}
 {hl_white} {{ color: #FFFFFF; }}
-{hl_gold} {{ background: linear-gradient(180deg, #F39A10 0%, #F6B412 45%, #F7D428 100%); -webkit-background-clip: text; background-clip: text;
+{hl_gold} {{ background: {hook_grad}; -webkit-background-clip: text; background-clip: text;
   color: transparent; }}
 .hl .fill .gold {{ position: static; display: inline; width: auto; left: auto; }}
 .tag {{ position: absolute; inset: 0; visibility: hidden; }}
@@ -215,7 +219,7 @@ html, body {{ margin: 0; background: transparent; }}
   window.__timelines = window.__timelines || {{}};
   const COMP = "{comp_id}";
   const tl = gsap.timeline({{ paused: true }});
-  ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps}, palette: {json.dumps(spec.get("captions", {}).get("palette"))}{cap_y} }});
+  ytCaptions(tl, "#caps", {json.dumps(chunks, ensure_ascii=False)}, {{ fps: {fps}, palette: {json.dumps(spec.get("captions", {}).get("palette"))}{cap_y}{pop_rep} }});
   {wm_js}
   {json.dumps(steps)}.forEach(([t, x, b]) => {{
     tl.set("#hook", {{ x: x, filter: b ? "url(#hook-hb" + b + ")" : "none" }}, t);

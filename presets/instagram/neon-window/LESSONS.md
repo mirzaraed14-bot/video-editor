@@ -302,3 +302,35 @@ Takara mark circled ON the tilted, pushing card; crisp swishes chosen by envelop
    gives alpha = ease_out(0) = 0 on a card's first frame, so a cut into a float card shows one frame of empty stage (QA r1: f471, f636, f1651
    read as a blink). Fix: `k = (t - t0 + 2.0 / FPS) / 0.32` (the card opens ~40 % in). Check every builder that copied the kit.
 
+
+## 2026-11-04 · Onyx organic batch, Shorts 1-6 (Affan's own camera, `projects/_onyx-organic-2026-11/<job>/ig/`), builder lessons
+Kit = the Squibb IG build, ported. Not reviewed by Affan yet: these are the builder's own findings; his notes come in their own entry.
+1. **A native 59.94 camera needs ONE timebase, the base's own.** The kit's `/30`, `*30`, `fps=60.0` and `1579 / 30` would drift ~2
+   frames over 57 s on a 60000/1001 base. → `build.py` runs on `BFPS = 60000/1001` (check = every 2nd base frame at 30000/1001, final
+   = every frame, no Chronos/plates), joints come from the frame-snapped EDL in base frames, `sound.py` / `qa.py` / `work/check/sync.py`
+   use the same rate. SYNC lag 0 on every decisive frame of all six checks.
+2. **The head tracker's outlier filter must be LOCAL.** A take-wide x-median threw out the last 20 frames of a take where he swings his
+   head ~160 px, so the joint's pin used stale points: an 84 px snap (Short 5, qa.py). → `_takes` keeps a detection when it sits
+   within 110 px of the median of its ±30 frames. Use this in every new build.
+3. **A low-key room takes cam gamma 1.15, not 1.35.** Mark's 1.35 is for a bright studio; on his neon-on-dark-green room it sank the
+   face (test sheet). The masks (top, low, vignette) stay. → `CAM_GAMMA`.
+4. **The YouTube-tight pause threshold follows the room floor.** His room sits at −47 dBFS (Squibb's −65), so quiet runs are cut at
+   < −40 dBFS and only BETWEEN words (never a stop closure inside one). → `work/cut/make_edl.py` (TH, the word-gap test).
+5. **polish-boundaries can land INSIDE a word on run-on speech** ("spend", "I", "simple", "the title"): audio-qa's JOINT CLICK is the
+   tell; pin the edge on the measured dip (10 ms RMS) and re-read it with faster-whisper both ways.
+6. New moves that worked on the checks: the format annotated ON the window itself (a dashed line tracing the rounded edge, BLACK BAR
+   labels; Short 5), a real waveform of the episode with a sweeping playhead that "spots" two moments (Short 2), a rubber stamp
+   slammed on a cue card (Short 4), an open loop that tries to close and springs back (Short 6).
+
+
+## 2026-11-04 · Robert Herjavec "DWTS scared him more than a 203 mph crash" IG Short (`projects/_client-scott-clary/herjavec-dwts-crash/ig/`), 30 fps check, builder lessons
+Kit = the Squibb IG build ported to a two-camera, bright-room, receipt-photo job. Not reviewed by Affan yet: these are the builder's own findings.
+1. **Two speakers on two cameras: one tracker each and ONE face size.** `FACES[key]` per camera (`cam` Robert, `scott` Scott), and the framing zoom per speaker from the median face-box height (`TARGET_H` 400 window px): Scott's wide seat then reads the same size as Robert's mid-shot (one shared ZB would have made one of them tiny). Scott's captions are cyan end to end, Robert's emphasis is the red hero.
+2. **Prove a jump cut on RENDERED frames, and close it in a loop.** The face-box pin leaves the eye line / hair top 10-20 px apart at a cut where he tips or turns his head (Squibb's "not proven to 0 px"). `ig/work/joints.py` re-detects eye line (YuNet), hair top (scan DOWN the ungraded crop from just under the 4K frame's own top edge to the wall -> hair drop) and a phase-correlation shift at j-1 | j; `--solve` writes `ig/joint_fix.json` (the vertical step closed half and half across the cut, 15-frame cosine fades, read by `build.track`); two passes took eye line max 11.3 -> 4.6 px, hair top 20 -> 4 px, confirmed by an independent YuNet pass on the delivered mp4. Pose (eye x 34 px at a turn, box height) cannot be zeroed and is reported, not hidden. Scanning UP from the box top for the hair edge fails (the box top can be forehead): scan down from the frame edge.
+3. **Chunk tokens must be matched to the audio words BY TEXT.** A word the audio does not carry can sit anywhere in a YT chunk ("And [I] walked away", "not even [close]"); Squibb's "lead = words minus tokens at the START" timing starts those lines one word late. `make_blocks` aligns token to word, starts on the first matched word, and derives the voice-only chunks from the YT's own rule (a chunk that ends under `captions.t0`).
+4. **A bright beige room needs a stronger relight than Squibb's dark one, and legibility can be MEASURED**: `ig/work/contrast.py` renders every caption line without text and reads the WCAG ratio of the white text on the 90th-percentile luminance under it; the same 56 lines with Squibb's masks vs the stronger ones: min 3.70 -> 4.35, lines under 4.5:1 4 -> 1.
+5. **A white page on a blurred copy of itself reads as noise** (the IBTimes headline): the dark stage plate instead; photo cards sit on a blurred dim copy of themselves (blur 30), the DWTS clips on a plate of their own frame (blur 24). Card to card = a flip with the old card flipping out first; the card never opens on an empty frame (#5 of 2026-11-02).
+6. **A hook that lives on the cam shot ends with it**: `draw_hook` only runs on cam frames, so the hook fades over its last 0.15 s into the cut to the first card (2.67 s). The YT's overlay rides ~0.4 s further; flagged for Affan.
+7. **Broadcast clips carry their own cuts**: `qa.py` flags 6 picture changes inside the DWTS clips; the reel itself steps there (37-62 vs a median 4.5), so they are the footage's, not the build's. Check the source before chasing one. A YT crop that cuts a lower third mid-letter is trimmed in the IG (0.86 -> 0.83).
+8. A 114-term `select=eq(n,..)+eq(n,..)` returned no frames here (cause not diagnosed; qa.py's 63-term one works): decoding every frame once at a small size and indexing it is the safe pattern (`ig/work/edges.py`).
+9. Outputs of a second variant never go into the first one's `outputs/`: the kit writes to `ig/out/` (cover, mux, proof sheet), then copies to Exports.

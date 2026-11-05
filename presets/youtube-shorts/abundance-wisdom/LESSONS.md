@@ -4,6 +4,167 @@ One entry per thing a job taught. Newest first. Numbers belong in [README.md](RE
 procedure in [PLAYBOOK.md](PLAYBOOK.md).
 
 
+## 2026-11-04 · Owen Hart Wife build (Harry's kit, his re-cut as the spec): kit gotchas
+
+**Lesson → change made → file:**
+1. **`zoom_layers.json` is not written by `make_timeline.py`.** Run `finish.py centers` after every timeline change that
+   touches zooms. Without it the finish crashes; with a stale one it renders the old zooms without a word.
+   - → `projects/owen-hart-wife/RUN.md` § Re-run recipe.
+2. **`track.raw.json` is a cache.** After any framing change in SOURCES (scale, `content_x/y`, a new Topaz excerpt), delete
+   it and re-run `stage_a.py track` + `smooth_track.py`. Otherwise Stage A frames the old way.
+3. **A post-grade saturation key does not fix orange skin.** TSN 1999 (Vince) measured sat 0.84 / R/G 2.07 under his grade
+   with the 0.82 key. Levelling before the grade (`sat_level {'O': 0.72}`) gave 0.72 / 1.75, the same range as Harry's
+   finals. This confirms 2026-10-21: run `build/skin_png.py` on the finish stills of EVERY source before the full render.
+   - → `projects/owen-hart-wife/build/make_timeline.py`.
+4. **A label on a letterboxed shot starts AT the band's bottom edge** (`y0` = band bottom: JR 1262, GMA 1438). Inside the
+   band, the label's rule lands on the band's glow line and the name sits on the picture.
+5. **The one-pass finish can die of a MemoryError when the PC is near its commit limit** (120 of 127.7 GB with his
+   Premiere, PProHeadless and AME open; died at frame 300). The finish needs no audio (`export_cta.py` takes `mix.wav`),
+   so render it in 500-frame chunks with a retry, then concat `-c copy`.
+   - → `projects/owen-hart-wife/build/render_chunks.sh`. Copy it into the next kit. It waits for memory BEFORE it takes
+     the GPU lock, so it never holds the lock idle.
+   - **Stopping a background `bash script.sh | grep` (TaskStop) on Windows can leave the inner bash ALIVE.** Here the
+     orphan went on rendering without the lock while another session held it, and its `trap 'rm -rf $L' EXIT` would have
+     deleted THAT session's lock. After every stop, list the processes (`Win32_Process` CommandLine). Kill the tree with
+     `taskkill /F /T /PID <bash>` (a hard kill skips the trap), and only then touch the lock or the chunk files.
+   - **A "DONE" grep on a render log is not proof.** With stdout and stderr in one file, the readers' broken-pipe lines
+     interleave into "DONE", so a good chunk was judged failed and deleted. Done = `ffprobe -count_packets` equals the
+     chunk's frame count; stderr goes to its own file.
+6. **BRIEF.md carries two tables keyed by the same slot times** (his § TELLA table and our § OVERLAY PICKS). Edit them
+   by section, never by row prefix. A prefix patch overwrote three of his rows once; they were restored word for word.
+7. **A Tella slot with no footage anywhere** ("none of the producers": nobody is on camera that night) plays his own clip
+   under it, here Vince, and the report says so. A substitute that fails the frame check (the stunned crowd had children)
+   is dropped, not softened.
+8. **OPEN QUESTION (not ruled on): crowd fans of unclear age behind a desk shot he picked** (JR's announce desk). The
+   brief's rule 5 opens "No minors on frame". His Tella chose this shot, and it is the only on-air JR footage. So it was
+   flagged in the report with a one-line fix (blur the crowd), not blurred unasked. Record his answer here.
+9. **`smooth_track.py`'s "jump into another setup" hold (|y - median| > 60) is in SOURCE px.** On a Topaz x2 excerpt it
+   caught real head motion: Martha's nods and Bret's sway were held and cascaded. Martha's static anchor landed 56 px off
+   (her right eye at the frame edge), and the span test never saw the travel, so no slow follow fired. Scale it with the
+   excerpt (200 at x2). Then S02, S13 and S14 became slow follows and every other shot stayed the same.
+   - → `projects/owen-hart-wife/build/smooth_track.py`. Check every static anchor against the YuNet nose on the source
+     (proof/stageA_faces.jpg), not only the shot sheet.
+10. **A face turned 3/4 is held by the face, not the nose:** `X_pos {'D0': 480}`. This is the Patrick rule; Martha's nose
+    sat 45-140 px left of her eye midpoint.
+11. **Ported his Harry reviews 2 + 3 the same evening:** one zoom per SHOT CHANGE (review 3: a same-camera jump-cut run is
+    ONE layer, a new one only on a change of person / camera / overlay; review 2's restart-on-every-cut was overruled
+    within the hour, so a render was killed twice: wait for the review to settle before a full render), README § 3's
+    table plus `long_curve` above 2.5 s, and a hold on an overlay that already moves
+    (`win/his_zoom.py`: Austin walking away, -55 % in 0.9 s). `win/zoom_paper.py` PASS before the render. PRE sharpen:
+    0.25 + grain on the Higgsfield overlays and AP stills (gamma 0.85 on the video overlays only; the hook's dark arena is
+    its vignette), 0.5 on every Topaz face setup. The Iris x2 faces lose the same dark ringing as the Proteus ones
+    (`proof/cmp_faces1/2.jpg`).
+12. **OBSERVATION, not his rule yet: his own mid CTA pills sit on letterbox overlays** (Harry 21 s + 35 s: the ambulance,
+    the handshakes). His written rule (README § 12) is only: out of the hook, off labels, off the payoff line. Owen's
+    planned 20.80 put the pill on Bret's nose during "my dead brother", so it moved to 23.70 (over the Jarrett letterbox;
+    its SUBSCRIBED tail still crosses ~0.5 s onto Bret) and the move was put to him. Record his verdict here.
+    - → `projects/owen-hart-wife/build/make_timeline.py` cta, `proof/harry_cta_ref.jpg`.
+
+## 2026-11-04 · La Toya Betrayed build: his review edits his sequence, and letterbox bands are set per source
+- **His Tella came with a RE-CUT of our raw sequence.** He moved clips up to V2 to mark overlay slots, zoomed shots out to
+  test the letterbox, and cut two lines and extended the end. → Read the live sequence BEFORE resolving any note
+  (`readback.js` → diff against our `v1/readback.tsv`), and drive the build from HIS read-back (`premiere/his1/readback.tsv`),
+  never from our plan. File: `projects/latoya-betrayed/REVIEW-1.md`.
+- **"This is very unsynced" was a source offset.** Dr. Drew's YouTube copy has its picture ~0.16 s AHEAD of its audio:
+  at the bilabials ("more", "about") the lips close 4 frames early. MediaPipe xcorr was too weak to call it (r ≤ 0.14).
+  → Slip that source's picture in the build (`make_timeline.SLIP`); never move his audio. Check every talking source this way.
+- **Letterbox + head tracking, with burned-in text:**
+  - Give each source its own band: CL [262, 1350] (the churchoflatoya.com watermark sits under her chin), DD [262, 1500]
+    (HLN supers), TT [262, 1662].
+  - Fit ONE face height per setup (`build/fit_y.py`) so the head stays steady across jump cuts AND the bad rows always
+    land below the band.
+  - The 198 % twin can't show them either: it samples only rows inside the band.
+- **Higgsfield Topaz `aspect_ratio: auto` snaps to a standard shape** (552×534 → 1:1, 640×534 → 4:3: an 11 % stretch).
+  Resize every result back to the input's own aspect, and crop burned-in text BEFORE upload: the 1980s clip still had
+  the watermark, and the 2005 crop still had the HLN bar.
+- **A CTA pill at y1392 sits ON a short band's glow bar once the push-in grows the band.** Check the CTA frames, and move
+  the pill with `cta.mid_dy` in `export_cta.py`; here it went 100 px down, onto the black.
+
+## 2026-11-04 · La Toya Betrayed raw cut: the brief's "real photos" were already inside its own sources
+- **Look in the broadcast before searching the web.** 20/20 2009 itself shows the 1990s Jack Gordon + La Toya photo
+  (TT 15.9-19.99, 720p, clean). Dr. Drew 2012 shows its own 2005 footage of La Toya arm in arm with Michael (DD 417-420.75).
+  His drives had adult Michael in 1993: the Grammy Legend Award (24 Feb 1993, restored 1440×1080) and the Oprah interview
+  (10 Feb 1993, 4K AI upscale). Google Images for "La Toya + Jack Gordon" returned only watermarked Alamy/Getty stock
+  (never strip a watermark). → Make a sheet of the source's B-roll first (`win/sheet.py KEY t0 t1 step out.jpg`); web
+  stills only for what isn't there. File: `projects/latoya-betrayed/premiere/make_beats.py`.
+- **A side-by-side two-person photo can't hold both faces in a full-bleed 9:16 crop.** The crop is 0.32 of a 16:9 width and
+  0.42 of a 4:3 width, and the brief banned letterbox and blurred fill. → Pick a frame whose faces sit inside that width (the
+  arm-in-arm walk, faces 0.36/0.56), or plan a pan for the build. The raw cut frames the named person (Gordon). File:
+  `framing.json`.
+- **A reaction shot shorter than the line it must cover** (her 1.2 s stare vs Barbara's 2.6 s question + "Yes"): render it
+  slowed as a picture-only cover file (`setpts`, 30 fps, silent audio). Stop BEFORE the source's own dissolve: v1 kept 4
+  ghost frames at the overlay edge. Give every re-render a new name, because Premiere has imported the old one. File:
+  `seq_src/TT_react_slow2.mov`.
+- **The ABC 20/20 capture's real picture is 536×404 inside 720×480** (cropdetect). Set `border` [38, 92], or the crop shows
+  black. The burned-in watermark sits on her chin, so the raw cut shows it; the build crops above it.
+- **Low RAM** (another job's ffmpeg held 3 GB; 1.4 GB free): faster-whisper large-v3 on CPU died with `mkl_malloc`. →
+  `FW_MODEL=medium.en` / `small.en` (env, now in the job's win/*.py) for edge snips. The edges are set by level view anyway.
+- **A cut point that is right per the ASR timestamps can still be wrong.** Barbara's "Michael" runs straight into "of", and
+  the ASR put "of" from 25.18. Re-ASR to 25.20 and 25.233 heard "…accused Michael." with no "of"; to 25.32 it heard
+  "Michael of". The 2-frame crossfade margin was proven the same way, from 26.40 for "Yes".
+
+## 2026-11-04 · La Toya Betrayed: a locked brief can be re-locked under you
+- His brief file (`X:\Claude Projects\Abundance Wisdom\<NAME>-EDITOR.md`) was re-locked as **v2** five hours after the first copy.
+  It came out of a source-quality pass: Jensen! 2008 exists online only at 240p, so 3 of its 6 beats moved to another
+  interview. The job's BRIEF.md was still v1, and the sources asked for were the dropped ones.
+- → **`cmp` BRIEF.md against his file before intake, before the raw cut and before the build.** On a change: copy the new
+  one over BRIEF.md, keep the old one as `BRIEF-v1.md` (history only, never cut from it), and resend only what changed.
+  File: `projects/latoya-betrayed/RUN.md`.
+- → "Highest quality?" can't be checked from this PC (YouTube is blocked, and `yt-dlp -F` is a bypass). The source audit
+  is his brief's job. Ours is to ffprobe each download at intake against the resolution the brief says it should be.
+
+
+## 2026-11-04 · Owen Hart Wife (first WWE Short): his house rules beat a locked brief's specs
+
+**Lesson → change made → file:**
+1. **(SUPERSEDED the same day: the end screen is OFF on every Short since his Harry Diana review, README § 12. Owen ends on
+   its hard cut.)** **The end screen goes on even when the brief says "hard cut, no end card".** His answer: "do add the call to action at
+   the end". The brief's hard cut stays, and it cuts on the last word straight into the end screen's black. The runtime
+   limit and "someone is always speaking" count up to the last word only.
+   - → README § 12 (end screen row), `projects/owen-hart-wife/RUN.md` § Decisions.
+2. **A brief's music cue is still skipped** (pulse and piano asked for, "don't add any music"). This confirms the 2026-10-27 rule.
+3. **The house caption look beats a brief's caption spec** (word-by-word at 62–68 % height): max 3 words, one base under
+   the lips, labels low. He said yes to the house look.
+4. **The Higgsfield upscale was approved for the main 1999 footage too, not only overlays.** Quote it first, and measure
+   the real rate on one test clip (5 credits / 2.7 s came from a single job).
+   - → `projects/owen-hart-wife/RUN.md` § Cost quote.
+5. **When the brief labels almost every beat, the mid pill has few homes.** The pill shares the label band (y 1392). On
+   Owen Hart only B4 (after its label) and B6 were free. Map the label holds before promising pill times.
+6. **Where the brief's picture doesn't exist, he wants "a painful overlay that just fits the moment",** not a clever
+   crop. He turned down an eyes-only crop of Martha's 2020 face.
+   - Used: Martha at his funeral, Owen with his arms raised, his #1 jersey dissolving into a hug, and Owen smiling in the
+     ring. Adults only, picked line by line.
+   - → `projects/owen-hart-wife/premiere/make_beats.py` COVERS.
+
+## 2026-11-04 · Owen Hart Wife raw cut: a quiet run is not a word boundary
+
+**Lesson → change made → file:**
+1. **At five of 27 cut points, the speech after a measured pause began with the PREVIOUS word, not the brief's first
+   word.**
+   - The cases: "that they wheeled", "that I loved him", "But there will be", "performers, it is ingrained", "you know,
+     I did voice". A sixth out-point cut "safe" off.
+   - The re-ASR of the planned A1 caught all six; the level strips alone did not. Harry Diana taught the same lesson on
+     one edge (2026-11-02). It now runs on every edge.
+   - Fix: re-ASR from the candidate in-point itself (`win/snip.py KEY:in:out`), and pick the first grid point where the
+     first word heard is the brief's.
+   - Gate: before Premiere, assemble the A1 from `edl.json` and re-ASR it per beat (`projects/owen-hart-wife/win/asr_plan.py`).
+   - → `projects/owen-hart-wife/premiere/make_beats.py` comments, RUN.md § Re-run recipe.
+2. **WhisperX died twice on this job**: on CUDA while another job held 5–7 GB of the 8 GB GPU, then a segfault on the CPU.
+   - faster-whisper large-v3 word timestamps fill the same `words.json` schema; every edge gets measured anyway.
+   - → `projects/owen-hart-wife/win/transcribe_fw.py`.
+3. **On a 30 fps source, eff()'s 4-decimal rounding can land just ABOVE a grid point**, and resolve_beats then jumps a
+   whole frame (19.76667 → 19.7667 → 19.8001).
+   - Harry's sources were 29.97/25 fps, so it never showed. Fixed by re-checking the rounded value.
+   - → `projects/owen-hart-wife/premiere/make_beats.py` eff(). Copy that version into the next job.
+4. **News packages dissolve between archive shots (~0.5–1 s).** An overlay that starts or ends inside a dissolve shows a
+   ghost frame at the hard cut.
+   - Frame-step the clean range of every overlay shot.
+   - Where the clean ranges are too short, run one continuous cover through the source's own dissolve instead.
+   - Also check the gap between two covers frame by frame (the sim caught a one-frame family-photo-with-a-baby flash).
+5. **Sequence 30.00 fps and a 29.97 source: a piece can still be held one frame early** (B5 "no one": 133.3667 vs
+   133.4000).
+   - `verify_eff.py` flags it. Judge it by re-ASR: here harmless.
+
 ## 2026-11-03 · subscribe CTA review 1: glow it, and research before a concept
 
 **Lesson → change made → file:**
@@ -1327,3 +1488,60 @@ REPORT.md). At his review.
   Whisper windows disagree on a function word or a mumble in an impression, list the open words in the PREVIEW message
   for his ear (he hears it in the sequence preview anyway) instead of settling them silently; caption-only fixes then
   cost one caption re-render + one short finish range, not a re-cut.
+- 2026-11-04 (Harry Diana Photos, the first non-Jackson mega-celebrity + the FIRST Short shipping the subscribe CTA) —
+  lesson → change → file:
+  (1) **The CTA in a code build = an export pass, not per-frame Python:** `projects/harry-diana-photos/build/export_cta.py`
+  takes the 60 fps finish → fps=30, overlays `aw-cta-mid-30.mov` (ProRes 4444, straight alpha) at each timeline
+  `cta.mid` time, concat-appends `aw-cta-end-30.mov` after the last frame (hard cut), muxes `mix.wav` (`build/mix.py`
+  now places the mid / end cue WAVs and pads 4.0 s). One ffmpeg pass, QA as export.py. Copy it into the next kit.
+  (2) **His Tella can reverse a locked brief's hard rule** (children in O2/O5/O6 vs the brief's rule 5): put each
+  conflict to him with a default, never decide silently; his "Yes, defaults" then covers it. "Her injured" / "the back
+  of her head" are crash photos by definition: the defaults were the ambulance (Diana never visible) and the PRE-crash
+  Ritz photo.
+  (3) **WhisperX source words at HIS cut edges get dropped by the midpoint rule** ("The pictures", "dead?", "of her",
+  "the wet"): re-ASR his A1 alone at every edited join (`win/snip_his.py`) and insert what he kept, before captions.
+  (4) **A 720p face source gets Proteus x2 on the source excerpt** (Conrad note 3) — `build/topaz_src.py` → the excerpt
+  as its own source (t = 0 at its start, scale halved), re-track only those shots, merge into track.raw.json, re-smooth.
+  (5) **Kit gotchas:** `stage_a.py render` dies at frame 0 (broken pipe) if `renders/dialogue.wav` does not exist yet;
+  `captions/render_caps.py` needs `--with fonttools --with scipy --with opencv-python-headless` under uv.
+- 2026-11-04 (Harry Diana Photos, HIS REVIEW 1 of v1) — lesson → change → file:
+  (1) **The Road to 1M end screen is REJECTED** ("looks absolutely horrendous and cheap ... skip this until you come up with
+  a better one"): no subscribe end screen on AW Shorts until a NEW design is approved; end on a picture fade instead. The
+  two mid prompts stay (his times on this one: 21 s and 35 s of a 41.6 s Short). → `timeline cta.end False`,
+  `export_cta.py` (end optional), README § 12 to be updated by the CTA owner.
+  (2) ~~**Zooms: "a smooth, subtle zoom IN which looks elegant ... the curve is too strong ... too poppy"**: the measured AW
+  front-loaded table (35 % of the move in the first 10 %) reads as a pop on Shorts. → every block one push-in ~4 %/s
+  (max 8 %), sine ease in-out, no alternating pull-outs (`finish.py zoom_curve: 'ease'`, `make_timeline.py`).~~
+  **SUPERSEDED by his review 2 (below): WRONG diagnosis. The table is his; the pops were v1's pull-outs. Never sine-ease.**
+  (3) **"Why is the camera wiggling so much"**: a per-frame head lock (even sigma-3 smoothed) shows tracker noise as wiggle.
+  → one anchor per shot (median nose), a sigma-12 slow follow only where the head really travels (`build/smooth_track.py`).
+  (4) **No sub-0.5 s shot between a reverse and an overlay** ("this Harry bit, two milliseconds"): extend the reverse
+  (0.8x) and cut straight into the overlay when the speaker starts.
+- 2026-11-04 (Harry Diana Photos, HIS REVIEW 2 of v2, text) — lesson → change → file:
+  (1) **The AW zoom is a TRANSITION zoom** ("it starts strong, it loses its intensity, but it picks up its intensity at the
+  end of the shot ... directly goes into the next clip ... the next clip will have the same intensity"). Measured frame by
+  frame on his ABW6 03 / ABW8 34 / ABW8 39 / Martin Final (`projects/harry-diana-photos/win/his_zoom.py`, calibrated on a
+  render with known zooms, ±1–2 %): start +30..+65 %/s, middle +2..+9 %/s, end +15..+30 %/s, ~80 % push-ins, pull-outs
+  only in runs. ~~and the zoom restarts at 1.00 on EVERY cut (4 of 4 same-camera joints)~~ (WRONG, see review 3). →
+  README § 3 (transition-zoom table); one push-in per shot change on the table, v1's depths, shots < ~1.1 s capped at a ~45 %/s start; `win/zoom_gate.py`
+  checks a render (all IN, no flips). Review 1's "too poppy" was v1's 8 pull-outs, NOT the curve: read a review against
+  the measured numbers before changing a measured rule.
+  (2) **Check an overlay clip's OWN camera move before zooming it**: Harry's AP ambulance zooms +92 % by itself, so ours on
+  top made +50 % in under a second. → `his_zoom.py <clip>`; a clip that moves gets a hold.
+  (3) **"Topaz artifacts" were his GRADE on a smooth upscale**: the raw Topaz / Proteus files and the stage-A picture
+  are clean; the PRE bands (Unsharp 40 r25 + BCC Unsharp 20 r30, a clarity boost) ring dark around edges and crush dim
+  1997 crowds into black blobs. A pre-blur cannot reach a radius-25 band. → `finish.py` timeline `pre_sharp`
+  {shot / setup: k}: archive overlays + a 4K still at 0.25 (+ gamma_level 0.85, not on a night still, + grain), Proteus
+  720p faces at 0.5; picked from test frames (`work/v3test/cmp_ps_*.png`). Test every archive overlay through the FINISH
+  before calling an upscale good.
+  (4) **Long shots keep his SPEEDS, not his table's proportions**: on his 4–9 s shots the start (~+40 %/s) and the pick-up
+  into the cut (+15..+30 %/s) are the same as on short ones; the table stretched over 4 s ends at ~11 %/s. → `finish.py
+  long_curve` (start burst + end burst + drift, e^-t/0.15 s) above 2.5 s, where it meets the table within ~2 %;
+  `win/zoom_paper.py` checks every cut on paper before a render.
+- 2026-11-04 (Harry Diana Photos, HIS REVIEW 3 of v3, text) — lesson → change → file:
+  (1) **Same person, same camera = ONE zoom layer, across every jump cut** ("you will not introduce a new zoom layer on it
+  ... it just looks weird if we're zooming in and then we zoom out and then zoom again ... when the shot changes to another
+  person or to an overlay, that's when you introduce another zoom layer, not when they finish their sentence"). v3 had
+  restarted the zoom at Harry's "yep" (2.53 s) and at 27.2 / 27.9 / 32.63 on the strength of 4 size steps measured on his
+  renders: a measurement is not his rule when he says otherwise. → `make_timeline.py` groups a same-source + same-setup
+  face run into one zoom (as v1/v2 did), README § 3 corrected.

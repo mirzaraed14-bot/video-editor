@@ -63,6 +63,7 @@
     wipeEnd: 0.88,           // share of the chunk's screen time when the colour covers the whole line
     outline: { r: 3, soft: 2, gain: 2 },                     // dilate radius px, edge softness, alpha gain
     shadow: { dx: 6, dy: 8, blur: 4, opacity: 1 },           // soft black drop shadow, down-right
+    popRep: 1,               // hold each entrance state this many frames (2 at a 59.94 base keeps the 30 fps pop's timing; gta6-all-fit-inside 2026-11-04)
     palette: null            // extra voices: { name: { grad: "linear-gradient(180deg, ...)", top: "#..", bot: "#..", white: false } }
   };
 
@@ -172,6 +173,7 @@
 
   function ytCaptions(tl, container, chunks, opts) {
     var o = merge(DEFAULTS, opts || {});
+    if (o.popRep > 1) o.pop = [].concat.apply([], o.pop.map(function (p) { var r = []; for (var q = 0; q < o.popRep; q++) r.push(p); return r; }));
     if (!tl || typeof tl.set !== "function") throw new Error("ytCaptions: pass the composition's gsap timeline");
     if (!(o.fps > 0)) throw new Error("ytCaptions: opts.fps is required (e.g. 24000 / 1001)");
     var doc = global.document;

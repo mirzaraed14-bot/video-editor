@@ -147,3 +147,26 @@ verified, not saved). Under the brief's ~60 s because its words with ≤0.25 s p
 of the boys. WAITING for his Tella; open: music, caption height, runtime. Start at the job's RUN.md.
 → 2026-11-02 ~21:15 Paris Shock Therapy v1 DELIVERED (code build from his 42.40 s re-cut, his Q1 childhood shots OK, Q2 caption-only K*LL MYSELF): Final Renders + Exports `Paris Shock Therapy.mov` (sha256 c8c5cf0c…), −14.1 LUFS; ECT picture slipped 6 f for lip sync; at his review (projects/paris-shock-therapy/REPORT.md).
 → 2026-11-03 Paris Shock Therapy v2 DELIVERED (his note: Higgsfield upscale both sourced images; S6 photo 4K + S3 clip Topaz 2160p, 7 credits; S3 levelled pre-grade), v1 kept as "(v1)"; at his review.
+→ 2026-11-04 Harry Diana Photos: his Tella 1 in (6 overlay slots O1–O6 marked on his V2; he re-cut to 41.63 s = spec).
+Resolved into BRIEF § HIS DIRECTION 1. Waiting on: children in O2/O5/O6 vs the brief's no-minors rule, O3 "injured" →
+ambulance/hospital exterior, O4 → the pre-crash Ritz photo, CTA mid-2 slot, subscriber count, Higgsfield credits, build go.
+→ 2026-11-04 ~15:05 Harry Diana Photos v1 DELIVERED (code build from his 41.63 s re-cut + Tella 1; first Short with the
+subscribe CTA: mids 16.75 / 26.00 + Road to 1M end, 45.63 s total; 6 overlays all Higgsfield-upscaled, 27 credits; ITV
+720p faces Proteus x2). Final Renders + Exports, sha256 872076b0…, −14.1 LUFS / −1.6 dBTP. Waiting on his review + his
+subscriber count (end screen says 540,000). Start at the job's RUN.md.
+→ 2026-11-04 ~16:20 Harry Diana Photos: his review 1 (Tella 2) → v2 DELIVERED (no wiggle, Cooper 0.8x over the Harry flash,
+smooth eased push-ins, NO end screen — he called Road to 1M "horrendous and cheap", fade out instead; CTA mids 21 / 35 s).
+sha256 887c902c…, v1 kept as (v1).mov. At his review.
+→ 2026-11-04 ~18:00 Harry Diana Photos: his review 2 (text) — v2's sine-eased zooms "missing the plot" (his zoom is a
+TRANSITION zoom, measured frame by frame on 4 of his finals → [[feedback-aw-transition-zoom]]) + "weird Topaz artifacts"
+(really his PRE sharpen bands on the upscales → timeline `pre_sharp`). v3 = one push-in per shot on his table + pre_sharp
+0.25/0.5 on the archive/ITV shots. Start at the job's RUN.md.
+→ 2026-11-04 ~19:30 Harry Diana Photos v3 DELIVERED (review 2): his transition zoom on all 24 shots (long shots keep his
+fixed start/end speeds), O3 held, pre_sharp fix on the archive/ITV shots. sha256 61aafa85…, v2 kept as (v2).mov. At his review.
+→ 2026-11-04 ~20:15 Harry Diana Photos v4 DELIVERED (review 3: same person + same camera = ONE zoom layer across jump cuts,
+new layer only on a person/camera/overlay change). sha256 f260cdf5…, v3 kept as (v3).mov. At his review.
+→ 2026-11-04 ~19:25 'Owen Hart Wife' (projects/owen-hart-wife, brief OWEN-HART-WIFE-EDITOR.md; first WWE Short) v1 DELIVERED:
+code build from his 51.03 s re-cut + Tella 1 (10 overlays, pointer MG hook, arrival photo for the stretcher), his Harry
+reviews 2+3 ported (transition zoom per shot change, pre_sharp), NO end screen, CTA mids 23.7 / 36.25 (moved off Bret's
+face onto a letterbox overlay, like his Harry pills). Final Renders + Exports, sha256 dc68aaa7…, −14.1 LUFS / −1.6 dBTP,
+39 Higgsfield credits. Open: JR desk crowd fans of unclear age (blur offered). At his review; start at the job's RUN.md.

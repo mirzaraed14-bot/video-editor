@@ -77,6 +77,27 @@ more than a quarter of the distance into that first tenth.
 | **distance covered** | 0.00 | **0.35** | 0.46 | 0.53 | 0.58 | 0.62 | 0.66 | 0.70 | 0.75 | 0.82 | 1.00 |
 | *(linear would be)* | 0.00 | 0.10 | 0.20 | 0.30 | 0.40 | 0.50 | 0.60 | 0.70 | 0.80 | 0.90 | 1.00 |
 
+**It is a TRANSITION zoom (creator, 2026-11-04, Harry review 2: "it starts strong, it loses its intensity, but it picks up
+its intensity at the end of the shot ... directly goes into the next clip ... the next clip will have the same intensity, so
+it feels like it's zooming in to the next shot").** Confirmed frame by frame on his own renders (ABW6 03, ABW8 34, ABW8 39,
+Martin Final; `projects/harry-diana-photos/win/his_zoom.py`, each frame registered to its shot's first frame):
+
+| | his renders |
+|---|---|
+| speed, first 0.1 s of a shot | **+30 to +65 %/s** (max ~73) |
+| speed, middle third | **+2 to +9 %/s** |
+| speed, last 0.1 s into the cut | **+15 to +30 %/s** |
+| total per shot | +15 to +45 % (shots < 1.1 s: +2 to +16 %, starting at ~10–50 %/s) |
+| direction | ~80 % push-ins; pull-outs come in RUNS (Martin: 3 in a row), never flip-flopping cut to cut |
+| same-camera jump cuts | **ONE zoom layer across the whole run** (creator, Harry review 3: "if the shot is the same of the person, the zoom layer will be the same ... when the shot changes to another person or to an overlay, that's when you introduce another zoom layer"). A new layer only on a change of person / camera / overlay. (The 4 "same-camera" size steps measured on his renders were NOT a rule: he overruled that reading.) |
+
+So a code build: one push-in per SHOT CHANGE (a same-camera jump-cut run is one shot) on the table above, and **never a pull-out next to a push-in for variety** (Harry v1:
+8 of 23 blocks pulled out, the zoom reversed at those cuts and he called it "too poppy"); **never a sine ease** (Harry v2:
+"missing the plot", the transition is gone). **Long shots keep the same SPEEDS** (his 4–9 s shots start at ~+40 %/s and pick
+up at +15..+30 %/s just like short ones): above ~2.5 s don't stretch the table, use a fixed-time start and end burst
+(Harry `build/finish.py long_curve`). Check a source clip's own camera move first: an overlay that already zooms
+(Harry's AP ambulance, +92 % in 1.7 s) gets a hold, not a second zoom on top.
+
 **What is NOT a rule** (both were over-claimed from one short):
 - **Direction does not reliably alternate** — 45 % of consecutive pairs flip, i.e. chance.
 - **Size is not continuous across cuts** — only 29 % of shots start where the previous ended.
@@ -266,6 +287,11 @@ scale, x 449) held for 3 s under the closing captions — not on footage.
 
 ## 12. Subscribe CTA (every AW Short from 2026-11-03)
 
+> **2026-11-04: the END SCREEN IS OFF on every Short.** Affan, Harry Diana review: the Road to 1M end screen "looks
+> absolutely horrendous and cheap ... skip this until you come up with a better one". **The two mid prompts stay.** The
+> Short ends as its brief says; Harry's ending, at his ask, is a picture fade over the last 0.6 s ("fade out this video").
+> A new end screen comes back only once he approves it, and never as a surprise on a delivered Short.
+
 Affan, 2026-11-03 (540K subscribers, going for the 1M play button): a **subtle subscribe prompt that plays along the
 video, two times in a ~40 s Short, plus a subscribe end screen**, "in our own aesthetic so it doesn't stand out like a
 sore thumb". Kit: [`cta/cta.py`](cta/cta.py) (Gretaros, the caption glow stack, his Deep Glow, Red Shade + caption gold,
@@ -273,12 +299,12 @@ the label card's rise in / rise out). Renders: `E:\Shorts\Abudance Wisdom Shorts
 (`aw-cta-mid-30/60.mov` ProRes 4444 alpha, `aw-cta-end-30/60.mov`, the two `-sfx.wav` cue tracks). Frames:
 [`cta/aw-cta-sheet-mid.png`](cta/aw-cta-sheet-mid.png), [`cta/aw-cta-sheet-end.png`](cta/aw-cta-sheet-end.png).
 
-| | mid (×2) | end: "Road to 1M" |
+| | mid (×2) | end: "Road to 1M" (REJECTED 2026-11-04, not used) |
 |---|---|---|
 | What | small red **SUBSCRIBE** pill (bell + word) with a soft **red glow** rises in, a cursor taps it, it **flares red**, turns grey **SUBSCRIBED** while the hue dies and the bell rings, it rises out | black beat → a gold light streak turns **his gold play button plaque** (engraved ABUNDANCE WISDOM, perspective flip, gold dust at two depths) into view; **WANT MORE STORIES / LIKE THIS?** rise in; the count rolls **0 → 540,000** over **ROAD TO 1,000,000** and a gold bar; the red pill pops and is tapped: it flares, the count ticks **+1**, the subscribe's gold sparks stream up into the plaque and it shines; slow camera push; fade to black |
-| Length | 2.8 s | 4.0 s, appended AFTER the last line (after the video's own fade) |
+| Length | 2.8 s | 4.0 s, appended AFTER the last line. Not used since 2026-11-04 (see the note above) |
 | Where | centre y **1392** (the label band, under the captions, above y 1620); on a letterboxed shot it sits on the black under the band. Move it (`cta.frame('mid', u, cy=...)`) off a glow bar or a mouth | full frame |
-| When | ~35–45 % and ~70–80 % into the Short (one under ~25 s, two for 25–60 s). Never in the 0–5 s hook, never over a label card or another low-band graphic, never in the last 3 s, never on the payoff line | after the end |
+| When | ~35–45 % and ~70–80 % into the Short (one under ~25 s, two for 25–60 s). Never in the 0–5 s hook, never over a label card or another low-band graphic, never in the last 3 s, never on the payoff line. His own placement on Harry Diana (41.6 s): 21 s and 35 s (~50 % and ~84 %) | after the end |
 | Sound | one soft swish on the entrance (his approved Patrón `s5-classic`), the tap silent | `s3-wide` on the streak, `s5-classic` on the pill; tap, count and sparks silent (no foley, no "magic") |
 | Level | cue peak ~15–19 dB under the local voice peak (Conrad preview: mid WAV −12.6 dB → −14.6 dBFS against +1.4 dBFS voice peaks) | same absolute level (preview: −15.6 dB on the WAV) |
 
@@ -291,3 +317,8 @@ client Shorts.
 **Review v1 (2026-11-03):** the mid pill was "nice and subtle" but "slapped on" → his red Deep Glow + the click flare; the
 first end screen (glow bars + text + pill) he "didn't like at all ... search the whole Internet before coming up with a
 concept" → Road to 1M (research: show the viewer what the subscribe does; milestone gold; FX-71 Funnel Count).
+
+**Review v2 (2026-11-04, Harry Diana Tella 2):** the mid prompts stayed (he placed them himself). The Road to 1M end screen
+"looks absolutely horrendous and cheap ... skip this until you come up with a better one, but I don't need a better one
+for this video ... fade out this video" → the end screen is off on every Short until a new concept is approved. Two
+end-screen concepts have now been rejected: the plaque, counter and gold sparks read as cheap, not premium.

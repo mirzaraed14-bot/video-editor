@@ -129,3 +129,14 @@ Gmail connector can't carry video. Drafting prompt: `_onyx-batch6-2026-10/EMAIL-
 - Batch 6's 21 Drive files are public-by-link; the ids are in `projects/_onyx-batch6-2026-10/drive-links.json`.
 - Links go into drafts through Gmail web (Chrome), never the connector.
 - Check each link logged out with curl before an email goes out.
+
+## Onyx ORGANIC Shorts (his own page, not prospect samples), batch 1, 2026-11-04
+- Six of his own talking-head takes (C1439-C1444, X:\Recordings\Onyx\), cut and built in the Scott Clary IG look (neon window).
+- Sequencing was OK'd 2026-11-04. He posts one a day, so build them one at a time: there is no rush and no parallel agents.
+- Defaults he left standing: no corner label, no music.
+- Folder: `projects/_onyx-organic-2026-11/<job>/`. Each job has a RUN.md with its state. Batch status is in `SEQUENCING.md`.
+- All six 30 fps checks were sent 2026-11-04. The 60 fps finals render only after his OK, then go to X:\Claude Projects\Exports\.
+- Kit lessons are in presets/instagram/neon-window/LESSONS.md (2026-11-04 entry): the 59.94 timebase and the local-median tracker.
+- Open questions:
+  - Is C1438 (Urdu, about fake call-centre accents) the "7th video"?
+  - Short 5's receipt: does he want a real AW like-count screenshot?

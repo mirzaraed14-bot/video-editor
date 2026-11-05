@@ -1,6 +1,6 @@
 ---
 name: feedback-head-steady-across-cuts
-description: Affan 2026-10-19 — on same-camera jump cuts the speaker's head must not move up/down or change size; premium bar, he notices
+description: Affan 2026-10-19 — on same-camera jump cuts the speaker's head must not move up/down or change size; 2026-11-04: Shorts = head TRACKING, no micro-pause jump cuts on his face
 metadata:
   type: feedback
 ---
@@ -20,6 +20,11 @@ on emphasis, eased in and back out (he liked the zoom-out on the last line and a
 **How to apply:** on every Short built from his jump-cut sequences (Scott Clary and Onyx samples), turn on the kit's chained eye head
 lock (`head_lock` = joints snapped by `workflows/cut-frames.py`, A shots at z0 1.2) and check eye-line close-ups with a guide line before
 delivery. Related: [[feedback-no-same-camera-punch-ins]].
+
+**2026-11-04, AffanWiz Short 2 review 2 ("the camera … snaps with my head … my face will be in the middle"):** the chained lock (the
+"How to apply" line above) moves the crop at EVERY pause trim, so a YouTube-tight face shot with micro-cuts reads as a jumping camera.
+On code-built Shorts: `head_track` + `head_edge_pin` 12 (not the chained lock), and no pause trim on his face unless it removes >= 0.3 s
+(a real pause at a face line's start goes onto the scene change). Gate the background steps, not only the eyes (AffanWiz ENGINE).
 
 **Long-form Premiere version (CA-010, 2026-11-03, his "Yes, add it"):** static Scale/Position per V1 piece, no keyframes, solved so the eyes
 match across every visible same-scale jump cut; one base scale per run between full-frame graphics (≤ ~111 % on 1080p), his cut zooms kept

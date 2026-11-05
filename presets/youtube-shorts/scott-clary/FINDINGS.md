@@ -161,6 +161,9 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
 (none yet)
 
 ## Story bank (screened, not yet made)
+- **2026-11-04: Robert Herjavec (Shark Tank), Scott's new episode.** Affan: "all in for the next 3 days". H1 ("sold for ~$500M, next
+  day: I got to get to a billion") and H2 ("Dancing with the Stars scared me more than a 203 mph crash") are the FIRST picks ON PAR
+  with Bombas (~9.5/11, B1 + B4). Slate, scorecards, text blocks and a false-claim warning: `research/herjavec-blitz.md`.
 - Serhant: #3 "When to stop saying yes" (with the "pure revenue goals" ending), the 1,000-minute rule, the 30-day calendar trick
   (`projects/_client-scott-clary/research/serhant-contenders.md`).
 - Lubetzky / KIND: L1 "$5.2M raised before $1B revenue", L2 "$227M buyback" (`projects/_client-scott-clary/research/shark-tank-contenders.md`).

@@ -271,12 +271,13 @@ a job teaches something.
 ## 2026-11-03 · CA-010 UPLOADED: what he changed before posting (viral-clip-method)
 Read back by name on ABW10 › "CA-010 Viral Clip Method" after he said he uploaded (read only, no writes): every clip's start/end/in on
 V1–V3 and A1–A4, V1 Motion vs the head-steady plan, V2/V3 Motion, opacity, enable flags, track mutes, every SFX and bed level.
-- **After my 17:43 save he changed nothing.** He posted the head-steady lock as built: 320 V1 pieces at the plan's static framing
+- **Clip times and V1 framing are unchanged since my 17:43 save.** The 17:43 snapshot held times and framing only, so for levels the
+  check is against the 15:03 gate. He posted the head-steady lock as built: 320 V1 pieces at the plan's static framing
   (`work/head_steady.py --verify` 0 mismatches), with the 16 joints that still move left as they were.
   Lesson → a static per-piece head lock is acceptable to him on a long-form. Next job, build it at the face pass instead of after the
   hand-off. File: `presets/youtube/affanwiz/PLAYBOOK.md` (face pass), the next job's face pass.
-- **One change after the 15:08 hand-off that the 17:15 read-back missed** (that diff compared clip times, not levels): **he raised
-  the cold-open bed.** Loungin's first piece (0–9.3 s, under the g01 opening graphic) went from −20 to −10.5 dB clip level (+9.5 dB).
+- **One change after the 15:03 gate that the 17:15 read-back missed** (that diff compared clip times, not levels; when he made it,
+  before or after 17:43, is unknown): **he raised the cold-open bed.** Loungin's first piece (0–9.3 s, under the g01 opening graphic) went from −20 to −10.5 dB clip level (+9.5 dB).
   The rest of the opening section stays at −20, and every other bed keeps its level. My 15:03 gate had checked it at −20.
   Lesson → on AffanWiz the music under the opening graphic sits ~10 dB above the body bed: the open is scored to hit, then the bed
   drops under his voice. This is one instance, so it stays a lesson until CA-011 repeats it.

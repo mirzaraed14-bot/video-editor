@@ -184,7 +184,9 @@ class Reader:
             inp, vf = ["-loop", "1", "-framerate", str(fps), "-i", path], "null" + tail
         else:
             sf = src_fps(path)
-            if speed == 1 and 20 <= sf <= 32:
+            # a 59.94 base (gta6-all-fit-inside, 2026-11-04) must NOT conform a 30 fps clip (it would play at 2x): above 40 fps the
+            # source is frame-doubled at real speed by the fps filter below. Every 24 / 30 fps build is unchanged.
+            if speed == 1 and 20 <= sf <= 32 and fps < 40:
                 vf = f"setpts=(PTS-STARTPTS)*{sf / fps:.6f}" + tail
                 dur = n / sf + 0.5
             else:
@@ -400,6 +402,9 @@ def main():
                     else:
                         pax, pay, ps, pt = prev
                         sc = ps * md(pt[:, 2]) / max(md(h[:, 2]), 1e-6)                     # same eye spacing across the cut
+                        if spec.get("head_chain_scale", True) is False:
+                            sc = ps   # opt-in (AffanWiz CA-010 Short 2, 2026-11-04): ONE take, one camera distance, so no size matching;
+                                      # his glasses and a hand at his mouth threw the eye spacing 5-8 % per cut and the face pumped
                         A = (md(h[:, 0]) - (md(pt[:, 0]) - pax) * ps / sc, md(h[:, 1]) - (md(pt[:, 1]) - pay) * ps / sc)
                     chain.append((a, b, A[0], A[1], sc)); prev = (A[0], A[1], sc, t)
                 meds = [(md(R[:, 0]), md(R[:, 1])) for _, _, R in takes if R is not None]
@@ -470,8 +475,10 @@ def main():
             fits[ck] = (float(np.median([(pf[k][4] + pf[k][6]) / 2 for k in ks])), float(np.median([(pf[k][5] + pf[k][7]) / 2 for k in ks])))
         return fits[ck][0] * S, fits[ck][1] * S
 
-    def render_A(base_rgb, key, n_abs, fx_out, fy_out, z0, r, u, out_w, out_h, panel_h=None, rng=(0, 10 ** 9), zk=None, track=True):
+    def render_A(base_rgb, key, n_abs, fx_out, fy_out, z0, r, u, out_w, out_h, panel_h=None, rng=(0, 10 ** 9), zk=None, track=True, drift=0.0):
         k = max(out_w / BW, (panel_h or out_h) / BH) * z0 * (zoom_at(zk, n_abs) if zk else 1 + r * u)
+        if drift and rng[1] < 10 ** 9:               # steady push-in over the whole shot, ON TOP of the pop keys (Affan 2026-11-04, Herjavec check: a consistent subtle zoom on every face cam)
+            k *= 1 + drift * max(n_abs - rng[0], 0) / fps
         if not track and HT and faces[key]["per_frame"] and len(next(iter(faces[key]["per_frame"].values()))) >= 8:
             fx, fy = static_eyes(key, *rng)                # Affan 2026-10-20: "split screen should not have head tracking"
         else:
@@ -513,7 +520,7 @@ def main():
     assert plan[0]["first"] == 0 and plan[-1]["last"] == nframes - 1, "shots must cover every frame"
     for p, q in zip(plan, plan[1:]):
         assert p["last"] + 1 == q["first"], f"gap/overlap between {p['id']} and {q['id']}"
-    json.dump(dict(fps=fps, frames=nframes, shots=plan, cuts=[dict(frame=p["first"], dir=p["whip_in"] or "left") for p in plan[1:] if p["whip_in"] != "cut"]),
+    json.dump(dict(fps=fps, frames=nframes, shots=plan, cuts=[dict(frame=p["first"], dir=p["whip_in"] or "left", **spec.get("whip_profile", {})) for p in plan[1:] if p["whip_in"] != "cut"]),
               open(os.path.join(work, "shots.json"), "w", encoding="utf-8"), indent=1)
 
     st = spec.get("sticker")
@@ -590,7 +597,7 @@ def main():
                         ma = m[..., 3] if m.shape[1] == BW else cv2.resize(m[..., 3], (BW, BH), interpolation=cv2.INTER_CUBIC)
                         al = ma[..., None].astype(np.float32) / 255
                         base_rgb = (comp.astype(np.float32) * (1 - al) + base_rgb.astype(np.float32) * al).astype(np.uint8)
-                out = grade(render_A(base_rgb, s["face"], n_face, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b), zk=s.get("zoomkeys")), gA)
+                out = grade(render_A(base_rgb, s["face"], n_face, s["fx_out"], s["fy_out"], s["z0"], s["r"], u, W, H, rng=(a, b), zk=s.get("zoomkeys"), drift=s.get("drift", 0.0)), gA)
             elif s["kind"] == "B":
                 fr = rd["main"].read()
                 out = grade(render_B(fr, s, u, W, H), gB)

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26a2857f-411a-4f2c-917d-fb6059e77b46
-  modified: 2026-11-03T18:11:26.022Z
+  modified: 2026-11-04T02:28:56.555Z
 ---
 
 **AffanWiz** (named 2026-09-23) is the creator's English personal brand, long-form YouTube with them on camera,
@@ -72,6 +72,12 @@ talk around script v2 (no demo, no cold open). Affan confirmed C1427 is the righ
 Every gate is green. Proof: `outputs/CA-010-proof-frames.jpg`. Resume: its RUN.md.
 2026-11-03 17:43: after the hand-off HE trimmed two lines (-1.07 s, rippled) and put his Enhance Speech v2 mp3 on A1 (his normal step: our A1 chain is temporary). On his "Yes, add it" the head-steady lock went on top of that: static Scale/Position per V1 piece, `work/head_steady.py`; 35/51 visible jump cuts locked (6 before), same-take pieces around a zoom tied to one framing. Saved 17:43; proof `outputs/CA-010-head-steady-proof.jpg`; method in LESSONS (CA-010 after the hand-off).
 2026-11-03 evening: **CA-010 UPLOADED** (by him). He asked for a Short from it in the Scott Clary YouTube format: SEQUENCING FIRST (the script, which bits, source timecodes) as text for his OK, then the build. The CA-010 session owns it; the job goes in `projects/viral-clip-method/clips/<name>/`. Open question put to him: the credit tag under the 0–3 s hook (Short 1 had it there; his 2026-11-01 Scott rule says no).
+20:15: the read-back showed nothing changed after 17:43, except one earlier hand change: the cold-open bed went −20 → −10.5 dB
+(LESSONS § CA-010 UPLOADED). Proposed `clips/find-viral-angles/SEQUENCE.md` ("How I Find Viral Shorts Angles Nobody Has Made", ≈ 42 s:
+call-out hook → MJ niche + 30M → angles → NFL → his Claude prompt). Waiting for his OK; nothing is built.
+2026-11-04: his note on it (add "manual = hours, Claude = 10–20 min", motion graphics on the MJ explanation, the most value, ≤ 45 s;
+the three general ones are now ENGINE § Format overrides) → v2 in the same SEQUENCE.md, ≈ 44 s, "How I Find Shorts YouTube Is Forced To
+Push": question hook → niches → MJ biopic/30M → MJ angle map (MG) → manual vs Claude $20 → 10–20 min scour → his prompt. Then v3: + his NFL bit after the MJ angles, still ≈ 45 s (cut: niches line, money, $20, "of the NFL"). He approved it with the defaults; 2026-11-04 08:40 the 30 fps check went to Exports (affanwiz-find-viral-angles.check-30fps.mp4, 45.2 s, ends on the filled angle map). Review 1 the same day (REVIEW-1.md): his notes were the centre picture (now a real 1988 photo, CC BY 2.0 Alan Light, credit in the description), "the, the" said twice (WhisperX hid it inside "covered"), awkward pauses (quiet runs now cut at -34 dB), and the hook card ON the caption line, swapping to the captions. He said "start the 60fps", and the 60 fps final went to Exports at 13:42 (affanwiz-find-viral-angles.final.mp4 + thumbnail.jpg, 43.8 s; state in BRIEF.md). Before upload: his RESULTS row 2 prediction and the photo credit in the description. Review 2 the same evening (REVIEW-2.md): "the camera … snaps with my head" (cause: review 1's micro pause cuts on his face + the chained lock moving the crop at each, up to 148 px; fix: no face pause trims < 0.3 s, head_track + edge pin, hook card held via the new kit key hook.hold_end) and "remove the 30 million bit" + the "How many aspects…" line after it. 60 fps final re-delivered 23:22 (40.4 s, replaces 13:42).
 CA-009's verdict (read off ABW10): all graphics kept, 81/84 SFX, he cut 1.6 % tighter.
 **Folder ≠ channel:** always transcribe and match against `creator-shorts/CA-NNN-*` before choosing a preset.
 

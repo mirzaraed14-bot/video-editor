@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: e1b9cd8c-a044-4294-9e79-318eb202a8a0
-  modified: 2026-09-19T06:35:36.226Z
+  modified: 2026-11-04T14:55:18.877Z
 ---
 
 **Affan Afterhours** (https://www.youtube.com/@AffanAfterhours, ~2k subs, 51 videos). The user stays on camera.
@@ -70,6 +70,11 @@ and 8 "27 DAYS" subscribe CTAs (his new ask, overrides the no-CTA default for th
 
 **2026-11-03 — video 26 "Why GTA 6 Will Feel MUCH Bigger Than It Is" (job `gta6-feels-bigger`) full draft on ABW10 › "GTA 26 - Feels Bigger Than It Is" (bin "GTA 26 Feels Bigger"), saved, at step 7 (his review); he exports.** Raw X:\Recordings\Afterhours\C1425.MP4 only (C1427 = AffanWiz CA-010, his answer). Same room as 24, framed closer, and his hands sweep the lower right, so the "15 DAYS" CTAs (upload 4 Nov) were moved to hand-clear windows (`review/cta-scan.py`). Two Sonnet edit-review rounds (content 15 / visual 18 defects) converged; the builder fixes are worth porting (LESSONS 2026-11-03). New treatments await his KEEP/NEVER verdict in facecam LESSONS: baked 0.8x joke slow-downs, CITY redaction reveal, quiet part cards, footprint grid, receipts tags.
 
+
+**2026-11-04 — first Afterhours SHORT in the Scott Clary YT Short style: `projects/gta6-all-fit-inside/` ("They All Fit Inside",
+his v5 script in `X:\Claude Projects\GTA 6\sweeps\shorts-sweep-2026-11-04.md`; raw C1445, camera carries the voice).** Black + pink
+MGs (`#EE2A9A`), no watermark, native 59.94 code build. He picked the full ~58 s cut; v3 (61.95 s, native 59.94, -12 LUFS, 18 swishes, no bed) DELIVERED 2026-11-04 to Exports/afterhours-gta6-all-fit-inside.v3.mp4 for his review; music answer still open; his v3 notes (0.8x + Vine boom on "All of them", smooth the choppy slow-mo B-roll) -> v4 (4K Iris + sharpen) delivered 23:49 (channel LESSONS 2026-11-04); WhisperX collapsed the
+retakes, so cut times come from `work/cut/bursts.json` (per-burst faster-whisper). Resume at the job's BRIEF ▶ STATUS.
 
 ## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)
 - [GTA channel: two formats](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md (audit 2026-10-08; creator's own grammar in facecam/CREATOR-HAND.md)**; Affan Afterhours; the GTA 6 EXPLAINER is the default (doc format PAUSED); episode 2 "Travis Scott" SHIPPED 2026-09-20 (POSTMORTEM.md); video 3 = the FACE-CAM style, presets/youtube/affan-afterhours-facecam/ (measured 2026-09-21); video 22 (IGN missions) SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10 › "GTA 23 - The Day The World Stops") review 1 applied + saved 2026-10-23 (pauses, premium SFX v2, frame-0, censor, 8 CTAs); video 24 (gta6-day1-mistakes, ABW10 › "GTA 24 - 14 Mistakes On Day 1") full draft 2026-10-27, at his review — RUN.md + facecam LESSONS

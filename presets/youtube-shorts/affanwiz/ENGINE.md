@@ -29,7 +29,41 @@ Every number about AffanWiz Shorts lives here, never in Scott Clary's or Abundan
   - **Hook = his sharpest call-out line, never said twice (Affan 2026-10-28, Short 1 v2).** His spoken opener and his conclusion said
     the same thing ("they're not stupid"). He moved the conclusion ("YouTube specifically is not stupid … to get their channel
     monetized") to the top, cut the opener, and ended abruptly on the list. When the last line is the strongest, open with it.
+  - **Length: 45 s or less, preferred (Affan 2026-11-04, Short 2 note: "the short shouldn't be more than preferably like 45
+    seconds").** Measure the kept spans, subtract the YouTube-tight pause slack, add the joints; never estimate.
+  - **The explanation beat gets motion graphics (Affan 2026-11-04: "especially the Michael Jackson explanation bit you have to
+    create like motion graphics there so that the point is better conveyed").** Where he explains the method with his example,
+    build ONE continuous motion-graphic scene whose picture IS the point (Short 2: an angle map whose empty slots Claude fills
+    later), never a row of text cards.
+  - **The most value first (Affan 2026-11-04: "the best sequence possible … with the most value possible").** Pick lines for
+    what the viewer can copy (the method in order, the time it saves, the exact prompt held on screen to screenshot), and use
+    his real systems as receipts: his posted AW Shorts, never mock-ups. A line he asks for goes in with his words as recorded
+    (he remembered "a few minutes"; the tape says "10-20 minutes", so the card does too).
   - **Transcribe check:** WhisperX heard his "which" as "with" ("clip which Speed uploaded himself"). Read every caption chunk against
     his own text sequence before the check render.
+  - **The hook card sits ON the caption line, and the captions take its place when it leaves (Affan 2026-11-04, Short 2 review 1:
+    "the hook text should directly be in front of captions so when the hook text timer finishes you swap it out with captions").**
+    Two lines centred on the seam (y 1041 / 1143 around 1092), never below it. Captions start with the first chunk AFTER the hook
+    question; the question's own chunk is dropped, so the card's words never flash a second time. The watermark waits until the
+    card has gone (3.2 s).
+  - **No stutter, no breath pause (Affan 2026-11-04, review 1: "some awkward silences" and a word said twice).** WhisperX folds a
+    repeated word into its neighbour ("covered" held his first "the"), so read the energy at every joint, not the transcript:
+    `work/cut/pause_scan.py` and a 5 ms dB + zero-crossing profile tell a word, an "s" (6 kHz hiss) and a voiced "mm" (1 kHz) apart.
+    A Whisper re-listen is a hint only: its prompt biases it ("the, the" in the prompt made it hear one). **Scope (review 2):** this tight
+    pass is for the audio under the motion graphics; on his FACE a pause goes only when it removes >= 0.3 s (the next rule), because
+    every cut there moves the camera.
+  - **Real photos in the motion graphics, never a stylised cover crop (Affan 2026-11-04: the map's centre circle "doesn't look
+    good").** His AW covers are heavy-graded; for a subject portrait use a real, sharp photo (Short 2: Alan Light's 1988 photo of
+    Michael Jackson, CC BY 2.0, credit in the description).
+  - **No jump cut on his face for a micro-pause, and head TRACKING on every face shot (Affan 2026-11-04, Short 2 review 2: "the
+    camera just constantly moves up and down … it just kind of snaps with my head … especially in the first 5 seconds … my face will
+    be in the middle and each cut will just feel very smooth").** Review 1's tight pass had cut 0.03-0.13 s quiet runs inside the hook:
+    six jump cuts in 3.4 s, the camera stepping 10-148 px at each for 1-8 frames saved. Under the motion graphics the tight pass cuts
+    freely (nobody sees the cut); while his face is on screen a pause goes only when it removes >= 0.3 s, and a real pause at the start
+    of a face line goes onto the scene change (the face shot starts on the next word). Track the eyes on every frame (`head_track`,
+    `head_edge_pin` 12, eye line `fy_out` 0.31, z0 1.2 where his head dips), never the chained lock. Gate the BACKGROUND
+    (`projects/viral-clip-method/clips/find-viral-angles/work/bg_step.py`), not only the eyes: a head lock pins the eyes by design.
+  - **The hook card stays until the question ends:** when the spoken hook runs past 3.2 s, `hook.hold_end` holds the card so it slides
+    out as the next scene whips in (Short 2: 3.10 s, gone at 3.97 s); captions and @AFFANWIZ start there.
 - **His face reads the script in places** (sunglasses, so measure head pitch AND yaw): every reading span sits under a receipt or a
   card (`presets/youtube/affanwiz/PLAYBOOK.md` rule 2).

@@ -94,6 +94,7 @@ B1 is re-weighted here, dated. One hit is the basis, so the benchmark predicts d
 - **Face cam never more than ~4 s without an overlay or MG; constant rotation of overlays; stronger, quicker zooms; the hook card's
   top line as big as the second** (Affan 2026-10-23, War Dogs: "if the person is there from the face cam for more than four seconds
   the retention will drop off").
+- **A steady push-in on every face cam, on top of the pop zooms** (Affan 2026-11-04, Herjavec check v1: "I still want a consistent zoom throughout the face cams of Robert and Scott ... not hold, then pop zoom and that's it"): every A shot carries `drift` (0.025 = 2.5 %/s, `yt_picture.py`), the pops settle at 1.10, no ramp-only zoomkeys beside it.
 - **YouTube-tight** (Affan 2026-10-26, Morgan: "YouTube Shorts are very very tight, even the slightest pauses are removed"): every
   quiet run (10 ms RMS < -42 dBFS, >= 0.08 s) inside a kept line is cut to 0.07 s, 0.035 s kept beside each word (energy only), AND a
   verbatim faster-whisper pass removes the stumbles WhisperX drops ("a- the- the claw"): CLIENT-SHORT-RECIPE § 2. (Was: pauses

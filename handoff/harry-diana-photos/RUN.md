@@ -1,6 +1,112 @@
 # Harry Diana Photos — RUN
 
-## ▶ STATUS: resume here (2026-11-02 ~16:10)
+## ▶ STATUS: resume here (2026-11-04 ~20:15): v4 DELIVERED (his review 3 applied), at his review
+- **`Harry Diana Photos.mov`** = v4 (sha256 f260cdf5…) in Final Renders + Exports + `outputs/`: 41.63 s, 39.0 Mb/s,
+  −14.1 LUFS / −1.6 dBTP, export QA PASS. v3 kept as `(v3).mov` (61aafa85…), v2 `(v2)`, v1 `(v1)` in all three places.
+- His review 3 (BRIEF § HIS REVIEW 3): same person + same camera = ONE zoom layer across its jump cuts; a new layer only on
+  a change of person / camera / overlay → `make_timeline.py` groups same-source + same-setup face runs again (20 layers):
+  0–2.90 (through "yep"), 23.20–29.13, 31.83–33.97. Everything else = v3 (transition curve, long_curve, O3 hold,
+  pre_sharp). Render `renders/finish_v4.mp4`; v3's timeline kept as `build/timeline.v3.json` / `zoom_layers.v3.json`.
+- Checks: `win/zoom_paper.py` PASS (out 30–43 %/s, in 18–28 %/s, next start ≤ 2.2×), `proof/v4/joints.jpg` (no size step
+  at 2.53 / 27.2 / 27.9 / 32.63), `proof/final_edges_v4.jpg` (23 cuts clean, CTA pills in).
+
+## (previous) ▶ STATUS (2026-11-04 ~19:30): v3 DELIVERED (his review 2 applied)
+- **`Harry Diana Photos.mov`** = v3 (sha256 61aafa85…) in Final Renders + `X:\Claude Projects\Exports\` + `outputs/`:
+  41.63 s, 1080×1920 30 fps, 38.6 Mb/s, −14.1 LUFS / −1.6 dBTP, export QA PASS. v2 kept as `(v2).mov` (887c902c…), v1 as
+  `(v1).mov` in all three places. ABW10 checked read-only first: no item references any Harry export.
+- Render: `renders/finish_v3b.mp4` (from `renders/stageA_v2.mov` + `caps_capcut.mov`; mix `renders/mix_v2.wav` unchanged).
+  `finish_v3.mp4` = the same without the long-shot curve (superseded).
+- Checks: `win/zoom_paper.py` PAPER PASS (every cut: out 35–43 %/s, in 18–27 %/s, next start ≤ 3.2× the previous end);
+  `proof/zoom_gate_v3.txt` (all 24 shots IN; its one "flip" is S13→S14 read inside the purple dip, the AP clip zooms IN
+  from frame 0, +1.6 %/s on the 60 fps finish); `proof/final_edges_v3.jpg` (23 cuts clean, both CTA pills in);
+  `proof/v3/joints_deepest.jpg` (same-camera size resets, deepest face frames clear).
+- Long shots (> 2.5 s: S01, S04, S15, S23) use `finish.py long_curve` (fixed-speed start burst + end pick-up, timeline
+  `zoom_long_after` 2.5), his long shots' measured behaviour; ≤ 2.5 s keep the table (they meet within ~2 % at 2.5 s).
+
+## (previous) ▶ STATUS (2026-11-04 ~17:30): HIS REVIEW 2 (text) being applied → v3
+- His note (BRIEF § HIS REVIEW 2): v2's sine-eased zooms "miss the plot"; his zoom is a TRANSITION zoom (strong start,
+  drifts, picks up at the end, straight into the next shot at the same intensity); plus "weird artifacts because of the
+  Topaz" to fix before he publishes.
+- **Measured (done):** `win/his_zoom.py` (frame-by-frame, each frame registered to its shot's first frame; calibrated on v2's
+  known zooms, ±1–2 %) on his ABW6 03 / ABW8 34 / ABW8 39 finals: start +30..+65 %/s, middle +2..+9 %/s, end +15..+30 %/s,
+  totals +15..+45 %, ~80 % push-ins = README § 3's table. v1 had the table but PULLED OUT on 8 of 23 shots (sign flips at
+  cuts, e.g. "Mainly proof" −23 → +53 %/s) and O3's AP clip zooms +92 % on its own (+50 % in < 1 s with ours on top).
+  Results in `win/hiszoom/*.txt`.
+- **Artifacts (found):** the raw Topaz files are clean; his PRE sharpen bands + Sharpen 40 turn their smooth surfaces into a
+  painted look (O1 faces, O3 ambulance, O5/O6 crowd faces, ITV5/ITV10 dark edge halos). `proof/topaz/`.
+- **Applied (make_timeline.py, finish.py):** `zoom_curve: 'table'`; ONE zoom per SHOT (restarts at 1.00 on every cut, as
+  his 4/4 same-camera joints do), all push-ins at v1's depths, short shots capped at a ~45 %/s start (`depth()`), O3 held.
+  Artifacts: NOT Topaz itself (raw upscales + stage A are clean): his PRE sharpen bands crush/ring them. pre_blur and grain
+  alone did nothing (`work/v3test/cmp_0/1.png`); new timeline `pre_sharp` (finish.py `grade(..., sh)`): O1/O3/O4/O5/O6
+  shots 0.25 + gamma_level 0.85 (not O4's night still) + grain; ITV5/ITV10 0.5 (`work/v3test/cmp_ps_a/b.png`,
+  `cmp_O4.png`). O2 untouched. v2's timeline kept as `build/timeline.v2.json` / `zoom_layers.v2.json`.
+- **Running:** `finish.py render renders/stageA_v2.mov renders/caps_capcut.mov renders/finish_v3.mp4` (GPU lock held) →
+  `win/zoom_gate.py` on it → `export_cta.py renders/finish_v3.mp4 renders/mix_v2.wav` (mix unchanged) → v3 as the main
+  name, v2 kept as `(v2).mov`, both folders.
+
+## (previous) ▶ STATUS: resume here (2026-11-04 ~16:20): v2 DELIVERED (his review 1 applied), at his review
+- **`Harry Diana Photos.mov`** in Final Renders + `X:\Claude Projects\Exports\` (= `outputs/`, sha256 887c902c…): 41.63 s,
+  1080×1920 30 fps, 33.3 Mb/s, −14.1 LUFS / −1.6 dBTP, QA PASS. v1 kept beside it as `Harry Diana Photos (v1).mov`
+  (sha256 872076b0…) in all three places.
+- His review 1 (BRIEF § HIS REVIEW 1, Tella 2): no wiggle (static anchor per shot, slow follow only on big head moves;
+  opening-shot jitter 6.4 → 3.2 px), Cooper 0.8x over the 0.43 s Harry flash straight into the cameramen, every zoom a
+  smooth eased push-in (≤ 8 %), NO end screen (picture fades out over the last 0.6 s), CTA mids at 0:21 and 0:35.
+- Checks: `proof/v2_checks.jpg`, `proof/final_edges_v2.jpg` (23 cuts clean). Renders: `renders/stageA_v2.mov`,
+  `renders/finish_v2.mp4`, `renders/mix_v2.wav`. Same re-render recipe as below (v1 track kept as `build/track.v1.json`).
+
+## (previous) ▶ STATUS: resume here (2026-11-04 ~15:05): v1 DELIVERED, at his review
+- **`E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Harry Diana Photos.mov`** + identical
+  `X:\Claude Projects\Exports\Harry Diana Photos.mov` (= `outputs/`, sha256 872076b0e69f48cb…): 1080×1920 30 fps,
+  1369 frames, 45.63 s (his cut 41.63 s + the 4.0 s Road to 1M end screen), 31.9 Mb/s, PCM 48 kHz, −14.1 LUFS /
+  −1.6 dBTP, `build/export_cta.py` QA PASS. Report: [REPORT.md](REPORT.md).
+- Checks: `proof/final_edges.jpg` (24 cuts clean), `proof/final_asr.txt` (his cut word for word, no narrator / reporter),
+  `proof/cta_check_v0.jpg` (prompts + end screen), `proof/finish_stills_grid.jpg`, `proof/itv_v0_v1.jpg` (Proteus).
+- **Subscriber count checked 2026-11-04 ~15:15 (his ask "check yourself"):** @AbundanceWisdom (UCbLhNRQjyvNTqluyjKiJ8jw) shows 540,000 publicly (yt-dlp channel_follower_count; YouTube rounds public counts to 3 figures, the exact number is only in his Studio). The end screen's 540,000 already matches: nothing re-rendered. For a later count: `presets/youtube-shorts/abundance-wisdom/cta/
+  cta.py render --only end --fps 30 --subs <N>` → re-run `build/export_cta.py` only, ~2 min, no re-render of the picture).
+- **A review note = data + ONE finish render** (fix only what he names):
+  picture → `build/make_timeline.py` (overlay picks, framing, transitions), `stage_a.py render` only if face shots change;
+  captions → `captions/captions.txt` → `make_plan.py` → `render_caps.py render` (uv `--with fonttools --with scipy --with
+  opencv-python-headless`) → `capcut_pass.py`; audio → `build/dialogue.py` / `build/mix.py`; then
+  `build/finish.py render renders/stageA_v1.mov renders/caps_capcut.mov renders/finish_vN.mp4 --audio renders/dialogue.wav`
+  → `build/export_cta.py renders/finish_vN.mp4 renders/mix.wav "outputs/Harry Diana Photos.mov"` → both folders (keep the
+  reviewed v1 as `(v1).mov`). Every GPU job under `.locks/gpu.lock`, every Premiere call under `premiere.lock`.
+
+## (previous) ▶ STATUS: resume here (2026-11-04 ~14:10): CODE BUILD RUNNING (his go "Yes, defaults, build")
+- **Done:** catalog pass + overlay picks (BRIEF § HIS GO / CATALOG PASS) · O1–O6 sourced (his drives first: 1987 ITN
+  Mallorca + 60M "found out" upload in `dl/drive/`; YouTube H.264: Smithsonian `qRB5UFJLVV0`, AP `e40n9H3SVdY`) ·
+  exact played crops (square) → Higgsfield Topaz 2160p ×5 + 4K image ×1 (27 credits, 1,042 → ~1,015) → lanczos 1080 in
+  `dl/hf/*_up.mp4`, `dl/hf/O4_ritz_hf.png` · `build/make_timeline.py` from HIS cut (25 shots, 21 zooms, 12 transitions,
+  CTA mid 16.75 / 26.00 + end) · `stage_a.py track` + `build/smooth_track.py` (11 shots smoothed, raw kept) ·
+  `renders/dialogue.wav` · `renders/mix.wav` (45.63 s incl. the 4 s end screen, −14.10 LUFS / −1.60 dBTP, no music) ·
+  captions: `captions/make_words.py` (+5 words heard in his A1) → `captions.txt` (75 captions, 21 coloured, Cooper
+  italic) → `renders/caps_code.mov`.
+- **Running:** `build/stage_a.py render renders/stageA.mov` (GPU lock; CPU-bound flow in-betweens).
+- **Next:** `captions/capcut_pass.py renders/caps_code.mov renders/caps_capcut.mov` (GPU) → `build/finish.py centers` →
+  `finish.py stills` (every shot: skin, overlays, labels, CTA band) → `finish.py render renders/stageA.mov
+  renders/caps_capcut.mov renders/finish.mp4` → `build/export_cta.py renders/finish.mp4 renders/mix.wav
+  "outputs/Harry Diana Photos.mov"` → QA (edges, final ASR, gaps, no crash / no child-at-risk frames) → copies to Final
+  Renders + `X:\Claude Projects\Exports\` → REPORT.md → LESSONS.
+- No Topaz pass on Stage A (dropped since Conrad: too slow on the shared GPU; Paris shipped without it).
+
+## (previous) ▶ STATUS: resume here (2026-11-04 ~13:30): HIS TELLA 1 IN + RESOLVED → waiting on his answers + go
+- **His Tella 1 is resolved into BRIEF.md § HIS DIRECTION 1.** He re-cut the sequence himself (41.63 s, `premiere/his_cut.tsv`:
+  his cut is the spec, never re-place over it). Six overlay slots O1–O6, marked on his V2. His A1 is re-ASR'd clean.
+- **WAITING on:** (1) children in O2/O5/O6 vs the brief's no-minors rule; (2) O3 "injured" → ambulance/hospital exterior
+  instead; (3) O4 "back of her head" → a pre-crash photo instead; (4) CTA mid-2 slot + hard cut into the end screen;
+  (5) his subscriber count; (6) Higgsfield credits for the upscales; (7) his go on the build quote.
+- **Build quote:** about 7–10 % of the weekly cap in a FRESH session started from BRIEF.md + RUN.md (this session's
+  context is long, so continuing here costs more). Same scale as Paris: 6 sourced overlays (search, HQ check, letterbox
+  where soft) + the CTA, on top of the usual 4–6 % build. Higgsfield upscales ~2 credits per still, ~5 per clip
+  (≈ 15–30 credits for six), his approval first.
+- On go: catalog pass into BRIEF.md → source O1–O6 (his drives first, then YouTube with H.264 forced) → code build from
+  HIS cut (copy the newest AW build, e.g. `projects/paris-shock-therapy/build/`): Stage A head lock, Topaz, finish.py
+  grade/cards/captions/overlays, CTA (README § 12), mix −14 LUFS / ≤ −1 dBTP on the encoded file, `.mov` to Final Renders
+  + `X:\Claude Projects\Exports\`, QA, REPORT.md. Every Premiere call takes premiere.lock.
+
+## (previous) STATUS (2026-11-04)
+- 2026-11-04: Affan asked for the raw build so he can record his Tella. Checked under premiere.lock: it is still in ABW10,
+  byte-identical to the v2 read-back (68 clips), and all 4 bin items are online. Nothing was re-placed. He opens it from
+  the bin himself; his active sequence ("Owen Hart Wife - raw cut") was left alone.
 - **RAW SEQUENCE PLACED in ABW10, NOT saved** (he saves): bin **"Harry Diana Photos"** › **"Harry Diana Photos - raw
   cut"** (id `253ccf59-794c-4036-9454-4c504a1ab05c`). 1080×1920 **30.00 fps** (clone of "Onyx reaction template
   (empty)" set to 30 / display 104), **48.13 s**:

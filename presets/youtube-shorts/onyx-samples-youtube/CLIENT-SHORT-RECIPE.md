@@ -70,6 +70,7 @@ one check sheet, no full-size image reads. Paths below are relative to the repo;
   Topaz Chronos per shot (`topaz-iris.py --fps-mult 2`, never across a cut) and render the captions at 60. Both on by default for Scott.
   Inside a SPLIT, the takes also break at its base-cut joints and its B-roll panel's own hard cuts (2026-10-31, `split_edges`; the build
   log prints them as "Chronos: N more take edges inside SPLIT shots").
+- **Steady push-in (Affan 2026-11-04, Herjavec):** every A shot also carries `"drift": 0.025` (fraction per second, multiplied onto the zoomkeys; default 0), so a face cam never sits still between pops; pops settle at 1.10 (drift x pop <= ~1.2) and a ramp-only zoomkey is replaced by the drift.
 - **Before the build (Scott):** freshness check + locked prediction + pre-mortem + title + thumbnail in
   `presets/youtube-shorts/scott-clary/RESULTS.md` (ENGINE.md has the line; `thumbnail.py` draws the locked cover format).
 

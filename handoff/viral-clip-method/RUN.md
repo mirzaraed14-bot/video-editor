@@ -1,13 +1,36 @@
 # RUN — viral-clip-method (AffanWiz CA-010 "The Viral Clip Method Big Shorts Channels Gatekeep")
 
 ## ▶ STATUS: resume here (2026-11-03 20:10): CA-010 UPLOADED by Affan, review closed. Next: AffanWiz Short 2 from it, sequencing sent, WAITING for his OK
-- **Uploaded:** he said so on 2026-11-03, evening. Read back by name afterwards (read only): **nothing changed after the 17:43 save.**
-  Tracks, V1 framing (head-steady `--verify` 0 mismatches), V2/V3 Motion and every SFX level are identical. One hand change was not
-  logged before: the cold-open bed (Loungin 0–9.3 s) is at −10.5 dB (was −20), set by him after 15:08. Both are in
+- **Uploaded:** he said so on 2026-11-03, evening. Read back by name afterwards (read only): **clip times and V1 framing are unchanged since the 17:43
+  save** (head-steady `--verify` 0 mismatches). V2/V3 Motion is all default, and every SFX level matches the plan. The 17:43 snapshot
+  held times only, so levels are checked against the 15:03 gate. One hand change was not logged before: the cold-open bed
+  (Loungin 0–9.3 s) is at −10.5 dB (was −20). He set it after 15:03; whether before or after 17:43 is unknown. Both are in
   `presets/youtube/affanwiz/LESSONS.md` § 2026-11-03 CA-010 UPLOADED. His export file was not found on X:, E: or the C: user folders.
   It isn't needed: the ABW10 sequence is the posted cut.
 - **Short 2** (his ask: "the short version… the sequence for it first… once I approve it it can create it… Scott Clary YouTube
   format"): the proposed sequence is in `clips/find-viral-angles/SEQUENCE.md`. No cut, no render and no Premiere until he approves.
+- **2026-11-04: v2 of the Short 2 sequence** on his note. It adds his "manual = hours, Claude = 10–20 min" line (9:09 + 7:07) and
+  makes the MJ explanation one continuous motion-graphic angle map. It is ≈ 44 s (his ≤ 45 s), titled "How I Find Shorts YouTube Is
+  Forced To Push", in `clips/find-viral-angles/SEQUENCE.md` (v1 kept below it). WAITING for his OK. His three directions are in
+  `presets/youtube-shorts/affanwiz/ENGINE.md` § Format overrides.
+- **2026-11-04: v3 = v2 + his NFL bit** ("add this bit somewhere in there"). It sits after the MJ angles, and the angle map swaps MJ for
+  NFL. To stay ≈ 45.0 s, four lines came out: "First of all… niches", "I made a lot of money doing it", "$20" and "of the NFL". The
+  prompt now runs into the 10–20 min line, and "that's where you stand out" ends it. He approved v3 with the defaults.
+- **2026-11-04 08:40: Short 2 30 fps CHECK delivered** (`X:\Claude Projects\Exports\affanwiz-find-viral-angles.check-30fps.mp4`, 45.17 s).
+  It ends on the filled angle map, not his face: that face shot snapped 60 px at a cut. The gates and the resume point are in
+  `clips/find-viral-angles/BRIEF.md`. WAITING for his OK, then the 60 fps final.
+- **2026-11-04: Short 2 review 1 applied, 60 fps final started on his "start the 60fps".** Changes:
+  - the map's centre is a real 1988 photo;
+  - "covered the, the match" now has one "the";
+  - the pauses are tight, including "if you … tell Claude";
+  - the hook card sits on the caption line, and captions take over when it leaves.
+  
+  The cut is now 43.80 s. Record: `clips/find-viral-angles/REVIEW-1.md`. **13:42: 60 fps FINAL delivered** to `X:\Claude Projects\Exports\affanwiz-find-viral-angles.final.mp4` (with `.thumbnail.jpg`), all gates pass.
+  **Review 2 (2026-11-04 evening, `clips/find-viral-angles/REVIEW-2.md`):** his notes were the camera snapping with his head (worst in
+  the hook), and to cut "30 million" plus the "How many aspects…" line.
+  - Cause: review 1's micro pause cuts on his face, under a lock that moved the crop at each cut (up to 148 px).
+  - Fix: no pause trims under 0.3 s on his face, and head tracking.
+  - **23:22: 60 fps FINAL delivered** (40.40 s, replaces the 13:42 file). The 30 fps check `…check-review2-30fps.mp4` is in Exports too.
 
 ## previous STATUS (2026-11-03 17:45) — HEAD-STEADY LOCK ADDED on HIS edited timeline, ABW10 SAVED 17:43:00, at his review. He exports himself.
 - **Revision 2 of the lock (17:43, supersedes the 17:36 numbers below):** the advisor's check found that the 17:36 version had given 20 of 33

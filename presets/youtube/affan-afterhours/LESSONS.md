@@ -644,3 +644,14 @@ against a 34-tool-call investigation that reached the wrong answer.
   the fragments as heard (bar, some, take, report report).
 - **Captions over the creator's dramatic pauses hung 1–2 s** (wall to wall). `sequence-captions.py srt --hang 0.8` now
   ends them 0.25 s after the last word, and a silent opening shot is no longer captioned. → `workflows/sequence-captions.py`.
+
+
+## 2026-11-04 · first Afterhours SHORT in the Scott YT Short look (`projects/gta6-all-fit-inside`, his review of check v3)
+- **His comic delivery gets his Shorts slow-mo, even inside the premium Scott look** ("there's a reason I said it that way"): "All of
+  them" at 0.8x (pitch kept, frame-sampled on his face, punched in to 1.16) + a Vine boom (`assets/sfx/Vine Boom Sound Effect.mp3`,
+  transient 0.29 s into the file) landing in the breath right AFTER the punch word. -> change: `work/cut/slowmo.py` retimes the base cut,
+  the 4K base and the transcript once; `yt/edges.py` maps every shot edge through `sh()`. -> rule for the next Short: read the script
+  for the line he delivers as a joke and ASK before the build whether it gets the slow-mo + boom (the premium-SFX rule does not cover it).
+- **Slowed 30 fps game footage reads "too choppy" at 59.94** (0.6-0.9x showed each frame 2.2-3.3 times): every footage B shot is now
+  pre-rendered motion-interpolated (`yt/assets/build/smooth_broll.py`, ffmpeg minterpolate mci/aobmc/bidir), and footage inside the
+  cards too. -> default for every code-built Short at 59.94: never frame-repeat a slowed clip.
