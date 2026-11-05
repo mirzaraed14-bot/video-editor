@@ -3,6 +3,12 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-05: WhisperX out of memory → the unbatched fallback (ABW10 Seq 43)
+- **WhisperX out of memory on CPU (mkl_malloc / segfault, four runs, ~3-5 GB free with Adobe apps open) → unbatched fallback.** faster-whisper large-v3 int8 with `chunk_length=10`, `condition_on_previous_text=False`, `vad_filter=False`; `del` the model; then `whisperx.align` with the ur wav2vec2 model; write the same words.json. Change → `projects/abw10-seq43-short/work/transcribe_fw.py` is the recipe. It worked first try; it's weaker on fast openings (lost 3 words), so the 10 s windows stay mandatory.
+- **A second چاہیے can be "chahe" (whether):** "karni chahye / chahe wo wrestling ho". Spelling kept apart.
+- **His English endings decode as Urdu nonsense:** "boxing kick boxing / whatever it doesn’t matter" came back as کے باکسنگ وہی تھا ڈازن میٹر. Sound it out before trusting the letters.
+- **A connector said right before a silent still belongs to the line before it** ("usne slip kar dia or" | still | "usne wahin se"): the aligner had moved "or" across the still; caption_qa UNCAPTIONED caught it, silencedetect set the edge.
+
 ## 2026-11-02: re-decode in 10 s windows, never the whole cut (ABW10 Seq 37)
 
 - **A single faster-whisper pass over a 45 s cut (vad off) hallucinated after ~30 s** (hi turned into nonsense from 19 s, ur jumped
@@ -312,9 +318,3 @@ is now written down in [`reel-recipe.md`](reel-recipe.md), so it can be automate
 - **Whisper Urdu mishears:** teacher→ٹیٹر, bezti→ویسٹی/بیشتی, balcony→بیلگنی, mentally→پینتیلی, and it
   heard "agar" where the creator captioned "magar". → context repair when writing captions.txt, with
   unsure words flagged to the creator → `PLAYBOOK.md` § 4.
-
-## 2026-11-05 · ABW10 Seq 43
-- **WhisperX out of memory on CPU (mkl_malloc / segfault, four runs, ~3-5 GB free with Adobe apps open) → unbatched fallback.** faster-whisper large-v3 int8 with `chunk_length=10`, `condition_on_previous_text=False`, `vad_filter=False`; `del` the model; then `whisperx.align` with the ur wav2vec2 model; write the same words.json. Change → `projects/abw10-seq43-short/work/transcribe_fw.py` is the recipe. It worked first try; it's weaker on fast openings (lost 3 words), so the 10 s windows stay mandatory.
-- **A second چاہیے can be "chahe" (whether):** "karni chahye / chahe wo wrestling ho". Spelling kept apart.
-- **His English endings decode as Urdu nonsense:** "boxing kick boxing / whatever it doesn’t matter" came back as کے باکسنگ وہی تھا ڈازن میٹر. Sound it out before trusting the letters.
-- **A connector said right before a silent still belongs to the line before it** ("usne slip kar dia or" | still | "usne wahin se"): the aligner had moved "or" across the still; caption_qa UNCAPTIONED caught it, silencedetect set the edge.
