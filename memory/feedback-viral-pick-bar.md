@@ -31,3 +31,5 @@ prospect, the main session reads the top 2 itself (taste is not delegated). Rela
 stuff"); a normal person's VALUE or ENTERTAINMENT passes ("I'm not that famous but still people watch me"). Never limit a show to its
 famous-subject episodes; TCO = its most entertaining self-contained moments, ≤ 45 s.
 
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-10-14 rejected 5/6 batch-3 picks: a moment must END in a usable lesson or a reversed belief on a universal stake; statements/history/self-talk fail (VIRAL-BAR.md gates A-E); 2026-10-31 + F self-contained context, G one subject hook→button, H simple over niche; I (review #2): non-famous speaker = value for the VIEWER or a self-standing scene, every pick carries 'the viewer gets: ___' (famous needed only for PERSONAL stories; value/entertainment from anyone)

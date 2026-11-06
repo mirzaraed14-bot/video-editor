@@ -146,3 +146,5 @@ Gmail connector can't carry video. Drafting prompt: `_onyx-batch6-2026-10/EMAIL-
 ## Batch 7 (2026-11-05): restructured samples
 Tracker `projects/_onyx-batch7-2026-11/BATCH.md`, sequencing `SEQUENCING.md`, builder brief `BUILDER-BRIEF.md`. Yes list = heretics, On That Note, Melanin Money, Rise Above, Remnant Radio (all 11-04), Barbell Logic (11-02). Affan picked: heretics = Drea de Matteo's Sopranos money story (not the permitted Short, top priority), John Legend and Melanin restructured from the permitted Short, Rise Above = death row guard (pharmacy story rejected). All three built are with him for notes and songs.
 
+## Moved from the MEMORY.md index (2026-11-06)
+per-prospect sample Short + Affan's reaction video for podcast outreach (page @affancuts); BOTH looks (YouTube B-roll 'Sean Ryan' + IG neon window) for every yes since 2026-10-24; batch and reaction log in the file; ORGANIC batch 1 (his own C1439-C1444, IG look, one/day): all six 60 fps finals in Exports 2026-11-05, not uploaded; Short 1 also with his profile-header experiment

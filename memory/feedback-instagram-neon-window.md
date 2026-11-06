@@ -49,3 +49,6 @@ swishes (19-23 dB under the voice), `tools/plates.py` (4K cam plates, B-roll at 
 **Captions since 2026-10-31 (standing):** one whole line of up to ~4 words, appearing at once with a subtle eased 14 px rise, never
 word by word: [[feedback-captions-whole-line-subtle]]. Implemented in the Pincus kit's `ig/build.py` (`CHUNKS`, `make_blocks`,
 `draw_captions`); the preset README § Captions and LESSONS 2026-10-31 carry it.
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-10-21/22: Mark Brazil's motion graphics + subtitles inside DOAC's rounded window on black, COLOUR (not B&W), red type with a hint of glow, no electric/narrow-tone SFX; presets/instagram/neon-window/ (+ LESSONS); newest kit = the Pincus IG job's ig/ (2026-10-31: head tracking, h264-safe reader)

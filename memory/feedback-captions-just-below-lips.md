@@ -37,3 +37,8 @@ captions are on his nose … there's no need to forcefully move the footage upwa
 may sit on the nose or mouth. Letterboxed footage moves DOWN so the caption sits ON the person (tie, chest, chin), not in
 the empty fill under the band. If a shot is ever dragged down and exposes black at the top, use his letterbox treatment
 (white glow line on the picture edge + blurred fill), never black and never a stretched fill.
+
+## Moved from the MEMORY.md index (2026-11-06)
+short-form captions at ONE constant base position per video, just under the lips; never move between shots (2026-10-07); his height = y940-1130 (55 %), move letterboxes up to it, never drag the line down for one close-up (2026-10-28); 2026-10-31: NOT an obligation, never lift footage for it (natural framing, caption on the nose is fine; letterboxes move DOWN so captions sit on the person)
+
+2026-11-06 (Melanin sample): "caps are over his lips". A close face with pops can reach below a raised seam: measure the lips on every face shot (`LESSONS.md` onyx-samples-youtube 2026-11-06) before accepting a seam above y1092.

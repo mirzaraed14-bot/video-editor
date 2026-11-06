@@ -1,7 +1,7 @@
 # BRIEF: kai-tiktok-money (AffanWiz CA-011 "Kai Cenat Accidentally Showed His TikTok Money (What It Means for You)")
 
 ## ▶ STATUS: resume here
-Pre-production, 2026-11-05. The run lives in `RUN.md`. Nothing is on the Premiere timeline until Affan OKs `review/SEQUENCING.md`.
+2026-11-06: built and saved on ABW10 › "CA-011 Kai TikTok Money", 5:04, waiting for his review. The run lives in `RUN.md`. His OK on `review/SEQUENCING.md` was "Yes, use defaults". The stolen move shipped as planned, nine Money Map visits; proof in `outputs/CA-011-proof-frames.jpg`.
 
 | | |
 |---|---|
@@ -32,7 +32,7 @@ What it is: a dark floor seen in perspective, a hairline frame per actor (Telema
 - Payoff: the camera pulls back to the whole map on "one skill, three paychecks": one SKILL node, three pink routes lighting up.
 - Each visit is a real camera move (perspective plane + eased fly-along, motion blur on the travel). First perspective graphic on this channel; every earlier spine (CA-007 tier board, CA-010 dossier) was flat.
 - Copy = his words only. No invented numbers on the map.
-Where: every "Stage N" line, the recap, and the close. Exact timecodes go in `review/SEQUENCING.md` once the cut is authored.
+Where (5:24 cut clock): 1:24 empty map · 1:34 Stage 1 · 2:03 Stage 2 · 3:01 Stage 3 · 3:58 Stage 4 · 4:09 pull-back on "one skill, three paychecks" · 5:20 "which stage are you in?". The stage lines are reading spans too.
 
 **Second, smaller steal: Johnny Harris, "The REAL reason China built so much" (`axRhjqd-rus`): the chart zoom.** The full chart draws, then the camera pushes into the line until it fills the frame. Used on the rollercoaster ("up and down regardless of how good you are"), a line with no axis numbers. Reference: `brief/refs/johnnyharris-axRhjqd-rus-storyboard.jpg`. Research notes: `research/longform-style-radar.md`.
 
@@ -46,7 +46,6 @@ Where: every "Stage N" line, the recap, and the close. Exact timecodes go in `re
 - **FX-69 Lone Yellow Bar** → the money table: views per month against what it pays, row by row, the row he lands on in yellow.
 - **FX-53 HUD Host Inset** (Coffeezilla), in our glass, no sci-fi frame → only on lines where he is ON the lens and evidence must stay readable. Never on a reading span.
 - **FX-39 Source Handle Tag** → a small credit on every borrowed picture.
-- **FX-41 Year Ghost** → "2024" as a ghost date behind the 100-million line (the number itself stays off screen, script's rule).
 - **FX-30 Whisper Card** → the rehook lines as quiet turns.
 
 **Not yet used on this channel:** the tilted map, FX-36, FX-72/73 on a money line, FX-75, FX-53.
@@ -66,5 +65,6 @@ Where: every "Stage N" line, the recap, and the close. Exact timecodes go in `re
 - **~$7,000** = "reportedly". Sources: theJasmineBRAND 2026-11-03 (headline: "Reportedly Earns Another $7K"), inkl/IBTimes.
 - **Ludwig $25K vs $900:** one source only, Publish Press newsletter ("YouTube Views Skyrocket"). Credited on screen. Never "YouTube cut his pay".
 - **Studio numbers** (10.4M → $1,452, 3.6M → ~$709): his log; the take's spoken numbers win. Studio captures need his signed-in browser: flagged to him.
-- **"Around 100 million views in 2024":** verbal only, per the script.
+- **"Around 100 million views in 2024":** not in the take, so not on screen. Neither are "Same skill. Same me." and the view-count note.
+- **"around $1,400"** (take) vs $1,452 (his log): the spoken one goes on screen. **"six-ish thousand"** (take) vs 30M = $5,700 (his table): as he said it.
 - **The client is never named.**

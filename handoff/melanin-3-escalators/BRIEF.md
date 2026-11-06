@@ -1,6 +1,8 @@
 # BRIEF: melanin-3-escalators (Onyx batch 7, Melanin Money "3 Escalators To Wealth")
 
-▶ STATUS 2026-11-05 22:50: v2 after main's review, both looks re-exported (same names). YT: face from frame 1 under the hook, type beats for the nouns (no stock but the
+▶ STATUS 2026-11-06, Affan's review 1 applied (`../_onyx-batch7-2026-11/review1.py`, YT look only; picture cuts, MGs and mix NOT rebuilt; old final = outputs/melanin-3-escalators.sample-yt.before-r1.mp4, old spec = yt/spec.json's .before-r1): Captions moved below his lips on the full-face shots (y1092, 19 chunks; his lower lip reaches y984); on splits they stay on the y880 white line because the panels start there, so captions sit at two heights. Hook below (y1340/1445), captions from frame 1. POP grade tuned (grade_look: relight .15, gamma 1.08, bp .04, wp .86, s .30, sat 1.22, skin 1.05), sharpen .55/.40; SPLIT panels restored from the ungraded picture. Re-running yt/build_spec.py would lose this patch: re-run review1.py after it. IG look unchanged. Waiting for his song.
+
+Earlier ▶ STATUS 2026-11-05 22:50: v2 after main's review, both looks re-exported (same names). YT: face from frame 1 under the hook, type beats for the nouns (no stock but the
 escalator clip), every graphic a split so captions never touch a label. Both: labels margin >= 72 px (work/margin_check.py), IG captions throughout (stage keeps
 160 px free), IG labels bold white sans, SFX full -19.2/-18.7 dB under the voice, cue_check PASS none weak (k2 swish dropped).
 

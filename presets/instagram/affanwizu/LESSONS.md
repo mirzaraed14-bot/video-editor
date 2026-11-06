@@ -3,6 +3,11 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-07: an 8 s drop on a 1x rant, and a HANGING word that had moved (ABW10 Seq 46)
+- **WhisperX can lose 8 s mid-sentence on a plain 1x take** (8.65-16.95) and write a confident wrong run across a cut (31.85-40.4). `transcript_check.py` DROP caught the first; only reading the windows caught the second, so read them even where words.json looks full. → PLAYBOOK § 2.
+- **HANGING on one word = check the word's own edges before hunting for missing words.** "continuously" was 41.80-42.40, not WhisperX's 42.03-43.09; the rest of that span was the next word. A loudness envelope + a 6 s and a 10 s window settled it. → work/redecode2.py is the recipe.
+- **Same-shape Urdu letters hide the real word:** سر = "sur" (tune) not "sar" (head); گلوانا = "bulwana"; کسی = "kesa". Read the sentence, then flag it.
+
 ## 2026-11-05: WhisperX out of memory → the unbatched fallback (ABW10 Seq 43)
 - **WhisperX out of memory on CPU (mkl_malloc / segfault, four runs, ~3-5 GB free with Adobe apps open) → unbatched fallback.** faster-whisper large-v3 int8 with `chunk_length=10`, `condition_on_previous_text=False`, `vad_filter=False`; `del` the model; then `whisperx.align` with the ur wav2vec2 model; write the same words.json. Change → `projects/abw10-seq43-short/work/transcribe_fw.py` is the recipe. It worked first try; it's weaker on fast openings (lost 3 words), so the 10 s windows stay mandatory.
 - **A second چاہیے can be "chahe" (whether):** "karni chahye / chahe wo wrestling ho". Spelling kept apart.

@@ -17,6 +17,9 @@ Taste still lives inside the channel: premium, real receipts, no goofy sound, sw
 | | Money ladder: $500M → $1.2B → $6B stepping full-screen on his words, then "who cares?" snaps back to his face | FX-71 | Approved with the whole check, no single comment | |
 | | His real jet: fast push to the HERJAVEC tail with a hand-drawn circle | FX-55, D2 marks | Approved with the whole check, no single comment | |
 | | Colour as story: the family in B&W on "don't love me", full colour on "love me because" (the B&W-to-colour flood was not built) | FX-22 reversed | Approved with the whole check, no single comment | |
+| H1 `herjavec-500m-billion` IG variant (2026-11-05, 30 fps check; `ig/`) | Money ladder drawn TO SCALE in the neon window: bars 75 : 180 : 900 px = $500M : $1.2B : $6B, each landing on its spoken word (0 / +1 / 0 frames on the delivered check) | FX-71, IG-native | | |
+| | Colour as story in the IG window: the family card in B&W (saturation 0.002), the ski card in full colour from its first frame (0.367); the B&W-to-colour flood on "spend" is built and OFF (`FLOOD_ON`; half the card on that word's frame, measured), his call | FX-22 reversed | | |
+| | The jet's deep push warped from the source photo INSIDE the card, a hand-drawn circle riding the same transform (not new to the IG look: Pincus / Harary circles) | FX-55, D2 marks | | |
 
 ## Queue (fits a seated podcast, not used yet; pick by what the story needs, never by order)
 - **A bespoke graphic world for the one key line** (DOAC): newspaper + halftone cutout of the guest + stacked props (FX-44, FX-19), in place of a photo card.

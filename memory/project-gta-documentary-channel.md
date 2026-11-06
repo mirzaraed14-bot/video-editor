@@ -1,11 +1,11 @@
 ---
 name: project-gta-documentary-channel
-description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23; video 24 (gta6-day1-mistakes, ABW10) full draft 2026-10-27; video 26 (gta6-feels-bigger, ABW10) review 1 applied 2026-11-03 (he re-cut zooms/jokes himself; reading spans filled), at his review — RUN.md; his face-zoom grammar in facecam CREATOR-HAND.md"
+description: "Affan Afterhours — the user's GTA channel: the GTA 6 explainer is the default (doc paused); video 22 SHIPPED 2026-10-22; video 23 (gta6-world-stops, ABW10) review 1 applied 2026-10-23; video 24 (gta6-day1-mistakes, ABW10) full draft 2026-10-27; video 26 (gta6-feels-bigger, ABW10) review 1 applied 2026-11-03 (he re-cut zooms/jokes himself; reading spans filled), at his review — RUN.md; video 27 (gta6-complete-guide, ABW10) draft saved 2026-11-06, at his review, uploads that day; his face-zoom grammar in facecam CREATOR-HAND.md"
 metadata: 
   node_type: memory
   type: project
   originSessionId: e1b9cd8c-a044-4294-9e79-318eb202a8a0
-  modified: 2026-11-04T14:55:18.877Z
+  modified: 2026-11-06T05:14:59.215Z
 ---
 
 **Affan Afterhours** (https://www.youtube.com/@AffanAfterhours, ~2k subs, 51 videos). The user stays on camera.
@@ -85,3 +85,10 @@ bridge lines, weak tag asides cut, a stumble may be kept + punched 182 %. He als
 threshold was too high; gate reading with look-read's Otsu threshold on the PLACED timeline (review/his-review-1/yaw-gaps.py).
 Fills f01/f02 (17:13) + f03 at 4:01.6 on his "yes, fill it" (19:35) placed and saved on ABW10; a reading fill ends where yaw returns to ~0
 (a half turn is still reading). A4 bed restored under the 3 covered zooms on his yes (saved 19:51). Censor at 7:07.1: he said "Leave it audible" (2026-11-03). Outro stays on his face (his call). Review 1 fully closed; next = his notes or his export.
+
+**Video 27 "GTA 6 Complete Guide: Do These Before November 10th"** (job `gta6-complete-guide`, C1447 only, ABW10 › "GTA 27 - Complete Guide", 9:32): draft saved 2026-11-06 03:31, at his review, uploads that day 8-11pm Pakistan time, he exports. His brief "1 % improved": the list and how each came out in its BRIEF.md; new treatments with verdict pending in facecam LESSONS (N/17 pill + rail + checklist, PREVIEW BUILD receipt, menu-path cards, line-drawn controller and minimap). Next = read his timeline diff, then write the verdicts.
+
+**2026-11-06 — video 27's Short "The Head Start"** (job `projects/gta6-head-start`, raw C1448, script `X:\Claude Projects\GTA 6\video27-SHORT-head-start.md`, Scott YT style, black + pink, 59.94 code build): he picked version B by button (script as written, his Ultimate ad-lib out). Final 52.35 s in `Exports/afterhours-gta6-head-start.final.mp4`, **APPROVED 2026-11-06, first delivery, no notes** ("approved"), must post Sat 7 to Mon 9 Nov (before the pre-load). The defaults he never answered (no bed, 0.8x + boom on "value your time" only, drawn phone and PS5 menus, pauses closed on his face) passed with it, and the next Afterhours Short in this look starts from them; findings in the channel LESSONS 2026-11-06, tool notes in `lanes/chat-only/lab-notes.md`. The hook's split jump of ~65 px at 2.7 s passed too (splits aren't tracked, his rule). Traps: WhisperX collapsed restarts again and an RMS read hid it, so wait for the burst pass before quoting takes or lengths; POP grade needs the room's `grade_look` (this room's numbers in the job's build_spec), test a still first. A worktree session's Write/Edit hook blocks the main checkout even after a folder grant; he approved shell writes for that job folder, then for the channel LESSONS and the chat-only lab-notes, and the OK covers only the paths he named. Resume at its RUN.md.
+
+## Moved from the MEMORY.md index (2026-11-06)
+**GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md**; the GTA 6 EXPLAINER is the default (doc format paused); face-cam style = presets/youtube/affan-afterhours-facecam/; latest: video 26 (gta6-feels-bigger) review 1 applied 2026-11-03 (his zoom/humor lessons in facecam LESSONS); 2026-11-04 Short gta6-all-fit-inside (Scott YT style, black+pink) v4 delivered 2026-11-04 (his notes: slow-mo+Vine boom on the joke, interpolated B-roll); full log in the file

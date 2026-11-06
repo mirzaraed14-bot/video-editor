@@ -24,3 +24,18 @@ replaying the stale EDL. Workaround: write the EDL from bash, or resolve the pat
   kit/yt_picture.py `eye_track`.
 - **Gate:** step the eye midpoint across each in-A joint on the delivered frames. Script:
   `projects/iphone-duo-clip-angle/clips/reupload-wont-go-viral/work/head_snap_gate.py`.
+
+## 2026-11-06 · YT Shorts kit, Afterhours mic (`projects/gta6-head-start`)
+- **WhisperX collapses restarts on this mic, and an RMS read does not show them.** The first sequencing said "one clean pass"; four lines had
+  restarts and the lengths were 3 s out. Workaround: per-burst faster-whisper (`work/cut/bursts.json`), force-aligned burst by burst
+  (`work/cut/align_bursts.py`), `FW_DEVICE=cpu` while the GPU lock is held. Rule: no takes or lengths quoted before the burst pass.
+- **A doubled word in a verbatim read can be a Whisper window seam.** "obviously obviously" read once on a re-read of the slice, both passes;
+  "don't - don't" appeared only with the filler prompt. Test: a stumble counts only if it reads the same with and without that prompt.
+- **`workflows/grade-picture.py` only knows whole shots.** A SPLIT is graded whole, so its drawn bottom panel shifts (channel pink 235,39,152 ->
+  253,58,185) while every other card is excluded, and every non-A shot gets the DOC look, so a split's face does too. Workaround: set
+  `grade_look` for DOC as well as A; `work/hook_panel.py` puts the panel back from `picture.whip.ungraded.mp4` after sharpen and keeps sharpen's
+  fingerprint. Fix to make: a per-region exclusion in the grade.
+- **POP defaults crush a low-key room** (mic and shirt to black, face dark orange). Set `grade_look` per job and test on stills before a full
+  render; the approved numbers are in the channel's `LESSONS.md` 2026-11-06.
+- **In a worktree session the Write/Edit hook blocked the main checkout even after a folder grant.** Writing from the shell needs his OK, and
+  the OK covers only the paths he named.

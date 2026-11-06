@@ -164,6 +164,11 @@ def main():
     # a hook of N lines (Pincus 2026-10-31, a 4-line credit): every line white but the LAST, which takes the gold gradient (2 lines: as before)
     hl_white = ", ".join(f"#hl{i + 1} .fill" for i in range(len(lines) if gold_words else max(1, len(lines) - 1)))
     hl_gold = ".hl .fill .gold" if gold_words else f"#hl{max(2, len(lines))} .fill"
+    # overlay_extra (AffanWiz levels Short, 2026-11-05, backup .bak-2026-11-05-hud): {"css", "html", "js"} from a job's own code, in the tags layer (under the captions), for a graphic
+    # that stays on screen across every shot and whip (the level bar). Optional: a spec without the key renders as before.
+    extra = spec.get("overlay_extra") or {}
+    tag_divs.append(extra.get("html", ""))
+    tag_js.append(extra.get("js", ""))
     comp_id = "onyx-yt-overlay"
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -198,6 +203,7 @@ html, body {{ margin: 0; background: transparent; }}
   clip-path: polygon(50% 0%, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0% 50%, 42% 42%); }}
 #wm {{ position: absolute; left: 0; width: {W}px; text-align: center; font-family: "YTC Anton", sans-serif; font-size: 47px;
   letter-spacing: 0.01em; color: rgba(255,255,255,0.38); transform: skewX(-12deg); text-shadow: 0 2px 4px rgba(0,0,0,0.18); line-height: 1; }}
+{extra.get("css", "")}
 </style>
 </head>
 <body>

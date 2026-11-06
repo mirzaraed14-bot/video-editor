@@ -1,0 +1,92 @@
+# Abundance Wisdom captions: "Why Ronaldo Just RETIRED From Portugal" (his cut, 53.77 s). Built in code.
+# Column 1 = OUTPUT of make_plan.py. Max 3 words, no commas / full stops (? ! only). The English words are the brief's (BUILD.md § 6), on purpose.
+# i: = the anchor (B1) and Piers (B4): README § 8 italic. Portuguese beats (B0 B2 B3 B5): each English line starts on the wav2vec2-pt aligned
+# start of its Portuguese word (captions/pt_map.json); English beats (B1 B4): wav2vec2-en forced alignment of these words (captions/make_words.py).
+# B0 Ronaldo (PT)
+ 0.000- 1.017  I'LL FINISH
+ 1.017- 1.600  LIKE I SAID
+ 1.600- 2.700  YEARS AGO
+ 2.700- 3.650  WHEN <red>I WANT</>
+ 3.650- 4.150  <red>NOT WHEN</>
+ 4.150- 5.000  <red>YOU WANT</>
+ 5.000- 5.750  FOR 23 YEARS
+ 5.750- 6.150  YOU'VE BEEN
+ 6.150- 6.667  <red>TRYING TO</>
+ 6.667- 7.100  <red>KILL ME</>
+# B1 anchor (EN)
+ 7.100- 8.217  i: CRISTIANO RONALDO
+ 8.217- 9.300  i: HAS <red>RETIRED</>
+ 9.300-10.567  i: FROM INTERNATIONAL
+10.567-11.017  i: FOOTBALL
+11.017-11.800  i: YOU'LL REMEMBER
+11.800-12.250  i: THAT IN THE
+12.250-12.800  i: LAST SET OF
+12.800-14.133  i: NATIONS LEAGUE GAMES
+14.133-14.650  i: HE <red>LEFT</>
+14.650-15.083  i: <red>THE CAMP</>
+15.083-15.867  i: HE WASN'T VERY
+15.867-16.883  i: HAPPY ABOUT BEING
+16.883-17.317  i: TOLD TO
+17.317-17.933  i: WARM UP
+17.933-18.483  i: AND <red>WASN'T</>
+18.483-19.083  i: <red>BROUGHT ON</>
+19.083-19.667  i: SO HE LEFT
+19.667-20.117  i: THE CAMP
+20.117-20.633  i: THAT LED TO
+20.633-21.233  i: A <red>SUSPENSION</>
+21.233-21.500  i: FROM THE
+21.500-22.317  i: PORTUGUESE FA
+# B2 Ronaldo (PT)
+22.317-22.467  TO THE
+22.467-23.217  PORTUGUESE PEOPLE
+23.217-23.467  THE DAY
+23.467-23.767  HAS COME
+23.767-24.200  TO <red>HAND BACK</>
+24.200-25.033  <red>THE NUMBER SEVEN</>
+25.033-25.517  <red>SHIRT</>
+25.517-25.617  THAT BELONGS TO
+25.617-25.967  ALL OF US
+# B3 Ronaldo (PT)
+25.967-26.867  I <red>ALSO FAILED</>
+26.867-27.750  I <red>ALSO SUFFERED</>
+27.750-28.200  THERE WERE
+28.200-28.817  MOMENTS WHEN
+28.817-29.700  I COULDN'T
+29.700-30.583  GIVE THE PORTUGUESE
+30.583-31.117  WHAT THEY WANTED
+31.117-31.800  SO BADLY
+31.800-32.200  BUT I
+32.200-32.767  <red>NEVER GAVE UP</>
+# B4 Ronaldo + Piers (EN). Starts on "I": a tail of "But" sits in his in-point, no caption for it.
+32.767-33.283  I REALLY DON'T
+33.283-33.967  KNOW MY FATHER
+33.967-34.617  100%
+34.617-35.183  HE WAS A
+35.183-36.133  <orange>DRUNK PERSON</>
+36.133-37.267  i: WHAT'S THE SADNESS
+37.267-37.550  i: FOR YOU
+37.550-37.967  <red>TO BE THE</>
+37.967-38.733  <red>NUMBER ONE</>
+38.733-39.233  AND <red>HE DON'T</>
+39.233-40.100  <red>SEE NOTHING</>
+40.100-40.650  DON'T SEE ME
+40.650-41.750  RECEIVE AWARDS
+41.750-42.433  i: HE NEVER SAW
+42.433-42.983  i: HOW GREAT
+42.983-43.567  i: YOU BECAME
+# B5 Ronaldo (PT): orange = the anthem, blue = the tender ending (README § 8)
+43.567-44.200  THERE'S AN IMAGE
+44.200-44.683  I'LL ALWAYS
+44.683-45.417  CARRY WITH ME
+45.417-46.100  <orange>THE MOMENT</>
+46.100-46.800  <orange>THE NATIONAL</>
+46.800-47.617  <orange>ANTHEM BEGINS</>
+47.617-48.167  THANK YOU FOR
+48.167-48.967  LETTING ME LIVE
+48.967-49.767  A <blue>DREAM</>
+49.767-50.533  THAT BEGAN WHEN
+50.533-51.133  I WAS JUST
+51.133-51.967  <blue>A BOY</>
+51.967-52.633  <blue>IN MADEIRA</>
+52.633-53.250  <blue>RUNNING AFTER</>
+53.250-53.767  <blue>A BALL</>

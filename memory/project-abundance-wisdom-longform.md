@@ -66,3 +66,6 @@ were wrong or unverified ("fighting for 10th place" was Bob, not Shawn; 5e turne
 attributed quote gets a voiceprint check (lab-notes 2026-10-03) before it is captioned. Surface attribution
 mismatches against the creator's recorded narration as flags; never re-word their narration. See
 [[user-abundance-wisdom-editor]], [[feedback-youtube-sourcing]], [[feedback-creators-hand-is-not-a-bug]].
+
+## Moved from the MEMORY.md index (2026-11-06)
+AW face-led long-forms: Nick Walker (ABW8 Seq 24, 2026-10-07), SAME NIGHT, THE LAST SHOW (Chris Bumstead, uploaded a few days before 2026-10-26); every new one starts at presets/youtube/abundance-wisdom/PLAYBOOK.md (gist, never a lock); 2026-10-26 Paris Jackson BOTH VERSIONS (projects/paris-jackson-both-versions): review 1 applied 2026-10-27 (13:13, scored arc, censors, ≤2 s pauses); review 2 applied 2026-10-28 (Oprah card, paper SFX −3.5, end fade, Ozzy callout), 'very close to upload' (REVIEW-2.md)

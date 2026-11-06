@@ -28,3 +28,5 @@ face share near a third on a script-heavy take. After ANY V1 write, run a pictur
 (`projects/streamer-content-machines/work/sync_audit.py`). Never extend a Premiere clip with `.end =` (lab-notes 2026-10-23).
 AffanWiz specifics (SFX variety, a CTA card about once a minute) live in presets/youtube/affanwiz/PLAYBOOK.md.
 Related: [[project-affanwiz-channel]], [[feedback-premium-sfx]], [[feedback-creators-hand-is-not-a-bug]].
+
+2026-11-06 (CA-011): head yaw alone misses glances where the eyes move more than the head. After placement run the iris measure, projects/kai-tiktok-money/review/tools/gaze_raw.py + gaze_report.py (10 fps, ~4 min on CPU): it found 1.4 s the yaw number called clean, and cleared turned-head frames that are really eye contact. Report both numbers.

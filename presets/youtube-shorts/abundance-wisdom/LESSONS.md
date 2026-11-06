@@ -23,6 +23,25 @@ procedure in [PLAYBOOK.md](PLAYBOOK.md).
 15. **A press-conference clip can hide a camera flash.** Extending Tel Aviv brought in a one-frame bleached flash (mean 92 vs 49 next door), with two motion spikes of 44 against a median of 5. It looks like a cut in the numbers: look at the frames. A weaker one sat earlier in the clip (frame 19, only a +3 brightness bump, a blue-white patch on her skin), and it was already in v2 unnoticed by me; the builder caught it on the sheet. A blue-minus-red shift against the two neighbouring frames finds both (+15 and +37 against a median of 0.2). Replaced each with the clean frame before it. Scan any clip that comes from a press event, even for frames already used.
 13. **Test an overlay PNG on PNG.** My first prompt test showed no pill on 3 of 4 tiles: a seek between frames starts the overlay just after t=0 and `overlay -frames:v 1` outputs the base untouched. Extract the frame by `select=eq(n,N)` first. The advisor caught it, after I had already called it passed.
 
+## 2026-11-06 · Ronaldo Retires: his Tella 1 on the raw cut, then the code build
+
+**Lesson → change made → file:**
+1. **A news package's own b-roll is not an overlay.** I kept Sky's training shots under the anchor because they were "Ronaldo's face": "I don't want just random footage of him". On a legend, every overlay is a core memory fans already carry, high quality, and it follows the exact sentence ("trace his voice and see which games"). He doesn't follow football, so Opus does the research and picks.
+   - → memory `feedback-aw-overlays-recognisable-crisp`, `projects/ronaldo-retires/BRIEF.md` § OVERLAY PICKS.
+2. **"Download them yourself" = one plain yt-dlp, even when a brief says BLOCKED.** It worked. After about 30 requests spaced 60 s apart (13 searches + 17 pulls) it bot-blocked; the flag + one probe after an hour cleared it. `-S res,vcodec:h264` picks the best real stream; `m3u8` "higher" formats are the same stream with a padded estimate (1.5 Mb/s both). → memory `feedback-youtube-sourcing`.
+3. **Measure a source's aspect; "the face looks off" can be a stretched upload.** Eye distance / eye-to-chin is 0.50-0.54 on every honest frontal source and 0.62 on the Royal Anthem upload (1.19× too wide). → `projects/ronaldo-retires/win/face_aspect.py`. Run it on any fan upload with a close face.
+4. **Fan uploads can carry a warped "sad face" edit.** Fotbolera bends his mouth into a frown on most close shots (a seam across the chin at full size). Thumbnails hide it. A fake expression on a real person is out. Look at every close-up at full size.
+5. **Sheet labels from `fps=1/step` run step/2 early.** A pick from a coarse sheet can land on a different shot. Confirm every pick with a real `-ss` frame.
+6. **The stills gate at the played crop caught what thumbnails didn't:** his son beside the Ballon d'Or (187.8), a head drifting out of a square crop for half a second, a sliver of score bug, baked black bars. Render one frame per slot as it plays, first and last, before spending credits.
+7. **Move the letterbox, not the face (his 2026-10-28 rule, applied):** for a close face in a band, band [200,1300] put the caption on the chin; scaling the face 1.5× to clear the lips only made it soft. A very close 3/4 face keeps the caption on the nose.
+8. **Cyan + purple on a 0.9 s shot still reads:** Gaussian decays fast and the dip is 0.37 s dark. Step at 10 fps before calling it a defect; a one-per-second sheet makes dips look like long blacks.
+9. **beIN and other packages stick a one-frame white flash on their shot starts.** Mean-luminance per frame finds them (224 against 84). Keep spans inside.
+10. **The Piers clip holds his father on camera (Norwegian TV 2004, 111-157 s).** Check long interviews for the real person before hunting a photo.
+11. **AP photos via a news site's resizer:** the page's `width=1600` URL gives a clean original-framed image with plain curl; Higgsfield's 4K image upscale failed on it (no charge).
+12. **`page-record.mjs` needs `CHROME_PATH` = the hyperframes headless shell here** (the installed Chrome produced nothing), and `--virtual-time-budget` screenshots come out blank. A real page through the grade goes grey: bypass the grade on that shot.
+13. **Parsing the session transcript for Higgsfield's upload URLs saves about 15 KB of pasted tokens per batch.** `projects/ronaldo-retires` scratch `hf_put.py` pattern: dedupe by media_id.
+14. **OPEN, record his answers:** a childhood photo for "a boy in Madeira" (brief bans it; Funchal used); the 3-frame caption smear at some changes is the normal CapCut pass but reads garbled on a stepped frame.
+
 ## 2026-11-05 · Owen Hart Wife review 1: "your overlay choice is absolutely horrendous"
 
 **Lesson → change made → file:**
@@ -145,7 +164,7 @@ procedure in [PLAYBOOK.md](PLAYBOOK.md).
 - → **`cmp` BRIEF.md against his file before intake, before the raw cut and before the build.** On a change: copy the new
   one over BRIEF.md, keep the old one as `BRIEF-v1.md` (history only, never cut from it), and resend only what changed.
   File: `projects/latoya-betrayed/RUN.md`.
-- → "Highest quality?" can't be checked from this PC (YouTube is blocked, and `yt-dlp -F` is a bypass). The source audit
+- → "Highest quality?" can't be checked from this PC (YouTube is blocked, and `yt-dlp -F` is a bypass) **[SUPERSEDED 2026-11-06, his "download them yourself": one plain yt-dlp request is allowed; a block is not permanent. Still never cookies, proxies or client switching; stop on a bot check.]**. The source audit
   is his brief's job. Ours is to ffprobe each download at intake against the resolution the brief says it should be.
 
 

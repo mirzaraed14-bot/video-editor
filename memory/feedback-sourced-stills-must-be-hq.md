@@ -37,3 +37,6 @@ step, not an offer. A soft sourced photo AND a soft paparazzi clip both got it: 
 down to the played size; `upscale_video` Topaz 2160p on the exact played 9:16 crop, short excerpt with handles (5 credits / 2.7 s).
 Then check the result UNDER HIS GRADE in a finished still: a hot source still blew out and needed a pre-grade level (AW LESSONS
 2026-11-03). The War Dogs caution still holds for tiny press photos of real people (waxy): judge the upscale at full size.
+
+## Moved from the MEMORY.md index (2026-11-06)
+any web-sourced picture is checked at full size and enhanced in Higgsfield if soft, before it touches the timeline; 2026-11-03: on AW Shorts sourced stills AND clips get a serious Higgsfield upscale by default (4K image / Topaz 2160p clip), then checked under his grade

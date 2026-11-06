@@ -1,0 +1,129 @@
+# ABW10 · Sequence 46 (103.92 s, 60 fps, 56 clips of C1452 at 1x) · yellow deep-talks · baseline y1154 (chin 1039 + 115) · max 5 words/line
+# rant: Pakistan Influencer Awards, not roasting them: Super Biscuit's speaker + 1 lac incentive to scream the slogan; the noise drove the big boys outside; next time better managed.
+# Quoted: the sponsor's offer, the slogan chant, his own lines to himself and to the big boys.
+# re-decoded ur + hi + en in 10 s windows (work/redecode.txt). WhisperX dropped 8.65-16.95 (expo center … incentive) and 46.10-47.36 (2 more "shehar mai"), and garbled 31.85-40.4: all timed from the windows.
+# 'continuously' = 41.80-42.40 (hi + en wide windows, loudness envelope), not WhisperX's 42.03-43.09; the loud 42.40-43.10 is the start of "hote" (work/redecode2.py).
+# FLAGS (my readings): 42.40 "hote ja rha hai" (ur + hi ہٹے/हटे, en+prompt hote); 47.36 "sur" (ur سر); 56.56 "bulwana" (ur گلوانا, hi गिलवान, en melt); 34.75 "hall ke ye"; 35.65 "taha g"; 36.40 "concert wonsert"; 58.93 "tri fit" (en Tri-Fet); 60.75 "chop chop wok" (all hear "work"); 97.21 "appreciated" as said; 0.00 "lekin" (codeswitch dekhen, en See)
+@0.00 | lekin mai pakistan influencer awards
+@1.35 | ko roast ni kar rha
+@2.17 | i actually think ke
+@2.84 | ye bohat hi acha
+@3.56 | initiative hai
+@4.24 | masla pata hai
+@4.78 | kis ke saath hai
+@5.20 | masla to super walon
+@6.14 | ke saath bhai
+@6.76 | super biscuit wale
+@7.58 | expo center mai tha
+@8.45 | theek hai mai andar gya
+@9.42 | saamne stage laga hua hai
+@10.28 | obviously bohat saare
+@11.08 | vendors aaye hue the
+@11.62 | magar super i believe
+@12.62 | ke ho sakta hai
+@13.10 | major sponsor the
+@13.95 | aisa kuch tha
+@14.40 | unka bara tha vendor
+@15.43 | unhon ne na
+@15.85 | kia kar dia
+@16.40 | incentive de dia ke
+@17.70 | mai ho sakta hun
+@18.39 | ghalat hun
+@18.71 | “falan influencer ko”
+@19.47 | “hum 1 lac rupay”
+@20.38 | “den ge”
+@20.76 | “aapne na hamara”
+@21.54 | “wo slogan kehna hai”
+@22.42 | “shehar mai shehar mai”
+@23.32 | “gaon mai gaon mai”
+@24.04 | ab aapne 1 lac rupay
+@25.39 | ka incentive dia hai
+@26.25 | ab jo larki hai
+@27.25 | jo larka jo bhi hai
+@28.15 | who is trying to
+@28.89 | make it in their career
+@30.13 | trying to make money
+@30.85 | off this social media thing
+@31.85 | sing their hearts out
+@33.00 | wo ulte ho
+@33.56 | jayen ge na
+@34.08 | ab pata hai kia hua
+@34.75 | mai andar hall ke ye
+@35.65 | taha g ka na
+@36.40 | wo shayad concert wonsert
+@37.75 | jo bhi tha
+@38.28 | wo event hone wala tha
+@39.30 | maine bola
+@39.64 | “chalo mai beth jata hun”
+@40.41 | “thori der”
+@40.79 | ab wo speaker pe
+@41.80 | continuously
+@42.40 | hote ja rha hai
+@43.78 | “shehar mai shehar mai”
+@44.62 | or aise ni
+@45.26 | “shehar mai shehar mai”
+@46.10 | “shehar mai shehar mai”
+@47.36 | har kisi ka sur
+@48.09 | to ni hota na
+@48.63 | itna zor se
+@49.45 | aapne speaker lagaya hai
+@50.67 | or ye ho sakta hai
+@51.13 | super walon ka
+@51.85 | fault ni ho
+@52.35 | ye kisi media manager
+@54.10 | jinka ye idea tha
+@55.10 | ke aapne speaker laga ke
+@56.56 | sab se bulwana hai bhai
+@57.72 | aapne ye bhi to
+@58.45 | dekhna tha ke
+@58.93 | tri fit aaye hue
+@59.90 | pepsi aaye hue
+@60.75 | chop chop wok
+@61.43 | aaye hue hain
+@62.21 | maybelline bhai
+@62.85 | unhon ne bhi to
+@63.35 | stall lagaya hua hai
+@64.09 | itna shor mach rha tha
+@65.29 | bhai jo decency thi na
+@66.73 | event ki wo
+@67.62 | nikal gyi
+@68.18 | or mai bahar chala gya
+@69.06 | or kahani bohat
+@69.72 | interesting ho rhi hai
+@70.40 | bahar gya
+@70.90 | saare big boys bahar hain
+@72.12 | saare bahar the
+@72.88 | genuinely maine bola
+@73.83 | “bhai tum log yahan”
+@74.51 | “kia kar rhe ho”
+@74.99 | jo aapke jo
+@75.73 | heavy hitters the
+@76.60 | wo bahar khare hain
+@77.57 | wo isi waja se the
+@78.30 | na jo super wale the
+@79.38 | unhon ne itna disruption
+@80.38 | create kari hui thi
+@81.29 | ek hota hai na
+@82.13 | regulatory body hoti hai
+@83.53 | jo manage kar rhi
+@84.55 | hoti hai ke
+@84.93 | jo vendors aaye hain
+@85.97 | ye kis qisam ki
+@86.75 | activities execute kar rhe hain
+@88.39 | ke aap kisi tareeqe se
+@89.80 | hamara jo humne
+@90.48 | event rakha hai
+@91.50 | aap disruption to
+@92.37 | ni create kar rhe
+@93.13 | agar koi influencer awards
+@94.21 | ya kahin se bhi
+@94.69 | dekh rha hai
+@95.03 | genuinely koi disrespect ni hai
+@96.56 | mai aap logon ke lye
+@97.21 | bohat appreciated hun
+@97.93 | aap logon ne mujhe bulaya
+@98.90 | bas mai ye chahta hun
+@99.82 | ke next time
+@100.63 | ye better managed ho
+@102.10 | or hopefully next year
+@103.20 | hum dekhen ge isko

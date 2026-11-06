@@ -1,6 +1,8 @@
 # onthatnote-john-legend: Onyx sample Short for On That Note (batch 7, RESTRUCTURE mode)
 
-## ▶ STATUS: resume here
+## ▶ STATUS 2026-11-06, Affan's review 1 applied (`../_onyx-batch7-2026-11/review1.py`, YT look only; picture cuts, MGs and mix NOT rebuilt; old final = outputs/onthatnote-john-legend.sample-yt.before-r1.mp4, old spec = yt/spec.json's .before-r1): Hook below (y1340/1432), captions + watermark from frame 1. POP grade tuned (grade_look: relight .28, gamma 1.16, s .36, sat 1.30, skin 1.10), sharpen .55/.40. mg- cards untouched. Re-running yt/build_spec.py would lose this patch: re-run review1.py after it. IG look unchanged. Waiting for his song.
+
+Earlier ▶ STATUS: resume here
 - 2026-11-05 21:20: main's review fixes applied: hook = HE WASN'T ALLOWED / TO HEAR SECULAR MUSIC (one block in 0-3.2 s, captions + watermark wait), -12 LUFS / -2 dBTP both looks, no weak swish (cue_check none), IG photo label BOYZ II MEN, 1995. YT final = v5 (-12.3 LUFS, peak -2.1). Head tracker clean at 903/904/1107 (patched faces.json).
 - Condition from the PA (Destiny): "approved, as long as the post is positive". Both looks native 29.97 fps, no Topaz, no bed.
 - Flags so far: the LAUGH line ("you're performing ... Help him, Lord. Take your time, baby.") is SHAWN's, not John's (the sequencing assumed John); the button's

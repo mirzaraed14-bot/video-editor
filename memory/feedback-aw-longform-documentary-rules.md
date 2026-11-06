@@ -56,3 +56,6 @@ not too often": about 3 per 11 min, 3 s, lower-left in the film's tag style, cal
 slow push, black eased over ~1.6 s), never a hard cut into the end black. And "I didn't know he was Ozzy Osbourne's son": name every
 third-party speaker at first sight, and when one refers to someone famous, stem a small callout from the speaker's head to a REAL
 photo + name + relation + dates (AW LESSONS 45-46).
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-10-21 rejected THE LAST SHOW: bespoke visual per line, FX catalog + MG, nested host + one zoom, no freeze under VO, fades, level-matched inserts, subtitles on all third-party clips; research numbers never override his look; 2026-10-28: end on a fade, name every speaker + who they reference; the redo's cold open was praised the same day, a collage was not (one subject, graded); redo kit = projects/cbum-last-show/redo-gfx + work/redo

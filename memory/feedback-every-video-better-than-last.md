@@ -38,3 +38,6 @@ expensive look." So the floor is 5 % (on smoothness, premium feel and the expens
 gist and the starting point, never the style: presets/youtube/abundance-wisdom/PLAYBOOK.md.
 
 **Restated 2026-11-05 about the Scott Shorts:** "every short of ours kind of is the same thing ... not just redo the wheel ... just pick out a different moment, I don't want that." The Scott recipe's "no research" budget line had let every Short skip this. Now the analysis session writes at least 2 moves new to the channel into presets/youtube-shorts/scott-clary/UPGRADES.md before each build, from the catalog and research/shorts-style-radar.md (a study of other channels' frames + numbers, method in [[feedback-bolt-motivation-look]]). Sonnet builds them, each new VFX with a test clip and a kill switch.
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-10-12, ALL videos: never lock one style; research before EACH video, BRIEF says what this one does better; 2026-10-26: floor 5 % (smooth/premium/expensive) + the whole FX catalog frame by frame before every edit; 2026-11-05 Scott: ≥ 2 moves new to the channel per Short, ledger in presets/youtube-shorts/scott-clary/UPGRADES.md, other channels' frames in research/shorts-style-radar.md

@@ -1,8 +1,40 @@
 # what-level-shorts-creator: AffanWiz Short 3 "What Level YouTube Shorts Creator Are You?" (Scott Clary YouTube format)
 
 ## ▶ STATUS: resume here
-2026-11-05: **SEQUENCING SENT, WAITING FOR AFFAN'S OK.** Nothing is cut or built. Text and questions: `SEQUENCE.md`.
-**Next on his OK:** lock the prediction in `presets/youtube-shorts/affanwiz/RESULTS.md` row 3, then the cut (`work/cut/make_edl.py`), the 30 fps check, and the 60 fps final after his OK.
+2026-11-06 03:20: **60 fps FINAL DELIVERED, built after his OK on check 2 ("approved", 2026-11-06). He has not seen this file yet; done unless he has a note.** Sequence v1 approved 2026-11-05 ("Yes, use defaults"). Prediction locked (RESULTS row 3, 3K-50K). Not uploaded, nothing committed.
+- **Files:** `X:\Claude Projects\Exports\affanwiz-what-level-shorts-creator.final.mp4` + `.final.proof.jpg` + `affanwiz-what-level-shorts-creator.thumbnail.jpg` (job copies `outputs/*.sample-yt.final.mp4`, `outputs/*.proof-final.jpg`, `outputs/*.thumbnail.jpg`). 1080x1920, 60 fps, 2056 frames, 34.27 s, 24.4 MB, CRF 16. The cover is `work/cover.py`: his script's WHICH LEVEL ARE YOU? (LEVEL gold) on cut frame 36, graded with this Short's look.
+- **Gates, on the 60 fps file:**
+  - **Reading (`work/reading_gate.py`, all 478 visible face frames):** face visible 7.97 s of 34.27 s in 6 runs (23 %), longest 1.97 s; **0 frames over 0.233, 0.00 s of visible reading**; |yaw| p95 0.137, max 0.17; 0 detector misses.
+  - **Same picture he approved (`work/final_parity.py`, final frame 2j vs check frame j, per shot):** cards 36.5-38.3 dB, faces 31.2-32.5 dB (the Topaz difference), no outlier frame.
+  - **Native cards (`work/card_parity.py`):** every even frame of the 60 fps cards vs the 30 fps cards 43-57 dB, so the same timeline; Chronos' own version of those frames read as low as 16 dB on motion windows, which is why they were replaced (1458 frames, `work/mg60.py`).
+  - **60 fps cadence (`work/cadence_s01.py`, face zone only):** no duplicate frame (min step 1.0+), odd/even step ratio 0.99-1.03.
+  - **Head:** no joint inside a face shot (`head_snap_gate.py picture.whip60.mov 2`: 0).
+  - **Background (`work/bg_step.py` on the six face shots, `work/s01_motion.py` on the first):** median step 0.6-1.2 px per 60 fps frame. s01's 52 px at frame 4 is his hand crossing the right strip (response 0.02): at response > 0.5 the top wall reads max 5.2 px and the left strip 3.6 px over the whole shot, and 0.1-1.0 px on frames 1-14.
+  - **Audio:** final vs base cut ncc 0.996-1.000 at lag 0.0 ms; -12.1 LUFS, peak -2.2 dBFS; 14 swishes, none weak on a phone, loudest -17.7 dB under the voice.
+  - **Topaz:** no watermark on the frames viewed, 1028 of 1028 frames at 3840x2160.
+  - **Frames viewed:** bar hand-off 232-246, hard cuts 330-333, 584-587, 1122-1125, 1474-1477, 2018-2025, the whip into the money card 674-704, full-size card and face frames.
+- **Known and left, for him to look at:** on his two fastest gestures (frames 335 and 1133, about 5.6 s and 18.9 s) Chronos smears the hand on one 1/60 s frame; the face and the type stay clean there. Likely reads as motion blur, unproved: nobody has watched the 60 fps file at real speed, he is the first.
+- **NOT RUN:** the fresh-eyes rounds of edit-review (usage tight, no subagents). Nothing watched at real speed or heard by ear (no playback here): the words were read against both verbatim passes at check 2.
+- **A later note = data + ONE finish render, at 60:** overlay only: `yt_build final --skip picture`; a level only: `--skip picture,overlay`. A card: `python yt/cards.py <kind> yt/assets/broll60/<file> --dur .. --t .. --fps 60` (and the 30 fps one for the sidecar), `python work/mg60.py`, THEN delete `yt/work/picture.whip60.ungraded.mov` and `picture.whip60.raw.mov`, because grade and sharpen re-read their kept copies and would drop the new card; then grade, sharpen, `final --skip picture,overlay`. `yt/spec.json` is the 60 fps one now: `python yt/build_spec.py --no-cards` keeps it so.
+- **Regenerable bulk, kept until he signs off:** `outputs/*.topaz.mov` 2.7 GB, `yt/work` 4.2 GB (four picture .mov + overlay.mov). Keep `yt/assets/broll60/`, `yt/`, `work/`, `transcript/`.
+
+### Check 2 (30 fps, approved), for the record
+- **Files:** `X:\Claude Projects\Exports\affanwiz-what-level-shorts-creator.check-30fps.mp4` + `.proof.jpg` (job copies `outputs/*.sample-yt.v2.mp4`, `outputs/*.proof-check2.jpg`). 1080x1920, 30 fps, 1028 frames, 34.27 s. The grade comparison: `work/look-b.jpg` (in/out pairs), `work/grade-compare.jpg` (Scott's default numbers on this room).
+- **Why there is no check 1 for him:** my v1 kept three jump cuts on his face. `work/bg_strips.py` measured 25-29 px camera steps at them, the same defect as find-viral-angles review 2. An advisor review caught that I'd filed this as a footnote, so v1 never went out. It also caught numbers he never says (a rolling counter, digits in the log window).
+- **Gates, on the exported file:**
+  - **Reading (`work/reading_gate.py`, every visible face frame, absolute yaw, threshold 0.233):** face visible 7.97 s of 34.27 s in 6 runs; **0 frames over, 0.00 s of visible reading**; |yaw| max 0.16 per shot, p95 0.139; 0 detector misses. Sanity (`work/gate_sanity.py`): known reading frames read +0.35..+0.49, lens frames +0.07..+0.13. About 9.3 s of the kept lines are reading: all under cards. Eyes viewed on v1's sheet (`work/eyes.jpg`, same takes): on the lens, the low lids are blinks.
+  - **Face runs:** 1.97 / 1.23 / 1.63 / 1.70 / 0.87 / 0.57 s, all ≤ 4.
+  - **Head:** NO joint inside any face shot (`head_snap_gate.py`: 0). Background inside the face shots: median step 1.5-3.7 px; the spikes at frames 3, 306 and 1019 are phase-correlation noise on the flat wall (response ≤ 0.12), the strip with a real response reads 3.5-5.5 px.
+  - **Audio:** audio-qa 23 joints clean; final vs base cut ncc 0.996-1.000 at lag 0.0 ms; mix -12.1 LUFS, peak -2.2 dBFS; cue_check: 14 swishes, none weak on a phone, loudest -17.7 dB under the voice.
+  - **Words:** every caption chunk read against both verbatim passes (`work/cut/fw_cut_v1.*`). One pass mishears "Claude" as "plod"; the other and the raw burst read "Claude". Nothing checked by ear (no playback here).
+  - **Grade:** POP re-aimed at this room (`grade_look` in the spec): p5 0, p95 165, cheek hue 15-17.5, sat .69 (in: sat .82). Scott's default numbers crushed his face (cheek val .60 -> .43, the mic gone).
+  - **Hand-off frames viewed:** the small bar lands from the big one with no ghost (`work/v2-handoff.jpg`, frames 116-123), hard cut to the face at 1011 clean.
+- **NOT RUN (usage tight, no subagents):** the fresh-eyes rounds of edit-review.
+- **Differences from the sent sequence:** see `SEQUENCE.md` § What changed at the build.
+- **Rebuild:** `cd` job, `python yt/build_spec.py --30`, repo root `python presets/youtube-shorts/onyx-samples-youtube/kit/yt_build.py projects/what-level-shorts-creator v2`, then grade + sharpen `--mask 0.55 --sharp 0.40`, then `yt_build ... v2 --skip picture,overlay`; an overlay change alone: `--skip picture`; a level alone: `--skip picture,overlay`. A note = data + ONE finish render.
+- **Then the 60 fps final:** Topaz Iris 2x (`topaz-iris.py outputs/<job>.mp4 outputs/<job>.topaz.mov --out-scale 2 --no-stab --segments <the six face shots' edges>`, GPU lock, check for running topaz-iris first), `build_spec.py` (60), `uv run yt_faces --step 1`, `yt_build final`, grade, sharpen, `final --skip picture,overlay`. Chronos morphs card type: put native frames back over the settled card frames (`--fps 60` on `yt/cards.py`), or use the native 59.94 path (`gta6-all-fit-inside`). Then the cover WHICH LEVEL ARE YOU? (LEVEL yellow, his script).
+
+**Corrections to the sent sequence, all on the audio:** "if you want" IS said twice (short-slice read; I had told him one pass may have invented it): the cut uses the last take. Line 8 starts at raw 60.72.
 
 ## The ask (Affan, voice-dictated, 2026-11-05, relayed by the English Editor session)
 "You will be creating this in the Scott Clary YouTube style. Make sure to contact it, I've updated its style set and everything, so you have to contact it before you start making it. And whenever I'm looking at the screen, again you will place overlays and motion graphics there, and it will be 1% improved on the previous short that we made."

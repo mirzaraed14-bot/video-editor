@@ -32,3 +32,8 @@ face or feeling lands in under a second.
   watch the weekly usage.
 
 Related: [[feedback-sourced-stills-must-be-hq]], [[feedback-usage-budget]], [[feedback-use-fable-allowance]], [[feedback-fix-only-what-he-named]].
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-11-05 (Owen review 1): overlays must be crisp and of someone the viewer knows (famous reaction from any night beats obscure right-night footage); white line ON the picture's edge; letterbox fills with blur, never black; Opus researches, Sonnet executes
+
+**2026-11-06 (Ronaldo Retires raw cut, his Tella):** a news package's own b-roll is NOT an overlay ("I don't want just random footage of him"). On a story about a legend, every overlay is a legendary core-memory moment fans already carry, high quality, and it follows the exact sentence being said ("trace his voice and see which games"). He doesn't follow football, so Opus does the research and picks. A news claim can sit on a real article ("put a news article here").

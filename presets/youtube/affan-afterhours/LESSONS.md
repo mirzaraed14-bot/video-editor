@@ -655,3 +655,23 @@ against a 34-tool-call investigation that reached the wrong answer.
 - **Slowed 30 fps game footage reads "too choppy" at 59.94** (0.6-0.9x showed each frame 2.2-3.3 times): every footage B shot is now
   pre-rendered motion-interpolated (`yt/assets/build/smooth_broll.py`, ffmpeg minterpolate mci/aobmc/bidir), and footage inside the
   cards too. -> default for every code-built Short at 59.94: never frame-repeat a slowed clip.
+
+## 2026-11-06 · "The Head Start", Short in the Scott YT look (`projects/gta6-head-start`, his review: "approved", no notes)
+First delivery approved as it was; nothing changed after delivery. One approval, so these stay lessons, not rules.
+- **The defaults he never answered all passed:** black + pink MGs, swishes only with no bed, 0.8x + Vine boom on one line ("That is if you
+  value your time"), a drawn phone and drawn PS5 menus where no footage exists, every pause closed on his face. -> change: none. -> the next
+  Afterhours Short in this look starts from these. The 2026-11-04 rule to ASK about the joke stands; unanswered, the one-line slow-mo + boom
+  has now passed once as the default.
+- **New moves that passed:** the 1 · 2 · 3 · 4 strip that lights on each "number" word, the PS5 vs Xbox colour split, the 3 % bar that fills on
+  "while you sleep", the hand-drawn underline on Rockstar's own line, the giant 29. -> change: none, free to reuse; the next Short still owes
+  its own new moves. -> file: `projects/gta6-head-start/yt/assets/build/mg_head.py`, `compose_receipts.py`, `yt/build_spec.py`.
+- **The hook's split jump passed:** ~65 px up and 30 across at 2.7 s, his own movement between takes, flagged with a track/leave choice and
+  "approved" taken as leave. Two shots with their own medians measured worse (78 across, 80 up). -> change: none; splits stay untracked (his
+  2026-10-20 rule), `"track": true` on `top` is the fix if he ever asks.
+- **POP needs this room's numbers.** The default crushed the room on the first final (mic and shirt to black, face dark orange). `grade_look`
+  for both A and DOC, tested on stills first: `{"gain":[0.965,1.0,1.05],"relight":0.30,"bp":0.005,"wp":0.80,"gamma":0.86,"s":0.36,"cap":1.05,
+  "sat":1.22,"skin_sat":0.94}`. -> next Short in this room starts from these, a still first. -> file: `projects/gta6-head-start/yt/build_spec.py`.
+- **The first sequencing went out with wrong lengths** ("one clean pass", from an RMS read; the burst pass found restarts on four lines, 69/57 s
+  became 66/54 s). -> never quote takes or length before the burst pass. -> file: `lanes/chat-only/lab-notes.md` 2026-11-06.
+- **Lean mode passed once:** no fresh-eyes pass, no edit-review rounds, no graphics-qa.py, nothing heard by ear; only my own frames and the
+  measured gates (audio ncc, LUFS, cue_check, head at the joints, verbatim ASR). One data point; it does not retire the rounds.

@@ -59,13 +59,16 @@ def grade(a, L):
 
 def main():
     if sys.argv[1] == "--test":
-        look = LOOK[sys.argv[4] if len(sys.argv) > 4 else "A"]
+        look = {**LOOK[sys.argv[4] if len(sys.argv) > 4 else "A"], **(json.loads(sys.argv[5]) if len(sys.argv) > 5 else {})}
         a = cv2.cvtColor(cv2.imread(sys.argv[2]), cv2.COLOR_BGR2RGB).astype(np.float32) / 255
         cv2.imwrite(sys.argv[3], cv2.cvtColor((grade(a, look) * 255 + 0.5).astype(np.uint8), cv2.COLOR_RGB2BGR))
         return
     job = os.path.abspath(sys.argv[1])
     spec = json.load(open(os.path.join(job, "yt", "spec.json"), encoding="utf-8"))
     fps, out_fps = spec["fps"], spec.get("fps_out", spec["fps"])
+    # spec "grade_look" (opt-in, 2026-11-05, AffanWiz levels Short): per-kind overrides for footage far from the bright flat podcast these numbers were tuned on
+    # (his dark warm room already has real blacks: the default A look crushed his face). Without the key: the defaults, unchanged.
+    looks = {n: {**v, **spec.get("grade_look", {}).get(n, {})} for n, v in LOOK.items()}
     k = int(round(out_fps / fps))
     W = os.path.join(job, "yt", "work")
     pic = os.path.join(W, f"picture.whip{int(out_fps)}.mov" if out_fps != fps else "picture.whip.mp4")
@@ -97,7 +100,7 @@ def main():
             enc.stdin.write(b)
         else:
             a = np.frombuffer(b, np.uint16).reshape(h, w, 3).astype(np.float32) / 65535
-            enc.stdin.write((grade(a, LOOK[kind]) * 65535 + 0.5).astype(np.uint16).tobytes())
+            enc.stdin.write((grade(a, looks[kind]) * 65535 + 0.5).astype(np.uint16).tobytes())
         n += 1
     enc.stdin.close(); enc.wait(); dec.wait()
     assert n == len(kinds), (n, len(kinds))

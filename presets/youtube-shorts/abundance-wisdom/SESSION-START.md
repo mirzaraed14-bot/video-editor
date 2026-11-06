@@ -18,7 +18,7 @@ Written 2026-10-18 when the long working session was retired. One page so a new 
   `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\ABW9.aep`.
 - Captions: max 3 words per layer, about 1 in 3 coloured (`<red>`, `<yellow>`, `<blue>`), no commas or full stops (? ! ok,
   inside the colour tag), interviewer lines italic (`i: `), stacked second line `+`, the f-word censored `F*CK`.
-- Creator's edits are decisions. YouTube is blocked on this PC: never bypass it.
+- Creator's edits are decisions. YouTube blocks this PC on and off: never bypass it (no cookies, proxies, client switching). When Affan says "download them yourself", try plain yt-dlp through `lock.sh youtube`, >= 60 s apart, and stop on a bot check (2026-11-06).
 
 ## How to run things
 - **AE script:** write the .jsx with Python `.replace()` from a template (never sed; in heredocs build backslashes with

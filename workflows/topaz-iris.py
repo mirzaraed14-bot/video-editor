@@ -110,10 +110,16 @@ def main():
                             "-an", "-c:v", "ffv1", "-r", fps, seg], check=True)
             out = os.path.join(tmp, f"up{i:02d}.mov")
             M = a.fps_mult
-            (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance, mult=M,
-                                                  reduce=a.reduce)
-            flag = "" if on == inn * M else f"  ⚠ frame count {inn} -> {on}"
-            if on != inn * M and not a.no_fi:      # Chronos can return a static take short (Harbinger lost 8 frames): redo it without FI
+            failed = False
+            try:
+                (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, not a.no_fi, env, tmp, iris=not a.no_enhance, mult=M,
+                                                      reduce=a.reduce)
+            except SystemExit:                      # Chronos' ffmpeg can die on one take (Herjavec H1, 2026-11-06: an 83-frame still-card take, "Unable to
+                if a.no_fi:                         # parse option value "0" as video rate") and used to kill the whole 90-minute run: redo that take below
+                    raise
+                failed, inn, on = True, probe(seg)[3], -1
+            flag = "  ⚠ Chronos failed on this take" if failed else ("" if on == inn * M else f"  ⚠ frame count {inn} -> {on}")
+            if (failed or on != inn * M) and not a.no_fi:   # Chronos can return a static take short (Harbinger lost 8 frames): redo it without FI
                 (iw, ih, inn), (ow, oh, on) = enhance(seg, out, a.out_scale, not a.no_stab, False, env, tmp, iris=not a.no_enhance,
                                                       reduce=a.reduce)
                 if M > 1:                         # ... and repeat each frame M times so the timeline still matches

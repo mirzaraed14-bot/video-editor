@@ -35,3 +35,6 @@ On code-built Shorts: `head_track` + `head_edge_pin` 12 (not the chained lock), 
 match across every visible same-scale jump cut; one base scale per run between full-frame graphics (≤ ~111 % on 1080p), his cut zooms kept
 ≥ 1.15× the base, side cards' ear clearance held. Tool + method: `projects/viral-clip-method/work/head_steady.py`, AffanWiz LESSONS
 (CA-010 after the hand-off). Build it at the face pass, not after: the brief rule went unapplied in the first CA-010 draft.
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-10-19: on same-camera jump cuts the head must not move up/down or change size; 2026-11-04: code-built Shorts use head_track (not the chained lock) and no micro-pause jump cuts on his face; 2026-11-05: on Scott Shorts every pause closes, jump cuts wanted, head_lock keeps it steady

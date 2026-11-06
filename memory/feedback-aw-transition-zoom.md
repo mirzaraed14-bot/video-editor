@@ -26,3 +26,6 @@ with `win/zoom_gate.py` (all IN, no flips). Shots under ~1.1 s get +2..+16 % (st
 (Harry `finish.py long_curve`), the table stretched over 4 s ends too slow. This AW rule does not
 override [[feedback-no-same-camera-punch-ins]] / [[feedback-head-steady-across-cuts]] on Onyx / Scott face brands.
 Related: [[project-abundance-shorts-automation]].
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan 2026-11-04 (Harry review 2): one push-in per SHOT CHANGE (a same-camera jump-cut run = ONE layer, review 3) on README § 3's table, strong start → drift → speeds up into the cut, next shot strong again; never sine ease, never push/pull flip-flops; measured on his finals

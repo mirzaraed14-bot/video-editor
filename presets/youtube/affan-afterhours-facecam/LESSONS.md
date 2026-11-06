@@ -428,3 +428,22 @@ Format: lesson → change → file.
 - **Profanity censor: his call, per video.** The v26 brief said "censor fuck only"; his own edit dropped the bleep ("How the fuck is that
   possible?", 7:07.1, an improvised reaction on his 140 zoom) and asked, he said "Leave it audible". A one-off for now: ask on the
   next brief, never re-add a censor he removed.
+
+## 2026-11-06 — video 27 "GTA 6 Complete Guide: Do These Before November 10th" (job `gta6-complete-guide`, ABW10 › "GTA 27 - Complete Guide", 9:32; his brief: "1% improved")
+
+**NEW TREATMENTS, VERDICT PENDING (read his timeline diff after review; each stays or goes on what he does, not on this list):**
+- N/17 number cards (c01-c17) with a 17-segment rail, an N/17 pill on every card of a point, three part cards, and a 17-row checklist reprise (s01, 4.5 s, a screenshot frame).
+- PREVIEW BUILD as a third receipt beside CONFIRMED / REPORTED (11 cells), because he says he will flag previews.
+- Menu-path cards (m01, m02) instead of console screenshots: no recordings exist, and a fake PS5 UI is banned.
+- Line-drawn controller (d10) and minimap with cones (d11), open box on a grid (d07), criminal-profile meter (d14), the stuck download bar in the cold open (g01), lone-bar download math (d06).
+- A stretch gag on "big-ass" (non-uniform Scale), 0.8x on "considered a pussy" and "I will shoot that guy".
+
+**Process lessons:**
+- **A scripted take reads ~30 % of the time, and the cover costs face.** Coverage hit 71 % (57 % on 26) and four spoken lines sit under cards ("God damn", "your VOD", "actual adult", "forget it"), because yaw says he was reading them. Run the yaw gate before cell ends are drawn, then tell him which lines paid for it. His verdict sets how far this goes on a script-heavy video.
+- **Don't-say binds credits too.** A competitor name got into d12's credit line and only the content reviewer caught it. Grep the Don't-say list over copy, tags AND credits before the build.
+- **Quote marks only on verbatim text; receipts only on what the source said.** b07 carried non-verbatim quote marks, q02 had drifted from the source wording, and n04 wore CONFIRMED on his own advice. Each fixed in round 1.
+- **A planned b-roll range is not a seen one.** The b02 GTA V clip turned out to be him changing clothes and b07 ran into a title card. Look at composited stills of every b-roll before placing.
+- **A verbatim guard against the script finds retakes the cut misses:** ten hidden restarts ("On November 19th they are-", "I just refuse-", "gets the- gets the") survived a clean-looking EDL. Keep this gate on every scripted job.
+- **Size the palette for the cues, not the plan.** 51 files all got used by 88 cues, so the spares went. Fetch by cue count ÷ 1.5.
+- **Listed FX are a menu, not a promise.** Four catalog moves in the brief were not built on an upload day. Say so in the brief so the next catalog pass counts what actually shipped.
+

@@ -1095,3 +1095,17 @@ Always check the EDL bash can actually see before re-splicing.
 - Render side (HyperFrames 0.8.16 on this machine): `--no-browser-gpu` cuts a comp from 8-9 min to ~4 min while WhisperX/Topaz hold the GPU
   (the GPU probe waits ~5 min). "Failed to run ffmpeg -version (exit code 0)" is transient under load: re-render the one comp.
   Letterboxed trailer sources need a crop AFTER the cover scale, or the blurred plate keeps the bars (`build-plates.py` `blurred()`).
+
+## 2026-11-06 · gta6-complete-guide (ABW10 › "GTA 27 - Complete Guide", shared with the C1448 and C1449 sessions)
+- **Three large-v3 jobs on the 8 GB card: the transcribe wrote nothing for 1h46 and looked alive.** With other sessions on the GPU run `WHISPERX_DEVICE=cpu` and always tee a log, or a stall cannot be told from progress.
+- **The pause pass swallows quiet words, again** ("just", "one", "at", "in", "It's", "of", "Oh and"). A word-level removed-check against words.json is required after it (`projects/gta6-complete-guide/review/removed-check.py`), restored in `transcript/fixes.py`.
+- **A censored word can straddle a joint and the ASR may write it "f***?"**: a search for the word finds nothing, and one disabled span leaves half of it audible. `transcript/censor27.py` disables two A1 spans.
+- **`active-window.py` runs with cwd = repo root**: pass the wrapped script as an absolute path, or it fails before anything happens.
+- **`v1cuts.py`'s default reads the polished EDL, not the timeline**, so it wrote wrong cuts. Snap graphics to a live V1 readback only (`transcript/v1-cuts.json`, 297 edit points).
+- **`music-dropouts.py` needs MIN_SCALE above the head-steady range** (base scales run to ~113 %, his cut zooms start at 115, so 114), or locked pieces read as zooms. A non-uniform stretch reads as Scale 100, so it has to be named. Its save call outlasted the bridge timeout and read as a failure: run it with no save and save once at the end.
+- **`head_steady.py` joints under a full-frame graphic are free**: `covers()` has to read the current plan, so re-run the plan when cells move.
+- **`build-plates.py` needs `uv run --with pillow --with numpy`.**
+- **Picking the "newest" render: sort by mtime.** A name sort puts `id-alpha-b.mov` before `id-alpha.mov`, so a preview sheet showed the old version. ffmpeg overlay of an alpha mov came out blank on those sheets: composite with PIL (`review/sheet.py`, `review/cellsheets.py`).
+- **`workflows/graphics-qa.py` needs a placement.json a custom per-job placer does not write.** Stand-ins here: `review/gate-frames.py`, `review/frame0.py`, `review/gates27.py`. Worth a placement.json from the next job's placer so the shared gate runs.
+- **Zoom framing can be checked with no render:** `review/zoomsheet.py` applies live V1 Scale and Position to raw frames, magenta marks any uncovered edge, 51 pieces in a few minutes.
+

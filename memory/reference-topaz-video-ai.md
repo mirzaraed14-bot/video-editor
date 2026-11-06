@@ -40,3 +40,6 @@ gave video frames with the same MD5 as his own Topaz files (`projects/aw-code-tr
 Order matters: interpolation BEFORE Iris, in one pass (`--out-scale 2` without `--no-fi`). Iris output makes repeated frames non-identical, so Chronos run on an Iris file misses them (Rollo 2026-10-06: held webcam frames 30 % -> 15 % only).
 
 **Login token can lapse mid-run (2026-10-24):** headless tvai keeps going but stamps a "Topaz Labs" WATERMARK (stderr: "Critical error refreshing token Could not establish connection"); only he can sign back in (open Topaz Video AI). Check a frame of every Topaz output for the watermark; afterwards re-run only the dirty step. Never work around the licence.
+
+## Moved from the MEMORY.md index (2026-11-06)
+Affan's Video AI 5.0.4 is scriptable (workflows/topaz-iris.py); interpolation on EVERY sample, Iris only for ≤1080p (his rule 2026-10-06); --segments at every cut; replaying his .tzlog export commands headless is BIT-EXACT (2026-10-10); a lapsed login token = silent WATERMARK, check every output (2026-10-24)
