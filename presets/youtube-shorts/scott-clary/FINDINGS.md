@@ -282,6 +282,13 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
   views across 11 Shorts gives a rank correlation of −0.19. It fits the one hit it was built from and predicts nothing else. Squibb (2.5, 228 views) is still young.
 
 ## Story bank (screened, not yet made)
+- **2026-11-09: the whole catalogue is screened. All 658 full episodes are read in full; nothing is left unread.**
+  - **The first pass:** 31 by Sonnet readers (R21-R28), 552 by Haiku readers (sweep S00-S69), and 84 in earlier screens. The sweep's top 6 were re-read and verified by a Sonnet coordinator.
+  - **Two transcripts were broken at the source** (Rachel Cruze stopped at 4 min; Natarelli was garbled). Both were re-transcribed from the feed audio (`research/viral2/retx.sh`).
+  - **Method:** each moment was scored on the funny test, the Bombas card and the AW shapes (`research/viral2/SCREEN-BRIEF.md`).
+  - **Ranking:** `research/viral2/screen-SWEEP.md`.
+  - **Result:** Moshe Haimoff's coin flip with David Dobrik leads, at funny 3 and Bombas 8.5. Affan picked it to build 2026-11-09 (`research/dobrik-coin-flip.md`). Runner-up: Eric Cole's McAfee sushi story (3 / 8.5, untold, no footage).
+  - **Calibration:** the sweep ranked Morgan's claw machine third, and we already made it: 1.4K. These scores do not guarantee views.
 - **2026-11-08: the funny-test picks** (Affan's OK): Herjavec's unsaved spreadsheet (3), Daymond's "You're not Snoop" (2.5), Gary Vee's Ricky (3); alternates Marino "sold one" (3) and Mandell's prison gag (2.5). Words, cuts and cards: `projects/_client-scott-clary/research/funny-test-picks.md`. The bank has only been searched for words like "funny", not re-read for this test, so better ones may exist.
 - **2026-11-04: Robert Herjavec (Shark Tank), Scott's new episode.** Affan: "all in for the next 3 days". H1 ("sold for ~$500M, next
   day: I got to get to a billion") and H2 ("Dancing with the Stars scared me more than a 203 mph crash") are the FIRST picks ON PAR

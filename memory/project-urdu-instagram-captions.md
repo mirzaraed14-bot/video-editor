@@ -8,7 +8,7 @@ metadata:
   modified: 2026-09-18T08:38:24.668Z
 ---
 
-Started 2026-09-18. The user's Urdu talking-head reel page **@affanwizu** (Affan Baig, ~36.4k followers, shot in front of a "skool" neon sign). It started as **captions only** (Roman Urdu); since 2026-09-19 the scope is the whole edit (see GOAL below).
+Started 2026-09-18. The user's Urdu talking-head reel page **@affanwizu** (Affan Baig, 44.2k followers on 2026-11-09, ~36.4k on 2026-09-18; peer benchmark in research/affanwizu-benchmark/, shot in front of a "skool" neon sign). It started as **captions only** (Roman Urdu); since 2026-09-19 the scope is the whole edit (see GOAL below).
 
 **Why:** caption-making is the repetitive part; choosing which bits to use is their creative edge.
 

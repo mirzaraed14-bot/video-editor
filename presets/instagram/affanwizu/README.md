@@ -1,6 +1,6 @@
 # @affanwizu: Urdu talking-head reels (captions only)
 
-Affan Baig's Urdu Instagram page (~36.4k followers, 2026-09-18): talking-head reels shot in front of
+Affan Baig's Urdu Instagram page (44.2k followers 2026-11-09, ~36.4k on 2026-09-18; benchmark vs Pakistani peers: research/affanwizu-benchmark/): talking-head reels shot in front of
 the "skool" neon sign. **Scope is captions and nothing else.** The creator picks, orders and trims the
 clips, builds the frame, writes the title, and hands over a finished cut. We add Roman Urdu captions
 (Urdu written in English letters) that look exactly like theirs.
