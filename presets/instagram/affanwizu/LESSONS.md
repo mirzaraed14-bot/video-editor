@@ -3,6 +3,10 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-08: a reel inside a sequence named for another job (ABW10 "MJ Showed His Mother - raw cut v2")
+- **The tab name is not the job: read the sequence first.** He reused an AW Short's sequence (MJ, already built and delivered) for a new Urdu reel (31 clips of C1437.MP4); only the read-back showed it. A "caps" on a sequence carrying another job's name = read V1/A1 before choosing the caption style or touching that job's files. → job `projects/abw10-c1437-short/` (named after the source, the sequence name would mislead).
+- **The codeswitch prompt echoes "video script" into mid-sentence spans** (21.0, 26.0 here): the en window heard "They also pay the most tax". An ENGLISH warn on a prompt word = check the en window, then dismiss.
+
 ## 2026-11-07: an 8 s drop on a 1x rant, and a HANGING word that had moved (ABW10 Seq 46)
 - **WhisperX can lose 8 s mid-sentence on a plain 1x take** (8.65-16.95) and write a confident wrong run across a cut (31.85-40.4). `transcript_check.py` DROP caught the first; only reading the windows caught the second, so read them even where words.json looks full. → PLAYBOOK § 2.
 - **HANGING on one word = check the word's own edges before hunting for missing words.** "continuously" was 41.80-42.40, not WhisperX's 42.03-43.09; the rest of that span was the next word. A loudness envelope + a 6 s and a 10 s window settled it. → work/redecode2.py is the recipe.

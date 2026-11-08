@@ -21,6 +21,16 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
    Log the title and cover **as posted** too: on 10-29 none matched the rows we wrote.
 
 ## What the first results changed (2026-10-29; ranked by expected impact; evidence in FINDINGS § F1-F6 tested)
+**2026-11-08: rule 1 failed the bar it was registered with (FINDINGS § FALSIFIED). Affan's OK, same day: the next 3 picks run the FUNNY TEST below instead. Rule 1 is still scored beside it, for the record.**
+
+**The funny test (fixed 2026-11-08, BEFORE any candidate was scored on it).** Score 0-3, one point per part, half points allowed:
+- (a) **The laugh:** one line or turn a stranger would laugh at, on the words alone.
+- (b) **The scene:** told as events in order, with other people talking or doing something; not reflection or advice.
+- (c) **Anyone follows:** a 16-year-old gets it with no industry words; the nouns are things everyone knows.
+
+Proposals need 2.5+. Delivery can't be judged from text, so Affan's ear has the last word on (a). **The cut:** about 42 s or less, ending within about 6 s of the laugh, no advice tail.
+**The bar, for the next 3 Shorts, each read at 14 days public:** at least one passes 50K → the test stays and gets 3 more. All three under 13K → it goes to FALSIFIED. Anything between → 3 more before deciding. Chance alone gives one hit in three about 21 % of the time (1 of 13 so far), so one hit is a good sign, not proof.
+
 Bombas did 563K. The other seven did 0.3-13K. These rules are what separates them. They are HYPOTHESES, from one hit plus AW's
 three-part factor, and they are scored on every new Short until results promote them or kill them.
 1. **Pick test: the famous guest HIMSELF was wrong, lost, or was hurt, about a subject a stranger already knows.** Score each
@@ -112,6 +122,7 @@ B1 is re-weighted here, dated. One hit is the basis, so the benchmark predicts d
   "from bankruptcy 10 years earlier" kept, with a 1998 BANKRUPT -> 2009 SOLD TO DISNEY card under it (Affan agreed once it was explained).
 
 ## Title + thumbnail format (locked 2026-10-19; never changed per video)
+- **TITLE OVERRIDE (Affan 2026-11-08, Herjavec H3): 5 words MAX, a blunt hooking statement like his own "AI Isn't Your Magic Genie".** No guest name required, no two-sentence story titles. Aim for ~21-40 characters, one CAPS word at most, true to what the guest says. Evidence: Scott's best titles are 4-5 words (Gary Vee "Stop blaming everyone else" 258K, "Stop forcing deep connections" 299K, "Daymond John Almost LOST $250M" 659K); OverseerOS 2026 (18,436 Shorts, observational): 21-40 character titles median 53K views vs 9.7K-17K for every other length. The long "Title" line below is superseded; the thumbnail rules stand.
 - **Title** carries the FULL reversal and the name (search value): "Ryan Serhant saw a bank CEO's calendar. It was almost empty."
 - **Thumbnail**: a real photo of the person or the event (never a talking-head frame of the podcast), full-bleed 9:16; 2-4 words in Anton
   caps, white with a black outline, centred at ~66 % of the height; **exactly one word in teal #19D3C5**; a sentence fragment, not a

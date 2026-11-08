@@ -110,7 +110,7 @@ first 5 s); each `outputs/<job>.transcript.json`; and the AW evidence (`X:\Claud
     1. A stranger speaking = the famous thing on screen from frame 1 (the Pincus split).
     2. ONE text block in the first 3 s: captions and the watermark never stack on the hook card.
     3. The cover we deliver is the one that gets posted.
-- **Patrón: 7 views in 6 days, a distribution failure, not a hook failure.** Check its Studio row for an age restriction
+- **CORRECTED 11-08: Patrón never went public (copyright music issue), so this read is wrong.** Patrón: 7 views in 6 days, a distribution failure, not a hook failure. Check its Studio row for an age restriction
   (alcohol), visibility, or a claim. It was posted at 04:02.
 - **B1 on this channel's own top 5:**
   - **Gary Vee** advice Shorts did 259K and 299K: B1 ✓ with B4 ✗. A known face carries even advice to ~300K here.
@@ -126,6 +126,125 @@ first 5 s); each `outputs/<job>.transcript.json`; and the AW evidence (`X:\Claud
   - **Fresh** (web 11-03: not indexed).
   - **Risks:** heavy profanity, so bleeps; the same episode as the two Gary Shorts above, and "Stop blaming everyone else" is the
     THEME, so Affan checks that the Ricky story isn't in it; no video in the feed, so it needs the YouTube video.
+
+### 2026-11-08: does the AW proof check help Scott? (Affan's ask, via the beat-mining session; `research/instagram-beat-mining/`)
+The method has no results on AW yet either, so it is a hypothesis. AW's shape test is already here as ENGINE rule 1. The only new tool
+is reading real Shorts view counts before a pick, which ENGINE step 2 bars today (no YouTube requests from this machine).
+
+**Word-by-word read, from our transcripts and the 11-03 Studio export (zero requests):**
+| AW regularity | On Scott | Read |
+|---|---|---|
+| Opens on an interviewer's question (10 of 15) | Bombas opens on his own claim; the two host openers did 10K (FUBU) and 5K (Serhant calendar) | Does not transfer; rule 2 stands |
+| Ends on the sore spot, no lesson | Bombas ends on a lesson ("it's not for me to object, it's for me to understand"); "I'm still not there" did 5K | Does not separate; no rule |
+| 28-48 s, median 36 | The table below | A lead |
+
+| Short | Length | Avg view duration | APV | Engaged views |
+|---|---|---|---|---|
+| Bombas | 38.7 s | 36 s | 92.9 % | 339,839 |
+| Card chain | 51.2 s | 36 s | 70.4 % | 1,448 |
+| Pincus | 43.7 s | 32 s | 72.8 % | 794 |
+| Harary | 55.1 s | 42 s | 75.2 % | 94 |
+
+- **Viewers gave about the same 32-42 s whatever the length.** So most of the ~20-point APV gap to Bombas (§ 2026-11-03) is length, not
+  hold, which corrects that read. It does not touch the swipe gap (73.7 % vs 64-65 %). Patrón is left out (3 engaged views). Bombas is the
+  only large sample. Whether APV drives reach here is unknown.
+- **Our length has drifted up:** the first 8 Shorts have a median of 39.4 s, the last 7 a median of 51.2 s. With numbers on file, the
+  four at 50 s or more did 7, 244, 2.8K and 3.2K; the eight under 48 s did 322 to 624K, median 5.3K. Confounded by age: three of the four
+  long ones were under a week old when read.
+
+**Stress test, PRE-REGISTERED 2026-11-08, before any YouTube read. It waits on Affan's OK, since each search is a YouTube request.**
+- **Sample:** hits = Bombas (624K), Gutman (595K), Gary Vee (299K, 259K). Flats = every other Short of ours at 7+ days. Views are
+  re-read from Scott's Shorts tab. Patrón counts as flat but is flagged (7 views: distribution, not selection).
+- **Reads:** two searches per story, top Shorts view count from `a[href*="/shorts/"]` on desktop results. SUBJECT is the brand or person
+  ("Bombas socks shorts"). TELLING is the story at this angle ("Daymond John Sesame Street Elmo shorts"). Leave out the Short itself, its
+  re-uploads, and anything posted after it.
+- **Three rules, fixed now,** because METHOD step 8 reads a big number as both demand and freshness risk, and that reading cannot fail:
+  - A, proof: a higher TELLING means more views.
+  - B, fresh: a lower TELLING means more views (ENGINE rule 3).
+  - C, familiar and untold: SUBJECT ≥ 100K with TELLING < 20K predicts a hit.
+- **Pass:** for A or B, hits outrank flats on at least 80 % of hit-vs-flat pairs (50 % is chance). C must flag at least 3 of the 4 hits
+  and at most 1 flat in 4.
+- **Expected, written before reading:** A fails and B or C holds, since FUBU and RDJ, the most told, capped at 10K and 5.5K while Bombas's
+  telling is not indexed. If A wins, rule 3 is wrong and the benched stories (Scaramucci, DeJoria's note, Goucher) return to the bank.
+- **Contamination:** counts are read today, not at pick time. Prior Shorts keep growing, Bombas's fame may lift related Shorts in search,
+  and the Gutman (28 months) and Gary Vee (6 months) Shorts have had the longest to attract copies. Report with and without them. YouTube
+  also changed how Shorts views are counted around September.
+- **What a result means:** four hits is few. A pass earns only a forward test: log the read before upload on the next 4+ picks, then read at
+  d7 and d14. ENGINE stays unchanged until that is in. No separation means the method does not help Scott, and step 2 stays.
+- **Instagram is left out:** the Bray letter did 4.7M there and at most 153K on Shorts, and all that data is entertainment, not business.
+
+**Result, same day: no separation. The proof check does not help Scott, so there is no forward test and ENGINE does not change.**
+29 requests, no block. Data: `projects/_client-scott-clary/research/proof-check/` (`queries.tsv`, `reads.md`, `score.py`).
+| Rule | As pre-registered | Corrected by hand | Pass mark | Verdict |
+|---|---|---|---|---|
+| A, proof | 0.52 | 0.42 | 0.80 | Fails |
+| B, fresh | 0.48 | 0.58 | 0.80 | Fails |
+| C, familiar and untold | 2 of 3 hits, 5 of 10 flats | same | 3 of 4 hits, at most 1 flat in 4 | Fails |
+
+- **It would have rejected the hit and backed flops.** Bombas: subject 5,600, telling 174. Morgan: telling 4.3M, ours 1.4K. Serhant calendar: 664K on
+  the same angle, ours 5K. Chris Do: 50M on charging (uploader not shown, probably The Futur), ours 340.
+- **My expected result failed too.** B is barely above chance, and "familiar and untold" also flags card chain, Pincus, Harary, Serhant pitches
+  and Chris Do, all flat.
+- **Contamination doesn't rescue it.** Copies posted after a hit raise the hits' TELLING, which favours rule A, and A still lost.
+- **Deviations:**
+  - Gutman left the sample: its title names no story, and opening it can autoplay sound. That leaves 3 hits, not 4.
+  - Patrón left the sample after Affan's note: it never went public (see below). That leaves 10 flats, not 11.
+  - Shelf items show no upload age, so "posted after ours" could not be applied.
+  - The title terms misfired on 8 of 28 values (Sesame Street's own channel, the slang "Bembang fubu"). I corrected them after seeing the results,
+    so the corrections are not blind and both columns are shown.
+- **One lead survives: a told check can bench a pick, never back one.** All five stories with a telling at 20K+ stayed flat (FUBU, Serhant calendar, Marvel,
+  War Dogs, Morgan). That fits rule 3, but luck alone gives it 20 % of the time. Morgan and the calendar had passed our web-only freshness check. Untold
+  does not predict a hit: 3 of 9. The benched stories stay benched: nothing here supports picking a story because it already travelled.
+- **Patrón never went public (Affan, 11-08):** he doesn't think Scott uploaded it, he has asked him to, and there was a copyright music issue. So it is
+  not a flop and not a distribution failure, and it isn't on the public tab. Studio's 7 views (11-03 read) fit a file sitting private or blocked. A 1.2K Short
+  titled "Patrón Was Told 'Never More Than 20,000 Cases a Year.' It Hit 3.5 Mill…" is still from an unknown uploader.
+
+### 2026-11-08: what does Bombas have that the others don't? (Affan: "that factor … we can pull off again and again")
+Read: every word of Bombas against its closest controls, a frame sheet of the first 20 s of 8 Shorts, shot stats from each `yt/spec.json`.
+
+**Ruled out, because the same value appears on flat Shorts:**
+- **The face alone:** the same Daymond, episode and week did 659K, 10K (FUBU) and 3.1K (card chain).
+- **The self-own score:** see FALSIFIED.
+- **Shot pace:** Bombas 3.9 shots per 10 s; card chain 4.1, Harary 4.2, Morgan 3.9.
+- **Length alone:** Chris Do at 33.9 s did 340; Morgan at 38.2 s did 1.4K.
+- **No data cards:** Bombas has none; neither do card chain, Pincus, Harary or Squibb.
+
+**What is left. All of it is read after the fact from one hit, the same trap as the pick test, so these are hypotheses:**
+1. **It is funny: a joke told as a scene, with other people talking.** "They're like, thank you. Click." → "Sesame Street? … these idiots" → "Daddy, put on
+   your Elmos" → "a little tear … not because of the Elmos, because I was like, I'm going to make a lot of money." Only our top three land a clear punchline:
+   | Short | Clear punchline | Views |
+   |---|---|---|
+   | Bombas | ✓ the tear is about money | 659K |
+   | War Dogs | ✓ "I'd buy you all diamonds" | 13K |
+   | FUBU | ✓ "I didn't lie. I just romanced the truth." | 10K |
+   | Marvel | ✗ | 5.5K |
+   | Serhant calendar | ½ then "I'm still not there" | 5K |
+   | Serhant pitches | ✗ | 3.2K |
+   | Card chain | ½ "he's extra crispy" at 5 s, nothing pays it off | 3.1K |
+   | Pincus | ½ "It's impressive." | 2.8K |
+   | Harary | ✗ | 1.8K |
+   | Morgan | ½ | 1.4K |
+   | Herjavec crash | ✗ | 1K |
+   | Chris Do | ✗ | 340 |
+   | Squibb | ✗ | 228 |
+
+   This revives F5, which the 10-29 read dropped because War Dogs also had it. War Dogs is our second best. The pick test then steered us to wounds and regrets
+   (Pincus, Harary, Squibb, Herjavec), which are not funny.
+2. **Anyone can follow it:** socks, Snoop Dogg, Elmo. The flat ones need "asset class", "retail operator", ".edu" trust, Tribe, Takara, forecasts.
+3. **Something new every ~5 s, and it ends on the laugh:** the punchline lands at ~31 s of 38.7. The Herjavec crash pays off at ~26 s, then 17 s of advice. The
+   card chain pays off at ~46 s after a slow flashback. Herjavec's $500M ends as a sermon.
+4. **The pictures are the joke's nouns, filling the frame:** Flavor Flav socks, the sock wall, the Sesame Street box. Since the card chain, many inserts are small
+   floating cards on a dark blur. Lowest confidence: those are also our youngest Shorts, and FUBU's bright full-frame look did 10K.
+
+**Luck can't be separated yet.** Bombas had 35K on 10-21 and 238K on 10-22. On AW, 2 of the last 18 Shorts passed 1M. No factor makes every Short a hit.
+**The arithmetic:** 240K per 12. Without Bombas, the Shorts on the tab total about 38K, about 3K each. So the goal is one ~200K Short per 12, on top of a slightly
+better floor. "Why Robert Herjavec Loses BILLIONS On Purpose" (1.1K) is in that total but may not be ours.
+**Other routes exist:** Gary Vee's advice Shorts did 300K and 258K with no story, on a face everyone knows. What the Gutman Short (595K) shows is still unknown; it is
+the only other story hit on the channel.
+**Proposed, not adopted (Affan's call):** choose the next 3 picks on "is it funny, could you retell it at dinner", score that before posting, read at d7. Candidates the
+pick test benched, not yet re-read: Daymond's "Kevin O'Leary is Santa Claus telling you to go f— yourself" (TOP-MOMENTS #4; 4 bleeps, a 4th Short from that episode),
+Morgan's OJ Bronco and Ted Bundy VW (wow-stories #5), Gary Vee's "Ricky" (screen-R1 V2).
+**Still missing:** the retention curve per Short from Studio (the 11-03 export had none), which would show where Bombas holds and ours drop.
 
 ### Bombas benchmark scorecards (ENGINE § The Bombas benchmark; written 2026-11-02, BEFORE any 7-day result of these three)
 | Factor | Bombas | Pincus (made) | Harary (made) | Paul Allen (planned) |
@@ -158,9 +277,12 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
 - H5: on Affan's client sequences the overlays are his slots only (he caps them; "don't spam overlays").
 
 ## FALSIFIED (dated; never re-derive)
-(none yet)
+- **2026-11-08: the pick test (ENGINE rule 1) as a predictor of views.** It failed the bar registered on 10-29 ("if a 2.5 does under 13K … the rule is wrong"): card
+  chain scored 2.5 and did 3.1K at 10 days. Pincus and Harary scored 2, were expected at 20K+, and did 2.8K and 1.8K at 7-8 days. Without Bombas, pick score against
+  views across 11 Shorts gives a rank correlation of −0.19. It fits the one hit it was built from and predicts nothing else. Squibb (2.5, 228 views) is still young.
 
 ## Story bank (screened, not yet made)
+- **2026-11-08: the funny-test picks** (Affan's OK): Herjavec's unsaved spreadsheet (3), Daymond's "You're not Snoop" (2.5), Gary Vee's Ricky (3); alternates Marino "sold one" (3) and Mandell's prison gag (2.5). Words, cuts and cards: `projects/_client-scott-clary/research/funny-test-picks.md`. The bank has only been searched for words like "funny", not re-read for this test, so better ones may exist.
 - **2026-11-04: Robert Herjavec (Shark Tank), Scott's new episode.** Affan: "all in for the next 3 days". H1 ("sold for ~$500M, next
   day: I got to get to a billion") and H2 ("Dancing with the Stars scared me more than a 203 mph crash") are the FIRST picks ON PAR
   with Bombas (~9.5/11, B1 + B4). Slate, scorecards, text blocks and a false-claim warning: `research/herjavec-blitz.md`.
@@ -303,6 +425,9 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
   - Patrón (made, not yet posted): 1. Experts said it was too expensive and he was proven right: a vindication, not a cost.
 
 ## Freshness log
+- 2026-11-08, web search (not YouTube), on the funny-test picks:
+  - **Not found:** Daymond's "Santa Claus … twinkle in his eye" riff; Gary Vee's Ricky firing story; Herjavec's unsaved spreadsheet.
+  - **Corrected:** Ross Mandell's prison term IS verifiable: convicted July 2011, 12 years, $50M forfeiture (DOJ SDNY, May 2012). The 10-30 "not verifiable" entry below is wrong on that. His daughters story is still unchecked.
 - 2026-11-02, web search (not YouTube), on the R16-R20 tops:
   - **Told:** Marino's "sold one" after Shark Tank (Looper, "Whatever happened to Aaron Marino's Alpha M."; Shark Tank Blog).
   - **Not found:** Squibb's Helen and payroll story (no web hit; possibly on his own TikTok, which this machine can't check).

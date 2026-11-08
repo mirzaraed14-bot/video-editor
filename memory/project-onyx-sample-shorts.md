@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-11T23:49:03.135Z
+  modified: 2026-11-08T08:47:21.581Z
 ---
 
 Started 2026-10-04. Affan's agency Onyx Influence emails US podcast hosts for permission to use one of their Shorts.
@@ -139,12 +139,28 @@ Gmail connector can't carry video. Drafting prompt: `_onyx-batch6-2026-10/EMAIL-
 - 2026-11-05: all six 60 fps finals are in X:\Claude Projects\Exports\ as `affancuts-<job>-ig.final.mp4` + `-ig.cover.jpg`, not uploaded (he uploads). Short 1 also has `...final.header.mp4`: his experiment of a profile header above the window (picture, Affan / @affancuts, his hook line; `full-episodes-wont-save-you/ig/header.py`, added at the mux, no re-render).
 - Still unanswered, built as is: made-up view counts on Shorts 2 (1M+, 500K+) and 4 (2.4M), Short 2's caption "reviews", whether his new 0.3 s pause-cut rule applies to these six.
 - Kit lessons are in presets/instagram/neon-window/LESSONS.md (2026-11-04 entry): the 59.94 timebase and the local-median tracker.
+- 2026-11-08: Affan wants the profile header on every organic reel, with HIS hook per reel, before he gives a music track per reel.
+  Done: Short 3 (instagram-builds-the-person) "Posting on Instagram doesn't make you money but gets you this", Short 5
+  (one-short-two-variants) "IG VS YT Formats" → Exports `affancuts-<job>-ig.final.header.mp4`. They were built from a worktree session without
+  touching the job folders: the scratch `header_any.py` copy of header.py (hook as an argument; a hook that fits one line stays one line),
+  the PNGs are in `X:\Claude Projects\onyx-staging\organic-headers\`, and the mux is header.py's own (picture60 + mix.wav + PNG, one encode).
+  Same day, ALL of Shorts 2-6 done the same way (Short 1 was already uploaded, so it was left alone). The hooks: 2 "How to waste money in the podcast space 101", 4 "How to make your
+  podcast clip friendly", 5 "Why one video needs 2 variants" ("IG VS YT Formats" was only his label), 6 'Your title is not a "Statement Builder" it's THIS'.
+  He also heard "wind noise": measured, it is broadband steady room or fan noise ~22-25 dB under the voice. DeepFilterNet (AW LESSONS 4 recipe) cleaned each voice
+  (`onyx-staging/organic-clean/<job>.voice.dfn.wav`): floor -5..-9 dB in the finals, speech and -12 LUFS unchanged. Each job's own yt_mix spec was re-run in
+  staging with that voice. The plain `-ig.final.mp4` files still carry the noise. His music tracks per reel come next: lay them on the CLEANED mixes.
 - Open questions:
   - Is C1438 (Urdu, about fake call-centre accents) the "7th video"?
   - Short 5's receipt: does he want a real AW like-count screenshot?
 
 ## Batch 7 (2026-11-05): restructured samples
-Tracker `projects/_onyx-batch7-2026-11/BATCH.md`, sequencing `SEQUENCING.md`, builder brief `BUILDER-BRIEF.md`. Yes list = heretics, On That Note, Melanin Money, Rise Above, Remnant Radio (all 11-04), Barbell Logic (11-02). Affan picked: heretics = Drea de Matteo's Sopranos money story (not the permitted Short, top priority), John Legend and Melanin restructured from the permitted Short, Rise Above = death row guard (pharmacy story rejected). All three built are with him for notes and songs.
+**Resume at `projects/_onyx-batch7-2026-11/HANDOFF.md` (2026-11-07).** Review 1 applied 2026-11-06, all three with him; waiting for his grade and caption calls, his songs, and his OK on death row v4.
+Tracker `projects/_onyx-batch7-2026-11/BATCH.md`, sequencing `SEQUENCING.md`, builder brief `BUILDER-BRIEF.md`. Yes list = heretics, On That Note, Melanin Money, Rise Above, Remnant Radio (all 11-04), Barbell Logic (11-02). Affan picked: heretics = Drea de Matteo's Sopranos money story (not the permitted Short, top priority), John Legend and Melanin restructured from the permitted Short, Rise Above = death row guard (pharmacy story rejected). All three built are with him for notes and songs. 
+
+**2026-11-07 check (tracker + log + Gmail, read-only; NOT yet in HANDOFF.md/BATCH.md, because a worktree session's Edit is blocked on the main checkout; copy it there when a session can):**
+- Reactions owed = 6: Drea, Melanin, John Legend, death row (once built), plus Brotherly Love and SPI (samples final 11-02, reactions to be re-recorded, none found).
+- Yeses with no sample = 6, ranking offered to him, not decided: (1) Ron Spomer Outdoors, NEW yes 11-05 17:23 UTC, not in tracker or log, no thank-you sent, passes the five checks, Short "Bear Protection Handguns Choose the Right Caliber & Ammo!"; (2) Rise Above, v4 and source ready; (3) Barbell Logic, best money on file ($2.4-2.9M revenue reported), fails check 1 by 2.9K subs, 17 s Short needs a moment from an episode; (4) High Performance, ~820K, fails check 5, Giacomo OK'd a sample with approval and Affan said 10-27 he'd send one; (5) Chase Hughes, fails check 4; (6) Remnant Radio. Judy, Stefanie and Jon Krohn were dropped by him 10-21.
+- One reply from a yes: Mulligan Brothers Interviews (838K, passes the five checks), Jordan asked 11-05 "Could you link the channel?", unanswered.
 
 ## Moved from the MEMORY.md index (2026-11-06)
 per-prospect sample Short + Affan's reaction video for podcast outreach (page @affancuts); BOTH looks (YouTube B-roll 'Sean Ryan' + IG neon window) for every yes since 2026-10-24; batch and reaction log in the file; ORGANIC batch 1 (his own C1439-C1444, IG look, one/day): all six 60 fps finals in Exports 2026-11-05, not uploaded; Short 1 also with his profile-header experiment

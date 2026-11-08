@@ -175,3 +175,5 @@ face onto a letterbox overlay, like his Harry pills). Final Renders + Exports, s
 → 2026-11-05 ~20:15 La Toya v3 DELIVERED (his note on v2, angry: "I don't want her face here for like half a second"): Tel Aviv overlay runs through "Yes" into Gordon, face gone, 2 camera-flash frames out, 3 credits. sha256 4b2c2309…, v1 + v2 kept. Open: his Bolt verdict. At his review; start at REPORT.md.
 
 **2026-11-06 'Why Ronaldo Just RETIRED From Portugal' v1 DELIVERED** (`projects/ronaldo-retires/`, REPORT.md): his Tella 1 + re-cut as spec, legendary overlay per sentence, 53.77 s, 34 Higgsfield credits. His re-cut puts 'he was a drunk person' in, reversing the brief. Waiting on his review; open: childhood photo for 'a boy in Madeira'.
+
+**2026-11-08 'What Michael Jackson Showed His Mother' v1 DELIVERED** (`projects/mj-showed-his-mother/`, REPORT.md): from his 38.50 s re-cut + Tellas 1-2, first-party voices, real stretcher, O2 and hospital pictures, fade out, 5 Higgsfield credits. Opus decided, Sonnet built through frame gates. Four overlays are mine and removable. Waiting on his review.

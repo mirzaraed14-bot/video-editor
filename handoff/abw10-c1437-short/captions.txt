@@ -1,0 +1,75 @@
+# ABW10 · "MJ Showed His Mother - raw cut v2" REUSED by him for a new reel (59.58 s, 60 fps, 31 clips of X:\Recordings\PBU\C1437.MP4 at 1x) · yellow deep-talks · baseline y1165 (chin 1050 + 115) · max 5 words/line
+# rant: load-shedding with the US gaming friends; the middle class lives around road, bijli, pani, gas; gatherings talk only about that; you pay the bills, facilities should come; how will the country move forward.
+# Quoted: his message to the US friends, what he was ashamed to tell them, his inner voice at the gathering, what the elders say there.
+# words = transcribe_fw.py (WhisperX OOM risk at 5.1 GB free), timed by the wav2vec2 alignment; re-decoded ur + hi + en in 10 s windows (work/redecode.txt). No speech pause >= 0.2 s in the whole cut.
+# FLAGS (my readings): 0.00 "gaming" (first word, cut on its onset); 2.69 "chali jati thi" (ur + hi both hear چلے آتی / चले आती); 10.79 "kese bataye aadmi" (hi बताया आदमी); 16.11 "rakha hua hai" (all hear رکھاوا = rakha wa); 34.32 "gaur karo ge" (ur گوھر, hi और, en "think"); 42.60 "road hoga" (ur ہوگا, en "roads are not working"); 47.46 short filler before "khud sochen" (ur اللہ, hi वह, first pass والا) left uncaptioned; 53.02 "kyunke bill de rhe ho" (hi क्यों दे रहे हो, en "if you are giving")
+@0.00 | gaming wagera karta tha mai
+@1.21 | US walon ke saath
+@2.05 | bohat hota tha na
+@2.69 | ye light chali jati thi
+@3.74 | message kar rha hun ke
+@4.71 | “yar power out hogyi hai”
+@5.94 | whatever unko samajh hi
+@6.83 | ni aa rha
+@7.24 | khud bhi na
+@7.76 | mujhe sharam aati thi
+@8.53 | batane mai ke
+@9.09 | “yar matlab light chali gyi”
+@10.02 | matlab is tariqe se
+@10.79 | kese bataye aadmi
+@11.57 | in logon ko
+@11.94 | kia samjhayen ge
+@12.58 | specially bhai
+@13.19 | middle class walon ko
+@14.07 | yahan road bijli pani
+@16.11 | gas pe rakha hua hai
+@17.04 | basic necessities hai na
+@18.38 | middle class ka
+@19.07 | is pe dhyan hota hai
+@20.08 | poora wala unka
+@21.07 | day to day activity
+@22.10 | iske around
+@22.69 | revolve karti hai
+@23.42 | 6 baje pani aaye ga
+@24.65 | to aapne wo kholna hai
+@26.04 | tax bhi sab se zyada
+@27.01 | dete hain bechare
+@27.66 | or roads aap dekh lein
+@28.70 | gas ni aa rhi
+@29.51 | to cylinder lagana hai
+@30.73 | aap kisi gathering mai
+@31.52 | jao ge na baron ki
+@32.45 | matlab usme
+@32.95 | jao ge aap
+@33.60 | bethna khud usme
+@34.32 | or aap gaur karo ge
+@35.25 | “yar ye log to”
+@35.80 | “isi cheez pe”
+@36.18 | “baat karte hain”
+@36.73 | matlab hota hai na
+@37.74 | aage ki baat ho
+@38.75 | koi matlab productive
+@39.90 | cheezon ki
+@40.71 | baat ho rhi hai
+@41.10 | zyada log kia baat
+@41.97 | kar rhe hote hain
+@42.60 | “road hoga”
+@43.05 | “ye chal rha hai”
+@43.86 | “light to hamare”
+@44.45 | “aati ni hai”
+@44.88 | “solar ka hum”
+@45.37 | “soch rhe hain”
+@45.86 | “yar tum logon ka”
+@46.45 | “pani ka kia scene hai”
+@47.72 | khud sochen
+@48.11 | kitni afsos ki baat hai
+@49.20 | jo basic necessities hai
+@50.50 | iska aapko ilm ni
+@52.03 | hona chahye ek tariqe se
+@53.02 | kyunke bill de rhe ho
+@53.94 | to aapko kia hona chahye
+@54.84 | bhai aapko facilities milni chahye
+@56.30 | kahan se aap socho na
+@57.21 | mulk aage jaye ga
+@58.00 | jab aapne unko
+@58.71 | yahan hi rakha hua hai

@@ -1599,3 +1599,28 @@ REPORT.md). At his review.
   restarted the zoom at Harry's "yep" (2.53 s) and at 27.2 / 27.9 / 32.63 on the strength of 4 size steps measured on his
   renders: a measurement is not his rule when he says otherwise. → `make_timeline.py` groups a same-source + same-setup
   face run into one zoom (as v1/v2 did), README § 3 corrected.
+- 2026-11-07 (Jermaine jealous, HIS REVIEW 1 of the raw cut, Tella) — lesson → change → file:
+  (1) **One Short, one topic.** He deleted the approved opening (the "Word to the Badd" skin questions + the phone calls): "it was just going all over the place ... if we just have this one topic ... and we build on that". The script was locked and approved, and the sequence still showed him what the script could not. → new sequence `Jermaine Jealous - raw cut` (his clips + two bits on the one topic), `projects/jermaine-mocked-skin/BRIEF.md` § HIS REVIEW 1.
+  (2) **Measure every source at intake, not just the words:** loudness AND stereo phase per line. The official UCLA upload sits at −47 LUFS (26 dB under everything else, line 9 was close to inaudible, I flagged "not level-matched" without measuring). The detail's NBC Today lines are phase-inverted (L/R correlation −0.93, also in their 2.34M Short): the mono sum loses 10 dB, including on a one-speaker phone. An "official" source is not automatically the better audio. → baked gain / left-channel mezzanines in `seq_src/`, per-line LUFS and correlation checked on the rebuilt timeline audio.
+  (3) **The detail stitches interviews.** Its Jermaine "In His Own Words" cut joins the 1991 NBC Today answer to a later appearance (set reads as Snoop Dogg's GGN), and the Word to the Badd interviewer lines are a third source. Grep the full interview before calling something one answer, and tell him.
+
+## 2026-11-07 What Michael Jackson Showed His Mother, Tella 1 (`projects/mj-showed-his-mother/`)
+- A bit with bad, far-away audio is out however strong its words ("the audio is very bad... we will have to compensate with video overlays"): he cut the fire inspector (640x480, audio over a still) and Tito's podcast audio. Change: picks now need high video AND audio quality from a first-party voice: family, the subject, or an on-camera eyewitness. File: this entry, BRIEF § TELLA 1.
+- Search the local long docs by keyword before going to YouTube: 26 local files scanned with small.en in minutes, and `The Michael Jackson Interview TAKE TWO` gave Karen Faye on camera ("The whole top of his head caught fire right in front of my eyes") plus real ambulance and hospital video. Scan script: `projects/mj-showed-his-mother/win/scan_all.py`.
+- He re-cuts tight: the 58 s script became 33 s by his hand. Expect it; show new bits as a v2 sequence beside his cut, not over it.
+- A line he remembers can come from an earlier draft: "settled for a million dollars" was in script v2 and dropped in v3. Check earlier versions when he recalls a bit.
+- Overlays: Michael "looking absurd" over the plastic-surgery question, not a normal-looking freeze; a silent listening shot of the person being asked over the question.
+
+## 2026-11-08 What Michael Jackson Showed His Mother, build (`projects/mj-showed-his-mother/`)
+- 60 Minutes Australia (Katherine) goes orange under his grade: sat_level alone doesn't fix it. Pre-grade tint R×0.80 + sat 0.66 gave skin sat 0.59-0.61, R/G 1.58-1.74; R×0.76 overshot to grey with purple lips.
+- A pre-grade lift on dark archive turns it milky: the fire went unreadable teal with gamma 0.7. Keep the blacks, and leave the crop near full height: a tight box on old footage is a soft blob.
+- A very short shot between two transitions is never clear: Michael's 1.27 s line sat between a cyan and a purple. Make one side a hard cut.
+- Check the CTA pill against the zoomed face: under a push-in Katherine's lips reached y1400 and the pill sat on them. Moved it to the next overlay.
+- Settle a disputed word by running several models and beams on the slice AND reading the level strip: "like it was a million" came from large-v3 beam 5 only (10 of 12 runs said "like a million", and the strip shows silence where "it was" would sit). Never pick a word from one pass.
+- Real footage exists more often than a still: he asked for a stretcher picture and the O2 still; Take Two and a 4K upscale had both as video. Report it as a swap he can reverse.
+
+## 2026-11-08 What Michael Jackson Showed His Mother v2 (his note on v1: no head tracking, jittery, not native 60)
+- A kit copied from another Short carries that Short's decisions: Ronaldo's "no Topaz, no 60 fps" and its smooth_track STATIC (one median anchor = no head lock) went into this build unseen. Every AW code build: per-frame head lock on speaker shots, then his Topaz recipe (stabiliser on faces: it is what makes it loose, never a rigid final), Chronos replacing duplicates, 60 fps export. Change: BUILD template rule; check `smooth_track` STATIC and `cover_clamp` before any render.
+- Measure the head on the DELIVERED file before calling it locked (`projects/mj-showed-his-mother/win/head_measure.py`); his own finals measure 0.6-4.5 px frame to frame, 20-200 px range per second.
+- Smoothness has a number: % near-duplicate frames per shot (`win/smooth_check.py`); 0 % on every moving shot after Chronos.
+

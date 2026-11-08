@@ -38,3 +38,5 @@ match across every visible same-scale jump cut; one base scale per run between f
 
 ## Moved from the MEMORY.md index (2026-11-06)
 Affan 2026-10-19: on same-camera jump cuts the head must not move up/down or change size; 2026-11-04: code-built Shorts use head_track (not the chained lock) and no micro-pause jump cuts on his face; 2026-11-05: on Scott Shorts every pause closes, jump cuts wanted, head_lock keeps it steady
+
+2026-11-08 (MJ Showed His Mother v1): "literally no head tracking" when a copied kit had smooth_track STATIC on. His AW workflow is frame-by-frame head track (AE), THEN Topaz with its stabiliser, which makes it "not so rigid ... very loose and nice and smooth". A dead-still head in the final is wrong; no tracking at all is wrong. Always head lock + Topaz + 60 fps on AW code builds.

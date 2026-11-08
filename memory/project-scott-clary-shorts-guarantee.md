@@ -36,3 +36,5 @@ On 2026-11-01 Affan was upset that the Shorts were still at 3-5K. The answer (FI
   famous guests, and agreeing at what age the views are counted.
 
 When he's discouraged, lead with the evidence, not comfort.
+
+**2026-11-08: the self-own pick test FAILED its own registered bar** (card chain 2.5 → 3.1K; pick score vs views without Bombas: −0.19; FINDINGS § FALSIFIED). The "How to apply" above is out of date until Affan picks a replacement. Best current read, from one hit and after the fact: Bombas is a FUNNY scene anyone can follow, ending on the laugh; only our top 3 land a clear punchline (659K, 13K, 10K). Patrón never went public (copyright music issue), so it isn't a flop. The AW proof check also failed on Scott (FINDINGS § 2026-11-08).
