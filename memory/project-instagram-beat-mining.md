@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 0ac70c57-b1cb-4865-b958-7d9d45bd812d
-  modified: 2026-11-08T11:18:35.014Z
+  modified: 2026-11-10T12:42:04.474Z
 ---
 
 Affan, 2026-11-07 (voice, from his phone), on where his growth really came from. He made about $2,600 from YouTube Shorts last
@@ -30,5 +30,12 @@ pace, stop at any block or captcha (same rule as [[feedback-youtube-sourcing]]).
 [[project-abundance-shorts-automation]].
 
 **Pilot, 2026-11-07 (research/instagram-beat-mining/):** a creator's `/<name>/reels/` tab shows real view counts, so scanning fan pages beats search. "No results" is phrase-level, not throttling; hashtag pages are the fallback. Chrome localStorage `trs` on youtube.com holds 236 transcripts, searchable with no YouTube requests. Affan's added bar that day: every beat needs its own proof, and topics must match frameworks extracted from his own winners (FRAMEWORKS.md). Picks and locked predictions: IDEAS.md. Unproven on YouTube until RESULTS-TRACKER.md has 4-6 flat rows. 2026-11-08: stress tested on Scott Clary's Shorts and it failed there (no separation; would have rejected Bombas), so don't apply it to Scott; the result says nothing about AW (presets/youtube-shorts/scott-clary/FINDINGS.md).
+
+**Where it runs (Affan, 2026-11-07):** asked "Cowork or Code?" for the daily version, he chose **Code**, as a **linked
+subsession of the main AW hub session**: "make a subsession ... which stems from this session so that everything is in one main
+session." Reasons he was given: Code drives the same signed-in Chrome, reads the Cowork engine files (ENGINE, RESULTS,
+handoffs) directly, downloads and transcribes locally, and hands an approved idea straight to a build session; Cowork needed
+file staging and a sandbox where per-video YouTube downloads were bot-blocked. The Cowork CHAT can't be reached from Code,
+only its files: if he wants that project consulted, he asks it himself. Not tested side by side.
 
 **Run 2, 2026-11-08:** Affan asked for one Bieber and one MJ Short by the same method. Scripts are in IDEAS.md § RUN 2: Bieber Oslo walk-off → *Seasons* pulse line; MJ Victory Tour greed charge → Ladonna letter, donation, farewell. Reuse must be checked by transcript, including our own long-forms: the pulse line was already in our 1K long-form `vHd5t-6xSAc`.

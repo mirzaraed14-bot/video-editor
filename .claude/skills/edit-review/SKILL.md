@@ -1,6 +1,6 @@
 ---
 name: edit-review
-description: "The automated defect loop (step 5c, welded to Graphics): after graphics-build's first pass, the deterministic gate (workflows/graphics-qa.py, must be green) then fresh-eyes subagent review rounds (two dimensions, cap 3) converge the edit to ZERO objective defects before it ever reaches the creator. Defects only, never taste. Reviewers and skeptics run one tier BELOW the session's own model (Fable → Opus, Opus → Sonnet, Sonnet → Haiku, read the current model, never hardcode; `model` must be passed explicitly or agents inherit the session tier); the main session keeps creative judgment and adjudication. Stops on the first full round that finds nothing, then runs the final gate (real render + audio/framing verify) and reports. Triggers: polish loop, polish the edit, review the edit, dial it in, edit review, run the review rounds, converge the edit, one-shot finish."
+description: "The automated defect loop (step 5c, welded to Graphics): after graphics-build's first pass, the deterministic gate (workflows/graphics-qa.py, must be green) then fresh-eyes subagent review rounds (two dimensions, cap 3) converge the edit to ZERO objective defects before it ever reaches the creator. Defects only, never taste. Reviewers and skeptics run one tier BELOW the session's own model, never below Sonnet (Fable → Opus, Opus → Sonnet, Sonnet → Sonnet, read the current model, never hardcode; `model` must be passed explicitly or agents inherit the session tier); the main session keeps creative judgment and adjudication. Stops on the first full round that finds nothing, then runs the final gate (real render + audio/framing verify) and reports. Triggers: polish loop, polish the edit, review the edit, dial it in, edit review, run the review rounds, converge the edit, one-shot finish."
 ---
 
 # Edit Review: the defect loop (step 5c, the automated half of Graphics)
@@ -246,8 +246,10 @@ move is a new assertion in `graphics-qa.py`, not a fourth round; stop and report
 ## Token efficiency: the rules
 
 - **Every subagent runs one tier below the session** (Fable → Opus, `model: opus`; Opus →
-  Sonnet). The main session keeps the creative work: adjudication, fixes, final judgment. Never fan
-  out at the session's own tier, `agent` inherits it unless `model` is passed.
+  Sonnet), **never below Sonnet**: a Sonnet session keeps Sonnet reviewers and skeptics, never Haiku
+  (Affan 2026-11-10). The main session keeps the creative work: adjudication, fixes, final judgment.
+  Never fan out at the session's own tier (the Sonnet floor is the one exception), `agent` inherits
+  it unless `model` is passed.
 - **The script runs first and is free**, and it is why the fan-out is this small.
 - Reviewers are per-DIMENSION (2 per round), not per-graphic. Skeptics spawn only per finding,
   so a clean round costs 2 agents and nothing more.

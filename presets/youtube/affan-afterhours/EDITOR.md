@@ -32,6 +32,7 @@ treatment and his verdict in `…-facecam/LESSONS.md`.
   This repo is the edit.
 
 ## 2. Reading order for a long-form job
+0. **`JOBS.md` (this folder)**, the job log: the last video of this kind (the one to beat by 1 %) and what still waits on him.
 1. `presets/youtube/affan-afterhours-facecam/CREATOR-HAND.md` — **the creator's own grammar, read off their shipped
    timelines. Wins over everything else.**
 2. `…-facecam/HUMOR.md` (the 0.8x slow-down + staccato grammar) · `…-facecam/PLAYBOOK.md` (per-step) ·
@@ -64,6 +65,18 @@ treatment and his verdict in `…-facecam/LESSONS.md`.
 | grade | none; the LED room is the look | facecam PLAYBOOK step 4 |
 
 ## 3b. Shorts on one card (`research/afterhours-channel-audit/shorts/SHORTS-STYLE.md` § 5)
+**Since 2026-11-04, his Afterhours Shorts are made in the Scott Clary YouTube look** (his ask on C1445 and again on
+C1448). The rules for it:
+- Black + pink MGs (`#EE2A9A`).
+- His own branding only: no Scott watermark or CTA.
+- A native 59.94 code build into `X:\Claude Projects\Exports\`.
+- Build v1 on the stated defaults and deliver it, with the open questions and the defaults taken listed in the delivery note.
+  Sequencing-as-text is not a gate (`memory/feedback-build-dont-block-on-questions.md`, 2026-11-10, wins over the older
+  sequencing-first rule here).
+- The template to start from and beat is **`projects/gta6-head-start`**, approved with no notes (channel LESSONS 2026-11-06).
+
+The card below is the channel's older, self-cut Shorts style. It is still the evidence base, but it is not the look to build.
+
 1080×1920 · the 16:9 cam in a centred band (base 126–150 %), black bands · a one-line reaction TITLE (Anton caps,
 top band, 1–2 emoji PNGs) the whole way · CAPTIONS: one Essential Graphics clip each, Anton white + thin black
 outline + soft shadow, 1–3 words (mean 2.2), 0.6–0.9 s, hard swap, ONE fixed y just under the lips, only `?`,
@@ -73,9 +86,21 @@ bigger captions (63–79 px), opened on him looking down/reading, a quiet bed an
 not a proven cause. Master ≤ −2 dBTP (two recent Shorts peaked at 0.0).
 
 ## 4. The job flow (who does what)
-Intake (camera has NO audio — the voice is the OBS file; sync per channel LESSONS 2026-09-22/-30) → rough cut
+**One fresh session per video.** He sends the recording path to the Afterhours Editor session, which probes it and
+opens a new session with a self-contained brief. Its checklist, and the log of every job, are in `JOBS.md`.
+
+**The recording folder is not the channel.** `X:\Recordings\Afterhours\` has held AffanWiz footage (C1427, C1449,
+C1450, C1454), and a GTA video was recorded into `Onyx\` (C1409). Settle the channel from the content.
+
+**A separate "short version" take of a long-form is its own Short job** (C1448 for C1447).
+
+Intake checks the raw for an audio stream first:
+- Shoots up to 2026-09-30: the camera had NO audio; the voice is the OBS file, synced per channel LESSONS 2026-09-22/-30.
+- Video 22 on: the camera carries the DJI mic voice.
+
+Then → rough cut
 (`rough-cut` skill; keep improvised jokes, cut retakes/dead air; per-burst transcription FIRST — WhisperX hides
-retakes on this mic) → replay onto the creator's sequence in `ABW8.prproj` → face motion (nests + presets + cut zooms +
+retakes on this mic) → replay onto the creator's sequence in `ABW10.prproj` (ABW8 for video 22 and earlier) → face motion (nests + presets + cut zooms +
 slow-downs + staccato) → overlays (from the creator's Tella brief when there is one: face clips dragged up to V2 =
 slots) → pops + meme SFX → music + dropouts → **stop: the creator exports** (`memory/feedback-affan-exports-himself.md`)
 → after upload, phase D: diff the shipped timeline (`research/afterhours-channel-audit/prproj/read-timeline.py`) and
@@ -84,9 +109,10 @@ log what they changed — even when they say nothing.
 ## 5. Where things are
 | what | where |
 |---|---|
-| live Premiere project | `E:\Premiere Pro Exports\Adobe Premiere Pro Auto-Save\…(×6)\ABW8.prproj` (never write it without a backup; read a gunzipped copy) |
-| camera recordings | `X:\Recordings\Afterhours\C13xx.MP4` (1080p59.94, no audio) |
-| OBS voice | `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Batch Batch\<date time>.mp4` |
+| job log + resume block | `JOBS.md` (this folder): every job since video 22, its sequence and its state |
+| live Premiere project | **ABW10** since video 23 (one named sequence per video, e.g. "GTA 27 - Complete Guide"; it is shared with the English Editor session, so message before saves). ABW8 for video 22 and earlier: `E:\Premiere Pro Exports\Adobe Premiere Pro Auto-Save\…(×6)\ABW8.prproj`. Never write either without a backup; read a gunzipped copy. |
+| camera recordings | `X:\Recordings\Afterhours\C1xxx.MP4` (1080p59.94; since video 22 it carries the DJI mic voice, before that no audio). The folder also holds AffanWiz footage, see § 4 |
+| OBS voice (shoots to 2026-09-30 only) | `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Batch Batch\<date time>.mp4` |
 | shipped masters | `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` (`PC Release.mov`, `Weather GTA.mov`, `Collector.mov`…) |
 | GTA 6 Extended Look | `E:\Bullshit Folder\Simone\GTA 6 (Grand Theft Auto 6) - Official Extended Gameplay.mp4` (also `G:\My Drive\Range\`, `projects/gta6-pc-release/broll/`) |
 | official GTA V / RDR2 gameplay | `E:\Bullshit Folder\Canelo\Grand Theft Auto V Official Gameplay Video.mp4`, `…\Simone\Red Dead Redemption 2- Official Gameplay Video.mp4` |
@@ -103,7 +129,12 @@ log what they changed — even when they say nothing.
 - Keep improvised jokes; cut retakes, stumbles, dead air (channel standing rule since 2026-09-25).
 - Fetch YouTube B-roll yourself, H.264 (`memory/feedback-youtube-sourcing.md`); name what you pull first.
 - Higgsfield credits only with approval (`memory/reference-higgsfield-connector.md`).
-- Nothing lives only in chat: `projects/<job>/RUN.md` with a ▶ STATUS block; lessons → LESSONS.md.
+- Nothing lives only in chat: `projects/<job>/RUN.md` with a ▶ STATUS block; lessons → LESSONS.md; every job in `JOBS.md`.
+- Long-forms carry "N DAYS" countdown subscribe CTAs to the GTA 6 launch (videos 23, 24 and 26; his ask; it overrides the old
+  no-CTA default). The day count comes from the planned upload date. Each one sits on a breath, clear of his hair and hands,
+  never over a gag (facecam LESSONS 2026-10-23 / -27 / 11-03).
+- The outro stays on his face (his call on video 26).
+- He may swap A1 for his own Enhance Speech bounce after delivery (videos 2 and 23). Treat it as his hand, never "fix" it.
 
 ## 6b. Questions put to the creator (2026-10-08) and the answers
 1. Whose style? → **ANSWERED: his own only, never the friend's** (§ 0).

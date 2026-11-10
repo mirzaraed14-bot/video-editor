@@ -3,18 +3,46 @@
 Channel folder per the shorts-engine method (Affan, 2026-10-19). Every number about THIS channel lives here, never in another channel's
 files. Read this first on any Scott job, then FINDINGS.md, then the job's row in RESULTS.md.
 
+## ▶ STATUS: resume here (2026-11-10)
+- **The goal:** our last 12 Shorts must average 20K (240K between them) or Onyx works free. Bombas (659K) is leaving the window, and the rest average about 3K. One ~200K Short per 12 is the realistic route.
+- **How picks are chosen now:**
+  - The FUNNY TEST below (Affan's OK 2026-11-08), scored with the Bombas card and the AW shapes. The old pick test is FALSIFIED (FINDINGS).
+  - On trial: Herjavec's spreadsheet (RESULTS row 16), Moshe and Dobrik's coin flip (row 17), and one more pick.
+  - The bar: one of the three passes 50K at 14 days public.
+- **Where stories come from:** all 658 episodes are screened (FINDINGS § Story bank, 2026-11-09).
+  - Rankings: `projects/_client-scott-clary/research/viral2/screen-SWEEP.md` and `screen-R21..R28.md`.
+  - Next best: Eric Cole's McAfee sushi story, Daymond's "You're not Snoop", Gary Vee's "Ricky" (needs the source video), and Banayan's Buffett blacklist.
+  - New episodes: fetch them with `research/viral2/scan_all.py`, then screen with `research/viral2/SCREEN-BRIEF.md`.
+- **Waiting on Affan:**
+  - Uploads: Patrón (never public, a music copyright issue; he asked Scott to upload it), the Herjavec spreadsheet final and the Dobrik final.
+  - Reviews: the Dobrik IG check.
+  - Data: 7-day numbers for rows 10-17, and what the Gutman Short (595K) shows.
+  - Decision: whether each pick gets a one-search YouTube told check.
+- **Each job:** its `BRIEF.md` ▶ STATUS block, plus its row in RESULTS.md.
+
 ## The line for one Short
 1. **Pick** (Claude): read the episode transcript in full (the show's RSS `podcast:transcript` VTT, never YouTube), score candidates on
    the **pick test below FIRST**, then the viral bar (`projects/_onyx-batch3-2026-10/VIRAL-BAR.md`, gates A-E). Give them to Affan as
    text (hook, beats with times, button), with each one's pick-test score AND its **Bombas benchmark scorecard** (below).
+   **Since 2026-11-08/09 (Affan: "find moments in congruency with the previous viral moment, with the same psychological factors"):**
+   - The funny test replaces the pick test as the gate; the pick test is still recorded.
+   - Candidates come from the screened catalogue (see ▶ STATUS) and are scored on `research/viral2/SCREEN-BRIEF.md`.
+   - Every proposal says how many episodes it was chosen from, and how.
+   - The "best sequencing and research possible" line is typed only when no known gap is left open (`feedback-no-false-completion-line`).
 2. **Freshness** (Claude + Affan): web search for the story AT THIS ANGLE (no YouTube requests from this machine); Affan scrolls
    Scott's own Shorts tab for the episode before posting. A prior Short on the same story + angle disqualifies it.
+   **The told check is open (Affan's call):**
+   - What it is: one YouTube search per pick. It runs only with his OK, under `lock.sh youtube`, and stops at any bot check.
+   - How to read it: in a hidden browser pane the results DOM is blank, so read `window.ytInitialData` instead.
+   - What it showed on 2026-11-08: stories already told on Shorts at 20K+ stayed flat, 5 of 5. That is weak evidence; it can bench a pick, never back one.
 3. **Lock the prediction** in RESULTS.md BEFORE upload: view range at 7 days + the single biggest failure reason, Claude AND Affan,
    plus the pre-mortem (3 reasons it got 5K, 3 reasons it got 5M). Never edited afterwards.
 4. **The 1 % (Affan 2026-11-05):** before the build, the analysis session writes at least 2 moves this channel has never used into
    `UPGRADES.md` and the BRIEF, from the catalog and `research/shorts-style-radar.md`. A new moment is not an improvement.
    **Affan sequences** it in Premiere and records a Tella walkthrough; **Claude builds** it with
    `presets/youtube-shorts/onyx-samples-youtube/CLIENT-SHORT-RECIPE.md`.
+   **Affan 2026-11-09:** learn the 1 % from other channels' best Shorts in the same lane, and build it as a REUSABLE kit effect, approved from
+   a real-speed test clip. Example: the Dobrik Short's COIN IRIS, logged in `UPGRADES.md`.
 5. **Title + thumbnail** ship with the Short (format below).
 6. **After 7 days** (never sooner): views, stayed-to-watch, average view %, subs gained, feed share into RESULTS.md, then the
    post-mortem: name the assumption that failed or held, and move it into FINDINGS.md (validated, or FALSIFIED with the date).
@@ -95,6 +123,11 @@ B1 is re-weighted here, dated. One hit is the basis, so the benchmark predicts d
 
 ## Channel overrides (decided by Affan)
 - The look: the YouTube "Sean Ryan" kit (onyx-samples-youtube), watermark "SUCCESS STORY WITH SCOTT D. CLARY", no CTA, no Onyx.
+- **Third-party footage (Affan 2026-11-08: "we can also use 3rd party videos apart from Scott's to really go deep in the story… not
+  mandatory"):**
+  - Deepen a story with the real event from outside Scott's episode: the actual Shark Tank pitch, the famous person's own clip, news.
+  - Use a few seconds each, muted under the guest's voice, the way Bombas carried ABC footage with no claim.
+  - First used on Dobrik: his real coin-flip clip.
 - **No music bed** in our export: Affan adds it. **SFX = subtle transition swishes only** (Affan 2026-10-26 Morgan: "remove the sfx
   except for the transition ones, once I put music it's like too much"; 2026-10-28 Patrón: "crisp premium expensive but subtle"):
   short airy swishes crested on each whip INTO B-roll / a card, 19-23 dB under the voice, cuts back to the face silent

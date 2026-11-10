@@ -1,7 +1,8 @@
 # Onyx sample Shorts: THE PROCEDURE
 
 From a host's "yes" to a finished sample Short plus Affan's reaction video, ready to email.
-Numbers and look: [README.md](README.md). Lessons: [LESSONS.md](LESSONS.md).
+Numbers and look: [README.md](README.md). Lessons: [LESSONS.md](LESSONS.md) (its last section, "Standing rules", is the short list).
+**What's live right now and the job history: [JOBS.md](JOBS.md)** (▶ STATUS at its top).
 
 ## Where this sits in the funnel
 

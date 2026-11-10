@@ -557,3 +557,36 @@ motion graphic of mine has some super powers"*.
 - **Placement in ONE scripted window under the lock**: preflight every file (stable size, magic, ffprobe, full decode, ASCII), build_seq3 →
   dump + compare → apply layout/window → voice7 → overlays (one import per call) → verify → restore the active sequence recorded at lock
   time; a copy fix re-enters under a NEW graphic id (o04-rule2) → `tools7r1/place7.sh`, `preflight7.py`, `active7.py`.
+
+## Standing rules (consolidated 2026-11-10 from the memory log and batches 1-7; Affan's words where quoted)
+These apply to every Onyx job, both looks. The job history is in `JOBS.md`.
+
+**Picking and sequencing**
+- The default moment is the Short the host gave permission for, ENHANCED, which means RESTRUCTURED: a hook pulled from the full episode, beats re-ordered, extra beats added. Only a fundamentally weak Short reroutes to the best moment on their channel (11-02, 11-05).
+- Judge the channel, not only that Short. A professionally made channel whose permitted Short is weak gets its best moment instead, and can go to the top of the list ("heretics ... so professionally made", 11-05).
+- The hook sets up a stranger: who this person is and why the story matters to THEM (10-07).
+- A story about a person NAMES him and says what he did, with the sharp verified details (the crime, the last words), early. "Whose execution?" was his note on a death row hook that never said who (11-05). Facts come from a primary report; anything only a search summary says stays out; an identity the episode never gives is flagged and confirmed with the host before posting.
+- Read a re-ordered cut cold for who every pronoun means (11-05: "she" read as the nanny, it was her agent).
+- Sequencing goes to him as text (hook, beats with their words, button, length) for an OK before any build. When he asks for it directly ("give me the sequence"), answer that first, before any other step.
+- Every sample's BRIEF carries a teardown table, their Short vs ours: his talking points for the reaction. Whatever he says he'd change, our version shows it (11-05).
+
+**Building and fixing**
+- Both looks for every yes, from one approved moment (10-24). Native frame rate, no Topaz, no 60 fps (10-31). A 60 fps version is a possible follow-up offer to a host who approves but doesn't upload, built only then (11-06).
+- No Abundance Wisdom look on Onyx (no AW glow bars, flashes or grade preset).
+- A review note is a small revision: patch the data and re-render only the finish (overlay, grade), never the picture or graphics ("don't revise the whole damn video", 11-06). Recipe: `projects/_onyx-batch7-2026-11/review1.py`.
+- Builder subagents' own QA misses visible defects: main checks frames from the EXPORTED finals before he sees anything (11-05).
+- His hand edits are decisions: never re-run a build script over a version he trimmed himself (10-27).
+
+**Reactions**
+- Reactions max 3:00 (Instagram stops suggesting longer ones); organic reels max 1:30 (10-19, 10-27). His whole credential intro stays.
+- A channel card uses the creator's real YouTube profile picture (the channel's og:image), never a freeze frame (10-08).
+- A number he says on camera is checked against the screen, and the graphic shows the screen's number (10-27).
+
+**Music and delivery**
+- He picks a song per sample, laid after his notes, 14 LU under the voice. His commercial songs stay on the upload versions (YouTube flags only song use over a minute and samples are shorter); never make song-free copies (11-03).
+- Sample emails carry Drive links ("Anyone with the link: Viewer"), never attachments: Gmail can't play an mp4, and "people will be skeptical to download things from me". Check each link logged out before an email goes out; links go into drafts through Gmail web, never the connector. Sharing changes and sending need his yes every time (11-03).
+
+**Organic @affancuts reels**
+- One at a time (he posts one a day), no parallel agents, no corner label; he uploads (11-04).
+- His profile header (picture, Affan / @affancuts, his hook line) above the window on every reel, added at the mux, no re-render (11-08).
+- When he hears "wind noise", measure it first: on 11-08 it was steady room or fan noise 22-25 dB under the voice, cleaned with DeepFilterNet (AW LESSONS 4 recipe), speech and loudness unchanged.

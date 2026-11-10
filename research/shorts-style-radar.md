@@ -37,3 +37,20 @@ Upload size: the two biggest in this set upload above 1080p. **Hypothesis, not m
 On Scott Shorts so far: DOC cards on a blurred plate, FIT clips, whips, hook card, captions, a few counters. **Never used on this channel and fitting a seated podcast:**
 FX-13 Depth-Sandwich Type · FX-71 Funnel Count · FX-22 Red Isolate Photo (colour as story) · FX-55 Red Pen Underline / D2 marks on a photo · FX-44 Halftone Push · FX-16 Portal Zoom · FX-18 Karaoke Leader Quote · FX-27 Red Word Quote · FX-37 Ghost Dissolve · FX-11 Rival Colour Split · FX-23 Pointer Tag · FX-41 Year Ghost · FX-78 Cinema Vignette Montage · FX-25 Exhibit Grid · FX-19 Concrete Sticker Board.
 Overused, rest them: the same photo card with a tilt and a whip into it, on every receipt.
+
+## Pass 2, 2026-11-09 (AffanWiz Short 4 `stop-remaking-viral-shorts`): Shorts ABOUT Shorts, the niche's current top
+Method: YouTube search HTML fetched same-origin from a robots.txt tab in his Chrome, Shorts filter (`sp=EgIQCQ%253D%253D`), then each Short's
+three auto-frames (`i.ytimg.com/vi/<id>/hq1|hq2|hq3.jpg`, 25/50/75 %) + its vertical cover, laid out in the tab. No player, no sound.
+A Short's storyboard sprite is only 48x27 (useless); the hq1-3 frames are the silent read for Shorts.
+| Short | Views | Length | What it does |
+|---|---|---|---|
+| KeeanSocial "5 Second Trick to get WAY MORE Views on YouTube Shorts" (`tT1JRa28iL0`, 2022) | 10M | 7 s | bright close talking head, a physical YouTube play-button prop in frame 1, one-word yellow captions |
+| vidIQ "How to Get More YouTube Shorts Views in 2026" (`p2O2HP0vKV0`) | 3.8M | 8 s | talking head + phone prop, **green "+ VIEWS"-style growth callouts**, a neon play mark behind him |
+| SpactYT "Will Your SHORT Go Viral? (Algorithm explained)" (`kOZ_NM7w7Ac`) | 816K | 12 s | faceless: **green arrows on black ("viral loop"), a rising views line with tier labels**, FULL VIDEO BELOW |
+| Topic search "stop copying viral shorts" | | | nothing above 61K; the "YouTube cut reach for reposts" explainers sit at 53-886 views: the news angle is saturated and weak |
+
+**The read:**
+- The niche's hits are ONE idea in 7-12 s. Ours is 44 s, so every beat needs its own picture: one scene per beat, not one card per Short.
+- **Green is the niche's growth colour** (vidIQ, SpactYT): his green call for Short 4 fits the category.
+- A rising graph or bar is the shared payoff picture. Ours draws its 100x bar to scale and breaks the frame instead of a generic arrow.
+- The receipt-news angle ("YouTube cut reach") is dead on its own, so Short 4 leads with the call-out ("complete noob") and puts the receipt in the middle.

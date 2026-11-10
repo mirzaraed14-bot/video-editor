@@ -1,5 +1,13 @@
 # RUN — gta6-world-stops ("The Day The World Stops For GTA 6", Affan Afterhours video 23)
 
+> **2026-11-10, closing note from the Afterhours Editor session:**
+> - No notes came after review 1. The offer to re-render the "27 DAYS" CTAs for a different upload date is stale,
+>   because the planned upload passed long ago.
+> - Still to do once it's confirmed live: phase D, diffing his shipped timeline (EDITOR.md § 4), and his KEEP/NEVER
+>   verdicts on the video 23 treatments in facecam LESSONS.
+> - The 218 regenerable QA frames in `review/frames/` were cleared; the 5 sheets were kept.
+> - Channel job log: `presets/youtube/affan-afterhours/JOBS.md`.
+
 ## ▶ STATUS: resume here (2026-10-23 10:32) — REVIEW 1 APPLIED + SAVED; HE IS WORKING ON THIS SEQUENCE TOO
 
 **His own edits today, AFTER the 10:08 save (his hand, kept):** (1) a 0.35 s ripple trim at 0:30 in the cold open (the joint

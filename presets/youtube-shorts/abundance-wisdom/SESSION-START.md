@@ -44,10 +44,6 @@ Lessons that cost money last time: transcribe the CLEAN A1 dialogue (the mixed r
 early); check the words.json schema (`clips[].words[]` with `w`/`start`/`end`) before parsing; caption files named
 `<name>2.mp4` in Caption Exports are his CapCut returns (clean those, never the `.mov` we render).
 
-## Open state at handoff (2026-10-18)
-- ABW10 Linked Comp 04 (Rogan × Musk Roadster, Sequence 05): zooms, transitions, caption export `roadster.mov`, caps clean
-  all DONE in ABW9 — **ABW9 unsaved when last checked: he saves, then exports.**
-- MJ short (ABW8 Linked Comp 79 / Sequence 53): letterbox + clean caps restored 2026-10-15; he exports.
-- ABW10 Linked Comp 07 (Katherine × Paris Jackson): head lock DONE 2026-10-18 in ABW9 (unsaved); Sequence 07
-  caption export `katherine-paris.mov` DONE; state in `projects/abw10-comp07/RUN.md`. Its build comp ABW10 Linked
-  Comp 08: zoom pass + transitions + caps clean DONE 2026-10-18 (`projects/abw10-comp08/RUN.md`).
+## Open state
+Not kept here any more (the 2026-10-18 list was long done). The hub's map of every live AW Short, what each waits on and
+its session id is [HUB.md](HUB.md) § STATUS; one job's own state is its `projects/<job>/RUN.md`.

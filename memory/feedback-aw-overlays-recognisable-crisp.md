@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: fd9b36ed-a8b0-45b6-82f4-ca4b711aa118
-  modified: 2026-11-05T10:45:43.114Z
+  modified: 2026-11-09T09:43:28.706Z
 ---
 
 Affan, 2026-11-05, on Owen Hart Wife v1: "your overlay choice is absolutely horrendous ... who is this guy ... use crisp overlays,
@@ -35,5 +35,7 @@ Related: [[feedback-sourced-stills-must-be-hq]], [[feedback-usage-budget]], [[fe
 
 ## Moved from the MEMORY.md index (2026-11-06)
 Affan 2026-11-05 (Owen review 1): overlays must be crisp and of someone the viewer knows (famous reaction from any night beats obscure right-night footage); white line ON the picture's edge; letterbox fills with blur, never black; Opus researches, Sonnet executes
+
+**2026-11-09 (MJ son step outside, after "approved"):** "it's not my job to tell you that ... it's common sense to find better quality, the best quality overlay for all shorts". Upgrade every overlay to the best version that exists WITHOUT being asked: the 4K VP9/AV1 upload over the 1080p H.264 one when the build is code (ffmpeg reads AV1; only Premiere can't), native HD over an upscale, official over re-uploads, and scan a long official feature (GQ, Lionsgate BTS) for a better shot before settling. Then lock everything in and render; don't stop for creative direction on a 3-4 overlay Short he has approved.
 
 **2026-11-06 (Ronaldo Retires raw cut, his Tella):** a news package's own b-roll is NOT an overlay ("I don't want just random footage of him"). On a story about a legend, every overlay is a legendary core-memory moment fans already carry, high quality, and it follows the exact sentence being said ("trace his voice and see which games"). He doesn't follow football, so Opus does the research and picks. A news claim can sit on a real article ("put a news article here").

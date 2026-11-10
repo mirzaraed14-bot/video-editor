@@ -3,6 +3,11 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-10: a DROP flag can sit AFTER the real gap (ABW11 Sequence 03)
+- **WhisperX skipped 9.6-12.7 and slid the NEXT sentence 3.2 s early to fill it**, so `transcript_check.py` flagged the hole at 12.55-17.40, where the slid words had come from. On a DROP, re-time the whole run from the gap's last good word to the first word after it from the ur + hi windows, not just the flagged span. → job `projects/abw11-seq03-short/` (0-17.2 s timed from `work/redecode.txt`).
+- **A repeated phrase collapses into one stretched word** ("aise haath daalte the" said twice → one 0.86 s "تھے" at p0.33): the long-span warning in transcribe.log is the tell.
+- **New project:** ABW11 holds the reels from here on (Sequence 03 first). Same caption route.
+
 ## 2026-11-08: a reel inside a sequence named for another job (ABW10 "MJ Showed His Mother - raw cut v2")
 - **The tab name is not the job: read the sequence first.** He reused an AW Short's sequence (MJ, already built and delivered) for a new Urdu reel (31 clips of C1437.MP4); only the read-back showed it. A "caps" on a sequence carrying another job's name = read V1/A1 before choosing the caption style or touching that job's files. → job `projects/abw10-c1437-short/` (named after the source, the sequence name would mislead).
 - **The codeswitch prompt echoes "video script" into mid-sentence spans** (21.0, 26.0 here): the en window heard "They also pay the most tax". An ENGLISH warn on a prompt word = check the en window, then dismiss.

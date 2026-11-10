@@ -1,40 +1,30 @@
 ---
 name: project-scott-clary-shorts-guarantee
-description: "Scott D. Clary client Shorts must average 20K views by the end of month two or Onyx works free; the Bombas \"self-own\" factor is the pick test"
+description: "Scott D. Clary client Shorts: the last 12 must average 20K or Onyx works free; picks now run the FUNNY test (the self-own pick test was falsified 2026-11-08); the whole catalogue was screened 2026-11-09"
 metadata:
   node_type: memory
   type: project
   originSessionId: d3d74054-8117-4f44-bcac-6f8a02738576
-  modified: 2026-11-01T06:34:24.023Z
+  modified: 2026-11-10T13:32:05.944Z
 ---
 
 Scott D. Clary (Success Story) signed 2026-10-15. Affan's guarantee (told 2026-10-29): if OUR Shorts don't average 20,000 views by
-the end of month two, Onyx keeps working for free until they do. A second editor also posts Shorts there; only ours count.
-On 2026-10-29: Bombas "Daymond John Almost LOST $250M" 563K (Scott's #1 Short ever), the other seven 0.3-13K (mean ~75K, median ~5.3K).
-The measure (Affan 2026-10-29): the average of our LAST 12 Shorts, so any 12 in a row need 240K between them. Bombas leaves that
-window after our 5th post from 10-29. Bombas's real Shark Tank footage drew no copyright claim, so real broadcast clips are OK.
+the end of month two, Onyx keeps working for free until they do. A second editor also posts Shorts there; only ours count. The measure
+is the average of our LAST 12 Shorts, so any 12 in a row need 240K between them.
 
-**Why:** the money and the client relationship ride on the median, not one outlier; Affan believes every pick has viral potential
-and wants the Bombas result to be repeatable.
+Bombas ("Daymond John Almost LOST $250M", 659K) is Scott's record; the rest sit at 0.2-13K, about 3K on average. Bombas leaves the window,
+so the route is one ~200K Short per 12. Patrón was never public: there was a copyright music issue and Affan asked Scott to upload it.
 
-**How to apply:** every Scott pick runs the pick test first (held belief / the famous guest speaks it himself / it cost him: he was
-wrong, lost or hurt; under 2 of 3 goes to the bench), then frame 1 = the famous face SPEAKING his stake line. Rules and evidence:
-presets/youtube-shorts/scott-clary/ENGINE.md § "What the first results changed" and FINDINGS.md § "F1-F6 tested". Pre-registered
-scores for the next picks are in RESULTS.md. Related: [[feedback-viral-pick-bar]], [[project-onyx-sample-shorts]].
+**Why:** the money and the client relationship ride on this. Affan wants the Bombas result to be repeatable, not a fluke.
 
-On 2026-10-30 Affan asked "have you gone through all his famous people podcasts before this decision?" The answer was no: only 45
-of 658 full episodes had been read. After a 27-episode screen it is 72. Those were chosen by Wikipedia rank plus a title sweep,
-which misses social-media-famous guests (Wallo267, Simon Squibb, Jason Tartick…). The unscreened list is in FINDINGS § Story bank.
-So far there is no fresh 2.5, and the 2.0 tier is where the picks come from. When proposing "the best story left", say how many
-episodes it was chosen from and how they were chosen. Read the guest NAMES by hand, never only a fame rank, and watch Scott's NEW
-uploads for famous guests.
+**How to apply:**
+- **Start every Scott task** at the ▶ STATUS block at the top of presets/youtube-shorts/scott-clary/ENGINE.md. It holds the current picks, the open items and the file map.
+- **Picks:** run the FUNNY TEST (a laugh, a scene, anyone follows), plus the Bombas card and the AW shapes. Pick from the screened catalogue: all 658 episodes, `research/viral2/screen-SWEEP.md`.
+- **Say the basis:** every proposal says how many episodes it was chosen from and how.
+- **The self-own pick test is FALSIFIED** (FINDINGS § FALSIFIED). Record it, never gate on it.
+- **Third-party footage is welcome,** a few seconds each under the guest's voice (Affan 2026-11-08).
+- **The 1 %** is learned from other channels' Shorts and built as a reusable kit effect (Affan 2026-11-09).
+- **Never type his "best sequencing and research possible" line** with a gap open ([[feedback-no-false-completion-line]]).
+- **When he's discouraged,** lead with the evidence, not comfort.
 
-On 2026-11-01 Affan was upset that the Shorts were still at 3-5K. The answer (FINDINGS § Channel goal, 11-01):
-- it's the story, not the edit: FUBU vs Bombas had the same kit, 10K vs 563K;
-- the mean is won by one hit per 12;
-- the levers are Studio stayed-to-watch %, screening the feed-famous faces (Squibb, Wallo267, Berg, Kwik…), raw from Scott's
-  famous guests, and agreeing at what age the views are counted.
-
-When he's discouraged, lead with the evidence, not comfort.
-
-**2026-11-08: the self-own pick test FAILED its own registered bar** (card chain 2.5 → 3.1K; pick score vs views without Bombas: −0.19; FINDINGS § FALSIFIED). The "How to apply" above is out of date until Affan picks a replacement. Best current read, from one hit and after the fact: Bombas is a FUNNY scene anyone can follow, ending on the laugh; only our top 3 land a clear punchline (659K, 13K, 10K). Patrón never went public (copyright music issue), so it isn't a flop. The AW proof check also failed on Scott (FINDINGS § 2026-11-08).
+Related: [[feedback-bombas-benchmark]], [[feedback-shorts-titles-five-words]], [[feedback-viral-pick-bar]], [[project-onyx-sample-shorts]].

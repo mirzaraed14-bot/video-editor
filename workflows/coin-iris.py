@@ -132,8 +132,9 @@ class Scene:
         a = self.a
         if a.mode == "toss":                                          # up and OUT through the top, spinning
             p = (t - a.t_up) / max(a.t_land - a.t_up, 1e-3)
-            cy = 2150 - 2700 * out3(p) if p >= 0 else 2150
-            return W / 2 + 40 * math.sin(p * 2.0), cy, a.r_land * (0.62 + 0.14 * p), a.flips * math.pi * min(max(p, 0), 1) ** 0.8 + 0.4
+            q = min(max(p, 0.0), 1.0)
+            cy = 2100 - 2450 * (1 - (1 - q) ** 1.25)                   # a slightly decelerating pass up through the whole frame (exits at ~86 % of the clip)
+            return W / 2 + 40 * math.sin(q * 2.0), cy, a.r_land * (0.62 + 0.14 * q), a.flips * math.pi * q ** 0.9 + 0.4
         p = (t - a.t_up) / max(a.t_land - a.t_up, 1e-3)
         if p < 0:
             return W / 2, 2300, a.r_land * 0.5, 0.0

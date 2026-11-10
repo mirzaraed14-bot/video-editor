@@ -675,3 +675,20 @@ First delivery approved as it was; nothing changed after delivery. One approval,
   became 66/54 s). -> never quote takes or length before the burst pass. -> file: `lanes/chat-only/lab-notes.md` 2026-11-06.
 - **Lean mode passed once:** no fresh-eyes pass, no edit-review rounds, no graphics-qa.py, nothing heard by ear; only my own frames and the
   measured gates (audio ncc, LUFS, cue_check, head at the joints, verbatim ASR). One data point; it does not retire the rounds.
+
+## 2026-11-10 · cross-video notes from the dispatcher session (Afterhours Editor)
+- **He asked for a dandruff speck on his hair to be removed (C1453, `projects/gta6-ai-pc-port`): "if there's any editing trick ... please
+  do so".** It was fixed at the SOURCE, never on the timeline:
+  - Track the speck every frame (LK flow on the hair + a white top-hat refine).
+  - Patch its own measured blob with a feathered mask.
+  - Write `raw/<job>.clean.mov` (ProRes 422 HQ, audio untouched) and edit from that file.
+  - Prove it three ways: outside the mask, 55.35 dB PSNR vs a 55.23 dB plain-transcode floor; the patch moves
+    less frame to frame than the hair around it; and nothing shows through his POP grade + sharpen.
+  - He gets 400 % before/after crops and a silent real-speed clip.
+  The AffanWiz session reused the same method on C1454 (`projects/stop-remaking-viral-shorts/work/speck/`). His OK
+  is still pending. -> once he OKs it, check every new shoot in this room for specks at intake, and promote
+  `projects/gta6-ai-pc-port/work/speck/*.py` into `workflows/`. -> file: that job's RUN.md § Speck proof.
+- **The recording folder is not the channel**, now seen five times (EDITOR.md § 4, `JOBS.md`). -> change: the channel is settled from the
+  content at intake, every job.
+- **A long-form can come with its own "short version" take** (C1448 for C1447): it is its own Short job, and the long-form session is
+  told so it doesn't ask. -> file: EDITOR.md § 4.

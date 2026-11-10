@@ -1,6 +1,6 @@
 ---
 name: feedback-usage-budget
-description: "Affan 2026-10-15: six parallel build agents burned ~50 % of his Max 20x weekly plan in 3 hours and hit the limit; he's on paid usage credits he can't afford to exceed — budget every job, no agent swarms, fresh small sessions"
+description: "Affan 2026-10-15: six parallel build agents burned ~50 % of his Max 20x weekly plan in 3 hours and hit the limit; he's on paid usage credits he can't afford to exceed — budget every job, no agent swarms, fresh small sessions. 2026-11-10: the goal is 100 % right at the Monday 7 AM reset, never before; the nightly usage-pace-check says spend or go lean"
 metadata:
   node_type: memory
   type: feedback
@@ -34,3 +34,10 @@ On credits (until a reset) pause rather than cut quality. Related: [[feedback-us
   the AW Shorts sessions. Affan: "gaddayum its the first day of our weekly limit and we're at 23% already". That's **the tight signal**, so
   the 10-15 rules are back on: running agents were told to finish the current item with no extra review rounds or tools and then stop.
   No new agents without asking. Every interim notification is a full-context main turn, so answer those in one line.
+- **2026-11-10 (a Tuesday, weekly at 22 %): the weekly goal.** Affan wants to reach 100 % of the weekly limit right at the Monday reset
+  (02:00 UTC = 7 AM PKT), "on the dot", and never before it. Using the whole week is the point; running out early is the failure.
+  The line is straight: target % = 100 × days elapsed in the week ÷ 7, so by midnight PKT ≈ Wed 39, Thu 53, Fri 67, Sat 82, Sun 96.
+  The scheduled task `usage-pace-check` reports used vs the line every night at ~11 PM PKT, and that report is now the signal (it
+  replaces a fixed lean mode like 11-02's). Under the line: spend (agents OK when lean, Sonnet builders, Fable-advised big decisions).
+  3+ points over: the 10-15 rules for the next day. In the last 3 days, no new long-form (15–30 % each) unless 10+ points under.
+  Related: [[reference-usage-costs]] for what each job type costs.

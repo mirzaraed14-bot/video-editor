@@ -1,6 +1,7 @@
 # BRIEF: Why Michael Jackson's Son Had To Step Outside 💔 (Abundance Wisdom Short)
 
 ## ▶ STATUS: resume here
+**2026-11-09: APPROVED by Affan ("approved", after the overlays and the listed open gaps).**
 **2026-11-08 ~23:25: SEQUENCE COMPLETE FOR REVIEW, STOPPED for Affan's creative direction.** `MJ Son Step Outside - raw cut` (bin `MJ Son Step Outside`, ABW10.prproj, UNSAVED), 1080x1920 30 fps, 35.467 s: V1/A1 9 clips, V2 3 picture-only Lionsgate covers (A2-A4 empty), 6 markers. Read back = plan (every in-point equals the plan to the frame); A1 rebuilt from the read-back and re-transcribed = the table's words (plus the "like" below). His active sequence (Bieber) restored. No music, no captions, no graphics, no SFX, no CTA, nothing saved, nothing exported. State/resume: `RUN.md`.
 
 ## Final timeline (30 fps; read back from Premiere)
@@ -69,6 +70,23 @@ Pauses tightened (the standard AW tighten, pauses >= 0.13 s over the keep margin
 - **Fits this Short:** FX-40 Slow-Burn Portrait (a tight face held with no text while the frame creeps in: the last 4.8 s on Prince's full frame, "need to take a little step outside and get some air"); FX-80 Black-Beat Ident (the hard cut after "air" read as a dip to black); FX-57 Propped Phone Call (a remote interview is never full-screen: the ABC panel is already that); FX-37 Ghost Dissolve (Prince's face ghosting into Jaafar between B3 and B4: the dissolve the story is about); FX-79 Flash-Forward Echo (the on-set shot returns).
 - **Not used on this channel lately:** a one-voice Short with no card and no archive; FX-40's held portrait and FX-37's slow ghost.
 - **The last build leaned on:** designed cards and montage (MJ Victory Tour). This one deliberately has none.
+
+## WALKTHROUGH (Affan's Tella "Michael Movie Video Sequence Review", 9 Nov 2026, 1:54; `guide/guide.mp4`, transcript `scratch-guide/transcript/words.json`, frames `proof/guide/`)
+His words, resolved against the timeline timecode in his screen recording and against the live sequence read back from Premiere (`premiere/readback_after_walkthrough.tsv`):
+1. **B1 end, tc 2:28-4:10 (his V2 slot 1.6-4.3 s):** "put Jaafar Jackson as Michael ... high quality video overlay of just Jaafar embodying Michael, doing his steps, looking passionate."
+2. **B2 "Madison Square Garden, right before 9/11" (his V2 slot 7.4-10.533 s):** "you already know what footage will be here because literally Prince is defining it" = Michael at the 2001 MSG 30th-anniversary shows.
+3. **B3 "in his hair and makeup" (his V2 slot 13.1-14.8 s):** my on-set Prince cover was "wrong" (he deleted it); "a video overlay of Jaafar getting ready in the vanity chair, getting the hair and makeup done for the Michael movie."
+4. B4 and B5: no notes; my B4 stage cover (V2, 19.5-23.0) and B5 Jaafar close-up cover (V2, 28.6-30.07) were left in place.
+5. "That's about it. Pretty simple short. You can start the build now." = go-ahead for the overlays (nothing else: no captions, no music).
+**His own edits to my sequence (decisions, kept untouched):** tightened B1's 0.2 s pause after "transform" and B3's 0.267 s pause before "because"; B4 head trimmed 0.1 s; removed my B3 cover; dragged the face clips of the three slots up to V2 (the slot markers); sequence now 34.9 s. The words are unchanged by these edits.
+
+### Build (9 Nov, one locked Premiere window, V3 only, video-only files, A1/V1/V2 verified unchanged by snapshot)
+| Slot | tl (s) | Picture on V3 | Source, resolution, crop |
+|---|---|---|---|
+| 1 | 1.600-4.300 | Jaafar as Michael at the Motown 25 recreation, medium shot, sequin jacket and glove, singing and moving (59.90-62.60 of the clip) | Movieclips "Michael (2026) 4K - Billie Jean (8/11)" `ea_IfxTBylg`, official, 1920x1080 H.264 (best H.264 offered), window 495x880 (above the MOVIECLIPS mark) = 218 %. Adult actor only. |
+| 2 | 7.400-10.533 | **v2 (9 Nov, after "find sharper"):** Michael doing the Billie Jean steps in the fedora at the 2001 MSG 30th Anniversary show, one continuous medium-wide shot, no crowd faces (460.30-463.43 of the clip) | "Billie Jean [4K] 30th Anniversary, 2001" (channel Meta, `Jg4oHkfM_t4`, 8:06), 1440x1080 H.264 (best H.264 offered), an AI "4K" upscale of the 4:3 SD broadcast; window 607x1080 = 178 %. **Visibly sharper than v1** (hat brim, sequins, face and the window grid resolve), but the true source is still 2001 SD, so it does not meet a literal native-720p gate; nothing sharper of these shows exists. v1 (`E:\Bullshit Folder\Henry\Michael Jackson _ The Jacksons _ 60fps.mp4`, 4:3 SD in a 1080p pillarbox, 327.25-330.38) was replaced; its item `msso_msg_h264.mp4` is left unused in the bin. A second upscale (`EcyMRYFGGm8`, "You Rock My World") was downloaded, not used. |
+| 3 | 13.100-14.800 | Bill Corso (Michael's makeup designer) working on Jaafar's curly wig and face with a brush (30.98-32.41 of the official BTS), stretched to 0.84x to fill 1.7 s | Lionsgate official "Michael - Official Behind-The-Scenes Video" (IGN upload `u6C9GzxaGGE`, 2:08), 1920x1080 H.264, window 607x1080 = 178 %. The only hair-and-makeup shot in it is 1.56 s long; Jaafar's face is turned away, identification rests on the BTS being about Jaafar's transformation and Corso's name card elsewhere in it. No vanity chair is visible (a tight detail shot). |
+Rejected sources this round: ET `iLw0guUOEoQ` (Bill Corso red-carpet interview, no chair footage; downloaded, unused). Downloads: `ea_IfxTBylg`, `iLw0guUOEoQ`, `u6C9GzxaGGE` through `lock.sh youtube`, 60+ s apart, no bot check; two metadata searches the same way.
 
 ## Sequence plan
 `RUN.md` carries the timeline; `edl.json` + `premiere/place.jsx` rebuild it from scratch (delete the sequence by hand first: `premiere/run_window.py` refuses if the name exists).

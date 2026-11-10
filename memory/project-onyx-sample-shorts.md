@@ -1,166 +1,23 @@
 ---
 name: project-onyx-sample-shorts
-description: "Onyx Influence sales samples: a re-edited Short per podcast prospect plus Affan's reaction video; own minimal motion-graphics look in presets/youtube-shorts/onyx-samples/, NOT Abundance Wisdom"
+description: "Onyx Influence sales samples: a re-edited Short per podcast prospect plus Affan's reaction video; job log + resume block in presets/youtube-shorts/onyx-samples/JOBS.md, standing rules in its LESSONS.md"
 metadata:
   node_type: memory
   type: project
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-11-08T08:47:21.581Z
+  modified: 2026-11-10T13:32:49.469Z
 ---
 
-Started 2026-10-04. Affan's agency Onyx Influence emails US podcast hosts for permission to use one of their Shorts.
-When a host says yes, the video repo makes a **sample Short** (a better re-edit of a moment from their show) and
-edits **Affan's reaction video** to it. Both go back to the host with the ask. The sample is the sales piece.
+Affan's agency Onyx Influence emails US podcast hosts for permission to use one of their Shorts. A yes gets a **sample Short** (a better re-edit, both looks) and **Affan's reaction video** to it, and both go back to the host with the ask. The sample is the sales piece. Started 2026-10-04; his page for this is @affancuts (since 2026-10-26), which also posts his own organic reels.
 
-**Why:** the email side worked (4 yeses from 32 delivered on 2026-10-03), but nothing closes until the host
-sees what the service would do for them. Affan wants the editing as automated as the email outreach was.
+**Why:** the email side gets yeses, but nothing closes until the host sees what the service would do for them. Affan wants the editing as automated as the outreach.
 
 **How to apply:**
-- Read `presets/youtube-shorts/onyx-samples/` (README = look v0, PLAYBOOK = funnel procedure, LESSONS) before any
-  Onyx job. It is a NEW look Affan asked for: *"minimalistic yet visualistic with motion graphics"*. **No Abundance
-  Wisdom mechanics** (no glow bars, flashes, Gretaros, head lock, grade preset).
-- Shot grammar: FULL / CARD (the speaker morphs into a rounded rectangle with text above and below) / GRAPHIC / SPLIT,
-  mixed in every clip (Affan picked "a good mix of all formats").
-- **PLATFORM PICKS THE LOOK (Affan, 2026-10-05):** the minimal card look above = the INSTAGRAM look (approved on the pilot;
-  only note: too few SFX in places). YouTube-first prospects get `presets/youtube-shorts/onyx-samples-youtube/` (v0, written
-  2026-10-05, not yet built), measured frame by frame from his reference (Shawn Ryan Show `KUMikP6a2eI`; teardown, frame log
-  and a 3-image board in `projects/_ref-yt-shorts-shawn-ryan-farm/analysis/`). That look: literal full-bleed B-roll for every
-  noun (~53 % of runtime), speaker-top SPLITs, ONE whip-slide with mirrored edges (a numpy pass, not HyperFrames' `whip-pan`),
-  Anton caps with a stretch pop and a colour wipe, caption colour = who is speaking, a 3 s hook title, the show's name as a
-  watermark, a continuous music bed ≈ 13.6 LU under the voice with almost no SFX, −12 LUFS, a loop ending. Its PLAYBOOK holds
-  only what differs; the funnel steps stay in the Instagram PLAYBOOK. § 0 there says how to decide the platform
-  (permission-email platform, then both feeds' activity and views/followers, else ask).
-- **BATCH MODE (Affan, 2026-10-05):** every YES gets one sample in its priority platform's look; Claude picks the moment
-  (engine + AW Shorts ≥300K views); no storyboard approval, Affan reviews finished samples; the Instagram look must keep
-  improving from Instagram references found in his Chrome each time; the YouTube look stays as built (improve only);
-  downloads approved per batch with every file logged in the job BRIEF; Topaz Iris recipe on speaker footage. Batch 1
-  (Chris Do, Rich Roll, Jordan Harbinger, Rollo Tomassi, Pomp, Rob Dial): `projects/_onyx-batch-2026-10/BATCH.md`.
-  Rob Dial's team: credit Rob properly. Rollo: give him a shout-out. Shared PLAYBOOK "Batch mode" section.
-- **The SFX note, answered by the reference:** it feels full with almost no SFX because of the bed; the pilot had no bed.
-  Whether YouTube samples follow it exactly (bed + one sticker sound) is open question 1 for Affan (README § 11).
-- Finish = **fully automatic MP4** on the chat-only route (HyperFrames + ffmpeg, talking-head-recut wrapper tweens).
-  This was Affan's explicit yes on 2026-10-04, even though the machine's lane is premiere.
-- Affan gives the moment (episode + timestamps); default when none = the same story as the Short named in the
-  permission email, re-cut from the full episode. Storyboard approval before the build, until the style is locked.
-- **Selection, sequencing and trimming = the Onyx podcast clips engine** at
-  `X:\Claude Projects\Hormozi Business\my-businesses\onyx-shorts-engine\` (ENGINE · FINDINGS · RESULTS), adapted on
-  2026-10-04 from the Abundance Wisdom Content Engine. Affan: *"the clips selection and sequencing and how the clips is
-  trimmed is what matters."* Ranked angles first (angles.md), Affan picks, then storyboard. AW rules are HYPOTHESES there.
-- The trigger and the tracker live in `X:\Claude Projects\Hormozi Business\my-businesses\onyx-us-prospects.csv` (status
-  `YES - make video`). Pilot job: `projects/mfm-nursery-rhymes/` (My First Million, Moonbug story).
-- **Pilot status (2026-10-05):** the MFM sample is FINAL at `projects/mfm-nursery-rhymes/outputs/mfm-nursery-rhymes.sample.final.mp4`
-  (built by `hf-sample/build.py`, word-anchored; 3 multi-lens QA rounds, all fixes verified). It's waiting on Affan's taste review,
-  his music-bed choice, then his reaction video. The QA workflow script to reuse is `projects/mfm-nursery-rhymes/work/qa/onyx-sample-qa-r3.js`.
-- **Batch 1 review 2 (Affan, 2026-10-07)**, per prospect, in `projects/_onyx-batch-2026-10/BATCH.md`:
-  **MFM is perfect: don't touch it.** "Sean Ryan style/format" = the YouTube look (`onyx-samples-youtube/`, measured from the Shawn
-  Ryan reference). Chris Do → Sean Ryan style with the two people instead of B-roll overlays (few or none). Harbinger and Pomp → full
-  Sean Ryan style (overlays, face split screens). Rollo → keep the style, drop the same-camera punch-ins and whips. Rob Dial → keep the
-  Instagram look, fix the hook (a stranger must care who he is), add audible SFX, white+colour captions, no clipped words. Rich Roll →
-  re-pick a VALUABLE (informational) moment, keep his minimal style but with more motion graphics (e.g. avatars acting out the story) and
-  crisp Epidemic SFX. All: [[feedback-caption-punctuation]], [[feedback-captions-just-below-lips]] (constant), [[feedback-no-same-camera-punch-ins]],
-  [[feedback-sfx-on-every-graphic]]. The hook must set up a stranger: who this is and why the story matters to THEM.
-- **Podcast-source traps found on the pilot** (all in the preset's LESSONS.md): episode border frames, burned-in name labels,
-  two-up layouts, WhisperX squeezing numbers and starting first words late, and the 24→30 fps frame mapping (`rframe()`).
-Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]], [[feedback-youtube-sourcing]].
+- **Start at `presets/youtube-shorts/onyx-samples/JOBS.md`:** its ▶ STATUS says what is live and which file owns each stream. The history of batches 1-7 and the organic batch is there, moved out of this file on 2026-11-10.
+- **Rules:** `presets/youtube-shorts/onyx-samples/LESSONS.md` § "Standing rules" (picking, sequencing, building, reactions, music, delivery, organic), then `PLAYBOOK.md` for the funnel and batch mode.
+- **Looks:** YouTube look = `presets/youtube-shorts/onyx-samples-youtube/` ("Sean Ryan" format, now with the Scott format: captions from frame 1, hook below, POP grade tuned per source); Instagram look = `presets/instagram/neon-window/`. Both looks for every yes since 2026-10-24.
+- **Moment selection** = `X:\Claude Projects\Hormozi Business\my-businesses\onyx-shorts-engine\` + `projects/_onyx-batch3-2026-10/VIRAL-BAR.md`. Default = the permitted Short, restructured ([[feedback-onyx-sample-is-the-permitted-short]]); sequencing as text for his OK first ([[feedback-sequencing-before-edit]]).
+- **Tracker and emails:** `X:\Claude Projects\Hormozi Business\my-businesses\onyx-us-prospects.csv` + `onyx-email-log.csv` + `onyx-email-formats.md`, kept by the email session.
+- Scott D. Clary signed as the first paying client on 2026-10-15; that work lives in `presets/youtube-shorts/scott-clary/`, not here.
 
-
-**Reaction videos (2026-10-07 night):** Affan's reactions to the samples are edited IN his ABW8 project: Seq 33 = MFM, 34 = Chris Do, 35 = Rollo. All three are prepared and verified; HE exports ([[feedback-affan-exports-himself]]). His Tella direction is resolved in `projects/_onyx-batch-2026-10/REACTIONS-BRIEF.md`:
-- his split layout, face-only only on emphasis beats, instant punch-ins allowed (his rule for this format);
-- zooms into the sample cropped to the panel;
-- Bebas Neue white captions with no animation, on the seam (his onyxinfluence reel is the reference);
-- a channel card on the intro, clean motion graphics with Epidemic SFX, a subtle Epidemic jazz bed, no grade.
-The toolkit is `projects/_onyx-batch-2026-10/reactions/tools/`. Rob Dial's reaction is next, then delivery email drafts (Affan sends).
-
-**2026-10-08: the three on hold are FINAL** in ~/Downloads, each through fresh-eyes QA rounds: Harbinger (Sean Ryan yt7), Pomp (Sean Ryan yt9), Rich Roll (new pick, Bryan Johnson's five sleep rules, Instagram v6). The kit fixes found on the way are in both presets' LESSONS.md:
-- the caption rise was a no-op on left-aligned captions;
-- the Epidemic files' lead-ins made pops land 0.6 s late (`ES_LEAD`);
-- whooshes that mask a word are MOVED into a voice gap, never turned down;
-- caption colour is checked by speaker embedding;
-- patched 4K bases are cut by stream copy with output-side seeking.
-Open: Rob Dial v15 predates the SFX fix; offer a `--skip picture` rebuild.
-
-**2026-10-08 night: reaction Seq 37 (Pomp) + Seq 38 (Rich Roll) PREPARED** in ABW8, per his note "tighten a tiny bit (filler words) … same style … a bit more motion graphics with SFX".
-- Filler cuts were made on HIS timeline, each one proven first.
-- 22 / 25 graphics.
-- Pipeline order: REACTIONS-BRIEF.md status.
-- Seq 37's V1/V3 track outputs were off when he handed it over; left as he had them.
-- Rob Dial's reaction is next, then the delivery email drafts.- Reaction channel cards use the creator's REAL YouTube profile picture (fetched og:image), never a freeze frame from the video (Affan, 2026-10-08, on Seq 38's Rich Roll card; swapped by changeMediaPath so his own edits stayed).
-- **Batch 2 (2026-10-12): Jeremy Miner, Victor Antonio, Scott D. Clary, Jay Clouse** (`projects/_onyx-batch2-2026-10/BATCH.md`). Affan's call: EVERY prospect gets BOTH formats, an Instagram-look and a YouTube-look sample (8 samples), cut from ONE clip per prospect ("one clip, 2 formats": same moment, same cut, edited twice). Research first; he approves the bits and sequencing and gives creative direction per video before any edit.
-- **Batch 2 APPROVED 2026-10-12**: all four picks (`PICKS.md`), 8 videos, section downloads approved, no Rural Sales Show credit. YouTube look = Sean Ryan format + [[feedback-split-screen-white-line]]; Instagram look = [[feedback-instagram-expensive-minimal]]. Check Sean Ryan's channel for anything new first.
-- **2026-10-12 (overnight, Affan asleep): batch 2 BUILT.** All 8 samples final in ~/Downloads (`<job>.yt|ig.final.mp4`): Jeremy (Google $88K), Victor (marketing first), Vivian/Scott (casino, $5M), Jay/David Altizer (MrBeast train); 4 build agents + a v2 Instagram kit agent (letterbox window, animated captions, 9 refined graphic kinds, `kit/V2-HOWTO.md`), shared locks `_onyx-batch2-2026-10/lock.sh youtube|gpu`; fresh-eyes QA rounds. Reactions to Rob Dial + Harbinger samples PREPARED in ABW8 from his RAW recordings ("Rob Dial reaction", "Jordan Harbinger reaction"; new tools `reactions/tools/build_seq.py author.py pins.py seqmap.py switches.py dump.py`). Next: his review, his reactions to the batch-2 samples, delivery emails (he sends).
-- **2026-10-13 (overnight): his 4 reactions to the batch-2 samples PREPARED in ABW8** ("Jeremy Miner reaction", "Victor Antonio reaction", "Scott D Clary reaction", "Jay Clouse reaction"), built from RAW C1354-C1357 + OBS, each with a different hero move per `reactions/research-2026-10-13.md` (wipe / side-by-side / loupes / editor's desk) and a new Epidemic bed; status in `_onyx-batch-2026-10/REACTIONS-BRIEF.md`; then save + quit Premiere + PC shutdown as he asked ([[feedback-shutdown-after-overnight-job]]). Next: his review of the 8 samples + 4 reactions, delivery emails (he sends).
-- **2026-10-14: batch 3 = six YESes** (Digital Social Hour, Smart Passive Income, Moonshots, Daniel Priestley, TFTC, Wellness + Wisdom), both looks each (12 samples), downloads approved like last time; tracker `projects/_onyx-batch3-2026-10/BATCH.md`; research agents per `RESEARCH-BRIEF.md` + `STYLE-RESEARCH.md`; the sequencing goes to Affan as text before any edit ([[feedback-sequencing-before-edit]]). Same day: Jeremy/Scott/Jay samples re-bedded with his own tracks (Exports replaced) and all 8 batch-2 samples copied to Google Drive `My Drive/Onyx Samples - Batch 2` (G: is Google Drive for desktop).
-- **2026-10-15: Scott D. Clary SIGNED as Onyx's first paying client** (one Short per day for Success Story). First job: research his Daniel Lubetzky (KIND) and Daymond John (FUBU) episodes for the strongest Shark Tank story (Affan ran a Shark Tank clips channel, 100M views/month), contenders first, no edit until he picks; work folder `projects/_client-scott-clary/`. On paid credits until Monday: lean, one agent, transcripts from the podcast RSS (YouTube still blocked).
-- 2026-10-15: Scott's first Short = Affan's pick, Daymond's 50 FUBU shirts (his Tella walkthrough saved at `projects/_client-scott-clary/bombas/guide/guide.mp4`); handoff for a fresh, lean session: `projects/_client-scott-clary/HANDOFF.md`. This 2-day session was retired because every turn re-read its whole history (≈ $1+/turn on Fable).
-- 2026-10-19: batch 3 moved to fresh sessions (one job each): start at `projects/_onyx-batch3-2026-10/HANDOFF.md` (6 samples in order, Topaz still open on all, then the 5 reactions via REACTIONS-LEAN.md).
-- 2026-10-19: batch 4 = the 4 yeses with no sample (MATG, Judy Cho, Stefanie Gass, Jon Krohn): `projects/_onyx-batch4-2026-10/` PICKS.md (moments to verify) + HANDOFF.md (one fresh session per sample). YouTube transcripts do not load in Chrome either (same block); SDS publishes transcripts on its site; Buzzsprout (Judy) blocks scripted downloads with Cloudflare.
-- 2026-10-20: every Onyx email format is tracked: `X:/Claude Projects/Hormozi Business/my-businesses/onyx-email-formats.md` (ids E1/B1/R1/S3/F1/F2/A1/O1…, Hormozi map, daily one-test-per-stage loop) + `onyx-email-log.csv` + `onyx_email_stats.py` → `onyx-email-stats.md`; the daily outreach task maintains them. First email = subscriber-count credential only (no Chris Do line, Affan 2026-10-20).
-- **2026-10-19: his 5 reactions to the batch-3 samples PREPARED in ABW10** (bin "Onyx batch 3 reactions (2026-10-19)": TFTC, Wellness Wisdom, Moonshots, Daniel Priestley, Digital Social Hour reaction), built from RAW C1380-C1386 + 6 OBS files, every one ≤ 3:00 (his new cap: Instagram stops suggesting longer ones), one look column each (E-I); state + tools in `projects/_onyx-batch3-2026-10/REACTIONS-RUN.md`. He exports; his review not in yet. facex.py hits the leather chair: check face framing on every reaction ([[feedback-affan-exports-himself]]).
-
-**2026-10-24 (Affan): BOTH formats for every yes** — each sample ships as a YouTube (Sean Ryan) version AND an Instagram (neon-window) version from the same approved moment (MATG pattern). Rule lives in presets/youtube-shorts/onyx-samples/PLAYBOOK.md; supersedes one-sample-per-prospect. Batch 5 (Brad Lea / Dropping Bombs, Fantasy Footballers): projects/_onyx-batch5-2026-10/BATCH.md.
-
-**2026-10-26: the Onyx page becomes Affan's PERSONAL brand page, handle @affancuts** (free on IG/YT/TikTok when checked; runner-up @affanpods). Organic-posting planning runs in its own Claude Code session from X:\Claude Projects\Hormozi Business, brief = my-businesses/onyx-organic-page-brief.md.
-
-**2026-10-27: batch-5 reactions + his first @affancuts organic reel PREPARED in ABW10** (bin "Onyx batch 5 reactions (2026-10-27)"):
-Brad Lea 2:48.8, Fantasy Footballers 2:48.3, MATG 2:43.5 (from OBS 2026-10-26 19-23/19-39/19-57 + C1404-C1406) and "Shorts cooked reel"
-1:23.8 (OBS 20-15-52 + C1407; his rule: organic reels ≤ 1:30, reactions ≤ 3:00). State: projects/_onyx-batch5-2026-10/REACTIONS-RUN.md.
-He exports; review not in yet. Numbers he says on camera are checked against the screen (graphics use the screen).
-
-2026-10-27 review → "<name> v2" ×3 + reel v2 (whole intro, MATG stakes line, subtle SFX). He then hand-trimmed the v2s himself (FF 2:29.7,
-MATG 2:37.0, more no-bed spans) and picked his own songs for the SAMPLES (Real Slim Shady = Brad, Big Poppa = FF, Thelema = MATG, yt + ig; I misread them as reaction
-beds first): Exports/<job>.<yt|ig>.music.mp4 via _onyx-batch5-2026-10/samples_music.py. Never re-run apply.py over a hand-edited v2.
-
-**2026-11-03: batch 6 delivered to Drive** (`G:\My Drive\Onyx Batch 3 Nov\`, 7 shows × reaction .mov + YT/IG clip with his song).
-Affan wants the videos to PLAY INSIDE the email (Drive links → "request access" + redirect warnings): email-size H.264 copies
-(`_onyx-batch6-2026-10/email_attach.py`, each < 9.5 MB for Chrome file_upload, ≈18 MB per show), attached in Gmail web; the
-Gmail connector can't carry video. Drafting prompt: `_onyx-batch6-2026-10/EMAIL-DRAFTS-PROMPT.md`. His Josh Trent follow-up
-("feel free to upload the shorts… cool flex… haha", Josh then asked for a call) is now format **U1**, 1-3 days after every pitch.
-
-
-## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)
-- [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + Affan's reaction video for podcast outreach; page = his personal brand @affancuts (2026-10-26, brief Hormozi Business/my-businesses/onyx-organic-page-brief.md); BOTH looks for every yes since 2026-10-24 (YouTube + IG neon window, one moment); before that the priority platform picked the look: Instagram = minimal motion graphics (onyx-samples/, pilot mfm-nursery-rhymes), YouTube = B-roll storytelling (onyx-samples-youtube/ = "Sean Ryan style"); fully automatic MP4; review 2 (2026-10-07): MFM perfect, per-video revisions in BATCH.md; reaction videos Seq 33-35 prepared in ABW8 (he exports), Rob's next; 2026-10-08: Harbinger, Pomp, Rich Roll FINAL in ~/Downloads; reactions Seq 37 (Pomp) + 38 (Rich Roll) prepared 2026-10-08; 2026-10-13: 4 reactions to batch 2 (Jeremy, Victor, Scott, Jay) PREPARED in ABW8; 2026-10-19: 5 batch-3 reactions PREPARED in ABW10 from raw, each ≤ 3:00 (REACTIONS-RUN.md); 2026-10-27: batch-5 reactions (Brad, FF, MATG) + his @affancuts reel "Shorts cooked" (≤ 1:30) PREPARED in ABW10
-
-2026-11-03 (Affan): his commercial songs stay on the upload versions of the samples. He has uploaded these songs 1000+ times, and YouTube only flags a song use over a minute; samples are under a minute, so never make song-free copies. The batch 6 S3 drafts were created in-session (ids in projects/_onyx-batch6-2026-10/EMAIL-DRAFTS.md); the videos are attached via Chrome.
-
-2026-11-03 evening (Affan): sample emails carry DRIVE LINKS shared "Anyone with the link: Viewer", never attachments (format S6).
-- Gmail can't play mp4 attachments: on the web it says "Could not preview the file", and the phone app downloads them first.
-- Affan: "people will be skeptical to download things from me".
-- Roofing went out with attachments before this was found.
-- Batch 6's 21 Drive files are public-by-link; the ids are in `projects/_onyx-batch6-2026-10/drive-links.json`.
-- Links go into drafts through Gmail web (Chrome), never the connector.
-- Check each link logged out with curl before an email goes out.
-
-## Onyx ORGANIC Shorts (his own page, not prospect samples), batch 1, 2026-11-04
-- Six of his own talking-head takes (C1439-C1444, X:\Recordings\Onyx\), cut and built in the Scott Clary IG look (neon window).
-- Sequencing was OK'd 2026-11-04. He posts one a day, so build them one at a time: there is no rush and no parallel agents.
-- Defaults he left standing: no corner label, no music.
-- Folder: `projects/_onyx-organic-2026-11/<job>/`. Each job has a RUN.md with its state. Batch status is in `SEQUENCING.md`.
-- All six 30 fps checks were sent 2026-11-04. The 60 fps finals render only after his OK, then go to X:\Claude Projects\Exports\.
-- 2026-11-05: all six 60 fps finals are in X:\Claude Projects\Exports\ as `affancuts-<job>-ig.final.mp4` + `-ig.cover.jpg`, not uploaded (he uploads). Short 1 also has `...final.header.mp4`: his experiment of a profile header above the window (picture, Affan / @affancuts, his hook line; `full-episodes-wont-save-you/ig/header.py`, added at the mux, no re-render).
-- Still unanswered, built as is: made-up view counts on Shorts 2 (1M+, 500K+) and 4 (2.4M), Short 2's caption "reviews", whether his new 0.3 s pause-cut rule applies to these six.
-- Kit lessons are in presets/instagram/neon-window/LESSONS.md (2026-11-04 entry): the 59.94 timebase and the local-median tracker.
-- 2026-11-08: Affan wants the profile header on every organic reel, with HIS hook per reel, before he gives a music track per reel.
-  Done: Short 3 (instagram-builds-the-person) "Posting on Instagram doesn't make you money but gets you this", Short 5
-  (one-short-two-variants) "IG VS YT Formats" → Exports `affancuts-<job>-ig.final.header.mp4`. They were built from a worktree session without
-  touching the job folders: the scratch `header_any.py` copy of header.py (hook as an argument; a hook that fits one line stays one line),
-  the PNGs are in `X:\Claude Projects\onyx-staging\organic-headers\`, and the mux is header.py's own (picture60 + mix.wav + PNG, one encode).
-  Same day, ALL of Shorts 2-6 done the same way (Short 1 was already uploaded, so it was left alone). The hooks: 2 "How to waste money in the podcast space 101", 4 "How to make your
-  podcast clip friendly", 5 "Why one video needs 2 variants" ("IG VS YT Formats" was only his label), 6 'Your title is not a "Statement Builder" it's THIS'.
-  He also heard "wind noise": measured, it is broadband steady room or fan noise ~22-25 dB under the voice. DeepFilterNet (AW LESSONS 4 recipe) cleaned each voice
-  (`onyx-staging/organic-clean/<job>.voice.dfn.wav`): floor -5..-9 dB in the finals, speech and -12 LUFS unchanged. Each job's own yt_mix spec was re-run in
-  staging with that voice. The plain `-ig.final.mp4` files still carry the noise. His music tracks per reel come next: lay them on the CLEANED mixes.
-- Open questions:
-  - Is C1438 (Urdu, about fake call-centre accents) the "7th video"?
-  - Short 5's receipt: does he want a real AW like-count screenshot?
-
-## Batch 7 (2026-11-05): restructured samples
-**Resume at `projects/_onyx-batch7-2026-11/HANDOFF.md` (2026-11-07).** Review 1 applied 2026-11-06, all three with him; waiting for his grade and caption calls, his songs, and his OK on death row v4.
-Tracker `projects/_onyx-batch7-2026-11/BATCH.md`, sequencing `SEQUENCING.md`, builder brief `BUILDER-BRIEF.md`. Yes list = heretics, On That Note, Melanin Money, Rise Above, Remnant Radio (all 11-04), Barbell Logic (11-02). Affan picked: heretics = Drea de Matteo's Sopranos money story (not the permitted Short, top priority), John Legend and Melanin restructured from the permitted Short, Rise Above = death row guard (pharmacy story rejected). All three built are with him for notes and songs. 
-
-**2026-11-07 check (tracker + log + Gmail, read-only; NOT yet in HANDOFF.md/BATCH.md, because a worktree session's Edit is blocked on the main checkout; copy it there when a session can):**
-- Reactions owed = 6: Drea, Melanin, John Legend, death row (once built), plus Brotherly Love and SPI (samples final 11-02, reactions to be re-recorded, none found).
-- Yeses with no sample = 6, ranking offered to him, not decided: (1) Ron Spomer Outdoors, NEW yes 11-05 17:23 UTC, not in tracker or log, no thank-you sent, passes the five checks, Short "Bear Protection Handguns Choose the Right Caliber & Ammo!"; (2) Rise Above, v4 and source ready; (3) Barbell Logic, best money on file ($2.4-2.9M revenue reported), fails check 1 by 2.9K subs, 17 s Short needs a moment from an episode; (4) High Performance, ~820K, fails check 5, Giacomo OK'd a sample with approval and Affan said 10-27 he'd send one; (5) Chase Hughes, fails check 4; (6) Remnant Radio. Judy, Stefanie and Jon Krohn were dropped by him 10-21.
-- One reply from a yes: Mulligan Brothers Interviews (838K, passes the five checks), Jordan asked 11-05 "Could you link the channel?", unanswered.
-
-## Moved from the MEMORY.md index (2026-11-06)
-per-prospect sample Short + Affan's reaction video for podcast outreach (page @affancuts); BOTH looks (YouTube B-roll 'Sean Ryan' + IG neon window) for every yes since 2026-10-24; batch and reaction log in the file; ORGANIC batch 1 (his own C1439-C1444, IG look, one/day): all six 60 fps finals in Exports 2026-11-05, not uploaded; Short 1 also with his profile-header experiment
+Related: [[feedback-onyx-samples-30fps-no-topaz]], [[feedback-onyx-reactions-v2-standard]], [[feedback-reactions-max-3-min]], [[feedback-reaction-whole-intro]], [[feedback-onyx-client-criteria]], [[feedback-affan-exports-himself]], [[feedback-fix-only-what-he-named]].

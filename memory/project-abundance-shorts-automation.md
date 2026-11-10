@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7173e089-1e87-4811-944b-8e4043fa359d
-  modified: 2026-11-05T15:14:35.817Z
+  modified: 2026-11-10T12:42:04.388Z
 ---
 
 Goal: automate the full Abundance Wisdom shorts edit (soundbite stitching → head-lock → Topaz → captions → zooms/transitions → audio → export) to match the user's hand edits. Started 2026-09-14.
@@ -177,3 +177,22 @@ face onto a letterbox overlay, like his Harry pills). Final Renders + Exports, s
 **2026-11-06 'Why Ronaldo Just RETIRED From Portugal' v1 DELIVERED** (`projects/ronaldo-retires/`, REPORT.md): his Tella 1 + re-cut as spec, legendary overlay per sentence, 53.77 s, 34 Higgsfield credits. His re-cut puts 'he was a drunk person' in, reversing the brief. Waiting on his review; open: childhood photo for 'a boy in Madeira'.
 
 **2026-11-08 'What Michael Jackson Showed His Mother' v1 DELIVERED** (`projects/mj-showed-his-mother/`, REPORT.md): from his 38.50 s re-cut + Tellas 1-2, first-party voices, real stretcher, O2 and hospital pictures, fade out, 5 Higgsfield credits. Opus decided, Sonnet built through frame gates. Four overlays are mine and removable. Waiting on his review.
+
+**2026-11-09 'Why Michael Jackson's Son Had To Step Outside' APPROVED by Affan** (`projects/mj-son-step-outside/`, BRIEF.md WALKTHROUGH): his Tella marked 3 overlay slots on V2; built on V3 (Jaafar Billie Jean 1080p, Michael at MSG 2001 from a 'Billie Jean 4K' upscale, Corso doing Jaafar's wig/makeup stretched 0.84x). Known gaps accepted: MSG footage is SD at heart, ABC panel crops 3.5-4.8x, 'uh'/'like' kept. His sequence unsaved in ABW10; he exports. Guarantee line NOT typed (gaps open).
+**2026-11-09 ~17:45, after his "just start the actual render": the code-built FINAL DELIVERED.** 34.9 s, 60 fps, -14 LUFS, no music. Overlays use the 4K originals; captions sit at his ~y1060. Copies are in Final Renders and X:\Claude Projects\Exports (QA in `proof/r2/QA.md`). Waiting on his review.
+
+**2026-11-09 ~21:00 'Why Justin Bieber Walked Off His Own Stage' code-built FINAL DELIVERED** (`projects/bieber-walked-off-stage/`, RUN.md top), after his "now make the short" on v3. 37.7 s, 60 fps, -14.1 LUFS, no music. Same-person jump cuts sit within 1 px after an ECC hop fix. Lip sync is proven by the source chain (`win/sync_*.py`). Copies are in Final Renders and X:\Claude Projects\Exports. Waiting on his review. Open: the "19" tail at 20.39, the Scooter card over the club footage, and Content ID on the Confident band.
+
+**2026-11-10 hub roll-up (read off disk, not his words).** His own `<word> Final YT.mov` in Final Renders means he exported
+his final from our delivery. Seen: Harry (11-04 22:56), Owen (11-05 19:34), Betrayed = La Toya (11-06 02:20), Ronaldo (11-07
+11:21), Burn (11-08 05:07, very likely 'What MJ Showed His Mother', v3 at 04:18), Justin = Bieber and Jafaar = Son Step Outside
+(both 11-09 23:57). Export is not proof of upload: log views in the Cowork RESULTS.md when he gives them.
+- 'What MJ Showed His Mother': v2 11-08 02:20 (60 fps, head-tracked, his Topaz recipe), v3 04:18 (only O6: an enhanced still of
+  the This Is It O2 announcement, slow push-in). All three kept.
+- **Open, waiting on HIS direction:** 'Jermaine Jealous - raw cut' (`projects/jermaine-mocked-skin/`, ABW10, 47.15 s, opening
+  added on his yes 11-07) and 'Why MJ Gave Away 5 Million - raw cut' (`projects/mj-victory-tour/`, ABW10, 35.53 s, beats 1-6 +
+  2 placeholder cards, 11-08). Both unsaved in ABW10; he saves. Bieber's title is still his pick (candidates in its RUN.md).
+- Run 1 and run 2 of the Instagram method made these: Mother + Jermaine (run 1), Bieber + Victory Tour (run 2), Son Step
+  Outside alongside. [[project-instagram-beat-mining]]. The hub's session map and open items: `presets/youtube-shorts/abundance-wisdom/HUB.md`.
+
+**2026-11-10 strategy research (hub, Fable advisor), after Bieber "Painful Upbringing" 5.9K and "Son Saw His Dad AGAIN" 5.3K (d1/hours):** full report `research/aw-strategy-2026-11-10.md`; Studio table + audience in the Cowork RESULTS.md (10 Nov block). Finding (corrected after the advisor checked the table): nothing broke. The 18-29 Oct death-lane run (first-24h 277K→66K) was a hot streak that ended. Every other Short since early October, MJ or not, opened at 3-80K, September's band, with stayed 68-78%. YouTube's 1 Oct 2026 Shorts "prioritize original content" change is a live risk (clip peers ReelCandy, CelebEra fell; narrated Bolt grew) but doesn't show on this channel: the Studio feed columns (10 Nov) give 79-94% Shorts-feed share on misses aged 5-13 days, so the feed isn't refusing them. Studio can't be opened from this PC's Chrome (signed-in account = the removed Wealth Educator channel); ask Affan to paste Ask Studio answers. Bieber was not a clean test (8.2M prior clip as hook, wound told by managers/doctor, diagnosis title). Make first: the oxygen chamber as a CLIP (OXYGEN-CHAMBER-CUT.md; narration is his opt-in experiment); second: the Whitney/Bobbi clip (BOBBI-KRISTINA-EDITOR.md, a grief-lane port, not the birthday shape). No verified birthday-shape story on another celebrity found yet.
