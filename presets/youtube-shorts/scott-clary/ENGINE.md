@@ -8,7 +8,9 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
 - **How picks are chosen now:**
   - The FUNNY TEST below (Affan's OK 2026-11-08), scored with the Bombas card and the AW shapes. The old pick test is FALSIFIED (FINDINGS).
   - On trial: Herjavec's spreadsheet (RESULTS row 16), Moshe and Dobrik's coin flip (row 17), and one more pick.
+  - **Pick 3: Affan 2026-11-11, "mcafee is good", then "Yes, build it".** It is being built in Sonnet session `mcafee-sushi-build`, job `projects/_client-scott-clary/cole-mcafee-sushi/`, as a 30 fps check first. Eric Cole always picked sushi with John McAfee (funny 3, Bombas 6.5). Sheet: `projects/_client-scott-clary/research/mcafee-sushi.md`. Runner-up: Gary's Ricky. Coverage is 661 feed episodes: the 11-09 screen had missed Ebert and Malik (`research/viral2/screen-R29.md`).
   - The bar: one of the three passes 50K at 14 days public.
+- **Instagram outlier read (2026-11-10, Affan's idea; it adds a pick method, it replaces none):** `projects/_client-scott-clary/research/ig-outliers/README.md`. The two picks there wait for his OK.
 - **Where stories come from:** all 658 episodes are screened (FINDINGS § Story bank, 2026-11-09).
   - Rankings: `projects/_client-scott-clary/research/viral2/screen-SWEEP.md` and `screen-R21..R28.md`.
   - Next best: Eric Cole's McAfee sushi story, Daymond's "You're not Snoop", Gary Vee's "Ricky" (needs the source video), and Banayan's Buffett blacklist.

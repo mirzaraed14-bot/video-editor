@@ -590,3 +590,20 @@ These apply to every Onyx job, both looks. The job history is in `JOBS.md`.
 - One at a time (he posts one a day), no parallel agents, no corner label; he uploads (11-04).
 - His profile header (picture, Affan / @affancuts, his hook line) above the window on every reel, added at the mux, no re-render (11-08).
 - When he hears "wind noise", measure it first: on 11-08 it was steady room or fan noise 22-25 dB under the voice, cleaned with DeepFilterNet (AW LESSONS 4 recipe), speech and loudness unchanged.
+
+## 2026-11-10 review: batch-7 reactions (Affan reviewed all five in ABW10) → the v3 standard
+Full rules + his verbatim notes: `projects/_onyx-batch7-2026-11/REACTIONS-V3.md` (overrides REACTIONS-V2 where they differ).
+- His voice must be the loudest thing ("speaker audio low than music", all five): bed 12 LU under the voice (was 8), measured on the
+  PLACED timeline, never from the builder's offline wav (the offline "8 LU" played as music over him in Premiere).
+- "Cut music out when I'm reacting to their channel short, this rule is for all reaction videos": the bed is OUT under every play.
+- Plays never louder than him ("the Andrew short is too damn loud ... it's peaking too much"): plays 1-3 LU under his talk, peaks <= -6;
+  the whole mix <= -5.5 dBFS.
+- "Some sfx are too loud" (all five): SFX peaks ~12 dB under his voice peak, motion-sized, no taps/knocks/pens (PHONE BAND / SUBTLE).
+- "The video I'm reacting to is also sometimes playing in the background": OBS has ONE track (mic + desktop); find and remove the
+  played file's audio under his voice (camera audio or reference cancellation).
+- "Overall facecam too zoomed in, this goes for all reaction videos" + "zooms are too goofy ... unnecessary motion, the goal is premium":
+  face at the fill scale (132 in a full window), no push-ins, no keyframed face motion, static views, portals -> a dissolve.
+- "Why am I seeing double of my cameras" / "I can see the bottom of the camera at 2:17": one camera image at a time, never a frame edge.
+- "Abrupt cutting, literally cutting out info midway (counting subs)" / "parts should be added, it doesn't make sense" / "gentlemen 2":
+  never cut a fact midway, keep every point's setup line, last take only of a repeated line.
+- "Quality checking is very poor ... don't entirely revise it": QC is done on the placed timeline (audio sim + frame grabs); fixes keep the edit.

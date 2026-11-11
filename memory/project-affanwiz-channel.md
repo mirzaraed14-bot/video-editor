@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: d9ed4b41-2603-4b3f-8041-06604eaada09
-  modified: 2026-11-10T13:34:49.763Z
+  modified: 2026-11-10T16:56:33.833Z
 ---
 
 **AffanWiz** (named 2026-09-23) is the creator's English personal brand: long-form YouTube with them on camera, plus Shorts
@@ -19,6 +19,10 @@ Affan Afterhours (GTA) and @affanwizu (Urdu reels):
 - **Shorts:** `presets/youtube-shorts/affanwiz/` (ENGINE, FINDINGS, RESULTS, LESSONS, UPGRADES), code-built in the Scott
   Clary YouTube kit on Scott's newest style set.
 - **Job log + resume block:** `presets/youtube/affanwiz/JOBS.md`, covering every job, where it lives and what waits on him.
+- **Research engine** (sweeps, picks, CA scripts, packaging, predictions):
+  `X:\Claude Projects\Personal Brand English - Skool Community\creator-shorts\`, with its own `CLAUDE.md` + `HANDOFF.md`.
+  - On 2026-11-10 he chose to move it from Cowork to its own Claude Code session rooted there, like GTA.
+  - The hand-over's progress is in JOBS.md.
 
 **Why:** several channels share this repo, and rules from one must not leak into another. Per-video detail lives in
 each job's RUN.md / BRIEF.md and in JOBS.md, never in this memory.

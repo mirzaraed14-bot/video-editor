@@ -34,6 +34,16 @@ per video (§ How a new video starts). Nothing runs from the dispatcher itself.
   - "Same stream, 23 clips" from CA-009, in `projects/iphone-duo-clip-angle/shorts/PICKS.md`;
   - "the 2-a-day routine" from CA-010 (5:00–5:35), the runner-up in `find-viral-angles/SEQUENCE.md`.
 - **Open channel question:** a Skool CTA in the Shorts, or clean like Scott's. They're built clean until he says (Shorts ENGINE).
+- **Research port (2026-11-10):** he is moving the AffanWiz research engine (sweeps, picks, scripts, packaging,
+  predictions) from Cowork to Claude Code, as GTA moved that morning. The ask to Cowork is `COWORK-HANDOFF-REQUEST.md`
+  (this folder). It writes `X:\Claude Projects\Personal Brand English - Skool Community\creator-shorts\HANDOFF.md`.
+  Waiting on that file.
+  - **His pick:** its own Claude Code session rooted in `creator-shorts\`, like GTA.
+  - `creator-shorts\CLAUDE.md` is already written, with the editing-side map and an empty "Corrections" section.
+  - **When HANDOFF.md lands, the dispatcher:**
+    1. reads it;
+    2. writes the corrections against this log into that CLAUDE.md;
+    3. starts the research session (`cwd` = that folder, fresh, Opus, since picks and scripts are judgment).
 - **Cleanup 2026-11-10:**
   - The superseded 30 fps check renders of Shorts 1–3 (7 files, ~160 MB) went from Exports to the Recycle Bin. Each job's
     `outputs/` still has its own copy, and Exports now holds only finals, covers and Short 4's live check.

@@ -120,7 +120,11 @@ Finding one is the next research job, not something to fake.
   cried together", Jackson family secrets.
 
 ## 6. The next two Shorts
-### ⭐ MAKE FIRST: "Why Michael Jackson Was Inside That Chamber 💔" (MJ, F1, CLIP by default)
+> **⛔ UPDATE, same day: the oxygen chamber is DROPPED (Gate 5).** A 1986 UPI report quotes his own manager confirming he
+> planned to sleep in a chamber. The wide pick run that followed is in `research/aw-pick-2026-11-10.md`. Nothing cleared every
+> gate. Best bet today: Whitney's daughter (below). The chamber section stays for the record only.
+
+### ~~MAKE FIRST~~ DROPPED: "Why Michael Jackson Was Inside That Chamber 💔" (MJ, F1)
 Researched in `X:\Claude Projects\Abundance Wisdom\OXYGEN-CHAMBER-CUT.md` (23 Sep).
 
 **Format changed after the feed columns came in.**

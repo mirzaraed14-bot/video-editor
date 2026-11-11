@@ -29,6 +29,10 @@ they performed: `ERAS.md`.
   explainer look (Rockstar key-art stills over a dark matte + grain, cutout puppets) is documented in the channel
   README/PLAYBOOK, and its learnings are in the Travis Scott POSTMORTEM.
 
+**The content engine (sweeps, topics, scripts, packaging, predictions) is a separate workstream** in
+`X:\Claude Projects\GTA 6\`. It moved from Cowork to a Claude Code session rooted there on 2026-11-10, his choice, so it
+can use the Fable advisor. That folder's `CLAUDE.md` + `HANDOFF.md` are its instructions; scripts for the edit come from it.
+
 **Intake facts:**
 - The recording folder is not the channel. `X:\Recordings\Afterhours\` has held AffanWiz footage, and a GTA video has
   landed in `Onyx\`, so settle the channel from the content.

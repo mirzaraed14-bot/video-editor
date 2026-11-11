@@ -265,6 +265,16 @@ Read: all three are well under Bombas, and the gap is B1 every time. Nothing lef
 an "on par" pick is a guest strangers know: the feed-famous screen (§ Channel goal, 11-01 levers) or Scott's new famous guests.
 Test: if any of the three passes 100K, B1 is weaker than this table says (re-weight it in ENGINE, dated).
 
+### 2026-11-11: the Instagram outlier read gave no YouTube pick (`projects/_client-scott-clary/research/ig-outliers/`)
+- **Why the outliers travelled:** Scott's Instagram outliers mostly reflect who co-posted them. The same Tolia clip did 38K from Scott's side and 670K
+  from Tolia's account.
+- **Same files, opposite order (n = 2):** FUBU 10K on YouTube / 408K on Instagram; Bombas 659K / 95K.
+- **So an Instagram outlier is no evidence for a YouTube Short here.** That matches the beat-mining run on 2026-11-08.
+- **The B1 check, calibrated:** Claude scored Scaramucci B1 = 1 ("the Mooch"). Affan didn't know who he was: "who is this guy … i don't know him".
+  **Score B1 by "would Affan, or a 20-something Shorts viewer, place this face?"**, never by how famous the guest was in the news.
+- **Claude's miss:** two picks were proposed to fill the brief's "best one or two" when neither cleared the bar. The plain answer should have led:
+  "this route gives no YouTube pick".
+
 ## Validated on this channel
 (none yet: the first results arrive 7 days after the first logged upload)
 

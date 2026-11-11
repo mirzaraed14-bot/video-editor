@@ -42,3 +42,9 @@ Related: [[feedback-usage-budget]].
     edit-review reviewers/skeptics stay on Sonnet, not Haiku. Written into CLAUDE.md step 2 and edit-review § Token efficiency.
   - Found 11-10: most edit sub-sessions had been started on Opus (AW Shorts, English, Onyx samples); only the Scott Clary hub was
     starting Sonnet ones.
+- **A session cannot see its own advisor model, so never guess it** (Affan 2026-11-10, "bruv wtf" after the AW hub said its advisor
+  "may still be Opus" when it was on Fable). Two signals don't count as proof: the "keeps Opus 5.5" line `/advisor` prints, which
+  is stale, and the Fable usage meter. That meter read 0 % on 11-10 after ~8 Fable advisor calls, because it doesn't move for
+  advisor use or rounds it away. The proof is the transcript: open the `.jsonl` in `~/.claude/projects/<project folder>/` that
+  contains Affan's latest message and read the last `"advisorModel":"…"` on an assistant entry (`claude-fable-5-2` = Fable). When
+  asked, check that and answer in one line. If you can't check, say "it's set to Fable" and move on; don't send him to `/compact`.

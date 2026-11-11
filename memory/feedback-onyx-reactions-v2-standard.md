@@ -1,6 +1,6 @@
 ---
 name: feedback-onyx-reactions-v2-standard
-description: Affan 2026-11-02 Tella review of the batch-6 reactions: voice peaks -6 dBFS, lo-fi/old-school hip-hop bed ~8 dB under, varied premium SFX per MG, show his screen when he points, play the prospect's best moment, no insulting hooks, captions below lips, a reviewer that compares to viral Shorts
+description: SUPERSEDED IN PART by v3 (2026-11-10, projects/_onyx-batch7-2026-11/REACTIONS-V3.md). Affan 2026-11-02 Tella review of the batch-6 reactions: voice peaks -6 dBFS, lo-fi/old-school hip-hop bed ~8 dB under, varied premium SFX per MG, show his screen when he points, play the prospect's best moment, no insulting hooks, captions below lips, a reviewer that compares to viral Shorts
 metadata:
   type: feedback
 ---
@@ -16,3 +16,10 @@ nothing"; "we're literally insulting them right off the bat"; "I didn't even giv
 
 **How to apply:** supersedes [[feedback-voice-first-mix]]'s 12-14 LU bed for reactions; keeps [[feedback-premium-sfx]]'s no-superhero rule
 but demands variety per motion; [[feedback-captions-just-below-lips]]; [[feedback-reactions-max-3-min]]; [[feedback-reaction-whole-intro]].
+
+**v3 (Affan 2026-11-10, his own review of batch 7 in ABW10) overrides v2 where they differ: `projects/_onyx-batch7-2026-11/REACTIONS-V3.md`.**
+Voice must be the loudest thing (all five sounded "speaker audio low than music"): bed 12 LU under, measured on the PLACED timeline, never
+from an offline wav; bed OUT under every play ("this rule is for all reaction videos"); plays 1-3 LU under him, peaks <= -6, mix <= -5.5 dBFS;
+SFX ~12 dB under his voice peak, no taps/foley ("some sfx are too loud"); no desktop audio of the reacted video under his voice (OBS = one
+mixed track); face at fill scale, no push-ins or keyframed face motion ("too zoomed in ... zooms too goofy ... premium"); one camera image at
+a time, never a frame edge; never cut a fact midway, keep setup lines, last take of a repeated line; QC from the timeline.

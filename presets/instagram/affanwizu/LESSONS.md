@@ -3,6 +3,10 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-11: names are tested with a prompt, not chosen by one (ABW10 Sequence 52)
+- **For an unclear name, decode it twice, with and without a prompt listing the candidates.** A name the prompt cannot pull in is not the name: "Aroob/Jatoi" in the prompt left "Ekra" and جسٹرالیوی untouched, so the captions read "mrs iqra" and "sistrology" (the en pass's "sister of astrology"). → `projects/abw10-seq52-short/work/redecode2.py` is the recipe.
+- **The en window's sense beats the ur/hi letters on a short word:** ur + hi heard باہر / बाहर ("baahar"), the en pass "every vlog" → "har vlog mai".
+
 ## 2026-11-10: a DROP flag can sit AFTER the real gap (ABW11 Sequence 03)
 - **WhisperX skipped 9.6-12.7 and slid the NEXT sentence 3.2 s early to fill it**, so `transcript_check.py` flagged the hole at 12.55-17.40, where the slid words had come from. On a DROP, re-time the whole run from the gap's last good word to the first word after it from the ur + hi windows, not just the flagged span. → job `projects/abw11-seq03-short/` (0-17.2 s timed from `work/redecode.txt`).
 - **A repeated phrase collapses into one stretched word** ("aise haath daalte the" said twice → one 0.86 s "تھے" at p0.33): the long-span warning in transcribe.log is the tell.

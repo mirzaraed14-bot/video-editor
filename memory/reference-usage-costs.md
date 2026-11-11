@@ -39,3 +39,12 @@ costs, 3–4.5x at typical costs; the 28 samples alone are 0.4–2.2 caps. Relat
 [[feedback-use-fable-allowance]], [[project-onyx-sample-shorts]].
 
 The weekly schedule built from these numbers: projects/_weekly-plan/SCHEDULE.md (2026-10-22, draft for his OK).
+
+**Fable ADVISOR cost, measured 2026-11-10** (session logs: `usage.iterations[]` entries with `"type":"advisor_message"`):
+- Advisor usage shows on the ALL-MODELS meter. The Fable meter stayed at 0 %, and the app's "Fable reset" card said "no Fable usage to
+  reset". Docs (code.claude.com/docs/en/advisor § Cost): "advisor usage counts toward your plan's usage limits".
+- **Each call re-reads the WHOLE conversation, uncached** ("no reuse between calls"), so a call costs the session's context size
+  at Fable rates. AW hub at ~600K context: ~$5 per call (≈ 0.25 % of the week). A 150K session: ~$1.4.
+- 11-10, from about 6 PM to 10 PM PKT: ~31 Fable advisor calls ≈ $97 API-priced ≈ 4 points of the week. Biggest spenders were the AW hub
+  and the affectionate-feistel worktree (~$28 each, 450–530K average context).
+- Lever: compacting a big hub makes every later advisor call 3–4x cheaper with no loss of advice quality.

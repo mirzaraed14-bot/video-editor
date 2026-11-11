@@ -16,16 +16,27 @@ Monday ~02:00 UTC (07:00 Pakistan time). The advisor is Fable 5.2 since 10 Nov (
   not) opened at 3-80K on day one, September's band, with viewers holding (stayed 68-78%).
 - YouTube's 1 Oct "original content" Shorts change is a live risk (clip peers fell, narrated ones grew). Our feed columns show
   no sign of it: misses aged 5-13 days still get 79-94% of views from the Shorts feed.
-- Make first: the oxygen chamber as a CLIP (OXYGEN-CHAMBER-CUT.md; card vs reusing Burnt Hair's line to settle). Narration is
-  his opt-in experiment. Second: the Whitney/Bobbi clip (locked brief, grief lane).
-- No verified birthday-shape story on another celebrity found yet.
-- Waiting on him: clip or narrated for the chamber.
+- Oxygen chamber DROPPED (Gate 5: his manager confirmed the sleep plan to UPI in 1986).
+- Pick run `research/aw-pick-2026-11-10.md`: nothing cleared every gate. Ranking: Whitney/Bobbi (best bet), Dolly (clipped at
+  407K), Britney 2008 "jail" (2026 DUI undercuts it), MJ "Dangerous" in court.
+- No guarantee line typed.
+- Later the same day, the Instagram pass (all six names) found nothing stronger.
+- Dolly is killed: the Walters beat was clipped right after her death (25 Aug: 407K, 175K, 91K Shorts dated 25 Aug-1 Sep).
+- Whitney's sources top out at 720p re-uploads of 2012 TV.
+- The proposed default is Jermaine first: the MJ cut already in ABW10, waiting on his direction. Whitney second; deeper
+  Instagram mining goes to the ig-beat-mining session.
+- Read dates: Burnt Hair 15 Nov, Bieber 16 Nov, Son 17 Nov.
+- Evening: Whitney downloaded and checked (`projects/whitney-bobbi-last-day/PITCH.md`). After a re-test against the
+  softest approved footage (Prince ABC, Bieber's Oslo), it **PASSES the checklist**. The earlier 'killed' read was a bad
+  measurement.
+- Pitched with one ask: his censor call on 'I would have went right with her'.
+- Jermaine stays unpitched until its UCLA beat is replaced and its main beats get the same anchor test.
 
 **Waiting on Affan:**
 | Job | Session | What it needs from him |
 |---|---|---|
 | Jermaine Jealous (MJ's brother mocked his skin) | `local_0729b59b-cdba-451e-a976-e7b98a4410f4` | his direction on the 47.15 s raw cut in ABW10 (title + one word "out"/"up front" were also open) |
-| Why MJ Gave Away 5 Million (Victory Tour) | `local_59aa922f-cf80-4fde-9047-81d1b48d98f8` | his creative direction on the 35.53 s sequence in ABW10 |
+| Why MJ Gave Away 5 Million (Victory Tour) | `local_59aa922f-cf80-4fde-9047-81d1b48d98f8` | **REJECTED by him** on footage and audio quality (IDEAS.md); replaced by the Son Short. The unsaved sequence is still in ABW10 |
 | Why Justin Bieber Walked Off His Own Stage | `local_12157f61-18f2-4fa8-a97b-dac32e70ace2` | the title pick; he already exported "Justin Final YT" |
 | La Toya Betrayed | `local_d3f748df-e06e-4089-9b46-7c54053bd766` | his verdict on the Bolt Motivation look (decides the look for the rest) |
 | Instagram method | `local_fd5de818-0d1c-43c9-98f2-673ea76852df` | view numbers once each Short's curve is flat (RESULTS-TRACKER.md); the method is unproven on YouTube until 4-6 flat rows |
@@ -45,6 +56,7 @@ and Katherine (`local_da5a006a-36b0-4117-aa32-ff0ceadb2381`). A third end-screen
 The per-Short history is in memory `project-abundance-shorts-automation`; each job's own state is its `projects/<job>/RUN.md`.
 
 ## How the hub works
+- **No idea is pitched until it passes [PITCH-CHECKLIST.md](PITCH-CHECKLIST.md)** (Affan, 10 Nov): facts and recent news, the downloaded sources checked by eye and ear, freshness, proof, shape, his rules. A fail is logged, not pitched.
 - **A pasted locked brief = a new Short = its own session.** Offer it with a title alone; he has picked "New session" every
   time. Then send the brief verbatim plus the standing-rule conflicts. If he asks in words for a subsession, start it directly.
   Over Remote Control the offer card can't be shown, so ask in text or start it when he has asked.
@@ -62,6 +74,12 @@ The per-Short history is in memory `project-abundance-shorts-automation`; each j
 - **Phone copy, only when he asks** (he's outside and wants to review): two-pass libx264 3700k, maxrate 6000k, AAC 128k,
   `+faststart` gave 24 MiB for a 54 s Short. Write `<title> (phone).mp4` to the job's `outputs/`, check the size and loudness,
   send it with SendUserFile, and delete it once he has reviewed.
+- **YouTube block flag (`projects/_onyx-batch2-2026-10/.locks/youtube.BLOCKED`), the hub's job:**
+  - A 429 gets one spaced metadata probe about 25 min later. A real "not a bot" page gets ONE probe about 6-7 h later.
+  - Clear only if the probe answers normally.
+  - Every YouTube request (metadata and search too) is ≥60 s apart. No caption/timedtext fetches: transcribe locally.
+  - Example: 11 Nov 00:17, the HP session's 15 s-spaced metadata probes hit a bot page. One probe at 06:48 answered
+    normally, so the flag was cleared (`youtube.BLOCKED.cleared-2026-11-11`).
 - **Before a new workstream, read usage** (`get_usage`) and say the cost. Lean mode: no new agents without his OK.
 - **Quote his words when forwarding an approval** ("Yes to all") to a session, and say what it does not cover.
 
