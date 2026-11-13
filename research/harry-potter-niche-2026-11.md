@@ -642,8 +642,105 @@ most 153K on Shorts.
   - Set footage: Warner's own Short n4qSSAk8g2I (1080x1920, burned captions).
 - **Killed:** Radcliffe nearly drowning (YouTube 4.1M, LVCeKOHbwkY).
 
+### Round 9 (12 Nov, 01:40-02:25): Chrome back; "Hagrid was two men", told by the director
+- **Instagram pass:** about 520 HP posts read (likes and caption from each post's meta description) across 12 keyword
+  searches:
+  - harry potter cast, daniel radcliffe, alan rickman, harry potter set story (no results), harry potter bloopers, tom
+    felton, maggie smith harry potter, rupert grint, emma watson harry potter, harry potter reunion;
+  - plus hagrid and hagrid body double.
+- **Instagram then returned HTTP 429 to his signed-in Chrome.** All Instagram work stopped and both tabs were closed.
+  - Lesson: no bulk `/p/` fetch loops on his account. At most a few dozen posts per session, spaced.
+  - Shares were read on one reel only.
+- **The #1 by far:** @bloopersbits DUevRFHDX_j (7 Feb 2026), "Am I the only one who thought Hagrid was real??!":
+  **2.6M likes / 11.5K comments / 49.3K reposts / 1.4M shares**, read on the page.
+  - That's about 9.5x the feast reel's shares.
+  - Variants: about 227K, 221K, and HBO's Nick Frost first day about 438K.
+- **It carries to Shorts:** 18.2M (KIO, Oct 2024), 5.2M (Oct 2025), 1.57M (Sep 2024). By their descriptions, all are
+  trivia reveals with no named voice.
+  - So the plain reveal **fails freshness**. It lives only as a join.
+- **First-party voice found:** Chris Columbus on *The Rest Is Entertainment* (AZGH_imo_3g, 28 Aug 2025, 25:15-26:20, in
+  the studio, 1080p25, gap flatness 0.171):
+  - "That presumably is still Martin… a rugby player who played Hagrid with a giant sort of fake rubber Hagrid head that
+    we sometimes replaced with CGI";
+  - "Now it looks like Martin, I could be wrong, wearing a Nick Frost head";
+  - "exact same costume that we designed";
+  - "Part of me was like, what's the point?"
+  - His "what's the point" clip already has Shorts: **L7NgDGLQ9-E**, 314K (Edited By Geo, 29 Aug 2025, 60 s). The
+    passage is 65 s, so that Short very likely carries these same words: **our join probably exists**. Ours differs
+    only in the pictures (2001 suit and head, 2025 stand-in).
+  - **His "still Martin" guess is likely wrong.** Fan and leak outlets name the 2025 stand-in as a 7'2" policeman,
+    "Anthony Wallyn" (unconfirmed by HBO). A set video of 21 Jul 2025 shows a prosthetic Frost head. The cut drops
+    the guess.
+- **OPEN:**
+  - the original Warner BTS of Bayfield in the suit and head (not on `E:\Bullshit Folder`);
+  - the 2025 set photos are press-agency photos;
+  - the ending is a judgment, not warmth.
+- Full gate statement: `projects/harry-potter-idea3/PITCH.md`.
+- **Prediction:** 10K-800K, centre 40-150K. Named failure: "seen it" (18.2M).
+- Also fresh but smaller (not run):
+  - Rupert Grint at the *Ebenezer* premiere with his on-screen son (9-10 Nov, about 300K likes each);
+  - @mtvuk DfiShyqOd_G (110K): Grint names Alan Rickman as "the person who inspired and uplifted him". It overlaps the
+    prank's Rickman ending.
+- **YouTube calls this round, all through `lock.sh`, ≥60 s apart, no bot page and no 429:**
+  - 3 yt-dlp searches;
+  - 5 metadata probes;
+  - 1 search;
+  - 1 download (AZGH_imo_3g);
+  - 2 built-in-browser Shorts searches.
+- The Instagram counts for the variants are meta-description values, which are rounded: that source said "3M" where the
+  page shows 2.6M.
+
+### Round 10 (12 Nov, 12:50-13:40): "Source it" for the Hagrid idea
+- Sourced, nothing built: `projects/harry-potter-idea3/SOURCES.md`.
+- **The best picture:** Bayfield (6'10") next to Coltrane in matching costume tests, from the 1080p Collider re-cut of
+  Warner EPK, 368-371 s (picture only).
+- **The rubber head and its remote:** from Warner's Wizard's Collection featurette (the 2012 set), 480x270. It finishes
+  well as an inset. The Instagram reel's towel shot appears to match it.
+- **The two-men shot fails "not a competitor's re-cut"** (Collider's 2025 narrated edit). It finishes soft: about Bieber
+  Oslo, below Prince ABC.
+- **Beat 1 is blocked as written.** The photo planned for it is almost certainly Frost himself (tracking dots, crew
+  height). The only clear double frames include the new child Harry. Fix: open on the 2001 two-men shot.
+- **A second voice turned up in the featurette:** someone who appears to be Bayfield, on camera. "It's known as Team
+  Hagrid, and I've been working with these guys now for ten years, and you make very, very strong friendships." It's at
+  270p and possibly has music under it (flatness 0.046).
+- **Coltrane close-ups:** Warner's own "Yer a wizard, Harry" (1080p).
+- **The 2025 giant:** Click News and Media agency photos, 634x951 with a watermark.
+- **Columbus finish test passes:** face about 420-490 px at delivery, at or above Prince ABC.
+- **YouTube served a bot page at 13:24** on the 26th request of the day (14 this round, all through `lock.sh`, ≥60 s
+  apart). `youtube.BLOCKED` is set; only the hub clears it.
+- Not fetched: `jQmfa-YWoNU` (1080p studio-tour footage of the animatronic head).
+
+- **12 Nov, about 16:00: "Build it", so the raw cut is placed in ABW11** as "Hagrid - raw cut" (bin "Hagrid"), 21.7 s.
+  - Columbus in three lines, under 2001 BTS, the 1080p60 animatronic head, the 2025 photos and Warner's coat shot.
+  - Opens on the 2001 two-men shot (his default).
+  - ABW11 not saved.
+  - Details: `projects/harry-potter-idea3/RUN.md`.
+
+### Round 11 (12 Nov, 19:00-19:20): the Hagrid cut is rejected
+- **Affan:** "its horrendous not upload material at all its just 2 topics thats it nothing special either you find
+  better moments to make a proper story or drop this idea".
+- **KILL LOG, idea3 as built:**
+  - Shape fail: two facts in one voice, with no arc and a judgment ending.
+  - These were the ⚠️ rows the pitch named (shape and ending; the 314K join).
+- **Better moments searched:**
+  - The rest of the episode is transcribed (1770-3114 s). Columbus has no other Hagrid lines.
+  - The proven reel is the plain reveal (Warner featurette footage).
+- **Verdict: DROPPED.** Adding Coltrane's *Return to Hogwarts* farewell (1 Jan 2022, "I'll not be here, sadly, but
+  Hagrid will"; died 14 Oct 2022) after Columbus's reveal is still two topics, because the link is mine, not theirs.
+  Coltrane's line is a separate, unverified beat: press wording, no file, no Instagram or Shorts numbers. Record:
+  `projects/harry-potter-idea3/RUN.md`.
+- **Instagram 429 again at 19:2x, and my loops may have caused it.** One keyword search page, then two overlapping
+  8-fetch `/p/` loops: the first timed out on my side but kept running in the page. Up to about 17 fetches about 3 s apart,
+  then 429. That broke the no-loops rule. Stopped and the tab closed.
+- **Removed on his word (~19:55):** "Hagrid - raw cut" and the bin "Hagrid" are deleted from ABW11 (not saved).
+- **Not pitched,** single voice with no Instagram proof:
+  - Columbus "cast the parents" after Home Alone (21:43-22:58). Its pictures need Culkin child footage, the minors line
+    logged 10 Nov.
+  - Columbus "I've been Harry Potter, I've been Hermione" (49:59).
+
 ## Not covered (honest gaps)
-- No Instagram creator Reels tabs scanned (keyword and hashtag pages only, about 15 reels opened).
+- Creator Reels tabs are still unscanned. Round 9 added 12 keyword searches, about 520 posts read by meta description; it
+  stopped at an Instagram 429.
 - Search counts in the market table are lifetime and undated, except the Shorts probed with yt-dlp.
 - Nick Frost's Collider video and an adult on-camera Evanna telling were not located.
 - Not probed after the 429: MjFKmSo28m0 (Holmes 1.6M), 6buHhTv2fgM and zCwF3atCydc (Coltrane 104K, 231K). Their counts

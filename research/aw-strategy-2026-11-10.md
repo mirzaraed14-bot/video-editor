@@ -1,5 +1,11 @@
 # Abundance Wisdom: why the views stopped, and what to make next (10 Nov 2026)
 
+> **⚠️ CORRECTION, 12 Nov (read first):** the Prince "Son" Short was NOT a flop. It was hours old (5.3K) when this research
+> started. At 2 d 11 h it has **179.5K views, #1 of the last 10, 89.9% viewed, 94% from the Shorts feed, still climbing**
+> (`X:\Claude Projects\Abundance Wisdom\RESULTS.md`, Nov 12 block). So "is the MJ niche done?" is answered **no**: the MJ
+> family-wound lane still reaches death-lane numbers. Bieber (d1 at the time) gets re-read on 16 Nov before any verdict. The
+> rest of this file (the hot-lane read, the birthday mechanics, the checklist) stands.
+
 Affan's ask: Bieber and the Prince Short both flopped and we're not progressing. Is MJ done? Was it Bieber, or the topic, or
 the framing? He asked for deep research on the channel, his findings and outside strategies, and two next ideas built on it.
 

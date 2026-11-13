@@ -566,6 +566,10 @@ Always check the EDL bash can actually see before re-splicing.
   `setInPoint/OutPoint` + `overwriteClip` on it: the camera's scratch audio never touches A1.
 - **A new sequence with his exact settings = `clone()` of an EMPTY sequence of his** (1080x1920 60, his track count), renamed; the
   clone becomes the ACTIVE sequence. `createNewSequenceFromClips` would inherit the camera's 1920x1080.
+  **No empty sequence in the project (ABW11, 2026-11-12):** clone a NON-empty 1080x1920 sequence of his, then in the
+  clone `remove(false, false)` every clip on every track and `deleteMarker` every marker. Then set the frame rate (ticks
+  8467200000 = 30 fps, display 104). Verify the original's clip count is unchanged (26 before and after). Then lay as
+  usual. `projects/harry-potter-prank/premiere/create_seq_abw11.js`.
 - **Camera-to-OBS sync**: `workflows/sync-dual-audio.py --report --json-out`; fit the offset line through the windows with peak ≥ 10x
   only (C1349's weak first window sat 40 ms off the other three); window centres are CAMERA time.
 
@@ -1148,3 +1152,32 @@ Always check the EDL bash can actually see before re-splicing.
 - `readback.js` `outPoint` of a clip trimmed with `.end = ...` still shows the item's untrimmed out; the span is start/end.
 - `app.project.deleteAsset` does not exist here; `app.project.deleteSequence(seq)` does (my own sequence only). An unused imported media item stays in the bin.
 - (bieber v2, 2026-11-09) **A v2 copy of the creator's sequence**: `seq.clone()` on his (non-active) sequence works and leaves his untouched (read it back before AND after: 53 clips identical); rename the "<name> Copy", `moveBin`; add a track with `app.project.openSequence` + `app.enableQE()` + `qe.project.getActiveSequence().addTracks(1, seq.videoTracks.numTracks, 0,0,0,0,0)` (the copy must be active, restore his active sequence after); stills via `importFiles` one per call, `overwriteClip` on V3/V4, set `clip.end` at once (a still lays 5 s), Motion scale/position from the crop window.
+
+- (amy-grammy-satellite, 2026-11-13) **Audio `Level` property scale:** `Volume > Level` reads **0.17782794 at 0 dB** (1.0 = +15 dB, 0 = silence): value = 10^((dB − 15) / 20). Writing −15 into it silences the clip; −15 dB = 0.0316228 (read back: 0.03162280097604 = −15.00 dB). **ABW11's `Sequence 02` clone has V1-V3 + A1-A4 only** (check `numTracks` before placing; a `REFUSED` placer leaves an empty sequence, which a later window can reuse). **`clip.outPoint` reads +0.1667-0.2 s stale after `clip.end` trims a laid clip; `end` / `duration` are the truth** (same in the Son's read-back): rebuild audio from `end − start`. Kit: `projects/amy-grammy-satellite/premiere/` (`run_window.py` reuses an empty sequence; `run_fix.py` = one short window for a fix script + read-back).
+
+- (onyx batch 9 reactions, 2026-11-13) **C: under ~1.5 GB breaks Premiere silently:** ExtendScript writes fail with ENOSPC and the frame-grab path returns STALE identical frames with no error (Rise Above's 82-98 s sheet showed one frame 16 times). C: fills from Topaz temp (`%TEMP%\tvai-seg-*`, ~0.3-0.8 GB per run, never cleaned) and Premiere's Media Cache Files (13.6 GB). Before any Premiere write or grab pass, check C: free >= 1.5 GB and wait if lower; hash grab files to catch duplicates. Clearing old tvai-seg folders and media cache older than 14 days needs Affan's OK (given once on 2026-11-13; freed 20.7 GB).
+
+- (skool-vsl-2026-11, 2026-11-13) **A parameterised IIFE comes back as the string `"undefined"`** through `execute_extendscript`:
+  `(function(n){ ... })("name")` returned "undefined" while the same body inlined as `(function(){ ... "name" ... })()` returned the
+  sequence id. A helper read "undefined" as "sequence not found", skipped activation, and the `replay` that followed laid 84 clips on
+  ANOTHER session's active sequence ("Ruslan KD reaction", ABW11). Repaired the same minute: removed only clips whose
+  `projectItem.name` was this job's raw (84), their 204 clips untouched, saved. Rules: never pass arguments into an IIFE; and a
+  window must REFUSE to run unless `activeSequence.name + "|" + sequenceID` reads back as the target
+  (`projects/skool-vsl-2026-11/work/pp.py` § window).
+- (skool-vsl-2026-11, 2026-11-13) **`exportFramePNG` timecode depends on the sequence's display format.** A sequence made by
+  `createNewSequenceFromClips` from 59.94 footage displays NON-drop: the drop-frame label from the paris-jackson recipe grabbed
+  4 frames late after 1:00 (an edge grab at 66.53 showed the next graphic). Prove the format with one edge grab past 1:00.
+  Backslash path still required; `premiere-bridge.mjs frame` (forward slashes) failed on every call this session.
+- (skool-vsl-2026-11, 2026-11-13) **`premiere-bridge.mjs grade-layer` failed on Premiere 25.0**: "'Adjustment Layer 1920x1080' not
+  found after import" (the mint's import landed nothing; no junk sequence or bin left). Not retried on a shared project.
+- (skool-vsl-2026-11, 2026-11-13) **"MCP Bridge is not running" while another session's script holds the panel** is transient here:
+  3 retries 3 s apart got through every time. Read back before re-sending a WRITE (see the `bridge_unavailable` note above).
+- (skool-vsl-2026-11, 2026-11-13) **Windows paths inside Python-built ExtendScript:** `'X:\Claude Projects\video-editor...'` turns
+  `\v` into a vertical tab and the import "fails". Build every path literal with `json.dumps(path)`.
+- (onyx batch 9 reactions, 2026-11-13 21:4x) **Another session switched the active sequence mid-grab-pass** (Skool VSL / 'Sequence 05'), so frame grabs silently captured the WRONG sequence (Prophecy's 0-6 s sheet showed foreign full-frame footage). Grab tools must confirm the active sequence is the target right before EVERY grab (not once per pass), and any session touching Premiere should take the shared premiere.lock.
+- (skool-vsl-2026-11, 2026-11-13) **A window whose first `activeSequence` read failed ("MCP Bridge is not running") skipped its
+  restore and left THIS job's sequence active** in the shared ABW11. Restored by hand to the last sequence seen active from another
+  session ("Sequence 04", a best guess). The helper now retries that read up to 5x and REFUSES to run without it, and retries plus
+  verifies the restore (`projects/skool-vsl-2026-11/work/pp.py` § window).
+- (skool-vsl-2026-11, 2026-11-14) **`sequence.clone()` ACTIVATES the clone** (Premiere 25.0): a by-name clone of a non-active sequence
+  left "<name> Copy" as the active sequence. Clone inside an ACTIVE-WINDOW and restore the previous active by id afterwards.

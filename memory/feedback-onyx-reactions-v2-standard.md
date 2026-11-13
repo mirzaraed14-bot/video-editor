@@ -23,3 +23,8 @@ from an offline wav; bed OUT under every play ("this rule is for all reaction vi
 SFX ~12 dB under his voice peak, no taps/foley ("some sfx are too loud"); no desktop audio of the reacted video under his voice (OBS = one
 mixed track); face at fill scale, no push-ins or keyframed face motion ("too zoomed in ... zooms too goofy ... premium"); one camera image at
 a time, never a frame edge; never cut a fact midway, keep setup lines, last take of a repeated line; QC from the timeline.
+
+**v3.1 (2026-11-13, read from his own hand in ABW10, not from a note):** before exporting batch 7 he cut the bed clip GAIN on every V3
+reaction (−6/−9/−8/−6 dB), so the music he actually ships sits ≈ 19 LU under his voice (target 19, min 16, max 25), not 12. The ABW10
+template's Mix fader was −5 dB (exports 5 dB under our sim); ABW11's template (from his "Sequence 02") reads 0 dB. He also trimmed a
+trailing clause before a graphic and a whole stat aside: end lines on their point, cut such asides as one unit. Amendment in REACTIONS-V3.md.

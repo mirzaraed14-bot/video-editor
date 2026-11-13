@@ -1,0 +1,88 @@
+{
+ "summary": "Summary:\n\n  Integrated loudness:\n    I:         -14.0 LUFS\n    Threshold: -24.0 LUFS\n\n  Loudness range:\n    LRA:         1.5 LU\n    Threshold: -34.0 LUFS\n    LRA low:   -14.8 LUFS\n    LRA high:  -13.3 LUFS\n\n  True peak:\n    Peak:       -1.6 dBFS\n[out#0/null @ 000001a5516e1e80] video:867KiB audio:6544KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe= 2094 fps=442 q=-0.0 Lsize=N/A time=00:00:34.90 bitrate=N/A speed=7.37x elapsed=0:00:04.73    \n",
+ "rms_db_pcts": [
+  -30.943939399719238,
+  -15.748925685882568,
+  -9.828197765350343
+ ],
+ "cuts": [
+  {
+   "t": 1.6,
+   "hf_peak_ratio": 6.6,
+   "rms_peak_db": -6.5,
+   "ctx_p50": -14.4
+  },
+  {
+   "t": 4.3,
+   "hf_peak_ratio": 18.1,
+   "rms_peak_db": -8.6,
+   "ctx_p50": -15.1
+  },
+  {
+   "t": 7.4,
+   "hf_peak_ratio": 25.2,
+   "rms_peak_db": -11.5,
+   "ctx_p50": -14.7
+  },
+  {
+   "t": 10.533,
+   "hf_peak_ratio": 12.9,
+   "rms_peak_db": -7.3,
+   "ctx_p50": -16.0
+  },
+  {
+   "t": 11.733,
+   "hf_peak_ratio": 18.9,
+   "rms_peak_db": -7.1,
+   "ctx_p50": -16.1
+  },
+  {
+   "t": 13.1,
+   "hf_peak_ratio": 16.0,
+   "rms_peak_db": -7.8,
+   "ctx_p50": -16.2
+  },
+  {
+   "t": 14.8,
+   "hf_peak_ratio": 11.6,
+   "rms_peak_db": -4.6,
+   "ctx_p50": -14.7
+  },
+  {
+   "t": 17.167,
+   "hf_peak_ratio": 15.0,
+   "rms_peak_db": -5.7,
+   "ctx_p50": -15.1
+  },
+  {
+   "t": 19.5,
+   "hf_peak_ratio": 32.4,
+   "rms_peak_db": -6.6,
+   "ctx_p50": -17.1
+  },
+  {
+   "t": 23.0,
+   "hf_peak_ratio": 46.4,
+   "rms_peak_db": -4.3,
+   "ctx_p50": -16.6
+  },
+  {
+   "t": 28.6,
+   "hf_peak_ratio": 17.8,
+   "rms_peak_db": -5.5,
+   "ctx_p50": -16.4
+  },
+  {
+   "t": 30.067,
+   "hf_peak_ratio": 2.5,
+   "rms_peak_db": -6.1,
+   "ctx_p50": -16.3
+  },
+  {
+   "t": 31.667,
+   "hf_peak_ratio": 7.0,
+   "rms_peak_db": -7.6,
+   "ctx_p50": -15.7
+  }
+ ]
+}

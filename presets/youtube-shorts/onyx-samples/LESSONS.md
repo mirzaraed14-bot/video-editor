@@ -607,3 +607,20 @@ Full rules + his verbatim notes: `projects/_onyx-batch7-2026-11/REACTIONS-V3.md`
 - "Abrupt cutting, literally cutting out info midway (counting subs)" / "parts should be added, it doesn't make sense" / "gentlemen 2":
   never cut a fact midway, keep every point's setup line, last take only of a repeated line.
 - "Quality checking is very poor ... don't entirely revise it": QC is done on the placed timeline (audio sim + frame grabs); fixes keep the edit.
+
+## 2026-11-13 review: his batch-7 exports vs our placed-sequence prediction (measured)
+Full numbers: `projects/_onyx-batch9-2026-11/reactions/B7-EXPORT-FINDINGS.md`. Format: lesson → change → file.
+- The Premiere master (Mix) is -5.0 dB and it ships: plays and SFX landed at exactly -5.00 dB in all four comparable exports. →
+  tlmix7 gets an explicit master (-5) and every gate is read as delivered = sim - 5 (voice peaks deliver ~-10.5, true peak -9, about -20 LUFS),
+  or Mix is set to 0 in the template; decide once. → `tools7/tlmix7.py`, REACTIONS-V3.md (Master fader).
+- The sim under-predicts his voice (alimiter squashes ~1-2 dB more than Premiere's Hard Limiter): export voice was 0 to 1.7 LU hotter than
+  sim - 5 in heretics/OTN/BL, so plays sat 2.9-3.7 LU under his talk instead of 2.0. → aim plays ~1 LU under in the sim, or render one real
+  30 s bounce per batch and trust that over tlmix7 for A1/A4. → tlmix7.py, REACTIONS-V3.md A1/A4.
+- The real bed sits 6-9 dB below the sim after the master (~20-22 LU under his voice, not 12-13); cause unread (Audio 3 fader not exposed).
+  → read the track fader or bounce before trusting A2; if 12 LU really is the target, the bed needs +6-9 dB in the template. → REACTIONS-V3.md A2.
+- Brotherly Love: he deleted the 6.5 s subscriber-count aside ("How many subscribers did they have? ... 185 thousand subscribers. joke.") with
+  its ring graphic and SFX, the very line C1 told us to keep whole. → an aside whose only job is to feed a stat graphic is cut as one unit
+  (words + graphic + SFX), not kept intact; keep a count only if the next point needs it. → REACTIONS-V3.md C1.
+- On That Note: he cut the trailing clause "to be complete." (1.0 s) right before the scorecard. → end the sentence on its noun at the join into a graphic; no trailing restatement. → REACTIONS-V3.md CUT.
+- SPI shipped the pre-V3 cut (164.63 s vs V3 173.17 s, three restored lines and the matching mix missing). → before he exports, state the
+  sequence name and length from RUN.md and compare to the file he sends. → REACTIONS-RUN.md hand-off step.

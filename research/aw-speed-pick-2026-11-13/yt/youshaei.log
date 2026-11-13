@@ -1,0 +1,32 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=SmE4vAAOvcI
+[youtube] SmE4vAAOvcI: Downloading webpage
+[youtube] SmE4vAAOvcI: Downloading visionos player API JSON
+[youtube] SmE4vAAOvcI: This video is age-restricted; some formats may be missing without authentication. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+[youtube] SmE4vAAOvcI: Downloading web embedded client config
+[youtube] SmE4vAAOvcI: Downloading player fad7e4e9-main
+[youtube] SmE4vAAOvcI: Downloading web embedded player API JSON
+ERROR: [youtube] SmE4vAAOvcI: Sign in to confirm your age. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+Traceback (most recent call last):
+  File "C:\Users\affan\AppData\Local\Temp\claude\bd0643937bf87bde\839da3b4-2c97-4d47-b3e8-feb69497aaf3\scratchpad\cpu_scout.py", line 23, in <module>
+    segs, info = model.transcribe(f, language="en", vad_filter=True, word_timestamps=True, beam_size=1)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\faster_whisper\transcribe.py", line 876, in transcribe
+    audio = decode_audio(audio, sampling_rate=sampling_rate)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\faster_whisper\audio.py", line 46, in decode_audio
+    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "av/container/core.py", line 578, in av.container.core.open
+    return InputContainer(
+^^^^^^^
+  File "av/container/core.py", line 344, in av.container.core.Container.__cinit__
+    self.err_check(res)
+^^^
+  File "av/container/core.py", line 369, in av.container.core.Container.err_check
+    return err_check(value, filename=self.name)
+^^^^^^^
+  File "av/error.py", line 354, in av.error.err_check
+    raise cls(code, message, filename, log)
+^^^^^^^
+av.error.FileNotFoundError: [Errno 2] No such file or directory: 'src/SmE4vAAOvcI.m4a'
+DONE

@@ -116,3 +116,27 @@ Two more traps from that run:
 | UFC | @wicked.mma | 109K | 178K in a day |
 | UFC | @khabibtm_off_mma | 1.2M fan page | 556K, not Topuria |
 | Movies, biopic | @bingelog | 59K | 9M, subjects unchecked |
+| Royals (run 4) | @kingdom_of_windsor | 49.4K | 13.2M, 12.9M, 10.4M: music-over-footage edits, no interview audio |
+| Diana (run 4) | @princess_diana6632 | 24K | 867K: Diana's last phone call with her sons |
+| 90s pop culture (run 4) | @90smilk | 553K | 4.5M, 3.8M; has the Diana "whatever in love means" + 1992 tape join (77.4K likes) |
+| History (run 4) | @untold.histories_ | 14.5K | 266K; Panorama 1995 reel 284K likes |
+| Celine (run 4) | @celinedionwf | 106K | 2.4M, 1.9M: performances and the *I Am* trailer |
+| 2000s aesthetic (run 4) | @smokingloungemag | 91.7K | 953K; Britney/Sawyer 2003 reel 207K likes / 20K shares |
+| Music (run 4) | @topgoodsongs | 2.2M | 3.8M: music clips, not stories. Filter |
+| **Hollywood (run 4, best seed)** | @talk_hollywood_ | 471K | 35.1M Whitney x Costner (149K shares), 25.1M Aniston, 23.9M |
+| Taylor (run 4b) | @ish_asuncion | 8.4K | 8.2M, 6.7M, 6.3M (the 2009 VMA interruption: 504K likes, 1,675 shares) |
+| Celebrity lists (run 4b) | @celebuncut | 37K | 31.1M (Margot Robbie's Cannes close-up, comedy), 6M (actors forced out by illness) |
+
+**Run 4 lesson (12 Nov):** the seeds that paid came from a name hashtag (#jenniferaniston → @talk_hollywood_, 471K, with 35.1M,
+25.1M and 23.9M outliers) or a topic phrase ("whatever in love means" → @90smilk; "britney spears interview" →
+@smokingloungemag), then that page's Reels tab. "<name> interview" phrases mostly returned outlets and quote accounts. 3 of 17
+keyword or hashtag pages were refused ("britney diane sawyer", "prince william bashir statement", "diana last phone call harry
+william"). Big multi-star pages (@fboy 15.6M, @topgoodsongs 2.2M) had no outliers. Keep browser batches short (2 reels or 1 Reels
+tab): longer ones lost the connection twice.
+
+**Run 4b lesson (13 Nov):** more seed pages stopped paying after the first hour: 8 more keyword or hashtag pages
+returned the same music edits, comedy and outlet clips. The pick came from **probing a lead already held**: the 35.1M
+Whitney x Costner reel → the eulogy's transcript → a search for her own voice on the same doubt → a 720p sit-down where she
+says it. When a run has a big Instagram outlier with a gate open, spend the next hour closing that gate, not finding seeds.
+Also: a reel's audio page lists meme reuse, not story pages (dead end); `yt-dlp -F` can return storyboards only for some
+re-uploads (no error): call that unprobed, not low quality.

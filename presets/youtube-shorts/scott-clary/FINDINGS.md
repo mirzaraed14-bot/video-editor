@@ -275,6 +275,36 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
 - **Claude's miss:** two picks were proposed to fill the brief's "best one or two" when neither cleared the bar. The plain answer should have led:
   "this route gives no YouTube pick".
 
+### 2026-11-12: is Scott posting too much? (Affan, after ~119 views on our new Shorts; `projects/_client-scott-clary/research/upload-frequency/REPORT.md`)
+- **Through Nov 2, the data doesn't show the pace as the cause.** The channel posts 2-3 Shorts a day every week (10-24 a week since Aug), and Bombas went to
+  624K in a 21-upload week. Over one week of 15 Shorts:
+  - "viewed vs swiped" against views: +0.69;
+  - hours since the previous upload against views: −0.31.
+- **The one stretch that fits the theory:** Aug 23 and Aug 30, the two lowest-upload weeks (10 and 13), were the two biggest weeks outside Bombas (208K, 135K).
+  The driver is unknown: ask Scott.
+- **YouTube's position, as reported:** posting frequency is neither rewarded nor punished; low-quality clips aren't rewarded (Sherman, 2023, via articles).
+  A third-party study of 18K Shorts puts gaps under 3 h at 0.82× the views of 12-48 h gaps (correlation).
+- **VERIFIED (YouTube Help): a Short over 1 minute with ANY active Content ID claim is blocked worldwide.** This is the likely reason Patrón (67 s, music claim)
+  got 7 views. Check length + claim first on any Short stuck near 100 after 2 days.
+- **PRE-REGISTERED, before any result:** Scott moves to ≤2 Shorts a day, ~10 h apart (log the start date here). Measure the 7-day views of our next 3 clean
+  Shorts (under 60 s, no claim) against our recent story Shorts at similar "viewed" (median ~2K).
+  - Median ≥ 6K → the pace was a real factor.
+  - 0.5-2× → the pace was not the cause, and only the filler cut stands, on quality grounds.
+- **18:20 update, no Studio access (Affan can't get it):**
+  - **Social Blade:** single days of 27K-161K channel views and about 3 videos a day. No channel-wide collapse, so the issue is new Shorts not being pushed.
+  - **Lengths:** every final of ours is 31.8-55.1 s except Patrón (67.4 s). Patrón's export has no music, so its claim was on the bed Affan adds.
+  - **What this explains:** on a Short under 60 s (McAfee, Ricky), 119 on day one is most likely its age. Only the Patrón remake can hit the automatic block.
+  - **Plan (REPORT § Update), hygiene only, nothing measured as a 10× effect:**
+    - every Short ≤ 59 s;
+    - block check = open the link logged out on a phone;
+    - judge at 7 days.
+- **Shorts tab read, 18:40 (Affan's screenshots; REPORT § Shorts tab read):**
+  - **The "119" is most likely the Patrón repost:** 122 at 2 days against Scott's 946 median. It plays (2 VPH), so it is NOT blocked worldwide, and its length is unknown.
+  - **About 100 on day one is normal here:** Scott's same-day Shorts sit at 78-99.
+  - **Dobrik:** 1.3K at 1 day against 90-99 for the three Scott Shorts in the same bucket. That rules out a pace-driven 10× suppression, not a small drag.
+  - **At a week or older,** ours have a median of 3.15K against Scott's 607 (about 5×); Squibb is below his median and Chris Do level with it.
+  - **The guarantee window:** six of our last 12 are past a week and average about 1.6K. Bombas and War Dogs are out of the window.
+
 ## Validated on this channel
 (none yet: the first results arrive 7 days after the first logged upload)
 

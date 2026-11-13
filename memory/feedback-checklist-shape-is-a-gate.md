@@ -1,6 +1,6 @@
 ---
 name: feedback-checklist-shape-is-a-gate
-description: "Affan 2026-11-10: an AW pick that passes on safety (facts, quality, audio) but fails his viral foundations (a real public judgment, a picture, footage of the thing) is a horrendous pick; the shape line is a gate, never a tick"
+description: "Affan 2026-11-10: an AW pick that passes on safety (facts, quality, audio) but fails his viral foundations (a real public judgment, a picture, footage of the thing) is a horrendous pick; the shape line is a gate, never a tick; 11-12: two facts = two topics, not a story"
 metadata:
   type: feedback
 ---
@@ -45,4 +45,11 @@ like". (Saved as the top section of PITCH-CHECKLIST.md.)
   join or sequence already exists. Never hide the numbers.
 - My reading, to confirm: a fail on a viral-foundation gate doesn't kill an idea with strong IG proof, but facts and
   source quality still can.
+**Affan, 12 Nov** (on the Hagrid raw cut): "its horrendous not upload material at all its just 2 topics thats it nothing
+special". Two proven facts in one voice (a reveal plus a reboot judgment) are two topics, not a story. Instagram proof
+for a fact doesn't rescue the shape. The arc is now written in one line (setup, turn, ending that lands a feeling or a
+lesson) in PITCH-CHECKLIST §4. The link between two speakers must be in their own words. My process rule (not his
+words): a ⚠️ on Shape or the ending is fixed in text before sourcing or building. This contradicts the 11 Nov reading
+below ("a Shape fail doesn't kill strong IG proof"): Hagrid shows Shape CAN kill. His to confirm.
+
 - Related: [[feedback-pitch-checklist]], [[feedback-viral-pick-bar]].

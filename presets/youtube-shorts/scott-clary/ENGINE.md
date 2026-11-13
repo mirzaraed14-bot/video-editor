@@ -15,11 +15,13 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
   - Rankings: `projects/_client-scott-clary/research/viral2/screen-SWEEP.md` and `screen-R21..R28.md`.
   - Next best: Eric Cole's McAfee sushi story, Daymond's "You're not Snoop", Gary Vee's "Ricky" (needs the source video), and Banayan's Buffett blacklist.
   - New episodes: fetch them with `research/viral2/scan_all.py`, then screen with `research/viral2/SCREEN-BRIEF.md`.
+  - **2026-11-13: two new episodes screened (Partovi, Nov 11; Warwick, Nov 9; feed `rss2.flightcast.com/l7xey1psb3ty8jkk6kkbx31a.xml`).** No pick clears the bar. The best available is Partovi's bluff to Steve Jobs (funny 3, Bombas about 7.5, told before): `research/partovi-jobs-bluff.md`. It has NOT been pitched; YouTube is unsearched.
+  - **2026-11-13, next idea (Affan asked):** Patrick Bet-David's urine prank on 14,000 agents (funny 2.5-3, Bombas about 7, a 2020 remote webcam picture): `research/pbd-urine-prank.md`. Named as an IDEA, NOT max effort yet; YouTube needs his OK. **22:50: Affan said "Yes, sequence it". The SEQUENCE is in the sheet (a fourth funny-test pick, outside the three-pick trial), still NOT max effort (5 open items), waiting for his OK to build.** **2026-11-14 00:05: Affan "Yes, build it". RESULTS row 20 is registered (prediction locked 2K-40K, funny 2.5, pre-mortem 20, title row 20). Building in Sonnet session `pbd-urine-prank-build`, job `projects/_client-scott-clary/pbd-urine-prank/`, 30 fps check first.**
 - **Waiting on Affan:**
   - Uploads: Patrón (never public, a music copyright issue; he asked Scott to upload it), the Herjavec spreadsheet final and the Dobrik final.
   - Reviews: the Dobrik IG check.
   - Data: 7-day numbers for rows 10-17, and what the Gutman Short (595K) shows.
-  - Decision: whether each pick gets a one-search YouTube told check.
+  - ~~Decision: whether each pick gets a one-search YouTube told check.~~ Settled 2026-11-13: a standing OK (step 2).
 - **Each job:** its `BRIEF.md` ▶ STATUS block, plus its row in RESULTS.md.
 
 ## The line for one Short
@@ -33,7 +35,8 @@ files. Read this first on any Scott job, then FINDINGS.md, then the job's row in
    - The "best sequencing and research possible" line is typed only when no known gap is left open (`feedback-no-false-completion-line`).
 2. **Freshness** (Claude + Affan): web search for the story AT THIS ANGLE (no YouTube requests from this machine); Affan scrolls
    Scott's own Shorts tab for the episode before posting. A prior Short on the same story + angle disqualifies it.
-   **The told check is open (Affan's call):**
+   **The told check: STANDING OK (Affan 2026-11-13, "Yes, standing OK" to "one YouTube check per pick from now on, without asking each time").** It is ONE search request per pick, under `lock.sh youtube`, stopping at any bot check (write `.locks/youtube.BLOCKED`). More than one request per pick still needs his OK.
+   **How the check was defined before the OK:**
    - What it is: one YouTube search per pick. It runs only with his OK, under `lock.sh youtube`, and stops at any bot check.
    - How to read it: in a hidden browser pane the results DOM is blank, so read `window.ytInitialData` instead.
    - What it showed on 2026-11-08: stories already told on Shorts at 20K+ stayed flat, 5 of 5. That is weak evidence; it can bench a pick, never back one.

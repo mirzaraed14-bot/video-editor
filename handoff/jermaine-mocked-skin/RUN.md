@@ -1,7 +1,63 @@
 # RUN — jermaine-mocked-skin (Abundance Wisdom Short: "Why Michael Jackson's Brother Mocked His SKIN 💔")
 
 ## ▶ STATUS: resume here
-**2026-11-07 ~23:10: OPENING ADDED on his yes — waiting on his next direction.** Sequence **`Jermaine Jealous - raw cut`** (same sequence, re-laid after a read-back proved it unchanged), ABW10, active, **47.15 s**: V1 26 + A1 26 + V2 5 + 10 markers. Read back = plan: 0 mismatches, no holes (`premiere/readback_v3.json`, `premiere/plan_v3.json`, `premiere/make_v3.py`, `premiere/place_v3.jsx`). Not saved, not exported.
+**2026-11-13 ~11:30: v2 DELIVERED (his review 3 applied), waiting on his review.** `Jermaine Jealous.mov` (2233 frames, 60 fps, -14.1 LUFS,
+-1.6 dBTP) in Final Renders + X:/Claude Projects/Exports; the first delivery renamed there to `Jermaine Jealous (v1).mov`; `outputs/` keeps (r2), (r3).
+Changes: P5 GGN wide recentred (face x 545/548 measured in the final), O6a = 1984 family still (JOW doc frame 1126.60; Janet, 17 then, cropped out),
+O6b = Bashir Part 3 32.5-34.33 (hand over his eyes; no visible tears exist in what was found). Sourcing `SOURCING-v5.md`. Verified by eye in the final.
+
+## (previous) ▶ STATUS
+**2026-11-13 ~09:00: HIS REVIEW 3 being applied** (BRIEF § HIS REVIEW 3): (1) recentre Jermaine on the GGN wide (P5, 2.13x window rows <= 904),
+(2) O6a -> the WHOLE family with Michael (still OK, adults only), (3) O6b -> Michael tearing up / wiping tears (still OK). Running in parallel:
+an Opus sourcing agent (-> `SOURCING-v5.md`, `sources_v5.json`, `proof/sourcing_v5/`) and the Sonnet builder pre-rendering P5 (S10/S11 Stage A
++ Topaz only). Then: Higgsfield on any still (preflight), ONE finish render for all three notes, keep the current final as
+`outputs/Jermaine Jealous (r3).mov`, check, re-deliver.
+
+## (previous) ▶ STATUS
+**2026-11-13 ~08:10: DELIVERED, waiting on his review.** `Jermaine Jealous.mov` (H.264 1080x1920, 60 fps, 2233 frames, 37.217 s, PCM,
+-14.1 LUFS, -1.6 dBTP, sha256 53021151af083c17...) = `outputs/Jermaine Jealous.mov`, copied hash-verified to `E:\Shorts\Abudance Wisdom Shorts
+Exports\Final Renders\` and `X:\Claude Projects\Exports\`. Previous render kept as `outputs/Jermaine Jealous (r2).mov`. QA `proof/r2/QA.md`.
+- Built from his ABW11 cut + Tella 2 (`BRIEF.md` § HIS REVIEW 2) per `BUILD.md` (template mj-son-step-outside). GGN lines from the SnoopDoggTV
+  original; overlays O1-O6b per `SOURCING-v4.md` with my overrides (O3 Narita, O6 ABC 2005 court).
+- Opus checks: Phase 1 frames (A-G sent back), final 1 fps sheet, colour (shirt hue 54-57 deg wide vs close), lip sync by eye on P6 "But" and S01
+  "him" (S01 identical to the pre-retime render).
+- Known limits to tell him: head lock clamp-limited on La Toya red / GGN / UCLA; S01 (La Toya hook, 1991 Today source, ~20 unique fps) 3.6 %
+  duplicate frames after dedup (target 2 %); O3 Narita and O6 court are SD sources (letterboxed); O6b chin cut by the ABC banner; UCLA +30 dB with
+  one gentle denoise; caption base ink y 1105-1144 (14 px under his 1130 line, to clear La Toya's lower lip on the red-jacket close-up); the family
+  line audio is the detail's (not in GGN); title not set (file named "Jermaine Jealous").
+- A note from him = data + ONE finish render (finish-side values), never a full Stage A / Topaz re-run unless the note needs it.
+
+## (previous) ▶ STATUS
+**2026-11-13 ~05:00: FULL BUILD STARTED on his Tella 2 ("start the full build now").** His direction = `BRIEF.md` § HIS REVIEW 2 (the build spec:
+S1-S7 lines, O1-O6 overlay slots, GGN swap, letterboxes). His cut = `premiere/his_abw11.json` (37.271 s; he cut the "Were you ever jealous?" opening,
+set La Toya 71 % and "That's ridiculous" 44 %, marked slots on V2). Template = `projects/mj-son-step-outside/` (HUB house style).
+- Phase A DONE (~04:45): `SOURCING-v4.md`, `sources_v4.json`, `proof/sourcing_v4/` (19 YouTube calls via lock.sh, no bot check). GGN original =
+  `src/NOUJ2LxWV70.mkv` (SnoopDoggTV 2014, 1080p, burned-in ticker from y 958); the family line is NOT in GGN (a different interview: detail audio kept).
+  My overrides of the agent's picks: O3 Berlin rejected (Michael hidden under umbrellas) → Narita 2007 AP (sunglasses, waving, 360p, letterboxed);
+  O6 AP verdict day rejected (360p, nobody recognisable) → ABC 2011 SD court footage (Jermaine, Joe, Michael; then Jermaine with Michael),
+  letterboxed. San Francisco 1984 rejected (children in the crowd). No stills → no Higgsfield needed.
+- Phase B (running ~05:05): `BUILD.md` written (template shape); Sonnet builder on Phase 1 (stops at `proof/r1/` for my frame check).
+- Phase 1 DONE (~06:05, Sonnet): `proof/r1/test_shots.jpg` + `NOTES.md`. Opus frame check (~06:15): accepted the head-lock limits under the
+  clamps, O6b chin, GGN 2.01x mirror-filled top; sent back A-G: O1 letterbox (was an extreme close-up), S13 wide framing (face cut at the edge),
+  telecine dedup on the Today shots, GGN skin white balance, caption base clear of La Toya's lip on P4, CTA1 → 12.10, UCLA hiss check. Builder then
+  goes straight to Phase 2 + QA and stops; I check the final and deliver.
+- Next: final check → deliver to `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` + `X:\Claude Projects\Exports\`.
+- Cost quoted: about $60-80 for the whole build (≈ 3 % of the week); weekly 61 % at start.
+
+## (previous) ▶ STATUS
+**2026-11-13 ~01:45: v3 RE-LAID IN ABW11.prproj (his ask to the hub: "can you resequence it inside the new premiere project") — waiting on his REVIEW.**
+Sequence **`Jermaine Jealous - raw cut`** in ABW11, bin `Jermaine Mocked Skin`, ACTIVE (before it: "Snape Prank - raw cut v3", the HP line's). 1080x1920,
+29.97 fps non-drop, **47.147 s**: V1 26 + A1 26 + V2 5 + 10 markers, nothing on other tracks. Built as a clone of his "Sequence 02" (ABW11 has no
+empty template), emptied (26 clips removed from the CLONE; his Sequence 02 read 26 clips before and after), `premiere/create_seq_abw11.jsx`, then
+`premiere/place_v3.jsx` unchanged (same 7 mezzanines imported into the bin, originals untouched).
+Proof: `premiere/readback_abw11.json` = `plan_v3.json`, 0 mismatches (V1/A1 26, V2 5, markers 10), no holes, and clip-for-clip identical to the ABW10 v3
+read-back. Timeline audio rebuilt from the read-back and transcribed (large-v3, `proof/seq_abw11/asr.json`): every line, in order.
+ABW11 NOT saved, nothing exported, ABW10 untouched. No house style yet (comes after his review).
+**Still pending:** his review; the title (no skin content left); "went out front" vs "up front" (ASR hears "went out"); "We put him" vs "You put him";
+the two-interview splice flag (lines 7-9 and the "lead singer first" bit are a later show, read as Snoop's GGN, not the 1991 answer to La Toya).
+
+## (previous) ▶ STATUS
+**2026-11-07 ~23:10: OPENING ADDED on his yes — waiting on his next direction.** (ABW10 build; still there, untouched.) Sequence **`Jermaine Jealous - raw cut`** (same sequence, re-laid after a read-back proved it unchanged), ABW10, active, **47.15 s**: V1 26 + A1 26 + V2 5 + 10 markers. Read back = plan: 0 mismatches, no holes (`premiere/readback_v3.json`, `premiere/plan_v3.json`, `premiere/make_v3.py`, `premiere/place_v3.jsx`). Not saved, not exported.
 - New clips F1-F6 from `seq_src/diss_458_476_open.mov` (picture as uploaded; left channel to both, the Today lead-in is phase-inverted, corr −0.98; "Perfectly okay, yeah" +6 dB). Motion per shot from YuNet faces. Joints measured frame by frame against the mezzanine (`premiere/exact_cuts_v3.py`): every joint lands on the shot change.
 - Mono-sum per line: −23.2, −22.0, −22.1, −21.5, −20.5, −22.6, −22.3, −22.4, −23.8, −24.0 LUFS.
 - Words: timeline audio rebuilt from the read-back and transcribed (large-v3 on CPU because another session held the GPU, `proof/seq_v3/asr_cpu.json`): every line in order. Uncertain words to settle by ear at caption time: "went **out** front" (WhisperX on the upload) vs "went **up** front" (the detail's burned-in caption; the CPU pass heard only "went out"), and "**We** put him" (WhisperX, and the context) vs "You put him" (CPU pass).
@@ -107,3 +163,9 @@ Edge frames: `proof/edges/edges.png` (first/last frame of every V1 clip, centre 
   none better than the detail's 9:07 upload (which holds the Today interview in 4K); downloaded it + `pjec7YVuhfo`.
 - 21:05-21:10 mezzanines, segments (`premiere/segments.py`, word-level, gaps > 0.35 s cut), plan (`premiere/make_place.py`).
 - 21:11 sequence created; 21:12 clips placed; 21:13 readback + audio rebuild + re-transcription = script; 21:16 face-centring sent (unverified).
+- 2026-11-13 builder: kit copied+patched; make_timeline (23 shots, 2233 f), dialogue.wav (-17.3 LUFS), tracks, Stage A rendered (pass0 + lock_refine pass1). Next: Topaz, captions.
+- Phase 1 DONE 2026-11-13: stageT.mov, captions verified, proof/r1/test_shots.jpg + NOTES.md written. Phase 2 not started.
+- 2026-11-13 follow-up: O1 letterboxed, S13 reframed, dedup for Today, WB tint, CTA 12.10; full Topaz redo running (logs/topaz3.log)
+- follow-up fixes applied (O1 letterbox, S13 2.13x, dedup, WB tint, cap shift -74, CTA 12.10, UCLA afftdn 25ms comp); Phase 2 render_chunks started (logs/chunks.log)
+- Phase 2 DONE: outputs/Jermaine Jealous.mov, QA in proof/r2/QA.md
+- r3 round: GGN tint dropped (skin-only desat), uniq retime for Today shots, re-exported; old file kept as 'Jermaine Jealous (r2).mov'

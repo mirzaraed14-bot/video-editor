@@ -11,8 +11,15 @@ truth; this file only points at it. Where things live:
 The **English Editor** session is the dispatcher for this channel. Affan sends it a recording path, and it starts one fresh session
 per video (§ How a new video starts). Nothing runs from the dispatcher itself.
 
+**Picked 2026-11-12 for his recording session (re-judged with the Fable 5.2 advisor, replaces CA-012):** **CA-013 "Netflix Rejected Druski.
+Now It Wants His Free Shows"** (long-form; B title "…Now It's Paying for His Free Shows" is his call). The full script (the take matches against it):
+`X:\Claude Projects\Personal Brand English - Skool Community\creator-shorts\CA-013-druski-netflix-SCRIPT.md`; his reading copy
+`CA-013-Druski-Netflix-script.pdf` beside it. Optional second take: the lead-magnet outline `CA-014-lead-magnet-OUTLINE.md` (+ PDF), same folder.
+CA-012 v1 (face-led lessons) was rejected by him and v2 was never sent; neither was recorded. Evidence (demand checks, cold reads, review):
+`research/affanwiz-idea-2026-11-12/`. When the take lands, match it against the CA-013 script.
+
 **Waiting on him:**
-- **Short 4 `stop-remaking-viral-shorts` (C1454):** check v7 is in Exports (2026-11-09 21:44). Four things wait on him:
+- **Short 4 `stop-remaking-viral-shorts` (C1454):** **POSTED** as "This Marks You As A Noob In YT Shorts" (1.3K on the Shorts tab, read 2026-11-12). check v7 is in Exports (2026-11-09 21:44). Four things wait on him:
   - his review;
   - his OK on the dandruff removal (two specks, cleaned at the source);
   - keep or restore the source creator's SPEEDZYY watermark, which was interpolated out of the turn card;

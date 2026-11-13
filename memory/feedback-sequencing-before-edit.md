@@ -1,6 +1,6 @@
 ---
 name: feedback-sequencing-before-edit
-description: "Affan 2026-10-14: for every Onyx sample, send him the SEQUENCING as plain text (hook, beats in order with the words, the button, length, what each look shows) and get his OK before any editing starts"
+description: "Affan 2026-10-14 (Onyx) + 2026-11-13 (AW): send the SEQUENCE as plain text after ALL research (Instagram included) and get his OK before any editing or raw build starts"
 metadata:
   node_type: memory
   type: feedback
@@ -18,3 +18,9 @@ line, each beat in order with the speaker's words (quoted, short), the button li
 YouTube look and the Instagram look will show. No build starts until he approves; this replaces batch mode's "no storyboard
 approval" for the sequencing (the storyboard/graphics still need no approval). Related: [[project-onyx-sample-shorts]],
 [[feedback-every-video-better-than-last]].
+
+**AW too (Affan, 2026-11-13, MJ "Brother Saw Him AGAIN"):** "after all the research is done only then report to me give me
+the sequence in text then once i approve start the raw build in premiere". On AW Shorts the order is the same: research
+(Instagram included), then the sequence in text, then his OK, then the raw build. A "Yes, build it" to a pitch is not that
+approval once he has asked for more research. A bare "start it" after a research question means the research, not the build:
+ask if unsure. I misread one on 11-13 and had to stop a build session.

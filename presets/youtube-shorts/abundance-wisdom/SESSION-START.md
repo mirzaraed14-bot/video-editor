@@ -29,6 +29,12 @@ Written 2026-10-18 when the long working session was retired. One page so a new 
   → keep the line starting with `"` and `json.loads` it.
 - GPU python: `$HOME/.cache/video-editor/whisperx-venv/Scripts/python.exe`. Others: `uv run -q --with numpy --with pillow ...`.
 
+## House style (Affan 2026-11-12)
+A code-built AW Short copies `projects/mj-son-step-outside/` exactly as shipped: Topaz, head lock, zoom table,
+transitions, captions, mix, and his AE grade (`grade_mode 'ae'`). The parameters and file:line references, and how Bolt
+Motivation differs (those differences are his call, not defaults), are in `research/bolt-style-2026-11-12/findings.md`.
+Adopted from Bolt on 12 Nov: **stacked splits on comparison beats and reaction cutaways** (README § 13), at sequencing.
+
 ## Recipes (newest working example = `projects/abw10-comp04/`, see its RUN.md)
 | Job | Steps | Templates |
 |---|---|---|

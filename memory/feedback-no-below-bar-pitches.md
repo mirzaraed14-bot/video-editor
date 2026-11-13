@@ -18,3 +18,4 @@ Affan 2026-11-11 (Scott IG outlier read), after Claude sequenced Scaramucci and 
 - **Score B1 (the famous face) by one question: "would Affan, or a 20-something Shorts viewer, place this face?"** News fame from years ago doesn't count. Claude scored Scaramucci B1 = 1, and Affan had never heard of him.
 - **Say plainly when a method fails.** The Instagram outlier read failed as a YouTube pick source, and that failure was the finding.
 - Related: [[feedback-no-false-completion-line]], [[project-scott-clary-shorts-guarantee]], [[feedback-bombas-benchmark]].
+- **2026-11-13 ruling:** the Amy Winehouse Grammy Bolt-format pitch (centre ~70K, 85 % narrator, non-MJ) reached a raw cut and he called it "the amy winehouse short is absolute garbage its not gonna get even 10k views". A centre near the floor against a 6-19K base rate is below the bar: say "no pick".

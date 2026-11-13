@@ -1653,3 +1653,87 @@ REPORT.md). At his review.
   A near-still speaker (Dr. Amen) cannot be resolved by any method; he goes through the same path. Tools: `projects/bieber-walked-off-stage/win/sync_vs_source.py`, `sync_chain.py`, `sync_frames.py`.
 - **Re-ASR flagged a partial word in his own cut.** The tail of "nineteen" survives at his in-point (12.246; "to" starts at 12.533), so the re-ASR hears "19" where the caption says "to". The caption follows his words; it is flagged to him rather than changed.
 - **Kit bug, fixed:** `build/topaz_v2.py --redo --only X` rewrote every UNtargeted segment as a passthrough, twice wiping O1/O2's Topaz. Fixed here and in the MJ kit; `mj-son-step-outside/build/topaz_v2.py` still has the old line.
+
+## 2026-11-12 Harry Potter Thought Snape HATED Him, raw cut v2 → v3 (`projects/harry-potter-prank/`)
+- **His note on v2 (screenshot at 45:08):** "from 28 ish second onwards it doesn't even fit with the story alan rickman is talking about something else".
+- **Lesson: a stitched line from another speaker has to be set up by the beat before it.** Rickman's lines ("this was their life, from 12 to 22", "how dare he be dancing as well as the New York dancers") came straight after the fart-machine reveal. Nothing said who "him" was or what musical he meant, so they read as a different topic. The pick looked right because the source joined them, but the podcast's own context (Horowitz introducing the clip) wasn't in our cut.
+  - Change: the back half now runs in story order, each line answering the last. Dan: "I think he saw that I really wanted to … work at it" → "he came to every piece of stage work I ever did" → Rickman: "Huge pride to go and see him in the musical" → Dan: "I'm so, so lucky".
+  - The line that still needed context ("how dare he be dancing…") is out. File: `projects/harry-potter-prank/premiere/build_place_v3.py`.
+- **Lesson: "he" after a different man's name reads as that man.** The prank beat ends on "Michael Gambon … pressing it", so Dan's next "he saw…" would read as Gambon.
+  - Change: picture-only V2 cover of Rickman LISTENING (the 2015 clip during the interviewer's question, mouth closed) over Dan's first 5.5 s, so the face tells the viewer who "he" is.
+- **Lesson: he tightens the raw cut himself before sending notes.** v2 came back with 21 clips, the prank pauses cut, and B6 moved from 32.7 to 28.3 s; "28 ish" was his own marker.
+  - Change: before rebuilding, read his LIVE sequence. Build the new version as a clone of his sequence (`clone_v3.js`) so his cuts survive exactly, and replace only the part he named.
+
+## 2026-11-12 Hagrid Was Never Real, raw cut (`projects/harry-potter-idea3/`), dropped
+- **His note:** "its horrendous not upload material at all its just 2 topics thats it nothing special either you find
+  better moments to make a proper story or drop this idea".
+- **Lesson: two facts in one voice are two topics, not a story.** The cut ran two halves:
+  - a reveal ("a rugby player … with a giant, sort of fake rubber Hagrid head");
+  - a reboot judgment ("the exact same costume … what's the point?").
+  Each one was proven, but nothing carried from one to the other and nothing landed a feeling. Strong Instagram proof for
+  the reveal (1.4M shares) didn't rescue the shape.
+  - Change: PITCH-CHECKLIST §4 now asks for the arc written as one line (setup → turn → ending). If it reads as
+    "fact A + fact B", it fails Shape.
+- **Lesson: the pitch's own ⚠️ rows were the ones that killed it.** Shape and ending (a judgment, no warmth) and the
+  314K competitor's join were both named before the build.
+- **Lesson: a browser JS call that times out keeps running in the page.** My 8-fetch Instagram loop timed out at 45 s on
+  my side, and I started a second one on top of it: up to about 17 `/p/` fetches, then a 429 on his account. That broke
+  the no-loops rule.
+  - Change: never relaunch after a timeout; read the first run's state. After a 429, no Instagram until the next day.
+- **Process rule (mine, not his words):** an idea whose Shape or ending row is ⚠️ gets its arc fixed in text before
+  anything is sourced or built.
+
+
+## 2026-11-12: a pick that passed every gate I could run still got "not getting the vibe" (Beyoncé's mother, fake-pregnancy rumor)
+- **Lesson:** gates I can run alone (facts, sources, freshness, real comments, shape, cold reads) don't predict his vibe call.
+  The one gate that was missing, his Instagram-proof first filter (blocked by 429 all night), is the one built on his own
+  method.
+- **Change made:** the research session logs it as a kill and won't present a non-MJ pick again without Instagram proof
+  unless he asks.
+- **File:** `research/aw-pick-2026-11-12.md`, `projects/beyonce-what-they-didnt-know/PITCH.md`.
+
+## 2026-11-12 ~23:35: the VMA Bolt-format pick, killed on its ending
+- **Lesson:** "if there's no good video or ending we're not making it." A pick whose payoff exists only at 336-480p (MTV
+  scrubbed the 2009 VMA hand-over) is dead, even with clean audio and an HD first half. Photos under audio don't count.
+- **Change made:** the Bolt-format search restarts as a blend of Bolt's story shape and his IG beat mining, and every
+  candidate must show its ENDING in real >= 720p before it is scripted.
+- **File:** `research/bolt-format-test-2026-11-12.md` § Round 2, `projects/vma-her-moment/PITCH.md` (killed).
+- 2026-11-13 (Jermaine Jealous, full build from his Tella 2) — lesson → change → file:
+  (1) **When he names the original show, source the original, never the compiler's copy.** The detail's GGN lines sat over childhood b-roll we had
+  to hide; SnoopDoggTV's 2014 upload has Jermaine on camera, in sync, so the overlay count dropped. It carries a burned-in ticker (y ≥ 958): every
+  window clamps above it. → `projects/jermaine-mocked-skin/BUILD.md` § 2, `sources_v4.json`.
+  (2) **Recognisable beats clean:** a 1080p crowd scene where Michael hides under umbrellas fails the overlay bar; a 360p shot where you SEE him
+  (sunglasses, waving) passes when letterboxed. Children in a fan crowd fail the minors rule too. → O3 pick in `SOURCING-v4.md`.
+  (3) **Telecined 1991 NTSC footage** needs its repeated frames dropped from the ORIGINAL window, re-timed to the unique rate, then Chronos;
+  holding frames does nothing (`build/stage_a.py` `_ulist`). A per-shot skin fix by channel gain turns neutrals green: desaturate skin hues only
+  (`finish.py` `skin_sat`) and match the shirt/backdrop hue to the same set's other shots.
+- 2026-11-13 (Jermaine Jealous, HIS REVIEW 3 of the delivered Short) — lesson → change → file:
+  (1) **A family line needs the family on screen.** "Michael comes from a family" over Joe + Jermaine at a courthouse read as wrong; he wants the
+  whole family in one frame (Randy, La Toya, Janet, Tito, Michael, Katherine, Marlon...), a still is fine. A partial group does not carry "family".
+  (2) **An overlay must make sense at its crop.** "When he hurts, we hurt" over a letterboxed SD frame that showed half of Michael's face: rejected.
+  The emotion needs a readable face (his fallback: Michael tearing up / wiping tears, a still is fine).
+  (3) **A wide two-shot is centred on the speaker** even when a burned-in band forces a tighter window: take the tighter window.
+  → `projects/jermaine-mocked-skin/BRIEF.md` § HIS REVIEW 3.
+- **13 Nov, Amy Winehouse Grammy (Bolt format, 85 % narrator): REJECTED before the build** ("the amy winehouse short is absolute garbage its not gonna get even 10k views"). The pick sat at the bar (centre ~70K vs a
+  6-19K non-MJ base rate) and was still taken to a raw cut. Change: a non-MJ idea whose honest centre is at or near the 60K floor is reported as "no pick"
+  (the best runner-up in one line), never built. Narration over a non-MJ face carries no proof on AW. → `projects/amy-grammy-satellite/PITCH.md` § Verdict.
+
+## 2026-11-14: MJ "Brother Saw Him AGAIN" (his cut + narrated Tella direction)
+- **Max effort before ANY sequence:** v2 went out half-researched and he caught it ("have you done max effort?").
+  → `MAX-EFFORT-GATE.md` (project root; CLAUDE.md § Rules; PITCH-CHECKLIST top). Every beat gets Instagram + Shorts proof,
+  other tellings and voices are searched, variants are compared, the Fable advisor is called twice, and the FINAL version
+  gets a cold read before he sees it.
+- **Order:** research → the sequence in TEXT → his OK → the raw build in Premiere. "start it" after a research question
+  means the research.
+- **"Put these bits altogether in Premiere, I'll mix and match":** one raw-bits sequence with every candidate piece
+  (sections + spares + covers). He edits it; we read back HIS edit and build from it exactly.
+- **His overlay direction, as rules to reuse:**
+  - letterbox overlays "not too zoomed out, very zoomed in but still letterboxed";
+  - grey out a family member who has passed (Tito);
+  - an elderly relative must be shown as she looks NOW, not in decade-old footage ("Katherine looks very young here");
+  - a person who's talking on an overlay must be TALKING (check the mouth);
+  - "slow it down and place it in the middle" for the hero Jaafar-as-Michael overlay;
+  - the strongest look-alike film shot goes LAST (the Bad-tour head turn).
+- **A subscribe CTA never sits on a death mention** (it was on Tito's "rest in peace"; moved to Kevin's question).
+- **Silent Tella = audio failure**, not "no notes": he re-recorded with narration. Wait for it; don't build off a silent
+  read.

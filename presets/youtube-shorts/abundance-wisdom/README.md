@@ -322,3 +322,31 @@ concept" → Road to 1M (research: show the viewer what the subscribe does; mile
 "looks absolutely horrendous and cheap ... skip this until you come up with a better one, but I don't need a better one
 for this video ... fade out this video" → the end screen is off on every Short until a new concept is approved. Two
 end-screen concepts have now been rejected: the plaque, counter and gold sparks read as cheap, not premium.
+
+## 13. Stacked splits and reaction cutaways (Affan 2026-11-12, from Bolt Motivation)
+He chose two moves from the Bolt study (`research/bolt-style-2026-11-12/findings.md`, `chrome-newest.md`) as defaults on
+top of the house template (`projects/mj-son-step-outside/`, SESSION-START § House style). They are **sequencing** moves:
+they go into the raw cut he reviews, never added to a cut he has already locked.
+
+**Stacked two-panel split, on comparison beats.**
+- When to use it: the line compares two things. Two people, then vs now, the speaker over the thing he talks about, or
+  the same act by two people.
+- Bolt's measured uses:
+  - strongman: two record holders, 32-47 s;
+  - judge show: contestant over the judges' desk, 16-17 s; two faces, 54-55 s.
+- Layout: two shots stacked top and bottom, each cropped to fill its own band (face framed in its panel, never squashed).
+- **The seam is the video's base caption y**, with a **white separator line** on it (his 2026-10-12 split rule). The
+  captions already sit there, so nothing moves when the split arrives.
+- One split per comparison beat. It holds for the beat (1-15 s at Bolt), then cuts back full-bleed.
+- Each panel gets its own Topaz and grade like any shot. A face panel keeps the head lock; the zoom is one push per panel
+  per shot change.
+
+**Reaction cutaways, where the event has an audience** (host, judges, crowd, interviewer, family, a co-star listening).
+- The subject keeps talking on A1. The picture cuts to someone REACTING to that exact moment: a laugh after the joke,
+  shock after the reveal, a nod on the payoff.
+- 1-2 s each, picture only (a V2 cover, like the Rickman-listening cover in the Snape Short).
+- Cadence: about one every 6-8 s of subject talk at most.
+- It must be first-party footage of the same event, or a listener in the same setting, chosen by his overlay rule:
+  recognisable, crisp, and matching the line, never "random overlays".
+- No cutaway in the 0-3 s hook claim. Never over a label card or a CTA, and never cutting away from the payoff line
+  itself.

@@ -3,6 +3,11 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-14: no `?` in yellow captions; one decoder at a time (ABW11 Sequence 05, ABW10 Sequence 52)
+- **I shipped two `?` on Seq 52** ("bhi rakhna hai?", "pata mai kia karta?"), against `roman-urdu.md` § Hard rules (no commas, full stops or `?`; the AW/Onyx "only ! ? and quotes" rule is NOT this channel's). `caption_qa.py` does not check punctuation, so it passed. Fixed and rebuilt the same day; before every build, grep `captions.txt` for `[?.,]` on the `@` lines.
+- **Two large-v3 decoders at once = mkl_malloc at 8 GB free:** `codeswitch_pass.py` and `work/redecode.py` side by side killed the re-decode. Run them one after the other.
+- **A hook that WhisperX loops ("apni apni …" ×10) is re-decoded on its own** in short windows (0-3, 0-6, 2.4-8.4 s); stop as soon as two languages agree. → `projects/abw11-seq05-short/work/redecode2.py`.
+
 ## 2026-11-11: names are tested with a prompt, not chosen by one (ABW10 Sequence 52)
 - **For an unclear name, decode it twice, with and without a prompt listing the candidates.** A name the prompt cannot pull in is not the name: "Aroob/Jatoi" in the prompt left "Ekra" and جسٹرالیوی untouched, so the captions read "mrs iqra" and "sistrology" (the en pass's "sister of astrology"). → `projects/abw10-seq52-short/work/redecode2.py` is the recipe.
 - **The en window's sense beats the ur/hi letters on a short word:** ur + hi heard باہر / बाहर ("baahar"), the en pass "every vlog" → "har vlog mai".

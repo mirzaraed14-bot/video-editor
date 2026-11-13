@@ -243,6 +243,16 @@ suffix.
 
 - **One job: edit the best video possible.** Raw → fully edited → exported. No business or CTA logic
   lives here — captions and end screens carry no sales asks.
+- **Max effort before ANY sequence (Affan, 13 Nov 2026), every channel.** No sequence, pick or pitch reaches him
+  until every item in [`MAX-EFFORT-GATE.md`](MAX-EFFORT-GATE.md) is done:
+  - every beat researched, Instagram included;
+  - other tellings of each line and other voices searched;
+  - variants compared;
+  - the Fable advisor called before committing and again on the final;
+  - a cold read of the final version.
+
+  The message opens with a statement of what was done. Half-baked is a fail. Then: the sequence in text, his OK, and only
+  then the raw build.
 - **Surgical changes only.** Touch what's asked; don't "improve" adjacent renders or refactor working
   skills.
 - **Fix the source, never stack a correction on a broken artifact.** A step's output is wrong →

@@ -8,6 +8,16 @@ like that."
 DETAILED STATEMENT EVERYTIME YOU GIVE ME AN IDEA THAT THE SHORT HAS PASSED ALL OUR GATES. IT DOESN'T EVEN HAVE TO PASS ALL
 GATES IF IT'S INTERESTING ENOUGH TO BUILD, BUT DON'T SLACK."
 
+**Affan, 13 Nov 2026:** max effort before ANY sequence. Every item in [`MAX-EFFORT-GATE.md`](../../../MAX-EFFORT-GATE.md)
+must be done before this checklist's statement goes out:
+- Instagram and Shorts proof for EVERY beat;
+- other tellings and voices searched;
+- variants compared;
+- the Fable advisor called twice;
+- a cold read of the final version.
+
+The pitch then opens with the max-effort statement.
+
 **Rules:**
 - **Every idea arrives with a GATE STATEMENT** (§0 below): every gate, PASS / FAIL / OPEN, with the evidence next to it.
   No idea is sent without one.
@@ -30,6 +40,8 @@ has been … high Instagram engagement literally says to your face that this wor
 - **The gates below are our experience, not law.** They inform the build and the risks and go into the statement.
 - My reading of his words, to confirm: a fail on the **viral-foundation gates** (shape, judgment, G1-G3, freshness)
   doesn't kill an idea with strong Instagram proof.
+  - ⚠️ **Contradicted by the Hagrid result (12 Nov):** 1.4M-share proof for the reveal didn't rescue a Shape fail ("just
+    2 topics"). Shape can kill. His to confirm.
   - **Facts** (never distort) and **source quality** (his 10 Nov "I'm just going to reject it if the source quality is
     not good") can still kill it.
 - **"Proven bits only, stitched" (Affan, 11 Nov):** "I literally do not want completely original ideas … right now … only
@@ -105,6 +117,11 @@ news or source quality had been checked. Each one then failed a line here.
 - [ ] The judgment, written as a comment a stranger would type, and installable in 5 s without teaching.
 - [ ] Hook, the last line, and why each beat answers the one before. A second half exists (not "a great line with nothing
       behind it").
+- [ ] **One topic, one arc (Affan, 12 Nov: "its just 2 topics thats it nothing special").** Write the arc in one line:
+      setup → turn → ending. The ending must land a feeling (warmth or a wound) or a lesson. If the line reads as
+      "fact A + fact B", it's two topics and fails Shape, however strong the Instagram proof for each fact. The link between
+      two speakers must be in their own words, not a line I supply. My process rule, not his words: a ⚠️ here is fixed in
+      text before anything is sourced or built. Example: the Hagrid cut, `projects/harry-potter-idea3/PITCH.md`.
 - [ ] Audience fit: his audience is 52% female, 25-44, US 47%. Sports, WWE and bodybuilding entries get swiped more
       (49-66% stayed).
 

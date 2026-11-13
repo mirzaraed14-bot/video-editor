@@ -2,7 +2,10 @@
 name: feedback-use-fable-allowance
 description: "Affan 2026-10-21: NO Fable agents; agents run on Opus only when the task needs it, Sonnet/Haiku otherwise; check with the advisor which model a task needs. 2026-11-10: Fable 5.2 IS the advisor and that's wanted; hubs stay Opus, edit sub-sessions default to Sonnet once the BRIEF locks the creative calls"
 metadata:
+  node_type: memory
   type: feedback
+  originSessionId: ba0c4372-a56a-4e31-9e42-90041477178f
+  modified: 2026-11-12T10:52:52.519Z
 ---
 
 **Rule (Affan, 2026-10-21, MJ siblings short):** "don't use agents of fable, use opus only, and use advisor as well to see if a
@@ -48,3 +51,6 @@ Related: [[feedback-usage-budget]].
   advisor use or rounds it away. The proof is the transcript: open the `.jsonl` in `~/.claude/projects/<project folder>/` that
   contains Affan's latest message and read the last `"advisorModel":"…"` on an assistant entry (`claude-fable-5-2` = Fable). When
   asked, check that and answer in one line. If you can't check, say "it's set to Fable" and move on; don't send him to `/compact`.
+- **2026-11-12, checked, not assumed:** the AffanWiz C1454 sub-session (`ba0c4372…`, started 11-09) still read `"advisorModel":"claude-opus-5-5"`
+  on every entry, so the AffanWiz idea research he asked to run "with the Fable advisor" was advised by Opus 5.5 (agents on Sonnet). He was told.
+  A session started before 11-10 must be checked before saying "Fable" about its advice.
