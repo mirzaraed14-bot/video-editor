@@ -1,6 +1,148 @@
 # RUN — skool-vsl-2026-11
 
-## ▶ STATUS: resume here (REVISION 1 from his Tella review, 2026-11-14 00:15)
+## ▶ STATUS: resume here (REVIEW 2 DONE, 2026-11-14 ~04:20): main re-saved in ABW11; he exports
+**His review 2:**
+- "You cut 'for a whole year' too early." **as3b** now ends where "year" decays (417.435; the aligner's "or" at 417.34 was the r of "year"), +18 f. Its A1 ramp is dropped because it ends in silence.
+- **His own edit, kept:** after hand-over he ripple-deleted **g6 "and you stay"** on all main tracks (a doubled phrase: g7 itself starts "you stay"; the bounce ASR had hidden the repeat).
+  - My replay first overwrote it (V1 46 → 47). It was recovered from the 03:43 auto-save (`work/autosave/`, `read_seq.py`) and is now permanent in the EDL: g6 flags `ever`, so it is main-only and the evergreen keeps it.
+  - Main is now 46 pieces and matches his V1 piece for piece, plus the as3b fix.
+- **Main seal:** g13 → **g13m** (608 f, his 49-f cut; "Free till you hit it" / "Terms" on their words). The evergreen keeps g13 (657 f).
+- **His V2 grade layers** (razored at 68.218 by his ripple) are kept; the second one is extended to the new end, 99.983.
+- **Rebuilt on main:** V1/A1 46 (EDL-exact, 19 motion pieces, chain on all, ramps g5/d1a), V3 19, V4 `cap-alpha-g`, SFX 30.
+- **Checks:** gate 0 FAIL; mix −16.9 LUFS, no flags; max A1 joint step −40.6 dBFS; as-heard "…I refund every dollar and you stay in free until you hit the terms", "…for a whole year". Frames: `work/rev1/rev2-aside-end.jpg`.
+- **The evergreen is unchanged** since rev 1.
+- **Lesson** (lab-notes + memory): diff live V1 against the delivered EDL before ANY replay.
+
+## ▶ STATUS (REVISION 1 DONE, 2026-11-14 ~02:45, superseded by review 2 above)
+**Export these two** (the "(pre-rev1 snapshot)" sequences beside them are backups):
+- **"Skool VSL 2026-11"** (main): V1 47 / V2 his grade layer / V3 19 / V4 cap-alpha-e / A1 47 / A2+A3 30 SFX; ends 1:40.50.
+- **"Skool VSL 2026-11 evergreen"**: V1 37 / V3 16 / V4 cap-e-alpha-e / A1 37 / A2+A3 27 SFX; ends 1:22.75; no grade layer.
+
+**Fresh-eyes review (Sonnet; `review/REV1-REVIEW-BRIEF.md` → `review/rev1-findings.md`), all 141 + 110 program frames:**
+- 1 defect: help1 opened on a downward READING glance (src 101.70–102.06, under "and have helped", so it can't be trimmed).
+  - g06 now holds 26 f past the cut (`g06-c`, 597 f).
+  - Its old wipe to black (built for g06→g07) is removed, so it hard-cuts to him on the lens.
+  - Captions stay visible over that tail (`hide_end`), with no collision.
+  - Verified on program frames: `work/rev1/g06-cut-check.jpg`.
+- Uncertain items, judged:
+  - one-frame eyes-low at the d3 tail (blink);
+  - the last caption over g18 is spoken there (as in rev 0);
+  - g08/g11 plan-vs-build copy is rev 0's, unchanged;
+  - Methos "5.2M in 2 months" doesn't contradict "monetized with 10M": it's the path to the threshold.
+- The remaining areas are clean: new face spans, CTA headroom, every graphic edge, the g13 underline is gone, the dissolves frame-diff smooth, and the captions.
+
+**Gate:** 0 FAIL (`hf-graphics/qa-rev1.txt`). **Mix:** −16.9 / −16.7 LUFS, peak −5.6. **Joints:** within 12 px on both cuts.
+
+**Last checks (advisor, final):**
+- **Vertical reading scan:** `work/plan/gaze_down.py`, a lid-opening measure calibrated on help1's glance (reading 0.21–0.29, on lens 0.34–0.38; threshold in `work/plan/gaze-down-threshold.json`), run over all 19 face pieces (`transcript/gaze-down-main.json`). Every flag was checked on 4K eye crops (`work/rev1/down-eyes.jpg`, `down-sheet.jpg`):
+  - help1: fixed (g06 hold).
+  - **cta_m 386.79–386.94:** a 0.15 s downward nod on "pick". Natural, left as is: no graphic can cover a face CTA.
+  - **d3 382.53–382.83:** a 0.3 s downward glance mid-sentence. Unchanged from rev 0, which he watched and did not flag.
+  - Everything else is blinks, smiles/squints, or the g2 hand-gesture head-dip (adjudicated in rev 0).
+- **g13** shows "Terms pinned inside" with no underline. **g11's** gold lines are its data streams (unchanged).
+- **Final audio:**
+  - `mech_scan` on the final EDL shows only the accepted flags.
+  - A hard-cut bounce plus the 4 ramps (`work/bounce-final-*.wav`): max joint step −40.6 dBFS on both cuts; re-heard clean.
+- **Overlay clearance** after the re-framing (the hook base is now 1.067; rev 0 had more): every face overlay keeps ≥ ~140 px from his head (`work/rev1/overlay-clearance.jpg`).
+
+**Lessons from his review 1** (no channel preset owns this job; the durable ones are saved to memory as `feedback-natural-speech-whole-lines`, `feedback-subtle-transitions` and the 2026-11-14 entry in `feedback-premium-sfx`):
+1. A copy-rule excision that breaks a one-breath sentence reads as a botched cut. → Keep spoken lines whole; copy rules govern on-screen text.
+2. "Happening more than once" means scan the WHOLE cut. → `work/plan/mech_scan.py` + slice ASR + an A1 joint step scan before every delivery.
+3. Push-through zooms read cheap. → Soft dissolves through the plate (`REV1-BRIEF.md`).
+4. Reused kit SFX (counter, paper, ticks) read cheap. → A fresh Epidemic set per job, swish family only, crest-aligned.
+5. A zoom at the CTA pushed his head out. → Head test on the transformed frame (`gen_v1.py` + `hair_top.py`); no IOD size matching (yaw noise).
+6. An FS→face cut must land on the lens. → The gaze check must cover pitch (looking DOWN), not only the screen-side yaw. The iris-yaw check missed help1's head.
+
+## ▶ STATUS (REVISION 1, advisor final-check fixes, 2026-11-14 ~02:20, superseded)
+The block below was the first "built" state. The advisor's final check sent these back, and they are now done:
+- **SFX were rebuilt to his written rules:**
+  - the swish family only (`sfx/crisp/`, tails trimmed to crest + 0.2 s);
+  - press-soft (foley drops), impact-soft and swell-soft ("Impact"/"Riser" titles) are no longer used;
+  - count-ups, presses, settles and cuts to the face are silent;
+  - 30 cues main, 27 evergreen, placed, mix flags none.
+- **Size match is OFF** in `gen_v1.py`. The interocular distance swings with yaw (~9 % scatter on program frames). Position lock, centring and vertical balance stay; the head test passes on all 19 pieces.
+- **A1 joint scan** (sample step + 5 ms RMS each side):
+  - help1 now ends at 103.053, keeping the whole "s" of "others" (it was clipped at −31 dB). Everything after shifts +11 frames, and plans, words, captions, V3 and SFX were rebuilt.
+  - Level ramps sit INSIDE the clips at the edges that cut inside sound: g5 out 10 ms, g6 in 8 ms, d1a in 8 ms, as3b out 25 ms (`work/plan/a1_ramps.py`, read back on both cuts).
+- **Premiere:** V1/A1 were replayed and re-baked again on both cuts (47/37 exact). V3 was re-placed (19/16); his layer was re-trimmed to the new content end (100.5005).
+- **Gate:** 0 FAIL. **Mix:** −16.9 / −16.7 LUFS, peak −5.6 dBFS.
+- **Captions** are being re-rendered as `-e` for the +11-frame shift, then go to V4.
+
+## ▶ STATUS (REVISION 1 BUILT, 2026-11-14 ~02:15, partly superseded by the block above)
+**Where each Tella note landed:**
+1. **SFX:** a fresh Epidemic set in `sfx/` (31 takes, 7 soft classes, screened by `sfx/tools/sfxtool.py`; `sfx/LIBRARY.md`). The old set is off both timelines.
+   - No counter, paper, pen, tick, click or riser sounds.
+   - The 600M count is a soft swell cresting on the landing.
+   - Every cue is crest-aligned to its motion (`work/plan/sfx_plan.py`) and levelled by measurement, 14–19 dB under the voice.
+   - Main has 34 cues, evergreen 31. Mix: −16.9 / −16.7 LUFS, peak −5.2 dBFS, 0 weak cues (`work/plan/mix_check.py`).
+   - Not heard by ear (silent work). The builder flags the foley-sourced takes and swell-soft-1 ("Asphalt Reversed", on the 600M count) as first to audition.
+2. **Retakes:** the deleted "Views" is cut. The whole cut was re-scanned (mech scan + slice ASR); found and fixed the help1 stumble, the d1a "af" cut-off, the as2 "pack" cut-off, and two hesitations.
+3. **Transition line restored:** "and have helped countless others, to get theirs monetized as well", on the lens.
+4. **Methos restored** to "…with 10 million engaged views"; g07 re-timed.
+5. **g09→g10→g11:** the push-throughs are now soft dissolves through the plate. Real-speed preview: `review/rev1-dissolves-g09-g11.mp4`.
+6. **Guarantee:** natural speech ("…10 million engaged views, I refund every dollar, and you stay in free…"). The g13 red underline is removed.
+7. **Feb 1:** the 0.45 s silence after "31st" is cut.
+8. **CTA:** one take, no push, no zoom-in. Head lock + size match; measured headroom 88 px (`gen_v1.py` head test).
+9. **Pauses** around "pick annual" / "349" are gone; "349" starts at its breath.
+10. **The Skool aside** is restored (main only), three takes head-locked, with its hesitations trimmed.
+11. **Sign-off** is his one take, with the g18 end card arriving on "inside".
+
+**Lengths:** main 98.3 s of speech, ends at 1:40.3. Evergreen 80.6 s, ends at 1:22.6. Main is now ~8 s past "90 seconds".
+
+**Verified:**
+- V1/A1 match the EDL, lip sync exact.
+- QA gate 0 FAIL (`hf-graphics/qa-rev1.txt`; 71 waived with reasons, g16a/g16b/g17 waivers added).
+- Program-frame grabs: `work/grabs/rev1m` (142) + `rev1e` (111).
+  - Every face joint within 9.5 px (`work/plan/joint_check.py`). IOD "size" readings up to 12 % are head turns, checked by eye (`work/rev1/joints-size.jpg`).
+  - Sheets: `work/rev1/face-sheet.jpg`, `gfx-sheet.jpg`, `ever-sheet.jpg`.
+- g16b's lockup is centred (it sat low once the price block left), rendered `-e`.
+- Project saved.
+
+**Not done / his call:**
+- No grade on the evergreen (only main has his V2 layer).
+- Captions say "package" where he says "packet".
+
+## ▶ STATUS (REVISION 1 BUILD in progress, 2026-11-14 01:40, superseded)
+- **Cut locked:** `transcript/build-cuts-v2.py` → `transcript/cuts.json` (47 pieces, 98.31 s) + `cuts-evergreen.json` (37, 80.56 s).
+  - Every piece has a stable ID and is frame-snapped.
+  - The pre-rev1 EDLs are `transcript/cuts.r0.json` / `cuts-evergreen.r0.json`.
+  - Verified by bounce + ASR (`work/bounce-v2-*.heard.txt`), slice ASR at every changed edge, and `work/plan/mech_scan.py`.
+  - Remaining scan flags are accepted: word-onset cut-ins at g2/g6/d1a; help1/help2 have no words in words.json; "after" is doubled by the aligner.
+  - **Extra pause trims, measured:**
+    - help1 starts on its own "and" (101.69); 100.43–101.30 is a stumble.
+    - price starts at the breath.
+    - as2 is split at the 0.55 s "a … three-month" hesitation.
+    - as3 is split, with its 0.5 s comma pause cut to ~0.2 s.
+  - **Edge fixes:** d1a starts at 303.687 (one "after"; 303.865 cut off "af"). as2's end is 408.708, after "package"; 408.55 was mid-word.
+- **Downstream re-keyed BY PIECE ID** (no index math left):
+  - `work/plan/make_plan.py` → `graphics-plan.json` + `graphics-plan-evergreen.json`;
+  - `words_by_comp.py`;
+  - `tl_words_v2.py`: timeline words = piece texts force-aligned on each cut's bounce, which replaces the timed DROP lists;
+  - `make_captions.py` (both cuts from their own words) and `make_cap_comp.py`;
+  - `joints.py` + `hair_top.py` + `gen_v1.py` (windows from `work/plan/face-windows.json`);
+  - `place_gfx_ever.py` (reads the evergreen plan).
+- **New face spans checked:** gaze clean (`transcript/gaze-face-rev1.json`, 7 spans, 0 glances); dandruff none (`work/rev1/speck-sheet.jpg`).
+- **Premiere (ABW11), both sequences:**
+  - V1/A1 cleared and replayed: main 47/47, evergreen 37/37, EDL match and lip sync 0 mismatches.
+  - Motion baked (`work/pp-v1*.jsx`):
+    - head lock with SIZE matching;
+    - centred chains and a vertical balance;
+    - pushes on "They don't" and "I take the risk" only, none at the CTA;
+    - head test passes on all 19 face pieces (measured hair top ≥ 24 px; CTA 88 px).
+  - Audio chain re-measured: kept speech −19.8 LUFS → +3 dB (0.6875) → −6 dBFS limiter, on all clips.
+  - His V2 adjustment layer was trimmed 100.367 → 100.317 (the content end); its Lumetri is untouched.
+- **Graphics:**
+  - A Sonnet builder re-timed g04, g07, g13 (red underline `#u1` removed), g14, g15 and g17.
+  - g16 was split into g16a (price) + g16b (pinned lockup).
+  - The g09→g10→g11 push-throughs became soft dissolves through the plate (`hf-graphics/gfx/REV1-BRIEF.md`).
+  - Renders are `-d` (g10 `-e`: its note now enters at 2.10 so it reads before the dissolve).
+  - Main V3: 19 rows placed and verified (`place-graphics.py`, needs `PYTHONUTF8=1`, lab-notes). Evergreen V3: 16 rows, 0 mismatches.
+- **Next:**
+  - captions cap-d / cap-e-d render → V4 on both;
+  - SFX: the builder's fresh Epidemic set in `sfx/` → re-plan by the new comp anchors (`work/plan/sfx_plan.py`), calibrate, clear the old A2/A3, place;
+  - QA gate, program grabs + joint check, mix check, save, advisor, hand-over.
+
+## ▶ STATUS (REVISION 1 from his Tella review, 2026-11-14 00:15)
 **His Tella 1** (`review/tella1/guide.mp4`, 5:15; transcript `review/tella1/transcript.json`). "Overall the editing style is fine… refine THIS project, don't rebuild." His timeline edits, read back (data, keep):
 - razors on V1 at src 40.240 / 387.654 / 389.689 (markers of the notes below);
 - an **Adjustment Layer + Lumetri on V2 of the main**, 0–100.367: it runs ~13 s past the cut, so trim it to the content end and leave its grade untouched;

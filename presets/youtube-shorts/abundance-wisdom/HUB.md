@@ -27,6 +27,9 @@ Jermaine is still unbuilt, so its build takes this style.
   adult brothers on stage, no child. His calls: a 17 px head jump on La Toya, the softer brothers still, "his/her makeup" by ear.
 - Speed v8 (`projects/speed-kicked-out-three-peat/PITCH.md`) adds his Sept 2025 stream "I need a therapist… I feel alone", NOT max
   effort (no re-read of v8, usage 90 %). Nothing built.
+- **Speed BUILD started** on his "Yes, build v8" (said to aw-speed-research): `local_0a18dba6-8ce5-4b83-9f13-58f00c68202d`
+  (speed-kicked-out-build, Sonnet, `projects/speed-kicked-out-three-peat/BUILD-BRIEF.md`). STOP 1 = raw cut in ABW11, STOP 2 = finish
+  stills. Budget <= 4 %, stops at 98 % weekly. Never start a second one; the hub checks the delivery.
 
 ## ▶ 13 Nov evening (hub): Amy REJECTED
 - Affan: "the amy winehouse short is absolute garbage its not gonna get even 10k views". All Amy work stopped (bolt-format-test told). Its unsaved raw sequence is still in ABW11.

@@ -3,6 +3,12 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-14: a 150 s reel on a busy machine: 2 threads, one window per process (ABW11 Sequence 06)
+- **mkl_malloc is about MKL threads, not only free RAM.** The window re-decode died at model load / encode / generate with 6-7 GB physical and 12+ GB commit free; the same window decoded first try with `WhisperModel(..., cpu_threads=2)`. Long reels: one process per window at 2 threads, a runner that skips finished windows and never starts a second decoder. → `projects/abw11-seq06-short/work/redecode_one.py` + `run_rest.sh` are the recipe. `codeswitch_pass.py` has no thread flag: run it with `OMP_NUM_THREADS=2 MKL_NUM_THREADS=2`.
+- **TaskStop does not kill a bash script's loop on Windows, and the kill pattern must match `bash.exe" run_rest.sh`** (not `bash run_rest.sh`): three runners ended up decoding at once. Kill by `Name='bash.exe' -and CommandLine -match 'run_rest\.sh'` plus the python children, then count zero before restarting.
+- **HANGING on a slowly said phrase is not always missing words.** Measure the envelope first: "lifestyle based" had pauses between syllables (life / style / based); split it into two cues instead of hunting for words.
+- **Read a brand from the source, not from Whisper:** لونو / لونہ / لونا = LUNA Coffee (Karachi), checked on the web; the ur/hi windows also wrote "luna" in Latin letters.
+
 ## 2026-11-14: no `?` in yellow captions; one decoder at a time (ABW11 Sequence 05, ABW10 Sequence 52)
 - **I shipped two `?` on Seq 52** ("bhi rakhna hai?", "pata mai kia karta?"), against `roman-urdu.md` § Hard rules (no commas, full stops or `?`; the AW/Onyx "only ! ? and quotes" rule is NOT this channel's). `caption_qa.py` does not check punctuation, so it passed. Fixed and rebuilt the same day; before every build, grep `captions.txt` for `[?.,]` on the `@` lines.
 - **Two large-v3 decoders at once = mkl_malloc at 8 GB free:** `codeswitch_pass.py` and `work/redecode.py` side by side killed the re-decode. Run them one after the other.

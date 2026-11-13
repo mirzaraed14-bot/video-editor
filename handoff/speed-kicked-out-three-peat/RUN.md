@@ -1,6 +1,10 @@
 # RUN: speed-kicked-out-three-peat (AW Short, IShowSpeed)
 
 ## ▶ STATUS: resume here
+- **14 Nov ~05:00: PHASE A DONE, at STOP 1 (Sonnet builder).** Sequence `Speed Kicked Out - raw cut` is in **ABW11** (bin of the same name), 1080x1920, 29.97 fps, **47.614 s (1427 frames)**: V1 18 + A1 18 (dialogue pieces B1..B11b) + V2 3 picture-only covers (beat 3 blurred plate, beat 9 walk-up, beat 10 wide) + 18 markers. Read back = plan: **0 mismatches** (`premiere/readback.tsv`, plan `premiere/place_rows.json`, check `build/readcheck.py`). His active sequence `Skool VSL 2026-11` restored after every window; ABW11 NOT saved, nothing exported, ABW10/AE untouched, nothing committed.
+- Picks + frame sheets + deviations: `proof/picks/PICKS.md`. Timeline audio re-transcribed: `proof/seq/asr_by_piece.txt`.
+- **Next (Phase B) starts from HIS read-back: re-read ABW11 first** (`REBUILD=1` rebuilds only OUR sequence: `python premiere/run_window.py`). If he changed the sequence, build from his read-back.
+- **14 Nov: BUILD STARTED on Affan's "Yes, build v8".** Session `speed-kicked-out-build` (local_0a18dba6-8ce5-4b83-9f13-58f00c68202d, Sonnet), from `BUILD-BRIEF.md`. Stops: STOP 1 (raw cut in ABW11), STOP 2 (finish stills).
 - On his yes: ONE Sonnet build session, house style `projects/mj-son-step-outside/`; run PITCH.md "Build checks". Never Jamal (16) or the young siblings.
 - **13 Nov ~22:45: PITCH v8, NOT BUILT, "NOT max effort yet".** `projects/speed-kicked-out-three-peat/PITCH.md`, 11 beats,
   ~44-48 s, Affan's shape.
@@ -55,3 +59,13 @@
     it as the beat 10 source and note what its announcer says after the name.
   - Every word, by ear.
   - The proof frames: `proof/cutmap_*.jpg`, `proof/finish/anchor_same_region.jpg`.
+
+## Builder log
+- 2026-11-14 ~03:50 Phase A started (Sonnet builder, session local_f3ae46ec... child). Orientation done: BUILD-BRIEF, RUN, PITCH, SESSION-START, Son BUILD/RUN/QA, Jermaine ABW11 scripts. GPU busy (gpu.lock = Scott Topaz job, VRAM 7.0/8.2 GB) -> edges on CPU. Mezzanines go to `seq_src/`, wavs to `wav/`.
+- 2026-11-14 Phase A (Sonnet builder). GPU busy all session (gpu.lock = a Scott Clary Topaz job; VRAM 7/8 GB) and RAM tight (1-5 GB free): everything ran on CPU, large-v3 failed to load twice (`mkl_malloc`), `medium.en` + wav2vec2 did the English windows, large-v3 `id` loaded once RAM freed (Indonesian). **WhisperX alignment is unreliable on the quiet Keystone audio and on the announcer windows (word times off by 0.2-1 s, e.g. 'It's' at 21.07 vs 23.2), so every piece edge is set from the audio itself: 10 ms RMS valleys near each PITCH edge (`build/edges_final.py`, `valleys.py`), cross-checked with `build/probe_asr.py`.**
+- Mezzanines: `seq_src/spd_*.mp4` (libx264 crf 14, whole HD sections from t=0, soty26 from 280.000 s = a frame boundary); covers `spd_cover_b3.mp4` (baked blur+darken of the wide), `spd_walkup_v.mp4` (video only). Placer = Jermaine's `place_v3.jsx` body via `build/plan.py` (generates `premiere/place.jsx`).
+- **Premiere in-point rule (confirmed twice here): the stored in-point = floor_seq(floor_src(request))**, i.e. floor to the source frame, then to k/29.97 in source time. Ask for the first SOURCE frame at/after the target (+0.3 ms); `plan.py` stores the expected value in `rows[i][10]` and `readcheck.py` compares against it. The first two placements had in-points 8-33 ms off the intent (B11b would have clipped the "I"); third placement exact. `place.out` always says "bridge_unavailable" yet the placement DOES apply (the read-back is the proof).
+- `deleteSequence` works (own sequence only): `REBUILD=1 python premiere/run_window.py` deletes + recreates + places + reads back + restores his active sequence in one lock window. Three windows used (3:56, ~4:30, ~4:50); premiere.lock released each time.
+- Shot-cut maps: the default `select='gt(scene,0.25)'` MISSED the single->wide cut at 34.70 on the Club Shay Shay file; use 0.06 on that show. Cuts used: support 34.70 (single->wide), 37.45 (wide->single); covid 12.89-18.10 single; fam wide 0-3.80, single 47.63-52.72 / ..62.81 / 105.56-111.28; win24 card->audience 20.75; win25 grid->walk-up 17.98; soty26 wide 319.37-322.93, then podium.
+- Findings that changed the PITCH (all in `proof/picks/PICKS.md` § Deviations): beat 11's last line is on the wide; its clean start is "I really, I really, really love my mom"; beat 7's "yeah" is "'cause" to two ASRs; podium crop 444 not 520 wide.
+- Phase A re-ASR (`build/seq_audio.py`, medium.en CPU): all lines present + in order; Shannon "Right."/"Correct." absent; beat 2 contains Speed's own "right?" (pitch check, PICKS § 9). Indonesian: `transcript/edges_id.json` (large-v3 id on the source) = the reconstruction. Weekly meter at STOP 1: 95 % (90 % at start; ~5 % used, over the 4 % aim because 3 Premiere windows + two failed large-v3 loads + shot-map re-checks). **Stopped at STOP 1.**

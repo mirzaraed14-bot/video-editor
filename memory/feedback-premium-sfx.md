@@ -78,5 +78,13 @@ short and crisp: attack to crest ~0.1 s, gone ~0.1-0.2 s after (the measured sha
 envelope, not by "airy" in the title. Lesson: onyx-samples-youtube LESSONS 2026-11-01.
 
 
+**2026-11-14 (Skool VSL, his Tella review note 1):** "the sound effects are not premium… go back to Epidemic and pick refined,
+expensive ones". He singled out two: the 600M count-up COUNTER was "absolutely terrible", and the paper/page "tear" got "we're not
+tearing anything". The rev-0 kit was reused from earlier jobs (ticks, clicks, paper, pen, counter, riser).
+Fix: a fresh Epidemic set for the job (`projects/skool-vsl-2026-11/sfx/`), then ONLY the swish family placed (`sfx/crisp/`, tails
+trimmed to crest + 0.2 s). One swish per graphic entrance or dissolve, crest-aligned to the motion. Count-ups, text swaps, presses,
+settles and cuts to the face are SILENT. Each cue is 14-19 dB under the voice by measurement. The builder's foley "press" drops and
+its "Impact"/"Riser" takes were rejected against this file's blocklist.
+
 ## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)
 - [Premium SFX](feedback-premium-sfx.md) — Affan 2026-10-08: refined cinematic SFX only, MORE of them, never goofy/magic/UI/trilling; 2026-10-21: VARIETY, a fresh wide Epidemic set per job, never one whoosh 71x (rated 2/10); 2026-10-25: "expensive" = audible on a PHONE: no taps/foley, high-passed hits + one sub layer, cue_check.py phone band; 2026-10-26: FIT: never the kit's stock cues, each sound sized to its motion (Morgan yt/sound.py); 2026-10-27: SUBTLE: batch-5 reactions read 'very very cheap' and loud: fresh soft set, no trailer drums, hits ≥ 8 dB under the voice; 2026-10-28: Shorts he scores himself = transition swishes only, 19-23 dB under the voice (default); 2026-10-28 SUPERHERO (3rd Onyx strike): risers/impacts/stingers/sci-fi takes read 'superhero' at any level: Onyx = Patrón soft swishes only, one per graphic entrance, sized to the move

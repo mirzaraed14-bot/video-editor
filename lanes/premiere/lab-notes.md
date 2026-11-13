@@ -1181,3 +1181,14 @@ Always check the EDL bash can actually see before re-splicing.
   verifies the restore (`projects/skool-vsl-2026-11/work/pp.py` § window).
 - (skool-vsl-2026-11, 2026-11-14) **`sequence.clone()` ACTIVATES the clone** (Premiere 25.0): a by-name clone of a non-active sequence
   left "<name> Copy" as the active sequence. Clone inside an ACTIVE-WINDOW and restore the previous active by id afterwards.
+- (skool-vsl-2026-11, 2026-11-14) **`place-graphics.py` reads `graphics-plan.json` with the locale codec**: a plan with any non-ASCII copy
+  (`✉️`, `→`, `·`) dies in `--plan` with `UnicodeDecodeError: 'charmap' codec` on Windows. Workaround: run it with `PYTHONUTF8=1`
+  (`PYTHONUTF8=1 uv run lanes/premiere/place-graphics.py projects/<job> --plan ...`). Fix at the source: `open(..., encoding="utf-8")`.
+- (skool-vsl-2026-11, 2026-11-14) **A replay onto a POPULATED sequence is safe when V1/A1 are emptied first**: `replay` appends at V1's
+  last clip end (0 on an empty V1) with `overwriteClip`, which never ripples the other tracks. Proved twice on the shared ABW11:
+  the creator's V2 adjustment layer + Lumetri and V3/V4/A2/A3 read back unchanged after a by-name V1/A1 clear + replay.
+- (skool-vsl-2026-11, 2026-11-14) **A clear-and-replay of V1/A1 OVERWROTE the creator's own edit** made after hand-over (he ripple-deleted a
+  doubled "and you stay" on all tracks). Caught from the clear script's count (46, not 47). Recovered from his edit in the newest
+  Premiere auto-save (`<project>/Adobe Premiere Pro Auto-Save/`), parsed with `projects/skool-vsl-2026-11/work/autosave/read_seq.py`,
+  and written back into the EDL. **Rule: before ANY replay on a sequence he has had, diff live V1 vs the last delivered EDL
+  (`work/pp-verify-v1a1.py`) and stop on a mismatch. His changes become EDL/plan inputs first.**

@@ -39,3 +39,5 @@ version is locked in `presets/youtube/affan-afterhours/README.md` § 1 (THE OVER
 **2026-10-23 addition (GTA 23):** a stillness check is NOT a "no edits" check. He ripple-trimmed 0.35 s between two of my write
 batches; my placer re-laid 77 graphics at stale plan times (repaired). Before ANY re-place on a timeline he may have touched,
 diff the live clip starts against the plan, rebuild the EDL from his V1 if they drifted, and adopt his trim first.
+
+**2026-11-14 (Skool VSL):** a V1/A1 clear-and-replay overwrote his post-hand-over ripple delete (a doubled "and you stay" the ASR had hidden). Recovered from the Premiere auto-save. Before ANY replay on a sequence he has opened, diff live V1 against the last delivered EDL and treat every difference as his decision: fold it into the EDL, never over it.
