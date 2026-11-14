@@ -1737,3 +1737,15 @@ REPORT.md). At his review.
 - **A subscribe CTA never sits on a death mention** (it was on Tito's "rest in peace"; moved to Kevin's question).
 - **Silent Tella = audio failure**, not "no notes": he re-recorded with narration. Wait for it; don't build off a silent
   read.
+- **His notes on r1-r4 (same day), lesson → change → file:**
+  - r1 was finished from the PRE-Topaz picture: `render_chunks.sh` defaults to `STAGE=renders/stageA.mov` ("Topaz looks
+    horrendous"). → Always run `STAGE=renders/stageT.mov bash build/render_chunks.sh`, and pre-upscale the sources 2x at
+    native size before the head lock (`build/prep_up.py` + `apply_up.py`). → the job's `RUN.md`.
+  - **A generative upscale must never touch a real person's face from a soft source.** The Higgsfield 4K `upscale_image` of a
+    soft Instagram frame of Katherine "turned her into a completely different person"; the Topaz video upscale before it
+    "didn't do anything". → r5 uses a real, sharp, RECENT photo found through Google / news coverage (backstage at the
+    Michael premiere, 20 Apr 2026, with Colman Domingo), cropped to her, Lanczos 1.25x only, her face compared with the
+    source at full size before the render. → `build/make_timeline.py` (O5) + memory `feedback-sourced-stills-must-be-hq`.
+  - **A portrait photo with someone beside her becomes a portrait BOX**, not a 2x full-width crop: `finish.py` `box_x` (white
+    glow line on all four edges, the blurred twin around it), sized so her face stays above the caption text (y 1039-1081)
+    through the 1.22x push.

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: e1b9cd8c-a044-4294-9e79-318eb202a8a0
-  modified: 2026-09-19T02:35:51.804Z
+  modified: 2026-11-14T11:26:39.572Z
 ---
 
 The creator's standing rule for web-sourced pictures (told 2026-09-19, while briefing the Travis Scott video):
@@ -37,6 +37,15 @@ step, not an offer. A soft sourced photo AND a soft paparazzi clip both got it: 
 down to the played size; `upscale_video` Topaz 2160p on the exact played 9:16 crop, short excerpt with handles (5 credits / 2.7 s).
 Then check the result UNDER HIS GRADE in a finished still: a hot source still blew out and needed a pre-grade level (AW LESSONS
 2026-11-03). The War Dogs caution still holds for tiny press photos of real people (waxy): judge the upscale at full size.
+
+**Update 2026-11-14 (AW MJ "Brother Saw Him AGAIN", Affan on r4: "That's not Katherine... you turned her into a completely
+different person"):** a Higgsfield `upscale_image` bytedance 4K of a SOFT VIDEO FRAME of a real elderly person (Katherine Jackson,
+a 556 px-wide Instagram window) rewrote her face. The default upscale above does NOT apply to a real person's face from a soft
+source. Order instead: (1) Google / news coverage of the person's LATEST appearance for a genuinely sharp real photo (here: the
+backstage photo with Colman Domingo at the Michael premiere, 20 Apr 2026); (2) classical resampling only (Lanczos, about 1.25x);
+(3) put the shipped face next to the source photo at full size and confirm it is the same person before any render. When the only
+recent photo has someone else beside her, crop to her and show it as a portrait box (the job's `finish.py` `box_x`) rather than
+magnifying 2x to fill the full width. Also logged in the AW Shorts `LESSONS.md` (2026-11-14 section).
 
 ## Moved from the MEMORY.md index (2026-11-06)
 any web-sourced picture is checked at full size and enhanced in Higgsfield if soft, before it touches the timeline; 2026-11-03: on AW Shorts sourced stills AND clips get a serious Higgsfield upscale by default (4K image / Topaz 2160p clip), then checked under his grade
