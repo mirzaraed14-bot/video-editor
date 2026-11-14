@@ -18,25 +18,36 @@ Now It Wants His Free Shows"** (long-form; B title "…Now It's Paying for His F
 CA-012 v1 (face-led lessons) was rejected by him and v2 was never sent; neither was recorded. Evidence (demand checks, cold reads, review):
 `research/affanwiz-idea-2026-11-12/`. When the take lands, match it against the CA-013 script.
 
-**Waiting on him:**
-- **Short 4 `stop-remaking-viral-shorts` (C1454):** **POSTED** as "This Marks You As A Noob In YT Shorts" (1.3K on the Shorts tab, read 2026-11-12). check v7 is in Exports (2026-11-09 21:44). Four things wait on him:
-  - his review;
-  - his OK on the dandruff removal (two specks, cleaned at the source);
-  - keep or restore the source creator's SPEEDZYY watermark, which was interpolated out of the turn card;
-  - his RESULTS row 4 prediction.
+**Everything through CA-011 is posted** (2026-11-14 update). The source is the @AffanWiz Videos + Shorts tabs, read 2026-11-12 in
+`research/affanwiz-idea-2026-11-12/diagnosis.md`. He retitles at upload, so match a posted video by its content, not by the
+planned title:
+- **CA-011** → "Kai Cenat Accidentally Showed His TikTok Money (What It Means for You)", 5:03, 444 views at 4 days (posted ≈ 11-08).
+- **Short 4** → "This Marks You As A Noob In YT Shorts" (his hook line), 1.3K.
+- **Short 3** → "What Level Of Shorts Creator Are You", 371.
+- **Short 2** → probably "Find Viral Money Making Shorts Topics THIS WAY", 561 (matched by topic).
+- **Short 1** → probably "STUPIDEST Clipping Mistake - IShowspeed", 996 (matched by topic). Which order he posted (v1 or v2) isn't
+  on file.
 
-  If he approves, the check IS the final (the job's RUN.md, Next action). Title: Stop Remaking Viral Shorts.
-- **CA-011 `kai-tiktok-money` (C1449):** saved on ABW10 › "CA-011 Kai TikTok Money" (5:04) on 2026-11-06 at 02:55. It's at his
-  review, and he exports himself. Two calls are his:
-  - the head-steady lock lands only 13 of 42 visible joints, and getting closer means a higher base scale;
-  - 9 band waivers on full-frame graphics are listed in `hf-graphics/qa-waivers.json` for him to overrule.
-- **Short 3 `what-level-shorts-creator` (C1450):** the 60 fps final has been in Exports since 2026-11-06 03:20. It's not logged as
-  posted. His RESULTS row 3 prediction goes in before upload.
-- **Short 2 `find-viral-angles` (from CA-010):** the 60 fps final has been in Exports since 2026-11-04 23:22. It's not logged as
-  posted. Before upload: his RESULTS row 2 prediction, and the credit "Photo: Alan Light, CC BY 2.0 (cropped)" in the description.
-- **Short 1 `reupload-wont-go-viral` (from CA-009):** the v1 final and the v2 re-ordered final have both been in Exports since
-  2026-10-28. Waiting on which one he posts, and his row 1 / 1b prediction.
-- **7-day reads:** no Short has a Posted date in RESULTS, so none is due on file. Each read comes 7 days after he posts.
+**Still open:**
+- **No locked predictions.** None of the four Shorts had one before upload, so RESULTS rows 1–4 can't be scored as predictions.
+  Log their posted dates and 7-day numbers as data when he gives them.
+- **7-day reads** are due for all four Shorts and CA-011. They need his Studio numbers, since Studio isn't reachable from Chrome
+  (memory `reference-affanwiz-studio-access`).
+- **CA-011's review diff isn't read yet.** He exported it himself, so what he changed on ABW10 › "CA-011 Kai TikTok Money" before
+  upload goes into LESSONS (PLAYBOOK § After every review), as CA-010's did. That also answers its two open calls: the head-steady
+  lock (13 of 42 joints) and the 9 band waivers.
+- **Short 4:** which file he posted, and his calls on the dandruff removal and the SPEEDZYY watermark, aren't on file. Its job's
+  RUN.md has the v7 check and the recipe to restore the watermark.
+
+**Sessions archived 2026-11-14** (his sidebar cleanup; restorable from the Archived list):
+- `afterhours-c1427`: CA-010, and Short 2 through review 2;
+- `short-c1450`: Short 3;
+- `edit-c1449`: CA-011.
+
+Their lessons were already in ENGINE / LESSONS / RESULTS, and their state is in each job's RUN.md / BRIEF.md.
+
+**Kept:** `edit-c1454` (Short 4, plus the CA-012/013 research he drove from it) and its side session `affanwiz-longform-fable` (CA-013,
+waiting on his prediction and Studio numbers). Archiving the first would also archive the second.
 - **Unused Short picks:**
   - "Same stream, 23 clips" from CA-009, in `projects/iphone-duo-clip-angle/shorts/PICKS.md`;
   - "the 2-a-day routine" from CA-010 (5:00–5:35), the runner-up in `find-viral-angles/SEQUENCE.md`.
@@ -98,10 +109,10 @@ CA-012 v1 (face-led lessons) was rejected by him and v2 was never sent; neither 
 | CA-007 | I Ranked Every Streamer's Content Machine | `streamer-content-machines` | `PBE\C1389` | ABW10 › "CA-007 Streamer Tier List" | revision 1 saved 2026-10-23, at his re-review |
 | CA-009 | Speed Bought the iPhone Duo. 20 Clippers Got Nothing. | `iphone-duo-clip-angle` | `Onyx\C1410` | ABW10 › "CA-009 iPhone Duo Clip Angles" | **uploaded** 2026-10-28; his verdict read 2026-11-02 (LESSONS) |
 | CA-010 | The Viral Clip Method Big Shorts Channels Gatekeep | `viral-clip-method` | `Afterhours\C1427` | ABW10 › "CA-010 Viral Clip Method" | **uploaded** 2026-11-03 (his changes: LESSONS § CA-010 UPLOADED) |
-| CA-011 | Kai Cenat Accidentally Showed His TikTok Money | `kai-tiktok-money` | `Afterhours\C1449` | ABW10 › "CA-011 Kai TikTok Money" (5:04) | saved 2026-11-06 02:55, at his review |
-| S1 | Re-uploads Won't Go Viral | `iphone-duo-clip-angle/clips/reupload-wont-go-viral` | from CA-009 (his own sequence) | `Exports/affanwiz-reupload-wont-go-viral.final.mp4` + `.v2-reordered.final.mp4` | both finals delivered 2026-10-28 |
-| S2 | How I Find Shorts YouTube Is Forced To Push | `viral-clip-method/clips/find-viral-angles` | from CA-010 | `Exports/affanwiz-find-viral-angles.final.mp4` (40.4 s) | review 2 final 2026-11-04 23:22 |
-| S3 | What Level YouTube Shorts Creator Are You? | `what-level-shorts-creator` | `Afterhours\C1450` | `Exports/affanwiz-what-level-shorts-creator.final.mp4` (34.3 s) | final 2026-11-06 03:20, approved at check 2 |
-| S4 | Stop Remaking Viral Shorts | `stop-remaking-viral-shorts` | `Afterhours\C1454` | `Exports/affanwiz-stop-remaking-viral-shorts.check.mp4` (v7, 44.0 s) | check v7 2026-11-09 21:44, at his review |
+| CA-011 | Kai Cenat Accidentally Showed His TikTok Money | `kai-tiktok-money` | `Afterhours\C1449` | ABW10 › "CA-011 Kai TikTok Money" (5:04) | **posted** ≈ 2026-11-08 (444 at 4 d); his review diff not read yet |
+| S1 | Re-uploads Won't Go Viral | `iphone-duo-clip-angle/clips/reupload-wont-go-viral` | from CA-009 (his own sequence) | `Exports/affanwiz-reupload-wont-go-viral.final.mp4` + `.v2-reordered.final.mp4` | both finals delivered 2026-10-28; **posted**, probably as "STUPIDEST Clipping Mistake - IShowspeed" (996, 11-12) |
+| S2 | How I Find Shorts YouTube Is Forced To Push | `viral-clip-method/clips/find-viral-angles` | from CA-010 | `Exports/affanwiz-find-viral-angles.final.mp4` (40.4 s) | review 2 final 2026-11-04 23:22; **posted**, probably as "Find Viral Money Making Shorts Topics THIS WAY" (561, 11-12) |
+| S3 | What Level YouTube Shorts Creator Are You? | `what-level-shorts-creator` | `Afterhours\C1450` | `Exports/affanwiz-what-level-shorts-creator.final.mp4` (34.3 s) | final 2026-11-06 03:20, approved at check 2; **posted** as "What Level Of Shorts Creator Are You" (371, 11-12) |
+| S4 | Stop Remaking Viral Shorts | `stop-remaking-viral-shorts` | `Afterhours\C1454` | `Exports/affanwiz-stop-remaking-viral-shorts.check.mp4` (v7, 44.0 s) | check v7 2026-11-09 21:44; **posted** as "This Marks You As A Noob In YT Shorts" (1.3K, 11-12) |
 
 Recordings that sat in another channel's folder: C1389 (PBE), C1410 (Onyx), C1427, C1449, C1450 and C1454 (Afterhours).

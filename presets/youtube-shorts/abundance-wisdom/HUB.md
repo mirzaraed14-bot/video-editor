@@ -21,6 +21,21 @@ Near-done jobs are NOT rebuilt for it; the style applies from their next step. T
 - the HP fork (`local_7f87fba7…`, Hagrid raw cut).
 Jermaine is still unbuilt, so its build takes this style.
 
+## ▶ 14 Nov (hub): usage reset to ~1 %, lean LIFTED; second cleanup
+- Affan used a usage reset (Sat 14 Nov). Goal: use the full 100 % by Mon 16 Nov ~02:00 UTC, at max effort. The Speed line was told to
+  resume its Phase B if usage was the only blocker.
+- **Archived (finished or abandoned; findings already in files):**
+  - aw-two-new-shorts `local_f3f50832…`: Beyoncé rejected (`research/aw-pick-2026-11-12.md` § Verdict); Whitney "good enough" on
+    paper only (`projects/whitney-good-enough/PITCH.md`).
+  - bolt-format-test `local_eb1a2dc8…` (`research/bolt-format-test-2026-11-12.md`) and amy-grammy-raw `local_c7c1f5c1…`: Amy
+    rejected, lesson in LESSONS.md + memory feedback-no-below-bar-pitches. Its unsaved raw sequence is still in ABW11.
+  - instagram-beat-mining-ma `local_7bc581c4…`: IG run 4/4b, no pick (`research/instagram-beat-mining/2026-11-13-run4.md`).
+  - aw-shorts-harry-potte-2 `local_7f87fba7…`: HP idea 3 (Hagrid) DROPPED by Affan on 12 Nov ("just 2 topics";
+    `projects/harry-potter-idea3/RUN.md`; the lesson is in memory feedback-checklist-shape-is-a-gate).
+- **Kept:** ig-beat-mining (the method + read dates 15-17 Nov); aw-speed-research + speed-kicked-out-build (building); aw-mj-son-method +
+  build-mj-s-brother-saw-h (delivered, waiting on his review); jermaine-mocked-skin (v2 delivered, waiting on his review);
+  aw-shorts-harry-potter-n + snape-prank-build (Snape v1 re-delivered 12 Nov after his review 1; done or not is his call).
+
 ## ▶ 14 Nov ~01:00 (hub): MJ brother DELIVERED, Speed at v8
 - `Michael Jackson's Brother Saw Him AGAIN.mov`, checked by the hub: Final Renders and Exports are byte-identical, h264 1080x1920 60 fps,
   pcm_s24le, 33.3 s, -14.0 LUFS, -1.6 dBTP. Contact sheet: house style, 2 subscribe prompts, labels low. The group photo (~12 s) is the

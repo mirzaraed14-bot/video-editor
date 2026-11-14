@@ -10,7 +10,8 @@ Format: *lesson → change made → file*. Newest first. A lesson that repeats b
 - **Read a brand from the source, not from Whisper:** لونو / لونہ / لونا = LUNA Coffee (Karachi), checked on the web; the ur/hi windows also wrote "luna" in Latin letters.
 
 ## 2026-11-14: no `?` in yellow captions; one decoder at a time (ABW11 Sequence 05, ABW10 Sequence 52)
-- **I shipped two `?` on Seq 52** ("bhi rakhna hai?", "pata mai kia karta?"), against `roman-urdu.md` § Hard rules (no commas, full stops or `?`; the AW/Onyx "only ! ? and quotes" rule is NOT this channel's). `caption_qa.py` does not check punctuation, so it passed. Fixed and rebuilt the same day; before every build, grep `captions.txt` for `[?.,]` on the `@` lines.
+- **I shipped two `?` on Seq 52** ("bhi rakhna hai?", "pata mai kia karta?"), against `roman-urdu.md` § Hard rules (no commas, full stops or `?`, read off his 211 reference lines). His Oct 7 rule for "all videos" (memory feedback-caption-punctuation) keeps `?`, so the two conflict: ASKED him 2026-11-14; until he answers, no `?` in yellow. `caption_qa.py` does not check punctuation, so it passed. Rebuilt without them; before every build, grep the TEXT of the `@` lines for `[?,]` and for a full stop that is not a decimal.
+- **Numbers: digits plus his word, no thousands comma.** His references write `10 15 hazar`, `3 million`, `50 hazar ki`, `100 out of 100`; Seq 06 shipped `33,000` / `86,000` and was rebuilt as `33000` / `86000` (decimals like `1.2 million`, `1.5 lac` stay). Older jobs (Seq 09, 11, 20, 22, 32, 39) shipped comma numbers and were not reopened.
 - **Two large-v3 decoders at once = mkl_malloc at 8 GB free:** `codeswitch_pass.py` and `work/redecode.py` side by side killed the re-decode. Run them one after the other.
 - **A hook that WhisperX loops ("apni apni …" ×10) is re-decoded on its own** in short windows (0-3, 0-6, 2.4-8.4 s); stop as soon as two languages agree. → `projects/abw11-seq05-short/work/redecode2.py`.
 

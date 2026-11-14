@@ -22,7 +22,7 @@
 - [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + Affan's reaction video for podcast outreach (page @affancuts); job log + ▶ STATUS in presets/youtube-shorts/onyx-samples/JOBS.md, standing rules in its LESSONS.md
 - [Topaz Video AI](reference-topaz-video-ai.md) — Video AI 5.0.4 is scriptable (workflows/topaz-iris.py); --segments at every cut; a lapsed login token = silent WATERMARK, check every output; his rules in the file
 - [Captions just below the lips](feedback-captions-just-below-lips.md) — short-form captions at ONE constant base position per video, just under the lips (y940-1130); never lift footage for it; dated rulings in the file
-- [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes in captions (no full stops/commas), white base + coloured emphasis, smooth 60 fps rise
+- [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes in captions (no full stops/commas), white base + coloured emphasis, smooth 60 fps rise; @affanwizu yellow: no ? until he answers (11-14, roman-urdu.md conflict), no commas in numbers
 - [No same-camera punch-ins](feedback-no-same-camera-punch-ins.md) — no instant zoom or whip between shots of the same camera; one keyframed push-in; transitions only on scene change
 - [SFX on every graphic](feedback-sfx-on-every-graphic.md) — every pop-up/motion graphic gets a clearly audible, crisp Epidemic Sound SFX (quiet ticks read as none)
 - [Affan exports himself](feedback-affan-exports-himself.md) — on his own Premiere project: prepare the sequence, never exportAsMediaDirect; keep active-sequence switches to one short window (2026-10-07)

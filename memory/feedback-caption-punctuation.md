@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-06T20:30:18.795Z
+  modified: 2026-11-14T10:41:15.205Z
 ---
 
 Captions on every short-form video carry only exclamation marks, question marks and quotation marks ("inverted commas");
@@ -21,3 +21,8 @@ colored words which have some sort of emphasis looks a lot better."*
 
 **How to apply:** strip `.,;:` and dashes/ellipses in the caption builders (all kits), keep `! ? " “ ” ‘ ’` and apostrophes inside words
 (it's, don't); render the caption layer at 60 fps so the rise is smooth. Related: [[feedback-captions-just-below-lips]].
+
+**@affanwizu yellow (Roman Urdu .srt) is OPEN, asked 2026-11-14:** `presets/instagram/affanwizu/roman-urdu.md` § Hard rules
+(Sep 21 / Oct 1, read off his own 211 reference lines) says no `?` and no commas/full stops; this Oct 7 "all videos" statement keeps `?`.
+Until he answers, yellow captions carry NO `?` (matches his references) and numbers carry no commas (`33000`, `3 million`,
+`10 15 hazar`). Seq 52 shipped with two `?` on 2026-11-11 and was rebuilt without them on 11-14. [[project-urdu-instagram-captions]]

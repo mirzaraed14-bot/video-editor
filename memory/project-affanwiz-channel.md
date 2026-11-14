@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: d9ed4b41-2603-4b3f-8041-06604eaada09
-  modified: 2026-11-10T16:56:33.833Z
+  modified: 2026-11-14T10:40:35.156Z
 ---
 
 **AffanWiz** (named 2026-09-23) is the creator's English personal brand: long-form YouTube with them on camera, plus Shorts
@@ -36,6 +36,9 @@ each job's RUN.md / BRIEF.md and in JOBS.md, never in this memory.
 - **Shorts:** sequencing goes to him as text first, and the prediction is locked in RESULTS before upload. The credit tag
   is a result, never his name.
 - Write every direction he gives into the channel's files the same turn, and the job's row into JOBS.md.
+- **He posts without telling us, and retitles at upload.** Shorts 1–4 and CA-011 went up with no word and no locked
+  prediction (found 2026-11-12). Before any status line or 7-day read, check the @AffanWiz Videos/Shorts tabs and match
+  each video by its content.
 
 Related: [[feedback-one-session-per-video]], [[feedback-every-video-better-than-last]],
 [[feedback-long-term-self-improving]], [[user-abundance-wisdom-editor]].
