@@ -22,8 +22,9 @@ alone.
 - his words verbatim;
 - the files to read first;
 - the bar to beat;
-- a stated default for every open question, so the session builds v1 and delivers it, with the questions in the delivery
-  note ([[feedback-build-dont-block-on-questions]]);
+- the max-effort gate first (`MAX-EFFORT-GATE.md`, his ruling 2026-11-14): research, the sequence as text, his OK, then
+  the build. Give a stated default for every smaller question, so that after his OK the session doesn't stop again
+  ([[feedback-build-dont-block-on-questions]]);
 - his standing constraints.
 
 When he names another session ("ask that particular session"), find it with ListAgents, cite the evidence for the pick,

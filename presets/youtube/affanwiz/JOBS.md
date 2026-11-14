@@ -91,9 +91,11 @@ waiting on his prediction and Studio numbers). Archiving the first would also ar
    - he exports himself.
 3. **Short:** code-built in the Scott Clary YouTube kit on Scott's newest style set (Shorts ENGINE § The line), with the prediction
    locked before upload. Sequencing:
-   - when he asks for the sequence first, send it as text and wait for his OK;
-   - when he hands over a take and leaves, or a deadline is close, build v1 on stated defaults and put the questions in the
-     delivery note (`feedback-build-dont-block-on-questions`, 2026-11-10).
+   - **the max-effort gate first, every time** (`MAX-EFFORT-GATE.md`; his ruling 2026-11-14, asked for Afterhours, "the
+     same as every other channel"): research, then send the sequence as text, wait for his OK, and only then build;
+   - after his OK, smaller questions don't stop the build: take the stated defaults and list them in the delivery note.
+     That's the part of `feedback-build-dont-block-on-questions` (2026-11-10) that survives; the rest is superseded for
+     sequences.
 4. **The bar to beat** is the last row of the same kind below, plus its UPGRADES / LESSONS entries.
 5. **The brief** carries his words verbatim, a stated default for every open question, and his standing constraints
    (`feedback-one-session-per-video`).

@@ -6,29 +6,16 @@ him), then his own words about struggling, then every Streamer Awards win with t
 LEAN: 81 % of the week at start. Working files: `research/aw-speed-pick-2026-11-13/` (yt logs, audio, scout transcripts).
 
 ## ▶ STATUS: resume here
-- **13 Nov ~22:45: PITCH v8, NOT BUILT, "NOT max effort yet".** `projects/speed-kicked-out-three-peat/PITCH.md`, 11 beats,
-  ~44-48 s, Affan's shape.
-- **Sequence:**
-  1. "At first, I didn't really have support."
-  2. 2020: only online friends.
-  3. "I had that one viewer…"
-  4. A clip blew up.
-  5. Mom saw the video.
-  6. "So boom, she kicked me out… Detroit… kept going."
-  7. **Sept 2025 Keystone stream: "It's a lot. I need a therapist… I need somebody to talk to, yeah, I feel alone… feel like
-     nobody understands me."**
-  8. Streamer of the Year 2024.
-  9. Streamer of the Year 2025.
-  10. 2026 ("I started from zero. Just a little kid with a big dream").
-  11. "But my mom always supported me… I really, really love my mom."
-- **Runner-up:** beat 7 between the 2024 and 2025 wins.
-- **Open:**
-  - v8 not re-read (meter at 90 %).
-  - Keystone counter-evidence not searched.
-  - The July 2026 Speed Shorts checked by title only.
-  - Youshaei: age-gated.
-  - By ear at build.
-- **v7's childhood beat was cut:** `medium.en` hears "I WOULDN'T say it was hard", so v7 had reversed him.
+- **14 Nov ~16:20: Affan took over** (his Tella 1 to the build session; `projects/speed-kicked-out-three-peat/BRIEF.md` § HIS TELLA 1).
+  - He edited the raw cut in ABW11 himself (27.7 s) and removed the Keystone beat, the 2024 card, "So the Streamer of the Year award goes to", and the ending lines "But my mom," and "I still love my mom".
+  - **His ask: find every "mom" moment that fits his criteria and lay them between "My mom seen the video" and "So boom, she kicked me out"; no final build until he approves.**
+  - The criteria:
+    1. Old mom-house streams where she comes in angry and tells him to shut the stream, and Speed is sad or near tears after she leaves.
+    2. Speed calling his mom on his birthday at Adin Ross' house and not getting a proper reply.
+    3. Any moment where "we genuinely feel bad for Speed, but he still kept going".
+  - The 2020-22 streams show him at 15-17. He asked for them by name; they are laid out for his yes, each labelled with date and age. Siblings and other children: hard no.
+- **This session finds the moments** → `research/aw-speed-pick-2026-11-13/MOM-MOMENTS.md` (§ 8 below is the log). The build session waits, then builds a v2 clone sequence from the list.
+- PITCH v9 (below, § 1-7) is superseded in part by his edit and gets rewritten after his approval.
 
 ## 1. Verified facts
 
@@ -326,3 +313,45 @@ ultimatum → he left and kept going, alone with his online friends → three St
   - All fixed in **v8**: beat 2 cut, Keystone moved before the wins (Affan's shape), "It's a lot. I need a therapist" added, edges
     fixed, the file rewritten clean.
   - v8 itself not re-read (meter at 90 %).
+
+## 7. Full-effort pass after the usage reset (14 Nov ~15:30-16:20; weekly meter reset to 1 %)
+**Open items from PITCH v8, closed:**
+- **July 2026 Speed Shorts opened** (audio transcribed, `scout/I883j8Wu1kw.*`, `scout/MFBIqsJSocM.*`):
+  - "Speed's PAINFUL Words After Ronaldo's Loss" (`I883j8Wu1kw`, 8 Jul 2026, 368,045 views, 26 s): Speed on Ronaldo's World Cup exit ("I was 16 when
+    I followed Ronaldo… It sucks that the chapter has to end this way"). **Not Keystone, not the mom story.**
+  - "IShowSpeed's Emotional World Cup Journey" (`MFBIqsJSocM`, 22 Jul 2026, 43,955 views, 28 s): "Four years ago, I was in my mom's house, in my mom's
+    room, screaming, barking… and I just performed at the World Cup Final… things are gonna get hard no matter what… everybody's life is hard… keep
+    pushing… Just believe." **Not Keystone, but it IS the "mom's room → the top" arc, and it did 44K on our channel.** Named in the pitch's freshness
+    and prediction (a 44K comparable).
+- **Keystone counter-evidence:** none found of a walk-back.
+  - The follow-ups are supportive: MrBeast's reply (below), and a Sept 2026 fan Q&A (win.gg, 28 Sep 2026: it scares him sometimes; training, anime,
+    piano and family keep him grounded).
+  - Beat 7's wording: Dexerto's own X post of the clip (Sept 2025) quotes the same fragments in the same order: "I need a therapist. Like, I need
+    somebody to talk to. Cuz I feel alone. I feel like nobody understands me." So the caption is "'cause", not "yeah".
+  - He was irritable that morning ("I'm very agitated right now. Listen, I woke up on the wrong side of the bed. It's a lot."): the cut starts at "It's a
+    lot", so the context is told in the pitch, not hidden.
+- **Risk found while searching (not in the cut):** in Feb 2024 he posted vague tweets from an alt account (@ronaldobetter07), one reading "if I die
+  today" at 1:55 am, and fans worried (Sportskeeda). No clarification found. Not used; comments might raise it.
+- **Jon Youshaei** stays age-gated: not reachable.
+
+**A verified third-party voice at the Keystone moment (read in his Chrome, read-only; X shows the tweet text):**
+- **MrBeast, 23 Sep 2025, replying to @Dexerto's post of the clip:** "Being live in front of people 24/7 like he is harder than most people realize.
+  Especially with how big he's gotten and the expectations that brings. Hope he gets his head in the right space because the only thing that could
+  ever stop Speed is himself." (133K views, 3.2K likes on the reply).
+- **MrBeast, 2 Nov 2025 (original tweet, 3.3M views):** "It's cool to see Speed getting so big off of his own style of content. Lots of YouTubers think the
+  only way to succeed is to copy others. Next MrBeast won't do what I do, next speed won't do what he does. Find what content is true to you!"
+- Both are text, not on camera, so they would be a verbatim card (the house rule: a quote is rebuilt as a graphic). Neither says "greatest of all time".
+  The first is a recognisable voice answering the pain beat directly.
+
+**Considered and rejected for the struggle depth:**
+- **Aug 2023 stream plea** ("be a real human being for once bro… that's all I ask"): the clip is `jhKTrZTfofU`, a re-upload by Speedy Boykins; the original
+  stream is deleted ("IShowDeletedStreams"). He was 18 (adult), but it's the "iShowMeat" on-stream exposure incident, which would pull a different, off-brand
+  story into the Short, and the audio has a swear. Third-party source, so out.
+- **"Hi Me In 3 Years"** (`Ec18vXsDHYU`, his own Short, 7 Oct 2023, 23.6M): the footage is a **2020 video (5.9K subs, he was 15)** re-posted in 2023.
+  **Minor-era: banned.** The mp4 was deleted; a `README-DO-NOT-USE.txt` sits in `src/hd/`.
+- **"Talks To His 18 Year Old Self"** (`nQs6jA11sQo`, Speedy Boykins, 30 Sep 2026): he rewatches his 2020/2023 videos; profanity; third-party clip. Out.
+- **"Why IShowSpeed's Speech Hit So Hard"** (xCephasx, 23 Jul 2026): commentary on the July speech our own 44K Short already used.
+
+**Cold read of v9** (`COLD-READ-V9.md`, 11 findings) applied: the header and timings now match the built cut (47.114 s, read-back); the "kicked me out" gate
+is rewritten plainly; beat 7's caption is "'cause" and its context is told; the "10th nomination and 8th win" line belongs to the **2026** announcer
+(the 2025 announcer says "sixth nomination and fifth win"); "She" starts at ~117.32-117.37; the Indonesian is "to be confirmed by a speaker".

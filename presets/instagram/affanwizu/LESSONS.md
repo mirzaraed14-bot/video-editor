@@ -3,6 +3,11 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-14: "remake the captions, I've removed some bits" = remap, don't re-transcribe (ABW11 Sequence 06 v2)
+- **Read the live sequences first:** the project had moved on (Sequences 03 and 05 now hold other videos, the active one was a new Sequence 07); only Sequence 06 was shorter in its V1/A1 (150.567 -> 141.783 s; its 158.9 s end was an adjustment layer on V2).
+- **Remap by source time.** Save v1 (`v1/`), re-run `sequence_reference.py`, map every v1 caption start and word through v1 clip -> source -> v2 clip (`projects/abw11-seq06-short/work/remap_v2.py` + `make_v2.py`): cues fully inside a removed span drop, the rest shift exactly. Then re-decode ONLY a window around each join on the v2 cut (`work/probe_v2.py`) to settle the lines that straddle a cut: 3 of his 5 cuts were pauses, 2 took words ('wo' before 'organic hain'; 'yar' + a 6.7 s stretch). Whole job ~15 min instead of a 40 min re-transcription.
+- **His punch-ins move the chin:** median y1058 -> y1069 with 16 framings up to 180 %; kept the v1 baseline (+11 px is noise) so his track style holds.
+
 ## 2026-11-14: a 150 s reel on a busy machine: 2 threads, one window per process (ABW11 Sequence 06)
 - **mkl_malloc is about MKL threads, not only free RAM.** The window re-decode died at model load / encode / generate with 6-7 GB physical and 12+ GB commit free; the same window decoded first try with `WhisperModel(..., cpu_threads=2)`. Long reels: one process per window at 2 threads, a runner that skips finished windows and never starts a second decoder. → `projects/abw11-seq06-short/work/redecode_one.py` + `run_rest.sh` are the recipe. `codeswitch_pass.py` has no thread flag: run it with `OMP_NUM_THREADS=2 MKL_NUM_THREADS=2`.
 - **TaskStop does not kill a bash script's loop on Windows, and the kill pattern must match `bash.exe" run_rest.sh`** (not `bash run_rest.sh`): three runners ended up decoding at once. Kill by `Name='bash.exe' -and CommandLine -match 'run_rest\.sh'` plus the python children, then count zero before restarting.

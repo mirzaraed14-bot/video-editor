@@ -70,9 +70,10 @@ C1448). The rules for it:
 - Black + pink MGs (`#EE2A9A`).
 - His own branding only: no Scott watermark or CTA.
 - A native 59.94 code build into `X:\Claude Projects\Exports\`.
-- Build v1 on the stated defaults and deliver it, with the open questions and the defaults taken listed in the delivery note.
-  Sequencing-as-text is not a gate (`memory/feedback-build-dont-block-on-questions.md`, 2026-11-10, wins over the older
-  sequencing-first rule here).
+- **The max-effort gate comes first** (his ruling, 2026-11-14): research to `MAX-EFFORT-GATE.md`, then the sequence
+  as text, then his OK, and only then the build. It replaces the 10 Nov build-on-defaults rule for sequences. After his
+  OK (our reading, which both rules agree on, not his words), smaller questions don't stop the build: take the stated
+  defaults and list them in the delivery note.
 - The template to start from and beat is **`projects/gta6-head-start`**, approved with no notes (channel LESSONS 2026-11-06).
 
 The card below is the channel's older, self-cut Shorts style. It is still the evidence base, but it is not the look to build.

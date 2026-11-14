@@ -3,6 +3,7 @@
 # Premiere's Program monitor.
 #   powershell -ExecutionPolicy Bypass -File lanes/premiere/window-grab.ps1 -Out C:\path\premiere.png [-Process "Adobe Premiere Pro*"]
 param([Parameter(Mandatory = $true)][string]$Out, [string]$Process = "Adobe Premiere Pro*")
+if (Test-Path (Join-Path $PSScriptRoot "QUIET-MODE")) { Write-Output "QUIET-MODE: window grabs are off (Affan is editing): use offgrab.py"; exit 3 }
 Add-Type -AssemblyName System.Drawing
 Add-Type @"
 using System;

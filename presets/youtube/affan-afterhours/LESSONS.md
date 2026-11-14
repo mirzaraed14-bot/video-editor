@@ -692,3 +692,31 @@ First delivery approved as it was; nothing changed after delivery. One approval,
   content at intake, every job.
 - **A long-form can come with its own "short version" take** (C1448 for C1447): it is its own Short job, and the long-form session is
   told so it doesn't ask. -> file: EDITOR.md § 4.
+
+## 2026-11-14 · closing the finished jobs (dispatcher session)
+- **Everything since video 22 is posted** (JOBS.md has the posted titles, dates and 10 Nov views). He retitled at upload more
+  than once: video 22 became "GTA 6 Just Got A Whole Lot More Interesting...", video 23 "No Game Has Ever Had This Much
+  AURA", video 26 added "Map", and They All Fit Inside became "How Many GTAs Can Fit In GTA 6?". -> change: a job's
+  working title is not the posted one. Read the posted title off his channel before any results read. -> file: JOBS.md.
+- **The speck fix probably shipped.** The AI Ports Short went up on 10 Nov and no note came back. That it's our v1,
+  built from the speck-free source, is assumed: the posted length wasn't checked. There is no explicit OK. -> change:
+  none yet. Checking every shoot in this room for specks at intake, and promoting
+  `projects/gta6-ai-pc-port/work/speck/*.py` into `workflows/`, both wait for his word. -> file: that job's RUN.md
+  § Speck proof.
+- **He edits after handoff.** On his channel, They All Fit Inside is 58 s against our v4's 62.2 s, and video 27 is
+  9:14 against our 9:32 sequence. -> change: phase D (the shipped-timeline diff) is owed on 23, 24, 26 and 27 before
+  the next long-form is briefed. Read a Short's posted length before scoring it as ours. -> file: JOBS.md ▶ STATUS.
+- **Reach is the open problem, and one suspect is ours.** Long-forms since mid-October got 105–3.8K views. The
+  content engine's 10 Nov diagnosis found no block and kept three suspects level until his Studio numbers come in:
+  - (A) the first test on a Shorts-built audience;
+  - (B) the click;
+  - (C) talking-head information lists losing to footage-led ones. C is the format the editing side builds.
+
+  -> change: the launch-week long-forms are footage-led (PS5 capture + face PiP), a new format for the editing side,
+  with a test edit owed before 19 Nov. -> file: `X:\Claude Projects\GTA 6\research\growth-plan-2026-11-10.md` § 1
+  and § 7d; JOBS.md ▶ STATUS.
+- **His ruling, 14 Nov: the max-effort gate wins for Afterhours too.** Asked which rule applies, he chose
+  `MAX-EFFORT-GATE.md`: research, the sequence as text, his OK, then the build, "the same as every other channel". It
+  replaces the 10 Nov build-on-defaults rule (written after AI Ports) for sequences. -> change: EDITOR.md § 3b, the
+  JOBS.md checklist step 4, and the memory files `feedback-build-dont-block-on-questions` /
+  `feedback-one-session-per-video` / `project-gta-documentary-channel`.

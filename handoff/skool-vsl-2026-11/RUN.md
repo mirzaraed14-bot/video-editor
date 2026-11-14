@@ -1,6 +1,30 @@
 # RUN — skool-vsl-2026-11
 
-## ▶ STATUS: resume here (REVIEW 2 DONE, 2026-11-14 ~04:20): main re-saved in ABW11; he exports
+## ▶ STATUS: resume here (SFX AUDIT, 2026-11-14 ~06:30): both sequences saved in ABW11, SFX = the set he heard; v2 offered
+The parent session asked for a proper non-listening check of the SFX after the usage reset.
+
+**What ran:**
+- **Read-back:** `work/sfx_readback.py`, timeline vs sheet.
+- **Measured audit:** `work/plan/sfx_audit.py` → `review/sfx-audit-*.md`. It measures level full and phone band, tonality, envelope, brightness, sync against the graphic motion (nearest local peak, exit wipes excluded), and the spoken word.
+- **Independent Sonnet rules review:** `review/SFX-REVIEW-BRIEF.md` → `review/sfx-review.md`.
+
+**Result:**
+- No blocklist hits, every entrance cued, levels 13.6–17.5 dB under the voice, tonality ≤ 15.4.
+- Findings (proposal in `review/SFX-V2-PROPOSAL.md`):
+  - 3 cues where his rules want silence (g03 strike, g05 sink, g08 on the face cut);
+  - slow-attack scene takes against the 2026-11-01 "short and crisp" rule;
+  - the loud end ~2 dB hot;
+  - a few cues 0.1–0.25 s early on late-landing cards.
+
+**Applied then reverted:**
+- I re-anchored 6 cues and head-trimmed the g01 swish.
+- The advisor caught that Affan had HEARD and passed this layer at review 2 (A2/A3 on, "the video looks good" apart from "whole year").
+- Everything was restored to the heard set: the reverted `work/plan/sfx_plan.py` reproduces it exactly; the timeline was read back equal on both cuts; saved.
+- The proposal is parked in `work/plan/sfx_plan_v2.py` + `work/sfx-*.v2-proposal.json`. Apply it only on his yes.
+
+**Tool bug:** `work/place_sfx.py` reported 30 placed while the timeline held 29 (one clip dropped, each cut). Only the read-back caught it (lab-notes). Read back after every placement.
+
+## ▶ STATUS (REVIEW 2 DONE, 2026-11-14 ~04:20, still valid for picture and edit)
 **His review 2:**
 - "You cut 'for a whole year' too early." **as3b** now ends where "year" decays (417.435; the aligner's "or" at 417.34 was the r of "year"), +18 f. Its A1 ramp is dropped because it ends in silence.
 - **His own edit, kept:** after hand-over he ripple-deleted **g6 "and you stay"** on all main tracks (a doubled phrase: g7 itself starts "you stay"; the bounce ASR had hidden the repeat).

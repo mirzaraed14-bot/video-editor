@@ -303,6 +303,30 @@ Takara mark circled ON the tilted, pushing card; crisp swishes chosen by envelop
    read as a blink). Fix: `k = (t - t0 + 2.0 / FPS) / 0.32` (the card opens ~40 % in). Check every builder that copied the kit.
 
 
+## 2026-11-03 · Simon Squibb "pay your employees first" IG Short (`projects/_client-scott-clary/simon-squibb-payroll/ig/`), builder lessons
+Logged 2026-11-14, when the build session was archived: the session had said this entry was never written. Kit = the Harary IG build, and
+this kit is the base the Onyx organic batch and Herjavec DWTS IG builds ported. Affan's only review input was "looks good" (check and
+final) plus two title ideas, so these are the builder's own choices, NOT his rulings. Full detail: the job's `BRIEF.md` § IG variant and
+the docstring of `ig/build.py`.
+1. **The hook can be the QUESTION, set in the captions' own type on the caption line** (WHY PAY YOUR EMPLOYEES / BEFORE YOURSELF?, one red
+   word). It reads as the captions for the first ~3 s: ONE text block in 0-3 s, nothing under it, his cam clean on frame 0, captions and the
+   show bug from 3.3 s. This follows Affan's note on the YT check v1.
+2. **A webcam extreme close-up gets a WIDER window than the YT crop,** chosen by measurement (`ig/work/frame_check.py`): zoom ZB 0.91
+   puts hair-to-chin at ~65 % of the window instead of ~80 %, lips pinned at window y610, captions at y754. The chest melts into black
+   at the source's own bottom edge (feathered ~120 px), and the beard crossing the caption top is natural framing, never lifted.
+3. **Head tracking stays per-frame and pinned at every take edge** (inherited from Harary). The session called its version "hybrid"
+   tracking; the code is in `ig/build.py`.
+4. **Takes under 6 frames are merged into their neighbour for the 60 fps Chronos plates** (Chronos's 6-frame floor). Those joints then
+   leave the segment list, so Chronos can blend one in-between frame there (joints 95 and 163 here). Later builds varied: the Dobrik IG
+   final frame-doubled its 5-frame take instead, and the Ricky IG final sent 4- and 6-frame takes through Chronos with no trouble (each
+   job's `BRIEF.md`, 60 fps IG FINAL section).
+5. **Receipts are real pictures, and built cards are redone in the neon-window type** (red Playfair, white Inter). The TikTok profile
+   header was a card with the 9.4M circled by hand. With no photo of Helen there was a text-only mono tag. The YT stamps became a white
+   bold line on a red box, low.
+6. **Untested note for Affan's own 4K talking head:** no Iris step, probably no hybrid tracking, and measure the face before choosing
+   the zoom. This is inference, not tested on his clips.
+
+
 ## 2026-11-04 · Onyx organic batch, Shorts 1-6 (Affan's own camera, `projects/_onyx-organic-2026-11/<job>/ig/`), builder lessons
 Kit = the Squibb IG build, ported. Not reviewed by Affan yet: these are the builder's own findings; his notes come in their own entry.
 1. **A native 59.94 camera needs ONE timebase, the base's own.** The kit's `/30`, `*30`, `fps=60.0` and `1579 / 30` would drift ~2

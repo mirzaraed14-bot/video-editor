@@ -22,8 +22,9 @@ they performed: `ERAS.md`.
   verdict-pending treatments in its `LESSONS.md`. Edited on Premiere ABW10 (one named sequence per video, shared with the
   English Editor session); **he exports himself.** Each video is 1 % better than the last (its BRIEF says how).
 - **Shorts = the Scott Clary YouTube look**, black + pink MGs, his own branding, a native 59.94 code build into
-  `X:\Claude Projects\Exports\`. Build v1 on the defaults and deliver it, with the questions in the note
-  ([[feedback-build-dont-block-on-questions]]). Template and bar = `projects/gta6-head-start` (approved,
+  `X:\Claude Projects\Exports\`. **The max-effort gate comes first** (his ruling 2026-11-14): research, the sequence
+  as text, his OK, then the build. After the OK, take the defaults for smaller questions and list them in the
+  delivery note ([[feedback-build-dont-block-on-questions]], now superseded for sequences). Template and bar = `projects/gta6-head-start` (approved,
   no notes, 2026-11-06). Lessons in the channel `LESSONS.md`.
 - **The GTA documentary format is PAUSED** (Hot Coffee, 237 views: "that was an experiment video"). The older
   explainer look (Rockstar key-art stills over a dark matte + grain, cutout puppets) is documented in the channel
