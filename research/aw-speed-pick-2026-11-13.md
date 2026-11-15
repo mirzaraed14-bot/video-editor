@@ -9,12 +9,25 @@ LEAN: 81 % of the week at start. Working files: `research/aw-speed-pick-2026-11-
 - **14 Nov ~16:20: Affan took over** (his Tella 1 to the build session; `projects/speed-kicked-out-three-peat/BRIEF.md` § HIS TELLA 1).
   - He edited the raw cut in ABW11 himself (27.7 s) and removed the Keystone beat, the 2024 card, "So the Streamer of the Year award goes to", and the ending lines "But my mom," and "I still love my mom".
   - **His ask: find every "mom" moment that fits his criteria and lay them between "My mom seen the video" and "So boom, she kicked me out"; no final build until he approves.**
-  - The criteria:
+  - The criteria, in BRIEF's order (MOM-MOMENTS uses the same numbers):
     1. Old mom-house streams where she comes in angry and tells him to shut the stream, and Speed is sad or near tears after she leaves.
-    2. Speed calling his mom on his birthday at Adin Ross' house and not getting a proper reply.
-    3. Any moment where "we genuinely feel bad for Speed, but he still kept going".
-  - The 2020-22 streams show him at 15-17. He asked for them by name; they are laid out for his yes, each labelled with date and age. Siblings and other children: hard no.
+    2. "All the parts where his mother called him and said to shut the stream down."
+    3. Speed calling his mom on his birthday at Adin Ross' house and not getting a proper reply.
+    - Over all three: "we genuinely feel bad for Speed, but he still kept going".
+  - The 2020-22 streams show him at 15-17. **Ruled ~17:20: his own streams are IN; other children stay flagged** (next lines).
 - **This session finds the moments** → `research/aw-speed-pick-2026-11-13/MOM-MOMENTS.md` (§ 8 below is the log). The build session waits, then builds a v2 clone sequence from the list.
+- **~17:20: HIS RULING (to the build):** "doesn't matter if he's a minor, we're not publishing him in a weird way bruh". Speed's own 2020-22 streams are IN; other children are still flagged.
+- **~17:15: the consolidated list is written** (`MOM-MOMENTS.md`). It merges the build session's two agents' work
+  (`projects/speed-kicked-out-three-peat/mom/`).
+  - **Adult-era, on disk now:**
+    - the 18th-birthday call ("Like, my mom's really not answering on my birthday?", 21 Jan 2023);
+    - the Club Shay Shay lines ("what are you doing… hate comments").
+  - **Minor-era on disk:** the fireworks stream (4 Jul 2022, 17, shirtless; "Turn that stream off!").
+  - **Waiting on:**
+    - Affan's pick between the build's v2 (true order) and v2b (his slot) in ABW11;
+    - the hub clearing `youtube.BLOCKED` (blocked since 16:42; the hub probes ~23:15 PKT). Then `yt/batch18.sh`.
+- **~18:05:** a cold read of MOM-MOMENTS.md (`COLD-READ-MOM.md`, 35 findings) was checked finding by finding and applied. The file
+  was rewritten, and the build was sent the corrected edges.
 - PITCH v9 (below, § 1-7) is superseded in part by his edit and gets rewritten after his approval.
 
 ## 1. Verified facts
@@ -355,3 +368,198 @@ ultimatum → he left and kept going, alone with his online friends → three St
 **Cold read of v9** (`COLD-READ-V9.md`, 11 findings) applied: the header and timings now match the built cut (47.114 s, read-back); the "kicked me out" gate
 is rewritten plainly; beat 7's caption is "'cause" and its context is told; the "10th nomination and 8th win" line belongs to the **2026** announcer
 (the 2025 announcer says "sixth nomination and fifth win"); "She" starts at ~117.32-117.37; the Indonesian is "to be confirmed by a speaker".
+
+## 8. Mom moments (Affan's Tella 1, 14 Nov ~16:20-17:30)
+**The file:** `research/aw-speed-pick-2026-11-13/MOM-MOMENTS.md`, the candidate list for his pick. **No final build until he approves.**
+
+**YouTube:**
+- 8 searches (`yt/batch15.log`), then metadata for 16 candidates (`yt/batch16.log`).
+- Then the bot check at 16:42, on `D5RP_85y0-Q`: ~25 requests in ~32 min through lock.sh.
+- `youtube.BLOCKED` set, batch16 and batch17 stopped, hub and build told. Nothing downloaded.
+
+**Found on disk (no YouTube needed):**
+- The Club Shay Shay clip we already use holds two lines that sit inside his slot, in true order:
+  - "She's like, what are you doing? Why is everybody talking about you like online?" (fam 63.07-66.73, wide)
+  - "Because it was like hate comments." (67.35-69.13, single)
+- Both are adult-era, first-party and in HD.
+- Shot map from the HD file:
+  - cuts at 56.43, 62.81, 67.69, 73.87, 81.87, 84.63 and 86.34;
+  - 125.54-133.76 is a single.
+
+**The chronology, in his words** (full episode 40:14-40:51):
+1. Kicked out at ~2K subs (2020, ~15).
+2. Detroit.
+3. "my mom… put a stop to it. She called my dad… I moved back in with my mom for my junior year".
+
+So the 2021-22 mom-house streams come after the kick-out; in his slot they play out of order. Flagged for his call.
+
+**Adult-era moments:**
+- The Mother's Day hang-up, 14 May 2023 (18; the date is pinned by Speedy Reports on X).
+- The 18th-birthday "no call" at Adin's, likely 21 Jan 2023.
+- Both exist so far only as small clip-channel uploads; the originals are still to find.
+
+**Minor-era (15-17):** 11 candidates, led by his own 600K VOD (`D5FYQQm7IYs`, 28 Jun 2021, 16). His yes is needed; siblings are out regardless.
+
+**Web:**
+- The Nitro_Camden moment (Aug 2026) is outside the slot.
+- No source shows his mom at an awards show.
+- In Aug 2024 he objected to leaks of his mother's wedding photos, so prefer clips where she's heard, not seen.
+
+**Instagram (partial):**
+- "speed mom stream" shows the beat performing: "Speed mom 💔 vs speed dad ❤️‍🩹" (333K), "What do yall think about ishowspeed mom?😕" (328K), "Mom Now💖 Vs Then💔" (234K).
+- The other keyword pages returned nothing or were throttled.
+
+**The build session had done much of this in parallel** (found at the final check, ~17:05; `projects/speed-kicked-out-three-peat/mom/`).
+Its two agents:
+- **found and downloaded the birthday call:**
+  - `bXgeLAHCcdQ`, a Lit Central re-upload of his own stream, 1080p60;
+  - 21 Jan 2023, his 18th;
+  - "Like, my mom's really not answering on my birthday?" … "It's the third time calling. She doesn't pick up";
+- **put the fireworks stream on disk:** from his own `E:` drive; 4 Jul 2022, 17, shirtless; his mother off camera: "Turn that
+  stream off!", then "I'm sorry" x3;
+- **dated his move-out:** he lived at his mom's until ~Sept 2023, so mom-house streams from Jan to Sept 2023 show him at 18;
+- **read Instagram:** "mom then vs now" reels at 2.0M and 1.9M; the 1.9M one's "CALLING MOM" is probably the birthday call;
+- **flagged a repeat risk:** an AW-branded edit of the birthday call is on his drive (3 May 2025).
+
+MOM-MOMENTS.md was rewritten (~17:13) as the one consolidated list. Its messages to me arrived only at ~17:15, all at once.
+
+**YouTube load before the block** (corrected by the cold read): ≥46 lock.sh calls from 15:39 to 16:42, plus the hub's ~10-request
+channel listing at 16:34, from three sessions. This session made 12 earlier calls (15:39-15:57) on top of these:
+- the build's agent, 9 calls (15:35-16:00);
+- this session, 25 calls (16:09-16:42).
+
+**Advisor (Fable 5.2), before writing:**
+- Upload date ≠ event date: ages read "≤" unless the date is pinned.
+- Titles are claims, not things watched.
+- Apply the § 7 clip-channel rule, so neither adult-era clip is usable yet.
+- Scan the disk first; that is where A1-A2 came from.
+- The minors question goes first.
+- The order of fetches after the unblock: MOM-MOMENTS § 7.
+
+**Advisor, final check:**
+- Read the build's state before describing it (that's how its parallel work was found).
+- The rejections are titles, unwatched: re-labelled, and three got a second look.
+- Separate his account from my dating.
+- The labels are clip names for his review, not on-screen text.
+
+**Not done:**
+- downloads, transcripts and frame checks of every candidate;
+- the originals;
+- Instagram proof per moment;
+- a final sequence and its reviews.
+
+**After the hub lifted the lean notice (~17:15): checks with no YouTube**
+- **Affan's minors ruling** (to the build, ~17:20): "doesn't matter if he's a minor, we're not publishing him in a weird way bruh".
+  - His own 2020-22 streams are IN.
+  - The build lays the on-disk bits into a v2 clone of his sequence; his original stays untouched.
+- **Birthday call, was it a planned surprise?**
+  - No source says his mom was in on one.
+  - "Adin Ross PLANS IShowSpeed's Bday Party with HIS MOM" (21 Jan 2023): the listings describe only Adin planning a surprise party
+    on stream, and "HIS MOM" is in the title only.
+  - Still open until `HOk9WtMWDZ8`'s audio is heard.
+- **TheTVDB (IShowSpeed series, 2023 season):**
+  - S2023E16 "MY BIRTHDAY STREM" (21 Jan 2023), so the call is on his own stream.
+  - S2023E82 "MOTHERS DAY ❤️" (14 May 2023, 214 min).
+  - No YouTube IDs on TheTVDB.
+- **Criterion 2** ("his mother called him to shut the stream down"): no text source.
+  - The nearest adult-era moment is the ~23 Jul 2023 stream: ~2:51:00 in, his mother tells him the police are at the door, after
+    his 112 call.
+- **The build's messages** (its agents' results) reached this session only at ~17:15, in one batch.
+- **Cold read** of MOM-MOMENTS.md by a fresh Opus agent: `COLD-READ-MOM.md`.
+
+**Cold read of MOM-MOMENTS.md** (fresh Opus agent, `COLD-READ-MOM.md`; 8 WRONG, 5 MISLEADING, 4 CLAIM-AS-FACT, 18 MINOR). Each was
+checked against the scout words, the build's large-v3/medium.en passes, the logs and batch17.sh before fixing.
+
+**Word edges:**
+- Three musing out-points cut words: "dad." 114.35-114.55, "But" at 119.49, "here." 125.15-125.43.
+- A1's in is ~62.9, not 62.2: a smeared large-v3 word.
+- A3 opens on "No,".
+- "Let me call my mom" starts ~58.1.
+
+**Facts:**
+- The dad's call on disk is OUR OWN AW edit, not a fan re-edit.
+- His v6 note followed "I'm out… not about to stop" in his list. The pitch dropped that line for a non-sequitur reason.
+- batch17.sh exits at once; it doesn't wait.
+- The YouTube count was ≥46 calls from three sessions (above).
+- "Turn that stream off" is large-v3 only; medium.en hears "out".
+- Mother's Day is a hang-up per a title and fan posts only. The X post URL and time are now recorded: 14 May 2023, ~20:47 US Eastern.
+- Notes taken from titles are now marked "by title"; C8's "on the phone" is dropped.
+
+**Rules applied in the file:**
+- The § 2 heading and the "audio only" line are aligned with his ruling.
+- Clip-channel ages read "≤".
+- IDs added for C1-C12.
+- The criteria are numbered as in BRIEF.
+
+## 9. Tella-2 sourcing for the build (14 Nov ~19:25-20:30): teen photo, Speed + dad, old streams
+Asked by the build (Affan's Tella 2, 18:40). Deliverables: `projects/speed-kicked-out-three-peat/assets/photos/ig/` + its
+`SOURCES.md` (permalink, date, age, who is in frame, per file).
+- **His own Instagram (@ishowspeed, 70 posts):** his 2021-22 teen posts are still up (age 16-17). Full-size originals
+  (1440 px) were fetched WITHOUT cookies (`yt-dlp --skip-download --no-simulate --write-thumbnail <post URL>`, one
+  `pace.sh instagram` slot per post; scratch script `scratchpad/bin/ig_posts.sh`). Post dates come from the shortcode
+  (media ID → upload time). No school setting found so far.
+- **His dad:** @originaldaddyspeed = "Darren J. Watkins" (371K, not verified; DaddySpeed branding, Detroit posts; same face as
+  the 2026 World Cup frame).
+  - The WHOLE grid was read (392 of 395 posts, Jan 2020 → Nov 2026), plus 4 story highlights and his 49 s birthday montage
+    for Speed (21 Jan 2025).
+  - The earlier guess that a 2020-22 throwback there was "unlikely" was WRONG. The oldest posts held:
+    - the Mastro's FEED original (22 Apr 2022, 1440 px);
+    - a Christmas photo of Speed ~14-15 with his dad (posted Sep 2021 → Christmas 2020 or earlier; cropped clear of his
+      younger brother);
+    - a "Throwback" and a Detroit Pistons selfie (Nov 2021, both with children in frame);
+    - young Speed + dad photos inside the montage (one with "DETROIT" on the dad's shirt).
+  - Identity check against his dated posts and his younger brother: Christmas/Throwback HIGH, montage braces/DETROIT MEDIUM,
+    montage black-and-white UNCERTAIN (`ig/proof/face_compare.jpg`).
+  - Family photos of him younger than 15 need Affan's explicit OK (his ruling covered his own streams at 15-17).
+  - Contact sheet for his call: `assets/photos/ig/CANDIDATES-dad-beat.jpg`.
+  - The build got ONE consolidated note at 21:40 replacing four earlier ones.
+- **Old streams:** his own Apr 2020 face-cam NBA 2K20 streams (age 15, "#300 SUB GRIND // JOIN UP / ADD ME", TheTVDB
+  S2020E10-E22) are the target. `yt/batch19.sh` searches and downloads them after the unblock; it goes BEFORE batch18, since his
+  Tella-2 cut dropped the extra mom clips.
+  Revised ~21:45 (advisor): this session runs it itself; one search + ONE 18-min test section; the face-cam is checked by eye
+  before any second download; no FACECAM hit = stop and report (fallback D5FYQQm7IYs by hand).
+- **Tooling notes:**
+  - The browser extension blocks copying signed image URLs out of the page.
+  - Instagram's private API from the page was refused by the safety check (not retried).
+  - The anonymous embed page carries no media.
+  - yt-dlp's `--print` silently implies simulate: add `--no-simulate`.
+- **Durable copies (21:45):** fetched originals, the montage video and its frames, tools and proof are in
+  `research/aw-speed-pick-2026-11-13/ig/` (27 MB). `ig/tools/ig_posts.sh` still points at scratch paths: it is a record.
+
+- **~21:55, YouTube Data API (Affan via the hub):**
+  - All lookups now go through `research/deep-research-2026-11-14/yt_api.py speed`, with 0 searches spent.
+  - His uploads playlist (41 pages) gave the Apr 2020 face-cam stream IDs and the Mother's Day VOD `L2L9wxeipDk`.
+  - One `videos` call settled batch18's metadata (MOM-MOMENTS § 4).
+  - batch18/19 now hold downloads only.
+
+- **14 Nov 23:15 → 23:50: batch19 (wave 1) ran after the hub's 23:14 unblock. Its stream is REJECTED on size.**
+  - It downloaded one 18-min section of `n2wj5MV78UM` (21 Apr 2020, age 15). 720p30 at 1.2 Mbps was the best H.264 format offered. No block.
+  - **The face cam is a ~198x198 px inset** (x 63-261, y 522-720) in an NBA 2K20 frame. The build's 2021 fill shows 667 source px
+    across its band at 1.62x; this inset would need ~5.5x (~3.6x even from a 1080p VP9). That is "all pixelated", which he ruled out.
+  - **The build keeps its 2021 fill.** It was told at 00:05. The file in `assets/clips/old-streams/` is a reject.
+  - The other 9 Apr-May 2020 IDs are judged by title only (the same "COMP STAGE W/FACECAM" series), not checked.
+  - Proof: `aw-speed-pick-2026-11-13/proof/st20_n2wj5MV78UM_sheet30s.jpg`, `st20_n2wj5MV78UM_facecam_native.png`.
+  - **Lock overlap:**
+    - The section ran through ffmpeg at ~0.56x realtime and held the lock past pace.sh's 1800 s stale limit.
+    - ig-icons broke the lock at 23:45:25 and downloaded alongside it for ~2 min.
+    - My exit trap then removed ig-icons' lock dir.
+    - No block followed. The hub has the times and three fixes (hub note ~00:10).
+  - **Lesson: never put a long `--download-sections` through pace.sh.** Keep sections under ~1 min, or fetch the whole file and cut locally.
+- **00:10, wave 2 (gated, counted in the hub note):** 4 paced thumbnail fetches to see the face-cam layout of late-2020/early-2021
+  candidates (prank-calls live `9fyoZl1t32E`, Fortnite squads live `stDdKf_o1C8`, Rec Room live `pJEeiw8ZSek`, Q&A upload
+  `DNiOLSkH94Q`). After that, at most one section under a minute for the first that passes (face cam ≥ ~500 source px). A hit is
+  only an offer to the build.
+  - API data: `aw-speed-pick-2026-11-13/yt/api_facecam_candidates_2020-21.json`.
+- **00:02-00:35, wave 2 result:**
+  - The thumbnails showed `9fyoZl1t32E` as his late-2020 2K layout ("222 watching", a 306x172 inset): it fails.
+  - The Fortnite and Rec Room lives have custom art, so their layout is unknown and they were not probed.
+  - The Q&A upload `DNiOLSkH94Q` (25 Feb 2021, 16) was fetched whole (`yt/batch20.sh`): 1080p, a 1082x1080 phone picture against
+    a green wall.
+  - Two stills were delivered to the build as an OPTIONAL "one viewer" cutout upgrade:
+    - 2:40.93, full head, warm smile;
+    - 6:10.37, big grin, hair clipped at the top.
+  - A plain green key is clean (proof `aw-speed-pick-2026-11-13/proof/qa21_*`).
+  - It is not a stream, so "online friends" keeps the 2021 fill.
+  - **00:45, compared at render size with the delivered cutout (`proof/qa21_vs_delivered_cutout_render-size.png`): NOT better.**
+    It is softer, and it has no headphones, the streamer cue the delivered cutout carries. It was not offered.
+  - 6 paced YouTube requests and 2 API units since the unblock. No block.

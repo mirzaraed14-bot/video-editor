@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-10-10T18:23:16.698Z
+  modified: 2026-11-14T18:21:18.343Z
 ---
 
 **Topaz Video AI 5.0.4** (Affan says "Video AI 5"; a newer "Topaz Video" app also exists on the machine but he asked for
@@ -40,6 +40,8 @@ gave video frames with the same MD5 as his own Topaz files (`projects/aw-code-tr
 Order matters: interpolation BEFORE Iris, in one pass (`--out-scale 2` without `--no-fi`). Iris output makes repeated frames non-identical, so Chronos run on an Iris file misses them (Rollo 2026-10-06: held webcam frames 30 % -> 15 % only).
 
 **Login token can lapse mid-run (2026-10-24):** headless tvai keeps going but stamps a "Topaz Labs" WATERMARK (stderr: "Critical error refreshing token Could not establish connection"); only he can sign back in (open Topaz Video AI). Check a frame of every Topaz output for the watermark; afterwards re-run only the dirty step. Never work around the licence.
+
+**Iris on SMALL faces reads "pasty AI-ish" (Affan, 2026-11-14, Speed Short review 2).** On a two-shot wide at fit, inside a letterbox band, Iris gave the faces a waxy look. Iris only where a face is LARGE in frame; a wide or a downscaled shot gets Chronos (interpolation) only. His preferred fix was to re-cut the wide on one person, zoomed in, with no enhancement. A head lock on a 30p-doubled-to-60p broadcast judders: rebuild the duplicate frames first (the job's `stage_a.py` `dedup`); smoothing the lock alone made it worse. Chronos-only can also drop a part's tail frame (75 of 76), so gate every part's frame count before a concat. Details: AW `LESSONS.md`, 2026-11-14 Speed section.
 
 ## Moved from the MEMORY.md index (2026-11-06)
 Affan's Video AI 5.0.4 is scriptable (workflows/topaz-iris.py); interpolation on EVERY sample, Iris only for ≤1080p (his rule 2026-10-06); --segments at every cut; replaying his .tzlog export commands headless is BIT-EXACT (2026-10-10); a lapsed login token = silent WATERMARK, check every output (2026-10-24)

@@ -1,6 +1,89 @@
 # RUN: speed-kicked-out-three-peat (AW Short, IShowSpeed)
 
 ## ▶ STATUS: resume here
+- **15 Nov: TITLE AND TAGS given to him** (he asked "title? and tags").
+  - Pick: **IShowSpeed’s Mom Kicked Him Out 🏆**. The options, the 23 tags (493 of 500 characters) and the evidence are in `proof/v21/TITLE-TAGS.md`. The raw API results are in `proof/v21/title_research.json`.
+  - The pick names him: Bolt's 11.4M "His Mom Kicked Him Out On Live Stream" is about Nitro Camden, and Speed appears in it, so a title without his name could be read as that story.
+  - The delivered file is unchanged.
+- **14 Nov 23:20: REVIEW-2 FIXES RE-DELIVERED.**
+  - The file is hash-identical (sha256 5d80b25c...) in Final Renders and Exports.
+    - It replaces the 22:35 copy, and also a 23:10 copy that was out for ten minutes.
+    - The 23:10 copy had the taller WIDE_A band's bottom bar crossing the 10.0 s subscribe pill. Fixed with `cta.mid_dy` 160 (under the bar, README § 12), re-exported only.
+  - His notes (22:40), both fixed:
+    - **The 2026 podium judder.** The source is 30p doubled to 60p, and the head lock followed the stair-step.
+      - Stage A `dedup` (S22) rebuilds each duplicate frame by flow interpolation between the unique frames and interpolates the lock between the same frames.
+      - `_unique_frames`: a frame is unique if its diff is >= 25 % of the p75 diff (46 of 86).
+      - Face jitter 24.6 -> 10.0 (2024 12.0, 2025 11.6).
+    - **The "pasty AI-ish" letterboxes.** Re-cut on Speed alone (WIDE_A / WIDE_B: 1.42x, band 560-1360, twin 2.5x), Topaz Chronos only, no Iris.
+  - Gotcha: Chronos-only returned 75 of S08's 76 frames (stageT 2309). The tail frame was cloned under the transition and the concat re-done. `topaz_speed.py` now stops before the concat on any short part.
+  - QA (`proof/v21/QA.md` round 3): export PASS, av_lag PASS, smooth_check all PASS. The cut and frame sheets were regenerated from this file and checked.
+  - Lessons: AW `LESSONS.md` (Speed section, review 2). His sequences are untouched; nothing was saved or exported in Premiere.
+  - **S03 stays the 2021 stream (`assets/clips/sewy_2021.mp4`). The research session confirmed after the 23:14 unblock that there is nothing to swap.**
+    - The Apr 2020 face-cam stream (`assets/clips/old-streams/20200421_n2wj5MV78UM_sec05-23.mp4`, 720p30) is a REJECT: never use it.
+    - Its face cam is a ~198x198 px inset (x 63-261, y 522-720), which would need ~5.5x against the 2021 fill's 1.62x: the pixelated look he ruled out.
+    - The research session is checking late-2020 full-frame streams by thumbnail (the 4 Dec 2020 prank-call live, Fortnite squads, Rec Room, a Q&A). A pass would only be OFFERED to him as an optional one-span swap. His reviews never named this overlay, so it is never a must.
+    - Its numbers and proof paths are in `assets/photos/ig/SOURCES.md`.
+- **14 Nov 22:35: REVIEW-1 FIXES RE-DELIVERED (superseded by 23:10).**
+  - The file is hash-identical (sha256 f03b6ed6...) in Final Renders and Exports, replacing the 22:05 copy.
+  - His notes (22:15), each fixed:
+    - Shannon centred (anchor = his nose, y 760);
+    - both Club Shay Shay wides at FIT in a 607 px band with a 3.3x blur fill, so both people show;
+    - the shake made subtle and easy-eased, with an exposure fade (`finish.shake` + `expo_fade`);
+    - eased exposure fades on the 2024->2025->2026 cuts (transition 'expo');
+    - labels through the caption FX stack (`finish.lt_fx`).
+  - A latent bug fixed on the way: an inline comment had swallowed `Y_override` / `lock_full` / `lb_nose_y` in make_timeline2. The 22:05 render was unaffected, because track.json carried the same Y values.
+  - The lessons are in the AW `LESSONS.md` (2026-11-14 Speed section).
+  - QA: export PASS; all 22 cuts and the three transitions checked frame by frame (`proof/v21/cuts_sheet2.jpg`, `trans3_strip.jpg`, `final_sheet2.jpg`); av_lag PASS.
+- **14 Nov 22:05: v2 FINAL RE-DELIVERED.**
+  - `outputs/His Mom Kicked Him Out.mov` was copied hash-identical (sha256 d2de3f8e...) to Final Renders and Exports, replacing the 21:15 copies.
+  - Fixes since 21:15:
+    - S17 2-frame flash (floor_src);
+    - shake re-tuned (44 px, 9-18 Hz);
+    - Detroit beat = the Christmas photo of young Speed with his dad, as a portrait card;
+    - a false "wide flash" note retracted.
+  - Note for him: `proof/v21/NOTES.md`. QA: `proof/v21/QA.md` (round 2).
+  - Open, each a one-span swap:
+    - the Apr 2020 face-cam stream for S03 (research session, after the ~23:15 unblock);
+    - the Mastro's original (17) if he prefers it for Detroit.
+- **14 Nov ~21:15: v2 DELIVERED, first copy (superseded by the re-delivery above).**
+  - `outputs/His Mom Kicked Him Out.mov` was copied hash-identical to Final Renders and Exports.
+  - Note for him: `proof/v21/NOTES.md`. QA: `proof/v21/QA.md` (all pass).
+  - Open swaps, each a re-render of one span, not a rebuild:
+    - his 2020 face-cam streams (15) for S03 after the YouTube unblock;
+    - an at-school photo for S02, if the research session finds one.
+  - His sequences in ABW11 are untouched; nothing was saved or exported in Premiere.
+- **14 Nov 18:40 (machine clock, PKT; earlier entries stamped ~19:30/~20:10 were mis-stamped): HIS TELLA 2 + "start the build after watching this, the final render, everything" -> FULL BUILD TO FINAL, no STOP 2.**
+  - **His cut:** "Speed Kicked Out - v2 mom bits" re-sequenced BY HIM, read back READ-ONLY at ~18:45 into `premiere/rb2_v2.tsv` (38.505 s; his active sequence; unchanged: raw cut, v2b, alternates). Never touch it; the build is code from that read-back.
+  - **His direction:** `BRIEF.md` § HIS TELLA 2 (deictics checked on frames `guide/deictic_a.jpg`, `guide/deictic_b.jpg`).
+  - **Plan (advisor-checked 18:58):** catalog pass into BRIEF -> source stills (teen school photo; Speed + dad, REAL photos only, Higgsfield upscale with a face check, Lanczos fallback) + the old stream (E: `Lonely/IShowSpeed Original Cristan Ronaldo Sewy.mp4`, 2021, until better arrives) + podium picks (win25 ~44-48 / 60-64 s, soty26 ~328-345 s; frontal, mouth closed, no name bar, nose + face size locked to 2024, hard cuts) -> regenerate make_timeline (from rb2_v2.tsv), dialogue, captions (NFRAMES), Stage A, Topaz (delete the stale `renders/topaz/S01-S05`) -> finish stills of every new element (own gate) -> full render, mix (`build/sfx/` missing: copy from the Son), export_cta, QA, delivery.
+  - **Fences:** fireworks label = 4 JUL 2022 · AGE 17 (true); no date on the kick-out or Detroit; never generate a "Speed with his dad" picture; CTAs placed by collision check.
+- **14 Nov ~20:10: Affan is opening the v2 sequences (research session's message). "Speed Kicked Out - v2 mom bits", "...v2b (your slot)" and "...v2 alternates" are HIS now:** never delete, rebuild or re-place them. `run_v2build.py`, `run_altbuild.py` and the three `*_build.jsx` are DISABLED. Any change goes into a NEW sequence ("...v2.1") built by a new script that refuses existing names. Every edge fix (mine, the cold read's, the research session's) was applied BEFORE he opened them: v2/v2b final ~19:30, alternates final ~20:00. Before any later work, re-read his sequences (they may carry his edits).
+- **14 Nov ~20:00:** alternates rebuilt (16 bits, 0 mismatches; his sequence unchanged): the research session's edge fixes were applied after re-measuring each edge, and A16 was added ("You know, she even now to this day, she still supports me."). A1+A2 are a full repeat of our 950K Short.
+- **14 Nov ~19:30: v2 FINAL BUILD (after the cold read) in ABW11. WAITING ON AFFAN's pick: v2 or v2b.**
+  - **v2** "Speed Kicked Out - v2 mom bits" (47.6 s): the stream moments sit between "...my dad in Detroit" and "Then I kept going".
+  - **v2b** "...(your slot)" (47.6 s): all new bits between "My mom seen the video" and "So boom".
+  - **Alternates:** 15 bits.
+  - **Checks:** check_v2 0 problems on both; his sequence unchanged; chat columns reframed off; `SEQUENCE-v2.md` is the full write-up (flags, open items).
+  - **After the YouTube unblock:** the 2021 mom-house clips (C1 VOD, C7) + the birthday VOD check (research session sources them). Then one more v2 window.
+- **14 Nov ~18:30: v2 BUILT in ABW11, waiting on Affan's pick/approval.**
+  - **Sequences:** "Speed Kicked Out - v2 mom bits" (THE PICK, true order, 47.58 s) + "Speed Kicked Out - v2b (your slot)" (47.58 s) + "Speed Kicked Out - v2 alternates" (15 bits).
+  - **Checks:** `check_v2.py` 0 problems on both; his sequence unchanged (read back before/after); frame proof `proof/v2_sheet.jpg`; re-ASR `proof/seq_v2/asr.txt`. `SEQUENCE-v2.md` is the full write-up.
+  - **Rebuild:** `python build/plan_v2.py v2_inserts.json "Speed Kicked Out - v2 mom bits" v2` (+ v2b), then `python premiere/run_v2build.py` (ALT=1 also rebuilds the alternates). It deletes only OUR v2/v2b/alternates sequences, never his.
+  - **No Phase B until he approves.**
+- **14 Nov ~17:40: v2 PLANNED, Premiere window queued** (`premiere/run_v2build.py`, log `logs/run_v2build.log`). Premiere lock held by other builders (Rise Above 17:01, then PRW 17:32).
+  - **The window builds 3 NEW sequences** beside his: "Speed Kicked Out - v2 mom bits" (THE PICK, true order, 45.4 s), "Speed Kicked Out - v2b (your slot)" (his literal placement, 45.4 s) and "Speed Kicked Out - v2 alternates" (15 bits + markers).
+  - **Checks:** his original is read back before and after (must be identical); `python build/check_v2.py v2|v2b` checks every clip.
+  - **The pick and why:** `SEQUENCE-v2.md`. The 2022 fireworks argument (over the EMPTY ROOM: he is shirtless live), "I'm sorry" x3 and the 2023 birthday call (UNDER FACT CHECK; probable AW repeat) all sit after "Then I kept going". True order: they happened after the 2020 kick-out.
+  - **Cold read:** running, output `COLD-READ-v2.txt`.
+- **14 Nov ~17:20: HIS RULING on minors:** "doesn't matter if he's a minor, we're not publishing him in a weird way". Speed's own teen streams (15-17) are IN; other children are still flagged. Memory updated (`feedback-minors-rule-hp-film-ok`).
+- **14 Nov ~17:10: agent 2 (Instagram + web) done.** Files: `mom/IG_PROOF.md`, `mom/WEB_NOTES.md`.
+  - **Age window:** he lived at his mom's until ~Sep 2023, so mom-house streams from 21 Jan to Sep 2023 show him at 18.
+  - **The only documented angry-mom stream** is the 4 Jul 2022 fireworks one (17).
+  - **Instagram:** "mom then vs now" reels at 2.0M and 1.9M.
+  - **⚠ The birthday call is probably an AW REPEAT:** the drive file carries the AW monogram and our caption/letterbox style (`mom/frames/birthday_short_12s.png`).
+  - All of this was forwarded to the research session (it writes MOM-MOMENTS.md).
+  - **YouTube is BLOCKED** since 16:42 (a bot check). No YouTube from this session.
+  - The Chrome tab group of agent 2 is gone (its tabs are closed).
 - **14 Nov ~16:20: mom-moment research.**
   - **Agent 1 (YouTube) is done:** `mom/FINDINGS.md` + `mom/candidates.tsv`, downloads in `mom/src/` + `mom/local/`, transcripts in `mom/asr/`, frames in `mom/frames/`.
     - Birthday call (21 Jan 2023, his 18th, adult): `bXgeLAHCcdQ` 23.90-27.12 "my mom's really not answering on my birthday?". The dad call exists only in the fan re-edit.
@@ -46,7 +129,7 @@
 
 ## Job facts
 - **Channel:** Abundance Wisdom (Shorts). Format: 9:16 short, code + Premiere build. Preset: `presets/youtube-shorts/abundance-wisdom/`.
-- **Constraint: every frame adult-era.**
+- **Constraint (SUPERSEDED 14 Nov by his ruling: Speed's own teen footage is OK): every frame adult-era.**
   - Speed was born 21 Jan 2005, so nothing before 21 Jan 2023.
   - No siblings, and no 2020-22 streams.
   - Never use the 2025 nominee reel: it carries a 2021 stream clip.
@@ -90,3 +173,31 @@
 - Running now: `build/topaz_speed.py` (per-shot Topaz, stabiliser OFF, Iris on faces/grids/wide, + Proteus 1x on the Keystone shots, gpu.lock per segment) -> `renders/stageT.mov`; `captions/caps_code.mov` -> `caps_capcut.mov` -> `renders/caps_capcut.mov`. NEXT: `finish.py stills renders/stageT.mov renders/caps_capcut.mov proof/r1/<out>.jpg <times>` (first/last frame of every shot, labels, counter, card, CTA moments), `build/skin_png.py`, `win/head_measure.py` + `smooth_check.py`, then `proof/r1/NOTES.md` and STOP 2.
 - ~15:20 **Waiting on Topaz** (`python build/topaz_speed.py`, log `logs/topaz.log`, per-shot files `renders/topaz/S01.mov..`, final concat `renders/stageT.mov`; it holds gpu.lock per segment and resumes/keeps finished shots if re-run). Captions ready: `renders/caps_capcut.mov` (2827 f). Finish test on Stage A already passed (`proof/r1/test/test_labels.jpg`: grade, counter, labels, card, translation label, letterboxed 2024 card, zoom layers via `finish.py centers`).
   **When stageT.mov exists, run STOP 2 stills:** `PY=$HOME/.cache/video-editor/whisperx-venv/Scripts/python.exe; T=$(python - <<'P'` ... or simply: times = for every shot `t0+1/60` and `t1-2/60`, plus 4.1,5.5,6.6,17.0,25.1,28.4,30.5,35.9,38.6 and the CTA moments 13.3 / 33.7; `bash build/glock.sh "finish stills" $PY -I build/finish.py stills renders/stageT.mov renders/caps_capcut.mov proof/r1/fs/stills.jpg <comma times>`; then `python build/tile_stills.py proof/r1/fs proof/r1/test_shots 360`; `python build/skin_png.py` on the stills; `python win/head_measure.py` / `win/smooth_check.py` on stageT; write `proof/r1/NOTES.md`; STOP 2 report. CTA pill is composited by export_cta (Phase 2): the Son's proof_r1.py composited it on the stills (E:/Shorts/Abudance Wisdom Shorts Exports/CTA/aw-cta-mid-60.mov at 1.3 s).
+- 2026-11-14 18:40-20:15 **v2 BUILD from HIS Tella 2 cut (Opus session).**
+  - **Read back READ-ONLY:** `premiere/rb2_v2.tsv`. His sequences are untouched; Premiere had closed by ~20:00.
+  - **Brief:** `BRIEF.md` § HIS TELLA 2 (deictics resolved on frames) and § Catalog pass (all 137 stills).
+  - **Timeline:** `build/make_timeline2.py` -> `build/timeline.json`: 23 shots, 2310 frames, 38.50 s.
+    - S17/S18: his "I'm out" clip opens on Shannon's reaction ("Really?") and the show cuts to Speed's medium single at fam 86.336. They are split; Shannon is static at his own framing.
+    - S23 holds src 34.62. The show cuts to its wide at 34.65, so his out-point would have flashed ~0.15 s of the wide before the hard cut. Audio is untouched.
+    - Podium matches: 2025 = win25 48.62 at 0.8x (scale 2.756), 2026 = soty26 317.65 (scale 2.95). Both lock to the 2024 nose height (Y 840) and face size; `proof/podium/` has the measurements and `proof/v21/stageA_checks.jpg` the cut frames.
+  - **Dialogue:** `build/dialogue.py` now carries the FW original (`mom/local/E_fireworks_room.mp4` = mezz + 120.000, verified by frame diff 0.37). Output `renders/dialogue.wav`, 38.505 s, -16.6 LUFS pre-mix.
+  - **Words:** medium.en on the dialogue (repo rule: no large-v3), `proof/v21/asr_medium.txt`.
+  - **Captions:** `captions/captions.txt` v2, 66 captions.
+    - His mom's line is italic gold (FX-58) and Shannon's "Really?" italic.
+    - `make_words2.py`: align, plus medium.en stamps on the fireworks and announcers.
+    - `render_caps` NFRAMES 2310 -> `renders/caps_capcut.mov`.
+  - **Stage A:** `renders/stageA_v21.mov` (2310 f). The first attempt died on WinError 1455 (paging file / commit exhausted by other sessions); the retry was OK.
+  - **Topaz:** `build/topaz_speed.py` -> `renders/topaz_v21/` -> `renders/stageT_v21.mov`. The stale v1 parts were moved to `renders/topaz_v1_stale/`.
+  - **Finish additions (`build/finish.py`):** `memory_look`, `viewer_cutout` / `viewer_counter`, `shake`, `podium_label`. Test stills are in `proof/v21/fs/`; the graphic was re-laid out after test 1 because WATCHING collided with the caption line.
+  - **Stills:**
+    - Teen: Commons CC BY 2.0 photo (Speed at 16, 26 Nov 2021, arcade; credit "James Parker / Flickr"). Higgsfield bytedance 4K (2 credits, balance 868.75 before). The face is unchanged (`proof/v21/teen_face_compare.jpg`). Lanczos to 1300 px gives `assets/photos/teen/teen_school.png`.
+    - Detroit: NO real photo of Speed with his dad from that era was found (the web agent found none; the Halloween 2023 video was rejected: crude apron text, a probable minor sibling in costume). The research session was asked at ~19:20 to search Instagram (`assets/photos/ig/`). If nothing lands, S16 goes back to his single.
+  - **SFX:** `build/sfx/` (copied from the Son) plus `es_impact_deep.wav` (Epidemic "Designed, Boom, Cinematic, Deep, Boom, Impact") on the shake cut.
+- 2026-11-14 ~20:30 **Photos swapped to the research session's Instagram finds** (`assets/photos/ig/SOURCES.md`, all real originals):
+  - S02 = his own IG post of 4 Jun 2021 (16, cap selfie).
+  - S16 = his dad's IG story of 25 Apr 2022 (Speed 17 or younger, with his dad; taken at a Mastro's, the sign framed out).
+  - Both went through a Higgsfield 4K upscale (2 credits each; one failed job was not charged; balance 864.75 after the first two, the dad retry 2 more). The faces were checked against the originals and are unchanged (`proof/v21/teen_cap_face_compare.jpg`, `dad_face_compare*.jpg`).
+  - The Commons arcade photo (teen_01) is unused, so no CC BY credit is owed.
+- **Captions:** caption_shift -40 (win/lips_measure.py: the lowest lips post-zoom are at 1067, mouth bottom 1089 on S05).
+- **Mix:** `renders/mix_v21.wav` = -14.00 LUFS, true peak -1.60 dBTP. Swishes on the 5 overlay entrances and the 2 photos, the impact on the shake cut (no louder than the voice in its 400 ms window), card sounds on the 0->1 tick and the ISHOWSPEED label, CTA cues at 10.0 and 26.5.
+- **GPU:** held 20:09-? by the HP-films session's scout-transcribe. Topaz is waiting at S12; the finish test2 is queued.

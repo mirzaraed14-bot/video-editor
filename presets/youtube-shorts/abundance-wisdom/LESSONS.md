@@ -1743,9 +1743,47 @@ REPORT.md). At his review.
     native size before the head lock (`build/prep_up.py` + `apply_up.py`). → the job's `RUN.md`.
   - **A generative upscale must never touch a real person's face from a soft source.** The Higgsfield 4K `upscale_image` of a
     soft Instagram frame of Katherine "turned her into a completely different person"; the Topaz video upscale before it
-    "didn't do anything". → r5 uses a real, sharp, RECENT photo found through Google / news coverage (backstage at the
-    Michael premiere, 20 Apr 2026, with Colman Domingo), cropped to her, Lanczos 1.25x only, her face compared with the
-    source at full size before the render. → `build/make_timeline.py` (O5) + memory `feedback-sourced-stills-must-be-hq`.
+    "didn't do anything". → r5 uses a real, sharp, RECENT photo found through Google / news coverage (with Colman Domingo,
+    April 2026, Page Six / AOL), cropped to her, Lanczos 1.25x only (`proof/r5/source_vs_r5.jpg`). **He kept it ("Keep
+    this photo") over the wheelchair alternatives (a La Toya video frame, older press photos).** Rule from now on:
+    compare the face with the source at full size BEFORE the render. → `build/make_timeline.py` (O5) + memory
+    `feedback-sourced-stills-must-be-hq`.
   - **A portrait photo with someone beside her becomes a portrait BOX**, not a 2x full-width crop: `finish.py` `box_x` (white
     glow line on all four edges, the blurred twin around it), sized so her face stays above the caption text (y 1039-1081)
     through the 1.22x push.
+
+## 2026-11-14: Speed "His Mom Kicked Him Out" (his re-cut + Tella 2 + review r1; `projects/speed-kicked-out-three-peat/`)
+His review of the first delivery (22:15), as lesson -> change -> file:
+- **A letterboxed TWO-SHOT shows both people.** The AW § 4 band (picture at full band height, ~1060 px of the 1920 wide) cropped the Club Shay Shay wide to "so zoomed in we can't see any of the people".
+  - Change: a wide that carries two people runs at FIT (the whole 16:9, his own Premiere 56.25 %) in a 607 px band, with the blurred twin at 3.3x filling the frame.
+  - The earlier "very zoomed in but still letterboxed" note (MJ) stays right for single-subject overlays.
+  - File: `build/make_timeline2.py` (WIDE band [658, 1266]).
+- **A reaction shot is centred on the face.** Copying his Premiere framing of Shannon left the face cut at the frame edge.
+  - Change: a static anchor on Shannon's nose, at y 760 so the source still covers the top.
+  - File: `build/make_timeline2.py` (anchors / Y_override SHN).
+- **Transitions are eased, and a match cut still gets one.**
+  - The shake (44 px, 9-18 Hz, a 2-frame flash) "looks absolutely horrible". Change: a SUBTLE sway (13 px, 5-9 Hz) on an AE easy-ease envelope, plus an EXPOSURE FADE in and out on the same envelope (`finish.shake`).
+  - The plain cuts between the 2024 / 2025 / 2026 podium shots ("plain clip switching which I don't like") now get an eased exposure fade (`finish.transitions` type 'expo').
+- **Labels carry the caption FX stack** (Deep Glow + Bevel Alpha + Drop Shadows, Sharpen 80, no turbulence). A flat label "looks a bit separate from the video". File: `finish.lt_fx`.
+- **The photo hunt that worked:**
+  - His and his dad's OWN Instagram (originals fetched without cookies) beat the web.
+  - The research session found a real Christmas photo of young Speed with his dad (~14-15). It is shown as a portrait card over its own blur, because its two faces sit too far apart for a band.
+  - Faces were checked after every Higgsfield upscale.
+- **Review 2 (22:40), lesson -> change -> file:**
+  - **A head lock on a doubled-frame source judders.** The 2026 podium clip is a 30p broadcast doubled to 60p. The lock followed its stair-step and "jitters ... quite a lot" when he moves.
+    - Smoothing the lock path alone made it WORSE (face jitter 24.6 -> 27.7). The picture itself still stair-steps, so a smooth lock moves against it.
+    - Change: rebuild every duplicate frame by flow interpolation between the unique frames, and interpolate the lock anchor between the same frames (shot key `dedup`).
+      - Unique-frame test: diff >= 25 % of the shot's p75 frame diff. A median threshold kept near-duplicates (64 of 86 "unique", jitter 16.4); p75 gives 46 of 86 and **10.0**, in line with the native-rate shots (11-12).
+    - Rule: check a source's duplicate cadence before a head lock (`select` frame-diff pattern `|.|.`), and measure the finished face jitter (`build/jitter_measure.py`).
+    - File: `build/stage_a.py` (`dedup`, `_unique_frames`; `track_smooth` stays for real tracking noise).
+  - **Topaz Chronos-only can drop a tail frame.** S08 came back 75 of 76 frames, and the concat ran a frame short (2309).
+    - Change: the per-part frame count is a gate. `topaz_speed.py` stops before the concat (and drops the stale stageT) on any short part.
+    - Fix a short part by re-running it, or by cloning its tail frame under a transition.
+  - **A band change moves its glow bar into the subscribe prompt.** Review 2's taller WIDE_A band, under its zoom push, carried the bottom bar from y1395 to y1477 across the prompt's 2.8 s, through the pill at `mid_dy` 0.
+    - Change: `mid_dy` 160 (pill solid y1512-1593), under the bar per README § 12. The prompt is an export-time overlay, so only `export_cta.py` re-ran.
+    - Rule: after any band or zoom change on a shot that carries a prompt, measure the bar's path over the prompt's span against the pill.
+    - File: `build/make_timeline2.py` (`cta.mid_dy`).
+  - **Topaz Iris on small faces reads "pasty AI-ish".** The wide at fit carried Iris.
+    - Change, his option: the letterbox re-cut on Speed alone (Shannon out), 1.42x, band 560-1360, Chronos only, no Iris.
+    - Rule: Iris only where a face is large in frame. A wide or a downscale gets no generative enhancement.
+    - File: `build/make_timeline2.py` (WIDE_A / WIDE_B) + `build/topaz_speed.py` plan.

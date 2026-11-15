@@ -1,74 +1,83 @@
-# His Mom Kicked Him Out: the exact spoken words, max 3 words per layer, ~1 in 3 coloured, no commas or full stops (? ! ok).
+# His Mom Kicked Him Out, v2 (HIS Tella 2 cut, 38.5 s): the exact spoken words (medium.en on renders/dialogue.wav, proof/v21/asr_medium.txt),
+# max 3 words per layer, ~1 in 3 coloured, no commas or full stops (? ! ok). i: = another voice (italic): Shannon's "Really?"; his mom's
+# line in the fireworks stream is italic AND gold (FX-58 speaker coding, his "type titles of his mom ... then Speed, one by one").
+# Lines whose speaker is unproven ("Oh my God!", "No, stop, stop", "Turn that stream off") stay in the plain style.
 # B1
- 0.000- 0.633  AT FIRST I
- 0.633- 0.983  DIDN'T REALLY
+ 0.000- 0.583  AT FIRST I
+ 0.583- 0.983  DIDN'T REALLY
  0.983- 1.633  HAVE <red>SUPPORT</>
 # B2
- 1.633- 2.083  I DIDN'T TALK
- 2.083- 3.283  TO MY <yellow>FRIENDS</>
- 3.283- 3.600  I WAS ONLY
- 3.600- 4.083  TALKING TO MY
- 4.083- 4.783  <red>ONLINE FRIENDS</>
+ 1.633- 2.100  I DIDN'T TALK
+ 2.100- 2.883  TO MY <yellow>FRIENDS</>
+ 2.883- 3.200  I WAS ONLY
+ 3.200- 3.700  TALKING TO MY
+ 3.700- 4.267  <red>ONLINE FRIENDS</>
 # B3
- 4.783- 5.450  I HAD THAT
- 5.450- 6.050  <red>ONE VIEWER</>
- 6.050- 6.350  AND THAT
- 6.350- 7.583  VIEWER MADE ME
- 7.583- 8.150  <yellow>KEEP GOING</>
+ 4.267- 4.900  I HAD THAT
+ 4.900- 5.500  <red>ONE VIEWER</>
+ 5.500- 5.800  AND THAT
+ 5.800- 6.467  VIEWER MADE ME
+ 6.467- 7.017  <yellow>KEEP GOING</>
 # B4
- 8.150- 8.517  THERE WAS A
- 8.517- 9.017  <red>CLIP</> THAT KIND
- 9.017- 9.950  OF <yellow>BLOWN UP</>
+ 7.017- 7.383  THERE WAS A
+ 7.383- 7.900  <red>CLIP</> THAT KIND
+ 7.900- 8.683  OF <yellow>BLOWN UP</>
 # B5
- 9.950-10.467  MY MOM <red>SEEN</>
-10.467-11.050  THE VIDEO
+ 8.683- 9.183  MY MOM <red>SEEN</>
+ 9.183- 9.700  THE VIDEO
+# N6 (his telling, Club Shay Shay)
+ 9.700- 9.950  SHE'S LIKE
+ 9.950-10.367  WHAT ARE YOU
+10.367-10.683  <red>DOING?</>
+10.683-11.183  BLAH BLAH BLAH
+11.183-11.900  WHY IS EVERYBODY
+11.900-12.533  TALKING ABOUT YOU
+12.533-12.900  LIKE <red>ONLINE?</>
+12.900-13.500  BECAUSE IT WAS
+13.500-14.383  LIKE <red>HATE COMMENTS</>
+# N7 (the 4 Jul 2022 stream: his mom, then Speed)
+14.383-14.983  i: <yellow>WHAT THE F*CK</>
+14.983-15.533  i: <yellow>IS YOU DOING?</>
+15.533-16.317  I DIDN'T KNOW
+16.317-16.867  I DIDN'T KNOW
+16.867-17.433  I DIDN'T KNOW
+17.433-17.683  I THOUGHT
+17.683-17.767  IT WAS
+17.767-18.500  OH MY GOD!
+18.500-19.217  NO STOP STOP
+19.217-19.667  TURN THAT
+19.667-20.433  STREAM <red>OFF</>
+# A1+A2 (the wide)
+20.433-20.833  SHE TOLD ME
+20.833-21.433  TO <red>QUIT</>
+21.433-22.017  OR I'M <yellow>LEAVING</>
+22.017-22.417  LIKE YOU CAN'T
+22.417-22.733  DO THIS IN
+22.733-23.400  MY <red>HOUSE</>
 # B6
-11.050-11.650  SO <red>BOOM</>
-11.650-12.000  SHE KICKED
-12.000-12.533  <red>ME OUT</>
-12.533-12.933  I MOVED TO
-12.933-13.400  MY <yellow>DAD</>
-13.400-15.100  IN <red>DETROIT</>
-15.100-15.567  THEN I
-15.567-16.133  KEPT <yellow>GOING</>
-# B7
-16.133-19.033  IT'S A <red>LOT</>
-19.033-19.350  I NEED A
-19.350-19.783  <red>THERAPIST</>
-19.783-20.367  LIKE I NEED
-20.367-20.667  SOMEBODY
-20.667-21.750  TO TALK TO
-21.750-22.767  'CAUSE I FEEL
-22.767-23.083  <red>ALONE</>
-23.083-23.483  FEEL LIKE
-23.483-23.850  NOBODY
-23.850-24.783  <yellow>UNDERSTANDS ME</>
-# B8
-24.783-25.033  ALL RIGHT
-25.033-25.483  <yellow>ISHOWSPEED</>
-25.483-26.800  MAN OH MAN
-26.800-27.317  <red>STREAMER</>
-27.317-28.167  OF THE YEAR
-# B9
-28.167-30.300  <yellow>ISHOWSPEED</>
-# B10a-b
-30.300-31.967  SO THE STREAMER
-31.967-32.417  OF THE YEAR
-32.417-35.400  AWARD <yellow>GOES TO</>
-35.400-36.483  <red>ISHOWSPEED</>
-# B10c (Indonesian, English translation)
-36.483-37.000  I STARTED
-37.000-37.500  FROM <red>ZERO</>
-37.500-37.817  JUST A LITTLE
-37.817-38.767  <red>KID</>
-38.767-39.500  WITH A BIG
-39.500-41.767  <red>DREAM</>
+23.400-23.983  SO <red>BOOM</>
+23.983-24.333  SHE KICKED
+24.333-24.733  <red>ME OUT</>
+24.733-25.133  I MOVED TO
+25.133-25.617  MY <yellow>DAD</>
+25.617-26.417  IN <red>DETROIT</>
+26.417-26.967  i: REALLY?
+26.967-27.533  YEAH I WAS
+27.533-28.283  LIKE I'M <red>OUT</>
+28.283-28.750  YOU KNOW LIKE
+28.750-29.150  I'M NOT ABOUT
+29.150-29.600  TO <yellow>STOP</>
+# B8 (2024)
+29.600-30.917  MAN OH MAN
+30.917-31.317  <yellow>STREAMER</>
+31.317-32.300  OF THE YEAR
+# B9 (2025, announcer)
+32.300-34.283  <yellow>ISHOWSPEED</>
+# B10 (2026, announcer)
+34.283-35.517  <red>ISHOWSPEED!</>
 # B11
-41.767-43.050  BUT MY MOM
-43.050-43.683  MY MOM <red>ALWAYS</>
-43.683-44.300  <red>SUPPORTED ME</>
-44.300-44.717  YOU KNOW
-44.717-45.067  SHE JUST
-45.067-46.150  DIDN'T <yellow>UNDERSTAND IT</>
-46.150-46.433  I STILL
-46.433-47.114  <red>LOVE MY MOM</>
+35.517-36.150  MY MOM <red>ALWAYS</>
+36.150-36.750  <red>SUPPORTED ME</>
+36.750-37.150  YOU KNOW
+37.150-37.533  SHE JUST
+37.533-38.505  DIDN'T <yellow>UNDERSTAND IT</>

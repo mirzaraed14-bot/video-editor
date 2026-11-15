@@ -1,0 +1,56 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "Q0jvmLHnYfUS7uebD688-YTFI4M",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "7lSEE-wuVRtm0SJBgS94EvhNmjw",
+      "id": "yBiV-K1IIQw",
+      "snippet": {
+        "publishedAt": "2024-07-14T18:01:19Z",
+        "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+        "title": "Sales Genius Shuts Up Cocky Business Man 🧠 | Chris Do",
+        "description": "▶️ Abundance Wisdom is the place where high quality clips get combined with high quality editing to bring you the best possible experience of consuming life changing content.\n\n🔔 Do not forget to subscribe otherwise you might lose our best uploads\n\n#motivation #millionaire #mindset #motivation #sales #business #wealth",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yBiV-K1IIQw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yBiV-K1IIQw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yBiV-K1IIQw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/yBiV-K1IIQw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/yBiV-K1IIQw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Abundance Wisdom",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Sales Genius Shuts Up Cocky Business Man 🧠 | Chris Do",
+          "description": "▶️ Abundance Wisdom is the place where high quality clips get combined with high quality editing to bring you the best possible experience of consuming life changing content.\n\n🔔 Do not forget to subscribe otherwise you might lose our best uploads\n\n#motivation #millionaire #mindset #motivation #sales #business #wealth"
+        }
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}

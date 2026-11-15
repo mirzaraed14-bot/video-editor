@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "hD_MCWJop_1ldCh0PISgOJYJG9o",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "Sx5V1KfOmjCY957qf1e6I7UnuOE",
+      "id": "UCf3SpupfoGnXEpgaGRGPbqg",
+      "snippet": {
+        "title": "Josh Horowitz",
+        "description": "Josh Horowitz talks to your favorite actors and filmmakers in conversations and sketches for \"Happy Sad Confused\", MTV, Comedy Central, & more!",
+        "customUrl": "@joshhorowitz",
+        "publishedAt": "2011-10-07T14:38:10Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/6HPYjteLYmFaXeHy5ca4oUSJTJCKIx349_u9wTg4t4-0-4wFMOqloJGymu-bNufiIOVUpIRGZA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/6HPYjteLYmFaXeHy5ca4oUSJTJCKIx349_u9wTg4t4-0-4wFMOqloJGymu-bNufiIOVUpIRGZA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/6HPYjteLYmFaXeHy5ca4oUSJTJCKIx349_u9wTg4t4-0-4wFMOqloJGymu-bNufiIOVUpIRGZA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Josh Horowitz",
+          "description": "Josh Horowitz talks to your favorite actors and filmmakers in conversations and sketches for \"Happy Sad Confused\", MTV, Comedy Central, & more!"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "190107623",
+        "subscriberCount": "227000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1847"
+      }
+    }
+  ]
+}

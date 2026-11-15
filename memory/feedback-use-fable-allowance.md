@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: ba0c4372-a56a-4e31-9e42-90041477178f
-  modified: 2026-11-12T10:52:52.519Z
+  modified: 2026-11-15T12:47:38.283Z
 ---
 
 **Rule (Affan, 2026-10-21, MJ siblings short):** "don't use agents of fable, use opus only, and use advisor as well to see if a
@@ -54,3 +54,11 @@ Related: [[feedback-usage-budget]].
 - **2026-11-12, checked, not assumed:** the AffanWiz C1454 sub-session (`ba0c4372…`, started 11-09) still read `"advisorModel":"claude-opus-5-5"`
   on every entry, so the AffanWiz idea research he asked to run "with the Fable advisor" was advised by Opus 5.5 (agents on Sonnet). He was told.
   A session started before 11-10 must be checked before saying "Fable" about its advice.
+- **2026-11-15, relayed by the Main Brain hub "for the user":** hubs are back on Opus at xhigh effort, and EVERY sub-session a hub
+  starts now runs on Sonnet at xhigh: pass `model: claude-sonnet-5-5` and `effort: xhigh` on every `start_session`, research
+  sessions included. This replaces the "Opus when the job still needs creative judgment" exception above for sub-sessions; that
+  judgment stays in the hub. The hub moved the existing sub-sessions to Sonnet xhigh itself.
+  - **Checked by the AW hub (15 Nov ~17:50 PKT) in the Main Brain transcript.** His words: "inform all sessions and switch back to
+    opus extra and editor sub sessions will now run on sonnet as well". "Extra" is for the Editors; xhigh on the sub-sessions is the
+    Main Brain's reading, since his words name no effort for them. Checked live: aw-dr-ig-mj and aw-dr-hp-cast read claude-sonnet-5-5
+    / xhigh, and the AW hub reads claude-opus-5-5 / xhigh.

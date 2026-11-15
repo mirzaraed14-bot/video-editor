@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "B3_-nzOGE7_kH9SIkpQmMPHhNbQ",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "GB-pEOnArVCsquckkN6i10gGZTs",
+      "id": "UCrlMZwNW8LD7r_FixZC6JbA",
+      "snippet": {
+        "title": "Nida Sarfraz Potterhead",
+        "description": "NEW CHANNEL https://www.youtube.com/@PotterheadFever-Nido\n\n\n– Support me and I'll do the same!⚯ ͛ ⏃𝓵𝔀𝓪𝔂𝓼 ❾¾✨ Support my channel with a Super Thanks! 👇༝༚༝༚ 𝐏𝐨𝐭𝐭𝐞𝐫𝐡𝐞𝐚𝐝 ༝༚༝༚",
+        "customUrl": "@harrydracohermione",
+        "publishedAt": "2020-03-04T14:57:29.981957Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/dL5l7e3VyWk85w39qPaIB2k3Ry5sq2sLqubsiHlvavnpmh9oshwqk3dxwxBL5-EbpqhN8QMxmw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/dL5l7e3VyWk85w39qPaIB2k3Ry5sq2sLqubsiHlvavnpmh9oshwqk3dxwxBL5-EbpqhN8QMxmw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/dL5l7e3VyWk85w39qPaIB2k3Ry5sq2sLqubsiHlvavnpmh9oshwqk3dxwxBL5-EbpqhN8QMxmw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Nida Sarfraz Potterhead",
+          "description": "NEW CHANNEL https://www.youtube.com/@PotterheadFever-Nido\n\n\n– Support me and I'll do the same!⚯ ͛ ⏃𝓵𝔀𝓪𝔂𝓼 ❾¾✨ Support my channel with a Super Thanks! 👇༝༚༝༚ 𝐏𝐨𝐭𝐭𝐞𝐫𝐡𝐞𝐚𝐝 ༝༚༝༚"
+        },
+        "country": "SE"
+      },
+      "statistics": {
+        "viewCount": "40443419",
+        "subscriberCount": "6930",
+        "hiddenSubscriberCount": false,
+        "videoCount": "601"
+      }
+    }
+  ]
+}

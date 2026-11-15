@@ -75,8 +75,9 @@ C1409 = video 24.
      opening with the max-effort statement, wait for his OK, and only then build. After the OK (our reading, which
      both rules agree on, not his words), smaller open questions don't stop the build: take the stated defaults and
      list them in the delivery note. A file he never mentioned stays out of the build and gets one line in that note;
-   - his standing constraints: silence, nothing on C:, he exports on Premiere, no Fable agents (pass the sub-session
-     `model` per `memory/feedback-use-fable-allowance.md`), usage per `memory/feedback-usage-budget.md`, and
+   - his standing constraints: silence, nothing on C:, he exports on Premiere, no Fable agents (every sub-session runs on
+     **Sonnet 5.5 at xhigh**, from 15 Nov, `memory/feedback-use-fable-allowance.md`: a spawn_task chip takes no model, so
+     set it with `set_session_model` `claude-sonnet-5-5` + `set_session_effort` `xhigh` once the session exists), usage per `memory/feedback-usage-budget.md`, and
      Higgsfield only with his OK.
 5. **A separate "short version" take of a long-form is its own Short job** (C1448 for C1447). Tell the long-form
    session so it doesn't ask him about it.

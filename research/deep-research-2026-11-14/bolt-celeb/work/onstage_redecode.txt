@@ -1,0 +1,13 @@
+# faster-whisper large-v3 (CPU int8, beam 5, no VAD, word timestamps) re-decode of Il3qkw-A3lo.mp4 2.5-20.0 s
+# (projects/tony-gaga-remembered/raw/), run 14 Nov ~18:30 PKT by bolt-celeb; times are source seconds.
+# words.json (WhisperX) has NO words between 3.61 and 19.82 s, so these four segments are the only text for the stage beats.
+   2.50-   3.36 Hey, Tony              (speaker: Gaga by frame, mic at her mouth at 3.1 s)
+    Hey,@2.50 Tony@3.04
+   7.22-   8.20 Lady Gaga              (speaker: Tony by frame, medium shot 5.0-7.7 s; CBS prints "Woah, Lady Gaga!")
+    Lady@7.14 Gaga@7.62
+  13.20-  17.26 I like that. Do it again.   (speaker NOT established by frame: Tony is seen from behind in a wide; CBS prints "I like that!", not "Do it again")
+    I@13.20 like@14.16 that.@15.12 Do@15.82 it@16.78 again.@16.96
+  18.02-  18.98 That's
+    That's@18.02
+# Loudness (cold read, ebur128): "Lady Gaga!" 6.3-8.3 = -16.3 LUFS; 13.14-17.30 = -17.0; between them 8.4-13.0 = -19.0;
+# momentary stays above about -25.3 LUFS 0.5-18 s: a continuous bed (crowd or band) under the lines. Ear check needed.

@@ -83,7 +83,7 @@ expensive ones". He singled out two: the 600M count-up COUNTER was "absolutely t
 tearing anything". The rev-0 kit was reused from earlier jobs (ticks, clicks, paper, pen, counter, riser).
 Fix: a fresh Epidemic set for the job (`projects/skool-vsl-2026-11/sfx/`), then ONLY the swish family placed (`sfx/crisp/`, tails
 trimmed to crest + 0.2 s). One swish per graphic entrance or dissolve, crest-aligned to the motion. Count-ups, text swaps, presses,
-settles and cuts to the face are SILENT. Each cue is 14-19 dB under the voice by measurement. The builder's foley "press" drops and
+settles and cuts to the face are SILENT. Each cue sits 16.6-20.5 dB under the voice by measurement (an audit had read 3 dB loud: decode cue and voice the same way). SFX v2 (his yes, 2026-11-14): crisp scene takes = attack to crest <= ~0.14 s, chosen by envelope per pass; levels kept, since 8 of 27 cues already sit past his -20 dB phone-band line (his cue_check measure: Butterworth 300 Hz-6 kHz, voice within +-1 s of the crest). A darker swap for a bright take reads ~2 dB softer on a phone at a full-band match. The builder's foley "press" drops and
 its "Impact"/"Riser" takes were rejected against this file's blocklist.
 
 ## Index line archived from MEMORY.md (2026-11-02 compaction, verbatim)

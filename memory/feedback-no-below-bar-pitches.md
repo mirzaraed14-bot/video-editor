@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: add63d7d-24db-42f2-9307-dfe9e5325e88
-  modified: 2026-11-10T20:09:03.983Z
+  modified: 2026-11-14T15:19:21.248Z
 ---
 
 Affan 2026-11-11 (Scott IG outlier read), after Claude sequenced Scaramucci and then agreed it would not reach 500K: "then why do you even suggest me these brh".
@@ -18,4 +18,5 @@ Affan 2026-11-11 (Scott IG outlier read), after Claude sequenced Scaramucci and 
 - **Score B1 (the famous face) by one question: "would Affan, or a 20-something Shorts viewer, place this face?"** News fame from years ago doesn't count. Claude scored Scaramucci B1 = 1, and Affan had never heard of him.
 - **Say plainly when a method fails.** The Instagram outlier read failed as a YouTube pick source, and that failure was the finding.
 - Related: [[feedback-no-false-completion-line]], [[project-scott-clary-shorts-guarantee]], [[feedback-bombas-benchmark]].
+- **2026-11-14 ruling (Affan Afterhours, GTA 6):** after a full day of pre-launch long-form picks, each flagged "about 5% for 50K" and each still scripted, he read the last one (petting a dog, birdwatching, magazines, eating, dancing) and said: "I don't want to force a video just for the sake of it… I'm not seeing any potential here at all… these are just bland things… I'm just gonna pretend to be interested". **For this channel the bar is a fundamental base change in how you play, the kind people argue about** (car theft, weapon limit, money, police). Flavour details are not a video. Flagging a pick as below the bar and then building it anyway is the same failure: when nothing new and fundamental exists, the answer is "no video, wait for the next real fact", said once, and stop.
 - **2026-11-13 ruling:** the Amy Winehouse Grammy Bolt-format pitch (centre ~70K, 85 % narrator, non-MJ) reached a raw cut and he called it "the amy winehouse short is absolute garbage its not gonna get even 10k views". A centre near the floor against a 6-19K base rate is below the bar: say "no pick".

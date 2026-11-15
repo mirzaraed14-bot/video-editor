@@ -305,10 +305,52 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
   - **At a week or older,** ours have a median of 3.15K against Scott's 607 (about 5×); Squibb is below his median and Chris Do level with it.
   - **The guarantee window:** six of our last 12 are past a week and average about 1.6K. Bombas and War Dogs are out of the window.
 
+### 2026-11-14: Instagram does not predict YouTube, on 31 matched moments (`projects/_client-scott-clary/research/ig-scott-value/CROSS-PLATFORM.md`)
+- **Method:** of the 90 Shorts on Scott's tab (11-12 read), 41 match an Instagram Reel whose caption starts with the same title (the first 6 words). 31 are mature on both platforms.
+- **Result:** Spearman of YouTube views against IG performance (plays over the local median) is **0.03**. For our 12 alone it is 0.25; for Scott's other 19, −0.16.
+- **The anchor reverses:** the two Daymond John clips take Instagram's two best slots but sit at opposite ends on YouTube. FUBU is 12.6× on IG (412K plays) and 10K on YouTube; Bombas is 2.9× on IG and 674K on YouTube. This extends the 11-11 n = 2 observation.
+- **Our YouTube-format Shorts already go up on Scott's IG** with the YouTube title as the caption. Of the 14 that are IG-mature, 2 reached 2× there (FUBU, Bombas); the rest sit at 0.55-1.95×.
+- **So an IG hit is not evidence for a YouTube pick, and a YouTube hit is not evidence for an IG pick.** Each platform needs its own read.
+
+### 2026-11-14: the Instagram pick rule was tested, and NO RULE holds (`projects/_client-scott-clary/research/ig-scott-value/RESULT.md`)
+- **The test:** a lightly pre-registered test (`DEEP-PLAN.md` lists every change). 86 of Scott's 2026 SOLO + OWN Reels, 22 outliers at 2× the local median with matched controls, coded blind from caption + cover only (no spoken words).
+  - The rule fixed on Jan-Aug: **send trigger + relief + a known face**.
+  - Hold-out, Aug-Nov: **AUC 0.405. NO RULE.** Two of the three features changed sign; the known face kept its sign.
+  - The interval: 11 outliers with heavy ties give about 0.21-0.60 (normal approximation). So the result is "not above chance and far under the 0.65 bar", not "worse than chance".
+  - Variants: without the Reels opened with counts, 0.40; within matched sets, 0.36; at 3×, 0.53.
+- **A clip rule can't be tested here:** clip outliers follow WHO co-posted, and only 5 guests have enough repeat clips (about 20 are needed).
+- **Associations found on this same data** (leads, not causes):
+  - Guest co-posts reach 2× at 8.4 %, against SOLO 5.4 % and OWN 3.4 %; on likes, 10.1 / 3.1 / 5.6 %.
+  - In 2026, **Scott's own clips with the guest tagged reach 13.3 %**, against 4.4 % with only his podcast account and 3.7 % for his own talks (**0.8 % at 3×**).
+  - Money in the caption: ratio 3.0.
+  - Reposting one beat (Randolph, 3 Reels) gave 0.5-1.1×.
+  - The account's median fell from about 100K+ (2025) to about 40K (2026).
+- **Plays are not engagement here:** Spearman(likes, plays) = 0.11, and some big plays outliers barely engage (914K plays / 1.7K likes). Read plays outliers as reach. Ask Scott's team which posts were boosted.
+- **The beat list** (`RANKED-BEATS.md`) opens with "no validated rule". It offers only a guest TEST list, never picks.
+
+### 2026-11-14: the code-built minimal IG look was rejected (Affan's review of `hows-your-tuesday` check30)
+- **Lesson:** a look Claude invents from a written description fails. This one had Inter captions fading up, a cream Meie Script accent word and a square on black, with every number chosen by Claude. Affan: "horrendous ... this was a very bad job".
+- **Change made:** never INVENT a look for this strand. Claude finds REAL minimal Instagram styles, Affan picks one, and Claude builds a measured COPY of it (test stills against the reference first). He picked the DOAC Katt Williams Reel; the raw cuts-only XML stays available if he wants to edit it himself.
+- **File:** memory `feedback-scott-ig-minimal-format`; the board is `research/ig-scott-value/STYLE-REFERENCES.md`.
+
 ## Validated on this channel
 (none yet: the first results arrive 7 days after the first logged upload)
 
 ## Hypotheses (validated on OTHER channels; test here, never treat as fact)
+- **H-IG-1 (2026-11-14; association found on 2026 data; bar set before any new data):** Scott-owned clips with the guest tagged (T) vs Scott-owned clips whose only co-authors are his own accounts (O).
+  - **Outcome:** 2× against ONE common all-groups local median; likes reported beside plays.
+  - **2026 reference:** 14.2 % (17/120) vs 4.4 % (4/90).
+  - **When:** read once both arms have **≥ 60 mature Reels posted after 2026-11-14** (about 6 months). Format is labelled blind from captions (`research/ig-scott-value/coding/format-labels-*.tsv`).
+  - **Excluded:** posts chosen from `RANKED-BEATS.md`'s test list.
+  - **SUPPORTED:** T ≥ 2× O and one-sided Fisher p < 0.05. **FALSIFIED:** T < 1.25× O. Otherwise inconclusive.
+- **H-IG-2 (2026-11-14; found on 2026 data, so only fresh data counts):** the caption contains `$` + a digit, or million / billion / trillion. Audience counts are ignored: an audience word (followers / subscribers / views / downloads / listeners / members) within 25 characters after the hit.
+  - **2026 ratio of this exact rule:** 3.0 (107 captions).
+  - **When:** pooled over groups, read at **≥ 60 money captions**.
+  - **SUPPORTED:** ratio ≥ 1.5 and Fisher p < 0.05. **FALSIFIED:** ratio < 1.2. Otherwise inconclusive.
+- **H-IG-3 (2026-11-14; the minimal-look strand of Scott's own talks):** the strand's first **20 posts**, each read at **30 days**, against the 3.7 % base rate of his talks at 2×.
+  - **SUPPORTED:** ≥ 3 of 20 (about 3.7 % by chance). **NOT SUPPORTED:** ≤ 1. 2 is inconclusive.
+  - **Power:** it sees a big effect only. At a true 15 %, about 60 %; at a true 7.4 %, about 18 %.
+  - Single-post reads (7 days, "3× = hit") are descriptive. Log: `research/ig-scott-value/IG-RESULTS.md`.
 - H1 (AW): **no name in the first two seconds**: a name lets the viewer opt out. FUBU and Bombas open on a "DAYMOND JOHN" credit card
   at 0 s; the Serhant Shorts test the alternative (the credit card moved to ~3 s, after the hook line).
 - H2 (Onyx batch 3): a moment must end on a usable lesson or a reversed held belief (VIRAL-BAR gate A).

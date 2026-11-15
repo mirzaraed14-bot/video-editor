@@ -1,0 +1,57 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-15 01:33:51 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+✓ grint_y19: 142 segments, offset 0:00:00 (cuda)
+Traceback (most recent call last):
+  File "X:\Claude Projects\video-editor-client\video-editor\workflows\scout-transcribe.py", line 69, in <module>
+    main()
+  File "X:\Claude Projects\video-editor-client\video-editor\workflows\scout-transcribe.py", line 59, in main
+    res = model.transcribe(audio, batch_size=16, language="en")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\asr.py", line 267, in transcribe
+    for idx, out in enumerate(self.__call__(data(audio, vad_segments), batch_size=batch_size, num_workers=num_workers)):
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\transformers\pipelines\pt_utils.py", line 126, in __next__
+    item = next(self.iterator)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\transformers\pipelines\pt_utils.py", line 127, in __next__
+    processed = self.infer(item, **self.params)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\transformers\pipelines\base.py", line 1374, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\asr.py", line 170, in _forward
+    outputs = self.model.generate_segment_batched(model_inputs['inputs'], self.tokenizer, self.options)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\asr.py", line 62, in generate_segment_batched
+    result = self.model.generate(
+             ^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA failed with error out of memory

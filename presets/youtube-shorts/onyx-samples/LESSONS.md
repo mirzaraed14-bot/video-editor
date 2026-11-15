@@ -624,3 +624,8 @@ Full numbers: `projects/_onyx-batch9-2026-11/reactions/B7-EXPORT-FINDINGS.md`. F
 - On That Note: he cut the trailing clause "to be complete." (1.0 s) right before the scorecard. → end the sentence on its noun at the join into a graphic; no trailing restatement. → REACTIONS-V3.md CUT.
 - SPI shipped the pre-V3 cut (164.63 s vs V3 173.17 s, three restored lines and the matching mix missing). → before he exports, state the
   sequence name and length from RUN.md and compare to the file he sends. → REACTIONS-RUN.md hand-off step.
+
+## 2026-11-15 · his listen to the batch 8 + 9 song beds: lesson → change → file
+- **14 LU under was too quiet for his songs on these samples**: "increase by 3 db except lunchtable" → beds 11 LU under the voice per 3 s window (the YouTube kit adds +2 dB after the turn, ~10 LU there); Family Affair stayed at 14. Starting point for his next song beds: 11 LU under, then his ear. → `projects/_onyx-batch9-2026-11/samples_music.py --under`.
+- **He hears background noise on a client's voice from the audio preview alone**: Ready State (Kelly's vertical source) carried room hum 120-1000 Hz; DeepFilterNet (AW LESSONS 4 recipe, CPU) took it 10-12 dB down in the pauses with speech within 0.3 dB → `--voice audio/voice.dfn.wav`. Check a source's floor in the pauses before the first preview next time.
+- **Audio-only previews (.m4a, 256k) before Drive** worked: small enough for his phone, and his notes came back from them.

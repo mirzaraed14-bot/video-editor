@@ -52,16 +52,49 @@ waiting on his prediction and Studio numbers). Archiving the first would also ar
   - "Same stream, 23 clips" from CA-009, in `projects/iphone-duo-clip-angle/shorts/PICKS.md`;
   - "the 2-a-day routine" from CA-010 (5:00–5:35), the runner-up in `find-viral-angles/SEQUENCE.md`.
 - **Open channel question:** a Skool CTA in the Shorts, or clean like Scott's. They're built clean until he says (Shorts ENGINE).
-- **Research port (2026-11-10):** he is moving the AffanWiz research engine (sweeps, picks, scripts, packaging,
-  predictions) from Cowork to Claude Code, as GTA moved that morning. The ask to Cowork is `COWORK-HANDOFF-REQUEST.md`
-  (this folder). It writes `X:\Claude Projects\Personal Brand English - Skool Community\creator-shorts\HANDOFF.md`.
-  Waiting on that file.
-  - **His pick:** its own Claude Code session rooted in `creator-shorts\`, like GTA.
-  - `creator-shorts\CLAUDE.md` is already written, with the editing-side map and an empty "Corrections" section.
-  - **When HANDOFF.md lands, the dispatcher:**
-    1. reads it;
-    2. writes the corrections against this log into that CLAUDE.md;
-    3. starts the research session (`cwd` = that folder, fresh, Opus, since picks and scripts are judgment).
+- **Research engine (started 2026-11-15):** the AffanWiz research (sweeps, picks, scripts, packaging, predictions,
+  the growth plan) now runs in its own Claude Code session, `affanwiz-research`
+  (`local_df6fc465-1f51-44a4-b0ce-f12b9b01cd32`). It is rooted in
+  `X:\Claude Projects\Personal Brand English - Skool Community\creator-shorts\`, as he chose on 11-10 ("like GTA").
+  - **Its first job (his ask, 2026-11-15):** a head-to-toe channel analysis and a 30-day schedule of video ideas
+    (16 Nov to 15 Dec), on Fable. The goal is Skool members. He said "do this in a new session if it means better
+    results".
+    - Brief: `creator-shorts\GROWTH-PLAN-BRIEF-2026-11-15.md`. His words verbatim: `creator-shorts\FEEDBACK.md`.
+    - **Delivered 2026-11-15 12:28 PKT:** `creator-shorts\GROWTH-PLAN-2026-11.md` and the phone PDF
+      `AffanWiz-Growth-Plan-2026-11.pdf` (35 pages). The evidence is in `growth-plan-2026-11`, and the predictions are
+      locked in `creator-shorts\RESULTS.md`. Its first line is "NOT max effort yet": the source interviews for Shorts
+      S1 and S3 aren't matched to the clips or transcribed, and two facts rest on one source each.
+    - **Its headline finding:** the channel's only two breakouts are faceless clips of a famous creator explaining
+      his own growth: "Duke Dennis's $1M Viral Growth Blueprint" (224,690) and "How Ashton Hall Gets 100M Views On
+      Every Video" (45,958). Together they are 71 % of all views, and neither links anywhere.
+    - **The month, 13 slots:**
+      - 16 Nov: funnel day and two retitles, no upload.
+      - Long-forms: L1 the Claude method (21 Nov), L2 GTA 6 launch week in numbers (25 Nov, go or no-go on 22 Nov),
+        L3 the 10,000-hours lead magnet (2 Dec), L4 the 72-hour Whop clipping test (9 Dec, needs his yes).
+      - Shorts: S5 (20 Nov), S1 (24 Nov), S3 (27 Nov), and two weekly picks left open (1 and 8 Dec).
+      - By-product Shorts cut from the long-forms' takes: S7 from L2 (4 Dec), S8 from L4 (11 Dec), S6 from L1 (15 Dec).
+    - **For the dispatcher:** nothing is scripted. Scripts come from the research session on his word. Each recording
+      then comes here and gets its own session as usual. Tell each long-form's edit session which by-product Short its
+      take must also yield. A clip Short still needs its sequence through the max-effort gate and his OK before a build.
+    - **Scripted 2026-11-15 ~17:57 PKT, on his word:** CA-015 "How to Make Money From GTA 6 Content (Rockstar's Policy
+      Says You Can't)": `creator-shorts\CA-015-gta6-money-SCRIPT.md` + `-RESEARCH.md` + the reading PDF
+      `CA-015-GTA6-Money-script.pdf` (16 pages), prediction locked in `creator-shorts\RESULTS.md`. Page 1 says "NOT
+      max effort yet": sections 4 and 6 to 9 have no independent re-read after the fixes, and none of the cited
+      videos was watched. **When a GTA 6 money take lands, match it against this script.** The idea list for the
+      slots it freed is not started (the session stopped at the 93 % usage line).
+    - **Waiting on him** (12 asks in the plan's § 7; his answers go to that session). The ones that move dates:
+      whether advanced feature access is on for AffanWiz, whether paid clipping is inside his teach-only-faceless
+      rule, a yes or no on the 72-hour Whop test, and whether CA-013 is already recorded. Studio and Skool numbers
+      are still not on file.
+    - **The YouTube API question is settled (11-15):** he OK'd the Abundance Wisdom key for channel listings only
+      ("Yes, use it"). The session uses it through `research/deep-research-2026-11-14/yt_api.py` with the slug
+      `affanwiz`, whose search cap is 0, so the 100 searches a day stay with the Abundance Wisdom sessions.
+  - `creator-shorts\CLAUDE.md` was rewritten on 11-15 (the old one is `CLAUDE.md.bak-2026-11-15`). It now has a
+    ▶ STATUS block, the posted titles, the max-effort gate and the memory notes to read.
+  - **Cowork's `HANDOFF.md` still hasn't arrived** (the ask is `COWORK-HANDOFF-REQUEST.md`, this folder). The session
+    works without it. When it lands, the dispatcher reads it and writes the corrections against this log into that
+    CLAUDE.md.
+  - **Scripts for the month's ideas** come later, on his word. A recording still comes to this dispatcher.
 - **Cleanup 2026-11-10:**
   - The superseded 30 fps check renders of Shorts 1–3 (7 files, ~160 MB) went from Exports to the Recycle Bin. Each job's
     `outputs/` still has its own copy, and Exports now holds only finals, covers and Short 4's live check.

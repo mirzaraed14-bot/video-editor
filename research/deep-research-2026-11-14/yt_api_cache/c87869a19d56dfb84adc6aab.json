@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "Zd6dutrrmAALDg39Ff1kRunHMvU",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "m6CDe2a7AvkZh1Dd8xs77VzKNF0",
+      "id": "UC_yGU4qz9zAjEWLQxCg9NZQ",
+      "snippet": {
+        "title": "Céline Dion",
+        "description": "Welcome to Céline Dion’s official YouTube channel //\nBienvenue sur le compte YouTube officiel de Céline Dion.\n\n",
+        "customUrl": "@celinedion",
+        "publishedAt": "2007-03-14T20:21:18Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/pN_7uiDWSc6Qsm2sjGrPeJHgQKrP7JTh0KhwjEi9onXlcx7hvf91ahlI65yhP0IN2LssUuznnw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/pN_7uiDWSc6Qsm2sjGrPeJHgQKrP7JTh0KhwjEi9onXlcx7hvf91ahlI65yhP0IN2LssUuznnw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/pN_7uiDWSc6Qsm2sjGrPeJHgQKrP7JTh0KhwjEi9onXlcx7hvf91ahlI65yhP0IN2LssUuznnw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Céline Dion",
+          "description": "Welcome to Céline Dion’s official YouTube channel //\nBienvenue sur le compte YouTube officiel de Céline Dion.\n\n"
+        },
+        "country": "CA"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UU_yGU4qz9zAjEWLQxCg9NZQ"
+        }
+      },
+      "statistics": {
+        "viewCount": "7238988846",
+        "subscriberCount": "10400000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "227"
+      }
+    }
+  ]
+}

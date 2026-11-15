@@ -1,0 +1,731 @@
+{
+ "source": "X:\\Claude Projects\\video-editor-client\\video-editor\\research\\deep-research-2026-11-14\\hp-films\\src\\hsc\\radcliffe_v2_y19.wav",
+ "offset": 0.0,
+ "segments": [
+  {
+   "start": 7.83,
+   "end": 36.77,
+   "text": "Today on Happy, Sad, Confused, Daniel Radcliffe goes to heaven for his new comedy, Miracle Workers. Hey guys, I'm Josh Horowitz. Welcome to another edition of Happy, Sad, Confused. I'm back and alive from the Sundance Film Festival. Guys, if you follow me on social media, you probably know by now that I was obnoxiously tearing my way through Sundance, seeing a ton of movies, interviewing a ton of people, and just trying to survive. Although I will say the weather here in New York is way more brutal."
+  },
+  {
+   "start": 36.77,
+   "end": 64.22,
+   "text": "It wasn't Sundance. So there's that. Um, but yes, had a blast at Sundance, my 13th Sundance in a row. I'm back every year. I love it. Um, it was, it was, it was a trip. It was great. I saw, like I said, I probably between, I want to say it was like 17 or 18 different films. Um, some of my favorites included, uh, a film called the farewell starring Aqua Fina who had two films at the festival, um,"
+  },
+  {
+   "start": 64.22,
+   "end": 94.21,
+   "text": "uh, blinded by the light, which is this delightful Bruce Springsteen tinged, uh, story directed by, uh, the filmmaker behind Bennett, like Beckham. It is heartwarming and sweet and filled with Springsteen songs. Uh, it's great. Um, I saw a lot of, a lot of films you're going to be hearing about later in the year, late night from Mindy Kaling and starring Emma Thompson and Mindy is going to get a lot of attention. Big time adolescence with Pete Davidson is going to get a"
+  },
+  {
+   "start": 94.21,
+   "end": 118.98,
+   "text": "lot of quality things. A really interesting film called Loose that's pretty provocative, and it's going to inspire a lot of conversation later this year. It was a blast. And in terms of conversations, we talked to so many great people. We've been putting out a lot of those conversations on MTV's social media. On my social media, I've been putting it out there. And there's a ton more to come. We're basically, I think, flooding the zone with"
+  },
+  {
+   "start": 118.98,
+   "end": 133.63,
+   "text": "Extended interviews with all of the people I spoke to in the next week So look out for if you want to just follow the MTV news YouTube or MTV news is Twitter my Twitter you're gonna see it all there and it's conversations with"
+  },
+  {
+   "start": 134.64,
+   "end": 158.23,
+   "text": "Armie Hammer, Zossi Beetz, Lupita Nyong'o, Josh Gad, Awkwafina, Jeff Goldblum, Chris O'Dowd. I mean, the list goes on and on. It was an embarrassment of riches. So I hope you enjoyed and will enjoy my Sundance coverage, Live Vicariously Through Me, without all the exhaustion. And yeah, I hope you check it out and enjoy."
+  },
+  {
+   "start": 158.23,
+   "end": 186.38,
+   "text": "As for this week's podcast, Mr. Daniel Radcliffe came back. He was one of the earliest guests on the podcast. He's somebody I've had the pleasure with talking to, I mean, probably dozens of times. It's actually crazy to think about how many times I've done interviews with him here at film festivals, sketches for after hours. He's always game. He's always down. He's the nicest guy in the room, super talented, super industrious."
+  },
+  {
+   "start": 186.38,
+   "end": 213.72,
+   "text": "I've seen, I think, all of his theater. He's just the most gracious, great guy. I can't say enough about him. And I'm so thrilled to say that his new series, Miracle Workers, that he came on to talk about is a delight. It is from a writer by the name of Simon Rich. And it's this high concept story of guardian angels. Daniel plays one of them and Steve Buscemi playing God, who's this kind of like fed up,"
+  },
+  {
+   "start": 214.55,
+   "end": 238.63,
+   "text": "Deity that's just sort of like done with the earth And it's it's high concept and weird, but it's totally it's it's hilarious my sense of humor dance sense of humor If you like my stuff if you enjoy the comedy that I've done, I think you're gonna enjoy miracle workers It starts on February 12th on TBS highly recommended and this conversation was fantastic as it always with is with Dan and"
+  },
+  {
+   "start": 238.63,
+   "end": 267.1,
+   "text": "He's unguarded. He's honest. He's open. Yes, we talk, of course, Potter stuff and Fantastic Beasts and Cursed Child, but he's so much more than that. We talk about sort of where he came upon the manners that he shows and the way he carries himself on and off set, the choices he's made, the future projects he's looking to do, his newfound love of Star Wars, his feelings about comic book movies. There's a lot here."
+  },
+  {
+   "start": 267.1,
+   "end": 285.45,
+   "text": "I think you'll enjoy this one as much as I did. I hope so at least. As always, remember to rate, review, and subscribe to Happy, Sad, Confused on iTunes or however you get your podcasts. Spread the good word. And I'll just leave it at that and hope you enjoy this conversation with Mr. Daniel Radcliffe."
+  },
+  {
+   "start": 291.85,
+   "end": 318.41,
+   "text": "Always pleased to catch up with my buddy, Mr. Daniel Radcliffe. It's good to see you, man, as always. Thank you for having me, as always. I missed you in Sundance. Did you have a good time? I did. It was nice. It was the first time I'd been to Sundance without the pressure of having to sell a film, which was really, really nice. Not that that pressure, like, falls on me normally, but, you know, it's the first time I've gone into one of those weekends with, like, not having to expect anything to come out of it, which is nice. So we just sort of went down there and..."
+  },
+  {
+   "start": 318.41,
+   "end": 340.74,
+   "text": "screened the show for a bunch of people eating eggs. It was like a brunch screening. It was a good idea, actually. It meant it was just a lot more chilled. Everyone was just kind of having breakfast and watching the show. And then I hadn't actually seen the show at that point. And I didn't want to. And I certainly didn't want to see it for the first time in a room full of other people who were watching it."
+  },
+  {
+   "start": 340.74,
+   "end": 358.08,
+   "text": "And so I kind of like I did the intro and I went upstairs and I was starting reading my book. And then I it was also on the TV upstairs and I gradually sort of sort of gave up on my book and was like, oh, no, OK, I'll watch it a bit. Let's see what this is. And I was actually yeah, it was I was I was really pleased with it. It's great."
+  },
+  {
+   "start": 358.08,
+   "end": 378.59,
+   "text": "It's funny you say that. So we'll get into it in a little bit. It's Miracle Workers. But I will say this. I was at Sundance. And as you know, everybody there is so crazed. And we were doing the wall-to-wall interviews. And I was seeing tons of films. And I knew I was going to talk to you when I got back. And I'd have time. But I was like, one night, I got back to the condo. And I was like, I'm going to check it out. I totally got sucked in. I literally watched the first six episodes in a row. Oh, great. The busiest."
+  },
+  {
+   "start": 378.59,
+   "end": 399.41,
+   "text": "time frame for this so that should speak volumes no really it's a really i mean i i was on i was unsure you know i whenever i watch something for the first time i'm always kind of like oh god is this okay is it good um and i watched it and i really liked it but then i immediately like didn't trust my reaction i was like well maybe you know what and then i watched with erin my girlfriend and she was like"
+  },
+  {
+   "start": 399.41,
+   "end": 429.4,
+   "text": "crying laughing in some of the second or third episode so i was like okay no i think we've we've done all right yeah no you're speaking my language with this one and i got a chance to meet uh geraldine out there which is awesome she seems to have a good head on her shoulders she is like one of those people that when you know obviously around the time we were filming you could tell like everything is going very well for her and it was about like she was about to kind of break out and uh it's just one of those things where you couldn't wish it on a more deserving person like she's so"
+  },
+  {
+   "start": 429.4,
+   "end": 445.31,
+   "text": "She's so good, first of all. She's so funny. She's so good. She's so lovely as a person and to work with on set. She's also, which is a quality I really appreciate, she's, like, tough as nails. Like, she, you know, she..."
+  },
+  {
+   "start": 445.31,
+   "end": 460.11,
+   "text": "very badly hurt her ankle and was doing the last week of filming on our job on crutches and just like never you know complained and like you know she's she's great meanwhile you walked in here you're just moaning about everything i've been up since you know six"
+  },
+  {
+   "start": 460.33,
+   "end": 480.23,
+   "text": "This is, I can't. Barbaric, not you at all. No, it's barbaric. I should say, I feel like there should be a disclaimer on this podcast where the only person that talks faster than me, perhaps, is you. So if you want to slow down your podcast speed by like 40%. Yeah, you can do the one half speed or whatever it is that I sometimes put on accidentally and go, why is Chris Hayes talking so slowly?"
+  },
+  {
+   "start": 480.23,
+   "end": 510.21,
+   "text": "um but uh yeah no it's uh it's i i have been told that i uh speak like i'm at a cattle auction um before so that's so apologies to your listeners no no they're used to it as i said have you ever seen the um the jeff goldblum old mac commercial slowed down no it's one of those like great like that happens all the time but this was like one of those early like viral videos where someone discovered if you like half speed old jeff goldblum apple commercials it's just the most entertaining thing on the planet how we recommend it okay great i will i don't know what i'm doing with my evening"
+  },
+  {
+   "start": 510.21,
+   "end": 532.57,
+   "text": "Three hours are sucked out. Have you seen the Will Ferrell beer adverts? Oh, I don't know. Oh, the local ones he did, right? Yes, yes, yes. Somebody made me aware of them the other day. I was like, that is the best idea and why more companies don't just like let people just go to town with their product. I mean, it's just the first one where he's just like lying on a farm. He's like,"
+  },
+  {
+   "start": 532.57,
+   "end": 547.57,
+   "text": "I have no idea how I got here. It's just a start. Oh, it's so good. I admire him for so many reasons, but he's somebody who just revels in these, it's like this almost avant-garde experimental comedy, even where he's at today. Totally. He did that one."
+  },
+  {
+   "start": 547.57,
+   "end": 569.97,
+   "text": "lifetime movie a couple years ago which everyone like thought was going to be a joke but actually was like you really wanted just to do a big lifetime movie like yeah why not but I do feel like he's at one he's like at the stage in his career which like a few people get to which is awesome where you can just do what it like Ian McKellen in England just went on Coronation Street like he did an arc in Coronation Street which is like one of our soaps like"
+  },
+  {
+   "start": 569.97,
+   "end": 599.55,
+   "text": "Why not, right? You know, why not? And then he'd play, I think he did, he's done like a dame, been a dame in a pantomime at the Old Vic for like a few years. Like, yeah, it's just, I love stuff like that. And yeah, and Will Ferrell and Adam Kay. Yeah, I just like, please do more ads. The world would be a lot more fun. Have you seen Vice yet? Yes. I loved it. Me too. I know it's divisive. Why is it divisive? Can you explain? I haven't really bothered reading any of the reviews or any of the articles about it. It was on my top ten and Adam came in. I loved it."
+  },
+  {
+   "start": 599.55,
+   "end": 622.55,
+   "text": "Was it because it was like sympathizing Cheney? Was that their thing? Because I didn't find that was the case. I don't think that's the case. I think it was more, I think people thought it was too on the nose, actually, that it was not nuanced enough. I'm doing devil's advocate because I'm in the bag for it. And I think also the form, I think people mistook, you know, like, look, McKay in Big Short and this, he's like, he's fucking with the form."
+  },
+  {
+   "start": 622.55,
+   "end": 647.2,
+   "text": "he's totally like not going the straight biopic route which i love but i think to some people feels messy and like he doesn't know what he's doing no i was just like no this is like no i think you can only make those kind of jokes if you know exactly what you're doing like you know the credits rolling halfway through the film i lost my mind it was like that's my favorite moment in films i didn't stop laughing for the entire and it goes on and on"
+  },
+  {
+   "start": 647.2,
+   "end": 667.35,
+   "text": "What's great about it is the commitment to it. It's not just like 20 seconds. It's like goes on for a full minute. No, it's like you get a full cast list. Like, it's so good. I was just, yeah, I was blown away. And also, I read Jane Mayer's book, The Dark Side, kind of not long ago. And it's a..."
+  },
+  {
+   "start": 667.35,
+   "end": 684.84,
+   "text": "That book was, like, the film kind of an amazing companion piece to that book. Right. And just, you know, and seeing how, you know, they did stuff like the, you know, the Alfa Molina scene where you suddenly breeze through all the, you know, one brilliant, concise scene where you get a real sense of, like, all the shit these guys were doing. Yeah."
+  },
+  {
+   "start": 684.84,
+   "end": 714.82,
+   "text": "I mean, but in a really fun, crazy way. Like, no, I think that's probably my favorite film of this year. Have you been going through the screeners? Have you been caught up on some stuff? I've done a few. I've not done as many as I should have. I've done a lot. As always, I always do better on documentaries than I do on any of the features. Yeah. What did you like on the doc side? I mean, this year, I love Three Identical Strangers. Me too. I'm so bummed I didn't get a nomination. I was more bummed that Mr. Rogers didn't. That seemed bizarre."
+  },
+  {
+   "start": 714.82,
+   "end": 733.62,
+   "text": "Because I, to me, like, Three Identical Strangers is an amazing story. Like, it's really well made as well. Right. But if it hadn't been well made, I still probably would have really been into it. Right. Because the story is just insane. Right. Mr. Rogers, as somebody growing up in England, I have no relation to him. Right. Like, the film started and I was like, this is going to go really dark. Dark."
+  },
+  {
+   "start": 733.62,
+   "end": 752.39,
+   "text": "Because all the British TV comedians of that era. Who's the guy that turned into a horrible pedophile? Jimmy Savile. All those older guys that had their thing in kids' TV. In England, that would be a dark movie. And then I just watched it, and it made me care about this person I have no concept of, really. And it was just like, what an amazing human being."
+  },
+  {
+   "start": 752.39,
+   "end": 779.03,
+   "text": "Now Tom Hanks is playing him because he's the only human being that I think probably could because he's as beloved as Mr. Rogers. But, yeah, no, so it's been \u2013 I do feel like it's been a really cool \u2013 and I'm glad that Black Panther is being recognized in a proper way. It's very good as well. Did you watch \u2013 on the doc side, have you watched either of the fire docs? Yeah, absolutely. I am fascinated by that. I mean, it is such a testament to how, like \u2013"
+  },
+  {
+   "start": 779.47,
+   "end": 800.12,
+   "text": "you know, being a white dude who's a fairly good talker will get you so far, but not all the way. Like, will get you to the point where you can really fuck up publicly. But, like, that's the thing. Although I'm thinking about our American political system and I'm not sure where that reckoning happens. But in the same way, like, he's got in there."
+  },
+  {
+   "start": 800.12,
+   "end": 827.7,
+   "text": "and now it's a shit show like it's the same like he can't actually do it right yeah absolutely but i think that was the thing for me of a watch i mean and and there was so many moments that i was just like it's also like it is it is it is hard to there's a couple of those people where you know when one girl's on the plane like complaining that's not first class i'm like yeah i don't feel sorry for you i'm sorry i'm kind of glad like a kind of shitty thing's about to happen there's something darwinian about it also i was watching going like they are lucky no one died"
+  },
+  {
+   "start": 827.7,
+   "end": 854.82,
+   "text": "Absolutely. That no one had a medical emergency, that no one got drunk and fell in the water. Like, they are spectacularly lucky that no one died. That is a default. The driver, when they're all getting into the city, and the driver of the bus is just, like, clearly reveling in the fact that he's telling all these, like, young hipsters that he's just like, you guys are fucked. And they're all laughing, like, yeah, right. They pull over to see the FEMA tents, and you go, yeah, oh, God. You're amazing. Oh, no. Yeah."
+  },
+  {
+   "start": 855.15,
+   "end": 872.03,
+   "text": "Yeah, so I enjoyed those documentaries as well. By the time I was through the second doc, I was like, I did both. So I did Hulu first. I was fully only intending on doing one of them. And I even asked on Twitter, which one should I see? And I had heard Hulu was better. And indeed, I liked Hulu more."
+  },
+  {
+   "start": 872.03,
+   "end": 895.38,
+   "text": "But after like one of them and after both of them, I was like, I could watch this making a murderer style. I could watch 10 hours of this. Yeah, I could be in there for all the, I want to see every meeting that Billy was in because you just go, how did you get this money? What a character. How did people keep giving you money? It's going to be a, I mean, and it's also going to be a great, like I'm sure someone's making a narrative fiction about who I am. The guessing game on who's going to play Billy at this point."
+  },
+  {
+   "start": 895.38,
+   "end": 924.75,
+   "text": "I mean, that's the thing. Seth MacFarlane's too old, but he has a colored look, doesn't he? Totally. But not, he is too old. So as we tape this, and we're going to push this out immediately, the biggest football event of the year is this weekend. You made some news on your, and I'm totally with you on the Tom Brady thing. I dislike him only because he doesn't also eat tomatoes. I don't understand a person that just decides arbitrarily not to eat tomatoes. What, like a blanket? Does he have tomato sauce? Does he have ketchup? No, it's like part of his weird diet. Him and Giselle just look special. Oh, he's like him and that guy."
+  },
+  {
+   "start": 924.75,
+   "end": 939.88,
+   "text": "I mean, this is the thing. As soon as I made that comment, for those who don't know, I made some comment about Tom Brady having a MAGA hat in his locker. And as soon as I made it, I was like, you fucking idiot. Do you know when you're in an interview and you've said something and it's like, oh, fuck. I'm just like, oh, that's going to get picked up."
+  },
+  {
+   "start": 939.88,
+   "end": 958.04,
+   "text": "And it was that thing of like, and it was like the, you know, Sundance. We'd done a bunch of interviews that day and I was like hopped up on coffee and just getting flippant through my third one. I was like, yeah, get that Madoka hat away. And I was like, oh, what have you done? Not because I, in any way, because the thing, I should have just made the point more nuanced. I used to be literally obsessed with Tom Brady."
+  },
+  {
+   "start": 958.04,
+   "end": 979.54,
+   "text": "Like, the Brady Six, for anyone who hasn't watched it, is an amazing sports documentary about how rough it is being an athlete and, frankly, how amazing Tom Brady's story is. And so, you know, I watched him in doubt. I met him once and was able to tell him, like, I just, like, find your story so inspirational. And all of that's true, which is why I was very disappointed when, like, you know, he picked Teen Death Star as..."
+  },
+  {
+   "start": 979.54,
+   "end": 998.83,
+   "text": "And so, you know, it's... Yeah, it was one of the... But aside from that, it's more that the Patriots are just... The Patriots now are Manchester United in the 1990s. They're just too good and have been for too long. And for this year to have been like..."
+  },
+  {
+   "start": 998.83,
+   "end": 1024.6,
+   "text": "so many cool teams and so many exciting like young teams for it just all to end in another fucking patriots victory is just very anticlimactic i'm sorry boston sports fans you've had plenty of championships i don't feel sorry for you it's the same i'm used to hearing that because like i grew up a and still i'm a huge yankees fan and i would always say like i of course grew up in the one era when the yankees didn't win like they went 15 years without like winning a world series like the only hole in their thing was like my childhood so i'm like i'm not"
+  },
+  {
+   "start": 1024.6,
+   "end": 1043.51,
+   "text": "I'm not the homeowner. You're not fair weather. I'm not fair weather. I actually went through the dark times too. But yeah, so I'm curious. So like right now, what's going to occupy your brain with fantasy football over the 15% of your brain that's been obsessed with fantasy football? What do you fill it with? What do I fill it with now that football season's over? Yeah, yeah, yeah. I mean, I read again. I start reading more."
+  },
+  {
+   "start": 1043.51,
+   "end": 1063.85,
+   "text": "You need to relearn that skill. Yeah. You know, I read. I'll, you know, I'll start talking to my girlfriend again and friends. For good or for bad. Yeah. She's like, oh, God, I bet you I'm back. Oh, shit, fantasy. Dan's going to come and talk to me again. But no, so I've always, yeah, I mean, fantasy this year was a disaster. I was very, very bad."
+  },
+  {
+   "start": 1063.85,
+   "end": 1093.18,
+   "text": "But it was so bad that it became funny in one league. Like, I ended up 1-10 in one, however many games. I won one game. And my girlfriend almost won that league. So we had, like, completely symmetrical seasons in that she ended up with one loss and I ended up with one win. And then the other league that I'm in, I had, like, the second highest points total in the league but ended up finishing eighth because I played the person, like, the highest score in the week, I think something like six weeks out of the 13 or whatever it was. It wasn't adjusted."
+  },
+  {
+   "start": 1093.18,
+   "end": 1118.59,
+   "text": "Is it a keeper league, or do you start from scratch? It is a keeper league. You can't keep your first-round pick, but you can keep anyone else. And you can't keep last year's keeper. That's the rule. Do you have other actor friends? Is, like, Dane in your league? Dane is no longer in the league. Dane has a young child now, and so I think was, like... It was the kid or football? Yeah, I think so, a little bit. Who else have we got in there? There are some..."
+  },
+  {
+   "start": 1118.59,
+   "end": 1146.62,
+   "text": "I thought, do I have any other actors? I stumbled onto this amazing all-star league of, like, apparently every big Marvel actor are in the same league together. And I found out that Chris Evans has won, like, the last two years. And it's, like, Evans and Pratt and Anthony Mackie and Sheetal. I know that, because Bobby Cannavale and I just did a play together. He's in a league with, like, Jon Hamm and Paul Rudd. And they have, like, a big fantasy draft every year. I was like, yeah, they're a real cool guy. Yeah."
+  },
+  {
+   "start": 1146.62,
+   "end": 1157.72,
+   "text": "Cool comedy drama guy. Yeah, absolutely. Okay, so going back, since we have some time, let's talk a little bit about... I'm curious... Okay, so like..."
+  },
+  {
+   "start": 1158.77,
+   "end": 1178.97,
+   "text": "I'm always struck by, and we've known each other for a while, from the start, you've been the most gracious person to me and everybody on a shoot. You come in, you introduce yourself to everybody, and it's organic. It doesn't feel forced at all. I'm curious where that came from. Was that something you saw from the adult actors on the Potter set? No."
+  },
+  {
+   "start": 1178.97,
+   "end": 1200.96,
+   "text": "I mean, I remember hearing a story on the first film from an AD called Michael Stevenson, who's kind of a legend in the British film industry. Literally, you could have 300 extras walk into the Great Hall. He will know every name on the way out that day. He had worked on a film that my mum had cast five, six years before I got cast in Potter."
+  },
+  {
+   "start": 1200.96,
+   "end": 1230.94,
+   "text": "she had visited set for one day and when we came in for my audition he remembered her and remembered her name like he's just an amazing guy yeah um but he told me a story about michael cain very early on that was he was like you know when michael comes onto set by the end of that first day he'll know everyone's name when he introduces himself and i always thought like you know that's that sounds like a good way to be um and i think it's also honestly like if i'm being kind of you know to be frank like it comes partially from a a knowledge that"
+  },
+  {
+   "start": 1230.94,
+   "end": 1250.23,
+   "text": "like the reputation that child stars have or the assumption that people make about child stars is that we're gonna be dicks. So that like every time, like a lot of my energy is just like goes into communicating with every second that I meet a person that I am not a dick. Or that I'm not what they expect me to be."
+  },
+  {
+   "start": 1250.23,
+   "end": 1275.07,
+   "text": "And also the knowledge that the smallest dick move, the smallest moment will be a story that can grow and become a reputation. Yeah. And it does come from a very genuine place. Like, I don't know how actors who are horrible do their job or have fun or why they do it. Like, walking onto a film set of people you know hate you must really suck. Right."
+  },
+  {
+   "start": 1275.07,
+   "end": 1299.56,
+   "text": "Like, I don't know why anyone chooses to sort of live like that. So, yeah, and I just, I think that as an actor, particularly when you're young and you get a sense of actually, like, how profoundly your mood and your behaviour can affect the day and affect everyone's day, it always just seemed like a really important thing to, yeah, to try and..."
+  },
+  {
+   "start": 1299.56,
+   "end": 1329.28,
+   "text": "And, you know, as an actor, as a lead actor on set, you can be a part of making of helping everyone to have a nice time and it to be a good place to work. And that's, you know, that's really important. Yeah, that is a fascinating thing that I hadn't even thought of, like, because I talked to a lot of people over the years about sort of that nature of setting the tone. You're number one on the call sheet and setting the tone. But when you're 10, 11, 12, what you were and you were number one on the call sheet, that's that's a lot to put on a young person. Be like, OK, I'm going to set the tone and I'm like going through puberty and being like a girl."
+  },
+  {
+   "start": 1329.28,
+   "end": 1350.57,
+   "text": "the shit like yeah I mean I didn't I never felt like at the time like oh you're like it was never put to me in those terms so I didn't like feel that pressure I think well that was one of the things that Chris Columbus was amazing at on those first two films was was getting us all enthused and excited to be there every day and but also focused and you know concentrating on the work and yeah and I think it was a"
+  },
+  {
+   "start": 1350.57,
+   "end": 1370.72,
+   "text": "Honestly, I think it was probably a conversation my parents had with me fairly early on. It was just like, you know, you do set the tone. And, you know, it's okay if you're having a bad day. You can have a bad day. But, you know, don't let that spill over onto other people and onto their work. So, yeah, I think it's actually a real privilege if you get to..."
+  },
+  {
+   "start": 1370.72,
+   "end": 1390.06,
+   "text": "set the tone on a set because you get to make the kind of set you want to work on. And I want to work on a set where everyone's having fun, but we're also getting stuff done and are focused. And when I'm in that position to do that, it's a real, yeah, it's a pleasure. So did you ever go through an obnoxious phase? Like, was there... Not on set."
+  },
+  {
+   "start": 1390.06,
+   "end": 1406.73,
+   "text": "Like, not in, not as an actor. I don't think so. I mean, look, there may very well be people that disagree with me on that, but I think generally speaking, I was not, like, I'm sure I was an irritating and stupid teenage boy at some point, but more to do with just being a teenage boy than to do with being an actor."
+  },
+  {
+   "start": 1407.05,
+   "end": 1434.27,
+   "text": "I'm curious, like, was ignorance kind of bliss when you were a kid working with those, like, great esteemed actors with those long resumes? Like, you probably didn't know who Richard Harris was or anything. I knew everyone else was reacting like I really should, but I didn't know myself. I went up to, I always maintained the reason Maggie Smith enjoys me was that when I first met her when I was nine, I'd heard she was a dame. No idea who she was. So I just walked up to her and the first thing I said was, do you want me to call you dame? And she was like, no! Um,"
+  },
+  {
+   "start": 1434.27,
+   "end": 1457.02,
+   "text": "absolutely not and I think that sort of indeed and I think yeah you're right ignorance was bliss because I was just going up to the first person I remember being like oh whoa was Gary Oldman was that because that was like I was old enough to have watched some of his films and like I knew he was and that was one of the first times I was really like you know freaked out to meet somebody but yeah Maggie Smith Richard Harris"
+  },
+  {
+   "start": 1457.02,
+   "end": 1472.02,
+   "text": "you know, all those amazing, like Bob Hoskins on David Copperfield, all these amazing actors. I was like, yeah, fine. Who are you? Was Rick a bit intimidating? Because, like, I did one of the, I had the privilege of doing one of the last conversations with him. And he was, you know, I've talked to everybody. And, like, he was. Yeah."
+  },
+  {
+   "start": 1472.02,
+   "end": 1490.82,
+   "text": "He was an intimidating guy. Oh, yeah. So smart, so... So smart. And also, like, Alan had that voice. And so there's a lot of times people thought, like... And he had that voice and a very dry sense of humor. Yes. So sometimes people would think, like, oh, he hates me. But, like, actually, like, he really didn't. Like, Alan... I remember I... Alan..."
+  },
+  {
+   "start": 1490.82,
+   "end": 1514.97,
+   "text": "took me and Richard Griffiths out for dinner once after Equus, and it was the first time that I'd sort of been with him as an adult, like, not on the Potter set. And just, like, seeing this man who has been, you know, quite intimidating for a lot of my life, suddenly become... be vulnerable and funny and self-deprecating and all these things. And, I mean, he..."
+  },
+  {
+   "start": 1514.97,
+   "end": 1531.71,
+   "text": "I cannot emphasise enough how... I went to his memorial service in London and the amazing theme that developed there was just what a supporter of younger actors he was. There were so many young actors there who..."
+  },
+  {
+   "start": 1531.71,
+   "end": 1546.71,
+   "text": "you know, he had taken time out to go and see their shows. I mean, he saw every piece of theater I ever did. He cut short his holiday in Canada to come and see me in Equus and then took me out for dinner afterwards and gave me like, not notes, but like-"
+  },
+  {
+   "start": 1546.71,
+   "end": 1569.66,
+   "text": "know talked to me about the show and was helping it was we're a fair way into the run at that point i was struggling some things and he was very helpful um and you know he didn't need to do that and he didn't i don't frankly know how he had the time to be as supportive of so many young actors as he did and direct and write and be an amazing actor um but yeah he was definitely intimidated for the first sort of two particularly the first sort of three films"
+  },
+  {
+   "start": 1569.66,
+   "end": 1587.21,
+   "text": "And I think that was also the time when, to be fair to all the older actors, they didn't know if we were gonna be around for the whole series. They didn't even know if we're, you know. And I think it was on the third film where me and Alan had some proper one-on-one scenes together for the first time that he really started treating me differently and looked a bit more like a grownup."
+  },
+  {
+   "start": 1587.21,
+   "end": 1610.29,
+   "text": "Well, I can say from personal experience, he always spoke exceedingly prideful and happy with you guys. And I remember that conversation, he, you know, and it probably wasn't his cup of tea, but he, I don't know if you remember, for that sketch we did, you, me, and Dane, there was a little cameo that Alan taped that we put into the sketch that I'm sure he wouldn't have done for many people, but he did for you. Thank you, Alan."
+  },
+  {
+   "start": 1611.15,
+   "end": 1631.15,
+   "text": "Let's talk a little bit about Miracle Workers, because we've talked before about the post-Potter career and how you've charted this amazing path that's been very unique to you and reflected your aesthetic and sense of humor. And this one feels, like I said, it's right up my alley. It's clearly right up your alley. Yeah."
+  },
+  {
+   "start": 1631.15,
+   "end": 1646.53,
+   "text": "Talk to me a little bit about, it's the writer, it's where it starts, is the writer on this one, right? Absolutely. So this is, Miracle Workers is based on a book called What in God's Name, which you should all read. It's fantastic and funny and very, very short. And"
+  },
+  {
+   "start": 1646.53,
+   "end": 1667.79,
+   "text": "I read this book, Erin, my girlfriend, turned me on to this book, and I read it, and I was like, this is amazing, and I was able to get a meeting with Simon, and I just said to him, look, if you ever do anything with this, I really don't care in what capacity that I could work on this, but I just want to be involved. And, you know, he could have turned around and said, yeah, we're doing it on the radio, and I would have been like, yeah, great, I am in."
+  },
+  {
+   "start": 1667.79,
+   "end": 1688.96,
+   "text": "And yeah, so I had that conversation with him, and then about a year later, he phoned me up talking about how he would like to do it as a TV series, and how he would, if we are lucky enough to get a second series, it would be an anthology series. Now, the thing that was amazing about that for me was that"
+  },
+  {
+   "start": 1688.96,
+   "end": 1705.4,
+   "text": "I have wanted to do American TV for some time, but standard contracts are seven years. And so there was no way I was going to sign on to something for that long again and get locked into something for that long again. And so when this came along and not only was"
+  },
+  {
+   "start": 1705.4,
+   "end": 1730.6,
+   "text": "the writing amazing, and this series itself amazing, but TBS had given Simon, you know, carte blanche to then change the story next year, have a new setting, new story, new characters, complete, like American Horror Story, but kind of for comedy. And that, you know, so basically I wound up in a situation where I just get to do a new Simon Rich project every year, which to me is, you know, Simon's one of the,"
+  },
+  {
+   "start": 1730.6,
+   "end": 1758.61,
+   "text": "the most talented writers I've ever worked with. I think probably one of the most talented around. And he, yeah, I mean, he's, he manages, in this series and in lots of his work, he just creates this amazing tone that is both incredibly dark and sort of, you know, has a real edge to it in terms of the comedy. You know, there is a hell of a body count in this series."
+  },
+  {
+   "start": 1758.61,
+   "end": 1781.53,
+   "text": "It basically starts with the premise that the Earth is not worth keeping around. Right. So God decides to blow up the Earth in the first episode, very early on in the first episode. The rest of the series is us either trying to convince him not to or trying to, in fact, just save the Earth. So as a consequence of that, you know, we're in heaven. So we're dealing with the running of the Earth. So when something goes wrong, people die. Like, massively."
+  },
+  {
+   "start": 1781.53,
+   "end": 1807.01,
+   "text": "A huge, large amount of them sometimes. And so that was... So he manages to have this world where that exists and can happen, but also it just be so incredibly sweet and heartfelt and earnest and full of, like, a real kindness and a real love for human beings in all our chaotic, messy forms. And, yeah, I just think there was such a unique..."
+  },
+  {
+   "start": 1807.01,
+   "end": 1826.31,
+   "text": "tone and style, and it's something that I, because I love comedy, but I don't particularly like mean comedy. And so yeah, that was just something that I was like, yeah, I don't know when I'm gonna get a chance to work on something like this again. And so I dived in, and then yeah, probably about a year after that conversation, we started filming."
+  },
+  {
+   "start": 1826.31,
+   "end": 1844.01,
+   "text": "And just to say a little bit more of the premise, you basically, you and Geraldine are guardian angels, as it were. You specialize in these kind of mundane tasks. You're not into the big stuff. I work in the Department of Answered Prayers, which is a lot less of an important or glamorous department than we would like to think it is."
+  },
+  {
+   "start": 1844.01,
+   "end": 1869.24,
+   "text": "And Craig is somebody who is so terrified of failure that he has scaled back his ambitions to only achieve, to only consist of the things he knows he can achieve, such as finding somebody's lost keys or finding somebody's lost gloves. Really finding small lost things is sort of the bulk of my activity. And then Geraldine's character, Eliza, comes in and has, you know, real actual ambition and wants to change the world. And I'm kind of there going, whoa."
+  },
+  {
+   "start": 1869.24,
+   "end": 1886.74,
+   "text": "Slow down. You're going to mess things up. We can't be getting crazy with how many people we're helping. And so her journey is one of getting me to, you know, grow a pair, basically. And my journey is one of sort of reining her in slightly from her more reckless tendencies."
+  },
+  {
+   "start": 1886.74,
+   "end": 1904.71,
+   "text": "I was kind of thinking back that I was hearing your actual voice in this one. I feel like generally speaking, maybe I'm wrong, I would have to go through the resume, but like post-Potter, I feel like most of your work, you're doing a lot of American accents. Yeah, that has been. I suppose you just see me on stage as well, which I was doing American accent and that. Yeah, no, I do."
+  },
+  {
+   "start": 1904.71,
+   "end": 1920.04,
+   "text": "seem to work in accents all the time. I'm learning a new one at the moment, learning South African, which is fun. And yeah, I did Israeli for a film. If I never had to do that again, that'd be great. I just felt like I was, should I say this? Yeah, it's fine."
+  },
+  {
+   "start": 1920.04,
+   "end": 1935.04,
+   "text": "Because I don't want to put it into people's heads in case they see it. Because I stay in the accent all day. When I'm on set, I'm in the accent all the time. And American, it's very easy to do. It doesn't feel like a big thing. When I was doing Israeli, I felt like I was doing a bad Borat thing the whole day."
+  },
+  {
+   "start": 1935.04,
+   "end": 1950.55,
+   "text": "And it wasn't, and I've had many Israelis be very complimentary about my accent, which I'm very grateful for, but it's so far from how I talk that it could never sound natural to me. And that must be hell for an actor, because you're so self-conscious. Yeah, exactly. And the whole thing is like..."
+  },
+  {
+   "start": 1950.55,
+   "end": 1969.29,
+   "text": "As you say, self-consciousness is the enemy of acting, so as much as you can stop yourself from thinking about yourself, the better. So eventually I was able to just go like, I'm going to sound like what I'm going to sound like. I'm playing an Israeli. I've got to have a shot at it. And so, yeah, there's... But, yeah, it's kind of... And actually, like, this..."
+  },
+  {
+   "start": 1969.29,
+   "end": 1985.14,
+   "text": "This character in this show, he's not like, I am not, thankfully, as pathetically scared of everything as Craig is. But I, you know, there's a nervous energy in there, which is very much emanating from my own self. So it was, this character is probably more..."
+  },
+  {
+   "start": 1985.44,
+   "end": 2010.67,
+   "text": "me in a lot of the way he speaks and the way he is than other characters have been. We haven't even mentioned also the third part, or there's a great ensemble, but Steve Buscemi. I thought you said Buscemi. Both are fine. I asked him, is it Buscemi or Buscemi? He said it's both. In my head, I was like, it can't be. You must have one name. The first 30 years of my life, I said Buscemi, and then I thought I heard him or someone say Buscemi. I think he does say Buscemi, but he also says that it's fine to say Buscemi. I think you may be just being too nice."
+  },
+  {
+   "start": 2010.67,
+   "end": 2037.27,
+   "text": "Yeah, no, he was. I mean, Steve is just... To be honest, it's always been my experience that the people who are really good and have been really good for a really long time are great. It's very rare that those are the troublesome ones. It's normally the people that are kind of in and out of the saddle of either work or fame that are tricky. And Steve is just lovely. At one point, Steve was wondering..."
+  },
+  {
+   "start": 2037.27,
+   "end": 2064.65,
+   "text": "car and sony is in the show right his parents were on set and uh steve apparently saw them wandering around looking lost and we have a big set that we're on and so he just like walked over to them and sort of guided them back to set and then like took them to craft services and was like chatting with them and then later they turned to karen and was like oh yeah that guy he showed us around he's like yeah he's the leader of the show he's playing god that's steve buscemi um but yeah he's just he's just a lovely lovely man and um and yeah i'm and we were"
+  },
+  {
+   "start": 2064.65,
+   "end": 2083.97,
+   "text": "I mean, just crazily lucky to get him. Yeah, when you land someone like that, you're like, okay, this is going to work. Yeah, it really was. Were you a Lebowski guy? Yeah, absolutely, Lebowski. I mean, I'm most of the Coen Brothers movies guy. I do, I love them. What's your top Coen Brothers movie or two?"
+  },
+  {
+   "start": 2084.99,
+   "end": 2101.02,
+   "text": "Big Lebowski has got to be up there. Definitely. I love Oh Brother Where Art Thou, but I haven't watched it since I first watched it, but that was probably the first one I saw. Got it. So that was very, that got very ingrained. What else?"
+  },
+  {
+   "start": 2101.02,
+   "end": 2127.73,
+   "text": "I mean, you know, Fargo. Sure. Yeah, sorry to name all the hits, but they are. You know what's grown in my estimation since it came out a few years ago is Inside Llewyn Davis. That one gets better and better, I feel like. Oh, I haven't seen that one. Oh, really? A lot of them do that, though. I feel like a lot of them, I mean, it's the mark of a great film, is obviously standing the test of time, but, like, their films just are so dense. I also love The Man Who Wasn't There when that came out. I really enjoyed that. I don't know if that holds up again, but I'm sure it does. Yeah, yeah, yeah, amazing."
+  },
+  {
+   "start": 2127.73,
+   "end": 2147.91,
+   "text": "Okay, so I also want to mention, congrats, I got a chance to see you in Lifespan of Effect. You and Cherry Jones and Bobby Cannavale. When you end a run in a play, are you ready? Do you look towards the finish line? Do you kind of know when you're kind of like, I'm ready for the next thing? Yes."
+  },
+  {
+   "start": 2147.91,
+   "end": 2170.11,
+   "text": "It varies from play to play. The end depends how long the run is. Like I did a show called Privacy, which we did four weeks of previews and four weeks of performances. And like we got to the end and it was like, oh, Jesus, that's over. I missed that. This one, like I've got to be honest, I was ready. I was ready for it. It was great. We had a fantastic time. But I think by the end, all of us were like, cool, we've done it."
+  },
+  {
+   "start": 2170.11,
+   "end": 2193.93,
+   "text": "Like, we've done it, it's been really good, and now it was the perfect length of run for us. And there is, you always, it always goes through, there's always the same kind of cycle, no matter what, generally, no matter what length of run it is, which is like, you know, just get through rehearsal, and then terror and adrenaline and fear just rule you through preview, and in a kind of good, exciting way. And then it's like that for sort of the first..."
+  },
+  {
+   "start": 2193.93,
+   "end": 2211.01,
+   "text": "half to two thirds of the run and then there's like a little couple of weeks where you're just like will it ever end because once you have said the same line and not for any other reason then you start to even though it is the experience is the same for an audience whether they're hopefully coming in week one or week nine yeah"
+  },
+  {
+   "start": 2211.01,
+   "end": 2231.56,
+   "text": "By the time you get to week nine, you have said those lines so many times that there will just be moments that you no longer believe yourself in, even if it comes across as real to an audience. I would think that's also exacerbated on something like a run like How to Succeed. That was a long run, right? How to Succeed, I did for 11 months. And that was... It's interesting. It's so much..."
+  },
+  {
+   "start": 2232.05,
+   "end": 2258.89,
+   "text": "harder doing like a musical like that than it is doing like a show like cripple a vintage man or equus because if you're having a great day you know i can make myself sad i can think about some stuff and get into a dark place and make myself sad if you're having a shit day and you're doing a bright and breezy musical right getting up to that place of like okay guys i'm gonna sing some songs is is that was that was i mean i do i maintain that doing a doing a musical is like the hardest work you can do as an actor basically physicality too you're like you're like a"
+  },
+  {
+   "start": 2258.89,
+   "end": 2285.02,
+   "text": "marathon runner like yes it's it was it was really good and i i loved it and i have actually there is something incredibly bonding about being doing a musical with people i think i probably got more or as many friends off that job than of any job you're in the trenches with them you really are and you screw up with each other and you know you you have each other's back and i mean that was that was actually the real joy of of lifespan as well was becoming a kind of um"
+  },
+  {
+   "start": 2285.02,
+   "end": 2303.86,
+   "text": "like some weird super organism with Cherry and Bobby where we're all just very connected and like when the show was good and when it was like a good performance that night you really felt like wow we are one we are moving as one thing which is a really exciting thing to feel um do you and do you consume a lot of like theater obviously you can't while you're kind of in a production but do you"
+  },
+  {
+   "start": 2303.86,
+   "end": 2333.72,
+   "text": "I do the rest of the time I don't if I have a play coming up yeah or if I'm or if obviously I'm in one Bobby sometimes would go and see like two plays on his day off and I'm like I don't know how you are doing this he's like I've got to support a friend he's like I don't care about my friends that much self-preservation but I yeah no I what was I saying I just saw your buddy Paul Dano in True West oh how's that as you can imagine yeah that's that is a tough play yeah"
+  },
+  {
+   "start": 2333.72,
+   "end": 2356.22,
+   "text": "Yeah. They're not switching roles, are they? No, they're not. I saw that production way back when with John C. Reilly and Philip Seymour Hoffman. That was epic, too. Yeah. God. Watching a play when I'm about to be in one or in rehearsal, I'm sitting there being like, I should be home learning my lines. I shouldn't be doing this. I just get so nervous. But yeah, what have I seen?"
+  },
+  {
+   "start": 2356.22,
+   "end": 2373.77,
+   "text": "recently I saw The Ferryman the other day I've got a friend in it and it was fantastic I mean it's a there's some really amazing and also I mean the fact that they've been I think a new cast is going to come in in like a few weeks but like those guys have been doing that show for two years since London and it is"
+  },
+  {
+   "start": 2373.77,
+   "end": 2390.93,
+   "text": "I mean, what they're all doing is amazing, but this is really bad on me. I don't know the lead actress's name, but the girl who plays the main actress, I honestly don't know how she is finding those levels of emotion and intensity after two years of doing that show. It's really, really impressive all around. She's amazing in it."
+  },
+  {
+   "start": 2390.93,
+   "end": 2416.82,
+   "text": "Very cool. That's definitely on my list. Yeah, they announced the replacement cast. And they're, like, also, it's, like, I think Brian Darcy James. Like, some really, like, some really good people, too. Although Paddy Constantine is pretty talented himself. Yeah, Paddy Constantine is pretty amazing. I mean, yeah, Dead Man's Shoes, or Dead Man's Shoes, for anyone who hasn't watched it. I haven't seen that. It's amazing. Oh, yeah. It's him and Toby Kebbell in a Shane Meadows film from a while ago that is, like,"
+  },
+  {
+   "start": 2416.82,
+   "end": 2439.57,
+   "text": "It's a really yeah, I mean it's one of those films again I have more since I was a teenager when I watched it when I was younger I was like this is Though this is this film is unreal. Yeah, it's very good. He's one of those guys too that I've always liked I always am piqued by what he's doing and I feel like I'm surprised it hasn't I mean he's obviously a note but like I feel like it the next level is eluding him um"
+  },
+  {
+   "start": 2439.78,
+   "end": 2465.69,
+   "text": "I know you've talked about this. You haven't seen Cursed Child for obvious reasons. It's a weird dynamic for you to go there and do that. I would just be sitting there thinking that everyone would be watching me for my reactions to the show. And maybe they wouldn't be, but I'm too weirded out by that. Yeah, I think so. Yeah, I'm a bit weirded out by that. But I've actually met the director in the last few months, so I was able to apologize to him personally. He does not care. He was like, I don't give a fuck."
+  },
+  {
+   "start": 2465.69,
+   "end": 2488.74,
+   "text": "But I was behind to say it was still nice to be able to say it to him. Do you know, like, what happens in it? Like, are you curious just as, like, someone that's been obviously the guy in that franchise of, like, what happens to your character? That's a good question. I've heard bits and pieces of what happens to him. But I guess, no, maybe it's bad. Maybe I should have been more curious. I haven't been particularly. I'm just, you know, I..."
+  },
+  {
+   "start": 2488.74,
+   "end": 2509.56,
+   "text": "I think it is probably because, like, in a part of my mind, I'm like, I know I'm going to find out one day. Right. Like, it's going to get through to me. Like, at some point, I just haven't been seeking it out. Were you surprised to find out that young Dumbledore was actually the super hot Jude Law all this time? I mean, not particularly. I mean, you know, Michael Gatman's pretty hot. Obviously, yeah. I..."
+  },
+  {
+   "start": 2509.56,
+   "end": 2524.95,
+   "text": "No, I think I actually was like, I was very, very happy with that casting because Jude Law also feels like one of those actors was like, you should have been in the series. We should have had you in by now. How has that not happened? So, yeah, it's nice. It's nice that he is. And actually, I do think there's something lovely about..."
+  },
+  {
+   "start": 2526.08,
+   "end": 2550.26,
+   "text": "him playing that character and sort of, you know, the talk being passed from Michael to him is a very, I fully support that. I don't know if you've had a chance to see it, but he's exceptional as well. I have also not seen that one. That one was the first one that I was like, because when Fantastic Beasts came out, I was like, not weirded out by this at all. This is great. This trailer, the trailer for the new one, where I was like, oh shit, Hogwarts. I was like, I'm not going to be there. That is weird. That was the first time where I had a moment of being like, oh, that is kind of weird."
+  },
+  {
+   "start": 2550.26,
+   "end": 2574.28,
+   "text": "So, again, we've talked so many times about how you've capitalized in a very smart way in terms of the cachet that you had in your Harry Potter years on these kind of unique projects post-Potter. Do you think it's ever cost you a role? Do you feel like sometimes people care too much? Honestly, I don't know which ones or what, but I'm sure it has. I think I maybe have been told..."
+  },
+  {
+   "start": 2574.75,
+   "end": 2595.27,
+   "text": "by somebody that they just, that they wanted an unknown for this. But I think the way they put it was actually slightly more, and I honestly, I get it. They were saying, we want somebody that doesn't have kind of baggage with, or that the audience isn't coming into. You know, if you're, for instance, if you're playing a character who like,"
+  },
+  {
+   "start": 2595.62,
+   "end": 2618.32,
+   "text": "the point of him is that he is very anonymous and no one cares who he is, then I can see why a director... Like, I personally think that would still work and I can play that, but I can also totally see a director's point of view of being like, don't want a super famous person playing this part. Like, I get that. But no, I don't... So to my knowledge, it hasn't... And I also think there's an interesting thing where I think there's, you know, if..."
+  },
+  {
+   "start": 2618.9,
+   "end": 2644.85,
+   "text": "half the directors in the world saw me as Harry Potter and were like, well, that's all he's ever going to be. And I don't, I don't want him. I don't want that baggage touching my film. Um, there was another, the other half of directors, there's another attitude towards it, which is that I want to be the one to reinvent him. Yes. Um, with those preconceptions. Exactly. And I think a lot of directors find that really exciting. So I was kind of like, as soon as I keyed into that and actually doing Equus was a big part of that. Cause that made everybody go like, Oh,"
+  },
+  {
+   "start": 2644.85,
+   "end": 2658.82,
+   "text": "he's gonna do, he's up there. He'll go that far, he'll go that. Yeah, he's gonna push himself. I think that I've been told by a few directors since that that was, even if they didn't see it, that was something that kind of made them sit up and take notice, which is nice. But yeah, so I feel like..."
+  },
+  {
+   "start": 2659.19,
+   "end": 2675.75,
+   "text": "Yeah, I mean, definitely, like, John Krokidis in Kill Your Darlings was very excited to, like, get his hands on me and, like, do the first thing since Potter. And, yeah, and I think, you know, probably there's something to that in, you know, the Swiss Army Man guys and a few of those as well. Sure."
+  },
+  {
+   "start": 2675.75,
+   "end": 2692.74,
+   "text": "So where are you at right now in terms of like, you talked about the notion of not wanting to do like a long-term series, like the appeal of this is an anthology kind of thing. Where are you at in terms of like films? Like are you more or less open to kind of ongoing franchises, which is like the bread and butter of the film industry right now? It is now, yeah, you're right."
+  },
+  {
+   "start": 2692.74,
+   "end": 2711.78,
+   "text": "Yeah, I'm totally open to it, but it just has to be a really good script. And I don't like to talk disparagingly about the studio system. It's just a reality of the world we're in that people feel more comfortable taking risks when there's less money involved. Yes."
+  },
+  {
+   "start": 2711.78,
+   "end": 2728.03,
+   "text": "So the indie world, while it is much harder to get things made, when you are successful in getting them made, you will have more of a chance to be slightly more adventurous. But no, I would do a franchise again in a second if I loved it. I would have no problems doing that."
+  },
+  {
+   "start": 2728.03,
+   "end": 2747.74,
+   "text": "Supporting role if possible, so I have time to do other things. But yeah, absolutely. I mean, I guess you mentioned one already. I was going to say, any of the Marvel or DC things doing it for you? Black Panther did it for you. Black Panther I thought was great. I mean, honestly, Deadpool is one of my favorites. I think the guys who write it are amazing. I met with them a couple of times about something ages ago. Oh, they're super smart."
+  },
+  {
+   "start": 2747.74,
+   "end": 2771.36,
+   "text": "They're so smart. They're so funny. The credit sequence in that movie, the first one does, you know, the real heroes here. Right. Oh, that stuff was so good. What was it? What was it? What do they call Ryan Reynolds? God's perfect idiot was where he was. Oh, well, it's like we were talking like even back to Adam McKay. It's like it's screwing with the form. It's just not being lazy. Like, you know, why? Why?"
+  },
+  {
+   "start": 2771.36,
+   "end": 2794.13,
+   "text": "You know, it's a movie. You can do what you like. It does not have to be naturalistic. Right. And so, yeah, I love those. Yeah, Black Panther and Deadpool were probably my two, like, favorite ones. I'm honestly, like, and you will probably notice that those are the ones which require the least amount of information about the rest of the franchise. Because I haven't, like, I've got so far behind that it now seems, like, overwhelming. Yeah, your 20 MCU films down. Yeah, exactly."
+  },
+  {
+   "start": 2794.13,
+   "end": 2812.5,
+   "text": "don't know, you know, I know Captain America and Thor are people, but I don't know how they fit into anything yet. And I do need to see the last Thor movie, because apparently the last Thor film was incredible. You'll love it. I mean, again, knowing your sense of humor, what we do in the shadows is one of my favorite comedies in recent years. So good."
+  },
+  {
+   "start": 2812.5,
+   "end": 2832.04,
+   "text": "I know I can't. I'll tell you. It'll take some time to catch up on the MCU, but we know it's possible because, again, I've known you long enough to know you pre-Star Wars love and post-Star Wars love. Yeah. You caught up there. How far on the pendulum have you swung in the other direction now? Have you seen all the Star Wars films?"
+  },
+  {
+   "start": 2832.04,
+   "end": 2854.08,
+   "text": "i've seen all the originals um i've i have um not seen the reboot the uh the prequels or prequels thank you i mean i've seen phantom menace because phantom menace was the first one i saw and when i was 10 and i thought like this is amazing you guys it's not the best like this is what a cool character with no problematic issues whatsoever"
+  },
+  {
+   "start": 2854.08,
+   "end": 2872.9,
+   "text": "and yeah so I was very into that and then you know got into the first three the first three are amazing like they really are it was so interesting to watch something that you've literally heard hyped your entire life and live up to it and especially in terms of like"
+  },
+  {
+   "start": 2872.9,
+   "end": 2895.09,
+   "text": "What's fascinating about those films is, like, how they shoot action. Like, they are, it's all about the characters. Like, it's not about massive stuff. It's, like, close-ups on actors doing, and you're following those stories within those action sequences. It's the, yeah, I mean, it's the emotion in those lightsaber fights. It's like, by the end of Return of the Jedi, it's, like, a fully, like, immersive, you're, like, so invested. Yeah."
+  },
+  {
+   "start": 2895.09,
+   "end": 2923.93,
+   "text": "I was really blown away by them, and I loved Force Awakens, and I haven't seen The Last Jedi yet, which I heard was amazing. I know loads of people had problems with it. I loved it. My girlfriend loved it so much. Yeah, well, you're not on Twitter, but don't say anything about The Last Jedi or Batman. These are the two most divisive topics, apparently, outside of Donald Trump on the internet. Which Batman? All Batman. The DCU fans are very, very extreme. So are they saying that, like..."
+  },
+  {
+   "start": 2923.93,
+   "end": 2942.76,
+   "text": "Ben Affleck, no good? Or Christian Bale, good? No, the DC fans defend, like, the Zack Snyder films, so, like, the Batman vs. Superman and Justice League. They're insistent that there's a thing called the Snyder Cut, the version of Justice League that was directed by him before he had to leave. It's a whole thing you don't want any part of. Okay. The Snyder Cut."
+  },
+  {
+   "start": 2942.76,
+   "end": 2961.7,
+   "text": "Trust me. This is a world you don't need to get into. No, it really seems like not. But yeah, and I was less into Rogue One, but I don't think maybe I knew enough of the mythology going into it to get as much out of it as other people did. Got it. I don't know. Got it."
+  },
+  {
+   "start": 2961.7,
+   "end": 2979.58,
+   "text": "I know you have to run, but what's... So you've got, what, Guns Akimbo? Guns Akimbo, yeah. That sounds crazy. It is crazy. That's by a young New Zealand filmmaker called Jason Lee Howden, who literally, I read this script, which is like some kind of crazy..."
+  },
+  {
+   "start": 2979.58,
+   "end": 2995.21,
+   "text": "Action comedy fable about a guy who, after a series of horrible encounters, wakes up one morning with guns surgically attached to his hands. Dan, always going the safe route. Always."
+  },
+  {
+   "start": 2995.21,
+   "end": 3016.54,
+   "text": "always making these natural movies um god shake it up um no so i um so yeah so i so you know i i and and honestly the scene that sold it to me was like 10 pages in where he has to go to the toilet and there is a there there is um i think the line was something like bomb squads are not as careful as this"
+  },
+  {
+   "start": 3016.54,
+   "end": 3041.63,
+   "text": "and i i i just i like i read that and i was like yeah i'm in i'm you're fully utilizing your premise of gun hands i am in you're living up to the promise yeah of this concept um and i do think i actually i'm i'm really it's me and samara weaving um it's i i think it could just be really one of those films that like hopefully like catches people's imagination in the way that swiss army man found its audience like that's what i'm hoping for gun to kimbo as well"
+  },
+  {
+   "start": 3041.63,
+   "end": 3061.59,
+   "text": "You're collecting a great filmography of bizarre, wonderful, idiosyncratic films, man. You know I'm there for all of them, and I love that I'm even a small part of making weird shit with you over the years. Certainly, when I was watching Miracle Workers, I was like, oh yeah. I'm seeing the same kind of irreverence that we've done in our stupid pub quizzes and all that stuff. And also, it's like those..."
+  },
+  {
+   "start": 3061.59,
+   "end": 3090.23,
+   "text": "Were the other times that you've seen me like being very much me on camera So that that it probably does feel like quite similar to all that actually. Yeah, it's very nice to be I Yeah, it's gonna be a struggle to stop working in comedy. It's really I doing comedy is just somewhat. It's the best run Yeah, it's the best. Well, you know, I'm there for you anytime you want to make weird shit awesome You've got a lot of fans in the weird shit world Congratulations and miracle workers. Everybody should check it out on TBS and we'll talk soon, but thank you so much"
+  },
+  {
+   "start": 3090.23,
+   "end": 3108.95,
+   "text": "As always, a pleasure. Thanks, ma'am. And so ends another edition of Happy, Sad, Confused. Remember to review, rate and subscribe to this show on iTunes or wherever you get your podcasts. I'm a big podcast person. I'm Daisy Ridley and I definitely wasn't ready to do this by Josh."
+  },
+  {
+   "start": 3118.14,
+   "end": 3142.68,
+   "text": "You've got your favorite blanket, a freshly poured drink, and a cold case burning a hole in your streaming queue. You're not just watching True Crime, you're running the investigation from the comfort of your couch. Welcome to Murder, She Watched, the podcast where we recap, dissect, and slightly overanalyze some of the best and craziest true crime documentaries on our favorite streamers."
+  },
+  {
+   "start": 3142.68,
+   "end": 3167.28,
+   "text": "Did the spouse do it? Why is the shady neighbor wearing leather gloves in July? Why did this guy agree to be interviewed in this documentary? We ask the tough questions that you're often just screaming at your TV. So every week we break down the twists, red herrings, and absurd documentaries that have kept you up all night. It's high drama, cozy vibes, and absolute couch detective energy."
+  },
+  {
+   "start": 3167.28,
+   "end": 3175.94,
+   "text": "Grab your throw blanket and hit subscribe. Search Murder, She Watched wherever you listen to podcasts and let's solve this thing together."
+  }
+ ]
+}

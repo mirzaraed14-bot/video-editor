@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "dDP5CsXDGX8Q_WLvC6HmcTvOZdw",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "zcQumwPBwk_T7tqCVPiAvvTERwM",
+      "id": "UCWsDFcIhY2DBi3GB5uykGXA",
+      "snippet": {
+        "title": "IShowSpeed",
+        "description": "Thank God👏🏽🙏🏽",
+        "customUrl": "@ishowspeed",
+        "publishedAt": "2016-03-21T20:36:52Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ieK0j0sDqI_AHDwYxZ2Wly07-R7PG4S3YMtxOWCEe1QH-I0FgimJ92tlydQa6M78YD0VaywCaw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ieK0j0sDqI_AHDwYxZ2Wly07-R7PG4S3YMtxOWCEe1QH-I0FgimJ92tlydQa6M78YD0VaywCaw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ieK0j0sDqI_AHDwYxZ2Wly07-R7PG4S3YMtxOWCEe1QH-I0FgimJ92tlydQa6M78YD0VaywCaw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "IShowSpeed",
+          "description": "Thank God👏🏽🙏🏽"
+        },
+        "country": "US"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUWsDFcIhY2DBi3GB5uykGXA"
+        }
+      },
+      "statistics": {
+        "viewCount": "11512450738",
+        "subscriberCount": "62300000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2042"
+      }
+    }
+  ]
+}

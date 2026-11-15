@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "2pE6Fu16APw6ZyzrRqUe7sXNWBA",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "5TlnMVvuCuLSDTPDWxx-Ba7N91s",
+      "id": "UCG_gCJGRqxK9HBAUzfy_ssA",
+      "snippet": {
+        "title": "MJ Forever",
+        "description": "Hello Moonwalker, Welcome to MJ Forever YouTube Channel. We provide expert level Michael Jackson content. Subscribe to our channel for awesome Michael Jackson Videos. Thank you so much for so much love!",
+        "customUrl": "@mjforever",
+        "publishedAt": "2021-03-25T05:41:52.210466Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/EMHwgHbRdGyDRf05kszdOIGzvMOSpXXTdihxEpyGtM0gr8g3ecNtjoscPvTpo5ezLlFO5o9vyw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/EMHwgHbRdGyDRf05kszdOIGzvMOSpXXTdihxEpyGtM0gr8g3ecNtjoscPvTpo5ezLlFO5o9vyw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/EMHwgHbRdGyDRf05kszdOIGzvMOSpXXTdihxEpyGtM0gr8g3ecNtjoscPvTpo5ezLlFO5o9vyw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "MJ Forever",
+          "description": "Hello Moonwalker, Welcome to MJ Forever YouTube Channel. We provide expert level Michael Jackson content. Subscribe to our channel for awesome Michael Jackson Videos. Thank you so much for so much love!"
+        },
+        "country": "US"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUG_gCJGRqxK9HBAUzfy_ssA"
+        }
+      },
+      "statistics": {
+        "viewCount": "154895540",
+        "subscriberCount": "335000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "568"
+      }
+    }
+  ]
+}

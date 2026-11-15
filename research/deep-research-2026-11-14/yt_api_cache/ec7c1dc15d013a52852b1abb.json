@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "5GFGQ6g5gAsqGdskPG3V4peJbVA",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "KqtFY1Gr1syLaH2QsTx91SXS5WY",
+      "id": "UCvL2BJ8OQAPdDe4pSZoGdZQ",
+      "snippet": {
+        "title": "Affan Baig",
+        "description": "Get Your Channel Monetized Under 90 Days Or All Your Money Back 👇\n\n",
+        "customUrl": "@affanwiz",
+        "publishedAt": "2025-02-10T17:53:00.203769Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ZmlOJrmfWTaZCmI-oPk3B8oKC9vtuEil6bgbrDqgWGd_fHtVFsaF2-RwDBW23L41ZrN7RzpKNLQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ZmlOJrmfWTaZCmI-oPk3B8oKC9vtuEil6bgbrDqgWGd_fHtVFsaF2-RwDBW23L41ZrN7RzpKNLQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ZmlOJrmfWTaZCmI-oPk3B8oKC9vtuEil6bgbrDqgWGd_fHtVFsaF2-RwDBW23L41ZrN7RzpKNLQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Affan Baig",
+          "description": "Get Your Channel Monetized Under 90 Days Or All Your Money Back 👇\n\n"
+        },
+        "country": "PK"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUvL2BJ8OQAPdDe4pSZoGdZQ"
+        }
+      },
+      "statistics": {
+        "viewCount": "380528",
+        "subscriberCount": "445",
+        "hiddenSubscriberCount": false,
+        "videoCount": "192"
+      }
+    }
+  ]
+}

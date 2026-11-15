@@ -1,0 +1,20 @@
+APPROVED Prince ABC P7 @25.0s: face 522 px wide at delivery scale
+APPROVED Prince ABC P8 @32.5s: face 532 px wide at delivery scale
+Felton HSC confession @362.0s: face 387 px wide at delivery scale
+Felton HSC Potter (YT 28:34) @184.0s: face 395 px wide at delivery scale
+Oldman TIFF (left face) @53.0s: face 300 px wide at delivery scale
+Film CoS: Draco 'Scared, Potter?' @119.3s: face 454 px wide at delivery scale
+debut 27s: Felton, face 138 px at delivery (wide only)
+MUSIC CHECK v1 (full band, 50 ms frames, quietest 15 %): dominated by 40-100 Hz room hum, so not usable:
+HSC confession + roar answer      345.0- 490.0 s: quiet-frame spectral flatness median 0.01 (noise-like >= 0.3 = no music bed; tonal < 0.1 = music)
+HSC Potter passage                150.0- 260.0 s: quiet-frame spectral flatness median 0.01 (noise-like >= 0.3 = no music bed; tonal < 0.1 = music)
+Oldman TIFF clip                    0.0-  82.9 s: quiet-frame spectral flatness median 0.06 (noise-like >= 0.3 = no music bed; tonal < 0.1 = music)
+MUSIC CHECK v2 (300-4000 Hz, 100 ms frames, quietest 10 %; noise-like >= 0.4 = no bed, tonal < 0.2 = music):
+HSC confession + roar answer        345.0- 490.0 s: band flatness 0.56; strongest bins 40,50,60,80,90 Hz; quiet level -43.6 dBFS
+HSC Potter passage                  150.0- 260.0 s: band flatness 0.52; strongest bins 40,50,60,90,100 Hz; quiet level -44.0 dBFS
+Oldman TIFF clip                      0.0-  82.9 s: band flatness 0.67; strongest bins 110,120,140,160,170 Hz; quiet level -55.6 dBFS
+POSITIVE CONTROL: HSC theme + intro   41.0-  75.0 s: band flatness 0.61; strongest bins 40,50,70,80,90 Hz; quiet level -39.1 dBFS
+CONTROL: debut roar (crowd, no music)    3.0-  40.0 s: band flatness 0.58; strongest bins 810,860,870,940,1950 Hz; quiet level -34.5 dBFS
+xcorr (hp-cast/tools/xcorr.py, 30 s RSS snippets vs the section audio):
+  section 1: rss 20.0 -> file 20.00 (z=298); rss 345.0 -> file 345.00 (z=316); rss 430.0 -> file 430.00 (z=321): file = RSS + 0.00 s
+  section 2: rss 1595.0 -> file 165.08 (z=308); rss 1630.0 -> file 200.08 (z=344): YouTube = file + 1530 = RSS + 100.08 s

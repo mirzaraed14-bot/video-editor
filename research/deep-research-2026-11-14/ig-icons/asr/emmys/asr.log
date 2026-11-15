@@ -1,0 +1,62 @@
+[transcribe] NVIDIA GPU: NVIDIA GeForce RTX 3060 Ti
+[transcribe] loading whisperx large-v3 (cuda, float16)
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-14 23:51:33 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+[transcribe] loading wav2vec2 alignment model (en)
+[transcribe] cOxmrVZr5WQ.mp4
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+[transcribe] wrote C:/Users/affan/AppData/Local/Temp/video-editor/emmys/words.json
+[transcribe] ⚠ long-span word 'her.' 27.01-28.07 (1.06s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'mama,' 67.09-68.17 (1.08s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'weary' 272.33-276.95 (4.62s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'small' 277.93-280.16 (2.22s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'side' 296.85-300.12 (3.26s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'rough' 303.14-304.34 (1.20s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word "can't" 308.04-309.58 (1.54s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'bridge' 313.81-315.71 (1.90s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'water' 328.96-330.76 (1.80s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'down' 367.25-368.43 (1.18s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'evening' 374.60-375.92 (1.32s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'you.' 384.62-388.76 (4.14s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'Like' 417.89-419.31 (1.42s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'bridge' 419.89-421.36 (1.46s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'down' 428.02-428.84 (0.82s) — low-prob (p0.28) word stretched over a pause, check the audio before keeping
+[transcribe] ⚠ long-span word 'will' 473.55-474.95 (1.40s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'me' 475.65-477.15 (1.50s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'down' 477.21-477.83 (0.62s) — low-prob (p0.47) word stretched over a pause, check the audio before keeping
+[transcribe] ⚠ long-span word 'over' 482.30-483.76 (1.46s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'troubled' 483.84-486.72 (2.88s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'water' 486.80-489.75 (2.94s) — possible merged repeat, check the audio before keeping
+[transcribe] ⚠ long-span word 'welcome' 506.17-506.81 (0.64s) — low-prob (p0.43) word stretched over a pause, check the audio before keeping
+[transcribe] ⚠ long-span word 'And' 606.93-608.19 (1.26s) — possible merged repeat, check the audio before keeping
+[transcribe] persisted canonical transcript → /x/Claude Projects/video-editor-client/video-editor/research/deep-research-2026-11-14/ig-icons/asr/emmys/transcript/words.json
+/tmp/video-editor/emmys/words.json

@@ -21,6 +21,161 @@ Near-done jobs are NOT rebuilt for it; the style applies from their next step. T
 - the HP fork (`local_7f87fba7…`, Hagrid raw cut).
 Jermaine is still unbuilt, so its build takes this style.
 
+## ▶ 15 Nov 17:55 PKT (hub): the deep-research run is CLOSED: no pick; ranked board written; stopped at 92 %
+- **The board:** `research/deep-research-2026-11-14/HUB-BOARD.md` ▶ THE RANKED BOARD. All six finals say no pick.
+  - The Dad Short built to STOP 1 in ABW11 is HIS eight-beat sequence ("build this in premiere" ~09:00, checked): ≈120K, under the bar.
+    Its "swap" variant is ≈200K, borderline.
+  - Next: the armband (≈140K), Back Home (≈140K), Felton (120K).
+  - The Sirius lead (40-100K) is also at STOP 1, built on his word.
+- **Late:** due 10:00, ~8 h late. Nothing woke the hub after 02:55, and the meter went 65 % → 92 % meanwhile.
+- **Meter 92 % / Fable 85 % at 17:47, reset in 13 h:** past the hub's own 82 % stop line.
+  - Every lane is idle and none was woken.
+  - His rule is 100 % at the reset, so holding or spending the last 8 % is his call.
+  - Owed after the reset: hp-cast's Rickman/Snape topic (his 01:20 ask) and Felton's 16 s stage clip `DAiOcdPh7wY`.
+- **Model rule (his words to the Main Brain, ~17:45, checked in its transcript):** "inform all sessions and switch back to opus
+  extra and editor sub sessions will now run on sonnet as well". The hub reads Opus xhigh; the lanes read Sonnet xhigh. Every
+  `start_session` from this hub passes `model: claude-sonnet-5-5`. Memory: feedback-use-fable-allowance.
+- **yt_api.py** gained an `affanwiz` caller at 09:32, edited by another session.
+  - "His 15 Nov OK" rests on a code comment and a memory line; the hub has not seen his words.
+  - Its cap of 0 blocks only `search`, so "listings only" is not enforced (videos/commentThreads still pass). Not changed.
+
+## ▶ 15 Nov 02:22 PKT (hub): Sirius raw cut PLACED in ABW11 (his "build it in premiere"), STOP 1 nearly done
+- **His words to hp-films:** "try the sirius angle but continue searching for better ideas also" (~02:00), then "build it in
+  premiere" after seeing the v6 sequence. hp-films started build session local_73783eac-87f5-4409-8bbc-d8be66046fdb from
+  `projects/oldman-good-sirius/BUILD-BRIEF.md`.
+- **Placed:** "Was Oldman A Good Sirius - raw cut" (bin "Was Oldman A Good Sirius"): 1080x1920 at 59.94, 48.98 s, V1/A1 10 clips,
+  V2 3 covers, 4 markers.
+  - Window 02:20:11-02:20:23 (he had been idle 389 s); the project read ABW11 first.
+  - His active sequence ("Speed Kicked Out - v2 mom bits") was restored by id, his playhead ticks are identical, and his Sequence 02
+    is untouched. No save, no export.
+  - The hub checked `premiere/READBACK.md` (end 48.98 s, every span with its words) and that the lock was released.
+- **Hub approved** one ~5 s V2-only window to swap the Sirius placeholder for a real PoA Shrieking Shack shot from his own
+  `E:\Bullshit Folder\Henry\Severus Snape scene pack 4K.mp4`, only if the frames are clean. The OotP veil stays a placeholder.
+- **Offered to him, not applied:** the ~45 s filler-trim; the v4b order. Oldman sits at a +7 dB review level.
+- **02:25 STOP 1 reported and hub-checked** (`projects/oldman-good-sirius/RUN.md` ▶ STATUS has his note; Premiere and GPU locks clear).
+  - **ABW11 is NOT saved: the new sequence needs his Ctrl+S.**
+  - **For his call:**
+    - "have I been a good Sirius?" lands at 72-75 % with ~12 s of Radcliffe after it (HP-EXECUTION wants 60-70 % and the end within
+      ~3 s of the payoff);
+    - beat 3 ("they killed me off too early… it's me") is a second topic;
+    - the ~45 s filler-trim and the v4b order are both on offer.
+  - **By ear:**
+    - a short sound inside the hook (408.7-409.0);
+    - "Ron" vs "wrong";
+    - the 17.68 s joint sits in a crowd swell.
+  - **Placeholders:** Sirius (0-2.7 s) and the veil (beat 3). The pack's only Sirius shot (him shouting at Snape, dark) is offered, not applied.
+  - **Disclosed:** WhisperX large-v3 on the GPU under lock.sh 01:50-01:54 (after a RAM check), plus a medium.en CPU pass outside the .asr-lock.
+    No incident.
+- **02:29 Sirius swap DONE** (V2 0-2.72 s = the real PoA Shrieking Shack shot from his Snape pack, 1106.81-1109.57 s: 66 frames, one continuous
+  shot, no logo or subtitle, 240 % crop, no Iris). READBACK PASS, V1/A1 unchanged, lock released.
+  - **Honest note:** QUIET-MODE has been absent since his "not editing" on 14 Nov evening (memory: delete it when he says so), and
+    `quietgate.py run --` returns at once without the flag. So the 4 s V2-only write ran while he was at the machine (idle ~73 s).
+  - No sequence switch and no playhead move: his active sequence id and playhead ticks are identical. No save, no export.
+  - To honour an "idle only" ask without the flag: check `quietgate.py status` (idle_s ≥ 150) first (lab-notes, line ~1243).
+  - If he is editing again, QUIET-MODE goes back on at his word.
+
+## ▶ 15 Nov 00:20 PKT (hub): pace.sh overlap bug found (ig-mj) and fixed
+- **Seen:** two YouTube downloads ran at once at 00:14 (ig-mj's and hp-cast's), and aw-speed's thumbnail curl got in at 00:18:22.
+  No bot page, no 429, no flag.
+- **Cause:**
+  - pace.sh, like lock.sh, took over any lock older than 30 min, even from a live download. Speed's long section held it
+    23:15 → 23:45, and ig-icons took over at exactly 23:45:27.
+  - Every exit then removed the lock, even when it was no longer its own, so one take-over cascaded.
+- **Fix (00:19:49, tested in a scratch lock dir, 4 cases):** a lock is taken over only when its owner process is gone (or no owner
+  line for 30 min, or after 4 h), and an exit removes only its own lock. Old copy: scratchpad `pace.sh.before-fix`.
+- **ig-mj:** 2 of its 4 downloads got HTTP 403 on DASH format 137 (ESeXvAeuokU, snMguJ8UuyI). Allowed one retry each with HLS 270+234,
+  plain yt-dlp with the default clients, after the old instances exit. No more formats after that.
+- **lock.sh has the same latent bug** (youtube 30 min, gpu 90 min take-over; an unconditional release). A GPU job over 90 min
+  could be joined by a second one. It is shared tooling and still unfixed: his call.
+
+## ▶ 14 Nov 23:14 PKT (hub): YouTube CLEARED; Speed review-2 fixes re-delivered (23:10), hub-verified
+- **YouTube:** ONE probe (`yt-dlp --print` on the Son Short, 06cXi5cJXMQ: 459,747 views) answered normally at 23:13, under the
+  lock. Flag renamed `youtube.BLOCKED.cleared-2026-11-14`. `pace.sh youtube` cool-down raised 45 → 180 s.
+  - Download slots sent: Speed's stream → ig-icons (now) → hp-films 23:35 → ig-mj 23:50 → hp-cast 00:10; bolt-celeb and ig-sports download nothing.
+  - Searches and numbers stay on the API.
+- **Speed v2, his review-2 fixes** (his notes 22:40): the 2026 podium judder (30p doubled to 60p; Stage A dedup by flow
+  interpolation; face jitter 24.6 → 10.0), and the "pasty AI-ish" letterboxes, re-cut on Speed alone with Topaz Chronos only, no Iris.
+  - The hub checked: outputs, Final Renders and Exports are byte-identical (sha256 2cd73f67…); 1080x1920, 60 fps, 38.50 s;
+    −14.0 LUFS, LRA 2.2, true peak −1.6 dBFS. The contact sheet shows the wides on Speed alone.
+  - His review named the letterboxes, not the Higgsfield stills, so the stills stay (fix only what he named). The 22:08 flag is
+    answered by his own review.
+  - Lessons already in LESSONS.md (the build wrote them: the doubled-frame head lock; Iris on small faces reads pasty AI-ish).
+
+## ▶ 14 Nov 22:08 PKT (hub): Speed "His Mom Kicked Him Out" v2 RE-DELIVERED (22:05), hub-verified
+- **Files:** `projects/speed-kicked-out-three-peat/outputs/`, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` and
+  `X:\Claude Projects\Exports\` (`His Mom Kicked Him Out.mov`) are byte-identical (sha256 d2de3f8e…, 268 MB).
+- **Probe:** 1080x1920, 60 fps, h264 + PCM 24-bit 48 kHz, 38.50 s. **Loudness** −14.0 LUFS integrated, LRA 2.2.
+- **Contact sheet:**
+  - captions just under the lips; the Streamer of the Year labels sit low;
+  - two subscribe prompts, no end screen;
+  - the fireworks stream carries its true label (JULY 4, 2022 / SPEED WAS 17).
+- **Detroit beat** = his dad's Christmas photo (dad's own IG post, Sep 2021). Speed is about 14-15, which his 14 Nov teen-era ruling
+  covers. The younger boy is cropped out (checked on frames 23.4-26 s).
+- **FLAG for him:** both stills (the teen cap selfie and the Christmas photo) went through a Higgsfield 4K upscale with face checks.
+  - The hub looked at `proof/v21/christmas_speed_compare.jpg`: same face, a little smoother skin, crisper hair.
+  - His 14 Nov Katherine rule says a real person's face from a soft source gets Lanczos only. HP-EXECUTION v1.3's new suspect is
+    the AI look.
+  - Keep it, or swap in a Lanczos still: one still each, his call.
+- **Open:** the Apr 2020 face-cam stream for S03 (`research/aw-speed-pick-2026-11-13/yt/batch19.sh`, after the unblock); the Mastro's
+  original (17) if he prefers it for Detroit.
+
+## ▶ 14 Nov ~21:40 PKT (hub): the YouTube Data API replaces yt-dlp for research searches and numbers (his key)
+- Affan made a YouTube Data API v3 key for AW research (relayed by the GTA 6 watcher session, then his own words here: "once you set
+  the api up tell all the research sessions to use this instead of their normal method"). Key file and how-to:
+  `X:\Claude Projects\Abundance Wisdom\` (`YOUTUBE-API.md`). Never print or copy the key; it goes in the `X-goog-api-key` header.
+- **One door:** `research/deep-research-2026-11-14/yt_api.py <slug> <endpoint> ...` (the hub's, tested 21:35): reads the key itself,
+  12 searches per session per Pacific day (hub 20, all 95; 100 units each), 1-unit lookups, a 12 h cache, a log, a quota flag.
+- The API can't download or read captions: yt-dlp stays for finalists' source files only, after the ~23:15 probe, in the hub's order.
+- First answer (21:35, exact views): Son 455,396 (35 s) · Jermaine JEALOUS 63,839 (38 s) · Snape 24,045 (44 s, 978 likes).
+- All six research sessions told at ~21:40 (README ▶ THE YOUTUBE DATA API).
+
+## ▶ 14 Nov 18:50 PKT (hub): research PACED DOWN; bolt-celeb interim
+- **Usage:** weekly 33 % at 18:47 (9 % at 16:45, ~1 % after the reset), about 12 points an hour against the ~3.5 the README planned.
+  The 75 % line would have fallen ~22:30, before the interims and the YouTube probe. Fable meter 24 % (its value at the reset wasn't
+  recorded; re-check for the slope). Sent to all six and written in the README § Budget: gate items only, park when blocked, one
+  Sonnet subagent at a time, the advisor only at its two points, past 50 % before 23:00 → interim and park, finals ≤ 72 %, a counted
+  YouTube queue (the hub orders it after the probe, Speed first). He can lift the pace with a word.
+- **Instagram is fine:** "No results" = phrase refusals (health, death, minors words); the freezes = Chrome freezing background
+  tabs. Grids kept loading through 18:46. No flag.
+- **bolt-celeb interim** (`research/deep-research-2026-11-14/bolt-celeb.md`; NOT max effort yet: B, C, E, G/H/J):
+  1. CARD Tony Bennett × Lady Gaga, "he forgot her name for weeks": IG @day.taught.me 20.9M views (187x its page). It is the 12 Nov
+     runner-up to Amy (`projects/tony-gaga-remembered/RUN.md`, never pitched in full), and the card must say so. Non-MJ face gate first.
+  2. LEAD Bieber booed 2013 → VMA tears 2015 → Fallon "I was just feeling judged": IG proof weak so far (68K).
+  3. MJ narrated: no pick. Real MJ in HD exists only in 2009 and on 35 mm film.
+- **Two questions for Affan (non-blocking; the sessions work the strict reading meanwhile):** under narration, may letterboxed SD
+  archive be the main picture? May biopic shots (Jaafar, 4K) stand in for a real MJ event? Strict reading on record: HQ first-party on
+  every beat; SD only as letterboxed archive overlays through the Topaz chain; biopic shots only where the beat is about the biopic
+  (Son, Brother).
+- ig-icons has no report file yet and ig-sports' is from 17:13: both told to write it now. Board: `research/deep-research-2026-11-14/HUB-BOARD.md`.
+
+## ▶ 14 Nov 16:42 PKT: YOUTUBE BLOCKED ("not a bot" page)
+- Set by aw-speed-research: about the 17th request of a batch spaced 60 s or more apart. The HUB'S OWN channel listing at 16:34 (yt-dlp
+  `--sleep-requests 3`, about 10 page requests in 24 s) most likely helped trip it. Lesson: a channel listing is a burst. Space its pages
+  15 s or more apart, or don't list.
+- ONE probe due ~23:15 PKT (a background timer in the hub). Clear only if it answers normally. All six research sessions plus Speed were told.
+
+## ▶ 14 Nov ~17:15 PKT (hub): SIX DEEP RESEARCH SESSIONS (his ask, max effort), final reports due Sun 15 Nov 10:00 PKT
+- His ask: 5-6 Opus sessions with the Fable advisor, the deepest research possible, banger ideas. Two HP sessions because Snape went #1
+  then #5-6 (~23K): the niche is right, the execution wrong. Each report must open with the max-effort statement, or "NOT max effort yet".
+- **Gate:** `MAX-EFFORT-GATE.md` § Idea research runs, items A-K, the exact statement, no quota, one card format.
+- **Run folder:** `research/deep-research-2026-11-14/`:
+  - README.md: lanes, rules, clock, stop lines (75 % deliver, 82 % stop);
+  - CLAIMS.md and IG-SEARCH-LOG.md: append-only ledgers;
+  - AW-SHORTS-NOW.md: all 274 AW Shorts with views, one paced listing at 16:45. Son ~445K, Jermaine 51K, Snape 23K, Bieber 26K,
+    Burnt Hair 83K.
+- **Pacing:** `projects/_onyx-batch2-2026-10/pace.sh` (new; lock.sh is untouched):
+  - youtube: the same lock and BLOCKED flag as lock.sh, 45 s cool-down;
+  - instagram: one page load at a time, 30 s apart, flag `.locks/instagram.BLOCKED`. Only the hub clears either flag, after one spaced probe.
+- **Sessions:**
+  - hp-cast `local_c08edcc2-e13a-4777-aa9b-17e04e01c145`: owns `HP-EXECUTION.md`, the Snape diagnosis;
+  - hp-films `local_aa5f066e-35d1-4f67-bb87-1a54ab7b5765`;
+  - bolt-celeb `local_414229a9-68e9-4ab0-9774-024fe1a5577e`;
+  - ig-mj `local_6dacb48e-3a7b-4097-8855-311015f0e999`;
+  - ig-icons `local_2d0127a7-d1c0-4e5a-890c-7ba5a02e5e98`;
+  - ig-sports `local_ad5aa18c-a10d-45d9-a4e3-b606978ac193`.
+- **Clock:** interim shortlists Sat 23:00 PKT. The hub then verifies the reports and gives him ONE ranked board, not six relays.
+- **Archived:** the HP research session and the Snape build ("snape is done"). Snape's result is in RESULTS.md (Nov 14 block).
+
 ## ▶ 14 Nov (hub): usage reset to ~1 %, lean LIFTED; second cleanup
 - Affan used a usage reset (Sat 14 Nov). Goal: use the full 100 % by Mon 16 Nov ~02:00 UTC, at max effort. The Speed line was told to
   resume its Phase B if usage was the only blocker.

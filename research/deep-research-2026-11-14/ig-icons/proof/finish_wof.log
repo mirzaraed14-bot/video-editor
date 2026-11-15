@@ -1,0 +1,9 @@
+[ WARN:0@0.243] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+face [12, 147, 22, 36] crop 608 x 0
+proteus rc 0 
+[ WARN:0@0.220] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+face [1408, 161, 124, 209] crop 608 x 1167
+proteus rc 0 
+[ WARN:0@0.166] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+face [949, 0, 2, 0] crop 608 x 646
+proteus rc 0 

@@ -1,0 +1,57 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "9JezUB8MDh_-2xEyxQ60St1QElk",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "jbHzx6jirqS_pAx7NpThbLf0rS8",
+      "id": "VVVKQUtPTnF1cTVfN1ZlSUJ6SVlsTzJnLjlDbnc0SG42S0ww",
+      "snippet": {
+        "publishedAt": "2020-06-25T17:00:11Z",
+        "channelId": "UCJAKONquq5_7VeIBzIYlO2g",
+        "title": "Paris Jackson First Interview about Michael Part 01",
+        "description": "This rare and unique interview with Paris Jackson was part of a Tribute documentary project about Michael - involving Katherine Jackson, and interviewed by Sonia Lowe.\n\nParis speaks about some of her earliest memories with her father, and siblings, celebrating her birthday on Neverland. She also opens up about her father's favorite songs at the time, discovering her father's fame, and watching him perform. She also shares some of her father's most important lessons and comments on reasons for speaking up at Michael's memorial in 2009.\n\nStay tuned for more with Michael's one and only daughter, Paris Jackson.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9Cnw4Hn6KL0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9Cnw4Hn6KL0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9Cnw4Hn6KL0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9Cnw4Hn6KL0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Jackson fam interview archive",
+        "playlistId": "UUJAKONquq5_7VeIBzIYlO2g",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "9Cnw4Hn6KL0"
+        },
+        "videoOwnerChannelTitle": "Jackson fam interview archive",
+        "videoOwnerChannelId": "UCJAKONquq5_7VeIBzIYlO2g"
+      },
+      "contentDetails": {
+        "videoId": "9Cnw4Hn6KL0",
+        "videoPublishedAt": "2020-06-25T17:00:11Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 50
+  }
+}
+

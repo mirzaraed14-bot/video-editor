@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "IAl3emBiIbzru6-X5anJzApRcrk",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "rQrZZCVMk8T6T1iQtxBzNIIP9Sk",
+      "id": "UC6UaQnk2USCIqNtdRugDPOA",
+      "snippet": {
+        "title": "The story vault ",
+        "description": "Welcome to a world of stories that inspire, move, and transform.\nThis channel is dedicated to powerful storytelling — from real-life experiences and untold histories to inspiring journeys and life lessons. Each video is crafted to take you deeper into moments that shape people, challenge perspectives, and awaken something within you.\nWhether it’s stories of resilience, love, sacrifice, or success, you’ll find content that speaks to the heart and stays with you long after the video ends.\n\nSubscribe and step into stories that matter.\n",
+        "customUrl": "@interestingstory44",
+        "publishedAt": "2026-01-01T08:18:00.52766Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/z1A1ykB5dTIHFo1magVsdXWjH6CxUnJq4AoBhrhrVT9qvzDcTkQV5-itaKgcjcj4N_DATL9A4g=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/z1A1ykB5dTIHFo1magVsdXWjH6CxUnJq4AoBhrhrVT9qvzDcTkQV5-itaKgcjcj4N_DATL9A4g=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/z1A1ykB5dTIHFo1magVsdXWjH6CxUnJq4AoBhrhrVT9qvzDcTkQV5-itaKgcjcj4N_DATL9A4g=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "The story vault ",
+          "description": "Welcome to a world of stories that inspire, move, and transform.\nThis channel is dedicated to powerful storytelling — from real-life experiences and untold histories to inspiring journeys and life lessons. Each video is crafted to take you deeper into moments that shape people, challenge perspectives, and awaken something within you.\nWhether it’s stories of resilience, love, sacrifice, or success, you’ll find content that speaks to the heart and stays with you long after the video ends.\n\nSubscribe and step into stories that matter.\n"
+        },
+        "country": "US"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UU6UaQnk2USCIqNtdRugDPOA"
+        }
+      },
+      "statistics": {
+        "viewCount": "103265959",
+        "subscriberCount": "52700",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1050"
+      }
+    }
+  ]
+}

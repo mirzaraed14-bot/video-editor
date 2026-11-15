@@ -1,0 +1,24 @@
+[20:00:55] get radcliffe_v5_2026-04-13
+[20:01:39] get felton_2026-03-26
+[20:02:34] get oldman_v2_2023-12-28
+[20:03:04] get felton_2022-11-01
+[20:03:26] get fiennes_v2_2021-12-29
+[20:03:43] get rickman_2015-06-22
+total 1164113
+drwxr-xr-x 1 affan 197609         0 Nov 14 20:04 .
+drwxr-xr-x 1 affan 197609         0 Nov 14 19:56 ..
+-rw-r--r-- 1 affan 197609  44733924 Nov 14 20:03 felton_2022-11-01.mp3
+-rw-r--r-- 1 affan 197609  89293024 Nov 14 20:04 felton_2022-11-01.wav
+-rw-r--r-- 1 affan 197609 163217052 Nov 14 20:02 felton_2026-03-26.mp3
+-rw-r--r-- 1 affan 197609 130274690 Nov 14 20:04 felton_2026-03-26.wav
+-rw-r--r-- 1 affan 197609       212 Nov 14 20:03 fetch.log
+-rwxr-xr-x 1 affan 197609       601 Nov 14 19:56 fetch.sh
+-rw-r--r-- 1 affan 197609  40401811 Nov 14 20:03 fiennes_v2_2021-12-29.mp3
+-rw-r--r-- 1 affan 197609  80629564 Nov 14 20:04 fiennes_v2_2021-12-29.wav
+-rw-r--r-- 1 affan 197609  98957010 Nov 14 20:02 oldman_v2_2023-12-28.mp3
+-rw-r--r-- 1 affan 197609 131821412 Nov 14 20:04 oldman_v2_2023-12-28.wav
+-rw-r--r-- 1 affan 197609 160705102 Nov 14 20:01 radcliffe_v5_2026-04-13.mp3
+-rw-r--r-- 1 affan 197609 128265992 Nov 14 20:04 radcliffe_v5_2026-04-13.wav
+-rw-r--r-- 1 affan 197609  37714121 Nov 14 20:04 rickman_2015-06-22.mp3
+-rw-r--r-- 1 affan 197609  86005354 Nov 14 20:04 rickman_2015-06-22.wav
+-rw-r--r-- 1 affan 197609       956 Nov 14 20:00 urls.tsv

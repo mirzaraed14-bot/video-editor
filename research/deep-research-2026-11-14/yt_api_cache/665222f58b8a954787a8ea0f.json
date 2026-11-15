@@ -1,0 +1,87 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "-SJqiXPE1PF2XlPtsKwi3KOmfF8",
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "_SheBgYs6oYfxJRZB_-nuE1XL8A",
+      "id": "UC77eBTnL2_IALBAoFHUzUeA",
+      "snippet": {
+        "title": "DailySpeed",
+        "description": "🎞️ Streamer Clips and Edits🔥\n\n✅ Streamer edits edited by me, I use clean transitions, sound effects, zoom-ins, commentary or music to match the emotion of the moment. To make my edits more formative, feel professional and engaging.\n✅ I use Adobe Premiere / Capcut Pro for video editing.\n✅ Fair use helps creators like me share content that’s funny, entertaining and adds real value on it.\n\nCopyright Disclaimer:\nUnder Section 185 (Fair Use) of RA 8293, All content, including video clips, images, and audio used in this channel, is intended for entertainment.\n\nIf any content owner wishes to request the removal or modification of any material, please contact us directly — and it will be addressed immediately.\n\n📩 Contact: topia8974@gmail.com\nThis disclaimer is made in compliance with Republic Act No. 8293 (Philippine Intellectual Property Code).\n",
+        "customUrl": "@drinzyclips",
+        "publishedAt": "2021-06-12T04:10:24.613744Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/jy6AbeP_yRnVHx9NAmHWQfARwULPPzSY9-TX_fV3E6wd4oq8lbAN1nYtE1ZDyKzFRy2rMKbjJw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/jy6AbeP_yRnVHx9NAmHWQfARwULPPzSY9-TX_fV3E6wd4oq8lbAN1nYtE1ZDyKzFRy2rMKbjJw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/jy6AbeP_yRnVHx9NAmHWQfARwULPPzSY9-TX_fV3E6wd4oq8lbAN1nYtE1ZDyKzFRy2rMKbjJw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "DailySpeed",
+          "description": "🎞️ Streamer Clips and Edits🔥\n\n✅ Streamer edits edited by me, I use clean transitions, sound effects, zoom-ins, commentary or music to match the emotion of the moment. To make my edits more formative, feel professional and engaging.\n✅ I use Adobe Premiere / Capcut Pro for video editing.\n✅ Fair use helps creators like me share content that’s funny, entertaining and adds real value on it.\n\nCopyright Disclaimer:\nUnder Section 185 (Fair Use) of RA 8293, All content, including video clips, images, and audio used in this channel, is intended for entertainment.\n\nIf any content owner wishes to request the removal or modification of any material, please contact us directly — and it will be addressed immediately.\n\n📩 Contact: topia8974@gmail.com\nThis disclaimer is made in compliance with Republic Act No. 8293 (Philippine Intellectual Property Code).\n"
+        },
+        "country": "PH"
+      },
+      "statistics": {
+        "viewCount": "89102646",
+        "subscriberCount": "27600",
+        "hiddenSubscriberCount": false,
+        "videoCount": "429"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "t4ncHWUTLGC0Fvasb6Mv73wtRds",
+      "id": "UCIPD8q8n3Vy7Qfz59RTc1Jg",
+      "snippet": {
+        "title": "Kick_Clippers",
+        "description": "This Channel is not associated with MrBeast. I upload clips of various streamers, including N3on, Adin Ross, IShowSpeed, Kai Cenat, and More. Thanks for visiting me, be sure to subscribe for good luck. Have a nice day. 62444",
+        "customUrl": "@kick_clippers",
+        "publishedAt": "2020-02-04T18:19:45.744838Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ny_N2mPk7dUCSPQL0Nwk3EBFJllEuoOAQC8_jY5OyEtAxCe4sKQNDGLgeR9I2uKHI_-FwbjxUg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ny_N2mPk7dUCSPQL0Nwk3EBFJllEuoOAQC8_jY5OyEtAxCe4sKQNDGLgeR9I2uKHI_-FwbjxUg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ny_N2mPk7dUCSPQL0Nwk3EBFJllEuoOAQC8_jY5OyEtAxCe4sKQNDGLgeR9I2uKHI_-FwbjxUg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Kick_Clippers",
+          "description": "This Channel is not associated with MrBeast. I upload clips of various streamers, including N3on, Adin Ross, IShowSpeed, Kai Cenat, and More. Thanks for visiting me, be sure to subscribe for good luck. Have a nice day. 62444"
+        }
+      },
+      "statistics": {
+        "viewCount": "859003176",
+        "subscriberCount": "229000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "3404"
+      }
+    }
+  ]
+}

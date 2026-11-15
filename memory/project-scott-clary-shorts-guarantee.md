@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: d3d74054-8117-4f44-bcac-6f8a02738576
-  modified: 2026-11-10T13:32:05.944Z
+  modified: 2026-11-14T15:17:24.739Z
 ---
 
 Scott D. Clary (Success Story) signed 2026-10-15. Affan's guarantee (told 2026-10-29): if OUR Shorts don't average 20,000 views by
@@ -14,6 +14,12 @@ is the average of our LAST 12 Shorts, so any 12 in a row need 240K between them.
 
 Bombas ("Daymond John Almost LOST $250M", 659K) is Scott's record; the rest sit at 0.2-13K, about 3K on average. Bombas leaves the window,
 so the route is one ~200K Short per 12. Patrón was never public: there was a copyright music issue and Affan asked Scott to upload it.
+
+**Affan's position (said 2026-11-14):** the low views come from the channel, not our Shorts: either bots on Scott's accounts or too many
+Shorts a day. He asked Scott to post fewer; Scott refused and told him to "keep editing away", which Affan took as disrespect. He believes
+our Shorts are worth 50K+ and that a views guarantee can work on other channels. **Never mention bots to Scott or in anything sent to him.**
+What our files show (FINDINGS § 2026-11-12): ours 3.15K vs 607 for the rest at a week old; the pace theory is untested (the ≤2-a-day test
+never ran); the only Studio numbers put ours at 64-65 % viewed vs 73.7 % for Bombas. The 20K bar is far off (six of the last 12 ≈ 1.6K).
 
 **Why:** the money and the client relationship ride on this. Affan wants the Bombas result to be repeatable, not a fluke.
 

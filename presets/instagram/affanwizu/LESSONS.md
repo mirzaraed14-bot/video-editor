@@ -3,6 +3,11 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-16: Urdu captions with his Premiere open: one large-v3 process at 2 threads, queued on `.asr-lock` (ABW11 Sequence 09)
+- **The 11-14 lab-notes rule ("no large-v3 while he is in Premiere; medium.en") cannot apply to Urdu**: medium.en hears no Urdu. What it protects against is several 8 GB decoders paging his Premiere out. So: ONE unbatched faster-whisper large-v3 int8 process at `cpu_threads=2` (~2.3 GB working set), taking the machine-wide `.asr-lock` (`projects/_onyx-batch9-2026-11/reactions/.asr-lock`, `os.mkdir`) with a memory guard (phys ≥ 3 GB, commit ≥ 4.5 GB), then the ur wav2vec2 alignment. → `projects/abw11-seq09-short/work/transcribe_fw.py`. Ran at 5.3 GB physical / 6.1 GB commit free with Premiere + Media Encoder + Photoshop open; nothing hung.
+- **Queue the rest behind the same lock** (`redecode.py`, `codeswitch_pass.py` wrapped in `until mkdir lock`, `probe.py`), all launched at once: they ran strictly one after the other, ~25 min for a 69 s reel.
+- **WhisperX dropped a whole "theek hai"** after "public figure" (5.68-5.94); the hi window and the English listener both had it, two probes confirmed it. Read the hi line and codeswitch.json even where words.json has no gap.
+
 ## 2026-11-14: "remake the captions, I've removed some bits" = remap, don't re-transcribe (ABW11 Sequence 06 v2)
 - **Read the live sequences first:** the project had moved on (Sequences 03 and 05 now hold other videos, the active one was a new Sequence 07); only Sequence 06 was shorter in its V1/A1 (150.567 -> 141.783 s; its 158.9 s end was an adjustment layer on V2).
 - **Remap by source time.** Save v1 (`v1/`), re-run `sequence_reference.py`, map every v1 caption start and word through v1 clip -> source -> v2 clip (`projects/abw11-seq06-short/work/remap_v2.py` + `make_v2.py`): cues fully inside a removed span drop, the rest shift exactly. Then re-decode ONLY a window around each join on the v2 cut (`work/probe_v2.py`) to settle the lines that straddle a cut: 3 of his 5 cuts were pauses, 2 took words ('wo' before 'organic hain'; 'yar' + a 6.7 s stretch). Whole job ~15 min instead of a 40 min re-transcription.

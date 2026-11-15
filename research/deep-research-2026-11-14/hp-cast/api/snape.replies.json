@@ -1,0 +1,164 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "2_tQwJIQ1CMAomxjpuuHqJV4Qts",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2ipmHtVK1CD80CJUaNGto4_trXk",
+      "id": "UgyXylec_D6UkQPCW5Z4AaABAg",
+      "snippet": {
+        "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+        "videoId": "h7ze3Ckj830",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Gq51JZYGj2e-pbH6R4NTMrhHHHg",
+          "id": "UgyXylec_D6UkQPCW5Z4AaABAg",
+          "snippet": {
+            "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+            "videoId": "h7ze3Ckj830",
+            "textDisplay": "have some respect, you are imposing an AI face on two dead men",
+            "textOriginal": "have some respect, you are imposing an AI face on two dead men",
+            "authorDisplayName": "@scottyoung4814",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lIFNRhtZxFJZ7DcrjhsdyqX-GNlpZGsx71K-WOgcY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@scottyoung4814",
+            "authorChannelId": {
+              "value": "UCJApG3pFBK-4H-wPseMllXg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-11-12T20:46:32Z",
+            "updatedAt": "2026-11-12T20:46:32Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      },
+      "replies": {
+        "comments": [
+          {
+            "kind": "youtube#comment",
+            "etag": "i2C3oBRvDzYggJIGWxQaoWFHgrc",
+            "id": "UgyXylec_D6UkQPCW5Z4AaABAg.Ad7SUvjghvZAd7X_vzW_cl",
+            "snippet": {
+              "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+              "videoId": "h7ze3Ckj830",
+              "textDisplay": "Whats the Ai part",
+              "textOriginal": "Whats the Ai part",
+              "parentId": "UgyXylec_D6UkQPCW5Z4AaABAg",
+              "authorDisplayName": "@flameboy8334",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/k0X-AzMHZEpQ6JbWMwdltVt1Dv_TTECESfrrkHY3vKX_iZUvQJSCbIcrD6jhLjcZE5TIwsH56Q=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@flameboy8334",
+              "authorChannelId": {
+                "value": "UCEDp4Qr9sVmhErS30ZBi08Q"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2026-11-12T21:31:02Z",
+              "updatedAt": "2026-11-12T21:31:02Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "O7gx97JrKRHkXZ5syshLYU6SQHs",
+            "id": "UgyXylec_D6UkQPCW5Z4AaABAg.Ad7SUvjghvZAd7Y-IJc9FH",
+            "snippet": {
+              "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+              "videoId": "h7ze3Ckj830",
+              "textDisplay": "half this content is ai get grip or i should baaa baaa like a damn sheep",
+              "textOriginal": "half this content is ai get grip or i should baaa baaa like a damn sheep",
+              "parentId": "UgyXylec_D6UkQPCW5Z4AaABAg",
+              "authorDisplayName": "@scottyoung4814",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lIFNRhtZxFJZ7DcrjhsdyqX-GNlpZGsx71K-WOgcY=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@scottyoung4814",
+              "authorChannelId": {
+                "value": "UCJApG3pFBK-4H-wPseMllXg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2026-11-12T21:34:38Z",
+              "updatedAt": "2026-11-12T21:34:38Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "2wOmegFh9h5-zrCcanGCZ0OJXGw",
+            "id": "UgyXylec_D6UkQPCW5Z4AaABAg.Ad7SUvjghvZAd7YH0sfYSt",
+            "snippet": {
+              "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+              "videoId": "h7ze3Ckj830",
+              "textDisplay": "you dont see the mangled faces",
+              "textOriginal": "you dont see the mangled faces",
+              "parentId": "UgyXylec_D6UkQPCW5Z4AaABAg",
+              "authorDisplayName": "@scottyoung4814",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lIFNRhtZxFJZ7DcrjhsdyqX-GNlpZGsx71K-WOgcY=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@scottyoung4814",
+              "authorChannelId": {
+                "value": "UCJApG3pFBK-4H-wPseMllXg"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2026-11-12T21:37:03Z",
+              "updatedAt": "2026-11-12T21:37:03Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "mmFcLDkVDgE0-9nX_hL6h-tabKg",
+            "id": "UgyXylec_D6UkQPCW5Z4AaABAg.Ad7SUvjghvZAdA265tsr0P",
+            "snippet": {
+              "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+              "videoId": "h7ze3Ckj830",
+              "textDisplay": "\u200b@scottyoung4814i cant believe you mister. With all due respect, youtube automatically upscales ANY youtube short on the platform. You can't turn it off. You should investigate this as it is actually a pretty amazing rrason why to, but please note that EVERY YT short is AI upscaled.",
+              "textOriginal": "\u200b@scottyoung4814i cant believe you mister. With all due respect, youtube automatically upscales ANY youtube short on the platform. You can't turn it off. You should investigate this as it is actually a pretty amazing rrason why to, but please note that EVERY YT short is AI upscaled.",
+              "parentId": "UgyXylec_D6UkQPCW5Z4AaABAg",
+              "authorDisplayName": "@MEMERc23",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nA5GnWOmN0XZGV1tnPQ2CCRe9HSjbQJ93OTAAc536KgnA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@MEMERc23",
+              "authorChannelId": {
+                "value": "UCvPwgSx_bRXK5P0wnEb6J7w"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 0,
+              "publishedAt": "2026-11-13T20:53:40Z",
+              "updatedAt": "2026-11-13T20:53:40Z"
+            }
+          },
+          {
+            "kind": "youtube#comment",
+            "etag": "z35owOalHJxqCLuXYOi46DSbluw",
+            "id": "UgyXylec_D6UkQPCW5Z4AaABAg.Ad7SUvjghvZAdA2AVDoK9y",
+            "snippet": {
+              "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+              "videoId": "h7ze3Ckj830",
+              "textDisplay": "\u200b@flameboy8334there is no ai in here, just the yt ai upscaling mode",
+              "textOriginal": "\u200b@flameboy8334there is no ai in here, just the yt ai upscaling mode",
+              "parentId": "UgyXylec_D6UkQPCW5Z4AaABAg",
+              "authorDisplayName": "@MEMERc23",
+              "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nA5GnWOmN0XZGV1tnPQ2CCRe9HSjbQJ93OTAAc536KgnA=s48-c-k-c0x00ffffff-no-rj",
+              "authorChannelUrl": "http://www.youtube.com/@MEMERc23",
+              "authorChannelId": {
+                "value": "UCvPwgSx_bRXK5P0wnEb6J7w"
+              },
+              "canRate": true,
+              "viewerRating": "none",
+              "likeCount": 1,
+              "publishedAt": "2026-11-13T20:54:19Z",
+              "updatedAt": "2026-11-13T20:54:19Z"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+

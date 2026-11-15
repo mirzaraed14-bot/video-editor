@@ -1,6 +1,71 @@
 # RUN — skool-vsl-2026-11
 
-## ▶ STATUS: resume here (SFX AUDIT, 2026-11-14 ~06:30): both sequences saved in ABW11, SFX = the set he heard; v2 offered
+## ▶ STATUS: resume here (SFX v2 PLACED, 2026-11-14 18:14): both sequences saved in ABW11 with SFX v2; Affan exports
+**His word (2026-11-14):** "Yes, build v2" (the proposal in `review/SFX-V2-PROPOSAL.md`).
+
+**On the timeline now** (placed inside the shared `premiere.lock`, read back equal, `ABW11.prproj` saved 18:13:59):
+- **"Skool VSL 2026-11"** (main): 27 SFX (A2 9, A3 18). V1/A1 46, V2 his two grade layers, V3 19, V4 `cap-alpha-g`: unchanged.
+- **"Skool VSL 2026-11 evergreen"**: 24 SFX (A2 9, A3 15). V1/A1 37, V3 16, V4 `cap-e-alpha-e`: unchanged.
+- **Saved on disk, proven:** `work/autosave/read_sfx_tracks.py` finds the v2 starts in the saved `ABW11.prproj` (18:14:45), 27 and 24 items; the heard set does not match it.
+- Before anything changed, `work/pp_state_check.py` read every track of both cuts against the last save (Premiere had been killed
+  and relaunched at 17:35 by the RAM incident): STATE OK on both, so nothing was lost and nothing had been edited by hand.
+
+**What v2 changed** (`work/plan/sfx_build_v2.py`: a ROW EDIT of the heard sheets `work/sfx-<cut>.pre-sync.json`; it asserts that no
+other row differs, so every other cue keeps the take, time and level he heard):
+1. Removed 3 cues his rules want silent: g03 red strike, g05 BURIED sink, g08 kicker on the cut back to his face.
+2. Swapped the three slow-attack scene takes slot for slot (new crisp library takes, `sfx/LIBRARY.md`):
+   - Raincoat `swish-scene-2` (272 ms to crest) → `swish-scene-6` "Organic, Wind, Cool, Fast" (82 ms): g05 phones in, g13 seal in.
+   - Parachute `swish-scene-3` (418 ms) → `swish-scene-7` "Wind, Hard, Short 04" (138 ms): both wipes.
+   - Doors `swish-scene-4` (223 ms) → `swish-scene-8` "Wind, Soft, Short 02" (128 ms): g09 rail, g18 end card.
+   - Levelled inside what he passed: a full-band match to the take replaced, never louder in either band than his loudest heard
+     scene cue, never weaker on a phone than the weakest. On his measure the four Parachute/Doors slots come up 2.7-3.7 dB on a phone. The two Raincoat slots read 2.0 dB weaker, at 20.6 under: 0.6 dB past his line, where Raincoat sat at 18.5. Lifting them would make them louder in full band than any scene cue he passed, so they stay; it is on the audition list.
+3. g01 (first frame): the head-trimmed copy of the same take, so it crests at 0.03 s, not 0.23 s (its card is fastest at frame 0).
+
+**Approved but NOT applied, because the build measured them wrong** (say so to Affan first; `--quieter` applies the -2 dB if he still wants it):
+- **"-2 dB on the loud end": its numbers were a measuring error.** `sfx_audit.py` decoded cues with `ffmpeg -ac 1` to float
+  (= 0.7071 x (L+R), +3.01 dB) but averaged the voice in numpy, so every "dB under the voice" read 3 dB too small.
+  - The heard set really sat 16.6-20.5 dB under the voice (full band), not 13.6-17.5.
+  - On HIS phone-band measure (`work/plan/sfx_cue_check.py` = his cue_check.py, 2026-10-25: WEAK = more than 20 dB under the voice in 300 Hz-6 kHz), 8/30 heard cues were already past the line; v2 has 8/27 (main) and 7/24 (evergreen), worst 22.8 (the kept scene-5).
+  - So "quieter" would push the wrong way. Levels are kept as heard.
+- **The sync moves (g06 page, g06 lockup, g07 Methos, g10 note, g11 rows, g14 bars):** each heard crest already sits on its own
+  GSAP tween start. The audit's frame-difference peaks were OTHER elements moving at the same moment:
+  - g06: the lockup shrink 3.30-4.20 and the card blur at 7.55;
+  - g07: the left card dimming at 4.62;
+  - g14: the previous card's exit;
+  - g11: its rows 2 and 3.
+  The g10 pins do drop (46 px at 1.45 s); the 192x108 probe could not see them. Nothing moved except g01.
+
+**Measured, placed (`review/sfx-audit-<cut>-v2.md`):**
+- **Spacing:** the closest crests are 1.40 s apart (was 0.39).
+- **Takes:** 18 distinct (main), never twice in a row.
+- **Levels:** 16.6-20.4 dB under the voice (full), 16.6-22.7 dB (phone) by the audit; 16.6-19.4 / 13.1-22.8 dB on his cue_check measure.
+- **Tone and decay:** tonal max 15.4 (the kept chip-3); decay max 190 ms.
+- **Mix:** -16.9 / -16.7 LUFS, unchanged; peak -5.6 / -5.7.
+- **Sync:** the 4 sync flags left (g06 lockup, g07 Maciej and Methos, g14 bars) are the concurrent-tween readings above. g01's "starts on sound" is the head trim, by design.
+
+**Audition first (his ears):**
+- `swish-scene-6` in the two Raincoat slots: a bright take swapped for a dark one (+4.2 dB on a flat full-band match). On a phone it reads 2 dB softer than Raincoat did.
+- The three new scene takes are one "Wind" family with the kept scene-5, and darker than what they replace (centroid 553-885 Hz vs Raincoat 3848). The library's near-duplicate gate passed them, but on slim margins.
+- `swish-scene-7` reads 13.6 on the audit's tone estimator, the same as the kept scene-1/scene-5 (the library's estimator: 9-12). Reject line 20.
+- g01 now crests on the first word "If".
+
+**Revert to the heard set:** `work/sfx-<cut>.pre-sync.json` → `work/sfx-<cut>.json`, then `work/sfx_clear_old.py`, `work/place_sfx.py`
+and `work/sfx_readback.py`, all inside the shared lock (`work/sfx_v2_place.py` is the template). `work/plan/sfx_plan.py` (pinned to
+the heard takes) + `sfx_calibrate.py` still reproduce the heard set exactly (checked on a scratch copy).
+
+**Tools made or fixed today:**
+- **Made:**
+  - Sourcing: `sfx/tools/fetch_only.py`, `scan_events.py`, `variety_v2.py`, `similar.py`.
+  - The crisp recipe: `make_crisp.py --test` rebuilds the heard crisp files to -80 dB.
+  - Scouting and probing: `work/plan/sfx_v2_scout.py`, `sfx_v2_rank.py`, `sfx_sync_probe.py`.
+  - Placement: `work/pp_state_check.py`, `work/sfx_v2_place.py`.
+- **Fixed:**
+  - `sfx_audit.py`: the downmix, the alpha overlays (alphaextract needs `format=yuva444p` first; every overlay had read "no motion"), and `--sheet/--placed/--tag`.
+  - `mix_check.py`: an optional sheet.
+  - `work/pp.py`: the `PREMIERE-PAUSE` guard was missing; added, plus `shared_lock()`.
+- **Superseded:** `work/plan/sfx_plan_v2.py` + `work/sfx-*.v2-proposal.json`.
+
+## ▶ STATUS (SFX AUDIT, 2026-11-14 ~06:30, superseded by SFX v2 above; its level figures read 3 dB too loud)
 The parent session asked for a proper non-listening check of the SFX after the usage reset.
 
 **What ran:**

@@ -1,0 +1,20 @@
+# hp-films audio measurements, 2026-11-15 00:51:20 PKT. gapflat.py = median spectral flatness of the quietest 20% of 0.1 s windows (150-4000 Hz); clean interviews 0.10-0.24, score under voice ~0.01-0.06 (Coltrane RtH 0.019). LUFS = ffmpeg ebur128 integrated over the window.
+## Oldman 2023 video (38pRftXvOmA 08:00-18:00 section, rows 1-2 = section 333-450 s)
+38pRftXvOmA_oldman2023_0800-1800.mp4 333.0-450.0s: quietest-20% windows n=234, median dB -60.1, median flatness 0.096
+ I: -31.3 LUFS  LRA: 11.1 LU 
+## Oldman 2026 video (BWMPDqyMc5Y 38:00-46:00 section, row 4 = section 397-460 s)
+BWMPDqyMc5Y_oldman2026_3800-4600.mp4 397.0-460.0s: quietest-20% windows n=126, median dB -44.4, median flatness 0.105
+ I: -18.0 LUFS  LRA: 5.6 LU 
+## Radcliffe 2024 video (OYJ7W0mJZUA on E:, row 3 = 1683-1730 s)
+Daniel Radcliffe, Jonathan Groff, _ Lindsay Mendez talk MERRILY WE ROLL ALONG I Happy Sad Confused.mp4 1683.0-1730.0s: quietest-20% windows n=94, median dB -51.5, median flatness 0.147
+ I: -25.0 LUFS  LRA: 8.9 LU 
+## Oldman 2023 RSS mp3 (840-990 s)
+oldman_v2_2023-12-28.mp3 840.0-990.0s: quietest-20% windows n=300, median dB -60.3, median flatness 0.098
+ I: -32.1 LUFS  LRA: 12.1 LU 
+## Oldman 2025 video (X_m_ksn2rMk 49:00-56:00 section; reply = section 0-55 s = video 49:00-49:55)
+X_m_ksn2rMk_oldman2025_4900-5600.mp4 0.0-60.0s: quietest-20% windows n=120, median dB -45.9, median flatness 0.051
+ I: -21.0 LUFS  LRA: 9.1 LU 
+## Oldman 2025 RSS mp3 (52:15-53:15, the same passage)
+oldman_v3_y25.mp3 3135.0-3195.0s: quietest-20% windows n=120, median dB -45.5, median flatness 0.053
+## Oldman 2025 video, a later window (60-180 s) for comparison
+X_m_ksn2rMk_oldman2025_4900-5600.mp4 60.0-180.0s: quietest-20% windows n=240, median dB -45.5, median flatness 0.057

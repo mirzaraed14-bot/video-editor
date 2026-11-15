@@ -14,13 +14,13 @@
 - [YouTube sourcing](feedback-youtube-sourcing.md) — fetch the b-roll here; force H.264 (Premiere can't read AV1); search his drives (E:\Bullshit Folder) before asking him to download
 - [Walkthrough videos](feedback-walkthrough-videos.md) — per-video Tella/Loom brief: transcribe the audio, sample the frames they point at, resolve it into the job's BRIEF.md
 - [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
-- [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); own presets presets/youtube/affanwiz/ + presets/youtube-shorts/affanwiz/, never mixed; job log + resume block in presets/youtube/affanwiz/JOBS.md
+- [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); own presets presets/youtube/affanwiz/ + presets/youtube-shorts/affanwiz/, never mixed; job log + resume block in presets/youtube/affanwiz/JOBS.md; research runs in its own session `affanwiz-research` rooted in the Skool folder creator-shorts/ (since 2026-11-15)
 - [Workspace on the X: NVMe](project-workspace-on-nvme.md) — everything lives at X:\Claude Projects; E:\Claude Projects becomes a junction via move-to-nvme.cmd, never just deleted
 - [Abundance Wisdom long-form](project-abundance-wisdom-longform.md) — AW face-led long-forms start at presets/youtube/abundance-wisdom/PLAYBOOK.md (gist, never a lock); job log in the file
 - [AW long-form documentary rules](feedback-aw-longform-documentary-rules.md) — bespoke visual per line, FX catalog + MG, nested host, no freeze under VO, level-matched inserts, subtitles on third-party clips, name every speaker
 - [Premium doc channels](reference-premium-doc-channels.md) — premium doc channels to borrow from (research/premium-doc-channels.md), coded into FX-01..80 in research/effects-catalog/CATALOG.md
 - [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + his reaction video for podcast outreach (@affancuts); ▶ STATUS in presets/youtube-shorts/onyx-samples/JOBS.md, rules in its LESSONS.md
-- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; a lapsed login token = silent WATERMARK, check every output
+- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; a lapsed login token = silent WATERMARK, check every output; no Iris on small faces/wides ("pasty AI-ish")
 - [Captions just below the lips](feedback-captions-just-below-lips.md) — short-form captions at ONE base per video, just under the lips (y940-1130); never lift footage for it
 - [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes (no full stops/commas), white base + coloured emphasis, smooth rise; @affanwizu: no ? until he answers, no commas in numbers
 - [No same-camera punch-ins](feedback-no-same-camera-punch-ins.md) — no instant zoom/whip between shots of one camera; one keyframed push-in; transitions only on scene change
@@ -40,7 +40,7 @@
 - [Sequencing before the edit](feedback-sequencing-before-edit.md) — ALL research incl. Instagram → the sequence as text → his OK → only then the raw build; "start it" after a research question = the research
 - [Google Drive = G:](reference-google-drive.md) — Drive for desktop mounts as G:\My Drive; upload = copy there; nearly full
 - [Viral pick bar](feedback-viral-pick-bar.md) — a moment must END in a usable lesson or a reversed belief on a universal stake (VIRAL-BAR.md A-I); every pick says 'the viewer gets: ___'
-- [Model roles: Fable advises, Opus judges, Sonnet executes](feedback-use-fable-allowance.md) — NO Fable agents; builders SONNET, Opus for judgment; the advisor is Fable 5.2; edit sub-sessions get `model` passed; check `advisorModel` in the .jsonl, never guess
+- [Model roles: Fable advises, Opus judges, Sonnet executes](feedback-use-fable-allowance.md) — NO Fable agents; builders SONNET, Opus for judgment; the advisor is Fable 5.2; EVERY sub-session = Sonnet xhigh (claude-sonnet-5-5, since 2026-11-15); check `advisorModel` in the .jsonl, never guess
 - [Usage costs, measured](reference-usage-costs.md) — weekly cap ≈ $2,150–2,450 API-priced (1 % ≈ $22); % of a week per job type; a Fable advisor call ≈ $5 at 600K context
 - [Usage budget](feedback-usage-budget.md) — GOAL = 100 % right at the Monday 7 AM reset, never before; the nightly usage-pace-check report says spend or go lean
 - [AW shorts session start](reference-aw-shorts-session-start.md) — fresh sessions for AW short passes start at presets/youtube-shorts/abundance-wisdom/SESSION-START.md (recipes, templates, costs)
@@ -79,7 +79,7 @@
 - [Shorts titles: 5 words max](feedback-shorts-titles-five-words.md) — a blunt hooking statement, 21-40 chars, no long name + story titles; overrides ENGINE title format
 - [Build, don't block on questions](feedback-build-dont-block-on-questions.md) — build on defaults, questions in the delivery note; for SEQUENCES superseded 11-14: sequence text → his OK → build
 - [Pre-pitch checklist](feedback-pitch-checklist.md) — no AW idea is pitched until it passes PITCH-CHECKLIST.md (facts, downloaded source quality, freshness, proof, shape, his rules); a fail is logged
-- [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — HP film footage of the young cast is OK for AW; BTS/press scope to confirm; real-life children stay out
+- [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — Affan 2026-11-10: HP film footage of the young cast is OK on frame for AW; 2026-11-14: a public figure's own teen-era footage is OK too (Speed at 15-17: "we're not publishing him in a weird way"); other real-life children stay flagged
 - [Checklist shape is a gate](feedback-checklist-shape-is-a-gate.md) — FIRST filter = Instagram virality of the beat; then gate-by-gate evidence on every idea; two facts = two topics, not a story
 - [No below-bar pitches](feedback-no-below-bar-pitches.md) — if nothing clears the bar, say "no pick" first; score B1 by "would Affan know this face?"
 - [Max effort on every asset](feedback-max-effort-every-asset.md) — no first-draft copy; EVERY sequence/pick/pitch passes MAX-EFFORT-GATE.md first (Instagram, other tellings, variants, Fable advisor x2, cold read)
@@ -87,4 +87,9 @@
 - [AffanWiz Studio access](reference-affanwiz-studio-access.md) — AffanWiz Studio not reachable from the Chrome Google accounts; ask Affan for impressions/CTR/AVD
 - [Natural speech, whole lines](feedback-natural-speech-whole-lines.md) — never cut him mid-phrase for a copy rule; one-take and transition lines stay whole; scan the WHOLE cut
 - [Subtle transitions](feedback-subtle-transitions.md) — Skool VSL: no push-through/zoom transitions, soft dissolves through the plate; no CTA push, head centred
-- [Scott IG: minimal format](feedback-scott-ig-minimal-format.md) — Scott's value talk on IG = black bars, one font fade-up, ONE big calligraphy word, no zooms; YT Shorts go to IG as-is
+- [Scott IG: minimal format](feedback-scott-ig-minimal-format.md) — Scott's own-talk IG strand: never INVENT a look (11-14 'horrendous'); a code-built COPY of a real reel he picked is OK: DOAC Katt Williams reel = black canvas, rounded square window, EB Garamond 1-3-word captions, white/gold, SUCCESS STORY tag; test stills vs the reference before any render
+- [Reactions: fast, not perfect](feedback-reactions-fast-not-perfect.md) — Affan 2026-11-14: Onyx reactions go to ONE prospect: one build, one review, one fix round, then deliver; P2b by eye, no endless loops
+- [Don't disturb his Premiere](feedback-dont-disturb-his-premiere.md) — 2026-11-14: never move his playhead; offgrab.py offline frames, quietgate.py + QUIET-MODE gate writes on his idle; no parallel large-v3 ASR (it crashed his Premiere)
+- [YouTube Data API keys](reference-youtube-data-api-key.md) — one key per job (2026-11-14): GTA 6 watcher, and Abundance Wisdom research (X:/Claude Projects/Abundance Wisdom/YOUTUBE-API.md); finds and checks videos with no bot checks, can't download or read transcripts; AffanWiz research may use the AW key for channel listings only, 0 searches (2026-11-15)
+- [News Shorts get GPU priority](feedback-news-shorts-gpu-priority.md) — Affan 2026-11-14: a time-sensitive Short outranks research jobs on gpu.lock; message the holder to pause (never kill its process), 1 s poll to take the lock
+- [AffanWiz: borrowed faces, Skool members](feedback-affanwiz-borrowed-faces.md) — the goal is Skool members; an established face or brand carries his point; every idea referenced statistically, 'not Fugazi'

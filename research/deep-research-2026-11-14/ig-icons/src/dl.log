@@ -1,0 +1,55 @@
+start 2026-11-14 23:17:01
+[youtube] Extracting URL: https://www.youtube.com/watch?v=cOxmrVZr5WQ
+[youtube] cOxmrVZr5WQ: Downloading webpage
+[youtube] cOxmrVZr5WQ: Downloading tv samsung player API JSON
+[youtube] cOxmrVZr5WQ: Downloading visionos player API JSON
+[youtube] cOxmrVZr5WQ: Downloading player fad7e4e9-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] cOxmrVZr5WQ: Downloading m3u8 information
+[info] cOxmrVZr5WQ: Downloading 1 format(s): 137+140
+[download] Sleeping 4.00 seconds as required by the site...
+[download] Destination: research\deep-research-2026-11-14\ig-icons\src\cOxmrVZr5WQ\cOxmrVZr5WQ.f137.mp4
+[download] Download completed
+[download] Destination: research\deep-research-2026-11-14\ig-icons\src\cOxmrVZr5WQ\cOxmrVZr5WQ.f140.m4a
+[download] Download completed
+[Merger] Merging formats into "research\deep-research-2026-11-14\ig-icons\src\cOxmrVZr5WQ\cOxmrVZr5WQ.mp4"
+Deleting original file research\deep-research-2026-11-14\ig-icons\src\cOxmrVZr5WQ\cOxmrVZr5WQ.f137.mp4 (pass -k to keep)
+Deleting original file research\deep-research-2026-11-14\ig-icons\src\cOxmrVZr5WQ\cOxmrVZr5WQ.f140.m4a (pass -k to keep)
+rc1=0 2026-11-14 23:50:31
+[youtube] Extracting URL: https://www.youtube.com/watch?v=Z7-3xGyL_c0
+[youtube] Z7-3xGyL_c0: Downloading webpage
+[youtube] Z7-3xGyL_c0: Downloading tv samsung player API JSON
+[youtube] Z7-3xGyL_c0: Downloading visionos player API JSON
+[youtube] Z7-3xGyL_c0: Downloading player fad7e4e9-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] Z7-3xGyL_c0: Downloading m3u8 information
+[info] Z7-3xGyL_c0: Downloading 1 format(s): 137+140-12
+[info] Z7-3xGyL_c0: Downloading 1 time ranges: 0.0-470.0
+[download] Sleeping 5.00 seconds as required by the site...
+[download] Destination: research\deep-research-2026-11-14\ig-icons\src\Z7-3xGyL_c0\Z7-3xGyL_c0_0000-0750.mp4
+[https @ 000001b07d481780] HTTP error 403 Forbidden
+[in#0 @ 000001b07d480a80] Error opening input: Server returned 403 Forbidden (access denied)
+Error opening input file https://rr12---sn-jtcxg-3ipee.googlevideo.com/videoplayback?expire=1794703834&ei=eq34arCmDYOD_NUPoLexkQM&ip=103.244.175.64&id=o-AP2Vj1PVaFIcbVxK2UMMW-5dLDPijw24oxgLMtzEsdnI&itag=137&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398%2C399&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=267&met=1794682234%2C&mh=Ax&mm=31%2C29&mn=sn-jtcxg-3ipee%2Csn-ojhgn5-5g&ms=au%2Crdu&mv=m&mvi=12&pl=24&rms=au%2Cau&pcm2=no&initcwndbps=594250&bui=AZFAFb-TzLcsa1SUU5ka61m_CAMIh4BnKYXvpemkiYdZxEsTowLys661ReAooye4ADjT4JL755r16Yv9&spc=nfZ8ZpM9z5gDqs5LVIsAip6zZh0&vprv=1&svpuc=1&mime=video%2Fmp4&ns=aAuRcUOvCB87SZ-mdRHarhUa&rqh=1&gir=yes&clen=134820898&dur=658.324&lmt=1766287664126215&mt=1794681736&fvip=2&epbp=1&keepalive=yes&lmw=1&fexp=51565116&c=TVHTML5&sefc=1&txp=5535534&n=fRtrocaQpXPvp&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRAIgcbbYj8dRg5QUgWDHicam8PxAMsriBVFSRbLP039zJPoCIAoV9Y2lIC39DV0wYPKRbHRdGirNiLHnq-BTA1oKZgL8&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAIsa-4-LYbaN9-J9ZifrpNkrTUZsffVKxv0jwxBompvkAiEA_M6Jf8biCpMIrWJutLAUURB71CuErMqu6fKkGIVJcXs%3D.
+Error opening input files: Server returned 403 Forbidden (access denied)
+
+
+ERROR: ffmpeg exited with code 3436169992
+retry-full 2026-11-14 23:52:59 (sections 403'd in ffmpeg at 23:50: a technical failure, not a bot page or 429)
+rc2=1 2026-11-14 23:53:41
+[youtube] Extracting URL: https://www.youtube.com/watch?v=Z7-3xGyL_c0
+[youtube] Z7-3xGyL_c0: Downloading webpage
+[youtube] Z7-3xGyL_c0: Downloading tv samsung player API JSON
+[youtube] Z7-3xGyL_c0: Downloading visionos player API JSON
+[youtube] Z7-3xGyL_c0: Downloading player fad7e4e9-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] Z7-3xGyL_c0: Downloading m3u8 information
+[info] Z7-3xGyL_c0: Downloading 1 format(s): 137+140-12
+[download] Sleeping 3.00 seconds as required by the site...
+[download] Destination: research\deep-research-2026-11-14\ig-icons\src\Z7-3xGyL_c0\Z7-3xGyL_c0.f137.mp4
+[download] Download completed
+[download] Destination: research\deep-research-2026-11-14\ig-icons\src\Z7-3xGyL_c0\Z7-3xGyL_c0.f140-12.m4a
+[download] Download completed
+[Merger] Merging formats into "research\deep-research-2026-11-14\ig-icons\src\Z7-3xGyL_c0\Z7-3xGyL_c0.mp4"
+Deleting original file research\deep-research-2026-11-14\ig-icons\src\Z7-3xGyL_c0\Z7-3xGyL_c0.f140-12.m4a (pass -k to keep)
+Deleting original file research\deep-research-2026-11-14\ig-icons\src\Z7-3xGyL_c0\Z7-3xGyL_c0.f137.mp4 (pass -k to keep)
+rc3=0 2026-11-14 23:57:32

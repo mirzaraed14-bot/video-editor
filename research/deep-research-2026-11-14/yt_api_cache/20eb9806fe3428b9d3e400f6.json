@@ -1,0 +1,71 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "q0Oopp999fIsYRyhinSNgbLSW78",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "6ixqR11yGw9WECyU0oNYX0p0y10",
+      "id": "m6Sugr-ywh0",
+      "snippet": {
+        "publishedAt": "2026-08-29T03:46:29Z",
+        "channelId": "UCvL2BJ8OQAPdDe4pSZoGdZQ",
+        "title": "EASIEST Guide To Make Money From GTA 6 On YouTube (All Formats Ranked)",
+        "description": "Learn How To Make Viral Shorts $1: https://www.skool.com/abundance-school",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/m6Sugr-ywh0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/m6Sugr-ywh0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/m6Sugr-ywh0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/m6Sugr-ywh0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/m6Sugr-ywh0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Affan Baig",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "EASIEST Guide To Make Money From GTA 6 On YouTube (All Formats Ranked)",
+          "description": "Learn How To Make Viral Shorts $1: https://www.skool.com/abundance-school"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT17M42S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "99",
+        "likeCount": "4",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "MAr7QLdAncOdWFEbiHshSiehozk",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "1I4d_Dx8-3D0EhqEg03KtCDMFa8",
+      "id": "UCzTaO6zbdD2FpjZes31ynWw",
+      "snippet": {
+        "title": "Half-Blood University",
+        "description": "",
+        "customUrl": "@half-blooduniversity_",
+        "publishedAt": "2022-01-28T01:13:03.649401Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/1wHAA4F7IRnwXTECgYFbEMSrlIF8nPA7-35p03Plz-kzwPBjXCh3uLpMqWNIi93t6d3fmaTYAgE=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/1wHAA4F7IRnwXTECgYFbEMSrlIF8nPA7-35p03Plz-kzwPBjXCh3uLpMqWNIi93t6d3fmaTYAgE=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/1wHAA4F7IRnwXTECgYFbEMSrlIF8nPA7-35p03Plz-kzwPBjXCh3uLpMqWNIi93t6d3fmaTYAgE=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Half-Blood University",
+          "description": ""
+        }
+      },
+      "statistics": {
+        "viewCount": "194690460",
+        "subscriberCount": "104000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1159"
+      }
+    }
+  ]
+}

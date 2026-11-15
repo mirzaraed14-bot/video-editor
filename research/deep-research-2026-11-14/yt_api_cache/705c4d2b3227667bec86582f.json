@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "bVeHxNyuOC7mrmCPkdLzUOMoFnw",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "yOYNQFZtukEZ9vUG94YAGpbcKfs",
+      "id": "UCulYu1HEIa7f70L2lYZWHOw",
+      "snippet": {
+        "title": "michaeljacksonVEVO",
+        "description": "Michael Jackson on Vevo - Official Music Videos, Live Performances, Interviews and more...",
+        "customUrl": "@michaeljacksonvevo",
+        "publishedAt": "2009-09-02T23:38:03Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/nvt02XjPB-lklNBuV8rI9BQOgD1l7geYdJBzTkgoFJTgdK_Fzv_eaoQ9jV4Vb9DWFks0QFzeog=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/nvt02XjPB-lklNBuV8rI9BQOgD1l7geYdJBzTkgoFJTgdK_Fzv_eaoQ9jV4Vb9DWFks0QFzeog=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/nvt02XjPB-lklNBuV8rI9BQOgD1l7geYdJBzTkgoFJTgdK_Fzv_eaoQ9jV4Vb9DWFks0QFzeog=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "michaeljacksonVEVO",
+          "description": "Michael Jackson on Vevo - Official Music Videos, Live Performances, Interviews and more..."
+        }
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUulYu1HEIa7f70L2lYZWHOw"
+        }
+      },
+      "statistics": {
+        "viewCount": "18840015991",
+        "subscriberCount": "8240000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "137"
+      }
+    }
+  ]
+}
