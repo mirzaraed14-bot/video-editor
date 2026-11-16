@@ -1,5 +1,25 @@
 # RUN: oldman-good-sirius ("Was Oldman A Good Sirius?"), Abundance Wisdom: LEAD card under the 150K bar, built to STOP 1 on Affan's go ("try the sirius angle")
 
+## ▶ STATUS (16 Nov ~17:45 PKT): AFFAN'S REVIEW 1 -> v2 IN PROGRESS (resume here)
+His five notes (chat, 16 Nov, with stills of O2, O3 and the Ron card) and what v2 does:
+1. **"The camera is too shaky ... the base footage isn't even as shaky as this one."** Measured: the raw interviews move 0.00-0.04 px/frame
+   (`win/bg_shake.py`, tripod); v1's per-frame head lock (sigma 2 source frames = 33 ms, plus lock_refine's per-frame residuals) moved
+   the picture 2-6 px/frame with 5-12 px of jitter. No stabiliser was ever run. **Fix:** `build/slow_follow.py` (sigma 0.5 s on the v1
+   lock path, the head pinned only at same-camera cuts): jitter now 0.3-3 px, head hop 0.0 px at all 7 same-camera cuts.
+   v1 lock kept as `build/track.lock_v1.json`. NEVER re-run smooth_track.py (it would undo the face-box x 560 pin).
+2. **O2 Rickman "not good" -> "a Snape overlay in 4K is fine".** v2 = HIS OWN original V2 pick (`seq_src/snape_ps_s2.50_4.80.mov` =
+   the "Severus Snape scene pack 4K" at 2.50 s: the Philosopher's Stone feast, chin on hand), now from the real 4K upload
+   (BkDs3z9TJKg, section 0-10 s, `src/yt_BkDs3z9TJKg_4k/`).
+3. **"It's me" zoom "too poppy ... a subtle nice zoom in and zoom out".** v1 hit 170 %/s on its first frame (+18 % in 0.30 s). v2: +7 %,
+   0.70 s in / 0.80 s out, AE easy ease both ends (starts at 0.5 %/s, peak 17 %/s). `proof/r2/trace_p4_zoom.csv`. Table curve untouched.
+4. **O3 BTS "don't like it" -> "the actual movie version of that exact same shot".** v2 = the film's Death Chamber scene in 4K
+   (5G31FWs_TJI, "4K Dolby Atmos" upload, `src/yt_5G31FWs_TJI_4k/`), the frame matched to the BTS moment, film's own grade, band + blur twin.
+5. **Hagrid / Ron cards "feel out of the video ... they don't have the glowy borders and the drop shadows".** v2 (`finish.pic_card`):
+   graded with the footage's own chain, the AW glow edge line (rr.glow.stack, as the band bars), the glow-stack drop shadow. Size, path,
+   timing unchanged. (His last sentence was cut off: "it needs to feel like it ...".)
+Pending: the two 4K downloads (paced) -> O2/O3 crops + Chronos -> Stage A -> stills check -> finish -> export -> QA. RAM gate (6 GB /
+10 GB) was holding at 2.3 GB free at 17:40 (Chrome, Premiere, Claude sessions); never relaxed. Usage 10 % weekly at 17:30.
+
 ## ▶ MORNING SUMMARY (16 Nov ~10:35 PKT): FINAL RENDERED AND DELIVERED, waiting for Affan's review
 - **The final** is "Was Oldman A Good Sirius.mov": H.264, 1080x1920, 60 fps, 1919 frames, 31.983 s, PCM 48 kHz.
   - Copies, same sha256 `b93763de…a63e47` in all three:

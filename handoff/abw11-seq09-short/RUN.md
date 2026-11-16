@@ -1,6 +1,9 @@
 # RUN: abw11-seq09-short (@affanwizu captions, ABW11)
 
 ## ▶ STATUS: resume here
+**2026-11-16 ~19:00: FIRST TWO-LAYER CAPTION TEST rendered (new strategy, research/affanwizu-bilingual-captions/REFERENCE.md), waiting for his pick.** Urdu script on top (Noto Nastaliq Urdu 72 px, baseline y1328; installed for his user 11-16 with his OK, copy in assets/fonts/), Roman Urdu below (48 px, baseline y1420), gold #FFD700, glow fitted to the reference halo (`0 0 3px rgba(255,215,0,0.4), 0 0 16px rgba(255,215,0,0.85), 0 0 28px rgba(255,200,0,0.5)`), same 71 cues and switch times as the .srt. His call 11-16: the top line is what he says in Urdu letters, his English spelled in Urdu letters, nothing translated. Previews (full 69 s, burned, for picking the LOOK only): `outputs/bilingual-test/A_ubuntu_glow.mp4` · `B_serif_glow.mp4` (Times New Roman like the reference) · `C_ubuntu_glow_shadow.mp4` (+ faint black shadow) · `compare_A_B_C.png`. Tools: `work/bilingual/render_cues.mjs` (headless Chrome, one transparent PNG per cue), `glowfit.py`, `measure.py`, `assemble.py`; Urdu lines `captions.ur.txt`. Footage fills only y420-1500 (1920x1080 source at Scale 100), so the block sits inside it under the chin (ink y1176-1428). NEXT after his pick: test the Premiere routes (two-block captions / two .srt + Upgrade Caption to Graphic / rendered Urdu layer); Premiere must be restarted to see the new font.
+
+### earlier
 **2026-11-16 ~01:30: captions DONE, caption_qa PASS (with codeswitch.json: 56 English words), hand-off sent.** `abw11-seq09-short.srt`, 71 cues, 0 → 68.950 s, yellow deep-talks, baseline **y1209** (median chin y1094 + 115; 138 samples, 0 no-face).
 Sequence: **ABW11 · Sequence 09** (only one by that name, active), 32 V1/A1 clips of `X:\Recordings\PBU\C1482.MP4`, 1x, 60 fps, picture Scale 100 / Position 0.5,0.5, no gaps. Read only, nothing changed in Premiere.
 

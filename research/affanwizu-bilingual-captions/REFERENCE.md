@@ -57,3 +57,10 @@ spoken language under it. For him: **Urdu script on top, Roman Urdu below**, bui
   engine (forum reports of distorted words with Jameel Noori Nastaleeq).
 - **The test is a real-speed clip of his fastest stretch, not stills** (reference lines hold 1.2-3 s, his ~0.9 s).
   The glow was measured over a dark background only: show it with and without a faint black shadow.
+
+## Decisions and first test (2026-11-16)
+- **His call:** the top line is what he says, in Urdu letters; his English words are spelled in Urdu letters (ڈیفینیٹلی دیئر از سمتھنگ رانگ); nothing is translated. Bottom line = Roman Urdu as before.
+- **Font:** Noto Nastaliq Urdu installed for his user (his OK), copy at `assets/fonts/NotoNastaliqUrdu-wght.ttf`.
+- **Glow fit (gold over a flat L40 plate, luminance excess):** `0 0 3px rgba(255,215,0,0.4), 0 0 16px rgba(255,215,0,0.85), 0 0 28px rgba(255,200,0,0.5)` ≈ d4 34 · d8 21 · d12 11 · d16 5.5 against the reference scaled to gold (31 · 19 · 12 · 6.5 · 3.2).
+- **Geometry on Seq 09 (footage band y420-1500):** Urdu 72 px baseline y1328 (ink tops y1176-1268, widest 869 px), Roman 48 px baseline y1420.
+- **Preview:** `projects/abw11-seq09-short/outputs/bilingual-test/` A Ubuntu Light · B Times New Roman (reference serif) · C Ubuntu + faint black shadow. Renderer `projects/abw11-seq09-short/work/bilingual/render_cues.mjs`.
