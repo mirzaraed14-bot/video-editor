@@ -64,3 +64,10 @@ spoken language under it. For him: **Urdu script on top, Roman Urdu below**, bui
 - **Glow fit (gold over a flat L40 plate, luminance excess):** `0 0 3px rgba(255,215,0,0.4), 0 0 16px rgba(255,215,0,0.85), 0 0 28px rgba(255,200,0,0.5)` ≈ d4 34 · d8 21 · d12 11 · d16 5.5 against the reference scaled to gold (31 · 19 · 12 · 6.5 · 3.2).
 - **Geometry on Seq 09 (footage band y420-1500):** Urdu 72 px baseline y1328 (ink tops y1176-1268, widest 869 px), Roman 48 px baseline y1420.
 - **Preview:** `projects/abw11-seq09-short/outputs/bilingual-test/` A Ubuntu Light · B Times New Roman (reference serif) · C Ubuntu + faint black shadow. Renderer `projects/abw11-seq09-short/work/bilingual/render_cues.mjs`.
+
+## His notes on the first real job (Seq 10, 2026-11-16 evening)
+- On the v1 layer placed in his Premiere: **"too glowy, I want a subtle glow like how that guy had."** Cause: Premiere's linear
+  compositing (~3x the halo of the sRGB preview over a dark shirt), not the fit. Fixed with `bilingual/linfix.py`; the glow
+  numbers above stay.
+- **"add drop shadow as well and make the urdu portion small and do all caps on english ones":** the yellow style's hard
+  shadow back on, Urdu 72 → 48 px (now the SMALLER line, the reverse of the reference's big top line), Roman line ALL CAPS.

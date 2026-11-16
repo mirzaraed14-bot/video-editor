@@ -1,6 +1,71 @@
 # RUN: claude-gta6-shorts-money (AffanWiz CA-015 "Claude + GTA 6 Shorts Monetization (Not Selling You Any AI Software Lol)")
 
-## ▶ STATUS: resume here (2026-11-16 ~17:20 PKT): RESUMED for the full edit (his "why wasn't the gta 6 video finished", via the dispatcher). Week at 8 %.
+## ▶ STATUS: resume here (2026-11-16 ~20:10 PKT): EDIT PLACED ON ABW11, READY FOR HIS REVIEW + EXPORT. **NOT SAVED since the final placement**: his own save at 19:25:48 caught it mid-placement; one more Ctrl+S (or "save it") is needed
+
+### Delivery note for Affan
+**Sequence:** ABW11 › bin "CA-015 Claude GTA 6 Shorts Money" › sequence of the same name (id `03f889a7-7a02-4628-ac2e-a7df9d7bef2f`),
+**12:38.1** (758.141 s), 59.94. Graphics in bin "CA-015 graphics", SFX in "CA-015 sfx". Crash insurance: `work/CA-015-stageB.xml` (FCP XML).
+
+| track | what's on it |
+|---|---|
+| V1 | your face: 444 pieces (290 cut segments split at 154 razors), **71 cut zooms** (median 130 %, 250 % on "shut the fuck up", 200 % on "big ass balls", one stretch gag on "shilling"), the **head-steady lock** (95 of 151 jump-cut joints within dy 12 / dx 20 px) |
+| V2 | 48 plates: your own face, blurred and darkened, under every full-frame graphic |
+| V3 | 66 overlays: 48 full-frame graphics (the IGN dossier look) + 18 side cards (14 Skool CTAs, 4 text cards) |
+| A1 | your voice, 290 clips, +4.3 dB into the −6 dBFS limiter |
+| A2 / A3 | 117 SFX cues (108 + 9), a fresh Epidemic set (72 takes, none from CA-011), at CA-011's levels (peaks −18…−23 dBFS) |
+| music | **none: the beds are yours** on this channel |
+
+**What's 1 % better than CA-011:**
+1. **The stolen move: THE PREP BOARD** (Jon Bois / Secret Base's grid canvas, FX-64): one black board, six panels (research agent · ideas · editor
+   agent · editing style · angles · little things) that fill in as you name each one, and the whole board back at "that was the gist of it".
+   Proof: `outputs/CA-015-proof-frames.jpg`.
+2. **A white contrast beat** (Colin and Samir): your prompt to Claude typed on a white page in your exact words, the only white frame.
+3. **Your CA-011 hand applied before you see it:** the stray sentence-start "And / so / So" and a 0.1 s burst cut; zooms ≥ 0.5 s; one framing over
+   the closing line.
+4. **Head steady: 95 of 151 joints in tolerance, predicted from your measured eyes** (CA-011: 13 of 42). **No ink-in-band waivers** on full-frame
+   graphics (CA-011 had 9); only the two white pages (g14/g15) carry a full-bleed waiver, with their type measured inside the band.
+5. **Fact discipline:** no card asserts a claim the research session flagged (the $20 plan + Fable, money back, Premium, songs, "does all the
+   edits", compiling, "will go viral", the AI-software lines, "doing faces"), and no CTA sits on one. Your own words that touch its rows 4, 8
+   and 10 ARE on cards, for your call: g11 "continuously scanning", g14 the prompt "scan the whole internet… 24/7", g32 "be the ones who jump
+   on it", and the CTA line "every single video you post, I will review it" (cta1, cta8, ctaF).
+
+**Decided without you (veto any):**
+- Cut batch 2 (−1.1 s): "all time. ~~And~~ now it's here", "~~so~~ why is that important", "~~So~~ that was the gist", the 0.1 s stray after "For long forms".
+- **No card on the flagged lines** (the research session's checks): the $20 plan + Fable roles, "90 days or your money back", YouTube Premium, songs
+  under a minute, "does all the edits", compiling streamers, "will go viral", the AI-software/scam lines, "doing faces". No CTA sits on any of them.
+- **CTAs = your words only**, from your two plug passages (every video reviewed, guidance, "someone who has been in this game", "feel free to join",
+  "need more help before the release date?"). 16 in all, gaps ≤ 59 s. The full plug card over "don't join for the client… join for my guidance"
+  (7:01.8), the final one over "join my Skool community" (12:18.9). cta13 moved to 3:09.8 after head-steady put it 41 px into your face box
+  (now 31 px clear; the plan is pinned to the timeline).
+- **Screens: none.** The take names no page, and capturing your agents would have fronted apps while you worked; every graphic is typed.
+- Swearing kept and unbleeped, and never printed on screen. Your IShowSpeed examples are shown as blank templates ("____ reacts to"), never his name.
+- A 13 s graphic (g26, GitHub → Claude → Premiere) spans your re-sit after the 34 s pause (7:11.1), so the jump in your position is never seen.
+
+**Listen / look first (nobody has heard this edit: work in silence):**
+- Joints (cut times, from the transcript): 0:35.9 "all time. | now it's here", 2:53.1 "| why is that important", 4:42.8 "For long forms. |
+  I'm going to give", 11:37.4 "That's it. | that was the gist"; and the earlier four: 8:07.0 "it, it has a great editing style", 3:25.3 "but I, I
+  want to build", 11:48.2 "the people are, who are going", 3:12.1 "clip all, the, the game". Also an "uh" at 3:51.4 ("sounds a bit confusing,
+  uh, if you're new").
+- 56 head-steady joints are outside tolerance (p90 dy 38 px, worst 173 px). Getting closer would mean scaling up more of your face.
+- Head partly turned (not reading) is visible for 18.7 s across 14 spots, the longest 2:24.3–2:31.1; by your CA-007 rule that isn't reading.
+  Reading itself is 0.00 s visible.
+- 14 of 18 side cards sit within 60 px of your widened head box (none on your face or eyes).
+
+**Your decisions (from the research session, `creator-shorts\CA-015-AS-RECORDED-2026-11-16.md`):** compile-streamers vs YouTube's
+reused-content rules; "90 days or money back" with no condition; Fable on the $20 plan; "not selling AI software" vs your offer. Plus the swearing.
+
+**Gates:** graphics-qa 0 FAIL (299 waived, all standing or measured); 114/114 graphics and 117/117 SFX placed and verified; sync audit 0; reading 0.00 s
+visible; 0 slivers/gaps at overlay edges; your active sequence and playhead identical after every write window.
+**Review:** ONE fresh-eyes round (2 Sonnet reviewers, 27 defects, all fixed and checked on sheets + graphics-qa); no second full round (budget),
+so "zero defects" is not claimed. `hf-graphics/review/ROUNDS.md`.
+**Not verified:** nothing was played or heard; the SFX mix and the zoom feel are unheard and unseen in motion; no frame was grabbed from
+Premiere itself (that moves your playhead). Proof frames of the placed state are composited OFFLINE from the raw + the placed transforms (`work/proof-frames/contact.jpg`,
+looked at by the editor): white pages opaque, no alpha holes or mattes, no card on your face, the 250 % hit crops only hair (eyes and mouth in).
+The cta13 tile was composited at its OLD time (3:02.1); its new spot (3:09.8) was checked by the face-box measure only (31 px clear).
+**Usage:** week 8 % → 12 % for this edit (resume to placed).
+
+
+## (history) STATUS (2026-11-16 ~17:20 PKT): RESUMED for the full edit (his "why wasn't the gta 6 video finished", via the dispatcher). Week at 8 %.
 - **The disk and ABW11 disagree on purpose:** `transcript/cuts.json` is now **290 segments / 758.141 s** (batch 2: his CA-011 hand, the stray
   "And" / "so" / "So" and a 0.1 s stray burst cut; old EDL kept as `transcript/cuts.v1-placed-0932.json`). ABW11's CA-015 sequence still holds
   the **294-segment** placement, UNSAVED (ABW11 last saved 04:21). Before any graphic goes on: re-replay V1/A1 from `cuts.json`, the audio chain,
@@ -48,7 +113,7 @@
   ~322.8–330 "but I, I want to build", ~1107 "the people are, who are going", ~304–306 "clip all, the, the game". Also "99 % of you guys are
   going to be doing faces" (raw ~1128): you mean faceless, and it's kept as said.
 
-### Next steps, in order (a fresh session can resume from here)
+### (STALE since 17:05: superseded by the delivery note at the top) Next steps, in order
 1. **His:** Ctrl+S in ABW11, or "save it" in this session (`work/save_once.py`). Listen to the "listen first" spots above.
 2. **Optional cut pass from his CA-011 hand** (LESSONS § 2026-11-16): he deletes a sentence-start "But / So / And" right after a hard joint
    that follows a completed sentence, and a ≤ 0.2 s stray burst between a pause and a restart. Run that check over `review/cut-map.tsv` before
@@ -102,8 +167,8 @@
 | 2 | Rough cut | done | 12:39.2, 294 segs, dead-air PASS, 2 Sonnet reviewers applied (29 items), placed 294/294 on ABW11, sync 0 |
 | 3 | Audio polish | done | +4.3 dB into −6 dBFS on 294/294 A1 clips, read back |
 | 4 | Color grade | skip | STYLE § 1: no grade on this channel |
-| 5 | Graphics | pending | not started: the overnight usage cap went to the cut first |
-| 6 | SFX | pending | |
-| — | Music | pending | his beds on this channel |
+| 5 | Graphics | done | 48 full + 18 side, Prep Board (FX-64), edit-review round 1 (27 fixed), graphics-qa 0 FAIL, placed 114/114 |
+| 6 | SFX | done | 117 cues, 72 fresh Epidemic takes, placed + verified |
+| — | Music | skipped | his beds on this channel (announced) |
 | 7 | Review | his | |
 | 8 | Export | his | he exports himself |

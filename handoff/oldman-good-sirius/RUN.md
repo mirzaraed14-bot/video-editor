@@ -1,6 +1,30 @@
 # RUN: oldman-good-sirius ("Was Oldman A Good Sirius?"), Abundance Wisdom: LEAD card under the 150K bar, built to STOP 1 on Affan's go ("try the sirius angle")
 
-## ▶ STATUS (16 Nov ~17:45 PKT): AFFAN'S REVIEW 1 -> v2 IN PROGRESS (resume here)
+## ▶ STATUS (16 Nov 20:19 PKT): v2 DELIVERED for Affan's review 1, waiting for his review of v2 (resume here)
+- **v2 final** "Was Oldman A Good Sirius.mov": 1080x1920 60 fps, 1919 frames, 31.983 s, -14.1 LUFS, -1.6 dBTP, export QA PASS.
+  sha256 `092c5c47…7ff7beb3` (v2b: card glow; the 20:04 v2a `eec8d540…` is replaced) in `outputs/`, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\`, `X:\Claude Projects\Exports\`.
+  v1 kept beside each as "Was Oldman A Good Sirius (v1).mov" (sha256 `b93763de…`).
+- Proof: `proof/r2/NOTES.md` (all numbers), `proof/r2/final_1s.jpg`, `final_edges.jpg` (clean edges at 3.8167 / 5.75 / 24.5167 / the
+  film's cut at frame 1513 / 26.3), `handover.jpg` (Hagrid -> Ron), `snape_variants.jpg`. Final-file shake (bg meter): jitter
+  0.35-0.76 px on the face spans (v1 Stage A 1.7-8.4). Lip/caption gap in P4 min 78 px.
+- **Decided without Affan (v2):** (17) O3 full frame, not the v1 band (his Snape was a 240 % fill; one key back: `picks.json` S13).
+  (18) O3 = the film's Sirius close-up + its own cut to Harry, normal speed, green spell flash kept. (19) Snape colour: pre-grade
+  sat 0.70 + tint [0.95,1,1.04] (the AW grade made the candle-lit feast orange). (20) Slow follow sigma 0.5 s. (21) Punch +7 %.
+  (22) Chronos lost 3 edge frames on O3 (no frames past the film's cuts): 1 held frame under the cyan blur-in, 2 under the purple dip.
+  (23) Card note read as "they LACK the glowy borders and drop shadows" (not "remove them"); his message was cut off mid-sentence.
+  (24) Card glow = the AW glow-stack edge + an explicit soft white bloom (`pic_bloom` 2.5, sigma 7; b1 of 2 tested, b2 hazed the picture).
+- **OPEN for Affan (first):** O3 shows Sirius sharp and un-green for only ~18 frames (0.3 s): the first 0.37 s of his 0.7 s close-up
+  sits under the cyan blur-in and the film's own green spell flash, then the film cuts to Harry (1.07 s). He reads, but briefly.
+  Options if he wants more Sirius: slow the laugh (his O1 treatment), or the film's two-shot at ~84-85.3 s (Sirius + Harry by the
+  pillar, no flash). Not done unasked: both are picks he has rejected when made for him.
+- Checks re-run on the FILE: head at the 6 same-camera cuts matches v1 (YuNet box; 11.35 is a profile, looked at by eye: steady);
+  `win/smooth_check.py` 0.0 % duplicates on all 16 shots; edges clean.
+- Usage at delivery: 12 % weekly (10 % at the start of his notes, the Main Brain's overnight cap; his live notes came after it).
+  His notes on v2 = data + ONE finish render (not a rebuild).
+- Kit note: `review2/run_r2.sh finish` moves ALL chunks aside (a full 4-chunk render); for a one-chunk fix delete only that chunk and
+  run `bash build/render_chunks.sh` directly.
+
+## ▶ (superseded) STATUS (16 Nov ~18:45 PKT): AFFAN'S REVIEW 1 -> v2 IN PROGRESS
 His five notes (chat, 16 Nov, with stills of O2, O3 and the Ron card) and what v2 does:
 1. **"The camera is too shaky ... the base footage isn't even as shaky as this one."** Measured: the raw interviews move 0.00-0.04 px/frame
    (`win/bg_shake.py`, tripod); v1's per-frame head lock (sigma 2 source frames = 33 ms, plus lock_refine's per-frame residuals) moved

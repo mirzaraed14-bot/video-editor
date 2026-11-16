@@ -334,3 +334,18 @@ Read offline by the CA-015 session from a copy of his saved ABW10.prproj (2026-1
   acceptable to him either way. File: `PLAYBOOK.md` step 3 + `hf-graphics/place-sfx.py` target peaks.
 - **The -10.5 dB cold-open bed (his CA-010 hand) shipped untouched.** CA-010 raised it by hand; CA-011 built it in and he left it. -> Promote
   from lesson to PLAYBOOK number: cold-open bed -10.5, body -20..-25. File: `work/place_music.py` SECTIONS (already so).
+
+## 2026-11-16 · CA-015 "Claude + GTA 6 Shorts Monetization" (claude-gta6-shorts-money): what the build taught
+- **An off-script take needs the stolen move re-picked against the TAKE**, not the script: the morning BRIEF's pictogram rows rested on ratio lines he
+  never said. For a step-by-step guide, a filling STATE object (the Prep Board, FX-64) fits; vary away from the last video's travelling spine. → BRIEF.
+- **Research-flagged claims get no card and no CTA on top** (a Skool card on a flagged line reads as backing it): `NO_CTA` spans in build-plan.py,
+  and CTA subs only from his plug passages (round 1 caught 4 subs lifted from a "not necessary" sentence). → build-plan.py pattern.
+- **Every full-frame beat holds its last element >= 1.5 s**, now computed in the plan (round 1 found 12 short holds) and snapped to a cut within 8
+  frames (graphics-qa fails a razor 1-8 frames off a cut). → build-plan.py.
+- **Head-steady enlarges base pieces, so re-check side cards after it**: cta13 went from 61 px clear to 41 px into the face box and had to move.
+  14 of 18 cards sit within 60 px of the widened head box. → place after head-steady, `work/cards_face.py`.
+- **Renders: max 2 at once with motion blur** (ffmpeg OOM at 3); a builder handing back on every finished render costs turns, so a background
+  watcher in the editor session is cheaper.
+- **He watched the rough cut in Premiere while the edit ran:** placement waited correctly (gate = his active sequence is not ours + idle 150 s),
+  and the live diff against Stage A proved he had not touched it before the rebuild.
+

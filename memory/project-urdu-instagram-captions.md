@@ -43,3 +43,6 @@ softly glowing; cues, spellings and everything else unchanged. Reference measure
 `research/affanwizu-bilingual-captions/REFERENCE.md`; first test on ABW11 Sequence 09 (`projects/abw11-seq09-short/`).
 Premiere shows ONE caption track at a time, so two editable layers = two .srt → "Upgrade Caption to Graphic"; Nastaliq
 shaping in Premiere is the open risk. Until he approves a test, the single-line yellow .srt stays the deliverable.
+**Seq 10 v2 (2026-11-16 night), his look notes:** subtle glow (Premiere's linear compositing had tripled it; every layer
+now goes through `bilingual/linfix.py`), the yellow hard drop shadow back on, Urdu SMALL (48 px) over the Roman line in
+ALL CAPS. Params in `presets/instagram/affanwizu/bilingual/README.md`.

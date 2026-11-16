@@ -664,6 +664,9 @@ Always check the EDL bash can actually see before re-splicing.
 - **`compositeLinearColor: true` (sequence settings) changes only the ALPHA mix:** a Normal clip with partial alpha blends in
   linear light (gamma 2.4 fits best, 1.6/255 mean vs 4.3 for a gamma-space mix), while Screen and Color Dodge act on the
   encoded values exactly. Read it with `seq.getSettings().compositeLinearColor`; it is his setting, never change it.
+  **Consequence for any soft alpha layer rendered outside Premiere (2026-11-16, @affanwizu caption glow):** a glow fitted in
+  a browser/ffmpeg (sRGB) preview reads ~3x stronger over a dark background in Premiere. Pre-compensate the alpha
+  (`presets/instagram/affanwizu/bilingual/linfix.py`) and prove it with a gamma-2.4 simulation, never with the sRGB preview.
 - **`exportFramePNG` keeps the sequence's transparency:** where nothing opaque is underneath (an empty black bar), the PNG holds
   un-premultiplied RGB + alpha, so an alpha layer there reads fully opaque once the alpha is dropped. Score alpha-layer
   tests inside the picture only. Also proven that day: `trackItem.disabled` is settable (isolate one layer per grab), and

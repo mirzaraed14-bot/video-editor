@@ -14,7 +14,9 @@ const P = Object.assign({
   roSize: 48, roBase: 1338, roFont: 'UbuntuLight', roWeight: 300,
   color: '#FFD700',
   glow: '0 0 3px rgba(255,215,0,0.55), 0 0 10px rgba(255,215,0,0.40), 0 0 22px rgba(255,200,0,0.22)',
-  shadow: '',                              // e.g. '3px 4px 2px rgba(0,0,0,0.55)'
+  shadow: '',                              // drawn ABOVE the glow; yellow-style hard shadow = '3.75px 4.25px 1px rgba(0,0,0,1)'
+  roCase: 'none',                          // 'uppercase' = Roman line in ALL CAPS (his call 2026-11-16, Seq 10 v2)
+  hide: null,                              // 'ur' or 'ro': render one line only (ink measurements)
   only: null,                              // render only these cue indexes (probe)
 }, pjson ? JSON.parse(pjson) : {});
 
@@ -40,10 +42,11 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face { font-family: 'UbuntuLight'; src: url('${FONTS}Ubuntu-Light.ttf'); font-weight: 300; }
 html,body { margin:0; width:1080px; height:${P.bandH}px; background:transparent; overflow:hidden; }
 .l { position:absolute; left:0; top:0; width:1080px; text-align:center; white-space:nowrap; color:${P.color};
-     text-shadow: ${[P.glow, P.shadow].filter(Boolean).join(', ')}; }
+     text-shadow: ${[P.shadow, P.glow].filter(Boolean).join(', ')}; }
 .pb { display:inline-block; width:0; height:0; vertical-align:baseline; }
 #ur { font: 400 ${P.urSize}px 'NotoNastaliq'; direction:rtl; }
-#ro { font: ${P.roWeight} ${P.roSize}px ${P.roFont === 'UbuntuLight' ? "'UbuntuLight'" : `'${P.roFont}'`}; }
+#ro { font: ${P.roWeight} ${P.roSize}px ${P.roFont === 'UbuntuLight' ? "'UbuntuLight'" : `'${P.roFont}'`}; text-transform: ${P.roCase}; }
+${P.hide ? `#${P.hide} { visibility: hidden; }` : ''}
 </style></head><body>
 <div class="l" id="ur"><span id="urs"></span><span class="pb" id="urp"></span></div><div class="l" id="ro"><span id="ros"></span><span class="pb" id="rop"></span></div>
 </body></html>`;

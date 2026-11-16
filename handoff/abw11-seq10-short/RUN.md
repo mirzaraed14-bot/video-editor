@@ -1,6 +1,13 @@
 # RUN: abw11-seq10-short (@affanwizu captions, ABW11)
 
 ## ▶ STATUS: resume here
+**2026-11-16 ~23:55: v2 DELIVERED after his notes on the placed v1 layer** ("too glowy, I want a subtle glow like how that guy had" + "add drop shadow as well and make the urdu portion small and do all caps on english ones").
+- **Why v1 was too glowy:** Premiere composites in LINEAR colour (`compositeLinearColor`, lab-notes), so the soft gold halo over his black shirt came out ~3x stronger than the sRGB preview (his screenshot matched a gamma-2.4 linear simulation, not the preview). Fix: `presets/instagram/affanwizu/bilingual/linfix.py` remaps every pixel's alpha so a linear blend shows the sRGB look (background measured off the cut: rgb 11,2,1). The glow numbers themselves are unchanged (still the reference fit).
+- **v2 look:** Urdu Noto Nastaliq **48 px** (was 72), baseline y1346 (Urdu descent max 28 px → 12 px min gap to the caps); Roman Ubuntu Light 48 **ALL CAPS** (`roCase: uppercase`), baseline y1420, widest line 847 px; the yellow style's **hard drop shadow** `3.75px 4.25px 1px #000` drawn above the glow.
+- `outputs/abw11-seq10-short.bilingual-layer-v2.mov` (97.5 MB, qtrle RGBA, 72.65 s, 60 fps): replace the v1 layer on V2 at 00:00. `outputs/abw11-seq10-short.bilingual-preview-v2.mp4` = the same look burned (sRGB, from the UNfixed cues, which is what Premiere now shows). `outputs/bilingual-v2-check.png` = simulated Premiere vs preview, 4 cues.
+- Cue dirs: `work/bilingual/v2` (rendered) → `work/bilingual/v2_lin` (Premiere-fixed, what the .mov is built from). The .srt stays the lowercase single-line yellow track.
+
+### v1 (superseded)
 **2026-11-16 ~20:00: DONE, the FIRST REAL two-layer job (his "run it" on Sequence 10 right after the Seq 09 test), hand-off sent.**
 - `outputs/abw11-seq10-short.bilingual-layer.mov`: transparent full-frame layer (QuickTime Animation, RGBA, 72.65 s, 60 fps) with BOTH lines: drop on V2 at 00:00. Variant A (his pick between A/B/C was not given yet): Urdu Noto Nastaliq 72 px baseline y1328, Roman Ubuntu Light 48 baseline y1420, gold #FFD700, glow fitted to the reference.
 - `outputs/abw11-seq10-short.bilingual-preview.mp4`: the same burned over the cut (for phone review).
