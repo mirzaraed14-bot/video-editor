@@ -300,3 +300,37 @@ V1–V3 and A1–A4, V1 Motion vs the head-steady plan, V2/V3 Motion, opacity, e
 - **Keep spare SFX takes before adding beats.** The rotation (at most 3 uses per file, 60 s apart) ran out of whooshes at four more beats, so new entrances use paper and tab clicks. That also fits "whooshes are texture".
 - **CA-011 build, 2026-11-06:** a first pass of QA + full frames caught what the reviewers would have spent a round on: side-card fades cut at 22 % on their last frame, and camera pushes carrying copy to y20–y40. Check the end position under the push, not the layout position. **g11's closing build finished 0.04 s before its cut** because it was timed to its last word; a build goes as early as it must to hold about 0.4 s. **A line up 0.7 s before its word (g12) is the frame-0 rule misread:** frame 0 needs SOMETHING moving, a rule will do, and the line rises on its word. A sliced credit with " · " wraps with a dangling dot: one fact per line. Date a credit only when the source agrees with itself.
 
+## 2026-11-16 · CA-011 UPLOADED: what he changed before posting (kai-tiktok-money)
+Read offline by the CA-015 session from a copy of his saved ABW10.prproj (2026-11-12 12:59; never opened in Premiere). Evidence: `projects/claude-gta6-shorts-money/review/ca011-review-diff.md`.
+- **His whole hand on CA-011 was four trims (-0.80 s) and his Enhance Speech A1, nothing else.** Read from the saved ABW10 (2026-11-12 12:59,
+  same as the 11-12 02:02 auto-save; no snapshot of 11-06..10 exists). Graphics 74/74, SFX 72/72 (time and level), beds, and V1 framing all
+  as built. -> The build stands: keep the next job's graphics, SFX and bed numbers as they are, and put review effort on the cut joints.
+- **He cut exactly two of the five joints RUN flagged "listen first", and left the other three.** 1:19.8 "at all. / But I am going": he deleted
+  the word "But" (raw 173.974-174.374, mp3 burst at 79.76-80.10). 2:24.3 "Ludwig. / $25,000": he removed 0.451 s (pause + a 0.16 s stray burst
+  after "Ludwig.", cut on the -48 dB dip). -> Next job's rough cut: (a) a sentence-start conjunction ("But", "So", "And") right after a hard
+  joint that follows a completed sentence is dropped at the cut; (b) a burst of <= 0.2 s between a pause and a restart is a stumble echo,
+  removed with the pause, with the joint on the dip. File: `transcript/build-cuts.py` KEEP rows + the `rough-cut` fresh-eyes brief (add both
+  as checks); keep flagging unheard joints in RUN.md (2 of 5 were real).
+- **He deleted a 0.167 s one-word zoom piece ("So", 130 %) into the next shot, and deleted the final 0.52 s zoom piece (108 %), holding the
+  previous 111.6 % over it.** Two instances of "a scale flip on a tiny piece reads as a flash". -> A cut-zoom piece is >= 0.5 s (merge any
+  shorter piece into its neighbour) and the closing line holds ONE framing (no scale flip in the last 2 s). One job, two instances: a
+  PLAYBOOK line, not yet a number. File: `work/head_steady.py` / `work/rebuild_v1.py` equivalents on the next job.
+- **Picture-only edits desync his bounced A1.** Edits 3 and 4 changed V1 only; A1 (his mp3) has no matching cut, so the file as saved
+  shows "So" ~0.2 s ahead of its picture and the last 0.57 s ("of the next one.") ~0.38 s ahead of the mouth. -> After he uploads, run the
+  CA-010 cross-correlation of his A1 against the camera audio over each picture-only edit and the last 3 s, and tell him what it finds.
+  If a V1-only trim is ever planned on our side, never leave a removed gap that his A1 still spans.
+- **A joint 1.0 s into a graphic is a ripple through the graphic.** g09's "$25,000" beat (t 1.428) sat 0.4 s after the Ludwig joint (g09 t
+  1.018-1.468); his ripple split the plate and overlay and cut 0.04 s into the entrance. -> In graphics-plan, a graphic's first beat lands
+  >= 0.5 s after any joint RUN flags for listening, or the graphic starts after the joint. File: `graphics-plan` beat sheet, with the
+  flagged joints from RUN.md as an input.
+- **He left the head-steady lock alone (13 of 42 joints in tolerance) and did not fix any of the 9 band-waived graphics.** Second long-form
+  posted without a framing edit (CA-010 as built, CA-011 as built) and a first without a waiver fix. -> Both stand as the shipped
+  baseline; stop re-solving per-joint framing after the face pass and stop hunting new band waivers; spend the minutes on the cut/audio
+  items above.
+- **His Enhance Speech A1 lands at -22 LUFS / -9.5 dBFS on every job (CA-009 -22.6, CA-010 -22.0, CA-011 -22.4) and replaces our whole chain.**
+  Third repeat. -> Promote to a PLAYBOOK rule: on this channel step 3 is ONE cheap polish (the rough A1 only has to be clean and the right
+  length for his bounce); do not tune Amplify/limiter on 146 pieces. Optionally set SFX target peaks and bed levels against voice peaks
+  of -9.5 dBFS, not -6: the cues now sit 3.6 dB hotter against his voice than designed and he changed none of them, so the designed levels are
+  acceptable to him either way. File: `PLAYBOOK.md` step 3 + `hf-graphics/place-sfx.py` target peaks.
+- **The -10.5 dB cold-open bed (his CA-010 hand) shipped untouched.** CA-010 raised it by hand; CA-011 built it in and he left it. -> Promote
+  from lesson to PLAYBOOK number: cold-open bed -10.5, body -20..-25. File: `work/place_music.py` SECTIONS (already so).

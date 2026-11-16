@@ -1787,3 +1787,26 @@ His review of the first delivery (22:15), as lesson -> change -> file:
     - Change, his option: the letterbox re-cut on Speed alone (Shannon out), 1.42x, band 560-1360, Chronos only, no Iris.
     - Rule: Iris only where a face is large in frame. A wide or a downscale gets no generative enhancement.
     - File: `build/make_timeline2.py` (WIDE_A / WIDE_B) + `build/topaz_speed.py` plan.
+
+## oldman-good-sirius ("Was Oldman A Good Sirius?"), review 1 (Tella, 16 Nov 2026 ~02:45 PKT)
+Resolved brief: `projects/oldman-good-sirius/review1/REVIEW1.md`. He re-cut the v6 raw cut himself before the guide: `review1/HIS-EDIT.md`. Lesson → change → file:
+- **His cut: 48.98 s → 31.98 s.** He dropped the setup line ("if they ask me to sign a picture…"), opened on the claim ("I think my work is mediocre"), closed every pause and cut Radcliffe's fillers (17.8 → 11.1 s).
+  - Reading (my inference, not his words): "too short" on v5 meant missing story, not seconds; the brief's ~30-34 s target was right.
+  - Change: build on his edit as the cut. File: `review1/HIS-EDIT.md`.
+- **A named PERSON gets an overlay of that person as himself, not his character.** "like Alan" → Alan Rickman from an interview, not Snape.
+  - Change: the Snape slot becomes a Rickman interview shot. File: REVIEW1 § 2.2.
+- **A spoken list of names gets small pictures sliding right → centre (easy-ease hold) → left, one after another.** "It's Hagrid. Maybe it's Ron." "It can slowly go out."
+  - The animation spans cross clip edges ("we don't need to limit ourselves with these overlay blocks").
+  - File: REVIEW1 § 2.3.
+- **Punchline emphasis = one eased zoom IN on the setup words, then a zoom OUT on the laugh** ("heavy emphasis on the point"). File: REVIEW1 § 2.4.
+- **A jump inside one long take gets a dip to black** "even though it's the same overlay". He uses it to cut talk he doesn't want "on for too long". File: REVIEW1 § 2.6.
+- **Overlay picks: the character's dapper look over the prisoner look, "clear 4K preferably", slow motion stretched over the slot.** The 1920x800 scene pack fails "clear 4K". File: REVIEW1 § 2.1.
+
+## 2026-11-16 · "The Dad Michael Never Had": his Tella walkthrough on the raw cut (lesson → change made → file)
+- **A cut can't clip a word's final consonant.** "Regurgitate" was cut in the 30 ms gap before the word's final /t/ (a silent closure, then a soft release + vowel + release), and he heard it as "doesn't say it fully". → Out moved to the last release: 1206.107, +9 frames on his cut. A word's end is its last release burst, not the first quiet run; check the 3-8 kHz band and the pitch after every out. → `projects/mj-the-dad-he-never-had/BRIEF.md` N3, lanes/premiere/lab-notes.md 2026-11-15.
+- **A pixelated archive photo under an interviewer's question gets swapped for the guest LISTENING** (2-3 s of him from the same interview, not talking), "so it looks like he's listening". → N6. A soft or corrupt photo is never the picture under a question when a listening shot exists.
+- **Overlays in this channel default to the LETTERBOX format** (band + blurred twin + white glow bars): the still, the slow-motion, the movie scene, Katherine and his own child ending. Old SD footage gets its own gentler enhancement. → BUILD-SPEC.md.
+- **He wants the A1 audio as is.** The muted A2 denoise versions were "extracted audios, but whatever": don't build alternates nobody asked for.
+- **He cuts hard for length and shape.** He dropped beats 6 and 7 (Paris 2012 audio-only, Prince's tie vlog), closed the 1.3 s pause in beat 1, removed Bashir's belt Q/A, and ended on a child home-video clip ("I love my daddy so much") over the adult Paris line. The raw cut he received was 57.3 s and his cut is 36.2 s. Expect raw cuts to be trimmed about 35 %; build them with the strongest version of each beat, not every approved word.
+- **Kit bug (oldman-good-sirius, 16 Nov): a stopped `build/render_chunks.sh` keeps running in the background and appends to `renders/chunks/list.txt` (a duplicated chunk list, broken-pipe errors in `err_*.txt`).** Change: before any concat, kill the old run, rebuild `list.txt`, and check every chunk's mtime is newer than `stageA.mov` and the overlay renders. File: the mj-son-step-outside kit `build/render_chunks.sh`, still unpatched.
+- **A closer second camera angle needs its own lock Y (oldman-good-sirius, 16 Nov).** With one nose target, the bigger face put the caption ON his mouth for the whole angle. Change: per-angle lock Y so the lips match the other angles, and zooms pivot on the lip line; proof is a per-frame lip/caption gap CSV. File: `projects/oldman-good-sirius/build/` (zoom_layers.json, lock_refine.py).

@@ -184,6 +184,16 @@ chunk_size = None if lang == "en" else 10
 tiers = [("cpu", "int8", 8)]
 if want_device == "cuda":
     tiers = [("cuda", "float16", 16), ("cuda", "int8_float16", 16)] + tiers
+    # Shared-box overrides (2026-11-16, CA-015: Premiere + OBS hold ~3 GB of an 8 GB card and RAM commit sits near its
+    # limit): WHISPERX_COMPUTE starts the ladder at that compute type, WHISPERX_BATCH shrinks the batch, and
+    # WHISPERX_NO_CPU=1 removes the CPU floor (a large-v3 CPU run is ~8 GB of commit, which paged his Premiere out on
+    # 2026-11-14), so a CUDA failure stops the run instead. Unset = the ladder above, unchanged.
+    if os.environ.get("WHISPERX_COMPUTE"):
+        tiers = [t for t in tiers if t[0] != "cuda" or t[1] == os.environ["WHISPERX_COMPUTE"]]
+    if os.environ.get("WHISPERX_BATCH"):
+        tiers = [(d, c, int(os.environ["WHISPERX_BATCH"])) for d, c, _ in tiers]
+    if os.environ.get("WHISPERX_NO_CPU") == "1":
+        tiers = [t for t in tiers if t[0] != "cpu"]
     try:
         import torch
         if not torch.cuda.is_available():
@@ -265,7 +275,7 @@ for path in clip_paths:
         # CUDA can also die mid-run (OOM on a long clip, a cuDNN kernel error):
         # rebuild the whole stack on CPU once and redo this clip. CPU errors
         # are real errors and still raise.
-        if device == "cpu":
+        if device == "cpu" or os.environ.get("WHISPERX_NO_CPU") == "1":
             raise
         print(f"[transcribe] ⚠ CUDA failed mid-run on {name} "
               f"({type(e).__name__}: {e}); falling back to CPU int8", file=sys.stderr)

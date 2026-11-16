@@ -32,6 +32,14 @@ NOT max effort yet: B (follower counts missing on most reads); C (only one "medi
     - **My 60-65 s estimate (01:58) was wrong.** Segment word rates overstated it: the build cut pauses and Oldman's pieces run
       tighter. The real runtime is 48.98 s.
     - The builder also ran large-v3 (01:50-01:54, under the GPU lock, after a RAM check). Disclosed in RUN.md.
+  - **16 Nov ~02:45, Affan's review (a Tella guide; `projects/oldman-good-sirius/review1/REVIEW1.md`):** he edited the cut in place
+    to **31.98 s** (Radcliffe starts at 65 %).
+    - He cut the "sign a picture" setup, so the Short opens on "I think my work is… mediocre".
+    - He tightened every pause and dropped Radcliffe's fillers.
+    - He deleted the two film covers and asked for Sirius from OotP (suited look, slow motion), Rickman as himself, and small
+      Hagrid and Ron pictures sliding across.
+    - He told the build to start at 07:00 on Opus with the Fable advisor, and it's waiting for that.
+    - The prediction is still to be locked on the final cut.
 - **Drive search, between the 01:44 and 01:50 clock reads:** film-title name patterns with video extensions only; no Harry Potter film files on E:, D: or X:. G: came back in 1 s (probably not traversed), and C: wasn't searched. Only the earlier Snape packs
   (`projects/harry-potter-prank/src/snape/`). "ALL Severus Snape Scenes" may hold PoA's Shrieking Shack, where Sirius is on frame
   (unverified at the time). **Verified at 01:57:** "Severus Snape scene pack 4K.mp4" (1920x800) has Sirius:

@@ -1,6 +1,24 @@
+# MORNING SUMMARY (16 Nov 2026, built overnight 07:00-09:05 PKT, no questions asked, by his rule)
+- **DONE: v2 is the version that ships.** `outputs/The Dad Michael Never Had.mov` (= `… v2.mov`): 1080x1920, 60 fps, 2183 frames, 36.38 s, -14.1 LUFS (LRA 2.5), -1.6 dBTP, PCM 24-bit. Hash-identical copies (sha256 `2f0f7506…454ecd`):
+  - `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\The Dad Michael Never Had.mov`
+  - `X:\Claude Projects\Exports\The Dad Michael Never Had.mov`
+- **What it is:** his own cut (snapshot of his ABW11 sequence, every trim kept) + every note from his Tella walkthrough, on the house style (the Son build's code pipeline: head lock, zoom, transitions, his AE grade in code, CapCut-style captions, low labels, two subscribe prompts, soft SFX, no music, no end screen). ABW11 was only READ (one FCP XML snapshot); nothing in Premiere was changed, saved or exported.
+- **Three things to know first:**
+  1. **Higgsfield was NOT used** on the young-Michael-and-Joseph still, though he asked: paid credits need his per-spend OK overnight, and his 14 Nov rule bars a generative upscale of a real face from a soft source. It is a Lanczos resize of the documentary's B&W photo. Say the word and it gets the Higgsfield pass.
+  2. **The movie beating overlay is in gentle slow motion (my addition):** the two hits are 0.96 s and 0.63 s under lines of 1.38 s and 0.97 s. His lesson says slow motion is shown as a test first; real speed is a one-line change.
+  3. **The end is his child clip with Paris on frame** (his own placement and his "end with this"): the one real-life child on frame.
+- **v2 vs v1:** v2 fixes two same-camera jump-cut head hops that broke his head-steady rule. Michael/Oprah at 7.48 s went from dy 25 px to dx 6.3 / dy 2.5. Prince at 27.65 s went from dy 69 px to dx -1.6 / dy 6.2 (gate 8 px). The fix is 183 % / 234 % scale on those four shots with a y lock; the green edge and lower third stay out. v1 is kept as `outputs/The Dad Michael Never Had v1.mov` (sha256 `c1be2701…`, hub-verified).
+- **Noticed, not changed:**
+  - captions sit on one base (his rule), so on 13.3-14.8 s and 17.1-19.5 s, where Michael sits low in the 2003 frame, the line crosses his lower face;
+  - Walters (1997) and the child clip are soft at their magnification: the source quality.
+- **Full list of overnight decisions:** "Decided without Affan" below. Proof: `proof/final_sheet.jpg` (every 0.5 s), `proof/final_edges.jpg`, `build/BUILD-LOG.md`.
+
 # RUN: mj-the-dad-he-never-had ("The Dad Michael Never Had 🥹"), Abundance Wisdom Short: RAW CUT (STOP 1) placed in Affan's ABW11
 
 ## ▶ STATUS: resume here
+- **16 Nov ~10:00 PKT: FINAL = v2 DELIVERED** (see the morning summary above; v1 09:05 kept as `… v1.mov`). Captions trail the speech by up to ~0.18 s (house CapCut lateness). Waiting for his review; a note = a finish re-render (`build/`), not a rebuild.
+- **Resume:** the plan is `BUILD-SPEC.md` (cut, pictures, finish settings, pipeline, gotchas) and the notes are `BRIEF.md`; a Sonnet builder executes it, with checkpoints at the stills and at the end.
+- **16 Nov 2026 07:00 PKT: OVERNIGHT FINISH BUILD STARTED** (AW hub + Main Brain overnight rules: run to the final render with no questions; decisions logged under "Decided without Affan"; cap 10% weekly usage; Opus manages, Sonnet executes, Fable advises). Weekly meter read 0% at 07:00. Steps: walkthrough → read-only FCP XML snapshot of his sequence → code build on the mj-son-step-outside house style → final.
 - **15 Nov 2026 09:52-10:22 PKT (machine clock): the raw cut is PLACED in Affan's open ABW11 and READ BACK = PASS. Waiting for his review. STOP 1 reached; the finish (STOP 2) waits for his OK.**
   - Sequence **"The Dad Michael Never Had - raw cut"** (bin "The Dad Michael Never Had", ABW11.prproj): 1080x1920, **60 fps** (his Sequence 02 template, cloned, no setSettings), **57.30 s** (3438 frames, ≤ 60 s with every approved word),
     V1/A1 19 clips (17 spans; B5 and B8 each split at a shot change), V2 1 cover, A2 4 clips (MUTED), 8 markers (one per beat start). Proof: [`premiere/READBACK.md`](premiere/READBACK.md) = PASS.
@@ -21,6 +39,31 @@
   8. (checked, not a decision) The denoised audio reads **word for word like A1** in the same silent ASR pass (`raw/denoise_gapped.small.en.txt`; only "anytime" / "any time" differs), so the denoise costs no intelligibility.
 - **By ear (machine readings, I played nothing):** the lines are confirmed by two silent ASR passes (each span alone between silences, and the cut as placed): see "Listening".
 - **Next:** his review → notes into this file; then STOP 2 only after his OK (head lock and the zoom table incl. beat 3's size jumps, captions, labels, 2 subtle subscribe prompts, SFX, his AE grade; no music bed, no end screen).
+
+## Decided without Affan (16 Nov overnight, no questions by his rule; evidence beside each)
+- **His cut is the base** (read-only FCP XML + readback 07:02, `snapshot/`): 36.23 s; every trim of his kept, including two that look odd. Beat 3 ends "…stop it, you're gonna", cut in the dip before "kill"; Walters's "Do you" has its "D" trimmed. Creator's hand = decision. Noticed, not changed.
+- **His end clip** `Paris Jackson_ I Love My Daddy So Much.mp4` (Paris as a small child, ON FRAME) is kept as he cut it: his placement in his own cut, and his walkthrough says "end with this". It is the one real-life child on frame in the Short.
+- **N1 Higgsfield NOT used:** paid credits need his per-spend OK (hub rule). His 14 Nov rule bars a generative upscale on a real face from a soft source. The still of young Michael + Joseph is a Lanczos resize.
+- **N3 "regurgitate":** "-tate" ends with its final /t/ release at 1206.04-1206.06 (pitch-continuous with Michael; Oprah's next word starts 1206.57). Out = 1206.1067: +9 frames on his cut, as he asked ("five or eight extra frames"). Everything after shifts +0.15 s; END 36.383 s.
+- **N4 movie scene:** Popcorn Picks "The Jackson Family's Harsh Beginning (Colman Domingo) | Michael" (YouTube `IdC5kzSwkoM`), downloaded through pace.sh, H.264, `sources/IdC5kzSwkoM/`. "Start from here, he's actually beating him" = the wide hallway swing at 255.59 (the frame he paused on). His two V2 pieces become two beats of the scene: 255.6-256.5 under "Ironing cords", 260.4-261.0 under "Whatever's around", each in gentle slow motion (Chronos, ~0.7x) to fill the line. The film's flower logo is cropped.
+- **N2 Joe:** "EXCLUSIVE LEAK: Joe Jackson's FULL interview" (the one he pointed at), the stern close-up at 405.6-407.0, Chronos 0.5x to fill 2.78 s. The TV One/NewsOne strip (y > 985) is cropped.
+- **N7 / Demucs:** he called the A2 denoise "extracted audios, but whatever", so original audio throughout; no Demucs, no download.
+- **Slow motion on the movie beating (S09/S10) is MY addition.** He asked for slow motion only on Joe (N2). The two movie beats are 0.96 s and 0.63 s, under lines of 1.38 s and 0.97 s, so a gentle Chronos ~0.7x fills them. His lesson says slow motion is shown as a test first: easy to switch to real speed (hold or extend) at his word.
+- **Picks the walkthrough left open:**
+  - Joe = the stern close-up at 405.6 s, slowed 0.5x.
+  - Katherine = 60 Minutes Australia (his "60 Minutes"), a silent grieving shot at 1089.3-1091.3.
+  - Prince listening = Sunrise 171.62-173.0, the only true listening shot in that interview: a warm listening face, not a hard stare.
+  - The still = the documentary's B&W photo of Joe and Michael (~12) in tuxes, the only clear two-shot on disk (no photo files exist).
+- **Labels:** Joe, Katherine and Prince only (low). No label on Michael (the Son build didn't label him) and none on Paris: the second subscribe prompt sits there and labels never share a CTA. The question and the ending make clear she is his daughter.
+- **Subscribe prompts:** 11.75 s (32 %, on face shots, kept off the beating) and 28.13 s (77 %), using the existing 60 fps CTA render. **"Boom" = a white-flash transition into "Do you like being a father?"**
+- **Enhancement:**
+  - Iris only where the source is native HD, decided on A/B stills for P3/OPR.
+  - His child ending gets Chronos + light denoise + Lanczos, no generative face model. That is his "different enhancement for old footage", inside his Katherine rule.
+- **Checkpoint 1 (stills of all 20 shots) reviewed and passed at ~08:45.**
+  - No Iris on P3/OPR: the A/B showed invented skin texture and plastic lips. The ending's band is narrower ([520,1320]) so the 480x360 child clip isn't blown up 4x.
+  - The "Jackson 5 Childhood Scene" file was not used: 30 fps with a duplicate every 5th frame, letterboxed, lower bitrate, no sharper.
+  - **Captions keep ONE base** (his rule), so on S08 and S11, where Michael sits low in the 2003 frame, the line crosses his lower face.
+- **Side note:** the sourcing helper registered a `dad-build` slug in `research/deep-research-2026-11-14/yt_api.py` (SESSIONS set) to run one search (~100 units).
 
 ## What is on the timeline (read back from Premiere)
 | beat | timeline | label (low, STOP 2) | spans (source) | words |

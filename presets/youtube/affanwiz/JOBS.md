@@ -33,7 +33,7 @@ planned title:
   Log their posted dates and 7-day numbers as data when he gives them.
 - **7-day reads** are due for all four Shorts and CA-011. They need his Studio numbers, since Studio isn't reachable from Chrome
   (memory `reference-affanwiz-studio-access`).
-- **CA-011's review diff isn't read yet.** He exported it himself, so what he changed on ABW10 › "CA-011 Kai TikTok Money" before
+- **CA-011's review diff: READ 2026-11-16** (offline, from the saved ABW10; LESSONS § 2026-11-16 CA-011 UPLOADED: four trims −0.80 s + his Enhance Speech A1; graphics, SFX, beds and the head lock all kept; the 9 band waivers unchanged). Was: He exported it himself, so what he changed on ABW10 › "CA-011 Kai TikTok Money" before
   upload goes into LESSONS (PLAYBOOK § After every review), as CA-010's did. That also answers its two open calls: the head-steady
   lock (13 of 42 joints) and the 9 band waivers.
 - **Short 4:** which file he posted, and his calls on the dandruff removal and the SPEEDZYY watermark, aren't on file. Its job's
@@ -82,6 +82,11 @@ waiting on his prediction and Studio numbers). Archiving the first would also ar
       max effort yet": sections 4 and 6 to 9 have no independent re-read after the fixes, and none of the cited
       videos was watched. **When a GTA 6 money take lands, match it against this script.** The idea list for the
       slots it freed is not started (the session stopped at the 93 % usage line).
+    - **CA-015 rebuilt 2026-11-16 ~02:06 PKT around his title:** "Claude + GTA 6 Shorts Monetization (Not Selling You
+      Any AI Software Lol)", in the order it promises: Claude, then Shorts, then monetization. The current files are
+      `CA-015-gta6-money-SCRIPT.md` + PDF (16 pages), with a new locked prediction. The Rockstar-first version is kept as
+      `CA-015-gta6-money-SCRIPT-v2-rockstar-first.md` (+ PDF). Still "NOT max effort yet": nothing independent read
+      the text after the last fixes. **Match a GTA 6 money take against the current file first.**
     - **Waiting on him** (12 asks in the plan's § 7; his answers go to that session). The ones that move dates:
       whether advanced feature access is on for AffanWiz, whether paid clipping is inside his teach-only-faceless
       rule, a yes or no on the 72-hour Whop test, and whether CA-013 is already recorded. Studio and Skool numbers
@@ -145,6 +150,7 @@ waiting on his prediction and Studio numbers). Archiving the first would also ar
 | CA-009 | Speed Bought the iPhone Duo. 20 Clippers Got Nothing. | `iphone-duo-clip-angle` | `Onyx\C1410` | ABW10 › "CA-009 iPhone Duo Clip Angles" | **uploaded** 2026-10-28; his verdict read 2026-11-02 (LESSONS) |
 | CA-010 | The Viral Clip Method Big Shorts Channels Gatekeep | `viral-clip-method` | `Afterhours\C1427` | ABW10 › "CA-010 Viral Clip Method" | **uploaded** 2026-11-03 (his changes: LESSONS § CA-010 UPLOADED) |
 | CA-011 | Kai Cenat Accidentally Showed His TikTok Money | `kai-tiktok-money` | `Afterhours\C1449` | ABW10 › "CA-011 Kai TikTok Money" (5:04) | **posted** ≈ 2026-11-08 (444 at 4 d); his review diff not read yet |
+| CA-015 | Claude + GTA 6 Shorts Monetization (Not Selling You Any AI Software Lol) | `claude-gta6-shorts-money` | `PBE\C1484` (8:16) + `PBE\C1485` (11:39) | **ABW11** › new bin + sequence "CA-015 …" (ABW10 isn't open; see the job's RUN.md) | recorded 2026-11-16 04:14 (one continuous take, split by the camera; joined raw `raw/CA015-joined.mov`). **Off-script:** an improvised launch-week prep guide under his title, not the v3 script; cut plan `review/CUT-PLAN.md`, built without his OK per his overnight rule. Edit session started 07:00 PKT (Opus main, Fable advisor). **Rough cut 12:39.2 placed on ABW11 09:35 (unsaved: needs his Ctrl+S), audio chain on; graphics not started** (overnight usage cap). **Resumed 2026-11-16 17:05 PKT on his ask** ("why wasn't the gta 6 video finished right now its just cutted up"): graphics → face pass → SFX → gates, stopping at ready-to-export (week at 8 %); the save still needs his Ctrl+S or "save it" in that session. ▶ STATUS in the job's RUN.md. He wants it posted by Wed 18 Nov (GTA 6 out Thu 19) |
 | S1 | Re-uploads Won't Go Viral | `iphone-duo-clip-angle/clips/reupload-wont-go-viral` | from CA-009 (his own sequence) | `Exports/affanwiz-reupload-wont-go-viral.final.mp4` + `.v2-reordered.final.mp4` | both finals delivered 2026-10-28; **posted**, probably as "STUPIDEST Clipping Mistake - IShowspeed" (996, 11-12) |
 | S2 | How I Find Shorts YouTube Is Forced To Push | `viral-clip-method/clips/find-viral-angles` | from CA-010 | `Exports/affanwiz-find-viral-angles.final.mp4` (40.4 s) | review 2 final 2026-11-04 23:22; **posted**, probably as "Find Viral Money Making Shorts Topics THIS WAY" (561, 11-12) |
 | S3 | What Level YouTube Shorts Creator Are You? | `what-level-shorts-creator` | `Afterhours\C1450` | `Exports/affanwiz-what-level-shorts-creator.final.mp4` (34.3 s) | final 2026-11-06 03:20, approved at check 2; **posted** as "What Level Of Shorts Creator Are You" (371, 11-12) |

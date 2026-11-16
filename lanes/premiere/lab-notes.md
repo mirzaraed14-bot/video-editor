@@ -1254,3 +1254,13 @@ Always check the EDL bash can actually see before re-splicing.
 - `ffmpeg -ac 1` of a stereo (dual-mono) file is +3.01 dB again (0.7071 x (L+R)): LUFS from a mono decode read 3 dB hot. The beat-level table used stereo decodes; SNR comparisons are unaffected.
 - Memory at 09:55: commit 91.0 of 91.2 GB with Premiere 16.3 GB private, Media Encoder 7 GB, Photoshop 4.5 GB; OpenBLAS refused to allocate. `OPENBLAS_NUM_THREADS=1` keeps a numpy step alive; an ASR waits for available RAM >= 2.5 GB AND commit headroom >= 5 GB (`analysis/asr_wav.py` checks both with GlobalMemoryStatusEx).
 - The demucs venv (`~/.cache/video-editor/demucs-venv`) is CPU-only torch 2.3.1 and holds no htdemucs weights, so "Demucs on the GPU under gpu.lock" is not possible with it; the weights are an ~80 MB official download (his OK).
+
+## 2026-11-16 · CA-015 intake ASR on the shared box (claude-gta6-shorts-money, ABW11 open with Premiere + OBS + Media Encoder + Photoshop)
+- **WhisperX large-v3 didn't fit next to his apps.** VRAM: Premiere/OBS/Chrome hold ~3.1–3.7 GB of the 8 GB 3060 Ti. cuda/float16 failed to
+  load (OOM); cuda/int8_float16 at batch 16 OOM'd mid-run; the ladder then fell to CPU int8 and died on `mkl_malloc` (commit was 81/91 GB).
+  The CPU fallback is the dangerous step (2026-11-14: ~8 GB commit per CPU large-v3 paged his Premiere out).
+- **Fix, opt-in env on `.claude/skills/rough-cut/scripts/transcribe.sh`** (unset = the old ladder): `WHISPERX_COMPUTE=int8_float16`
+  starts the ladder there, `WHISPERX_BATCH=1` shrinks the batch, `WHISPERX_NO_CPU=1` removes the CPU floor so a CUDA failure STOPS instead of
+  paging Premiere out. Batch 4 still OOM'd on the second clip; **batch 1 ran both files (20 min of audio) in ~4.5 min**. Wrapper with both locks
+  + a commit-headroom check: `projects/claude-gta6-shorts-money/work/asr_queue.sh`.
+- The per-burst pass (`review/tools/bursts.py`) and the review ASR tools of that job are patched the same way (GPU int8_float16, no CPU).

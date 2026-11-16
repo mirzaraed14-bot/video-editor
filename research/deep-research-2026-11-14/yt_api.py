@@ -4,6 +4,7 @@
     python -I research/deep-research-2026-11-14/yt_api.py <session> <endpoint> name=value ...
 
     <session>  : hp-cast | hp-films | bolt-celeb | ig-mj | ig-icons | ig-sports | speed | hub
+                 sirius-build = the "Was Oldman A Good Sirius?" finish build (16 Nov 2026)
                  affanwiz = the AffanWiz research session (Affan's OK 15 Nov 2026: channel listings only, 0 searches)
     <endpoint> : search | videos | channels | commentThreads | playlistItems
 
@@ -39,7 +40,8 @@ LOG = os.path.join(HERE, "yt_api_log.jsonl")
 CACHE = os.path.join(HERE, "yt_api_cache")
 QUOTA = os.path.join(HERE, "yt_api.QUOTA")
 COST = {"search": 100, "videos": 1, "channels": 1, "commentThreads": 1, "playlistItems": 1}
-SESSIONS = {"hp-cast", "hp-films", "bolt-celeb", "ig-mj", "ig-icons", "ig-sports", "speed", "hub", "affanwiz"}
+SESSIONS = {"hp-cast", "hp-films", "bolt-celeb", "ig-mj", "ig-icons", "ig-sports", "speed", "hub", "affanwiz",
+            "sirius-build", "dad-build"}  # dad-build: mj-the-dad-he-never-had overlay sourcing (16 Nov 2026), default cap 12; sirius-build: the Oldman v6 finish (Affan's review 1, 16 Nov), default cap 12
 CAP = {"hub": 20, "ig-mj": 18, "affanwiz": 0}  # ig-mj +6 on 15 Nov ~02:35 for his "go all out" MJ arc, from the idle lanes' unused searches
 # affanwiz: the AffanWiz research session (creator-shorts). Affan OK'd this key for it on 15 Nov 2026 for channel
 # listings only, so its search cap is 0: the 100 searches a day stay with the AW sessions.

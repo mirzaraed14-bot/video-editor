@@ -1,6 +1,114 @@
 # RUN: oldman-good-sirius ("Was Oldman A Good Sirius?"), Abundance Wisdom: LEAD card under the 150K bar, built to STOP 1 on Affan's go ("try the sirius angle")
 
-## ▶ STOP 1: note for Affan (the raw cut, for your review)
+## ▶ MORNING SUMMARY (16 Nov ~10:35 PKT): FINAL RENDERED AND DELIVERED, waiting for Affan's review
+- **The final** is "Was Oldman A Good Sirius.mov": H.264, 1080x1920, 60 fps, 1919 frames, 31.983 s, PCM 48 kHz.
+  - Copies, same sha256 `b93763de…a63e47` in all three:
+    - `outputs/Was Oldman A Good Sirius.mov`
+    - `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\Was Oldman A Good Sirius.mov`
+    - `X:\Claude Projects\Exports\Was Oldman A Good Sirius.mov`
+- **What it is:** his own 31.98 s cut, code-built on the mj-son-step-outside template. Everything from his Tella guide is in:
+  - the OotP Sirius slowed (Grimmauld family tree, burgundy coat);
+  - Rickman as himself;
+  - Hagrid then Ron as small sliding pictures;
+  - his +18 % zoom in at 16.73 s and out at 17.95 s;
+  - the Dan + Gary Death Chamber rehearsal band;
+  - the dip to black at 28.77 s;
+  - then the house finish: head lock, zoom table, transitions, AW grade, captions, two name cards, two subscribe pills, swishes. No music.
+- **QA on the final file:**
+  - loudness: -14.1 LUFS, -1.6 dBTP;
+  - Oldman and Radcliffe short-term levels within ~2 LU of each other;
+  - A/V lag +3.9 ms at 3 points;
+  - re-ASR matches the captions;
+  - the hard cuts land exactly on their planned frames (f59, f229, f473, f1255, f1471);
+  - P4 lip-to-caption gap at least 102 px on every frame (from the final);
+  - every chunk was rendered after the fixed picture;
+  - no Topaz watermark.
+  - Sheets: `proof/final_1s.jpg` and `proof/final_edges.jpg`.
+- **Decisions made without Affan:** items 1-16 below.
+- **Open / not done (named, not hidden):**
+  1. Picture sync rests on the cut frames plus the audio mapping, not a lip measurement on the file.
+  2. O1: Sirius's lips still open near the end of the slow-motion slot. The in-point moved 188.30 -> 188.23; a shot cut at 188.189 blocks going earlier.
+  3. The two name-card sounds sit at -24 dB under the voice (the brief said 19-23 dB). The swishes are at -21 dB and the CTA cues at -17 dB.
+  4. Sirius is 1080p; no 4K source was tested.
+  5. The small-picture slides and the zoom were judged from stills and per-frame traces, not watched at real speed.
+  6. The no-O3 variant (Dan's face at 24.52-26.29) is buildable but not rendered: `O3=0 python build/make_timeline.py`, then render.
+  7. The nose-based head_measure gate "fails" by design (the face-box lock, decision 14). At the jump cuts the head box holds; only the head turn moves the nose.
+- **Usage:** weekly all-models was 8 % at ~10:25. The Main Brain said to finish only this deliverable; nothing new was started.
+
+## ▶ BUILD RUNNING (16 Nov 2026, started 07:03 PKT by the cron, Opus manager + Sonnet builder): spec [`BUILD.md`](BUILD.md)
+- **07:03-07:05:** weekly meter 0 %. Lock-held read-only re-read of his sequence = identical to 03:03 (`review1/his_edit_0703.tsv`). FCP XML snapshot `review1/his_edit_snapshot_0703.xml` (174 KB). Lock released. No Premiere writes.
+- **07:05-07:13, YouTube (the hub's order, pace.sh, one at a time, no block seen):**
+  - (a) official "Christmas at Grimmauld Place" (s1-yD1K9UNk, 1080p VP9; no official 4K exists);
+  - (b) BTS candidates sP02f1iAYUI, 7zyCjAwrKf4 and V6OpU4b0-D4 queued.
+- **Builder log:** builders append below, at each phase.
+- **Builder log (Sonnet, Phase 1, 16 Nov):**
+  - 08:xx kit copied from mj-son-step-outside (build/ captions/ win/); lock path made absolute, memory gate 6 GB/10 GB; `build/make_timeline.py` writes 16 shots, 14 dialogue pieces, 7 zoom layers (P3+P4 = S05..S11 one layer with § 2c extra zoom), END 1919/60. `dialogue.py` -> renders/dialogue.wav (Oldman +17.5 dB, Radcliffe +11.6 dB, -15.5 LUFS pre-mix).
+  - Captions: captions.txt = brief, except "ON THE LAST DAY OF" (4 words) split as ON THE / LAST DAY OF / HIS FILMING (3-word rule). make_words (aligned, trailing 'maybe' 15.15-15.35 aligned then dropped), make_plan ok, caps_code render running.
+  - **Updates absorbed (Opus messages):** O3 used (BTS band: stage_a `band` pick, bg = blurred/darkened enlarged copy, white edge lines; Chronos 30->60, 107 frames; toggle `O3=0 python build/make_timeline.py` writes build/variant_no_o3/); O1 = xmas 188.30 (face x ~860); P3 (setup PO) and P4 (setup PQ) separate layers, hard cut 7.8833, HAPPY SAD CONFUSED bug at source x>=1620 y>=840 (P4 nose x max 1222 + 270 half window = 1492: clear); Oldman card 5.85/2.00; captions ON THE / LAST DAY / OF HIS FILMING.
+  - **Decided by me:** face scale 2.0 (his 1.778 + 12.5 %) with nose target y880 and expose_top 200 for all three face setups, because at 1.778 the window is the full 1080 source height (no vertical slack) and the nose sits at y~676, 150 px of nose-y wander across his jumps cannot be locked and the caption base would float 250 px under the lips. Top band (<=200 px, UI band) is a mirror fill of plain studio wall. Magnification reported.
+  - Machine memory is the bottleneck (commit headroom 3-7 GB of the 10 GB gate; render_caps hit MemoryError once, retried in a loop). Topaz/Stage A wait on the 6/10 GB gate before taking the lock.
+  - O1 Chronos: slowmo 1.998 gave 77 frames not 90; retuned to slow=2.336 (check the frame count in the Topaz log).
+  - **BLOCKER (08:xx PKT):** RAM gate (6 GB free / 10 GB commit) is not met for >30 min (commit headroom 0.04-6 GB, other sessions). All GPU/Topaz steps (O1/O2/O3 Chronos, caps_capcut, Stage A) are queued behind the gate in `build/topaz_overlays.py` / `build/phase1_gpu.sh`; I am NOT relaxing it. CPU-only done: timeline, dialogue.wav, captions (caps_code.mov), tracks, pics, traces tooling.
+  - **Phase 1 DONE (09:41 PKT):** `proof/r1/NOTES.md`; renders/stageA.mov (locked, 1919 f), o1/o2/o3 Chronos, caps_capcut, dialogue. Waiting for the Opus frame check; Phase 2 not started. Face lock = face-box centre x 560 (head_measure nose FAILs by design, see NOTES 1).
+  - **Phase 2 DONE (10:2x PKT):** `outputs/Was Oldman A Good Sirius.mov` 1080x1920 60 fps 1919 f 31.983 s, -14.1 LUFS / -1.6 dBTP, av_lag +3.9 ms at 3 pieces, re-ASR matches, P4 final-file min lip-caption gap 102 px (`proof/r1/lip_caption_gap_P4_final.csv`), `proof/final_1s.jpg`, `proof/final_edges.jpg`, `proof/final_asr.txt`. Not delivered/copied.
+  - Small pictures: Hagrid = hag 609.6+19 frames (h_20, eyes open, 637x796 crop), Ron = xmas 35.0+3 frames, 720x900 crop; `build/pics/*.png` 360x450 Lanczos. Hagrid film has baked bars (active 1920x796): crop stays inside.
+
+
+### Decided without Affan (the overnight no-questions rule; evidence in brackets)
+1. **Finish route = code build from his EDL on the mj-son-step-outside template** (the hub's 07:00 order; HUB ▶ HOUSE STYLE).
+2. **Sirius = the Grimmauld family-tree close-up (xmas 188.30, ~0.75 s slowed ~0.5x): the burgundy velvet coat, contemplative, mouth closed.**
+   - [His words: "dapper suited outfit ... red suit, red coat, red jacket in the Order of the Phoenix" + "slow motion".]
+   - [First pick was the Christmas toast at 79.40. The advisor asked which shot shows the red; under the toast's blue light the same coat reads black, and the family-tree shot shows the burgundy.]
+   - [Full-size check: no logo, no subtitle.]
+   - [This official upload tops out at 1080p. Third-party "4K" scene packs (upscaled, re-graded "with coloring") were not tested.]
+3. **Rickman = the 2015 interview at 64.40-66.34:** listening, calm, mouth closed. [His "as himself from an interview"; a closed mouth won't fight Oldman's words.]
+4. **Hagrid = Philosopher's Stone still (610.0); Ron = OotP still (35.2, a frontal comic smirk).** [His "small picture"; official 1080p; no child in either crop.]
+5. **Small-picture path moved up to y≈1395 (he pointed at ≈1520).** [At 1520 a readable card crosses the y1620 safe floor (README / CLAUDE.md safe zones).]
+6. **His zoom = smooth eased in (+18 % at 16.73) and out (17.95), not instant punches.** [He named only "extra zoom in/out". His easing word elsewhere is "easy ease", and house rule "No same-camera punch-ins" covers instant zooms.]
+7. **Subscribe prompts at 9.55 s (30 %) and 18.10 s (57 %), not the README's 35-45 % / 70-80 %.** [Those windows hit the Hagrid/Ron cards, the Radcliffe card and the payoff line, which README § 12 forbids.]
+8. **Name cards at 5.85-7.85 (GARY OLDMAN · SIRIUS BLACK) and 21.07 (DANIEL RADCLIFFE · HARRY POTTER), not at 0.**
+   - [Hook = claim only: no credit line in the first 3 s.]
+   - [The Oldman card ends before 7.88, where the interview changes CAMERA ANGLE (checked from frames), so it stays inside one shot.]
+9. **His "fade to black" at 28.76 = the house purple dip timing, to full black.** [His words + README § 7.]
+10. **No Iris/Proteus on any face; Lanczos only.** [HP-EXECUTION rule 7, the hub's order; Oldman 2023 is a 1.27 Mb/s stream.]
+11. **The optional BTS overlay IS used at 24.52-26.29: the OotP 2006 Death Chamber rehearsal**, from sP02f1iAYUI 3.90 s (Oldman in Sirius costume laughing at Radcliffe between takes). It's 720p, so it's shown as a 16:9 band over a blurred fill, not magnified.
+    - [His words: "behind the scenes in their own respectively characters ... just talking to each other ... that overlay will fit really well".]
+    - [OotP = Radcliffe 16-17, OK under the 14 Nov ruling and the hub's order; no PoA.]
+    - [Rejected: 7zyCjAwrKf4, a vertical repost with burned-in subtitles and a website watermark, soft SD; Collider V6OpU4b0-D4 has the same footage only inside a pink graphic frame.]
+    - [sP02f1iAYUI's first download hit an HTTP 403 on the stream (not a bot page); one paced retry worked.]
+12. **P4's face run 7.89-12.85 s (5 s): the first subscribe prompt (9.55-12.35) rides on it**, so no extra overlay was added.
+    - 7.88 is a camera-angle change in the same interview: a hard cut with its own zoom layer, no transition (transitions only on scene change). [He didn't ask for an overlay there; captions and the zoom carry it.]
+13. **P4 (the closer angle, 7.89-20.92) is re-framed so his lips sit at the same y as in P1-P3.** His +18 % punch pivots on the lip line, so the hair top may leave the frame in the deep zoom.
+    - [Phase 1 stills: the caption sat ON his mouth in every P4 frame. House rules: captions just below the lips, ONE caption base per video.]
+    - [The fix is in the framing, never the caption base. Proof: a per-frame lip/caption gap CSV.]
+14. **The face lock holds the face-box centre (x 560), not the nose.** The nose wanders 50-250 px when he turns his head.
+    - [A nose lock cut his head off at the left edge in S07-S10. "Head steady across cuts" is read as the head, not the nose.]
+15. **Face scale is 2.0, 12.5 % over his 1.778.**
+    - [At 1.778 the window is the full source height, so the nose can't be locked vertically. Lanczos only; the source is a 1.27 Mb/s stream.]
+16. **The O3 BTS band stays ON (judged side by side with Dan's face at 25.4 s).** Sirius is small but reads by hair and coat.
+    - [It's the rehearsal of the Death Chamber, Sirius's last scene, so it matches "on the last day of his filming".]
+    - [His rule: "if you cannot find it, just use Daniel's face". We found it.]
+    - [The no-O3 variant exists: `O3=0 python build/make_timeline.py`.]
+
+## (history) ▶ STATUS at 03:10 PKT: REVIEW 1 IN, THE BUILD STARTS AT 07:00 PKT (his limit reset)
+- **The review:** Affan sent a Tella guide at ~02:45 PKT. It is resolved to timecodes in [`review1/REVIEW1.md`](review1/REVIEW1.md), the build brief.
+- **His timing (verbatim):** "start the build not right now, started at 7am when my limit resets ... go full effort on it using Opus as fable as your advisor".
+- **He re-cut our sequence himself to 31.98 s** (was 48.98): setup line gone, every pause tightened, Radcliffe down to 11.1 s.
+  - That edit IS the cut. Record: [`review1/HIS-EDIT.md`](review1/HIS-EDIT.md) (read-only read of ABW11 at 03:03).
+  - ABW11 showed unsaved changes at 02:51. Snapshot his edit first, before any write.
+- **What he asked for:**
+  - Suited OotP Sirius, slow motion, over 0.98-2.49 s.
+  - Alan Rickman as himself (interview) over 3.82-5.76 s.
+  - Hagrid then Ron as small sliding pictures, 12.85-15.77 s.
+  - A zoom in at 16.73 s and out at 17.95 s.
+  - An optional Dan + Gary BTS overlay at 24.52-26.29 s.
+  - A dip to black at 28.76 s.
+  - Then the house finish.
+- **Nothing was built or changed in Premiere tonight;** the only Premiere access was one read-only sequence read.
+- **Disclosure:** the guide's speech-to-text (medium.en, CPU) ran at 2.9 GB free RAM / 4.5 GB free commit, under the 6/10 GB guard in `asr_work/asr_run.sh`, while his Premiere was open with unsaved work. I saw no incident. The guard stays on for every heavy step from 07:00.
+- **The start is scheduled in this session only** (07:03, plus a 07:20 check). It is lost if the app closes or the PC shuts down. If so, start from this block and `review1/REVIEW1.md` § 4.
+
+## (history) STOP 1: note for Affan (the raw cut, for your review)
 Open **"Was Oldman A Good Sirius - raw cut"** in ABW11. It is **not saved: press Ctrl+S to keep it.** Nothing was exported. 48.98 s, 59.94 fps, no music, no captions yet.
 
 **What's in it** (Oldman 2023, then Radcliffe 2024; no Horowitz speech):
@@ -21,7 +129,7 @@ Open **"Was Oldman A Good Sirius - raw cut"** in ABW11. It is **not saved: press
 
 **Check by ear:** the hook's "if [uh?] they ask me" (a short sound between "if" and "they"); "maybe it's Ron" (large-v3) vs "wrong" (medium.en); the laugh after "it's me." (probably the crowd); the joint at 17.7 s (a crowd swell cut mid-decay; if it sounds chopped, end the first beat-3 piece at 345.20). Left out: the loud laugh bursts at 346.3-346.9 (maybe Horowitz) and a 0.85 s noise blip in the hook's pause.
 
-## ▶ STATUS: resume here
+## (history) STATUS at STOP 1
 - **15 Nov 2026 02:20-02:29 PKT (machine clock): v6 RAW CUT (STOP 1) is PLACED in Affan's open ABW11 and READ BACK. Waiting for his review.**
   Affan said "build it in premiere" at 01:41 PKT (the hp-films session corrected the brief's ~02:50). Built by the Oldman v6 build session (started by hp-films, `local_aa5f066e…`).
   - **Sequence "Was Oldman A Good Sirius - raw cut"** (bin "Was Oldman A Good Sirius"): 1080x1920, 59.94 fps (display 107), **48.98 s**, V1/A1 10 clips each,

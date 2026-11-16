@@ -36,3 +36,10 @@ digits. Seq 17 was re-delivered as v2 the same day (its ending had been captione
 
 Raw footage: `E:\Skool Recordings\<batch>\`, where Urdu reel takes are mixed with English GTA takes (C1253 = Urdu; C1269/C1263/C1287 = English). Forcing Urdu on English audio produces garbage.
 Related: [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]].
+
+**NEW STRATEGY, 2026-11-16 (Affan, "change my captions strategy"):** two layers like appleby's bilingual reel
+(Dfsmt8HNSDg, Chinese over English): **Urdu script on top, Roman Urdu below**, built from the yellow style, both layers
+softly glowing; cues, spellings and everything else unchanged. Reference measured + adaptation proposal in
+`research/affanwizu-bilingual-captions/REFERENCE.md`; first test on ABW11 Sequence 09 (`projects/abw11-seq09-short/`).
+Premiere shows ONE caption track at a time, so two editable layers = two .srt → "Upgrade Caption to Graphic"; Nastaliq
+shaping in Premiere is the open risk. Until he approves a test, the single-line yellow .srt stays the deliverable.

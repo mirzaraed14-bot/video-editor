@@ -21,6 +21,82 @@ Near-done jobs are NOT rebuilt for it; the style applies from their next step. T
 - the HP fork (`local_7f87fba7…`, Hagrid raw cut).
 Jermaine is still unbuilt, so its build takes this style.
 
+## ▶ 16 Nov 04:35 PKT (hub): OVERNIGHT RUN, both builds run to the FINAL with no questions (his words, checked)
+- **His words (to the Main Brain, ~04:30 PKT, checked in its transcript):** "when I wake up I want these videos done ... I don't want
+  you to go like one 2 hours in and you're asking me for something ... All of these sessions will be running Opus as their main model
+  and Fable as advisor". Both builds now read claude-opus-5-5 / xhigh.
+- **Starts:**
+  - Sirius: its own 07:03 cron.
+  - Dad: its background wait (exits 02:00 UTC), plus a 02:05 UTC cron backup the hub asked for. Confirmation pending.
+- **The hub's no-questions defaults (sent to both):**
+  - a lock-held READ-ONLY FCP XML snapshot of his unsaved ABW11 trims first;
+  - code build from his EDL on the house template, finals to Final Renders + X:\Claude Projects\Exports\, no Premiere writes;
+  - no Demucs download without his OK (RAM is tight too), so use the afftdn beds;
+  - no Higgsfield or paid credits; Topaz is allowed with a watermark check;
+  - PoA BTS out; censor by the default;
+  - log every call made without him in RUN.md "Decided without Affan".
+- **Morning:** each RUN.md opens with the summary. The hub verifies each final (hashes, loudness, a contact sheet) when the builds report.
+- **Usage cap (his words to the Main Brain, checked):** "I don't wanna wake up and see like some enormous amount already used entirely
+  like 50% of the weekly limit ... keep everything in limits". The Main Brain set the number: 10 % of the weekly all-models meter for ALL
+  overnight work. At 7 % a session finishes only the current deliverable; at 10 % it stops at a clean checkpoint with a morning summary.
+  Opus works, Fable advises at decision points, Sonnet/Haiku/scripts do the mechanical work. The hub stays near idle overnight.
+- **07:05 Dad:** the snapshot of his re-cut is done (57.3 → 36.2 s; beats 6 and 7 dropped; he ends on "Paris Jackson_ I Love My
+  Daddy So Much.mp4", Paris as a small child on frame: HIS placement, kept and flagged in the morning summary).
+  - The 07:05 backup cron landed mid-turn and ended the build turn. The hub nudged it at once to resume from RUN.md.
+  - LESSON: a backup cron must say "if the build is running, carry on with it", not "do nothing and stop".
+- **09:05 Dad v1 FINAL, hub-verified ~09:15:** `projects/mj-the-dad-he-never-had/outputs/The Dad Michael Never Had.mov`.
+  - sha256 `c1be2701…d7fcedd` identical at outputs/, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` and `X:\Claude Projects\Exports\`.
+  - ffprobe: h264 1080x1920, 60 fps, 2183 frames, 36.38 s; PCM s24le 48 kHz stereo. ebur128: -14.1 LUFS, LRA 2.5, peak -1.6 dBFS.
+  - Contact sheet read (`proof/final_sheet.jpg`). The two dark samples (4.5 s, 19.5 s) are designed ~0.6 s dips (luma 72 → 20 → 70 over
+    35 frames), not stray frames. 32-36 s is his child end clip (Paris small, on frame): his placement, flagged.
+  - Decided without him (RUN.md morning summary): no Higgsfield on the young-Michael+Joseph still (Lanczos); the beating overlay in
+    gentle slow motion (a test, real speed is one line); captions on one base cross Michael's lower face at 13.3-14.8 and 17.1-19.5 s.
+  - v2 running: fixes two same-camera head hops (7.48 s 25 px, 27.65 s 69 px; gate 8 px). If v2 fails QA, v1 stands. Build usage 6 %.
+- **09:59 Dad FINAL = v2, hub-verified ~10:05.** Same three paths, sha256 `2f0f7506…45454ecd` identical at all three; 2183 frames,
+  60 fps, 36.38 s, -14.1 LUFS, LRA 2.5, peak -1.6 dBFS. v1 kept beside it as `outputs/The Dad Michael Never Had v1.mov` (`c1be2701…`).
+  - Head hops (gate 8 px): 7.48 s dx 6.3 / dy 2.5 (v1 -13.2/24.8); 27.65 s dx -1.6 / dy 6.2 (v1 12.0/69.0). Fix: OPR pair at 183 %,
+    Sunrise pair at 234 %, y locked; windows inside the source limits. Hub read `proof/v2_hops.jpg`: steady across both cuts, no watermark.
+  - Topaz: Iris only on native-HD shots (S12, S15, S16, S18, all 1920x1080); none on the 2003 interview (P3), OPR or the child clip
+    (the A/B showed plastic lips). Watermark checked on every Topaz segment by the build.
+  - Build used ~6-7 % of the week. Waits for his review; a note = a finish re-render, not a rebuild.
+- **10:22 Sirius FINAL, hub-verified ~10:40:** `projects/oldman-good-sirius/outputs/Was Oldman A Good Sirius.mov`, sha256 `b93763de…a63e47`
+  identical at outputs/, Final Renders and `X:\Claude Projects\Exports\`. h264 1080x1920, 60 fps, 1919 frames, 31.98 s; PCM 48 kHz.
+  ebur128: -14.1 LUFS, LRA 6.3 (crowd swells), peak -1.6 dBFS.
+  - Hub read `proof/final_1s.jpg`. The dark sample at ~2 s is a designed dip (luma 58 → 20 → 54 over ~30 frames).
+  - Decided without him (RUN.md, 16 items; no item 12): Sirius = Grimmauld family-tree close-up slowed; Rickman 2015; Hagrid then Ron at
+    y≈1395 (not his 1520, safe floor); eased zoom; subscribe prompts at 30 % and 57 %; face scale 2.0; the OotP Death Chamber rehearsal
+    band ON (Radcliffe ~16: OotP BTS is OK per REVIEW1 § 2.5 + the public-figure teen rule); no Iris/Proteus on faces.
+  - Open (his): Sirius's lips open near the end of the slow slot; name-card sounds at -24 dB under the voice (brief 19-23); 1080p only;
+    slides judged from stills, not watched at speed; the no-band variant is buildable. Build used 8 % of the week.
+
+## ▶ 16 Nov 03:25 PKT (hub): Sirius review 1 (his Tella, to sirius-build directly); the hub's 07:00 order sent
+- **His words in sirius-build (checked):** "https://www.tella.tv/video/affans-video-3a6k3dzz start at 7am not rn just read it ane
+  everythign but start the build when my limit resets". He also set that session to Opus himself (`/model claude-opus-5-5`).
+  From the guide: "full effort on it using Opus as fable as your advisor".
+- **His edit:** he re-cut our v6 in ABW11 from 48.98 s to 31.98 s, unsaved at 02:51. The build ran one read-only read at 03:03. The
+  brief, resolved to timecodes: `projects/oldman-good-sirius/review1/REVIEW1.md`. It starts at 07:03 (cron).
+- **The hub's order:**
+  - Finish in CODE from his EDL (snapshot the FCP XML read-only first), copying mj-son-step-outside as shipped. No Premiere writes.
+  - YouTube one at a time, in order:
+    - (a) 4K OotP Sirius, suited;
+    - (b) Radcliffe + Oldman BTS in costume: OotP OK (his ask, his own teen-era footage under the 14 Nov ruling); PoA BTS (13-14)
+      flagged for his OK;
+    - (c) an HQ Ron film frame.
+  - `yt_api.py` gained the caller `sirius-build` (12 searches). Pacific day 11-15 had 0 searches at 03:20 PKT.
+- **At 07:00 both builds start.** Premiere reads and writes go under premiere.lock, GPU work under gpu.lock. RAM was tight yesterday.
+
+## ▶ 16 Nov 03:08 PKT (hub): his Tella walkthrough for the Dad Short sent to the build; START AT 07:00, not before
+- **His words:** "Give this video to the session which is building the Michael Jackson Prince Jackson story arc where Michael got
+  beat a lot but then it transitions Prince in Paris talking very good about him and tell that session to start the actual build
+  work when the limit resets which is at 7:00 AM 4:00 hours from now not right now".
+- **Video:** https://www.tella.tv/video/affans-video-8fb42orl. Sent to dad-never-had-build (local_9b79077a-6239-4c8f-ba4f-56c4e43bea19,
+  Sonnet xhigh). Delivered; its turn started, but its reply is not confirmed yet.
+- **The build's instructions:**
+  - Hold everything until the Mon 07:00 PKT reset (02:00 UTC), with one background wait to wake it.
+  - Then check the meter, take in the walkthrough (never in a browser; curl the m3u8, then ffmpeg), and resolve it into the job's BRIEF.md.
+  - Then read the live ABW11 cut and build to his notes. No save or export; quiet-gate status before each write.
+- **Research lanes:** all idle, still on hold. He named only this build for 07:00.
+
 ## ▶ 15 Nov 17:55 PKT (hub): the deep-research run is CLOSED: no pick; ranked board written; stopped at 92 %
 - **The board:** `research/deep-research-2026-11-14/HUB-BOARD.md` ▶ THE RANKED BOARD. All six finals say no pick.
   - The Dad Short built to STOP 1 in ABW11 is HIS eight-beat sequence ("build this in premiere" ~09:00, checked): ≈120K, under the bar.

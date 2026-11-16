@@ -19,3 +19,5 @@ Plain web search on this topic returns only SEO lists, no real style read.
 | **Colin and Samir, "Why Instagram Completely Changed Its Mind"** (`sxizdQ2hRfk`) | creator-economy two-camera talk | Almost nothing but two faces and a wide. The only graphic is the real artifact (phone screen, magazine page) dead centre on pure WHITE, which reads very clean after the dark room. Worth remembering as a contrast beat. |
 
 Compared with the catalog (FX-01..81): the tilted map is a new variant, flat diagrams and FX-09 Demand Tree are the nearest. Not used on AffanWiz yet.
+
+- Secret Base / Jon Bois, Orange Grid Canvas + Team Banner Bars (FX-64/FX-65): used on CA-015 as the Prep Board (b1-b7), proof projects/claude-gta6-shorts-money/outputs/CA-015-proof-frames.jpg
