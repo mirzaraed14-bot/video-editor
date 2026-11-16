@@ -20,7 +20,7 @@
 - [AW long-form documentary rules](feedback-aw-longform-documentary-rules.md) — bespoke visual per line, FX catalog + MG, nested host, no freeze under VO, level-matched inserts, subtitles on third-party clips, name every speaker
 - [Premium doc channels](reference-premium-doc-channels.md) — premium doc channels to borrow from (research/premium-doc-channels.md), coded into FX-01..80 in research/effects-catalog/CATALOG.md
 - [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + his reaction video for podcast outreach (@affancuts); ▶ STATUS in presets/youtube-shorts/onyx-samples/JOBS.md, rules in its LESSONS.md
-- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; a lapsed login token = silent WATERMARK, check every output; no Iris on small faces/wides ("pasty AI-ish")
+- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; a lapsed login token = silent WATERMARK, check every output; no Iris on small faces/wides ("pasty AI-ish"); 11-16 Dad: Chronos-only on magnified SD read "still pixelated", v3 shipped Iris x4 on the SOURCE (pending his reaction)
 - [Captions just below the lips](feedback-captions-just-below-lips.md) — short-form captions at ONE base per video, just under the lips (y940-1130); never lift footage for it
 - [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes (no full stops/commas), white base + coloured emphasis, smooth rise; @affanwizu: no ? until he answers, no commas in numbers
 - [No same-camera punch-ins](feedback-no-same-camera-punch-ins.md) — no instant zoom/whip between shots of one camera; one keyframed push-in; transitions only on scene change

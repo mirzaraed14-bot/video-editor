@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
-  modified: 2026-11-14T18:21:18.343Z
+  modified: 2026-11-16T14:33:27.942Z
 ---
 
 **Topaz Video AI 5.0.4** (Affan says "Video AI 5"; a newer "Topaz Video" app also exists on the machine but he asked for
@@ -42,6 +42,8 @@ Order matters: interpolation BEFORE Iris, in one pass (`--out-scale 2` without `
 **Login token can lapse mid-run (2026-10-24):** headless tvai keeps going but stamps a "Topaz Labs" WATERMARK (stderr: "Critical error refreshing token Could not establish connection"); only he can sign back in (open Topaz Video AI). Check a frame of every Topaz output for the watermark; afterwards re-run only the dirty step. Never work around the licence.
 
 **Iris on SMALL faces reads "pasty AI-ish" (Affan, 2026-11-14, Speed Short review 2).** On a two-shot wide at fit, inside a letterbox band, Iris gave the faces a waxy look. Iris only where a face is LARGE in frame; a wide or a downscaled shot gets Chronos (interpolation) only. His preferred fix was to re-cut the wide on one person, zoomed in, with no enhancement. A head lock on a 30p-doubled-to-60p broadcast judders: rebuild the duplicate frames first (the job's `stage_a.py` `dedup`); smoothing the lock alone made it worse. Chronos-only can also drop a part's tail frame (75 of 76), so gate every part's frame count before a concat. Details: AW `LESSONS.md`, 2026-11-14 Speed section.
+
+**Chronos-only on a magnified SD frame reads "still pixelated" (Affan, 2026-11-16, Dad review 1: "I don't know how it's still pixelated when you used Topaz").** Chronos on a Stage A frame that already blew 960x720 up 2.7x (or 480x360 up 3.4x) is no enhancement. What v3 shipped (PENDING his reaction, so not yet a rule and not a narrowing of the 11-14 "pasty" ban): Iris x4 (his values) on the source window at native size, read back by Stage A with anchor x k / scale ÷ k (`projects/mj-the-dad-he-never-had/build/hd_sources.py`), on two LARGE faces (Walters MJ, child Paris). Proteus at his values only blurred the blocks. Crop to the shown region before a 4K Iris pass when RAM is tight. Update this line once he reacts to v3.
 
 ## Moved from the MEMORY.md index (2026-11-06)
 Affan's Video AI 5.0.4 is scriptable (workflows/topaz-iris.py); interpolation on EVERY sample, Iris only for ≤1080p (his rule 2026-10-06); --segments at every cut; replaying his .tzlog export commands headless is BIT-EXACT (2026-10-10); a lapsed login token = silent WATERMARK, check every output (2026-10-24)

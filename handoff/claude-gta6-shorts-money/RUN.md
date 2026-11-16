@@ -15,6 +15,9 @@
   Stolen move = THE PREP BOARD (FX-64, Jon Bois's grid canvas; BRIEF rewritten against the take). Barred lines (the research session's checks)
   stay on his face. Cut zooms: `work/face_plan.py` → `transcript/face-zooms.json` (77 zooms, median 130 %, hold 1.30 s, 1 extreme 250 % on
   "shut the fuck up", 1 stretch on "shilling", 200 % on "big ass balls"; 150 razors to pre-split V1).
+- **19:30:** graphics CONVERGED: edit-review round 1 (27 defects, all fixed; `hf-graphics/review/ROUNDS.md`), graphics-qa 0 FAIL / 299 waived,
+  66 overlays + 48 plates exact. No 2nd full fresh-eyes round (budget), fixes verified on sheets. Placement part 1 MID-WAY in ABW11: A1 290
+  replayed exact, V1 pilot 20/444 done, the rest waiting for his idle (he is working in Premiere). Part 2 (V2 plates, V3 overlays, SFX) after.
 - **18:20 (week 9 %):** graphics BUILT: 66/66 alpha renders, exact frame counts, fonts checked, graphics-qa 0 FAIL (286 waived: standing side-card /
   filter / grain / stepfps, g14-g15 white page with the type measured inside the band, exits on face-pass razors only; no full-frame band waiver).
   48 plates, 72 fresh Epidemic SFX takes (plan: 117 cues over 66 files). Proof `outputs/CA-015-proof-frames.jpg`, radar line appended.

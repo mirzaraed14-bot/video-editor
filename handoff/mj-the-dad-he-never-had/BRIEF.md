@@ -26,7 +26,7 @@
 | N6 | 26.12-27.50 [240-283 s] | "What was he like as a dad?" | the photo is "too low quality and pixelated": use 2-3 s of Prince from the same Sunrise interview "just staring… so it looks like he's listening" | a listening shot of Prince replaces the photo (and the corrupt frames go with it) |
 | N7 | [283-288 s] | | "I don't even know why you made… extracted these audios, but whatever" | the A2 denoise versions are not used; original audio; Demucs moot |
 | N8 | 28.08-31.77 [288-311 s] | CHD question, "Really funny guy, that was my best friend" | then Paris "I love my dad" and "end with this" | as cut |
-| N9 | 31.77-36.23 [312-330 s] | the child clip | "the letterbox format… enhancement value specifically for this, old footage… different from these high quality videos" | letterbox; a gentler, non-generative enhance for 480x360 SD (no Iris on a child's face from a soft source) |
+| N9 | 31.77-36.23 [312-330 s] | the child clip | "the letterbox format… enhancement value specifically for this, old footage… different from these high quality videos" | letterbox; a gentler, non-generative enhance for 480x360 SD (no Iris on a child's face from a soft source). **v3 (his review 1: "still too pixelated … when you used Topaz"): Topaz Iris x4 on the source, see RUN.md "REVIEW 1 → v3"** |
 
 **House style:** copy `projects/mj-son-step-outside/` as shipped. That covers:
 - code head lock, the zoom table and the transitions;

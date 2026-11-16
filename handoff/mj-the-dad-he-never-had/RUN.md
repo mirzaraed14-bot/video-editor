@@ -1,3 +1,31 @@
+# REVIEW 1 → v3 (16 Nov 2026 ~18:40-19:25 PKT, his three notes on v2, a finish re-render, not a rebuild)
+- **v3 ships.** `outputs/The Dad Michael Never Had.mov` (= `… v3.mov`): 2183 frames, 60 fps, 36.383 s, -14.1 LUFS, -1.6 dBTP, export QA PASS. Hash-identical copies (sha256 `e9ef733d…e92287`):
+  - `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\The Dad Michael Never Had.mov`
+  - `X:\Claude Projects\Exports\The Dad Michael Never Had.mov`
+  - Both replaced the v2 copies there (checked as `2f0f7506…` first). v2 is kept as `outputs/The Dad Michael Never Had v2.mov`.
+- **His notes, and what changed:**
+  1. **"It's not 'as you could', it's 'as he could'."** Fixed in the caption (18.65-19.52 s). Forced alignment re-run: same word timing, only the word changed. Whisper and the Tella transcript both heard "you"; his ear wins.
+  2. **The Michael "Do you like being a father?" shot (Walters 1997, 24.30-26.27 s) was too pixelated.** He offered "enhance it using Topaz properly … or letterbox". It stays full frame, now with real Topaz Iris.
+  3. **The little Paris clip (31.92-36.38 s) was still pixelated: "I don't know how it's still pixelated when you used Topaz".** The honest answer: **v1/v2 never ran an upscale model on either shot.** They got only Chronos (frame smoothing), on a frame already blown up 2.7x and 3.4x, plus a light hqdn3d denoise on Paris. That was my spec's "no Iris on SD / a child's face" rule, carried over from the small-face "pasty" lesson.
+- **The fix for 2 and 3:**
+  - Topaz Iris (his recipe values) x4 runs on the ORIGINAL source at its native size (960x720 / 480x360), before the shot is magnified (`build/hd_sources.py`).
+  - Stage A reads the enhanced copy with exactly the same framing: anchor x k, scale / k (`build/stage_a.py` `hd` key, `build/v3_patch.py`).
+  - **Iris vs Proteus A/B** (his values, `proof/v3/enh_ab_*.jpg`): Proteus only blurred the blocks; Iris removed them, and both faces stay recognisably themselves.
+  - Paris is still on frame as he placed her. Her face now carries an AI face-recovery pass (Iris), done because he asked for Topaz; it rebuilds detail from her own frames.
+  - Whether Iris on SD faces becomes a standing rule is PENDING his reaction to v3 (LESSONS and the Topaz memory say so).
+- **Proof:**
+  - **Same framing as v2:** ECC shift ≤ 0.5 canvas px and scale 1.000-1.001 on 9 checked frames (`proof/v3/sa_v3_check.txt`).
+  - **The enhanced files line up:** the Walters extraction is frame-exact (diff 0.000), and Topaz keeps frames one-to-one (motion signature corr 0.997 at lag 0, 0.87 at ±1). Paris registration PASS (`proof/v3/hd_*_reg*.txt`).
+  - **Graded at phone size, v2 vs v3:** `proof/v3/graded_phone_v2_v3.jpg` and `graded_crop_v2_v3.jpg`.
+  - **No boiling:**
+    - the kit's smooth_check passes on S14, S19 and S20 (0 % duplicate frames; judder 6.61 / 2.40 / 1.72, v2 6.73 / 2.44 / 1.75) (`proof/v3/smooth_check_v3.txt`);
+    - full-resolution face sharpness swings frame to frame as much as v2's (S14 18.5 vs 18.6 %; Paris 5.7-6.9 vs 6.5-7.1 %), with no 6-frame pulse (`proof/v3/beat_check.txt`);
+    - 12 consecutive frames through Michael's blink are steady (`proof/v3/blink_strip_v3.jpg`).
+  - **v3 differs from v2 only where intended:** the caption chunk (17.6-24.3 s, encoder ripple included), S14 and the Paris clip. Every other frame is ≤ 0.05 mean diff, and the audio is byte-identical (same mix.wav, md5 `16c8b949…`) (`proof/v3/v3_vs_v2.txt`).
+  - **Caption and edges:** the caption reads AS HE COULD (`proof/v3/caption_as_he_could.jpg`), and the edges around every changed cut are clean, with no watermark (`proof/v3/v3_edges.jpg`).
+- **Noticed, not changed:** Paris is now clean but still soft at ~4x on the canvas, because that is the detail the 480x360 source holds. If he still finds it soft, the next step is less magnification in the letterbox (a framing change), not more AI.
+- Lessons → AW `LESSONS.md` "2026-11-16 · The Dad Michael Never Had v2: his review 1". Topaz memory updated.
+
 # MORNING SUMMARY (16 Nov 2026, built overnight 07:00-09:05 PKT, no questions asked, by his rule)
 - **DONE: v2 is the version that ships.** `outputs/The Dad Michael Never Had.mov` (= `… v2.mov`): 1080x1920, 60 fps, 2183 frames, 36.38 s, -14.1 LUFS (LRA 2.5), -1.6 dBTP, PCM 24-bit. Hash-identical copies (sha256 `2f0f7506…454ecd`):
   - `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\The Dad Michael Never Had.mov`
@@ -16,6 +44,7 @@
 # RUN: mj-the-dad-he-never-had ("The Dad Michael Never Had 🥹"), Abundance Wisdom Short: RAW CUT (STOP 1) placed in Affan's ABW11
 
 ## ▶ STATUS: resume here
+- **16 Nov ~19:25 PKT: FINAL = v3 DELIVERED** after his review 1 (see "REVIEW 1 → v3" at the top). Waiting for his next look. A note = a finish re-render on the v3 chain: `renders/stageT_v3.mov` → `build/render_chunks_v3.sh` → `export_cta.py`. Do NOT re-run `make_timeline.py`: it rewrites centers.json; v3's patch is `build/v3_patch.py`.
 - **16 Nov ~10:00 PKT: FINAL = v2 DELIVERED** (see the morning summary above; v1 09:05 kept as `… v1.mov`). Captions trail the speech by up to ~0.18 s (house CapCut lateness). Waiting for his review; a note = a finish re-render (`build/`), not a rebuild.
 - **Resume:** the plan is `BUILD-SPEC.md` (cut, pictures, finish settings, pipeline, gotchas) and the notes are `BRIEF.md`; a Sonnet builder executes it, with checkpoints at the stills and at the end.
 - **16 Nov 2026 07:00 PKT: OVERNIGHT FINISH BUILD STARTED** (AW hub + Main Brain overnight rules: run to the final render with no questions; decisions logged under "Decided without Affan"; cap 10% weekly usage; Opus manages, Sonnet executes, Fable advises). Weekly meter read 0% at 07:00. Steps: walkthrough → read-only FCP XML snapshot of his sequence → code build on the mj-son-step-outside house style → final.
