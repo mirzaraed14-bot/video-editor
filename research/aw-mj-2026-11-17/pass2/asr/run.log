@@ -1,0 +1,10 @@
+commit headroom 11609 MB
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+
+done phm_3025.wav 188
+done wal_0040.wav 189
+done wal_0425.wav 137
+rc 0

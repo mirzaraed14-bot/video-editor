@@ -33,3 +33,6 @@ famous-subject episodes; TCO = its most entertaining self-contained moments, ≤
 
 ## Moved from the MEMORY.md index (2026-11-06)
 Affan 2026-10-14 rejected 5/6 batch-3 picks: a moment must END in a usable lesson or a reversed belief on a universal stake; statements/history/self-talk fail (VIRAL-BAR.md gates A-E); 2026-10-31 + F self-contained context, G one subject hook→button, H simple over niche; I (review #2): non-famous speaker = value for the VIEWER or a self-standing scene, every pick carries 'the viewer gets: ___' (famous needed only for PERSONAL stories; value/entertainment from anyone)
+- **2026-11-17, his words to aw-mj-beats: "keep looking which has atleast 2 viral beats".** A Short needs at least TWO proven viral
+  beats inside it (the posted Dad Short had 3), on top of this bar. His earlier "even like 12 beats" was most likely "1-2" (he dictates
+  ranges as adjacent numbers). The topic-level "12-bit test" from 15 Nov is a separate check.

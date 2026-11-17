@@ -1,17 +1,343 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "lh6RtQY382lZEb7eyGoY2iY73VQ",
-  "nextPageToken": "EAAaHlBUOkNESWlFRU16TnpFM00wUkZNMFUzTkVORFJqVQ",
+  "etag": "j9k6IA4q8AgxdXFQjwr8hq5lr4c",
+  "nextPageToken": "EAAaHlBUOkNESWlFRVUwUmtVd01UaEdPVGN3UkVOQ01VSQ",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "FbOKgmm1ruVvOYzG9SY_2MZMoTk",
+      "etag": "JgSA22vGv0OSxyT4ZJ1ZB8Nd-fg",
+      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLjVNVkt6RzQxN0RN",
+      "snippet": {
+        "publishedAt": "2026-11-17T00:33:03Z",
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "title": "iShowSpeed Meets Barack Obama!",
+        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5MVKzG417DM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5MVKzG417DM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5MVKzG417DM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5MVKzG417DM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5MVKzG417DM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "IShowSpeed",
+        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "5MVKzG417DM"
+        },
+        "videoOwnerChannelTitle": "IShowSpeed",
+        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
+      },
+      "contentDetails": {
+        "videoId": "5MVKzG417DM",
+        "videoPublishedAt": "2026-11-17T00:33:03Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "2gepLnjlCZqmZmFREgJ-Stimctk",
+      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLjJCUkw0QUxNQ3lB",
+      "snippet": {
+        "publishedAt": "2026-11-16T22:44:43Z",
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "title": "iSHOWSPEED x GTA 6 | OFFICIAL TRAILER",
+        "description": "WATCH ME PLAY IT LIVE HERE 👉 https://youtube.com/live/qSyo5d-dVzA?feature=share",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2BRL4ALMCyA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2BRL4ALMCyA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2BRL4ALMCyA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2BRL4ALMCyA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2BRL4ALMCyA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/2BRL4ALMCyA/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "IShowSpeed",
+        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "2BRL4ALMCyA"
+        },
+        "videoOwnerChannelTitle": "IShowSpeed",
+        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
+      },
+      "contentDetails": {
+        "videoId": "2BRL4ALMCyA",
+        "videoPublishedAt": "2026-11-16T22:44:43Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "eSYW7mebNHMSrkHETJZlt2f5gl8",
+      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLnFTeW81ZC1kVnpB",
+      "snippet": {
+        "publishedAt": "2026-11-16T22:34:26Z",
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "title": "PLAYING GTA 6",
+        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qSyo5d-dVzA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qSyo5d-dVzA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qSyo5d-dVzA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qSyo5d-dVzA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/qSyo5d-dVzA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "IShowSpeed",
+        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "qSyo5d-dVzA"
+        },
+        "videoOwnerChannelTitle": "IShowSpeed",
+        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
+      },
+      "contentDetails": {
+        "videoId": "qSyo5d-dVzA",
+        "videoPublishedAt": "2026-11-16T22:34:26Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "3K4jfN9OPJSuntAeTI7GEuVgveA",
+      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm8zeEExSjhCb0hz",
+      "snippet": {
+        "publishedAt": "2026-11-16T20:40:39Z",
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "title": "THE EYES OF GHANA (Full Film)",
+        "description": "IShowSpeed presents this love letter to cinema, in which 93-year-old Chris Hesse, Kwame Nkrumah’s personal cinematographer, races against blindness and time to save over 1,000 films that reveal the hidden origin story of African independence.\n\nExecutive produced by Barack and Michelle Obama. Directed by two-time Academy Award® winner Ben Proudfoot.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o3xA1J8BoHs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o3xA1J8BoHs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o3xA1J8BoHs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/o3xA1J8BoHs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/o3xA1J8BoHs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/o3xA1J8BoHs/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "IShowSpeed",
+        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "o3xA1J8BoHs"
+        },
+        "videoOwnerChannelTitle": "IShowSpeed",
+        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
+      },
+      "contentDetails": {
+        "videoId": "o3xA1J8BoHs",
+        "videoPublishedAt": "2026-11-16T20:40:39Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "-nOBKA7sp2y8WVsYrCf6nmCncW0",
+      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm8wVWV1Y1Z4WUNB",
+      "snippet": {
+        "publishedAt": "2026-11-16T20:12:55Z",
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "title": "I JUST MET WITH PRESIDENT OBAMA",
+        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o0UeucVxYCA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o0UeucVxYCA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o0UeucVxYCA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/o0UeucVxYCA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/o0UeucVxYCA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/o0UeucVxYCA/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "IShowSpeed",
+        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "o0UeucVxYCA"
+        },
+        "videoOwnerChannelTitle": "IShowSpeed",
+        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
+      },
+      "contentDetails": {
+        "videoId": "o0UeucVxYCA",
+        "videoPublishedAt": "2026-11-16T20:12:55Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "JlEDtZIzwvI09zeDgRIHHT2O5Zk",
+      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLnVxQzJXQThRMFJF",
+      "snippet": {
+        "publishedAt": "2026-11-16T00:53:15Z",
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "title": "The Three-Peat | STREAMER AWARDS 2026 VLOG",
+        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl\n\nedited by fuji media",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uqC2WA8Q0RE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uqC2WA8Q0RE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uqC2WA8Q0RE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uqC2WA8Q0RE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/uqC2WA8Q0RE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/uqC2WA8Q0RE/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "IShowSpeed",
+        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "uqC2WA8Q0RE"
+        },
+        "videoOwnerChannelTitle": "IShowSpeed",
+        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
+      },
+      "contentDetails": {
+        "videoId": "uqC2WA8Q0RE",
+        "videoPublishedAt": "2026-11-16T00:53:15Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "8Syd89qhEnwWdgSBjGjHZB6J84k",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkt1c2gxRnFuaGJV",
       "snippet": {
         "publishedAt": "2026-11-14T01:59:41Z",
         "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
         "title": "REVEALING MY NEW FORTNITE ICON SKIN! 🕺🏴\u200d☠️",
-        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@SpeedUniverse?si=XUMYeIWoUY4TIjFl",
+        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@LiveSpeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@SpeedUniverse?si=XUMYeIWoUY4TIjFl",
         "thumbnails": {
           "default": {
             "url": "https://i.ytimg.com/vi/Kush1FqnhbU/default.jpg",
@@ -46,7 +372,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 0,
+        "position": 6,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Kush1FqnhbU"
@@ -61,7 +387,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "UxLl7tUVyBtPJMULnb-ZVf5yTX0",
+      "etag": "eb66fFGmS9Wz_ToY1Bc7tZRmT1M",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLk0xVjVjcGJkd3RR",
       "snippet": {
         "publishedAt": "2026-11-13T08:30:41Z",
@@ -97,7 +423,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 1,
+        "position": 7,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "M1V5cpbdwtQ"
@@ -112,7 +438,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "C3tmyMSUr_Og5v2QU-oU-3iJ2Xc",
+      "etag": "hzqwImNid23iQgTPLwZ9I_kfulc",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmpKLXpXQ3c4NXFB",
       "snippet": {
         "publishedAt": "2026-11-11T18:00:07Z",
@@ -153,7 +479,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 2,
+        "position": 8,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "jJ-zWCw85qA"
@@ -168,7 +494,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "H-oehv2rx4DEtPbBita5DIDvul0",
+      "etag": "8HWX72JQ3e2c0O3OLZx1FwH2KW8",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm1za0VYWXF0OWFr",
       "snippet": {
         "publishedAt": "2026-11-10T22:00:48Z",
@@ -209,7 +535,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 3,
+        "position": 9,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "mskEXYqt9ak"
@@ -224,7 +550,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "YsCt4J0JW6KrJkJ3SFwERsrP1h0",
+      "etag": "LkVpmao4kHeh2e4wS6qnRs_ITBI",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm5EeFlTb0ZaeEFN",
       "snippet": {
         "publishedAt": "2026-11-10T15:00:05Z",
@@ -265,7 +591,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 4,
+        "position": 10,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "nDxYSoFZxAM"
@@ -280,7 +606,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "r1QYXirSqJaawoEtbk5R-Pq1ElA",
+      "etag": "wkWFCwcN4eU01V3Fsw0zXBCu_is",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmNZSkQySWhZcDdr",
       "snippet": {
         "publishedAt": "2026-11-07T12:00:07Z",
@@ -316,7 +642,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 5,
+        "position": 11,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "cYJD2IhYp7k"
@@ -331,7 +657,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "gvnNP0ouuokbWysP869I5h61mig",
+      "etag": "x9dBIg8hAPV81jWuNrcxy6PmjlQ",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkt5djYxbDJ2RjZN",
       "snippet": {
         "publishedAt": "2026-11-06T20:14:54Z",
@@ -372,7 +698,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 6,
+        "position": 12,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Kyv61l2vF6M"
@@ -387,7 +713,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "gSN2QZTUvIUw9HwJxSSykoTUFuE",
+      "etag": "S30eb4ppV0JbFzhYlLUyPCXOvg8",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLjlhUFI5VVhJMWtZ",
       "snippet": {
         "publishedAt": "2026-11-06T03:01:37Z",
@@ -428,7 +754,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 7,
+        "position": 13,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "9aPR9UXI1kY"
@@ -443,7 +769,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Zm6buNj_49IuELUa5qrMJvDKoZ8",
+      "etag": "ZYZ_G2SpnP1sF4ivMgVEe7HuFlo",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLk1TaXpFSGxTc1Rz",
       "snippet": {
         "publishedAt": "2026-11-05T19:10:13Z",
@@ -479,7 +805,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 8,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MSizEHlSsTs"
@@ -494,7 +820,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "X_URDDKLga5Hb-ivnj3RwpXeoKA",
+      "etag": "JJ5MBaPlCh85MMjOAtX75Poli_8",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLnZZdUxPcDVHSVNF",
       "snippet": {
         "publishedAt": "2026-11-04T17:00:09Z",
@@ -535,7 +861,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 9,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "vYuLOp5GISE"
@@ -550,7 +876,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QfpwShkdnd_pethWGS26oAHtQvA",
+      "etag": "g-wCph8N2uaLhmFjY3fTT8qaTYg",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLnVoTXpidWNGUDg4",
       "snippet": {
         "publishedAt": "2026-11-02T18:31:42Z",
@@ -591,7 +917,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 10,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "uhMzbucFP88"
@@ -606,7 +932,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "JMx-S4RI0MJzEoaGgtcD3lLuohs",
+      "etag": "P-vKuKn9lv6K-FhcvI_lsXcKRnY",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkVGZExZV0hnczVB",
       "snippet": {
         "publishedAt": "2026-11-02T02:02:45Z",
@@ -642,7 +968,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 11,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "EFdLYWHgs5A"
@@ -657,7 +983,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Zll8UBV-YV6bJWISr3rJ402szGs",
+      "etag": "Kp9pk8g3xtzm_HjlpfB-J9Yv2lU",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLklraGp6WXN2Q213",
       "snippet": {
         "publishedAt": "2026-10-31T23:38:09Z",
@@ -698,7 +1024,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 12,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "IkhjzYsvCmw"
@@ -713,7 +1039,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "IHmTpgsOIC_kA2snW1eH1KArMnw",
+      "etag": "k5A5Ja2B_v4lNV9WZ28LmddmfIk",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkdtcThMM1hhNGpN",
       "snippet": {
         "publishedAt": "2026-10-31T21:17:40Z",
@@ -749,7 +1075,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 13,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Gmq8L3Xa4jM"
@@ -764,7 +1090,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "PExGhtYu1kiqHMExajlh7YAWGe0",
+      "etag": "QYcm8X2IsFZ9HYBaMMvMbO03oZI",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm5SV2ZSY2p6MVVr",
       "snippet": {
         "publishedAt": "2026-10-31T16:46:37Z",
@@ -800,7 +1126,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 14,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "nRWfRcjz1Uk"
@@ -815,7 +1141,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "2WS9MXgXN1vi6rFOv7Vl_o6nZls",
+      "etag": "sSCNpJXzkFTxBcjIj5WFVn9_dXQ",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLktuTktSS3RQWlNV",
       "snippet": {
         "publishedAt": "2026-10-30T17:01:20Z",
@@ -856,7 +1182,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 15,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "KnNKRKtPZSU"
@@ -871,7 +1197,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dxqR2bv8_NQ_fcphX2BVypuT13A",
+      "etag": "TERz5qNE5e_Q_4eEMeZbDLJXtUg",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm5BRTJWaXZMbWV3",
       "snippet": {
         "publishedAt": "2026-10-30T14:00:11Z",
@@ -912,7 +1238,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 16,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "nAE2VivLmew"
@@ -927,7 +1253,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "EaMfdwSb8RhGvZvSuqMgCJGBIJ4",
+      "etag": "Bj-BSuooPwF_Ty_paMUC4QPK6EI",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkczNk5STFdkanpF",
       "snippet": {
         "publishedAt": "2026-10-28T22:11:04Z",
@@ -968,7 +1294,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 17,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "G36NRLWdjzE"
@@ -983,7 +1309,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "s3lVc4b_4xl6s_KJEYQHxDKVeCI",
+      "etag": "1DvgFXR2bg_wXHF7Euc7uUANpOI",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkZMa2RXSy0wMUVZ",
       "snippet": {
         "publishedAt": "2026-10-28T21:14:22Z",
@@ -1024,7 +1350,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 18,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "FLkdWK-01EY"
@@ -1039,7 +1365,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "lmC90bPfYfU-M0hbocgdzWjmtZY",
+      "etag": "Fix1cZrQ5XP5ZE6-35hj86UtxCU",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLldKaFdWRDV6UFE4",
       "snippet": {
         "publishedAt": "2026-10-28T14:00:17Z",
@@ -1080,7 +1406,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 19,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "WJhWVD5zPQ8"
@@ -1095,7 +1421,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "YL1DRGb1bIUYKfimAa20vs0MnE0",
+      "etag": "TEX7_ZwWRszK5nK8bedOZRIXTyU",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmtOelQ1YVdhRGdn",
       "snippet": {
         "publishedAt": "2026-10-27T02:00:19Z",
@@ -1136,7 +1462,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 20,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "kNzT5aWaDgg"
@@ -1151,7 +1477,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "HV4ABat4XY3fOPjVDReekPtm2b8",
+      "etag": "aI_DGlR4D_h5rejf1NIvfPY__js",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLnVRbEFDcGJpNFdN",
       "snippet": {
         "publishedAt": "2026-10-27T01:33:47Z",
@@ -1192,7 +1518,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 21,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "uQlACpbi4WM"
@@ -1207,7 +1533,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dEy4TKIEEdjL7K2SFpQYA8FH8ng",
+      "etag": "mX5IjgigGIEE7k7ObfH5DiskMYA",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkVrWVhZN1VlcVRJ",
       "snippet": {
         "publishedAt": "2026-10-25T14:00:37Z",
@@ -1248,7 +1574,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 22,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "EkYXY7UeqTI"
@@ -1263,7 +1589,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "EHZCR0YHLkq3qs7ZG57JtqYhGVA",
+      "etag": "TAgtvtOh0BZHdIy6p_K0InvJYPA",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkNSVXRpY19weXRj",
       "snippet": {
         "publishedAt": "2026-10-24T18:30:21Z",
@@ -1299,7 +1625,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 23,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "CRUtic_pytc"
@@ -1314,7 +1640,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "N4knzb9nfwzqJIbmMZIkbAu7ZR8",
+      "etag": "-pWGe5Hj5ED09omoCxQqSX7cNkY",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLktsaVYtVjZTU0Yw",
       "snippet": {
         "publishedAt": "2026-10-23T21:49:37Z",
@@ -1355,7 +1681,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 24,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "KliV-V6SSF0"
@@ -1370,7 +1696,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "hSTkxaXJzHr-dQIOrk4C2a0T7z8",
+      "etag": "kT65ETxQnD40F_oAhkjubS20A_c",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLk5ERkU4Vzh3US1Z",
       "snippet": {
         "publishedAt": "2026-10-22T14:00:24Z",
@@ -1411,7 +1737,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 25,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "NDFE8W8wQ-Y"
@@ -1426,7 +1752,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "cV-RFg63eYFjbqt0utajniztt0E",
+      "etag": "OkngGJ7FH601j-qxBAR8rqjI3JM",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmlQaktLLUtKOWlV",
       "snippet": {
         "publishedAt": "2026-10-20T14:00:05Z",
@@ -1467,7 +1793,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 26,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "iPjKK-KJ9iU"
@@ -1482,7 +1808,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "LeEr5P14fS8RqNt1M4jnOvnMQLY",
+      "etag": "X25WPsT3dnk4WwtPTOOQaw8rvY8",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkw2UzlWYjNSTHk0",
       "snippet": {
         "publishedAt": "2026-10-15T20:17:29Z",
@@ -1523,7 +1849,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 27,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "L6S9Vb3RLy4"
@@ -1538,7 +1864,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "XGa21mZQqlY6OAnFt2E8wWnfLic",
+      "etag": "Sm9j6M4t0xcSGXwv9Kpu-2qzmAA",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLldzeFJqbXVUNVpR",
       "snippet": {
         "publishedAt": "2026-10-15T14:00:09Z",
@@ -1579,7 +1905,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 28,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "WsxRjmuT5ZQ"
@@ -1594,7 +1920,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "cmVYO3LDR9SgqB1x9_Uz_hecrFc",
+      "etag": "5fugL11EnIxBZmLGGioSdYa__v4",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmw4TU80U0xhTFU4",
       "snippet": {
         "publishedAt": "2026-10-14T21:26:03Z",
@@ -1635,7 +1961,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 29,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "l8MO4SLaLU8"
@@ -1650,7 +1976,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "9Q2_N53U8fz4s7RfyOAXV7cX5bI",
+      "etag": "heR_TKLQPitq36XibE-4SGm4Axc",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLk1Cb2QwdEs0Nkpz",
       "snippet": {
         "publishedAt": "2026-10-11T19:48:39Z",
@@ -1686,7 +2012,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 30,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MBod0tK46Js"
@@ -1701,7 +2027,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ErmCOn3pvtDNLF8scRYiRVuurUI",
+      "etag": "aawXk3MQxUL9DMPdC3MH7ZKyUm8",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLlZqNFltdS01Nm1j",
       "snippet": {
         "publishedAt": "2026-10-09T14:00:21Z",
@@ -1742,7 +2068,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 31,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Vj4Ymu-56mc"
@@ -1757,7 +2083,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "pqaqmRvIdnWHv5wEf1TyfVKoSqo",
+      "etag": "cqga7naxpknu9Kv3s3Bhb3FsmIY",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLlJKenNwSDFyQWJj",
       "snippet": {
         "publishedAt": "2026-10-06T21:51:09Z",
@@ -1798,7 +2124,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 32,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "RJzspH1rAbc"
@@ -1813,7 +2139,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "AV9k7tnTncG9c0yrokbE98CFMSo",
+      "etag": "IBhg7I5_l9EbcvZgHkM_pBMj4HE",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLlVSQnpUT2w5OEh3",
       "snippet": {
         "publishedAt": "2026-10-05T15:38:32Z",
@@ -1854,7 +2180,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 33,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "URBzTOl98Hw"
@@ -1869,7 +2195,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "WEUujdCNcw_2C3jKvRMkcYEFbVg",
+      "etag": "SIvsyhRPy-w_OuenkqrjmthBAtU",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLlNPVzNxQ0pKU2xR",
       "snippet": {
         "publishedAt": "2026-10-03T20:28:16Z",
@@ -1910,7 +2236,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 34,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "SOW3qCJJSlQ"
@@ -1925,7 +2251,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "dGpEoxWJTduAccJUHN0Rc6Uq0Y8",
+      "etag": "J0DilnjjE34Vdxrr_3RdzrzC_mY",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLlptQ2JtendRRjk4",
       "snippet": {
         "publishedAt": "2026-09-27T23:11:52Z",
@@ -1966,7 +2292,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 35,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ZmCbmzwQF98"
@@ -1981,7 +2307,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "GNmJNRXXy1FtLFwF4ruurvG_xCs",
+      "etag": "h3r5SWN6yXa0xbFtVFqEWqP4NvM",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLm8xX0Z2ZkpEOGZn",
       "snippet": {
         "publishedAt": "2026-09-27T18:48:39Z",
@@ -2022,7 +2348,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 36,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "o1_FvfJD8fg"
@@ -2037,7 +2363,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "tpg00A-OcsqpzvAtgdBZ5iguufc",
+      "etag": "0Aa9LZXn8aF646J34pkjJMc7fVE",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLnNjZkNLUUVIdndJ",
       "snippet": {
         "publishedAt": "2026-09-27T04:00:02Z",
@@ -2073,7 +2399,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 37,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "scfCKQEHvwI"
@@ -2088,7 +2414,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "aQNJUtqcg01eOQZnm8Yj0pU3ZFc",
+      "etag": "SHVcYhNJzsX0deIpWzIudhcj7Do",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkRBU0NYa09QaU9z",
       "snippet": {
         "publishedAt": "2026-09-26T11:00:22Z",
@@ -2129,7 +2455,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 38,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "DASCXkOPiOs"
@@ -2144,7 +2470,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "1_FEFRiuFVhscybM_hWBpk2U7IA",
+      "etag": "YKI3YVk9C_WjMpXRG0M62GAJ9x8",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLkdmQ25aOGNBWXZR",
       "snippet": {
         "publishedAt": "2026-09-21T22:04:12Z",
@@ -2185,7 +2511,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 39,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "GfCnZ8cAYvQ"
@@ -2200,7 +2526,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "5buQu7WLK2G7fgK1lnh2_oS10qM",
+      "etag": "DUSOeE071fPQgsz4vdc2fjO9nYU",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLjBKNk5XM2tnZGQw",
       "snippet": {
         "publishedAt": "2026-09-19T22:20:29Z",
@@ -2241,7 +2567,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 40,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "0J6NW3kgdd0"
@@ -2256,7 +2582,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "y4r9HXTw3GkB67LGhK6tTIGiO60",
+      "etag": "zK5DQYnSwpkz2sK_50UNaa-uYZs",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmRyWFJyQjR3RlJn",
       "snippet": {
         "publishedAt": "2026-09-19T19:41:39Z",
@@ -2297,7 +2623,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 41,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "drXRrB4wFRg"
@@ -2312,7 +2638,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "xZ1y5TryQ3caMkImPUr5ZjOQ6Bw",
+      "etag": "_Uo7_E4JycW30xKD7SJtZXjFMy0",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmRWME9nZVNiWVBN",
       "snippet": {
         "publishedAt": "2026-09-16T21:16:54Z",
@@ -2353,7 +2679,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 42,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "dV0OgeSbYPM"
@@ -2368,7 +2694,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "bSWv2FN9B6igyFYuXpiK1NTPLUQ",
+      "etag": "w0pK6C1tQuxfnKNUN6bXGHvjWpc",
       "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLk1UUWxKdkdPeWc4",
       "snippet": {
         "publishedAt": "2026-09-16T11:00:35Z",
@@ -2409,7 +2735,7 @@
         },
         "channelTitle": "IShowSpeed",
         "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 43,
+        "position": 49,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MTQlJvGOyg8"
@@ -2421,336 +2747,10 @@
         "videoId": "MTQlJvGOyg8",
         "videoPublishedAt": "2026-09-16T11:00:35Z"
       }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "Wv_2Ddl6k1Q0i8Cys7NBo-h9x5o",
-      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLl9qbk5EdkdHcXhN",
-      "snippet": {
-        "publishedAt": "2026-09-14T22:12:25Z",
-        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
-        "title": "iShowSpeed🤝DICK’S Tailgate 🏈",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/_jnNDvGGqxM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/_jnNDvGGqxM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/_jnNDvGGqxM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/_jnNDvGGqxM/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/_jnNDvGGqxM/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "IShowSpeed",
-        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 44,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "_jnNDvGGqxM"
-        },
-        "videoOwnerChannelTitle": "IShowSpeed",
-        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
-      },
-      "contentDetails": {
-        "videoId": "_jnNDvGGqxM",
-        "videoPublishedAt": "2026-09-14T22:12:25Z"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "zvC6_Z7XX9v_OPOxLd8MJv9PrxY",
-      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLjNZOTNJbm5ScDhV",
-      "snippet": {
-        "publishedAt": "2026-09-13T18:13:46Z",
-        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
-        "title": "Eat The Hot Wing, Win $$$$",
-        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/3Y93InnRp8U/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/3Y93InnRp8U/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/3Y93InnRp8U/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/3Y93InnRp8U/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/3Y93InnRp8U/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/3Y93InnRp8U/sardefault.jpg",
-            "width": 1778,
-            "height": 3160
-          }
-        },
-        "channelTitle": "IShowSpeed",
-        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 45,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "3Y93InnRp8U"
-        },
-        "videoOwnerChannelTitle": "IShowSpeed",
-        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
-      },
-      "contentDetails": {
-        "videoId": "3Y93InnRp8U",
-        "videoPublishedAt": "2026-09-13T18:13:46Z"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "xNBzvc4UvnkqIyJ5pm7MPMfaUWU",
-      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLld3WngxTHZOd2Fz",
-      "snippet": {
-        "publishedAt": "2026-09-12T21:31:55Z",
-        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
-        "title": "🔥LIT STREAM + IRL OHIO STATE VS TEXAS🔥",
-        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@LiveSpeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@SpeedUniverse?si=XUMYeIWoUY4TIjFl",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/WwZx1LvNwas/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/WwZx1LvNwas/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/WwZx1LvNwas/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/WwZx1LvNwas/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/WwZx1LvNwas/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "qhd": {
-            "url": "https://i.ytimg.com/vi/WwZx1LvNwas/qhddefault.jpg",
-            "width": 2560,
-            "height": 1440
-          }
-        },
-        "channelTitle": "IShowSpeed",
-        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 46,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "WwZx1LvNwas"
-        },
-        "videoOwnerChannelTitle": "IShowSpeed",
-        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
-      },
-      "contentDetails": {
-        "videoId": "WwZx1LvNwas",
-        "videoPublishedAt": "2026-09-12T21:31:55Z"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "ogbV9ilN4ukwNcNUA1F35GpHUhk",
-      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmlzQTNEZEx6MXZZ",
-      "snippet": {
-        "publishedAt": "2026-09-11T11:00:01Z",
-        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
-        "title": "ROCK PAPER SCISSORS KFC CHALLENGE!!",
-        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/isA3DdLz1vY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/isA3DdLz1vY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/isA3DdLz1vY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/isA3DdLz1vY/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/isA3DdLz1vY/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/isA3DdLz1vY/sardefault.jpg",
-            "width": 1778,
-            "height": 3160
-          }
-        },
-        "channelTitle": "IShowSpeed",
-        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 47,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "isA3DdLz1vY"
-        },
-        "videoOwnerChannelTitle": "IShowSpeed",
-        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
-      },
-      "contentDetails": {
-        "videoId": "isA3DdLz1vY",
-        "videoPublishedAt": "2026-09-11T11:00:01Z"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "Iy7n1Sd_SaLXIUV4tXB4H9oey4I",
-      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLmRtLUlTU2dXXy1r",
-      "snippet": {
-        "publishedAt": "2026-09-09T20:41:50Z",
-        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
-        "title": "APPLE GAVE ME AN iPHONE DUO",
-        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@livespeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@speeduniverse?si=XUMYeIWoUY4TIjFl",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/dm-ISSgW_-k/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/dm-ISSgW_-k/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/dm-ISSgW_-k/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/dm-ISSgW_-k/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/dm-ISSgW_-k/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/dm-ISSgW_-k/sardefault.jpg",
-            "width": 1086,
-            "height": 1930
-          }
-        },
-        "channelTitle": "IShowSpeed",
-        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 48,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "dm-ISSgW_-k"
-        },
-        "videoOwnerChannelTitle": "IShowSpeed",
-        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
-      },
-      "contentDetails": {
-        "videoId": "dm-ISSgW_-k",
-        "videoPublishedAt": "2026-09-09T20:41:50Z"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "_SNjFbDaGNQGSC5xc2NW9_8SxiA",
-      "id": "VVVXc0RGY0loWTJEQmkzR0I1dXlrR1hBLjVDUEF0RW1IQWlv",
-      "snippet": {
-        "publishedAt": "2026-09-09T19:17:57Z",
-        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
-        "title": "REVEALING THE NEW iPHONE!",
-        "description": "tts donations here/ https://streamlabs.com/ishowspeed\n\nFOLLOW ME 👀  http://link.me/ishowspeed\nMERCH 👕 -  https://speed.store/\nMEMBERSHIPS ✅  - https://www.youtube.com/c/IShowSpeed/join\n\nfor donations tts/ Media Request here  \nhttps://streamlabs.com/ishowspeed/tip\n\nIG: https://www.instagram.com/ishowspeed?igsh=MXNveXVucWZyZGsyaA==\nX: https://x.com/ishowspeedsui?s=21\nSnap : https://snapchat.com/t/IeuoJ50Y\nDiscord: https://discord.gg/ishowspeed\n\nJOIN MY OTHER CHANNELS\nYT Live speedy: https://youtube.com/@LiveSpeedy?si=Sd4QiWsrk-iGX7fL\nYT Speedy Boykins: https://youtube.com/@speedyboykins7869?si=0jMDTQQsEUJXsr32\nYT Speeduniverse : https://youtube.com/@SpeedUniverse?si=XUMYeIWoUY4TIjFl",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/5CPAtEmHAio/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/5CPAtEmHAio/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/5CPAtEmHAio/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/5CPAtEmHAio/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/5CPAtEmHAio/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "IShowSpeed",
-        "playlistId": "UUWsDFcIhY2DBi3GB5uykGXA",
-        "position": 49,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "5CPAtEmHAio"
-        },
-        "videoOwnerChannelTitle": "IShowSpeed",
-        "videoOwnerChannelId": "UCWsDFcIhY2DBi3GB5uykGXA"
-      },
-      "contentDetails": {
-        "videoId": "5CPAtEmHAio",
-        "videoPublishedAt": "2026-09-09T19:17:57Z"
-      }
     }
   ],
   "pageInfo": {
-    "totalResults": 2037,
+    "totalResults": 2043,
     "resultsPerPage": 50
   }
 }

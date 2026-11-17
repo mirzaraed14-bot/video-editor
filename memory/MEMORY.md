@@ -1,98 +1,103 @@
-- [Abundance Wisdom editor](user-abundance-wisdom-editor.md) — who the user is: runs Abundance Wisdom (Shorts) + Affan Afterhours (GTA long-form); director, voice-dictated, wants md-file continuity
-- [Shorts automation project](project-abundance-shorts-automation.md) — AW Shorts built end to end in code since 2026-10-11; per-Short status log in the file; the HUB resumes from presets/youtube-shorts/abundance-wisdom/HUB.md
-- [Instagram beat mining](project-instagram-beat-mining.md) — his method (search IG Reels for proven beats, stitch them); Claude runs it and must beat it, as a linked subsession of the AW hub; log in research/instagram-beat-mining/
+- [Abundance Wisdom editor](user-abundance-wisdom-editor.md) — runs Abundance Wisdom (Shorts) + Affan Afterhours (GTA); director, voice-dictated, wants md-file continuity
+- [Shorts automation project](project-abundance-shorts-automation.md) — AW Shorts built in code since 10-11; status log in the file; HUB = presets/youtube-shorts/abundance-wisdom/HUB.md
+- [Instagram beat mining](project-instagram-beat-mining.md) — his method (proven IG Reel beats, stitched); Claude runs it and must beat it; log research/instagram-beat-mining/
 - [Higgsfield connector](reference-higgsfield-connector.md) — AI video via claude.ai connector (not .mcp.json); preflight cost, approve before spending credits
-- [GTA channel](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md**, job log + resume block in JOBS.md; long-form = face-cam style, Shorts = Scott YT look (template gta6-head-start)
-- [One session per video](feedback-one-session-per-video.md) — a recording path goes to the channel editor session; it settles the channel from content and spawns ONE fresh session per video with a self-contained brief
-- [GTA: his own style only](feedback-gta-own-style-only.md) — copy only his own edits (CREATOR-HAND.md), never the friend's; insets over mattes, razor+static cut zooms; graphics may explore refined effects with premium SFX
-- [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; resume blocks, channel LESSONS after every review, save what the user gives in the same turn
+- [GTA channel](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md**; log + resume in JOBS.md; Shorts = Scott YT look
+- [One session per video](feedback-one-session-per-video.md) — a recording path goes to the channel editor session, which spawns ONE fresh session per video
+- [GTA: his own style only](feedback-gta-own-style-only.md) — copy only his own edits (CREATOR-HAND.md); insets over mattes, razor+static cut zooms
+- [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; resume blocks, channel LESSONS after every review
 - [Epidemic Sound connector](reference-epidemic-sound-connector.md) — his music/SFX library; OAuth sign-in fails, use an API key in .mcp.json
-- [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu reels; yellow style LOCKED in presets/instagram/affanwizu/; every job runs codeswitch_pass.py + must PASS caption_qa.py; 11-16: NEW two-layer captions (small Urdu over ALL CAPS Roman, subtle glow + shadow, linfix.py for Premiere), research/affanwizu-bilingual-captions/
-- [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on a timeline they edited is a DECISION; export an FCP XML before any batch property change
-- [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — web pictures checked at full size; soft ones get a Higgsfield upscale (AW default), checked under his grade; NEVER on a real person's face from a soft source (11-14 Katherine): real recent photo, Lanczos only, compare faces
+- [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu reels; style LOCKED in presets/instagram/affanwizu/; codeswitch_pass.py + caption_qa.py PASS; two-layer captions since 11-16
+- [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on his timeline is a DECISION; FCP XML before any batch change
+- [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — web pictures checked at full size; soft ones: Higgsfield upscale (AW), NEVER on a real face (Lanczos only)
 - [Editable captions in Premiere](feedback-editable-captions-in-premiere.md) — @affanwizu captions ship as an editable .srt caption track + saved Track Style, never a rendered .mov
-- [YouTube sourcing](feedback-youtube-sourcing.md) — fetch the b-roll here; force H.264 (Premiere can't read AV1); search his drives (E:\Bullshit Folder) before asking him to download
-- [Walkthrough videos](feedback-walkthrough-videos.md) — per-video Tella/Loom brief: transcribe the audio, sample the frames they point at, resolve it into the job's BRIEF.md
+- [YouTube sourcing](feedback-youtube-sourcing.md) — fetch b-roll here, force H.264; search E:\Bullshit Folder before asking him
+- [Walkthrough videos](feedback-walkthrough-videos.md) — Tella/Loom brief: transcribe, sample the frames pointed at, resolve into BRIEF.md
 - [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
-- [AffanWiz channel](project-affanwiz-channel.md) — English personal brand (promotes their Skool); own presets presets/youtube/affanwiz/ + presets/youtube-shorts/affanwiz/, never mixed; job log + resume block in presets/youtube/affanwiz/JOBS.md; research runs in its own session `affanwiz-research` rooted in the Skool folder creator-shorts/ (since 2026-11-15)
-- [Workspace on the X: NVMe](project-workspace-on-nvme.md) — everything lives at X:\Claude Projects; E:\Claude Projects becomes a junction via move-to-nvme.cmd, never just deleted
+- [AffanWiz channel](project-affanwiz-channel.md) — English brand (Skool); presets/youtube/affanwiz/ + youtube-shorts/affanwiz/, never mixed; resume in JOBS.md; research session `affanwiz-research`
+- [Workspace on the X: NVMe](project-workspace-on-nvme.md) — all at X:\Claude Projects; E: becomes a junction via move-to-nvme.cmd, never just deleted
 - [Abundance Wisdom long-form](project-abundance-wisdom-longform.md) — AW face-led long-forms start at presets/youtube/abundance-wisdom/PLAYBOOK.md (gist, never a lock); job log in the file
-- [AW long-form documentary rules](feedback-aw-longform-documentary-rules.md) — bespoke visual per line, FX catalog + MG, nested host, no freeze under VO, level-matched inserts, subtitles on third-party clips, name every speaker
-- [Premium doc channels](reference-premium-doc-channels.md) — premium doc channels to borrow from (research/premium-doc-channels.md), coded into FX-01..80 in research/effects-catalog/CATALOG.md
-- [Onyx sample Shorts](project-onyx-sample-shorts.md) — per-prospect sample Short + his reaction video for podcast outreach (@affancuts); ▶ STATUS in presets/youtube-shorts/onyx-samples/JOBS.md, rules in its LESSONS.md
-- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; a lapsed login token = silent WATERMARK, check every output; no Iris on small faces/wides ("pasty AI-ish"); 11-16 Dad: Chronos-only on magnified SD read "still pixelated", v3 shipped Iris x4 on the SOURCE (pending his reaction)
+- [AW long-form documentary rules](feedback-aw-longform-documentary-rules.md) — bespoke visual per line, FX catalog + MG, no freeze under VO, subtitles on clips, name every speaker
+- [Premium doc channels](reference-premium-doc-channels.md) — research/premium-doc-channels.md, coded into FX-01..80 in research/effects-catalog/CATALOG.md
+- [Onyx sample Shorts](project-onyx-sample-shorts.md) — prospect sample Shorts + his reaction (@affancuts); ▶ STATUS presets/youtube-shorts/onyx-samples/JOBS.md, rules in LESSONS.md
+- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; lapsed token = silent WATERMARK; no Iris on small faces/wides
 - [Captions just below the lips](feedback-captions-just-below-lips.md) — short-form captions at ONE base per video, just under the lips (y940-1130); never lift footage for it
-- [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes (no full stops/commas), white base + coloured emphasis, smooth rise; @affanwizu: no ? until he answers, no commas in numbers
-- [No same-camera punch-ins](feedback-no-same-camera-punch-ins.md) — no instant zoom/whip between shots of one camera; one keyframed push-in; transitions only on scene change
-- [SFX on every graphic](feedback-sfx-on-every-graphic.md) — every pop-up/motion graphic gets a clearly audible, crisp Epidemic Sound SFX (quiet ticks read as none)
-- [Affan exports himself](feedback-affan-exports-himself.md) — on his own Premiere project: prepare the sequence, never exportAsMediaDirect; keep active-sequence switches to one short window
+- [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes, white + coloured emphasis, smooth rise; @affanwizu: no ? until answered
+- [No same-camera punch-ins](feedback-no-same-camera-punch-ins.md) — no instant zoom/whip within one camera; one keyframed push-in
+- [SFX on every graphic](feedback-sfx-on-every-graphic.md) — every pop-up/MG gets a clearly audible, crisp Epidemic SFX
+- [Affan exports himself](feedback-affan-exports-himself.md) — his own Premiere project: prepare the sequence, never exportAsMediaDirect
 - [Whooshes too loud](feedback-whooshes-too-loud.md) — whoosh SFX 10 dB under the yt4 level; a whoosh is texture, not a graphic's sound
 - [Voice-first mix](feedback-voice-first-mix.md) — voice loudest; music bed 12-14 LU under it, SFX ~8 dB under voice peaks; previews replay real levels
-- [Cinematic pacing, long-form](feedback-cinematic-pacing-longform.md) — AW long-form slow + cinematic: FX-12 cards, 20 fps stepped, easy ease, builds finish >= 1 s before a cut, subtle face drift
-- [Premium SFX](feedback-premium-sfx.md) — refined, varied, phone-audible, SUBTLE; never goofy/UI/'superhero'; Onyx + self-scored Shorts = one soft swish per entrance, 19-23 dB under the voice
-- [No stray frames at overlays](feedback-no-stray-frames-at-overlays.md) — every overlay edge lands on a V1 cut or butts the next overlay; never a 1-frame face flash
+- [Cinematic pacing, long-form](feedback-cinematic-pacing-longform.md) — AW long-form: FX-12 cards, 20 fps stepped, easy ease, builds end >= 1 s before a cut
+- [Premium SFX](feedback-premium-sfx.md) — refined, varied, SUBTLE, never goofy/UI; Onyx = one soft swish per entrance, 19-23 dB under voice
+- [No stray frames at overlays](feedback-no-stray-frames-at-overlays.md) — overlay edges land on a V1 cut or butt the next; never a 1-frame face flash
 - [Split screens: white line, captions on it](feedback-split-screen-white-line.md) — every split has a white separator line, and the whole video's caption base IS that line
-- [IG look: neon window](feedback-instagram-neon-window.md) — MGs + subtitles in a rounded window on black, red type with a hint of glow, no electric SFX; presets/instagram/neon-window/
-- [Instagram look: expensive minimal](feedback-instagram-expensive-minimal.md) — big black bars, animated captions, many refined MGs, crisp SFX; research IG pages in this style first
-- [Every video better than the last](feedback-every-video-better-than-last.md) — never lock a style; BRIEF says what's better; floor 5 % + the whole FX catalog before every edit; Scott: >= 2 new moves per Short
+- [IG look: neon window](feedback-instagram-neon-window.md) — rounded window on black, red glowing type, no electric SFX; presets/instagram/neon-window/
+- [Instagram look: expensive minimal](feedback-instagram-expensive-minimal.md) — big black bars, animated captions, refined MGs, crisp SFX; research IG first
+- [Every video better than the last](feedback-every-video-better-than-last.md) — BRIEF says what is better; floor 5 % + whole FX catalog first; Scott >= 2 new moves
 - [No C-drive exports](feedback-no-c-drive-exports.md) — never put videos on C; export copies go to X:\Claude Projects\Exports\ (VE_EXPORT_DIR)
-- [Shutdown after an overnight job](feedback-shutdown-after-overnight-job.md) — when he goes to bed after a Premiere job: finish, save, quit Premiere, wait for other sessions, then shutdown /s /t 300
-- [Sequencing before the edit](feedback-sequencing-before-edit.md) — ALL research incl. Instagram → the sequence as text → his OK → only then the raw build; "start it" after a research question = the research
+- [Shutdown after an overnight job](feedback-shutdown-after-overnight-job.md) — finish, save, quit Premiere, wait for sessions, shutdown /s /t 300
+- [Sequencing before the edit](feedback-sequencing-before-edit.md) — research incl. Instagram → sequence text → his OK → build
 - [Google Drive = G:](reference-google-drive.md) — Drive for desktop mounts as G:\My Drive; upload = copy there; nearly full
-- [Viral pick bar](feedback-viral-pick-bar.md) — a moment must END in a usable lesson or a reversed belief on a universal stake (VIRAL-BAR.md A-I); every pick says 'the viewer gets: ___'
-- [Model roles: Fable advises, Opus judges, Sonnet executes](feedback-use-fable-allowance.md) — NO Fable agents; builders SONNET, Opus for judgment; the advisor is Fable 5.2; EVERY sub-session = Sonnet xhigh (claude-sonnet-5-5, since 2026-11-15); check `advisorModel` in the .jsonl, never guess
-- [Usage costs, measured](reference-usage-costs.md) — weekly cap ≈ $2,150–2,450 API-priced (1 % ≈ $22); % of a week per job type; a Fable advisor call ≈ $5 at 600K context
-- [Usage budget](feedback-usage-budget.md) — GOAL = 100 % right at the Monday 7 AM reset, never before; the nightly usage-pace-check report says spend or go lean
-- [AW shorts session start](reference-aw-shorts-session-start.md) — fresh sessions for AW short passes start at presets/youtube-shorts/abundance-wisdom/SESSION-START.md (recipes, templates, costs)
+- [Viral pick bar](feedback-viral-pick-bar.md) — a moment ENDS in a usable lesson or reversed belief (VIRAL-BAR.md); 'the viewer gets: ___'
+- [Model roles: Fable advises, Opus judges, Sonnet executes](feedback-use-fable-allowance.md) — NO Fable agents; builders Sonnet (xhigh), Opus judges, Fable advises; research = Opus + Fable advisor + Sonnet agents; check `advisorModel`
+- [Usage costs, measured](reference-usage-costs.md) — weekly cap ≈ $2,150–2,450 (1 % ≈ $22); % per job type; Fable advisor call ≈ $5
+- [Usage budget](feedback-usage-budget.md) — hit 100 % right at the Monday 7 AM reset; the nightly pace report says spend or go lean
+- [AW shorts session start](reference-aw-shorts-session-start.md) — AW short passes start at presets/youtube-shorts/abundance-wisdom/SESSION-START.md
 - [Reactions max 3:00](feedback-reactions-max-3-min.md) — every Onyx reaction ≤ 3 minutes; cut tangents, never verdicts
-- [AW grade is faceless-only](feedback-aw-grade-faceless-only.md) — never the AW After Effects grade on Scott or any face brand; AW head lock is OK where it helps
-- [Head steady across cuts](feedback-head-steady-across-cuts.md) — same-camera jump cuts: the head must not move or resize (head_track / head_lock); Scott: every pause closes
-- [Work in silence](feedback-work-in-silence.md) — never play sound while working; ffmpeg to -f null only, no players, close media tabs; in every subagent brief
-- [No phone copies](feedback-no-phone-copies.md) — no phone encodes unless he asks (<30 MiB); masters go to X:\Claude Projects\Exports\
-- [Onyx client criteria](feedback-onyx-client-criteria.md) — only Scott-Clary-like podcasts: 100K+ subs, in-studio, $1,500+/mo, weekly uploads, weak Shorts; check before outreach and any sample
-- [Fix only what he named](feedback-fix-only-what-he-named.md) — a note changes only what he named; never swap his grade/sharpen; test frames of every shot first; code builds: a note = data + ONE finish render
-- [Cover script reading](feedback-cover-phone-reading.md) — never show him reading the script: full-frame graphic over every reading span; face cam TIGHT; prove lip sync after any V1 edit
-- [Face cam max 4 s](feedback-face-cam-max-4s.md) — ALL Shorts: face cam never > ~4 s without an overlay/MG; constant rotation, stronger zooms, tight pauses, big hook top line
-- [Music is his job](feedback-music-is-his-job.md) — AW code-built Shorts ship with NO music bed even if the brief names one; SFX stay
+- [AW grade is faceless-only](feedback-aw-grade-faceless-only.md) — never the AW AE grade on Scott or any face brand; head lock OK
+- [Head steady across cuts](feedback-head-steady-across-cuts.md) — same-camera jump cuts: the head never moves/resizes (head_track/head_lock)
+- [Work in silence](feedback-work-in-silence.md) — no sound while working; ffmpeg -f null only, close media tabs; in every brief
+- [No phone copies](feedback-no-phone-copies.md) — no phone encodes unless asked; masters to X:\Claude Projects\Exports\
+- [No price to silent prospects](feedback-no-price-to-silent-prospects.md) — a follow-up to a quiet host carries NO price; one free specific offer, price once they engage
+- [Onyx client criteria](feedback-onyx-client-criteria.md) — Scott-like podcasts only: 100K+, in-studio, $1,500+/mo, weekly, weak Shorts
+- [Fix only what he named](feedback-fix-only-what-he-named.md) — a note changes only what he named; never swap his grade; a note = data + ONE render
+- [Cover script reading](feedback-cover-phone-reading.md) — full-frame graphic over every script-reading span; face cam TIGHT; prove lip sync
+- [Face cam max 4 s](feedback-face-cam-max-4s.md) — Shorts: face cam <= ~4 s without an overlay; rotation, zooms, tight pauses
+- [Music is his job](feedback-music-is-his-job.md) — AW code-built Shorts ship with NO music bed (AW Shorts only)
+- [AffanWiz beds are ours](feedback-affanwiz-beds-are-ours.md) — AffanWiz long-forms ship WITH his Epidemic beds laid by us (STYLE § 4)
 - [Reactions keep his whole intro](feedback-reaction-whole-intro.md) — the full credential intro stays in every Onyx reaction; the prospect is the real viewer
 - [Music arc](feedback-music-arc.md) — score a long-form by feeling: mellow sad start, intense where the story builds, mellow near the end; never one flat bed
-- [Censor sensitive words](feedback-censor-sensitive-words.md) — drugs/self-harm/suicide words censored in audio AND captions; Conrad Short was caption-only by his choice; ask once on the next
+- [Censor sensitive words](feedback-censor-sensitive-words.md) — drugs/self-harm words censored in audio AND captions; ask once on the next
 - [Clip pauses max 2 s](feedback-clip-pauses-max-2s.md) — no silence over 2 s inside third-party clips; no designed silent holds without asking
 - [No promo frames](feedback-no-promo-frames.md) — check every clip edge frame by frame; never a 1-2 frame "watch on Spotify/YouTube" promo
-- [Scott Shorts 20K guarantee](project-scott-clary-shorts-guarantee.md) — last 12 Scott Shorts must average 20K or Onyx works free; START at the ENGINE ▶ STATUS block; picks run the FUNNY test
+- [Scott Shorts 20K guarantee](project-scott-clary-shorts-guarantee.md) — last 12 must average 20K or Onyx works free; START at the ENGINE ▶ STATUS; FUNNY test
 - [Bombas benchmark](feedback-bombas-benchmark.md) — every Scott idea scored against the Bombas Short (600K+) on B1-B11, better/on par/worse (ENGINE)
-- [Steady drift zoom on face cams](feedback-steady-drift-zoom.md) — every face-cam shot pushes in (`drift` 2.5 %/s) on top of the pops; POP grade + stronger sharpen on Scott Shorts
-- [Labels at the bottom](feedback-labels-at-bottom.md) — every label/name/date card sits LOW (top ~y1260-1280, under the captions, above y1620), never the top band
+- [Steady drift zoom on face cams](feedback-steady-drift-zoom.md) — every face-cam shot drifts in 2.5 %/s; Scott: POP grade + stronger sharpen
+- [Labels at the bottom](feedback-labels-at-bottom.md) — labels sit LOW (top ~y1260-1280, above y1620), never the top band
 - [Motion effects need clips](feedback-motion-effects-need-clips.md) — approve VFX from a real-speed clip of the fastest spans, never from stills
 - [IG captions: whole line, subtle rise](feedback-captions-whole-line-subtle.md) — IG captions = one ~4-word line appearing whole with a very subtle eased rise; no word-by-word reveal
 - [Onyx samples: 30 fps, no Topaz](feedback-onyx-samples-30fps-no-topaz.md) — prospect samples ship at native 30 fps, no Iris/Chronos; the QA'd render is the final
-- [Hook = claim only](feedback-hook-claim-only.md) — no name/credit lines under the 0-3 s hook; key word coloured; a famous guest's name IS welcome; captions from frame 1, hook below them
-- [Onyx reactions v3 standard](feedback-onyx-reactions-v2-standard.md) — REACTIONS-V3.md (_onyx-batch7-2026-11): voice loudest, bed 19 LU under + OUT under plays, SFX ~12 dB under, face at fill scale, no push, QC on the placed timeline
-- [Onyx sample = the permitted Short, enhanced](feedback-onyx-sample-is-the-permitted-short.md) — re-edit the EXACT Short we asked permission for; enhancing = RESTRUCTURE (hook + beats from the full episode)
-- [AW subscribe CTA](feedback-aw-subscribe-cta.md) — every AW Short gets 2 subtle mid SUBSCRIBE prompts; the END SCREEN is OFF; kit presets/youtube-shorts/abundance-wisdom/cta/, README § 12
-- [Bolt Motivation look](feedback-bolt-motivation-look.md) — AW template = projects/mj-son-step-outside/ as shipped (his AE grade) + stacked splits & reaction cutaways (README § 13); other Bolt diffs are his call
-- [AW transition zoom](feedback-aw-transition-zoom.md) — one push-in per SHOT CHANGE (README § 3 table): strong start, drift, speeds into the cut; never sine ease or push/pull flip-flops
-- [AW overlays: recognisable + crisp](feedback-aw-overlays-recognisable-crisp.md) — overlays crisp and of someone the viewer knows; white line ON the picture's edge; letterbox fills with blur, never black; Opus researches, Sonnet executes
-- [Icarus track + subtle bed recipe](reference-icarus-track.md) — his 'Icarus soundtrack' = Tony Ann piano on E:; flat measured bed, voice >= 10 dB over it (music/mix_icarus.py); licence unverified
-- [First-party HQ bits](feedback-first-party-hq-bits.md) — beats need HQ video + audio from first-party voices; keyword-scan local docs first; new bits go on a v2 sequence for his OK
-- [No false completion line](feedback-no-false-completion-line.md) — his "best sequence and script possible" line is a guarantee; never type it with a known gap open, name the gap
-- [Shorts titles: 5 words max](feedback-shorts-titles-five-words.md) — a blunt hooking statement, 21-40 chars, no long name + story titles; overrides ENGINE title format
-- [Build, don't block on questions](feedback-build-dont-block-on-questions.md) — build on defaults, questions in the delivery note; for SEQUENCES superseded 11-14: sequence text → his OK → build
-- [Pre-pitch checklist](feedback-pitch-checklist.md) — no AW idea is pitched until it passes PITCH-CHECKLIST.md (facts, downloaded source quality, freshness, proof, shape, his rules); a fail is logged
-- [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — Affan 2026-11-10: HP film footage of the young cast is OK on frame for AW; 2026-11-14: a public figure's own teen-era footage is OK too (Speed at 15-17: "we're not publishing him in a weird way"); other real-life children stay flagged
-- [Checklist shape is a gate](feedback-checklist-shape-is-a-gate.md) — FIRST filter = Instagram virality of the beat; then gate-by-gate evidence on every idea; two facts = two topics, not a story
+- [Hook = claim only](feedback-hook-claim-only.md) — no credit lines under the 0-3 s hook; key word coloured; captions from frame 1
+- [Onyx reactions v3 standard](feedback-onyx-reactions-v2-standard.md) — REACTIONS-V3.md: voice loudest, bed 19 LU under, SFX ~12 dB under, face fill, no push
+- [Onyx sample = the permitted Short, enhanced](feedback-onyx-sample-is-the-permitted-short.md) — re-edit the EXACT permitted Short; enhance = restructure from the episode
+- [AW subscribe CTA](feedback-aw-subscribe-cta.md) — 2 subtle mid SUBSCRIBE prompts, END SCREEN off; kit abundance-wisdom/cta/, README § 12
+- [Bolt Motivation look](feedback-bolt-motivation-look.md) — AW template = projects/mj-son-step-outside/ + stacked splits & cutaways (README § 13)
+- [AW transition zoom](feedback-aw-transition-zoom.md) — one push-in per SHOT CHANGE, speeds into the cut; no sine ease or flip-flops
+- [AW overlays: recognisable + crisp](feedback-aw-overlays-recognisable-crisp.md) — crisp, known faces; white line ON the edge; letterbox = blur, never black
+- [Icarus track + subtle bed recipe](reference-icarus-track.md) — Tony Ann piano on E:; flat bed, voice >= 10 dB over (music/mix_icarus.py)
+- [First-party HQ bits](feedback-first-party-hq-bits.md) — HQ first-party video + audio; keyword-scan local docs; new bits on a v2 sequence
+- [No false completion line](feedback-no-false-completion-line.md) — never type his 'best sequence possible' line with a known gap open
+- [Shorts titles: 5 words max](feedback-shorts-titles-five-words.md) — blunt statement, 21-40 chars; overrides ENGINE title format
+- [Build, don't block on questions](feedback-build-dont-block-on-questions.md) — build on defaults, questions in the delivery note; SEQUENCES: text → his OK → build
+- [Pre-pitch checklist](feedback-pitch-checklist.md) — no AW pitch until PITCH-CHECKLIST.md passes; a fail is logged
+- [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — HP film young cast OK; a public figure's own teen footage OK (11-14); other real children flagged
+- [Checklist shape is a gate](feedback-checklist-shape-is-a-gate.md) — first filter = Instagram virality; gate-by-gate evidence; two facts = two topics
 - [No below-bar pitches](feedback-no-below-bar-pitches.md) — if nothing clears the bar, say "no pick" first; score B1 by "would Affan know this face?"
-- [Max effort on every asset](feedback-max-effort-every-asset.md) — no first-draft copy; EVERY sequence/pick/pitch passes MAX-EFFORT-GATE.md first (Instagram, other tellings, variants, Fable advisor x2, cold read)
+- [The Michael Jackson of each space](feedback-mega-famous-per-niche.md) — AW wins on the most famous thing per space (MJ, Speed, Harry Potter, GTA 5); new lanes name it first
+- [Max effort on every asset](feedback-max-effort-every-asset.md) — every sequence/pick/pitch passes MAX-EFFORT-GATE.md first
 - [AffanWiz teaches faceless only](feedback-affanwiz-teach-faceless.md) — AffanWiz lessons match his Skool (faceless Shorts); no face-led format lessons
-- [AffanWiz Studio access](reference-affanwiz-studio-access.md) — AffanWiz Studio not reachable from the Chrome Google accounts; ask Affan for impressions/CTR/AVD
-- [Natural speech, whole lines](feedback-natural-speech-whole-lines.md) — never cut him mid-phrase for a copy rule; one-take and transition lines stay whole; scan the WHOLE cut
-- [Subtle transitions](feedback-subtle-transitions.md) — Skool VSL: no push-through/zoom transitions, soft dissolves through the plate; no CTA push, head centred
-- [Scott IG: minimal format](feedback-scott-ig-minimal-format.md) — Scott's own-talk IG strand: never INVENT a look (11-14 'horrendous'); a code-built COPY of a real reel he picked is OK: DOAC Katt Williams reel = black canvas, rounded square window, EB Garamond 1-3-word captions, white/gold, SUCCESS STORY tag; test stills vs the reference before any render
-- [Reactions: fast, not perfect](feedback-reactions-fast-not-perfect.md) — Affan 2026-11-14: Onyx reactions go to ONE prospect: one build, one review, one fix round, then deliver; P2b by eye, no endless loops
-- [Don't disturb his Premiere](feedback-dont-disturb-his-premiere.md) — 2026-11-14: never move his playhead; offgrab.py offline frames, quietgate.py + QUIET-MODE gate writes on his idle; no parallel large-v3 ASR (it crashed his Premiere)
-- [YouTube Data API keys](reference-youtube-data-api-key.md) — one key per job (2026-11-14): GTA 6 watcher, and Abundance Wisdom research (X:/Claude Projects/Abundance Wisdom/YOUTUBE-API.md); finds and checks videos with no bot checks, can't download or read transcripts; AffanWiz research may use the AW key for channel listings only, 0 searches (2026-11-15)
-- [News Shorts get GPU priority](feedback-news-shorts-gpu-priority.md) — Affan 2026-11-14: a time-sensitive Short outranks research jobs on gpu.lock; message the holder to pause (never kill its process), 1 s poll to take the lock
-- [AffanWiz: borrowed faces, Skool members](feedback-affanwiz-borrowed-faces.md) — the goal is Skool members; an established face or brand carries his point; every idea referenced statistically, 'not Fugazi'
-- [Plain words only](feedback-plain-words-only.md) — Affan 2026-11-16: 'its too fancy words not approved' (the clarity-debt Reel); every Scott Reel/Short must be in plain everyday words, no coined terms or jargon; measure reading level before pitching
-- [Time words match the post date](feedback-time-words-match-post-date.md) — Affan 2026-11-16: a "this month" Reel rejected mid-month; check every today/this week/this month/Monday line against the post date; same day a below-bar, no-known-face Short was "ass"
-- [DOAC kit](reference-doac-kit.md) — projects/_client-scott-clary/_doac-kit builds Scott's own-talk Reels in the DOAC look (30 fps check + 60 fps Chronos final); byte-identical to the Tuesday job
+- [AffanWiz Studio access](reference-affanwiz-studio-access.md) — Studio not reachable from Chrome; ask Affan for impressions/CTR/AVD
+- [Natural speech, whole lines](feedback-natural-speech-whole-lines.md) — never cut him mid-phrase; one-take and transition lines stay whole
+- [Subtle transitions](feedback-subtle-transitions.md) — Skool VSL: soft dissolves, no zoom transitions, no CTA push, head centred
+- [Scott IG: minimal format](feedback-scott-ig-minimal-format.md) — never INVENT a look; a code-built COPY of a reel he picked is OK (DOAC Katt Williams spec in file)
+- [Reactions: fast, not perfect](feedback-reactions-fast-not-perfect.md) — one build, one review, one fix round, deliver
+- [Don't disturb his Premiere](feedback-dont-disturb-his-premiere.md) — never move his playhead; offline frames + quiet-mode writes; no parallel large-v3 ASR
+- [YouTube Data API keys](reference-youtube-data-api-key.md) — one key per job (GTA 6 watcher, AW research); no downloads/transcripts; AffanWiz may list channels with the AW key
+- [News Shorts get GPU priority](feedback-news-shorts-gpu-priority.md) — time-sensitive Shorts outrank research on gpu.lock; ask the holder to pause, never kill
+- [AffanWiz: borrowed faces, Skool members](feedback-affanwiz-borrowed-faces.md) — goal = Skool members; borrowed faces/brands carry the point; ideas backed by stats, 'not Fugazi'
+- [Plain words only](feedback-plain-words-only.md) — Scott Reels/Shorts in plain everyday words, no coined terms; measure reading level first
+- [Time words match the post date](feedback-time-words-match-post-date.md) — check every today/this week/this month line against the post date
+- [DOAC kit](reference-doac-kit.md) — projects/_client-scott-clary/_doac-kit: Scott's DOAC-look Reels (30 fps check, 60 fps Chronos final)
+- [Thumbnails = proven formats](feedback-thumbnails-proven-formats.md) — remake proven formats (cross-niche; podcasts: MW/DOAC); ~10 real contenders + numbers, he picks; if he names one, build it
+- [No audio-only podcasts](feedback-no-audio-only-podcasts.md) — a pick needs real VIDEO of the speaker, checked at pick stage; never stock b-roll over audio-only

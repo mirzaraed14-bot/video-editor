@@ -21,3 +21,21 @@ FX-55 one struck word (Short 3) · POP grade + stronger sharpen, steady drift, h
 | | **FX-25 exhibit grid**: the original Short lit on a dark grid floor, the YOURS copy unlit beside it | LEMMiNO (catalog) | | |
 | | **To-scale bars that break the frame**: REMAKE a 12 px sliver, NEW TOPIC exactly 100x (1200 px) shooting past the frame top (a 190 px camera tilt was cut at review: it pushed the labels into the caption band) | new (to scale, his 100x) | | |
 | | (per-video, not a kit change) **green theme**: caption emphasis, hook key word, MG accents and gradients | Affan 2026-11-09 | | |
+
+## Short 5 `ai-tools-rant` (build started 2026-11-17, builder session; pictures and words LOCKED by SEQUENCE v2.2)
+The three moves below are NEW to this channel (not in the used list above, not in Scott's Killed list) and are ways of EXECUTING the locked pictures, not new pictures.
+| Short | New this time | Source | Affan's verdict | 7-day read |
+|---|---|---|---|---|
+| 5 `ai-tools-rant` (v2.2) | **FX-08 Black Table Tiles** for the guru wall: blank vertical rounded tiles with NO border on pure black, landing in rows the way the archive tiles land (the wall IS the picture, titles then fill in, in quote marks) | Johnny Harris (catalog `jh-black-table-tiles`) | | |
+| | **FX-19 Concrete Sticker Board** for the week calendar: a flat top-down concrete surface with hairline cracks, the week drawn as slabs, the box THEIR PRODUCT sitting on it; each Tuesday's sticker lands on the board with a contact shadow, a slow push-in over the whole beat | MagnatesMedia (catalog `mm-concrete-sticker-board`) | | |
+| | **FX-15 Red Ink Bleed** for the SCAM stamp: the stamp's red ink does not just print, a wet feathered blot opens from the stamp's edge over the box (organic edge, grows 0.5 s) | MagnatesMedia (catalog `mm-red-ink-bleed`) | | |
+| | (per-video, not a kit change) **white + RED theme**: red emphasis voice only, base white; the red picked on real frames of his MAGENTA room with the RED mic (`work/red-test/`) | Affan 2026-11-17 | | |
+
+## Short 6 `research-agent` (build started 2026-11-17, builder session; pictures and words LOCKED by SEQUENCE v2)
+New to THIS channel (not in the used list, not Short 5's FX-08/15/19, not in Scott's Killed list); ways of EXECUTING the locked pictures. The line-3 pile of copies is close to FX-32 (already used), so it is NOT claimed as new.
+| Short | New this time | Source | Affan's verdict | 7-day read |
+|---|---|---|---|---|
+| 6 `research-agent` | **FX-45 Liner-Note Highlight** on the WHAT I ASKED CLAUDE FOR page: the sentence types out on the white page, then ONE phrase (RESEARCH AGENT, as he says it) turns bright kit-yellow while everything else stays dark; a second phrase (PING ME WITH NOTIFICATIONS) when he says it | DEVO sleeve credits, Dodford (catalog `df-liner-note-highlight`) | | |
+| | **FX-23 Pointer Tag** as the one label system for the scanner: ALL TOPICS / ALL VIDEOS / ALL NEWS are black tags with a white border and a pointer notch, each landing on its lane as the scanner passes it (never plain text boxes) | LEMMiNO (catalog `lm-pointer-tag`) | | |
+| | **FX-73 Chart Reprise Push-In** on the clock: the 6-7 HOURS LATER beat ends as a single pin (a dashed ring, a stem and a gold label) while the whole scene pushes in on it until the pin fills the frame (used on Scott's channel, new to this one) | JxmyHighroller (catalog `jx-chart-reprise-push-in`) | | |
+| | (per-video, not a kit change) the room look: `grade_look` aimed at THIS room, tested on a still from this span before the build | | | |

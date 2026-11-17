@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "vaUDAHiLs518NO9Ua4UQeeWYxmM",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "ZtLaaXkHqkH-u1v7Fyq8iXhXJMg",
+      "id": "UCZc5ImWILZmnxxA-RNgTY-Q",
+      "snippet": {
+        "title": "Ryan Pineda",
+        "description": "Ryan Pineda has been in the real estate industry since 2010 and has invested in over $100,000,000 of real estate. He has built multiple 8 figure businesses and generated over 1 billion views on social media.\n\nRyan lives in Las Vegas, NV with his wife Mindy and four children James, Olivia, Judah, and Psalm. Before his business success he was a professional baseball player with the Oaklands A’s. \n\n",
+        "customUrl": "@ryanpineda",
+        "publishedAt": "2014-04-07T00:55:37Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/WL2uO5c4gmD4EQD30yHxrEj8oR7-mMe0b8SIab8ZUC-Omvux7j_E3qrdGphklZtmCDiYPoDpMg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/WL2uO5c4gmD4EQD30yHxrEj8oR7-mMe0b8SIab8ZUC-Omvux7j_E3qrdGphklZtmCDiYPoDpMg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/WL2uO5c4gmD4EQD30yHxrEj8oR7-mMe0b8SIab8ZUC-Omvux7j_E3qrdGphklZtmCDiYPoDpMg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Ryan Pineda",
+          "description": "Ryan Pineda has been in the real estate industry since 2010 and has invested in over $100,000,000 of real estate. He has built multiple 8 figure businesses and generated over 1 billion views on social media.\n\nRyan lives in Las Vegas, NV with his wife Mindy and four children James, Olivia, Judah, and Psalm. Before his business success he was a professional baseball player with the Oaklands A’s. \n\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "88284114",
+        "subscriberCount": "425000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2075"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3412 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "d0eRWUcz04c6mu2lG9WrRQojm04",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1Db01FQ0lBRUZSZTMwVGdhLUFNSzh3TUkyRjhRZ0FRWUJ5TG9BMHVTMjZ6cEJHb3FaYWdiWUROblZBUWljM0JwVnd4Vmxpb2lpR2FpRnRTWjNVYVZIZ2FCY2hBOWs3OXVCWm9TcVdtTVpLMFMxd1dyNUlhblhfeWtrNmxvQ013ZkNCb0htWUVYN2c2cGRFR05uQ0ZoR25mbm1WUXNFb2FPS0Rmc29STzFRU1hkT1BOdkhLVldhYmVyQWotWnkzT2o0U0paNWgxeVEzTVZxQ1pnTjRHLU5xaGhwRkJMeFEyTEh0bkJYTThMZms3TS1mcmJpNGd4cUcyaFlnS2YzVUtEY0p4TURyMFBhaUtkbGhLbmg1cFdWaVlNRVFJcmE2RGhqV3h2akhsS3lFdmtOSUZlTHBnanpxUm9XX082aUlyZEFqV0UtVFNxZkMxU1FmWFF5VERZb0F0bFRvMG1Xakl1Smk1T09WTzhzcmVQM2FRbWFFUE1Lb1F3NHVsSXpUVXFNTFNwZ0pUZk1Zd1JNZXlPSmt6X2FxRGFpbEUxSVRQckpha2VlV1hoSmtIQ1NkaGRjZWQyTVV2TWxsSElERloxZENCWHlscW9JTXAwTlpKcUthQ3YyZlJvVThBdUNpbEQydmlFakRFTDhONGlOU01OS25Qc1RNR2VhR2VyMkhCUk5hTkdWMlZWaVVBUWFQQ0F3WXRSUlFpMTFwRjRjREtBSnZKVkRnc2hxaXZDWVFSN2pGaUMtUkRiUnZnVGZoQ1lsVlM2OVN3TFhKZXRFTHR6ZzBKQVVwc3NReVR3cWhWU1lRTHBvQjBTSWtJaUJKcFhyWmltR3QwUUxNS1lzeWhkRmZaSXNvQjhZNHFFTVFkYkhSR013NGlKY29UTWdObG14dUJRS19IU2YxOFZUTXd3RUdRU0JRaTdJQmdBRWdVSWlTQVlBQklGQ0lnZ0dBQVNCUWlISUJnQUVnVUlxQ0FZQUJJRkNJWWdHQUFTQlFqQUlCZ0FFZ2NJaENBUVBoZ0JFZ2NJaFNBUU1SZ0JVQUJZQVE=",
+  "pageInfo": {
+    "totalResults": 100,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0IsxyATBNylcPOICdPNDLCy5LIQ",
+      "id": "UgyCTiiy6FGo8GAOR6t4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "o91uo4t6gizc_sB9i0URUgLW8m8",
+          "id": "UgyCTiiy6FGo8GAOR6t4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "\"chat I think I need therapy\" bro just noticed that now 😭✌️",
+            "textOriginal": "\"chat I think I need therapy\" bro just noticed that now 😭✌️",
+            "authorDisplayName": "@brokennlolxd",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/pD3Rlb-NvMwtnEVLFQDRHqT0DYwx24Tsxq7scyhAMlfEjowHDvjjxQCzXLS11DM8XZxNVbZ5=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@brokennlolxd",
+            "authorChannelId": {
+              "value": "UCmr29pTfYonHv459i2-uaag"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 490,
+            "publishedAt": "2026-09-03T19:10:52Z",
+            "updatedAt": "2026-09-03T19:42:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 13,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ft60uImQBe_dynaJloFN7tscYIo",
+      "id": "UgwOCsVA0knMUaPCfFx4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cm82FylcooupayeiK_vBBFSsxmI",
+          "id": "UgwOCsVA0knMUaPCfFx4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "17:00 speed talking about messi retirement",
+            "textOriginal": "17:00 speed talking about messi retirement",
+            "authorDisplayName": "@UtsavChavda-c1t",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/gxnau4oXIrWlYWZoU9ak34QVwcp4ds329t8xL4aEvegCWrVHKEZBGbhz-yFKv6VE4dMbgjJiBEY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@UtsavChavda-c1t",
+            "authorChannelId": {
+              "value": "UCXLGnscOPvoeOlM1bTv4aPg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 288,
+            "publishedAt": "2026-09-04T00:35:03Z",
+            "updatedAt": "2026-09-04T00:35:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "J7oDSAaws8Vtp5r8c89aGYwQaF4",
+      "id": "Ugx3-NZlt3-gYs7wBZp4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "it8yzUgWB4IPNBmVWbcFNSJHUow",
+          "id": "Ugx3-NZlt3-gYs7wBZp4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "wtf was that ending bro 😭",
+            "textOriginal": "wtf was that ending bro 😭",
+            "authorDisplayName": "@ghosttz.ৎ",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/X-8g-Fgyey5fMeaVeGQK6Op2wKipo0GgDlNq3cJnMhyO0HSpNw5kjOc7MzO0jHLkUTAOsQs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ghosttz.%E0%A7%8E",
+            "authorChannelId": {
+              "value": "UCEuHdu4MlsgHr9kHyPItxIg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 984,
+            "publishedAt": "2026-09-03T19:10:44Z",
+            "updatedAt": "2026-09-03T19:10:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 48,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sfkaIVEhS6B7w58jinZiDwQ7jpo",
+      "id": "Ugy1u1QS242Y5PZWXs14AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MpA6mqIFtAdLl7Php_gAt5u1c1I",
+          "id": "Ugy1u1QS242Y5PZWXs14AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "41:57 \"aww, salt cube🥹✌️\"",
+            "textOriginal": "41:57 \"aww, salt cube🥹✌️\"",
+            "authorDisplayName": "@HatLikesTakis",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uKmxg61EEl-o-GGE9TdErinLJCGZkwd_7JayRyZxVYJMS4YYU4jnh54LBsCINIqOsKnv-kL6YhQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@HatLikesTakis",
+            "authorChannelId": {
+              "value": "UCr-6W7rlSYJ6_7k5Sou9A1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-15T21:01:10Z",
+            "updatedAt": "2026-11-15T21:02:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lV2WiwuCQZa2Rd6ytx3mBzdKLko",
+      "id": "UgzsNKfuXNozLHUDMJF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "fwDTWoDB5x3F9I-g7L1caVBJLdk",
+          "id": "UgzsNKfuXNozLHUDMJF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Ming lowkey tweaking bro 😭😭🙏🙏💔",
+            "textOriginal": "Ming lowkey tweaking bro 😭😭🙏🙏💔",
+            "authorDisplayName": "@tvon1987",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ghCSPrwfepfcpkOvjb8Jvz4PgtmNG4uB6oAkKmdwQ2yi8GRez0iQNaTOVc_16mxLzM76FgTc_A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@tvon1987",
+            "authorChannelId": {
+              "value": "UCXj_5wY6xSAe6ylkJWLRuYQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 304,
+            "publishedAt": "2026-09-03T19:10:57Z",
+            "updatedAt": "2026-09-03T19:10:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "PHYZAEH3JGL2yd8J9PHTxRP1dck",
+      "id": "UgyO7ngKLMj-jKBL-wt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IZXI2L1K-ALlZNW8l1eMESIiP38",
+          "id": "UgyO7ngKLMj-jKBL-wt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "25:23 I can't stop laughing my stomach hurt😂😂",
+            "textOriginal": "25:23 I can't stop laughing my stomach hurt😂😂",
+            "authorDisplayName": "@vinzz.s8",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ozciFzkkmV7f4yUhwGezmUsNKLxekiLODQ3oBPsG_9qySyrycyjHzBAMT4mJAJAzZqT84vo8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vinzz.s8",
+            "authorChannelId": {
+              "value": "UClCBy1WWkArMEeRfqR-ZnAA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 35,
+            "publishedAt": "2026-09-04T04:31:18Z",
+            "updatedAt": "2026-09-04T04:31:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vaq1wa3HUo99mN_4JTlao6J-sd8",
+      "id": "Ugz30UhZbpXwgGlmKCZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cm8eVTt-YRnI5YEJAlLKSVGCJCM",
+          "id": "Ugz30UhZbpXwgGlmKCZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bro ends stream at the best part😂😂",
+            "textOriginal": "Bro ends stream at the best part😂😂",
+            "authorDisplayName": "@kick_off1987",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n-6RW7yHnAVJghxO10WjUQZsKvMPGOD7WLkQp8UMcyRafOGcU9XC42RB35QvDCecSw1g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kick_off1987",
+            "authorChannelId": {
+              "value": "UCl5IdzADVtdziLfhSX-jc-w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 194,
+            "publishedAt": "2026-09-03T19:12:09Z",
+            "updatedAt": "2026-09-03T19:12:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "nLtsSRKA1a9S2M4QuEvNNyQI8VA",
+      "id": "UgwscPvklqoETmvdbIh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LhMBKTvPwqJS54MKr4hZFLQKU54",
+          "id": "UgwscPvklqoETmvdbIh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "23:25  best",
+            "textOriginal": "23:25  best",
+            "authorDisplayName": "@theONLYeditsz",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/6-W90lOk1cBTIzfreqanz67EOruD8JVBHLc82dUE4_A0DucDNvFm4eAz9tL0Di7vU6mgtRis=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@theONLYeditsz",
+            "authorChannelId": {
+              "value": "UCpNl14ELk1_LwlKznu4s70w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 27,
+            "publishedAt": "2026-09-05T18:48:21Z",
+            "updatedAt": "2026-09-05T18:49:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aNkKmjPV_u-dF8fhwzbL3Il2lfc",
+      "id": "UgxT3YCaUBgxOhgv-Yl4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Kn3iBhnbWQwDgB6G_nRceNQMfSE",
+          "id": "UgxT3YCaUBgxOhgv-Yl4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "30:43 new speed element unlocked 😂🎉",
+            "textOriginal": "30:43 new speed element unlocked 😂🎉",
+            "authorDisplayName": "@clutchclipse",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/DjLGMKoRmo-GNiwCQM1gAoZ7ZkTjzHoGkCsQHfY9qwmzCosoFE1iCDTCMJ0m2-T9vPUHmhTA2cQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@clutchclipse",
+            "authorChannelId": {
+              "value": "UC6ZlzfengUQR1_6UI7hNNJw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 74,
+            "publishedAt": "2026-09-03T20:53:09Z",
+            "updatedAt": "2026-09-03T20:53:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wO9yXi9VEn1ZX7_RQgTIrLm1Hm4",
+      "id": "Ugx3ApD5_MWzwwPed8x4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "b_RY0fAsaPswa3W5B2YB_gSiX1o",
+          "id": "Ugx3ApD5_MWzwwPed8x4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "41:39 his dog is so cuuteeee 🥰🥰🥰🥰",
+            "textOriginal": "41:39 his dog is so cuuteeee 🥰🥰🥰🥰",
+            "authorDisplayName": "@genos8104",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/HxB-gL5eI5SDzYGJJtT3jvqzTNSQIkbN4XNBrxqxeyTuNTnZXfAktgb_MmJVL7WB5QYqvR2FrA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@genos8104",
+            "authorChannelId": {
+              "value": "UCV51eop-x38CTHYHJrrBaLw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 78,
+            "publishedAt": "2026-09-04T01:38:07Z",
+            "updatedAt": "2026-09-04T01:38:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "KBp9KSxtyvZhRK_vaqqmToSTwPQ",
+      "id": "UgxfgV2WYCiZhbPE-154AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "E7gnovRxt3k1qS6oOojTRTeRUVk",
+          "id": "UgxfgV2WYCiZhbPE-154AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "nahh Ming Ming was funny dude😂",
+            "textOriginal": "nahh Ming Ming was funny dude😂",
+            "authorDisplayName": "@thelesch06",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ZkRZ0BhwXNxqol0ml1X1b-jFJaQg_Y77W_0Pcl2TQE4_QgEvf_2jiqlcPxLjHKjHWsEa0tQyYQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@thelesch06",
+            "authorChannelId": {
+              "value": "UC48ab7CjIzHnBVnwCNUeAVA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 78,
+            "publishedAt": "2026-09-03T19:12:40Z",
+            "updatedAt": "2026-09-03T19:12:40Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jbUFEXpGJihuc1zKYy8khhOXAGo",
+      "id": "UgxFylninV1_JBpmb1x4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Euy3FKr2zNNbejdtE0RBoeuP1Cc",
+          "id": "UgxFylninV1_JBpmb1x4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "10:17 😂😂😂 W speed",
+            "textOriginal": "10:17 😂😂😂 W speed",
+            "authorDisplayName": "@Chef-X",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ehg-bkbie9g8N3gOIRHrDhnIHfGPWKEBpnPy0u77eU3lMeXn9HYpcZLo5y86y5l80lK5XNbtWVM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Chef-X",
+            "authorChannelId": {
+              "value": "UCZTN6fVreBkT9fQnPKIzcFQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 24,
+            "publishedAt": "2026-09-04T00:15:12Z",
+            "updatedAt": "2026-09-04T00:15:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tj5se3Y1cZL23Y3-bJSmmlb6Wh8",
+      "id": "UgxRGZ184Ui1r11jeih4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Hnlk4YX0PAc3CAUmgWFjMssRcAM",
+          "id": "UgxRGZ184Ui1r11jeih4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bro i thought it was my internet 😭🥀",
+            "textOriginal": "Bro i thought it was my internet 😭🥀",
+            "authorDisplayName": "@Phoen1xTheGoat",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FehLUKrF3EpzRme4bMVvyi72bVPJz4vzmn7KQI2oUJwsADXKRYuF07aoN2AHn7DJcGLXapVK=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Phoen1xTheGoat",
+            "authorChannelId": {
+              "value": "UCQBW9kD3Lskh8wfUu0wXZiQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 113,
+            "publishedAt": "2026-09-03T19:11:44Z",
+            "updatedAt": "2026-09-03T19:11:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4e2y7H9RooUatfeQ4DJD6AwIgOY",
+      "id": "UgyNAzLNWZAVWTs_tsx4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "j1qOUbZBBTEVXc4ujpHGp9QxzD8",
+          "id": "UgyNAzLNWZAVWTs_tsx4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "The ending bro seriously",
+            "textOriginal": "The ending bro seriously",
+            "authorDisplayName": "@Kayaan_playz",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/dILZaG_ndO5FOppsSluwCsgWeZ-Z-XrtRk_GNbJtd8CSwaEhNf_xe-hLXUBJAEROM1Kg3RNo7A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Kayaan_playz",
+            "authorChannelId": {
+              "value": "UCeGrqFy4_EMDvLPdVgKXQ1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-09-04T17:11:44Z",
+            "updatedAt": "2026-09-04T17:11:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "WcVHUHWxO2VRk9mIzKUF0caL3cM",
+      "id": "UgyJe1I9Ud818UpzJCF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "c4emOomMi1yr-EAcl3wTXdYpSwo",
+          "id": "UgyJe1I9Ud818UpzJCF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "it was going good bro wtf was that ending",
+            "textOriginal": "it was going good bro wtf was that ending",
+            "authorDisplayName": "@FUNNIE-b4l",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/N-vOmsACRPWjYJ44s2dRPt27SQlFICxxByQaTaz_fm-qO-YS7Q-QKl41cK124-iB4rd6U2RQHlo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@FUNNIE-b4l",
+            "authorChannelId": {
+              "value": "UCATHxAlqTyF9x4J3wnPX4gg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 83,
+            "publishedAt": "2026-09-03T19:14:13Z",
+            "updatedAt": "2026-09-03T19:14:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Fo6TTkyjuSon-PxV1rkgnx8AFuY",
+      "id": "UgzsjKIIY_Qi5x9s1894AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3fAp0oMJLTzzYVfdsnqQ1JodoyQ",
+          "id": "UgzsjKIIY_Qi5x9s1894AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "crazy era man 😭💔 Messi retiring… now we just need Ronaldo to keep cooking 🇵🇹🐐🔥",
+            "textOriginal": "crazy era man 😭💔 Messi retiring… now we just need Ronaldo to keep cooking 🇵🇹🐐🔥",
+            "authorDisplayName": "@IndianIShowSpeed.suiiiii",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/5jdG7_I8JIxAI8x_iTmNZ8WzzlzCo9bnsT0E8rw58BaxCqVepvtJ_WISksR0F6Ae27PHUeTTIg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@IndianIShowSpeed.suiiiii",
+            "authorChannelId": {
+              "value": "UCCJkqYt29NVd4E5vkOv7ufQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-09-14T11:57:03Z",
+            "updatedAt": "2026-09-14T11:57:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2WSI8i4zvP3ywSfW4V_zJg7sL3g",
+      "id": "Ugw1NCWmWFt6881ZrjJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NM5Zvo8rz2hHcMx1POt2I84phvk",
+          "id": "Ugw1NCWmWFt6881ZrjJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Not even Green Apples ✌🏻😭🍏",
+            "textOriginal": "Not even Green Apples ✌🏻😭🍏",
+            "authorDisplayName": "@federicodemarchi10",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/8Pbb_VOonHo7yG7CC653gYjGDzbwKEFDQCzWEdK89DG39qc1kJQyDE6hLCMDVGMjObe_Qvzsxw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@federicodemarchi10",
+            "authorChannelId": {
+              "value": "UCEXhvS4IdWnr0ioZyE5kKnQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 72,
+            "publishedAt": "2026-09-03T19:22:12Z",
+            "updatedAt": "2026-09-03T19:22:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "pm8cWbZyNV5jmZp7gIVE-47Tc4I",
+      "id": "UgxkFZKrtkrt0NpltRB4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "XdO6sWJAtbW7yO_iSUWzGfU9jfs",
+          "id": "UgxkFZKrtkrt0NpltRB4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "\"STREM\" ✋️😭🤚",
+            "textOriginal": "\"STREM\" ✋️😭🤚",
+            "authorDisplayName": "@ayitscr1s",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/aCLxS-qhATTqdL-7vlf_njCf_TXNzsNzBIv_1kfU55PCO8IZBCKQ6mtyvYw8YDQRwGhU7V1dnA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ayitscr1s",
+            "authorChannelId": {
+              "value": "UCLPXU7YPvbK1ZNCRzJ4Qfjg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-09-03T23:36:47Z",
+            "updatedAt": "2026-09-03T23:36:47Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XsxZOuIt57uSeTPnn41KVyn8sQY",
+      "id": "UgzKACGvvmrATdWSdPR4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "db3PSrejdOKapEFlCGi4hh9kKPI",
+          "id": "UgzKACGvvmrATdWSdPR4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Why did he end like that 😭",
+            "textOriginal": "Why did he end like that 😭",
+            "authorDisplayName": "@Kratoschillz",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/49blqxOcJ2Bx3C-jZAvh7j1ChtzCATf2mXd5xN1Zr1Nznrp3VGmmGNEuwPusQc-avnI6R04Z=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Kratoschillz",
+            "authorChannelId": {
+              "value": "UCboIsBDoY_Qi85EA4OrMfbg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 212,
+            "publishedAt": "2026-09-03T19:10:57Z",
+            "updatedAt": "2026-09-03T19:10:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rPAcIQYNkOYMMdyQI1o2I_tRyb8",
+      "id": "UgxPPHoD3c95Tm3nYtx4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IiHmnL3OhZf0r0aQ9B00lNh2y9U",
+          "id": "UgxPPHoD3c95Tm3nYtx4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "The fact that nobody realize speed spell join this strem instead of stream…💀",
+            "textOriginal": "The fact that nobody realize speed spell join this strem instead of stream…💀",
+            "authorDisplayName": "@SpideyGamerBoiT",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l_cdb12iEvfbconWqKW89iqSh69jL-NdmjZIuXCkr9Yg3iLzKFdf8SG32lYrR3AmrM9A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SpideyGamerBoiT",
+            "authorChannelId": {
+              "value": "UC8VIXivtFk8kG7W9q6kCadg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-10-07T23:18:52Z",
+            "updatedAt": "2026-10-07T23:18:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "AisWwq3ojY_0bgGK2FE2X32PHFk",
+      "id": "UgzmUhXGGWExhSrWVbd4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aR3WSadQD8Hq7uS8eHKq_dXFy7M",
+          "id": "UgzmUhXGGWExhSrWVbd4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I think he said green apples in china, but man speed grew so much I think this was the funniest",
+            "textOriginal": "I think he said green apples in china, but man speed grew so much I think this was the funniest",
+            "authorDisplayName": "@official-jose17",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SI40IVjn6OBg8Ce5MQaSnhmjCT22bygccIM1G_9giaKzIWgAisRjs22JO73u8D1B00EyCze4MGA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@official-jose17",
+            "authorChannelId": {
+              "value": "UCKpxdWfg0JTF44qxc_tB-QQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 10,
+            "publishedAt": "2026-09-03T19:13:25Z",
+            "updatedAt": "2026-09-03T19:13:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "A-FpKcgyMBSy9Ez580a--IHyzc0",
+      "id": "UgwmECF4mAe3Y-osZa94AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "N6oTDu1FI73o4t5X_XpoXOIZls0",
+          "id": "UgwmECF4mAe3Y-osZa94AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I’m the girl in white headband bro wtf😭😭😭",
+            "textOriginal": "I’m the girl in white headband bro wtf😭😭😭",
+            "authorDisplayName": "@Pinkdinosaurs.0",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/CQlaqb2fAizW8bKpA9GunRs00PduZZRf_oMUDy4v8jlG6mLUCy-sim_DKAEZ5UP3wL8JDNrfWw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Pinkdinosaurs.0",
+            "authorChannelId": {
+              "value": "UC1wIxiEZQb18wChqoRK9_Cg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2026-09-03T23:52:27Z",
+            "updatedAt": "2026-09-03T23:52:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "WXRi0J7WMXzbYBOe2KDn7RB1izw",
+      "id": "UgyNlS_4gLMOu6wiZEV4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9VKgX-6qZOmOhll3tl3sdPdWdnI",
+          "id": "UgyNlS_4gLMOu6wiZEV4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bro did not even say green apple💀",
+            "textOriginal": "Bro did not even say green apple💀",
+            "authorDisplayName": "@mrboomedits",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/yi0NtrvYQa9BwvGtWMcAzMYKdUP60UdcyMoPsnXwxeoyAjDonEHeAAt0QxD3NzRTt6DqvYQyvA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mrboomedits",
+            "authorChannelId": {
+              "value": "UCIo3Nna0LBxaXDmAuQP4r1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 44,
+            "publishedAt": "2026-09-03T19:11:30Z",
+            "updatedAt": "2026-09-03T19:11:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "t0Dxvm4JuEsRKQsoAY3aRFGekVI",
+      "id": "UgybMa8MPo9wqQ47VhZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "wUeN5sHqLa4JAGEqTaIS5WbjibU",
+          "id": "UgybMa8MPo9wqQ47VhZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bro really dragged him to the gym like a disappointed fitness coach because his taste buds are too elite lmao 💀😂",
+            "textOriginal": "bro really dragged him to the gym like a disappointed fitness coach because his taste buds are too elite lmao 💀😂",
+            "authorDisplayName": "@fbmustafa10",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/hezU1hj0WpghmX1tVh2Ff-0bJcH26KPKHAZmQUrUg0oZGQ7JCvrK8JPNrm2i8onoH-4G3mErVg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@fbmustafa10",
+            "authorChannelId": {
+              "value": "UCBpicrENV7bN1Ngfdmc_H6Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-04T12:04:13Z",
+            "updatedAt": "2026-09-04T12:04:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2rH85Ber4eelwki-g6jIW4qFH5o",
+      "id": "UgyuqCDmfDRhW1hs7Ht4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "y5J06-Wr31DKm0Evf6-vSIQKXl8",
+          "id": "UgyuqCDmfDRhW1hs7Ht4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Ming Ming aint  letting  him   go.",
+            "textOriginal": "Ming Ming aint  letting  him   go.",
+            "authorDisplayName": "@munchy8",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/oPJbFPhEbWEuSY-1jMgD8x6IYmYABuFP4KFCUkNghRYo7rohI0yT5kKLl0uzt0B2sp79gwpmvQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@munchy8",
+            "authorChannelId": {
+              "value": "UCAjqxau5cM3pGe5WiV6k4bQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 14,
+            "publishedAt": "2026-09-03T19:13:17Z",
+            "updatedAt": "2026-09-03T19:13:17Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RaP42NsCaoWJrTtIauqUTTQSN8o",
+      "id": "Ugz8waE-q3D3o-jVVw54AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "7jcrz5gS711rX09N8evTjQBKyL8",
+          "id": "Ugz8waE-q3D3o-jVVw54AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bro is not playing in the word cup 😅",
+            "textOriginal": "Bro is not playing in the word cup 😅",
+            "authorDisplayName": "@youngcrazyloco",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Zilk3qoZf5O6YkFfVva_jfJO3vdLHZiH7fQa26VSuoaJKi1FR3tADLuW9HjOBfVuMlKw-rWvYwA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@youngcrazyloco",
+            "authorChannelId": {
+              "value": "UC7_Yw7gUPK_8VAzQDXXZuAg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-09-03T23:27:56Z",
+            "updatedAt": "2026-09-03T23:27:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Y0QiHShY2tvPi11zIa5BYOP0VUY",
+      "id": "UgwC5DO2n7K-vx7M6Kd4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "HaNfsTf6grIRsSZEBRJ3VqVopM8",
+          "id": "UgwC5DO2n7K-vx7M6Kd4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Messi is 39 and he retired bcz he won every int trophy he could",
+            "textOriginal": "Messi is 39 and he retired bcz he won every int trophy he could",
+            "authorDisplayName": "@SomeshRawat-d3w",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mGCcO77qRAILeeq23h9y6AoVb-S6jhNjs55xh4H1JqzRtYoueMFrSC8S9Y7lZhzF6Tww=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SomeshRawat-d3w",
+            "authorChannelId": {
+              "value": "UCf-t2YXX6fA-HgueK_sLjOg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-09-03T20:17:13Z",
+            "updatedAt": "2026-09-03T20:17:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "VfbcE9NrzkuolZC2bcxRTNlatGk",
+      "id": "Ugy0M3KsxuhMbr0C4vJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cz-ox2_bx6Srug2DO1idC4diR0s",
+          "id": "Ugy0M3KsxuhMbr0C4vJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "“Strem”😭",
+            "textOriginal": "“Strem”😭",
+            "authorDisplayName": "@vextrolol",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/sjHA9nrHPuZeO56WxI8uF7rLG5vSSwNB2xQH7BUqOBi81J0ZAyk_uOugMR7E4Zd_57E8C_WlEw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vextrolol",
+            "authorChannelId": {
+              "value": "UCnSdbmQdgDZgxyLVlp4kfJg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-15T01:13:10Z",
+            "updatedAt": "2026-09-15T01:13:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_3D77hdZ32xw5Ye9-MZjGv63dKE",
+      "id": "UgyfJ1jGLlKw_1z9NBR4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LPfpmbv0SfKDNmlBLrhy2apRY9E",
+          "id": "UgyfJ1jGLlKw_1z9NBR4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "cut us off randomly bro😭😭",
+            "textOriginal": "cut us off randomly bro😭😭",
+            "authorDisplayName": "@Jeey111",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lnBPtbP1wahUTibFBXckB9MmDz9iLbC7kjCu5F4WT8Mp6TLU2X-XMBvRB0tFwn3YlHnA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Jeey111",
+            "authorChannelId": {
+              "value": "UC5RYcOs_0GUFK6F3a9ugymg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 26,
+            "publishedAt": "2026-09-03T19:12:24Z",
+            "updatedAt": "2026-09-03T19:12:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "p31cZWdcWhW9PbRkU2ypDwkXE5k",
+      "id": "UgzJbs94ZHCd66wP91J4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cJlNIBiM5iMMDw3GWae1g2r7jOs",
+          "id": "UgzJbs94ZHCd66wP91J4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Stream❌\nStrem ✔️",
+            "textOriginal": "Stream❌\nStrem ✔️",
+            "authorDisplayName": "@Rayyan_editz20",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/18fH71HZ6yctCFS27HGOELTR-K2TcCQm5kwr_6B19LoiQOtQYoJIzpwET5XcrsMiaeIqEBueEg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Rayyan_editz20",
+            "authorChannelId": {
+              "value": "UCyHgqRvY6xPinXeX8rN4_WA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-09-06T07:27:01Z",
+            "updatedAt": "2026-09-06T07:27:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "dnXWs2lzRDvI5EJhrYWxpxPwOXI",
+      "id": "UgwY9GHqhXc3fLAzKNZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "E7E6UU8d4y5P4cyUxRqPKZDiN5o",
+          "id": "UgwY9GHqhXc3fLAzKNZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Another wierd ending 😭",
+            "textOriginal": "Another wierd ending 😭",
+            "authorDisplayName": "@greengarrow1062",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/4fUFKzMJaFuv-4FPNhcgWKCGQvcCQu2e2PaCf-CbtWH26E0aJzEh0Rvgcw4n8RhNImV_73ak4g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@greengarrow1062",
+            "authorChannelId": {
+              "value": "UCJu0WhbH3mOv3fsRYX9l_PA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 232,
+            "publishedAt": "2026-09-03T19:11:50Z",
+            "updatedAt": "2026-09-03T19:11:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wyavvulQHFjO696Al66bIkL7_-E",
+      "id": "Ugz-oSbJhjHLnWBp5zJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Y-Rn9IzozJFgD05M5FnpB3j11ZM",
+          "id": "Ugz-oSbJhjHLnWBp5zJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "everybody knows cherki 😂",
+            "textOriginal": "everybody knows cherki 😂",
+            "authorDisplayName": "@Tawhid_Rahim",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/woemBAG1d3sfs-d61IjJp4e817OgBwcpF6LzJo78jXpUK6pr2tvm5uGb2N9f2-gPj8LHa9CRQg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Tawhid_Rahim",
+            "authorChannelId": {
+              "value": "UCRsauT_ZK0yFdKlShel8izw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-09-04T10:20:08Z",
+            "updatedAt": "2026-09-04T10:20:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4aUNDhK4DAJfbyZYZMjhmehQBBY",
+      "id": "UgxSTdQxSQd-je91boF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "p9cka7O-JS_gKIeOnFF6vEoyqX0",
+          "id": "UgxSTdQxSQd-je91boF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "You are not ready for this ending ☠️☠️",
+            "textOriginal": "You are not ready for this ending ☠️☠️",
+            "authorDisplayName": "@dealordiealone",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/s_jDd5N5uFsvbNR_A_tweVqncczYncw6A5p4yKQ5N261cQUuGpEmtAFirdv_bvQrGM-g4aeEw9w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dealordiealone",
+            "authorChannelId": {
+              "value": "UChZkXbpUubWRVHdxqCrSMzA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2026-09-03T19:15:00Z",
+            "updatedAt": "2026-09-03T19:20:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZxN9ij_0FKcJQubCuxsRUjRt1Wg",
+      "id": "UgwggOzOzgiteDnLW8x4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "WcELJyUojs0LfgfoEtyfZMkgLBQ",
+          "id": "UgwggOzOzgiteDnLW8x4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "57:29 ishowpiano moment😂",
+            "textOriginal": "57:29 ishowpiano moment😂",
+            "authorDisplayName": "@Gubby_Samurai-123Hi",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/M5_Czs8dXNV5DbuFvB_c3JhR4e8vjROSlRTb6NjoHsJsXcUQNZ1XdZQvwG5w85rPu36GFSVzQA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Gubby_Samurai-123Hi",
+            "authorChannelId": {
+              "value": "UCuuOFZi0kzo3CpOVT8vlnCg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-09-05T02:27:46Z",
+            "updatedAt": "2026-09-05T02:27:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sO6Zsu27Bq4EBkFel7IYaJKCyi8",
+      "id": "UgxHyef2l_0YsK9DaYh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "0MY4J-0YNbc04J9tQ9NQyU56j5Q",
+          "id": "UgxHyef2l_0YsK9DaYh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "speed when the desktop stream hits 3 hour mark: 🍏🍏🍏🍏",
+            "textOriginal": "speed when the desktop stream hits 3 hour mark: 🍏🍏🍏🍏",
+            "authorDisplayName": "@bizforpresident",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nxE64BVvNfkOto-UIb04bV2_nuDcStIRPC3cPKGMMy_W8z9fRisSkuHc6UDDEs7_sycg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@bizforpresident",
+            "authorChannelId": {
+              "value": "UC8ySFyl_ofNsCZXS7fYbGMw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-09-03T19:11:32Z",
+            "updatedAt": "2026-09-03T19:12:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xc1fkosPXf9uJpJH4oxaPrexhM0",
+      "id": "UgwaFpc_h5XatS23Q9l4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MqcqO6yquYzrsULwnFmT7O-GxXI",
+          "id": "UgwaFpc_h5XatS23Q9l4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bro was so happy he said \"STREM\"",
+            "textOriginal": "bro was so happy he said \"STREM\"",
+            "authorDisplayName": "@ethanasher8585official",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/QL3nt7XSr1Y1k8mQ3d8C4kWfQ29LkEpmPsblH8t9-WXVX7SUKR3iGtg5JaEzE4nIpG5iRE8kAlw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ethanasher8585official",
+            "authorChannelId": {
+              "value": "UCWxpEZOcHhm3OM5PI61NXrw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T04:39:40Z",
+            "updatedAt": "2026-09-04T04:39:40Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "KzYZwJu3zN8oxjH6YtJXduRmVP4",
+      "id": "Ugxaiq-_-6AxNEWmHOZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "AhN3KQgnU0A31Hg5reNw3YN-e70",
+          "id": "Ugxaiq-_-6AxNEWmHOZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Ming wildin bro😭",
+            "textOriginal": "Ming wildin bro😭",
+            "authorDisplayName": "@AE4Lyoutube",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/n_4EnQp94YW6LpU9OxgNl9PSwTIwM8xTRYZB_Gvq5fOLQJ3D-eQw2Uzbc7kPCY4t_Go1_sjq3A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AE4Lyoutube",
+            "authorChannelId": {
+              "value": "UChjgOBBHaq6PsQ5RLjLzRsA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 11,
+            "publishedAt": "2026-09-03T19:12:24Z",
+            "updatedAt": "2026-09-03T19:12:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "FpACIj5cwo_ZAsoAAAfGeEjntdM",
+      "id": "Ugw3buLlr9oVGlKPRBx4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bW92Yz08R-yefWwJjwUSpX1lxF4",
+          "id": "Ugw3buLlr9oVGlKPRBx4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "47:02 that dog really wanted a slice",
+            "textOriginal": "47:02 that dog really wanted a slice",
+            "authorDisplayName": "@MayorSom",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/48y9tMRaoSQOPqD3DJPhh7RF_b9L1hqFseJ27qEA0EYMOqn1X4EedcghcM6Ir_V43_ZThFIo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MayorSom",
+            "authorChannelId": {
+              "value": "UCoEVc2HX4Fv-T3iV8ROCF6g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-13T23:26:07Z",
+            "updatedAt": "2026-09-13T23:26:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8SkFBXn5Q3BYPSKiBPy1YC4B9zI",
+      "id": "Ugy9Cvy6on4vafGtEHF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "FX8r98afa2BabYJWNgh5hN-ySPU",
+          "id": "Ugy9Cvy6on4vafGtEHF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I just joined and it alr ended😔✌️",
+            "textOriginal": "I just joined and it alr ended😔✌️",
+            "authorDisplayName": "@BlackedEditss",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Wmx9i3XD2Y0ftUdrABsiaNJduCriIRGkPrzSi-FMG6gxWsQU1QCk_nCR1JtG2das9Kz1onx1vQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@BlackedEditss",
+            "authorChannelId": {
+              "value": "UC8PG7hwkwWBEu0jdNHytFEw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 87,
+            "publishedAt": "2026-09-03T19:10:54Z",
+            "updatedAt": "2026-09-03T19:10:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1Vdb_0WcD2t3SQcjdFoDE2TtNkw",
+      "id": "Ugwvplou5seK_-zZ0aB4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "0aOCkREhOuFUthsRkpU34PK3IFE",
+          "id": "Ugwvplou5seK_-zZ0aB4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Jamal's health/fitness journey should be the next series!",
+            "textOriginal": "Jamal's health/fitness journey should be the next series!",
+            "authorDisplayName": "@Portubed",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mgNyVEu0TNdndpM0ERLaa6qfE6iCzdGuymdMQCzLg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Portubed",
+            "authorChannelId": {
+              "value": "UC0drQtXFd1hrcexwugW08cw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-04T16:08:56Z",
+            "updatedAt": "2026-09-04T16:08:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kLaLew0ViIBuVN4A_voQq37GJWs",
+      "id": "UgxQmRD7bqO-to5eEe14AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "PLZQ5MPwjn9bATQ3Lr0GvIuwOps",
+          "id": "UgxQmRD7bqO-to5eEe14AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Was having the top 10 moments of life an bro ended the stream in the most intense time",
+            "textOriginal": "Was having the top 10 moments of life an bro ended the stream in the most intense time",
+            "authorDisplayName": "@special_40_sg7",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/05DMW__oQ62KONs3la9IRicuW5vmEozzqfhsaRZAFItIvM2KhIgq8SwnebWU0ERr-eYRIsaA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@special_40_sg7",
+            "authorChannelId": {
+              "value": "UCQPwAOgWWlFrNCnYbk1yCBw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7,
+            "publishedAt": "2026-09-03T19:16:40Z",
+            "updatedAt": "2026-09-03T19:16:40Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JCQ_Sz3yR5OtSOJfzlLoXJdw7a0",
+      "id": "Ugw7dMspK9RQxslWlnN4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VZFq2ulE6zNAVHtdlczsR3JAPwA",
+          "id": "Ugw7dMspK9RQxslWlnN4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Jamal getting skipped on Omegle was crazy lmaoooo",
+            "textOriginal": "Jamal getting skipped on Omegle was crazy lmaoooo",
+            "authorDisplayName": "@leavingarizona3345",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n1hHNFfhXBR4BASbMAHa8CRJOT-_7vV_OG-i3RKWwWIZ-j-3B7Fl4iapOfpamSrb2qYA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@leavingarizona3345",
+            "authorChannelId": {
+              "value": "UCVMc1fAajfsl90BT6ejlSlw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T01:30:37Z",
+            "updatedAt": "2026-09-04T01:30:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "hvETVha_M7KSzzarJgTkRBOgEco",
+      "id": "UgyN4FPaVnDz7W4CBv14AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cx52v1sBDQndm5XAodzsMtn0ezk",
+          "id": "UgyN4FPaVnDz7W4CBv14AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bro don't even say green apple no more😭",
+            "textOriginal": "Bro don't even say green apple no more😭",
+            "authorDisplayName": "@zanyspeddy",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/TbHELltkxvc8V6fcOBXE479Yzc5n2HQo-5d1AR49Dj5WcuKkAGun6GgVOfMmvYrq31RuOUyKhzw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zanyspeddy",
+            "authorChannelId": {
+              "value": "UCwcrN7JVkhbajfMiXQw-4nQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-09-03T19:21:36Z",
+            "updatedAt": "2026-09-03T19:21:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "pB5kwUCxYdTnlj8-FQw5gZ6YxiU",
+      "id": "UgzMeE6QoLKtO8Rocwp4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mcbp0lUu_Z6KD8ddlkJPk8bSr9E",
+          "id": "UgzMeE6QoLKtO8Rocwp4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "28:40 i guess marvel got their miles morales training",
+            "textOriginal": "28:40 i guess marvel got their miles morales training",
+            "authorDisplayName": "@RudraPawar-s1e",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/sJF2TnQu_3Uz3AFVxZAKL6QvteWoK9q9EpUKGgkkyNwkYzzZWwC1_VX63TFP06NhB_1bBVyIGCY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@RudraPawar-s1e",
+            "authorChannelId": {
+              "value": "UCU3eqAd8gYaethbxCNX0zQw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-04T04:18:25Z",
+            "updatedAt": "2026-09-04T04:18:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ltWK4uuveZXmbHZNL03Cu6XDP4Y",
+      "id": "UgzU-jGMLF1HTMCrrhl4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uszUazxAiTiKByvZ5n-8zcRuJY8",
+          "id": "UgzU-jGMLF1HTMCrrhl4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "nah speed you the goat fr man. i’ve been going thru hella life things so i haven’t been watching you for a while… so glad to see your still chasing more then what you’ve already accomplished!!",
+            "textOriginal": "nah speed you the goat fr man. i’ve been going thru hella life things so i haven’t been watching you for a while… so glad to see your still chasing more then what you’ve already accomplished!!",
+            "authorDisplayName": "@IsThatWooski",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/el65pXWhktDRuMoFPVjXUZZIt5uQAITBHNRbVpxtyZoAskQ_4POCHetPAGXrb0RGNBFhO7y9=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@IsThatWooski",
+            "authorChannelId": {
+              "value": "UCV1CyXiL9zH7Agx_kUuyfBQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 32,
+            "publishedAt": "2026-09-03T19:39:17Z",
+            "updatedAt": "2026-09-03T19:39:17Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2UIcUX6Q9VkqwGFDQG8S6CaZgDw",
+      "id": "Ugy0CFqbu490a6Pbz8J4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Q4oT6IS5eLnsKr9VlHQu3jBdRJ8",
+          "id": "Ugy0CFqbu490a6Pbz8J4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "8:40 | 9:20 | 10:57: Speed really lost it trying to contain his OG self for being called out lazy by his chat.",
+            "textOriginal": "8:40 | 9:20 | 10:57: Speed really lost it trying to contain his OG self for being called out lazy by his chat.",
+            "authorDisplayName": "@groundbreaker1052",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/YxCfZJ_r8GTv9pS33EGbsLWE7485-sLHLyZo3piJl3w7Pg4n-HQxrywS-dg3zItBr6OnqBpacg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@groundbreaker1052",
+            "authorChannelId": {
+              "value": "UCWyBInJyxqJByMUNCJkcyPg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-03T22:43:47Z",
+            "updatedAt": "2026-09-03T22:43:47Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "iIaTz6tyCWaYXxnGHtRumXAESks",
+      "id": "Ugxj7zOQbsCWmFIu7eh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "YxmVWvEfg-nbD5JOdCALg_zwcNQ",
+          "id": "Ugxj7zOQbsCWmFIu7eh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "The ending always pure gold",
+            "textOriginal": "The ending always pure gold",
+            "authorDisplayName": "@__LALISA__WORLDWIDENUMBERONE",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/OxHgGxUJT1UoSwgjNQFiUO3_m3IG2Y7ko3dkBe3TmPGeocjC-xoTiIR98qTNQoMgBidqs7L7UJc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@__LALISA__WORLDWIDENUMBERONE",
+            "authorChannelId": {
+              "value": "UC4eJ9AJdhOoF9fM_yNBFqZw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-09-03T19:31:28Z",
+            "updatedAt": "2026-09-03T19:31:28Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8V9jvJfja9ONvGG5zbtYjzByAJ8",
+      "id": "UgxBWMQIfd-MWo9vK154AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ydMrreWBIfe1POgAVOo0dGEGwCA",
+          "id": "UgxBWMQIfd-MWo9vK154AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Thanks so much speed I asked you to play with chester and you actually did thanks alot man god bless much love bro",
+            "textOriginal": "Thanks so much speed I asked you to play with chester and you actually did thanks alot man god bless much love bro",
+            "authorDisplayName": "@CharlCharl-c9n",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ITq-8iT0OnZNabCNnFSYwPRAHEflYAOlZ2UCqEXs78MwmO03f3ZgCJkaSaZCK-arftPI7C_u8g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CharlCharl-c9n",
+            "authorChannelId": {
+              "value": "UCmhTS3YBVRhw8hVZVAyYEUg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-03T22:18:09Z",
+            "updatedAt": "2026-09-03T22:18:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "w-WSu6AO8Do60Agp16ZmKSc4YNQ",
+      "id": "Ugx-Aoeo-Ppg18UFgkZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mvNppkSBP---QC4UXVEHewEbINY",
+          "id": "Ugx-Aoeo-Ppg18UFgkZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bro wtf is he doing, ending it like that",
+            "textOriginal": "bro wtf is he doing, ending it like that",
+            "authorDisplayName": "@AmanShaikh-dy7zf",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l_Lbif5cmTU7Ad6LVpcP2AaDJKWS1fOx3bRMT79s5Ivvs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AmanShaikh-dy7zf",
+            "authorChannelId": {
+              "value": "UCNBJ3DTZ1LKYf1T0UAmwS_A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 45,
+            "publishedAt": "2026-09-03T19:11:29Z",
+            "updatedAt": "2026-09-03T19:11:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uA_UzAVs1iUEwiOKq9TfJ6dIPiU",
+      "id": "UgwsZ-NNGdc9qR0RYI94AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "rbsr8cAzzelnAeo-18TvOM-m294",
+          "id": "UgwsZ-NNGdc9qR0RYI94AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "1:17:04  Nahhh jamal😭😭",
+            "textOriginal": "1:17:04  Nahhh jamal😭😭",
+            "authorDisplayName": "@Am1rrrraaaa",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ZjxR2ABc3TIwqYKbdz1Xs5AB4B0pykiJIM4QXBgi-xXK2gEYQQt18qoo-iCmOIYrGuI6tqEs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Am1rrrraaaa",
+            "authorChannelId": {
+              "value": "UC9ZEvi_1fNaTV9txY1ZZWdQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 35,
+            "publishedAt": "2026-09-04T10:09:21Z",
+            "updatedAt": "2026-09-04T10:09:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "cFHFP_SlITm79s-NqAxNCizoG1c",
+      "id": "UgwAeRovHNIXVrp46dF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "wuEQWg-e8M0nBgZnU_anz-oOa9I",
+          "id": "UgwAeRovHNIXVrp46dF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Ming Ming tweaking bro 😭✌️",
+            "textOriginal": "Ming Ming tweaking bro 😭✌️",
+            "authorDisplayName": "@Kai-Productions17",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/bNfkeGjc1yEtYgbY9-pHk-2iDBDO-W66I5vV7WdPMU-yL2DgMs_A6txIU1bdWPB_xn7JWNVgGbM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Kai-Productions17",
+            "authorChannelId": {
+              "value": "UCtNtNVquHIvFf6d-rBV32Hw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-09-03T19:14:26Z",
+            "updatedAt": "2026-09-03T19:14:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TB2E62ooRqgTDdDgHrqHZZbZ74k",
+      "id": "UgywFyKvMUYOR1L-6lJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "G3mc07-T6MhCm8F8BO1KziUufO4",
+          "id": "UgywFyKvMUYOR1L-6lJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bros vibing holy",
+            "textOriginal": "Bros vibing holy",
+            "authorDisplayName": "@Solderdoritos427",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uj-OpbfRBrvyVjdAggjaTTaZHZQFsim0mcqlyQM1KZq70YZ9WrNbefD6sSD7_BGqfnZyBXTTUlA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Solderdoritos427",
+            "authorChannelId": {
+              "value": "UCP9a1YHvP-7GZXoEfMoYrCA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-15T23:51:49Z",
+            "updatedAt": "2026-09-15T23:51:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ForACxHGAhDhp57otxI7GOBCy28",
+      "id": "Ugwjpt7lEI7f2eE1ZyN4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9IJqj09Pk0cOVt7QF9c7gLYCeok",
+          "id": "Ugwjpt7lEI7f2eE1ZyN4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Wtf was that ending bro😭🙏🏼",
+            "textOriginal": "Wtf was that ending bro😭🙏🏼",
+            "authorDisplayName": "@EmilDZN-DzN",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/45fknqPaPJEPicDuNFuC4p6k6tyCC-A0TpN9UmBE7NSAPYm9NHrEXLLsjyuQEgvMZrHYOaoCeQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@EmilDZN-DzN",
+            "authorChannelId": {
+              "value": "UC67QZ3DHPG9pjv__wg8qA2g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-09-03T19:12:24Z",
+            "updatedAt": "2026-09-03T19:12:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7H21qdkMV8XIzINYPJCYON4J2NE",
+      "id": "Ugy1hwzDtF6Y60ZNK3V4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "XxfyC6EUunRV1Xcbw2AB0BuLqP0",
+          "id": "Ugy1hwzDtF6Y60ZNK3V4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bro said chat every other word lol",
+            "textOriginal": "bro said chat every other word lol",
+            "authorDisplayName": "@bifn",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ofMztuG2rmJSUSYhXoBVIEGq8NB7VncHqRJVQK4qqbvOiXp4QoKlbBmwAGw7gXKjNl052zWUNQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@bifn",
+            "authorChannelId": {
+              "value": "UCs7e085P9JzozII-wTRDZEg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T14:42:20Z",
+            "updatedAt": "2026-09-04T14:42:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "cdtyJ2i9ejk1KtCSxgYCJw_qm-c",
+      "id": "UgyyKAJ0PGfxEbhzaHp4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "0Pbua1vajd6sLWr8rto7miGfNL0",
+          "id": "UgyyKAJ0PGfxEbhzaHp4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bro got slimed",
+            "textOriginal": "bro got slimed",
+            "authorDisplayName": "@CameronParker-j8o",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lI5aDxWDIVwQWn2Dun0faVxVMFYeD0rw9iq9KQ0ltN2dR9pCPWY0WuJ6rPOPQusko1-w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CameronParker-j8o",
+            "authorChannelId": {
+              "value": "UCB9ToAllpaDtITFMgo2ozzQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 14,
+            "publishedAt": "2026-09-03T19:11:00Z",
+            "updatedAt": "2026-09-03T19:11:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ynjc55lv_SBlLv8n4SsP_sidgAE",
+      "id": "UgzvTIG-Y8rkRDLZeCJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "c9L_hoUeQbT5HRlrxMXMqzMxV7s",
+          "id": "UgzvTIG-Y8rkRDLZeCJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "That Tommy scene was hilarious 😂😂😂",
+            "textOriginal": "That Tommy scene was hilarious 😂😂😂",
+            "authorDisplayName": "@amyautum4271",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kOf8PPQaUw3PWmDw5AgzBKWmTrL4MSSudOsyuMWgs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@amyautum4271",
+            "authorChannelId": {
+              "value": "UCk7Bm7ew_2oLw4H8vLW56XQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-05T22:16:09Z",
+            "updatedAt": "2026-09-05T22:16:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ejkxuumbe2tsCay0f-470gPsquw",
+      "id": "Ugxxn--1AtgpVgzwLjF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "spFpw1GNgwqca8gASKQ7CD-z480",
+          "id": "Ugxxn--1AtgpVgzwLjF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "What the fuck was that ending dawg 🫩🥀",
+            "textOriginal": "What the fuck was that ending dawg 🫩🥀",
+            "authorDisplayName": "@gughan_03",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/dxhQ-hIHsQuZZPgT5DgareKRkR5p2lfTejX3igA6_1vhvqK6-xz8AcCwaqpXWGpzznEpQPc0kqI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@gughan_03",
+            "authorChannelId": {
+              "value": "UC-s3OGK1EcV-05kYVuX-hkw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2026-09-03T19:11:38Z",
+            "updatedAt": "2026-09-03T19:11:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1FYfh3H_5wWHFA_W_SnpeNSaT0U",
+      "id": "UgzyBqxbxC4oOqB1bPp4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "C2cW5uxMRnLV03_v3tYD3GVzIs0",
+          "id": "UgzyBqxbxC4oOqB1bPp4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Jamal swears he didn’t know what pizzas he was eating",
+            "textOriginal": "Jamal swears he didn’t know what pizzas he was eating",
+            "authorDisplayName": "@Saintspinez",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/oJXxfcc1s44Gww6R7c4oL4FDjwbhg5RK3tAIq9mMUBv3ViqWNjiIrIzuOvnVDi9nc9mS3Boq=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Saintspinez",
+            "authorChannelId": {
+              "value": "UCjlElAPheDEB-Joxf_BGIpA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T16:28:20Z",
+            "updatedAt": "2026-09-04T16:28:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sZ_Y3vsWnQtxX9N52gcN0j_NDUo",
+      "id": "UgwLeDMBVdeZ-ih3HTt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bqwBM6wxt5wdzZJnUl8wPsydXFY",
+          "id": "UgwLeDMBVdeZ-ih3HTt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Wtf was that ending😂😂😂",
+            "textOriginal": "Wtf was that ending😂😂😂",
+            "authorDisplayName": "@Mad_nk1",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/rGNUMXwxVdK-5iMUvTvO_XmOuSjGDC5xyEk7hnPSlpAjGndtMaXJYLxaGbwUFMVuKzuNtXPq_Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Mad_nk1",
+            "authorChannelId": {
+              "value": "UCX1VVkQzghvZFC7hKjHj1xQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7,
+            "publishedAt": "2026-09-03T19:12:00Z",
+            "updatedAt": "2026-09-03T19:12:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8CtvRR5G-MUehl8JQ9cgokjQ7W0",
+      "id": "UgwnNLZIh1hF1xM9cCJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VyyCN2rFFI0tu5q1tKLae6fRaVw",
+          "id": "UgwnNLZIh1hF1xM9cCJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Speed is going insane bro 😅",
+            "textOriginal": "Speed is going insane bro 😅",
+            "authorDisplayName": "@BobJeff-xe6vr",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mN1c1vzIft5ypy_rAQYCalK0QVpe02f37xaOHq7l5Pqc43B_9OZn0V4qqeYf-bVp7yIQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@BobJeff-xe6vr",
+            "authorChannelId": {
+              "value": "UC-TBL_T5bAqqwyTqF-gl1VA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-03T22:22:43Z",
+            "updatedAt": "2026-09-03T22:22:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "e09nFlhPmtYSH-0i2Edq6rwTltg",
+      "id": "UgyC9nSJHQYpZmcMkFh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "I9KjhRUXp4n5K3Rnvs-OA2euwoc",
+          "id": "UgyC9nSJHQYpZmcMkFh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Why the hell would he end like that😭😭😭",
+            "textOriginal": "Why the hell would he end like that😭😭😭",
+            "authorDisplayName": "@thesantanashow123",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/19GYXgeZiOP_nDPrvkji2NRfEg5NkOljBt13m3YwRuG8_2e4b45sRGup5iKKzQZgrNxL83hzFg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@thesantanashow123",
+            "authorChannelId": {
+              "value": "UCn21VSmwArsPyYPTYiRzgmQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2026-09-03T19:12:00Z",
+            "updatedAt": "2026-09-03T19:12:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "HTjHqI0PsLgPCPqzmOAVM047Z68",
+      "id": "UgzyieRcgFxjJPK3HZ94AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "fiNTyePzQb79dJYyevEw-M_9sCY",
+          "id": "UgzyieRcgFxjJPK3HZ94AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Ngl speed now must play Super Mario 64. Like not ending stream until he beats entire game lmfao",
+            "textOriginal": "Ngl speed now must play Super Mario 64. Like not ending stream until he beats entire game lmfao",
+            "authorDisplayName": "@thebluefigure1993",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/0zfXo8QXDXWZBTApefdPWhSiLw4ImoRlZXNB1bxFKxhqlxGvXgT6Bsip6_7c_WHXGwBFakcx=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@thebluefigure1993",
+            "authorChannelId": {
+              "value": "UCCVzOKzz0nHgOefj9WJWnvw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-06T16:52:59Z",
+            "updatedAt": "2026-09-06T16:52:59Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xFJsr9WC1AW-RsaF7RgrMX5wFCM",
+      "id": "UgwEqXt2yk0WmKXCMEZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "JztChiGlnX5hyOFDG6a5wKsRBgw",
+          "id": "UgwEqXt2yk0WmKXCMEZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Unexpected End",
+            "textOriginal": "Unexpected End",
+            "authorDisplayName": "@Shaikaamnan",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ulCN1hEMM1FsXKEi2CHOKZ3-MqsihVgG_OPCUbUNX5xjHcRU9wa550ndU9YH7-2Cjl02aC1I=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Shaikaamnan",
+            "authorChannelId": {
+              "value": "UC1Jm005kquj-ceDJVVm4y0g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-09-03T19:12:10Z",
+            "updatedAt": "2026-09-03T19:12:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ghhQM_GPbrk8_s8vRmzc7dSKIVE",
+      "id": "Ugz6QOlzbBJW_5vC_Gh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "KrqcypuTk3uqc1IU9v0W3zN-4FA",
+          "id": "Ugz6QOlzbBJW_5vC_Gh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Retired in world cup with more legacy in world cup",
+            "textOriginal": "Retired in world cup with more legacy in world cup",
+            "authorDisplayName": "@muhirepatrick7414",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l9ZqXaPK-ft6cQHFt4L8uWJP3D0dZM8UpzDWYXxeo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@muhirepatrick7414",
+            "authorChannelId": {
+              "value": "UCwM3dglNUxpeZYD4kgOmFYw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-03T21:51:34Z",
+            "updatedAt": "2026-09-03T21:51:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vR8yL6gEfeWs0lI0GxDXfQSYbIA",
+      "id": "UgyKIR9quxUdK71vfLF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "gCdgVI6D2v3h1Dzx29I5rv9dlu4",
+          "id": "UgyKIR9quxUdK71vfLF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Broos celebrating😂😂\nWhat an unpredictable ending\n\nWho stays till the end👇👇",
+            "textOriginal": "Broos celebrating😂😂\nWhat an unpredictable ending\n\nWho stays till the end👇👇",
+            "authorDisplayName": "@proplaynetwork_ppn",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Y4ARddDT_Hn1EPtpcFikVP6g-Q_kjlVZqrKEk2BVzqN1cBq5m6pNO5AO01XSvQLkTQ5Ic6SsBw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@proplaynetwork_ppn",
+            "authorChannelId": {
+              "value": "UCzxBacvM1Fxx7OSmXD1SQJQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 10,
+            "publishedAt": "2026-09-03T19:12:05Z",
+            "updatedAt": "2026-09-03T19:21:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OlbRkgYgyUjmKruwc8G_uBZ5CJg",
+      "id": "UgwpgnnE5LNfnMB0BNx4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "A8F5ZYMaFO8G9bY9jUrYx92wP8w",
+          "id": "UgwpgnnE5LNfnMB0BNx4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I thought u hate Messi tho bro",
+            "textOriginal": "I thought u hate Messi tho bro",
+            "authorDisplayName": "@emmamathurin5007",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l_Zr5EN0lo5bNNNjRfEgjwiXJJod2Vy6Ide5lvNXM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@emmamathurin5007",
+            "authorChannelId": {
+              "value": "UCAyGKyEIAGbQtQfjaIq5isg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-09-04T03:16:12Z",
+            "updatedAt": "2026-09-04T03:16:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ahvKkdfkvZkAuriCCqKSuDaNHWs",
+      "id": "UgzWNScKGi0j94O6fgp4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Y6ealfTtu_-pf7gU1pqTPGUGngA",
+          "id": "UgzWNScKGi0j94O6fgp4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Always unexpected ending😂😂",
+            "textOriginal": "Always unexpected ending😂😂",
+            "authorDisplayName": "@tejjugaming7152",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/sEwasEqC2-MDpOUw8qys0ng3L0qW1fJF5qf0qcTWvaUSQ9GX5mxgntNAXIak_6aSbKUvsrvH7Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@tejjugaming7152",
+            "authorChannelId": {
+              "value": "UCpWr1slCqe7eYxpzOwJFMHw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 25,
+            "publishedAt": "2026-09-03T19:12:03Z",
+            "updatedAt": "2026-09-03T19:12:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XUVatpd0cxT5qgsNqdse5V9f7mM",
+      "id": "UgxiBG7KxO-T2lZYawV4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NTIKULjvesuHvOLzOCMmmEkWdiA",
+          "id": "UgxiBG7KxO-T2lZYawV4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I just saw a KFC fried chicken ad and  Ishowspeed was in it he was like “oooohhh”",
+            "textOriginal": "I just saw a KFC fried chicken ad and  Ishowspeed was in it he was like “oooohhh”",
+            "authorDisplayName": "@jaci8910",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/kxLpzXYFULX4atq-5YX6ZTul1eA6EF5wAaorncKrD5nw7F27RfqGE48xl9O6QMVioN-60jpOrA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@jaci8910",
+            "authorChannelId": {
+              "value": "UCGiZqxRDwAdIgOpDcNRq9DA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-05T13:20:39Z",
+            "updatedAt": "2026-09-05T13:20:39Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "03eO6HfTR1-MBzIdK0pU76quUtE",
+      "id": "UgzfcJqyHhiokIk8o3J4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "plFq5C4AY8Mj7CE2Taw8ze7v40M",
+          "id": "UgzfcJqyHhiokIk8o3J4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "HE DIDN'T EVEN SAY GREEN APPLES 🍏",
+            "textOriginal": "HE DIDN'T EVEN SAY GREEN APPLES 🍏",
+            "authorDisplayName": "@JaydenRivera-h7z",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/WpbBvlvUoXJiEZbctH-CEIbCDW-yuL0HixA2IBfUXg0UkHMe8V1rjuivgWb3OHeqpyjBCjNC5w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JaydenRivera-h7z",
+            "authorChannelId": {
+              "value": "UCFZiTTtmOW2qFtVXE80LeCg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2026-09-03T19:23:38Z",
+            "updatedAt": "2026-09-03T19:23:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jQldC_y5yBiVDoGd2kJb6yLtca4",
+      "id": "Ugy_mnI4l79Z-gKFqnB4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "j4pnqwHnY3hBjWqnic2SYEcmglM",
+          "id": "Ugy_mnI4l79Z-gKFqnB4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "17:00 see the huge difference between his reaction in 2016 Messi retirement and 2026 reaction huge difference language used are so different so it was not wrong when the ad said haters turned into fans countless 😭😢❤",
+            "textOriginal": "17:00 see the huge difference between his reaction in 2016 Messi retirement and 2026 reaction huge difference language used are so different so it was not wrong when the ad said haters turned into fans countless 😭😢❤",
+            "authorDisplayName": "@Thataestheticgirl890",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kWGOY2zL43BkQohHAF2ubCG6ZxCBJ3MFVPoRSNnCPL3skEILciTq3Gatqql3ZDXtWv5A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Thataestheticgirl890",
+            "authorChannelId": {
+              "value": "UCreN9Nrykv2LX6_inn5X17w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T12:26:19Z",
+            "updatedAt": "2026-09-04T12:26:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "zHhS4D6CEwAZU4ix95ZCUlRzyGg",
+      "id": "UgzFfQZ9nsTRTFB22TR4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "CPr5r9IQHWxe2ShAoSJZbwSPT0k",
+          "id": "UgzFfQZ9nsTRTFB22TR4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "The ending bro😭🙏",
+            "textOriginal": "The ending bro😭🙏",
+            "authorDisplayName": "@odog-b1r",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uAdOd3t561AGXnM3MeZ8cyKXmedL8Gcqi8Qb5vpJij0m462AM6ASx0jqh4bu_kLNpNQF6-9iMA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@odog-b1r",
+            "authorChannelId": {
+              "value": "UC7bcQgb_YOZUK7C3b4tQD9Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-09-03T19:11:21Z",
+            "updatedAt": "2026-09-03T19:11:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2h6r9XG0kQY0_BZpaUqj4BW94F4",
+      "id": "UgyQ8A6YSCGqEdCRcZ14AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ksef8dPFQW8nfAG0DkWDyzJeIvA",
+          "id": "UgyQ8A6YSCGqEdCRcZ14AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Ngl ming ming a legendary character 😂",
+            "textOriginal": "Ngl ming ming a legendary character 😂",
+            "authorDisplayName": "@raunakprasad7813",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_m-FGRJSDldm2G6jkG1_fnvh2WWn9qy2B5dScEpoSNwC8g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@raunakprasad7813",
+            "authorChannelId": {
+              "value": "UChTYTqsHAGg5dfyJybVE1rw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T18:32:12Z",
+            "updatedAt": "2026-09-04T18:32:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "__TZX9Ovu0IBtk7FLAxsorwisQc",
+      "id": "UgwMgMcE5pokVrDvSPB4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "apAfsbddq2TyPDb26HnNq_Sw65k",
+          "id": "UgwMgMcE5pokVrDvSPB4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "10:55 bro was about to be the hulk",
+            "textOriginal": "10:55 bro was about to be the hulk",
+            "authorDisplayName": "@ru1nsvii",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/p9bh0Sqt81kPuWtIzLsSTm6UQyeRQpoY25Ff3mjG64eme0fawTWpI_s-I6L7cYoJuc9dC7sY5w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ru1nsvii",
+            "authorChannelId": {
+              "value": "UCw3ujRf-w4ZYQVdU4sEl3CA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 66,
+            "publishedAt": "2026-09-03T20:56:19Z",
+            "updatedAt": "2026-09-03T20:56:51Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "oIw0yXZG74uvlVZcqon6cwS3HYw",
+      "id": "UgwsHV0O5nAUn8i-zXt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Xx2cJQ2lu_sCkvjI11XuG6AvPv0",
+          "id": "UgwsHV0O5nAUn8i-zXt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "That’s a sad thing bro like guys stop being happy for messi retiring",
+            "textOriginal": "That’s a sad thing bro like guys stop being happy for messi retiring",
+            "authorDisplayName": "@Wtrains4life",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Jxsg61arN0y2Kzhxm9Qn7m3mOZ8j0khCzEKQpaEoeUGR89ZTyTCq1Mycg6FtPToXzHU2Jy41=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Wtrains4life",
+            "authorChannelId": {
+              "value": "UCxmhZK49hoJx_cESVHLmmcg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T09:41:19Z",
+            "updatedAt": "2026-09-04T09:41:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uXD7XsfTtwav8ZqdDOQazb6WLLQ",
+      "id": "UgwbwVXj8j_FikWlkl94AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uJ_iSq2ddiHoXsd9FNR_pAuTAhE",
+          "id": "UgwbwVXj8j_FikWlkl94AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Peak stream ended to quick shit ending",
+            "textOriginal": "Peak stream ended to quick shit ending",
+            "authorDisplayName": "@davidala3409",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/kf2LRt-Iy9s7tk_MZ4f3zkR2W2HMmQLa6Fsb681i0MNqeJnja_RMyawDMh88Bld1M9Oayl7qZg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@davidala3409",
+            "authorChannelId": {
+              "value": "UCX9E5EzkfVLz8cQ94G_iw1A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-09-03T19:11:49Z",
+            "updatedAt": "2026-09-03T19:11:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "DWEKFc40WK931566Ok6KU_W_kck",
+      "id": "UgyWLmMuh_myLPDVf1l4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "yZPhk2jWYLcJE34M3FmENN4NVYI",
+          "id": "UgyWLmMuh_myLPDVf1l4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "18:28 😂how is it my fault😭😂🤣",
+            "textOriginal": "18:28 😂how is it my fault😭😂🤣",
+            "authorDisplayName": "@proplaynetwork_ppn",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Y4ARddDT_Hn1EPtpcFikVP6g-Q_kjlVZqrKEk2BVzqN1cBq5m6pNO5AO01XSvQLkTQ5Ic6SsBw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@proplaynetwork_ppn",
+            "authorChannelId": {
+              "value": "UCzxBacvM1Fxx7OSmXD1SQJQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 13,
+            "publishedAt": "2026-09-03T19:24:26Z",
+            "updatedAt": "2026-09-03T19:24:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lmkDamDW7dABcxsRnkWoEYS6JoI",
+      "id": "Ugxmta8qsCirdmFEYGx4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "TqR04QXU9LbpE6BRjVWQQezLeiA",
+          "id": "Ugxmta8qsCirdmFEYGx4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Why Jamal look like an elementary school crossing guard 😂",
+            "textOriginal": "Why Jamal look like an elementary school crossing guard 😂",
+            "authorDisplayName": "@IdleAnimal",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/IigijZuJWP4MiE4dkGKIM91cjK3gSKgtTWVsodcjCDYkeXqnhdwX-138y0UU3gR2PSESy-40Jac=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@IdleAnimal",
+            "authorChannelId": {
+              "value": "UC6p0OtgbSCbiUDk_swydWVQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-03T23:44:23Z",
+            "updatedAt": "2026-09-03T23:44:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2N84NkEQe50f_iAn-q9xVNkENzg",
+      "id": "Ugwojus1XoKnADyt5Uh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2ih5q37sCZ7KLFr-jfakdifY1kI",
+          "id": "Ugwojus1XoKnADyt5Uh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "damn i was enjoying this rp. W ming ming",
+            "textOriginal": "damn i was enjoying this rp. W ming ming",
+            "authorDisplayName": "@DrSilence7",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/9CrVdAEThjIXySNJ8-YmsgoS2k29h-N0Bb7xnZ3Q5bHFR70XPtvKLJ3z_oeNYcmczoZdCRqhpw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DrSilence7",
+            "authorChannelId": {
+              "value": "UCVHbzaex5EOES-HAJQbSyuQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 24,
+            "publishedAt": "2026-09-03T19:12:00Z",
+            "updatedAt": "2026-09-03T19:12:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "SNcm62NsGwCnqbX3LWZ7wI8EYsA",
+      "id": "UgxRsweSu71KgN9I98F4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "rNZ7sD5TwqMtcZmMVLlG2Tw-xBM",
+          "id": "UgxRsweSu71KgN9I98F4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Do a super mario 64 marathon that would be fire + fun to play and watch",
+            "textOriginal": "Do a super mario 64 marathon that would be fire + fun to play and watch",
+            "authorDisplayName": "@Prxme_Editzz",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/4Z85nfqPgokEE3V9fpgGsoDRkuIC1g325LqaQSVruN8ExuR9JgDvyDXu2ImeaCbVIfCPuZ2-mw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Prxme_Editzz",
+            "authorChannelId": {
+              "value": "UCGPuzIc84IvvdRkL71cj9CA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T05:40:31Z",
+            "updatedAt": "2026-09-04T05:40:31Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_M57USb0jApevZvRP44JW6E5MGU",
+      "id": "UgxdOsuWRRi8e7m3UHl4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "J2-QwS8nRh72eoYymLouAvHxKwM",
+          "id": "UgxdOsuWRRi8e7m3UHl4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "18:04 messi is 39 years old speed",
+            "textOriginal": "18:04 messi is 39 years old speed",
+            "authorDisplayName": "@Scazew27",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/xK81Dk8aGhBL3cP9mOeHGEI_tfKKIEvU5GgWIfYA50tAg8cm8CIb-hMx9yeOQIjw2z9yjePK50A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Scazew27",
+            "authorChannelId": {
+              "value": "UCRuYZoaQPSLG4HRjbtWAI_g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 12,
+            "publishedAt": "2026-09-03T20:25:20Z",
+            "updatedAt": "2026-09-03T20:25:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0BcosO8YdhZ7C_39rKyLXnwOd6Y",
+      "id": "UgxWHeCXLmgQf2wJLvl4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "d1q4DQJHr3VJQXNVBufz9mxGcxs",
+          "id": "UgxWHeCXLmgQf2wJLvl4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "That ending bro 🤯",
+            "textOriginal": "That ending bro 🤯",
+            "authorDisplayName": "@Dannnshorts",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/qFE1uiFl8Gq-UxWVMDJ-15-5q9RlyLVwerNNDB9WabVyhMCJc1UHkTAbsVaidKYxGOkZIdU2=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Dannnshorts",
+            "authorChannelId": {
+              "value": "UC2H8bnhuLIujwPmpLuJX6RQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-11T14:14:18Z",
+            "updatedAt": "2026-09-11T14:14:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Kq34YROTsoe_Uahsv8Zhia6dBtk",
+      "id": "Ugz9bBWzZRwJsCOU6cp4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "n9KfbtxIG0PRqITu6N3EHh6Nox4",
+          "id": "Ugz9bBWzZRwJsCOU6cp4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "The ending was crazy 😂 but it was a peakk stream gng 🔥 W speed",
+            "textOriginal": "The ending was crazy 😂 but it was a peakk stream gng 🔥 W speed",
+            "authorDisplayName": "@mausiholn2234",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/7Wt0UBkCf-p4Lu7TJJG5_92Xpqc1FXeeSaVvmWl3GJ4yImKDnuPovdOPuJBTH3MDihb8VzG0wg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mausiholn2234",
+            "authorChannelId": {
+              "value": "UCTvnWontI8A8odOtUG3bK_w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 8,
+            "publishedAt": "2026-09-03T19:53:47Z",
+            "updatedAt": "2026-09-03T19:53:47Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JJxGtH0FfbvFSNSqRVaggwREni0",
+      "id": "UgzPu8mm1UYcyGRW0T14AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IJ-Oxxbd3z32FEhZwjMpZmqpTnc",
+          "id": "UgzPu8mm1UYcyGRW0T14AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Bro this is peak stream 😂",
+            "textOriginal": "Bro this is peak stream 😂",
+            "authorDisplayName": "@bamo1461",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kzhcbVd_a_ojjyZJb0XvpfwLfs5jU92h27jh6IidOuUg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@bamo1461",
+            "authorChannelId": {
+              "value": "UCYjLRBmFgxK6t-1PWUonlZA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-07T02:34:55Z",
+            "updatedAt": "2026-09-07T02:34:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wZpnkuFNUodjvEFkaepYB_xDGdM",
+      "id": "UgxPOybrFeaGbIYrfOB4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IUhewSbFZKx0Fw0M4AhvPCi4-Rg",
+          "id": "UgxPOybrFeaGbIYrfOB4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "🇧🇿 no way she met the goat",
+            "textOriginal": "🇧🇿 no way she met the goat",
+            "authorDisplayName": "@LivBelize",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/EaeHQ9ReOXmFz-c-dyntwlaVQ5j29mKLFo3h4MX58JU9IsfDfKhZFqkQvVrOCZYEZplKSmRb=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@LivBelize",
+            "authorChannelId": {
+              "value": "UCKeaZM172pDIfq4WBiivt9g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-09-03T21:22:31Z",
+            "updatedAt": "2026-09-03T21:22:31Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Pa84PcwioTMom17nIMjRm9TdJYI",
+      "id": "Ugw-iEfOdpnWXJ-4qZN4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_4LWCo5ij3BRoO_xpvFeNU7sd4A",
+          "id": "Ugw-iEfOdpnWXJ-4qZN4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "they are from Michigan!  little ceases, dominos , hungry Howie's , pizza hut and jets are popular. papa johns is rare to find",
+            "textOriginal": "they are from Michigan!  little ceases, dominos , hungry Howie's , pizza hut and jets are popular. papa johns is rare to find",
+            "authorDisplayName": "@Fxbioncseyh",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lTjWu-3Nr3rnVWW3pjtTt92B02C81EFsYtH532LAAnVfdL_xLvCVos3GLgui6Fba6opw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Fxbioncseyh",
+            "authorChannelId": {
+              "value": "UCZoUe1NjRjbpeFbDP1zYN2A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-10-28T19:24:57Z",
+            "updatedAt": "2026-10-28T19:24:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "YE-YyrzSMPzdmim3FWsHrZfQd0U",
+      "id": "Ugzb3xouoqbkr97kTlB4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1f1iQ4KyFRhPYEVSIiDVpzFfMwo",
+          "id": "Ugzb3xouoqbkr97kTlB4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I cant believe im on his livestream",
+            "textOriginal": "I cant believe im on his livestream",
+            "authorDisplayName": "@LauriaMahjoub",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/yJvuZIYCp0H73118XEpyk_F7ns5vMW0Q9RWk0_4WFDoTd5souhRBkMZxnMlSgzPvXY_K2C9U4A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@LauriaMahjoub",
+            "authorChannelId": {
+              "value": "UC6pENaA_U7SrpqCif5zpBxQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2026-09-03T19:26:07Z",
+            "updatedAt": "2026-09-03T19:26:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TZqHyRDFl65mGSiRcMW07fFz1k0",
+      "id": "UgzM4E8rlMwVhq_io2B4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mAV7VVOBlpMjaAVSdpHDlrq4wCw",
+          "id": "UgzM4E8rlMwVhq_io2B4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "‘it will never change babyyy!’",
+            "textOriginal": "‘it will never change babyyy!’",
+            "authorDisplayName": "@saharali9175",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/V2NcSNR3co-cOMhN5QHyvPNgMIpf-6yIMpOlvS0Kz6hioC3yYXdmGfVMaR1DBBbMhRS1gKNy=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@saharali9175",
+            "authorChannelId": {
+              "value": "UC8EenuoJDNGk_CHngdz1tsw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-08T08:18:18Z",
+            "updatedAt": "2026-09-08T08:18:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "GjPv_obHHuoP2LGkbAPnt2kfuNU",
+      "id": "UgyzVu3ktnxfaGe5pw94AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "WBcQf9qMtbpVCCLzMT2sjb66-XA",
+          "id": "UgyzVu3ktnxfaGe5pw94AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "52:09 why Jamal sound like the Punisher from that meme 💀",
+            "textOriginal": "52:09 why Jamal sound like the Punisher from that meme 💀",
+            "authorDisplayName": "@TheeMoonstar",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/g0gGtqSEk2pT_d77BN10GPfMbWgYe3s-NP5WtEkVzW8mHgG1q7zV35bFZPY7JEIbb4l8yEJ_bw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@TheeMoonstar",
+            "authorChannelId": {
+              "value": "UCET7FJgj-8JX_9ll-rmoltw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 43,
+            "publishedAt": "2026-09-03T19:56:52Z",
+            "updatedAt": "2026-09-03T19:56:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Jb_DctGv_ZBVR4RAw8vrNC2gzX8",
+      "id": "UgzmrHr7B3FsW0EUfxh4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "-LQysIBCzU2Q3LYN8XlQEiP8-zM",
+          "id": "UgzmrHr7B3FsW0EUfxh4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Dog is getting mad 😂😂😂",
+            "textOriginal": "Dog is getting mad 😂😂😂",
+            "authorDisplayName": "@Schrödinger_101",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uUZM9evoJGsn6Sa3Os3rqLBiu3F0UwkGelRvSyZiGuyvX03iVo_0vPOt3gUJAzCAzBcZaFS35w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Schr%C3%B6dinger_101",
+            "authorChannelId": {
+              "value": "UC_cu_ChukMAJdsSDLNm9LxA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-07T09:20:17Z",
+            "updatedAt": "2026-09-07T09:20:17Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "fhzd3cyM_hezAp2RESeXM4CFoQ4",
+      "id": "UgyOFb9ZEe0CVfiiAwZ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "McORk2q10AmLSMV7_ntrbid1GM8",
+          "id": "UgyOFb9ZEe0CVfiiAwZ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "WTH is that was the ending 😂😂",
+            "textOriginal": "WTH is that was the ending 😂😂",
+            "authorDisplayName": "@RuhdevRampersud-ud2bi",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ST8vzlwVp4ohqHwk0h2gT8mQCSPmQ7SMSuUFuuw3s6skkxSPxnXVmRzMkkGtYd1M1EbL9uo2TiE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@RuhdevRampersud-ud2bi",
+            "authorChannelId": {
+              "value": "UC7ZqO0iLVYzc7EC2ghEatgQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-09-03T19:38:18Z",
+            "updatedAt": "2026-09-03T19:38:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "A0E6wn0syfh480fHcUEBJhw-dAc",
+      "id": "UgzAZFTXgx0Vy9atXF54AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "-kodVpJKzrJoAz40P8pqGtmCXG8",
+          "id": "UgzAZFTXgx0Vy9atXF54AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "41:45 I remember when he first got the dog he’s so big now 🥹",
+            "textOriginal": "41:45 I remember when he first got the dog he’s so big now 🥹",
+            "authorDisplayName": "@Jonbobster89",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/1BFI2ESHZjPWUUEmbyku57pdR3tOnaQ2WOHiaDQLZ9P5lmMb-rgRckXaHXe5hiXUqHySDcQOUDg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Jonbobster89",
+            "authorChannelId": {
+              "value": "UCyt6bmFj4iEQxYRH4SYnHMA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-04T13:43:02Z",
+            "updatedAt": "2026-09-04T13:43:02Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "UOSOmvTF2Csez-6GwvQEzo_XthA",
+      "id": "UgzWgRfAS_CRmP8Qw5Z4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "iehaRFmLc9eUuEhLeu2LahBzX_w",
+          "id": "UgzWgRfAS_CRmP8Qw5Z4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Without green apple??",
+            "textOriginal": "Without green apple??",
+            "authorDisplayName": "@Phoen1xTheGoat",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FehLUKrF3EpzRme4bMVvyi72bVPJz4vzmn7KQI2oUJwsADXKRYuF07aoN2AHn7DJcGLXapVK=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Phoen1xTheGoat",
+            "authorChannelId": {
+              "value": "UCQBW9kD3Lskh8wfUu0wXZiQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 12,
+            "publishedAt": "2026-09-03T19:11:04Z",
+            "updatedAt": "2026-09-03T19:11:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gtis-pnnrcXO75s-qb7wDEz1bjs",
+      "id": "UgxVLQxtLZT7iExUMOd4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VMHyErCsoeMd5906txspAD18LuE",
+          "id": "UgxVLQxtLZT7iExUMOd4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "What did I just watch high key",
+            "textOriginal": "What did I just watch high key",
+            "authorDisplayName": "@EfGaming11",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/rAbfXf4pMqFOb3i6_PMbZrAuOCc31yZjcVFzQgWXcJPQqLIagI-xJdnteUX7-n2CMkwsIPhYVw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@EfGaming11",
+            "authorChannelId": {
+              "value": "UCUvEop-DOJMz5EN4y56LLsw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-04T02:04:56Z",
+            "updatedAt": "2026-09-04T02:04:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "x3DzDx8hCcjTYXSpMAyF8A1aH7o",
+      "id": "UgzqxAOkmmOVqe8B6Dt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "i24j7PvBb3MtYcDIrIyevywA168",
+          "id": "UgzqxAOkmmOVqe8B6Dt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "3:05 fucking breaking bad 😳😳😳😳😳",
+            "textOriginal": "3:05 fucking breaking bad 😳😳😳😳😳",
+            "authorDisplayName": "@Sachin_Kumarr604",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kYFNoy7n9E-5Q0KyuQCCERH0BGOE90UnIfJZC7pWy5PmbQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Sachin_Kumarr604",
+            "authorChannelId": {
+              "value": "UC13szsps6azQR8rQdCE6WBA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 16,
+            "publishedAt": "2026-09-03T19:47:57Z",
+            "updatedAt": "2026-09-03T19:47:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7IAgge3l_uVGGLiXjReLxPwmA5A",
+      "id": "UgzfE5qdLNGv409hfvt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Sfalg_hi4So-k7bLkzK7MGtl9yM",
+          "id": "UgzfE5qdLNGv409hfvt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "6:59 holy silly ninja",
+            "textOriginal": "6:59 holy silly ninja",
+            "authorDisplayName": "@Billyblick8457",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/dbThWkUD3gSdW63taUijoY-iajTpgaqovlUk9aSgR72_uduRyO0z6_WFcveYBrLrJPH46DspVqk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Billyblick8457",
+            "authorChannelId": {
+              "value": "UCXP8THSwWvb5AmwPWi7U51Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-09-28T10:44:00Z",
+            "updatedAt": "2026-09-28T10:44:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "nNwYgKMeS70kNyVCYVX-WxZB-JM",
+      "id": "UgwJr57Aeru_iXeof_Z4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "JRqTr-I05NnY54moMmz8ITCtbvY",
+          "id": "UgwJr57Aeru_iXeof_Z4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bro i thought my internet is shit",
+            "textOriginal": "bro i thought my internet is shit",
+            "authorDisplayName": "@fazes1094",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SD2evxnc0DLCOgakNYvrBaU2S6cGcyFo4sC4HE4fZe6ywpUnbpLzV8bjiY-1PRl2oQkaOQIF=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@fazes1094",
+            "authorChannelId": {
+              "value": "UCwy4OyfygIFKjUmKH6S9AZw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 13,
+            "publishedAt": "2026-09-03T19:12:11Z",
+            "updatedAt": "2026-09-03T19:12:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XcsKHYsmXVLsBPS55sTXJGKcDzI",
+      "id": "UgzLg2NUoJtn6rX1Z514AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cxPVlQulupCxfg0a0y4v7zf5DUQ",
+          "id": "UgzLg2NUoJtn6rX1Z514AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "I miss you irl bro",
+            "textOriginal": "I miss you irl bro",
+            "authorDisplayName": "@andikaesbuah",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/pfGSY6nIWMy4PwCu38wFS_lpHm74OTe4rRrbfb97oeVDiZ_DFDn9sUdI3xq-4931jVGRG38p-44=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@andikaesbuah",
+            "authorChannelId": {
+              "value": "UC_W6PHnOO6k4IuMojThz_2w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-04T06:32:29Z",
+            "updatedAt": "2026-09-04T06:32:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "PPKZFJ8cLlT1sApe_yFqec2m-VE",
+      "id": "Ugz1c_9xLvngGrvSLJR4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QEHVcZdWMRoIrG8OhN0P9-zhkGM",
+          "id": "Ugz1c_9xLvngGrvSLJR4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "just when stream getting interesting",
+            "textOriginal": "just when stream getting interesting",
+            "authorDisplayName": "@theorange2735",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lVsbKSF20majqu05uHqQzK_D3Gch3q2Zx5cKaCjvY8oxxI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@theorange2735",
+            "authorChannelId": {
+              "value": "UCYczT9H-2kK_4PwVYCN2kBQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 10,
+            "publishedAt": "2026-09-03T19:12:35Z",
+            "updatedAt": "2026-09-03T19:12:35Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "MH-s9GE_CTG5aEwsxcKV0T_TeGw",
+      "id": "UgxQgiVnuHb_hb98lWR4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4AOhdCYXVpNzoa0eafNAJ4z5Lm0",
+          "id": "UgxQgiVnuHb_hb98lWR4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "Watching this in the night\n👇\n👇\n👇",
+            "textOriginal": "Watching this in the night\n👇\n👇\n👇",
+            "authorDisplayName": "@wantingchryseis7015",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/UMuMygHQ5ZS_srluB-zjFJtNetW_FTsXVVaC1jaWD8I18RlTSLU7hWhnD00lwplEvJj2tHetvg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@wantingchryseis7015",
+            "authorChannelId": {
+              "value": "UC9NwQlEGumwhuPD_o6CAMQw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-05T15:23:48Z",
+            "updatedAt": "2026-09-05T15:23:48Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "FhNPXyQ9BegtUmFjjKhDyOaQLnc",
+      "id": "UgziYY5bJMPvfA7Ak914AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "glOhY5hiOwI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LiYXJs2sMEInXZbj4CKsEdRhi-8",
+          "id": "UgziYY5bJMPvfA7Ak914AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "glOhY5hiOwI",
+            "textDisplay": "bo wtf was that ending son",
+            "textOriginal": "bo wtf was that ending son",
+            "authorDisplayName": "@Arenaxplays-x3n",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Cg6e7vE3eSXPg0JubQHm_FVDttqaVw1qbZB7NdMbhHVISo83jyH_ZXbdrhSQ5YYS4or_SjrUiJE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Arenaxplays-x3n",
+            "authorChannelId": {
+              "value": "UCbJxvVZGC1zAvvWqBt5MyCQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 14,
+            "publishedAt": "2026-09-03T19:11:29Z",
+            "updatedAt": "2026-09-03T19:11:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

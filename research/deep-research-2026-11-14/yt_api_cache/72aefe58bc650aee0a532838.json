@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "vXcHWpYhLipcXWkS5t2mv7FRN0Y",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "i2aeVo8M243LHkhG5IDeTcr1vY8",
+      "id": "UCGy7SkBjcIAgTiwkXEtPnYg",
+      "snippet": {
+        "title": "Andrei Jikh",
+        "description": "I will NEVER contact you for business or promotions (even if it comes from my legit email). I will not use IG, Telegram, or whatsapp to reach out - please ignore and report those accounts. \n\nI'm like Harry Potter - if he was a financial minimalist, did card tricks and worried about money. Biz inquiries: andrei@majikh.com\n",
+        "customUrl": "@andreijikh",
+        "publishedAt": "2017-03-24T00:43:42Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_ldXUfcuEwHnjU5vc9I6i-aTCPS0AuLBajd_RoNKhhHGnY=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_ldXUfcuEwHnjU5vc9I6i-aTCPS0AuLBajd_RoNKhhHGnY=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_ldXUfcuEwHnjU5vc9I6i-aTCPS0AuLBajd_RoNKhhHGnY=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Andrei Jikh",
+          "description": "I will NEVER contact you for business or promotions (even if it comes from my legit email). I will not use IG, Telegram, or whatsapp to reach out - please ignore and report those accounts. \n\nI'm like Harry Potter - if he was a financial minimalist, did card tricks and worried about money. Biz inquiries: andrei@majikh.com\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "488984944",
+        "subscriberCount": "3420000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1480"
+      }
+    }
+  ]
+}

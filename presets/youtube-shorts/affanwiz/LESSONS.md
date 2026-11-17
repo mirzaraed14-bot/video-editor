@@ -25,3 +25,21 @@ Created 2026-11-09 (Short 4). His review notes go here after each check; a lesso
   → `work/splice_hq.py`, proven per shot (|dY|), + the retry-and-gate chain `work/finish_v7.sh` → recipe in `lanes/chat-only/lab-notes.md`.
 - **A one-video theme colour recolours the ACCENT, not the caption base.** v1 swapped the kit's base caption voice to green, so every caption came out green. Fix: base white, emphasis green (his caption rule: white base + coloured emphasis).
   → ENGINE § Format overrides (theme colour) + the job's spec `captions.palette`.
+
+## Short 6 `research-agent` (sequence stage, 2026-11-17)
+- **He asked for "a short on the research agent" and v1 pitched the be-first STAKES with the agent as the answer; he redirected: "no the
+  research agent how to build it why build how it works that angle".** → When he names a subject, the Short is ABOUT that subject (what it
+  is, why, how it works, how to build it), not a stakes story that uses it as the payoff. Ask "is the named thing the subject or the button?"
+  before sequencing. → `projects/claude-gta6-shorts-money/clips/research-agent/SEQUENCE.md` v2 (v1 kept as `SEQUENCE.v1-be-first.md`).
+
+## Short 5 `ai-tools-rant` (build, before his review)
+- **A pause closed on his face is a visible jump even with head tracking and `head_lock`:** the hook's 0.56 s breath and beat 6's two breaths stepped the background 16-40 px (frame pair + `bg_strips`, response over 0.44; below that the strip number is unreliable, look at the frames). → keep the breath (one span) unless the joint sits on a scene change → `work/cut/make_edl.py` of that job.
+- **WhisperX ran 90-150 ms late on segment-first words of a two-telling take, and one word leaked across an EDL edge:** read the real onsets off the 5 ms energy and re-time those words before captions/graphics key off them → `work/cut/bursts.py`, `transcript/words.json` (whisperx copy kept).
+- **The verbatim faster-whisper pass finds false starts the energy pass keeps ("to ... for" after "sell"):** run it on the cut before the build, not after → `work/cut/fw_cut.py`.
+
+## Short 5 `ai-tools-rant` (after the 07:26 check, 2026-11-17)
+- **He swapped the hook to the guru impression + "shut the f*** up", and the claim moved to second.** v1 had the impression first and
+  the advisor moved it behind the claim ("too slow, a scene not a hook"); his read: "the hook isn't that strong … that sets the tone
+  better". → A comic call-out SCENE in his own mocking voice beats a stated claim as the hook on his channel, when trimmed to start AT the
+  mocked line (he cut "I'm seeing so many videos of people saying"); the claim card under the captions carries the claim meanwhile.
+  → `clips/ai-tools-rant/SEQUENCE.md` v3 order. Test on Short 6 and later: does the card-claim + spoken scene hook keep holding?

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "AmXNDJFryBEyL7FDdhqNkNk28WQ",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "qtyoJ9uv9YFjKnpaU-VcR07yK-w",
+      "id": "UCGxjDWAN1KwrkXYVi8CXtjQ",
+      "snippet": {
+        "title": "Think Media",
+        "description": "Watch our FREE YouTube Masterclass  👇\n\nThink Media is a team of content creators committed to bringing you weekly conversations around building your YouTube channel, personal brand, and business with online video. Over the last 10 years, we've created and refined the #1 YouTube Strategy Course in the world - Video Ranking Academy. \n\nOur mission is to help ONE MILLION purpose-driven people go full-time doing what they love and making an impact through the power of video. \n\nWork with us 🤝\n",
+        "customUrl": "@thinkmediatv",
+        "publishedAt": "2010-08-23T23:58:26Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lIxXpTkkck2o_PPlTttDIoyXZJTAxNbJN28Q4vv9cqb20=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lIxXpTkkck2o_PPlTttDIoyXZJTAxNbJN28Q4vv9cqb20=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lIxXpTkkck2o_PPlTttDIoyXZJTAxNbJN28Q4vv9cqb20=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Think Media",
+          "description": "Watch our FREE YouTube Masterclass  👇\n\nThink Media is a team of content creators committed to bringing you weekly conversations around building your YouTube channel, personal brand, and business with online video. Over the last 10 years, we've created and refined the #1 YouTube Strategy Course in the world - Video Ranking Academy. \n\nOur mission is to help ONE MILLION purpose-driven people go full-time doing what they love and making an impact through the power of video. \n\nWork with us 🤝\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "477807206",
+        "subscriberCount": "3540000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "3183"
+      }
+    }
+  ]
+}

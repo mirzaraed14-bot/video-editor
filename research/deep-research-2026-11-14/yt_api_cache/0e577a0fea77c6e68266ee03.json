@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "b-h4cfkQOr1TLXrHf1HGC0L9bHU",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "IbsYMmhc2VfNPLLqttx1WLB4oJw",
+      "id": "UC5fI3kxC-ewZ6ZXEYgznM7g",
+      "snippet": {
+        "title": "Codie Sanchez",
+        "description": "Creating a nation of owners and helping you scale & buy profitable businesses.\n\nI’m the CEO of Contrarian Thinking.\nNYT bestselling author of Main Street Millionaire and bestseller Own or Be Owned. \n→ Owner: Resibrands, BizScout, Main St. Holding Co\n→ Investor in 30+ startups via Contrarian Thinking Capital\n\nThis channel is your no-gatekeeping playbook for building wealth through real businesses.\nLet’s take back Main Street.\n",
+        "customUrl": "@codiesanchezct",
+        "publishedAt": "2016-04-13T17:41:35Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/yFw8DI2FmldbPj4_RJy15oPzxI7oos16H2LLJ62Ow9EtdjwXpSgFbhrFLq5VcBWvTUWTf-ac=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/yFw8DI2FmldbPj4_RJy15oPzxI7oos16H2LLJ62Ow9EtdjwXpSgFbhrFLq5VcBWvTUWTf-ac=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/yFw8DI2FmldbPj4_RJy15oPzxI7oos16H2LLJ62Ow9EtdjwXpSgFbhrFLq5VcBWvTUWTf-ac=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Codie Sanchez",
+          "description": "Creating a nation of owners and helping you scale & buy profitable businesses.\n\nI’m the CEO of Contrarian Thinking.\nNYT bestselling author of Main Street Millionaire and bestseller Own or Be Owned. \n→ Owner: Resibrands, BizScout, Main St. Holding Co\n→ Investor in 30+ startups via Contrarian Thinking Capital\n\nThis channel is your no-gatekeeping playbook for building wealth through real businesses.\nLet’s take back Main Street.\n"
+        }
+      },
+      "statistics": {
+        "viewCount": "432390001",
+        "subscriberCount": "2280000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1128"
+      }
+    }
+  ]
+}

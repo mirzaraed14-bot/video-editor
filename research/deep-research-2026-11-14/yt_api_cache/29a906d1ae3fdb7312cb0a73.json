@@ -1,0 +1,54 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "yUtpyKKP9GKmE0G2sgiwPzOkh1Q",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "xVzNmTbnCxf3-8o3iC3hX3gu4Js",
+      "id": "UCvZuCs_n15U7eb7yuJXEi_w",
+      "snippet": {
+        "title": "King Of Pop Edits",
+        "description": "👑 Michael Jackson Fan Page | The King of Pop\nDedicated to his timeless music & legacy ❤️",
+        "customUrl": "@kingpopedits",
+        "publishedAt": "2026-03-25T04:37:43.812209Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/4p4HqcGIcuePZ1IUbfsZcg9-kZ3WkG0cvvB2jIYtsfBK-bNK4MwOXlLmJrF40lXCtEvVeFyM=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/4p4HqcGIcuePZ1IUbfsZcg9-kZ3WkG0cvvB2jIYtsfBK-bNK4MwOXlLmJrF40lXCtEvVeFyM=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/4p4HqcGIcuePZ1IUbfsZcg9-kZ3WkG0cvvB2jIYtsfBK-bNK4MwOXlLmJrF40lXCtEvVeFyM=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "King Of Pop Edits",
+          "description": "👑 Michael Jackson Fan Page | The King of Pop\nDedicated to his timeless music & legacy ❤️"
+        }
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUvZuCs_n15U7eb7yuJXEi_w"
+        }
+      },
+      "statistics": {
+        "viewCount": "139580774",
+        "subscriberCount": "130000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "724"
+      }
+    }
+  ]
+}

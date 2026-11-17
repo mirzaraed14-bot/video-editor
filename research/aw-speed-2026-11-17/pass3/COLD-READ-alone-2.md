@@ -1,0 +1,13 @@
+# Cold read 2: SEQUENCE-alone.md (17 Nov 2026)
+
+Verdict first: the page opens with NO PICK, clearly. Most first-read items are fixed. Remaining problems, most serious first:
+
+1. CONFIRMED, missed proof and freshness: `api/v_fr_hime.json` lists "Hi Me In 5 Years" (2020, 152.2M views) and "Hi Me In 10 Years" (Oct 2025, 77.6M) next to "Hi Me In 3 Years". The page names only the 23.7M one and calls the 18-year-old's message a "fresh join". Fix: one line saying the "Hi Me" series is Speed's biggest proven format, then say why the ~110K still holds.
+2. CONFIRMED, beat 2 does not fit its slot. The source spans are 3.2 s (10457.9-10461.1) plus 14.6 s (10500.7-10515.3), about 18 s, in a 9 s slot (3-12 s). Words in 10500.7-10515.3 run 10506.0 "alone" then a lone "I" at 10509.9, then 10514.3 "feel like nobody understands me". The quote hides this (the "I" is a false start). Fix: list the exact kept words and times, show the pause that is cut, and re-time the 27 s.
+3. CONFIRMED, implied reply is still there. Beats 1, 2 and 5 are built as hope, then "I feel alone", then the same hope. "Having it all didn't stop the loneliness" and "after the viewer has heard him at 20" tell the viewer the 20-year-old shows the hope failed. Fix: add one on-screen line that the 2023 message was sealed until 2026, and drop the "didn't stop" sentence or call it a viewer reading.
+4. CONFIRMED, "Chat" vs "Tap". The word file has "Tap" at 10538.9. Flagged on the page, but the quote still prints "[Chat]". Fix: print "Tap/Chat?" until checked by ear, or cut beat 4.
+5. PLAUSIBLE, unsupported counts: "More than 12 different moments in that frame are already viral" and "10 of our 15 MJ winners open on a question" are not in the files I read. Fix: list the 12 with views, or say "I did not count 12".
+6. CONFIRMED, the "12 beats" ask is answered only by "I can't use them". Honest, but the owner's own test (12 viral beats, then stitch) fails for this Short. Fix: say that outright in one line in the first section.
+7. CONFIRMED, numbers match: 2,743,152; 6,515,703; 3,362; 501; 586,824 (under 224.5M); 159,822 (under 75.9M); 35,479; 25,820; 5,446; 920,185; 24,425. IG 381,227 and 260,472 match the run log only. "Hi Me" (2023) 23.7M not re-checked.
+8. CONFIRMED, quotes and source order match the ASR: hook 1:30.7-1:32.7, beat 3 0:14.4-0:20.9, "I pray" correctly dropped.
+9. Plain words: "OURS", "PROVEN", "the BANNED pattern", "frame", "middle", "centre", "HARD CUT", "gates" are insider terms. "It is below for your call, not as a pick" reads oddly. Fix: say "my best guess is 110K" and "an idea you can still choose".

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "KYsZcIIf4lnFnHsjcl_rOdfe2q0",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "54zofgkRfS5xgQ5cljPKUnZq980",
+      "id": "UC9PIn6-XuRKZ5HmYeu46AIw",
+      "snippet": {
+        "title": "Barely Sociable",
+        "description": "Hi I’m Barely Sociable,\n\nI create analysis videos for the odd corners of the internet.",
+        "customUrl": "@barelysociable",
+        "publishedAt": "2019-03-28T04:20:55Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/EBw3s2N9UtKoxQwv2foXi3HCb7Ae8NpXIU53_6LPtr2EdSr1A5T8kl6UK-r3trhReUgl2Hj-5kE=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/EBw3s2N9UtKoxQwv2foXi3HCb7Ae8NpXIU53_6LPtr2EdSr1A5T8kl6UK-r3trhReUgl2Hj-5kE=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/EBw3s2N9UtKoxQwv2foXi3HCb7Ae8NpXIU53_6LPtr2EdSr1A5T8kl6UK-r3trhReUgl2Hj-5kE=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Barely Sociable",
+          "description": "Hi I’m Barely Sociable,\n\nI create analysis videos for the odd corners of the internet."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "93852488",
+        "subscriberCount": "1380000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "36"
+      }
+    }
+  ]
+}

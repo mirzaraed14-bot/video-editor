@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "EpOizhj-4Q6vmuPS3Tw4X29YKOI",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "NaOE3cW0bnlFyD5UP3oGx6aCj0M",
+      "id": "UCQpPo9BNwezg54N9hMFQp6Q",
+      "snippet": {
+        "title": "Nischa",
+        "description": "I’m a former Investment Banker (with an accountancy qualification) and on this channel we explore all things personal finance, self development and business\n\nReserve your seat for my free investing workshop: https://link.nischa.me/investytb\n",
+        "customUrl": "@nischa",
+        "publishedAt": "2021-12-04T12:32:14.456169Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/UTzsuVUDKlGFKeO3ffJoqNnbUAEArzvf7bUaPNmNvRaOwSRJ7rLbvlthsI2rkcVEWHx5kkAoZm8=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/UTzsuVUDKlGFKeO3ffJoqNnbUAEArzvf7bUaPNmNvRaOwSRJ7rLbvlthsI2rkcVEWHx5kkAoZm8=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/UTzsuVUDKlGFKeO3ffJoqNnbUAEArzvf7bUaPNmNvRaOwSRJ7rLbvlthsI2rkcVEWHx5kkAoZm8=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Nischa",
+          "description": "I’m a former Investment Banker (with an accountancy qualification) and on this channel we explore all things personal finance, self development and business\n\nReserve your seat for my free investing workshop: https://link.nischa.me/investytb\n"
+        },
+        "country": "GB"
+      },
+      "statistics": {
+        "viewCount": "148024802",
+        "subscriberCount": "2270000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "284"
+      }
+    }
+  ]
+}

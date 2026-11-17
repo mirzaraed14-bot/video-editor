@@ -1267,3 +1267,15 @@ Always check the EDL bash can actually see before re-splicing.
   paging Premiere out. Batch 4 still OOM'd on the second clip; **batch 1 ran both files (20 min of audio) in ~4.5 min**. Wrapper with both locks
   + a commit-headroom check: `projects/claude-gta6-shorts-money/work/asr_queue.sh`.
 - The per-burst pass (`review/tools/bursts.py`) and the review ASR tools of that job are patched the same way (GPU int8_float16, no CPU).
+
+## 2026-11-17 · a manual import failed on a healthy file: low commit + a cached importer failure (mj-the-dad-he-never-had v3, ABW11)
+- **Symptom:** Affan's drag of `The Dad Michael Never Had.mov` (H.264 High CRF 5 + pcm_s24le, byte-for-byte the same header layout and
+  stsd as the AW finals already in ABW11) would not import. ffprobe and a full decode were clean.
+- **Cause:** the System log's Resource-Exhaustion-Detector event 2004 fired at 02:09:01, the same second as the import: commit
+  97.94 / 97.96 GB (Premiere 29.4 GB after a long session, Media Encoder 11.3 GB idle since 14 Nov, Photoshop 4.9 GB). Every
+  importer failed, and Premiere wrote the failures to `%APPDATA%\Adobe\Common\Media Cache Files\<name>-<guid>.ims`. Normally one .ims per
+  file is ~3 KB with `"mOpenResult":0`; here all three were ~200 B, with the H.264 importer's result at -1609629690.
+- **Diagnose:** `Get-WinEvent System / Microsoft-Windows-Resource-Exhaustion-Detector` at the import time, plus the `<name>-*.ims`
+  sizes and `mOpenResult`.
+- **Fix:** give the file a NEW name (a rename is enough, no re-encode) so Premiere probes it fresh, and free commit first
+  (restart a bloated Premiere, close an idle Media Encoder). The stale .ims was left in place.

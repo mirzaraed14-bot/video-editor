@@ -1,0 +1,35 @@
+wait mem: phys 2.1 GB, commit 3.8 GB
+wait mem: phys 1.8 GB, commit 3.3 GB
+wait mem: phys 2.5 GB, commit 3.4 GB
+wait mem: phys 2.0 GB, commit 2.0 GB
+wait mem: phys 2.1 GB, commit 2.4 GB
+wait mem: phys 2.2 GB, commit 2.8 GB
+wait mem: phys 2.1 GB, commit 2.4 GB
+wait mem: phys 2.6 GB, commit 2.6 GB
+wait mem: phys 2.6 GB, commit 2.9 GB
+wait mem: phys 2.6 GB, commit 3.1 GB
+wait mem: phys 2.6 GB, commit 2.7 GB
+wait mem: phys 2.5 GB, commit 2.6 GB
+wait mem: phys 3.3 GB, commit 2.7 GB
+wait mem: phys 3.6 GB, commit 3.1 GB
+wait mem: phys 3.6 GB, commit 3.1 GB
+wait mem: phys 3.8 GB, commit 3.6 GB
+wait mem: phys 3.1 GB, commit 2.6 GB
+wait mem: phys 2.3 GB, commit 1.3 GB
+wait mem: phys 2.6 GB, commit 1.8 GB
+wait mem: phys 3.2 GB, commit 2.3 GB
+wait mem: phys 2.2 GB, commit 0.8 GB
+wait mem: phys 3.2 GB, commit 1.2 GB
+wait mem: phys 2.6 GB, commit 1.7 GB
+wait mem: phys 1.5 GB, commit 0.4 GB
+wait mem: phys 0.0 GB, commit 0.8 GB
+Traceback (most recent call last):
+  File "X:\Claude Projects\video-editor-client\video-editor\research\aw-speed-2026-11-17\tools\scout_asr.py", line 74, in <module>
+    for s in segs:
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\faster_whisper\transcribe.py", line 1213, in generate_segments
+    ) = self.generate_with_fallback(encoder_output, prompt, tokenizer, options)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\faster_whisper\transcribe.py", line 1446, in generate_with_fallback
+    result = self.model.generate(
+             ^^^^^^^^^^^^^^^^^^^^
+MemoryError: bad allocation

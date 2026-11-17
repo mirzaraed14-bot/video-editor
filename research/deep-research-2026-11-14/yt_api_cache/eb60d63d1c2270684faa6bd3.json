@@ -1,0 +1,861 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "mEsrBjKq0eWv703OcgylsgHxcBk",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1Dc01CQ0lBRUZSZTMwVGdhdUFFS3N3RUkyRjhRZ0FRWUJ5S29BZHRwYjhLT2tsTXBjZ0VMNDJpQ1pSUkU4U2txZ3M5UzNoVHRGSk5VVTBzUUZsZlFYMjBEU3NTSkVvUmVod2dUTHF1cG0yLWcyakN1QWtGZ1FwQ1pBSmNuZEFrV2gxMG02U2tkdHh6QzVpTDBLb1NvS21lV2dnTnR5akVlUW9fT0J1cktGQkZpY2dTN3AtNFl5ZzlRRzhGdEVSZGdlWDc5SHNkY1hlNXhWY09jc1lJcV9kd0pIQS1NZk8zUWtNR1gxSmw4R0lKNXpuQUlROUZ2ZEtSeTR3NndjQWxJMkZoSkNSQVpFZ1VJaHlBWUFCSUZDSVlnR0FBU0JRaUpJQmdBRWdVSXdDQVlBQklGQ0lnZ0dBQVNCUWlvSUJnQUVnY0loU0FRQ2hnQkVnVUl1eUFZQUJJSENJUWdFQmtZQVZBQVdBRQ==",
+  "pageInfo": {
+    "totalResults": 25,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NusUn0IN0ZIpjBim-ZjE1B-23PU",
+      "id": "UgzRamtihdlRLJqEyw14AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Cw4ehjMOiFZcJNvT_k1kAcQTJXQ",
+          "id": "UgzRamtihdlRLJqEyw14AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "At 20 yrs old, thinking about helping and caring the poor and unfortunate children, he is a very good example to other youngsters who are rich and fortunate. God Bless you, Prince.",
+            "textOriginal": "At 20 yrs old, thinking about helping and caring the poor and unfortunate children, he is a very good example to other youngsters who are rich and fortunate. God Bless you, Prince.",
+            "authorDisplayName": "@kinalanau5438",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lH4qC_8-2zAiRLqJqpw-Fm6fdTyi2UgWmyWMN3cB4=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kinalanau5438",
+            "authorChannelId": {
+              "value": "UCpWXXFsEX6aIjSLZuTrImhg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 726,
+            "publishedAt": "2018-11-04T04:35:37Z",
+            "updatedAt": "2018-11-04T04:35:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "D8ay1het6IRPETkt1OxTHeqU2So",
+      "id": "Ugwju-bS45OHdCbFkO54AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "A4e-CB30Ym1orCm5J0I3v6PgRK4",
+          "id": "Ugwju-bS45OHdCbFkO54AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Literally when Michael said :when my kids are crying all I have to do is dance.And they stop crying.\"My heart melted",
+            "textOriginal": "Literally when Michael said :when my kids are crying all I have to do is dance.And they stop crying.\"My heart melted",
+            "authorDisplayName": "@rebeka0000",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/M32lq60fBfgLx9k6Fs2vSRyF2XII0ADyTa2DYw5DhmfAMfmqKBnwmOsVqQDCDXara8d_BToIDQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rebeka0000",
+            "authorChannelId": {
+              "value": "UCcdzlfp4-8eaurCL5bBij7w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2990,
+            "publishedAt": "2019-06-02T22:20:01Z",
+            "updatedAt": "2019-06-02T22:20:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 54,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "LEB3WpokjGPKBu5oFPht1EET4CI",
+      "id": "Ugzw2gyEERyYzcU2xL94AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "PvLNPJ-kot1rY5ZDJIL-3ZXDj5M",
+          "id": "Ugzw2gyEERyYzcU2xL94AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Such a mature, friendly, handsome young man.  Michael would be proud.",
+            "textOriginal": "Such a mature, friendly, handsome young man.  Michael would be proud.",
+            "authorDisplayName": "@contessachristabella",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lqTJeRuMPKR7q5pPO-I6T6KRNK1vEyh5W3wuMNfr0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@contessachristabella",
+            "authorChannelId": {
+              "value": "UCwYA57JKN0qfltVqQJ5gwWw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2475,
+            "publishedAt": "2019-03-23T15:12:41Z",
+            "updatedAt": "2019-03-23T15:12:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 43,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "U3TiziR9bnVwT6FDK6ZXMQ29BQI",
+      "id": "UgwgnfjukC5tWLEgqYJ4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "dIA_xgYSL2DIu1zeOh4a27IEbw0",
+          "id": "UgwgnfjukC5tWLEgqYJ4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "His Dad would have been so proud of him. They were the apples of his eyes",
+            "textOriginal": "His Dad would have been so proud of him. They were the apples of his eyes",
+            "authorDisplayName": "@pastorbrightamegazo9231",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_neKsWQjlDhL54bvaoc0rYClkSS0SLTmg2ShJTW8JPPLQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@pastorbrightamegazo9231",
+            "authorChannelId": {
+              "value": "UCqUTE1o32FT_u6wVqLyFP5g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 321,
+            "publishedAt": "2019-09-23T07:31:02Z",
+            "updatedAt": "2019-09-23T07:31:02Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "P_UxSMIHSsZbp8NWmZQEL_NRT8A",
+      "id": "UgxXxC6AOkgo-Ff9ZGh4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zD6JwG3GODJcFiQ0HKQ2YC_z_cQ",
+          "id": "UgxXxC6AOkgo-Ff9ZGh4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "For all the ones that destroyed MJ, look at his kids and God have mercy on you.",
+            "textOriginal": "For all the ones that destroyed MJ, look at his kids and God have mercy on you.",
+            "authorDisplayName": "@mandolaymandooolay8901",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lLvBG_CK6Z6xFcyBoa5sfFQl_8ZZHpZuYCyaebw-g27Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mandolaymandooolay8901",
+            "authorChannelId": {
+              "value": "UC8ydTdNih4ug2ErBxzZxJ-A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1091,
+            "publishedAt": "2020-02-29T03:22:15Z",
+            "updatedAt": "2020-02-29T03:22:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 33,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kBYDbY7blFevtShGZZZi-fgIDOY",
+      "id": "Ugy3tpUXmPSjQsV8J8h4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "qErkIKTCPJ1cRuCQXJBtu-x0cQ4",
+          "id": "Ugy3tpUXmPSjQsV8J8h4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Say what you want about Michael, he has raised this young man to recognize and work in his purpose. I love his explanation of the \"King's Son\".",
+            "textOriginal": "Say what you want about Michael, he has raised this young man to recognize and work in his purpose. I love his explanation of the \"King's Son\".",
+            "authorDisplayName": "@tralaynemdavis1152",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mX66lxhsZIuwT7mnV4muigsvPYYoRjX2yo7E-j-KI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@tralaynemdavis1152",
+            "authorChannelId": {
+              "value": "UCxqatnB4rNTf7Ntvu6se3fA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 832,
+            "publishedAt": "2019-06-26T04:26:45Z",
+            "updatedAt": "2019-06-26T04:26:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RTFRf-g3_oH3ZPWTatvQ5aDsD6g",
+      "id": "UgwjjydD9fTg1ISNuKd4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "PmYc7l9bir6En0pjUdEP5gGDgpE",
+          "id": "UgwjjydD9fTg1ISNuKd4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Bible says by their fruits you shall know them. MJ's kids behaviour tells he was a good man. Such cultured kids.",
+            "textOriginal": "Bible says by their fruits you shall know them. MJ's kids behaviour tells he was a good man. Such cultured kids.",
+            "authorDisplayName": "@nyekay615",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lwN2iqP1C5-vuDCrjCfLmicJGbjUqbT7BdIEOQlkKwHSU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nyekay615",
+            "authorChannelId": {
+              "value": "UCx-MqM40gTruwqF3e21qsNA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1891,
+            "publishedAt": "2018-09-13T18:08:23Z",
+            "updatedAt": "2018-09-13T18:08:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 57,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4kBZY0Dw8Mq8pwJ6BNDUYgXt1U0",
+      "id": "UgwBJjYO3FzHukSZ5GF4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "r_wdcZ28qH_ukkvbWJNP_uqHSTs",
+          "id": "UgwBJjYO3FzHukSZ5GF4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "One can tell Micheal raised his children with love and taught them to care for others.",
+            "textOriginal": "One can tell Micheal raised his children with love and taught them to care for others.",
+            "authorDisplayName": "@intertubicular",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/irfOjc0xDg4dr8fMQRxg6eShAiea_idIa0cpwfrPfpFcckCEDkCXC9PZeeU_8b0CcFpF_PfumYo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@intertubicular",
+            "authorChannelId": {
+              "value": "UCxWs6Uws2gKbwLHSkisYmnQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 23,
+            "publishedAt": "2025-03-05T23:50:26Z",
+            "updatedAt": "2025-03-05T23:50:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-wWSNNvcbdbFmd1HyH1l3XeUQgk",
+      "id": "UgiwPkKSeNPzSHgCoAEC",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IuPMxdzlrSvF3zpxTWOofzPG-Co",
+          "id": "UgiwPkKSeNPzSHgCoAEC",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Some people don't realize that MJ was a regular man who happened to be very talented at dancing, acting, singing and writing songs.",
+            "textOriginal": "Some people don't realize that MJ was a regular man who happened to be very talented at dancing, acting, singing and writing songs.",
+            "authorDisplayName": "@clairelegrand3604",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_moTiscZkBBBSp-yKArQlMd_cD6uecavId7fBGywolbFg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@clairelegrand3604",
+            "authorChannelId": {
+              "value": "UCMAUDho3tBGEZBUu4Qwpf0g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2572,
+            "publishedAt": "2017-03-06T18:10:15Z",
+            "updatedAt": "2017-03-06T18:10:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 180,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4EBcQ0Ak5oa1qhjANOnXZaqeGt0",
+      "id": "Ugy0u7AayVuCD_S0Bat4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IyOSsHvecV5nthXFMBSMCXFdKng",
+          "id": "Ugy0u7AayVuCD_S0Bat4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "What a lovely human being. You can see his dad has taught him to be loving and kind.",
+            "textOriginal": "What a lovely human being. You can see his dad has taught him to be loving and kind.",
+            "authorDisplayName": "@mollymathias1157",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mw-NwMCjNfJAU196Ze3XhLxDjbj8-iO8y4I-6tQ5mF6os=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mollymathias1157",
+            "authorChannelId": {
+              "value": "UC3dUNO00OOWgjWqaSsiVeOA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1871,
+            "publishedAt": "2018-08-01T09:23:30Z",
+            "updatedAt": "2018-08-01T09:23:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 53,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "5IqRSLmtMelGxteY2zYAgzaASKU",
+      "id": "UgxSouvS97WjlUNvKuR4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "GfbIWgGCWjpALRlhMwiqeE8VWGM",
+          "id": "UgxSouvS97WjlUNvKuR4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "He is the living and walking proof that Micheal Jackson is very loving, humble and good person. Keep it up Prince.",
+            "textOriginal": "He is the living and walking proof that Micheal Jackson is very loving, humble and good person. Keep it up Prince.",
+            "authorDisplayName": "@allyocampo5633",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/7vWGracZpAhMzn3fGh96y1u6yE9qriIwfDO1Zmf3dxkZ8zFfUiA6KfS0vepsdQ5ImX55d2Vahw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@allyocampo5633",
+            "authorChannelId": {
+              "value": "UCiEiPuH_zPQS_jfIc5ByC-A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 594,
+            "publishedAt": "2019-01-16T05:29:16Z",
+            "updatedAt": "2019-01-16T05:29:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 14,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9VF5Ooif1luNPYb-UfO6-d0kO3s",
+      "id": "UgxUbqLZR71zCVhcLf54AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IPVVVqLvsG6FJmNCnAznDfXLoKg",
+          "id": "UgxUbqLZR71zCVhcLf54AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "I really like \"Prince\", he appeared to be well thinking, smart, kind and very esay going with people. He was even more relaxing than the interviewer.",
+            "textOriginal": "I really like \"Prince\", he appeared to be well thinking, smart, kind and very esay going with people. He was even more relaxing than the interviewer.",
+            "authorDisplayName": "@jacquelinelam3022",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nRjwGISKqEN79ViU698jtfCAmf3OTwfbu1VfFWAUU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@jacquelinelam3022",
+            "authorChannelId": {
+              "value": "UC5CbmFAKfV_NNK7LWd7mObw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 906,
+            "publishedAt": "2019-05-12T17:40:03Z",
+            "updatedAt": "2019-05-12T17:40:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 19,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "irWMH8PXKJp523uO777D-FrMk2Q",
+      "id": "UgwwMYaEZGsFDQZHceV4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VrJ6DfdVMlD8WK8U8i6_0gpKVe8",
+          "id": "UgwwMYaEZGsFDQZHceV4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "So many people dogged MJ... Look at his children's actions. That's how you know he was a good man. His father was there and taught him well; right from wrong. MJ was a living example.",
+            "textOriginal": "So many people dogged MJ... Look at his children's actions. That's how you know he was a good man. His father was there and taught him well; right from wrong. MJ was a living example.",
+            "authorDisplayName": "@JewelzFin",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/zJ5tEGRjQf-8LtVyiiNv_U3jcXevTBI_5mzP7Q0Mn5S3y-JiB1HavA96KdGHXqmCn27iKKewcQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JewelzFin",
+            "authorChannelId": {
+              "value": "UCPQRFx31-fahLbW72XOG0MQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 883,
+            "publishedAt": "2017-08-29T19:56:22Z",
+            "updatedAt": "2017-08-29T19:56:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 34,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jxHm4eY1oMh6aKeF32DWRhbiR3A",
+      "id": "UgykK1ATphn_ulbreOh4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "OmMIm4rHIyz-4mhEhyUe4sMaGYg",
+          "id": "UgykK1ATphn_ulbreOh4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "\"A title is earned but a name is given.\" That's really insightful. This is a loving son and respectful young man. I'm glad he's doing so well. He'll earn his own title and it'll be just as fitting as his father's.",
+            "textOriginal": "\"A title is earned but a name is given.\" That's really insightful. This is a loving son and respectful young man. I'm glad he's doing so well. He'll earn his own title and it'll be just as fitting as his father's.",
+            "authorDisplayName": "@MarcelLWalker",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mVsE6uZAZFJZAXnhZ76541c1WECEUs8xOfDInc4KyjPYAR=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MarcelLWalker",
+            "authorChannelId": {
+              "value": "UCAElNoG1caiNdceuMI7Z-9A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 402,
+            "publishedAt": "2018-07-16T20:24:11Z",
+            "updatedAt": "2018-07-16T20:28:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sTc1i-uxZi9oIoSIxC4imGVs14c",
+      "id": "UgxjkgaVSVeVcSV7Exh4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VciB3XdZKDKxwdYLSXldXZi4Dk8",
+          "id": "UgxjkgaVSVeVcSV7Exh4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "It's so astonishing to see a son still honored his dad even in death",
+            "textOriginal": "It's so astonishing to see a son still honored his dad even in death",
+            "authorDisplayName": "@eltonkpukuyou4141",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kQcmurHit6IGY_jHa9uOaS3swhomAGNfL2OVsEvfbcfbM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@eltonkpukuyou4141",
+            "authorChannelId": {
+              "value": "UCBv-yMde6x4mpsjM1Lckwjw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 516,
+            "publishedAt": "2019-03-13T21:25:45Z",
+            "updatedAt": "2019-03-13T21:25:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 21,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jL9PAzlgKoODcG_jB0NfJ5bTbY4",
+      "id": "Ugwbw8yisqcGJLNH4654AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VNR_86dvJFhRQcYdXOIuHBOkiGg",
+          "id": "Ugwbw8yisqcGJLNH4654AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "and look how disrespectful the media is now again.",
+            "textOriginal": "and look how disrespectful the media is now again.",
+            "authorDisplayName": "@chillachinchilla5330",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nawIB8kuoQQkS8OvLmk0NhsBvvlW5IksyR9itXEE9bNg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@chillachinchilla5330",
+            "authorChannelId": {
+              "value": "UC9fSQ4QTnA5EggL99nDzcsA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 172,
+            "publishedAt": "2019-06-16T16:58:36Z",
+            "updatedAt": "2019-06-16T16:58:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1R5egdSjTiyCPZisYzRq8gar-bY",
+      "id": "UghSiwE3FNFjCXgCoAEC",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ILkfT2CjTAdflFnE-43JFZC-oYM",
+          "id": "UghSiwE3FNFjCXgCoAEC",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "I keep forgetting Prince is the same age as myself whenever I hear him speak. He is so incredibly well spoken, intelligent, well mannered and radiates such confidence. Same goes for Paris. All three kids seem to be so respectful and well grounded.",
+            "textOriginal": "I keep forgetting Prince is the same age as myself whenever I hear him speak. He is so incredibly well spoken, intelligent, well mannered and radiates such confidence. Same goes for Paris. All three kids seem to be so respectful and well grounded.",
+            "authorDisplayName": "@Heeylina",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kO5O5fT7w4_8SMefDBHYcymr97qM1ktBuM3q5hQ8hF1js=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Heeylina",
+            "authorChannelId": {
+              "value": "UCEddoNxIW4Ck6H9fMgMKWgw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 825,
+            "publishedAt": "2017-03-06T21:48:13Z",
+            "updatedAt": "2017-03-06T21:48:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-40iUqtEEshbDwXKVAh7rQn_OW8",
+      "id": "UggB1sj7OetaEngCoAEC",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ig3ysvV4g6ppL3YrNDwQX6n1oq0",
+          "id": "UggB1sj7OetaEngCoAEC",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Intelligent, articulate, well presented, thoughtful and humane. What a credit to his father and family.",
+            "textOriginal": "Intelligent, articulate, well presented, thoughtful and humane. What a credit to his father and family.",
+            "authorDisplayName": "@helenahayes6150",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l6StND65AQFxYI_226DH8v5WBG6kurIv0EGC9pWVQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@helenahayes6150",
+            "authorChannelId": {
+              "value": "UCGl143Aj93_nxIQSohFc4kg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2059,
+            "publishedAt": "2017-05-26T12:06:19Z",
+            "updatedAt": "2017-05-26T12:06:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 53,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lrDn02wlU_ICMyqcLle3kNmjEMg",
+      "id": "Ugz4waOikeibvUeHnkZ4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VKRbRMt2jtlUu7BRzMgL_yGfpSk",
+          "id": "Ugz4waOikeibvUeHnkZ4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "He's so likable, so very humble, well spoken, and incredibly \"one of us\". May Prince Michael go on to do wonderful things with the blessings he's been given.",
+            "textOriginal": "He's so likable, so very humble, well spoken, and incredibly \"one of us\". May Prince Michael go on to do wonderful things with the blessings he's been given.",
+            "authorDisplayName": "@pamelamartin1170",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n8rokUq3zcng1SKGleUh_gB5xYK14TTjL82EIQUBw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@pamelamartin1170",
+            "authorChannelId": {
+              "value": "UCfcmjb_iAkzGQiWpMou8DnQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 733,
+            "publishedAt": "2019-03-08T00:02:21Z",
+            "updatedAt": "2019-03-08T00:02:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "flQGf5sJYluHlXK0usiLjvMpHiE",
+      "id": "UgwKdt7654XtJjQ_pXd4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "TYNMrai90nAMcjMMo_cHRfhomPA",
+          "id": "UgwKdt7654XtJjQ_pXd4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "He's so eloquent and poised. MJ would be so proud. Happy that he’s continuing his father’s legacy and helping those in need. Great things are destined for this young man.",
+            "textOriginal": "He's so eloquent and poised. MJ would be so proud. Happy that he’s continuing his father’s legacy and helping those in need. Great things are destined for this young man.",
+            "authorDisplayName": "@Mike-mg2hf",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_m-wvAwKyNneCMdoErnw329VPrjfATdBmyawkiFTmB0Tmcb0mbPWFH98RzurWL1m0u29A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Mike-mg2hf",
+            "authorChannelId": {
+              "value": "UCibT6o1GD_762l9HlaXBNSw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 60,
+            "publishedAt": "2020-11-16T22:17:12Z",
+            "updatedAt": "2020-11-16T22:19:31Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "5VwyiOj6JJnz-gjHPmEID-qedcc",
+      "id": "UgyWL3B35XmACE-EiBR4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "N4WR5Y9JoJ9KsvBTX6O9JP6oC1I",
+          "id": "UgyWL3B35XmACE-EiBR4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Michael Jackson would be so proud of this young man. R.I.P King of Pop.",
+            "textOriginal": "Michael Jackson would be so proud of this young man. R.I.P King of Pop.",
+            "authorDisplayName": "@vickieclark5931",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kqzaa_cMMgYZrWFKSvmBNRv4BHGjmP5rKxSE4JX6M=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vickieclark5931",
+            "authorChannelId": {
+              "value": "UCUL5dl4RS8a4N1OIObb8MXQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 101,
+            "publishedAt": "2018-06-13T01:54:45Z",
+            "updatedAt": "2018-06-13T01:54:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wZioqUmXYJdo5gXymzS1F3k9vKE",
+      "id": "UgzCX1wpfrYHxgrG03p4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "E1r29_DGNldKGVsUrWlyf1dc3y4",
+          "id": "UgzCX1wpfrYHxgrG03p4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "You immediately notice how his face lights up right at the moment he begins to talk about his father💛❤💛",
+            "textOriginal": "You immediately notice how his face lights up right at the moment he begins to talk about his father💛❤💛",
+            "authorDisplayName": "@leia4954",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kljh194W0fyOjEpdBnRrpKD4q76nGlBRZYo6mgeqgsTC8mk-TjiIek9rEQ1FF9h-J10g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@leia4954",
+            "authorChannelId": {
+              "value": "UC8wrLGkO37soyYrOA3cL99Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 835,
+            "publishedAt": "2018-04-18T02:23:17Z",
+            "updatedAt": "2018-04-18T02:23:17Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 16,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wcs8h_fQOXsloKcsrti_UcawddQ",
+      "id": "Ugg-qq609UNE_3gCoAEC",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "J-ilvWPNuNUzC_OpYF6y83FPNe8",
+          "id": "Ugg-qq609UNE_3gCoAEC",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Michael raised some truly compassionate and respectful children. He is looking down proudly at them",
+            "textOriginal": "Michael raised some truly compassionate and respectful children. He is looking down proudly at them",
+            "authorDisplayName": "@Toltecgrl",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_njQ2jMFOKPzxdXpehc7azdQg96uqptCYdI0WxqF5no6j4=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Toltecgrl",
+            "authorChannelId": {
+              "value": "UCY5Rz21K1SHKp59JAk3xIBQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 445,
+            "publishedAt": "2017-06-05T00:25:42Z",
+            "updatedAt": "2017-06-05T00:25:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 11,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "U2wUNEE9M4w7r2Og6kXxlBcLLhA",
+      "id": "UgzXNYhDGJRskNN8NHx4AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "80T9bBcd9uahcqYUXSimgYT0Bec",
+          "id": "UgzXNYhDGJRskNN8NHx4AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "Michael Jackson donated every penny he got from Pepsi to the burn victims at the hospital when he himself got burned during Pepsi commercial shoot. What an INCREDIBLE. \nHuman being🙏🙏🙏🙏",
+            "textOriginal": "Michael Jackson donated every penny he got from Pepsi to the burn victims at the hospital when he himself got burned during Pepsi commercial shoot. What an INCREDIBLE. \nHuman being🙏🙏🙏🙏",
+            "authorDisplayName": "@sons1869",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nuNlfceTDiBSTQUhxQ56YDJFbBu1DjRfTpJMFP6ck9D0x3tsglom8eMUA2blBLpRVU8w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sons1869",
+            "authorChannelId": {
+              "value": "UCQEyffW872ZCyVezsahNv5w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-05-24T19:58:41Z",
+            "updatedAt": "2026-05-24T19:58:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jxy7z_LL73VY8ijXQlmYpLA8rZY",
+      "id": "UgyDUEiF_7P4CwLMhz94AaABAg",
+      "snippet": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "videoId": "T-Yy77wavhQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ICW8zxZPN0h-_EamH30flPGDHec",
+          "id": "UgyDUEiF_7P4CwLMhz94AaABAg",
+          "snippet": {
+            "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+            "videoId": "T-Yy77wavhQ",
+            "textDisplay": "WOW!!!  I just love the fact that Prince has a whole lot of confidence about himself and his endeavor in life. He looks amazing!",
+            "textOriginal": "WOW!!!  I just love the fact that Prince has a whole lot of confidence about himself and his endeavor in life. He looks amazing!",
+            "authorDisplayName": "@AdaBrown3personalupgrade",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lChpWKHRJiqluCGaYVEPqdMX87tOFqqwha4EBgk-lPzBI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AdaBrown3personalupgrade",
+            "authorChannelId": {
+              "value": "UCBoD0lQOeLnGM7xuviQ1aWw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1217,
+            "publishedAt": "2019-01-04T00:22:38Z",
+            "updatedAt": "2019-01-04T00:22:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 12,
+        "isPublic": true
+      }
+    }
+  ]
+}

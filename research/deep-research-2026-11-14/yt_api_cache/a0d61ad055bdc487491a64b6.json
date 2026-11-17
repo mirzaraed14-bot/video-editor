@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "BP01aJtC8n5_J_DckcYkkT2Hvbs",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "dI1OsB0dfUGkfcRn3eSUw7bqheM",
+      "id": "UCtPrkXdtCM5DACLufB9jbsA",
+      "snippet": {
+        "title": "MrBallen",
+        "description": "I tell strange, dark & mysterious stories.\n\nListen to MrBallen's Podcast on SiriusXM Podcasts Plus, or anywhere you get your podcasts! 👉 https://lnk.to/mrballenSV\n\nFollow me on Instagram, Twitter and the rest of social media 👉 \"@MrBallen\"\n\n2nd YouTube channel: @mrballenshorts\n\n🚨PODCAST YOUTUBE CHANNEL🚨\n(My ONLY official Podcast YT channel)\n@mrballenpodcast4313\n\nJoin our Discord 👉 https://discord.com/invite/mrballen\n",
+        "customUrl": "@mrballen",
+        "publishedAt": "2015-03-22T14:56:31Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/EVs55K8BZLEL_8u7Ep-h1ABKp-jkCZWtpnQQ4O285XjrPtHdIDP5sHTEnONO5q3vh_jtEHO4M70=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/EVs55K8BZLEL_8u7Ep-h1ABKp-jkCZWtpnQQ4O285XjrPtHdIDP5sHTEnONO5q3vh_jtEHO4M70=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/EVs55K8BZLEL_8u7Ep-h1ABKp-jkCZWtpnQQ4O285XjrPtHdIDP5sHTEnONO5q3vh_jtEHO4M70=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "MrBallen",
+          "description": "I tell strange, dark & mysterious stories.\n\nListen to MrBallen's Podcast on SiriusXM Podcasts Plus, or anywhere you get your podcasts! 👉 https://lnk.to/mrballenSV\n\nFollow me on Instagram, Twitter and the rest of social media 👉 \"@MrBallen\"\n\n2nd YouTube channel: @mrballenshorts\n\n🚨PODCAST YOUTUBE CHANNEL🚨\n(My ONLY official Podcast YT channel)\n@mrballenpodcast4313\n\nJoin our Discord 👉 https://discord.com/invite/mrballen\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "3147464321",
+        "subscriberCount": "11400000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "955"
+      }
+    }
+  ]
+}

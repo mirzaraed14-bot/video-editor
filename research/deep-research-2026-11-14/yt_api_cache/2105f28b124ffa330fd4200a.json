@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "OnYbtkrXnbBblYNVQydLIETmnu4",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "WI47wZWpRSBxrSZWsTF6BCNcFr0",
+      "id": "UCSPYNpQ2fHv9HJ-q6MIMaPw",
+      "snippet": {
+        "title": "The Financial Diet",
+        "description": "The Financial Diet helps you rethink your relationship with money, culture, and class.\n\nEducation & commentary on the systems we interact with every day, from influencer culture, to economic systems, to financial privilege.\n\nTalk to us at hello@thefinancialdiet.com",
+        "customUrl": "@thefinancialdiet",
+        "publishedAt": "2015-06-22T21:01:32Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/L06r2jBxDBRSQM7fXM534vS_zfIotz1dH4ILN7ol0d4qR_9AQ-G3axDoAP0z2VIVPCxiZ3K4oQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/L06r2jBxDBRSQM7fXM534vS_zfIotz1dH4ILN7ol0d4qR_9AQ-G3axDoAP0z2VIVPCxiZ3K4oQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/L06r2jBxDBRSQM7fXM534vS_zfIotz1dH4ILN7ol0d4qR_9AQ-G3axDoAP0z2VIVPCxiZ3K4oQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "The Financial Diet",
+          "description": "The Financial Diet helps you rethink your relationship with money, culture, and class.\n\nEducation & commentary on the systems we interact with every day, from influencer culture, to economic systems, to financial privilege.\n\nTalk to us at hello@thefinancialdiet.com"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "214610434",
+        "subscriberCount": "1350000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1809"
+      }
+    }
+  ]
+}

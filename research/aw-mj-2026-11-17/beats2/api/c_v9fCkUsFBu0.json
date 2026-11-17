@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "SZD3XXhzej6oiLtCiCBoHo1hY9A",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1Dc0lCQ0lBRUZSZTMwVGdhdHdFS3NnRUkyRjhRZ0FRWUJ5S25BZnRwdEFKMFZWWDFXTElka1pEWWxpVmo4TUFNYVdYQTFUcHVTa2l2d0VOZ3VxS0NVbE5LeWpqWU1qZEQ1YVJKTkQ2eG8zU2k0MzVGUVFPejh5R0t2REtsc3NFNkVydEFWLUJrYUhURnpQd3lBaVZaZGhsRl9McVhIaTFya1owTlNnNlFaVVhzRWVqSEYwaWtpTEFxQ2w2TExNQ3BaVk83VlJ4Y0RDaUR3bDFOT1FHNWR5R21Ja2tSMnVncmJYRTRQRVZjMFBaYzl6aVJURmhKS2NXQU0tcHgyUWNZT1NBTkVCa1NCUWpBSUJnQUVnVUlxQ0FZQUJJRkNJY2dHQUFTQlFpSUlCZ0FFZ1VJaGlBWUFCSUhDSVVnRUFnWUFSSUZDSWtnR0FBU0JRaTdJQmdBRWdjSWhDQVFHUmdCVUFCWUFR",
+  "pageInfo": {
+    "totalResults": 25,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "poEI1WYw9CoOO5izeyfpyqaxZ0w",
+      "id": "UgxGsK3VqGjVr1oQP-p4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bDcw3-24nq8gV1gMzGVqmzjIVaM",
+          "id": "UgxGsK3VqGjVr1oQP-p4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Bro, even when he was upset, even annoyed, he was so polite and articulated.",
+            "textOriginal": "Bro, even when he was upset, even annoyed, he was so polite and articulated.",
+            "authorDisplayName": "@STJoseph1988",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mVUemt_ys6N7GT0f1oEHugXYSC5tXm6ZDeHWBY9w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@STJoseph1988",
+            "authorChannelId": {
+              "value": "UChYurLe5xCdvOdsrw5aRgQQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4340,
+            "publishedAt": "2026-05-05T18:41:43Z",
+            "updatedAt": "2026-05-05T18:41:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 20,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "x9oTZEXmsBkjSkzUqeQOpIWwLkQ",
+      "id": "UgyU8EGEE39XAEix9np4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "B8aD-destBXSSbMtLTOa8NtNUN4",
+          "id": "UgyU8EGEE39XAEix9np4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "You can hear the annoyance and the anger in his voice. But he’s still so respectful.",
+            "textOriginal": "You can hear the annoyance and the anger in his voice. But he’s still so respectful.",
+            "authorDisplayName": "@KGMsc88",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/_-0A_k7w2bcaoAGIax86wZ-sgwbNcaCs-q4NrgSUaqKhJn-FWS_rARqrP4YC5yEsYnjz3_0_=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@KGMsc88",
+            "authorChannelId": {
+              "value": "UCKYmbEgLM79lillfKi9ulqw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2081,
+            "publishedAt": "2026-03-24T01:45:29Z",
+            "updatedAt": "2026-03-24T01:45:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RJ-9g1-g0xiE0AIMlzfkFDmRIJA",
+      "id": "UgyRdQADo2N7xHhHnL54AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "m2NbCUNYZGlFbro2-nBOWDHVRTU",
+          "id": "UgyRdQADo2N7xHhHnL54AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Imagine being a warm, kind, trauma filled little boy in a mans body only for everyone to hate on you for it. RIP Michael.",
+            "textOriginal": "Imagine being a warm, kind, trauma filled little boy in a mans body only for everyone to hate on you for it. RIP Michael.",
+            "authorDisplayName": "@Marco1985zm",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k0PVo4Ayjzf9FlRcdjZAQYBwK430_hLvWlP9jgikQjC65W-ONDWjkk4dykteuHJ96HgQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Marco1985zm",
+            "authorChannelId": {
+              "value": "UC7QbnkH66boHYvBxCIJ0UPg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 994,
+            "publishedAt": "2026-05-05T06:03:13Z",
+            "updatedAt": "2026-05-05T06:03:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "EtlUR8c8PTBfXn8nFCDIaFrPmR8",
+      "id": "Ugyr5GEdQfyASSjaxst4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "D8I12zg__yqtn0tcgQERAZpSFQs",
+          "id": "Ugyr5GEdQfyASSjaxst4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "\"cut off the light ting\" he is soo adorable 😭❤️",
+            "textOriginal": "\"cut off the light ting\" he is soo adorable 😭❤️",
+            "authorDisplayName": "@ILoveMikeyJackson",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/iWYLDFDbFQg3b865v7a43JDjfsKnrMW3XkqbXpEj2H3kv3m7zTyj2KzBPjdOjps4x2Qn9_rT=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ILoveMikeyJackson",
+            "authorChannelId": {
+              "value": "UC27SWx7LCobHjHyuppFO40A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 74,
+            "publishedAt": "2026-06-06T15:29:39Z",
+            "updatedAt": "2026-06-06T15:29:39Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "nOF82SslNzioEVgAJPXlzK9J5Ig",
+      "id": "Ugx9AXYilMrtzSlN-XN4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cpMe-XoePjcXuFYHJibjIrTrnNU",
+          "id": "Ugx9AXYilMrtzSlN-XN4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "The way he sounds like he was talking to a baby. \"Its not nice, dont do it\".he so sweet😭",
+            "textOriginal": "The way he sounds like he was talking to a baby. \"Its not nice, dont do it\".he so sweet😭",
+            "authorDisplayName": "@canufeelmyheart3409",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k6Auit8bQkJE7js-PQeh84YnEIyeNfugLnst0I2Rrh3x9B=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@canufeelmyheart3409",
+            "authorChannelId": {
+              "value": "UC_0ChmQMA-Km0WGwwDKTNuw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6039,
+            "publishedAt": "2025-06-28T00:31:03Z",
+            "updatedAt": "2025-06-28T00:31:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 23,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "SphE9167j8PEJNJpSziGAIN-CxQ",
+      "id": "UgyapmcDiF1i4QoPANt4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "k4qwK0CNIEeY70iX7UxZzoRtjrY",
+          "id": "UgyapmcDiF1i4QoPANt4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Considering the fact that he was horrible abused; his ability to be so kind hearted was really miraculous.",
+            "textOriginal": "Considering the fact that he was horrible abused; his ability to be so kind hearted was really miraculous.",
+            "authorDisplayName": "@CourtTest",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SbB5m36ps5LSFAXYSAXdiHXruLD26z1RqmfA1qiavayPadGNex3AB9MJO4jofXngaIgT35IhQ44=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CourtTest",
+            "authorChannelId": {
+              "value": "UCZfd2nX7mEUjAK0j0hfOvzQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7222,
+            "publishedAt": "2026-01-20T05:53:52Z",
+            "updatedAt": "2026-01-20T05:53:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 62,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rqKpX2AKziWvSe63gassAXZJg5g",
+      "id": "UgxUk0UVBbLS20cwHkJ4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lRgiI1WcajDn9Dw6SOaqQWNa3AU",
+          "id": "UgxUk0UVBbLS20cwHkJ4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Love how he stands up himself without cussing.  He articulates himself and communicates clearly.",
+            "textOriginal": "Love how he stands up himself without cussing.  He articulates himself and communicates clearly.",
+            "authorDisplayName": "@justinscales3625",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mzJefHSQ9cjWSd_jFo8woLdn2bHU3aiFJgoRbTH88=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@justinscales3625",
+            "authorChannelId": {
+              "value": "UCiox1KIzwahgQ5gbIo3DdAQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 177,
+            "publishedAt": "2026-04-12T04:34:08Z",
+            "updatedAt": "2026-04-12T04:34:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "y3JMXSM9rmwHglbAuePCiiANF1g",
+      "id": "Ugwnp4QgkZDRUv4O1TZ4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3w1R1YfqPkurQi0OaW_JRSAeDPo",
+          "id": "Ugwnp4QgkZDRUv4O1TZ4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Something so sweet and childlike when he said “it’s not nice” 😢💔 I just wish he knew how many people out here know the truth and love him still",
+            "textOriginal": "Something so sweet and childlike when he said “it’s not nice” 😢💔 I just wish he knew how many people out here know the truth and love him still",
+            "authorDisplayName": "@dollymadison7365",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/hJ8mfTnK6ruW55JQcQs4V82L4youtVZ4CHZHqV8jmKOwIN_5BzL4SmqU3hxUBaEmf7rrdIPy=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dollymadison7365",
+            "authorChannelId": {
+              "value": "UCilvnM8tc1P2145-bW6I3bA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 711,
+            "publishedAt": "2026-05-07T06:12:21Z",
+            "updatedAt": "2026-05-07T06:12:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "eyf0GSuIbgsY96h7P4bN6fvWJRI",
+      "id": "Ugw-QoWscucb_9G5uEd4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "AA_eAV6dj1Y4va7uaTdcLuxN4yU",
+          "id": "Ugw-QoWscucb_9G5uEd4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "\"I feel that, when you do that to me. It's not nice.\" He was so pure and child-like, even in the way he talked...",
+            "textOriginal": "\"I feel that, when you do that to me. It's not nice.\" He was so pure and child-like, even in the way he talked...",
+            "authorDisplayName": "@DefectiveCat-u5k",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/p4DKd_8eOtiw1JyFmWvAkjeTnupUIjwpRCxv9tlXmaacd_wziASRhf3szRT18VHz6vkuJsIHxA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DefectiveCat-u5k",
+            "authorChannelId": {
+              "value": "UCML6zj6VHzfp8zFl1epNiDA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 40,
+            "publishedAt": "2026-02-25T17:14:50Z",
+            "updatedAt": "2026-02-25T17:14:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-OTERqYn2Md-rauxtmrl5wQuf58",
+      "id": "Ugz-dIMi9o013Hyqsrh4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6xHG28VPt7jTX3i95W78DaC9_8I",
+          "id": "Ugz-dIMi9o013Hyqsrh4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Michael was always so polite and tactful in explaining things that people should understand without explanation.",
+            "textOriginal": "Michael was always so polite and tactful in explaining things that people should understand without explanation.",
+            "authorDisplayName": "@lalatagizade9713",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/zroeiYFsGRXY0dW4KkEG9BdJkxDEdAq5_UwlUknmfR1PTfDxt_cvI94JYB1ogcdQJk8o2ayN-w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lalatagizade9713",
+            "authorChannelId": {
+              "value": "UC90hOac9VjWPyV9J4fz3nTA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 16130,
+            "publishedAt": "2025-05-12T18:35:22Z",
+            "updatedAt": "2025-05-12T18:35:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 51,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "SKVe2BzdgfR_mTK60dLaXX-skYo",
+      "id": "Ugw_9rYhRxGKSwVu16J4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "OsP50a7WEexD_hoY6IGhyRezjuo",
+          "id": "Ugw_9rYhRxGKSwVu16J4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "You can see in his eyes that he is speaking the truth and how honest he is. Really fine gentleman.",
+            "textOriginal": "You can see in his eyes that he is speaking the truth and how honest he is. Really fine gentleman.",
+            "authorDisplayName": "@lidijalda",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mYR162ABUhAL7JbprwwKGQ1joOgkFxgEfQ3tdQcDSXXQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lidijalda",
+            "authorChannelId": {
+              "value": "UCPDmYZSBF7_kcMPXOe0CV8g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 318,
+            "publishedAt": "2026-03-11T01:23:13Z",
+            "updatedAt": "2026-03-11T01:23:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "brHwypvqMAb-YgFcAbSCjTfKllI",
+      "id": "UgzcXq7sTZPm9sJT_HB4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4EPglsmemROnNiL3k3Sn9Dp_YGM",
+          "id": "UgzcXq7sTZPm9sJT_HB4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "He really was too gentle for this world…anyone could take advantage of that",
+            "textOriginal": "He really was too gentle for this world…anyone could take advantage of that",
+            "authorDisplayName": "@martilives896",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/g8A8YFSvdjhJZXV5Xv8Mshldz7Q6VEb5f2Bf3SqiHgE4RPLeuEvBbXdCE-evp6orIZxrP7XigNA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@martilives896",
+            "authorChannelId": {
+              "value": "UCh2nC-1kQCp9oMeq1Mkm59g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 126,
+            "publishedAt": "2026-05-10T19:50:34Z",
+            "updatedAt": "2026-05-10T19:50:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "l4i-04Wkwt0bxxk-2qSNXd-qGs8",
+      "id": "UgxF-X-tO6ZtB_y1WKx4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_Qom6irVQz6-25VZFB4g5_U_2iQ",
+          "id": "UgxF-X-tO6ZtB_y1WKx4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "I wonder if they listened to this literal plea for kindness and respect..",
+            "textOriginal": "I wonder if they listened to this literal plea for kindness and respect..",
+            "authorDisplayName": "@SantanaGroenmeyer-zc6lx",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nn2r27xgt-QLsA4NOafS588bIhGJEP80r8XEC4pJEMwtmsmIosL5hG9gzQ2AyEbG8G0A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SantanaGroenmeyer-zc6lx",
+            "authorChannelId": {
+              "value": "UCahbkS9E60Ps5Fp6mDxUWnw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 16429,
+            "publishedAt": "2025-06-02T10:42:56Z",
+            "updatedAt": "2025-06-02T10:42:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 190,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2ZocCmfdNfetvOgpg38w_Mp6oBI",
+      "id": "Ugz7XMC8SReIu3bEHJt4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "0AZN0842EdBgd6sEXThzja71xr0",
+          "id": "Ugz7XMC8SReIu3bEHJt4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "he was always so hurt by the lies they would say about him but he always stayed so respectful and polite bc that’s just the man he was 😢",
+            "textOriginal": "he was always so hurt by the lies they would say about him but he always stayed so respectful and polite bc that’s just the man he was 😢",
+            "authorDisplayName": "@SlimLeia16",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/g_JSgQIfSmFN5Re-fPcD3D60tA_aXkw--bLGDXS1lxyokFf40EOmrKaXahAaj7-dx0bV5hWO=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SlimLeia16",
+            "authorChannelId": {
+              "value": "UCmqnG_Y6CVBXiuGgkhy7HwQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 275,
+            "publishedAt": "2025-06-12T20:42:30Z",
+            "updatedAt": "2025-06-12T20:42:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZpJ0XzRST5IduMGAx5cEF6Mye9k",
+      "id": "UgzafvwGIhqvFyDAEAd4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "SBrB-bRph1MsS37v3J90ozc1azM",
+          "id": "UgzafvwGIhqvFyDAEAd4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Tears came to my eyes when he said \"It's not nice, I'm not a wacko\". Same feeling when you are called names by a bully.",
+            "textOriginal": "Tears came to my eyes when he said \"It's not nice, I'm not a wacko\". Same feeling when you are called names by a bully.",
+            "authorDisplayName": "@Andreea-l1e",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ka_OJb0XNJYDEohFXLN9aw8SQx2wooMyAYwzwnScVwBS5AeOdo4U3-cDL-EXswMyKilw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Andreea-l1e",
+            "authorChannelId": {
+              "value": "UCew5WrqSgJob8p2erANpfhQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3980,
+            "publishedAt": "2026-02-12T19:32:20Z",
+            "updatedAt": "2026-02-12T19:32:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 28,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "m6Q8Zp3HsEbaV8K_jJMhU97YOE4",
+      "id": "Ugw5XFioC9viDgXMQ9x4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4yQIevtvxJJYgAbRppPdpmqcGc4",
+          "id": "Ugw5XFioC9viDgXMQ9x4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "They made him keep clarifying and explaining his normal actions, he was such a precious soul, rest in peace 🤍🕊️",
+            "textOriginal": "They made him keep clarifying and explaining his normal actions, he was such a precious soul, rest in peace 🤍🕊️",
+            "authorDisplayName": "@allurekwt7577",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_noLoaUlSCKk3H3YpTrSPhQ5jS9EuPQ21QJJQxhtD0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@allurekwt7577",
+            "authorChannelId": {
+              "value": "UCAUfGYomvpTWN3wX_rcsvhw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2026-05-04T19:20:57Z",
+            "updatedAt": "2026-05-04T19:20:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NRaiLmUYgXJ6CNk3y2624cQz844",
+      "id": "UgwpjW7meyiKw71mWRl4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "YwkXf7einCVmA8GgJVcdW07BCDg",
+          "id": "UgwpjW7meyiKw71mWRl4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Just because he didn't conform to Hollywood's low moral standards did not make him weird, it made him wise. He had a beautiful spirit and kind heart.",
+            "textOriginal": "Just because he didn't conform to Hollywood's low moral standards did not make him weird, it made him wise. He had a beautiful spirit and kind heart.",
+            "authorDisplayName": "@jeanclark7958",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ml2rkgKNhe6jcJEZjJ_Dp0zpewAOG3ZDqfaxh1Z6s=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@jeanclark7958",
+            "authorChannelId": {
+              "value": "UCs0TZAH3G6kVYo-9MNsbg0Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 219,
+            "publishedAt": "2026-03-28T00:56:55Z",
+            "updatedAt": "2026-03-28T00:56:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gZfV1IwCuHKPITDkGZ1_R1DAPwQ",
+      "id": "UgyDhwZiXfnqTSWKsOd4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "O0ANnD_Ds68f58bdd5Hf0IY9Q_o",
+          "id": "UgyDhwZiXfnqTSWKsOd4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "\"It's not nice, don't do it.\" directly hits everyone's heart. ❤",
+            "textOriginal": "\"It's not nice, don't do it.\" directly hits everyone's heart. ❤",
+            "authorDisplayName": "@HesaraMovin",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Y-D0brzQDmNIehi-N-4YnzqFXpyBIvvSYThpr1A_8heAXLbgpf7aq7qhlshHyhpXRkK6sqWLQHk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@HesaraMovin",
+            "authorChannelId": {
+              "value": "UC4B7n4K-ZFNISzzOwXUJ1bA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 382,
+            "publishedAt": "2025-09-25T15:10:58Z",
+            "updatedAt": "2025-09-25T15:10:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "F2ldCZJB7IG5WUIpcqtzFaTvUEI",
+      "id": "UgwU2GvwzxvQkM8eZUB4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "27n1qdYJipHIKNWV8IMuDdVm9M4",
+          "id": "UgwU2GvwzxvQkM8eZUB4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Michael was so classy in all his responses. He didn’t deserve this treatment 😢RIP",
+            "textOriginal": "Michael was so classy in all his responses. He didn’t deserve this treatment 😢RIP",
+            "authorDisplayName": "@Wammba",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/df4aFAl7jtNpk3U1haPTYow7UdcfvVl9h3TKugBTyBpIKz66wx-LN8QTzuSxph3IF5GxMl7y9A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Wammba",
+            "authorChannelId": {
+              "value": "UCi1lHCX86n8Bj6Qkn2tp-Hg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 712,
+            "publishedAt": "2025-08-16T05:47:54Z",
+            "updatedAt": "2025-08-16T05:47:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2hIhx_uU5NRO-EGj2JkVDkBd3Fg",
+      "id": "UgydVGQlWm0J3M1l2At4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mHcMSjOpLghOfdfXgxWaO1T1pm0",
+          "id": "UgydVGQlWm0J3M1l2At4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "I always knew he was innocent. Even as a kid. And I still believe that today. And I think he's glad we all woke up!! ❤ i just wish he could have been here for it! Fly High MJ! 🕊🙏🌠",
+            "textOriginal": "I always knew he was innocent. Even as a kid. And I still believe that today. And I think he's glad we all woke up!! ❤ i just wish he could have been here for it! Fly High MJ! 🕊🙏🌠",
+            "authorDisplayName": "@momwifesoullife",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/W_xhzmi9W6xDB31Frc_p9szugCwWVLRa2QjSqXwfI26cXmJXlJHmXLqtBlyf1JfIaxi4568x=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@momwifesoullife",
+            "authorChannelId": {
+              "value": "UCjeFdNeWXHiT4KFYU5p7CfQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 48,
+            "publishedAt": "2026-05-08T03:25:22Z",
+            "updatedAt": "2026-05-08T03:25:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_DJ-z7SCP0gxC-o4AwJp9b476OU",
+      "id": "UgxExjPtQV6XeLfuwgR4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Wmcd2KIP47CXazYNo6sjSN_5nQg",
+          "id": "UgxExjPtQV6XeLfuwgR4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Micheal was such a a beautiful  soul.",
+            "textOriginal": "Micheal was such a a beautiful  soul.",
+            "authorDisplayName": "@sherrykeith4489",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ASJ30aEO-Nr3k0MeuCKQMOyioMFZ6QkqYix5_CF8MCZOFFiIwnvLPuMlpZH6w2QtfMUFDWkjXzU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sherrykeith4489",
+            "authorChannelId": {
+              "value": "UCOwGgm5tLJmnWprn-1Xt-gA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 800,
+            "publishedAt": "2025-06-26T00:53:07Z",
+            "updatedAt": "2025-06-26T00:53:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sNk1CgTQ2XZzLGEkD2r9N9ze8PA",
+      "id": "Ugw1LnOvYrKbbAna4PJ4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MIClRxOCatnDQY-_AJGWvLP56cw",
+          "id": "Ugw1LnOvYrKbbAna4PJ4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "He’s so pure. He had to buy his own privacy. He can’t go out in public and enjoy what the rest of us enjoy.",
+            "textOriginal": "He’s so pure. He had to buy his own privacy. He can’t go out in public and enjoy what the rest of us enjoy.",
+            "authorDisplayName": "@nicolii7321",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/a6Y-wq0FpVwulPnnTa0ZQO2DK8wht17XTW_i0x6LByaU3eQirr61m2Er7oILCDsAzTVQ7I9DWQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nicolii7321",
+            "authorChannelId": {
+              "value": "UCWTiCZHP-pwJH8vqK2iM7Vw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 825,
+            "publishedAt": "2025-06-27T01:44:22Z",
+            "updatedAt": "2025-06-27T01:44:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZoWBiaogQnOBhxp8-hrIXtc5GUI",
+      "id": "UgwPylAgxJZTD50PLER4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2H1L1OiNCK8YOc8HD-6jlsBVZrc",
+          "id": "UgwPylAgxJZTD50PLER4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "I love his gentle heart. Cut off the light, ding... he is such a good person",
+            "textOriginal": "I love his gentle heart. Cut off the light, ding... he is such a good person",
+            "authorDisplayName": "@hawaiianrainbow1080",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nAFIQ1uSRfjcn5mOke55xuE2mp527Fc_QrV-D5xg4Gsg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@hawaiianrainbow1080",
+            "authorChannelId": {
+              "value": "UCyRuu487PFDgm8VIksqxwgA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 128,
+            "publishedAt": "2025-09-09T04:18:20Z",
+            "updatedAt": "2025-09-09T04:18:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xzDPnY56pHqUq0NPCanjn7zIwCM",
+      "id": "UgwhN3GvkMxFn5mOdM94AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "21ZRUALgiVgoV1SySLyYdhesKxw",
+          "id": "UgwhN3GvkMxFn5mOdM94AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "When he said that not  nice that make me cry like he said he has feelings ❤😢",
+            "textOriginal": "When he said that not  nice that make me cry like he said he has feelings ❤😢",
+            "authorDisplayName": "@JaidenNeal-s4j",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/m-5JarJZKMqT80NwSSjphm6ty8078Hd4miKwWfWypBTkrw5LwxNiPBDLD6mJ083E2YheIG2v=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JaidenNeal-s4j",
+            "authorChannelId": {
+              "value": "UChBmW5go_pFyh6d8jeUtD5Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 18,
+            "publishedAt": "2026-05-06T17:19:43Z",
+            "updatedAt": "2026-06-10T15:47:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uyCj-1OtlQGw7U3rByPkujUQuY0",
+      "id": "Ugwy7tgbypR20r0Hs0h4AaABAg",
+      "snippet": {
+        "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+        "videoId": "v9fCkUsFBu0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LFt0C0lncvONySYncZCEGx9i1GQ",
+          "id": "Ugwy7tgbypR20r0Hs0h4AaABAg",
+          "snippet": {
+            "channelId": "UCJ3yAfjvxR5vedAwDTwjMpA",
+            "videoId": "v9fCkUsFBu0",
+            "textDisplay": "Even when faced with such disrespect, he continued to talk politely and still explained his discontent with what people would say about him. No one does this anymore. People raise their voices and get violent. Michael could convey something without violence. I miss him.",
+            "textOriginal": "Even when faced with such disrespect, he continued to talk politely and still explained his discontent with what people would say about him. No one does this anymore. People raise their voices and get violent. Michael could convey something without violence. I miss him.",
+            "authorDisplayName": "@ItsDylana",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Yb3Yz1RTpUuNhEUZkNeqjJz-bP48WP1qVUtyqpxkiQkII6y_IVitrW9iCyQE4n21M5YFLvfc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ItsDylana",
+            "authorChannelId": {
+              "value": "UCdzD0JZl-sGvX1fe5lyviIQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 457,
+            "publishedAt": "2025-11-14T03:48:54Z",
+            "updatedAt": "2025-11-14T03:49:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

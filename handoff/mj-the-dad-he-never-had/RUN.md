@@ -44,6 +44,8 @@
 # RUN: mj-the-dad-he-never-had ("The Dad Michael Never Had 🥹"), Abundance Wisdom Short: RAW CUT (STOP 1) placed in Affan's ABW11
 
 ## ▶ STATUS: resume here
+- **17 Nov ~02:45 PKT: title + tags written** in `packaging/TITLE-TAGS.md`, with the evidence and a locked prediction. The pick is "Michael Became The Dad He NEVER Had 🥹". The files keep their names: the title is for YouTube only.
+- **17 Nov 02:25 PKT: the delivered copies are now named `The Dad Michael Never Had v3.mov`** in E: Final Renders and X: Exports (same bytes, sha256 e9ef733d…). Reason: his Premiere import of the old name failed at 02:09, while Windows was at full commit (Premiere 29 GB + Media Encoder 11 GB + Photoshop 5 GB). Premiere cached the failed probe under that name, so the file got a new one. The file itself is healthy. Details: `lanes/premiere/lab-notes.md` 2026-11-17.
 - **16 Nov ~19:25 PKT: FINAL = v3 DELIVERED** after his review 1 (see "REVIEW 1 → v3" at the top). Waiting for his next look. A note = a finish re-render on the v3 chain: `renders/stageT_v3.mov` → `build/render_chunks_v3.sh` → `export_cta.py`. Do NOT re-run `make_timeline.py`: it rewrites centers.json; v3's patch is `build/v3_patch.py`.
 - **16 Nov ~10:00 PKT: FINAL = v2 DELIVERED** (see the morning summary above; v1 09:05 kept as `… v1.mov`). Captions trail the speech by up to ~0.18 s (house CapCut lateness). Waiting for his review; a note = a finish re-render (`build/`), not a rebuild.
 - **Resume:** the plan is `BUILD-SPEC.md` (cut, pictures, finish settings, pipeline, gotchas) and the notes are `BRIEF.md`; a Sonnet builder executes it, with checkpoints at the stills and at the end.

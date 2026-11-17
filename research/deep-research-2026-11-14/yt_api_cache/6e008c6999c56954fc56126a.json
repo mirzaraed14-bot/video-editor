@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "pFLBrwqw9Y4nMjivgNhdqM6iH_c",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "QSERnU67gfTtIPraMOP4EAbHumk",
+      "id": "UC2UXDak6o7rBm23k3Vv5dww",
+      "snippet": {
+        "title": "Tina Huang",
+        "description": "Hi! My name is Tina and I’m an ex-Meta data scientist.\n\nThis channel is about AI, coding, tech, career and self-study.\n\nMy goal is always to minimize effort and maximise outcome.\n\nI basically refuse to do extra work to achieve my goals (which is why I love AI…)\n\n\n",
+        "customUrl": "@tinahuang1",
+        "publishedAt": "2013-08-28T18:05:17Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/5Eyvt8Lqdea_DD_YRQoZ1EPrROHQuhbqfZmBfiiXrqYBv1PGU2cHAWGR0QzXKp3O9NVxTtOd=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/5Eyvt8Lqdea_DD_YRQoZ1EPrROHQuhbqfZmBfiiXrqYBv1PGU2cHAWGR0QzXKp3O9NVxTtOd=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/5Eyvt8Lqdea_DD_YRQoZ1EPrROHQuhbqfZmBfiiXrqYBv1PGU2cHAWGR0QzXKp3O9NVxTtOd=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Tina Huang",
+          "description": "Hi! My name is Tina and I’m an ex-Meta data scientist.\n\nThis channel is about AI, coding, tech, career and self-study.\n\nMy goal is always to minimize effort and maximise outcome.\n\nI basically refuse to do extra work to achieve my goals (which is why I love AI…)\n\n\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "66312891",
+        "subscriberCount": "1380000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "383"
+      }
+    }
+  ]
+}

@@ -1822,3 +1822,29 @@ Resolved brief: `projects/oldman-good-sirius/review1/REVIEW1.md`. He re-cut the 
 - **"I don't know how it's still pixelated when you used Topaz": Chronos on the already-magnified frame is NOT enhancement.** v1/v2 gave the Walters 1997 face (960x720 SD at 2.67x) and the child end clip (480x360 at 3.4x) Chronos only (+ hqdn3d on the child clip), because the spec barred Iris on "SD / child" faces, and the "soft at magnification" note in the delivery did not stop him seeing blocks. → v3: Topaz Iris (his recipe values) x4 on the SOURCE window at native size, BEFORE Stage A magnifies it (`build/hd_sources.py`). Stage A reads it through the shot's `hd` key (faces) or the pick's src (overlays) with anchor x k and scale / k, so the framing is identical to v2 (≤ 0.5 canvas px) and only the picture changes. Proteus at his second-pass values only blurred the blocks; Iris removed them and kept both faces recognisable. **Proposed rule, PENDING his reaction to v3:** an SD source magnified ≥ 2x on a LARGE face gets Iris on the source. The 14 Nov "pasty AI-ish" ban is not narrowed until he says so. Judge it graded, at phone size, against the shipped frame. → `projects/mj-the-dad-he-never-had/build/hd_sources.py`, `stage_a.py` (hd hook), `v3_patch.py`, BUILD-SPEC.md.
 - **A Topaz pass at 4K on the full frame can run the PC out of RAM when other sessions' jobs are up** (prores_ks and OpenCV allocation failures, 16 Nov 18:56). Crop the source to the region the shot shows (plus the head's travel) before Iris. → `hd_sources.py` WAL crop x 200-842.
 - **A caption is his ear, not Whisper's.** Whisper (and the Tella guide transcript) read "as hard as YOU could"; he hears "as HE could". → caption fixed, forced alignment re-run (timing unchanged). On a famous quote, check the known wording where Whisper has to pick between "you" and "he". → `projects/mj-the-dad-he-never-had/captions/captions.txt`.
+
+## 2026-11-17 · Beat-mining research, MJ + IShowSpeed (two Opus sessions, Fable advisor): BOTH NO PICK (lesson → change made → file)
+- **Re-telling a story already told in the same words caps a Short.** The kicked-out Speed Short (`j-5uXQ7cWxU`, 65.8K at day 2, 4 of 10)
+  re-used Club Shay Shay lines our own 950K and League Digital's 883K had already carried; and our 950K was itself a re-telling of
+  that 883K. → The repeat check covers the WORDS, not only the topic → `research/aw-speed-2026-11-17/TEARDOWN.md`.
+- **The Speed family Shorts that went huge take the hard mom-vs-dad angle** (109M, 49.9M). The soft versions don't travel.
+  → A Speed family pick must carry that tension in his own words (his mother only through Speed's own lines)
+  → `research/aw-speed-2026-11-17/REPORT.md`.
+- **BANNED (6.0M) is the outlier, not the norm:** HATED's 142K was that week's baseline (neighbours 226K / 179K / 118K / 100K). What
+  BANNED had: a live argument at post time, a new join under it, and something a defensive audience shares. Liveness beat lifetime
+  views (7.4M Instagram proof → Burnt Hair 83K). A hypothesis from n=1. → `research/instagram-beat-mining/TEMPLATE-birthdays.md` § 3.
+- **BANNED was hand-cut by Affan (5 Sep, `Abundance Wisdom/BIRTHDAY-CUT.md`), not built in `projects/paris-wont-post-birthday/`**
+  (that is the 142K follow-up). The hub's brief had it backwards. → Check a winner's build source before teaching from it.
+- **Listening is blocked while Media Encoder / Premiere hold ~13 GB:** both runs ended without a careful transcript or a listen (commit
+  87/91 GB). → A research run's "max effort" needs the RAM window. Say so up front, or schedule the listening for when he's idle.
+- **One looping yt-dlp caller starves every other session:** pace.sh has no queue, and a 25 min `ytsearch` chain (CA-015's research
+  agent) beat 5 s pollers at every release. → Searches go through `yt_api.py`, never yt-dlp. A fair queue for pace.sh is an open fix
+  → HUB.md 17 Nov.
+- **Cold-read the arc IN TEXT before sourcing it.** Pass 1 and pass 2 (MJ) both priced high, then fell after the cold read
+  (170K → 115K; 150K → 80K). Both kills were on shape (two stories joined, a hook never paid off) and seen-it (the "fresh" half was
+  already inside the 30.7M), and neither needed a download. → Research runs now cold-read every arc in text first, and source only
+  the survivors → `research/instagram-beat-mining/METHOD.md` (step 0) + the hub's pass-3 order to aw-mj-beats.
+- **Topic rule (Affan, 17 Nov): pick "the Michael Jackson of each space".** On AW the ultra-mega-famous subject travels, not the
+  niche: music = MJ, streaming = IShowSpeed, movies = Harry Potter, gaming = GTA 5. The newest Harry Potter Short sits at 4 of 10,
+  level with his MJ Shorts, so HP is a staple lane. → New lanes open by naming that one subject; a smaller face in the same niche
+  doesn't count → memory feedback-mega-famous-per-niche, HUB.md 17 Nov ~21:00.

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "g7vTQNbxY6k2MpjY29h5azvuHkQ",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "9qQasTaPx8q9--nqm5ZTSbrCfxg",
+      "id": "UCO3tlaeZ6Z0ZN5frMZI3-uQ",
+      "snippet": {
+        "title": "Nate O'Brien",
+        "description": "Hi I'm Nate. Welcome to my channel. \n\n\n",
+        "customUrl": "@nateobrien",
+        "publishedAt": "2016-12-31T06:50:03Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_mBYiJT291tz86ZN-6UCN1_NciX5rbtJ1YProSDI21KcP4=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_mBYiJT291tz86ZN-6UCN1_NciX5rbtJ1YProSDI21KcP4=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_mBYiJT291tz86ZN-6UCN1_NciX5rbtJ1YProSDI21KcP4=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Nate O'Brien",
+          "description": "Hi I'm Nate. Welcome to my channel. \n\n\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "75223982",
+        "subscriberCount": "1270000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "201"
+      }
+    }
+  ]
+}

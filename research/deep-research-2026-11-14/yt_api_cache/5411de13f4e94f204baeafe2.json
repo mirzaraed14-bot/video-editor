@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "H0MB0XL6VoaMv5IQgaYCZjNZgqE",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "6VUL3-LJI3vM4pBz3_xh69ix8u4",
+      "id": "UCVYamHliCI9rw1tHR1xbkfw",
+      "snippet": {
+        "title": "Dave2D",
+        "description": "Hey everyone! My name is Dave Lee and I make quality videos about useful tech.\nIf you're into that kinda stuff, subscribe!\n\nThanks for all the support =)",
+        "customUrl": "@dave2d",
+        "publishedAt": "2015-01-05T17:24:15Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lltZkOAE5XVIlI8U5QVXmdASgYyJiJps-LkO-uQnTwLMQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lltZkOAE5XVIlI8U5QVXmdASgYyJiJps-LkO-uQnTwLMQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lltZkOAE5XVIlI8U5QVXmdASgYyJiJps-LkO-uQnTwLMQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Dave2D",
+          "description": "Hey everyone! My name is Dave Lee and I make quality videos about useful tech.\nIf you're into that kinda stuff, subscribe!\n\nThanks for all the support =)"
+        },
+        "country": "CA"
+      },
+      "statistics": {
+        "viewCount": "882484122",
+        "subscriberCount": "3690000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "848"
+      }
+    }
+  ]
+}

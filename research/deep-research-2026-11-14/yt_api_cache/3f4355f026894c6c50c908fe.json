@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "p05UGmdUB_TjlAGFDK93Fvi08Ko",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "UsE8XzuNrTQcqV1JdbhHooG09_g",
+      "id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+      "snippet": {
+        "title": "Veritasium",
+        "description": "An element of truth - videos about science, education, and anything else we find interesting.\n\nFor all enquiries email us at contact@veritasium.com\n",
+        "customUrl": "@veritasium",
+        "publishedAt": "2010-07-21T07:18:02Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/7vCbvtCqtjQ3YLgsJt7Y952MQV1sBvhllSCSxHP8_sVZdcPCBrITfhkN2RdyCuwPnsByq-1GoA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/7vCbvtCqtjQ3YLgsJt7Y952MQV1sBvhllSCSxHP8_sVZdcPCBrITfhkN2RdyCuwPnsByq-1GoA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/7vCbvtCqtjQ3YLgsJt7Y952MQV1sBvhllSCSxHP8_sVZdcPCBrITfhkN2RdyCuwPnsByq-1GoA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Veritasium",
+          "description": "An element of truth - videos about science, education, and anything else we find interesting.\n\nFor all enquiries email us at contact@veritasium.com\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "4759767481",
+        "subscriberCount": "21400000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "550"
+      }
+    }
+  ]
+}

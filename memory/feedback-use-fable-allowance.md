@@ -1,6 +1,6 @@
 ---
 name: feedback-use-fable-allowance
-description: "Affan 2026-10-21: NO Fable agents; agents run on Opus only when the task needs it, Sonnet/Haiku otherwise; check with the advisor which model a task needs. 2026-11-10: Fable 5.2 IS the advisor and that's wanted; hubs stay Opus, edit sub-sessions default to Sonnet once the BRIEF locks the creative calls"
+description: "Affan 2026-10-21: NO Fable agents; agents run on Opus only when the task needs it, Sonnet/Haiku otherwise; check with the advisor which model a task needs. 2026-11-10: Fable 5.2 IS the advisor and that's wanted; hubs stay Opus, edit sub-sessions default to Sonnet once the BRIEF locks the creative calls. 2026-11-17: RESEARCH sessions = Opus main + Fable advisor + Sonnet agents (Fable boss, Opus manager, Sonnet employee)"
 metadata:
   node_type: memory
   type: feedback
@@ -62,3 +62,11 @@ Related: [[feedback-usage-budget]].
     opus extra and editor sub sessions will now run on sonnet as well". "Extra" is for the Editors; xhigh on the sub-sessions is the
     Main Brain's reading, since his words name no effort for them. Checked live: aw-dr-ig-mj and aw-dr-hp-cast read claude-sonnet-5-5
     / xhigh, and the AW hub reads claude-opus-5-5 / xhigh.
+- **2026-11-17, his words to the AW hub (supersedes the 11-15 "every sub-session on Sonnet" line FOR RESEARCH SESSIONS):** "For each
+  session the main model will be Opus fable will be run as advisor and Sonnet will just be doing the actual execution so Fable is the
+  boss Opus is the manager and Sonnet is the actual employee that's going to be the framework". Said for the two AW research sessions
+  (MJ + IShowSpeed) he asked for that day.
+  - **How to apply:** a research sub-session starts with `model: claude-opus-5-5` (effort xhigh); its advisor is Fable (check
+    `advisorModel` in its .jsonl, never assume); every agent it spawns for execution (downloads, transcripts, page scans, frame
+    sheets) passes `model: sonnet`; still no Fable agents. Build sessions keep the 11-15 Sonnet default unless he says otherwise
+    (he set the 16 Nov overnight builds to Opus + Fable himself).

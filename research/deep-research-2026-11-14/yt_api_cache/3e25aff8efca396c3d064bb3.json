@@ -1,0 +1,691 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "2OzgMNpwmombNiMHVlVHCTIH9IM",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DcWNCQ0lBRUZSZTMwVGdhbkFFS2x3RUkyRjhRZ0FRWUJ5S01BZHUzdDdRN1F2Q0lmWHBEd1BLSG1GRVA4OXlvVURoaUwxaFltVjdjcl94YldFQnMxci1xMlRhZjZhSVJNdEFPMHBhR2xHMGp2N0tGZW1peEMzd0ZyRVFVNFJkZGhsVjUwZVBLVEF6RzdYQ3BZY0ZZc2J5NkFCaGVNSTVQdFVaM0ZYZzVhS1p1aGkxQzJPQnJuS0JST0drdnlFZlNrN1BHc0xmR3doVUxSRldTUEVveVNrZWFqeXNKNHhRQUVCUVNCUWlvSUJnQUVnVUloaUFZQUJJRkNJY2dHQUFTQlFqQUlCZ0FFZ2NJaFNBUUZCZ0JFZ1VJaVNBWUFCSUZDSWdnR0FBU0JRaTdJQmdBVUFCWUFR",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uSAFayGr2rgmHPSbu4wPphzZZ48",
+      "id": "UgwigfwogDgdGXyuDQ94AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "u5YkTNOIZynHQhJfQjibkJflyWY",
+          "id": "UgwigfwogDgdGXyuDQ94AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "When Michael Jackson was a kid, Joe would make fun of his nose a lot. It's sad that all those taunts got to Michael to where he wanted surgery.",
+            "textOriginal": "When Michael Jackson was a kid, Joe would make fun of his nose a lot. It's sad that all those taunts got to Michael to where he wanted surgery.",
+            "authorDisplayName": "@SpammytheHedgehog",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/8E7o0J63N9VYll547RuKJ9dktkvLaYcXIutWhl0yKa4gnO_2kwSUrwU7U1YswQTStuDCysDvlA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SpammytheHedgehog",
+            "authorChannelId": {
+              "value": "UCdwfzBdC4C2WtI8hd9uYtvQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1358,
+            "publishedAt": "2026-07-27T14:16:50Z",
+            "updatedAt": "2026-07-27T14:16:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 50,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "fRLNa54Ne82USFYzOka_iWeaOb8",
+      "id": "UgxQ8Ltsh6jiE0fqMkB4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uhWHn2aGO5LY-iujFiGUXWKys-I",
+          "id": "UgxQ8Ltsh6jiE0fqMkB4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Jafaar really got Michaels voice down",
+            "textOriginal": "Jafaar really got Michaels voice down",
+            "authorDisplayName": "@Jaylin-y3y",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_khSbcYOk-ZJpJdnM0KT63okOiFU3WwtWMvAi-S5gxJah9fOAID9GlTIjWJnSHyDKWk4A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Jaylin-y3y",
+            "authorChannelId": {
+              "value": "UCVKqzXYvvU8BUIkZ56lt0Pw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1327,
+            "publishedAt": "2026-07-27T15:14:14Z",
+            "updatedAt": "2026-07-27T15:14:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 35,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "YeFkePYnIyNgCBVvlqfM0ztfqcU",
+      "id": "UgwvCAhLdrW4MbKeZXx4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lbt_iELMwkRfGvWSTi1wr26Qei8",
+          "id": "UgwvCAhLdrW4MbKeZXx4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "He seems so scared of his dad even as an adult.",
+            "textOriginal": "He seems so scared of his dad even as an adult.",
+            "authorDisplayName": "@yuyij6703",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kHU9j6JnUu2HJfOhGKb6zYHNZ-zuJRbci03UK5iF-X0g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@yuyij6703",
+            "authorChannelId": {
+              "value": "UCCLnGZ_G-qH5mxZ7fG59rmg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 760,
+            "publishedAt": "2026-07-29T17:08:15Z",
+            "updatedAt": "2026-07-29T17:08:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 14,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ffpbo2KUUYlCNN5c5AftRtMv4z8",
+      "id": "UgyJ2EcUWSQVNHxVbpZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Ij5L_Cx5h9UZ-MWe7ov1kGKuxGk",
+          "id": "UgyJ2EcUWSQVNHxVbpZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "That was the beginning of the end for him.",
+            "textOriginal": "That was the beginning of the end for him.",
+            "authorDisplayName": "@selinakyle2368",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mbdw79JGc5mlEFb4L_fDS_eNfnZ3cB5TODqlDQLt_5YWQ-7_FLklstw7UB2tMe0YfK6w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@selinakyle2368",
+            "authorChannelId": {
+              "value": "UCYphtlFEW4Z0ZxzCSX54q1A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 586,
+            "publishedAt": "2026-07-28T17:20:00Z",
+            "updatedAt": "2026-07-28T17:20:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 19,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ye42Nx32o2YFBZhJ6ngjk4mrH4k",
+      "id": "UgwH_yPIvOobwncLec94AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ZNC2XoereOe5wYR7e1TvAHepaiY",
+          "id": "UgwH_yPIvOobwncLec94AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Calling him \"big nose\" after striking him would damage and alter any childs perspective forever. I'm happy he left his impact in our world, but no child should ever experience any type of abuse at the hands of their father. R.I.P, and thank you for everything Michael 🕯🥀🕊",
+            "textOriginal": "Calling him \"big nose\" after striking him would damage and alter any childs perspective forever. I'm happy he left his impact in our world, but no child should ever experience any type of abuse at the hands of their father. R.I.P, and thank you for everything Michael 🕯🥀🕊",
+            "authorDisplayName": "@Jake-ジェイク",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/XyHtLuJA8O68r7ARjmq8C5tpvu8uAyYGxy4Yk8MOPLE0oT_aexiNrLpl6jB4415ux6hFVa88=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Jake-%E3%82%B8%E3%82%A7%E3%82%A4%E3%82%AF",
+            "authorChannelId": {
+              "value": "UCLb3NRq2uaE1BFwFTaqJkjQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 304,
+            "publishedAt": "2026-07-29T13:26:45Z",
+            "updatedAt": "2026-07-29T13:26:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JFmCbTpVYz3TO-0CSggxKLktri8",
+      "id": "Ugy5GmvUWpDMotFpRkR4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "XDzwUFWGfv8khp81-rM4HTynzas",
+          "id": "Ugy5GmvUWpDMotFpRkR4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Jafar does a great job portraying young Michael Jackson the way he reacts in fear of Joe. The way his voice breaks when he interacts with Joe is just incredible.",
+            "textOriginal": "Jafar does a great job portraying young Michael Jackson the way he reacts in fear of Joe. The way his voice breaks when he interacts with Joe is just incredible.",
+            "authorDisplayName": "@Symphonia30",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kZpdQ3d0oqSfAJdiBvzvM7X5B2YPlQQ0_X_bICYjUAbw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Symphonia30",
+            "authorChannelId": {
+              "value": "UCfkEL0F4LdiWBmokcouXF7w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 168,
+            "publishedAt": "2026-07-28T08:07:08Z",
+            "updatedAt": "2026-07-28T08:07:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tNV2wHlrWl9jCJxb0yyjVs8wmT0",
+      "id": "UgxHEMsS_DVAACiBsyp4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "WJT-ZidmuP8wqsoCoVhqd3RK0PM",
+          "id": "UgxHEMsS_DVAACiBsyp4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "I gasped when Joe caught Michael going to his room. When his jaw dropped the minute he saw the bandages I shouted, YOU DID THAT!!😢😢",
+            "textOriginal": "I gasped when Joe caught Michael going to his room. When his jaw dropped the minute he saw the bandages I shouted, YOU DID THAT!!😢😢",
+            "authorDisplayName": "@lawandabailey7480",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lxfHd62bN8sm_rbeJXC9RmEQhgu8fLyg4EXQ4DnFs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lawandabailey7480",
+            "authorChannelId": {
+              "value": "UCbbMKQ8KxVywluOodRMh6Zg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 234,
+            "publishedAt": "2026-07-27T16:26:55Z",
+            "updatedAt": "2026-07-27T16:26:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lnp-dsJ2i7tycyHOlZqqHl3p3ik",
+      "id": "Ugyr1KPLVOoy4cc0m9J4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2sDRP9WmkyGjrUcF9wyAaXDIquU",
+          "id": "Ugyr1KPLVOoy4cc0m9J4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Joe litterly made fun of Michael for having a big nose when Joe HAS A BIGGER NOSE",
+            "textOriginal": "Joe litterly made fun of Michael for having a big nose when Joe HAS A BIGGER NOSE",
+            "authorDisplayName": "@lavendersnowcats",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/tX3Y-AJu3njfVyyied6QUvZ3XekeLG456k_c2PHg6DH8uv2fUcwOC1iK0Bh2GKt_ewRUGZD0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lavendersnowcats",
+            "authorChannelId": {
+              "value": "UCBYeIba-e1o8YyITimD00vA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 188,
+            "publishedAt": "2026-08-04T13:28:38Z",
+            "updatedAt": "2026-08-04T13:29:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ymr-DmuDz7rzsMUd6oQ2PQyJtwA",
+      "id": "UgwUVAx9jd7O93UU5oR4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "sM1O1Sps-IgFjLy5xJl2Oi14Ks0",
+          "id": "UgwUVAx9jd7O93UU5oR4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Joe finally realized how much he hurt his son",
+            "textOriginal": "Joe finally realized how much he hurt his son",
+            "authorDisplayName": "@DreDaDon16",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kh4OJmgo0dYM8kOrqeM7Lp6Sru3q1vSNQwyx3eZ8O2bw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DreDaDon16",
+            "authorChannelId": {
+              "value": "UC_VUfzqQZfF8NCF6wvg1lpg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 59,
+            "publishedAt": "2026-08-01T11:00:21Z",
+            "updatedAt": "2026-08-01T11:00:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wAvEQDKGeaIDyLSBKJOy3ho_NoM",
+      "id": "UgwKIQ6U-Ek7etGaujZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "T7VuWbLd21ve9FChVzjkTpZo80E",
+          "id": "UgwKIQ6U-Ek7etGaujZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "2:40 the only time Joe showed any sincere humanity. The little \"Hey\" when slowly removing the shades was his way of saying \"don't be afraid, it's okay\"",
+            "textOriginal": "2:40 the only time Joe showed any sincere humanity. The little \"Hey\" when slowly removing the shades was his way of saying \"don't be afraid, it's okay\"",
+            "authorDisplayName": "@officialdonnietae",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-SRJsT9X_eZfavKh71M9pyS0AVN-dFhNiQEID0gugSMrZ46OcQo2xYwbUlLTTNEht83fg5U9rQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@officialdonnietae",
+            "authorChannelId": {
+              "value": "UCcIA0by7hPU_EWO6j_OGL3g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-10-29T05:35:00Z",
+            "updatedAt": "2026-10-29T05:35:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RbwkfRFAyr198T0ptQPrZyp5RA4",
+      "id": "UgygNjH6kWXCR-fwjex4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1n2JzBjYO1Qvqaw4xa252Taq0Ko",
+          "id": "UgygNjH6kWXCR-fwjex4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "I feel sorry…this man was a Super Star but yet he lived the saddest life. He didn’t deserve to go out the way he did",
+            "textOriginal": "I feel sorry…this man was a Super Star but yet he lived the saddest life. He didn’t deserve to go out the way he did",
+            "authorDisplayName": "@ferro_drip189",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/EktfC1wWY-qTfJvbXgXjY_VnYy1NstDLi_go1IwBinbfb-lF8d11IVl9ZNoJcspQMTRB26e2gw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ferro_drip189",
+            "authorChannelId": {
+              "value": "UCKzr9O0Cpn_sAopJR6OvjFw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 21,
+            "publishedAt": "2026-07-31T03:26:36Z",
+            "updatedAt": "2026-07-31T03:26:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "33i6EV3RCbO3M8fPgL9vJmQ4RFE",
+      "id": "UgwziSlmDwIpsZkLl4l4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lnVabjps5rDdQ1CDhc5sW4OGxuE",
+          "id": "UgwziSlmDwIpsZkLl4l4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "OMG, Jaafar was freaking AMAZIN in Michael 2026. The abuse scenes that he suffered as a child, the pepsi burn and especially the hospital scene where Katherine apologized to Michael for not protecting him just made me cry so hard.  The hospital just completely broke my heart. Like, I was bawling my eyes out when I saw this in theaters. Michael did not deserve anything that people accused him of. Knowing what this man had been through just makes me want to hug him so bad. R.I.P to the King Of Pop. We love and we still miss you so much. I can't wait for part 2. ❤😊",
+            "textOriginal": "OMG, Jaafar was freaking AMAZIN in Michael 2026. The abuse scenes that he suffered as a child, the pepsi burn and especially the hospital scene where Katherine apologized to Michael for not protecting him just made me cry so hard.  The hospital just completely broke my heart. Like, I was bawling my eyes out when I saw this in theaters. Michael did not deserve anything that people accused him of. Knowing what this man had been through just makes me want to hug him so bad. R.I.P to the King Of Pop. We love and we still miss you so much. I can't wait for part 2. ❤😊",
+            "authorDisplayName": "@zoesmith6803",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ldGabRu-rUv_NEGK-b1ANKUaPVuhxxfoJ0gcKjYvI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zoesmith6803",
+            "authorChannelId": {
+              "value": "UC0Bm8BubfMSQvlFjvKiF8eg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 87,
+            "publishedAt": "2026-07-27T16:49:44Z",
+            "updatedAt": "2026-07-27T16:49:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lYZbToP6KYUSndo9acN834RsS5U",
+      "id": "UgyTVX7Jx-0jxh-4nDN4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "7Lldkd2OLZ8nqKmiKfDM_NkdJlI",
+          "id": "UgyTVX7Jx-0jxh-4nDN4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "2:45 In case you're wondering, bruising around the eyes occurs because the surgery breaks small blood vessels in the nose, and the blood travels by gravity to the thin skin of the eyelids. It doesn't hurt and doesn't last many days \n*The more you know*",
+            "textOriginal": "2:45 In case you're wondering, bruising around the eyes occurs because the surgery breaks small blood vessels in the nose, and the blood travels by gravity to the thin skin of the eyelids. It doesn't hurt and doesn't last many days \n*The more you know*",
+            "authorDisplayName": "@luwucian4497",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nyDYknrabx0sCbUkBb-lAJnZ8iq3XxmLP1j44TmvM-5LT3=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@luwucian4497",
+            "authorChannelId": {
+              "value": "UCewRHSQCmthWpg6NWEc94fA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 239,
+            "publishedAt": "2026-07-28T17:08:56Z",
+            "updatedAt": "2026-07-28T17:08:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rNzknEF5NWauzDSnrFEA1ZpGauE",
+      "id": "UgwW8V7NaJGu183-QuF4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "H32hzEWz-FxYUXNn7mqyIgXHcdI",
+          "id": "UgwW8V7NaJGu183-QuF4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "The voice is so incredibly similar to Michaels voice",
+            "textOriginal": "The voice is so incredibly similar to Michaels voice",
+            "authorDisplayName": "@brittac.fleck-zink2863",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k-QTTvSgq8BxFBLZFU_fHPhliJsq5DWDoJfBP7ZPzVfNKK=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@brittac.fleck-zink2863",
+            "authorChannelId": {
+              "value": "UClUvf6mu8zcum2TMv0bHKNg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 65,
+            "publishedAt": "2026-07-30T17:09:29Z",
+            "updatedAt": "2026-07-30T17:09:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "pOEdsRTVGYcwJKPyyr1_Gxp4N9k",
+      "id": "Ugz-ApeaGrf0F0CdeyV4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "sWLkHtckKZd0A2NT9D7A9rNwIQw",
+          "id": "Ugz-ApeaGrf0F0CdeyV4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Joe Jackson was a true Bastard of a man",
+            "textOriginal": "Joe Jackson was a true Bastard of a man",
+            "authorDisplayName": "@Draxx1987",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-oOwp6DYjgI99tsFbinJi3LUwxtL5-Npgw8-be5jTDho9lb2TrGfiIIk_zA01c2z1W3i7Sn9=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Draxx1987",
+            "authorChannelId": {
+              "value": "UCdtMv9mhvTVybvSg3Zjls-Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 138,
+            "publishedAt": "2026-07-30T01:36:08Z",
+            "updatedAt": "2026-07-30T01:36:35Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "MkH9nZdig3dcxidEbUXjsLd0gng",
+      "id": "Ugx67-6Lxi6V0szk4-B4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "doNntOFo3O4YEiv_CvOaD2fivUo",
+          "id": "Ugx67-6Lxi6V0szk4-B4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "He literally called his Son “BiG NOSE” when beating him and has the audacity to be angry.",
+            "textOriginal": "He literally called his Son “BiG NOSE” when beating him and has the audacity to be angry.",
+            "authorDisplayName": "@Sad_Bumper_Sticker",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/HI5gy7tIspDFlzmTgN6S1QLFlCjXQUmtMu2qK-_MlYYUjZMjfJE-282u0YI6h4V_fLA1bBCAxg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Sad_Bumper_Sticker",
+            "authorChannelId": {
+              "value": "UCrf-12Ynee39lE5qMyqMfeg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 44,
+            "publishedAt": "2026-08-01T17:57:00Z",
+            "updatedAt": "2026-08-01T17:57:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "6HuRk6LqNDSnLBqf6Y23roe_IT0",
+      "id": "UgyJLrhhiPbhnwF3OrZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "GwVvZArAuceQljtOiEYBr84wwRY",
+          "id": "UgyJLrhhiPbhnwF3OrZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "This scene is really emotional",
+            "textOriginal": "This scene is really emotional",
+            "authorDisplayName": "@AnimeLoverTomboy2002",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/XWtrg5xetQ2iGU2t2Tl_zD_0U4JTQkOvZ6HogJdBOKWP6QJFmk98FS24-qV8cSld7GVRG9vdcA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AnimeLoverTomboy2002",
+            "authorChannelId": {
+              "value": "UCb1-x_0DinWzg-qxtALwhow"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 329,
+            "publishedAt": "2026-07-27T17:34:18Z",
+            "updatedAt": "2026-07-27T17:34:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 15,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bcRn2D7XdYbNHYcolSSD5G1vbc0",
+      "id": "UgxQ0022lsNnjAaB7qx4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "c4Qv_GsVieJUe9TCdgR1qZ34OF8",
+          "id": "UgxQ0022lsNnjAaB7qx4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "I'd be terrified it would change my singing voice.",
+            "textOriginal": "I'd be terrified it would change my singing voice.",
+            "authorDisplayName": "@PatsyMayonnaise",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/hyRo2hUVr2lxLQ4aUJh7CRGZBb4WKonD3WTQd4YpXZucohaLQUS1u08hCyDCi8MvGgV0Wp3DkQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@PatsyMayonnaise",
+            "authorChannelId": {
+              "value": "UCAYd1G8Ei5d_qoMEoSO5kLQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 189,
+            "publishedAt": "2026-07-28T16:19:18Z",
+            "updatedAt": "2026-07-28T16:19:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ykWHxV42r8v_BGwgNMQrUNhoqrs",
+      "id": "UgzSlk4FY6E1-ZSZ7Tl4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "pkqtCZsEs1W9scrwGelPTzJQD4w",
+          "id": "UgzSlk4FY6E1-ZSZ7Tl4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "I wonder if Joseph ever fully acknowledged/realized what he did to his own son…",
+            "textOriginal": "I wonder if Joseph ever fully acknowledged/realized what he did to his own son…",
+            "authorDisplayName": "@MdW4177",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mN7bxar7QrJd289ApSRZfoFkHyn8iIzkwl7AIhqGE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MdW4177",
+            "authorChannelId": {
+              "value": "UCd7qa_1ih--MKu3AnpH3jTQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 79,
+            "publishedAt": "2026-07-28T10:16:44Z",
+            "updatedAt": "2026-07-28T10:16:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7KXD4rpIfNvqwTgAAYy3_qAhpYU",
+      "id": "Ugyy0OZ69llGm2odW9p4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "IJguz_2mfHs",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "M9XWPQXD4laMb3o1UMwkZSGHJiE",
+          "id": "Ugyy0OZ69llGm2odW9p4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "IJguz_2mfHs",
+            "textDisplay": "Makeup/costume/prosthetics did really really great here",
+            "textOriginal": "Makeup/costume/prosthetics did really really great here",
+            "authorDisplayName": "@isometimespaintstuff",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/HO7aIlVinuFd4Xye1WKhUhlkZ5_q0NBj-9XoKZVvtaDzL3Rw4W96H010-peOXleDYLllZSLQu5U=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@isometimespaintstuff",
+            "authorChannelId": {
+              "value": "UChTfKAoiLMTtxCi_Om5Bwsg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 25,
+            "publishedAt": "2026-07-29T05:01:56Z",
+            "updatedAt": "2026-07-29T05:01:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}

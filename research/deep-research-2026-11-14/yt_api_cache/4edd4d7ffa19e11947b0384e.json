@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "TNjjDuOYXMlIA-9YqbrpZOc9lvw",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "OThAZln0BK6yE-b0dnUIuDR2CDE",
+      "id": "UCrwbBzP11NhxRUCRKx_BgoQ",
+      "snippet": {
+        "title": "Cash Jordan",
+        "description": "Let's scream at the TV... together",
+        "customUrl": "@cashjordan",
+        "publishedAt": "2019-12-11T16:21:15.407285Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/SJ1c5rZ5MwRKpiFPL4EXmoSduu5z6CM4MN_S2nXeeIjeQKHMJio2sid1mATzgBJ59lwR_d4IJg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/SJ1c5rZ5MwRKpiFPL4EXmoSduu5z6CM4MN_S2nXeeIjeQKHMJio2sid1mATzgBJ59lwR_d4IJg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/SJ1c5rZ5MwRKpiFPL4EXmoSduu5z6CM4MN_S2nXeeIjeQKHMJio2sid1mATzgBJ59lwR_d4IJg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Cash Jordan",
+          "description": "Let's scream at the TV... together"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "713283710",
+        "subscriberCount": "1780000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1462"
+      }
+    }
+  ]
+}

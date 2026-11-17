@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "z9A5kclpYnEDxrLSTQ-ZnmhswEk",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "_ZssKzjXXnQfpWCwD2RKcqqC6oQ",
+      "id": "UCrdWRLq10OHuy7HmSckV3Vg",
+      "snippet": {
+        "title": "Nathaniel Drew",
+        "description": "Exploring the beauty of being alive.\n",
+        "customUrl": "@nathanieldrew",
+        "publishedAt": "2015-07-21T00:30:25Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_k3dZrYTuTMFvutkuaR77Xz_TqhLy4aUZCDlniAles92gc=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_k3dZrYTuTMFvutkuaR77Xz_TqhLy4aUZCDlniAles92gc=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_k3dZrYTuTMFvutkuaR77Xz_TqhLy4aUZCDlniAles92gc=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Nathaniel Drew",
+          "description": "Exploring the beauty of being alive.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "118219718",
+        "subscriberCount": "1780000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "213"
+      }
+    }
+  ]
+}

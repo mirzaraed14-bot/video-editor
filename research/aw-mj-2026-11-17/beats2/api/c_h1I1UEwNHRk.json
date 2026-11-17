@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "laNn8dDJDeqyhRH_qza-4ImJHJQ",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1Dc01CQ0lBRUZSZTMwVGdhdUFFS3N3RUkyRjhRZ0FRWUJ5S29BZHZoVEVETVJTNFRlQ2VXRXpDMzllazRiTHVfelpRdEJVR0ZRSWFnc2M1a3NqQTBnNGx0R1hDd2xsQURRVVBqUWw0aWtqQXJJUGZUSTBHY2lmTDF6MkZEUVRVR0NuY1ZMUXlwc1d4R2lIWTRuWUhkMGl4d291QUE2ZmtRRy1rT1FVbmF1NEJoTGlNU1lYWXZwMnBVb09rclB1ZkdVeVdRM2FhMlp2dWRMbm84REF6UlNBSzVDZElTa0FmSFE2aVZ3TVpjTTJqWlhlemVNaEYxaDU5aUpFSDdOTGxaeXpRMkZCQVpFZ1VJdXlBWUFCSUZDSWtnR0FBU0JRaUhJQmdBRWdVSWlDQVlBQklGQ0tnZ0dBQVNCUWlHSUJnQUVnVUl3Q0FZQUJJSENJUWdFQmdZQVJJSENJVWdFQTBZQVZBQVdBRQ==",
+  "pageInfo": {
+    "totalResults": 25,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rhSovSG3p71hJokZrchRg4ksZNI",
+      "id": "UgyerYMyv-B60yE_CWZ4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ke8pd-rcQFEGl_rn0ydZ_Wm6GsM",
+          "id": "UgyerYMyv-B60yE_CWZ4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "The fact that MJ called Chris just to roast him was funny as hell...😂😂",
+            "textOriginal": "The fact that MJ called Chris just to roast him was funny as hell...😂😂",
+            "authorDisplayName": "@karthiksubramanian2279",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mc-pm4HlxH4nTZ0nfPuTVt73-m3mFmbadfjlmtAPE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@karthiksubramanian2279",
+            "authorChannelId": {
+              "value": "UCDiw-BI8w9r_O3dY0d8doWA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6090,
+            "publishedAt": "2025-08-05T17:35:09Z",
+            "updatedAt": "2026-04-30T14:00:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "D7uqdDBSM5DHinw1olX7Y1ZrLkw",
+      "id": "UgyfjfjhbYgI0O1SsLd4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "nQkdb_3C3WKKEdDpqinOGgZwC-s",
+          "id": "UgyfjfjhbYgI0O1SsLd4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "I absolutely ADORE how others artists always imitate his voice and talk about MJ so dearly",
+            "textOriginal": "I absolutely ADORE how others artists always imitate his voice and talk about MJ so dearly",
+            "authorDisplayName": "@Nananananap",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Y9UFXEqtEDdRoLC_VulE7-fRKsjZxN7ewnwBMuwMVXDFD4__eWvbJwxpqeN99R_13Y_nrFWs9w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Nananananap",
+            "authorChannelId": {
+              "value": "UCXq1y7z8aBL4VuH09ioeZ2Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3012,
+            "publishedAt": "2025-11-09T23:56:43Z",
+            "updatedAt": "2025-11-09T23:56:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "D7HuZazYKWDKLo7PSNfZFUYC8Lc",
+      "id": "Ugwl1KHNbjIx9GI2qWF4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3CW2xZLrnm0R0QfvK_W6eS1jkJ0",
+          "id": "Ugwl1KHNbjIx9GI2qWF4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Kicking the wrong leg is diabolical in front of him too🤣🤣🤣",
+            "textOriginal": "Kicking the wrong leg is diabolical in front of him too🤣🤣🤣",
+            "authorDisplayName": "@Triz-O-My-Trizzeefame",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/apZhUIULICgK-Figz1zvRZ3ArhxyLX9WyTMUefIwK-pMC2ulkK1kLMMY4BtjBZ3g43Khgu-nMQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Triz-O-My-Trizzeefame",
+            "authorChannelId": {
+              "value": "UC4Mik9r5jAhy6gsPgu-3IFA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 427,
+            "publishedAt": "2025-10-01T07:14:46Z",
+            "updatedAt": "2025-10-01T07:14:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "DByfIvDRJBRMQv5lJQVa7yUjN14",
+      "id": "UgzOEvFB8JY7JZPIPRJ4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "FANRd0zBbzH39sh_Rr5JhjAOfYQ",
+          "id": "UgzOEvFB8JY7JZPIPRJ4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Micheal Jackson was like “ You Still Kicking With The Wrong Leg😂😂😂😅😅😅Last video",
+            "textOriginal": "Micheal Jackson was like “ You Still Kicking With The Wrong Leg😂😂😂😅😅😅Last video",
+            "authorDisplayName": "@JamesWorthy-n4w",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lT8Qu4LCD_pf9EwiAYpLW0gk_IeN8X9SN8VrwEe_FldWB8_Tdy3pM5DhTGCs4a8PJ_Cg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JamesWorthy-n4w",
+            "authorChannelId": {
+              "value": "UCV8rTVSv6gGWGjbZyhV7HAA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 526,
+            "publishedAt": "2025-08-03T14:54:23Z",
+            "updatedAt": "2025-08-03T14:54:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "QVqoQzAakzAL8Hb65NtX97KQ75Q",
+      "id": "UgxRMATY0KVdBNyCxP94AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "0hV3wpyww-x7bp9RyWB8sPOqz10",
+          "id": "UgxRMATY0KVdBNyCxP94AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "There was Michael amusing the whole world and there was Chris Tucker amusing Michael",
+            "textOriginal": "There was Michael amusing the whole world and there was Chris Tucker amusing Michael",
+            "authorDisplayName": "@Isaacopaci",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l3vzlfGh_cUsmWmfgCYfl0CgR7wJ1YTo-K1BXFd5l8VL26rm1vYx6UYO5ILEs2NcGMpw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Isaacopaci",
+            "authorChannelId": {
+              "value": "UCkbqQ_Sx3d8EeUa6HVdtLzA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1371,
+            "publishedAt": "2025-02-28T11:58:12Z",
+            "updatedAt": "2025-02-28T11:58:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "AHXXM2sQ1RQIIKvCr7k_0wA_spM",
+      "id": "UgwJ11S4k-YOR8HAXPp4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "sIVGY3e8Q8rLLfvX05IFnxdrw6A",
+          "id": "UgwJ11S4k-YOR8HAXPp4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "This clip of Michael and Chris on stage is absolutely priceless. God bless this beautiful friendship. 🙏🏻💜🙏🏻",
+            "textOriginal": "This clip of Michael and Chris on stage is absolutely priceless. God bless this beautiful friendship. 🙏🏻💜🙏🏻",
+            "authorDisplayName": "@dawnjawid1790",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mcB4-arDd2z59vyUw6eV_uy4eWw4fwIRz_K2M8nBCWIGU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dawnjawid1790",
+            "authorChannelId": {
+              "value": "UCESI3xTqnVMPXLuB-r2FLHw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 11971,
+            "publishedAt": "2024-12-21T05:19:01Z",
+            "updatedAt": "2024-12-21T05:19:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 34,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4rnlfj3l-XyeHWmnHOlKL3EvvqA",
+      "id": "Ugw43TY07DIfm1nyBDh4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "hIj7Gw_99_cEayo3HjvOQtRyzLM",
+          "id": "Ugw43TY07DIfm1nyBDh4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Immediately Michael saw Chris he couldn’t hold the laughter down. Rest on Michael, bless you Chris for giving the king of Pop such a wonderful time.",
+            "textOriginal": "Immediately Michael saw Chris he couldn’t hold the laughter down. Rest on Michael, bless you Chris for giving the king of Pop such a wonderful time.",
+            "authorDisplayName": "@Pamela-m9j",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ZWhRhZypZUAKADFz2w9H3xQLDfKrYtAlb7Ss4-zvRNbiNFc107mHTGLPLLirVOe7mwVBAwyQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Pamela-m9j",
+            "authorChannelId": {
+              "value": "UCsxlPxlg2oaHTRp4Y7F5I0A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3863,
+            "publishedAt": "2024-12-24T15:49:55Z",
+            "updatedAt": "2024-12-24T15:49:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "3bwKAXhC8yWqn7g945jAs2MlqUU",
+      "id": "UgyNfrTDftRGzCZ6Bjh4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "rKMitaMEap8tagJPbleineH39O8",
+          "id": "UgyNfrTDftRGzCZ6Bjh4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "SO NICE TO SEE HOW CLOSE THEY ARE, I THINK MICHAEL IS TIRED OF TEACHING CHRIS THE RIGHT LEG TO KICK😂",
+            "textOriginal": "SO NICE TO SEE HOW CLOSE THEY ARE, I THINK MICHAEL IS TIRED OF TEACHING CHRIS THE RIGHT LEG TO KICK😂",
+            "authorDisplayName": "@yousufhadjiali6394",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nOdM3ViStZOOIkAhZQairhZV_oWjhXnOfhG2SNmu0tH8n2nVSO2lfB6G-4u0gI2rrX4w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@yousufhadjiali6394",
+            "authorChannelId": {
+              "value": "UCMBA6gPMnQucvVOb06eGWCQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9869,
+            "publishedAt": "2022-04-23T06:33:46Z",
+            "updatedAt": "2022-04-23T06:33:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 24,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "cf7g-lWuyiXkj5yCCezQgLxnBK8",
+      "id": "UgwmheZTbIe7ItGqIpB4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aK5-TYuq5JcMVUjBg2xMk8F1I6c",
+          "id": "UgwmheZTbIe7ItGqIpB4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "This is the kind of friendship I ever wish to have😊😊😊",
+            "textOriginal": "This is the kind of friendship I ever wish to have😊😊😊",
+            "authorDisplayName": "@Shexzy471",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/GpXXZizpyWcRfITDFzaVm2ry_iJto9r-rJfLKB0BskQX4OIm32t6SOPKziJ23aGKBSyG9TmXTk4=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Shexzy471",
+            "authorChannelId": {
+              "value": "UCcDGYIQBvl4djaS70DLa-1Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 226,
+            "publishedAt": "2025-07-27T22:51:38Z",
+            "updatedAt": "2025-07-27T22:51:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gNOApDUgDOy11Na5j6MgGB2y_OY",
+      "id": "UgwQzhSuqaIoWFgKMgB4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NzRhj7VNWh4zE6QKd-09tHooXIE",
+          "id": "UgwQzhSuqaIoWFgKMgB4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "MJ is really a kid at heart...\n😢Missing Him...\nRIP🖤",
+            "textOriginal": "MJ is really a kid at heart...\n😢Missing Him...\nRIP🖤",
+            "authorDisplayName": "@hash5820",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nTPaiyHtrmfUBlJYoygizKHBGjwrd22C5J-P-RlEU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@hash5820",
+            "authorChannelId": {
+              "value": "UCDw5cB2HSXaWKSX82IOT43w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 70,
+            "publishedAt": "2025-01-24T16:38:23Z",
+            "updatedAt": "2025-01-24T16:38:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "UDfQROUxJUUEU7LmMwhfcgZG6oQ",
+      "id": "UgwGyxoi5RSRGU2LayB4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QhJuJgMBdmN0CFSDxUNQt0XVUng",
+          "id": "UgwGyxoi5RSRGU2LayB4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "He hit the floor laughing. …made me teary. He was an absolute beast in the world of entertainment ❤❤❤",
+            "textOriginal": "He hit the floor laughing. …made me teary. He was an absolute beast in the world of entertainment ❤❤❤",
+            "authorDisplayName": "@donnaleehinds2514",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mPoktR6eaK9WMM2etvxXERaa03TSyElTJoLJtcnQ_it-A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@donnaleehinds2514",
+            "authorChannelId": {
+              "value": "UC0Efz7glzdB2pi4oyrl6BIw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5283,
+            "publishedAt": "2024-12-22T01:10:41Z",
+            "updatedAt": "2024-12-22T01:10:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 17,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ocFZcOgf2FBBvIe1kN-wcOZTLwU",
+      "id": "UgwW2Jck8D1eKhp8D_t4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "CXlV_4NHxwvuGtMHKsPLPjtxc_s",
+          "id": "UgwW2Jck8D1eKhp8D_t4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Demmm he was such a lovely soul 😭😭😭 still miss him till now, rest on legend 😢",
+            "textOriginal": "Demmm he was such a lovely soul 😭😭😭 still miss him till now, rest on legend 😢",
+            "authorDisplayName": "@dammyjolly",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FkGz9sMZFOnYR1JLMVcE2WkSOWJ4fpU_WBL2z75CksXdPmdr_Q9gWcmbi08KclE4UHrC2hzq9v8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dammyjolly",
+            "authorChannelId": {
+              "value": "UChsFEhGFMrhll5UwAVjRITg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 951,
+            "publishedAt": "2024-12-27T02:36:30Z",
+            "updatedAt": "2024-12-27T02:36:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "T5MHrt3xyqh9j2Uzrgufuq0ygWQ",
+      "id": "UgzY90SuHPUKn24c-nF4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "j7j9F0rrXx29fTQwMAmNlzLggDY",
+          "id": "UgzY90SuHPUKn24c-nF4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Michael dying on stage from laughter, couldn’t hold it back, Chris always made him laugh so hard, such good friends. RIP MJ",
+            "textOriginal": "Michael dying on stage from laughter, couldn’t hold it back, Chris always made him laugh so hard, such good friends. RIP MJ",
+            "authorDisplayName": "@abdirisakawes6544",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mXRGQl8s3jpA1lDPOZ2u5Gr7Z3Efin1mABI_0U4nJerBI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@abdirisakawes6544",
+            "authorChannelId": {
+              "value": "UCaUr6HVQdZ8KXX-24NDQoHA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6002,
+            "publishedAt": "2022-04-24T23:12:26Z",
+            "updatedAt": "2022-04-24T23:12:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 14,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ztCzRiSwh4AsNuAvjW-CxsM2Crk",
+      "id": "Ugy5fd1PZR5QxZRqjoR4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bVZ9HsRz3LoInIXpxPN8hOZ5zro",
+          "id": "Ugy5fd1PZR5QxZRqjoR4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Absolutely priceless to watch Michael Jackson with Chris Tucker 😊😍🔥",
+            "textOriginal": "Absolutely priceless to watch Michael Jackson with Chris Tucker 😊😍🔥",
+            "authorDisplayName": "@zainmubarak6458",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n3--O8Go9oOSBA-mSXpi-GUFAsg_4UGzfTi2ciQSNEZk3C=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zainmubarak6458",
+            "authorChannelId": {
+              "value": "UCk9iCkFK1GANB3KnbE4yr3A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 231,
+            "publishedAt": "2025-05-21T19:13:20Z",
+            "updatedAt": "2025-05-21T19:13:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "EwAQht3AnqCxjsmL_MmtscOmCbE",
+      "id": "UgwSXfk6eJ4YOdHgv994AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ytaUvA-W_WU-bi4E23SLXvqTUr8",
+          "id": "UgwSXfk6eJ4YOdHgv994AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Thank you Chris for making MJ laugh and being his friend 💕",
+            "textOriginal": "Thank you Chris for making MJ laugh and being his friend 💕",
+            "authorDisplayName": "@maryanneKitties",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/RtbUpbYKYCHwDXBAq2KpXMvPp8II5D9WYVUDEIPX7vLsRI2bHcuPOqN5MjdCvkICnglzjPuw8A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@maryanneKitties",
+            "authorChannelId": {
+              "value": "UCaL-pDqwKLMwlzQDnl28HaA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 47,
+            "publishedAt": "2025-03-25T13:05:12Z",
+            "updatedAt": "2025-03-25T13:05:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "e_mL5-1QMwgw1edkkNZK12Nw5_0",
+      "id": "UgzIIfexSjhp8vqd_Ml4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cdd3ehj-xaZm2ZdbycO8xh6VIOg",
+          "id": "UgzIIfexSjhp8vqd_Ml4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "MJ showed “right leg kick”\nChris : still kick with left \nMJ died 🤣",
+            "textOriginal": "MJ showed “right leg kick”\nChris : still kick with left \nMJ died 🤣",
+            "authorDisplayName": "@kaungkaungproduction9891",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nLfQ8RZvP6cUuByc81RfIO4m07LKi6ji_PQ-jnhSip5PM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kaungkaungproduction9891",
+            "authorChannelId": {
+              "value": "UCA_gMBC1Nw4wjDD93Cc8vow"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 266,
+            "publishedAt": "2022-04-12T19:21:23Z",
+            "updatedAt": "2022-04-12T19:21:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "qVG5H21L089PX1JYjngxnCFoyHY",
+      "id": "Ugzywh1DAtw2mFIY7ap4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "pYuNQ-F6ZsdElRICSdl6QIh83AE",
+          "id": "Ugzywh1DAtw2mFIY7ap4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "I always wondering why Michael fell out laughing. Now I know it's because he still kicked with the wrong leg after telling him.",
+            "textOriginal": "I always wondering why Michael fell out laughing. Now I know it's because he still kicked with the wrong leg after telling him.",
+            "authorDisplayName": "@83TRUTH",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lDbPA3AdsJo_ytTd2kUyLKeBbBuSv5LgPV6jRJpxlqT_FbErQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@83TRUTH",
+            "authorChannelId": {
+              "value": "UC3BKLzczXDKLMi_YZlrJxDw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2240,
+            "publishedAt": "2022-04-09T00:45:42Z",
+            "updatedAt": "2022-04-09T00:45:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aP3MWx_n105xX-e27Mo1l8aeSCU",
+      "id": "Ugz4vc8mMgofS1mxi794AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6p7GS3R_l7M09LtJi15Esi61i9w",
+          "id": "Ugz4vc8mMgofS1mxi794AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "MJ fell down watching Kris Tucker dancing with Wrong leg😂😂😂😂😂",
+            "textOriginal": "MJ fell down watching Kris Tucker dancing with Wrong leg😂😂😂😂😂",
+            "authorDisplayName": "@MyLove_SARADA",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lOfGa9H5eWNz-RZER2Lg4qA2ki78vxAXCwhr7u40gwSA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MyLove_SARADA",
+            "authorChannelId": {
+              "value": "UC-44ZldreuiO-ki__G-yQkQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2040,
+            "publishedAt": "2023-03-17T12:18:21Z",
+            "updatedAt": "2023-03-17T12:18:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "cbJmqflGwhDcEDO7ObY2qL9XQhs",
+      "id": "UgxLZAaEyeyOWkn8cUV4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "iVV8vXyJcY6CpP3lQ-5bpmcnZtE",
+          "id": "UgxLZAaEyeyOWkn8cUV4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "I love Michael Jackson and Chris Tucker ❤❤❤",
+            "textOriginal": "I love Michael Jackson and Chris Tucker ❤❤❤",
+            "authorDisplayName": "@tarekalrawashdeh4670",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lwxdV0NAEs8CR5uJn9aZVZkU5dVSU5MM4FEJpV4Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@tarekalrawashdeh4670",
+            "authorChannelId": {
+              "value": "UCzmnVtEFa5OQWTpVnYHT4Vw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 152,
+            "publishedAt": "2025-01-17T23:19:08Z",
+            "updatedAt": "2025-01-17T23:19:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jT3wIGKsPe1HLnrLOrv-d1nXRjM",
+      "id": "Ugw1-vSqhNXwHSSHdVJ4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "hiUQIGGY0Ki5ZDMG70uKaprYtyI",
+          "id": "Ugw1-vSqhNXwHSSHdVJ4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Michael Jackson and Chris Tucker is just fantastic together!!!! ❤❤❤\n🙌🏾🙌🏾🙌🏾🤣🤣🤣🤗👏🏾👏🏾👏🏾",
+            "textOriginal": "Michael Jackson and Chris Tucker is just fantastic together!!!! ❤❤❤\n🙌🏾🙌🏾🙌🏾🤣🤣🤣🤗👏🏾👏🏾👏🏾",
+            "authorDisplayName": "@jermainetucker6001",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kkF96oHwpC1Fd9ZB7Ec2AkzdKKI3Sndyo9CXJq0D4=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@jermainetucker6001",
+            "authorChannelId": {
+              "value": "UCu2Vq9FgRFmzsypTQt4OWPg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 57,
+            "publishedAt": "2025-01-13T23:38:41Z",
+            "updatedAt": "2025-01-13T23:38:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RkiPFok114KV4MPtjyy9Cxv7lWI",
+      "id": "UgyPAwzejS9u5FhHWWx4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ZCWSaoY5wl6mTGry4abVwA-dyKI",
+          "id": "UgyPAwzejS9u5FhHWWx4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "He really is kicking with the wrong leg !! 😂😂😂",
+            "textOriginal": "He really is kicking with the wrong leg !! 😂😂😂",
+            "authorDisplayName": "@Blackwing_Earth-2_",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/PZwvaVHE79KtFTbDECltobtHOptRO3lc1yTP8a_lZB1uHDkpuNKBTAUTurQVME_XPMxMRf9HhQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Blackwing_Earth-2_",
+            "authorChannelId": {
+              "value": "UCIhGYQ8z2n8V1yfq0t6jCbg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 8389,
+            "publishedAt": "2021-12-20T08:24:48Z",
+            "updatedAt": "2021-12-20T08:24:48Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 20,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8Z3wadjP40inhbG5qUleLo9thM0",
+      "id": "Ugw6HeGiP_s6rWgyaXR4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MzF6NpxkVaE0K6V4tsWyA2U-ET4",
+          "id": "Ugw6HeGiP_s6rWgyaXR4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "The way Micheal falls to the ground is hilarious 😂😂",
+            "textOriginal": "The way Micheal falls to the ground is hilarious 😂😂",
+            "authorDisplayName": "@godlivegatrude3249",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kxKcpAmpqAzVRKeqXCsdk805Gr1kk3WYIoMGQ2-1v8z1r3YeMOa9PsH8iPqbDD5joqcA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@godlivegatrude3249",
+            "authorChannelId": {
+              "value": "UCQuMBWeptDXV9fif8Hf5xkg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4174,
+            "publishedAt": "2022-03-25T22:38:27Z",
+            "updatedAt": "2022-03-25T22:38:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 12,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ln6pdu-3cFoQUVywf9iqxLwIcsI",
+      "id": "UgwQQvOfV5LzvPNedtt4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "oyLQ_aGBZDtMIezIdKWevB15rSM",
+          "id": "UgwQQvOfV5LzvPNedtt4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Michael Jackson *Right kick*\nChris Tucker \"Left kick*\n\nThanos : Perfectly Balance",
+            "textOriginal": "Michael Jackson *Right kick*\nChris Tucker \"Left kick*\n\nThanos : Perfectly Balance",
+            "authorDisplayName": "@unknownperson5277",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lpzwmVzHfAhl3FD2wN5FtU2ZLlCYRbP4zQ6nkTNQRUc40ri2QkWWHUnOWmlaF_eaweyQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@unknownperson5277",
+            "authorChannelId": {
+              "value": "UC97aSLjTqYcKFTPs52kaIcg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3600,
+            "publishedAt": "2022-04-06T05:49:37Z",
+            "updatedAt": "2022-04-06T05:49:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 19,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mqUsm0z8V-PmlAcluYw07glcX8U",
+      "id": "UgxCl-vHJq9prpKRnJl4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "dbrJQiCTk7VDGT5gahcYHHPVxM8",
+          "id": "UgxCl-vHJq9prpKRnJl4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "Chris Tucker is a total trip , the look on Michael's face priceless. ❤MJ FOREVER 😢❤❤❤❤",
+            "textOriginal": "Chris Tucker is a total trip , the look on Michael's face priceless. ❤MJ FOREVER 😢❤❤❤❤",
+            "authorDisplayName": "@Marty-i3e",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mzwk73fmnfDwFs4aca8l6kkQx6GyTAVAtENSyHlH_Zex_oOyaCVbcQl_w7mzDMX7MLRg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Marty-i3e",
+            "authorChannelId": {
+              "value": "UCH0iV_GYHmFZtATV5ohAFww"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 45,
+            "publishedAt": "2025-01-17T22:01:01Z",
+            "updatedAt": "2025-01-17T22:01:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "T2H6M4xngy5btvS-USsNCo3WFVk",
+      "id": "UgyBsH2Z1iI9nhmBQHx4AaABAg",
+      "snippet": {
+        "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+        "videoId": "h1I1UEwNHRk",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ls_kr1VYmXNS41o3AWr9_90Cdcc",
+          "id": "UgyBsH2Z1iI9nhmBQHx4AaABAg",
+          "snippet": {
+            "channelId": "UCBj5kOHQmHwQxgtFBwHcCJg",
+            "videoId": "h1I1UEwNHRk",
+            "textDisplay": "At first, tears came to his eyes... he must have remembered his friend like us🥺❤",
+            "textOriginal": "At first, tears came to his eyes... he must have remembered his friend like us🥺❤",
+            "authorDisplayName": "@永达拉-7",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FiVuJNovkOQ9tDrq8CLXOFyAQaLeh1gfyvquWTFx0S7kVOyXSILiPFPLgl7pnXrlHTtrlk4ztRo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@%E6%B0%B8%E8%BE%BE%E6%8B%89-7",
+            "authorChannelId": {
+              "value": "UCwtARPjsoD5fO2efTTTIDqA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-09-15T04:52:25Z",
+            "updatedAt": "2026-09-15T04:52:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

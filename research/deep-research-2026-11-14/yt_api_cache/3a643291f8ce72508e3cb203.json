@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "SbW2BNXUJI2rrK3a-Lu7sYCABL8",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "3VKzkOPPmiifRfMatYx8MPl4fTw",
+      "id": "UCsBjURrPoezykLs9EqgamOA",
+      "snippet": {
+        "title": "Fireship",
+        "description": "High-intensity ⚡ code tutorials and tech news to help you ship your app faster. New videos every week covering the topics every programmer should know. \n\nThe original home of #100SecondsOfCode #TheCodeReport and #CodeThisNotThat. Created by Jeff Delaney. \n\nWant more Fireship?\n\n🗞️ Newsletter – https://bytes.dev\n🧠 Courses – https://fireship.dev\n",
+        "customUrl": "@fireship",
+        "publishedAt": "2017-04-07T18:17:23Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/3fPNbkf_xPyCleq77ZhcxyeorY97NtMHVNUbaAON_RBDH9ydL4hJkjxC8x_4mpuopkB8oI7Ct6Y=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/3fPNbkf_xPyCleq77ZhcxyeorY97NtMHVNUbaAON_RBDH9ydL4hJkjxC8x_4mpuopkB8oI7Ct6Y=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/3fPNbkf_xPyCleq77ZhcxyeorY97NtMHVNUbaAON_RBDH9ydL4hJkjxC8x_4mpuopkB8oI7Ct6Y=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Fireship",
+          "description": "High-intensity ⚡ code tutorials and tech news to help you ship your app faster. New videos every week covering the topics every programmer should know. \n\nThe original home of #100SecondsOfCode #TheCodeReport and #CodeThisNotThat. Created by Jeff Delaney. \n\nWant more Fireship?\n\n🗞️ Newsletter – https://bytes.dev\n🧠 Courses – https://fireship.dev\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "808930580",
+        "subscriberCount": "4330000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "865"
+      }
+    }
+  ]
+}

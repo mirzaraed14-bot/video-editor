@@ -484,3 +484,11 @@ Also checked after the editor session's list: the briefs of Ronaldo Retires, La 
 
 - [TMZ on the letter](https://www.tmz.com/2019/03/07/michael-jackson-letter-security-guard-father-auction/) · [HotNewHipHop on the letter](https://www.hotnewhiphop.com/171283-michael-jackson-credited-his-longtime-bodyguard-with-subbing-in-as-his-father-news) · [Distractify on Bill Bray](https://www.distractify.com/p/michael-jackson-bodyguard-bill-bray) · [RR Auction lot](https://www.rrauction.com/PastAuctionItem/3393186)
 - [HuffPost on the 1984 burn](https://huffingtonpost.co.uk/amp/entry/michael-jackson-burnt-scalp-pepsi-drugs-dependence-death_n_4674169) · [CNN on the scalp burn](https://us.cnn.com/2009/HEALTH/07/17/jackson.scalp.head.burns/index.html) · [AOL, this day in history](https://www.aol.com/articles/day-history-michael-jackson-burned-105638948.html)
+
+## RUN 5, 2026-11-17: MJ + IShowSpeed (aw-mj-beats, aw-speed-beats): NO PICK in both lanes
+Bar: a locked centre of 150K+ with a 1M+ top. Cards under the bar, for Affan to overrule:
+- **MJ, "The Moonwalk He Promised"** ≈115K: Paris 2012 (audio only) → Call Her Daddy 2026 → "he would be satisfied". `research/aw-mj-2026-11-17/PITCH-moonwalk.md` v0.2.
+- **MJ, Culkin × Michael** ≈120K: huge Shorts demand (1.4-8.7M), but child-Culkin pictures and the allegations lane. `research/aw-mj-2026-11-17/candidates.md`.
+- **Speed's dad at the World Cup final** ≈60-140K: already told the same way at 49.9M (deagzzzshorts). `research/aw-speed-2026-11-17/CANDIDATES.md`.
+- **Speed × Ronaldo's boots** ≈60-140K: the join already exists (Ftbl Lab). Same file.
+Reports: `research/aw-mj-2026-11-17/REPORT.md`, `research/aw-speed-2026-11-17/REPORT.md`. Template: `TEMPLATE-birthdays.md`.

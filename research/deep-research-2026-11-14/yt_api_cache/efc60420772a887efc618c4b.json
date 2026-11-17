@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "mNS8h2Ewlx_VX0Qzz5bNLwO_74k",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "epqO9NqymZ70yohY6O-TWL9HEt8",
+      "id": "UCsqjHFMB_JYTaEnf_vmTNqg",
+      "snippet": {
+        "title": "Doug DeMuro",
+        "description": "",
+        "customUrl": "@dougdemuro",
+        "publishedAt": "2013-09-11T19:26:56Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/W6w6akkZXHRqm2u2RDjhENaOC2ToYUaxZCVS8zy_zJ3Teq0RlTdRRmw9EE_L8hDudLQ6dOz9=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/W6w6akkZXHRqm2u2RDjhENaOC2ToYUaxZCVS8zy_zJ3Teq0RlTdRRmw9EE_L8hDudLQ6dOz9=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/W6w6akkZXHRqm2u2RDjhENaOC2ToYUaxZCVS8zy_zJ3Teq0RlTdRRmw9EE_L8hDudLQ6dOz9=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Doug DeMuro",
+          "description": ""
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "2548937580",
+        "subscriberCount": "5100000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2733"
+      }
+    }
+  ]
+}

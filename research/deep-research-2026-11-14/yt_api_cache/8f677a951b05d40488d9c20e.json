@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "vbpYu2gJoFZs8kG8vDYTYLe45bA",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "AFPI4Yzd8WFornw61d1LABXfPCk",
+      "id": "UCsvn_Po0SmunchJYOWpOxMg",
+      "snippet": {
+        "title": "videogamedunkey",
+        "description": "watch my stupid ass videos",
+        "customUrl": "@videogamedunkey",
+        "publishedAt": "2010-10-21T16:44:21Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/41hm8RIIr1HbZIg7A_M9CvtHvJdRXtEEwz4JdaxWYjuwDntO0Tyag4Qe104nIxaSnnybsUdnOQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/41hm8RIIr1HbZIg7A_M9CvtHvJdRXtEEwz4JdaxWYjuwDntO0Tyag4Qe104nIxaSnnybsUdnOQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/41hm8RIIr1HbZIg7A_M9CvtHvJdRXtEEwz4JdaxWYjuwDntO0Tyag4Qe104nIxaSnnybsUdnOQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "videogamedunkey",
+          "description": "watch my stupid ass videos"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "4382651531",
+        "subscriberCount": "7560000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1013"
+      }
+    }
+  ]
+}

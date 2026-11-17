@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "caUzc6tWnKX_t1_isoMSTAIbyoc",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "osi-3m7h632xJtnYJRkYM3_46g0",
+      "id": "UCFCEuCsyWP0YkP3CZ3Mr01Q",
+      "snippet": {
+        "title": "The Plain Bagel",
+        "description": "Investing and personal finance educational videos with a hint of economics, posted regularly.\n\nI'm a CFA charterholder and CFP professional working as an analyst for an investment management company in Ottawa. I'm a huge finance nerd and am passionate about the field - I think people lack the resources they need to make educated financial decisions, and hopefully this channel helps with that!\n\nFor collaboration/other inquiries: richard@theplainbagel.com\n\nFor sponsorships:\nsponsorships@theplainbagel.com\n\nDISCLAIMER:\nThe videos on this channel are for education purposes only and do not constitute financial advice. Richard Coffin does not provide recommendations on The Plain Bagel - those looking for investment advice should seek out a registered professional. Richard is not responsible for investment actions taken by viewers and his content should not be used as a basis for investment trades.",
+        "customUrl": "@theplainbagel",
+        "publishedAt": "2017-08-16T17:40:02Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lP44aDeBvzShX0gPVRsL9UYY7_VlGf0CG0I9PDaHib0Vw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lP44aDeBvzShX0gPVRsL9UYY7_VlGf0CG0I9PDaHib0Vw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lP44aDeBvzShX0gPVRsL9UYY7_VlGf0CG0I9PDaHib0Vw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "The Plain Bagel",
+          "description": "Investing and personal finance educational videos with a hint of economics, posted regularly.\n\nI'm a CFA charterholder and CFP professional working as an analyst for an investment management company in Ottawa. I'm a huge finance nerd and am passionate about the field - I think people lack the resources they need to make educated financial decisions, and hopefully this channel helps with that!\n\nFor collaboration/other inquiries: richard@theplainbagel.com\n\nFor sponsorships:\nsponsorships@theplainbagel.com\n\nDISCLAIMER:\nThe videos on this channel are for education purposes only and do not constitute financial advice. Richard Coffin does not provide recommendations on The Plain Bagel - those looking for investment advice should seek out a registered professional. Richard is not responsible for investment actions taken by viewers and his content should not be used as a basis for investment trades."
+        },
+        "country": "CA"
+      },
+      "statistics": {
+        "viewCount": "104414744",
+        "subscriberCount": "1230000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "284"
+      }
+    }
+  ]
+}

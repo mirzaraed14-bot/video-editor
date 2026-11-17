@@ -1,0 +1,691 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "vptKsDU6tjJnKqqOStRCvKBdVBo",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DcVVCQ0lBRUZSZTMwVGdhbWdFS2xRRUkyRjhRZ0FRWUJ5S0tBWnR6QWU0SUhwUXEwdVhkYTdpdVZKa1Q4XzJ1RW53aTVnMmtYbGNQc3QtaHA2cElLSlY4VHVvR3ZrSGtDbzNzaTBjaGs1MWJ1TUplYzRPeVpNeC02SnA1OFFldlhFcWI1Zm5XbV9mRXFwSFg0UXM0X2dTS1dnd3NhbnVJd0lhT1ladFZFUkVZNzZLTmJBbDBCWnc3ZFU1UnVkdUw5QzJUZll0a3o5eDFKd2NJWU1ubGlwVzZzQUgxYVJBVUVnVUlpQ0FZQUJJRkNJa2dHQUFTQlFpSElCZ0FFZ1VJaGlBWUFCSUZDS2dnR0FBU0J3aUZJQkFVR0FFU0JRakFJQmdBRWdVSXV5QVlBRkFBV0FF",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "q2BFDfUozxuJArb9dl6gA5xcw0Q",
+      "id": "Ugw_kxAWd4cz3uG6qLF4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "PdV7UW5VU5b44K6H3HGe59vEbfc",
+          "id": "Ugw_kxAWd4cz3uG6qLF4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "This is also what lead to Michael later becoming addicted to painkillers.",
+            "textOriginal": "This is also what lead to Michael later becoming addicted to painkillers.",
+            "authorDisplayName": "@ThrillerTheSpammer",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/v7vnidqbSmf6GfpEFf54mEtW3Na35BANtCnXti8I-hTBCX_nE3DDHyxQVzkwonCTC78_6p4i=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ThrillerTheSpammer",
+            "authorChannelId": {
+              "value": "UCwQrchVq6aBndvXGo4iIEOQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 827,
+            "publishedAt": "2026-07-27T19:47:45Z",
+            "updatedAt": "2026-07-27T19:47:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 15,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "yCVkBkUbloDtY-jyA8Cy5rvp2vY",
+      "id": "UgwQyLvEZrNV1tCcBSR4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "CL25SnzplC2OtrP5Hfd1JfY5O2U",
+          "id": "UgwQyLvEZrNV1tCcBSR4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "The fact that Michael was in a lot of pain, he was still waving at the fans. Deep down, I was crying at this.",
+            "textOriginal": "The fact that Michael was in a lot of pain, he was still waving at the fans. Deep down, I was crying at this.",
+            "authorDisplayName": "@allennixon4745",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mMLWqZTS8hMJakVSQ_pER5l6Dl6O-aF7ycRpDDR6I=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@allennixon4745",
+            "authorChannelId": {
+              "value": "UC1TXtzF6CQ-QzmR6_u6F4eA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 955,
+            "publishedAt": "2026-07-27T23:13:30Z",
+            "updatedAt": "2026-07-27T23:13:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 15,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RJQdaExf4phyDc8mQXx-RzeA0W4",
+      "id": "UgyOG-ZDspnTwaLulml4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "WCTpcUqgvl_IZZzO-v3sKhrsylo",
+          "id": "UgyOG-ZDspnTwaLulml4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "The night Michael’s life changed. As a matter of fact, the day this happened is the exact midpoint of his life.",
+            "textOriginal": "The night Michael’s life changed. As a matter of fact, the day this happened is the exact midpoint of his life.",
+            "authorDisplayName": "@TheThrillaX",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Qo1noONwret_mUSfrys_VRDIX-x1yQ8z2nUADC9zQZKCUej5goU_QZqx2gGnTU6ZdmJVWxsODpI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@TheThrillaX",
+            "authorChannelId": {
+              "value": "UCdZyk9ZdJEBO0DvidSQwB5w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 632,
+            "publishedAt": "2026-07-29T10:19:58Z",
+            "updatedAt": "2026-07-29T10:19:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lM_udtfw3wlIGF8YBm3CscobZ3g",
+      "id": "Ugyt_GS_9_1jGPciZ014AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Smpg3pC-tBXZ4RqLETTrQWOoc3A",
+          "id": "Ugyt_GS_9_1jGPciZ014AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "0:41 The exact midpoint of Michael Jackson’s entire life that completely changed everything by suffering after the accident through 25 years 😢",
+            "textOriginal": "0:41 The exact midpoint of Michael Jackson’s entire life that completely changed everything by suffering after the accident through 25 years 😢",
+            "authorDisplayName": "@KhangNguyen-x5z7m",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/6lVbBmJoXBky1gvns5QeFpRKfD52m43a5YdI3V0hfTNbkpjr89DWLe4Ss7tpX00O2Ix95LpPo7E=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@KhangNguyen-x5z7m",
+            "authorChannelId": {
+              "value": "UCdewcso0mhmATKxwQi056Jw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 302,
+            "publishedAt": "2026-07-27T19:59:14Z",
+            "updatedAt": "2026-07-27T19:59:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "UtHE7EZ5he8SqoaAiiIaFUUyN9M",
+      "id": "Ugze2FD7aqk6BIbmvrh4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_1FBGL0i5hHseL_F05XkmJym0oI",
+          "id": "Ugze2FD7aqk6BIbmvrh4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "I was 6 years old when Michael got hurt. I remember crying so hard when I saw him being wheeled out to the ambulance 😢.  I went to my bed and curled up and cried 😢my mom actually sat with me and comforted me 😢",
+            "textOriginal": "I was 6 years old when Michael got hurt. I remember crying so hard when I saw him being wheeled out to the ambulance 😢.  I went to my bed and curled up and cried 😢my mom actually sat with me and comforted me 😢",
+            "authorDisplayName": "@MaureenKoscinski",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nQnix-VeJ6EdB4XIG9FFgrkb8_vpSDP2Ft1Cp8cNbPAPogyXsBLaYw96po1fV2IWNUFw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MaureenKoscinski",
+            "authorChannelId": {
+              "value": "UCvISIcXVdIwaySxbkJyWtmg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 649,
+            "publishedAt": "2026-07-28T03:05:46Z",
+            "updatedAt": "2026-07-28T03:05:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 107,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "BpkDguFrwM6zHhVldXlCTzdlGgs",
+      "id": "UgyHtet3PnEHV8QvE5d4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "EjAhQd6Mr4rVj1Ngs72IzILIV58",
+          "id": "UgyHtet3PnEHV8QvE5d4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "His nephew who played this part did an awesome acting job. Splendid.......",
+            "textOriginal": "His nephew who played this part did an awesome acting job. Splendid.......",
+            "authorDisplayName": "@gisellethevoice2031",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Hfx-rbdZpt6PreQNxoJr9lifyqHWJqsZQfQXbxXZh_9gtoGcmeQoCwN6xDfzw05uCg-n3UTM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@gisellethevoice2031",
+            "authorChannelId": {
+              "value": "UC_QQgRKOm0bFVnO1YRM6x_Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 351,
+            "publishedAt": "2026-07-28T22:06:58Z",
+            "updatedAt": "2026-07-28T22:06:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ntgp6KeOlciPShmMRikJB7256LU",
+      "id": "UgwrFW4jPOML0KHGvkd4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "L0HMX14rOcKASlwX8xVgKVFzEWQ",
+          "id": "UgwrFW4jPOML0KHGvkd4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "Sad fact: this was the exact midpoint on the king of pop’s life.",
+            "textOriginal": "Sad fact: this was the exact midpoint on the king of pop’s life.",
+            "authorDisplayName": "@nelsonwereko5369",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nHAfwnGARpfyImOEswWUssp6x8hOYD6DbhXAcriFU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nelsonwereko5369",
+            "authorChannelId": {
+              "value": "UCHvWOzz3GJri4qDE8qq5Fww"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 224,
+            "publishedAt": "2026-07-28T11:50:33Z",
+            "updatedAt": "2026-07-28T11:50:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "3ACdKXhh2jDQ_WXmhMVLQFlmDs0",
+      "id": "Ugzk92F9yegezt6hqxF4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "yYsAE_zAY5BFiuYpqAgwwEtpmpY",
+          "id": "Ugzk92F9yegezt6hqxF4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "This was the exact middlepoint of MJ's life. He was alive for as many days before, and he lived for as many days after.",
+            "textOriginal": "This was the exact middlepoint of MJ's life. He was alive for as many days before, and he lived for as many days after.",
+            "authorDisplayName": "@randyking3057",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nWvdWnVR7O0VvBZQIgfGLcyiqmYA5gLULzuMxK7x_sx2E=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@randyking3057",
+            "authorChannelId": {
+              "value": "UCw86m7d4oAhdVbUWhev9Wjw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 51,
+            "publishedAt": "2026-07-30T18:00:08Z",
+            "updatedAt": "2026-07-30T18:00:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Zb-I7Rn08nhqddxVl6IsN8bXcho",
+      "id": "UgxaWQBAw1ifu1f7LG54AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1WhdBUfAGO9x8f0MYtJYH8MdNf0",
+          "id": "UgxaWQBAw1ifu1f7LG54AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "It's crazy to think this was how the 2nd half of his life started, and when his life changed forever.",
+            "textOriginal": "It's crazy to think this was how the 2nd half of his life started, and when his life changed forever.",
+            "authorDisplayName": "@DanTheRoadRippersCollector",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/toA8MjFCLsjDx1eLGAs6FgTcGzej5PrWQaDTw-HrdwP-V9pEleYZNexVzrhFmlMKsTby942OYg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DanTheRoadRippersCollector",
+            "authorChannelId": {
+              "value": "UCiZ85LIo0dfmYpqzi5_a8Jw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 110,
+            "publishedAt": "2026-07-29T20:46:13Z",
+            "updatedAt": "2026-07-29T20:46:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZluhZwfkz9qQhL3AFKvKzvZqBaQ",
+      "id": "UgxtBaKSMUnMtgm8Fb54AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cY4zWo9QSn9t2OmR7nG7KK0bBng",
+          "id": "UgxtBaKSMUnMtgm8Fb54AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "Every time I watch this movie, I don't see Jaafar. I see Michael reincarnated through his nephew.",
+            "textOriginal": "Every time I watch this movie, I don't see Jaafar. I see Michael reincarnated through his nephew.",
+            "authorDisplayName": "@brettcolbert9756",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kFNc84I3jZCL7sFozXvAThA-zmjMVZIs_155Ns_bRz48s=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@brettcolbert9756",
+            "authorChannelId": {
+              "value": "UCPbotSIKZZlp2_S4DHetRSw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 348,
+            "publishedAt": "2026-07-28T04:31:52Z",
+            "updatedAt": "2026-07-28T04:31:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "S5u9iAHqg6jbd1X_RIOvwTmLCZk",
+      "id": "UgzTB7s6IU6AG4-bKFl4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "oWcmhrNB-8UfgQCIJg1yzjGAs_o",
+          "id": "UgzTB7s6IU6AG4-bKFl4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "I can’t imagine how traumatic it was for Jaafar to reenact. He must’ve been under so much pressure to show the pain his uncle went through.",
+            "textOriginal": "I can’t imagine how traumatic it was for Jaafar to reenact. He must’ve been under so much pressure to show the pain his uncle went through.",
+            "authorDisplayName": "@brandonheinz2606",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lBcHqECPahUGQ03jhf977pPokPgwy8wFeMRQSezva1Ew=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@brandonheinz2606",
+            "authorChannelId": {
+              "value": "UCYcgCrqKN3y-c899tgKRBCg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 198,
+            "publishedAt": "2026-07-30T01:50:11Z",
+            "updatedAt": "2026-07-30T01:50:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Dn1u-4pvmLiIZGkXa2XMw27Cu8o",
+      "id": "UgyHSwdBdIySCmjnWIZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "RQsMN3aQI-yx9tz52sYm2JRrU7Q",
+          "id": "UgyHSwdBdIySCmjnWIZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "Those perms and relaxer chemicals can catch fire . Poor Michael . He went through so much .",
+            "textOriginal": "Those perms and relaxer chemicals can catch fire . Poor Michael . He went through so much .",
+            "authorDisplayName": "@Ameerah71",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/dfs_Q6Vn1qL5HuHtXCM8VnBOcpKPjasAGl_DBZcFg0mpjlCCNDzRSvf0cqc1fUphzx0mEVAwGQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Ameerah71",
+            "authorChannelId": {
+              "value": "UCGE-XVRfSVLuqUUEoTs8Y_g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 125,
+            "publishedAt": "2026-07-30T17:26:49Z",
+            "updatedAt": "2026-07-30T18:54:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9TZLU1Xbr990t0j8r_628A6hxsY",
+      "id": "Ugz9bPIq0iFZU0_B8bV4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "eNH0bfThP0AjNAHgh-rhkLMIG_o",
+          "id": "Ugz9bPIq0iFZU0_B8bV4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "1:28 MICHAEL I'M COMING!\n\nThank God Bill was there that night to help him as well!",
+            "textOriginal": "1:28 MICHAEL I'M COMING!\n\nThank God Bill was there that night to help him as well!",
+            "authorDisplayName": "@zacknewman9116",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kPjKPAYpIAn1DleW-Xz6cZxiCvJ4O3AoNVXwP7O7ACgCo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zacknewman9116",
+            "authorChannelId": {
+              "value": "UCf6p_-N7oZrSOYI3AlrdXZg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 141,
+            "publishedAt": "2026-07-28T15:19:20Z",
+            "updatedAt": "2026-07-28T15:19:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "16NdRNmdn_tP7O9ZSwflZihIKbc",
+      "id": "Ugz3qMLzjIlYQiFayxd4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QssOB44UocPd_4hrF9T3u1qnvg4",
+          "id": "Ugz3qMLzjIlYQiFayxd4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "The worst night of Michael Jackson's life. 😢",
+            "textOriginal": "The worst night of Michael Jackson's life. 😢",
+            "authorDisplayName": "@ThrillerTheSpammer",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/v7vnidqbSmf6GfpEFf54mEtW3Na35BANtCnXti8I-hTBCX_nE3DDHyxQVzkwonCTC78_6p4i=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ThrillerTheSpammer",
+            "authorChannelId": {
+              "value": "UCwQrchVq6aBndvXGo4iIEOQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 569,
+            "publishedAt": "2026-07-27T19:46:48Z",
+            "updatedAt": "2026-07-27T19:46:48Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 20,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "oHIs_UJ9Au8GieVotdLx81dfd1M",
+      "id": "UgxnaLj47UtBy8XW_PB4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5zdQOBBqibmhqNmoJfH_mvn2MKk",
+          "id": "UgxnaLj47UtBy8XW_PB4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "I believe this was in January of 1984 - this year was huge. Not just in Michael Jackson history…world history.  Started with a bang‼️",
+            "textOriginal": "I believe this was in January of 1984 - this year was huge. Not just in Michael Jackson history…world history.  Started with a bang‼️",
+            "authorDisplayName": "@PunkProfess0r",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/OBJ31dsIiamy1ZSeqQWkotElamtlW_8NwoG-BsEGhQEOR8CSGR_1bOLSn_o3Z8-LHfeQkcJ7gA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@PunkProfess0r",
+            "authorChannelId": {
+              "value": "UCC_wiy1X4TSQ3JnWwtwLQUQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 44,
+            "publishedAt": "2026-07-29T05:35:49Z",
+            "updatedAt": "2026-07-29T05:35:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kmNh7ozY00596FV39UbBG9GQ6mI",
+      "id": "UgwQK-UZVQ28FQQEzWJ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "V9fTrZGAIdshQt_A-EOnMWr-B6g",
+          "id": "UgwQK-UZVQ28FQQEzWJ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "This scene made me cry honestly, Jaafar became Michael in this movie and seeing him in that much pain was like watching Michael all over again, seeing someone as good as him endure one of the worst pains is hard to watch",
+            "textOriginal": "This scene made me cry honestly, Jaafar became Michael in this movie and seeing him in that much pain was like watching Michael all over again, seeing someone as good as him endure one of the worst pains is hard to watch",
+            "authorDisplayName": "@SH4M3L3S5",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Zyzugjsg851Kg6xN8NX0kvkPBiCG0Bp5EAfEc_Wo78RkWF12ldf4Aif6Kyxe4m18ZsM0a73h=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SH4M3L3S5",
+            "authorChannelId": {
+              "value": "UCPEIw-fDCFNXUPmFai8RhTw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 53,
+            "publishedAt": "2026-07-31T17:35:00Z",
+            "updatedAt": "2026-07-31T17:35:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "M71NtaDOc1wzIpcUskE9B9SQJoY",
+      "id": "UgywoETsQgZH9Bn7-rV4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "oa1wqx71Dja9ewiNOEMyXn1hVYU",
+          "id": "UgywoETsQgZH9Bn7-rV4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "The fact that he sounds just like Micheal is amazing",
+            "textOriginal": "The fact that he sounds just like Micheal is amazing",
+            "authorDisplayName": "@BillieJean25Motown",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/fLcE1SQEX7PAkcD2r2epXxfZ6oTIJ5oYH3nGpiZvTj_qNiAznWowc3zoybSuNDFyE4VFN_i8Og=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@BillieJean25Motown",
+            "authorChannelId": {
+              "value": "UCKnnbpH3G1tRUzknkwQ0oeA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 42,
+            "publishedAt": "2026-07-30T13:12:24Z",
+            "updatedAt": "2026-07-30T13:12:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vFLQGmO6DDgiM6_WmYCrCRD6ynM",
+      "id": "UgzRefdMcLGiuGDq77N4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "I-jNXoiDqOhQphbhnm1ZlDO7KLw",
+          "id": "UgzRefdMcLGiuGDq77N4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "I was just high school when that hair burning happened.\nWhy did they bring him to the top of the stairs where the sparks were so intense!!!!!????",
+            "textOriginal": "I was just high school when that hair burning happened.\nWhy did they bring him to the top of the stairs where the sparks were so intense!!!!!????",
+            "authorDisplayName": "@donnaguerra5706",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_m0UE2bTD9bagUeVZgMM2WyWygQDa0-UC_eCXV28JI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@donnaguerra5706",
+            "authorChannelId": {
+              "value": "UCU91R-xPnEKlr-H7KfNOzxg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 116,
+            "publishedAt": "2026-07-27T20:55:42Z",
+            "updatedAt": "2026-07-27T20:55:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mX3-kTDLPtDKvIlzVF1p6NefkgU",
+      "id": "UgyseID-hfmNQR1mJDp4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3eZbTIyy0ujViRP5hEtNEb0LrcM",
+          "id": "UgyseID-hfmNQR1mJDp4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "This all could've been avoided if that damn director didn't ask for one more take.",
+            "textOriginal": "This all could've been avoided if that damn director didn't ask for one more take.",
+            "authorDisplayName": "@lb2.0.45",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mRk20tFPR0uova6Kka80hIC5aXyJ0MQBlOdkjMKvL4fQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lb2.0.45",
+            "authorChannelId": {
+              "value": "UCwQu7HjDS0JmI9DkWsJEiTg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 46,
+            "publishedAt": "2026-07-29T22:24:42Z",
+            "updatedAt": "2026-07-29T22:24:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "B7aktsrmUeNjEdJ_0X52tlAwuLA",
+      "id": "UgyNzvA1UFpLV6h1gL14AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "uWOI7i0lt78",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "fD7xJc75xWPdqDaflNtRnCx6HU0",
+          "id": "UgyNzvA1UFpLV6h1gL14AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "uWOI7i0lt78",
+            "textDisplay": "Michael immediately throwing off his jacket saved his life because if the fire spread further, it would have killed him.",
+            "textOriginal": "Michael immediately throwing off his jacket saved his life because if the fire spread further, it would have killed him.",
+            "authorDisplayName": "@stardust948.",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kF9ARvsQH2MfCquYTFEGj01R5mZb4b4WkO-zLI3lJMsM4=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@stardust948.",
+            "authorChannelId": {
+              "value": "UCGkh4vtedkjUxTUYBo9JSDg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 25,
+            "publishedAt": "2026-07-29T16:52:15Z",
+            "updatedAt": "2026-07-29T16:52:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}

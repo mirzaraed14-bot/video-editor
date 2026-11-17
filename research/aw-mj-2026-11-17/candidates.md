@@ -1,0 +1,60 @@
+# Candidates (17 Nov run) — working list before Instagram
+
+Rule: the BANNED template (TEMPLATE-birthdays.md § 4). Already worked and NOT re-run: everything in
+`research/deep-research-2026-11-14/ig-mj.md` § D (49 candidates: armband C4 and Gary house N36 under the bar; Dad built),
+the 13 Nov run (`research/aw-mj-pick-2026-11-13.md`), IDEAS.md "Checked and not picked". Excluded by brief: Paris vs Prince over the film.
+Channel repeats that kill a lane: Kids FAKE 15K, Lisa Marie FAKE 17K / Married Elvis's Daughter 49K, Tragic Prison 74K,
+Loneliness 81K, Disguised GANGSTER 89K, Masks 76K.
+
+## Demand signal (API s01: MJ Shorts since 1 Oct by views)
+Edits, aura, funny, art dominate (5-21M). Story items: "Michael Jackson Saved 20,000 Fans" 4.0M; "Michael Jackson's dream of going to
+the supermarket like a normal person 🥺" (Vietnamese faceless) 3.0M; "Michael Jackson ROASTED ALL His Brothers" 2.77M; "Princess Diana
+met Michael Jackson" 6.0M; "Michael ordered a girl off stage" 7.0M (comedy).
+
+## Directions to test (M-codes)
+| # | Idea | Template fit | First risk |
+|---|---|---|---|
+| M1 | **Christmas, the BANNED sequel with a peg (25 Dec):** Michael, Private Home Movies 2003: "I remember going in the bathroom crying... because I was raised not to ever celebrate it" (fresh line, Sep sweep) → his first Christmas at 35 (Taylor, proven but saturated) → what he gave his own kids (a Paris/Prince line, not yet sourced) | the why in his own voice; needs a family accusation/judgment hook | HATED proved a re-tell of the same lines dies: must not reuse the 1993 Grammy line; Affan killed a Christmas cut on 5 Sep ("two stories stapled") |
+| M2 | **"Blanket": why Michael named him that**, Michael's own explanation → the name he was bullied for → Bigi now (2026, Heal LA, "our father would be very proud") | held judgment "what a weird name / where is Blanket" (TMZ comments ask it) | minors (baby Blanket never on frame); Bigi's on-camera material is thin |
+| M3 | **The supermarket dream** (3.0M on YouTube): the richest star couldn't go to a store; Michael's own voice; home-video picture of him finally shopping | F1-ish ("he had everything") | the fame-prison lane lost on this channel (74K, 81K, 89K) |
+| M4 | **"I wasn't aware that the world thought I was so weird and bizarre"** (Grammy 1993, the accused states the judgment) → ? | the accused speaks | same speech/picture as BANNED and HATED |
+| M5 | Paris "Neverland wasn't for us" (CHD 2026) → Michael "I'm compensating" (1997) | judgment "man-child theme park" | N6 HELD for allegation comments; Masks/MOM already used CHD |
+| M6 | Kobe × Michael: what Michael taught Kobe (study the greats) | lesson, not family | heavily clipped; not the AW family lane |
+| M7 | Motown 25: he cried backstage thinking it was bad (IG 1.7M likes / 55.8K shares) | wrong belief corrected, his own voice if it exists | SD archive (board Q1 unanswered) |
+| M8 | Culkin × Michael (Culkin's own answer) | strongest F1 | ig-icons' claim (Affan's ask, 15 Nov), allegations lane: hub's call |
+| M9 | Michael's last birthday, Aug 2008 ("watch cartoons with my children"), cut from HATED | tender | no peg until Aug; audio over a still |
+| M10 | Michael roasted his brothers (2.77M) | entertainment | not the template |
+
+## After the disk pass + API (17 Nov ~04:40 PKT)
+Disk pass: `disk-pass.md` (5 usable pairs). Template test per finalist (advisor rule): live argument/peg at the post date ·
+a join with no Short · a hook that implicates the viewer.
+
+| # | Finalist | Beats (source, proof) | Live | New join | Hook implicates | Notes |
+|---|---|---|---|---|---|---|
+| F-A | **"Proud" (Paris did what he said)** | (1) home video 2002: Michael asks Paris what she wants to be, she says "do what you do: dance and sing" (KOP `-TNlk3h_oxQ` 1.12M, 5 Oct 2026; likely in Private Home Movies ~4526-4592 s, audio only: minors) → (2) Walters 1997 655-695 s: "if this little boy says Daddy I want to go on the stage..." "If you do go that way, expect this, expect that... Go. And do it better than I did it. But know what you're in for." (`PweH6RyTjs4` **9.39M** / 341K likes; not in the Dad build) → (3) Paris on stage 29 Aug 2023: "he put fifty years of blood, sweat and tears... so that I could stand up here on stage... I owe everything to him" (her IG video, deleted from IG; on disk `projects/paris-wont-post-birthday/raw/paris-ig-birthday-2023.mp4` 60-88 s; unused: HATED cut 4b) → optional (4) Michael PHM 4591-4595 "I love my children very much. Proud to be their dad." | YES: her tour is live on Shorts (0.4-2.8M clips, Oct-Nov); the top comment under them is "Michael would've been so proud of her" (1,093 likes) | YES: API s05 found no Short joining the wish, the warning and the stage | NO (warm, not a judgment) | Paris dance-like-dad 12.08M (May 2026) = demand. Adjacent to the Dad Short (Michael as father + Paris): lane-repeat risk, name it first. Walters is about his baby SON: never claim he said it to Paris |
+| F-B | Neverland "spoiled brats" (disk pair 1) | Paris JO 642.7-673 "I hate the term spoiled brat... had to be earned... work ethic" → Paris CHD 481.5-511.5 "all of the attractions there were not for us... terminally ill children" → Michael Take Two 384-413 "everything I never got to do when I was a kid" | NO (May/Aug interviews) | YES (competitor Shorts on the CHD line: 808/359/15) | YES, if real comments show "spoiled" (API comments on tour clips showed none) | N6 allegation-comment risk; IG proof weak (4.3K likes / 577 shares) |
+| F-C | Christmas sequel (disk pair 3) | Taylor 1993 "his very first Christmas" → Michael PHM 664-680 "I felt guilty... going in the bathroom crying... raised not to ever celebrate it" → Jermaine 2009 "they've had Christmases, and they enjoy birthdays" | YES at post date (Christmas week) | YES (bathroom line never built) | NO | No proof on Shorts (s02) or IG (4 posts, ≤706 likes); no living child's Christmas line on disk |
+| — | Race / "is she his" (live: Joseline 4.07M / 15,281 comments; "Paris rejects being white" 1.63M; comments under her tour clips defend her biology) | Paris first-person line exists online (Charles Peralo 1.63M) but not on disk | YES | ? | YES | AW "Kids Are FAKE?!" 15K (27 Jul) on this lane; sensitive (race) |
+
+## F-D "MOONWALK" (17 Nov) — supersedes F-A. **SUPERSEDED by `PITCH-moonwalk.md` v0.2 after the cold read: LEAD ≈115K, under the bar; the template test below ("3 of 3") did not hold: judgment FAIL, two topics with beat 4.**
+Race lane killed (Paris first-person only in print 2017; the on-disk "Goes on the Record" is The Real's panel; AW Kids FAKE 15K).
+
+| # | Beat | Words (machine reading; ear-check) | Source | Proof | Role |
+|---|---|---|---|---|---|
+| 1 HOOK | Paris, Call Her Daddy, 12 Aug 2026 | "I'm screaming into a microphone and someone's like, why didn't you moonwalk on stage?" (+ "And it's like, that's the wrong show.") | `E:\Bullshit Folder\KIDS\Paris Jackson- Love, Loss, & Listening to Your Intuition.mp4` 3792.16-3795.45 (+-3797.65); 1920x1080 23.976, Paris single | Related: pk updates "i'm not gonna moonwalk" 719K (25 Jul 2026, source TBD); "Paris dances like her dad" 12.08M (May 2026) | the fans' expectation, in her voice (template rule 1) |
+| 2 WOUND | Paris, ~14, "Remembering Michael" doc 2012 (fan upload `CAI0wqlsL3Q`) — AUDIO ONLY over adult Michael moonwalking | [Q: "when you see your dad just dance and do these amazing things, what do you think?"] "I was like, wow, I wish I could do that. He promised me he would teach me how to moonwalk. Never got around to it." | `projects/mj-the-dad-he-never-had/sources/CAI0wqlsL3Q/CAI0wqlsL3Q.mp4` 117.59-131.19 (fw word file, PARTIAL); -21.5 LUFS, noise floor ~-42 dB | MJ Classified `2t_P0KiWLiw` 1.05M / 31.8K likes (Oct 2023) | the reveal: he promised, then died (she was 11) |
+| 3 HER ANSWER | Paris, CHD 2026 | Alex: "What do you think your dad would think about your music?" Paris: "I don't like speaking for other people. But based on what I knew about him wanting me to be happy... I think because I'm happy, he would be satisfied with that." | CHD 3817.34-3833.70 (host single at 3818, Paris single 3820-3834) | OURS (not found as a Short) | her side |
+| 4 HIS ANSWER | Michael, Barbara Walters 20/20, Nov 1997 | Walters: "Michael, if this little boy says, Daddy, I want to go on the stage, after what you've been through..." Michael: "Hold on now. Hold on. If you do go that way, expect this, expect that... Go. And do it better than I did it. [But know what you're in for.]" | `E:\...\Henry\Michael Jackson - Interview with Barbara Walters 1997.mp4` 655.08-664.16 + 667.66-676.90 + 688.20-691.60 (-693.86); 960x720 50p, RTL logo (crop) | `PweH6RyTjs4` **9.39M** / 341K likes / 4,889 comments (Apr 2025) | the dead man answers the question in his own voice; END |
+
+Spine: MOONWALK → STAGE. Loop: hook "on stage" → end "Daddy, I want to go on the stage... Go. And do it better than I did it."
+Viewer gets: what Michael would have said about his daughter on stage, in his own words.
+Template: live YES (Paris's 2026 music career/tour on Shorts weekly; "dances like her dad" 12M; top comment "Michael would've been so proud of her") · new join YES (s08: no Short joins these) · hook implicates viewer YES (the fans' "moonwalk!" expectation).
+**Risks named first:** (1) the unposted Dad Short uses all three of these sources (CHD 635-644, Walters 598-600, 2012 Part 2 261-272) — different lines, same pictures: his call on order/spacing; (2) Paris at ~14 = audio only (Dad-build precedent); (3) Walters' "this little boy" = Prince as a baby: never claim he said it to Paris; (4) 2012 audio is a fan re-upload (854x480, watermark): audio-only use, measure; (5) moonwalk picture = Motown 25 remaster / MSG 2001 "4K" (upscales of SD: Q1).
+Pictures on disk: `E:\Bullshit Folder\Drake\Michael Jackson - Billie Jean (Motown 25 Performance) (Remastered).mp4`, `E:\Bullshit Folder\Billie Jean [4K] 30th Anniversary, 2001 - Michael Jackson.mp4`.
+
+## CARD: Culkin × Michael (handed over by the hub 17 Nov ~05:50; CLAIMS line 56 was ig-icons')
+- **Demand (Data API, ig-icons s6 cache):** "When Michael Jackson Pushed Macaulay Culkin" 8,688,889 (Sep 2026, the 1989 pool day: child Culkin on frame); "Macaulay Culkin reveals the TRUTH about Michael Jackson" 5,587,555 / 193,859 likes (May 2026, a vintage interview: "kids treated him like a normal human being"); evolution edits 5.75M, 2.41M, 2.27M, 2.00M, 1.65M, 1.39M; "What Macaulay Culkin REALLY Said" 1,793,228 (Apr 2026, Larry King 2004: "absolutely nothing inappropriate"); "Michael Was the Purest Person I Ever Knew" 1,401,576 (May 2026); the detail. "Macaulay Culkin On MJ ALLEGATIONS" 8,162,936 (2023).
+- **Freshness risk (same numbers):** Culkin's own reversal is the most-clipped Michael line of 2026 (≥ 4 Shorts at 1.4M-8.2M). Our hook would be seen-it in 3 s.
+- **What a new join could be (disk):** Michael's own voice on Mac, Private Home Movies 2003 (chunk ASR): "Mac takes big buckets of water and throws them on you. He cheats a lot. But he's fun. He loves to have fun just like me." (796.0) and "Mac and I would go on vacation together and Mac is very smart and he's very ingenious" (4158.7), both over child-Culkin home video → AUDIO ONLY; Prince, Hotboxin 2023, 3603.6: "Macaulay Culkin is my sister's godfather"; Paris, Osbourne 2026, 2224.5: "my godfather and I joked about that... apparently in the 2000s I died like six times".
+- **Gates failed or open, first:** freshness (above); every picture of the friendship is a child on frame (1989-93); allegations lane = ad-suitability risk (ALLEGATIONS-CUT.md logged the yellow icon as an experiment; that Short, "ALWAYS Innocent", did 636K at Affan's own call); no Culkin interview on disk (Larry King 2004 CNN SD and others need downloads); ASR blocked (commit 87/91 GB); FINDINGS' Sep sweep rejected Culkin as "saturated + allegation-adjacent"; the godfather lines are small facts, not a wound.
+- **Price:** centre ~120K, range 30K-1.5M. **Below MOONWALK and below the bar.** Card only; no downloads spent.

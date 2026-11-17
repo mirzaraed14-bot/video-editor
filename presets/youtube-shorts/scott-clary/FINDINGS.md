@@ -343,6 +343,11 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
 - **Round 2 rejected the same day (Affan):** the Boggs Short ("the yt video is ass": unknown face, 2020 webcam, card 6.0, pitched as "no pick clears the bar; best available") and the "Say no to 100 things this month" Reel ("its middle of the month so the ig reel doesn't make sense"). Two lessons: **(1) time words in a cut (this month, today, Monday, this year) must fit the post date** (memory `feedback-time-words-match-post-date`); **(2) a below-bar Short with no known face is not worth pitching even when asked to search again**: say "no pick" and keep searching.
 - **A verifier's bitrate can belong to another episode** (a 1.2 Mbps figure for Imam got attached to Boggs; the Boggs 1080p rendition is about 4.9 Mbps). Re-read any source-quality claim against the file you will build from.
 
+### 2026-11-17: today's research reads (`projects/_client-scott-clary/research/todays-picks-2026-11-17.md`)
+- **Gary Vee "Ricky" is at the channel floor, cause unknown:** Gary Vee "Ricky" ("The Right Way To Fire Someone") showed 109 views at about 5 days on the public tab (McAfee 7.4K, Dobrik 2.6K, PBD 1.2K the same morning). Check it plays logged out before reading it as a verdict.
+- **Scott's own-talk Instagram: famous names don't separate.** 2 of 17 famous-name talk Reels reached 2x vs 11 of 305 (p 0.145); without the third-party Elon stunt Reel, 1 of 16 (`todays-picks-2026-11-17/ig-reel-hunt.md`).
+- **His biggest own-account Reels are life and relationship lines,** not business: "Relationships don't die from big fights..." (16 Sep 2025, 1.42M plays, 37K likes), "doing less" (1.43M, 44K likes), "Don't marry someone who lets you stay small" (13K likes). One of his Sep 2025 talk Reels (`DOJWXmakUDM`) is him on camera in his studio, so video of the sound-only feed talks may exist with his team (not confirmed).
+
 ## Validated on this channel
 (none yet: the first results arrive 7 days after the first logged upload)
 
@@ -574,3 +579,5 @@ Test: if any of the three passes 100K, B1 is weaker than this table says (re-wei
   characters pledged, non-recourse (SEC 8-K, Sept 2005). Disney's Marvel price was ~$4B ($4.24B at close); Cuneo says $4.5B.
 - 2026-10-19: "3,000 other agents" matches Inman (2010 open casting call); Sell It Like Serhant premiered April 2018 (Bravo).
 - 2026-10-19: Serhant clip 1 captions corrected by Affan: WhisperX "Bravo maybe said" = "Bravo said"; "in Millionaire are listening" = "in Million Dollar Listing".
+- **Bear Grylls's face alone has not carried a Short on Scott's channel** (YouTube search "Scott D Clary Bear Grylls", 17 Nov 19:54): 2 Shorts from the 9 Jun 2026 episode in Scott's own title format ("The world rewards this" 1.6K, "Build your life like this" 2.1K) plus about 11 more Bear-topic Shorts (faith x3, the five buckets x2, hard times, corporate speaking, health, "money is a bad master"; channel not shown on the search page, likely his) sit at 2-2,100 views, while the long-form has 227K. A famous face is not enough without a story or a second hook; check a guest's existing Shorts on Scott's channel BEFORE mining the episode (the round-1 Grylls pick missed this).
+- **Affan 17 Nov: "bruv we're talking bear grylls surely there is something more interesting than that"** (on the wife/eyebrow cut). With a famous adventurer he expects the adventure; an episode that holds no told adventure should be named as such up front, not filled with the best soft moment.

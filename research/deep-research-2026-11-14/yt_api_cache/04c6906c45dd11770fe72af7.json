@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "jUsfSuQ18ub97CZpjB9aBryDEmQ",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "GXdYAr8Jrn-vz-cpzwV-QFtYbSA",
+      "id": "UCzomXQvDl2UblYIjBoFR8aw",
+      "snippet": {
+        "title": "Ken McElroy",
+        "description": "Ken McElroy is a principal at The Founders Group, best-selling author, entrepreneur, and real estate investor with more than two decades of experience. Through practical advice, expert conversations, real-world successes, and hard-earned lessons, Ken delivers straightforward education on real estate, economics, personal finance, entrepreneurship, and building long-term wealth. No hype. Just real experience and actionable insight for investors at every level.\n\n",
+        "customUrl": "@kenmcelroy",
+        "publishedAt": "2015-04-13T17:10:19Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/sVcb1-of_f2mJ3zLN5cfuv4gCPAVz-_g3eXYI5kaIc0fSzw3xysIH-iPeFlsB6Htetimtd2dFQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/sVcb1-of_f2mJ3zLN5cfuv4gCPAVz-_g3eXYI5kaIc0fSzw3xysIH-iPeFlsB6Htetimtd2dFQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/sVcb1-of_f2mJ3zLN5cfuv4gCPAVz-_g3eXYI5kaIc0fSzw3xysIH-iPeFlsB6Htetimtd2dFQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Ken McElroy",
+          "description": "Ken McElroy is a principal at The Founders Group, best-selling author, entrepreneur, and real estate investor with more than two decades of experience. Through practical advice, expert conversations, real-world successes, and hard-earned lessons, Ken delivers straightforward education on real estate, economics, personal finance, entrepreneurship, and building long-term wealth. No hype. Just real experience and actionable insight for investors at every level.\n\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "63426196",
+        "subscriberCount": "528000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2443"
+      }
+    }
+  ]
+}

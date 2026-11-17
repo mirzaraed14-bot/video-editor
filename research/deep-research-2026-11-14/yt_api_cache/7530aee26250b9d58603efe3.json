@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "MaXIphpljyt28I55Do_-VtOxJwo",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "rnWXOrBemBt894JkdP_luS-H9Qk",
+      "id": "UCnmGIkw-KdI0W5siakKPKog",
+      "snippet": {
+        "title": "Ryan Trahan",
+        "description": "just a guy\nInstagram: @ryantrahan\nBusiness inquiries: hi@trahan.co",
+        "customUrl": "@ryan",
+        "publishedAt": "2013-10-27T02:06:20Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/fiJrCXLTjjY531uelhbpUD21Cb0iMb6vF21M6-H7ZhjMZPe2cAkIeB9yWUHtENkFhq1F3oVbgg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/fiJrCXLTjjY531uelhbpUD21Cb0iMb6vF21M6-H7ZhjMZPe2cAkIeB9yWUHtENkFhq1F3oVbgg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/fiJrCXLTjjY531uelhbpUD21Cb0iMb6vF21M6-H7ZhjMZPe2cAkIeB9yWUHtENkFhq1F3oVbgg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Ryan Trahan",
+          "description": "just a guy\nInstagram: @ryantrahan\nBusiness inquiries: hi@trahan.co"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "6712586933",
+        "subscriberCount": "24200000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "524"
+      }
+    }
+  ]
+}

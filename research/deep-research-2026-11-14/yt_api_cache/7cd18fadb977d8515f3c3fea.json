@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "h1Fe1QwLLWg4r_4olwdIauGoOe0",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "-a71fXmCObQYZwEfuxKAQkmYuks",
+      "id": "UCWFKCr40YwOZQx8FHU_ZqqQ",
+      "snippet": {
+        "title": "JerryRigEverything",
+        "description": "I review technology from the inside. \n\nEcoFlow Global Ambassador.\n\nSEND ME STUFF: \n125 E Main St. Suite 335\nAmerican Fork, Ut. \n84003\n\nANYTHING SENT TO THE ABOVE ADDRESS will not be returned. \nContact: JerryRigEverything at gmail dot com\n\nVideos are for Entertainment Purposes only.  Attempt any repairs at your own risk. \n\nJerryRigEverything is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.\n",
+        "customUrl": "@jerryrigeverything",
+        "publishedAt": "2012-07-23T07:07:54Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ebXyJhsgpfIHg4PXw3eSFTeSx6Ud1us26Gwgshe9jPBvSu82SpQkFmc1GK7q2Go2KJePYQ5Icg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ebXyJhsgpfIHg4PXw3eSFTeSx6Ud1us26Gwgshe9jPBvSu82SpQkFmc1GK7q2Go2KJePYQ5Icg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ebXyJhsgpfIHg4PXw3eSFTeSx6Ud1us26Gwgshe9jPBvSu82SpQkFmc1GK7q2Go2KJePYQ5Icg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "JerryRigEverything",
+          "description": "I review technology from the inside. \n\nEcoFlow Global Ambassador.\n\nSEND ME STUFF: \n125 E Main St. Suite 335\nAmerican Fork, Ut. \n84003\n\nANYTHING SENT TO THE ABOVE ADDRESS will not be returned. \nContact: JerryRigEverything at gmail dot com\n\nVideos are for Entertainment Purposes only.  Attempt any repairs at your own risk. \n\nJerryRigEverything is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "3224555279",
+        "subscriberCount": "10300000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1624"
+      }
+    }
+  ]
+}

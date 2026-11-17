@@ -1,0 +1,50 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "irMR3YS15AikDH5nwcQ1MPE5TZQ",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "nQoYQFSXFC1_jONaDJWtn4E7eLo",
+      "id": "UC0QHWhjbe5fGJEPz3sVb6nw",
+      "snippet": {
+        "title": "Doctor Mike",
+        "description": "Dr. Mikhail \"Mike\" Varshavski D.O.\nActively Practicing Board Certified Family Medicine Doctor living in NYC\n#1 Health/Medicine Influencer w/ 30,000,000+ followers\nAiming to make the field of medicine relatable, understandable, and fun! \n\nExecutive Producer - Doctor Mike\nDirector of Production - Dan Owens\nManaging Editor/Producer - Sam Bowers\nEditor/Designer - Caroline Weigum\nEditor - Juan Carlos Zuniga\n",
+        "customUrl": "@doctormike",
+        "publishedAt": "2016-08-19T02:18:53Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/YPiqL_eCFzCI8cVU_bZrQ0jTrGRNp6lc7a8hR5qmszAjHSL8qnqBgRunlPd8eZZAWHlKAtFRew=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/YPiqL_eCFzCI8cVU_bZrQ0jTrGRNp6lc7a8hR5qmszAjHSL8qnqBgRunlPd8eZZAWHlKAtFRew=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/YPiqL_eCFzCI8cVU_bZrQ0jTrGRNp6lc7a8hR5qmszAjHSL8qnqBgRunlPd8eZZAWHlKAtFRew=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Doctor Mike",
+          "description": "Dr. Mikhail \"Mike\" Varshavski D.O.\nActively Practicing Board Certified Family Medicine Doctor living in NYC\n#1 Health/Medicine Influencer w/ 30,000,000+ followers\nAiming to make the field of medicine relatable, understandable, and fun! \n\nExecutive Producer - Doctor Mike\nDirector of Production - Dan Owens\nManaging Editor/Producer - Sam Bowers\nEditor/Designer - Caroline Weigum\nEditor - Juan Carlos Zuniga\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "5844209293",
+        "subscriberCount": "15100000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1304"
+      }
+    }
+  ]
+}

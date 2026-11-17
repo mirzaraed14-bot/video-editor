@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "2OMMZIBVj6Obd8PUwxbUM4Hozb4",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "OfaQcdozYRTTMrL7Jd9oaa4p1j0",
+      "id": "UCERm5yFZ1SptUEU4wZ2vJvw",
+      "snippet": {
+        "title": "Jeremy Ethier",
+        "description": "This channel is focused on providing science-backed training and nutrition videos in order to help you become the best version of yourself. I'm a fitness coach, Kinesiology graduate, and published researcher based in Vancouver, Canada. I focus on providing science-based information to help you optimize your training and nutrition.\n\nGet your personalized training and nutrition plan here:\nhttps://builtwithscience.com/\n",
+        "customUrl": "@jeremyethier",
+        "publishedAt": "2016-10-06T18:32:17Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lgPUjjOwxY-qWIYhqSzQlS_ncT-zL0MHVgKnxxnfJ59QQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lgPUjjOwxY-qWIYhqSzQlS_ncT-zL0MHVgKnxxnfJ59QQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lgPUjjOwxY-qWIYhqSzQlS_ncT-zL0MHVgKnxxnfJ59QQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Jeremy Ethier",
+          "description": "This channel is focused on providing science-backed training and nutrition videos in order to help you become the best version of yourself. I'm a fitness coach, Kinesiology graduate, and published researcher based in Vancouver, Canada. I focus on providing science-based information to help you optimize your training and nutrition.\n\nGet your personalized training and nutrition plan here:\nhttps://builtwithscience.com/\n"
+        },
+        "country": "CA"
+      },
+      "statistics": {
+        "viewCount": "1213512531",
+        "subscriberCount": "8000000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "346"
+      }
+    }
+  ]
+}

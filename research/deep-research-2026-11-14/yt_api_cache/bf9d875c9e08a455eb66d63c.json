@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "86WhPh8EGu6R_X5CZKVyC7-rE_g",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "4OuAg0LoATqAPg5dy4tFfgXo6og",
+      "id": "UCbV60AGIHKz2xIGvbk0LLvg",
+      "snippet": {
+        "title": "Jay Shetty",
+        "description": "Jay Shetty | Global Best Selling Author | Award Winning Podcast Host of ON Purpose | Purpose Driven Entrepeneur",
+        "customUrl": "@jayshetty",
+        "publishedAt": "2013-09-19T15:17:54Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/8D46kUdrcFj3uq2-nDAA39dBkRchnLcMdtXVu83amzCkGeLi8vl2GQWo-Smc2Xfub0aelS4S_w=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/8D46kUdrcFj3uq2-nDAA39dBkRchnLcMdtXVu83amzCkGeLi8vl2GQWo-Smc2Xfub0aelS4S_w=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/8D46kUdrcFj3uq2-nDAA39dBkRchnLcMdtXVu83amzCkGeLi8vl2GQWo-Smc2Xfub0aelS4S_w=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Jay Shetty",
+          "description": "Jay Shetty | Global Best Selling Author | Award Winning Podcast Host of ON Purpose | Purpose Driven Entrepeneur"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "367185725",
+        "subscriberCount": "4890000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1257"
+      }
+    }
+  ]
+}

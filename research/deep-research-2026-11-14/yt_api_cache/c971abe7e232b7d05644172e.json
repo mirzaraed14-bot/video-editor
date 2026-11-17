@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "mx1V0w0TPU6kU2nS65aPCJLvJDg",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "ZTjmD4ZZ3k8u_ECv6JjLM_h7mHI",
+      "id": "UCJ24N4O0bP7LGLBDvye7oCA",
+      "snippet": {
+        "title": "Matt D'Avella",
+        "description": "Hi my name is Matt. I made a documentary a few years back called Minimalism that trended on Netflix and now I make YouTube videos. Please subscribe so my mother-in-law thinks this is a better career choice than being a doctor.\n",
+        "customUrl": "@mattdavella",
+        "publishedAt": "2011-07-25T12:31:50Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/Ldpkcur-En5Qn8rcowaWiU6xbNt_yMrs1mAVcSRBIOdq0tSyTmGGIALRcgfm1a8aGKgYiYDEIQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/Ldpkcur-En5Qn8rcowaWiU6xbNt_yMrs1mAVcSRBIOdq0tSyTmGGIALRcgfm1a8aGKgYiYDEIQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/Ldpkcur-En5Qn8rcowaWiU6xbNt_yMrs1mAVcSRBIOdq0tSyTmGGIALRcgfm1a8aGKgYiYDEIQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Matt D'Avella",
+          "description": "Hi my name is Matt. I made a documentary a few years back called Minimalism that trended on Netflix and now I make YouTube videos. Please subscribe so my mother-in-law thinks this is a better career choice than being a doctor.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "338158679",
+        "subscriberCount": "4060000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "472"
+      }
+    }
+  ]
+}

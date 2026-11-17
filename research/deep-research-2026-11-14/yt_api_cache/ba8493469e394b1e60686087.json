@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "XSOLYb5y2clhgYL2vKmyi7J4xvo",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "oJ7Iyn8R-Z564Fd7YSYccyHQa5U",
+      "id": "UC0TnW9acNxqeojxXDMbohcA",
+      "snippet": {
+        "title": "Mark Manson",
+        "description": "#1 New York Times Bestselling Author of five books, including \"The Subtle Art of Not Giving F*ck\". Co-Founder of Purpose AI. Host of the Solved Podcast. \n\nFor all sponsorship/business inquiries please email Chad Boukzam at chad@cndentertainment.com\n\n",
+        "customUrl": "@iammarkmanson",
+        "publishedAt": "2017-08-18T21:52:40Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/PrLwcAUFcEp7_Y_CXqooqTmTi9HgcGH-ITcELFsYxZ6MVqG9DrHcSDZe0UCxmzHnUBvqdzlTWQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/PrLwcAUFcEp7_Y_CXqooqTmTi9HgcGH-ITcELFsYxZ6MVqG9DrHcSDZe0UCxmzHnUBvqdzlTWQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/PrLwcAUFcEp7_Y_CXqooqTmTi9HgcGH-ITcELFsYxZ6MVqG9DrHcSDZe0UCxmzHnUBvqdzlTWQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Mark Manson",
+          "description": "#1 New York Times Bestselling Author of five books, including \"The Subtle Art of Not Giving F*ck\". Co-Founder of Purpose AI. Host of the Solved Podcast. \n\nFor all sponsorship/business inquiries please email Chad Boukzam at chad@cndentertainment.com\n\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "200496076",
+        "subscriberCount": "3200000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "736"
+      }
+    }
+  ]
+}

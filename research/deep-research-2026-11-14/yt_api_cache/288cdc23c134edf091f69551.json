@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "SxqQmLxfbBhpKhmFSyTFvrSeWDo",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "AB8F5JvVr1Yx5n6fmtvbnFy9uyM",
+      "id": "UCd_WBvzBg1UbHE8j8MIL5Ng",
+      "snippet": {
+        "title": "Thomas Frank Explains",
+        "description": "Notion tutorials and other deep dives into productivity tools with Thomas Frank.",
+        "customUrl": "@thomasfrankexplains",
+        "publishedAt": "2020-10-07T01:05:53.039377Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/WAXbGANixqwpdjvtpUBCLtSwIr6IjEPpmRClw8jstjmQMcBF9AKsVPdhC0T49OcLr9xCEPviuLg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/WAXbGANixqwpdjvtpUBCLtSwIr6IjEPpmRClw8jstjmQMcBF9AKsVPdhC0T49OcLr9xCEPviuLg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/WAXbGANixqwpdjvtpUBCLtSwIr6IjEPpmRClw8jstjmQMcBF9AKsVPdhC0T49OcLr9xCEPviuLg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Thomas Frank Explains",
+          "description": "Notion tutorials and other deep dives into productivity tools with Thomas Frank."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "16335822",
+        "subscriberCount": "302000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "86"
+      }
+    }
+  ]
+}

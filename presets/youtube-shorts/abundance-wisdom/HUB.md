@@ -21,6 +21,277 @@ Near-done jobs are NOT rebuilt for it; the style applies from their next step. T
 - the HP fork (`local_7f87fba7…`, Hagrid raw cut).
 Jermaine is still unbuilt, so its build takes this style.
 
+## ▶ 17 Nov ~21:00 PKT (hub): HIS TOPIC RULE: "the Michael Jackson of each space"
+- **His words:** "I think the Harry Potter niche is a staple now Currently the short is four out of 10 so it's directly competing with my Michael Jackson short
+  ... ultra mega famous things are going viral on my channel ... we can go into any niche and say what is the Michael Jackson of this space
+  ... for streaming Michael Jackson is speed for movies it's Harry Potter for music well it's just it's literally Michael Jackson for
+  gaming it's GTA 5 I would say so that's why I'm making the GTA 5 short also"
+- **The map:** music = MJ; streaming = IShowSpeed; movies = Harry Potter (a STAPLE lane now, next to MJ and Speed); gaming = GTA 5
+  (the farewell Short is the test). A new lane starts by naming the single most famous subject of its space.
+- Saved: memory feedback-mega-famous-per-niche; LESSONS.md 2026-11-17.
+
+## ▶ 17 Nov ~18:38 PKT (hub): GTA 5 FAREWELL Short, a new AW job (his words, this session)
+- **His ask:** "I want to make a GTA6 farewell video ... compile everything from this video [zTPzck2mrug] some other beats ... from
+  creators getting emotional the fact that GTA6 is now two days away ... the goal with this video is to just make the viewers emotional
+  ... I'm going to use the Paul Walker [See You Again] Video Music video as the music bed ... nice hook emotional and end of strong so I
+  don't make the whole shot with this video only". He calls it "a completely different niche": assumed AW (he can redirect it to
+  Affan Afterhours).
+- **Started:** [aw-gta5-farewell](local_22650bd0-a351-494d-91d6-f20aac8d401f), job folder `projects/gta5-farewell/`, yt_api slot `gta-farewell`
+  (cap 20). Checked: claude-opus-5-5 / xhigh, `"advisorModel":"claude-fable-5-2"`.
+  - Research → SEQUENCE.md as text in ~3 h → his OK → build the same day; it must be posted before the GTA 6 launch (time-sensitive:
+    GPU priority).
+  - No music bed from us (his job): the cut breathes under "See You Again", and the peaks are marked.
+  - The reference only through the API + pace.sh; never his Chrome. Cold read in text first; MAX-EFFORT-GATE time-boxed.
+- **~20:20 SEQUENCE v2 SENT for his OK** (`projects/gta5-farewell/SEQUENCE.md`, decisions in § 1; not built). ~41 s on "See You Again"
+  from 0:00. Hook: Shawn Fonteno (Franklin) "it kind of saved me… I was heading in a whole other direction" + the card "13 YEARS LATER,
+  IT'S TIME TO SAY GOODBYE" (the 21.1M IG phrase) → Shawn on launch day 2013 over the real midnight queue → Slink Johnson (Lamar),
+  Gamology 2021 (6.72M) "so many young guys… grew up watching the game" → Jelly (23.3M) "that game brought me up" → TGG "I'm ready for
+  what's next… GTA V changed my life" on the held "again" → black → GTA VI on the beat drop at 39.0. Title "13 Years… Goodbye GTA 5 💔".
+  Locked 45K (15-150K); risk: AW's audience is not the GTA audience. NOT max effort yet: 2013 queue / Rockstar trailers / Shawn's 1080p
+  episodes still downloading behind the lock; Instagram per person thin; Shawn's Topaz test and one muted word open. Two cold reads +
+  Fable ×2 done. 18/20 searches; one DASH 403 retried via HLS (not a bot page). Meter 29 %.
+- **~20:40 HIS OK (checked in aw-gta5-farewell's transcript):** "All in all I really like this sequence"; note: end on Franklin's and
+  Lamar's actors ("it's been quite a ride"), adding one or two more reference moments. v3: after TGG, Slink "That was quite a ride, dawg"
+  (fist-bumping Shawn, Gamology 2021 1080p) on the beat drop at 39.0 → Slink "On behalf of Lamar, Franklin, Trevor, Michael… thank you so
+  much" → the GTA VI logo, ~50 s.
+  - BUILD session gta5-farewell-build (local_d5a0f783-8e15-46e6-91a0-a21513499c58, Sonnet xhigh) writes only to
+    `projects/gta5-farewell/build/`. Target: final by 18 Nov ~14:00 PKT for an ~18:00 post. aw-gta5-farewell checks the render, then the
+    hub verifies (hashes, loudness, contact sheet) and makes the export copies. Open: the 2013 queue swap (VG247 is 360p → JStu's US 2013
+    video) and Shawn's 1080p 2023 originals, both downloading.
+
+## ▶ 17 Nov ~03:35 PKT (hub): TWO RESEARCH SESSIONS STARTED, MJ + IShowSpeed, by beat mining (his words, this session)
+- **His ask:** two research sessions, one MJ ("that niche is just simply working"), one IShowSpeed ("got me a lot of views ... a mega
+  [star] these days"). Re-sequence beats that already went viral, add our own story beats, "because that's how my banned birthday
+  short went viral" (`JrjfUjzTrLk`, ~6M). Speed: an in-depth teardown of his last Speed Short ("four out of 10" vs his last 10).
+- **His framework:** "Fable is the boss, Opus is the manager and Sonnet is the actual employee". Saved to memory
+  feedback-use-fable-allowance (research sessions = Opus main + Fable advisor + Sonnet agents).
+- **Started:**
+  - [aw-mj-beats](local_4d6cbc99-0f0e-4d98-a27f-6dabc5d8109a): writes `research/aw-mj-2026-11-17/` and the shared template
+    `research/instagram-beat-mining/TEMPLATE-birthdays.md`; run log `2026-11-17-mj.md`; yt_api slug `mj-beats`.
+  - [aw-speed-beats](local_b536f555-3bca-4f6c-a6d4-554fad171396): `research/aw-speed-2026-11-17/` (TEARDOWN.md first); run log
+    `2026-11-17-speed.md`; yt_api slug `speed-beats`.
+  - Checked: both read claude-opus-5-5 / xhigh (get_session), and `"advisorModel":"claude-fable-5-2"` in their .jsonl.
+- **Brief rules beyond the standing ones:** METHOD.md step 8 (youtube.com search in Chrome) and the `trs` trick are superseded by
+  yt_api.py; each session uses its own Chrome tab and never touches the other's; disk first, then Instagram; one pick or "no pick"
+  (bar: centre 150K+, top 1M+), every beat PROVEN or OURS, PITCH-CHECKLIST + MAX-EFFORT-GATE + VIRAL-BAR, then STOP for his OK.
+  The hub merges IDEAS.md / RESULTS-TRACKER.md. No flags were set at start. Weekly meter 8 % (16 Nov).
+- **~03:40 Speed Step 1 (teardown) done:** `research/aw-speed-2026-11-17/TEARDOWN.md`.
+  - Posted as `j-5uXQ7cWxU` "Why IShowSpeed's Mom KICKED Him Out 💔" (14 Nov 20:27 UTC): HIS title, not the 🏆 one we gave. 65,789 views
+    at 2.1 d. Behind Son, Siblings and Jealous at the same age; the best non-MJ Short of the last 20. Too early for a verdict.
+  - Main suspect: the story was already told, in the same Club Shay Shay words (our own 950K, League Digital 883K); also a narrated
+    hook, no belief reversed, three award reveals as the payoff.
+  - "Ronaldo's Own Coach" (7 Nov) is missing from the uploads playlist (removed or private).
+  - Asked of Affan (TEARDOWN § 8): APV, stayed-to-watch %, first-24 h views, whether "4 of 10" is 24 h or lifetime, traffic sources, a
+    retention-curve screenshot; and why he chose the 💔 title.
+  - CLAIMS.md: the hub wrote both lane claims (Speed; MJ taking over ig-mj's lane). Weekly meter 13 %.
+- **~03:55 MJ Step 1 (template) done:** `research/instagram-beat-mining/TEMPLATE-birthdays.md`.
+  - CORRECTION (hub-checked): BANNED (`JrjfUjzTrLk`, 6.0M) was hand-cut by Affan 3-5 Sep from `X:\Claude Projects\Abundance Wisdom\BIRTHDAY-CUT.md`
+    (file dated 4 Sep; render `Final Renders\Honor final YT FInal.mov`, 36.03 s, 5 Sep). `projects/paris-wont-post-birthday/` is the
+    FOLLOW-UP "Why Michael Jackson HATED His Own Birthday" (`tj3xw2s3Q8Y`, 142K). The hub's brief had it the other way round.
+  - It ends on "...I'll find my own private way to honor it" (BIRTHDAY-CUT.md beat 8), not "struggle and pain": FRAMEWORKS.md row fixed.
+  - Real shape: Paris 2026 accusing herself in the viewer's words (borrowed, a 117K competitor clip) → "he wouldn't let us" → Paris 2023
+    → OURS: Michael 1993 "no Christmas, no birthdays" → OURS: loop back to her "private way". The follow-up did 142K: same lines
+    7 weeks later, a troll-complaint hook, no peg, nothing to share.
+  - The Speed session had started on the wrong project; the hub told it to use the template file. Weekly meter 13 %, Fable 0 %.
+- **~04:45 YouTube lock starvation:** from 04:19 a chain of `yt-dlp --flat-playlist ytsearch15:` calls (AI-clipping-scam and GTA 6
+  queries, plus an @AffanWiz/shorts listing) retook youtube.lock at every release; Speed's six downloads waited ~25 min. The topics
+  match the CA-015 editor's rant Short (local_5ff6b683; the hub had sent it the rules ~04:05). Hub asked it to stop the chain, use the
+  API for his channel, and send search queries to the hub. No flag set.
+  - LESSON: pace.sh has no queue: a looping caller wins every release over 5 s pollers. A fair-queue (ticket) fix is open for the hub.
+  - Speed lead (not a pick): Speed × Ronaldo (tears 6 Jul → Ronaldo's World Cup boots 10 Jul → Speed's "thank you" after the
+    5 Nov retirement). Instagram ~25 loads, no challenge; Chrome froze twice under memory pressure (Media Encoder 13.6 GB).
+  - 04:45 CA-015 confirmed the chain was its research subagent; it killed its loops and waiters (hub-checked: 241494, 245947, 253205
+    gone; no ytsearch left). It listed @AffanWiz via yt_api.py `affanwiz` playlistItems + videos. Its 3 API searches wait on
+    Affan's OK (the AW key; the affanwiz slot is 0 searches), asked 04:47.
+- **~04:49 MJ status:** TEMPLATE § 3: HATED's 142K was that week's baseline, so BANNED is the outlier; the evidence points to a live
+  argument at post time + a new join + shares. Finalist F-D "MOONWALK" (Paris × Michael; the 2012 line audio only; sources overlap
+  the unposted Dad Short: his call). Killed: race/"is she his", Christmas sequel, Neverland "spoiled brats". The hub HANDED
+  Culkin × MJ (ig-icons' 01:42 row, at his direct ask, never closed) to aw-mj-beats to price. CLAIMS.md rows written. Meter 14 %.
+- **05:29 MJ FINAL: NO PICK** (`research/aw-mj-2026-11-17/REPORT.md`, hub read its opening). Best leads, both under the bar:
+  "The Moonwalk He Promised" ≈115K (cold read: don't send) and Culkin × MJ ≈120K (huge demand, but child-Culkin pictures, the
+  allegations lane, Culkin's defence already the year's most-clipped MJ line, nothing on disk). Killed: race, Christmas, Neverland.
+  - NOT max effort: no line listened to (ASR blocked, commit 87/91 GB with Premiere open); gate C (peer-channel listing) not redone;
+    3 downloads stopped unrun to free the lock for Speed. Instagram gate B met (24 searches, 45 reads, 0 blocks). Fable: 3 + 1 calls.
+  - Signal: Paris's music travels on Instagram (GMA debut 139.1K likes). Template § 3 / § 5 are now labelled hypotheses (n=1).
+  - Second MJ no-pick in a row (14-15 Nov run too). Meter 18 %; API 9/12 searches used (Pacific day resets 13:00 PKT).
+- **~05:40 SPEED FINAL: NO PICK** (`research/aw-speed-2026-11-17/REPORT.md`, hub read its opening). Two cards at ≈60-140K: Speed's
+  dad at the World Cup final (told the same way at 49.9M; Jamal, 16, near the hug) and Ronaldo's boots (the join exists; no cause may
+  be claimed). Fable 5 calls + a Sonnet cold read; 12/12 API searches, 13 paced downloads, ~45 Instagram loads, no block.
+  NOT max effort: the Ronaldo words come from a rough transcript (memory), and the dad source wasn't downloaded.
+- **Hub merges done (05:48):** IG-SEARCH-LOG.md (46 Speed + 28 MJ Instagram rows), CLAIMS.md (both lanes' rows),
+  LESSONS.md (2026-11-17 section, 6 lessons), IDEAS.md (RUN 5). Both sessions hold for Affan: a second pass after the 13:00 PKT
+  API reset, or stop. Weekly meter 18 %.
+- **MJ Brother r5 hub-verified (17 Nov ~06:00; the file dates from 14 Nov 16:42):** `projects/mj-family-saw-him-again/outputs/Michael Jackson's
+  Brother Saw Him AGAIN.mov`, sha256 `c75688d0…41de352` identical in outputs, Final Renders and Exports; h264 1080x1920, 60 fps, 1998
+  frames, 33.3 s, -14.0 LUFS, peak -1.6 dBFS. Katherine is a real 2026 photo (his r4 note: "that's not Katherine"). aw-mj-son-method
+  reports nothing pending; tags in DELIVERY-NOTE.md.
+- **06:16 SECOND DEEP PASS ordered (his words, this session):** "run the 2nd deep checks for both sessions tell them and they should go on
+  yt and instagram to stress test bits there's no way we cant come up with a speed and mj idea its literally impossible we just have to
+  look further and come up with clever arcs and storylines people really haven't stictched and sequenced together".
+  - Both sessions were told: invent NEW joins of proven beats (≥ 30 arcs in `pass2/ARCS.md`, then stress-test 5-8 on Instagram AND
+    YouTube: beat proof, join unstitched, live argument in comments); close pass 1's gaps (listen, gate C, sources); the bar unchanged.
+  - "go on yt" = the Data API + paced downloads; never his Chrome (standing rule). yt_api.py CAP: mj-beats and speed-beats 12 → 30
+    (Pacific 16 Nov had 24 of 95 used).
+  - Memory: commit 88.2/91.2 GB at 06:16 (3.5 GB free RAM), so listening waits on the ASR gate.
+  - Still open for him: the 3 API searches for CA-015's rant Short; the Studio numbers for `j-5uXQ7cWxU`.
+  - Speed pass 2: 32 arcs (`research/aw-speed-2026-11-17/pass2/ARCS.md`), 8 shortlisted (birthdays 18th → 20th → 21st; "no longer a
+    Ronaldo fan" 2022 → tears → boots; 2022 World Cup song → the 2026 final; "hi me in 3 years" 2020 → SOTY 2026; snub → wink → boots;
+    Indonesia; Messi hate → retirement; "hated by mom" → his defence). Stress test next. Meter 18 %.
+  - MJ pass 2: 35 arcs (`research/aw-mj-2026-11-17/pass2/ARCS.md`, setup PROVEN → turn OURS → payoff), 8 under stress test: Diana Ross
+    (stayed with her as a boy → guardian in his will → Prince on Hotboxin); Thriller × Jehovah's Witnesses (peg 30 Nov); Michael ×
+    Princess Diana; the moonwalk he never taught his daughter; baby Prince in Walters 1997 → produced the film; Bigi (27.7M "Where is
+    My Dad" signal: minors check); Victory Tour farewell → 2001 reunion; the Christmas sequel. Gate C + a proven-beat inventory run on
+    Sonnet. Meter 18 %.
+  - ~06:55 MEMORY: commit 90.4/91.2 GB (Claude 22.6 GB in 42 processes, Chrome 13.2, Media Encoder 10.2, Premiere 6.6, Photoshop
+    4.5, CA-015's ffmpeg render). Chrome stopped answering both sessions (3 timeouts each, no block, no flag). Hub paused Instagram,
+    ASR, downloads and new agents in both; asked Affan whether to archive 10 finished AW sessions (and to close Media Encoder if idle).
+  - Leads so far: Speed = "Hi Me In 3 Years" (23.7M) → 1M live viewers in Indonesia → his 2026 speech in Indonesian (both joins
+    unstitched; `pass2/YT-STRESS.md`, 28/30 searches). MJ = "Michael Jackson's Song For Diana" (`pass2/DIANA.md`): the "Dirty Diana"
+    Wembley anecdote (Shorts 30.7M / 9.26M / 7.06M in 2026) → OURS: Walters 1997 "you are the true princess of the people" (his
+    tribute alone only 110K / 27K). Runner-up: the moonwalk arc (moonwalk wave live: 9.05M / 1.62M / 1.55M).
+  - ~07:10 Speed interim: all 8 fail a gate (`pass2/SHORTLIST.md`). The "Hi Me In 3 Years" arc died: Affan cut that Indonesian line
+    himself on 14 Nov, and Speed never says why, so the order would imply a cause. Two unstitched tension arcs remain: #12 ("my dad
+    showed my mom because my dad watches WorldStar" → his dad took him in → the 12-hour bus) and #22 (Qatar 2022 at 17, KSI mocked
+    his tears → 2026 → the boots). 30/30 searches used; resumes at 13:00 PKT in the same session (self-wake). Meter 21 %, context 83 %.
+    (Clock note: the Speed session's pass-2 stamps were ~45 min fast; the machine read 06:34 PKT at 01:34 UTC. The hub's "~07:10" above
+    is that fast clock too.)
+  - MJ pass 2 interim, NO PICK YET (`research/aw-mj-2026-11-17/pass2/REPORT2.md`): best card "Michael Jackson's Song For Diana" ≈140K,
+    just under the bar. Proven half: the Dirty Diana anecdote (30.7M / 9.47M / 9.26M / 9.13M). Ours: Walters 1997 "true princess of the
+    people" (told alone 110K / 27K) + his 2003 Private Home Movies telling. No Short joins them. Fails judgment: ABC 1997 says "a fan,
+    not a close friend"; not a family story (AW's Diana Shorts 28K / 34K). Others: moonwalk ≈115K, Thriller × JW ≈100K (peg 30 Nov).
+    35 arcs, 10 tested, gate C done (10 peers), BEATS.md 67 proven beats / 50 unclipped lines. API 21/30. Meter 21 %, context 85 %.
+  - CORRECTIONS from aw-mj-beats: the Dad Short IS POSTED, `b0y6iNlO9tg` "Michael Jackson Became The BEST Dad 🥹" (16 Nov); RESULTS
+    maps the allegations cut to "The Police Did THIS" (11.9K), not "ALWAYS Innocent" (636K).
+  - 06:42 (true clock) memory FREED: Premiere, Media Encoder and After Effects are closed (no crash events: his doing); Chrome restarted
+    06:37 after a crash at 06:15; commit 65.7/69.8 GB (the limit itself shrank), 8.8 GB RAM free. Hold lifted for Instagram (paced),
+    small downloads, and one agent at a time; ASR still held (gate: 6 GB free / 10 GB headroom). Archive question still open.
+  - **~06:38 HIS PICK in aw-speed-beats (his words, checked in its transcript):** "this has potential do a final run to see if you find
+    something better otherwise we start to build the text sequence out of this idea". The arc: "From £1.79 To Ronaldo's Boots 🥹"
+    (`research/aw-speed-2026-11-17/pass2/SEQUENCE-origin.md`, not built): the £1.79 super chat "What soccer football team do you
+    support?" → "CRISTIANO RONALDO! SIUUU!" → Club Shay Shay "top moment of my life" over the 2023 meeting → the 2026 tears → the boots
+    → "...I love you, Ronaldo!". Instagram origin proof: @fboy 401.8K / 256.8K likes. Fable fixed two overclaims (the donation didn't
+    start his fandom; no cause for the gift). Honest centre 90-180K (under 150K at the middle): built on HIS call if nothing beats it.
+    Open: "Over Time" montage freshness (search after 13:00), two lines by ear, the Spain shirt. Cold read running. Meter ~21-22 %.
+  - ~07:00 Speed origin SEQUENCE DONE (Fable + cold read, 7 fixes): honest centre ~130K. Waiting for his OK in aw-speed-beats
+    (build vs keep hunting). Disclosed: medium.en ASR ~06:45-06:55 on three 24-30 s clips under .asr-lock, on its own 6 GB / 6 GB guard
+    (the hub's 10 GB commit gate reached it after); clean, nothing running. #12 / #22 / #16 parked unless he says keep hunting.
+  - ~06:50 MJ Diana card AT THE BAR (centre ≈150K) after Instagram: friendship framing Dacbv0etmdY 690.4K likes / 29.1K shares; the
+    meeting DNa82bcSkpj 518.1K / 13.2K; the song 287.4K / 21.3K; his post-death tribute not on Instagram. Not a pick until the cold read.
+    Hub OK'd at 06:51 (13.3 GB RAM free, 14.4 GB commit headroom, Premiere closed): the cold-read agent, the ITN HQ download
+    (6B7cvRRMKF4), medium.en word times under .asr-lock; the judgment conflict (ABC 1997 "a fan") goes first in the pitch.
+  - **MJ pass 2: NO PICK.** Diana fell to ≈80K on the cold read: the "fresh" half is already inside the 30.7M (the same 2003 PHM
+    telling, marked SATURATED in MJ-IDEAS.md:86), and it is two stories joined. 25 of 35 arcs untested, Instagram on one arc only.
+    Meter 22 %, its context 90 %.
+  - **MJ PASS 3 sent by the hub** (his "look further" order stands): cold-read all untested arcs + 10+ new ones from BEATS.md Table A IN
+    TEXT first (one Sonnet agent), source only the survivors, then the final Fable call and a pitch or no-pick. Same session (compacts).
+    Lesson written: LESSONS.md + METHOD.md step 0 (cold read in text before sourcing).
+  - MJ pass 3, step 1 (`pass3/COLDREAD-ARCS.md`): 50 arcs cold-read in text, 43 killed (weak 11, our repeat 11, seen-it 9, rules 7,
+    shape 5). 5 survivors, all under the bar before sourcing: #19 Motown "His Moonwalk Wasn't Perfect" (90-130K, top 1M+); N1 "Nine
+    Kids, One Tiny House" (100-130K); N2 Bray letter → Oprah (70-100K, the posted Dad Short cannibalises it); #16 Neverland (70-100K);
+    #15 "He bled, he cried" (60-90K). Hub OK'd: join checks on #19 + N1 (≤ 4 searches), Instagram on the survivor, final Fable call,
+    then the verdict (no pick first if under, with the best as a card). Meter 22 %, context 92 %.
+  - **Tue 07:08 MJ PASS 3: NO PICK** (`research/aw-mj-2026-11-17/pass3/REPORT3.md`; all 50 arcs with verdicts in `COLDREAD-ARCS.md` § 1).
+    No NEW survivor: N1 Gary house = the old Back Home card (≈140K, IG `DXM6eAGCcK0` 6.1M); Motown 25 killed on an inferred seen-it
+    ("Michael Reacts To His Motown 25 Performance" 1.86M). Across 3 passes, 66 arcs: every surviving card lands at 80-140K, against a
+    recent channel median of ~50K. Its question for Affan: hold the bar (150K centre, 1M top), or build the best card as a test.
+    Hub asked him. Meter 22 %. Nothing running; locks released.
+    Update: Motown kill CONFIRMED (the 1.86M carries his self-critique; a 2,129-like comment quotes it). Gary house: the 2026 return is
+    proven on YouTube (1.81M / 1.36M / 816K / 754K); join freshness OPEN (his 2003 visit is in two Shorts, 330K and 310K, blank
+    descriptions). The card to overrule: "Nine Kids, One Tiny House" (board #3; 100-130K cold read, ≈140K / 1M top on the board).
+    mj-beats 24/30 searches.
+  - **MJ / Bashir (his ask in aw-mj-beats for the "sequence text"): a below-bar CARD, NO PICK** (`research/aw-mj-2026-11-17/bashir/SEQUENCE.md`
+    v1.1; centre ≈55K, 12K-500K). ~33 s: Bashir on air "I was angry at the way his children were made to suffer" → Bashir on Michael's own
+    camera "spectacular... almost makes me weep" → Povich "But who is Martin Bashir?" + the 1995 Diana interview, with Michael's 2003
+    statement on screen ("the man that turned Diana's life around") → card "2021: the BBC's inquiry" + William "BBC employees lied and
+    used fake documents" → Michael "No matter what you do, there's always somebody that will say something about it". No Short joins
+    Bashir's Diana deceit to Michael (22 searches); Instagram 32 loads, 0 blocks. His calls: the allegations lane; is a 55K card worth
+    building. Open: William's file (lock), the by-ear speaker check on beat 1, the Fox bed under Take Two (Demucs needs his OK), the
+    anchor test. Meter 30 %. (Its IG agent wrote 6 rows into IG-SEARCH-LOG.md directly.) The hub's Gary-house question is superseded.
+  - **His rule (checked in aw-mj-beats' transcript): "keep looking which has atleast 2 viral beats".** Bashir closed ("not feeling it").
+    Best card now: "Michael Jackson FIRED His Father" ≈90K (40-220K), `research/aw-mj-2026-11-17/beats2/SEQUENCE.md` v1.2, NO PICK.
+    Viral beats: the film's firing scene 4.0M + the real 1979 "Do you think your father was too strict?" "Yes... No, he's going to kill
+    me" 3.79M (said laughing, so never framed as fear). His calls: 12 of 22 s of speech is film audio (actors); a Lionsgate Content ID
+    risk; the film's farewell (12.0M) would be a third viral beat, but its only copy is 480x854. Under the 2-viral-beat filter no
+    earlier card qualified; the Dad Short had 3.
+  - **The Dad Short `b0y6iNlO9tg` read 57,295 at ~17.5 h: the best early read in weeks.**
+  - Open: the TODAY 2017 Prince clip ("do it better than I did"), downloaded, transcript queued behind the ASR lock. 27/30 searches;
+    meter 34 %. (Two agents wrote 9 + 6 rows into IG-SEARCH-LOG.md directly.)
+  - **MJ movie↔real format (his "fully go all out before we pick a topic for this format"): best topic THE FIRING, NO PICK, 70-85K**
+    (`research/aw-mj-2026-11-17/format/SEQUENCE.md` v1.2; two cold reads). 8 beats alternate film and real in the film's own order, each
+    real beat answering the film line before it: film "I need you to fire Joseph… Quickly" → 1979 "too strict?" "Yes… No, he's going to kill
+    me" → film "fired me with a piece of paper" → card (the papers went to Joe's house; Michael: "It's not easy firing your father") → film
+    Katherine "You can't whoop nobody" → Joe, Piers 2013 "I'm glad I was tough" → film "What kind of son does that?" → 1979 "Now I'll say
+    it, yes". Proof: 2 viral beats, YouTube only (firing scene 6.51M / 4.12M / 4.01M / 2.67M; the 1979 line 3.79M); Instagram 0.
+    Ranked below it: farewell (no HD; a 3.68M movie-vs-real exists), Pepsi (a 6.13M exists; our Burnt Hair), burn + Joe, nose, audition
+    (minors), belt (repeats the Dad Short). Open: by-ear (the Piers audio was rated slurred in Sept), the 1979 vs 1983 firing year, BMI
+    1990 (IG 163K, but YouTube only 480p). SLIP: an IG agent skipped pace.sh once (logged in format/IG-FILM.md). 39/42 searches; meter 37 %.
+  - **~07:00 Speed: Affan REJECTED the £1.79 sequence** (per aw-speed-beats) and set PASS 3 there: map our viral MJ frameworks onto Speed
+    and beat-mine each one, his test being ~12 viral beats per framework (`research/aw-speed-2026-11-17/pass3/PLAN.md`, `FRAMEWORK-MAP.md`).
+    F1 "the loud clown vs the lonely real Darren" (the analogue of the MJ skin-misconception Short) has 5 beats: @unpaid_bro 482K likes /
+    216K shares, @x0dryy 750K, @pubity 381K, @completingdailydose 286K, the Akon "Lonely" car clip 227K / 13K shares. F6 "humiliated"
+    reads as comedy for Speed, so it's weak.
+  - **07:20 memory alarm:** commit headroom 1.4 GB (78.7/80.2). Two 7 GB ASR jobs ran IN PARALLEL: CA-015's `fw_cut.py` (pid 38068) and the
+    AffanWiz growth plan's `transcribe_en.py H3urx7pV840` (pid 17460). The hub asked both owners to serialize under .asr-lock (it never
+    kills another session's process). Speed's Instagram froze again (07:20, tab closed); light work only until memory frees.
+    07:22: CA-015 killed its own fw_cut.py (it had NOT held .asr-lock; its builder now runs ASR only with the lock). Headroom back to 8.2 GB;
+    only the AffanWiz job (17460) is still running.
+    The AffanWiz job HOLDS `projects/_onyx-batch9-2026-11/reactions/.asr-lock` (mkdir 07:13:02) and uses medium.en while Premiere runs;
+    ~5 short files left, one at a time. Gap found: CA-015's `clips/*/work/cut/fw_cut.py` loads large-v3 without checking .asr-lock (its
+    builder was told to use the lock). Speed cleared back onto Instagram at 07:22 (headroom 7.5 GB).
+  - **Speed pass 3 milestone: F1 (the wrong belief corrected) carries over.** Strangers type the reversal themselves ("He's not a jerk,
+    He's a childish person who has a kind heart" 586,824 likes on a 224.5M Short; "heart of gold" 159,822 on 75.9M; "way more mature
+    than I thought" 86,027 on 28.8M). More than 12 distinct viral beats pooled (Amy 28.1M, mom-failed-him-still-kind 20.7M, disabled kid
+    8.0M, KSI tears 4.1M, IG "Same person btw" 482K / 216K shares, IG "feeling alone" 381K, the Akon "Lonely" car 286K + 227K).
+    Other frameworks: humiliated (weak), mom (saturated: nine Shorts 4.9-21.8M), dad (wholesome), mom missing the final (27K), dog
+    death (nothing). Risk = freshness (F1 compilations are deagzzz's format), so OUR beat must be one no Short carries; loneliness
+    proper is small on YouTube (≤ 920K), which is where the fresh join is. Next: 3 Instagram loads → an F1 sequence in text → Fable →
+    cold read → stop for his OK. Asked: did his "even like 12 beats" mean twelve, or "1-2"? F1 passes either way. 9/30 searches; meter 27 %.
+  - ~18:26 Speed: Instagram stopped after two "No results" keyword pages in a row (possible soft throttle; no challenge, no flag; tab
+    closed). Correction: the 12+ beats / 586K proof sits on KINDNESS compilations; the loneliness draft (`pass3/SEQUENCE-alone.md`) uses
+    none of them, ≈110K, NOT a pick. New F1 lead under check: his speech after the World Cup final performance (Jul 2026), clipped by
+    ykwone as "I don't see myself alive in 5 more years..." 6.5M; top comments type the belief live ("nobody took him seriously when he
+    was clearly saying he's not doing okay" 35,479 likes; "everyone in the room responds with 'w acting' 'w script'" 25,820).
+    Self-harm-adjacent words: Affan's censor call (memory feedback-censor-sensitive-words). 12/30 searches; meter 27 %.
+  - **Tue 19:11 SPEED PASS 3: NO PICK at his bar** (`research/aw-speed-2026-11-17/pass3/SEQUENCE-alone.md`, not built).
+    - Correction: "I don't see myself alive in five more years" is from an Adin Ross "Finding Bae" stream (~2022), not the World Cup
+      speech. ykwone's 6.5M is a 3:16 horizontal stitch, and our own 22 Jul Short (44K) already ran the World Cup speech.
+    - F1 (the wrong belief corrected) holds for Speed as a frame: 12 viral moments (9 kindness on YouTube, 3 loneliness on Instagram);
+      "He's not a jerk, He's a childish person who has a kind heart" 586,824 likes. Two of the 9 kindness hooks were checked and both
+      are blocked (a distressed child fan; no first-party source or fresh why for the grandpa); 7 + the granny-death 16.0M unchecked.
+    - Best card: "Speed's Message To Himself" (~23 s): his message filmed at 18 (posted 27 Sep 2026, 2.74M) "I really hope you're
+      doing okay" → Keystone 2025 at 20 "I feel alone, I feel like nobody understands me" → "For the love of God, I really hope you're
+      doing well". ~110K (15K-1.5M).
+    - His calls: Keystone (he cut it 14 Nov); is ~110K worth a slot; A or B; a shirtless 18-year-old on frame; Lead 2 (the Adin moment)
+      needs his censor call; did "12" mean twelve?
+    - Fable ×5, two Sonnet cold reads; 17/30 searches; Instagram stopped ~18:25 (no block). Meter 28 %.
+    - **His reply on that card (in aw-speed-beats):** "has potential but this sequence isnt it its too dry". Reworking it around a real
+      scene: his 26 Sep 2026 stream where, at 21, he watches the message he filmed at 18 and talks back to it.
+    - 19:38: a THIRD Instagram "No results" ("speed kai lonely", ~70 min after the first stop): a likely soft throttle on his
+      account. No block page, no flag. Speed stopped Instagram for today. The hub told aw-gta5-farewell to skip keyword pages and use
+      Reels tabs and hashtags, and to stop at the next "No results".
+    - **~21:40 Speed rework (after "too dry"): still NO PICK, ≈130K (70-220K)** (`pass3/SEQUENCE-capsules.md`, not built). A real scene:
+      Speed at 21 on his stream (late Sep 2026, his "I GOT A JOB AT KFC!" stream ~31:00) watching the message he filmed at 18 and talking
+      back ("Now you have 60 million"; "You thought I was gonna quit YouTube, dumbass"; "I deadass believe(d) Ronaldo is gonna win this
+      World Cup" + the Jul 2026 tears) → Keystone 2025 "I feel alone, nobody understands me" + a card with his 25 Sep 2026 X line
+      "millions of people know speed, but not a lot of people really know darren" → the 18-year-old's "I really hope you're doing well".
+      The scene's picture is unseen; the 6-min section pull waits behind GTA's downloads. His calls: Keystone (he cut it 14 Nov); is
+      ~130K worth a slot; the shirtless 18-year-old; bleep "dumbass". 22/30 searches; meter ~29 %.
+      Re-scored on his "at least 2 viral beats": PASSES with 3 as built: the message at 18 (his upload, 2,743,152), the Ronaldo tears
+      cutaway (his Short 19.4M; IG 24.7M likes; our 368K already used it), the "millions know Speed, not Darren" card (@pubity 381,227,
+      @rap 260,472 likes; Instagram only, its YouTube Short did 40K). Not proven: the live lines at 21, the Sep 2025 "I feel alone". Still
+      ~130K; plan = stacked split (no AI upscale of his facecam).
+    - **~23:10 CORRECTION: Instagram is NOT throttled.** A control load ("speed lonely", which returned tiles that morning) worked, and so
+      did two more. The three "No results" were new three-word phrases with nothing behind them (METHOD.md already says "No results" is
+      phrase-level). No flag. Lesson: run a control query before calling a throttle.
+    - His new ask, "Millions know Speed, not Darren" (the sad angle): `pass3/SEQUENCE-darren.md`, not built. 3 proven beats (the "Old Speed
+      almost came out" meme 13.5M; his 25 Sep line, IG 381K / 260K; the message at 18, 2.74M). The hook's speaker/date is unverified ("Darren,
+      calm down" is said TO him, probably on Kai's August stream). ≈110K: every sad telling on Shorts so far did ≤ 16K. Cold read next.
+    - **Darren FINAL (in chat for him): NO PICK at the bar**, ≈110K (~1 in 3 to pass 150K). Proof: the World Cup stage (FIFA 71.0M, his own
+      11.3M; our own Short on it did 44K), the "Old Speed almost came out" meme 13.5M, his line as IG text posts 381K + 260K. Sequence: his
+      line as hook text over the stage + Shannon's voice at 1 s → "Nobody ever asked me these questions" → the "Darren, calm down" joke
+      → Sep 2025 "I feel alone" → back to the stage. Blocked: the joke's speaker is unknown until his own upload is found (variant D
+      drops it and is buildable now); the Sep 2025 stream needs his OK (he cut it 14 Nov). Fable ×3, two cold reads. Meter ~29 %.
+
 ## ▶ 16 Nov 04:35 PKT (hub): OVERNIGHT RUN, both builds run to the FINAL with no questions (his words, checked)
 - **His words (to the Main Brain, ~04:30 PKT, checked in its transcript):** "when I wake up I want these videos done ... I don't want
   you to go like one 2 hours in and you're asking me for something ... All of these sessions will be running Opus as their main model

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "8znh4t_-HPak5JRpmQffynW-0s8",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "wGu3ZljtLXyEC4AA9DS2kl2ac0I",
+      "id": "UCpFFItkfZz1qz5PpHpqzYBw",
+      "snippet": {
+        "title": "Nexpo",
+        "description": "Exploring the Internet's dark side.\n\nTopic submissions: submit@nexpo.tv\nBusiness & sponsorship inquiries: partnerships+nexpo@manatalentgroup.com\n",
+        "customUrl": "@nexpo",
+        "publishedAt": "2017-05-04T01:55:08Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/b9z-LrY5p97i8JlkOjGY0B2wdrUX79zD-mZcSkfEuY7drXXXQCEQDNkxvywbIVgpzxC2kS1sDQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/b9z-LrY5p97i8JlkOjGY0B2wdrUX79zD-mZcSkfEuY7drXXXQCEQDNkxvywbIVgpzxC2kS1sDQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/b9z-LrY5p97i8JlkOjGY0B2wdrUX79zD-mZcSkfEuY7drXXXQCEQDNkxvywbIVgpzxC2kS1sDQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Nexpo",
+          "description": "Exploring the Internet's dark side.\n\nTopic submissions: submit@nexpo.tv\nBusiness & sponsorship inquiries: partnerships+nexpo@manatalentgroup.com\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "442842286",
+        "subscriberCount": "4010000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "135"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "mk286zwPLzEo5ri8OygrgA-dN50",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "3jGP98Z-CzybugmQjuTklWneo4w",
+      "id": "UCZ7AeeVbyslLM_8-nVy2B8Q",
+      "snippet": {
+        "title": "Skill Up",
+        "description": "",
+        "customUrl": "@skillup",
+        "publishedAt": "2015-12-24T05:02:45Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/CcyQzLCpV1rVfUWeaEgRut_FZGTkOfM7VFc0dG80dm6UraKtid4Tbetka8elQPn-4AABg3k-8A=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/CcyQzLCpV1rVfUWeaEgRut_FZGTkOfM7VFc0dG80dm6UraKtid4Tbetka8elQPn-4AABg3k-8A=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/CcyQzLCpV1rVfUWeaEgRut_FZGTkOfM7VFc0dG80dm6UraKtid4Tbetka8elQPn-4AABg3k-8A=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Skill Up",
+          "description": ""
+        },
+        "country": "AU"
+      },
+      "statistics": {
+        "viewCount": "362347829",
+        "subscriberCount": "1110000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1254"
+      }
+    }
+  ]
+}

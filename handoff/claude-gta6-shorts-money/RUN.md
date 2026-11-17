@@ -1,8 +1,9 @@
 # RUN: claude-gta6-shorts-money (AffanWiz CA-015 "Claude + GTA 6 Shorts Monetization (Not Selling You Any AI Software Lol)")
 
-## ▶ STATUS: resume here (2026-11-16 ~20:10 PKT): EDIT PLACED ON ABW11, READY FOR HIS REVIEW + EXPORT. **NOT SAVED since the final placement**: his own save at 19:25:48 caught it mid-placement; one more Ctrl+S (or "save it") is needed
+## ▶ STATUS: resume here (2026-11-17 ~03:10 PKT): EDIT PLACED ON ABW11 + HIS MUSIC BEDS ON A4 (added 03:05 after "you didn't put any bg music brh"), READY FOR HIS REVIEW + EXPORT. **SAVED by him 2026-11-17 04:26:47 WITH HIS OWN EDITS** (read offline from the saved .prproj): A4 beds 66 ✓; **A1 = ONE clip** (his own voice bounce, 0-758.207 s, as on CA-009/010) replacing our 290; **V1 402 pieces** (was 444): he removed 3 cut zooms (0:56.6, 4:48.7, 8:37.3) and healed razors; V2 48 / V3 66 / A2 108 / A3 9 unchanged; length 12:38.1 unchanged. **Open:** the music still drops out at his 3 removed zooms (a silent gap with no zoom) — fill on his word (place_music.py, by section)
 
 ### Delivery note for Affan
+**Thumbnail: APPROVED by Affan ("Yes, use v7", relayed by the affanwiz-research session 2026-11-17): `Personal Brand English - Skool Community\creator-shorts\CA-015-THUMBNAIL-v7.jpg` (1280x720, for upload; PNG master beside it). F02 and v3-v6 are superseded.** History: F02 REJECTED by him ~07:30; v3 "much better", v4's face "looks AI", and the current candidate is `creator-shorts\CA-015-THUMBNAIL-v7.png`/`.jpg`** (v6's face looked blurred, so v7's face is sharp, from the 4K upscale with light only; v6 = v5 with the beard bottom matched to the rest of his face; v5 = v4's layout with his raw camera face, only brightened; v4 was v3 tighter and bolder: the real GTA VI PS5 case on a whiteboard with marker points, him chest-up pointing, real face from raw 863.4 s), **not yet approved**. History, the rejected F02: `Personal Brand English - Skool Community\creator-shorts\CA-015-THUMBNAIL-F02-final.jpg` (1280x720; his real frame from raw 984.0 s, board/wall/torso generated; board "PREP LAUNCH WEEK IN 1 DAY"). **Not final until his yes on this exact image**; stress test: `creator-shorts\CA-015-THUMBNAIL-F02-STRESS-TEST-2026-11-17.md`.
 **Sequence:** ABW11 › bin "CA-015 Claude GTA 6 Shorts Money" › sequence of the same name (id `03f889a7-7a02-4628-ac2e-a7df9d7bef2f`),
 **12:38.1** (758.141 s), 59.94. Graphics in bin "CA-015 graphics", SFX in "CA-015 sfx". Crash insurance: `work/CA-015-stageB.xml` (FCP XML).
 
@@ -13,7 +14,7 @@
 | V3 | 66 overlays: 48 full-frame graphics (the IGN dossier look) + 18 side cards (14 Skool CTAs, 4 text cards) |
 | A1 | your voice, 290 clips, +4.3 dB into the −6 dBFS limiter |
 | A2 / A3 | 117 SFX cues (108 + 9), a fresh Epidemic set (72 takes, none from CA-011), at CA-011's levels (peaks −18…−23 dBFS) |
-| music | **none: the beds are yours** on this channel |
+| A4 | **your music beds** (added 2026-11-17 03:05): 66 pieces of your six Epidemic beds, one song per section with a 0.45 s silence before each turn, OUT under every cut zoom (59 merged drop ranges). Loungin hot under the cold open (−10.5 to 16.8 s, where the opening graphic leaves), −20 to 1:12 · fresh perspectives −26 (who are you) · Grizzy −25 (1: research agent) · Take a Ride −25 (1b: which models, from "to set up your research agent I would recommend") · First Born −24 (2: ideas) · Brooklyn −24 (3: editor agent + style) · Take a Ride −25 continues (4: angles) · fresh perspectives −26 continues (5: little things) · Loungin −23 continues (the gist + the close). Measured: −23.1 LUFS hot open, −30.6 the rest of the open, −34.2…−36.5 under the body (your CA-010/011 levels) |
 
 **What's 1 % better than CA-011:**
 1. **The stolen move: THE PREP BOARD** (Jon Bois / Secret Base's grid canvas, FX-64): one black board, six panels (research agent · ideas · editor
@@ -30,6 +31,9 @@
    on it", and the CTA line "every single video you post, I will review it" (cta1, cta8, ctaF).
 
 **Decided without you (veto any):**
+- **Music = your standard six beds in your CA-010 order** (no new tracks, no scored arc): fresh downloads, byte-identical to CA-010's, so your
+  levels carry over. The research section got a turn inside it because Take a Ride fades from 160 s. The hot open runs 16.8 s (CA-010 9.3, CA-011
+  11.8): it ends where the opening graphic leaves, because no cut sits at the hook's own end (11.8 s). Zoom drops closer than 1 s merge into one.
 - Cut batch 2 (−1.1 s): "all time. ~~And~~ now it's here", "~~so~~ why is that important", "~~So~~ that was the gist", the 0.1 s stray after "For long forms".
 - **No card on the flagged lines** (the research session's checks): the $20 plan + Fable roles, "90 days or your money back", YouTube Premium, songs
   under a minute, "does all the edits", compiling streamers, "will go viral", the AI-software/scam lines, "doing faces". No CTA sits on any of them.
@@ -58,7 +62,9 @@ reused-content rules; "90 days or money back" with no condition; Fable on the $2
 visible; 0 slivers/gaps at overlay edges; your active sequence and playhead identical after every write window.
 **Review:** ONE fresh-eyes round (2 Sonnet reviewers, 27 defects, all fixed and checked on sheets + graphics-qa); no second full round (budget),
 so "zero defects" is not claimed. `hf-graphics/review/ROUNDS.md`.
-**Not verified:** nothing was played or heard; the SFX mix and the zoom feel are unheard and unseen in motion; no frame was grabbed from
+**Music gate (03:31):** A4 66/66 pieces verified (file, level, no keys, in sync with each song, 0 under any zoom), every other track identical to your
+saved placement, your active sequence + playhead identical after each window. Re-layable in one command: `work/place_music.py --wipe --apply-cut`.
+**Not verified:** nothing was played or heard; the music beds, the SFX mix and the zoom feel are unheard and unseen in motion; no frame was grabbed from
 Premiere itself (that moves your playhead). Proof frames of the placed state are composited OFFLINE from the raw + the placed transforms (`work/proof-frames/contact.jpg`,
 looked at by the editor): white pages opaque, no alpha holes or mattes, no card on your face, the 250 % hit crops only hair (eyes and mouth in).
 The cta13 tile was composited at its OLD time (3:02.1); its new spot (3:09.8) was checked by the face-box measure only (31 px clear).
@@ -74,7 +80,7 @@ The cta13 tile was composited at its OLD time (3:02.1); its new spot (3:09.8) wa
 - (was) **Gate on the timeline:** nothing is placed until ABW11 shows a save after 09:32 (his Ctrl+S, or "save it" said in this session). Until then
   everything is offline: plan, comps, renders, QA.
 - `transcript/reading.json` regenerated on the 290-segment clock (12 runs, 13.1 s). Spelling for on-screen copy: `corrections.local.json`.
-- Music: **skipped, his** (channel rule; the dispatcher's brief). Not in the next steps.
+- Music: ~~skipped, his~~ **WRONG for AffanWiz** (STYLE § 4 has us lay his beds): laid 2026-11-17 03:05 on his "you didn't put any bg music brh".
 - **Done offline (17:10-18:00):** graphics plan `build-plan.py` → `graphics-plan.json`: 48 full-frame + 18 side beats (14 CTA side cards + 2 full
   CTAs, max gap 59 s), face 59 %, 3.5 graphic runs/min, longest face-less run 19.7 s, reading 0.00 s visible, the re-sit joint under g26.
   Stolen move = THE PREP BOARD (FX-64, Jon Bois's grid canvas; BRIEF rewritten against the take). Barred lines (the research session's checks)
@@ -169,6 +175,6 @@ The cta13 tile was composited at its OLD time (3:02.1); its new spot (3:09.8) wa
 | 4 | Color grade | skip | STYLE § 1: no grade on this channel |
 | 5 | Graphics | done | 48 full + 18 side, Prep Board (FX-64), edit-review round 1 (27 fixed), graphics-qa 0 FAIL, placed 114/114 |
 | 6 | SFX | done | 117 cues, 72 fresh Epidemic takes, placed + verified |
-| — | Music | skipped | his beds on this channel (announced) |
+| — | Music | done 2026-11-17 03:31 | his six beds on A4, 66 pieces out under every zoom (`work/place_music.py`); first skipped on a wrong brief line |
 | 7 | Review | his | |
 | 8 | Export | his | he exports himself |

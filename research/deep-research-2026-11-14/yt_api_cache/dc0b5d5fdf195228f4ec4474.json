@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "hx6OylYDy1djJon3UF3v6hH2U68",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "oL0TGgl7H-DBOEb8it_dEp8rJ5U",
+      "id": "UCxpEufO_WXa9rBXnqsSShNw",
+      "snippet": {
+        "title": "James Turner",
+        "description": "",
+        "customUrl": "@themoneyguyshow",
+        "publishedAt": "2015-05-16T09:22:53Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kSbnsnCTZlpGTItc4OoA4KTIv1wFm3UrhKVpt0aVs=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kSbnsnCTZlpGTItc4OoA4KTIv1wFm3UrhKVpt0aVs=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kSbnsnCTZlpGTItc4OoA4KTIv1wFm3UrhKVpt0aVs=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "James Turner",
+          "description": ""
+        }
+      },
+      "statistics": {
+        "viewCount": "0",
+        "subscriberCount": "1",
+        "hiddenSubscriberCount": false,
+        "videoCount": "0"
+      }
+    }
+  ]
+}

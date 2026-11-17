@@ -1,0 +1,74 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "JwmAUMqgaUdpAio4w2CoG0UP4e4",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "jWKKPIx5gzXlkGp5UhBTN-KLfvY",
+      "id": "4I-OyPEuzH0",
+      "snippet": {
+        "publishedAt": "2013-01-31T04:29:40Z",
+        "channelId": "UCK_pMJTFJP4OL7gj0Cmfb-A",
+        "title": "Michael Jackson's Father, Joe Jackson - Piers Morgan Interview January 30, 2013",
+        "description": "January 30, 2013. Michael Jackson's father, Joseph Jackson interview on Piers Morgan.\n\n\nI do not own the rights to this, being shared for educational research purposes only.\n\n' Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for 'fair use' for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.'",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4I-OyPEuzH0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4I-OyPEuzH0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4I-OyPEuzH0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4I-OyPEuzH0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "wendyluvsmj",
+        "tags": [
+          "Michael Jackson",
+          "Joe Jackson",
+          "Joseph Jackson",
+          "Father",
+          "Dad",
+          "Piers Morgan"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Michael Jackson's Father, Joe Jackson - Piers Morgan Interview January 30, 2013",
+          "description": "January 30, 2013. Michael Jackson's father, Joseph Jackson interview on Piers Morgan.\n\n\nI do not own the rights to this, being shared for educational research purposes only.\n\n' Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for 'fair use' for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.'"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT21M33S",
+        "dimension": "2d",
+        "definition": "sd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1604053",
+        "likeCount": "11299",
+        "favoriteCount": "0",
+        "commentCount": "726"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}

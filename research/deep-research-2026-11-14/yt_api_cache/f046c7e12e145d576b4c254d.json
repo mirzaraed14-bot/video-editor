@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "vkHEP9saVpZ9aNZQd8icMoHZp0E",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "3kBjb14WVes-d17Gt-8uCyYN3bs",
+      "id": "UCbta0n8i6Rljh0obO7HzG9A",
+      "snippet": {
+        "title": "Joseph Carlson",
+        "description": "The Joseph Carlson Show is a series about growing wealth through purchasing stocks. We discuss breaking investment news, commentary on current events, answer community questions, and show the progress of a 6 figure portfolio be built into a million-dollar portfolio.",
+        "customUrl": "@josephcarlsonshow",
+        "publishedAt": "2013-09-19T17:32:49Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_m09H4lK0mGGXyr54Z7aWUbHhT5pNacliyFSgZm3QMvulht=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_m09H4lK0mGGXyr54Z7aWUbHhT5pNacliyFSgZm3QMvulht=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_m09H4lK0mGGXyr54Z7aWUbHhT5pNacliyFSgZm3QMvulht=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Joseph Carlson",
+          "description": "The Joseph Carlson Show is a series about growing wealth through purchasing stocks. We discuss breaking investment news, commentary on current events, answer community questions, and show the progress of a 6 figure portfolio be built into a million-dollar portfolio."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "42869728",
+        "subscriberCount": "511000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "454"
+      }
+    }
+  ]
+}

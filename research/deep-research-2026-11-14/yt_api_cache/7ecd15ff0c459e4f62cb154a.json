@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "3XAYAvieelIBMWTTzb7SVb72PyE",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "5SHilRVPhGaXbjUQS4TZhfnoVN0",
+      "id": "UCZDikYGDPdpN_pLgi_RzgXg",
+      "snippet": {
+        "title": "Daniel Pink",
+        "description": "For the last 25 years, I've been writing books about the human condition -- from the elements of motivation to the science of timing to the emotion of regret. \n\nThis channel is where the research gets personal. The science of focus, better decisions, and getting good at things without grinding yourself into dust. If that's the stuff you think about at 11pm, you're in the right place.\n",
+        "customUrl": "@danielpinktv",
+        "publishedAt": "2024-05-21T16:16:51.788964Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/5PInKEMXGsnpIwuhgdx15zXdcdl81NBMh5PqYVLsjaqFjJtNUE49xK1PavaCsph_XhbwxMGr-Q=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/5PInKEMXGsnpIwuhgdx15zXdcdl81NBMh5PqYVLsjaqFjJtNUE49xK1PavaCsph_XhbwxMGr-Q=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/5PInKEMXGsnpIwuhgdx15zXdcdl81NBMh5PqYVLsjaqFjJtNUE49xK1PavaCsph_XhbwxMGr-Q=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Daniel Pink",
+          "description": "For the last 25 years, I've been writing books about the human condition -- from the elements of motivation to the science of timing to the emotion of regret. \n\nThis channel is where the research gets personal. The science of focus, better decisions, and getting good at things without grinding yourself into dust. If that's the stuff you think about at 11pm, you're in the right place.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "17101642",
+        "subscriberCount": "281000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "393"
+      }
+    }
+  ]
+}

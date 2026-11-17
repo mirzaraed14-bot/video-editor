@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "Z111Z3eVQfmaGE7xX9b2RljxcQg",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "LO3XrfIrbmcjHzkxQNysc46ykrc",
+      "id": "UCq6VFHwMzcMXbuKyG7SQYIg",
+      "snippet": {
+        "title": "penguinz0",
+        "description": "Twitter:     https://twitter.com/MoistCr1TiKaL\n\nInstagram:    https://www.instagram.com/bigmoistcr1tikal/?hl=en\n\nTwitch: https://www.twitch.tv/moistcr1tikal\n\nTik Tok: Hugecharles\n\nI don't have any other public accounts.",
+        "customUrl": "@penguinz0",
+        "publishedAt": "2007-05-07T23:42:34Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kOWn68FmChjExAEGw0vjLBpiP907ccNT5wASHcBjZeEuA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kOWn68FmChjExAEGw0vjLBpiP907ccNT5wASHcBjZeEuA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kOWn68FmChjExAEGw0vjLBpiP907ccNT5wASHcBjZeEuA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "penguinz0",
+          "description": "Twitter:     https://twitter.com/MoistCr1TiKaL\n\nInstagram:    https://www.instagram.com/bigmoistcr1tikal/?hl=en\n\nTwitch: https://www.twitch.tv/moistcr1tikal\n\nTik Tok: Hugecharles\n\nI don't have any other public accounts."
+        }
+      },
+      "statistics": {
+        "viewCount": "14319669235",
+        "subscriberCount": "18300000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "7230"
+      }
+    }
+  ]
+}

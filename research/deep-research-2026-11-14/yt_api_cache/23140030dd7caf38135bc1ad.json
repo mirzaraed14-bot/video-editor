@@ -1,0 +1,58 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "8k3vEeXrjl4Ism7LIjQPz-3C5p0",
+  "prevPageToken": "EAEaHlBUOkNESWlFRGd4T1Rrd04wSXdRMEUyUXpNM1JUTQ",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "a9tmpWIatnCWsmTjlkH5a0_WaO0",
+      "id": "VVV5akphTUtVdWdvQmEzT0NxX2dtdkFBLndYTG9ubE5uQ21v",
+      "snippet": {
+        "publishedAt": "2026-06-23T03:59:12Z",
+        "channelId": "UCyjJaMKUugoBa3OCq_gmvAA",
+        "title": "The Exact Moment Michael Jackson’s Childhood Ended💔  #movie #michaeljackson #mj #film",
+        "description": "Joseph Jackson: Cruel father or marketing genius? Did he save them from poverty, or destroy their lives? What do you think?\n\nhe Exact Moment Michael Jackson’s Childhood Ended  #movie #michaeljackson #mj #film",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wXLonlNnCmo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wXLonlNnCmo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wXLonlNnCmo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wXLonlNnCmo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wXLonlNnCmo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Scene Arc",
+        "playlistId": "UUyjJaMKUugoBa3OCq_gmvAA",
+        "position": 50,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "wXLonlNnCmo"
+        },
+        "videoOwnerChannelTitle": "Scene Arc",
+        "videoOwnerChannelId": "UCyjJaMKUugoBa3OCq_gmvAA"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 51,
+    "resultsPerPage": 50
+  }
+}

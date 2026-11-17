@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "eRUQ5irSdorNEFpC7IFpVmpE4aY",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "Hq9H4HOmkBrxI7iWpQic7PpppN8",
+      "id": "UCyps-v4WNjWDnYRKmZ4BUGw",
+      "snippet": {
+        "title": "Airrack",
+        "description": "Pizza Enthusiast \n\nBusiness Inquiries: zack@itsgoodstory.com\nI’m hiring! www.airrackjobs.com",
+        "customUrl": "@airrack",
+        "publishedAt": "2015-01-03T04:23:19Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/B6mcXnYXqha3Aaofo5J_jqP6XBUEW9GvMQMNGvwFN93UvNwF7kdlKNnxEQ5HBmYHpRq-SBogxg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/B6mcXnYXqha3Aaofo5J_jqP6XBUEW9GvMQMNGvwFN93UvNwF7kdlKNnxEQ5HBmYHpRq-SBogxg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/B6mcXnYXqha3Aaofo5J_jqP6XBUEW9GvMQMNGvwFN93UvNwF7kdlKNnxEQ5HBmYHpRq-SBogxg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Airrack",
+          "description": "Pizza Enthusiast \n\nBusiness Inquiries: zack@itsgoodstory.com\nI’m hiring! www.airrackjobs.com"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "4998155149",
+        "subscriberCount": "19700000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "271"
+      }
+    }
+  ]
+}

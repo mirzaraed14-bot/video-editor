@@ -1,0 +1,50 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "TgfnSwpqYYR0svVgXhLqb0eXsuw",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "DARE4aJDTMqrLFVU5osR6grt_qg",
+      "id": "UCxgAuX3XZROujMmGphN_scA",
+      "snippet": {
+        "title": "Mark Tilbury",
+        "description": "This is my main channel, where I share the lessons I've learned from building a multi-million-dollar business after leaving school at 16 with no qualifications.  Expect practical advice on money, investing, business, and wealth-building.\n\nFor all brand partnerships on this channel contact - mark@marktilbury.com\n",
+        "customUrl": "@marktilbury",
+        "publishedAt": "2014-03-15T18:19:16Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/BPc4IMSLYl66XoO5Ueb4N3Tcd1xYLAISjMEHVdJaPV-QeXpeROududxDnsGLqKuQxKpUnXcGZw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/BPc4IMSLYl66XoO5Ueb4N3Tcd1xYLAISjMEHVdJaPV-QeXpeROududxDnsGLqKuQxKpUnXcGZw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/BPc4IMSLYl66XoO5Ueb4N3Tcd1xYLAISjMEHVdJaPV-QeXpeROududxDnsGLqKuQxKpUnXcGZw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Mark Tilbury",
+          "description": "This is my main channel, where I share the lessons I've learned from building a multi-million-dollar business after leaving school at 16 with no qualifications.  Expect practical advice on money, investing, business, and wealth-building.\n\nFor all brand partnerships on this channel contact - mark@marktilbury.com\n"
+        },
+        "country": "GB"
+      },
+      "statistics": {
+        "viewCount": "2683629401",
+        "subscriberCount": "9410000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "387"
+      }
+    }
+  ]
+}

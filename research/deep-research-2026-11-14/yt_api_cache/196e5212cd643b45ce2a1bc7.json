@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "dC7BU7Bzk1K1yLbsiY_QoA2LyUI",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "n65K83lBfJciQb_lYMW3w9Fwko0",
+      "id": "UCV6KDgJskWaEckne5aPA0aQ",
+      "snippet": {
+        "title": "Graham Stephan",
+        "description": "As a 34 year old real estate investor who started working in real estate shortly after turning 18, with over $120,000,000 in residential sales since 2008, I've created this channel to share my successes, failures, and experiences in real estate, personal finance, and investing news. I'm also obsessed with frugality and credit card churning...a lot. So Subscribe! Because all the cool kids are doing it.  \n\nFeel free to follow me on Snapchat / Instagram: GPStephan",
+        "customUrl": "@grahamstephan",
+        "publishedAt": "2016-12-25T07:48:56Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_m4km0pJvdvRxT_gFN6WS16Ggl9D_eX_K8uxCdgTA_hFBo=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_m4km0pJvdvRxT_gFN6WS16Ggl9D_eX_K8uxCdgTA_hFBo=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_m4km0pJvdvRxT_gFN6WS16Ggl9D_eX_K8uxCdgTA_hFBo=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Graham Stephan",
+          "description": "As a 34 year old real estate investor who started working in real estate shortly after turning 18, with over $120,000,000 in residential sales since 2008, I've created this channel to share my successes, failures, and experiences in real estate, personal finance, and investing news. I'm also obsessed with frugality and credit card churning...a lot. So Subscribe! Because all the cool kids are doing it.  \n\nFeel free to follow me on Snapchat / Instagram: GPStephan"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "1436543604",
+        "subscriberCount": "5180000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1730"
+      }
+    }
+  ]
+}

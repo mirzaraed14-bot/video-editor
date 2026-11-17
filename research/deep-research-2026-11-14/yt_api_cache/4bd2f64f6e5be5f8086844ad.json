@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "RKI89Uiri_l8S6uNhVf3-HBUMJA",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "Gew23U2K-i-of_5K7Ijrbexmc5o",
+      "id": "UCQSpnDG3YsFNf5-qHocF-WQ",
+      "snippet": {
+        "title": "ThioJoe",
+        "description": "I make informational technology videos. 🧐 I used to make popular joke tech tutorials, but back in 2017 I switched exclusively to making real tech videos.\n",
+        "customUrl": "@thiojoe",
+        "publishedAt": "2009-02-05T22:32:40Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/bMVfDzXHq9R3WSI0qnGXyywKDZ2-F4Mc94iSVF9zoJRob_lT4N3-50uz0ZtLP-GlrUpS2mab=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/bMVfDzXHq9R3WSI0qnGXyywKDZ2-F4Mc94iSVF9zoJRob_lT4N3-50uz0ZtLP-GlrUpS2mab=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/bMVfDzXHq9R3WSI0qnGXyywKDZ2-F4Mc94iSVF9zoJRob_lT4N3-50uz0ZtLP-GlrUpS2mab=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "ThioJoe",
+          "description": "I make informational technology videos. 🧐 I used to make popular joke tech tutorials, but back in 2017 I switched exclusively to making real tech videos.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "310884455",
+        "subscriberCount": "3140000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1092"
+      }
+    }
+  ]
+}

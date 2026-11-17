@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "ULdVXttR9TS_sQHtm943H-F6n2Y",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "CI_l9aHsC-tLz_zlCsD8XELbLnY",
+      "id": "UCmm6-VuugeKmgHmuneX1FGw",
+      "snippet": {
+        "title": "the detail.",
+        "description": "The Ultimate Michael Jackson Documentary Channel...\n\nFrom rare interviews to untold stories, we uncover the man behind the King of Pop — his music, his struggles, and his triumphs. Every week, we dive deep into his life, legacy, and lasting influence.\n\nIf you want the truth, the drama, and the magic of Michael Jackson, you’ll find it here.\n\n",
+        "customUrl": "@thedetail.",
+        "publishedAt": "2019-04-11T14:59:08Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/8l7rqFYlUQPk_kNNqw-J-QPelSKjhsWoEhyvhjAxFg2Q3uS4xKXOb9KrXS_5cjFtwvP1xbDuUg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/8l7rqFYlUQPk_kNNqw-J-QPelSKjhsWoEhyvhjAxFg2Q3uS4xKXOb9KrXS_5cjFtwvP1xbDuUg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/8l7rqFYlUQPk_kNNqw-J-QPelSKjhsWoEhyvhjAxFg2Q3uS4xKXOb9KrXS_5cjFtwvP1xbDuUg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "the detail.",
+          "description": "The Ultimate Michael Jackson Documentary Channel...\n\nFrom rare interviews to untold stories, we uncover the man behind the King of Pop — his music, his struggles, and his triumphs. Every week, we dive deep into his life, legacy, and lasting influence.\n\nIf you want the truth, the drama, and the magic of Michael Jackson, you’ll find it here.\n\n"
+        },
+        "country": "GB"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUmm6-VuugeKmgHmuneX1FGw"
+        }
+      },
+      "statistics": {
+        "viewCount": "316649129",
+        "subscriberCount": "791000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "694"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "QyAdyrEXw9hSuDKHAKqFsS-ul1Q",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "qGfAht_QpB3kEvcMhraui37_pK0",
+      "id": "UCZLFu8bHbwtnIgWLg5UtINw",
+      "snippet": {
+        "title": "vidIQ",
+        "description": "We help YouTubers get more views, more subscribers, and get monetized. Let's grow together!\n\nThis is YOUR YouTube education! \n\nHere you will find tips, tricks, and guides on how to grow your YouTube channel. We will show you what you need to know and what actions you need to take. We'll also show you how our tools can help you make the right data-driven decisions for your YouTube channel!\n\nIf this sounds like something that could help grow your channel then make sure to download vidIQ and subscribe to the channel now!\n",
+        "customUrl": "@vidiq",
+        "publishedAt": "2013-02-22T15:56:44Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/Y1Ci1OU_KBLwzPzgzrodqUNZ15NiJRml6uvwJiGPPR3P1liqgkWhKdCwS3NyhqgpHVY_k7zSjw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/Y1Ci1OU_KBLwzPzgzrodqUNZ15NiJRml6uvwJiGPPR3P1liqgkWhKdCwS3NyhqgpHVY_k7zSjw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/Y1Ci1OU_KBLwzPzgzrodqUNZ15NiJRml6uvwJiGPPR3P1liqgkWhKdCwS3NyhqgpHVY_k7zSjw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "vidIQ",
+          "description": "We help YouTubers get more views, more subscribers, and get monetized. Let's grow together!\n\nThis is YOUR YouTube education! \n\nHere you will find tips, tricks, and guides on how to grow your YouTube channel. We will show you what you need to know and what actions you need to take. We'll also show you how our tools can help you make the right data-driven decisions for your YouTube channel!\n\nIf this sounds like something that could help grow your channel then make sure to download vidIQ and subscribe to the channel now!\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "292125800",
+        "subscriberCount": "2460000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2813"
+      }
+    }
+  ]
+}

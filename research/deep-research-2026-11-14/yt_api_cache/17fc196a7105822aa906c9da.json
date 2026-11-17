@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "CL_MATYMZhTHO9APjzmPmXI6Y_w",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "WWh29I1r9y9xEOvcsyO7PsKU5HE",
+      "id": "UC2Zs9v2hL2qZZ7vsAENsg4w",
+      "snippet": {
+        "title": "Justin Sung",
+        "description": "Hey there! I'm Justin Sung, a learning coach and former medical doctor with over a decade of experience teaching people to learn efficiently.\n\nOn my channel, I help professionals and students learn how to learn. I do this by sharing evidence-based learning strategies and self-management methods that I've tried and tested for thousands of students and busy professionals.\n\nI'm also the Co-Founder and Head of Learning at iCanStudy, where we've helped over 30,000 learners around the world to master new knowledge and skills in half the time.\n",
+        "customUrl": "@justinsung",
+        "publishedAt": "2020-03-19T11:49:39.532054Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/tw9EX9JBePgRa2kUI9UfydwlOQm5MFbifKHnrECsZYBlb-TTsc3ijHrwna1GP9odyjvqHPanGQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/tw9EX9JBePgRa2kUI9UfydwlOQm5MFbifKHnrECsZYBlb-TTsc3ijHrwna1GP9odyjvqHPanGQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/tw9EX9JBePgRa2kUI9UfydwlOQm5MFbifKHnrECsZYBlb-TTsc3ijHrwna1GP9odyjvqHPanGQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Justin Sung",
+          "description": "Hey there! I'm Justin Sung, a learning coach and former medical doctor with over a decade of experience teaching people to learn efficiently.\n\nOn my channel, I help professionals and students learn how to learn. I do this by sharing evidence-based learning strategies and self-management methods that I've tried and tested for thousands of students and busy professionals.\n\nI'm also the Co-Founder and Head of Learning at iCanStudy, where we've helped over 30,000 learners around the world to master new knowledge and skills in half the time.\n"
+        },
+        "country": "NZ"
+      },
+      "statistics": {
+        "viewCount": "140522940",
+        "subscriberCount": "2310000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "895"
+      }
+    }
+  ]
+}

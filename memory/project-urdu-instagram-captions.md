@@ -46,3 +46,4 @@ shaping in Premiere is the open risk. Until he approves a test, the single-line 
 **Seq 10 v2 (2026-11-16 night), his look notes:** subtle glow (Premiere's linear compositing had tripled it; every layer
 now goes through `bilingual/linfix.py`), the yellow hard drop shadow back on, Urdu SMALL (48 px) over the Roman line in
 ALL CAPS. Params in `presets/instagram/affanwizu/bilingual/README.md`.
+**Scope (his call 2026-11-17, Seq 11):** the Urdu mix style is for talks; a FUNNY video keeps the normal single-line yellow .srt.

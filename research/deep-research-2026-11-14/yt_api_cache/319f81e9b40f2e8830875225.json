@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "yqQm7t7hkgJhny_7VVGxXxmWOWc",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "KYN-X1G3cCmTvXsJbqHC8ZSDiMw",
+      "id": "UCUvvj5lwue7PspotMDjk5UA",
+      "snippet": {
+        "title": "Meet Kevin",
+        "description": "Hey everyone, Meet Kevin here! One thing to remember about me: I BELIEVE in \"providing more\" in everything. ALWAYS provide more.\n\nI’m a dad of 7 amazing kids and have been with my incredible wife for over 16 years. Family is my anchor.\n\nI thrive on learning, growing, and giving back. I’m a licensed real estate broker and financial advisor, and I’ve spent 15+ years studying markets, investing, and building businesses. I’m just getting started.\n\nReady to level up? Check out the Reinvest Terminal at https://reinvestone.com\n\nSee ya soon!\nKevin\n\n🚨 For brand inquiries: kevin@reinvestone.com\n",
+        "customUrl": "@meetkevin",
+        "publishedAt": "2010-09-21T05:02:36Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/vSezmVLCxI0lg3wf6K0-7ulOnHZ5GhG-a4llulOs0lvQf9dJKWR9j6JMWJHLQgu4WTYCKopw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/vSezmVLCxI0lg3wf6K0-7ulOnHZ5GhG-a4llulOs0lvQf9dJKWR9j6JMWJHLQgu4WTYCKopw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/vSezmVLCxI0lg3wf6K0-7ulOnHZ5GhG-a4llulOs0lvQf9dJKWR9j6JMWJHLQgu4WTYCKopw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Meet Kevin",
+          "description": "Hey everyone, Meet Kevin here! One thing to remember about me: I BELIEVE in \"providing more\" in everything. ALWAYS provide more.\n\nI’m a dad of 7 amazing kids and have been with my incredible wife for over 16 years. Family is my anchor.\n\nI thrive on learning, growing, and giving back. I’m a licensed real estate broker and financial advisor, and I’ve spent 15+ years studying markets, investing, and building businesses. I’m just getting started.\n\nReady to level up? Check out the Reinvest Terminal at https://reinvestone.com\n\nSee ya soon!\nKevin\n\n🚨 For brand inquiries: kevin@reinvestone.com\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "808803801",
+        "subscriberCount": "2060000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "6841"
+      }
+    }
+  ]
+}

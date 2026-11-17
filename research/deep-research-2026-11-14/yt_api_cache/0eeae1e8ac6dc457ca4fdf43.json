@@ -1,0 +1,20 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "_6Q62i_OK0mTxm4Hq9sb6jC5pg0",
+  "prevPageToken": "EAEaH1BUOkNONENJaEE0UmpJeU5VSXlNelJFT1VZd01qRkQ",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "DmGTT6w7weG_eOQbzC7_R0-8yw0",
+      "id": "VVVKM3lBZmp2eFI1dmVkQXdEVHdqTXBBLmdmUGFoSlNQb0pv",
+      "contentDetails": {
+        "videoId": "gfPahJSPoJo",
+        "videoPublishedAt": "2024-03-23T14:08:48Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 351,
+    "resultsPerPage": 50
+  }
+}

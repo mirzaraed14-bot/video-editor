@@ -8,6 +8,9 @@ First run: 2026-11-07, about 08:30-11:00 UTC, in Affan's signed-in Chrome, read-
 
 ### The procedure
 
+0. **(17 Nov) Cold-read each arc IN TEXT before sourcing it** (one Sonnet agent: shape = one story, the hook paid off, our turn; seen-it = the
+   SATURATED marks, past sweeps, the search log). Two MJ cards died there after hours of sourcing. **YouTube is never searched in his
+   Chrome:** step 8's freshness check goes through `research/deep-research-2026-11-14/yt_api.py` (standing rule since 14 Nov).
 1. **Start from FRAMEWORKS.md, not from emotion words.** Pick the shape and lane first.
 2. **Find seed pages.** One keyword or hashtag search, open 5-6 reels, note who posted them. Fan pages are what you want. Big outlets (@jayshetty, @pagesix) are sources, not proof that a beat travels.
 3. **Scan each page's Reels tab** and sort by views. Open only the outliers.

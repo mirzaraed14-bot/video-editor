@@ -1,0 +1,3467 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "llE5doTDtbbppG3yPxLOckD_H34",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "3Cwe6ccnjzwLtUIwwu1_o7KTGRI",
+      "id": "5-SDYLlGZFw",
+      "snippet": {
+        "publishedAt": "2026-11-13T14:50:51Z",
+        "channelId": "UCkbjWQ7kLFNRY_RiJbqVWRg",
+        "title": "How to Make Money Clipping GTA 6 Videos (Turned Into A Free Skill)",
+        "description": "🎁 The GTA 6 Clipper (free skill) + setup: https://www.skool.com/nextphase-5790\n🌘 FinalPhase: https://www.skool.com/finalphaseai/about\n\nAn AI that clips GTA 6 streams for you. Give it a stream link from YouTube, Twitch or Kick (or nothing, and it finds today's biggest GTA 6 streams), and you get ready-to-post vertical clips: facecam on top, gameplay below, a hook title, word-by-word captions and a post caption with hashtags. Everything in this video is free.\n\n🎮 What it does, in 4 steps\n1. Downloads only the audio. A 4-hour stream is a couple hundred MB, not a giant video file.\n2. Listens to the whole stream on your computer: a transcript, where the streamer got loud, and (on YouTube replays) where chat suddenly sped up.\n3. The AI reads the transcript 12 minutes at a time and picks what people share: first reactions, crazy discoveries, freakouts, funny fails, hot takes. Every moment gets a score, and anything that needs context gets thrown out.\n4. Downloads only the minutes it needs, finds the facecam by itself and makes the clips, plus a caption and hashtags for each one.\n\n📊 The real run in this video\nTimTheTatman's GTA 6 Extended Look reaction stream: 4 h 09 min → 39 possible moments → the best 3 kept, in 13 min 48 s. It makes 3 clips per stream by default and runs several streams at once, so 7 streams ≈ 21 clips.\n\n💳 Way 1: your Claude subscription (how every clip in this video was made)\nPlans start at $20/month. No API keys. Everything except the picking runs on your computer.\n1. Download the clipper from the free Skool and put it in your Claude skills folder (the Skool post has a paste-in prompt that does it for you).\n2. Open Claude Code and say: set up the GTA 6 clipper. It checks what your computer needs, installs what's missing and tells you when it's ready.\n3. Say: clip this stream, and paste the link. Or: find me today's biggest GTA 6 streams and clip them.\n\n🆓 Way 2: free, no subscription, no API key\n1. Install Ollama and Claude Code (both free).\n2. Check your memory, not your storage: Apple menu → About This Mac → Memory.\n3. 16 GB → download Qwen 3.5 9B. 32 GB or more → Qwen 3.5 27B. More memory = smarter model = better picks.\n4. Open Terminal, type ollama launch claude and pick your model.\n5. Same prompts as Way 1.\nHonest take: the free model isn't Claude. It's slower, the picks are rougher, and expect some back and forth before you get clips you like. It still beats scrubbing a stream by hand.\n\n⚠️ Good to know\n• Mac only for now.\n• Age-restricted YouTube streams (common with GTA) and Kick need your browser login: add --cookies chrome.\n• Clip streamers who are fine with clipping, and watch every clip before you post it.\n• YouTube ad money needs the Partner Program (1,000 subs + 4,000 watch hours in 12 months, or 10M Shorts views in 90 days), and YouTube can refuse it for reposted, mass-made content. Add something of your own.\n\n✏️ Notes on the intro\n• The \"2.5 million people / £400 million\" figures come from Uswitch: a survey of 1,000 UK workers who play games, scaled up to about 2.56 million UK workers taking 19 November off, ≈ £403.5 million in work hours. An estimate, not a count.\n• There's no official GTA 6 budget. Most analyst estimates are $1–1.5 billion; $2 billion is the top of the guesses.\n• GTA 6 comes out 19 November 2026 on PS5 and Xbox Series X|S, 13 years after GTA 5 (2013).\n\n⏱️ Chapters\n0:00 GTA 6 comes out November 19\n0:56 Why clip the big streamers\n1:59 What the clipper does\n3:45 The real run: 4 hours → 3 clips\n4:25 Way 1: paid (Claude)\n5:17 Way 2: free (Ollama)\n6:24 Free vs paid, honestly\n6:53 Be ready before launch day\n\n🔗 Sources (checked Nov 13, 2026)\nUswitch survey: https://www.advanced-television.com/?p=294308\nBudget estimates: https://gamingbolt.com/grand-theft-auto-6-was-expensive-says-take-two-ceo-as-analysts-estimate-up-to-1-5-billion-cost\nClaude plans: https://claude.com/pricing\nOllama: https://ollama.com\nYouTube Partner Program: https://support.google.com/youtube/answer/72851\n\n🎞️ Credits\nStream clips: TimTheTatman, GTA 6 Extended Look live reaction: https://www.youtube.com/watch?v=XrBC-5bxw8Q\nTrailer footage: Rockstar Games, Grand Theft Auto VI Trailers 1 and 2.\n\n💬 Which streamer would you clip first on launch day? Tell me in the comments.\n🔔 Subscribe for more free AI skills like this.\n\n#GTA6 #GTAVI #ClaudeCode #GTA6Clips #Clipping #ClaudeSkills #AIClipper #Ollama #Qwen #FreeAI #AITools #TimTheTatman #Streamers #YouTubeShorts #ContentCreator",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5-SDYLlGZFw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5-SDYLlGZFw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5-SDYLlGZFw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5-SDYLlGZFw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5-SDYLlGZFw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "qhd": {
+            "url": "https://i.ytimg.com/vi/5-SDYLlGZFw/qhddefault.jpg",
+            "width": 2560,
+            "height": 1440
+          }
+        },
+        "channelTitle": "Jad M.H  | AI Automation",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "How to Make Money Clipping GTA 6 Videos (Turned Into A Free Skill)",
+          "description": "🎁 The GTA 6 Clipper (free skill) + setup: https://www.skool.com/nextphase-5790\n🌘 FinalPhase: https://www.skool.com/finalphaseai/about\n\nAn AI that clips GTA 6 streams for you. Give it a stream link from YouTube, Twitch or Kick (or nothing, and it finds today's biggest GTA 6 streams), and you get ready-to-post vertical clips: facecam on top, gameplay below, a hook title, word-by-word captions and a post caption with hashtags. Everything in this video is free.\n\n🎮 What it does, in 4 steps\n1. Downloads only the audio. A 4-hour stream is a couple hundred MB, not a giant video file.\n2. Listens to the whole stream on your computer: a transcript, where the streamer got loud, and (on YouTube replays) where chat suddenly sped up.\n3. The AI reads the transcript 12 minutes at a time and picks what people share: first reactions, crazy discoveries, freakouts, funny fails, hot takes. Every moment gets a score, and anything that needs context gets thrown out.\n4. Downloads only the minutes it needs, finds the facecam by itself and makes the clips, plus a caption and hashtags for each one.\n\n📊 The real run in this video\nTimTheTatman's GTA 6 Extended Look reaction stream: 4 h 09 min → 39 possible moments → the best 3 kept, in 13 min 48 s. It makes 3 clips per stream by default and runs several streams at once, so 7 streams ≈ 21 clips.\n\n💳 Way 1: your Claude subscription (how every clip in this video was made)\nPlans start at $20/month. No API keys. Everything except the picking runs on your computer.\n1. Download the clipper from the free Skool and put it in your Claude skills folder (the Skool post has a paste-in prompt that does it for you).\n2. Open Claude Code and say: set up the GTA 6 clipper. It checks what your computer needs, installs what's missing and tells you when it's ready.\n3. Say: clip this stream, and paste the link. Or: find me today's biggest GTA 6 streams and clip them.\n\n🆓 Way 2: free, no subscription, no API key\n1. Install Ollama and Claude Code (both free).\n2. Check your memory, not your storage: Apple menu → About This Mac → Memory.\n3. 16 GB → download Qwen 3.5 9B. 32 GB or more → Qwen 3.5 27B. More memory = smarter model = better picks.\n4. Open Terminal, type ollama launch claude and pick your model.\n5. Same prompts as Way 1.\nHonest take: the free model isn't Claude. It's slower, the picks are rougher, and expect some back and forth before you get clips you like. It still beats scrubbing a stream by hand.\n\n⚠️ Good to know\n• Mac only for now.\n• Age-restricted YouTube streams (common with GTA) and Kick need your browser login: add --cookies chrome.\n• Clip streamers who are fine with clipping, and watch every clip before you post it.\n• YouTube ad money needs the Partner Program (1,000 subs + 4,000 watch hours in 12 months, or 10M Shorts views in 90 days), and YouTube can refuse it for reposted, mass-made content. Add something of your own.\n\n✏️ Notes on the intro\n• The \"2.5 million people / £400 million\" figures come from Uswitch: a survey of 1,000 UK workers who play games, scaled up to about 2.56 million UK workers taking 19 November off, ≈ £403.5 million in work hours. An estimate, not a count.\n• There's no official GTA 6 budget. Most analyst estimates are $1–1.5 billion; $2 billion is the top of the guesses.\n• GTA 6 comes out 19 November 2026 on PS5 and Xbox Series X|S, 13 years after GTA 5 (2013).\n\n⏱️ Chapters\n0:00 GTA 6 comes out November 19\n0:56 Why clip the big streamers\n1:59 What the clipper does\n3:45 The real run: 4 hours → 3 clips\n4:25 Way 1: paid (Claude)\n5:17 Way 2: free (Ollama)\n6:24 Free vs paid, honestly\n6:53 Be ready before launch day\n\n🔗 Sources (checked Nov 13, 2026)\nUswitch survey: https://www.advanced-television.com/?p=294308\nBudget estimates: https://gamingbolt.com/grand-theft-auto-6-was-expensive-says-take-two-ceo-as-analysts-estimate-up-to-1-5-billion-cost\nClaude plans: https://claude.com/pricing\nOllama: https://ollama.com\nYouTube Partner Program: https://support.google.com/youtube/answer/72851\n\n🎞️ Credits\nStream clips: TimTheTatman, GTA 6 Extended Look live reaction: https://www.youtube.com/watch?v=XrBC-5bxw8Q\nTrailer footage: Rockstar Games, Grand Theft Auto VI Trailers 1 and 2.\n\n💬 Which streamer would you clip first on launch day? Tell me in the comments.\n🔔 Subscribe for more free AI skills like this.\n\n#GTA6 #GTAVI #ClaudeCode #GTA6Clips #Clipping #ClaudeSkills #AIClipper #Ollama #Qwen #FreeAI #AITools #TimTheTatman #Streamers #YouTubeShorts #ContentCreator"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT7M23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "184826",
+        "likeCount": "4658",
+        "favoriteCount": "0",
+        "commentCount": "344"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "7DI2N8spxz-kivP9wg06B71HMZg",
+      "id": "wwy3mJPsvIk",
+      "snippet": {
+        "publishedAt": "2026-05-10T20:16:26Z",
+        "channelId": "UCAuUpfIQAaqAWP6cWmUNZYQ",
+        "title": "The Harsh Truth About Clipping Nobody Tells You About",
+        "description": "Apply to learn exactly how to start and scale as a clip operator yourself : \nhttps://whop.com/clipping-mastery-2d/become-a-clip-operator/\n\nWatch me build my agency LIVE on my instagram : https://www.instagram.com/calebclipd/\n\nBelieve it or not, there is a much better way to make $10,000/mo clipping than whop\n\nIn this video I give you what that answer is \n\nTopics this video covers: whop clipping, how to start clipping, clipping agency, clipping, whop clipping earnings, whop clipping tutorial, clipping streamers, clipping whop, clipping tutorial, how to make money with clipping, how to start a clipping agency, clipping free course, clipping course, clipping agency course",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wwy3mJPsvIk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wwy3mJPsvIk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wwy3mJPsvIk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wwy3mJPsvIk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wwy3mJPsvIk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "qhd": {
+            "url": "https://i.ytimg.com/vi/wwy3mJPsvIk/qhddefault.jpg",
+            "width": 2560,
+            "height": 1440
+          }
+        },
+        "channelTitle": "Caleb Ortega",
+        "tags": [
+          "whop clipping",
+          "how to start clipping",
+          "clipping agency",
+          "clipping",
+          "whop clipping earnings",
+          "whop clipping tutorial",
+          "clipping streamers",
+          "clipping whop",
+          "clipping tutorial",
+          "how to make money with clipping",
+          "how to start a clipping agency",
+          "clipping free course",
+          "clipping course",
+          "clipping agency course"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The Harsh Truth About Clipping Nobody Tells You About",
+          "description": "Apply to learn exactly how to start and scale as a clip operator yourself : \nhttps://whop.com/clipping-mastery-2d/become-a-clip-operator/\n\nWatch me build my agency LIVE on my instagram : https://www.instagram.com/calebclipd/\n\nBelieve it or not, there is a much better way to make $10,000/mo clipping than whop\n\nIn this video I give you what that answer is \n\nTopics this video covers: whop clipping, how to start clipping, clipping agency, clipping, whop clipping earnings, whop clipping tutorial, clipping streamers, clipping whop, clipping tutorial, how to make money with clipping, how to start a clipping agency, clipping free course, clipping course, clipping agency course"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT9M33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "126878",
+        "likeCount": "2220",
+        "favoriteCount": "0",
+        "commentCount": "179"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nLPf52pFwxN_Xh3H1JDoInHMjAg",
+      "id": "9Wa-RmRc3do",
+      "snippet": {
+        "publishedAt": "2025-07-16T18:19:25Z",
+        "channelId": "UCnIBcIsGzivqUagc81ELrjA",
+        "title": "N3on revealed how much he pays his clippers 👀 #n3on #n3onclips",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9Wa-RmRc3do/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9Wa-RmRc3do/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9Wa-RmRc3do/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9Wa-RmRc3do/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/9Wa-RmRc3do/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "LateClipperr",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on revealed how much he pays his clippers 👀 #n3on #n3onclips",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "27781",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "DZurASFuanudsAq_TZ3-r5XLVsw",
+      "id": "enIcYeGq-Uw",
+      "snippet": {
+        "publishedAt": "2026-10-23T23:15:29Z",
+        "channelId": "UC4IDOb-pqwC2er1pQ6utS5A",
+        "title": "N3on Revealed How Much He Pays His Clippers… #n3on",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/enIcYeGq-Uw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/enIcYeGq-Uw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/enIcYeGq-Uw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/enIcYeGq-Uw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/enIcYeGq-Uw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ClipsHQ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Revealed How Much He Pays His Clippers… #n3on",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "8794",
+        "likeCount": "77",
+        "favoriteCount": "0",
+        "commentCount": "5"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "-PqmoDpxrvBOSle4HfYjqe4SwjM",
+      "id": "R3cOIDOR_Uc",
+      "snippet": {
+        "publishedAt": "2026-11-03T22:00:02Z",
+        "channelId": "UC9Z7tOl17YdV7WRdCXihXQg",
+        "title": "n3on is literally paying his clippers millions..",
+        "description": "How I Make Money Clipping: https://aiclippingagency.com/starter-kit\n\nmy socials -\nInstagram: https://www.instagram.com/mussy.02/\nTiktok: https://www.tiktok.com/@musametas\n\nif you wanna just use crayo: https://clipper.crayo.ai/go/mussy02\n\nGet paid to make clips: https://contentrewards.com/r/crayoo\n\nthis was fun lmk if you want more clipping content and i gotchu",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/R3cOIDOR_Uc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/R3cOIDOR_Uc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/R3cOIDOR_Uc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/R3cOIDOR_Uc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/R3cOIDOR_Uc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Musa",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "n3on is literally paying his clippers millions..",
+          "description": "How I Make Money Clipping: https://aiclippingagency.com/starter-kit\n\nmy socials -\nInstagram: https://www.instagram.com/mussy.02/\nTiktok: https://www.tiktok.com/@musametas\n\nif you wanna just use crayo: https://clipper.crayo.ai/go/mussy02\n\nGet paid to make clips: https://contentrewards.com/r/crayoo\n\nthis was fun lmk if you want more clipping content and i gotchu"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "320",
+        "likeCount": "11",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "WblUfX29KUrXhGwVRTq9pgMHh78",
+      "id": "MGzz7gsUWZo",
+      "snippet": {
+        "publishedAt": "2026-11-13T18:00:15Z",
+        "channelId": "UCZnSCzgEn3vwsWluNATcG6Q",
+        "title": "Drake Bell Calls Out N3on’s Clipper Budget 💀",
+        "description": "Drake notices N3on’s clipping setup and immediately has questions about the budget.\n\nFrom N3on’s livestream with Drake Bell.\nOriginal streamer: https://kick.com/n3on\n\nEdited highlights by N3on Replay. Unofficial fan channel.\n\n#n3on #n3onLive #n3onClips #DrakeBell #Shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MGzz7gsUWZo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MGzz7gsUWZo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MGzz7gsUWZo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/MGzz7gsUWZo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MGzz7gsUWZo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/MGzz7gsUWZo/sardefault.jpg",
+            "width": 1080,
+            "height": 1920
+          }
+        },
+        "channelTitle": "N3on Replay ",
+        "tags": [
+          "Drake Bell",
+          "Drake and Josh",
+          "N3on",
+          "N3on Replay",
+          "Shorts",
+          "stream highlights"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Drake Bell Calls Out N3on’s Clipper Budget 💀",
+          "description": "Drake notices N3on’s clipping setup and immediately has questions about the budget.\n\nFrom N3on’s livestream with Drake Bell.\nOriginal streamer: https://kick.com/n3on\n\nEdited highlights by N3on Replay. Unofficial fan channel.\n\n#n3on #n3onLive #n3onClips #DrakeBell #Shorts"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT30S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "31",
+        "likeCount": "2",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "SNZhvQvsBZrrntFNCm7UGaMUft4",
+      "id": "oQNHRlh9C_g",
+      "snippet": {
+        "publishedAt": "2025-06-04T21:31:20Z",
+        "channelId": "UC1z3h9m39bR8dDQqeeqzaaw",
+        "title": "N3on Pays His Clippers $100,000 a MONTH?!",
+        "description": "⬇️\n\n\nFollow Jason's Socials:\n► Twitch: https://www.twitch.tv/jasontheween\n► Tiktok: https://www.tiktok.com/@jasontheween\n► Youtube: https://www.youtube.com/c/jasontheweenie \n► Twitter: https://twitter.com/jasontheween\n► Instagram: https://www.instagram.com/jasontheween \n► Discord: https://discord.gg/jasontheweenie\n► Reddit: https://www.reddit.com/r/jasontheweenie \n► Spotify: https://open.spotify.com/artist/56z8RFFEGWfUFHzvgv70SB?si=hnKBMki1TJSrKPVKmAjlNA\n► Twitter Community: https://x.com/i/communities/1882332006949744648\n\nFor Video Removal and Copyright Issues.\nChannel Manager/Editor:\n► https://x.com/okkinCN\n► https://x.com/StreamerSeason\n\n\n#jasontheween #twitch #FaZe",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oQNHRlh9C_g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oQNHRlh9C_g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oQNHRlh9C_g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/oQNHRlh9C_g/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/oQNHRlh9C_g/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "JasonTheWeen News",
+        "tags": [
+          "jasontheweenie",
+          "jasontheween",
+          "stable ronaldo",
+          "plaqueboymax",
+          "faze",
+          "faze clan",
+          "max jason",
+          "max",
+          "stable ronaldo live",
+          "max jasontheween",
+          "jason",
+          "lacy",
+          "lacy reacts",
+          "plaqueboymax jason",
+          "jasontheween max",
+          "jasontheween hinge",
+          "jasontheween tinder",
+          "hinge jason",
+          "jason rizz",
+          "rizz hinge",
+          "jasontheween calls",
+          "jasontheweenie stream",
+          "jasontheween kaysan",
+          "jasontheween fanum",
+          "jasontheween amp",
+          "faze jason",
+          "jasontheween eta",
+          "jasontheween newjeans",
+          "jason eta",
+          "jasontheween qtcinderella",
+          "jason calls"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Pays His Clippers $100,000 a MONTH?!",
+          "description": "⬇️\n\n\nFollow Jason's Socials:\n► Twitch: https://www.twitch.tv/jasontheween\n► Tiktok: https://www.tiktok.com/@jasontheween\n► Youtube: https://www.youtube.com/c/jasontheweenie \n► Twitter: https://twitter.com/jasontheween\n► Instagram: https://www.instagram.com/jasontheween \n► Discord: https://discord.gg/jasontheweenie\n► Reddit: https://www.reddit.com/r/jasontheweenie \n► Spotify: https://open.spotify.com/artist/56z8RFFEGWfUFHzvgv70SB?si=hnKBMki1TJSrKPVKmAjlNA\n► Twitter Community: https://x.com/i/communities/1882332006949744648\n\nFor Video Removal and Copyright Issues.\nChannel Manager/Editor:\n► https://x.com/okkinCN\n► https://x.com/StreamerSeason\n\n\n#jasontheween #twitch #FaZe"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT2M",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3340",
+        "likeCount": "47",
+        "favoriteCount": "0",
+        "commentCount": "9"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CcY4iEB6ExAMWHoEWTWXkrFrcpo",
+      "id": "2KK-qNytj4I",
+      "snippet": {
+        "publishedAt": "2026-11-03T21:06:28Z",
+        "channelId": "UC9Jez_eJJ7kGSw_g6XtMcCw",
+        "title": "N3on Is Hiring Clippers and Paying $500 Per Million Views",
+        "description": "At the end of his IRL stream, N3on announces he's hiring clippers for TikTok and X, paying $50 per 100K views and $500 per million. Clip from N3on's livestream, shared by a fan channel.\n\n#n3on #clippers #clipping #kickstreaming #shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2KK-qNytj4I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2KK-qNytj4I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2KK-qNytj4I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2KK-qNytj4I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2KK-qNytj4I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "N3on Clips | Daily",
+        "tags": [
+          "clippers",
+          "clipping",
+          "kickstreaming",
+          "n3on",
+          "shorts"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Is Hiring Clippers and Paying $500 Per Million Views",
+          "description": "At the end of his IRL stream, N3on announces he's hiring clippers for TikTok and X, paying $50 per 100K views and $500 per million. Clip from N3on's livestream, shared by a fan channel.\n\n#n3on #clippers #clipping #kickstreaming #shorts"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "29",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "fZv0cnTFEQ3IqiZyaRenLBCoh_c",
+      "id": "suNQziFGxlQ",
+      "snippet": {
+        "publishedAt": "2026-10-30T01:30:29Z",
+        "channelId": "UC-_6GNsKcmhlH_xcPclP7Jg",
+        "title": "N3on Paid 303 Clippers $1.4M In 5 Weeks",
+        "description": "N3on pays clippers directly. About $1.4 million to 303 clippers in 5 weeks, and his top clipper made $100,000 a month. Most get $40 to $50 per 1 lakh views. #clipping #n3on #clipper #creatoreconomy #kick\n\n#shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/suNQziFGxlQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/suNQziFGxlQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/suNQziFGxlQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/suNQziFGxlQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/suNQziFGxlQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Suresh Malani",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Paid 303 Clippers $1.4M In 5 Weeks",
+          "description": "N3on pays clippers directly. About $1.4 million to 303 clippers in 5 weeks, and his top clipper made $100,000 a month. Most get $40 to $50 per 1 lakh views. #clipping #n3on #clipper #creatoreconomy #kick\n\n#shorts"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "26",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "qcmdQrnTn2vDE3TFMgsXeDL-wJo",
+      "id": "StfcDNjWD4g",
+      "snippet": {
+        "publishedAt": "2026-10-19T16:37:22Z",
+        "channelId": "UCPchCdCOG0O-TEIcw7CgwIQ",
+        "title": "n3on really paid out his clippers 1.4 million #n3on #clipping #streamer #viral",
+        "description": "N3on reveals how he paid his clippers 1.4 million dollars. The fat guy makes a joke on how everyone should start clipping!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/StfcDNjWD4g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/StfcDNjWD4g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/StfcDNjWD4g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/StfcDNjWD4g/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/StfcDNjWD4g/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Naigi",
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "n3on really paid out his clippers 1.4 million #n3on #clipping #streamer #viral",
+          "description": "N3on reveals how he paid his clippers 1.4 million dollars. The fat guy makes a joke on how everyone should start clipping!"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT56S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1430",
+        "likeCount": "28",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "YJKTPq_sgQtvsTD7ZJDbGvM8FT8",
+      "id": "K7c3JnnZW3Q",
+      "snippet": {
+        "publishedAt": "2026-01-13T07:12:59Z",
+        "channelId": "UCfdFB5g55es4eOb3NExHsnw",
+        "title": "N3on is paying $1.5 million to the clipper making him the Richest streamer in the world 🌍 #n3on",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/K7c3JnnZW3Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/K7c3JnnZW3Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/K7c3JnnZW3Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/K7c3JnnZW3Q/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/K7c3JnnZW3Q/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Clipping Crib 🌱",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on is paying $1.5 million to the clipper making him the Richest streamer in the world 🌍 #n3on",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "986",
+        "likeCount": "9",
+        "favoriteCount": "0",
+        "commentCount": "3"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "zjum126_YK82E5iRjIQLEh02upo",
+      "id": "uGip3wuQd3M",
+      "snippet": {
+        "publishedAt": "2025-05-13T22:48:55Z",
+        "channelId": "UCSt7m67E9O8xONdHsNIy39A",
+        "title": "N3on PAID $98,000 For 1 Clip",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uGip3wuQd3M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uGip3wuQd3M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uGip3wuQd3M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uGip3wuQd3M/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/uGip3wuQd3M/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Bradley Martyn's Raw Talk",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on PAID $98,000 For 1 Clip",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "191035",
+        "likeCount": "2943",
+        "favoriteCount": "0",
+        "commentCount": "87"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Nhnml8yM0519MTtZsSB_R5gcrA0",
+      "id": "gturQ6u_0n0",
+      "snippet": {
+        "publishedAt": "2026-07-08T18:36:25Z",
+        "channelId": "UCaKNIxRDtiq7n1dJlondCPQ",
+        "title": "N3on pays his top clipper $100k 💰",
+        "description": "N3on pays his top clipper $100k 💰 \n\n #n3onclips #n3onclipper #n3on #n3onlive #fyp",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gturQ6u_0n0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gturQ6u_0n0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gturQ6u_0n0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gturQ6u_0n0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gturQ6u_0n0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "N3on Clipper",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on pays his top clipper $100k 💰",
+          "description": "N3on pays his top clipper $100k 💰 \n\n #n3onclips #n3onclipper #n3on #n3onlive #fyp"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT13S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "10",
+        "likeCount": "1",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "UXfHy8JtzynIx2SY-6LsDmgFjYA",
+      "id": "lmlQPNBBiJg",
+      "snippet": {
+        "publishedAt": "2026-05-30T04:39:02Z",
+        "channelId": "UCO306C9qBExBOaq5MlxKK1A",
+        "title": "N3ON REVEALS HOW MUCH HE PAID CLIPPERS 👀😱#shorts",
+        "description": "Noel was SHOCKED when N3on Told Him He paid his Top CLIPER $100k A\nMONTHS 🫣.\n\nKick clipping,\nN3on’s clippers,\nHow to make money on kick,\nWho is clipper,\nHow to clip,\n\n#shorts #kickstreaming #clippers #n3on #n3onclips",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lmlQPNBBiJg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lmlQPNBBiJg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lmlQPNBBiJg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/lmlQPNBBiJg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/lmlQPNBBiJg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "𝐌𝐫𝐃𝐢𝐧𝐨",
+        "tags": [
+          "Shorts",
+          "Viralshorts",
+          "Clipping",
+          "N3on",
+          "Mrdino"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3ON REVEALS HOW MUCH HE PAID CLIPPERS 👀😱#shorts",
+          "description": "Noel was SHOCKED when N3on Told Him He paid his Top CLIPER $100k A\nMONTHS 🫣.\n\nKick clipping,\nN3on’s clippers,\nHow to make money on kick,\nWho is clipper,\nHow to clip,\n\n#shorts #kickstreaming #clippers #n3on #n3onclips"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT18S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "7691",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "2d_R26oIptsu69S8nHwLHKFdhTI",
+      "id": "H65O27onG8o",
+      "snippet": {
+        "publishedAt": "2026-11-16T07:39:57Z",
+        "channelId": "UCCk1m8QezXuS5n3xBEIfaZQ",
+        "title": "neon reveals he paid 1,4000,000$ his clippers 🤷\u200d♂️",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/H65O27onG8o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/H65O27onG8o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/H65O27onG8o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/H65O27onG8o/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/H65O27onG8o/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "musaclipps",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "neon reveals he paid 1,4000,000$ his clippers 🤷\u200d♂️",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT38S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "10",
+        "likeCount": "1",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ehI7DZGNNVPdvjPNM9O9ACfqnyM",
+      "id": "34ftD0vGt4Q",
+      "snippet": {
+        "publishedAt": "2026-02-25T00:00:05Z",
+        "channelId": "UC77eBTnL2_IALBAoFHUzUeA",
+        "title": "BigXthaPlug Was Shocked By How Much N3on Pays For His Clippers! 👀💸",
+        "description": "BigXthaPlug Was Shocked By How Much N3on Pays For His Clippers! 👀💸\n\nShorts Kai Cenat N3on Neon\n#shorts #kaicenat #n3on #neon\n\nSubscribe For More Clips & Edits!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/34ftD0vGt4Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/34ftD0vGt4Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/34ftD0vGt4Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/34ftD0vGt4Q/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/34ftD0vGt4Q/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "DailySpeed",
+        "tags": [
+          "Shorts",
+          "Kai Cenat",
+          "Kai",
+          "Funny",
+          "Kai Cenat Live",
+          "Kai Cenat Funny",
+          "Kai Cenat Funny Moments",
+          "AMP",
+          "Ray",
+          "Ray Live",
+          "Ray Funny Moments"
+        ],
+        "categoryId": "23",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "BigXthaPlug Was Shocked By How Much N3on Pays For His Clippers! 👀💸",
+          "description": "BigXthaPlug Was Shocked By How Much N3on Pays For His Clippers! 👀💸\n\nShorts Kai Cenat N3on Neon\n#shorts #kaicenat #n3on #neon\n\nSubscribe For More Clips & Edits!"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT10S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2500110",
+        "likeCount": "45729",
+        "favoriteCount": "0",
+        "commentCount": "201"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "2UHaB9S09K3iu5jSiSz9Rx7sr54",
+      "id": "NxpaAQtPNKo",
+      "snippet": {
+        "publishedAt": "2025-09-28T03:06:42Z",
+        "channelId": "UCwpxPyK21vnUsrmDxhtousA",
+        "title": "N3on gave one of his clippers the OPPORTUNITY to make $10,000+ per month",
+        "description": "#n3on #n3onclips #neon #clippers #money #success #job #career #livestreaming #fyp #reels #shorts @N3on",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NxpaAQtPNKo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NxpaAQtPNKo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NxpaAQtPNKo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/NxpaAQtPNKo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/NxpaAQtPNKo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "CuratedRise",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on gave one of his clippers the OPPORTUNITY to make $10,000+ per month",
+          "description": "#n3on #n3onclips #neon #clippers #money #success #job #career #livestreaming #fyp #reels #shorts @N3on"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "13308",
+        "likeCount": "145",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "idYkri-WpRo0oTnBFCgLzAybKEs",
+      "id": "uhxF152f7uY",
+      "snippet": {
+        "publishedAt": "2026-04-25T07:12:17Z",
+        "channelId": "UC3xV9J8HT3nKbMsCe34cn_A",
+        "title": "N3on Just Revealed He Pays His Clippers $40K per Stream 😳#n3on",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uhxF152f7uY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uhxF152f7uY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uhxF152f7uY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uhxF152f7uY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/uhxF152f7uY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "onlycliperxx",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Just Revealed He Pays His Clippers $40K per Stream 😳#n3on",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT43S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "31678",
+        "likeCount": "546",
+        "favoriteCount": "0",
+        "commentCount": "13"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "OxMZ79X4h93NEqRj9b1GdFRTMvg",
+      "id": "HR4Vic3ulwM",
+      "snippet": {
+        "publishedAt": "2026-02-24T22:47:42Z",
+        "channelId": "UClDtG4S7HtwnPktmu3ZIqkA",
+        "title": "N3on pays 1.3 million to clippers 😳 #n3on #streamer #twitch",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HR4Vic3ulwM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HR4Vic3ulwM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HR4Vic3ulwM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HR4Vic3ulwM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HR4Vic3ulwM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "StreamClipper",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-US",
+        "localized": {
+          "title": "N3on pays 1.3 million to clippers 😳 #n3on #streamer #twitch",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT9S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1472",
+        "likeCount": "8",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "zTMDd1jVywBkJeFr-ebHwRjA5q8",
+      "id": "dzZHngefdJI",
+      "snippet": {
+        "publishedAt": "2025-11-05T09:09:54Z",
+        "channelId": "UCi2GvCn3R5jQetWzmYjv9NQ",
+        "title": "Camilla Araujo was in DISBELIEF after N3on revealed he PAYS his CLIPPERS over $950,000 for 1 MONTH😳",
+        "description": ".\n.\n.\n.\n.\n.\n#n3on #n3onclips #n3onlive #streaming #streamer #streamers\n#n3on #n3onclips #n3onlive #livestreamer #stream #twitchstreamer",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dzZHngefdJI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dzZHngefdJI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dzZHngefdJI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dzZHngefdJI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dzZHngefdJI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "neon livee",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Camilla Araujo was in DISBELIEF after N3on revealed he PAYS his CLIPPERS over $950,000 for 1 MONTH😳",
+          "description": ".\n.\n.\n.\n.\n.\n#n3on #n3onclips #n3onlive #streaming #streamer #streamers\n#n3on #n3onclips #n3onlive #livestreamer #stream #twitchstreamer"
+        },
+        "defaultAudioLanguage": "hi"
+      },
+      "contentDetails": {
+        "duration": "PT11S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "10571",
+        "likeCount": "72",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "avk8Z_L0SFkpOgXQMLGznGxTdbU",
+      "id": "4m3UEqrT0Jc",
+      "snippet": {
+        "publishedAt": "2025-10-12T11:21:36Z",
+        "channelId": "UCwHCrXJZFEGxfnlhxSfk2Eg",
+        "title": "N3on Is Paying Clippers Multiple Six Figures A Month 😳🔥 #n3on",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4m3UEqrT0Jc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4m3UEqrT0Jc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4m3UEqrT0Jc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4m3UEqrT0Jc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4m3UEqrT0Jc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Master Xd Tv",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Is Paying Clippers Multiple Six Figures A Month 😳🔥 #n3on",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT11S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "26578",
+        "likeCount": "304",
+        "favoriteCount": "0",
+        "commentCount": "5"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "MDurjlGCnExr6Jj9uqRjJfoFGa0",
+      "id": "m-xL3y0SJbk",
+      "snippet": {
+        "publishedAt": "2025-06-08T01:06:22Z",
+        "channelId": "UCu5pTYudJkhrk4NU90HEeyA",
+        "title": "N3on's Clippers Discord Get Paid for Viral TikTok Views!  #shorts #twitchclips #n3on",
+        "description": "Subscribe For More!\n\n🔴 Follow the Tiktok for more clips!\n@SussyClipz",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/m-xL3y0SJbk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/m-xL3y0SJbk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/m-xL3y0SJbk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/m-xL3y0SJbk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/m-xL3y0SJbk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SussyClipz",
+        "tags": [
+          "n3on",
+          "N3on clips",
+          "twitch clips",
+          "kick clips",
+          "streamer clips",
+          "streamer fails",
+          "streamer laughs",
+          "kai cenat",
+          "ishowspeed",
+          "adin ross",
+          "duke dennis",
+          "agent00",
+          "clippers",
+          "funny clips",
+          "youtube clips"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on's Clippers Discord Get Paid for Viral TikTok Views!  #shorts #twitchclips #n3on",
+          "description": "Subscribe For More!\n\n🔴 Follow the Tiktok for more clips!\n@SussyClipz"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT42S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1777",
+        "likeCount": "21",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "JZbVLU9k5u6B0VCddl3kph3W12g",
+      "id": "1ZMMufoKcG0",
+      "snippet": {
+        "publishedAt": "2025-11-27T23:00:02Z",
+        "channelId": "UCpGIlqKtiGkfScsOM-5mN_g",
+        "title": "How N3on Will PAY His Clippers In The Future 💰",
+        "description": "#n3on #n3onclips #streaming #clipping #clippers #streamclips",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1ZMMufoKcG0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1ZMMufoKcG0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1ZMMufoKcG0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1ZMMufoKcG0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1ZMMufoKcG0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Camski",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "How N3on Will PAY His Clippers In The Future 💰",
+          "description": "#n3on #n3onclips #streaming #clipping #clippers #streamclips"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1687",
+        "likeCount": "10",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "kCL1cU0qISVysX9MXVJxZ7MBcLs",
+      "id": "9e2GxnEwxiM",
+      "snippet": {
+        "publishedAt": "2026-09-16T18:26:09Z",
+        "channelId": "UCkj-KGbflKpO2qUi1v_hOUg",
+        "title": "N3on says his BIGGEST clipper is from India and making $50,000💸 a MONTH🔥#n3on #n3onclips #fypシ",
+        "description": ".\n.\n.\n.\n.\n.\n#n3on #n3onclips #n3onlive #streaming #streamer #fypシ゚viral #fypシ #kick \n#n3on #n3onclips #n3onlive #livestreamer #stream #kick#kickstreaming #stream\n #KickStreaming  #N3onClips #StreamingHighlights  #LiveStream",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9e2GxnEwxiM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9e2GxnEwxiM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9e2GxnEwxiM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9e2GxnEwxiM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/9e2GxnEwxiM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ClipFlow",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-US",
+        "localized": {
+          "title": "N3on says his BIGGEST clipper is from India and making $50,000💸 a MONTH🔥#n3on #n3onclips #fypシ",
+          "description": ".\n.\n.\n.\n.\n.\n#n3on #n3onclips #n3onlive #streaming #streamer #fypシ゚viral #fypシ #kick \n#n3on #n3onclips #n3onlive #livestreamer #stream #kick#kickstreaming #stream\n #KickStreaming  #N3onClips #StreamingHighlights  #LiveStream"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT15S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1181",
+        "likeCount": "40",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Mtymbb2feZZGx8H6rWQtbZc-iNM",
+      "id": "1bMv4oQOecI",
+      "snippet": {
+        "publishedAt": "2026-07-08T17:36:33Z",
+        "channelId": "UCaKNIxRDtiq7n1dJlondCPQ",
+        "title": "N3on explains how to become a clipper 🎥",
+        "description": "N3on explains how to become a clipper 🎥 \n\n   \n\n#neonclips #neonclipper #n3on #n3onlive #fyp",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1bMv4oQOecI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1bMv4oQOecI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1bMv4oQOecI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1bMv4oQOecI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1bMv4oQOecI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "N3on Clipper",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on explains how to become a clipper 🎥",
+          "description": "N3on explains how to become a clipper 🎥 \n\n   \n\n#neonclips #neonclipper #n3on #n3onlive #fyp"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT12S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "13304",
+        "likeCount": "89",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "EWQgquSqbFcKW28wiygadpynKXE",
+      "id": "nGojQ4yIkUw",
+      "snippet": {
+        "publishedAt": "2026-09-17T15:30:39Z",
+        "channelId": "UCC3gZT1pw2CYawRFR8U5W6A",
+        "title": "N3on explains how video clippers are making life-changing money! 💸🔥",
+        "description": "Streamer N3on talks about the power of video clipping and how people—even in remote villages—are making massive money just from clipping content. Anyone around the world can do it! Don't forget to like and subscribe for more viral clips.\nHashtags\n#N3on #N3onClips #VideoClippers #MakingMoneyOnline #ViralShorts #StreamerMoments",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nGojQ4yIkUw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nGojQ4yIkUw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nGojQ4yIkUw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nGojQ4yIkUw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nGojQ4yIkUw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "kickvoult ",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on explains how video clippers are making life-changing money! 💸🔥",
+          "description": "Streamer N3on talks about the power of video clipping and how people—even in remote villages—are making massive money just from clipping content. Anyone around the world can do it! Don't forget to like and subscribe for more viral clips.\nHashtags\n#N3on #N3onClips #VideoClippers #MakingMoneyOnline #ViralShorts #StreamerMoments"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "299",
+        "likeCount": "3",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "I2JmtJi5bun6F7qMJ7_V4u2x1rk",
+      "id": "LPox46kR1Zo",
+      "snippet": {
+        "publishedAt": "2025-12-23T17:00:42Z",
+        "channelId": "UCJ3sJStKagux6FZ7GsTzltA",
+        "title": "How To Clip Neon & Get Paid! (TikTok Clipping)",
+        "description": "*This Video Is Sponsored by Reka AI*\n\nIn this video, learn how you can clip Neon, and get paid! \n\nReka AI (Free Clips!): https://bit.ly/reka_ethanshustle\n\nReka AI Discord: https://discord.gg/gXbyTmqA58\n\nTurn long videos into viral clips with WayinVideo — 200 free credits for new users\nhttps://wayin.ai/tools/clip-maker/?via=ethan\nUse Code \"ETHAN\" for 25% Off First Payment!\n\nDiscord Community: https://discord.gg/qGhKNskD3G\n\nOpus Pro: https://www.opus.pro/?via=ethanshustle (Get AI Clips Within Seconds) *50% Off!*\n\nCapcut Application (Free!): https://capcutaffiliateprogram.pxf.io/9LB9XW\n\nFirecut Plugin: https://firecut.ai/?ref=ethan (Use Code \"Ethan\" For 10% Off)\n\nVizard AI: https://vizard.ai/?via=ethan (Gets AI Clips Within Seconds)\n\n*All Links Are Affiliated*\n\nhttps://uptribo.com/?ref=ethanshustle\n\nBusiness Inquires: Ethan@weems.media\n\nLike & Subscribe For More Content:)",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LPox46kR1Zo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LPox46kR1Zo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LPox46kR1Zo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/LPox46kR1Zo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/LPox46kR1Zo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ethan’s Hustle",
+        "tags": [
+          "tiktok creativity program beta",
+          "editing tiktok videos",
+          "how to create viral content",
+          "how to make podcast clips for tiktok",
+          "theme page business",
+          "tiktok clipping",
+          "tiktok creativity program",
+          "make money with tiktok",
+          "creativity program",
+          "growing a tiktok page from scratch",
+          "best niche for tiktok",
+          "i started a tiktok business",
+          "tiktok creativity program beta pay",
+          "tiktok creativity program beta earnings",
+          "high rpm niche tiktok creativity program",
+          "clip for neon",
+          "clip streamers"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "How To Clip Neon & Get Paid! (TikTok Clipping)",
+          "description": "*This Video Is Sponsored by Reka AI*\n\nIn this video, learn how you can clip Neon, and get paid! \n\nReka AI (Free Clips!): https://bit.ly/reka_ethanshustle\n\nReka AI Discord: https://discord.gg/gXbyTmqA58\n\nTurn long videos into viral clips with WayinVideo — 200 free credits for new users\nhttps://wayin.ai/tools/clip-maker/?via=ethan\nUse Code \"ETHAN\" for 25% Off First Payment!\n\nDiscord Community: https://discord.gg/qGhKNskD3G\n\nOpus Pro: https://www.opus.pro/?via=ethanshustle (Get AI Clips Within Seconds) *50% Off!*\n\nCapcut Application (Free!): https://capcutaffiliateprogram.pxf.io/9LB9XW\n\nFirecut Plugin: https://firecut.ai/?ref=ethan (Use Code \"Ethan\" For 10% Off)\n\nVizard AI: https://vizard.ai/?via=ethan (Gets AI Clips Within Seconds)\n\n*All Links Are Affiliated*\n\nhttps://uptribo.com/?ref=ethanshustle\n\nBusiness Inquires: Ethan@weems.media\n\nLike & Subscribe For More Content:)"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT6M50S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "23979",
+        "likeCount": "480",
+        "favoriteCount": "0",
+        "commentCount": "26"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "OYy3FFI8ZB8uRzXEwFoKDirvS88",
+      "id": "-b_awttuUBM",
+      "snippet": {
+        "publishedAt": "2025-05-28T00:12:06Z",
+        "channelId": "UCVXuDea6zEf3Uy5vm2zg9fw",
+        "title": "How I Made $7,000 Clipping For N3on (HOW YOU CAN TOO)",
+        "description": "Hey guys In this Quick video I cut to the chase and show you how I made $7k clipping for N3on and how YOU can too.\n\nBEST FREE Clipping Tools I Use:\n🔥 The Caption Generator I Use on Every Viral Clip: https://clipping.gg/caption-generator\n🔥The Scheduling Tool I use for my Clipping Accounts -  https://publer.com/clipping \n\nIf you want to learn about how to make money with clipping join my discord. There is a free Guide and no its not a funnel to sell you anything. Thanks for watching.\n\nGet Paid Clipping Today! Join My Team For Paid Campaigns - https://clipping.net/auth/login?ref=EdeEVh8CzW\n\n My Discord - https://discord.gg/azPuSJzJEX\n\nSide note: That is not my clipping page for N3on was just an example one I found & Apologies for the webcam bugging new one on the way!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-b_awttuUBM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-b_awttuUBM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-b_awttuUBM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/-b_awttuUBM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/-b_awttuUBM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Neo Clips",
+        "tags": [
+          "make money online",
+          "how to make money",
+          "online income",
+          "social media income",
+          "tiktok income",
+          "youtube monetization",
+          "twitch clips",
+          "stream clipping",
+          "adin ross clips",
+          "how to clip streamers",
+          "twitch to tiktok",
+          "content creation",
+          "short form content",
+          "youtube shorts",
+          "tiktok videos",
+          "tiktok edits",
+          "viral content",
+          "monetize tiktok",
+          "monetize instagram",
+          "make money from views",
+          "content monetization",
+          "social media growth",
+          "online hustle",
+          "side hustle",
+          "make money 2025",
+          "make money fast"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "How I Made $7,000 Clipping For N3on (HOW YOU CAN TOO)",
+          "description": "Hey guys In this Quick video I cut to the chase and show you how I made $7k clipping for N3on and how YOU can too.\n\nBEST FREE Clipping Tools I Use:\n🔥 The Caption Generator I Use on Every Viral Clip: https://clipping.gg/caption-generator\n🔥The Scheduling Tool I use for my Clipping Accounts -  https://publer.com/clipping \n\nIf you want to learn about how to make money with clipping join my discord. There is a free Guide and no its not a funnel to sell you anything. Thanks for watching.\n\nGet Paid Clipping Today! Join My Team For Paid Campaigns - https://clipping.net/auth/login?ref=EdeEVh8CzW\n\n My Discord - https://discord.gg/azPuSJzJEX\n\nSide note: That is not my clipping page for N3on was just an example one I found & Apologies for the webcam bugging new one on the way!"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT4M",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "9095",
+        "likeCount": "110",
+        "favoriteCount": "0",
+        "commentCount": "14"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "buJtu2rWDZXWe7bv4BI6J7w4PZA",
+      "id": "fYU2T0-NXwI",
+      "snippet": {
+        "publishedAt": "2026-08-03T17:33:57Z",
+        "channelId": "UCVXuDea6zEf3Uy5vm2zg9fw",
+        "title": "N3on Clipping Challenge: How I’m Going From $0 to $1K/Month",
+        "description": "Starting a new YouTube Shorts account from $0 to $1,000 per month by clipping N3on. \n\nThis is my N3on clipping challenge, showing the process from scratch. In this video, I cut straight to the point and explain how I plan to grow a Shorts clipping account, find viral moments, edit clips, and build monthly income through clipping.\n\nThe full free guide is available in my Discord server, including information on paid campaigns, and how to make money clipping content.🎯 \n\nBEST FREE Clipping Tools I Use:\n🔥 The Caption Generator I Use on Every Viral Clip: https://clipping.gg/caption-generator\n🔥The Scheduling Tool I use for my Clipping Accounts -  https://publer.com/clipping \n\nJoin the clipping team (Best Streamer Clipping Provider) - https://clipping.net/auth/login?ref=EdeEVh8CzW\n\nGet paid For clipping campaigns💬 Join my Discord for the free guide -\nhttps://discord.gg/azPuSJzJEX\n\n\nJoin Clipping.gg Today, No paid course. Just a free guide to help you start clipping today.\n\n#n3on  #clipping  #youtubeshorts  #makemoneyonline  #streamerclips",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fYU2T0-NXwI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fYU2T0-NXwI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fYU2T0-NXwI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fYU2T0-NXwI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/fYU2T0-NXwI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Neo Clips",
+        "tags": [
+          "N3ON",
+          "N3ON clipping",
+          "streamer clipping",
+          "clip streamers",
+          "clipping streamers",
+          "how to clip streamers",
+          "make money clipping",
+          "make money clipping streamers",
+          "get paid to clip streamers",
+          "streamer clipping tutorial",
+          "clipping account",
+          "clipping accounts",
+          "build a clipping account",
+          "$0 to $1k per month",
+          "0 to 1000 a month",
+          "make $1000 per month online",
+          "online side hustle",
+          "content clipping",
+          "viral streamer clips",
+          "Kick clips",
+          "streamer clips",
+          "clipping for beginners",
+          "how to start clipping"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "N3on Clipping Challenge: How I’m Going From $0 to $1K/Month",
+          "description": "Starting a new YouTube Shorts account from $0 to $1,000 per month by clipping N3on. \n\nThis is my N3on clipping challenge, showing the process from scratch. In this video, I cut straight to the point and explain how I plan to grow a Shorts clipping account, find viral moments, edit clips, and build monthly income through clipping.\n\nThe full free guide is available in my Discord server, including information on paid campaigns, and how to make money clipping content.🎯 \n\nBEST FREE Clipping Tools I Use:\n🔥 The Caption Generator I Use on Every Viral Clip: https://clipping.gg/caption-generator\n🔥The Scheduling Tool I use for my Clipping Accounts -  https://publer.com/clipping \n\nJoin the clipping team (Best Streamer Clipping Provider) - https://clipping.net/auth/login?ref=EdeEVh8CzW\n\nGet paid For clipping campaigns💬 Join my Discord for the free guide -\nhttps://discord.gg/azPuSJzJEX\n\n\nJoin Clipping.gg Today, No paid course. Just a free guide to help you start clipping today.\n\n#n3on  #clipping  #youtubeshorts  #makemoneyonline  #streamerclips"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT7M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2497",
+        "likeCount": "38",
+        "favoriteCount": "0",
+        "commentCount": "20"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "48jrgmr_AL7GaXjChASVDg82qsU",
+      "id": "BvzLYTIE3Hw",
+      "snippet": {
+        "publishedAt": "2026-10-17T13:30:16Z",
+        "channelId": "UC592EYCIZXAPZzHc1TkqxSg",
+        "title": "Best AI Clipping Tools in 2026 — I Tried 5, Here’s My Top Pick",
+        "description": "🚀 Try Klap: https://klap.app/?via=opps-ai24\n🎁 Promo code: OPPSAI24\n\nI tested 5 AI clipping tools to find the best option for your short-form content in 2026. See which platforms produced results and why Klap is my best overall pick.\n\nUsing a Steve Wozniak interview, I explored Klap, Vizard, 2short.ai, Captions, and Quso.ai. This comparison covers AI clip generation, caption editing, reframing, and export limitations when turning long videos into YouTube Shorts, TikTok videos, and Instagram Reels.\n\nIf you’re looking for an AI video editor or video repurposing software, see how Klap brings clip selection, captions, speaker layouts, and scheduling preparation into one workflow.\n\nWhat You’ll Learn:\n• How to turn long videos into shorts with AI\n• How to review AI-generated clips and transcripts\n• How to customize captions and speaker framing\n• How to prepare clips for scheduling in Klap\n• Why Klap is my best overall AI clipping tool\n\nSubscribe for more AI software comparisons and content creation workflows.\n\n**Source Footage Attribution**\n\nOriginal video: *Interview with Steve Wozniak*\n\nCreator: ConversationEDU\n\nOriginal source: https://www.youtube.com/watch?v=920QAxtook8\n\nLicense: [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)\n\nThe original footage has been edited for this video, including the selection of excerpts and AI-assisted short-form video editing.\n\nThis attribution does not imply that ConversationEDU or Steve Wozniak endorses this video or its contents.\n\n0:00 Testing Five AI Clipping Tools\n0:32 Hands-on With Vizard's Clipping Workflow\n2:12 Testing Too Short AI for Content Creation\n3:35 Why Klap Is My Top Pick\n\n#AIClippingTools #Klap #YouTubeShorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BvzLYTIE3Hw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BvzLYTIE3Hw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BvzLYTIE3Hw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BvzLYTIE3Hw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BvzLYTIE3Hw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "OPPS AI STUDIO",
+        "tags": [
+          "AI clipping tools",
+          "short-form content",
+          "AI video editor",
+          "video repurposing",
+          "ai tools for content creation",
+          "ai video maker",
+          "best AI clipping tools",
+          "best AI clipping tools 2026",
+          "AI clipping tool",
+          "AI clipping software",
+          "Klap",
+          "Klap AI",
+          "Klap review",
+          "Klap tutorial",
+          "AI shorts generator",
+          "YouTube Shorts maker",
+          "podcast clips",
+          "Vizard",
+          "2short.ai",
+          "Captions AI",
+          "Quso AI",
+          "AI tools for content creators",
+          "best ai clipping tool",
+          "ai content creation",
+          "ai clipping",
+          "best ai video editor",
+          "klap app"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-US",
+        "localized": {
+          "title": "Best AI Clipping Tools in 2026 — I Tried 5, Here’s My Top Pick",
+          "description": "🚀 Try Klap: https://klap.app/?via=opps-ai24\n🎁 Promo code: OPPSAI24\n\nI tested 5 AI clipping tools to find the best option for your short-form content in 2026. See which platforms produced results and why Klap is my best overall pick.\n\nUsing a Steve Wozniak interview, I explored Klap, Vizard, 2short.ai, Captions, and Quso.ai. This comparison covers AI clip generation, caption editing, reframing, and export limitations when turning long videos into YouTube Shorts, TikTok videos, and Instagram Reels.\n\nIf you’re looking for an AI video editor or video repurposing software, see how Klap brings clip selection, captions, speaker layouts, and scheduling preparation into one workflow.\n\nWhat You’ll Learn:\n• How to turn long videos into shorts with AI\n• How to review AI-generated clips and transcripts\n• How to customize captions and speaker framing\n• How to prepare clips for scheduling in Klap\n• Why Klap is my best overall AI clipping tool\n\nSubscribe for more AI software comparisons and content creation workflows.\n\n**Source Footage Attribution**\n\nOriginal video: *Interview with Steve Wozniak*\n\nCreator: ConversationEDU\n\nOriginal source: https://www.youtube.com/watch?v=920QAxtook8\n\nLicense: [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)\n\nThe original footage has been edited for this video, including the selection of excerpts and AI-assisted short-form video editing.\n\nThis attribution does not imply that ConversationEDU or Steve Wozniak endorses this video or its contents.\n\n0:00 Testing Five AI Clipping Tools\n0:32 Hands-on With Vizard's Clipping Workflow\n2:12 Testing Too Short AI for Content Creation\n3:35 Why Klap Is My Top Pick\n\n#AIClippingTools #Klap #YouTubeShorts"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT6M21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "18027",
+        "likeCount": "143",
+        "favoriteCount": "0",
+        "commentCount": "7"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "P_z3xZNRkE6KS4enlBuqaHOyTw0",
+      "id": "ckUDQWDaol0",
+      "snippet": {
+        "publishedAt": "2026-09-04T12:19:20Z",
+        "channelId": "UCjOECfP68yG0AIhbltv05xw",
+        "title": "I Tried Every AI Clipping Tool (here’s which matter)",
+        "description": "What's the best Whop Clipping platform? I tested them ALL!\nTry Higgsfield: https://higgsfield.ai/ai-video?fpr=utm&fp_sid=skai\n\nHey Friends :)) In this video, I'll be testing EVERY Clipping Platform I could find: Higgsfield, OpusClip... and more. I'll show you exactly which to use and I'll also go into how to automate the clipping workflow for content creators that helps you make money online. This approach leverages clipping and the rewards program to help you make money clipping easily. It's a great side hustle for anyone looking to earn more, and by the end you'll know exactly on which platform to start!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ckUDQWDaol0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ckUDQWDaol0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ckUDQWDaol0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ckUDQWDaol0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ckUDQWDaol0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "qhd": {
+            "url": "https://i.ytimg.com/vi/ckUDQWDaol0/qhddefault.jpg",
+            "width": 2560,
+            "height": 1440
+          }
+        },
+        "channelTitle": "Skai Generated",
+        "tags": [
+          "content creation tips",
+          "how to make money online",
+          "social media marketing",
+          "content creator",
+          "capcut tutorial",
+          "how to start a business",
+          "passive income",
+          "content creator tips",
+          "submagic vs opus",
+          "best ai clipping tool",
+          "digital marketing",
+          "how to become a content creator",
+          "side hustle",
+          "side hustles",
+          "ai",
+          "capcut edit tutorial",
+          "make money from home",
+          "affiliate marketing",
+          "online business",
+          "online income"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tried Every AI Clipping Tool (here’s which matter)",
+          "description": "What's the best Whop Clipping platform? I tested them ALL!\nTry Higgsfield: https://higgsfield.ai/ai-video?fpr=utm&fp_sid=skai\n\nHey Friends :)) In this video, I'll be testing EVERY Clipping Platform I could find: Higgsfield, OpusClip... and more. I'll show you exactly which to use and I'll also go into how to automate the clipping workflow for content creators that helps you make money online. This approach leverages clipping and the rewards program to help you make money clipping easily. It's a great side hustle for anyone looking to earn more, and by the end you'll know exactly on which platform to start!"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT9M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "38634",
+        "favoriteCount": "0",
+        "commentCount": "7"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "4raXeALgnHApbASFO35JLsjaGHo",
+      "id": "6yzsJZ7rrP4",
+      "snippet": {
+        "publishedAt": "2026-11-16T21:55:34Z",
+        "channelId": "UC6EYs1lfvJ9l9lVmsb_xhwQ",
+        "title": "I Tried every FREE AI Clipping Tool (These Ones Were Worth It)",
+        "description": "In this video, I showcase the top 12 free options for AI clipping tools that I found after reviewing dozens to show you which ones are truly worth your time if you're trying to make short form content out of your long form videos. \n\n🔴 Stream  -    / http://twitch.tv/ZookeeperJim\n🎵 Tiktok  -    / http://tiktok.com/@Jimmywahh\n📷 Instagram  -    / http://instagram.com/Jimmywahh\n\n0:00 - Intro \n0:28 - Tool 1 \n1:10 - Tool 2 \n2:32 - Tool 3 \n2:56 - Tool 4 \n3:35 - Tool 5 \n4:39 - Tool 6 \n5:35 - Tool 7 \n6:05 - Tool 8 \n6:29 - Tool 9\n6:58 - Tool 10 \n7:20 - Tool 11 \n7:47 - Tool 12 \n8:43 - Honorable Mention \n9:12 - Recap \n9:34 - Outro",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6yzsJZ7rrP4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6yzsJZ7rrP4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6yzsJZ7rrP4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6yzsJZ7rrP4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6yzsJZ7rrP4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/6yzsJZ7rrP4/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Jimmy Walsh",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tried every FREE AI Clipping Tool (These Ones Were Worth It)",
+          "description": "In this video, I showcase the top 12 free options for AI clipping tools that I found after reviewing dozens to show you which ones are truly worth your time if you're trying to make short form content out of your long form videos. \n\n🔴 Stream  -    / http://twitch.tv/ZookeeperJim\n🎵 Tiktok  -    / http://tiktok.com/@Jimmywahh\n📷 Instagram  -    / http://instagram.com/Jimmywahh\n\n0:00 - Intro \n0:28 - Tool 1 \n1:10 - Tool 2 \n2:32 - Tool 3 \n2:56 - Tool 4 \n3:35 - Tool 5 \n4:39 - Tool 6 \n5:35 - Tool 7 \n6:05 - Tool 8 \n6:29 - Tool 9\n6:58 - Tool 10 \n7:20 - Tool 11 \n7:47 - Tool 12 \n8:43 - Honorable Mention \n9:12 - Recap \n9:34 - Outro"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT9M54S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "5",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "-cY9do9Sy5G94LmW0Dz2UqHOitc",
+      "id": "UMFmLpe8shI",
+      "snippet": {
+        "publishedAt": "2026-11-02T16:01:56Z",
+        "channelId": "UCcmPLO-oz3ptsF8ysnOKiqA",
+        "title": "I Tested an AI Clipping Tool: 1 Video Became 20 Shorts in 6 Minutes",
+        "description": "one video, twenty shorts #aitools #contentcreator #repurposing #shorts #Shorts",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UMFmLpe8shI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UMFmLpe8shI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UMFmLpe8shI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/UMFmLpe8shI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/UMFmLpe8shI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Great Product Reviews",
+        "tags": [
+          "short"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tested an AI Clipping Tool: 1 Video Became 20 Shorts in 6 Minutes",
+          "description": "one video, twenty shorts #aitools #contentcreator #repurposing #shorts #Shorts"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT1M11S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "21",
+        "likeCount": "1",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "wcB5n_u_W1Q4qLrwCrmK132m9vs",
+      "id": "sMrkGzEEEmA",
+      "snippet": {
+        "publishedAt": "2026-11-15T14:12:25Z",
+        "channelId": "UCu0kMIk_liFntmEPoggIl8g",
+        "title": "3 AI tools i would use for clipping before GTA 6 releases",
+        "description": "you have 4 days left to learn clipping before gta 6 releases\n\nopenshorts and opusclip take a live stream, find the best clips and add captions. number 3 is a secret site\n\ncomment \"clipping\" and i'll send you all 3\n\n#gta6 #clipping #opusclip #aitools #videoediting",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sMrkGzEEEmA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sMrkGzEEEmA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sMrkGzEEEmA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/sMrkGzEEEmA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/sMrkGzEEEmA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Sonik Creates",
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "3 AI tools i would use for clipping before GTA 6 releases",
+          "description": "you have 4 days left to learn clipping before gta 6 releases\n\nopenshorts and opusclip take a live stream, find the best clips and add captions. number 3 is a secret site\n\ncomment \"clipping\" and i'll send you all 3\n\n#gta6 #clipping #opusclip #aitools #videoediting"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1539",
+        "likeCount": "24",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "M-k2jgveJLs_oNYztpYmdjL1vyE",
+      "id": "96VDsSM-aiQ",
+      "snippet": {
+        "publishedAt": "2026-09-03T07:36:52Z",
+        "channelId": "UC75iY_iaP8Z47d8g4viNjyQ",
+        "title": "I tested 50+ AI tools. Only 5 actually made the cut. 👀",
+        "description": "Not every AI tool is worth adding to your business. The goal isn't to use more tools — it's to use the right ones.\n\nWatch more from @RussRuffino  on YouTube.\n\n#AI #AITools #Entrepreneur #Business #Marketing #Sales #entrepreneurship",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/96VDsSM-aiQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/96VDsSM-aiQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/96VDsSM-aiQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/96VDsSM-aiQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/96VDsSM-aiQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "verse clipper",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I tested 50+ AI tools. Only 5 actually made the cut. 👀",
+          "description": "Not every AI tool is worth adding to your business. The goal isn't to use more tools — it's to use the right ones.\n\nWatch more from @RussRuffino  on YouTube.\n\n#AI #AITools #Entrepreneur #Business #Marketing #Sales #entrepreneurship"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1196",
+        "likeCount": "7",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "BdwglV2IR7heotgKbYcN_Z13IWs",
+      "id": "rEO3z1gGEbo",
+      "snippet": {
+        "publishedAt": "2026-11-14T05:45:04Z",
+        "channelId": "UCDS9qM-kCW58towBT9erxYw",
+        "title": "3 AI Tools Cut the Same Clip. One Handed Back 5 Seconds of Nothing.",
+        "description": "AI Tools Roundup Episode 2\n3 AI tools cut the same clip. One handed back 5 seconds of nothing.\nSame 30-second clip, same job: captions on, pauses out, export. CapCut cut 5.3 seconds and named every gap, but its file still runs 29.5 seconds with 5.6 seconds of dead air at the end. Kapwing cut 7.6 seconds to a clean 22.1, watermarked. VEED cut 7.3 to 22.3, stamped twice.\nTested 2026-11-13 on CapCut Web, Kapwing, and VEED. Recheck when the tools change their free tiers.\nCapCut or VEED, which one cuts your video?\n\n#AITools #CapCut #Kapwing #VEED #VideoEditing #AI #Tech\n\nWeb: https://www.summitsingh.com/\nSubscribe to @SummitBuildsAI for daily AI tests, tools, and builds.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rEO3z1gGEbo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rEO3z1gGEbo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rEO3z1gGEbo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/rEO3z1gGEbo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/rEO3z1gGEbo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Summit Builds AI",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "3 AI Tools Cut the Same Clip. One Handed Back 5 Seconds of Nothing.",
+          "description": "AI Tools Roundup Episode 2\n3 AI tools cut the same clip. One handed back 5 seconds of nothing.\nSame 30-second clip, same job: captions on, pauses out, export. CapCut cut 5.3 seconds and named every gap, but its file still runs 29.5 seconds with 5.6 seconds of dead air at the end. Kapwing cut 7.6 seconds to a clean 22.1, watermarked. VEED cut 7.3 to 22.3, stamped twice.\nTested 2026-11-13 on CapCut Web, Kapwing, and VEED. Recheck when the tools change their free tiers.\nCapCut or VEED, which one cuts your video?\n\n#AITools #CapCut #Kapwing #VEED #VideoEditing #AI #Tech\n\nWeb: https://www.summitsingh.com/\nSubscribe to @SummitBuildsAI for daily AI tests, tools, and builds."
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT45S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "4",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Fs5CyVdZrONbdS93BtNU6rs3OSc",
+      "id": "CgogkL28IGA",
+      "snippet": {
+        "publishedAt": "2026-11-14T14:58:57Z",
+        "channelId": "UC2vJ5VdMz95OeEUjxgkK8Tw",
+        "title": "I Tested 100+ AI Video Generators… And The Results Were INSANE! 🤯 From Kling 2.3 to Higgsfield AI,",
+        "description": "I Tested 100+ AI Video Generators… And The Results Were INSANE! 🤯 From Kling 2.3 to Higgsfield AI, and many more powerful AI models, I put them all to the test to find out which tools actually deliver the best results. Which AI video generator would you choose? 👀#manhwarecomandation#claudeai #claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting#gta6 #clipping #sidehustle#aitools #animeawareness #animecommunity #animecry #animeculture #animefeels #animeemotional #animefan #animeimpact #claudeai #claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting#gta6 #clipping #sidehustle#aitools",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CgogkL28IGA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CgogkL28IGA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CgogkL28IGA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/CgogkL28IGA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/CgogkL28IGA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Smperson",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tested 100+ AI Video Generators… And The Results Were INSANE! 🤯 From Kling 2.3 to Higgsfield AI,",
+          "description": "I Tested 100+ AI Video Generators… And The Results Were INSANE! 🤯 From Kling 2.3 to Higgsfield AI, and many more powerful AI models, I put them all to the test to find out which tools actually deliver the best results. Which AI video generator would you choose? 👀#manhwarecomandation#claudeai #claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting#gta6 #clipping #sidehustle#aitools #animeawareness #animecommunity #animecry #animeculture #animefeels #animeemotional #animefan #animeimpact #claudeai #claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting#gta6 #clipping #sidehustle#aitools"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT1M17S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "185",
+        "likeCount": "9",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "A80WWECDD24J6pnA8gI1af62MFc",
+      "id": "JUkV0kgTCgk",
+      "snippet": {
+        "publishedAt": "2025-07-29T14:18:45Z",
+        "channelId": "UC22mB3FvApcDufsQfylPdqA",
+        "title": "I Tested 4 AI Clipping Tools So You Don’t Have To!",
+        "description": "Get my templates for free here: https://forms.gle/tKu65BcdhMhQ4uYaA\nBook a call: https://calendar.app.google/d5ePaBySH87tcdKU7\n\nI put four AI clipping tools to the test to see which is best for content creators. I used both a tutorial and listicle type video to test each ai video editing tool. Watch to see my honest results and decide which ai tools are worth using.\n\nChapters\n00:00 intro\n00:45 Opus Clip - Listicle \n03:42 Vizard AI - Listicle \n05:12 Klap - Listicle\n07:45 Quso - Listicle \n09:21 Ranking - Listicle\n11:00 Vizard AI - Tutorial\n12:30 Opus Clip - Tutorial \n14:00 Klap - Tutorial \n15:20 Quso - Tutorial \n16:22 Ranking Tutorial",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/JUkV0kgTCgk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/JUkV0kgTCgk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/JUkV0kgTCgk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/JUkV0kgTCgk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/JUkV0kgTCgk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Matt Paiva",
+        "tags": [
+          "opus clip",
+          "quso.ai",
+          "klap",
+          "vizard ai",
+          "klap ai",
+          "AI clipping",
+          "podcast clipping with AI",
+          "AI tool review"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tested 4 AI Clipping Tools So You Don’t Have To!",
+          "description": "Get my templates for free here: https://forms.gle/tKu65BcdhMhQ4uYaA\nBook a call: https://calendar.app.google/d5ePaBySH87tcdKU7\n\nI put four AI clipping tools to the test to see which is best for content creators. I used both a tutorial and listicle type video to test each ai video editing tool. Watch to see my honest results and decide which ai tools are worth using.\n\nChapters\n00:00 intro\n00:45 Opus Clip - Listicle \n03:42 Vizard AI - Listicle \n05:12 Klap - Listicle\n07:45 Quso - Listicle \n09:21 Ranking - Listicle\n11:00 Vizard AI - Tutorial\n12:30 Opus Clip - Tutorial \n14:00 Klap - Tutorial \n15:20 Quso - Tutorial \n16:22 Ranking Tutorial"
+        },
+        "defaultAudioLanguage": "en-CA"
+      },
+      "contentDetails": {
+        "duration": "PT20M46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "20851",
+        "likeCount": "445",
+        "favoriteCount": "0",
+        "commentCount": "21"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "hcQvCs9p91WidMoSjUrhg7jCWGk",
+      "id": "YOyC95nA3Ts",
+      "snippet": {
+        "publishedAt": "2026-10-19T07:45:27Z",
+        "channelId": "UCcmZTPXTsOD58k4-H4QmbpA",
+        "title": "The Best AI Clipping Tool in 2026 For Viral Shorts!",
+        "description": "The Best AI Clipping Tool in 2026 for viral Shorts, Reels and TikToks! In this video, I test Klap to see how well it can turn long-form videos into short-form content using AI clipping, captions, reframing, virality scoring, scheduling and auto-posting.\n\n🔥 Try Klap here: https://klap.app/?via=aptrex  \n\nKlap is an AI video clipping tool designed to automatically find the best moments from long videos and turn them into ready-to-post short-form clips.\n\nIn this video, I test Klap using a real source video and show how the full workflow works: from uploading or pasting a video link, to generating clips, adding captions, converting 16:9 footage into 9:16 vertical Shorts, reviewing virality scores and scheduling content directly to social media.\n\nI also cover Klap’s main features, pricing, multilingual support, AI dubbing, social media publishing, editing workflow, pros and cons, and whether it actually produces clips that are good enough to post.\n\nKlap supports 52 languages and is built around a simple clip → caption → reframe → schedule → publish workflow, making it especially useful for YouTubers, podcasters, streamers, businesses and creators who want to repurpose long-form content into YouTube Shorts, TikToks and Instagram Reels.\n\n⚠️ Disclosure: This video is sponsored by Klap. Klap provided access to the service, but all testing, results and opinions shown in this video are my own.\n\nKlap can be used for:\nAI YouTube Shorts\nAI video clipping\nlong video to Shorts\npodcast to Shorts\nYouTube video repurposing\nTikTok clip generation\nInstagram Reels generation\nAI captions\nAI video reframing\nautomatic Shorts creation\nsocial media scheduling\nAI dubbing\nmultilingual video creation\nviral clip generation\ncontent repurposing\n\nIf you're looking for the best AI clipping tool in 2026, this video shows exactly how Klap works and whether it deserves to be part of your Shorts workflow.\n\nIf you found this video helpful, make sure to LIKE, SUBSCRIBE and let me know which AI tool you want me to test next!\n\n0:00 AI Clipping Dillema\n0:18 The Best AI Clipping Tool\n1:27 Quality Over Quantity: Evaluating Viral Scores\n3:34 Building an Automated Content Pipeline",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YOyC95nA3Ts/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YOyC95nA3Ts/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YOyC95nA3Ts/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YOyC95nA3Ts/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YOyC95nA3Ts/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ApTreX",
+        "tags": [
+          "ai",
+          "ai clips",
+          "ai clipping tool",
+          "ai clipper",
+          "ai clipping",
+          "ai clipping free",
+          "best ai clipping tool 2026",
+          "best ai clipper 2026",
+          "klap review 2026",
+          "klap ai",
+          "klap app",
+          "ai video clipper",
+          "ai shorts generator",
+          "youtube shorts ai",
+          "long video to shorts",
+          "viral shorts ai",
+          "ai video editor",
+          "ai reel generator",
+          "youtube shorts generator",
+          "ai podcast clips",
+          "video repurposing ai",
+          "ai captions",
+          "ai video reframing",
+          "shorts automation",
+          "viral clips ai",
+          "klap tutorial",
+          "best ai for shorts"
+        ],
+        "categoryId": "20",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-US",
+        "localized": {
+          "title": "The Best AI Clipping Tool in 2026 For Viral Shorts!",
+          "description": "The Best AI Clipping Tool in 2026 for viral Shorts, Reels and TikToks! In this video, I test Klap to see how well it can turn long-form videos into short-form content using AI clipping, captions, reframing, virality scoring, scheduling and auto-posting.\n\n🔥 Try Klap here: https://klap.app/?via=aptrex  \n\nKlap is an AI video clipping tool designed to automatically find the best moments from long videos and turn them into ready-to-post short-form clips.\n\nIn this video, I test Klap using a real source video and show how the full workflow works: from uploading or pasting a video link, to generating clips, adding captions, converting 16:9 footage into 9:16 vertical Shorts, reviewing virality scores and scheduling content directly to social media.\n\nI also cover Klap’s main features, pricing, multilingual support, AI dubbing, social media publishing, editing workflow, pros and cons, and whether it actually produces clips that are good enough to post.\n\nKlap supports 52 languages and is built around a simple clip → caption → reframe → schedule → publish workflow, making it especially useful for YouTubers, podcasters, streamers, businesses and creators who want to repurpose long-form content into YouTube Shorts, TikToks and Instagram Reels.\n\n⚠️ Disclosure: This video is sponsored by Klap. Klap provided access to the service, but all testing, results and opinions shown in this video are my own.\n\nKlap can be used for:\nAI YouTube Shorts\nAI video clipping\nlong video to Shorts\npodcast to Shorts\nYouTube video repurposing\nTikTok clip generation\nInstagram Reels generation\nAI captions\nAI video reframing\nautomatic Shorts creation\nsocial media scheduling\nAI dubbing\nmultilingual video creation\nviral clip generation\ncontent repurposing\n\nIf you're looking for the best AI clipping tool in 2026, this video shows exactly how Klap works and whether it deserves to be part of your Shorts workflow.\n\nIf you found this video helpful, make sure to LIKE, SUBSCRIBE and let me know which AI tool you want me to test next!\n\n0:00 AI Clipping Dillema\n0:18 The Best AI Clipping Tool\n1:27 Quality Over Quantity: Evaluating Viral Scores\n3:34 Building an Automated Content Pipeline"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT5M43S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "9795",
+        "likeCount": "60",
+        "favoriteCount": "0",
+        "commentCount": "9"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "osO-aRGmlhDBwFasXBNeHoi5TPg",
+      "id": "DkBLNxfNMvU",
+      "snippet": {
+        "publishedAt": "2025-11-30T16:48:26Z",
+        "channelId": "UCsxi2ZHkQY4HpJ2cc6CIKbA",
+        "title": "I Tested Every Popular AI Clipper So You Don't Have To",
+        "description": "⚡ STOP WASTING HOURS EDITING SHORTS → Try Opus Clip FREE: https://clip.opus.pro/dashboard?coupon_code=NINJA\n(The AI clipper that reduced my editing from 10 hours to 30 minutes weekly - Get 1 week free + 50% off 3 months)\n\n⚠️ SPONSORED: Opus Clip sponsored this content. The link above is an affiliate link.\n\n🎬 I TESTED 3 AI SHORT CLIPPERS\nOpus Clip vs Vidyo.ai vs Klap: Which AI Clipper is BEST?\nTired of spending hours manually editing short-form content? I compared three popular AI clipping tools using the same 30-minute podcast: Clap, Vidyo.ai, and Opus Clip \n\n⏱️ TIMESTAMPS:\n0:00 - Introduction & The Manual Editing Problem\n0:05 - Sponsorship Disclosure\n0:10 - The Test Setup\n0:21 - Tool #1: Clap Review\n0:44 - Tool #2: Vidyo.ai Review\n1:10 - Tool #3: Opus Clip \n1:23 - New Opus Clip Features Breakdown\n2:35 - Final Scores & Comparison\n2:55 - My Recommendation & Special Deal\n\n🔗 TRY OPUS CLIP (1 WEEK FREE): https://clip.opus.pro/dashboard?coupon_code=NINJA\n→ Then get 50% off for your first 3 months\n\n\n🎯 WHO THIS IS FOR:\n- YouTubers repurposing long-form content\n- Podcasters creating short clips\n- Content creators posting on TikTok/Instagram/YouTube Shorts\n- Anyone wanting to save editing time\n- Creators maintaining consistent posting schedules\n\n❓ COMMON QUESTIONS:\n\nQ: Which tool is best for beginners?\nA: Opus Clip has the most intuitive interface in my testing.\n\nQ: Can these work with any video length?\nA: All three handle various lengths. I tested with 30-minute content.\n\nQ: Do I need video editing experience?\nA: No - these tools automate most of the process.\n\nQ: Which is cheapest?\nA: Clap at $29/month. But Opus Clip's 50% off deal (via my link) offers better value for features.\n\nQ: Can I try before paying?\nA: Yes! Opus Clip offers 1 week free through my link.\n\nQ: Do captions work for all languages?\nA: Check each tool's specs. Most support multiple languages.\n\nQ: Why do you recommend Opus Clip?\nA: Beyond sponsorship - it performed best in my testing across quality, speed, and features. The time saved (9.5 hours weekly) justifies the cost.\n\n✔️Our Recent Videos\nhttps://youtu.be/SKADrzjlGuA\nhttps://youtu.be/aJQ1UznvXnw\nhttps://youtu.be/hrjgxF1wwhE\n\n📱 CONNECT:\n- TikTok: tiktok.com/@ninjatechofficial\n- Instagram: instagram.com/officialninjtech\n- YouTube Shorts: youtube.com/@NinjaTechShorts\n- Facebook: facebook.com/profile.php?id=61578859611066\n- Website: ninjatech.live\n\n✔️Tags\n#opusclip \n#aishortscreator \n#aivideoediting \n#aivideoshorts \n#ninjatech \n#aivideoediting  #shortscreation \n\n⚖️ LEGAL DISCLOSURE:\nThis video contains sponsored content. Opus Clip compensated me to create this video. The Opus Clip link is an affiliate link \n\nAll testing and scores based on my genuine experience using identical source material. Your results may vary based on content type and use case.\n\nPerformance metrics and time savings are from my specific testing and may not represent all user experiences.\n\n📧 Business: ninjatech@techironedsolutions.com\n\nThanks for watching! Like, subscribe, and hit the bell for more AI tool reviews!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DkBLNxfNMvU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DkBLNxfNMvU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DkBLNxfNMvU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DkBLNxfNMvU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/DkBLNxfNMvU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ninja Tech",
+        "tags": [
+          "opus clip review",
+          "opus clip",
+          "opus clips",
+          "opus clip ai",
+          "klap video editor review",
+          "ai video generator",
+          "ai shorts",
+          "shorts",
+          "youtube shorts ai",
+          "ai tools",
+          "youtube automation",
+          "youtube shorts",
+          "ai",
+          "opus clip vs vidyo.ai",
+          "opus clip vs klap",
+          "opus clip tutorial",
+          "ai repurposing tools",
+          "opusclip ai",
+          "ai clipper",
+          "ai clipper tool",
+          "opus clip tool",
+          "how to use opus clip",
+          "opus clips tutorial",
+          "ai generated video",
+          "ai shorts maker",
+          "ai clip creator",
+          "ai clip generator",
+          "ai video clipper"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tested Every Popular AI Clipper So You Don't Have To",
+          "description": "⚡ STOP WASTING HOURS EDITING SHORTS → Try Opus Clip FREE: https://clip.opus.pro/dashboard?coupon_code=NINJA\n(The AI clipper that reduced my editing from 10 hours to 30 minutes weekly - Get 1 week free + 50% off 3 months)\n\n⚠️ SPONSORED: Opus Clip sponsored this content. The link above is an affiliate link.\n\n🎬 I TESTED 3 AI SHORT CLIPPERS\nOpus Clip vs Vidyo.ai vs Klap: Which AI Clipper is BEST?\nTired of spending hours manually editing short-form content? I compared three popular AI clipping tools using the same 30-minute podcast: Clap, Vidyo.ai, and Opus Clip \n\n⏱️ TIMESTAMPS:\n0:00 - Introduction & The Manual Editing Problem\n0:05 - Sponsorship Disclosure\n0:10 - The Test Setup\n0:21 - Tool #1: Clap Review\n0:44 - Tool #2: Vidyo.ai Review\n1:10 - Tool #3: Opus Clip \n1:23 - New Opus Clip Features Breakdown\n2:35 - Final Scores & Comparison\n2:55 - My Recommendation & Special Deal\n\n🔗 TRY OPUS CLIP (1 WEEK FREE): https://clip.opus.pro/dashboard?coupon_code=NINJA\n→ Then get 50% off for your first 3 months\n\n\n🎯 WHO THIS IS FOR:\n- YouTubers repurposing long-form content\n- Podcasters creating short clips\n- Content creators posting on TikTok/Instagram/YouTube Shorts\n- Anyone wanting to save editing time\n- Creators maintaining consistent posting schedules\n\n❓ COMMON QUESTIONS:\n\nQ: Which tool is best for beginners?\nA: Opus Clip has the most intuitive interface in my testing.\n\nQ: Can these work with any video length?\nA: All three handle various lengths. I tested with 30-minute content.\n\nQ: Do I need video editing experience?\nA: No - these tools automate most of the process.\n\nQ: Which is cheapest?\nA: Clap at $29/month. But Opus Clip's 50% off deal (via my link) offers better value for features.\n\nQ: Can I try before paying?\nA: Yes! Opus Clip offers 1 week free through my link.\n\nQ: Do captions work for all languages?\nA: Check each tool's specs. Most support multiple languages.\n\nQ: Why do you recommend Opus Clip?\nA: Beyond sponsorship - it performed best in my testing across quality, speed, and features. The time saved (9.5 hours weekly) justifies the cost.\n\n✔️Our Recent Videos\nhttps://youtu.be/SKADrzjlGuA\nhttps://youtu.be/aJQ1UznvXnw\nhttps://youtu.be/hrjgxF1wwhE\n\n📱 CONNECT:\n- TikTok: tiktok.com/@ninjatechofficial\n- Instagram: instagram.com/officialninjtech\n- YouTube Shorts: youtube.com/@NinjaTechShorts\n- Facebook: facebook.com/profile.php?id=61578859611066\n- Website: ninjatech.live\n\n✔️Tags\n#opusclip \n#aishortscreator \n#aivideoediting \n#aivideoshorts \n#ninjatech \n#aivideoediting  #shortscreation \n\n⚖️ LEGAL DISCLOSURE:\nThis video contains sponsored content. Opus Clip compensated me to create this video. The Opus Clip link is an affiliate link \n\nAll testing and scores based on my genuine experience using identical source material. Your results may vary based on content type and use case.\n\nPerformance metrics and time savings are from my specific testing and may not represent all user experiences.\n\n📧 Business: ninjatech@techironedsolutions.com\n\nThanks for watching! Like, subscribe, and hit the bell for more AI tool reviews!"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT3M3S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "201315",
+        "likeCount": "1772",
+        "favoriteCount": "0",
+        "commentCount": "42"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nZqRy3KM6u9JjifIxFhEMxbZALA",
+      "id": "66bCSZcJNec",
+      "snippet": {
+        "publishedAt": "2026-08-26T14:40:08Z",
+        "channelId": "UCWgiOLVXz_pvtnbWUda6WUg",
+        "title": "🚨 FREE AI VIDEO CLIPPING WITH NO WATERMARKS OR LIMITS",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/66bCSZcJNec/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/66bCSZcJNec/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/66bCSZcJNec/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/66bCSZcJNec/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/66bCSZcJNec/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Marc Kaz",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "🚨 FREE AI VIDEO CLIPPING WITH NO WATERMARKS OR LIMITS",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT12S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "43367",
+        "likeCount": "358",
+        "favoriteCount": "0",
+        "commentCount": "13"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "swUR0cfSY9KdNndARgS2OYdje7A",
+      "id": "A1rno3pV2Ec",
+      "snippet": {
+        "publishedAt": "2026-11-16T20:12:29Z",
+        "channelId": "UCG70yXlZVGo5eJG39rzUueA",
+        "title": "3 free AI tools that help you clip long videos into Shorts and Reels, and the catch for each one.",
+        "description": "#aitools  #clipping  #sidehustle  #shorts  #freeaitools",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/A1rno3pV2Ec/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/A1rno3pV2Ec/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/A1rno3pV2Ec/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/A1rno3pV2Ec/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/A1rno3pV2Ec/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "clipora studio",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "3 free AI tools that help you clip long videos into Shorts and Reels, and the catch for each one.",
+          "description": "#aitools  #clipping  #sidehustle  #shorts  #freeaitools"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT52S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "11",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "XFLO4fELSyM_f7ojEK-jzJnOPZ4",
+      "id": "8VCFf8CUdL0",
+      "snippet": {
+        "publishedAt": "2026-11-16T05:38:53Z",
+        "channelId": "UCz8ugFX_cw-0DgowBGO6VaA",
+        "title": "3 free AI clipping tools to start before GTA 6 drops #GTA6",
+        "description": "3 free AI clipping tools to start clipping before GTA 6 drops:\n\n1. OpenShorts — open source (MIT), free to self-host; cloud plan gives 20 free minutes a month: https://www.openshorts.app\n2. AutoClip — free plan with 5 clips, no card: https://autoclip.dev\n3. ClipShip — runs locally on your PC, 7-day free Pro trial: https://clipship.co\n\nPrices and free limits checked Nov 15, 2026.\nMade with AI tools.\n#GTA6 #AItools #ContentCreator",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8VCFf8CUdL0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8VCFf8CUdL0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8VCFf8CUdL0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8VCFf8CUdL0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8VCFf8CUdL0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Be Artificially Intelligent ",
+        "tags": [
+          "AI clipping tools",
+          "AI tools",
+          "AutoClip",
+          "ClipShip",
+          "GTA 6",
+          "OpenShorts",
+          "clipping",
+          "content creator",
+          "free AI clip maker",
+          "long video to shorts"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "3 free AI clipping tools to start before GTA 6 drops #GTA6",
+          "description": "3 free AI clipping tools to start clipping before GTA 6 drops:\n\n1. OpenShorts — open source (MIT), free to self-host; cloud plan gives 20 free minutes a month: https://www.openshorts.app\n2. AutoClip — free plan with 5 clips, no card: https://autoclip.dev\n3. ClipShip — runs locally on your PC, 7-day free Pro trial: https://clipship.co\n\nPrices and free limits checked Nov 15, 2026.\nMade with AI tools.\n#GTA6 #AItools #ContentCreator"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT9S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1176",
+        "likeCount": "23",
+        "favoriteCount": "0",
+        "commentCount": "5"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "n-bm-og2BZFkBhgHRpnihkNjgvI",
+      "id": "YfSFTbz4S10",
+      "snippet": {
+        "publishedAt": "2026-11-08T22:26:17Z",
+        "channelId": "UCqEIkZ6BZE-jfDV2-HoP4sQ",
+        "title": "We tested 3 AI clip makers #shorts",
+        "description": "Vizard 83, Klap 75, Opus Clip 63: same test video, default settings, a rubric written before any tool ran. One run each, so the scores are provisional. Full method on taskrated.com.\n\nFree search report: backroomops.co.nz\n\nThis Short was made with AI assistance (script, footage, voice and design). No sponsorship.\n\n#Shorts #BackroomOps #AITools",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YfSFTbz4S10/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YfSFTbz4S10/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YfSFTbz4S10/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YfSFTbz4S10/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YfSFTbz4S10/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Backroom Ops",
+        "tags": [
+          "Shorts",
+          "Backroom Ops",
+          "NZ small business",
+          "Shopify NZ",
+          "business operations",
+          "speed to lead",
+          "ops systems",
+          "New Zealand"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "We tested 3 AI clip makers #shorts",
+          "description": "Vizard 83, Klap 75, Opus Clip 63: same test video, default settings, a rubric written before any tool ran. One run each, so the scores are provisional. Full method on taskrated.com.\n\nFree search report: backroomops.co.nz\n\nThis Short was made with AI assistance (script, footage, voice and design). No sponsorship.\n\n#Shorts #BackroomOps #AITools"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT31S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "13",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "wQn2hoY9aPMysmuyJ2DG3UdKqes",
+      "id": "bhvhe934iRA",
+      "snippet": {
+        "publishedAt": "2026-11-09T18:30:15Z",
+        "channelId": "UCyp62xjjW6jfpK0ldyvXF7g",
+        "title": "I Tested 3 AI Video Editors — Only 1 Did It All",
+        "description": "I gave three AI video editors the exact same job: take a 2-minute raw clip and turn it into a captioned 30-second Short, ready to post. Only one did the whole job by itself. OpusClip found the best moments, added animated captions, reframed it vertical, and scored each clip for virality — free plan covers 60 credits a month with a watermark. Descript let me edit by deleting words from the transcript, but it did not pick the clips for me; free plan covers 60 media minutes a month at 720p with a watermark. CapCut gave me free auto captions and full control of every cut, but I had to find the moments and make every cut myself. If you turn long videos into Shorts, start with the tool that does the finding, cutting, and captioning for you. Tool versions and plans change fast, so check the official site of each tool before you pay. Which video tool should I test next? Tell me in the comments. Subscribe to AI Tools Unboxed for real-task AI tests with one clear winner. #AITools #VideoEditing #AITest #AIToolsUnboxed",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bhvhe934iRA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bhvhe934iRA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bhvhe934iRA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/bhvhe934iRA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/bhvhe934iRA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "AI Tools Unboxed",
+        "tags": [
+          "AI tools",
+          "ChatGPT",
+          "AI tools review",
+          "best AI tools",
+          "AI tools tested",
+          "artificial intelligence tools",
+          "AI for work",
+          "AI tools tutorial",
+          "AI tools unboxed",
+          "new AI tools",
+          "AI video editors",
+          "OpusClip vs Descript vs CapCut",
+          "best AI video editor 2026",
+          "OpusClip review",
+          "Descript review",
+          "CapCut AI captions",
+          "AI video editing tools",
+          "long video to Shorts AI",
+          "AI productivity tools",
+          "video editing AI"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tested 3 AI Video Editors — Only 1 Did It All",
+          "description": "I gave three AI video editors the exact same job: take a 2-minute raw clip and turn it into a captioned 30-second Short, ready to post. Only one did the whole job by itself. OpusClip found the best moments, added animated captions, reframed it vertical, and scored each clip for virality — free plan covers 60 credits a month with a watermark. Descript let me edit by deleting words from the transcript, but it did not pick the clips for me; free plan covers 60 media minutes a month at 720p with a watermark. CapCut gave me free auto captions and full control of every cut, but I had to find the moments and make every cut myself. If you turn long videos into Shorts, start with the tool that does the finding, cutting, and captioning for you. Tool versions and plans change fast, so check the official site of each tool before you pay. Which video tool should I test next? Tell me in the comments. Subscribe to AI Tools Unboxed for real-task AI tests with one clear winner. #AITools #VideoEditing #AITest #AIToolsUnboxed"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT54S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "10",
+        "likeCount": "0",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "g0ne4ufkqCMcDm9t6SA3KEeh_OQ",
+      "id": "8hPpnZBsAhg",
+      "snippet": {
+        "publishedAt": "2024-08-11T20:26:00Z",
+        "channelId": "UCJ3sJStKagux6FZ7GsTzltA",
+        "title": "I found a free AI Tool that can create clips for you! #ai #aitool #clipping #tiktokclipper",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8hPpnZBsAhg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8hPpnZBsAhg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8hPpnZBsAhg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8hPpnZBsAhg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8hPpnZBsAhg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ethan’s Hustle",
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I found a free AI Tool that can create clips for you! #ai #aitool #clipping #tiktokclipper",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT16S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "565250",
+        "likeCount": "6900",
+        "favoriteCount": "0",
+        "commentCount": "76"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "36PDKv2Qwnq_IBalprUXLAEKxks",
+      "id": "hysRAN3T2Cc",
+      "snippet": {
+        "publishedAt": "2025-09-24T15:41:23Z",
+        "channelId": "UC5_2We-HeVdEeHcIyfmMHOg",
+        "title": "AI Clipping Automation converts long form youtube videos into highly engaging shorts n8n tutorial.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hysRAN3T2Cc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hysRAN3T2Cc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hysRAN3T2Cc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/hysRAN3T2Cc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/hysRAN3T2Cc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ed Hill | AI Automation",
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "AI Clipping Automation converts long form youtube videos into highly engaging shorts n8n tutorial.",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT57S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "350120",
+        "likeCount": "9453",
+        "favoriteCount": "0",
+        "commentCount": "86"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "5hn8--_jwV_TTrTAADoQ_nv22iM",
+      "id": "0ZTdxZEfS1w",
+      "snippet": {
+        "publishedAt": "2026-11-15T04:13:31Z",
+        "channelId": "UC2vJ5VdMz95OeEUjxgkK8Tw",
+        "title": "I Tested 100+ AI Video Generators… And The Results Were INSANE! 🤯 From Kling 2.3 to Higgsfield AI,",
+        "description": "100+ AI Video Generators Tested! 🚀 I compared some of the most talked-about AI video tools, including Kling 2.3, Higgsfield AI, and more. Some models truly surprised me with their quality and realism. Watch till the end to see the results#manhwarecomandation#claudeai\n\n#claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting #gta6 #clipping #sidehustle#aitools #animeawareness #animecommunity #animecry #animeculture #animefeels #animeemotional #animefan #animeimpact #manhwarecomandation#claudeai #claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting#gta6 #clipping #sidehustle#aitools #animeawareness #animecommunity #animecry #animeculture #animefeels #animeemotional #animefan\n\n#animeimpact#Manhwa #anime #manga",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0ZTdxZEfS1w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0ZTdxZEfS1w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0ZTdxZEfS1w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0ZTdxZEfS1w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0ZTdxZEfS1w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Smperson",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I Tested 100+ AI Video Generators… And The Results Were INSANE! 🤯 From Kling 2.3 to Higgsfield AI,",
+          "description": "100+ AI Video Generators Tested! 🚀 I compared some of the most talked-about AI video tools, including Kling 2.3, Higgsfield AI, and more. Some models truly surprised me with their quality and realism. Watch till the end to see the results#manhwarecomandation#claudeai\n\n#claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting #gta6 #clipping #sidehustle#aitools #animeawareness #animecommunity #animecry #animeculture #animefeels #animeemotional #animefan #animeimpact #manhwarecomandation#claudeai #claudecode #aitools #faceless #openjarvis #productivity #aiassistant #ai #videoediting#gta6 #clipping #sidehustle#aitools #animeawareness #animecommunity #animecry #animeculture #animefeels #animeemotional #animefan\n\n#animeimpact#Manhwa #anime #manga"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT1M23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "21",
+        "likeCount": "2",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "q9l1NOC8itlNVyxkL3CcV9X232A",
+      "id": "MfTsoPrw728",
+      "snippet": {
+        "publishedAt": "2026-08-26T09:37:54Z",
+        "channelId": "UCebhvq2xgaiV3LlvvylFDKQ",
+        "title": "This AI turns one long video into 100 viral clips. Try Klap free, link in bio @klap_ai",
+        "description": "#klapaipropgda\n\nThis AI turns long-form videos into multiple engaging short clips in seconds. No advanced editing skills needed. Create scroll-stopping content with Klap AI _ try it free through the link in bio! @klap_ai\n\nKlap AI, AI video editor, AI clip generator, viral shorts, content creation tool, podcast clips, AI editing tool, faceless content, shorts automation, creator tools, video editing AI, viral clips AI, AI content creator, podcast to shorts, TikTok growth tool, short-form content, AI video tool 2026, clipping tool",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MfTsoPrw728/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MfTsoPrw728/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MfTsoPrw728/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/MfTsoPrw728/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MfTsoPrw728/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Gen-Z Shorts",
+        "tags": [
+          "Online hustle 2026",
+          "Clip farm",
+          "Clipping",
+          "Video Clipping",
+          "Social media growth",
+          "Reels",
+          "Shorts",
+          "Trend",
+          "Viral",
+          "Entrepreneur",
+          "Video editing",
+          "Ai",
+          "Toold"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "This AI turns one long video into 100 viral clips. Try Klap free, link in bio @klap_ai",
+          "description": "#klapaipropgda\n\nThis AI turns long-form videos into multiple engaging short clips in seconds. No advanced editing skills needed. Create scroll-stopping content with Klap AI _ try it free through the link in bio! @klap_ai\n\nKlap AI, AI video editor, AI clip generator, viral shorts, content creation tool, podcast clips, AI editing tool, faceless content, shorts automation, creator tools, video editing AI, viral clips AI, AI content creator, podcast to shorts, TikTok growth tool, short-form content, AI video tool 2026, clipping tool"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT20S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "47547",
+        "likeCount": "420",
+        "favoriteCount": "0",
+        "commentCount": "24"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "oMwnw4mszGh-ceNQtCN4YFDjYZE",
+      "id": "wGvBj5yPh-I",
+      "snippet": {
+        "publishedAt": "2025-12-22T18:07:17Z",
+        "channelId": "UCztCleP7j3q4FKlpvbRABsg",
+        "title": "I tested all the Top AI Video Tools, and the Winner IS NOT who you think it is!",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wGvBj5yPh-I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wGvBj5yPh-I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wGvBj5yPh-I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wGvBj5yPh-I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wGvBj5yPh-I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Brad Gaines - AI | Websites | Tools",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I tested all the Top AI Video Tools, and the Winner IS NOT who you think it is!",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT52S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3079",
+        "likeCount": "78",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 50,
+    "resultsPerPage": 50
+  }
+}

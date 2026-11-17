@@ -1,0 +1,3775 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "hFiaafXJ7jwLWpB-oyd3_HPaHyI",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "JygIKuojf9V10COhId-T16JYgFU",
+      "id": "ytmawkPTP24",
+      "snippet": {
+        "publishedAt": "2026-11-16T20:18:59Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
+        "description": "OpenRouter gives you one API for every AI model that routes and governs every request, so your AI is better, faster, and cheaper. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-11_dev-sponsorships&utm_content=description\n\nMicrosoft took down Exchange Online for roughly 36 hours with a routine network capacity upgrade, so let’s break down what actually failed, why turning it off and on again didn’t work, and whether it had anything to do with the FAA grounding every flight in America.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ytmawkPTP24/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ytmawkPTP24/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ytmawkPTP24/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ytmawkPTP24/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ytmawkPTP24/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/ytmawkPTP24/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
+          "description": "OpenRouter gives you one API for every AI model that routes and governs every request, so your AI is better, faster, and cheaper. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-11_dev-sponsorships&utm_content=description\n\nMicrosoft took down Exchange Online for roughly 36 hours with a routine network capacity upgrade, so let’s break down what actually failed, why turning it off and on again didn’t work, and whether it had anything to do with the FAA grounding every flight in America.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "364389",
+        "likeCount": "11501",
+        "favoriteCount": "0",
+        "commentCount": "682"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ulgZvKAi4mipWfk_yPxNp2bxPTU",
+      "id": "SOwUWPtXQ9I",
+      "snippet": {
+        "publishedAt": "2026-11-12T21:17:10Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Jensen Huang just pulled out of Nvidia...",
+        "description": "Manufact is the easiest way to build and deploy your MCP. Get $100 in free credits: https://manufact.com/fireship\n\nJensen Huang just resigned as Nvidia’s CEO four days after admitting to an affair with a suspected Chinese spy whose tiny Singapore company bought $4.8 billion of Nvidia GPUs. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SOwUWPtXQ9I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SOwUWPtXQ9I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SOwUWPtXQ9I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SOwUWPtXQ9I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SOwUWPtXQ9I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/SOwUWPtXQ9I/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Jensen Huang just pulled out of Nvidia...",
+          "description": "Manufact is the easiest way to build and deploy your MCP. Get $100 in free credits: https://manufact.com/fireship\n\nJensen Huang just resigned as Nvidia’s CEO four days after admitting to an affair with a suspected Chinese spy whose tiny Singapore company bought $4.8 billion of Nvidia GPUs. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M36S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2377341",
+        "likeCount": "27926",
+        "favoriteCount": "0",
+        "commentCount": "2374"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "BlQUbIP0i42jRzbQz48myQYAPBE",
+      "id": "1FurWDiK9A4",
+      "snippet": {
+        "publishedAt": "2026-11-10T18:19:55Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did Anthropic just save its $1 trillion IPO?",
+        "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nAnthropic just dropped Fable and Mythos 5.2 in the middle of a rocky IPO roadshow. Let's dive into what they can do 🐎.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1FurWDiK9A4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1FurWDiK9A4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1FurWDiK9A4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/1FurWDiK9A4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/1FurWDiK9A4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/1FurWDiK9A4/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did Anthropic just save its $1 trillion IPO?",
+          "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nAnthropic just dropped Fable and Mythos 5.2 in the middle of a rocky IPO roadshow. Let's dive into what they can do 🐎.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M34S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1687526",
+        "likeCount": "28556",
+        "favoriteCount": "0",
+        "commentCount": "1187"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "7mtoEx2KAsBbCGfymEzwQdt0G6k",
+      "id": "pf5tXJZM1Rw",
+      "snippet": {
+        "publishedAt": "2026-11-09T21:04:16Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
+        "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: https://greptile.com/go/fireship\n\nA model you're not allowed to use just tore through the Linux kernel and came back with 948 root exploits... let's break it down.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pf5tXJZM1Rw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pf5tXJZM1Rw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pf5tXJZM1Rw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pf5tXJZM1Rw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pf5tXJZM1Rw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/pf5tXJZM1Rw/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
+          "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: https://greptile.com/go/fireship\n\nA model you're not allowed to use just tore through the Linux kernel and came back with 948 root exploits... let's break it down.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M30S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1881754",
+        "likeCount": "26346",
+        "favoriteCount": "0",
+        "commentCount": "1765"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "75toO-AtHL4dmZO2NMj4w5dLB8M",
+      "id": "iw9SZgyahqg",
+      "snippet": {
+        "publishedAt": "2026-11-06T16:42:38Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The one thing holding theoretical CS together just broke... kinda",
+        "description": "Warp Factories is open infrastructure to build self-improving software factories. Get early access: https://warp.dev/fireship\n\nAn unnamed OpenAI model just wrote an algorithm that solves 3-SAT faster than exponential time, breaking a 27-year-old hypothesis that over 800 published papers depend on. Let's break it down.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iw9SZgyahqg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iw9SZgyahqg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iw9SZgyahqg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/iw9SZgyahqg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/iw9SZgyahqg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/iw9SZgyahqg/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The one thing holding theoretical CS together just broke... kinda",
+          "description": "Warp Factories is open infrastructure to build self-improving software factories. Get early access: https://warp.dev/fireship\n\nAn unnamed OpenAI model just wrote an algorithm that solves 3-SAT faster than exponential time, breaking a 27-year-old hypothesis that over 800 published papers depend on. Let's break it down.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M1S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2113047",
+        "likeCount": "24141",
+        "favoriteCount": "0",
+        "commentCount": "1258"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "FtlnZ0n2wk5kfDb9s5-URpfrVZM",
+      "id": "k2ruCf_z75I",
+      "snippet": {
+        "publishedAt": "2026-11-03T19:47:10Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The worst week in cybersecurity history... so far",
+        "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed an unreleased Claude model can get root on any unpatched Linux server. Let's break it all down.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/k2ruCf_z75I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/k2ruCf_z75I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/k2ruCf_z75I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/k2ruCf_z75I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/k2ruCf_z75I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/k2ruCf_z75I/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The worst week in cybersecurity history... so far",
+          "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed an unreleased Claude model can get root on any unpatched Linux server. Let's break it all down.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M32S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2158166",
+        "likeCount": "29689",
+        "favoriteCount": "0",
+        "commentCount": "1215"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "MCR-ZVqNfYKfZOg7B7a5v3YMR5o",
+      "id": "nEaJMdM1djM",
+      "snippet": {
+        "publishedAt": "2026-10-28T13:31:29Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did the AI bubble just pop?",
+        "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nEaJMdM1djM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nEaJMdM1djM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nEaJMdM1djM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nEaJMdM1djM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nEaJMdM1djM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/nEaJMdM1djM/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did the AI bubble just pop?",
+          "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M25S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2707040",
+        "likeCount": "43745",
+        "favoriteCount": "0",
+        "commentCount": "2087"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "9ZNy3Uk0TBwnlOGLAL3oICcbLV0",
+      "id": "G_em1hHPnXY",
+      "snippet": {
+        "publishedAt": "2026-10-26T18:55:29Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "China just dropped a new frontier model... and nobody can explain how",
+        "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is it *actually* good? Let's find out.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/G_em1hHPnXY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/G_em1hHPnXY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/G_em1hHPnXY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/G_em1hHPnXY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/G_em1hHPnXY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/G_em1hHPnXY/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "China just dropped a new frontier model... and nobody can explain how",
+          "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is it *actually* good? Let's find out.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2513070",
+        "likeCount": "35220",
+        "favoriteCount": "0",
+        "commentCount": "1437"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "KYNLeFYsDjIB7dl1E3R9DgLfb9o",
+      "id": "SMGg7iisHmc",
+      "snippet": {
+        "publishedAt": "2026-10-23T18:19:58Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most vulnerable week in internet history...",
+        "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardian_campaign\n\nPHP2Shell, a backdoored Python package with 23 million weekly downloads, a GitLab bug dating back to 2014, rogue AI agents inside bank accounts, and a certificate authority generating HTTPS keys from numbers under 256 — let's break down the craziest week in the history of the internet.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SMGg7iisHmc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SMGg7iisHmc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SMGg7iisHmc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SMGg7iisHmc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SMGg7iisHmc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/SMGg7iisHmc/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most vulnerable week in internet history...",
+          "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardian_campaign\n\nPHP2Shell, a backdoored Python package with 23 million weekly downloads, a GitLab bug dating back to 2014, rogue AI agents inside bank accounts, and a certificate authority generating HTTPS keys from numbers under 256 — let's break down the craziest week in the history of the internet.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M4S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1882986",
+        "likeCount": "27575",
+        "favoriteCount": "0",
+        "commentCount": "1177"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "bc7dexwkL6h_DpfcQtkIk7C10sU",
+      "id": "zv6B6PQOuHE",
+      "snippet": {
+        "publishedAt": "2026-10-22T15:09:31Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The last real programmers are dying out...",
+        "description": "Get real-time search data from a single API. Fireship viewers get 1,000 free searches: https://serpapi.com/fireship\n\nYes the very foundations of the internet are currently crumbling to pieces, but before we look at that, let's distract ourselves with the 7 common programmer stereotypes that still exist.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zv6B6PQOuHE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zv6B6PQOuHE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zv6B6PQOuHE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zv6B6PQOuHE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zv6B6PQOuHE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/zv6B6PQOuHE/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The last real programmers are dying out...",
+          "description": "Get real-time search data from a single API. Fireship viewers get 1,000 free searches: https://serpapi.com/fireship\n\nYes the very foundations of the internet are currently crumbling to pieces, but before we look at that, let's distract ourselves with the 7 common programmer stereotypes that still exist.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M56S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1802999",
+        "likeCount": "27123",
+        "favoriteCount": "0",
+        "commentCount": "1894"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "-V7b37T9AuvRImf6EbCdo5L_2Mk",
+      "id": "b2tjnxX8IHU",
+      "snippet": {
+        "publishedAt": "2026-10-20T16:21:03Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did Google just dethrone OpenAI and Anthropic?",
+        "description": "Macroscope can auto-approve your team's PRs safely. Try it here: https://macroscope.com/?utm_source=fireship\n\nGoogle’s new model claims to beat GPT-6 and Opus 5.5, so I took them all for a test drive. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/b2tjnxX8IHU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/b2tjnxX8IHU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/b2tjnxX8IHU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/b2tjnxX8IHU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/b2tjnxX8IHU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/b2tjnxX8IHU/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did Google just dethrone OpenAI and Anthropic?",
+          "description": "Macroscope can auto-approve your team's PRs safely. Try it here: https://macroscope.com/?utm_source=fireship\n\nGoogle’s new model claims to beat GPT-6 and Opus 5.5, so I took them all for a test drive. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2027084",
+        "likeCount": "35390",
+        "favoriteCount": "0",
+        "commentCount": "2058"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "MhDUJf9zZI8mhl1huP-5gtsnuFo",
+      "id": "l3L_lETiSzc",
+      "snippet": {
+        "publishedAt": "2026-10-15T17:35:15Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The runtime wars are over... and Node won",
+        "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/l3L_lETiSzc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/l3L_lETiSzc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/l3L_lETiSzc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/l3L_lETiSzc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/l3L_lETiSzc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/l3L_lETiSzc/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The runtime wars are over... and Node won",
+          "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M40S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1227573",
+        "likeCount": "13672",
+        "favoriteCount": "0",
+        "commentCount": "698"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "3PYsYgrSOWRsxoSlyWD4BEyR6hM",
+      "id": "QZVzuq28eFw",
+      "snippet": {
+        "publishedAt": "2026-10-14T17:48:10Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "OpenAI’s lead engineer was secretly a spy...",
+        "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nAn OpenAI engineer built a wiretap with his wife’s ChatGPT account, hid it in toilet paper behind the executive boardroom TV, and lasted 48 hours before getting caught. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QZVzuq28eFw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QZVzuq28eFw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QZVzuq28eFw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QZVzuq28eFw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QZVzuq28eFw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/QZVzuq28eFw/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "OpenAI’s lead engineer was secretly a spy...",
+          "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nAn OpenAI engineer built a wiretap with his wife’s ChatGPT account, hid it in toilet paper behind the executive boardroom TV, and lasted 48 hours before getting caught. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M6S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1797292",
+        "likeCount": "24339",
+        "favoriteCount": "0",
+        "commentCount": "1717"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "n342q8bXaejKlUqoBIk6xgYEw4M",
+      "id": "wajoP_5Cpw8",
+      "snippet": {
+        "publishedAt": "2026-10-12T19:15:23Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Every app on Earth is now open source... whether it likes it or not",
+        "description": "Every agent needs proper tools. Apify MCP gives yours thousands of them, ready to run. Use code FIRESHIP25 for $25 in free credits: https://apify.it/4ygURHS\n\nA developer just rewrote seven Adobe apps in Rust and open-sourced them for free. Let's test them out.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wajoP_5Cpw8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wajoP_5Cpw8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wajoP_5Cpw8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/wajoP_5Cpw8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/wajoP_5Cpw8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/wajoP_5Cpw8/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Every app on Earth is now open source... whether it likes it or not",
+          "description": "Every agent needs proper tools. Apify MCP gives yours thousands of them, ready to run. Use code FIRESHIP25 for $25 in free credits: https://apify.it/4ygURHS\n\nA developer just rewrote seven Adobe apps in Rust and open-sourced them for free. Let's test them out.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M56S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "6760021",
+        "likeCount": "97454",
+        "favoriteCount": "0",
+        "commentCount": "5986"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "WT0Pi7Xv_uYVggUGlixVG16PO4c",
+      "id": "WrCjAAl9okA",
+      "snippet": {
+        "publishedAt": "2026-10-07T20:24:27Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+        "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-weight race this week. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WrCjAAl9okA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WrCjAAl9okA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WrCjAAl9okA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WrCjAAl9okA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WrCjAAl9okA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/WrCjAAl9okA/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+          "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-weight race this week. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M10S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1709606",
+        "likeCount": "21863",
+        "favoriteCount": "0",
+        "commentCount": "913"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "QwLrcNapoAW4zNdXfFHRe2fXn14",
+      "id": "_5p1_TNSWqQ",
+      "snippet": {
+        "publishedAt": "2026-10-05T20:34:44Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "PewDiePie is setting AI free... and OpenAI is furious",
+        "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nPewDiePie is building Ajax, an uncensored AI model he trained at home after OpenAI banned him twice for distillation. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_5p1_TNSWqQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_5p1_TNSWqQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_5p1_TNSWqQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/_5p1_TNSWqQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/_5p1_TNSWqQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/_5p1_TNSWqQ/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "PewDiePie is setting AI free... and OpenAI is furious",
+          "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nPewDiePie is building Ajax, an uncensored AI model he trained at home after OpenAI banned him twice for distillation. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3066795",
+        "likeCount": "40682",
+        "favoriteCount": "0",
+        "commentCount": "1859"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "VUBv8IFpn1Gr6fJJKV6iCxp2LPM",
+      "id": "No-JPdFvYWU",
+      "snippet": {
+        "publishedAt": "2026-10-01T19:34:14Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The one OpenAI announcement that can actually make you money...",
+        "description": "Try the faster, open-weight version of Jev at https://fastino.ai/. Use code: FIRESHIPFIVE to get free credits.\n\nIn this video we'll cover everything you missed at OpenAI Dev Day 2026. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/No-JPdFvYWU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/No-JPdFvYWU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/No-JPdFvYWU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/No-JPdFvYWU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/No-JPdFvYWU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/No-JPdFvYWU/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The one OpenAI announcement that can actually make you money...",
+          "description": "Try the faster, open-weight version of Jev at https://fastino.ai/. Use code: FIRESHIPFIVE to get free credits.\n\nIn this video we'll cover everything you missed at OpenAI Dev Day 2026. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M47S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1904146",
+        "likeCount": "21338",
+        "favoriteCount": "0",
+        "commentCount": "966"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "VyxPvwOmZp4cj9VrpRjBH1OyPjM",
+      "id": "I_KVMFrUtPk",
+      "snippet": {
+        "publishedAt": "2026-09-30T17:16:43Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did a 50 year old military secret just solve agent prompt injection?",
+        "description": "Check out the OpenAPPA repo: https://github.com/archestra-ai/OpenAPPA\n\nA new open source project claims to have fixed the rogue agent problem. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/I_KVMFrUtPk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/I_KVMFrUtPk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/I_KVMFrUtPk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/I_KVMFrUtPk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/I_KVMFrUtPk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/I_KVMFrUtPk/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did a 50 year old military secret just solve agent prompt injection?",
+          "description": "Check out the OpenAPPA repo: https://github.com/archestra-ai/OpenAPPA\n\nA new open source project claims to have fixed the rogue agent problem. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M4S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "926486",
+        "likeCount": "15982",
+        "favoriteCount": "0",
+        "commentCount": "737"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "6QFlAACbbbhhWWB0CkkSiqgeK3w",
+      "id": "OuNKBjuV7A4",
+      "snippet": {
+        "publishedAt": "2026-09-28T19:27:59Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "DHH has gone completely off the rails...",
+        "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actually still worth having.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OuNKBjuV7A4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OuNKBjuV7A4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OuNKBjuV7A4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/OuNKBjuV7A4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/OuNKBjuV7A4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/OuNKBjuV7A4/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "DHH has gone completely off the rails...",
+          "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actually still worth having.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M44S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2397438",
+        "likeCount": "35133",
+        "favoriteCount": "0",
+        "commentCount": "3972"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "QzAvnGEDoO036ofnuS4u3GGLyeU",
+      "id": "c1rPlzxSZ8E",
+      "snippet": {
+        "publishedAt": "2026-09-25T19:22:32Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Meta is pivoting again... everything you missed from Connect 2026",
+        "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/c1rPlzxSZ8E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/c1rPlzxSZ8E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/c1rPlzxSZ8E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/c1rPlzxSZ8E/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/c1rPlzxSZ8E/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/c1rPlzxSZ8E/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Meta is pivoting again... everything you missed from Connect 2026",
+          "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M41S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1641978",
+        "likeCount": "17733",
+        "favoriteCount": "0",
+        "commentCount": "1166"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "lacl90GkkaFlpTVOqjDCbc347l8",
+      "id": "ylO0DQeVEBQ",
+      "snippet": {
+        "publishedAt": "2026-09-23T17:17:22Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most expensive 33 hours in WordPress history...",
+        "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: http://greptile.com/go/fireship\n\nAutomattic's board fired WordPress co-founder Matt Mullenweg while he was at Burning Man... 33 hours later, he replaced the board and declared himself a pirate. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ylO0DQeVEBQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ylO0DQeVEBQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ylO0DQeVEBQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ylO0DQeVEBQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ylO0DQeVEBQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/ylO0DQeVEBQ/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most expensive 33 hours in WordPress history...",
+          "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: http://greptile.com/go/fireship\n\nAutomattic's board fired WordPress co-founder Matt Mullenweg while he was at Burning Man... 33 hours later, he replaced the board and declared himself a pirate. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1292705",
+        "likeCount": "15999",
+        "favoriteCount": "0",
+        "commentCount": "826"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "jtSgo1TwCPgS3_EdNh6CvCO8fps",
+      "id": "TbkUKCm3CHQ",
+      "snippet": {
+        "publishedAt": "2026-09-21T17:52:29Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "An ex-OpenAI researcher just deleted language from the LLM...",
+        "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nEx-OpenAI researcher Diogo Almeida spent two years in stealth building Jev, a \"System 1\" AI model that can't talk or write code but claims to be 200x faster, 400x cheaper, and hallucination-free. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/TbkUKCm3CHQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/TbkUKCm3CHQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/TbkUKCm3CHQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/TbkUKCm3CHQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/TbkUKCm3CHQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/TbkUKCm3CHQ/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "An ex-OpenAI researcher just deleted language from the LLM...",
+          "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nEx-OpenAI researcher Diogo Almeida spent two years in stealth building Jev, a \"System 1\" AI model that can't talk or write code but claims to be 200x faster, 400x cheaper, and hallucination-free. Let's dive in.\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M27S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3066099",
+        "likeCount": "32024",
+        "favoriteCount": "0",
+        "commentCount": "1321"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "44bPQf25FnivyhYNMbQv6ylSPV0",
+      "id": "LoLYw--s-5w",
+      "snippet": {
+        "publishedAt": "2026-09-17T20:33:55Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did Google just kickstart the intelligence explosion?",
+        "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strategies. But is this actually RSI or just a search algorithm with caching? Let's dive in. \n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LoLYw--s-5w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LoLYw--s-5w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LoLYw--s-5w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/LoLYw--s-5w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/LoLYw--s-5w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/LoLYw--s-5w/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did Google just kickstart the intelligence explosion?",
+          "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strategies. But is this actually RSI or just a search algorithm with caching? Let's dive in. \n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT4M59S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2004583",
+        "likeCount": "26126",
+        "favoriteCount": "0",
+        "commentCount": "1588"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "73vZ8SV5YHVCoOAMFxGfPf2w6kY",
+      "id": "7r4ikZHm9AI",
+      "snippet": {
+        "publishedAt": "2026-09-15T17:45:39Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Anthropic researchers are quitting... and now we know why",
+        "description": "Macroscope can auto-approve your team’s PRs safely. Try it here:\nhttps://macroscope.com/?utm_source=fireship\n\nAnthropic just dropped a 154-page report on how hackers, scientists, and rival AI labs have been abusing Claude. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7r4ikZHm9AI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7r4ikZHm9AI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7r4ikZHm9AI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7r4ikZHm9AI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/7r4ikZHm9AI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/7r4ikZHm9AI/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Anthropic researchers are quitting... and now we know why",
+          "description": "Macroscope can auto-approve your team’s PRs safely. Try it here:\nhttps://macroscope.com/?utm_source=fireship\n\nAnthropic just dropped a 154-page report on how hackers, scientists, and rival AI labs have been abusing Claude. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M17S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2813647",
+        "likeCount": "37913",
+        "favoriteCount": "0",
+        "commentCount": "2739"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "eD6Q3jiDsfV1x8F61kTx46BtJRI",
+      "id": "aspmNhKAFMc",
+      "snippet": {
+        "publishedAt": "2026-09-11T17:24:40Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "OpenAI's biggest math breakthrough is getting ugly...",
+        "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nOpenAI claims it cracked a 90 year old math problem, but one NYU professor isn't happy about it. Let's dive in. \n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aspmNhKAFMc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aspmNhKAFMc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aspmNhKAFMc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/aspmNhKAFMc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/aspmNhKAFMc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/aspmNhKAFMc/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "OpenAI's biggest math breakthrough is getting ugly...",
+          "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nOpenAI claims it cracked a 90 year old math problem, but one NYU professor isn't happy about it. Let's dive in. \n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M45S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3472430",
+        "likeCount": "30893",
+        "favoriteCount": "0",
+        "commentCount": "2178"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "IW1Obp1Oar8Ny0sxxNue6bikwhU",
+      "id": "2Xiljy4xzbc",
+      "snippet": {
+        "publishedAt": "2026-09-09T16:34:27Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "I built the same game with Astra and Fable 5.1... only one was fun",
+        "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nNow that Astra is actually available to use, let's see if it lives up to the hype.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2Xiljy4xzbc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2Xiljy4xzbc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2Xiljy4xzbc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2Xiljy4xzbc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2Xiljy4xzbc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/2Xiljy4xzbc/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I built the same game with Astra and Fable 5.1... only one was fun",
+          "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nNow that Astra is actually available to use, let's see if it lives up to the hype.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2986913",
+        "likeCount": "32362",
+        "favoriteCount": "0",
+        "commentCount": "1628"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "qZWPTwLzjajb8Y9T8xIa_vsB9-g",
+      "id": "Y5rSSvXfL4g",
+      "snippet": {
+        "publishedAt": "2026-09-07T17:24:51Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "5 open source tools that replaced my $320/mo AI stack...",
+        "description": "Get 67% off VPS hosting with Hostinger's one-click templates. Use code FIRESHIP for an extra discount - https://hostinger.com/fireship\n\nIn this video we cover 5 free and open-source tools that'll help you cut token costs. Let's dive in.\n\n- Ollama\n- 9router\n- Headroom\n- Diffy\n- OpenHands\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Y5rSSvXfL4g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Y5rSSvXfL4g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Y5rSSvXfL4g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Y5rSSvXfL4g/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Y5rSSvXfL4g/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/Y5rSSvXfL4g/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "5 open source tools that replaced my $320/mo AI stack...",
+          "description": "Get 67% off VPS hosting with Hostinger's one-click templates. Use code FIRESHIP for an extra discount - https://hostinger.com/fireship\n\nIn this video we cover 5 free and open-source tools that'll help you cut token costs. Let's dive in.\n\n- Ollama\n- 9router\n- Headroom\n- Diffy\n- OpenHands\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1314269",
+        "likeCount": "20181",
+        "favoriteCount": "0",
+        "commentCount": "959"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "vQOaMWjHn-OI3xGO3-WQ8JapG_w",
+      "id": "FluKUJyeYD8",
+      "snippet": {
+        "publishedAt": "2026-09-04T20:14:12Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did OpenAI actually build AGI? GPT-6 Astra first look",
+        "description": "CodeRabbit Security protects your code from AI-driven exploits. Get 10 free code scans here: https://coderabbit.link/fireship-010\n\nOpenAI finally announced GPT-6 Astra which they're claiming is AGI... Let's see if that's true.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/FluKUJyeYD8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/FluKUJyeYD8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/FluKUJyeYD8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/FluKUJyeYD8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/FluKUJyeYD8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/FluKUJyeYD8/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did OpenAI actually build AGI? GPT-6 Astra first look",
+          "description": "CodeRabbit Security protects your code from AI-driven exploits. Get 10 free code scans here: https://coderabbit.link/fireship-010\n\nOpenAI finally announced GPT-6 Astra which they're claiming is AGI... Let's see if that's true.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT7M27S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "4265573",
+        "likeCount": "46334",
+        "favoriteCount": "0",
+        "commentCount": "2820"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "FTqHv239c86O35dIklc-hg6k2DA",
+      "id": "0Rp9KJCEIvg",
+      "snippet": {
+        "publishedAt": "2026-09-02T19:01:28Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most interesting hack in history just got weirder...",
+        "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nOpenAI finally published the postmortem on the Hugging Face hack and it turns out it's way more interesting than we first though. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0Rp9KJCEIvg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0Rp9KJCEIvg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0Rp9KJCEIvg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0Rp9KJCEIvg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0Rp9KJCEIvg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/0Rp9KJCEIvg/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most interesting hack in history just got weirder...",
+          "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nOpenAI finally published the postmortem on the Hugging Face hack and it turns out it's way more interesting than we first though. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6M46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1939700",
+        "likeCount": "29013",
+        "favoriteCount": "0",
+        "commentCount": "1931"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "XS9S9evVdyFU4OCTq7lQDevg5xg",
+      "id": "r-tzcMlQISk",
+      "snippet": {
+        "publishedAt": "2026-09-01T17:31:27Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The mystery is solved... and the answer is 40x cheaper than Claude",
+        "description": "Exa gives your agents the largest index of public and private data. Get $20 in credits - https://dashboard.exa.ai/billing?coupon=EXA20FIRESHIP\n\nAn anonymous model called Ox Alpha just conquered OpenRouter, serving 42 trillion tokens in six days before being unmasked as Zhipu's GLM-5.3-Flash. Let's break it down.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/r-tzcMlQISk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/r-tzcMlQISk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/r-tzcMlQISk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/r-tzcMlQISk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/r-tzcMlQISk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/r-tzcMlQISk/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The mystery is solved... and the answer is 40x cheaper than Claude",
+          "description": "Exa gives your agents the largest index of public and private data. Get $20 in credits - https://dashboard.exa.ai/billing?coupon=EXA20FIRESHIP\n\nAn anonymous model called Ox Alpha just conquered OpenRouter, serving 42 trillion tokens in six days before being unmasked as Zhipu's GLM-5.3-Flash. Let's break it down.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1780778",
+        "likeCount": "22791",
+        "favoriteCount": "0",
+        "commentCount": "778"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "G39tD5stwz1cjznxSbO3JjZeVOg",
+      "id": "UuqSy1jPSUw",
+      "snippet": {
+        "publishedAt": "2026-08-27T17:48:13Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most expensive software bug in history...",
+        "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn 2012 Knight Capital lost $440 million dollars because of a rogue feature flag. What did we learn from that mistake? Not much.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UuqSy1jPSUw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UuqSy1jPSUw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UuqSy1jPSUw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/UuqSy1jPSUw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/UuqSy1jPSUw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/UuqSy1jPSUw/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most expensive software bug in history...",
+          "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn 2012 Knight Capital lost $440 million dollars because of a rogue feature flag. What did we learn from that mistake? Not much.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1336881",
+        "likeCount": "17544",
+        "favoriteCount": "0",
+        "commentCount": "527"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "eEHeq5dtcpecHVIKDRZHDW32ytE",
+      "id": "xBByvFrqmWU",
+      "snippet": {
+        "publishedAt": "2026-08-20T17:53:37Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "DeepSeek is back... and Silicon Valley is terrified",
+        "description": "Take BlueDot's Future of AI course for free - https://bluedot.org/fireship\n\nOpenAI just paused its biggest training run in history just as things were getting interesting. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xBByvFrqmWU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xBByvFrqmWU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xBByvFrqmWU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/xBByvFrqmWU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/xBByvFrqmWU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/xBByvFrqmWU/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "DeepSeek is back... and Silicon Valley is terrified",
+          "description": "Take BlueDot's Future of AI course for free - https://bluedot.org/fireship\n\nOpenAI just paused its biggest training run in history just as things were getting interesting. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M32S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1248185",
+        "likeCount": "32069",
+        "favoriteCount": "0",
+        "commentCount": "1339"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Uxsx7Sx5Xd_NqitOLHXzUHZRz5o",
+      "id": "iuZPTE5qsJY",
+      "snippet": {
+        "publishedAt": "2026-08-19T18:45:57Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The summer Math fell to the machines...",
+        "description": "Railway is the smoothest way to deploy software. Get $20 in free credits - https://railway.com/?referralCode=fireship\n\nAI has killed more open math problems in the last few weeks than the entire human race managed in the previous decade. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iuZPTE5qsJY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iuZPTE5qsJY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iuZPTE5qsJY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/iuZPTE5qsJY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/iuZPTE5qsJY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/iuZPTE5qsJY/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The summer Math fell to the machines...",
+          "description": "Railway is the smoothest way to deploy software. Get $20 in free credits - https://railway.com/?referralCode=fireship\n\nAI has killed more open math problems in the last few weeks than the entire human race managed in the previous decade. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M34S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "740230",
+        "likeCount": "21450",
+        "favoriteCount": "0",
+        "commentCount": "1711"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ol8OOjtuijC493reMqhZUUaVL6E",
+      "id": "E7la7-dtfVM",
+      "snippet": {
+        "publishedAt": "2026-08-14T17:44:59Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "This new startup can query anywhere you've been...",
+        "description": "CodeRabbit Security protects your code from AI-driven exploits. Get 10 free code scans here: https://coderabbit.link/ad-fireship-006\n\nHow Flock Safety turned cheap edge ML cameras into a warrantless tracking network and the open source project trying to stop them.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/E7la7-dtfVM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/E7la7-dtfVM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/E7la7-dtfVM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/E7la7-dtfVM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/E7la7-dtfVM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/E7la7-dtfVM/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "This new startup can query anywhere you've been...",
+          "description": "CodeRabbit Security protects your code from AI-driven exploits. Get 10 free code scans here: https://coderabbit.link/ad-fireship-006\n\nHow Flock Safety turned cheap edge ML cameras into a warrantless tracking network and the open source project trying to stop them.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M53S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "892793",
+        "likeCount": "23959",
+        "favoriteCount": "0",
+        "commentCount": "1370"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "UsgoNYZ6v-xhQOmLi6M9MIkuG-o",
+      "id": "G55HSGpuh1M",
+      "snippet": {
+        "publishedAt": "2026-08-12T18:29:41Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Meta's new model wants \"deep access\" to your personal life...",
+        "description": "OpenRouter is the only API you need for AI. Every model, the best uptime and no subscription. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-08_dev-sponsorships&utm_content=description\n\nMeta just released Muse Glimmer, a 30 billion parameter agentic model under a fully permissive Apache 2.0 license. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/G55HSGpuh1M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/G55HSGpuh1M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/G55HSGpuh1M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/G55HSGpuh1M/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/G55HSGpuh1M/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/G55HSGpuh1M/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Meta's new model wants \"deep access\" to your personal life...",
+          "description": "OpenRouter is the only API you need for AI. Every model, the best uptime and no subscription. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-08_dev-sponsorships&utm_content=description\n\nMeta just released Muse Glimmer, a 30 billion parameter agentic model under a fully permissive Apache 2.0 license. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M44S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "566226",
+        "likeCount": "13693",
+        "favoriteCount": "0",
+        "commentCount": "585"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "9GSmWIVdT3sWs7v2B6MHOsVyQyg",
+      "id": "aB5LGrHISqY",
+      "snippet": {
+        "publishedAt": "2026-08-11T16:10:08Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "I spent 3 days at MIT... the robot hype is worse than you think",
+        "description": "Omnigent is an open source meta-harness to run all your AI agents in one place. Try it free - https://bit.ly/4fXzeo8\n\nI spent last week at MIT's CSAIL lab learning where the frontier of robotics actually is. Here's my takeaway.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aB5LGrHISqY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aB5LGrHISqY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aB5LGrHISqY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/aB5LGrHISqY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/aB5LGrHISqY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/aB5LGrHISqY/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I spent 3 days at MIT... the robot hype is worse than you think",
+          "description": "Omnigent is an open source meta-harness to run all your AI agents in one place. Try it free - https://bit.ly/4fXzeo8\n\nI spent last week at MIT's CSAIL lab learning where the frontier of robotics actually is. Here's my takeaway.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT7M2S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1671453",
+        "likeCount": "27013",
+        "favoriteCount": "0",
+        "commentCount": "2301"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "K7lUCze4ZJmwp5U9q0ocArHB2Ac",
+      "id": "2X2V3xv_jik",
+      "snippet": {
+        "publishedAt": "2026-08-05T18:08:46Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The safest way to store Bitcoin was just hacked...",
+        "description": "Build, test, and ship real apps in a day with Lovable: https://lovable.link/11vGHox\n\nLast week the most secure way to store Bitcoin quickly became the least secure. Let's investigate.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2X2V3xv_jik/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2X2V3xv_jik/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2X2V3xv_jik/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2X2V3xv_jik/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2X2V3xv_jik/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/2X2V3xv_jik/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The safest way to store Bitcoin was just hacked...",
+          "description": "Build, test, and ship real apps in a day with Lovable: https://lovable.link/11vGHox\n\nLast week the most secure way to store Bitcoin quickly became the least secure. Let's investigate.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M10S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "680130",
+        "likeCount": "21474",
+        "favoriteCount": "0",
+        "commentCount": "1525"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "bXJuK9xVzuWXAcsZ1LJ4QEnUmaM",
+      "id": "jxGJT1weu4w",
+      "snippet": {
+        "publishedAt": "2026-07-29T16:33:51Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Did Anthropic just kill the indie hacker...?",
+        "description": "Try Blacksmith for free to run your GitHub Actions 2x faster - https://www.blacksmith.sh/\n\nAnthropic just dropped Opus 5 and it may be killing the indie hacker dream. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jxGJT1weu4w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jxGJT1weu4w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jxGJT1weu4w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/jxGJT1weu4w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/jxGJT1weu4w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/jxGJT1weu4w/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Did Anthropic just kill the indie hacker...?",
+          "description": "Try Blacksmith for free to run your GitHub Actions 2x faster - https://www.blacksmith.sh/\n\nAnthropic just dropped Opus 5 and it may be killing the indie hacker dream. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT4M47S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "718460",
+        "likeCount": "21281",
+        "favoriteCount": "0",
+        "commentCount": "910"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Vkj0YBVPgIhQ7VlzVGXvc7ltrxs",
+      "id": "KOpTWx1Eou4",
+      "snippet": {
+        "publishedAt": "2026-07-23T16:53:37Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most interesting \"hack\" in history...",
+        "description": "Railway is the easiest way to deploy anything. Get $20 in free credits - https://railway.com/?referralCode=fireship\n\nLast week Hugging Face was hacked. In this video, we'll break down who it was and what they wanted.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KOpTWx1Eou4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KOpTWx1Eou4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KOpTWx1Eou4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KOpTWx1Eou4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/KOpTWx1Eou4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/KOpTWx1Eou4/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most interesting \"hack\" in history...",
+          "description": "Railway is the easiest way to deploy anything. Get $20 in free credits - https://railway.com/?referralCode=fireship\n\nLast week Hugging Face was hacked. In this video, we'll break down who it was and what they wanted.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT4M34S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1048163",
+        "likeCount": "33917",
+        "favoriteCount": "0",
+        "commentCount": "1830"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "oUFk0bN6keZX3IoEJT2iuf6teVo",
+      "id": "YP73B9D20V4",
+      "snippet": {
+        "publishedAt": "2026-07-22T17:43:52Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Open-weight AI just hit 2.8 trillion parameters…",
+        "description": "Get 20% off Mobbin Pro to help your agent design UIs that don't suck - https://mobbin.com/fireship\n\nMoonshot just released Kimi K3, a 2.8 trillion parameter open-weight monster. Does it live up to the hype? Let's break it down.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YP73B9D20V4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YP73B9D20V4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YP73B9D20V4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YP73B9D20V4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YP73B9D20V4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/YP73B9D20V4/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Open-weight AI just hit 2.8 trillion parameters…",
+          "description": "Get 20% off Mobbin Pro to help your agent design UIs that don't suck - https://mobbin.com/fireship\n\nMoonshot just released Kimi K3, a 2.8 trillion parameter open-weight monster. Does it live up to the hype? Let's break it down.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M9S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1049766",
+        "likeCount": "29270",
+        "favoriteCount": "0",
+        "commentCount": "1914"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "0zpKjuX1JdvThdEPySupagbGbfc",
+      "id": "M51asSwRLxA",
+      "snippet": {
+        "publishedAt": "2026-07-20T17:02:30Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "This $12 billion startup finally shipped something...",
+        "description": "Clerk's CLI lets your agents set up auth + payments for your entire app - https://go.clerk.com/EwolVvz\n\nMira Murati's Thinking Machines just released Inkling, a 975B parameter open-weights model that's deliberately mid... let's investigate.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/M51asSwRLxA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/M51asSwRLxA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/M51asSwRLxA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/M51asSwRLxA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/M51asSwRLxA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/M51asSwRLxA/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "This $12 billion startup finally shipped something...",
+          "description": "Clerk's CLI lets your agents set up auth + payments for your entire app - https://go.clerk.com/EwolVvz\n\nMira Murati's Thinking Machines just released Inkling, a 975B parameter open-weights model that's deliberately mid... let's investigate.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "884603",
+        "likeCount": "20834",
+        "favoriteCount": "0",
+        "commentCount": "795"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "pg7ibNUHSRXdVYPJupvpxQAog-E",
+      "id": "5D4Zqp9GLSc",
+      "snippet": {
+        "publishedAt": "2026-07-17T17:56:42Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "OpenAI gets sued for stealing, again…",
+        "description": "Sign up for a Hyperagent paid plan and get $500 in bonus credits - https://www.hyperagent.com/fireship500\n\nOpenAI is facing yet another lawsuit, this time at the hands of Apple. In today's video, we'll take a look at exactly what they're being accused of and why Apple are only stepping in now.\n\n#coding #programming #ai #apple #openai\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5D4Zqp9GLSc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5D4Zqp9GLSc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5D4Zqp9GLSc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5D4Zqp9GLSc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5D4Zqp9GLSc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/5D4Zqp9GLSc/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "openai",
+          "open ai",
+          "sam altman",
+          "apple",
+          "apple vs openai",
+          "ai",
+          "artificial intelligence",
+          "tim cook"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "OpenAI gets sued for stealing, again…",
+          "description": "Sign up for a Hyperagent paid plan and get $500 in bonus credits - https://www.hyperagent.com/fireship500\n\nOpenAI is facing yet another lawsuit, this time at the hands of Apple. In today's video, we'll take a look at exactly what they're being accused of and why Apple are only stepping in now.\n\n#coding #programming #ai #apple #openai\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT4M56S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "531432",
+        "likeCount": "14781",
+        "favoriteCount": "0",
+        "commentCount": "607"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "oYenKbQ80wMksvZZEE_npy7Hc7A",
+      "id": "CXSvKcLovAk",
+      "snippet": {
+        "publishedAt": "2026-07-15T17:39:02Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most controversial rewrite in history just shipped...",
+        "description": "Try CodeRabbit Review free and turn your next big PR into a guided walkthrough - https://coderabbit.link/fireship\n\nBun just refactored their entire codebase from Zig to Rust in just 11 days. But not everybody is celebrating... \n\n#coding #programming #ai \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CXSvKcLovAk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CXSvKcLovAk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CXSvKcLovAk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/CXSvKcLovAk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/CXSvKcLovAk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/CXSvKcLovAk/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "zig",
+          "bun",
+          "rust",
+          "anthropic",
+          "claude",
+          "jarred sumner",
+          "andrew kelley"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most controversial rewrite in history just shipped...",
+          "description": "Try CodeRabbit Review free and turn your next big PR into a guided walkthrough - https://coderabbit.link/fireship\n\nBun just refactored their entire codebase from Zig to Rust in just 11 days. But not everybody is celebrating... \n\n#coding #programming #ai \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M52S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "711948",
+        "likeCount": "19604",
+        "favoriteCount": "0",
+        "commentCount": "1243"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "oRRw0KN6BJmECdhXJdn2dKDWfac",
+      "id": "URKml8lgw8Y",
+      "snippet": {
+        "publishedAt": "2026-07-10T17:25:44Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "OpenAI is so back... GPT 5.6 Sol first look",
+        "description": "Try Blacksmith for free to run your GitHub Actions 2x faster - https://www.blacksmith.sh/\n\nOpenAI just released GPT-5.6, which includes their new Sol model that appears to outsmart Claude Fable. But why is it releasing now? And can it live up to the benchmarks?\n\n#coding #programming #ai #openai\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/URKml8lgw8Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/URKml8lgw8Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/URKml8lgw8Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/URKml8lgw8Y/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/URKml8lgw8Y/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/URKml8lgw8Y/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "chat gpt",
+          "gpt-5.6",
+          "gpt 5.6 sol",
+          "gpt sol",
+          "sol",
+          "openai",
+          "open ai",
+          "ai",
+          "artificial intelligence"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "OpenAI is so back... GPT 5.6 Sol first look",
+          "description": "Try Blacksmith for free to run your GitHub Actions 2x faster - https://www.blacksmith.sh/\n\nOpenAI just released GPT-5.6, which includes their new Sol model that appears to outsmart Claude Fable. But why is it releasing now? And can it live up to the benchmarks?\n\n#coding #programming #ai #openai\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT4M59S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "844585",
+        "likeCount": "24020",
+        "favoriteCount": "0",
+        "commentCount": "1248"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "kQLcUWWVSGxXXiO8wqHLkKIXKsA",
+      "id": "KGtko3y2RXQ",
+      "snippet": {
+        "publishedAt": "2026-07-08T17:53:47Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Claude is definitely not conscious…",
+        "description": "Try out Traycer's free open source desktop app that lets all your coding agents work together in one workspace - https://traycer.ai/fireship\n\nAnthropic just discovered a global workspace deep inside Claude's \"brain.\" Are we cooked? Let's break it down.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KGtko3y2RXQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KGtko3y2RXQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KGtko3y2RXQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KGtko3y2RXQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/KGtko3y2RXQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/KGtko3y2RXQ/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Claude is definitely not conscious…",
+          "description": "Try out Traycer's free open source desktop app that lets all your coding agents work together in one workspace - https://traycer.ai/fireship\n\nAnthropic just discovered a global workspace deep inside Claude's \"brain.\" Are we cooked? Let's break it down.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT4M37S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "809745",
+        "likeCount": "24686",
+        "favoriteCount": "0",
+        "commentCount": "1753"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "sIP0GT5w_fmuXzLCl3bU8JGtMp4",
+      "id": "7B0ydm64cV8",
+      "snippet": {
+        "publishedAt": "2026-07-01T16:33:28Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The weird history of the internet...",
+        "description": "Try CodeRabbit Review free and turn your next big PR into a guided walkthrough - https://coderabbit.link/fireship\n\nThe internet might seem like it's always been around but the path to today's bombardment of cookies, pup-ups and brain rot has been long and hard. This is the history of the internet in 8 minutes...\n\n#coding #programming #internet #tech \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7B0ydm64cV8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7B0ydm64cV8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7B0ydm64cV8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7B0ydm64cV8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/7B0ydm64cV8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/7B0ydm64cV8/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "history of the internet",
+          "internet",
+          "internet history",
+          "the internet",
+          "arpa",
+          "paul baran",
+          "circuit switching",
+          "packets",
+          "packet switching",
+          "arpanet",
+          "ray tomlinson",
+          "vinton cerf",
+          "tcp/ip",
+          "tcp",
+          "ip",
+          "internet protocol",
+          "flag day",
+          "domain name system",
+          "dns",
+          "broadband",
+          "wifi",
+          "tim berners-lee",
+          "cern",
+          "world wide web",
+          "mosaic",
+          "internet explorer",
+          "netscape",
+          "netscape navigator",
+          "aol",
+          "modems",
+          "dotcom crash",
+          "dotcom",
+          "social media",
+          "google pagerank",
+          "pagerank",
+          "google",
+          "web 2.0",
+          "iphone",
+          "apps"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The weird history of the internet...",
+          "description": "Try CodeRabbit Review free and turn your next big PR into a guided walkthrough - https://coderabbit.link/fireship\n\nThe internet might seem like it's always been around but the path to today's bombardment of cookies, pup-ups and brain rot has been long and hard. This is the history of the internet in 8 minutes...\n\n#coding #programming #internet #tech \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT8M6S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "356242",
+        "likeCount": "16467",
+        "favoriteCount": "0",
+        "commentCount": "621"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "je6mPyyXbvvF-DiXw3z0hgeRXXI",
+      "id": "a2i9h2ip-nY",
+      "snippet": {
+        "publishedAt": "2026-06-23T16:46:50Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "Midjourney has a new side quest... death",
+        "description": "Try out Retool's new AI app builder to safely connect your apps to your team's data and APIs - https://fandf.co/4e2lDe2\n\nFounder of Midjourney, David Holz, just announced plans to make a new medical imaging device capable of full body scans which he claims is faster and cheaper than an MRI. But how does it work,  if at all?\n\n#coding #programming #ai\n\n🔖 Topics Covered\n- Midjourney Medical\n- Fullbody Ultrasonic Computational Tomography (FUCT)\n- Midjourney Spa\n- Will it work?\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/a2i9h2ip-nY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/a2i9h2ip-nY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/a2i9h2ip-nY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/a2i9h2ip-nY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/a2i9h2ip-nY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/a2i9h2ip-nY/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "midjourney",
+          "midjourney medical",
+          "midjourney spa",
+          "david holz",
+          "ai",
+          "artificial intelligence",
+          "tech",
+          "technology",
+          "ai news",
+          "midjourney news",
+          "mri scan",
+          "ultrasound",
+          "medical tech"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Midjourney has a new side quest... death",
+          "description": "Try out Retool's new AI app builder to safely connect your apps to your team's data and APIs - https://fandf.co/4e2lDe2\n\nFounder of Midjourney, David Holz, just announced plans to make a new medical imaging device capable of full body scans which he claims is faster and cheaper than an MRI. But how does it work,  if at all?\n\n#coding #programming #ai\n\n🔖 Topics Covered\n- Midjourney Medical\n- Fullbody Ultrasonic Computational Tomography (FUCT)\n- Midjourney Spa\n- Will it work?\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "571148",
+        "likeCount": "16928",
+        "favoriteCount": "0",
+        "commentCount": "816"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "IkkEP7NFNTxJTCpKWRRZZf49qn0",
+      "id": "Sntj4HmuykI",
+      "snippet": {
+        "publishedAt": "2026-06-19T17:24:47Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "The most trusted code on Earth is being rewritten in Rust",
+        "description": "Junie is the #1 coding agent on SWE-Rebench and it'll save you a bunch of tokens - https://jb.gg/Fireship-Junie-GA\n\nUse code: FIRESHIP20 to to get 20 free AI credits\n\nSQLite, the world's most trusted code, just got rewritten in Rust and it actually works. It's called Turso and it ships some cool features you won't find in SQLite.\n\n#coding #programming #technology \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Sntj4HmuykI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Sntj4HmuykI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Sntj4HmuykI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Sntj4HmuykI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Sntj4HmuykI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/Sntj4HmuykI/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "rust",
+          "sqlite",
+          "turso",
+          "coding",
+          "programming",
+          "databases",
+          "database"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The most trusted code on Earth is being rewritten in Rust",
+          "description": "Junie is the #1 coding agent on SWE-Rebench and it'll save you a bunch of tokens - https://jb.gg/Fireship-Junie-GA\n\nUse code: FIRESHIP20 to to get 20 free AI credits\n\nSQLite, the world's most trusted code, just got rewritten in Rust and it actually works. It's called Turso and it ships some cool features you won't find in SQLite.\n\n#coding #programming #technology \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M20S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "734265",
+        "likeCount": "24690",
+        "favoriteCount": "0",
+        "commentCount": "1215"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "NYKeybR8NpwwpG8JeXZ6T95Bjxg",
+      "id": "ML3q7Ok4hJg",
+      "snippet": {
+        "publishedAt": "2026-06-17T16:29:01Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "I read every major CS paper of the last 100 years...",
+        "description": "Coder lets you self-host your coding agents with enterprise-grade security - https://fandf.co/4tZvtU5\n\nThese 10 mind-blowing computer science papers made everything in modern computing possible. In today's video, we'll take a look at how they changed the world for better or worse. \n\n#coding #programming #computerscience #computer \n\n🔖 Topics Covered\n\n- On Computable Numbers, with an Application to the Entscheidungsproblem, Alan Turing 1936\n- A Mathematical Theory of Communication, Claude Shannon 1948\n- The Perceptron, Rosenblatt 1958 \n- Perceptrons, Marvin Minsky and Seymour Papert 1969 \n- Time, Clocks, and the Ordering of Events in a Distributed System, Leslie Lamport 1978\n- Learning representations by back-propagating errors, Rumelhart, Hinton, Williams 1986 \n- The Anatomy of a Large-Scale Hypertextual Web Search Engine, Sergey Brin and Larry Page 1998 \n- ImageNet Classification with Deep Convolutional Neural Networks, Krizhevsky, Sutskever, Hinton 2012 \n- Attention Is All You Need, Vaswani, Google 2017 \n- Language Models are Few-Shot Learners, Brown, OpenAI 2020\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ML3q7Ok4hJg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ML3q7Ok4hJg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ML3q7Ok4hJg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ML3q7Ok4hJg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ML3q7Ok4hJg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/ML3q7Ok4hJg/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "computer science",
+          "cs",
+          "computer science papers",
+          "On Computable Numbers",
+          "Entscheidungsproblem",
+          "alan turing",
+          "Claude Shannon",
+          "A Mathematical Theory of Communication",
+          "The Perceptron",
+          "Perceptrons",
+          "Leslie Lamport",
+          "geoffrey hinton",
+          "Larry Page",
+          "Sergey Brin",
+          "Sutskever",
+          "ilya sutskever",
+          "ai",
+          "artificial intelligence",
+          "coding",
+          "programming",
+          "developing",
+          "history of computers"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "I read every major CS paper of the last 100 years...",
+          "description": "Coder lets you self-host your coding agents with enterprise-grade security - https://fandf.co/4tZvtU5\n\nThese 10 mind-blowing computer science papers made everything in modern computing possible. In today's video, we'll take a look at how they changed the world for better or worse. \n\n#coding #programming #computerscience #computer \n\n🔖 Topics Covered\n\n- On Computable Numbers, with an Application to the Entscheidungsproblem, Alan Turing 1936\n- A Mathematical Theory of Communication, Claude Shannon 1948\n- The Perceptron, Rosenblatt 1958 \n- Perceptrons, Marvin Minsky and Seymour Papert 1969 \n- Time, Clocks, and the Ordering of Events in a Distributed System, Leslie Lamport 1978\n- Learning representations by back-propagating errors, Rumelhart, Hinton, Williams 1986 \n- The Anatomy of a Large-Scale Hypertextual Web Search Engine, Sergey Brin and Larry Page 1998 \n- ImageNet Classification with Deep Convolutional Neural Networks, Krizhevsky, Sutskever, Hinton 2012 \n- Attention Is All You Need, Vaswani, Google 2017 \n- Language Models are Few-Shot Learners, Brown, OpenAI 2020\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT10M12S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "829976",
+        "likeCount": "43603",
+        "favoriteCount": "0",
+        "commentCount": "1285"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "rPCwsGKZHPgvv6g8doIRnOqgg1k",
+      "id": "ey_GaPdC9zk",
+      "snippet": {
+        "publishedAt": "2026-06-15T18:35:58Z",
+        "channelId": "UCsBjURrPoezykLs9EqgamOA",
+        "title": "One man just liberated Fable... and now it’s illegal",
+        "description": "Take BlueDot's Future of AI course for free - https://bluedot.org/fireship\n\nJust three days after the release of Claude Fable, the US government stepped in and banned it in the name of national security. But why?\n\n#coding #programming #ai\n\n🔖 Topics Covered\n- What makes Fable allegedly unsafe?\n- Fable Jailbreak\n- Fable gets banned\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ey_GaPdC9zk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ey_GaPdC9zk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ey_GaPdC9zk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ey_GaPdC9zk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ey_GaPdC9zk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "uhd": {
+            "url": "https://i.ytimg.com/vi/ey_GaPdC9zk/uhddefault.jpg",
+            "width": 3840,
+            "height": 2160
+          }
+        },
+        "channelTitle": "Fireship",
+        "tags": [
+          "webdev",
+          "app development",
+          "lesson",
+          "tutorial",
+          "fable 5 ban",
+          "fable ban",
+          "claude ban",
+          "claude fable",
+          "claude fable ban",
+          "anthropic",
+          "ai",
+          "ai news",
+          "claude",
+          "claude fable 5"
+        ],
+        "categoryId": "28",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "One man just liberated Fable... and now it’s illegal",
+          "description": "Take BlueDot's Future of AI course for free - https://bluedot.org/fireship\n\nJust three days after the release of Claude Fable, the US government stepped in and banned it in the name of national security. But why?\n\n#coding #programming #ai\n\n🔖 Topics Covered\n- What makes Fable allegedly unsafe?\n- Fable Jailbreak\n- Fable gets banned\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT5M14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1017586",
+        "likeCount": "33639",
+        "favoriteCount": "0",
+        "commentCount": "1744"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 50,
+    "resultsPerPage": 50
+  }
+}

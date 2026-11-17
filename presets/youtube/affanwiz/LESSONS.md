@@ -349,3 +349,22 @@ Read offline by the CA-015 session from a copy of his saved ABW10.prproj (2026-1
 - **He watched the rough cut in Premiere while the edit ran:** placement waited correctly (gate = his active sequence is not ours + idle 150 s),
   and the live diff against Stage A proved he had not touched it before the rebuild.
 
+
+## 2026-11-17 · CA-015 shipped without music: "you didn't put any bg music brh" (claude-gta6-shorts-money)
+- **The miss:** the resume brief (relayed by another session) said "music is his", and the edit closed with A4 empty. This channel's
+  own music row (STYLE § 4, PLAYBOOK, CA-009..011) has US lay his beds. → A relay never overrides the channel preset's music row: check
+  the preset and say which one wins. "Music is his" is the AW code-built SHORTS rule only (memory `feedback-music-is-his-job`).
+- **The fix (same night):** his five beds + fresh perspectives, downloaded fresh (byte-identical to CA-010's, so CA-010's levels carry
+  over), nine sections on the board's turns, 66 pieces out under 59 merged zoom ranges. File: `projects/claude-gta6-shorts-money/work/place_music.py`.
+- **Check each song's tail before running a section into it** (per-second RMS, ffmpeg to null): Take a Ride fades from 160 s (−22 → −49),
+  Grizzy drops ~6 dB after 115 s, fresh perspectives drops at 153 s, Loungin softens after 153 s. A 156 s section on Take a Ride would have
+  faded out under his voice before the turn, so section 1 got a turn inside it ("to set up your research agent I would recommend…").
+  → `USE` table in place_music.py (the loud body's end per song), asserted.
+- **Zoom drops closer than 1 s merge into one** (MERGE 1.0, MIN_PIECE 1.0): CA-015 had four sub-second music blips between zooms and a
+  2-frame piece at a section start.
+- **The hot cold open ends on the cut where the opening graphic leaves** (16.8 s here; CA-010 9.3 s, CA-011 11.8 s): the hook's own end
+  (11.8 s) had no cut. Step −10.5 → −20 on that cut.
+- **His hand on CA-015 (saved 2026-11-17 04:26:47, read offline before any write):** A1 replaced by ONE clip of his own voice bounce again
+  (CA-009, CA-010 and now CA-015: the placed A1 chain is a draft he always replaces); 3 cut zooms removed (0:56.6, 4:48.7, 8:37.3) and razors healed
+  (V1 444 → 402); graphics, SFX, beds and length untouched. → Lesson: the drop-outs follow the zooms, so after his zoom edits the beds need re-cutting
+  by section (`work/place_music.py`) — offered, not done without his word.

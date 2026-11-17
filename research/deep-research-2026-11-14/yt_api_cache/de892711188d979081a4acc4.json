@@ -1,0 +1,1009 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "ZHWgGJCveBjxuqx9p9_MonTljho",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "RCoTly6mB6J5eTNLKfKU_8kVNoM",
+      "id": "41ZY18JqI2A",
+      "snippet": {
+        "publishedAt": "2025-10-29T13:00:09Z",
+        "channelId": "UCGnjeahCJW1AF34HBmQTJ-Q",
+        "title": "Shakira, Ed Sheeran, Beéle - Hips Don't Lie (Anniversary Version)",
+        "description": "Shakira performs Hips Don't Lie with Ed Sheeran and Beéle (LIVE) for her Spotify Anniversary. \nIn this special film, global icon Shakira revisits the groundbreaking albums Pies Descalzos and Oral Fixation (Fijación Oral), reimagining her most beloved hits through powerful performances and personal storytelling.\n\nWatch the full Spotify Anniversary film here:\nhttps://open.spotify.com/episode/3BBFQdEM9sr8syTAbRxDvc?si=rOrZA1wmR5yvsRdDpCpE6g&nd=1&dlsi=54bc3c1f14a040dc\n\nListen to Shakira on Spotify: \nhttps://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp?si=XxgHsziwRJqbeD3OJCvH1A&nd=1&dlsi=14a1b34eea824220\n\n#Shakira #HipsDontLie #SpotifyAnniversary",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/41ZY18JqI2A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/41ZY18JqI2A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/41ZY18JqI2A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/41ZY18JqI2A/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/41ZY18JqI2A/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "shakiraVEVO",
+        "tags": [
+          "Shakira",
+          "Shakira 2025",
+          "Shakira Hips Don't Lie",
+          "Shakira ed sheeran",
+          "ed sheeran",
+          "shakira beele",
+          "beele",
+          "hips dont lie",
+          "Hips Don't Lie Live",
+          "Shakira Live",
+          "Oral Fixation",
+          "Spotify Anniversary",
+          "Shakira letra",
+          "Shakira lyrics",
+          "Cheerful",
+          "Chill",
+          "Emotional",
+          "Hips Don't Lie",
+          "Live",
+          "Ed Sheeran Beéle"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Shakira, Ed Sheeran, Beéle - Hips Don't Lie (Anniversary Version)",
+          "description": "Shakira performs Hips Don't Lie with Ed Sheeran and Beéle (LIVE) for her Spotify Anniversary. \nIn this special film, global icon Shakira revisits the groundbreaking albums Pies Descalzos and Oral Fixation (Fijación Oral), reimagining her most beloved hits through powerful performances and personal storytelling.\n\nWatch the full Spotify Anniversary film here:\nhttps://open.spotify.com/episode/3BBFQdEM9sr8syTAbRxDvc?si=rOrZA1wmR5yvsRdDpCpE6g&nd=1&dlsi=54bc3c1f14a040dc\n\nListen to Shakira on Spotify: \nhttps://open.spotify.com/artist/0EmeFodog0BfCgMzAIvKQp?si=XxgHsziwRJqbeD3OJCvH1A&nd=1&dlsi=14a1b34eea824220\n\n#Shakira #HipsDontLie #SpotifyAnniversary"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT3M37S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "regionRestriction": {
+          "allowed": [
+            "AD",
+            "AE",
+            "AF",
+            "AG",
+            "AI",
+            "AL",
+            "AM",
+            "AO",
+            "AQ",
+            "AR",
+            "AS",
+            "AT",
+            "AU",
+            "AW",
+            "AX",
+            "AZ",
+            "BA",
+            "BB",
+            "BD",
+            "BE",
+            "BF",
+            "BG",
+            "BH",
+            "BI",
+            "BJ",
+            "BL",
+            "BM",
+            "BN",
+            "BO",
+            "BQ",
+            "BR",
+            "BS",
+            "BT",
+            "BV",
+            "BW",
+            "BY",
+            "BZ",
+            "CA",
+            "CC",
+            "CD",
+            "CF",
+            "CG",
+            "CH",
+            "CI",
+            "CK",
+            "CL",
+            "CM",
+            "CN",
+            "CO",
+            "CR",
+            "CU",
+            "CV",
+            "CW",
+            "CX",
+            "CY",
+            "CZ",
+            "DE",
+            "DJ",
+            "DK",
+            "DM",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "EH",
+            "ER",
+            "ES",
+            "ET",
+            "FI",
+            "FJ",
+            "FK",
+            "FM",
+            "FO",
+            "FR",
+            "GA",
+            "GB",
+            "GD",
+            "GE",
+            "GF",
+            "GG",
+            "GH",
+            "GI",
+            "GL",
+            "GM",
+            "GN",
+            "GP",
+            "GQ",
+            "GR",
+            "GS",
+            "GT",
+            "GU",
+            "GW",
+            "GY",
+            "HK",
+            "HM",
+            "HN",
+            "HR",
+            "HT",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IM",
+            "IN",
+            "IO",
+            "IQ",
+            "IR",
+            "IS",
+            "IT",
+            "JE",
+            "JM",
+            "JO",
+            "JP",
+            "KE",
+            "KG",
+            "KH",
+            "KI",
+            "KM",
+            "KN",
+            "KP",
+            "KR",
+            "KW",
+            "KY",
+            "KZ",
+            "LA",
+            "LB",
+            "LC",
+            "LI",
+            "LK",
+            "LR",
+            "LS",
+            "LT",
+            "LU",
+            "LV",
+            "LY",
+            "MA",
+            "MC",
+            "MD",
+            "ME",
+            "MF",
+            "MG",
+            "MH",
+            "MK",
+            "ML",
+            "MM",
+            "MN",
+            "MO",
+            "MP",
+            "MQ",
+            "MR",
+            "MS",
+            "MT",
+            "MU",
+            "MV",
+            "MW",
+            "MX",
+            "MY",
+            "MZ",
+            "NA",
+            "NC",
+            "NE",
+            "NF",
+            "NG",
+            "NI",
+            "NL",
+            "NO",
+            "NP",
+            "NR",
+            "NU",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PF",
+            "PG",
+            "PH",
+            "PK",
+            "PL",
+            "PM",
+            "PN",
+            "PR",
+            "PS",
+            "PT",
+            "PW",
+            "PY",
+            "QA",
+            "RE",
+            "RO",
+            "RS",
+            "RW",
+            "SA",
+            "SB",
+            "SC",
+            "SD",
+            "SE",
+            "SG",
+            "SH",
+            "SI",
+            "SJ",
+            "SK",
+            "SL",
+            "SM",
+            "SN",
+            "SO",
+            "SR",
+            "SS",
+            "ST",
+            "SV",
+            "SX",
+            "SY",
+            "SZ",
+            "TC",
+            "TD",
+            "TF",
+            "TG",
+            "TH",
+            "TJ",
+            "TK",
+            "TL",
+            "TM",
+            "TN",
+            "TO",
+            "TR",
+            "TT",
+            "TV",
+            "TW",
+            "TZ",
+            "UA",
+            "UG",
+            "UM",
+            "US",
+            "UY",
+            "UZ",
+            "VA",
+            "VC",
+            "VE",
+            "VG",
+            "VI",
+            "VN",
+            "VU",
+            "WF",
+            "WS",
+            "YE",
+            "YT",
+            "ZA",
+            "ZM",
+            "ZW"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "123518866",
+        "likeCount": "1051164",
+        "favoriteCount": "0",
+        "commentCount": "25143"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "izn05Xkkm158B5K9S2ebxKHz88s",
+      "id": "ZnM5lOFadBo",
+      "snippet": {
+        "publishedAt": "2025-10-08T06:04:49Z",
+        "channelId": "UCDh0HyrAEfzl4LBVknIW2kQ",
+        "title": "MICHAEL JACKSON IN GOOD SPIRITS UNTIL REALIZING THE GRAMMYS WERE LYING AND RIGGED 😯",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZnM5lOFadBo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZnM5lOFadBo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZnM5lOFadBo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ZnM5lOFadBo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ZnM5lOFadBo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SLY",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "MICHAEL JACKSON IN GOOD SPIRITS UNTIL REALIZING THE GRAMMYS WERE LYING AND RIGGED 😯",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT30S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "34631759",
+        "likeCount": "726774",
+        "favoriteCount": "0",
+        "commentCount": "4519"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "d3IAirYLxelO3xqMCZqjvn8-kZw",
+      "id": "kSqBcv7nifs",
+      "snippet": {
+        "publishedAt": "2026-07-23T02:04:26Z",
+        "channelId": "UCbLhNRQjyvNTqluyjKiJ8jw",
+        "title": "Michael Jackson's K*ller Caught LYING 😱💔",
+        "description": "Michael Jackson's K*ller Caught LYING 😱💔\n\n\nThis content includes excerpts from publicly available audio-visual material that have been significantly transformed through editing, sequencing, and creative enhancement.\n\nThe original material has been restructured into a new narrative format by combining clips from multiple sources, applying visual effects, sound design, and original commentary to create added meaning, context, and entertainment value. This transformation results in a distinct work that differs in purpose and presentation from the source material.\n\nThis content is intended for commentary, storytelling, and educational purposes, and incorporates original creative input throughout, including analysis and personal perspective.\n\nAll rights to the original content belong to their respective owners. No ownership is claimed over third-party material. If any content owners have concerns, they are encouraged to reach out for prompt resolution.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kSqBcv7nifs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kSqBcv7nifs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kSqBcv7nifs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kSqBcv7nifs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kSqBcv7nifs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Abundance Wisdom",
+        "tags": [
+          "Michael Jackson",
+          "Michael Jackson death",
+          "Prince Jackson",
+          "Conrad Murray",
+          "Michael Jackson documentary",
+          "Michael Jackson mystery",
+          "Michael Jackson final moments",
+          "Michael Jackson son",
+          "celebrity news",
+          "celebrity mystery",
+          "true story",
+          "shocking facts",
+          "hidden details",
+          "Hollywood",
+          "pop culture",
+          "MJ",
+          "King of Pop",
+          "viral shorts",
+          "YouTube Shorts",
+          "shorts",
+          "facts",
+          "conspiracy",
+          "investigation",
+          "celebrity facts",
+          "music legend",
+          "Michael Jackson fan",
+          "katherine jackson"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Michael Jackson's K*ller Caught LYING 😱💔",
+          "description": "Michael Jackson's K*ller Caught LYING 😱💔\n\n\nThis content includes excerpts from publicly available audio-visual material that have been significantly transformed through editing, sequencing, and creative enhancement.\n\nThe original material has been restructured into a new narrative format by combining clips from multiple sources, applying visual effects, sound design, and original commentary to create added meaning, context, and entertainment value. This transformation results in a distinct work that differs in purpose and presentation from the source material.\n\nThis content is intended for commentary, storytelling, and educational purposes, and incorporates original creative input throughout, including analysis and personal perspective.\n\nAll rights to the original content belong to their respective owners. No ownership is claimed over third-party material. If any content owners have concerns, they are encouraged to reach out for prompt resolution."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT46S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1214895",
+        "likeCount": "30783",
+        "favoriteCount": "0",
+        "commentCount": "786"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nX70hg0X6G51jmeMaVy5h6eNV9g",
+      "id": "yS7rFpQjQjU",
+      "snippet": {
+        "publishedAt": "2026-05-06T15:47:21Z",
+        "channelId": "UCt9ruGzmH1Pb_ryzF8jsZMw",
+        "title": "The Biggest Lies About Michael Jackson That People Still Believe!",
+        "description": "the short is about the biggest lies about michael jackson that people still believe.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yS7rFpQjQjU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yS7rFpQjQjU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yS7rFpQjQjU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/yS7rFpQjQjU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/yS7rFpQjQjU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Cinema Land",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "The Biggest Lies About Michael Jackson That People Still Believe!",
+          "description": "the short is about the biggest lies about michael jackson that people still believe."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT55S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "515920",
+        "likeCount": "7833",
+        "favoriteCount": "0",
+        "commentCount": "64"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "LEOtJTeWCNHu9i4_eLzaP6E5K5o",
+      "id": "0tTjq1KpD34",
+      "snippet": {
+        "publishedAt": "2026-05-18T17:30:12Z",
+        "channelId": "UCBNIaNUyNdH49Ab62apKsZQ",
+        "title": "Michael Jackson's Reaction to JOE lying about How He Disciplines his Kids 😂",
+        "description": "Michael Jackson's Reaction to JOE lying about How He Disciplines his Kids 😂\n\n@MichaelJackson   @JanetJackson   @thejacksonslegacy   \n\n Michael Jackson | Jackson 5 | Joe Jackson | Marlon Jackson | Jermaine Jackson | Tito Jackson | Randy Jackson | Jackie Jackson \n\nJackson 5 — I'll Be There | ABC | I Want You Back | Who's Loving You | The Love You Save | Dancing Machine | Never Can Say Goodbye | Maybe Tomorrow | Ben | Got to Be There | My Girl | Ain't No Sunshine \n\nMichael Jackson — Thriller | Smooth Criminal\n Beat It | Human Nature | Wanna Be Startin' Somethin | Remember the Time | Don't Stop Till You Get Enough | Rock With You \n\n#michaeljackson #joejackson #reaction #janetjackson  #mj #father #funny #funnyshorts  #soulloungestudio #jackson5 #fatherson #thejacksons #interview #jacksonfamily #jacksonfive #michaelmovie #michael #singing #singer #vocals  #nostalgia #discipline #70s",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0tTjq1KpD34/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0tTjq1KpD34/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0tTjq1KpD34/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0tTjq1KpD34/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0tTjq1KpD34/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Soul Lounge Studio",
+        "tags": [
+          "MichaelJackson",
+          "MJ",
+          "JoeJackson",
+          "interview",
+          "Michael",
+          "Michaelmovie",
+          "Jackson5",
+          "thejacksons",
+          "JanetJackson"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Michael Jackson's Reaction to JOE lying about How He Disciplines his Kids 😂",
+          "description": "Michael Jackson's Reaction to JOE lying about How He Disciplines his Kids 😂\n\n@MichaelJackson   @JanetJackson   @thejacksonslegacy   \n\n Michael Jackson | Jackson 5 | Joe Jackson | Marlon Jackson | Jermaine Jackson | Tito Jackson | Randy Jackson | Jackie Jackson \n\nJackson 5 — I'll Be There | ABC | I Want You Back | Who's Loving You | The Love You Save | Dancing Machine | Never Can Say Goodbye | Maybe Tomorrow | Ben | Got to Be There | My Girl | Ain't No Sunshine \n\nMichael Jackson — Thriller | Smooth Criminal\n Beat It | Human Nature | Wanna Be Startin' Somethin | Remember the Time | Don't Stop Till You Get Enough | Rock With You \n\n#michaeljackson #joejackson #reaction #janetjackson  #mj #father #funny #funnyshorts  #soulloungestudio #jackson5 #fatherson #thejacksons #interview #jacksonfamily #jacksonfive #michaelmovie #michael #singing #singer #vocals  #nostalgia #discipline #70s"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "230950",
+        "likeCount": "3714",
+        "favoriteCount": "0",
+        "commentCount": "169"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "blS0JAs5fgZ_aZNWyCpgEEoAYaw",
+      "id": "jQemvdelc94",
+      "snippet": {
+        "publishedAt": "2026-08-05T00:00:04Z",
+        "channelId": "UCsKF_Ay2D2w7uIHsmfGbZCQ",
+        "title": "Three lies people still believe about Michael Jackson #michaeljackson",
+        "description": "Here’s a *YouTube pack* for: \n*\"Three Lies People Still Believe About Michael Jackson #michaeljackson\"*\n\n---\n\n### *Title Ideas*\n1. 3 Lies People Still Believe About Michael Jackson\n2. The Biggest MJ Myths Debunked \n3. Stop Believing These 3 Lies About Michael Jackson\n\n### *Long YouTube Description*\n*Three Lies People Still Believe About Michael Jackson*\n\n40+ years after _Thriller_ and even after he’s gone, the misinformation about Michael Jackson is still everywhere. In this video we’re breaking down 3 of the biggest lies people still believe about MJ in 2026 — and what the public records, court documents, and people who knew him actually say.\n\n*In this video:*\n0:00 Intro\n0:20 Why These Myths Keep Spreading\n0:50 LIE #1 \n2:30 LIE #2\n4:10 LIE #3\n5:50 What We Actually Know\n7:00 Final Thoughts + Legacy\n\n*What we cover:*\n- Where each \"lie\" came from: tabloids, documentaries, and internet rumors\n- Facts vs speculation, including court cases and FBI files\n- Statements from family, collaborators, and MJ himself\n- How social media keeps these stories alive in 2026\n\n*Important Note:*  \nThis video is for commentary, education, and journalistic purposes. All information is based on public court records, interviews, biographies, and verified news reports as of August 2026. We aim to separate fact from rumor and treat the topic with respect. This is not to attack victims or dismiss real concerns — it’s to look at what is actually documented vs what went viral.\n\nMichael Jackson’s legacy is complicated. Let’s talk about it honestly.\n\nWhich \"lie\" did you used to believe? Comment below 👇  \n*SUBSCRIBE* for more MJ breakdowns, music history, and pop culture facts.  \n🔔 Turn on notifications\n\n*Chapters:*\n00:00 Introduction\n00:50 Lie #1\n02:30 Lie #2  \n04:10 Lie #3\n05:50 The Truth + Evidence\n07:00 Closing\n\n*Hashtags:*\n`#michaeljackson #mj #kingofpop #michaeljacksonfacts #myths #music #popculture #2026 #documentary #thriller`\n\n*Disclaimer:*  \nThis video discusses public figures and public allegations. All claims are addressed using publicly available information and legal records. We do not intend to harass or defame anyone. Viewer discretion advised.\n\n---\n\n### *Thumbnail Text Options*\n1. *3 LIES ABOUT MJ*\n2. *YOU STILL BELIEVE THIS?*\n3. *THE TRUTH ABOUT MICHAEL*\n4. *MYTHS DEBUNKED*\n\n---\n\nWant me to also write the *full script naming the 3 specific \"lies\" + the facts to counter them*? \n\nI can do it in 2 styles: \n1. *Fact-based / documentary* - court docs, FBI files, interviews \n2. *Viral / #fyp style* - fast, hook-heavy for TikTok/Reels\n\nWhich one do you want?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jQemvdelc94/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jQemvdelc94/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jQemvdelc94/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/jQemvdelc94/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/jQemvdelc94/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RATV",
+        "tags": [
+          "famous celebrity",
+          "celebrity news",
+          "famous news"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Three lies people still believe about Michael Jackson #michaeljackson",
+          "description": "Here’s a *YouTube pack* for: \n*\"Three Lies People Still Believe About Michael Jackson #michaeljackson\"*\n\n---\n\n### *Title Ideas*\n1. 3 Lies People Still Believe About Michael Jackson\n2. The Biggest MJ Myths Debunked \n3. Stop Believing These 3 Lies About Michael Jackson\n\n### *Long YouTube Description*\n*Three Lies People Still Believe About Michael Jackson*\n\n40+ years after _Thriller_ and even after he’s gone, the misinformation about Michael Jackson is still everywhere. In this video we’re breaking down 3 of the biggest lies people still believe about MJ in 2026 — and what the public records, court documents, and people who knew him actually say.\n\n*In this video:*\n0:00 Intro\n0:20 Why These Myths Keep Spreading\n0:50 LIE #1 \n2:30 LIE #2\n4:10 LIE #3\n5:50 What We Actually Know\n7:00 Final Thoughts + Legacy\n\n*What we cover:*\n- Where each \"lie\" came from: tabloids, documentaries, and internet rumors\n- Facts vs speculation, including court cases and FBI files\n- Statements from family, collaborators, and MJ himself\n- How social media keeps these stories alive in 2026\n\n*Important Note:*  \nThis video is for commentary, education, and journalistic purposes. All information is based on public court records, interviews, biographies, and verified news reports as of August 2026. We aim to separate fact from rumor and treat the topic with respect. This is not to attack victims or dismiss real concerns — it’s to look at what is actually documented vs what went viral.\n\nMichael Jackson’s legacy is complicated. Let’s talk about it honestly.\n\nWhich \"lie\" did you used to believe? Comment below 👇  \n*SUBSCRIBE* for more MJ breakdowns, music history, and pop culture facts.  \n🔔 Turn on notifications\n\n*Chapters:*\n00:00 Introduction\n00:50 Lie #1\n02:30 Lie #2  \n04:10 Lie #3\n05:50 The Truth + Evidence\n07:00 Closing\n\n*Hashtags:*\n`#michaeljackson #mj #kingofpop #michaeljacksonfacts #myths #music #popculture #2026 #documentary #thriller`\n\n*Disclaimer:*  \nThis video discusses public figures and public allegations. All claims are addressed using publicly available information and legal records. We do not intend to harass or defame anyone. Viewer discretion advised.\n\n---\n\n### *Thumbnail Text Options*\n1. *3 LIES ABOUT MJ*\n2. *YOU STILL BELIEVE THIS?*\n3. *THE TRUTH ABOUT MICHAEL*\n4. *MYTHS DEBUNKED*\n\n---\n\nWant me to also write the *full script naming the 3 specific \"lies\" + the facts to counter them*? \n\nI can do it in 2 styles: \n1. *Fact-based / documentary* - court docs, FBI files, interviews \n2. *Viral / #fyp style* - fast, hook-heavy for TikTok/Reels\n\nWhich one do you want?"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT1M11S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "40085",
+        "likeCount": "1748",
+        "favoriteCount": "0",
+        "commentCount": "33"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "JzG1F1SSHQ4WLUC4R-TsURmHxLM",
+      "id": "2YzL56on40E",
+      "snippet": {
+        "publishedAt": "2026-06-17T10:37:26Z",
+        "channelId": "UCNOT4WUFYXfrLLR0GLHISLQ",
+        "title": "When Michael Jackson had to tell lies #michaeljackson",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2YzL56on40E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2YzL56on40E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2YzL56on40E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2YzL56on40E/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2YzL56on40E/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Darling LiMa",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "When Michael Jackson had to tell lies #michaeljackson",
+          "description": ""
+        }
+      },
+      "contentDetails": {
+        "duration": "PT26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "15203",
+        "likeCount": "132",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "AyxURsnwELsloN2zmFnsuh0eMUI",
+      "id": "NP8u6bWB6rE",
+      "snippet": {
+        "publishedAt": "2026-06-26T17:29:21Z",
+        "channelId": "UCeFLhtuvL6cLXKZUtXUpcwQ",
+        "title": "Paris Jackson said her dad's movie was full of lies.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NP8u6bWB6rE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NP8u6bWB6rE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NP8u6bWB6rE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/NP8u6bWB6rE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/NP8u6bWB6rE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mr Marvel ",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Paris Jackson said her dad's movie was full of lies.",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT25S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "15412",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "L7jxZkv64edaB_ovChedNAINjzE",
+      "id": "mhBlualpnRs",
+      "snippet": {
+        "publishedAt": "2026-02-06T16:27:21Z",
+        "channelId": "UCqeoD6HRO0OlVsTV3Xe_ChQ",
+        "title": "No Lie Nostalgic Edit -Michael Jackson",
+        "description": "No Lie Nostalgic Edit -Michael Jackson",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mhBlualpnRs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mhBlualpnRs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mhBlualpnRs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/mhBlualpnRs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/mhBlualpnRs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "M_J599",
+        "tags": [
+          "Michel Jakson",
+          "Applehead",
+          "edit",
+          "funk",
+          "No lie sean paul ft dua lipa",
+          "Mikal Jackson"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "No Lie Nostalgic Edit -Michael Jackson",
+          "description": "No Lie Nostalgic Edit -Michael Jackson"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT29S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1431",
+        "likeCount": "21",
+        "favoriteCount": "0",
+        "commentCount": "5"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "KcDogknbGq_tyEIwC1W4u_ycK3Q",
+      "id": "K68sVI0VmKw",
+      "snippet": {
+        "publishedAt": "2026-09-27T01:50:36Z",
+        "channelId": "UCcKZz6u9sy-yolps45jpv3w",
+        "title": "“It’s FULL of Lies!” Celebrities React to Netflix’s New Michael Jackson Documentary",
+        "description": "Netflix’s new Michael Jackson documentary has become a major topic of discussion among fans and entertainment audiences. Some public figures and supporters have reportedly criticized aspects of the film and questioned its portrayal of Michael Jackson. In this video, we examine the controversy, the reported reactions, and the debate surrounding the documentary and Jackson’s enduring legacy.\n\n\n#MichaelJackson #Netflix #MichaelJacksonDocumentary #KingOfPop #MichaelJacksonFans #MichaelJacksonLegacy #NetflixDocumentary #CelebrityReactions #PopCulture #MusicHistory #MJ",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/K68sVI0VmKw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/K68sVI0VmKw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/K68sVI0VmKw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/K68sVI0VmKw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/K68sVI0VmKw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Its duffer",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "“It’s FULL of Lies!” Celebrities React to Netflix’s New Michael Jackson Documentary",
+          "description": "Netflix’s new Michael Jackson documentary has become a major topic of discussion among fans and entertainment audiences. Some public figures and supporters have reportedly criticized aspects of the film and questioned its portrayal of Michael Jackson. In this video, we examine the controversy, the reported reactions, and the debate surrounding the documentary and Jackson’s enduring legacy.\n\n\n#MichaelJackson #Netflix #MichaelJacksonDocumentary #KingOfPop #MichaelJacksonFans #MichaelJacksonLegacy #NetflixDocumentary #CelebrityReactions #PopCulture #MusicHistory #MJ"
+        }
+      },
+      "contentDetails": {
+        "duration": "PT7S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1043",
+        "likeCount": "15",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "FI4S64Ma3wvXmSGzqRMvaeAdWsw",
+      "id": "5RahKtU2rgw",
+      "snippet": {
+        "publishedAt": "2026-09-21T12:00:03Z",
+        "channelId": "UCSlAdnNdVMKZxWs6rFxYM4g",
+        "title": "Michael Jackson’s Bodyguard Exposes The LIES About His Death",
+        "description": "Michael Jackson’s Bodyguard Exposes The LIES About His Death..\n\nDiscover the shocking claims from Michael Jackson’s former bodyguard about the King of Pop’s death! Uncover the controversies, untold stories, and unanswered questions surrounding Michael Jackson’s final days and the truth behind the headlines.\n\n#MichaelJackson #MichaelJacksonDeath #MJ #KingOfPop #MichaelJacksonBodyguard #MichaelJacksonMystery #MJNews #CelebritySecrets #MusicLegends #MichaelJacksonDocumentary",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5RahKtU2rgw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5RahKtU2rgw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5RahKtU2rgw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5RahKtU2rgw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5RahKtU2rgw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "The Silver Vault",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Michael Jackson’s Bodyguard Exposes The LIES About His Death",
+          "description": "Michael Jackson’s Bodyguard Exposes The LIES About His Death..\n\nDiscover the shocking claims from Michael Jackson’s former bodyguard about the King of Pop’s death! Uncover the controversies, untold stories, and unanswered questions surrounding Michael Jackson’s final days and the truth behind the headlines.\n\n#MichaelJackson #MichaelJacksonDeath #MJ #KingOfPop #MichaelJacksonBodyguard #MichaelJacksonMystery #MJNews #CelebritySecrets #MusicLegends #MichaelJacksonDocumentary"
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT11S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "718",
+        "likeCount": "5",
+        "favoriteCount": "0"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 11,
+    "resultsPerPage": 11
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "ZYKV-7otXw39jzv5s3abTdMr33k",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 30
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "f1GAOTPKKO9vlFnMEuLjpjCEfgY",
+      "id": "UgzssUEYJx4xsgIgh-V4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "o1_FvfJD8fg",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NOEKW50_ezEi_4CWrue7mgTj7sU",
+          "id": "UgzssUEYJx4xsgIgh-V4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "o1_FvfJD8fg",
+            "textDisplay": "Bro 3x his subscriber count from  20M to 61M 3x and 3 years what a coincidence 😂",
+            "textOriginal": "Bro 3x his subscriber count from  20M to 61M 3x and 3 years what a coincidence 😂",
+            "authorDisplayName": "@GameWithLance",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/cT-eS27CdiMOiy9qBNKF9PGDfCYGtsDsu0kK9ERpmg86XNd4zHprXXc4JlTBzeILPOQdOMQR=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@GameWithLance",
+            "authorChannelId": {
+              "value": "UCfXyLLQvyo98pkpOK42T5bA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-09-28T02:17:06Z",
+            "updatedAt": "2026-09-28T02:17:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}

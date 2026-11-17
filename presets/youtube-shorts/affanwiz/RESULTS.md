@@ -10,6 +10,8 @@ written. No channel baseline yet: the first results set it.
 | 2 | How I find Shorts YouTube is forced to push (`projects/viral-clip-method/clips/find-viral-angles`, sequence v3 from CA-010, approved 2026-11-04 "Yes, use defaults") | (building) | ≈ 45 s | his cam: "How do I find moments that YouTube is basically forced to push?" + MOMENTS YOUTUBE IS / FORCED TO PUSH card 0–3 s, the tag after | **4K–40K** · still advice-shaped (H1: a concrete story beats advice) and the Claude payoff narrows it to Shorts creators; MJ is on screen by ≈ 4 s, the answer starts at once, and the NFL line makes it any niche (locked 2026-11-04) | | | | | | | | |
 | 3 | What level Shorts creator are you? (`projects/what-level-shorts-creator`, script CA-011-SHORT-v2-levels, sequence v1 approved 2026-11-05 "Yes, use defaults") | 2026-11-06 (60 fps final; the 30 fps check approved by him the same night) | 34.3 s | his cam, four fingers up: "Four levels of Shorts creators" + the empty level bar + 4 LEVELS / MOST ARE STUCK AT 2 below the captions | **3K–50K** · it only pulls Shorts creators, and if the bar doesn't read in the first second it looks like a man talking; the button is a question, so comments are the upside (locked 2026-11-05). His script's own 14-day engine line (5K–80K) is separate and stays in the script file | | | | | | | | |
 | 4 | Stop remaking viral Shorts (`projects/stop-remaking-viral-shorts`, unscripted take C1454, sequence v1 approved 2026-11-09 "Yes, build it") | 2026-11-09 (check, native 59.94; final if he approves; cover STOP REMAKING / VIRAL SHORTS on the grid scene) | 43.98 s | his cam: "The one thing that classifies you as a complete noob in YouTube Shorts" + 1 THING THAT MAKES YOU / A COMPLETE NOOB below the captions | **3K–35K** · same message family as Short 1 and every clipping channel's Oct 1 recap, advice-shaped with no story (H1); the call-out (H3, talking AT beginners) and the CRT "No!" gag are the upside (locked 2026-11-09) | | | | | | | | |
+| 5 | Don't Buy AI Clipping Software (`projects/claude-gta6-shorts-money/clips/ai-tools-rant`, sequence v2.2 from the CA-015 take, approved 2026-11-17 "start the build" with the Premiere line added) | 2026-11-17 07:26 (check, native 59.94 = the final if approved; `X:\Claude Projects\Exports\affanwiz-dont-buy-ai-clipping.check.mp4`) | 40.2 s | his cam: "Don't buy the AI software that these YouTube gurus or Instagram gurus are selling you" + DON'T BUY AI / CLIPPING SOFTWARE card 0-3 s | **1K–12K, most likely ~3K** · an opinion to camera from a face strangers don't know, with built graphics and no real receipt (H1); his three earlier "AI … scam" Shorts did 440–1,187 and his last four Shorts 378–1,351. Upside: it answers this week's most viral GTA 6 clipping reels (1.6M, 4.5M, 108K likes) the day before launch, and nobody pushes back on them (locked 2026-11-17 ~05:35) | (his number asked) | | | | | | | |
+| 6 | Build A GTA 6 Research Agent (`projects/claude-gta6-shorts-money/clips/research-agent`, sequence v2 from the CA-015 take, approved 2026-11-17 "Yes, build it"; v1 'Clip GTA 6 Before Everyone' superseded by his how-to redirect) | 2026-11-17 07:53 (check, native 59.94 = the final if approved; `X:\Claude Projects\Exports\affanwiz-build-gta6-research-agent.check.mp4`), APPROVED as the final 08:03 | 40.3 s | his cam: "Set up your research agent. What is the research agent?" + SET UP A GTA 6 / RESEARCH AGENT card | **300–4K, most likely ~700** · a how-to riff to camera on a crowded topic ("Claude + clipping" this week, model-choice explainers since Aug); every 'build a research agent' how-to found was under 4K likes, and his closest Shorts by shape got 564 and 378. Upside: the three-role recipe is fresh and it lands the day before launch (locked 2026-11-17 ~07:30) | (his number asked) | | | | | | | |
 
 **Status 2026-11-14 (data, not a prediction):** all four Shorts were posted without a locked prediction from Affan, so rows 1–4 can't be scored as predictions. He retitles at upload. Public counts on the Shorts tab, read 2026-11-12: row 4 "This Marks You As A Noob In YT Shorts" 1.3K; row 3 "What Level Of Shorts Creator Are You" 371; row 2 probably "Find Viral Money Making Shorts Topics THIS WAY" 561; row 1 probably "STUPIDEST Clipping Mistake - IShowspeed" 996, order v1 or v2 not on file (`research/affanwiz-idea-2026-11-12/diagnosis.md`). The 7-day numbers need his Studio read.
 
@@ -54,3 +56,23 @@ written. No channel baseline yet: the first results set it.
   - "complete noob" calls out the viewer, and people tag the friend who remakes viral Shorts;
   - "that's so 2024" plus the CRT "No!" gag makes it funny, not a lecture;
   - "100 million views, why would they push yours?" is a line people quote and send to each other.
+
+**5 · Don't Buy AI Clipping Software (written 2026-11-17).**
+- **Got 5K because:**
+  - it's another "AI … scam" Short from him (his three before did 440–1,187), and the channel's audience is small;
+  - a stranger sees a man they don't know talking, and the boxes are built, not proof;
+  - "use Claude" after "don't buy AI" can still read as a plug.
+- **Got 5M because:**
+  - the GTA 6 clipping wave peaks the day it posts, and it's the only reply to reels with millions of views;
+  - "shut the f*** up" at the guru impression is a laugh people send to the friend who's buying the tool;
+  - "as a course seller myself, it's not necessary" is a confession that earns trust.
+
+**6 · Build A GTA 6 Research Agent (written 2026-11-17).**
+- **Got 5K because:**
+  - "Claude + clipping" tutorials flooded this week, and "which model for what" explainers since August;
+  - it's a how-to to camera with built cards, and the recipe line is technical;
+  - a stranger doesn't know him, and "research agent" sounds like work.
+- **Got 5M because:**
+  - launch day turns "be first" into a race every clipper is in, and this is the one tool pitch about speed;
+  - the three-role recipe (Opus sets up, Fable advises, Sonnet runs) is new and easy to screenshot;
+  - "a normal person finds it six, seven hours later" is a line clippers feel.

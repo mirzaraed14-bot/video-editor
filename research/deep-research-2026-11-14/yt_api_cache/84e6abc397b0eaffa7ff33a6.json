@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "Xe4RNuqnYQoBvtQy5Q-Wo5HmBAc",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "qlB8iZXoXoaN4CazctwaLWUFCRE",
+      "id": "UCQHX6ViZmPsWiYSFAyS0a3Q",
+      "snippet": {
+        "title": "GothamChess",
+        "description": "The Internet's Chess Teacher",
+        "customUrl": "@gothamchess",
+        "publishedAt": "2018-08-07T02:53:51Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lJ4RQwl-WnWQ_3AgLxvPrLkVdfLHPCRKMxUtLJnjUkhkg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lJ4RQwl-WnWQ_3AgLxvPrLkVdfLHPCRKMxUtLJnjUkhkg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_lJ4RQwl-WnWQ_3AgLxvPrLkVdfLHPCRKMxUtLJnjUkhkg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "GothamChess",
+          "description": "The Internet's Chess Teacher"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "6776083701",
+        "subscriberCount": "8670000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "3528"
+      }
+    }
+  ]
+}

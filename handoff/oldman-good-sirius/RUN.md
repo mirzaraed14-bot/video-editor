@@ -4,6 +4,18 @@
 - **v2 final** "Was Oldman A Good Sirius.mov": 1080x1920 60 fps, 1919 frames, 31.983 s, -14.1 LUFS, -1.6 dBTP, export QA PASS.
   sha256 `092c5c47…7ff7beb3` (v2b: card glow; the 20:04 v2a `eec8d540…` is replaced) in `outputs/`, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\`, `X:\Claude Projects\Exports\`.
   v1 kept beside each as "Was Oldman A Good Sirius (v1).mov" (sha256 `b93763de…`).
+- **17 Nov: title + tags given (his ask "title and tags").** Pick: **Why Gary Oldman Called His Sirius MEDIOCRE 💔**. It matches the
+  first spoken line, and "Why" is answered by beat 2 ("if I had known what's coming…").
+  - Evidence (API cache, no new calls): the two big Shorts of this line lead with "Gary Oldman" + "mediocre":
+    - `escpEISnUso` "Gary Oldman says he is MEDIOCRE in Harry Potter", 316K;
+    - `JJeQxpRX1hg` "…Gary Oldman admits he thinks his performance was 'mediocre'", 217K;
+    - Horowitz's 4-min clip, 1.1M.
+  - Backups:
+    - "Gary Oldman Called His Sirius MEDIOCRE 💔";
+    - "Was Oldman A Good Sirius?" (names the payoff, no CAPS word);
+    - "Gary Oldman Asked Radcliffe: Was I GOOD? 🥹".
+  - Tags (22, 390 chars, 430 by YouTube's count with quotes):
+    `gary oldman,sirius black,harry potter,gary oldman sirius black,gary oldman mediocre,gary oldman harry potter,daniel radcliffe,daniel radcliffe gary oldman,have i been a good sirius,sirius black death,sirius killed off,order of the phoenix,prisoner of azkaban,alan rickman,snape,hagrid,ron weasley,harry potter cast,harry potter interview,gary oldman interview,josh horowitz,harry potter hbo`
 - Proof: `proof/r2/NOTES.md` (all numbers), `proof/r2/final_1s.jpg`, `final_edges.jpg` (clean edges at 3.8167 / 5.75 / 24.5167 / the
   film's cut at frame 1513 / 26.3), `handover.jpg` (Hagrid -> Ron), `snape_variants.jpg`. Final-file shake (bg meter): jitter
   0.35-0.76 px on the face spans (v1 Stage A 1.7-8.4). Lip/caption gap in P4 min 78 px.

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "PHMlpMTwu2ffcUbf1LGYrP9kpVE",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "_WNClWn9tf8RvXEBwO7V7eRqSs0",
+      "id": "UCZ4AMrDcNrfy3X6nsU8-rPg",
+      "snippet": {
+        "title": "Economics Explained",
+        "description": "\n",
+        "customUrl": "@economicsexplained",
+        "publishedAt": "2012-09-09T09:28:37Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/og23LzdOU3Smc7MJWsnH0b0JJ8kouBIiIvwLJTIkxWPV9uAFdPpcp0PYDwgM4QYMb0i7_ut5=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/og23LzdOU3Smc7MJWsnH0b0JJ8kouBIiIvwLJTIkxWPV9uAFdPpcp0PYDwgM4QYMb0i7_ut5=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/og23LzdOU3Smc7MJWsnH0b0JJ8kouBIiIvwLJTIkxWPV9uAFdPpcp0PYDwgM4QYMb0i7_ut5=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Economics Explained",
+          "description": "\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "387635873",
+        "subscriberCount": "2890000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "458"
+      }
+    }
+  ]
+}

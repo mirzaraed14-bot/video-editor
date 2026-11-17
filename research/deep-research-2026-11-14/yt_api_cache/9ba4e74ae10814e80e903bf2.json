@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "e3ZwIm8xSvT_PRnzEQKzMKj4v8w",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "5FdBv3tZ5XxwM-YJLo0lW_aU8Hk",
+      "id": "UCWXYDYv5STLk-zoxMP2I1Lw",
+      "snippet": {
+        "title": "Dan Koe",
+        "description": "If you want harsh truths, read my letters.\n",
+        "customUrl": "@dankoetalks",
+        "publishedAt": "2016-03-14T22:22:20Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/B4XuOHeo6s6XAbi85LUXK70itVCivYf63Bw5u1gHz-HmN2-cmgbVvAM_B8j2SAzxtbeYJT4RfA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/B4XuOHeo6s6XAbi85LUXK70itVCivYf63Bw5u1gHz-HmN2-cmgbVvAM_B8j2SAzxtbeYJT4RfA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/B4XuOHeo6s6XAbi85LUXK70itVCivYf63Bw5u1gHz-HmN2-cmgbVvAM_B8j2SAzxtbeYJT4RfA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Dan Koe",
+          "description": "If you want harsh truths, read my letters.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "53440373",
+        "subscriberCount": "1450000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "261"
+      }
+    }
+  ]
+}

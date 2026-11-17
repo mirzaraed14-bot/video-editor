@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "bL7NEgQG7BrqWls8gtSYPoMEJ70",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "hHcGbzTjo4m3tUI6GRJ-xU1-FAM",
+      "id": "UC9RM-iSvTu1uPJb8X5yp3EQ",
+      "snippet": {
+        "title": "Wendover Productions",
+        "description": "Wendover Productions is all about explaining how our world works. From travel, to economics, to geography, to marketing and more, every video will leave you with a little better understanding of our world. New videos go out every other Tuesday.",
+        "customUrl": "@wendoverproductions",
+        "publishedAt": "2010-02-11T13:23:05Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/OnFIYArpFofrmngLXAsDGHsoVUpPA-yW3oD2ug7J2tq7H4BUcnnQvyfaQ8vw6s5JCiXJu1hb5A=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/OnFIYArpFofrmngLXAsDGHsoVUpPA-yW3oD2ug7J2tq7H4BUcnnQvyfaQ8vw6s5JCiXJu1hb5A=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/OnFIYArpFofrmngLXAsDGHsoVUpPA-yW3oD2ug7J2tq7H4BUcnnQvyfaQ8vw6s5JCiXJu1hb5A=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Wendover Productions",
+          "description": "Wendover Productions is all about explaining how our world works. From travel, to economics, to geography, to marketing and more, every video will leave you with a little better understanding of our world. New videos go out every other Tuesday."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "847040184",
+        "subscriberCount": "4920000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "292"
+      }
+    }
+  ]
+}

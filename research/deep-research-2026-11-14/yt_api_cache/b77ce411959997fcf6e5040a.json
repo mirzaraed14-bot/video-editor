@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "wte_ViMcX3DJcpMLZXKimul8N4Y",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "yOhEtVQYftPj8BlAgsheAExE1-Y",
+      "id": "UCIhJnsJ0IHlVNnYfp-gw_5Q",
+      "snippet": {
+        "title": "Cal Newport",
+        "description": "Videos about human flourishing in a technological world. Hosted by Cal Newport, an MIT-trained computer professor and bestselling author of numerous books on technology and its impacts, including DEEP WORK, DIGITAL MINIMALISM, A WORLD WITHOUT EMAIL, and SLOW PRODUCTIVITY. New content weekly.",
+        "customUrl": "@calnewportmedia",
+        "publishedAt": "2021-11-23T15:51:01.864278Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/munmcU_dsX1NVRuMBq9LAhUDXP5AB0WKasseYsIWhI7g8wx7hAOIS0mxo7YBz_LqTozeKPuvyw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/munmcU_dsX1NVRuMBq9LAhUDXP5AB0WKasseYsIWhI7g8wx7hAOIS0mxo7YBz_LqTozeKPuvyw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/munmcU_dsX1NVRuMBq9LAhUDXP5AB0WKasseYsIWhI7g8wx7hAOIS0mxo7YBz_LqTozeKPuvyw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Cal Newport",
+          "description": "Videos about human flourishing in a technological world. Hosted by Cal Newport, an MIT-trained computer professor and bestselling author of numerous books on technology and its impacts, including DEEP WORK, DIGITAL MINIMALISM, A WORLD WITHOUT EMAIL, and SLOW PRODUCTIVITY. New content weekly."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "22727914",
+        "subscriberCount": "374000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "774"
+      }
+    }
+  ]
+}

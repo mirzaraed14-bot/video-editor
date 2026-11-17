@@ -3,6 +3,10 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-17: the Urdu mix (two-layer) style is NOT for funny videos (ABW11 Sequence 11)
+- **His call on Seq 11 (an airport comedy bit): "caps but it normal style this is a funny video so it wont suit".** The two-layer Urdu mix look (small Urdu over ALL CAPS Roman, glow) is for the talks; a comedy reel keeps the single-line yellow .srt. When he doesn't say which, ask nothing: a comedy bit = normal style, a talk = whatever he named last. → `presets/instagram/affanwizu/bilingual/README.md` (scope line).
+- **Probes run with the whisperx venv python** (`~/.cache/video-editor/whisperx-venv/Scripts/python.exe -I work/probe.py ...`); the system Python has no faster_whisper and would only die at import once it gets the lock.
+
 ## 2026-11-16: two-layer captions in Premiere: the glow looked 3x stronger than the preview; his look notes (ABW11 Sequence 10 v2)
 - **"too glowy, I want a subtle glow like how that guy had", on the layer he placed:** the glow was the reference fit, but Premiere composites partial alpha in LINEAR light (`compositeLinearColor`, gamma 2.4, `lanes/premiere/lab-notes.md`) and a browser/ffmpeg preview blends in sRGB. Over his black shirt that tripled the halo. His screenshot matched a linear simulation, not my preview, so the preview cannot be the proof for a Premiere layer. → `presets/instagram/affanwizu/bilingual/linfix.py` (per-pixel alpha remap over the measured background, exact for the black shadow) runs between `render_cues.mjs` and `assemble.py --alpha`; the burned preview is built from the UNfixed cues.
 - **His look notes, same evening:** add the drop shadow (the yellow style's own, `3.75px 4.25px 1px #000`, drawn above the glow), Urdu SMALL (72 → 48 px: it now reads narrower than the Roman line), the Roman line in ALL CAPS (`roCase: uppercase`). → `bilingual/README.md` params; the single-line .srt stays lowercase.

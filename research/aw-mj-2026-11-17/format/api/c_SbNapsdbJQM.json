@@ -1,0 +1,692 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "8MPOaZ-9gvbdMDIKAd_ka4m2g3Q",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DcVlCQ0lBRUZSZTMwVGdhbXdFS2xnRUkyRjhRZ0FRWUJ5S0xBUnNiQXBKWDJEckJlMG5SM2g5ZEdhVkxOX1RXcTh3WWdrZ3hxUGJOU2hub1VJam1nVExyZE95OXFUY1RKU2tUYzRmY0g1UzlBdmVYRmtBNVk2d2VsVjFFMDV5QWFaaHdFUTlpRVZJSWZFaDlWeWxqci16bnBMaXNFWkxRbkgxNmZRMDY3UGxrZHFHQ0FzMjQ5SkdlclFTYWxDd3VqS2pGc0ZkMG1CX3hXcDNTclJRMDBPTmNab3ZnYXdBUUZCSUZDTHNnR0FBU0JRaUdJQmdBRWdVSXFDQVlBQklGQ0lnZ0dBQVNCUWlISUJnQUVnVUl3Q0FZQUJJRkNJa2dHQUFTQndpRklCQVVHQUZRQUZnQg==",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kCokzTp814q2c3V4DOHk81IeL2U",
+      "id": "UgxMLbLc-nAucN-HICl4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "TwIrndF5lzarlQDdJKRgFJohkD0",
+          "id": "UgxMLbLc-nAucN-HICl4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "He had 20 years work experience at age 25 😢",
+            "textOriginal": "He had 20 years work experience at age 25 😢",
+            "authorDisplayName": "@exploringapis4495",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k171yMDtn8o398C3lxd39OcZg4d7MFhNvJGfTuGHa2Zi2ow4EOwQv8jolERX9FY3-O3w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@exploringapis4495",
+            "authorChannelId": {
+              "value": "UCnGE-iYlIJdjeOZaAi-Wj7g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1721,
+            "publishedAt": "2026-06-07T02:26:26Z",
+            "updatedAt": "2026-06-07T02:26:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "BvNo70pgE21mA0eBT5XsYwPrdXI",
+      "id": "UgxtxKCP11o-c8-XRhV4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "V_8lmCWgfBzpAtxWUytPkf_B_2s",
+          "id": "UgxtxKCP11o-c8-XRhV4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "His eyes are definitely “the Jackson’s”",
+            "textOriginal": "His eyes are definitely “the Jackson’s”",
+            "authorDisplayName": "@mercyfernando9548",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kY5VlVwSk_hlUvnYzfIgfxLp3jLlIcU-Q_vwGwn5G0NHv5=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mercyfernando9548",
+            "authorChannelId": {
+              "value": "UC8HAJswIwDjVVdjvKdHQMog"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1784,
+            "publishedAt": "2026-05-10T18:25:38Z",
+            "updatedAt": "2026-05-10T18:25:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Qs8juYdKgWwc20kHZSdWp3auZtM",
+      "id": "UgwIl2gT_IoVnqfjMLx4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2g2VzAC8WCZ_cdONQPqOb4x3cgk",
+          "id": "UgwIl2gT_IoVnqfjMLx4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "The synchronised “This is our last and final tour” though.",
+            "textOriginal": "The synchronised “This is our last and final tour” though.",
+            "authorDisplayName": "@maoribrotha53",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k7sowZEFe8JZsZVGUg43Iy6U5aoIFL7DKYgSW-2U2cQA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@maoribrotha53",
+            "authorChannelId": {
+              "value": "UCnAKszjxjlX-Iq-QB6qjwzA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 634,
+            "publishedAt": "2026-05-22T08:57:37Z",
+            "updatedAt": "2026-05-22T08:57:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "VW1wji8B0qB48YkfOjlEXtL0rxo",
+      "id": "UgyQrHoE-F5dmQSgmQl4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lwaSDqTjbGaFFa7H513iYHTwVUk",
+          "id": "UgyQrHoE-F5dmQSgmQl4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "The voice, the tone! DAMNN",
+            "textOriginal": "The voice, the tone! DAMNN",
+            "authorDisplayName": "@lightofeyezz",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/4CJ-pbMYs1I8k9_CJ-ErRn-8lm7c6T80oeug8lip0KgjEdbNf6Y3RNtlL7KNpLgnjNSk_-zZ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lightofeyezz",
+            "authorChannelId": {
+              "value": "UCUGa4sCLAaI8ueVppcdirAw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 904,
+            "publishedAt": "2026-05-09T05:29:24Z",
+            "updatedAt": "2026-05-09T05:29:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NRmcshFFrAYwbyR4icy0TCGMvtA",
+      "id": "Ugxa3wYCNASR1W1IdHt4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4oFtObpZtBKTnK4UR1Wsdcu2CRc",
+          "id": "Ugxa3wYCNASR1W1IdHt4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "michael would be so proud of jaafar he did amazing \u003c33",
+            "textOriginal": "michael would be so proud of jaafar he did amazing \u003c33",
+            "authorDisplayName": "@belovedmjtslggmgirlxৎ",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/m1k5XL3lffP5UNEgZXHK2bLVBHvRvay9DY9zNjcTS4gHR1xqZV4065mJimqHrCKAh81cv85sWDo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@belovedmjtslggmgirlx%E0%A7%8E",
+            "authorChannelId": {
+              "value": "UCTqLrEAQ4zB7Ke-jh1t2SZQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 442,
+            "publishedAt": "2026-05-27T14:31:29Z",
+            "updatedAt": "2026-05-27T14:31:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "yOYDetWPk0BfReZMmeoWNyJ8W4E",
+      "id": "UgwMLer-34zym5ObSyV4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "GEmLzqrnEqYh1hdNm8_dnPAVAlQ",
+          "id": "UgwMLer-34zym5ObSyV4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "It was the perfect timing for Michael to finally stand up to his Joe",
+            "textOriginal": "It was the perfect timing for Michael to finally stand up to his Joe",
+            "authorDisplayName": "@ianplays452",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ny59qmEG2xfhlx4Loc8Y4o7PxPv-h0fCtqOs-QeWG74vFE0nHGCZ21PDiTHs55LTIODkeAoBcQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ianplays452",
+            "authorChannelId": {
+              "value": "UC7UeD-3nfU1A12G7pyZXzhg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 168,
+            "publishedAt": "2026-05-18T21:44:22Z",
+            "updatedAt": "2026-05-18T21:44:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "s_8RZJhXyCBjhWKlKTqJnyu8tUU",
+      "id": "UgyahMTLIeV898soYwZ4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LZynpLHcLTmYV3pf9WKXSYhp_Z4",
+          "id": "UgyahMTLIeV898soYwZ4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Joe Jackson is looking at Mike like WHAT!!!!   Boy, I'm about to whip that ass back to reality!!😅😅😅😅😅",
+            "textOriginal": "Joe Jackson is looking at Mike like WHAT!!!!   Boy, I'm about to whip that ass back to reality!!😅😅😅😅😅",
+            "authorDisplayName": "@HermanWatson-gr7pu",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kDVWTVor4oDMnrA8JSn1QfWKy679_pAFdisj868GXmAFhdW5SbK7lG9s-tsd8cKauiOQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@HermanWatson-gr7pu",
+            "authorChannelId": {
+              "value": "UC1ThJl6hhT9r9EC7PC9hWYw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1527,
+            "publishedAt": "2026-05-17T09:34:38Z",
+            "updatedAt": "2026-05-17T09:34:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ECoGL5BttI7jxRjv0a2KdI-TiYk",
+      "id": "UgzZAse_UbM6iSb6TNF4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QfA5VVjmcPyvb9rQ7GhqGPABUaM",
+          "id": "UgzZAse_UbM6iSb6TNF4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "he is so brave for standing up to his father like that\nedit: omgg tysm for the likessss",
+            "textOriginal": "he is so brave for standing up to his father like that\nedit: omgg tysm for the likessss",
+            "authorDisplayName": "@LunaHoltkamp-b7o",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Bl1Q3no6_TbA-quASxGejB-a1onL5hI44nVEWgI9kPM85wl2l4heJXfuq3Wo3Tz0DdWfpAAmPg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@LunaHoltkamp-b7o",
+            "authorChannelId": {
+              "value": "UCHd1q1UGBjsMjPfOV4wq12w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 343,
+            "publishedAt": "2026-05-17T20:20:05Z",
+            "updatedAt": "2026-08-12T20:30:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bi7n_gFjIWMyEQt8v9gGyqER-jc",
+      "id": "UgwIzYd8o7Qqkork4R14AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2foNnLm5LcbfOyqyqADUo6sMk8E",
+          "id": "UgwIzYd8o7Qqkork4R14AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "This was the moment where he told Joe: \"That's it\"",
+            "textOriginal": "This was the moment where he told Joe: \"That's it\"",
+            "authorDisplayName": "@elijahdeanbocaling3896",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FBzy_6W_5dvrbtvoWiLrnkq8KeZ-SYP9EYRdBoxlTdICSXMkqatVsfMTzANGBfjQuBlhghTG7w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@elijahdeanbocaling3896",
+            "authorChannelId": {
+              "value": "UCsluLRpeZ31qQzHvjDj9qEQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 148,
+            "publishedAt": "2026-05-16T01:09:26Z",
+            "updatedAt": "2026-05-16T01:09:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kqryd1bQOwTKUzMeEDesOJNPSQQ",
+      "id": "UgwaFWa4ojtvL5mKEvh4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Q3PfB5FKss8-O4Xur_0bo2q_CdA",
+          "id": "UgwaFWa4ojtvL5mKEvh4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "That look on Joe's face...Priceless! 😅",
+            "textOriginal": "That look on Joe's face...Priceless! 😅",
+            "authorDisplayName": "@RPolk-w8x",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nhoOi8Lhcr7w0l0Ur6N0ern1n6gqe49p8sDZDsXjKezsAllwS3frRAi1p45L_qVDrCfQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@RPolk-w8x",
+            "authorChannelId": {
+              "value": "UCkNOLp95ZI_0m3mjZsUw8aQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 67,
+            "publishedAt": "2026-05-19T03:21:00Z",
+            "updatedAt": "2026-05-19T03:21:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aLn7jFlEGTgscSFT_cFfg_h5MJ4",
+      "id": "UgwHoEgtbx8rwA46Q0l4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VJ3pe85rI8H8EMWCJIbMxIrhA5A",
+          "id": "UgwHoEgtbx8rwA46Q0l4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Omg he so looked like Michael I got chills through the film",
+            "textOriginal": "Omg he so looked like Michael I got chills through the film",
+            "authorDisplayName": "@crystalinabacteria3430",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lpDBnxznXo9lFygLUiSYSREo_o7UwFgXpiohvMQCmGhwM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@crystalinabacteria3430",
+            "authorChannelId": {
+              "value": "UCNT-QuRgJbYy4OEUMdn_A-Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 90,
+            "publishedAt": "2026-05-18T05:07:58Z",
+            "updatedAt": "2026-05-18T05:07:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Fq9S5JU-aZzen5IuC0nOccp1qb0",
+      "id": "UgzGmJ0fzM8NXWieId14AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6DYGLCfCy4DDus2hTJlEt3oahIs",
+          "id": "UgzGmJ0fzM8NXWieId14AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Michael Jackson will be proud of Jaafar",
+            "textOriginal": "Michael Jackson will be proud of Jaafar",
+            "authorDisplayName": "@RafflesTheSheepdog",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/K0jZpwugzOoRhhCUdyYBsEkd7jn55yNS6b_tn4_IPOP2UIEjajI4hgskxrGqav35ud2s7jlQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@RafflesTheSheepdog",
+            "authorChannelId": {
+              "value": "UCL0gNLK-8zrry1TIZ5up_TQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 108,
+            "publishedAt": "2026-05-22T01:30:14Z",
+            "updatedAt": "2026-05-22T01:30:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Xc_aLeVTMcnILaS4BZCUagOcbZE",
+      "id": "UgyJCTKNxURpOHouuRh4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "tZ6hxtrdEvE6IjF9AjSomZPSpqI",
+          "id": "UgyJCTKNxURpOHouuRh4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Joe was like, 'What about the mortgage ?😂",
+            "textOriginal": "Joe was like, 'What about the mortgage ?😂",
+            "authorDisplayName": "@oluba33",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Phiy0N8Z_bHJr6z_iqRP6OGYCIdmgJSOFPGSun7o-GpuT3v9bR27-0tD9zj5GSCiT7N7BxulSuo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@oluba33",
+            "authorChannelId": {
+              "value": "UC2Q0K1ZjVqI59CD5BlX9wdQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 34,
+            "publishedAt": "2026-05-24T14:49:03Z",
+            "updatedAt": "2026-05-24T14:49:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "3ooUN4k7dReWfkQaKsw5VmP7d9o",
+      "id": "Ugyhgb63CVZbL8x1BgZ4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "jrPki_sbamzK-mpUBswS6sggdvw",
+          "id": "Ugyhgb63CVZbL8x1BgZ4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "The brothers are smiling for him",
+            "textOriginal": "The brothers are smiling for him",
+            "authorDisplayName": "@WhisperRose88",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/bW2LhFvgf_dshuOYGweH10jlDMSrjFNoQZXgYW6YZaTPEfC6lfDe1G8B_K87Knk2sLiD6jqr7Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@WhisperRose88",
+            "authorChannelId": {
+              "value": "UCopDbIH8ofloEHxSPqt40tg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 13,
+            "publishedAt": "2026-06-25T02:39:35Z",
+            "updatedAt": "2026-06-25T02:39:35Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-kZIyLONPGVd94VH2LkfZMMU7Wg",
+      "id": "UgzBLOOW5IAp40vaK9p4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Drnwk5qh8PG5_OG8TQQKszPaoXQ",
+          "id": "UgzBLOOW5IAp40vaK9p4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Guys, let’s do something on June 25. Unfortunately, we lost our Michael, and I thought it would be a great idea to honor him in a huge way that day: let’s listen to his songs and try to break a record (an idea from a fan and me). If you agree, you can copy this comment and post it on other videos to help make it happen. We love you, Michael.",
+            "textOriginal": "Guys, let’s do something on June 25. Unfortunately, we lost our Michael, and I thought it would be a great idea to honor him in a huge way that day: let’s listen to his songs and try to break a record (an idea from a fan and me). If you agree, you can copy this comment and post it on other videos to help make it happen. We love you, Michael.",
+            "authorDisplayName": "@CelesteBurnell",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mFwh2IrAgSRZ0bfsBI6zmAunMhdQdLYWio4gGzQHiQAgS8RJeBxykBSv3CKlCmqo2Z-A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CelesteBurnell",
+            "authorChannelId": {
+              "value": "UCYA4UAUq2T5d-I8njYBl9SA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 34,
+            "publishedAt": "2026-06-02T03:38:19Z",
+            "updatedAt": "2026-06-02T03:38:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "d1SYhN1pctZZCuexhR3Rv4dEYuI",
+      "id": "Ugxl8R4OvIroHy03wVR4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ZxjLTpfi9XE0W1q-9E8eSyWmTuU",
+          "id": "Ugxl8R4OvIroHy03wVR4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "God the voice the eyes manerisms so like his uncle.michael",
+            "textOriginal": "God the voice the eyes manerisms so like his uncle.michael",
+            "authorDisplayName": "@julienewsome7471",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/hu44x8_HCXKmSIBC9Mzpp7_liC1MzFzCp7iXx2DRkXtVB_zTKZuG9uA0jIBz2fn7PDwuBSODrw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@julienewsome7471",
+            "authorChannelId": {
+              "value": "UCpJ8JhnY4HPP6cRWLkaoReQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 28,
+            "publishedAt": "2026-06-11T00:50:01Z",
+            "updatedAt": "2026-06-11T00:50:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "woUTpzS-01RG5uyQ8D5doHr2WSE",
+      "id": "Ugyvlc0D39u4q6ZrPRJ4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "-1Cb5n5qMah9kqxhTtres0fiF1c",
+          "id": "Ugyvlc0D39u4q6ZrPRJ4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Michael Jackson is so proud of Jaafar❤❤❤❤❤❤. Mom's face was proud of Michael Jackson for standing up. She put up with Joe too",
+            "textOriginal": "Michael Jackson is so proud of Jaafar❤❤❤❤❤❤. Mom's face was proud of Michael Jackson for standing up. She put up with Joe too",
+            "authorDisplayName": "@rosettajackson7099",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lzNtYNRKNhac4swb7uQ-ToGsxK1XFSyTFxcUpSkOmcbs7v=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rosettajackson7099",
+            "authorChannelId": {
+              "value": "UCpCP0Kv7SMHmIotQWP5iRUw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 8,
+            "publishedAt": "2026-07-18T00:49:09Z",
+            "updatedAt": "2026-07-18T00:49:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Hw01rPsCJigpCXgPI2QR6nQeRLQ",
+      "id": "UgylBQAcjtIK6DkPe5B4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "qLMs2yMFbOT-xuXB-NgzHSziGw4",
+          "id": "UgylBQAcjtIK6DkPe5B4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "“Now I’m going solo!” 🎵\nBLINKS HERE?",
+            "textOriginal": "“Now I’m going solo!” 🎵\nBLINKS HERE?",
+            "authorDisplayName": "@MoonstarMonday",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/DeJNisFUqc58udmX2le59dLUuFrIqC8ILZ8iJsg_f0IQSCEQNyYSA2hMyoa24ecQsYcx3eDZ-UA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MoonstarMonday",
+            "authorChannelId": {
+              "value": "UCLzQ2oi1SnsBF2tdUWULXhA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 40,
+            "publishedAt": "2026-05-12T08:06:14Z",
+            "updatedAt": "2026-05-12T08:06:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "FVzFAlH4-DHnTJglfrWpIu14jDQ",
+      "id": "UgxS_oJQfCsTB2QX7td4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "pJrx9rBl7hAY-y9TJWHl0UZoaUY",
+          "id": "UgxS_oJQfCsTB2QX7td4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "1984 . Original Clip 🎉",
+            "textOriginal": "1984 . Original Clip 🎉",
+            "authorDisplayName": "@ivan.s.r.chanel571",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/6P-TC9rpLpUG78FbuQ0CL6kEfTpnVpOSj5gNUMcG6Tvi_XQ3az62i2TGX9TlfQE2uANZlr_5lQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ivan.s.r.chanel571",
+            "authorChannelId": {
+              "value": "UCLdG7VpCC_6d-S27TLoBTDA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 135,
+            "publishedAt": "2026-05-08T15:19:26Z",
+            "updatedAt": "2026-05-08T15:19:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "iXE7s3ZgIhnmsamvF2TtTy-s0FA",
+      "id": "UgxNiITTlTyvJOd8itZ4AaABAg",
+      "snippet": {
+        "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+        "videoId": "SbNapsdbJQM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "RPNXdXKZG5Iob0yt_RdZ92BW00I",
+          "id": "UgxNiITTlTyvJOd8itZ4AaABAg",
+          "snippet": {
+            "channelId": "UCzy4K49Wejj181kfzGzCSKw",
+            "videoId": "SbNapsdbJQM",
+            "textDisplay": "Joes face in this scene always cracks me up 😂",
+            "textOriginal": "Joes face in this scene always cracks me up 😂",
+            "authorDisplayName": "@brycerodriguez6731",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mP6bEdKWZZpKsVrmvy6TJaOXzDPH9LC1ZN6uwjQI9fDvE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@brycerodriguez6731",
+            "authorChannelId": {
+              "value": "UCEi21F7OnsarpLN5zU4iZNw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2026-06-05T12:02:36Z",
+            "updatedAt": "2026-06-05T12:02:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

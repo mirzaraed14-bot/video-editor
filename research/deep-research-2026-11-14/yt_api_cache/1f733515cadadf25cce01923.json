@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "OL72BO48OLn5VeNPNys15lMFEJ4",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "DCpJZkJpjKTAODffIxfDxiv9HlI",
+      "id": "UCTQuKo8v0PaPCvk5aRxc_Yg",
+      "snippet": {
+        "title": "Charlie Chang",
+        "description": "My name is Charlie -- I am a 33 year old entrepreneur based in Southern California. I run multiple businesses ranging from media channels, to affiliate marketing, to a recruiting agency. In the past, I've done modeling, photography, tutoring, and pretty much every side hustle under the sun.\n\nI make videos about personal finance, earning money online, investing, productivity, real estate, and entrepreneurship. I am a huge proponent of self-employment and building up multiple streams of income. If this interests you, please subscribe to my channel to learn more!\n\nFacebook: Charlie Chang\nInstagram: charlie__chang\n",
+        "customUrl": "@charliechang",
+        "publishedAt": "2008-06-28T00:01:50Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_k2sF5SlCpadrWwaJ_0yxTyO7WM0afGaQhXPWCYm2v-i5Y=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_k2sF5SlCpadrWwaJ_0yxTyO7WM0afGaQhXPWCYm2v-i5Y=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_k2sF5SlCpadrWwaJ_0yxTyO7WM0afGaQhXPWCYm2v-i5Y=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Charlie Chang",
+          "description": "My name is Charlie -- I am a 33 year old entrepreneur based in Southern California. I run multiple businesses ranging from media channels, to affiliate marketing, to a recruiting agency. In the past, I've done modeling, photography, tutoring, and pretty much every side hustle under the sun.\n\nI make videos about personal finance, earning money online, investing, productivity, real estate, and entrepreneurship. I am a huge proponent of self-employment and building up multiple streams of income. If this interests you, please subscribe to my channel to learn more!\n\nFacebook: Charlie Chang\nInstagram: charlie__chang\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "109674244",
+        "subscriberCount": "1460000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1347"
+      }
+    }
+  ]
+}

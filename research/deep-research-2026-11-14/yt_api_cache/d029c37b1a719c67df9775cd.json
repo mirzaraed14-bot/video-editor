@@ -1,0 +1,691 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "oRLgw3HJAWy4ikWyShGZPKIoqZk",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DcVVCQ0lBRUZSZTMwVGdhbWdFS2xRRUkyRjhRZ0FRWUJ5S0tBZHNSNFJuTHpqZ2lwdGxybjRENmdPazhNbU1SR1dvcXVqb0pXR0hUM1hEbC1mZUVSaTFjcHlNT1o3RFMwWFVEUVZNVnRsbVFCZjFXb1VDNEFkS0Jmb1ZMTFhhTG50Q21pWVFXaEZSY1RPZzg2YXVkMDBCZFpmS01kWE80SXAyUlp3a1VLZG14cW82dUNfY1VTaGdMT09zSVFGWU9rSmo2cVdFSVM2WVNWa2QzU1dpZnRhcmtnS19SQWhBVUVnVUl1eUFZQUJJSENJVWdFQlFZQVJJRkNJZ2dHQUFTQlFpSElCZ0FFZ1VJcUNBWUFCSUZDSVlnR0FBU0JRakFJQmdBRWdVSWlTQVlBRkFBV0FF",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "re_dP-fyewP82KgCWRoz7lV4zSA",
+      "id": "UgxI4LLsI5LEa1JpLq94AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "oet8MzYfaI1KrpSbhspqzyj2fk4",
+          "id": "UgxI4LLsI5LEa1JpLq94AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "I DIDN'T EVEN REALIZE THAT IS MIKE MYERS PLAYING THAT ROLE. WOW!!!🤯🤯🤯🤯",
+            "textOriginal": "I DIDN'T EVEN REALIZE THAT IS MIKE MYERS PLAYING THAT ROLE. WOW!!!🤯🤯🤯🤯",
+            "authorDisplayName": "@harleminthebuildn9234",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lAyJKhiq9EnFyr9PoYR9VlqjZIrKGxV_qEer2RocxqpL8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@harleminthebuildn9234",
+            "authorChannelId": {
+              "value": "UCeDy1hjSxn0_GK2C2zk8kMA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1434,
+            "publishedAt": "2026-07-28T01:40:33Z",
+            "updatedAt": "2026-07-28T01:40:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 90,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "dZXthuNZbb2H14ty0JxX6EzyhSI",
+      "id": "UgwAjwUxGOdW5fIq7lF4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6XuVDJomaM-ejUt5H3TpccUGBBU",
+          "id": "UgwAjwUxGOdW5fIq7lF4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "And to think MJ’s videos did more for MTV than MTV ever did for MJ is staggering.",
+            "textOriginal": "And to think MJ’s videos did more for MTV than MTV ever did for MJ is staggering.",
+            "authorDisplayName": "@AR-ii3ly",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kLiu5f_b23xWsqAhePRMVxhj3nmd1Osyjr8HlFRbIGg8o=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AR-ii3ly",
+            "authorChannelId": {
+              "value": "UCc9JMneh_KyX923BRECoM2g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1643,
+            "publishedAt": "2026-07-27T20:11:06Z",
+            "updatedAt": "2026-07-27T20:11:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 29,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "c6iVfVVRKtcHmZv3_DlbIUws6Do",
+      "id": "Ugw_DxCe_zqUN6zuhNB4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "vSxJbZtUHrr-SNUJbggc5-e4Oic",
+          "id": "Ugw_DxCe_zqUN6zuhNB4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "Get it? Mike Myers also played an Executive in Bohemian Rhapsody who refused to play Queen’s Bohemian Rhapsody because he thought no one would want to hear a 6 mins rock opera section. Now in Michael, he played an executive (a real-life executive) who ordered to get Billie Jean played on MTV",
+            "textOriginal": "Get it? Mike Myers also played an Executive in Bohemian Rhapsody who refused to play Queen’s Bohemian Rhapsody because he thought no one would want to hear a 6 mins rock opera section. Now in Michael, he played an executive (a real-life executive) who ordered to get Billie Jean played on MTV",
+            "authorDisplayName": "@traydaniel0403",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/71GJa11CfsSacjiwlmzeLcVppvCQvLj4OPaJ85-kq6CgvUs8pSwaHoQpJ3C_n8CE3q6EvRWH=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@traydaniel0403",
+            "authorChannelId": {
+              "value": "UCjxAetCRVtd2cFYSWingCVA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1504,
+            "publishedAt": "2026-07-27T18:53:47Z",
+            "updatedAt": "2026-07-27T18:53:47Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 36,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Z61Cv8qPOeXoNU0i_WuKmzEby0Q",
+      "id": "Ugzb4gYQuGHpMJr61eV4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "vyDkJbVq8HhuAe3vlJwnu3ASZZ4",
+          "id": "Ugzb4gYQuGHpMJr61eV4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "\"Please, try harder.\" \n\nThose words made Michael Jackson the greatest of all time.",
+            "textOriginal": "\"Please, try harder.\" \n\nThose words made Michael Jackson the greatest of all time.",
+            "authorDisplayName": "@ThrillerTheSpammer",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/v7vnidqbSmf6GfpEFf54mEtW3Na35BANtCnXti8I-hTBCX_nE3DDHyxQVzkwonCTC78_6p4i=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ThrillerTheSpammer",
+            "authorChannelId": {
+              "value": "UCwQrchVq6aBndvXGo4iIEOQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 941,
+            "publishedAt": "2026-07-27T18:09:13Z",
+            "updatedAt": "2026-07-27T18:09:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "oFYAeVxq9251Ib8ruStPCfraUZo",
+      "id": "UgzYM1NBlDSmwTeNejF4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "-PVFxy2E4L4bgX57BgUYEe44P4Y",
+          "id": "UgzYM1NBlDSmwTeNejF4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "3:00 \"I don't give a sh!t, I don't give two sh!ts, I don't even give three sh!ts\" I love this 😂",
+            "textOriginal": "3:00 \"I don't give a sh!t, I don't give two sh!ts, I don't even give three sh!ts\" I love this 😂",
+            "authorDisplayName": "@kvidoland",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lREW_UwoTWCINrnQKji4gLXEDOhysfr4dE_pJUwRvFUZs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kvidoland",
+            "authorChannelId": {
+              "value": "UCstyU0M71KbS8Xdk-p29u0A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 631,
+            "publishedAt": "2026-07-28T20:35:43Z",
+            "updatedAt": "2026-07-28T20:37:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "HlobGrcxzXJxdstPswBeiWRPJLM",
+      "id": "Ugz193QhqCsyOI6b-zx4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aZ8eIFUR5WcO6tonQWxToCptnlU",
+          "id": "Ugz193QhqCsyOI6b-zx4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "I missed Mike Myers. I’m delighted he appeared in this movie",
+            "textOriginal": "I missed Mike Myers. I’m delighted he appeared in this movie",
+            "authorDisplayName": "@yohannesameha5896",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n_QCnevYMm3HdAFKSI7Skebqt1G3zvooPjDaMfmhQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@yohannesameha5896",
+            "authorChannelId": {
+              "value": "UCzcnHEhY0-iiK0N4asUe6Wg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 415,
+            "publishedAt": "2026-07-28T19:14:55Z",
+            "updatedAt": "2026-07-28T19:14:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 13,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "GqgJ7DnwS8UHqQru5G6dSkVTLJo",
+      "id": "Ugx6adQZPV7JukfxXRt4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "F76_y45OP6OO7N_d3KXAJjelgCw",
+          "id": "Ugx6adQZPV7JukfxXRt4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "I love how Michael (1:43) says \"with Love Walter, please try harder\"",
+            "textOriginal": "I love how Michael (1:43) says \"with Love Walter, please try harder\"",
+            "authorDisplayName": "@patrick17_6",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k4N3G7ZNSdBPN48B_Xbou7ERA_cuLfxsBwmtLZ768y50w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@patrick17_6",
+            "authorChannelId": {
+              "value": "UCJf2ajndQQ4fgyhV_xcXjyw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 463,
+            "publishedAt": "2026-07-29T15:00:20Z",
+            "updatedAt": "2026-07-29T15:00:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "91UAS6NfBcOwJP6sqZCnT1hgjf0",
+      "id": "Ugy3X0Jp-uR_7M8rWxd4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "enwUmnIg53K7bDipT9x780eaSIo",
+          "id": "Ugy3X0Jp-uR_7M8rWxd4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "I wish Michael was here to see his nephew Jaafar portray him. They missed the part when Michael smiled after Walter just got off the phone was the best part!!! He sounds exactly like his uncle. I hope Jaafar gets an Oscar because he deserved it!! Love you, Jaafar. ❤😊❤",
+            "textOriginal": "I wish Michael was here to see his nephew Jaafar portray him. They missed the part when Michael smiled after Walter just got off the phone was the best part!!! He sounds exactly like his uncle. I hope Jaafar gets an Oscar because he deserved it!! Love you, Jaafar. ❤😊❤",
+            "authorDisplayName": "@zoesmith6803",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ldGabRu-rUv_NEGK-b1ANKUaPVuhxxfoJ0gcKjYvI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zoesmith6803",
+            "authorChannelId": {
+              "value": "UC0Bm8BubfMSQvlFjvKiF8eg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 361,
+            "publishedAt": "2026-07-27T19:28:14Z",
+            "updatedAt": "2026-07-27T19:28:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "pU2F3imv1eYq-OWinGT1cREm-8s",
+      "id": "Ugwy1QkjqCbseTA3DM94AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "W5MewralR8FUPFtaKqLg4GhFeZ0",
+          "id": "Ugwy1QkjqCbseTA3DM94AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "the \"with love, Walter, please try harder\" line is one of the best jafar moments in the movie. There's anger, sadness, worry, pain, fear in those eyes. Jafar does a lot of acting with his eyes.",
+            "textOriginal": "the \"with love, Walter, please try harder\" line is one of the best jafar moments in the movie. There's anger, sadness, worry, pain, fear in those eyes. Jafar does a lot of acting with his eyes.",
+            "authorDisplayName": "@hugobravo1607",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ZfduPw9t6EMpHtY0xIP1hZ-xvacilOgpCz1D0fqSZX9feN-qdDqIaEXLymJ7nN6oKFQe8x32ow=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@hugobravo1607",
+            "authorChannelId": {
+              "value": "UCW77M35fgAMbV5K1DpI-8iQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 40,
+            "publishedAt": "2026-08-25T21:22:43Z",
+            "updatedAt": "2026-08-25T21:22:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "5D1ys6CGMU_tuzBWhpyRmMR86dA",
+      "id": "Ugw80jgQWrSmPwxST0B4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LgM_XKFx92sbIVeyg2gcpS-cWWk",
+          "id": "Ugw80jgQWrSmPwxST0B4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "\"Please Try Harder\" Those Michael Jackson's Words are really Important to me. He wants to be in the MTV. I Love MTV Either.",
+            "textOriginal": "\"Please Try Harder\" Those Michael Jackson's Words are really Important to me. He wants to be in the MTV. I Love MTV Either.",
+            "authorDisplayName": "@brysonhardy9082",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kAzj6Igew-5N0yKu9E9QCe22tgWMY0x1wSxTPV4U3TPsg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@brysonhardy9082",
+            "authorChannelId": {
+              "value": "UCCctSnLWlu-6HnH9g7LZ0rg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 168,
+            "publishedAt": "2026-07-27T20:40:58Z",
+            "updatedAt": "2026-07-27T20:40:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "VnzkhOEu--7ZRZz5DqjMopmFoYQ",
+      "id": "UgxyJUIQ-Mf8ke99ApB4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ocVabu9cZD0zywivXB4hLg3h5IU",
+          "id": "UgxyJUIQ-Mf8ke99ApB4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "When Mike takes those glasses off business is about to pick up lol",
+            "textOriginal": "When Mike takes those glasses off business is about to pick up lol",
+            "authorDisplayName": "@GlobalEnigma64",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lBjldBpi4lDRC1fM7H2ImDIZHj8N7EXQwNNwYbdoVOgg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@GlobalEnigma64",
+            "authorChannelId": {
+              "value": "UC-6IMz6mFjxhqStc0KgAjKA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 321,
+            "publishedAt": "2026-07-28T02:51:28Z",
+            "updatedAt": "2026-07-28T02:51:28Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "u3WihUrFWunVe99KufS7ohXXtHI",
+      "id": "Ugz2NDCQs7IqG5_OxAl4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zVn34Q9jtgQsC79d8jyUh2Df1Xg",
+          "id": "Ugz2NDCQs7IqG5_OxAl4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "Michael Jackson influence had opened the door for other  black artists  for their videos to played on MTV  and it was historic.",
+            "textOriginal": "Michael Jackson influence had opened the door for other  black artists  for their videos to played on MTV  and it was historic.",
+            "authorDisplayName": "@MikeMason-wk9gh",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kAvXwKhF9W-758960a9XjLrXxvSdrZkX4XZl0vZ0CotMcCwuJe0HKveyMX8NMWQ9UFfw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MikeMason-wk9gh",
+            "authorChannelId": {
+              "value": "UCiKhOvYIsxo2NN-3QZtibJA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 208,
+            "publishedAt": "2026-07-29T01:48:52Z",
+            "updatedAt": "2026-07-29T01:48:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7X19h4lLvY0UwJ_kTOUlmwvX-IU",
+      "id": "UgwH4I5xEe_ytdHGlid4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_MMQjB421Avn-qqTH_mR_jMn4ZA",
+          "id": "UgwH4I5xEe_ytdHGlid4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "The VOICE, LOOK and  MANNERISMS are all UNCANNY !!!😲🕴🏽😎🥹 I don't think that there is ANYONE else who could have played Michael like his nephew!😄🫶🏽",
+            "textOriginal": "The VOICE, LOOK and  MANNERISMS are all UNCANNY !!!😲🕴🏽😎🥹 I don't think that there is ANYONE else who could have played Michael like his nephew!😄🫶🏽",
+            "authorDisplayName": "@OmarAbdulMalikDHEdMPASPACPAPro",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uIwLi3PXajS_hhu6nixAm2MXCNTCZiYQ93VONsCZEFv3RZVUwUToiFCq-UNVQBGXNrZDgP7w8mE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@OmarAbdulMalikDHEdMPASPACPAPro",
+            "authorChannelId": {
+              "value": "UC1wCswVKjQEMiiUuEpzr63Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 61,
+            "publishedAt": "2026-07-29T19:29:29Z",
+            "updatedAt": "2026-07-29T19:31:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "v_NsM1sXY5szUBvVbG3CaIq-gq8",
+      "id": "UgwgBx8VMa9ZPsugjg14AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "d8lPu0aJiMioQcT08VxfE3X7xSI",
+          "id": "UgwgBx8VMa9ZPsugjg14AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "\"I let you do the album bu yourself\" is crazy work to be said to a grown man",
+            "textOriginal": "\"I let you do the album bu yourself\" is crazy work to be said to a grown man",
+            "authorDisplayName": "@fonzarelli619",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Arm0X7g7kdOmYE5YajMKEiW_y-6Z3khPw9pOLkLv7sve-bG0g_dx6AaADuxPzDN8uTgomEnfDg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@fonzarelli619",
+            "authorChannelId": {
+              "value": "UC3Tshk66Un8RWB2TfzzFdew"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 59,
+            "publishedAt": "2026-07-29T21:15:50Z",
+            "updatedAt": "2026-07-29T21:15:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9d5DLM-ls1NZVyWtS0nSc9crpy4",
+      "id": "UgyKBwo8cDUaOXkwHJN4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1Ft1Pyy6z4IUWo6OIbN5fK63kSA",
+          "id": "UgyKBwo8cDUaOXkwHJN4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "Joseph was right about one thing. Michael surrounded himself with people who never told him no.",
+            "textOriginal": "Joseph was right about one thing. Michael surrounded himself with people who never told him no.",
+            "authorDisplayName": "@Beau74",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lu164xWniSUl6v_1-R1Cz4ZybpqH_COJEZpfh6ww=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Beau74",
+            "authorChannelId": {
+              "value": "UCOWhmgVu5L5yv674CLkFCUA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 72,
+            "publishedAt": "2026-08-24T00:00:36Z",
+            "updatedAt": "2026-08-24T00:00:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "hg5WifQqgUG-G29w1G29aKmD29M",
+      "id": "UgxfzUrpIcyib24scWN4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QV8vjGa7KNxL4otzXjVVAeYbZlg",
+          "id": "UgxfzUrpIcyib24scWN4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "I remember that. Bills Jean was played in rotation repeatedly. Over and over.",
+            "textOriginal": "I remember that. Bills Jean was played in rotation repeatedly. Over and over.",
+            "authorDisplayName": "@nubiaann",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/GQfbxewb3Nl6Bpr08RW3hbcJr6G9reFg2unLXzjVflv06SfZHTNFjaZyZUxSXOUNH1LJ8T6hsA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nubiaann",
+            "authorChannelId": {
+              "value": "UCCDY0gxvpf4I6PKWNpTyFoA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 78,
+            "publishedAt": "2026-07-30T14:07:48Z",
+            "updatedAt": "2026-07-30T14:07:48Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "j9wYXJgz29Mavop_kOigZJegTcg",
+      "id": "UgxkkX4XtxaA9L8obld4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_Zv17qCtRhy73aCwAX83zN0FNN8",
+          "id": "UgxkkX4XtxaA9L8obld4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "mike myers nails the role of a record company executive again!!",
+            "textOriginal": "mike myers nails the role of a record company executive again!!",
+            "authorDisplayName": "@safakozkan6698",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lm473jVjptTppPUAxRzZW2KLLMTzet30Q_R-E_EIuU64c=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@safakozkan6698",
+            "authorChannelId": {
+              "value": "UCZpS_OKfE6UNlcPDWJt6cvQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 238,
+            "publishedAt": "2026-07-29T08:04:50Z",
+            "updatedAt": "2026-07-29T08:04:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 9,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ojjAMa423si6jzrzKW1MWduK65Y",
+      "id": "Ugz8jvGwpmbAADetqUF4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ysW1qeghvHice5b2qvCgTGmxHP8",
+          "id": "Ugz8jvGwpmbAADetqUF4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "Myers has some serious acting chops when he wants to get serious. Comedians often have more range than other actors",
+            "textOriginal": "Myers has some serious acting chops when he wants to get serious. Comedians often have more range than other actors",
+            "authorDisplayName": "@OhWeeOh-d1t",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k63hxNaym7o7XHBFip_GlgbEYCtcaIVS7oac5PdTO1zFbyUM1FWY_IKcO0pMDJ756b2Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@OhWeeOh-d1t",
+            "authorChannelId": {
+              "value": "UCCr4OgFnYrldWXIn4tmgX7g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 43,
+            "publishedAt": "2026-08-10T04:08:21Z",
+            "updatedAt": "2026-08-10T04:08:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "f8TtKTpUhQxKeCbtlNtGTQoYZ6k",
+      "id": "Ugxhev4q71VPZuyTCWR4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "EXmhEohN2v6fDrOQyMQaVr5vmns",
+          "id": "Ugxhev4q71VPZuyTCWR4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "i never knew Mike Myers was in here but when he said \"If this kid\" with that Dr Evil type pointing he did... it clicked lol",
+            "textOriginal": "i never knew Mike Myers was in here but when he said \"If this kid\" with that Dr Evil type pointing he did... it clicked lol",
+            "authorDisplayName": "@realradin__XD",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/x25zyzscoMWaFHncyPB2cADFeXl6fIVG34LlwLiMuAf3sNEi9V6abNgYZKlhLTUInaW_YvW5JQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@realradin__XD",
+            "authorChannelId": {
+              "value": "UCBli8uq0o96VAUP2_afs6wg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 77,
+            "publishedAt": "2026-07-27T21:07:11Z",
+            "updatedAt": "2026-07-27T21:07:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jQV7bZ1mkI5FLkSwLmh6Hls1c70",
+      "id": "Ugxhl82m_ok8Ze6nHUJ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "pzM-H_evHLw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5xrLuLcYvudjDFBKJNX27vTi2R8",
+          "id": "Ugxhl82m_ok8Ze6nHUJ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "pzM-H_evHLw",
+            "textDisplay": "That's the media world in the 80s..... that it took Michael Jackson -- the Biggest music performer in the World who's behind some of the world's Greatest songs--  to shatter MTV's color barrier.",
+            "textOriginal": "That's the media world in the 80s..... that it took Michael Jackson -- the Biggest music performer in the World who's behind some of the world's Greatest songs--  to shatter MTV's color barrier.",
+            "authorDisplayName": "@MalcolmRandall",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nnK_pB1WpqzwQ26zqf0RrNOv0yy797pNM-qPvoWLLYmA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MalcolmRandall",
+            "authorChannelId": {
+              "value": "UCNctK7ikWdsWiyw5QkLnV6Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 64,
+            "publishedAt": "2026-07-29T22:58:07Z",
+            "updatedAt": "2026-07-29T22:58:07Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    }
+  ]
+}

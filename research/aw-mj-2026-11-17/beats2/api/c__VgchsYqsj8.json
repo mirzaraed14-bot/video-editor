@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "9zfZzY4j77iYBiWpZJc_pRc83YQ",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1Dc01CQ0lBRUZSZTMwVGdhdUFFS3N3RUkyRjhRZ0FRWUJ5S29BZnZpVkFoSHRBMDJkNTZZbGRrdjJmbkJZQTRiaEtRT1YwZHFXd3dYSWRXT2lTYmR5ZFVqbkZnTWs4ZzdnWEVSaS1RVEVrcmFDVzd1SFZhTVdXdXhZd1JUR2h6NHJqUnZrQXo1b3d3WnAwVU5tNFFDVWx5THBTMlZ5UWJ3QnJmS29HQ0tsUXRWUXo1SWhKYkMzSDZFZzR0RWxEaVFLUVNtcnEzcU5Ja1BVM3lubnNEeThnekNhZ0xSQnB5RHBXMlFxRmlMYlk0TWtjWE85SHNkRzZOcTZuS1lJUWZVQ09DdkF4QVpFZ1VJdXlBWUFCSUZDS2dnR0FBU0JRaUhJQmdBRWdVSWlTQVlBQklGQ0lnZ0dBQVNCUWlHSUJnQUVnVUl3Q0FZQUJJSENJUWdFQmtZQVJJSENJVWdFQW9ZQVZBQVdBRQ==",
+  "pageInfo": {
+    "totalResults": 25,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aCb9TGN0w3cc-wDAnGxOKLKiDbs",
+      "id": "UgxdRzsyRABVCTQ-K154AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lYfjvW2xstG9fk85a5R8f3i9DuE",
+          "id": "UgxdRzsyRABVCTQ-K154AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "\"That boy is gonna feel my belt.\"\nMind you, Michael was 21 years old by this point. Joe really needed Katherine's reality check.",
+            "textOriginal": "\"That boy is gonna feel my belt.\"\nMind you, Michael was 21 years old by this point. Joe really needed Katherine's reality check.",
+            "authorDisplayName": "@j.albuquerque9274",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nbvezar3WW0DveoG8VYHK3VqBb2XV0F7r4pvuCgbD3gQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@j.albuquerque9274",
+            "authorChannelId": {
+              "value": "UCubX3HkDKMpiYKFAzNts7sQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 10261,
+            "publishedAt": "2026-07-27T22:00:25Z",
+            "updatedAt": "2026-07-27T22:00:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 129,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "w4quIBkR5b4AOFnbQizQnoRSpNY",
+      "id": "UgwcrmhtOjS0JGa4EbR4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VzybBGm5Tr46VQw0uvY-uifnpPU",
+          "id": "UgwcrmhtOjS0JGa4EbR4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "The fact he fired his Pop thru a fax only to run into him the same night while grabbing some ice cream from the fridge cuz yall still live together is beyond hilarious",
+            "textOriginal": "The fact he fired his Pop thru a fax only to run into him the same night while grabbing some ice cream from the fridge cuz yall still live together is beyond hilarious",
+            "authorDisplayName": "@hakimjefferson3218",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lvfvKFE3Em0qoB4BTD36NhkwIKR61DpG5z5pK2ACJg7mc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@hakimjefferson3218",
+            "authorChannelId": {
+              "value": "UCSqeaHpKwh31N6p-iwOd5Cg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3986,
+            "publishedAt": "2026-07-30T00:03:46Z",
+            "updatedAt": "2026-07-30T00:03:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 31,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "RtzTLU0K6xByPIb_WA-ejG2T950",
+      "id": "UgwLShtgBkILsPFKPBZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2mJqFoXdrujyEP50U5deP4GFACk",
+          "id": "UgwLShtgBkILsPFKPBZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "“I need you to fire Joseph.” I remember the theater erupting in laughter lmao",
+            "textOriginal": "“I need you to fire Joseph.” I remember the theater erupting in laughter lmao",
+            "authorDisplayName": "@Thedearster",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nh3M_XjyuQyPntAYCm9Ao0eMxsaOsjAmzQjh3RrHk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Thedearster",
+            "authorChannelId": {
+              "value": "UCoYkmaxlJWpLxfLZ2I0uqkA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7292,
+            "publishedAt": "2026-07-28T13:25:24Z",
+            "updatedAt": "2026-07-28T13:25:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 39,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1s-yguCZ8pGKtxMk6pAnaRSSCWk",
+      "id": "Ugye0TcTXqT32VayVah4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Iq4i2BSU50cPu2jO6O3E1mOVP5E",
+          "id": "Ugye0TcTXqT32VayVah4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "They made the right choice in casting Michael's nephew to play him",
+            "textOriginal": "They made the right choice in casting Michael's nephew to play him",
+            "authorDisplayName": "@darkwyrm21",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nggnQbXySk20OY1enLrNP1pdHwEJczwzlue3AlWU8xkBTO=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@darkwyrm21",
+            "authorChannelId": {
+              "value": "UCrc8hiIPuqbh-H7MBsWsPpQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 131,
+            "publishedAt": "2026-08-23T15:32:50Z",
+            "updatedAt": "2026-08-23T15:37:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "D4aixrN6QdpWYYmRSTNUQRdqQNU",
+      "id": "UgxVnGzr7zdshDP2Pjp4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "yL783X4tH8n9dUl_WSGAhnOKsac",
+          "id": "UgxVnGzr7zdshDP2Pjp4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "\"That boy's gonna feel my belt when he get in here!\"\nI think I know why Michael fired his dad",
+            "textOriginal": "\"That boy's gonna feel my belt when he get in here!\"\nI think I know why Michael fired his dad",
+            "authorDisplayName": "@CoverWorld10",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Np9a0zsP2626FCkvn7ot__FPhaHJBmH1keZgIQ8eHdCheej4GMkvbAy8NL5JdWsYA_rS4yGZsAk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CoverWorld10",
+            "authorChannelId": {
+              "value": "UCOT-Zf_L9k_A7SG_iOvjFJA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1287,
+            "publishedAt": "2026-07-30T17:17:18Z",
+            "updatedAt": "2026-07-30T17:17:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7p8UiTTzbK0pS10CMdbewEUonwY",
+      "id": "Ugxpc3s-TP-GSkQIgEt4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lOoft_jtS0FIqK7wOYcX9MkYU-A",
+          "id": "Ugxpc3s-TP-GSkQIgEt4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "\"What kind of son fires his father?\"\n\nOne who wasn't gonna tolerate your shit anymore, Joe.",
+            "textOriginal": "\"What kind of son fires his father?\"\n\nOne who wasn't gonna tolerate your shit anymore, Joe.",
+            "authorDisplayName": "@AtrocityEquine01",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lPJt3uiXvn7VtodcfUUhE57iK4l6_WTNtManU6ZM6MpJ0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AtrocityEquine01",
+            "authorChannelId": {
+              "value": "UC9fr9718yJy7rq3a70gFOVw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4385,
+            "publishedAt": "2026-07-29T22:52:37Z",
+            "updatedAt": "2026-07-29T22:52:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 27,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NqUoErDShVvQm2cdOUmaE4wiMC4",
+      "id": "Ugy9JabDypfzSbKF7cB4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "nNgMe8tIvXLmqIuurmttNAxgyw0",
+          "id": "Ugy9JabDypfzSbKF7cB4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Michael was ambitious by nature, so when he saw that someone believed in his vision, he knew he had his guy",
+            "textOriginal": "Michael was ambitious by nature, so when he saw that someone believed in his vision, he knew he had his guy",
+            "authorDisplayName": "@hushsounds6486",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/bEhSZ44X5u3qCRw4DUuy-3NGHlqxEaHTXOi5wn5Tf3S_N56uFldxai_4oOWJTkCMVksTu64GPw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@hushsounds6486",
+            "authorChannelId": {
+              "value": "UCGqxLrwlSz3ddYsEFl3Cx_A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4476,
+            "publishedAt": "2026-07-28T01:23:12Z",
+            "updatedAt": "2026-07-28T01:23:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 17,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rusJGtCAcb_5c_8FKHUAc7oIp-Y",
+      "id": "UgwXOI6b2ey5hm09udh4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "M7QBt2iAYr9ooHV668eu13T0tyI",
+          "id": "UgwXOI6b2ey5hm09udh4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Michael Jackson firing his abusive father with a piece of paper is PEAK Karma.",
+            "textOriginal": "Michael Jackson firing his abusive father with a piece of paper is PEAK Karma.",
+            "authorDisplayName": "@MasonCarey-m7b",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_m5evfCF_YxC_lDCZai6PdDPi8RLB_PVhrL3a1ARTLFBM2x9-KClsWFWW2FfUzwIrVBkQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MasonCarey-m7b",
+            "authorChannelId": {
+              "value": "UC0YdVTEF6yHJ-WZlFHpXAhw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5503,
+            "publishedAt": "2026-07-27T16:37:09Z",
+            "updatedAt": "2026-07-27T16:37:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 24,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "s-y4aQUk1n9KO9lBClr_E-n4Pro",
+      "id": "UgzA3017EBuW6fBVQVd4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "siEMgZajEWStujuJJjKNblCGPo8",
+          "id": "UgzA3017EBuW6fBVQVd4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "“I need you to fire Joseph” goes hard lol",
+            "textOriginal": "“I need you to fire Joseph” goes hard lol",
+            "authorDisplayName": "@DaRealLb-l7x",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nf0FXKCf7rVQTkL_cdW_gcNzP0GO8gVMTHB1jWOnMtnwFNwdVFjrHKDmL-5QMSb7kfJWc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DaRealLb-l7x",
+            "authorChannelId": {
+              "value": "UC3K5xkbdzVhvu4_WVNw2GNg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 69,
+            "publishedAt": "2026-08-01T01:21:58Z",
+            "updatedAt": "2026-08-01T01:21:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "E2LvDFfebXIqsNiheUD5gzEHEyA",
+      "id": "Ugyx17FhHdKtIJeaakJ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Z4z98aHFXtgo0_zORNGfxu6dyvU",
+          "id": "Ugyx17FhHdKtIJeaakJ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "The second Michael figured out he's the Beach Boy's manager, he was sold. If anyone can do batshit insane families with deep-rooted trauma, it's the manager of the Beach Boys lol.",
+            "textOriginal": "The second Michael figured out he's the Beach Boy's manager, he was sold. If anyone can do batshit insane families with deep-rooted trauma, it's the manager of the Beach Boys lol.",
+            "authorDisplayName": "@andrewkent6402",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/mnzwhBopS151A_d41OAYAbeK9mfFsHByoUl4ERo8fAJZ1JYyOrGUwPjSmLsHlCHxGm2wwHxWdzE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@andrewkent6402",
+            "authorChannelId": {
+              "value": "UCN1v7RjNDSool-zGQP1-CsQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 91,
+            "publishedAt": "2026-08-13T02:29:30Z",
+            "updatedAt": "2026-08-13T02:29:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Dr7pjNKDFqVvanZE120oGiT16wQ",
+      "id": "UgybFI1SOh-r8-9xgq54AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "op4Tc7YZPOXTAxfv1al7qr2xuEQ",
+          "id": "UgybFI1SOh-r8-9xgq54AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "“The boy fired me, with a piece of paper” 😂",
+            "textOriginal": "“The boy fired me, with a piece of paper” 😂",
+            "authorDisplayName": "@PatrickFuentes-qz5vn",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nd-vlBKVo5vb_gAzEJPPrEUmKAXLoruOBOoJd_R_KvGKjJu7amWAiwOcKi9RlsoFVuaw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@PatrickFuentes-qz5vn",
+            "authorChannelId": {
+              "value": "UC3GrVgumAXKB7HwuTa66iAQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4081,
+            "publishedAt": "2026-07-28T23:01:42Z",
+            "updatedAt": "2026-07-28T23:01:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 20,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wM1gxUGELuXNt0j5a-ItwnZmnN8",
+      "id": "UgzzTKtdtMIDBJNQB6p4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "nEhuCLSd1sluFcYkL8-N3-aViZY",
+          "id": "UgzzTKtdtMIDBJNQB6p4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "MJ didn't recognize face. But he sure as hell knew his name and the reputation he had. And finally put a face behind his name",
+            "textOriginal": "MJ didn't recognize face. But he sure as hell knew his name and the reputation he had. And finally put a face behind his name",
+            "authorDisplayName": "@ziggzaggzip8241",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lJq4Q6BjHbk1i2xmQvXKS7zl20fjNdnScEYWDEjwY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ziggzaggzip8241",
+            "authorChannelId": {
+              "value": "UCr7dELM2jPRmf7Pul8FlzQg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 548,
+            "publishedAt": "2026-07-28T19:49:54Z",
+            "updatedAt": "2026-07-28T19:49:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "yUcAxVUE7_VoOdlZe5JVuVpsG2c",
+      "id": "Ugwh7_JwdaifA-c5Ygt4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bL9C4xno6UpZWwdQJVibX3Ucc10",
+          "id": "Ugwh7_JwdaifA-c5Ygt4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Smartest thing the guys in that room did was shut up and let John do the talking.",
+            "textOriginal": "Smartest thing the guys in that room did was shut up and let John do the talking.",
+            "authorDisplayName": "@SuigaRou",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n-AgAeNUkCEHMMP-tSEmQl2lmZO7kekMhns97VEiL0eA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@SuigaRou",
+            "authorChannelId": {
+              "value": "UC_D555pBltgSdYZj13Ye-gw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1336,
+            "publishedAt": "2026-07-28T06:08:36Z",
+            "updatedAt": "2026-07-28T06:08:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8d_G12zTcDvdUIfnhOS0QgRXlms",
+      "id": "Ugxy-1R-d6z6-i5Wug54AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1i0_tWA_JXh3oVvifgMN6QtIdGM",
+          "id": "Ugxy-1R-d6z6-i5Wug54AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Michael firing his dad thru a fax machine was funny enough but the fact that Joe was carrying the paper all day until he saw Michael that night had me almost die from laughter 🤣",
+            "textOriginal": "Michael firing his dad thru a fax machine was funny enough but the fact that Joe was carrying the paper all day until he saw Michael that night had me almost die from laughter 🤣",
+            "authorDisplayName": "@Element0.",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/hyU4XJhiKYJrgDhqsTTKF_yu3saLqFjDUy8443kTOeJTDNe2o56UMxhhNKYuaSkEzDPSIHbTltY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Element0.",
+            "authorChannelId": {
+              "value": "UC0YYgHbgI91G7cr-ESLoB_w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-10-15T04:15:04Z",
+            "updatedAt": "2026-10-15T04:15:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "zLKkzi-8f9rmCCn_BIWPbMrXSo0",
+      "id": "UgxPLyy92dOQAJk48114AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "2yTuLxet8P3qvN0kdd0Zc4WnsiA",
+          "id": "UgxPLyy92dOQAJk48114AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "\"You have a lot to know about family\"\n\nWell, he did, and that's why he did that. Family is not about genes and genes alone, if you never treat your son like a son, you can expect to never be treated like a father.",
+            "textOriginal": "\"You have a lot to know about family\"\n\nWell, he did, and that's why he did that. Family is not about genes and genes alone, if you never treat your son like a son, you can expect to never be treated like a father.",
+            "authorDisplayName": "@caetanojulioneto",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mGp34BwACKHi9P_K3pDVHDEKDYEBOK10QBSEGqSj6V5OJ0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@caetanojulioneto",
+            "authorChannelId": {
+              "value": "UCp111wR-L6uy7cc7_6JXd_w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 17,
+            "publishedAt": "2026-08-01T18:58:11Z",
+            "updatedAt": "2026-08-01T18:58:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Or-lXgyvfrdLd9QJBzT1iEfqwyk",
+      "id": "UgzGZDobnbsVLSKcFtR4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1Dk8f0tNtkvh4Ip3bHUJWJ3mZK0",
+          "id": "UgzGZDobnbsVLSKcFtR4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "WHEN HE TOOK OFF HIS SHADES TO LOOK AT BRANCA, THAT SCENE MADE HIS NEPHEW LOOK JUST LIKE MICHAEL",
+            "textOriginal": "WHEN HE TOOK OFF HIS SHADES TO LOOK AT BRANCA, THAT SCENE MADE HIS NEPHEW LOOK JUST LIKE MICHAEL",
+            "authorDisplayName": "@harleminthebuildn9234",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lAyJKhiq9EnFyr9PoYR9VlqjZIrKGxV_qEer2RocxqpL8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@harleminthebuildn9234",
+            "authorChannelId": {
+              "value": "UCeDy1hjSxn0_GK2C2zk8kMA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2319,
+            "publishedAt": "2026-07-28T00:47:13Z",
+            "updatedAt": "2026-07-28T00:47:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 43,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_cNFl3_ghVoPPZdtT8HEtSDLIBo",
+      "id": "Ugz1HSy3soFiVxfDse14AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "jI473h4ttbwCSuCwA4YMIJqjgeQ",
+          "id": "Ugz1HSy3soFiVxfDse14AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "\"I already have a family.\" \n\nMichael Jackson aura farming. 📈📈",
+            "textOriginal": "\"I already have a family.\" \n\nMichael Jackson aura farming. 📈📈",
+            "authorDisplayName": "@ThrillerTheSpammer",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/v7vnidqbSmf6GfpEFf54mEtW3Na35BANtCnXti8I-hTBCX_nE3DDHyxQVzkwonCTC78_6p4i=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ThrillerTheSpammer",
+            "authorChannelId": {
+              "value": "UCwQrchVq6aBndvXGo4iIEOQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1676,
+            "publishedAt": "2026-07-27T15:48:01Z",
+            "updatedAt": "2026-07-27T15:48:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 11,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "pcCk-bem-eyiN-NwvJ6mSHTNqBo",
+      "id": "UgzSbzK3LnKhxsNM7Lt4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "7jRG-eTLs7eXOuZ9kvX_Flg6n-s",
+          "id": "UgzSbzK3LnKhxsNM7Lt4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "The lawyer seems to be quite Michael's tempo lmao",
+            "textOriginal": "The lawyer seems to be quite Michael's tempo lmao",
+            "authorDisplayName": "@pokenerb9935",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_naErStibo29_uNqOO5RnmTFK5FMpCc1cNrFvELHRiwtQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@pokenerb9935",
+            "authorChannelId": {
+              "value": "UCQHbvSqsPZCWf0uIqGEACGQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2781,
+            "publishedAt": "2026-07-27T22:20:33Z",
+            "updatedAt": "2026-07-27T22:20:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 19,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "iNEJ9pe8ro0E9xMVqokCNQd0kd8",
+      "id": "Ugz-wW8xdmnRW0qA-814AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "rRTyESG2_I8_1mxTbO9-jyuxnsQ",
+          "id": "Ugz-wW8xdmnRW0qA-814AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "1:29 And he wasn't lying.",
+            "textOriginal": "1:29 And he wasn't lying.",
+            "authorDisplayName": "@Phawks-Phire",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/oqVdQSSPi0EogUrEQKT1qVLoDwlWw-qN8UAsv4ve7GIElxhPbxEuQPJ9Fo874YlPKTKSH_FW=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Phawks-Phire",
+            "authorChannelId": {
+              "value": "UCd86ARv4uijD2RHa8e0GznA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 219,
+            "publishedAt": "2026-08-22T21:54:54Z",
+            "updatedAt": "2026-08-22T21:54:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gEGCxBjZan9cIxFg1wjwG-yGDsk",
+      "id": "Ugz0qF_fAdTEwDMP6Np4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6DVoBNE5YIY0DBjuBkDp5jDLaGc",
+          "id": "Ugz0qF_fAdTEwDMP6Np4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "“This boy fired me with a piece of paper” guess papers have a lot of power.🤣🤣🤣",
+            "textOriginal": "“This boy fired me with a piece of paper” guess papers have a lot of power.🤣🤣🤣",
+            "authorDisplayName": "@ayeshaakhtar4727",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/W31PFBDF02NJu94Y_qibCDuXAzD_FkdXz_0cNJ6Pmus7QpZow_wa9Pq1Hdn4k4bPmqGiyjV8aA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ayeshaakhtar4727",
+            "authorChannelId": {
+              "value": "UCZtwk9f8UjJxJ8d78LHesmw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 291,
+            "publishedAt": "2026-07-30T15:10:34Z",
+            "updatedAt": "2026-07-30T15:10:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2iLfh0ZgYFMsjQZW23bRxV-DbiE",
+      "id": "UgycLasrgQUC-mc3HHZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "njTvCQhZkvsaPo9EDoNATp15E9s",
+          "id": "UgycLasrgQUC-mc3HHZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Michael Jackson firing his abusive father, Joseph Jackson, marked a major turning point because it enabled his artistic independence, paved the way for his monumental solo albums, and broke his family's professional control.",
+            "textOriginal": "Michael Jackson firing his abusive father, Joseph Jackson, marked a major turning point because it enabled his artistic independence, paved the way for his monumental solo albums, and broke his family's professional control.",
+            "authorDisplayName": "@quesadillalord5025",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n05aBjkGJCEqWixmj08-mVHIprcmb8vsagzYeowZCmNhY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@quesadillalord5025",
+            "authorChannelId": {
+              "value": "UCG_xXYzQPg1Jz7v-eY8xGXw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 112,
+            "publishedAt": "2026-07-29T22:13:02Z",
+            "updatedAt": "2026-07-29T22:13:02Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1yLyBoXwXfH9n5f6iUqNWqsrIWk",
+      "id": "Ugx6jr--5xZtofhxDk94AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6eT7COl6qSeULwVYVima55L3W4A",
+          "id": "Ugx6jr--5xZtofhxDk94AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Michael Jackson going solo after 20 years of The Jacksons is really a perfect decision. His creative independence blessed us with the greatest songs people has ever heard.",
+            "textOriginal": "Michael Jackson going solo after 20 years of The Jacksons is really a perfect decision. His creative independence blessed us with the greatest songs people has ever heard.",
+            "authorDisplayName": "@TheThrillaX",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Qo1noONwret_mUSfrys_VRDIX-x1yQ8z2nUADC9zQZKCUej5goU_QZqx2gGnTU6ZdmJVWxsODpI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@TheThrillaX",
+            "authorChannelId": {
+              "value": "UCdZyk9ZdJEBO0DvidSQwB5w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 926,
+            "publishedAt": "2026-07-28T06:59:41Z",
+            "updatedAt": "2026-07-28T06:59:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 14,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "MeyB25835in-E3am-am0Ns65nBk",
+      "id": "Ugy3Ga22SRY9cmnNDhJ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aV-exncDZ00chpRCKnOlCBEVm7E",
+          "id": "Ugy3Ga22SRY9cmnNDhJ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "Joseph treated his family like a business, so he shouldn't be surprised they reciprocated.",
+            "textOriginal": "Joseph treated his family like a business, so he shouldn't be surprised they reciprocated.",
+            "authorDisplayName": "@vitoriturriaga3468",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lO4Yhtgpbq-F1TI83i2Av7y11Jg_-xXRT2WdY8x3nud0w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vitoriturriaga3468",
+            "authorChannelId": {
+              "value": "UCvAPRjX5QtevweOegKe0UJg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 404,
+            "publishedAt": "2026-07-30T00:14:41Z",
+            "updatedAt": "2026-07-30T00:16:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "hA6rTKNUohGW9P45GPAgVH78UGI",
+      "id": "Ugzu6pTUbhAYfo1hiJ54AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6Qe9bO8dql-rmXzOkEn4WiRzL-w",
+          "id": "Ugzu6pTUbhAYfo1hiJ54AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "The damage his father did to him, followed him his whole life. He wasn't even allowed to enjoy Christmas or his birthday as a child. Everything was about music and performance. He stole his children's happiness for his own ambition",
+            "textOriginal": "The damage his father did to him, followed him his whole life. He wasn't even allowed to enjoy Christmas or his birthday as a child. Everything was about music and performance. He stole his children's happiness for his own ambition",
+            "authorDisplayName": "@sargepent9815",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k5ZQ98rNaJdzkBlZenmIkFvl-vgWwzf11C2XJ9UOoDUkE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sargepent9815",
+            "authorChannelId": {
+              "value": "UCxRnvbfsvfkJ197eYjP3MYw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 15,
+            "publishedAt": "2026-07-31T16:26:19Z",
+            "updatedAt": "2026-07-31T16:26:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vzbZAUEsRVYzzM_nzmWzoYVe-ZQ",
+      "id": "UgzK7x4nQVe4NpuxUhZ4AaABAg",
+      "snippet": {
+        "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+        "videoId": "_VgchsYqsj8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "7uni-f7awTu7tIOVXbdmtfN18ek",
+          "id": "UgzK7x4nQVe4NpuxUhZ4AaABAg",
+          "snippet": {
+            "channelId": "UC6LDwTYRfjQwkakw5R95OyA",
+            "videoId": "_VgchsYqsj8",
+            "textDisplay": "4:26 Whole theater laughed when he said this 😂",
+            "textOriginal": "4:26 Whole theater laughed when he said this 😂",
+            "authorDisplayName": "@Tonyz739",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/XpeJbms0R4_vFz0_RlveyqwbsyKunhHQ270sVRFfCkCZPIr0edk_xNCu6wzNKrZg5uQNXTHO=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Tonyz739",
+            "authorChannelId": {
+              "value": "UCPxVTHnSqlpEBFf5bIWiUIQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 30,
+            "publishedAt": "2026-08-23T03:08:34Z",
+            "updatedAt": "2026-08-23T03:08:39Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

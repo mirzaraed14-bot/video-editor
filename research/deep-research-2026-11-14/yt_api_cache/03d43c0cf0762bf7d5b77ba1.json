@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "YBpx6caEOXy0shpRVTX3VSDw2Ac",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "_BqNk6Sbm9ltWNKXrxL1evZnBao",
+      "id": "UCLqH-U2TXzj1h7lyYQZLNQQ",
+      "snippet": {
+        "title": "Greg Doucette",
+        "description": "Go HARDER THAN LAST TIME and SUBSCRIBE!\n\nHey!  I am a Canadian IFBB Pro bodybuilder, published author, influencer, and Guinness World Record holding powerlifter with a Bachelors and Masters Degrees in Kinesiology.  I coach thousands of diet, training, and supplement clients around the world and get them to their goals in a sustainable way that fits their lifestyle.  I tell you the TRUTH, no BS!\n\nI AM NOT: A doctor, lawyer, dietician, chef, astronaut, sex therapist, police officer...\n\nI'm the HERO You Never Knew You Needed...RUTHLESSLY Seeking TRUTH in Health/Fitness/Wellness - DEBUNKING the fitness industry myths!!!\n\n",
+        "customUrl": "@gregdoucette",
+        "publishedAt": "2006-11-04T00:46:52Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kiqaE2QIrIISJQfWVSMdrUoC1JuPhRqUp6Q5xnG1VgNwc=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kiqaE2QIrIISJQfWVSMdrUoC1JuPhRqUp6Q5xnG1VgNwc=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_kiqaE2QIrIISJQfWVSMdrUoC1JuPhRqUp6Q5xnG1VgNwc=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Greg Doucette",
+          "description": "Go HARDER THAN LAST TIME and SUBSCRIBE!\n\nHey!  I am a Canadian IFBB Pro bodybuilder, published author, influencer, and Guinness World Record holding powerlifter with a Bachelors and Masters Degrees in Kinesiology.  I coach thousands of diet, training, and supplement clients around the world and get them to their goals in a sustainable way that fits their lifestyle.  I tell you the TRUTH, no BS!\n\nI AM NOT: A doctor, lawyer, dietician, chef, astronaut, sex therapist, police officer...\n\nI'm the HERO You Never Knew You Needed...RUTHLESSLY Seeking TRUTH in Health/Fitness/Wellness - DEBUNKING the fitness industry myths!!!\n\n"
+        },
+        "country": "CA"
+      },
+      "statistics": {
+        "viewCount": "1315417180",
+        "subscriberCount": "2440000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "4633"
+      }
+    }
+  ]
+}

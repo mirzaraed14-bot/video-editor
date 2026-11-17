@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "BKsVZpFS4rSihOQtNtkh19n8B94",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "T4nJSJHwqu7OQGkN8B8MMhIOlFc",
+      "id": "UCui4jxDaMb53Gdh-AZUTPAg",
+      "snippet": {
+        "title": "Liam Ottley",
+        "description": "I’m an AI entrepreneur from New Zealand. In 2023 I created the 'AI Automation Agency' or 'AAA' model based on my learnings at my own agency Morningside AI.\n\nOn this channel I share my learnings from running my own AI Automation Agency, AI SaaS and from helping my community of over 300,000 AI Automation Agency owners to start and scale their own AI business.\n\nMy mission is to inspire others to take advantage of the incredible AI opportunity by documenting my journey as an AI entrepreneur.\n\n194938\n",
+        "customUrl": "@liamottley",
+        "publishedAt": "2018-05-29T20:09:05Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/81YBrChz5qTRqj6J2rrzqJgD4y_n3SMkfVdQX66X7EhpfVwDh-xUJBEG5GaneiO5Bpr_km96VQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/81YBrChz5qTRqj6J2rrzqJgD4y_n3SMkfVdQX66X7EhpfVwDh-xUJBEG5GaneiO5Bpr_km96VQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/81YBrChz5qTRqj6J2rrzqJgD4y_n3SMkfVdQX66X7EhpfVwDh-xUJBEG5GaneiO5Bpr_km96VQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Liam Ottley",
+          "description": "I’m an AI entrepreneur from New Zealand. In 2023 I created the 'AI Automation Agency' or 'AAA' model based on my learnings at my own agency Morningside AI.\n\nOn this channel I share my learnings from running my own AI Automation Agency, AI SaaS and from helping my community of over 300,000 AI Automation Agency owners to start and scale their own AI business.\n\nMy mission is to inspire others to take advantage of the incredible AI opportunity by documenting my journey as an AI entrepreneur.\n\n194938\n"
+        },
+        "country": "NZ"
+      },
+      "statistics": {
+        "viewCount": "33581832",
+        "subscriberCount": "870000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "271"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "bxnyTZnFXu-5COsWPTkMs5paY_Y",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "unz7jBxOVTGwsxTknbZ43h0H5lc",
+      "id": "UCdqp0KK_Io7TwK5cJMBvB0Q",
+      "snippet": {
+        "title": "WhistlinDiesel",
+        "description": "Are you tired of clicking on a deceivingly clickbaited video only for it to be someone doing the same boring crap you saw last week? Yeah me too. Thats why i never waste time uploading a stupid boring video. OK maybe they are stupid lol. Enjoy\n\nThere's a lot more on Instagram www.instagram.com/whistlindiesel\n\nSERIOUS BUSINESS INQUIRIES ONLY: dieselmediacorp@gmail.com\n",
+        "customUrl": "@whistlindiesel",
+        "publishedAt": "2015-01-07T02:26:22Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/0Yzi87lZa_XLsbkrJOC1YRIOS6NWeE9NHO3n8awdpkpLXVApsS2IHCo8D5l8crmpTvZyCYsiAWw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/0Yzi87lZa_XLsbkrJOC1YRIOS6NWeE9NHO3n8awdpkpLXVApsS2IHCo8D5l8crmpTvZyCYsiAWw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/0Yzi87lZa_XLsbkrJOC1YRIOS6NWeE9NHO3n8awdpkpLXVApsS2IHCo8D5l8crmpTvZyCYsiAWw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "WhistlinDiesel",
+          "description": "Are you tired of clicking on a deceivingly clickbaited video only for it to be someone doing the same boring crap you saw last week? Yeah me too. Thats why i never waste time uploading a stupid boring video. OK maybe they are stupid lol. Enjoy\n\nThere's a lot more on Instagram www.instagram.com/whistlindiesel\n\nSERIOUS BUSINESS INQUIRIES ONLY: dieselmediacorp@gmail.com\n"
+        }
+      },
+      "statistics": {
+        "viewCount": "1994559181",
+        "subscriberCount": "10800000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "317"
+      }
+    }
+  ]
+}

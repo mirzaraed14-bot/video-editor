@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "qHDWezi12botqhlgCzBY8AQaIrI",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "_Wji-LEi2oUEMWcYpNe-4qVoTws",
+      "id": "UCMiJRAwDNSNzuYeN2uWa0pA",
+      "snippet": {
+        "title": "Mrwhosetheboss",
+        "description": "Let's become the Greatest Tech Community on the Planet 🌍\n\nI'm Arun Maini and I'm on a mission to make the most FUN and USEFUL Tech videos on the Planet! 🙏\n",
+        "customUrl": "@mrwhosetheboss",
+        "publishedAt": "2011-04-20T12:10:24Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/QFI5OsUuSRHV-YpwksnVqpqWC19gjU55smnxPzLVU5Y5ohqKIkxq21nV_VfBJhvanYeMBot21A=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/QFI5OsUuSRHV-YpwksnVqpqWC19gjU55smnxPzLVU5Y5ohqKIkxq21nV_VfBJhvanYeMBot21A=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/QFI5OsUuSRHV-YpwksnVqpqWC19gjU55smnxPzLVU5Y5ohqKIkxq21nV_VfBJhvanYeMBot21A=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Mrwhosetheboss",
+          "description": "Let's become the Greatest Tech Community on the Planet 🌍\n\nI'm Arun Maini and I'm on a mission to make the most FUN and USEFUL Tech videos on the Planet! 🙏\n"
+        },
+        "country": "GB"
+      },
+      "statistics": {
+        "viewCount": "9411105352",
+        "subscriberCount": "23100000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1945"
+      }
+    }
+  ]
+}

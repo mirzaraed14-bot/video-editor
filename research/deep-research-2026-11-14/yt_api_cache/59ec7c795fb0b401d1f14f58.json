@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "SHKBczaQ7-1Ws8W_1Y3NXsSGqwY",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "aRKNpgs1qj-OfdPH5WCKj0EUlrk",
+      "id": "UCT3EznhW_CNFcfOlyDNTLLw",
+      "snippet": {
+        "title": "Minority Mindset",
+        "description": "What's up everybody? I am Jaspreet Singh.\n\nI'm the founder/Chief Executive Money Nerd at Briefs Media - https://www.briefs.co\n\nOn YouTube, I'm the host of The Minority Mindset Show. I'm on a mission to help spread financial education. Say goodbye to boring personal finance! \n\nCheck out our website: https://www.theminoritymindset.com\n\nNEW VIDEOS EVERY WEEK! Subscribe so you don't miss our newest videos.\n",
+        "customUrl": "@minoritymindset",
+        "publishedAt": "2015-11-06T21:55:43Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/tSnLGoklYetoFmjku-JIpy-iUqYp1uLlkDURyHVROs3HCuWlSt6BkTy_kL7FO2fxoppNmz13ng=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/tSnLGoklYetoFmjku-JIpy-iUqYp1uLlkDURyHVROs3HCuWlSt6BkTy_kL7FO2fxoppNmz13ng=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/tSnLGoklYetoFmjku-JIpy-iUqYp1uLlkDURyHVROs3HCuWlSt6BkTy_kL7FO2fxoppNmz13ng=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Minority Mindset",
+          "description": "What's up everybody? I am Jaspreet Singh.\n\nI'm the founder/Chief Executive Money Nerd at Briefs Media - https://www.briefs.co\n\nOn YouTube, I'm the host of The Minority Mindset Show. I'm on a mission to help spread financial education. Say goodbye to boring personal finance! \n\nCheck out our website: https://www.theminoritymindset.com\n\nNEW VIDEOS EVERY WEEK! Subscribe so you don't miss our newest videos.\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "310652939",
+        "subscriberCount": "2540000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2508"
+      }
+    }
+  ]
+}

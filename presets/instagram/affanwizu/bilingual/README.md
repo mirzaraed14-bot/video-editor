@@ -2,6 +2,7 @@
 
 Urdu script (Noto Nastaliq Urdu) over Roman Urdu, gold, soft glow: the new strategy measured in
 `research/affanwizu-bilingual-captions/REFERENCE.md`. Not the locked deliverable yet; the Roman .srt still ships with every job.
+**Scope (his call 2026-11-17): talks only.** A funny video keeps the normal single-line yellow .srt ("this is a funny video so it wont suit").
 
 1. `captions.txt` as always (Roman, `build.py ... --srt`), then `captions.ur.txt`: one Urdu-script line per Roman cue, same `@time`,
    his English spelled in Urdu letters, nothing translated, quotes on the same lines.
