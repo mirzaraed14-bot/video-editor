@@ -58,6 +58,10 @@ Jermaine is still unbuilt, so its build takes this style.
     `projects/gta5-farewell/build/`. Target: final by 18 Nov ~14:00 PKT for an ~18:00 post. aw-gta5-farewell checks the render, then the
     hub verifies (hashes, loudness, contact sheet) and makes the export copies. Open: the 2013 queue swap (VG247 is 360p → JStu's US 2013
     video) and Shawn's 1080p 2023 originals, both downloading.
+- **18 Nov: the code build was STOPPED, never delivered.** He wanted the raw sequence in Premiere first, to record his Tella on (the AW
+  STOP 1). aw-gta5-farewell owned the skip, but the hub's brief caused it: it said "After his OK: build" without naming STOP 1. Now
+  gta5-farewell-build lays v3 as a raw sequence in ABW11 (no save, no export) once he's been idle 2.5 min in Premiere (quietgate),
+  then reads it back. LESSON in LESSONS.md.
 
 ## ▶ 17 Nov ~03:35 PKT (hub): TWO RESEARCH SESSIONS STARTED, MJ + IShowSpeed, by beat mining (his words, this session)
 - **His ask:** two research sessions, one MJ ("that niche is just simply working"), one IShowSpeed ("got me a lot of views ... a mega
@@ -225,6 +229,8 @@ Jermaine is still unbuilt, so its build takes this style.
     Ranked below it: farewell (no HD; a 3.68M movie-vs-real exists), Pepsi (a 6.13M exists; our Burnt Hair), burn + Joe, nose, audition
     (minors), belt (repeats the Dad Short). Open: by-ear (the Piers audio was rated slurred in Sept), the 1979 vs 1983 firing year, BMI
     1990 (IG 163K, but YouTube only 480p). SLIP: an IG agent skipped pace.sh once (logged in format/IG-FILM.md). 39/42 searches; meter 37 %.
+  - **He chose THE FIRING → raw build:** [mj-fired-father-build](local_27a7dec9-c04d-4524-87ce-8b67d8f54b52), started by aw-mj-beats,
+    makes a new raw sequence in ABW11 (no save, no export). Two raw builds (this + GTA) share premiere.lock and the idle gate.
   - **~07:00 Speed: Affan REJECTED the £1.79 sequence** (per aw-speed-beats) and set PASS 3 there: map our viral MJ frameworks onto Speed
     and beat-mine each one, his test being ~12 viral beats per framework (`research/aw-speed-2026-11-17/pass3/PLAN.md`, `FRAMEWORK-MAP.md`).
     F1 "the loud clown vs the lonely real Darren" (the analogue of the MJ skin-misconception Short) has 5 beats: @unpaid_bro 482K likes /
@@ -291,6 +297,10 @@ Jermaine is still unbuilt, so its build takes this style.
       line as hook text over the stage + Shannon's voice at 1 s → "Nobody ever asked me these questions" → the "Darren, calm down" joke
       → Sep 2025 "I feel alone" → back to the stage. Blocked: the joke's speaker is unknown until his own upload is found (variant D
       drops it and is buildable now); the Sep 2025 stream needs his OK (he cut it 14 Nov). Fable ×3, two cold reads. Meter ~29 %.
+    - **Darren v3** (his notes: "too short ... 35 sec atleast", "more bits"): ~46 s (~39 s without the Sep 2025 tour stream), ≈120K, still NO
+      PICK. New proven hook on disk: CBS Sports Golazo "What is IShowSpeed's real name?" (2XACBzE-GRs, 13.75M): Speed "...nobody knows my
+      real name" → Carragher "Darren Watkins". New bits: a teen-Speed flash; Club Shay Shay "my whole life is just people trolling"; his Sep
+      2026 stream "this feels so long for me, bro". His open call: the tour stream (his 14 Nov cut). Advisor + 3 cold reads. 20/30 searches.
 
 ## ▶ 16 Nov 04:35 PKT (hub): OVERNIGHT RUN, both builds run to the FINAL with no questions (his words, checked)
 - **His words (to the Main Brain, ~04:30 PKT, checked in its transcript):** "when I wake up I want these videos done ... I don't want

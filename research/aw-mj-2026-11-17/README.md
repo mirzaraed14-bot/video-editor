@@ -1,6 +1,6 @@
 # AW Michael Jackson research — 17 Nov 2026
 
-## ▶ STATUS: resume here (18 Nov ~00:10 PKT) — movie ↔ real format: SENT to Affan + hub. Best buildable topic = the firing (NO PICK, 70-85K)
+## ▶ STATUS: resume here (18 Nov ~00:20 PKT) — APPROVED by Affan ("build the raw in premire"): build session mj-fired-father-build (local_27a7dec9-c04d-4524-87ce-8b67d8f54b52) building STOP 1 in projects/mj-fired-his-father/. Earlier: movie ↔ real format SENT to Affan + hub. Best buildable topic = the firing (NO PICK, 70-85K)
 - `format/SEQUENCE.md` v1.2: 8 beats M-R-M-R-M-R-M-R in the film's own order. Each REAL answers the MOVIE line before it: fire Joseph -> 1979 "too strict? Yes... he's going to kill me" -> "piece of paper" -> card (papers sent to Joe's house / "It's not easy firing your father", SOURCES.md) -> Katherine "can't whoop nobody" -> Piers 2013 "regrets... too tough?" "I'm glad I was tough" -> kitchen "What kind of son does that?" -> 1979 "Now I'll say it, yes".
 - Ranking + reasons in SEQUENCE.md "Why this topic"; evidence FORMAT-MAP.md, IG-FILM.md; cold reads COLDREAD-FORMAT.md (85K), COLDREAD-FORMAT2.md (70K). Older versions: SEQUENCE-v0.1.md, SEQUENCE-v1.1.md.
 - Open: by-ear (Piers audio may be slurred), the 1979/1983 firing-year pages (unopened), BMI 1990 (480p; transcript queued).

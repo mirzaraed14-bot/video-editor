@@ -1848,3 +1848,6 @@ Resolved brief: `projects/oldman-good-sirius/review1/REVIEW1.md`. He re-cut the 
   niche: music = MJ, streaming = IShowSpeed, movies = Harry Potter, gaming = GTA 5. The newest Harry Potter Short sits at 4 of 10,
   level with his MJ Shorts, so HP is a staple lane. → New lanes open by naming that one subject; a smaller face in the same niche
   doesn't count → memory feedback-mega-famous-per-niche, HUB.md 17 Nov ~21:00.
+- **An OK'd TEXT sequence goes to a RAW Premiere sequence first (STOP 1), never straight to a code finish.** The GTA 5 farewell skipped
+  it on 17-18 Nov, because the hub's brief said "After his OK: build" and never named STOP 1. He records his Tella on the raw cut;
+  the finish follows his notes (as on the Dad and Sirius Shorts). → Every hub brief now names STOP 1 explicitly → HUB.md 18 Nov.

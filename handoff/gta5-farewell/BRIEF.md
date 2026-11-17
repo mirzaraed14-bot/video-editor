@@ -1,7 +1,16 @@
 # gta5-farewell: BRIEF
 
 ## ▶ STATUS: resume here (rewrite at every milestone)
-- **17 Nov 20:55 PKT** · Phase: **BUILD running** in session `gta5-farewell-build` (local_d5a0f783-8e15-46e6-91a0-a21513499c58, Sonnet
+- **17 Nov ~23:55 (machine clock) · Phase: STOP 1 = the RAW Premiere sequence** (build session told, `build/premiere/`). Affan:
+  "my workflow is this: text sequence -> premiere sequence -> tella video -> start the build". I skipped the Premiere step and
+  the build session made a code-built final (`build/out/gta5-farewell.final.mp4`, 23:24). That file is NOT delivered and NOT
+  handed to the hub. Stopped at ~23:50.
+  - Now: "13 Years Goodbye GTA 5 - raw cut" in his open ABW11, bin "GTA 5 Farewell".
+    - V1/A1: v3 beats 1-10. V2: game-footage covers. Markers per beat. Spares after the end. Raw only.
+    - Recipe: the Dad job's `premiere/` scripts. premiere.lock + quiet gate; never save or export.
+  - Then: wait for his Tella. Only after the Tella does the finish build start. The code final's work (1080p UiLcsgFnS4k
+    for beats 1/2/9, the measured edges, the beat-3 re-cut) carries into the raw sequence.
+- (earlier, 20:55) Phase: **BUILD running** in session `gta5-farewell-build` (local_d5a0f783-8e15-46e6-91a0-a21513499c58, Sonnet
   xhigh, writes only `build/`, state in `build/RUN.md`). Affan OK'd v2 at ~20:40 ("All in all I really like this sequence") with one
   note, end on the actors ("it's been quite a ride"), applied as **v3** (`SEQUENCE.md`; v2 in `research/SEQUENCE.v2.md`): after TGG,
   Slink "That was quite a ride, dawg" (2021 original 1047.18, fist bump, on the 39.0 drop) → Slink "On behalf of Lamar, Franklin,

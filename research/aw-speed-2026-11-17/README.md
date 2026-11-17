@@ -5,6 +5,10 @@ Instagram beat-mining framework, built like the Birthdays Short. Output: ONE pic
 No build, no Premiere.
 
 ## ▶ STATUS: resume here
+- **~00:02 PKT 18 Nov: DARREN v3 (Affan: "too short ... 35 sec atleast", "more bits").** `pass3/SEQUENCE-darren.md` (v2 kept as
+  `SEQUENCE-darren-v2.md`): ~46 s (~39 s without the Sep 2025 tour stream), 9 beats; new proven hook = CBS Sports Golazo "What is
+  IShowSpeed's real name?" `2XACBzE-GRs` 13.75M ("nobody knows my real name" → Jamie "Darren Watkins"). Most likely ~120K, no pick at the
+  bar. Open: his OK on the tour stream; ear checks. Searches (Pacific 17 Nov): 20 of 30.
 - **~23:33 PKT 17 Nov: "MILLIONS KNOW SPEED, NOT DARREN" (Affan: "this idea is amazing ... sad angle ... best text sequence").**
   Deliverable: `pass3/SEQUENCE-darren.md` (not built). 3 proven beats (the "Old Speed almost came out" meme moment 13.5M; his 25 Sep X
   line, IG 381K/260K; the 18-year-old message 2.74M) + ours (Club Shay Shay "Nobody ever asked me these questions"; Keystone). Most

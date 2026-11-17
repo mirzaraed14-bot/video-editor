@@ -3,6 +3,10 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-18: digits fail the HANGING check (ABW11 Sequence 13, Urdu mix)
+- **"8.1 million views" FAILED caption_qa as HANGING** (2.4 s under 3 words): the digits pack "eight point one" into one word, so the check counts too few. Joined it with the next words ("8.1 million views 30 days") instead of hunting for dropped speech; the English listener had all of it.
+- **The v2 two-layer geometry (Urdu 48 @ y1346, caps @ y1420) fits a two-framing reel** (Scale 100 + a punch-in) without change; re-measure the Urdu max descent per job (28 px on both Seq 10 and 13).
+
 ## 2026-11-17: the Urdu mix (two-layer) style is NOT for funny videos (ABW11 Sequence 11)
 - **His call on Seq 11 (an airport comedy bit): "caps but it normal style this is a funny video so it wont suit".** The two-layer Urdu mix look (small Urdu over ALL CAPS Roman, glow) is for the talks; a comedy reel keeps the single-line yellow .srt. When he doesn't say which, ask nothing: a comedy bit = normal style, a talk = whatever he named last. → `presets/instagram/affanwizu/bilingual/README.md` (scope line).
 - **Probes run with the whisperx venv python** (`~/.cache/video-editor/whisperx-venv/Scripts/python.exe -I work/probe.py ...`); the system Python has no faster_whisper and would only die at import once it gets the lock.

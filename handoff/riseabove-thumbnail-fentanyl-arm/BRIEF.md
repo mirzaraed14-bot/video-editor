@@ -1,8 +1,9 @@
 # BRIEF — Rise Above thumbnail gift (fentanyl & meth / arm episode)
 
 ## ▶ STATUS: resume here
-- 2026-11-17 23:35 PKT (10:35 PST): **DONE, waiting on Affan's look.** Final: `outputs/riseabove-fentanyl-arm-thumb-mw-gold.png` (1280x720, 710 KB),
-  copy at `X:/Claude Projects/Exports/riseabove-fentanyl-arm.thumbnail.png`; feed proof next to Kevin's: `outputs/feed-proof-vs-current.png`.
+- 2026-11-17 23:46 PKT: **v2 DONE (Affan's two fixes), waiting on his look.** Final: `outputs/riseabove-fentanyl-arm-thumb-mw-gold.png`
+  (1280x720, 711 KB), same file at `X:/Claude Projects/Exports/riseabove-fentanyl-arm.thumbnail.png`; face 100% before/after
+  `outputs/face-100pct-before-after.png`; feed proof `outputs/feed-proof-vs-current.png`. v1 kept as `frames/v1_shipped_1080src.png`.
 - Thursday 11-19 text for Affan to send (no price in it, see memory "no price to silent prospects"):
   "Hey Kevin, made you a thumbnail for the Tara Jane episode (My Arm Nearly Rotted Off). Run it in YouTube's Test & compare against yours and see which one wins."
 - If Affan wants a change: edit `build/compose.py` params (`python -I build/compose.py <out> gold=E2A93A l1=... name=...`), re-run
@@ -25,6 +26,17 @@
   **TARA JANE WILLIAMS** as Kevin's description names her. Show mark = Kevin's real RISE ABOVE wordmark lifted from the
   episode's intro card (0:17.5), never M|W. Bottom-right left clear for the 1:16:23 badge.
 - Re-read at delivery (2026-11-17 ~23:31 PKT / 10:31 PST): still 12K at ~21 h (yt-dlp: 12,736). Upload 2026-11-16 13:00 PST.
+
+## v2 — Affan's fixes (2026-11-17, relayed by the Onyx hub session)
+1. "her arm is being cut out": the shoulder was layered OVER the right border, so it hit the raw image edge in a hard vertical line
+   under a visible gold strip. Fix (`compose.py` § 4a): only her hair breaks the frame (top band, y < 70, as in MW); the left, right
+   and bottom border now sit IN FRONT of her, so the tattooed arm runs behind the frame and its rounded corner.
+2. "upscale her face so it looks shot in 4K, crisp, no AI pastiness": route (a), real pixels. `yt-dlp -F` (under lock.sh) showed
+   2160p exists (625 = VP9 24 Mbps, also 313/401). Pulled only 56:58-57:06 (`raw/hires_5658_625.mp4`, 14 MB; VP9, kept as-is since
+   only a still comes out of it). `build/match_frame.py` found the same moment by pixel match (frame 89; face-region diff 2.14 vs
+   neighbours 2.59-2.83) -> `frames/full/hires_3421_75.png` (3840x2160), re-cut -> `frames/cut_hires_3421_75.png`. The face is now
+   DOWNscaled 0.6x from real 4K (was upscaled 1.2x from 1080p) + unsharp 1.0/70, checked at 200% for halos. No Topaz, no AI on
+   her face: steps (b) and (c) were not needed. Identity is the source itself.
 
 ## Why
 Onyx Influence gift for Kevin Lanning (Rise Above, 137K). Kevin posted our free death-row-guard Short (~15K, ~7x his other Shorts that day),
