@@ -70,3 +70,7 @@ Related: [[feedback-usage-budget]].
     `advisorModel` in its .jsonl, never assume); every agent it spawns for execution (downloads, transcripts, page scans, frame
     sheets) passes `model: sonnet`; still no Fable agents. Build sessions keep the 11-15 Sonnet default unless he says otherwise
     (he set the 16 Nov overnight builds to Opus + Fable himself).
+- **2026-11-19 (GTA 29 Bigfoot edit session, mid-run): "use sonnet as execution model opus as manager and fable as boss advisor"**
+  — the same three roles now stated for an EDIT session too: the Opus session manages (plans, judges, adjudicates), every
+  executor/reviewer agent passes `model: sonnet` (effort xhigh), and the Fable advisor is consulted before the approach and
+  before done. No Fable agents.

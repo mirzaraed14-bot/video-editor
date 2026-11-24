@@ -1,9 +1,10 @@
 # BRIEF — Rise Above thumbnail gift (fentanyl & meth / arm episode)
 
 ## ▶ STATUS: resume here
-- 2026-11-17 23:46 PKT: **v2 DONE (Affan's two fixes), waiting on his look.** Final: `outputs/riseabove-fentanyl-arm-thumb-mw-gold.png`
-  (1280x720, 711 KB), same file at `X:/Claude Projects/Exports/riseabove-fentanyl-arm.thumbnail.png`; face 100% before/after
-  `outputs/face-100pct-before-after.png`; feed proof `outputs/feed-proof-vs-current.png`. v1 kept as `frames/v1_shipped_1080src.png`.
+- 2026-11-18 00:43 PKT: **v4 DONE, waiting on Affan's look.** Final: `outputs/riseabove-fentanyl-arm-thumb-mw-gold.png` (1280x720, 726 KB),
+  same file at `X:/Claude Projects/Exports/riseabove-fentanyl-arm.thumbnail.png`; the fixed spot `outputs/shoulder-cut-before-after.png`;
+  feed proof `outputs/feed-proof-vs-current.png`; face 100% `outputs/face-100pct-before-after.png` (still valid: same 4K face).
+  Earlier versions in `frames/`: v1_shipped_1080src, v2_shipped_4k_armcut, v3_reframed_rejected.
 - Thursday 11-19 text for Affan to send (no price in it, see memory "no price to silent prospects"):
   "Hey Kevin, made you a thumbnail for the Tara Jane episode (My Arm Nearly Rotted Off). Run it in YouTube's Test & compare against yours and see which one wins."
 - If Affan wants a change: edit `build/compose.py` params (`python -I build/compose.py <out> gold=E2A93A l1=... name=...`), re-run
@@ -37,6 +38,29 @@
    neighbours 2.59-2.83) -> `frames/full/hires_3421_75.png` (3840x2160), re-cut -> `frames/cut_hires_3421_75.png`. The face is now
    DOWNscaled 0.6x from real 4K (was upscaled 1.2x from 1080p) + unsharp 1.0/70, checked at 200% for halos. No Topaz, no AI on
    her face: steps (b) and (c) were not needed. Identity is the source itself.
+
+## v3 — the arm, properly (2026-11-18)
+- Why v2 still read as cut: at scale 1.2 only the cap of her shoulder sat in the bottom-right corner; the upper arm and elbow
+  (source 1674,950 in 1080 units) were ~400 px off-frame, so a tattooed patch was sliced by the frame whatever the layering.
+- Fix = framing, not masking: scale 0.82 (face downscaled 0.41x from the real 4K frame), cx 665, chin 380, so the whole upper arm and
+  the elbow sit inside the gold frame and the forearm leaves through the bottom edge. Options tried side by side: `frames/arm_options.png`
+  (1.2 / 1.0 / 0.9 all still cut the arm at the right edge; 0.82 is the largest scale that keeps the elbow in).
+- To make room: type cap 147 -> 128 (name 52 -> 46) so the text column ends at x532 and clears her face; her far-side shoulder and
+  the mic fade softly into the dark below source y600 (`fadel=920`) so they don't sit under the name line.
+- Side gains, closer to MW: the RISE ABOVE mark now sits on clear background and the right border runs its full height.
+- Trade-off: her face is ~250 px tall (v2 366, MW ~395). YouTube's duration badge covers a corner of her elbow at the bottom right.
+
+## v4 — the cut he actually meant (2026-11-18)
+- Affan sent a crop: "im talking about this cut ... why did you rearrange her like that". The cut was never the right-side tattooed
+  shoulder (the relayed note said bottom-right; v2 and v3 fixed the wrong spot, v3 also reframed her without asking). It is her LEFT
+  shoulder just right of "WILLIAMS": the matte notches her arm along the mic cable that crosses in front of it (arm edge smooth down to
+  source y 714 at x~745, then jumps 756 -> 788 by y 744), leaving a straight diagonal cut with a dark cable line at the gold band.
+- Tried and rejected: a soft fade on that shoulder (the cable line stayed and the gold band showed through the faded skin).
+- Fix: back to the v2 framing (scale 1.2, cx 845, type 147/52) moved 25 px lower (chin 515 -> 540), so the frame edge is at source
+  y 710, above the notch. Her body runs over the border to the image edge everywhere (pop=720), as the guest does in MW; the gold
+  border shows only over background. Whole bottom edge checked at zoom: shoulder, mic, chest, dreads, tattoo all clean.
+- Lesson: when he names a defect, find the exact spot (ask for or read his crop) before fixing, and never re-lay-out to fix a
+  local defect (memory "fix only what he named").
 
 ## Why
 Onyx Influence gift for Kevin Lanning (Rise Above, 137K). Kevin posted our free death-row-guard Short (~15K, ~7x his other Shorts that day),

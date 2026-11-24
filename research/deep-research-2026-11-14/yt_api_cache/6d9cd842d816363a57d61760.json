@@ -1,0 +1,1031 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "vPphKwIbLwD7722tyQPJIEgmis0",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DdHNCQ0lBRUZSZTMwVGdhMEFFS3l3RUkyRjhRZ0FRWUJ5TEFBUk5CbktQWHBjSTlzV0Mxdnp0NmV2SjlyYnp4dHo1MGNFSGtQUllhb0xtbFFxQnd4LWpicENQeTMzOEhzMGVhMkhpeWRzU0VXenRWc0RuNHJyejZTS1p3OF84YzIxazRlQUctMzRNYThoZXZKT1FqWXJ4eEcxNGx3TktDZGhQZVRtSklRYkl1bk81Y185bVRXMEhYMGZrcGtMVVNWMU5YTnk1LXR0MFRDa1ltY0JsenplajF1TmVPeWNGRDl4SGFUUlpyVmlMUkNkbHkxQXpTNl9oZ0FKb19fZW1aeVQxR0ZKUW44Nm1wQ3BmeGx5UVlyS2kxSHd4dEx4T0huaU5tQ1JBZUVnVUlpU0FZQUJJRkNJY2dHQUFTQlFpSUlCZ0FFZ1VJcUNBWUFCSUZDSVlnR0FBU0JRakFJQmdBRWdjSWhTQVFIaGdCRWdVSXV5QVlBRkFBV0FF",
+  "pageInfo": {
+    "totalResults": 30,
+    "resultsPerPage": 30
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "DQk_nwpm3-I5NWE7KS_CgQPoLtE",
+      "id": "UgyYuv8PND3basMii1R4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "b001meENyTRRwElFtrU7Abci2VI",
+          "id": "UgyYuv8PND3basMii1R4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "A son raised with love by his father side.",
+            "textOriginal": "A son raised with love by his father side.",
+            "authorDisplayName": "@normamontealvo6507",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Q5FCWgM72TN5OdqObZ0qqIEjau-IaKuKLwhqLZ5nBoDfiZz_5dSlkqRuI75F_e8Uu49nmRjc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@normamontealvo6507",
+            "authorChannelId": {
+              "value": "UC24OHQtlldifCuzTLD2GmYg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 526,
+            "publishedAt": "2026-05-03T04:42:27Z",
+            "updatedAt": "2026-05-03T04:42:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aG9ihKlRU8u8JMrjc-tAaLn0ub4",
+      "id": "UgzZzh6n-xxqS8jxESx4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IK4RCZGytlHL9LGLoZZV-eVoCk4",
+          "id": "UgzZzh6n-xxqS8jxESx4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Prince is always so sweet and articulate. Michael would be proud.",
+            "textOriginal": "Prince is always so sweet and articulate. Michael would be proud.",
+            "authorDisplayName": "@m77563",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nCNYIxJFFd0keMXSVHfU5vAGUpxRsLdlUlA75Tn3-Kdbw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@m77563",
+            "authorChannelId": {
+              "value": "UCo4bVfErcXuKUfTBTU6Q8mA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 255,
+            "publishedAt": "2026-05-02T14:44:56Z",
+            "updatedAt": "2026-05-02T14:44:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "hHhr6bi_X5qKLTPd3r9-5JZv1Eg",
+      "id": "Ugy435_jGhyKoWmea5N4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "m6W5gf0mB36SCs6VGcsjVufZpwM",
+          "id": "Ugy435_jGhyKoWmea5N4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "\"My father IS, was and will always be, a man of the people\".",
+            "textOriginal": "\"My father IS, was and will always be, a man of the people\".",
+            "authorDisplayName": "@andreawilliams2386",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nqlKn17DuBW1k9-aY4JSlLxLG-Svwk4_74Rn-cyMc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@andreawilliams2386",
+            "authorChannelId": {
+              "value": "UCcybzS5OXniw3l6WbOWVlRQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1472,
+            "publishedAt": "2026-05-02T10:25:40Z",
+            "updatedAt": "2026-05-02T10:26:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 41,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "CM8KywY_Iq7bFR6eavhQueYzZ6U",
+      "id": "UgxWS_yK_7AgiL8wOcB4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "TV-7n9x9P-uozj9SZrY2-cw_FA0",
+          "id": "UgxWS_yK_7AgiL8wOcB4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Say it again Prince so the ppl at the back can hear. Did you guys hear him, he said \"my father\" and \" I'm proud to be a Jackson\". Prince grew into a very handsome man",
+            "textOriginal": "Say it again Prince so the ppl at the back can hear. Did you guys hear him, he said \"my father\" and \" I'm proud to be a Jackson\". Prince grew into a very handsome man",
+            "authorDisplayName": "@LindsayHelm-ec2li",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/9l4Qn3cKrw_1yLBn-vNxjeOZcnLfNhDN0wsJUULQqGX0bF4d8Qoc0EwQM9ldZ9bUpFPbPW52Vg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@LindsayHelm-ec2li",
+            "authorChannelId": {
+              "value": "UCrTyNbt_0sknW_KqlduyTaA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 123,
+            "publishedAt": "2026-05-02T14:41:21Z",
+            "updatedAt": "2026-05-02T14:41:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uHj0SpBg0RB9AeKlI7MEMecX90w",
+      "id": "UgxvAHT0vRIZSGLOTnF4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cm6JSr1tpRhXObnBqicXAKnfTXM",
+          "id": "UgxvAHT0vRIZSGLOTnF4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "How nice this man is, he is proud of his father and his father must be very proud of him! His father’s kindness, positive energy and light are expressed through him ❤",
+            "textOriginal": "How nice this man is, he is proud of his father and his father must be very proud of him! His father’s kindness, positive energy and light are expressed through him ❤",
+            "authorDisplayName": "@giovannaguiotto6653",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nfJmx1wXIhfinAE1ozLV4fkE0y11HRe0TSOm7_Y_8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@giovannaguiotto6653",
+            "authorChannelId": {
+              "value": "UC2buv4LNVAcylY0lhNzGeGw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 65,
+            "publishedAt": "2026-05-03T02:15:00Z",
+            "updatedAt": "2026-05-03T02:15:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Eoo96JLwPe3Qfo6d7O92xIUqtrw",
+      "id": "UgyRTTlsiLxhTXMFN1h4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Aii924zO-Bf9wRH23zasbfKC21Q",
+          "id": "UgyRTTlsiLxhTXMFN1h4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Yes, Prince Jackson....We are the World and we testify that MJ remains undoubtedly the King of POP. Shout out to Jaafar and the entire Michael cast.",
+            "textOriginal": "Yes, Prince Jackson....We are the World and we testify that MJ remains undoubtedly the King of POP. Shout out to Jaafar and the entire Michael cast.",
+            "authorDisplayName": "@greatnation4328",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n3iZDsm_pcs3JvYBkTzgzya-q3Jsn9us8Ykmoh5BEZFGs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@greatnation4328",
+            "authorChannelId": {
+              "value": "UCh6ezwpJeB5BoJZQCzBYcWg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 173,
+            "publishedAt": "2026-05-03T18:15:47Z",
+            "updatedAt": "2026-05-03T18:15:47Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JFIxyTsosfQrNLJ-qpj0vI8C_2g",
+      "id": "UgyQ6s3uS_vbn9p1VHp4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "55vbm7Cro5EjbwpgB1wH7ty3MFg",
+          "id": "UgyQ6s3uS_vbn9p1VHp4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "All his children hold Michael with such warmth, respect and pride it's very telling isn't it. Michael Jackson was light and projected a lot of love around the world.  Other distractions have not dimmed that.\nHe was and remains the King of Pop.",
+            "textOriginal": "All his children hold Michael with such warmth, respect and pride it's very telling isn't it. Michael Jackson was light and projected a lot of love around the world.  Other distractions have not dimmed that.\nHe was and remains the King of Pop.",
+            "authorDisplayName": "@dianesilva1078",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lHZV-Si-QNrESS0QLRDYHEPKAJzoy9XZ5doKE0YQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dianesilva1078",
+            "authorChannelId": {
+              "value": "UCK_vI-yHG9z8vOiRsX9H2eg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 75,
+            "publishedAt": "2026-05-03T07:35:24Z",
+            "updatedAt": "2026-05-03T07:35:24Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "nIuKwZ0fOIIf1C7y7WI6RSYiiwo",
+      "id": "UgwMjCxY6DFkE1Dyuzx4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "rrujLhMFSBD7imXLORjsYxW29A4",
+          "id": "UgwMjCxY6DFkE1Dyuzx4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "You are so well raised, eloquent , intelligent and a breath of fresh air. You really are your father’s son.",
+            "textOriginal": "You are so well raised, eloquent , intelligent and a breath of fresh air. You really are your father’s son.",
+            "authorDisplayName": "@VictoriaAkpobome",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kreQYoMDitOiUhlQuQH74x8mvPequKq2PmlGBX4V_wyc2XSilO-PC-h-9Bd0LaJiGN4A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@VictoriaAkpobome",
+            "authorChannelId": {
+              "value": "UCnEachECxdiKZkisyKUJrbA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 406,
+            "publishedAt": "2026-05-02T22:22:50Z",
+            "updatedAt": "2026-05-02T22:22:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mBo3FkBUkjC0HcMu__dU444lFpk",
+      "id": "Ugw0KphUE886fmWk9Th4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "T-JCWpuHcLiWTqBzeuKO8v1eMLM",
+          "id": "Ugw0KphUE886fmWk9Th4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "You can see the light in his eyes.",
+            "textOriginal": "You can see the light in his eyes.",
+            "authorDisplayName": "@andreanikkiforeman540",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mpbWogT8LWTu04DuDtj3xTo65v2f6fRlutJlhubCI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@andreanikkiforeman540",
+            "authorChannelId": {
+              "value": "UCaMAsVRi1lmuuZRABwYDYBw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 212,
+            "publishedAt": "2026-05-02T07:49:12Z",
+            "updatedAt": "2026-05-02T07:49:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gFPGH0EV7hNyuJG5qD8BFAAVUIg",
+      "id": "UgyJXiMWvZsa3i0EEOJ4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "SwRjhAyG6E7byaQJSbrvkzdbGpk",
+          "id": "UgyJXiMWvZsa3i0EEOJ4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Man dude I'm so sorry for how the people treated your dad I could see he was nothing but a kind soul ❤❤❤",
+            "textOriginal": "Man dude I'm so sorry for how the people treated your dad I could see he was nothing but a kind soul ❤❤❤",
+            "authorDisplayName": "@lesleescott5219",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kHpiHxUdOrFJWxpC0XyfEGBgv6qXoTvWk-nK510Fw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lesleescott5219",
+            "authorChannelId": {
+              "value": "UCl6VVAIAcW4VhpkAoiCZdUA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2026-05-05T01:38:52Z",
+            "updatedAt": "2026-05-05T01:38:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "AmirzNTakvwMxvnZeHW9iMWZYnU",
+      "id": "UgzuLwk-fJIEmY1fLuR4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "g2m7kM5LtrE1r6DwWlaktlKPYxM",
+          "id": "UgzuLwk-fJIEmY1fLuR4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "THE MOVIE IS INCREDIBLE AND MICHAEL DESERVES SO MUCH RESPECT ❤❤❤",
+            "textOriginal": "THE MOVIE IS INCREDIBLE AND MICHAEL DESERVES SO MUCH RESPECT ❤❤❤",
+            "authorDisplayName": "@dannyxm6910",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/YQdXmSFeglBrLlpA7aRHMPVqg_7XGPa3Pl-15QUcW3M3IvX53ukj1Q9ThobLby4XbAVHX-gcow=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dannyxm6910",
+            "authorChannelId": {
+              "value": "UCQtW76Ptx_3-DkgnINt1OUQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 62,
+            "publishedAt": "2026-05-03T10:07:00Z",
+            "updatedAt": "2026-05-03T10:07:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bk3H_HrIgA70cJOR_3w9qFIGvGk",
+      "id": "Ugzc4ZQZ2Qsjik_sA314AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Pl6AutbS7bsAmccGs1_yOF349jg",
+          "id": "Ugzc4ZQZ2Qsjik_sA314AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Well said Prince🙏🙏. Michael was one of the all time greats",
+            "textOriginal": "Well said Prince🙏🙏. Michael was one of the all time greats",
+            "authorDisplayName": "@larellejames5860",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/m1repi3_h55wZ1ILTXGl2rjIGFM473Nt5wTLjQJY6aBGTQd-AMC5mD5oijgujkSZ77rbtVgb3w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@larellejames5860",
+            "authorChannelId": {
+              "value": "UCwGHg5vVasdPiX7_ml_luxg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 176,
+            "publishedAt": "2026-05-02T12:34:32Z",
+            "updatedAt": "2026-05-02T12:34:32Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "AmG9as9rWB5dK97cqfEG7595Yw0",
+      "id": "UgwkKtVUwBNTFFpbh294AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zu1UaUqF03JcNb-rRuudZVKfPY4",
+          "id": "UgwkKtVUwBNTFFpbh294AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Your dad is was the best music artist. Alot of us believed him . He was a wonderful person",
+            "textOriginal": "Your dad is was the best music artist. Alot of us believed him . He was a wonderful person",
+            "authorDisplayName": "@Aus-z9t",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/1Z2VHRt8yGHujJ4Fr8Pmqo-RjNQN_vOmfKZomynAY168i7oxSFzWgxk7h8_DxQtDHQ2j8iPVmg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Aus-z9t",
+            "authorChannelId": {
+              "value": "UCdJAooGGjCRLC-OG2OZFeMw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 83,
+            "publishedAt": "2026-05-03T03:52:05Z",
+            "updatedAt": "2026-05-03T03:52:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-dbWQVS2Iz1mL6y_PC8U8QGFkmY",
+      "id": "UgzO3Q6NN_WPflJcXyR4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cuV1R0btQ6ln4xnZes40hk8M74U",
+          "id": "UgzO3Q6NN_WPflJcXyR4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "I am so glad you are proud to be a Jackson!  I cannot express how proud I am to be a fan of Michael’s.  He shaped our lives in every conceivable way.  What a great human being!",
+            "textOriginal": "I am so glad you are proud to be a Jackson!  I cannot express how proud I am to be a fan of Michael’s.  He shaped our lives in every conceivable way.  What a great human being!",
+            "authorDisplayName": "@Otherside2020",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_noTn5R62t8CWUZjhQ-xGduzMUZogFthqniMOcRODwOpkuKXBfW9JT96sWLZe3gs2nANQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Otherside2020",
+            "authorChannelId": {
+              "value": "UCgctHgxZpuF0o8czIFq7MFQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-05-23T19:11:48Z",
+            "updatedAt": "2026-05-23T19:11:48Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "EuMiQd0drxVzbYJI_2ELOBsQH5c",
+      "id": "UgwueAG9Fp3CBwO3BCp4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "-paAPcQAqba-suDz931i9q1SxJw",
+          "id": "UgwueAG9Fp3CBwO3BCp4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Young man and your father is proud to be your father ❤",
+            "textOriginal": "Young man and your father is proud to be your father ❤",
+            "authorDisplayName": "@Baseball-q2q",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kN0vHjIDhTA7B0t2l-8jw4du0Fp3Q4NWDxREtZ0wG6prM4O5dykKEJAxt14lhBl9HMMQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Baseball-q2q",
+            "authorChannelId": {
+              "value": "UCNfzElgMC-zREVb9j0z6qYQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-05-20T20:54:16Z",
+            "updatedAt": "2026-05-20T20:54:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "a8FNFXJhM3pCyZ4oH3EfIeGoAgo",
+      "id": "UgwEZtb7kKIWOXW9VJ54AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uWDx0AULzPXjq6UXY-Rc4cxpv24",
+          "id": "UgwEZtb7kKIWOXW9VJ54AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Anything wit Michael's name on it will break records",
+            "textOriginal": "Anything wit Michael's name on it will break records",
+            "authorDisplayName": "@snoopyblu1206",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ta-OLBkTaFtA7QzUUPICc4VF01KtUt9CrUV60Is2EeN9wWb-lo59pJWuOYktOn0I2WGeApykzg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@snoopyblu1206",
+            "authorChannelId": {
+              "value": "UCxoWit7QCaiEafQFp_L4TNw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-05-06T00:36:22Z",
+            "updatedAt": "2026-05-06T00:36:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_kqmLrH6EyNrusYNw_NKDAqZpNE",
+      "id": "UgyY8Iwd2mb1-KtXDRF4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6GRr8dVgS151L2lM9QPorC8IvE0",
+          "id": "UgyY8Iwd2mb1-KtXDRF4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "His father raised him well micheal would be so proud he's a remarkable young man prince jackson ❤❤",
+            "textOriginal": "His father raised him well micheal would be so proud he's a remarkable young man prince jackson ❤❤",
+            "authorDisplayName": "@MargaretArlow",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nWBkhs3XZcENi1MSPCdcXzpUjnMm2sZJbVobSifX-nvmmNb8bXfpOmj_RTnLGbL03qbA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MargaretArlow",
+            "authorChannelId": {
+              "value": "UCvLxmkrAkv9ZSsbwVmzfHxw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 29,
+            "publishedAt": "2026-05-04T14:00:52Z",
+            "updatedAt": "2026-05-04T14:00:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "l6841OWlMsRnX7XgbztmNZsxvQI",
+      "id": "Ugz-R90zJsYrnRNlsA54AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "kL-Ki6eUVmcsYY3fhMm28HYHmgA",
+          "id": "Ugz-R90zJsYrnRNlsA54AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "He's so articulate showing LOVE for his dad",
+            "textOriginal": "He's so articulate showing LOVE for his dad",
+            "authorDisplayName": "@suzan2598",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l27pDZXD9m25t0zlYedkIZCM-DH8PRw76RJpobxFc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@suzan2598",
+            "authorChannelId": {
+              "value": "UC71GwcYHhUUOprx4awhDGJQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 106,
+            "publishedAt": "2026-05-02T23:18:46Z",
+            "updatedAt": "2026-05-02T23:18:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4_7yAy9aXzJphbN4CdB2cg97jDM",
+      "id": "UgzIfoi_87aH7O086rV4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3g87jSnE-NSOgRo3hLsCUQkA3dk",
+          "id": "UgzIfoi_87aH7O086rV4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Michael Jackson has good kids. So proud of Prince.",
+            "textOriginal": "Michael Jackson has good kids. So proud of Prince.",
+            "authorDisplayName": "@thelibrarian894",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mXiE9rhfYnDf7gjRDaV2iqeIBgEvrLBpCCPsiZe3Hyqg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@thelibrarian894",
+            "authorChannelId": {
+              "value": "UCZgHrcOnAyuz0QVhIILgHvQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-05-05T17:09:30Z",
+            "updatedAt": "2026-05-05T17:09:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Wn5e3qmGa6HtdbDcKz7-V9pbosk",
+      "id": "UgxNapklI0Itwnqv7wJ4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9dnMUVapZHxI3yM5U-f6habfS6E",
+          "id": "UgxNapklI0Itwnqv7wJ4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Your father was such an great soul. The world was not prepared for someone like him. He was kind, a genius and possessed such a beautiful heart and soul",
+            "textOriginal": "Your father was such an great soul. The world was not prepared for someone like him. He was kind, a genius and possessed such a beautiful heart and soul",
+            "authorDisplayName": "@elefanteluzvioleta",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/iT3uqDBL66cv0MDeKBl7LH0aGhSh_qKnf8i3lUp4ZwYHJflHLT9wkuE-jnPHrEgNdmUIQ66m0A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@elefanteluzvioleta",
+            "authorChannelId": {
+              "value": "UCtu-asJuQomHLaMNOFAgIOA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-05-06T02:24:10Z",
+            "updatedAt": "2026-05-06T02:24:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uRqW5701RTV5NC8ygwYOZCrRG6A",
+      "id": "UgxJvziMvOYSj8dNXA54AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "DfH9h9dFguOk_9SFMoMa9W7Nl2I",
+          "id": "UgxJvziMvOYSj8dNXA54AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Prince is such a well educated, well spoken, good guy with a ❤ of gold and warm, smiling eyes. His dad would have been proud at how he turn turned out to be.",
+            "textOriginal": "Prince is such a well educated, well spoken, good guy with a ❤ of gold and warm, smiling eyes. His dad would have been proud at how he turn turned out to be.",
+            "authorDisplayName": "@Ttttttttttttttttttyyyyyyyy",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/GiIrZDPskF0S66rq0VJMhjChfhwA7OcLCApftJ8rpekYGLqEWmq6IAIRG3zRhbhssIfpvKrYMQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Ttttttttttttttttttyyyyyyyy",
+            "authorChannelId": {
+              "value": "UCGWPc5-x7icfqbHBW3jtO4Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6,
+            "publishedAt": "2026-05-04T11:01:19Z",
+            "updatedAt": "2026-05-04T11:01:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4fp-AIhb_Foi1mutdrQGhbSqiA8",
+      "id": "UgxIvfAaQiHpOr4700x4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3Nt9jQsihEEdR54bVHgW5ZaAbM4",
+          "id": "UgxIvfAaQiHpOr4700x4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Prince is my favorite.  He's so REAL and absolutely stands up for his family.",
+            "textOriginal": "Prince is my favorite.  He's so REAL and absolutely stands up for his family.",
+            "authorDisplayName": "@vanessa4u4evr",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_m6dAezCxSoOX1TjA-ArdkGMSvB5i-etcUX35UZ2Qw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vanessa4u4evr",
+            "authorChannelId": {
+              "value": "UC9uX1glzxaOKCpShXsg-pNw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-05-06T00:23:30Z",
+            "updatedAt": "2026-05-06T00:23:30Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1rv67QPe84IFx5ywV5Hs_CDphqY",
+      "id": "UgxeBwMDHNlKtJTqELd4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "gf1lO2LXdzs2UUEkt5GZo6Pngy4",
+          "id": "UgxeBwMDHNlKtJTqELd4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "So nice to hear him  speak seems like he has his head on straight considering the pressure of being  his son I hope he stays on the straight path .",
+            "textOriginal": "So nice to hear him  speak seems like he has his head on straight considering the pressure of being  his son I hope he stays on the straight path .",
+            "authorDisplayName": "@DC-gf7wu",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_koYj4TzGLQO9UNBR451vK3mdItF8UKl8Ics6_BDlMVpyLIr5iFs_zsqowRHf9uvDmd4iY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DC-gf7wu",
+            "authorChannelId": {
+              "value": "UCNh6nvpz_32bzZBX_nMaqXw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-05-05T02:52:42Z",
+            "updatedAt": "2026-05-05T02:52:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0JOZa6Xf3w5ffPMpQNoc69eD4eo",
+      "id": "Ugxt8DqBFdQ_tINUEwB4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Es3EtCxXCz_8VHACJ2DYrdhwdOg",
+          "id": "Ugxt8DqBFdQ_tINUEwB4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "GOD bless you Prince.  Your father was a legend",
+            "textOriginal": "GOD bless you Prince.  Your father was a legend",
+            "authorDisplayName": "@ritadaniel7132",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mSjOlOdqF-55icmLzX2CqdBTE1iLswKZt8FwAL9n5EHDNGql4WQQZD30uJuvK4MyIISA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ritadaniel7132",
+            "authorChannelId": {
+              "value": "UCSS_NTGvrNjsqFeWxFST5HA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 25,
+            "publishedAt": "2026-05-02T20:52:46Z",
+            "updatedAt": "2026-05-02T20:52:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "UfEiNZGeE8GLXL7Z6klnuUHtlrs",
+      "id": "UgyZ8PkqZY3O30dU6It4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "vCWFz4CSE_B3czDav9kOHm67rVI",
+          "id": "UgyZ8PkqZY3O30dU6It4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Michael did an excellent job of raising Prince .He is a very well spoken college graduate.His dad would be so proud 👏🏾",
+            "textOriginal": "Michael did an excellent job of raising Prince .He is a very well spoken college graduate.His dad would be so proud 👏🏾",
+            "authorDisplayName": "@Halo_1128",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ntgPrUcHyzZ9-vVtMugfOvEyfrYUXSF9CNTYHBl3ld87eoFostv-kIwHbSagae3U3GEw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Halo_1128",
+            "authorChannelId": {
+              "value": "UC_NajL2Pisi_djRi-kAu_GA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-05-04T19:10:27Z",
+            "updatedAt": "2026-05-04T19:10:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZyhV0myzvZDBNxruqHt2w7musks",
+      "id": "Ugy9J3QwUZTqs3rcyLx4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "U2HvfdGmcOp2cmoq4uKn13-U1KE",
+          "id": "Ugy9J3QwUZTqs3rcyLx4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "I know this must be a real comfort to you all...we the fans feel very strongly about your father even today...congratulations",
+            "textOriginal": "I know this must be a real comfort to you all...we the fans feel very strongly about your father even today...congratulations",
+            "authorDisplayName": "@BonnieSalyers",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lotwq9kZ-zhxXUPYTHDURWd2bPVUP7N6Lmrz_CAiHeSQgwSE_79junSbEt4Q9YRbEFbA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@BonnieSalyers",
+            "authorChannelId": {
+              "value": "UCMprh_bEcDlMqF-7_Rrk5Hg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-05-06T05:52:43Z",
+            "updatedAt": "2026-05-06T05:52:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "I1Qc-Aa3-LznmnvV6pUUkQ1TOFg",
+      "id": "UgwUgYLChHsxJ77SgQV4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "xtWTrrDJWg606xruria981WgxNg",
+          "id": "UgwUgYLChHsxJ77SgQV4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Bravo to you Prince. I can hear and see the kind gratitude shining through you from Michael. Stay strong and continue to speak truth to power.",
+            "textOriginal": "Bravo to you Prince. I can hear and see the kind gratitude shining through you from Michael. Stay strong and continue to speak truth to power.",
+            "authorDisplayName": "@gwindaleperson7692",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kxKcpAmpqAzVRKeqXCsdk805Gr1kk3WYIoMGQ2-1v8z1r3YeMOa9PsH8iPqbDD5joqcA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@gwindaleperson7692",
+            "authorChannelId": {
+              "value": "UC4fo0LruSxEA2Ohox-OEV-Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 330,
+            "publishedAt": "2026-05-02T06:04:41Z",
+            "updatedAt": "2026-05-02T06:04:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TytSVK5u9w30vagQ2kEZ8tKc5DE",
+      "id": "UgwMNMo6hErBSeHbLlp4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "F6C9pRrjyL1LaiVsy54epkfqUdU",
+          "id": "UgwMNMo6hErBSeHbLlp4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Your dad was an Amazing person ❤️💜🙏 God bless you and your family 🙏",
+            "textOriginal": "Your dad was an Amazing person ❤️💜🙏 God bless you and your family 🙏",
+            "authorDisplayName": "@barbarabates5634",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nxgodEDGBJo5LXpF2pwYF0ZAg3a-4C0BmuYpilGp49ySc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@barbarabates5634",
+            "authorChannelId": {
+              "value": "UChOvg6TGC_fduZNabsZlJ5Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 16,
+            "publishedAt": "2026-05-03T07:34:44Z",
+            "updatedAt": "2026-05-03T07:34:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Pw6uQ1v6DsIYvJouXXjJwRgS4X4",
+      "id": "UgxVVfvQqVtPt2CK2D54AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "a_mbsPhmUrxugjqr0ENvjNK3leU",
+          "id": "UgxVVfvQqVtPt2CK2D54AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "Michael is such a proud father.. hete on earth and in heaven",
+            "textOriginal": "Michael is such a proud father.. hete on earth and in heaven",
+            "authorDisplayName": "@kiral9668",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/mHdo8lwd93vdxUNQVZHV6dNZvOhLgzFvFmQguxaEYNHt6j5xXnEtUfH7bgvHhQ4cGRLqCEg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kiral9668",
+            "authorChannelId": {
+              "value": "UCs6006639mo_rzZ2TyKBHzw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-05-06T14:26:38Z",
+            "updatedAt": "2026-05-06T14:26:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "fvw4Tg90D5OnRBJucloQLxtl6rA",
+      "id": "Ugwb-1RTh1073vBkXud4AaABAg",
+      "snippet": {
+        "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+        "videoId": "D1zo7vAyKY0",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mdzQrzZAnC3b38xXX0xuMt5Gpmc",
+          "id": "Ugwb-1RTh1073vBkXud4AaABAg",
+          "snippet": {
+            "channelId": "UCvZuCs_n15U7eb7yuJXEi_w",
+            "videoId": "D1zo7vAyKY0",
+            "textDisplay": "What a beautiful thing  that Michael Jackson’s son speaks so highly of his father  .  I’m so proud of him .  Nobody’s life is perfect ,  Michael Jackson is a legend ❤❤❤❤❤❤❤",
+            "textOriginal": "What a beautiful thing  that Michael Jackson’s son speaks so highly of his father  .  I’m so proud of him .  Nobody’s life is perfect ,  Michael Jackson is a legend ❤❤❤❤❤❤❤",
+            "authorDisplayName": "@JennySandoval-q6o",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mXl5vEZetSFCfuG2B7_VLqc38fE5TVJMtL_CGIeMUbdXJf55quvy5KONcX81xCv66Llw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JennySandoval-q6o",
+            "authorChannelId": {
+              "value": "UCAa90ByOPPiGT9nkOcr63zw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-05-06T17:27:32Z",
+            "updatedAt": "2026-05-06T17:27:32Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}

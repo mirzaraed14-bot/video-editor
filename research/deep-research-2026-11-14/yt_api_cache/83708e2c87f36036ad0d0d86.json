@@ -1,0 +1,691 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "vuIvEvyBlCDZtiBbjsdAOm5Ek3Q",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DcVVCQ0lBRUZSZTMwVGdhbWdFS2xRRUkyRjhRZ0FRWUJ5S0tBZnNJVmlGTWVyWndMOFZyd0xTSmVPWjltc0NWd0puMUlOMEdudjZpaUtZM2NuYUxtREtsQ1Y2eUpMOG9OSFV6MHZJRFYtVE40Q3VNVXhoSHl0bUd1NTZNMHAtYVVWNXZadUU0amtMQkNnWm81cTlBV2NKZ3ctdUs2R3ZabEpCYnZpT0N5Nmh0NGpqaVFBOVNrdUVoalZGTUdvOU5zOEhRZ2l0aU9DQllWZkNHSDRvakxGSGFmc0RSR2hBVUVnY0loU0FRQnhnQkVnY0loQ0FRRkJnQkVnY0loeUFRQVJnQUVnVUlpU0FZQUJJRkNJZ2dHQUFTQlFqQUlCZ0FFZ1VJaGlBWUFCSUZDS2dnR0FBU0JRaTdJQmdBVUFCWUFR",
+  "pageInfo": {
+    "totalResults": 20,
+    "resultsPerPage": 20
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "46IY35Fi7ulIww5OIDTOzuHhNiI",
+      "id": "UgzBVLA6PpkhVpUm_JF4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Re8AE3Dkr2v3PC9Zy_BGDtQLtM0",
+          "id": "UgzBVLA6PpkhVpUm_JF4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "The book he is reading is called “My Brother Sammy Is Special.”",
+            "textOriginal": "The book he is reading is called “My Brother Sammy Is Special.”",
+            "authorDisplayName": "@saliyaahmariee",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/b3kJq4StkSvZvzuVjC2srCR399ldtvHIUWj3nFbz0387ycCrQ5sJuRCw52tawJhXOl4L05d1lA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@saliyaahmariee",
+            "authorChannelId": {
+              "value": "UCswY3kylCOYXtSMTkEuBYXw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4777,
+            "publishedAt": "2021-04-01T05:41:51Z",
+            "updatedAt": "2021-04-01T05:41:51Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 49,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "IxOuIL1SftWCPaF3Eb2kcJwrZRA",
+      "id": "UgxpyuJwIEAylxrlgg94AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "380T1CG2JVb8GxJqeiCApt9JNws",
+          "id": "UgxpyuJwIEAylxrlgg94AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "A single mom who works too hard who loves her kids and never stops 😂😂😂",
+            "textOriginal": "A single mom who works too hard who loves her kids and never stops 😂😂😂",
+            "authorDisplayName": "@belladonna1144",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nF2pbq4pvBd2D8AB9UEYIUSwEgjsA3t5GcqbLQmlXZGplc=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@belladonna1144",
+            "authorChannelId": {
+              "value": "UCM-25HyPWFs5_6AhROojPaw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 379,
+            "publishedAt": "2025-12-11T06:29:11Z",
+            "updatedAt": "2025-12-11T06:29:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "403JG7jyCpCo992e9-YfdoLPhpI",
+      "id": "UgzQp8sG3tykup6YzXd4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ut6Jv7wQWmOvXjbAnrVpL3xWZqQ",
+          "id": "UgzQp8sG3tykup6YzXd4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "is it just me or his voice is just so soothing to listen to",
+            "textOriginal": "is it just me or his voice is just so soothing to listen to",
+            "authorDisplayName": "@kristinawin6938",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k6pYwm9lUANsWcllpBMzHVunmD6c0uY2zFZn8Nck5AYTY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kristinawin6938",
+            "authorChannelId": {
+              "value": "UCgx0knzPXa2IddlFcANjE-g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 520,
+            "publishedAt": "2020-02-11T23:45:26Z",
+            "updatedAt": "2020-02-11T23:45:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 5,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "d__0Gp6gLkLTkQfqWC4zE9IZvw0",
+      "id": "UgxMmyXCxvrtsSzW-eB4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "W42EipypKeOShJ5n-OGCz1jIGWg",
+          "id": "UgxMmyXCxvrtsSzW-eB4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "He slammed the book like “these kids ain’t listening. Lemme take some theraflu and lay down” 😂",
+            "textOriginal": "He slammed the book like “these kids ain’t listening. Lemme take some theraflu and lay down” 😂",
+            "authorDisplayName": "@Editslovejazzy",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kBaDkIOH__dakaF3bRBF7p7MB0r5I5iQOag0fEUWpuqA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Editslovejazzy",
+            "authorChannelId": {
+              "value": "UCgMgangQXFQoU8OZunD73Pw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 129,
+            "publishedAt": "2026-05-12T16:39:11Z",
+            "updatedAt": "2026-05-12T16:39:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "eSgKZAEiH9MXeQ7Hk1Zy7D9Vwa4",
+      "id": "UgxIqLvL1j3XuhBItpZ4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cqB6AO1SqFA1avSgSi9OvRag62A",
+          "id": "UgxIqLvL1j3XuhBItpZ4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "Michael looking like a tired messy mum 😂",
+            "textOriginal": "Michael looking like a tired messy mum 😂",
+            "authorDisplayName": "@KiwiKuini",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/2mvgBKErH7ENHI9iR8OLuMBq52JSmre5jqcHKeDjMbglWMZDmjSEB7Lb7ua634nDRcbn25lA3g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@KiwiKuini",
+            "authorChannelId": {
+              "value": "UC3VKo9BM1ThCyuqN5Uj5EkA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 778,
+            "publishedAt": "2025-10-19T04:21:57Z",
+            "updatedAt": "2025-10-19T04:21:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 10,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZV8RmBkkZpTCe9WwjxuQA1rgVR8",
+      "id": "UggJD0CKJEH_PHgCoAEC",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Fbli78j6EOfXyml1d5i3Vmsj6Oo",
+          "id": "UggJD0CKJEH_PHgCoAEC",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "I bet his dad never read to him as a kid like this - am sure he loves doing this to his kids",
+            "textOriginal": "I bet his dad never read to him as a kid like this - am sure he loves doing this to his kids",
+            "authorDisplayName": "@annajeehee",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nBETHYc__kWtziAWvjiyKFWpuaRUGgM_fIosHiB6s=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@annajeehee",
+            "authorChannelId": {
+              "value": "UCUunM3A6EEPcEMK9DDneFQw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 827,
+            "publishedAt": "2015-05-09T23:41:42Z",
+            "updatedAt": "2015-05-09T23:41:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9b7KJBpIu_RH9zkWGLHSWTlfXOA",
+      "id": "UgyqlSNXtTG61NtIu2R4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "YsXHwUXUAXVhjCIcGXURG958I7k",
+          "id": "UgyqlSNXtTG61NtIu2R4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "0:55 “It feels so soft and smooth that it makes us laugh _SNORTSSS_ “",
+            "textOriginal": "0:55 “It feels so soft and smooth that it makes us laugh _SNORTSSS_ “",
+            "authorDisplayName": "@moyachicken",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/HiqdS39Dkngc8EaC3WKMzxKvf3nEeseV60ju4yoE11cL81tshsJwzs5baUMnApMCJ3-3waeL=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@moyachicken",
+            "authorChannelId": {
+              "value": "UCTo0k876hc6_83X5T4JNftg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1271,
+            "publishedAt": "2020-12-09T10:06:08Z",
+            "updatedAt": "2020-12-09T10:06:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "G05mBB33X8Vum7MdYLeyB_Fu_jw",
+      "id": "UggHN_treab9aHgCoAEC",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "d-iplypVVBqcimBlkPHAobK2aTs",
+          "id": "UggHN_treab9aHgCoAEC",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "he looks like a normal parent who's been up all night trying to get the kids to settle down and he looks fed up and tired but will do anything to make them happy which is why he's reading the book and at the end he's like \"alright I give up\" lol. this is so adorable",
+            "textOriginal": "he looks like a normal parent who's been up all night trying to get the kids to settle down and he looks fed up and tired but will do anything to make them happy which is why he's reading the book and at the end he's like \"alright I give up\" lol. this is so adorable",
+            "authorDisplayName": "@kiara3299",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/mH4F_w_H4003IpRUOgzZNJgso-LGKIKVxnps7xFTE5ge2sSYvw82EKjZBIf0dtujHt61Zlu0PuA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kiara3299",
+            "authorChannelId": {
+              "value": "UCxTSZfdE4rUNz899MpO60ig"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 991,
+            "publishedAt": "2017-06-22T09:02:22Z",
+            "updatedAt": "2017-06-22T09:04:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "wSHa3tL3iSsbhlstpAEWvDqMCyQ",
+      "id": "UgwQF2mI_YXPfbD-FcN4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zR2KrnOQqfoWSiYjzvP9qzgDYAY",
+          "id": "UgwQF2mI_YXPfbD-FcN4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "As an autistic girl I feel happy that Michael was teaching his kids what autism is. It just shows that he really tried to teach his kids that they should accept everyone, no matter if poor, different skin colour or etc.",
+            "textOriginal": "As an autistic girl I feel happy that Michael was teaching his kids what autism is. It just shows that he really tried to teach his kids that they should accept everyone, no matter if poor, different skin colour or etc.",
+            "authorDisplayName": "@PrincessRoyalSix",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-foBmNDq07zHsa_vQ2S9df_EmGUPrtB3og9hIe__c9MnxM2VmmnIy5LPiO9wQ6TnttC1oINhF2k=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@PrincessRoyalSix",
+            "authorChannelId": {
+              "value": "UCU_h2Xlp-7an4k22JhusRNQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 373,
+            "publishedAt": "2024-04-03T19:14:48Z",
+            "updatedAt": "2024-04-03T19:15:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ebn1V_Gm9JF4PiGqYZI30ZtTRpk",
+      "id": "UgyeTNiEQo5DILB4B3N4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "iehJDBJaC83Lg5KwT6Fu5CWjeUs",
+          "id": "UgyeTNiEQo5DILB4B3N4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "The way he shuts the book at the end shows how done he is with his children ignoring everything he does lmfao.",
+            "textOriginal": "The way he shuts the book at the end shows how done he is with his children ignoring everything he does lmfao.",
+            "authorDisplayName": "@skibidi",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/V_vZjmzBdrlhDqMTm-NeMfBfJGmE0O7X35AJHMcm8lL-Y0EjnycOnSGaxeFlf_FjHh7xvhjA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@skibidi",
+            "authorChannelId": {
+              "value": "UCsSsgPaZ2GSmO6il8Cb5iGA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 15105,
+            "publishedAt": "2020-05-15T02:26:50Z",
+            "updatedAt": "2020-05-15T02:26:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 158,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "yWzHqZl2SzcoRAhA76RqE10i0dQ",
+      "id": "UgwIO4hurqzTtABfRCp4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "1QExaAsfpDFJHwzeX1Z570r3JBA",
+          "id": "UgwIO4hurqzTtABfRCp4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "He was a single dad and here he looked like a tired parent.😂 the way he closed the book was too funny\n But then, you'll see how much he loved his kids.",
+            "textOriginal": "He was a single dad and here he looked like a tired parent.😂 the way he closed the book was too funny\n But then, you'll see how much he loved his kids.",
+            "authorDisplayName": "@ria1414",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k_bm5NoPcqzHxoymm0wkR5A1kju1T9Pcc0uvqbziCLmDXAaRUbzq3PXiOBmQypZDvpeA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ria1414",
+            "authorChannelId": {
+              "value": "UCGm0HnnT1Pz6SoEWp3gDNHg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 793,
+            "publishedAt": "2020-09-15T18:34:13Z",
+            "updatedAt": "2020-10-19T07:14:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "CpHY1HPpQEZo1tF53_hIvH2U79w",
+      "id": "Ugyx2W2Gs-qVpuOjoI54AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Kv7rGDdYnoSGZjCCben3FshZMf4",
+          "id": "Ugyx2W2Gs-qVpuOjoI54AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "Michael Jackson reading a book to his kids, it doesn't get better than this. This video summarize what MJ was all about. The greatest artist in the world but also just a peaceful, down to earth, humble man that only cared about kindness and love.",
+            "textOriginal": "Michael Jackson reading a book to his kids, it doesn't get better than this. This video summarize what MJ was all about. The greatest artist in the world but also just a peaceful, down to earth, humble man that only cared about kindness and love.",
+            "authorDisplayName": "@JL-uo1di",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kuiehwk_EiMQ8ppGPxJpJVgD9nA22L1JIL5VIQdNXpXLI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JL-uo1di",
+            "authorChannelId": {
+              "value": "UCCGOMtDD4L_Tjie0dSLXyIA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 461,
+            "publishedAt": "2022-11-13T06:56:49Z",
+            "updatedAt": "2022-11-13T06:56:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "E8rStRUUCzbt_uDJH_Ww9DLNsVE",
+      "id": "UgwqyuGiNgI-sJOYKl54AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "nWCYiLYY5X_eDTJuNX6SWefZ0FI",
+          "id": "UgwqyuGiNgI-sJOYKl54AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "He looks like every other parent. Tired and runned down but still willing to read a book to his kids.",
+            "textOriginal": "He looks like every other parent. Tired and runned down but still willing to read a book to his kids.",
+            "authorDisplayName": "@Etigress",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nD98roGxCWxpPhjtfJX4yOgqMg-p1wYTmDmSK1zDM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Etigress",
+            "authorChannelId": {
+              "value": "UCVLO3Qf0SNfpxmLjF32zT5A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9174,
+            "publishedAt": "2020-11-17T09:50:28Z",
+            "updatedAt": "2022-05-05T18:45:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 34,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "z7YepkIzXGLRAsbxundmBVBRHUU",
+      "id": "UgxM1zjAm3xkQTt7xIN4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "DNtjSLNNAiVfz2SLQFJIlqIcEFY",
+          "id": "UgxM1zjAm3xkQTt7xIN4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "PRINCE: (all ears to his daddy's story)\nPARIS: _\"Don't do that to dady\"_\nPRINCE : *WOT?* 👁️👄👁️",
+            "textOriginal": "PRINCE: (all ears to his daddy's story)\nPARIS: _\"Don't do that to dady\"_\nPRINCE : *WOT?* 👁️👄👁️",
+            "authorDisplayName": "@VVilla-zh5mw",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mxVdWIkh8q7ghZE3n9nLuowczKHndlxfbhMu0eEGVZydg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@VVilla-zh5mw",
+            "authorChannelId": {
+              "value": "UCUra5ycZYZ2LT46_hMfqjzA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4078,
+            "publishedAt": "2020-08-21T05:11:38Z",
+            "updatedAt": "2020-08-21T05:12:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 17,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "U8BTeeZbOY3EEZ9Yhv3BciI7SV4",
+      "id": "Ugw_X42NPocYN90rrdh4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "99jamBTageneDOblzcpgSH9J7dk",
+          "id": "Ugw_X42NPocYN90rrdh4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "Fun fact : You didn’t search for this. It was in your recommended.",
+            "textOriginal": "Fun fact : You didn’t search for this. It was in your recommended.",
+            "authorDisplayName": "@nusrathasan6166",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mvBivAejJSe-vp2sOx-3IQZomNWukLsWvjknlSCXQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nusrathasan6166",
+            "authorChannelId": {
+              "value": "UC3DrR9CCM7hR4RxcEZQyInQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9611,
+            "publishedAt": "2020-12-23T21:12:50Z",
+            "updatedAt": "2020-12-23T21:12:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 266,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZfSUJncJkqx3356kzHKi-H0JnLA",
+      "id": "UgyTD9go_jE0mVIcPYN4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "h5qHkg4xI5bSET8sOhnrFJWaIgM",
+          "id": "UgyTD9go_jE0mVIcPYN4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "I feel awful that his kids lost their only parent so early in their lives. They’ve grown up to be so humble though. You never hear about them acting a fool or spending loads of $$.",
+            "textOriginal": "I feel awful that his kids lost their only parent so early in their lives. They’ve grown up to be so humble though. You never hear about them acting a fool or spending loads of $$.",
+            "authorDisplayName": "@Kari2025",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lv4RA3qvpl5fJGY9Xbzk4D7K7LM54nopsz9eMwKHZR=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Kari2025",
+            "authorChannelId": {
+              "value": "UCNEAsk-uFlSql7rq-hg72vA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 194,
+            "publishedAt": "2022-01-29T00:38:59Z",
+            "updatedAt": "2022-01-29T00:38:59Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "81YRTFVXne0N-7H8ZSG0JudN1wc",
+      "id": "Ugw1gbu5icvudby6Sxh4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "UKp8ztN4w118PI9rzrbHhWj2MvI",
+          "id": "Ugw1gbu5icvudby6Sxh4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "Omg Michael looks like his kids begged him to wake up and read them a book 😂",
+            "textOriginal": "Omg Michael looks like his kids begged him to wake up and read them a book 😂",
+            "authorDisplayName": "@Madmaxmayfield75130",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/dj58gnmkDi3CHE74jFO5HfG4a1TVZtydnuhP9lxtLcbXvaBFasvBgegWVaQCWWXPAgO9tLDK1Xg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Madmaxmayfield75130",
+            "authorChannelId": {
+              "value": "UCNh82Gd_OPQ9AtOwcg-ci5w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 314,
+            "publishedAt": "2021-03-11T20:33:14Z",
+            "updatedAt": "2021-03-11T20:33:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0CYHrlNWtpv_Z7FxjVOnhf1fiA4",
+      "id": "UgztlwzO1WVg9rJVHM94AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Dr-eFTvzSYos90KfQ0K7qAU18FQ",
+          "id": "UgztlwzO1WVg9rJVHM94AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "How cute Michael is to be a father",
+            "textOriginal": "How cute Michael is to be a father",
+            "authorDisplayName": "@potatosparke2224",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SuD5yFLMWaAdrpDD1mLMOPD824XCOrks2VKNMXjMuK0rNxPkL7tHoLZgCezuqI2OxoFR_iJTFA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@potatosparke2224",
+            "authorChannelId": {
+              "value": "UCgIkaPIjNmzKwBRlaJzCFhQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 205,
+            "publishedAt": "2020-01-27T11:23:42Z",
+            "updatedAt": "2020-01-27T11:23:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "dipatBJy86ONfhBmJjHv7d7HCfo",
+      "id": "Ugywx7UtcDfyLP9pYMF4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QE0u0yY_aKCwyl3oKFNtUMBolVA",
+          "id": "Ugywx7UtcDfyLP9pYMF4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "the way he closed the book at the end like \n“i’m reading🙄” 😂❤️",
+            "textOriginal": "the way he closed the book at the end like \n“i’m reading🙄” 😂❤️",
+            "authorDisplayName": "@nicolebassett35",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/DAhhNXD81AJiX5WCUW6KSOzPKdfb_kK5RNE9Zbw0ZoxAuSbCX_EdQ4VcE0j95o9Ec1Xg_nUXGw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nicolebassett35",
+            "authorChannelId": {
+              "value": "UC7U2RN86XNDCyQ10WZXMQww"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 176,
+            "publishedAt": "2020-05-01T18:57:39Z",
+            "updatedAt": "2020-05-01T18:57:39Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TqarZMXAjjXCYzY4badGZSq8q8o",
+      "id": "Ugy55m0ARiSH8IOjH2p4AaABAg",
+      "snippet": {
+        "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+        "videoId": "9v-L9Dcmft8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5fGbMKLZR0UCSxm5ElbsZJaqErI",
+          "id": "Ugy55m0ARiSH8IOjH2p4AaABAg",
+          "snippet": {
+            "channelId": "UCtzghGAb0G9yTBbVa5SsEzA",
+            "videoId": "9v-L9Dcmft8",
+            "textDisplay": "The backstory to this is that Prince and Paris had been fighting/arguing...as siblings do. Apparently it had gotten pretty heated and things were escalating. MJ obviously did not believe in spanking. He preferred to give the kids a \"time-out\" and when they were young like this, he would read to them during their time-out. \n\nAlso, MJ was fighting a nasty bug at the time and didn't feel well. (You can tell he's congested and stuffed up. 😕)  Yet, he still tended to his children's needs in a loving way. Although, you can tell the kiddos are trying his nerves.😂And what parent hasn't been there?😊\n\nHow many celebs do you honestly think did this with their kids?  I'm betting not many. The majority of them have nannies and housekeepers that they dump their kids on. MJ was definitely an involved parent! 🥰",
+            "textOriginal": "The backstory to this is that Prince and Paris had been fighting/arguing...as siblings do. Apparently it had gotten pretty heated and things were escalating. MJ obviously did not believe in spanking. He preferred to give the kids a \"time-out\" and when they were young like this, he would read to them during their time-out. \n\nAlso, MJ was fighting a nasty bug at the time and didn't feel well. (You can tell he's congested and stuffed up. 😕)  Yet, he still tended to his children's needs in a loving way. Although, you can tell the kiddos are trying his nerves.😂And what parent hasn't been there?😊\n\nHow many celebs do you honestly think did this with their kids?  I'm betting not many. The majority of them have nannies and housekeepers that they dump their kids on. MJ was definitely an involved parent! 🥰",
+            "authorDisplayName": "@deniece0821",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/HqNoG2BT6E04H9jVv8-Jy8qXDLwwHCsE8QTku6CCUJ_-STsTFVJvCkhuIApeX4G8FMDH1XIo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@deniece0821",
+            "authorChannelId": {
+              "value": "UCNhx2atCylcrbXEucWGiKMg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 291,
+            "publishedAt": "2023-09-04T19:28:54Z",
+            "updatedAt": "2023-09-04T19:28:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    }
+  ]
+}

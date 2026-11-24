@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "pSyyakR3rhqWSFWIq5bBtZ7TOM8",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "kgwHEl17kmAPYSCtVAo1omakivk",
+      "id": "UCxFnhdxlfMPxSoEYjJu53bg",
+      "snippet": {
+        "title": "Stickman Matt",
+        "description": "On this channel I show you how to grow on YouTube, monetize correctly, and potentially build your very own YouTube business. Subscribe if you're all in on YouTube!",
+        "customUrl": "@stickmanmattofficial",
+        "publishedAt": "2025-11-12T18:47:39.217314Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/L0Jtx880uokDXQgGt8SeLQqzhg6zuE93LRYPt0wLF1bAZHOi2mgzVdpcLJnUdLpfPRKC6j40B1g=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/L0Jtx880uokDXQgGt8SeLQqzhg6zuE93LRYPt0wLF1bAZHOi2mgzVdpcLJnUdLpfPRKC6j40B1g=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/L0Jtx880uokDXQgGt8SeLQqzhg6zuE93LRYPt0wLF1bAZHOi2mgzVdpcLJnUdLpfPRKC6j40B1g=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Stickman Matt",
+          "description": "On this channel I show you how to grow on YouTube, monetize correctly, and potentially build your very own YouTube business. Subscribe if you're all in on YouTube!"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "907144",
+        "subscriberCount": "9570",
+        "hiddenSubscriberCount": false,
+        "videoCount": "34"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "tAPJC6CbnE0w53Xkvw-23wM0M2Y",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "Ar2BYNtKErSeeNcYdpfyEhe1v7A",
+      "id": "UCZXShYiBJlahi8mCNiU3XBg",
+      "snippet": {
+        "title": "Capital Case",
+        "description": "(HUMAN-MADE) Uncovering the hidden stories behind history, money, and human ambition — simplified.",
+        "customUrl": "@capital_case",
+        "publishedAt": "2025-12-31T09:17:36.412442Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/cWmm6oZL8S3PpgYvWJuMrQpVS_pMx3KDFq-Ksnn-Y-U_caE9gSMGHtzw2VmbeIqYAYZoKGOwk8I=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/cWmm6oZL8S3PpgYvWJuMrQpVS_pMx3KDFq-Ksnn-Y-U_caE9gSMGHtzw2VmbeIqYAYZoKGOwk8I=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/cWmm6oZL8S3PpgYvWJuMrQpVS_pMx3KDFq-Ksnn-Y-U_caE9gSMGHtzw2VmbeIqYAYZoKGOwk8I=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Capital Case",
+          "description": "(HUMAN-MADE) Uncovering the hidden stories behind history, money, and human ambition — simplified."
+        }
+      },
+      "statistics": {
+        "viewCount": "1526759",
+        "subscriberCount": "12100",
+        "hiddenSubscriberCount": false,
+        "videoCount": "13"
+      }
+    }
+  ]
+}

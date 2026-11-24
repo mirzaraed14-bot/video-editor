@@ -1,0 +1,46 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "FOYjYDgN_noPc5zq1ER6RpxXK0w",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "m--Ik63BalqN6dKDonKA32ZN4sQ",
+      "id": "Ugyldu7qouYygx47KhR4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "qSyo5d-dVzA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "JFRglQ5J-rN7lWRPqVbCOmC-vfU",
+          "id": "Ugyldu7qouYygx47KhR4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "qSyo5d-dVzA",
+            "textDisplay": "4:29:32 he felt the sponsors",
+            "textOriginal": "4:29:32 he felt the sponsors",
+            "authorDisplayName": "@Bobby_Official55",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ucYxMs8C4JDAXrHJvtIOe4xXxHygc6uhSYcMk707G3J5_K-4TmOZqnoxhvBuJhwTF-XM-Y0Byg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Bobby_Official55",
+            "authorChannelId": {
+              "value": "UCMsrApcYmOLHVImDUPj_Tdg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 9,
+            "publishedAt": "2026-11-19T16:06:19Z",
+            "updatedAt": "2026-11-19T16:06:19Z",
+            "imageUrl": "https://i.ytimg.com/c_exp/Ugyldu7qouYygx47KhR4AaABAg/IMd5fIwJVP-s4_webp_animated_original_aspect_ratio.webp?sqp=CLbBhtgGGOCoAQ==&rs=AOn4CLA2eSgE-OWHt8rCtB7NadA09F9nDA"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

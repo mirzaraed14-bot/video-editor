@@ -23,4 +23,6 @@ in follow-ups.
 - A price goes in only after they reply and engage, or when they ask ("what do you charge?").
 - This is about cold or silent threads; a host who asked for the price still gets it straight.
 
+**Price-ghosters wait for late December (Affan 2026-11-24):** people who went quiet AFTER hearing a price (Matt Abrahams, Kevin Lanning) and the approved-then-quiet hosts get no nudge before 2026-12-26; Affan reaches them himself at the end of December, with the new $1,000-for-30-Shorts price as the reason to write. The held drafts and texts are listed in onyx-RESUME.md (11-24 blocks).
+
 Related: [[project-onyx-sample-shorts]], [[feedback-max-effort-every-asset]].

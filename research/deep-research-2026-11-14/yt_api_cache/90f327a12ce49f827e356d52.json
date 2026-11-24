@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "Fy79qtIiwB0d4z5Dc_YEPp6gEJc",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "igTu8yGEkM2eMC3a6GFj0weqCbE",
+      "id": "UCcNrmSXswsMJzuaSQknziTw",
+      "snippet": {
+        "title": "Make Money Matt",
+        "description": "My name's Matt Par and on this Make Money Matt channel I share strategies on how to grow on YouTube and build a digital career. If you're looking for legitimate ways to work from home, make sure to subscribe!\n\nContact for sponsorships: matt@reprezent.ai\n",
+        "customUrl": "@makemoneymatt",
+        "publishedAt": "2018-10-07T00:06:35Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/liHif6z2eXbV_kAVsvBaslj4dLbNv7CiVagMeyuHfbzKCD3tChU0A9ELYClzSglai94WqbF6jOg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/liHif6z2eXbV_kAVsvBaslj4dLbNv7CiVagMeyuHfbzKCD3tChU0A9ELYClzSglai94WqbF6jOg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/liHif6z2eXbV_kAVsvBaslj4dLbNv7CiVagMeyuHfbzKCD3tChU0A9ELYClzSglai94WqbF6jOg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Make Money Matt",
+          "description": "My name's Matt Par and on this Make Money Matt channel I share strategies on how to grow on YouTube and build a digital career. If you're looking for legitimate ways to work from home, make sure to subscribe!\n\nContact for sponsorships: matt@reprezent.ai\n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "26193429",
+        "subscriberCount": "975000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "181"
+      }
+    }
+  ]
+}

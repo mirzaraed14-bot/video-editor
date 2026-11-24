@@ -1,6 +1,6 @@
 ---
 name: feedback-fix-only-what-he-named
-description: Affan 2026-10-22 — a review note changes only what he named; never replace his grade/sharpen stack; test frames of every shot before a full render
+description: Affan 2026-10-22 — a review note changes only what he named; never replace his grade/sharpen stack; a reference channel he names covers ONLY the dimension he names (11-24); test frames of every shot before a full render
 metadata:
   type: feedback
 ---
@@ -27,3 +27,17 @@ those spans touch → swap a layer in place. No new catalog pass, re-plan or rev
 lean as possible." A review note on a code-built short is applied as DATA over the reviewed picture: timeline values + one finish
 render (e.g. a finish-side `lift` translate for letterboxed shots), never a Stage A / Topaz / caption / audio re-run unless the note
 touches them. Prove unchanged shots match the reviewed export outside the changed region before shipping.
+
+**A reference channel covers only the dimension he names (Affan 2026-11-24, AW "Streamers Rated GTA 6", fix1 REJECTED:
+"forgot my whole style… worst video… a little kids cartoon trophy").** His Tella note pointed at Music Media Co for the TRANSITIONS.
+The BRIEF read it as "everything except captions follows MMC", so the build invented a non-AW look: generic captions, a scoreboard,
+name labels, white flashes, a washed grade. It also replaced the Higgsfield 3D render he asked for (the real Game Awards statue)
+with a code-drawn cup. The hub passed fix1 on specs and AW defect rules without a style check.
+
+**How to apply:** a named reference changes ONLY the dimension he names (transitions, captions, pacing...). The channel's house kit is
+the default for everything else (AW Shorts: `projects/mj-son-step-outside/`, [[feedback-bolt-motivation-look]]). A prop he showed
+or named is built as THAT object, never a drawn stand-in. Before any spec QA, run a side-by-side style-conformance check against an
+approved Short of the same channel (captions, labels, grade, transitions, props). The hub runs it again before calling a render
+shippable.
+
+**The hub style gate covers the WHOLE Short, every version (2026-11-24, Travis A2 v6).** The hub passed v6 because only beat 10 had changed and it "fit the rest of the Short". Affan rejected it as "worst video, not upload material": the whole Short had been built without the AW engine. So every version gets compared with the house kit, never with its own previous version. A build without the AW engine (Topaz, head lock, AE grade, glow bars, CapCut caption pass) fails on sight; "lean" means fewer rounds, never a cheaper engine.

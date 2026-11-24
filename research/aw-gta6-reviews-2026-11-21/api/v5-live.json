@@ -1,0 +1,236 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "hCcUVin-oPIZf_a4s7F4jQeeIck",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "CwbsUE-1AcWNRAqK78kvM7CPfmc",
+      "id": "qSyo5d-dVzA",
+      "contentDetails": {
+        "duration": "PT23H45M42S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-18T13:18:37Z",
+        "actualEndTime": "2026-11-19T13:04:21Z",
+        "scheduledStartTime": "2026-11-18T13:15:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "lV379SKNhd4Xlpnfs0msSHRHs6I",
+      "id": "hwSg39yIBGU",
+      "contentDetails": {
+        "duration": "PT23H41M23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-19T13:04:39Z",
+        "actualEndTime": "2026-11-20T12:46:01Z",
+        "scheduledStartTime": "2026-11-19T13:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "2gLq45EamC7AK152l14XEWmnRqM",
+      "id": "OIeLbmyraRQ",
+      "contentDetails": {
+        "duration": "PT6H7M42S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-20T12:46:26Z",
+        "actualEndTime": "2026-11-20T18:56:56Z",
+        "scheduledStartTime": "2026-11-20T12:30:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "QnOJ0PJR0B-blmrXmYj0lEGy8DI",
+      "id": "H-4PyJlhI9g",
+      "contentDetails": {
+        "duration": "PT11H54M59S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-19T00:47:01Z",
+        "actualEndTime": "2026-11-19T12:53:53Z",
+        "scheduledStartTime": "2026-11-19T01:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "TDASkE2XuVOBzYvb7XDZv7CIW-g",
+      "id": "VZqAPdUvqnQ",
+      "contentDetails": {
+        "duration": "PT11H35M56S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-18T13:00:37Z",
+        "actualEndTime": "2026-11-19T00:46:28Z",
+        "scheduledStartTime": "2026-11-18T13:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "k9_NYSWq0vobuWefNmW8ows29GA",
+      "id": "5tdj53ioJ-c",
+      "contentDetails": {
+        "duration": "PT11H42M21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-19T12:54:38Z",
+        "actualEndTime": "2026-11-20T01:04:13Z",
+        "scheduledStartTime": "2026-11-19T13:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "IZg5B-aiZl6R5Ix9LmSSWII1D6o",
+      "id": "yX4DH_msPkI",
+      "contentDetails": {
+        "duration": "PT11H34M",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-20T01:04:50Z",
+        "actualEndTime": "2026-11-20T12:38:45Z",
+        "scheduledStartTime": "2026-11-20T01:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "VNkhgc1ML8IRFRJuqZCztjD0Hmk",
+      "id": "LHoHInbPkk0",
+      "contentDetails": {
+        "duration": "PT11H54M58S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-20T12:39:52Z",
+        "actualEndTime": "2026-11-21T01:16:40Z",
+        "scheduledStartTime": "2026-11-20T13:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CDrbNcWNsf1dRxACqSHlSibGDxA",
+      "id": "dSDUAAr-w_g",
+      "contentDetails": {
+        "duration": "PT7H36M4S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "BY",
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2026-11-21T01:17:32Z",
+        "actualEndTime": "2026-11-21T08:54:17Z",
+        "scheduledStartTime": "2026-11-21T01:00:00Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 9,
+    "resultsPerPage": 9
+  }
+}
+

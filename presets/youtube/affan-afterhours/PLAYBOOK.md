@@ -76,6 +76,27 @@ A3/A4/A5 SFX (A4/A5 carry their hand-placed diegetic sound) · A6 room-tone beds
 | 7 Review | the creator watches and calls taste. **Then phase D, always** |
 | 8 Export | on the creator's go; `finalize.sh` |
 
+## C2. FACELESS VO long-form (his voice over streamer gameplay; GTA 28, GTA 29), promoted from LESSONS 2026-11-19/20
+
+These repeated across his reviews, so they are rules, not lessons:
+1. **Restarts the ASR can't see:** Whisper drops 1-2-word restarts from the text, so a text check passes them. Run
+   `projects/gta6-bigfoot-secrets/work/ctc_restarts.py` (wav2vec2 CTC on every piece JOINT, a content word back within 3 words)
+   on EVERY assembly, pickups and re-cuts included, and read every flag (GTA 29: 13 flags in 222 joints, 2 real). Cut the
+   earlier take of a real one.
+2. **Pauses, measured breath-inclusive** (WhisperX word end -> next word start; never an energy line that can call a breath
+   speech). Leave his intentional pauses alone (his shipped VO keeps ~110 gaps over 0.30 s; median 0.06, p90 0.26). Tighten to
+   <= 0.18 s in the teaser, straight after a title shout ("Number N, <title>!" -> the story), inside an action run, and in the
+   outro ad-lib; a section turn <= 0.30 s.
+3. **Quote holds play the real line:** where the picture holds on a character's line, the game audio of that line plays in
+   sync (words = the on-screen subtitle, the streamer silent on cam); never a card over silence. No clean copy (the streamer
+   talks over it everywhere) -> the hold stays quiet and the hand-off names it. Size the hold to the WHOLE line at plan time.
+4. **Levels against HIS mix:** he swaps A1 for his own Adobe Enhance Speech v2 bounce (VO only, raised ~7 dB in his mix). Game
+   dialogue sits **~5 LU under that VO** (momentary loudness, voiced median; his shipped GTA 29 mix), as clip Volume he can ride.
+   Read his clip Audio Gain from the autosave XML before changing any level he may have touched.
+5. **"Done" means checked, and then hands off:** transcribe every delivered clip (unprompted, vs the subtitle) and measure it
+   against the VO BEFORE saying done; he exports within minutes. After a ready hand-off, write nothing to his sequence without
+   telling him and getting his go: a running export leaves him "idle" to our gate (GTA 29: our fix pass raced his export).
+
 ## D. Learn (after every review, unasked)
 
 1. Read what the creator changed on the timeline: `place-graphics.py --diff`, `place-sfx.py --diff`, the V1 cut diff, and what they said in chat.

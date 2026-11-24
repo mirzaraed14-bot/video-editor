@@ -1,0 +1,15 @@
+# IG log (PC, 23 Nov, aw-gta6-reviews; his signed-in Chrome, pace.sh instagram before each load)
+- 08:23 search 'moist critical gta 6': ~24 tiles, top row Moist-fan reels ("GTA 6 isnt worth the hype.. unrealistic expectations", "Charlie HATES GTA 6's New GPS", hit by a pickup truck). No tile reads as his positive verdict.
+- 08:27 /p/Df-yZHEKrDT/ @penguinz0grandpa (fan page) 'Gta 6 isnt worth the hype': 16.5K likes, 382 comments, 3.6K shares, 2 d (counter-angle; which Moist line = unknown)
+- 08:29 search 'streamers rate gta 6': No results (keyword search answers short phrases only)
+- 08:31 #gta6review (hashtag page): tile 2 = StreamCreamTV Kai 'isn't as funny or playful as GTA 5, but the realism' (= OUR Kai beat) /p/DgAWuXeB6lN/; tile 4 'GTA 6 is the best game I've ever played' /p/Df7ucrlCpgx/; tile 5 'LACY gives his FINAL rating on GTA 6' /p/DgESNiinP3f/
+- 08:33 /p/DgAWuXeB6lN/ @streamcreamtv Kai 'not as funny or playful as GTA 5, but the realism...' (OUR beat): 2.9K likes, 99 comments, 90 reposts(?), 287 shares, 1 d. Top comment pushes back ('This game is funny af', 'you rushed through the game').
+- 08:35 /p/Df7ucrlCpgx/ @joseph_witty 'GTA 6 is the greatest...': 292 likes, 82 comments, 36 shares (small creator, not a beat)
+- 08:37 search 'asmongold gta 6': 12 tiles; Asmongold GTA 6 reels are other moments (Vice City satire, IKEA 'PTSD', 'painful to watch him play', iguanas, 'good driver'). No rating/verdict reel in the top tiles.
+- 08:39 search 'kai cenat gta 6': tiles: 'Kai Cenat THINKS that GTA 6 is TOO REALISTIC that its NOT fun', 'Kai is OFFICIALLY the FIRST person to ever COMPLETE the GTA 6 story mode', StreamCreamTV cops + the 'isn't as funny or playful' reel (= our beat, again), 'NPCs remembered him'.
+- 08:41 /p/Df-cxqEyid6/ @reel.gta 'Kai Cenat THINKS that GTA 6 is TOO REALISTIC that its NOT fun': 14.8K likes, 2 d (the counter-reading of his realism line is the bigger IG reel)
+- STOPPED IG at 9 loads (lean budget). No block, no login wall.
+- 08:58 search 'gta 6 rating': tiles 'GTA 6 SCORES ACCORDING TO PEOPLE WHO'VE ACTUALLY PLAYED IT', a 10/10 critics collage 'A MODERN MASTERPIECE' (99 Metacritic), 'GTA 6 GETS A PERFECT RATING ON ALL MEDIA OUTLETS', @GamerUptoDate 'Gamers are review bombing GTA 6 bringing the global rating to a 5.6 on Metacritic' (user score 5.6).
+- 09:00 /p/DgAfsYpieXr/ @gameruptodate 'Critics gave GTA 6 a 99. Players are giving it a 5.6. Over 54,000 user ratings on Metacritic ... split right down the middle': 1,457 likes, 1 d. (The JUDGMENT the Short answers, in a real post.)
+- IG total this session: 11 loads, no block.
+- 09:01 metacritic.com/game/grand-theft-auto-vi (primary): METASCORE 99 (152 critic reviews); USER SCORE 5.6 (98,196 user ratings: 48,481 positive / 7,044 mixed / 42,671 negative).

@@ -1,6 +1,6 @@
 ---
 name: feedback-mega-famous-per-niche
-description: "Affan 2026-11-17: AW topics = 'the Michael Jackson of each space' (ultra-mega-famous): music = MJ, streaming = IShowSpeed, movies = Harry Potter, gaming = GTA 5; HP is a staple now"
+description: "Affan 2026-11-17 (+11-19: gaming = GTA 6): AW topics = 'the Michael Jackson of each space' (ultra-mega-famous): music = MJ, streaming = IShowSpeed, movies = Harry Potter, gaming = GTA 5; HP is a staple now"
 metadata:
   node_type: memory
   type: feedback
@@ -26,3 +26,8 @@ Michael did), not the niche itself. The Harry Potter Short at 4 of 10 sits level
 - This sharpens the B1 face test in [[feedback-no-below-bar-pitches]] ("would Affan know this face?"): the subject must be the top of its
   space. A pick still has to pass [[feedback-viral-pick-bar]] and [[feedback-max-effort-every-asset]].
 - Related: [[project-instagram-beat-mining]], [[project-abundance-shorts-automation]].
+
+## 2026-11-19 update: gaming = GTA 6 now
+**His words (Affan, 19 Nov 2026, GTA 6 launch day):** "Because GTA6 currently is the Michael Jackson of video games ... the GTA5 [farewell] video is performing at number one so ... there is demand for it on my channel".
+- From GTA 6's launch (19 Nov 2026), gaming = GTA 6. GTA 5 was the test, and "13 Years… Goodbye GTA 5" (`projects/gta5-farewell/`) is his channel's #1.
+- A GTA 6 lane has two formats, both his ask: a news Short (the craziest launch moment + streamer reactions) and a classic AW story-arc Short. First research sessions: `aw-gta6-news`, `aw-gta6-story` (19 Nov).

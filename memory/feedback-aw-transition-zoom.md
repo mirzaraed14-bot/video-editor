@@ -29,3 +29,6 @@ Related: [[project-abundance-shorts-automation]].
 
 ## Moved from the MEMORY.md index (2026-11-06)
 Affan 2026-11-04 (Harry review 2): one push-in per SHOT CHANGE (a same-camera jump-cut run = ONE layer, review 3) on README § 3's table, strong start → drift → speeds up into the cut, next shot strong again; never sine ease, never push/pull flip-flops; measured on his finals
+
+## 2026-11-19 data point (MJ "FIRED His Father" v1 review, movie <-> real format): the table zoom read as a pop-and-stall
+Affan on the v1 of the MJ Short (1-2 s film shots, depth 0.93, README § 3 table): zooms "too short lived", curves "very aggressive", "popping a little, the zoom stops, then it pops into the other shot". Measured: 20 %/s in the first 0.1 s, ~2 %/s in the middle, and the real-Michael shots carried the 23 % README fallback depth. v2 tried (NOT yet approved by him): same one-layer-per-shot-change push-in, but a soft attack (smoothstep 0.22 s), speed rising 0.55 -> 1.45 across the layer (never zero, highest at the cut), 3.5 %/s average (cap 9 %) on film, 2.5 %/s (cap 6 %) on letterbox overlays, pivot on the locked face. Treat it as a candidate for short film shots, not a replacement of the table on long podcast shots; check his reaction to v2 (projects/mj-fired-his-father/RUN.md) before generalising. Related: [[feedback-head-steady-across-cuts]].

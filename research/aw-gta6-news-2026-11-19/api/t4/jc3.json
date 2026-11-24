@@ -1,0 +1,3412 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "QXtW4qS7Y-3p72HdBx2GzrozK6c",
+  "nextPageToken": "Z2V0X25ld2VzdF9maXJzdC0tQ2dnSWdBUVZGN2ZST0JJRkNKMGdHQUVTQlFpb0lCZ0FFZ1VJaHlBWUFCSUZDSWdnR0FBU0JRaWVJQmdBRWdVSXlDQVlBQklGQ0lrZ0dBQWlEZ29NQ0tIV185Y0dFUGlicTRNQlVBQllBUQ==",
+  "pageInfo": {
+    "totalResults": 100,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "LLIfn1cp_3uUnQWGe54vqXRBruc",
+      "id": "UgylvXHSW-u7cUtj55N4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "eEFTL2iQ97WAPgvCByXRZX8DGi8",
+          "id": "UgylvXHSW-u7cUtj55N4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "This is never a game I'd spend on and play, but I'm having a blast watching it. Thank you!",
+            "textOriginal": "This is never a game I'd spend on and play, but I'm having a blast watching it. Thank you!",
+            "authorDisplayName": "@artsyroo",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nWFEpRsRaA4vF0buM5jdUi7neuD_j66j7oRo5j4oRuow=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@artsyroo",
+            "authorChannelId": {
+              "value": "UCXh1vrazIMtOQhaLlRMQDzQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:09:16Z",
+            "updatedAt": "2026-11-20T09:09:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "2NhiAFVs7vI2iSfDWfcZgdpbiRU",
+      "id": "UgwqLy9TQyUEN-fquPR4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MCAip9u5-j92z7QR1TE2gV7d1bw",
+          "id": "UgwqLy9TQyUEN-fquPR4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Somebody please tell him to listen to the podcasts while in vehicle",
+            "textOriginal": "Somebody please tell him to listen to the podcasts while in vehicle",
+            "authorDisplayName": "@sameeh420",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l9g3wJcxojqA1Eu_mb0BITge0FJKQO3U-bTWyzJLkssw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sameeh420",
+            "authorChannelId": {
+              "value": "UCnvt9YaZQfXl9nQrPFS8LKA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:09:09Z",
+            "updatedAt": "2026-11-20T09:09:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tIhPT4murfsF_6UGzie7pbt2cao",
+      "id": "Ugwq-XVOWurlAnZ8phF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "OlqbJkXy9rBFq7xhR6zP3pQje7g",
+          "id": "Ugwq-XVOWurlAnZ8phF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Anyone else having issues of watching the video it just cuts off at 49:00 mins for me",
+            "textOriginal": "Anyone else having issues of watching the video it just cuts off at 49:00 mins for me",
+            "authorDisplayName": "@Phantom_Shadow77",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SXnrrK7f2ae_g39QIQwlTkBnDQJ2fP92NxKBFd3JQkIWl2Gcm8G79PSx3eh4EB60bKT8s5LEnQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Phantom_Shadow77",
+            "authorChannelId": {
+              "value": "UCsEMyOQyjbaPZ103j7rctqw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:08:19Z",
+            "updatedAt": "2026-11-20T09:08:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Uk8btfHW2o4OiwEWS1nTfk_JpZE",
+      "id": "UgwycTZBaRcUMNYM2-N4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "GFdS6WgkXgPUV2l5sPNBqRi2otA",
+          "id": "UgwycTZBaRcUMNYM2-N4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:42:20 omg I actually guessed 12 and got it right",
+            "textOriginal": "1:42:20 omg I actually guessed 12 and got it right",
+            "authorDisplayName": "@NoLobster69",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/cPmDyWydS1gKBjl2p90GmHPrYmPbiG7S8v6ctV_jiLmu92O7NHtKuN2c4pKO6zlqGteYjvxnuJw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@NoLobster69",
+            "authorChannelId": {
+              "value": "UC9SJvkgCQOL2qaYcAJoLRqQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:07:27Z",
+            "updatedAt": "2026-11-20T09:07:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "5BK8Bh5XV6HwFeExtfFCki3ysx0",
+      "id": "UgxdpY00qmxf3uystUF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "7vySr7pLEXpUK6FzlDgUETlp0DE",
+          "id": "UgxdpY00qmxf3uystUF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I get a real Uncharted/ Last of Us vibe from this game, and it blows my mind that it’s a massive open world on top of all that. Crazy",
+            "textOriginal": "I get a real Uncharted/ Last of Us vibe from this game, and it blows my mind that it’s a massive open world on top of all that. Crazy",
+            "authorDisplayName": "@NamesDontMatter1992",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mPImeU1xPWhUoQBifzC9SYj3AKVy8byBMZsGzFUDoj4A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@NamesDontMatter1992",
+            "authorChannelId": {
+              "value": "UCDGkDr21FrMqnPW1w_uc7PQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:05:20Z",
+            "updatedAt": "2026-11-20T09:05:20Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JkNgOh-_TxhMZQn_PnyWkLXDwiE",
+      "id": "UgzlxcYo_ZDQMo6uJdh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aFbnqRr1t_PPv8Lje0rRErGeVKI",
+          "id": "UgzlxcYo_ZDQMo6uJdh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Whoever said this is boring does not understand the fun in building a table",
+            "textOriginal": "Whoever said this is boring does not understand the fun in building a table",
+            "authorDisplayName": "@DragonOofDojima",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/8KUKVddYTBNSo0FKZ8nYvJhjJggdjaAeSngvrBn8JiKbUe42MrL_1YURHONHqdda22OTjYJy=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DragonOofDojima",
+            "authorChannelId": {
+              "value": "UC6s9nagorbrLYn2bkaeufQw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T09:05:11Z",
+            "updatedAt": "2026-11-20T09:05:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "y3COokOaTseCM6ykbsMKsiOPMNQ",
+      "id": "UgyGCEe4Tp8R93cL5sB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "f1A6roa0EoBNtKqFGO0Bl-A4cvI",
+          "id": "UgyGCEe4Tp8R93cL5sB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Jack, buddy you gotta get that brightness up 😂 please",
+            "textOriginal": "Jack, buddy you gotta get that brightness up 😂 please",
+            "authorDisplayName": "@sippin40ss",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/zufBkBYf-sNF4vyfxoDirX__nzuPIpR3g3QGr1BQCyralYbTJY8WM23_6Y6bRx8FIUeMzlMOfnk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sippin40ss",
+            "authorChannelId": {
+              "value": "UCMt9VTDDX_2dGCFcXlKNVpA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:04:32Z",
+            "updatedAt": "2026-11-20T09:04:32Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7qI-axlXY72nFPnfrXYWL2R59zw",
+      "id": "UgzMXGGbCgZk5FWG4ZR4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MF4pmAytpPhvZGn0PhE7aGpQpiM",
+          "id": "UgzMXGGbCgZk5FWG4ZR4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Jack: I don't drive irl\n\nYeah, we can see it don't worry",
+            "textOriginal": "Jack: I don't drive irl\n\nYeah, we can see it don't worry",
+            "authorDisplayName": "@volk203",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_muov9AoeS8smCZ3pmTn7ZhcpLBpsYFnF-HFEflvuIoLw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@volk203",
+            "authorChannelId": {
+              "value": "UCJspUGFnPDOFUPh0LxQoBwQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T09:00:03Z",
+            "updatedAt": "2026-11-20T09:00:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aDBJEFD_tCEiyraGWtyIHjQxxzg",
+      "id": "UgwT_mqfEpm-Y_eQzkF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aX0JM1-fMcCLmPj-YUrUOa1Atb4",
+          "id": "UgwT_mqfEpm-Y_eQzkF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "CHILDREN ARE REAL! OH MY GOD",
+            "textOriginal": "CHILDREN ARE REAL! OH MY GOD",
+            "authorDisplayName": "@Azib-rn2td",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/iVcF1VATjpjyjaTu9-N5_8f-NUiQfnZMmeq0P2a77inGNr1pA7NdjjDDdT5lKt9WiYE13nun5Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Azib-rn2td",
+            "authorChannelId": {
+              "value": "UCnmqPBGRT9EB5qKePzjxDvw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T09:00:03Z",
+            "updatedAt": "2026-11-20T09:00:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "S9a2De1e7E0gkuheCUtTlI54gEs",
+      "id": "UgwkINsSA3s34Ut6t5Z4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NTt22kB0hZubSii-ks8NzNvQYOw",
+          "id": "UgwkINsSA3s34Ut6t5Z4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I really like the unedited play through. I hope you do the whole game. The game is weirdly relaxing which makes it nice to watch.",
+            "textOriginal": "I really like the unedited play through. I hope you do the whole game. The game is weirdly relaxing which makes it nice to watch.",
+            "authorDisplayName": "@harrisonr2193",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lJaYiw_nARLXL4dehie_6cAG2EwuwldwJKtFJ9yOzzRsg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@harrisonr2193",
+            "authorChannelId": {
+              "value": "UCDj1CePj-26CCmayjpr2EGg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:58:04Z",
+            "updatedAt": "2026-11-20T08:58:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "MZvTMuIMoT7ou_pVM6Wa8j7xwvI",
+      "id": "UgyPrV1WfBvToeBYV7t4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "soXEQFE1oL7dVtoL8k-qF-vi6-s",
+          "id": "UgyPrV1WfBvToeBYV7t4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "it’s giving modern rdr2, i like it…",
+            "textOriginal": "it’s giving modern rdr2, i like it…",
+            "authorDisplayName": "@GamerGabe9946",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/cCG3ePlmoI_-74iKj4y53QWwXlvIfjyyEMh5pCcEvZDZ6QEJmAIhTAVHYDm9ZYkgeUyTzyNCIg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@GamerGabe9946",
+            "authorChannelId": {
+              "value": "UCFIVeXxf158y6I-3G2hgUNg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:56:34Z",
+            "updatedAt": "2026-11-20T08:56:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JUqJ6V5F4_ocnSaSWO-WcfdVpBc",
+      "id": "UgxunX7SDuzPEZBHRUp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "e1DgjUR3bPn7CVVgrLD5v07cqcw",
+          "id": "UgxunX7SDuzPEZBHRUp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "ah yes lets attain enlightenment and ascend",
+            "textOriginal": "ah yes lets attain enlightenment and ascend",
+            "authorDisplayName": "@HamizZiavudeen",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/1iJegXjtmshsUyGFCouyVcqi5DRb4Yugzms7NKOILzogFUBet9PrRIMHuBrdUByKyM-TTuz3_Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@HamizZiavudeen",
+            "authorChannelId": {
+              "value": "UCj_yJ7vg71jW6Gpy205IgMw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:55:50Z",
+            "updatedAt": "2026-11-20T08:55:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "VVa9CI3KjKE1IqvFiF1ygsv9P-E",
+      "id": "Ugzps87z1P6jAgGDORp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MjOa1W0l7yOE9iIfHf2zO-FOhj8",
+          "id": "Ugzps87z1P6jAgGDORp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Seán and Evelien are just as lovely, I love it when I see you guys together",
+            "textOriginal": "Seán and Evelien are just as lovely, I love it when I see you guys together",
+            "authorDisplayName": "@FuryRealms",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/RjTB4nIDichq3J2Ml6GemjhyxUY4VDdTglWghyU4GnGpe6dLI1vCL2CTqK0AxAHYOko7moUB=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@FuryRealms",
+            "authorChannelId": {
+              "value": "UCboKFWKcvVA0LEMZSS5Attg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:55:32Z",
+            "updatedAt": "2026-11-20T08:55:32Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jYXIrEILs_AgkUTjdiF8HjQq8MU",
+      "id": "UgwIf-vgoZZnzAXN4sp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "A7rrKpOVgkcnMHW_Y8OstjT8Jtg",
+          "id": "UgwIf-vgoZZnzAXN4sp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "please put your webcam a little lower so we can see the stars and money!",
+            "textOriginal": "please put your webcam a little lower so we can see the stars and money!",
+            "authorDisplayName": "@nolangoldsmith3572",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_klOr0E3vHiO4poXkb1qDU8uSv2WPnCqKWNvQ95gBFBiA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nolangoldsmith3572",
+            "authorChannelId": {
+              "value": "UCAeaXRXQUlAaF7oyIYJ7stw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:54:54Z",
+            "updatedAt": "2026-11-20T08:54:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "WUTKfjRB97J6lBM0-z7dN5tx8xE",
+      "id": "UgyrkkEWlaOr-Xt0m254AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cbBoFH7jh3dX99JYmjoCuFVeivM",
+          "id": "UgyrkkEWlaOr-Xt0m254AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "No wonder they were so desperate not to have any of the plot leak, who in their right mind would buy this game after finding out this was what it was about?",
+            "textOriginal": "No wonder they were so desperate not to have any of the plot leak, who in their right mind would buy this game after finding out this was what it was about?",
+            "authorDisplayName": "@TheYashakami",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ny5bpdhwYzp_tshOXSjZ2SNYhtdYQJBY9SXOOolSBJ5Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@TheYashakami",
+            "authorChannelId": {
+              "value": "UCj4XuiH9r9RpLcn2_iHxijQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:51:56Z",
+            "updatedAt": "2026-11-20T08:51:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rDP69CN5lD-CwpBWH1kJZMEc9ck",
+      "id": "UgxXbZ2diSrlZeq20ZF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "DCGp0exwCDnByG9Q0PQqMfWiq0c",
+          "id": "UgxXbZ2diSrlZeq20ZF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I stg if you don’t check the pink circle on the map I’ll…",
+            "textOriginal": "I stg if you don’t check the pink circle on the map I’ll…",
+            "authorDisplayName": "@OlGurtyBSTRD",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Cc4jN3EpeuJLCUg0HBRCW_6IWyAeOwAvoBzuL8xROfHot8PNlN1Iw23xCPNVXblLCGyecmnIIw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@OlGurtyBSTRD",
+            "authorChannelId": {
+              "value": "UC-vg7ta1E24Ox8-7_qpVzHA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:51:11Z",
+            "updatedAt": "2026-11-20T08:51:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XxCINCOt9lUMnJatdMlgdAR7cBo",
+      "id": "UgzvnKkWenlFFWgE07B4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "HiJ2S85c_3LGugG-XunUhHVzTVE",
+          "id": "UgzvnKkWenlFFWgE07B4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "the issue with this i wanna complete gta 6 without spoilers but i wanna watch a jacky vid too",
+            "textOriginal": "the issue with this i wanna complete gta 6 without spoilers but i wanna watch a jacky vid too",
+            "authorDisplayName": "@IISongo",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/zWaVYJvxsidbfjNwLyBMSMa5Ms8H2PmBY9L6JxOB9X6dEW-acGjqzjOBgqwWq88KI48ADC0Kgg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@IISongo",
+            "authorChannelId": {
+              "value": "UCyUJ5n68SkjIEEaNqQN1bXg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:46:02Z",
+            "updatedAt": "2026-11-20T08:46:02Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TNSLQEfN0l3KaD1xSWSnr6jXvNE",
+      "id": "Ugx5r_4mi950QxKnIZ14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "iHDSJAtnlBqhZuN3ebL3eOYZ3S4",
+          "id": "Ugx5r_4mi950QxKnIZ14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Wait, what happened at 2:17:30",
+            "textOriginal": "Wait, what happened at 2:17:30",
+            "authorDisplayName": "@OlGurtyBSTRD",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Cc4jN3EpeuJLCUg0HBRCW_6IWyAeOwAvoBzuL8xROfHot8PNlN1Iw23xCPNVXblLCGyecmnIIw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@OlGurtyBSTRD",
+            "authorChannelId": {
+              "value": "UC-vg7ta1E24Ox8-7_qpVzHA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:45:19Z",
+            "updatedAt": "2026-11-20T08:46:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "IotVWKdfW0wP0-4Hp7YuJE61ksE",
+      "id": "Ugyp3JLuEcAxIjVZ0kt4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "PXdQoH5PKZcrCCGZsulJqUm8MXk",
+          "id": "Ugyp3JLuEcAxIjVZ0kt4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I better wake up and see a part 3 LOL",
+            "textOriginal": "I better wake up and see a part 3 LOL",
+            "authorDisplayName": "@vievie2523",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/oIQJVp7i3zM3prypsjY7veRUXb5NDdLzwE6tBYc02m_Idp701-jP38g3QFUP-BkUB9NWV-DHkw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vievie2523",
+            "authorChannelId": {
+              "value": "UC1_ueEa5dMpgORdBL4rQ68g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:44:52Z",
+            "updatedAt": "2026-11-20T08:44:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TcQ28fVIrGJaiOQjo3SQB8727Qs",
+      "id": "UgxiIt3yTu3BMPKbSol4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ADrKBfqMosV1KARbgtclFN9csrw",
+          "id": "UgxiIt3yTu3BMPKbSol4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I LOVE these 3 hour unedited episodes you are doing every day, i'll be looking forward to them everyday while I wait for the GTA release on PC. ❤️",
+            "textOriginal": "I LOVE these 3 hour unedited episodes you are doing every day, i'll be looking forward to them everyday while I wait for the GTA release on PC. ❤️",
+            "authorDisplayName": "@rhawkets",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/x5E_OLCVoYaAt4e-93PenWIR3Yq3saPKCaoY6QYedes3c5nrcC6F7viBH12q9fdn5braDJ2T=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rhawkets",
+            "authorChannelId": {
+              "value": "UClkKwOTTEBUebr0xQuhHUjg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:44:06Z",
+            "updatedAt": "2026-11-20T08:44:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NF0SYzNXxIFyaZR68arRa7CZpXw",
+      "id": "UgzCPlE7Ssp4WeNZqDt4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Um-xRV2ouiEDj54oUmHxq2UQOLg",
+          "id": "UgzCPlE7Ssp4WeNZqDt4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Ive been dogging every spoiler this game has just so I can watch you play it, please please please finish the game!!",
+            "textOriginal": "Ive been dogging every spoiler this game has just so I can watch you play it, please please please finish the game!!",
+            "authorDisplayName": "@zodiac_black",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/MXACJXJ2CQ8174JgE516krOBMu4ECXDy-8HHPOzD7cSh8NoOLyhDv6ORydag-uIF1TjeI72Ovg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zodiac_black",
+            "authorChannelId": {
+              "value": "UChgAfs35KlYwQQw6JH_G7Jw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:42:17Z",
+            "updatedAt": "2026-11-20T08:42:17Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "K4OalM6H7hA5yeR6ewWLWQGXGD4",
+      "id": "UgzBxk_noJUHKrjh8Bl4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "feBFe4qESk6yTbw5GUOdfRC4tTo",
+          "id": "UgzBxk_noJUHKrjh8Bl4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "im abit a head of this video no spoilers but there's a robbing spree with some epic ass music in the second chapter definitely worth listening too even if you have to edit it out",
+            "textOriginal": "im abit a head of this video no spoilers but there's a robbing spree with some epic ass music in the second chapter definitely worth listening too even if you have to edit it out",
+            "authorDisplayName": "@booperdooper7704",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n0WxEEJbpYt6c0En2OrEMFmKayGu_f3taYY5bq19Tlf3s=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@booperdooper7704",
+            "authorChannelId": {
+              "value": "UCYa3-eekQSoUbtnglMmxSZQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:41:22Z",
+            "updatedAt": "2026-11-20T08:41:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "dAFtcrkxtP-depSuqOyWt0TcRCo",
+      "id": "UgwujgXsx72MbYF0PtV4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "tfaWExJcAPzIyRTMTLXNFvPrnBk",
+          "id": "UgwujgXsx72MbYF0PtV4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Thats no bigfoot.. thats the STINKY SWAMP GORILLA!! real cryptid liu",
+            "textOriginal": "Thats no bigfoot.. thats the STINKY SWAMP GORILLA!! real cryptid liu",
+            "authorDisplayName": "@mollsponder6278",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n0CzNaGNb9DG9a9g2fUdK9p58CwMuxNUDDKd4rBURjIwY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@mollsponder6278",
+            "authorChannelId": {
+              "value": "UC-9jWrR_5iKFLmGk9VDNwAA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:39:43Z",
+            "updatedAt": "2026-11-20T08:39:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "DaTx5EHJmU0gts8wzGWGusQF4-8",
+      "id": "UgzZB7M12oGjyTOG8Mx4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zF2vnxVyRI_tJsGmUoyOxsN8FAI",
+          "id": "UgzZB7M12oGjyTOG8Mx4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "You in fact did not have to take the coke. You could have waited like 3 more seconds.",
+            "textOriginal": "You in fact did not have to take the coke. You could have waited like 3 more seconds.",
+            "authorDisplayName": "@CaptOrgazmo",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l5oBylQoz6WrtqpEdIypYSQg2g4Rz4KGg4UpfU_mxSIA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CaptOrgazmo",
+            "authorChannelId": {
+              "value": "UCrZo5bgOZzfr0HKOf21U9Yw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:35:38Z",
+            "updatedAt": "2026-11-20T08:35:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "SoWjW0i2J6aqVfybhV0LUauWPlE",
+      "id": "UgxaaNVT_DqcKab4GOp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "FKyuawNgz1Uj1ag0NmMgV-UBSqs",
+          "id": "UgxaaNVT_DqcKab4GOp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "This game is so important honestly, the way it teaches empathy, it's needed in the world right now",
+            "textOriginal": "This game is so important honestly, the way it teaches empathy, it's needed in the world right now",
+            "authorDisplayName": "@DelilahDee",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/pIiLmH9N4jjkGsqNP1L-pXv-PpXtK1KTkDoshFejJRCRYUMH57yHpqjtYk4Tk-Y2lcFhm0Zb=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DelilahDee",
+            "authorChannelId": {
+              "value": "UC36LO4hoajH5Ax7Xj2rIr1Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:32:10Z",
+            "updatedAt": "2026-11-20T08:32:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ZFehBbas5PDlGROE0e9TkEdrfj0",
+      "id": "UgwfSdEW_Kvg5eFG4Rd4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VacDuR1TviPK2bjaLYh_-aieID0",
+          "id": "UgwfSdEW_Kvg5eFG4Rd4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "The scuba stuff is more or less accurate, there is a course you need to take for most countries, its called PADI, Most countries Require it.  You get a liscense after that thats good for life. A HUGE no no is alchohol before diving. Because of pressure changes in your whole body, mainly your head, alchohol can really mess you up to the point of hospitilization or death. Sadly comms dont exist, or maybe I just cant afford them, who knows.",
+            "textOriginal": "The scuba stuff is more or less accurate, there is a course you need to take for most countries, its called PADI, Most countries Require it.  You get a liscense after that thats good for life. A HUGE no no is alchohol before diving. Because of pressure changes in your whole body, mainly your head, alchohol can really mess you up to the point of hospitilization or death. Sadly comms dont exist, or maybe I just cant afford them, who knows.",
+            "authorDisplayName": "@señorwonky",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FgI9lDPRCtN-h2k1SDoFL-gNSk8XezTUOC2-EFfd35gNwIxxi-8aWUPGdwO_r3eJfhBATP47eQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@se%C3%B1orwonky",
+            "authorChannelId": {
+              "value": "UCOnmrm3qTS3nHvkJ8bGwjkQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:31:25Z",
+            "updatedAt": "2026-11-20T08:31:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uPDSWPta_1xoqki8roJEdKN0tRM",
+      "id": "UgzxvILnfe3Srh6DLT14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MP2WQhLDWyFPlzha4EUE9gYr5n0",
+          "id": "UgzxvILnfe3Srh6DLT14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:50 Meanwhile RTGame absolutely demolished a seagull for no reason",
+            "textOriginal": "1:50 Meanwhile RTGame absolutely demolished a seagull for no reason",
+            "authorDisplayName": "@shreeeeeeeeeeeeee",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lntOOs8cRz9KC52prRySiwo6itE-UVCkj42j6-GixcDAM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@shreeeeeeeeeeeeee",
+            "authorChannelId": {
+              "value": "UCNTyR41viA-y2gzflRTXiaw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:26:44Z",
+            "updatedAt": "2026-11-20T08:26:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kY5FTB4dWp034ghPLyGAiHz2mMw",
+      "id": "UgxWt6iGhZblkb6FfYh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "jWe7k8efvemGyFeFiTDQfWZdWSo",
+          "id": "UgxWt6iGhZblkb6FfYh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Why doesnt anyone stash their narcotics in their car man?",
+            "textOriginal": "Why doesnt anyone stash their narcotics in their car man?",
+            "authorDisplayName": "@broccoliboiiii",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/gViCTcCX57StTcMmgVnLk94eoLs2GyyYpEvPiAEnn0QqBg-O0FsMJFJAjtXKt6ccEqyV7TT6dYg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@broccoliboiiii",
+            "authorChannelId": {
+              "value": "UCe3AJ_GV-agU55UIN5RwL1w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:24:25Z",
+            "updatedAt": "2026-11-20T08:24:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "w5x1GfrBAoCvyqcuB70V8x6ZGEU",
+      "id": "UgwrpE5nVA48q1YjGRh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "561uwuQfMhgKI6KRCIFNZoGudwc",
+          "id": "UgwrpE5nVA48q1YjGRh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "as much as i love jacksepticeyes playthrough, i cannot get through with Jason's voice like dude make some emotions or being sarcastic or something. jesus christ  , if it weren't for the beautiful graphics, he is done",
+            "textOriginal": "as much as i love jacksepticeyes playthrough, i cannot get through with Jason's voice like dude make some emotions or being sarcastic or something. jesus christ  , if it weren't for the beautiful graphics, he is done",
+            "authorDisplayName": "@wintootie",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/s1N3G5pt5n-pUoIqlhdXonIA4flagapNXS4WbQnZC4geStRjg1d4LQTDvBLS_GBetvJTgEUpXA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@wintootie",
+            "authorChannelId": {
+              "value": "UCUvRsNTIBvYZwMjgPRkdvng"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:22:08Z",
+            "updatedAt": "2026-11-20T08:22:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8SlAMK1b3ne4AelA1wAMVABk0PI",
+      "id": "UgwSkPtHopDL_tYXT1V4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "I2Vt4YRmpRHPPC5ZYuXvsLjStNQ",
+          "id": "UgwSkPtHopDL_tYXT1V4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "It seems like his girl is working for the laws or some for real 2:07:17 she wakes up earlier than him everyday and she just had this odd way about her I think she's an informant",
+            "textOriginal": "It seems like his girl is working for the laws or some for real 2:07:17 she wakes up earlier than him everyday and she just had this odd way about her I think she's an informant",
+            "authorDisplayName": "@JoPops28",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/lW7X5peGaaHA3BSjGWUNfIstkKFsi9uT4yBdomz_EkdtuHdDbEUtK2aN7XpjvLO-MfWlLJytmQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JoPops28",
+            "authorChannelId": {
+              "value": "UCMyryJ5NhZaVNMiqL0ZXlIA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:21:05Z",
+            "updatedAt": "2026-11-20T08:21:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "c3btLnQK_cg1LxfGgkODqvq4j7U",
+      "id": "Ugz-V_8hOl90wOaX-_x4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "QPRSMAc-UUphdPDppqH84jkSpAE",
+          "id": "Ugz-V_8hOl90wOaX-_x4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "i love jason and lucia holy they're so cute",
+            "textOriginal": "i love jason and lucia holy they're so cute",
+            "authorDisplayName": "@tr6shr",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/LHTvxLW1k0u-FOWlaMJ8jYyZNUGAa4EkZEk0Y3mb_U9v5Y1F15NrOPw9nMEx85CPl2p4Zipm=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@tr6shr",
+            "authorChannelId": {
+              "value": "UCiQ49nrQhGNKuFiO9jwFaJg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:19:27Z",
+            "updatedAt": "2026-11-20T08:19:27Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "IdG71YErG0P0WmTvvprUaoiFasI",
+      "id": "UgxtHt1ZBRCbv8B_GH14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mTMIzZHyTmD4UcpFl8QqPlNBx78",
+          "id": "UgxtHt1ZBRCbv8B_GH14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:48:34 Arthur Morgan's hat is at a yard sale",
+            "textOriginal": "1:48:34 Arthur Morgan's hat is at a yard sale",
+            "authorDisplayName": "@rycecake69",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/AmBEgmWc0r4GE0W6o2Vs-F2uhAyEW-qBKXystO8cviFiBUI72jgL16U9BvKN3QR3Jt5EdR7Pdw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rycecake69",
+            "authorChannelId": {
+              "value": "UCnhrIu7RVvF4GxHhyB-FvQw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:17:58Z",
+            "updatedAt": "2026-11-20T08:17:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "zfwV8q_xDeCfjkkquRs6H5nN9to",
+      "id": "Ugx63oPKi6kdik9Ylox4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "DYnzDvfC-9Ctf6otIBiml8XIGVM",
+          "id": "Ugx63oPKi6kdik9Ylox4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:23:41  you know you are vetted in the the u.s.a. too? i dont understand why u guys think they just hand them out😂😂😂",
+            "textOriginal": "1:23:41  you know you are vetted in the the u.s.a. too? i dont understand why u guys think they just hand them out😂😂😂",
+            "authorDisplayName": "@Christipple2115",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mm33QnO3dAhZ6JVJey5rrcQBDv8ycy4IsChpVrSFo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Christipple2115",
+            "authorChannelId": {
+              "value": "UCgJnC0_NJ6ESIZpvKEeLC1A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:17:04Z",
+            "updatedAt": "2026-11-20T08:17:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ieem4D7BD2wfocr_UE2PSNZGeFA",
+      "id": "UgzSasCNBQFsx_G1kYZ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5V_DfJmrWBcHdhxbSad4QBDXmb8",
+          "id": "UgzSasCNBQFsx_G1kYZ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Part 3 plss we love you Jack. Lovely gameplay! \u003c333",
+            "textOriginal": "Part 3 plss we love you Jack. Lovely gameplay! \u003c333",
+            "authorDisplayName": "@yaruswhy",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/lwjatQS_6ToS-tOfnLMNDr3Vc9AZNtReExDR8MHQ5Gt6I6sAptbNW3v-B_J9cHFTYORRbmMfKQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@yaruswhy",
+            "authorChannelId": {
+              "value": "UCvcxr3wtV-H7XzcJkQfqSqQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:16:51Z",
+            "updatedAt": "2026-11-20T08:16:51Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xLRcZx7TDKd6IWk1pACCu3tRD0g",
+      "id": "Ugwf4pt9kWhtXaK3J_94AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "BxNYibr4EIxTS1YCiSi4R0XbNms",
+          "id": "Ugwf4pt9kWhtXaK3J_94AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "HDTVTest just put out why GTA 6 might look too dim. 😊 You should calibrate your HDR according to him.",
+            "textOriginal": "HDTVTest just put out why GTA 6 might look too dim. 😊 You should calibrate your HDR according to him.",
+            "authorDisplayName": "@DaliiLarsGaming",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Jsr0Jw-fmkvUymZKmrHyZaZ8W2H8jYbNxqDOYRxGRSnl4WxAQTgU6NZa97bxuQfA9yaWeFmKHA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DaliiLarsGaming",
+            "authorChannelId": {
+              "value": "UC2VSJY3iEyI5OZ6y9OEE8MA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:16:09Z",
+            "updatedAt": "2026-11-20T08:16:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mJN9eOkvwYGdx87WpgEThW50AMc",
+      "id": "UgyVclGTSfhQl9TEzqx4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "P2D7rfqGp1AZslatZHBGKr5AFuM",
+          "id": "UgyVclGTSfhQl9TEzqx4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "3:00:20 because she needs to reset the trigger and firing pin so she can “dry fire” (fire on empty) again. Pretty simple to understand Sean",
+            "textOriginal": "3:00:20 because she needs to reset the trigger and firing pin so she can “dry fire” (fire on empty) again. Pretty simple to understand Sean",
+            "authorDisplayName": "@milo_maxwell",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lPAu5LcUW1h_9K92DDPIFAt7oKeKn1gaScOAfzdeLy0FyHMrhcwYmEo-u21qNz3kJRkA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@milo_maxwell",
+            "authorChannelId": {
+              "value": "UCdE9Dc2N6mA8ERHrzJN8xgA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T08:14:27Z",
+            "updatedAt": "2026-11-20T08:14:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "GE_ecRchE5WfssUPrBC8AKJ1Zu4",
+      "id": "Ugy2PP2G_kTTFFeTrPF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "IBI26kLHslGTx7qR3Xc8vcuiowY",
+          "id": "Ugy2PP2G_kTTFFeTrPF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "42:50 - bro straight to captain's mast",
+            "textOriginal": "42:50 - bro straight to captain's mast",
+            "authorDisplayName": "@cnmxproductions11",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uG6R35SfG4ov_8OIqlABgCMvYZCAE4t3WjVEat84pRn-Nmhuyv5Q6d78JCEAi4Iv8rCSa8Dk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@cnmxproductions11",
+            "authorChannelId": {
+              "value": "UChwMaAJDxRf-zKvjlnLU9SQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:11:13Z",
+            "updatedAt": "2026-11-20T08:11:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ah04XiONwr6Wolh34VpQ4GFovUc",
+      "id": "Ugw4sA4y-3zhbIwn2tp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "nIvNlLAUof5f7OwFc-WLVSvTdqc",
+          "id": "Ugw4sA4y-3zhbIwn2tp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "The lack of music just makes it feel so lifeless",
+            "textOriginal": "The lack of music just makes it feel so lifeless",
+            "authorDisplayName": "@NoLobster69",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/cPmDyWydS1gKBjl2p90GmHPrYmPbiG7S8v6ctV_jiLmu92O7NHtKuN2c4pKO6zlqGteYjvxnuJw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@NoLobster69",
+            "authorChannelId": {
+              "value": "UC9SJvkgCQOL2qaYcAJoLRqQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:11:12Z",
+            "updatedAt": "2026-11-20T08:11:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "04AOjNR6_yPXDzhVbPmeVmwWF78",
+      "id": "UgyudIZLfb-ZYZeGqKh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uEQl6OmlQE95Wi7TUjgaWaCnKCg",
+          "id": "UgyudIZLfb-ZYZeGqKh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Lucia and Jay are SO CUTE!!",
+            "textOriginal": "Lucia and Jay are SO CUTE!!",
+            "authorDisplayName": "@Rombobow",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/2AQZEvqQ8tFxwn0Vaj0XmeGuIw1utArEj0byUxqBxXNXTql1-sBG2X1Bu_3zQ5olJDWGmF4f-44=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Rombobow",
+            "authorChannelId": {
+              "value": "UCdZaSBovN_X5Wu4HcbcIkqg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:10:52Z",
+            "updatedAt": "2026-11-20T08:10:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "y8gekcD9m99ZporA3Sglo7eIP6g",
+      "id": "UgweS_rla2TJobyP-9V4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "wFmy2VPuLsoTF_NX8aJbdbvcEcw",
+          "id": "UgweS_rla2TJobyP-9V4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "GTA Lamine Yamal🥀",
+            "textOriginal": "GTA Lamine Yamal🥀",
+            "authorDisplayName": "@zrkn0",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/8o_yAuekiKPZKG9jGyTFPyW477lCTHAxjvO8D3CaeeD1dJuXU_Bv7iu-5f2qiUX9TFx-vkRY6w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@zrkn0",
+            "authorChannelId": {
+              "value": "UC5myAMYBR7qK0FNQOj1eV8w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:10:36Z",
+            "updatedAt": "2026-11-20T08:10:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-IZ78Gt2CCZvqpsDVFICMo9n5cE",
+      "id": "Ugy6CrjBPtjmbmibOjl4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "wrtrZBWAU1LFhXmd9-zbITSN3l0",
+          "id": "Ugy6CrjBPtjmbmibOjl4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:17:14 u got diddyed by big foot....",
+            "textOriginal": "1:17:14 u got diddyed by big foot....",
+            "authorDisplayName": "@Christipple2115",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mm33QnO3dAhZ6JVJey5rrcQBDv8ycy4IsChpVrSFo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Christipple2115",
+            "authorChannelId": {
+              "value": "UCgJnC0_NJ6ESIZpvKEeLC1A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:08:43Z",
+            "updatedAt": "2026-11-20T08:08:43Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xbUH6kQcLA-ZwejZjjVBusGn6Vk",
+      "id": "UgztvLZeZSfxxSSucMh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "yvElMjSFgpyaj9qp5ciGKWlaLAc",
+          "id": "UgztvLZeZSfxxSSucMh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Jack is horrible at pool and driving",
+            "textOriginal": "Jack is horrible at pool and driving",
+            "authorDisplayName": "@sokkejimbo",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/yaq-ctPYCCqXVrYq7Wdb5KCqodimGIzdyPcjxF9p0KVPOyP27ezU7j77NAxhhg_qOP5O3aSZww=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sokkejimbo",
+            "authorChannelId": {
+              "value": "UCnJXCZWiA3uiCkdrRso5YRg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:08:21Z",
+            "updatedAt": "2026-11-20T08:08:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "WBL74jICZdhiLjqUnV09r7qyY3I",
+      "id": "Ugz4vFdXEAPvgTMP0mN4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Oi3gJwmeGWthfaPjWvIo0EqnlxU",
+          "id": "Ugz4vFdXEAPvgTMP0mN4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Not having generic music as a replacement is such a bizarre choice lmao",
+            "textOriginal": "Not having generic music as a replacement is such a bizarre choice lmao",
+            "authorDisplayName": "@isami-5",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Xdt8cN-zBQO2QJMNtfN5CQuw2VlfgxqDkY-IzQVKEoQgscR5sLyMEgy3kJDPvfDiJpMdLBbqLw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@isami-5",
+            "authorChannelId": {
+              "value": "UC9WhbvScnQSqBYU_B2GhJlw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:05:42Z",
+            "updatedAt": "2026-11-20T08:05:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "oKZ9t_S6Ydc1GB6r4Uj6u3apo3A",
+      "id": "UgyPi1b7w574KijNYu94AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "A12Sf9Yszk2VXCafX1Uf0dQTp-4",
+          "id": "UgyPi1b7w574KijNYu94AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "gta 5 had bigfoot",
+            "textOriginal": "gta 5 had bigfoot",
+            "authorDisplayName": "@nvpsidez",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/g5EPzyT236LCEAxiO4wslTZYoGBKaEaYVhwgemm6myXAXgh4PsSm9dj6CYqaDlA0GwhU-um2yVk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nvpsidez",
+            "authorChannelId": {
+              "value": "UCKZDMUSqdtPDYuqGOcqzD1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:04:54Z",
+            "updatedAt": "2026-11-20T08:04:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "tFxLSECi5lIwuJCWWLWeOnn6MTY",
+      "id": "UgyV6iKOZ_47Q_8LAOd4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "79e1VUnhfqufCQnkh-iWqEuOFW0",
+          "id": "UgyV6iKOZ_47Q_8LAOd4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Hey, Sean. Not sure if you'll see this, but I don't think you should continue to play this game. It's not because of the glitches, or the gameplay or whatever. I couldn't care less about thats stuff. Its because Rockstar is an incredibly evil and greedy company that is already considering laying off the devs for this game so they can make more money off of the release. The devs put so much hard work into this game, and Rockstar is trying to steal the fruits of that labor from them. I understand that there are other gaming companies that do stuff like this all the time, but this is the largest release of a game in all of history, its one of the most anticipated games ever, heck we even had a meme going for 13 years about this game. I know what I'm saying is going to fall on deaf ears, but if you buy and play this game and give publicity to it, the only people who are likely to make money off of it are the execs at Rockstar, not the people who put their time and energy into making it. That goes for anyone reading this. If you want to play this game that badly, pirate it and don't bring attention to it. Okay, rant over",
+            "textOriginal": "Hey, Sean. Not sure if you'll see this, but I don't think you should continue to play this game. It's not because of the glitches, or the gameplay or whatever. I couldn't care less about thats stuff. Its because Rockstar is an incredibly evil and greedy company that is already considering laying off the devs for this game so they can make more money off of the release. The devs put so much hard work into this game, and Rockstar is trying to steal the fruits of that labor from them. I understand that there are other gaming companies that do stuff like this all the time, but this is the largest release of a game in all of history, its one of the most anticipated games ever, heck we even had a meme going for 13 years about this game. I know what I'm saying is going to fall on deaf ears, but if you buy and play this game and give publicity to it, the only people who are likely to make money off of it are the execs at Rockstar, not the people who put their time and energy into making it. That goes for anyone reading this. If you want to play this game that badly, pirate it and don't bring attention to it. Okay, rant over",
+            "authorDisplayName": "@treebeardthebear9996",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/R01H5lgU5bBpcb3xwJ-B_sfYCqfTqtzGbQAqjyNMUbAhp76yZrj8eHPnZvDKoPWEOBHS1sY41xs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@treebeardthebear9996",
+            "authorChannelId": {
+              "value": "UC2aPwR6uwocwAd4VaN6bplQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:03:46Z",
+            "updatedAt": "2026-11-20T08:03:46Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bndHRJ_87Zs1T1vzdnkl6cDSDvs",
+      "id": "Ugw6Xa-AEvaNwIcXBFB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "F1JmlV0EqmQen9duF_fUy6ueEr0",
+          "id": "Ugw6Xa-AEvaNwIcXBFB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "more, more, more, more",
+            "textOriginal": "more, more, more, more",
+            "authorDisplayName": "@barneyb2795",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lycWrMND14nPwsTmOF-MvBuTMPUGn90VTBdFgW8Y9QV6M=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@barneyb2795",
+            "authorChannelId": {
+              "value": "UCzVA_HLe2xZQGKqwtYw_GgA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:03:45Z",
+            "updatedAt": "2026-11-20T08:03:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "CbLKLnM0oBwmjTWfdbaVuf9LuPA",
+      "id": "UgxpgptjeTObfXgYo854AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zuhDodBLoCi0ohSbDfPmUAK-3vI",
+          "id": "UgxpgptjeTObfXgYo854AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "You can buy Arthur's hat from red dead redemption 2 at one of the yard sales",
+            "textOriginal": "You can buy Arthur's hat from red dead redemption 2 at one of the yard sales",
+            "authorDisplayName": "@jcpretorius883",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mRVfTenwOfIE5S9vmuGhtf93UGIjrKTApZJM3CkFB74g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@jcpretorius883",
+            "authorChannelId": {
+              "value": "UCf0WapUDAgl_3-Y1goz-iyw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:03:10Z",
+            "updatedAt": "2026-11-20T08:03:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "JEjOj2nFQAwyaQ9HxCJ-j3BvfSw",
+      "id": "UgxwWBv7nnGMtS2XdrV4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "K28cKskvT-IrnX6FouQLx8QysYY",
+          "id": "UgxwWBv7nnGMtS2XdrV4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "the amount of hours you have in subnortica and your acting like you've never gamed in your life during a scuba mission?",
+            "textOriginal": "the amount of hours you have in subnortica and your acting like you've never gamed in your life during a scuba mission?",
+            "authorDisplayName": "@James-gr6lx",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mDo39SlesrkpMmQhrBCFRC3bTmgsDBJY__P3B-tUM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@James-gr6lx",
+            "authorChannelId": {
+              "value": "UCi1oMn4uHcFuVHNJGWvXnvA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T08:01:54Z",
+            "updatedAt": "2026-11-20T08:01:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gqhmrcCXzZDmUeR1jkpMfkzAskU",
+      "id": "Ugxg8F7R7AtuaaFfmVt4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Yz4MLF-txmt9vR_wbw98ULwbYWI",
+          "id": "Ugxg8F7R7AtuaaFfmVt4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I was going to Fish and ran into that creature and it scared tf out of me. I thought the noises were like a giant gater trying to eat me but as i ran closer i seen that thing and tried to chase after it 😂 god i am absolutely addicted to the game",
+            "textOriginal": "I was going to Fish and ran into that creature and it scared tf out of me. I thought the noises were like a giant gater trying to eat me but as i ran closer i seen that thing and tried to chase after it 😂 god i am absolutely addicted to the game",
+            "authorDisplayName": "@sippin40ss",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/zufBkBYf-sNF4vyfxoDirX__nzuPIpR3g3QGr1BQCyralYbTJY8WM23_6Y6bRx8FIUeMzlMOfnk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@sippin40ss",
+            "authorChannelId": {
+              "value": "UCMt9VTDDX_2dGCFcXlKNVpA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:52:41Z",
+            "updatedAt": "2026-11-20T07:52:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Siyg--G0baPmyQLzO60S3qcMVTc",
+      "id": "Ugzzorgrx1iVc0y2ggB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "AJXTcK_r2b3NLYCTWAu6Nnk02Qo",
+          "id": "Ugzzorgrx1iVc0y2ggB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I love that when the trailers/gameplay preview came out everyone thought Jason was flat and boring. And he is and its perfect he's so damn funny",
+            "textOriginal": "I love that when the trailers/gameplay preview came out everyone thought Jason was flat and boring. And he is and its perfect he's so damn funny",
+            "authorDisplayName": "@maxlilico5375",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l47OAYblRhX1GlojxrO8tpFZ7E7DVaGBLmKIBdXvdUAPI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@maxlilico5375",
+            "authorChannelId": {
+              "value": "UCc9R4l7oM6JDbZ34MZ4jyNQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:51:50Z",
+            "updatedAt": "2026-11-20T07:51:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "CyxC50Hqj4_zPBe59dkfUbA0tKU",
+      "id": "Ugwh1On23fq8MIDun114AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ccU5Mb5HnV_oJZ223vX3FjUqfx4",
+          "id": "Ugwh1On23fq8MIDun114AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "\"My aim is shit on controller.\" Hasn't ps5 support for kb/m?",
+            "textOriginal": "\"My aim is shit on controller.\" Hasn't ps5 support for kb/m?",
+            "authorDisplayName": "@ejnahr",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/eYmm9jiWKFYS_hHhpgHCRWqYQokMEUgspo0u-JA0yRgwWamyKS0hSveo1pidvggnG-5Q1oDlAw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ejnahr",
+            "authorChannelId": {
+              "value": "UC6K89WGXs9fkBYU8W0fUWMQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:50:28Z",
+            "updatedAt": "2026-11-20T07:50:28Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9cXk4L6UP93XjHDMg2Hv8curP4I",
+      "id": "UgyIfJEc1hR_NER8n0p4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "x89hq3vQS46JV9JqJJ84TMspXk0",
+          "id": "UgyIfJEc1hR_NER8n0p4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "My thoughts exactly",
+            "textOriginal": "My thoughts exactly",
+            "authorDisplayName": "@ThedailydUcks681",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n-ipYGNyWfz12ONyTS5rSab8KjOyO2zchxWqeHFrPUeLIIa2HS4OmlreGaAFKDd_6j1g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ThedailydUcks681",
+            "authorChannelId": {
+              "value": "UCHyAtjDDmTJimFQQGNEvzaw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:49:13Z",
+            "updatedAt": "2026-11-20T07:49:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9Yy082iPrbIDt5-6oFZ59nLCrF4",
+      "id": "Ugwgge4mRw9H8g1xIPh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "VBl-siZTU-ynyTbdPWz02WgAkds",
+          "id": "Ugwgge4mRw9H8g1xIPh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "THANKGOODMESS YOU DON'T DRIVE",
+            "textOriginal": "THANKGOODMESS YOU DON'T DRIVE",
+            "authorDisplayName": "@DominatrixToretto",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/FpsTnBmLxXXfgMcGfzuGsiL2sYA6v_7yeg_ffReMfrcEF6zKFWAAtyFLZOfFRIRng7x66VAX0w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DominatrixToretto",
+            "authorChannelId": {
+              "value": "UCutDxxHIi6TY_SiFlbIPkXA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:48:15Z",
+            "updatedAt": "2026-11-20T07:48:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "i09eu8fW8YnATDU0DCysd9l4jzg",
+      "id": "Ugync0QeBeg62LgRJu94AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "WELT-U_PnXD0YQMi6F4JWHAtNJk",
+          "id": "Ugync0QeBeg62LgRJu94AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Thank you Sean Love your videos, makes me feel less lonely. I am living in a camper and playing on the PC my dad bought me in 2019 before his death, I was looking forward to GTA 6 but no PS5 so I'm glad to watch you play it.",
+            "textOriginal": "Thank you Sean Love your videos, makes me feel less lonely. I am living in a camper and playing on the PC my dad bought me in 2019 before his death, I was looking forward to GTA 6 but no PS5 so I'm glad to watch you play it.",
+            "authorDisplayName": "@whatever-lv6dd",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l-0VknniqmdfQg7ibiCg3nDIY7D60N_nNt0ys12FQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@whatever-lv6dd",
+            "authorChannelId": {
+              "value": "UCUb6bhGNQDOXvoIyqGJPx0g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:47:50Z",
+            "updatedAt": "2026-11-20T07:47:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "h9QibeiMV9IoMhvA8Hu4J4TGssE",
+      "id": "UgzxQEC0LWuZpamPNdN4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ajD6Q22Iv-lpDeZoplSH1NUHfd0",
+          "id": "UgzxQEC0LWuZpamPNdN4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I’m sorry but I am not doing a dive tour, digging for buried treasure and fighting a shark for $400. That’s an insulting amount for that treasure hunter guy to give us.",
+            "textOriginal": "I’m sorry but I am not doing a dive tour, digging for buried treasure and fighting a shark for $400. That’s an insulting amount for that treasure hunter guy to give us.",
+            "authorDisplayName": "@FijiBongWater999",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/zbIiM0nq323pWkyI5tHctcQmClRdUtHYxCI4POAGs7GBaRdzLWY8evTbQfxPP7wp4qp0P78L=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@FijiBongWater999",
+            "authorChannelId": {
+              "value": "UCO6FX9Nm0go-VwSW8HPA72Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:45:22Z",
+            "updatedAt": "2026-11-20T07:45:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "i1xbd0qiG2LJKb92f7KBY0ZcPeY",
+      "id": "UgzwLqaEu3BnUme9fs14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "SXc7Q-6a8SxZ0bEQ1PL5E0i3_fk",
+          "id": "UgzwLqaEu3BnUme9fs14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Born and raised in Florida, and this is pretty accurate... animals, scenery, landscape, signage, buildings, people... It all very much looks like Florida",
+            "textOriginal": "Born and raised in Florida, and this is pretty accurate... animals, scenery, landscape, signage, buildings, people... It all very much looks like Florida",
+            "authorDisplayName": "@RontoGoldlust",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/lyc7EMljwBPKJmE7BD3GDJCCXSQXKilI_CNg2FFnkjNCbC4Pge4nkld8PMb5dv_dCo3tvYqI1A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@RontoGoldlust",
+            "authorChannelId": {
+              "value": "UCx9-wuowOdvnBIi-toVnpUA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:42:04Z",
+            "updatedAt": "2026-11-20T07:42:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "U42XY3WxiuOSHSX3Y6Jp1466jmQ",
+      "id": "UgwVvli2ydilvX9Z-Gx4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "M7kVFWiCcLEWyA9k8ifqPiRPHFk",
+          "id": "UgwVvli2ydilvX9Z-Gx4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I just wanted to say jack I love your content and hope you do a full playthrough of gta6 it's the only way I'm going to be able to see the game my ps5 was struck by lightning and money is tight right now so I am at least glad that I am able to see you play it. Its almost feels like I'm able play it my self keep up the amazing work!!!",
+            "textOriginal": "I just wanted to say jack I love your content and hope you do a full playthrough of gta6 it's the only way I'm going to be able to see the game my ps5 was struck by lightning and money is tight right now so I am at least glad that I am able to see you play it. Its almost feels like I'm able play it my self keep up the amazing work!!!",
+            "authorDisplayName": "@chillingout9730",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nL_r0jOq0gRok3wqSUGNVapLiApm5BFJvQ1A-u2DaubRU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@chillingout9730",
+            "authorChannelId": {
+              "value": "UC_4eBsUW9LSRQc-1jxzIsCg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:40:15Z",
+            "updatedAt": "2026-11-20T07:42:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-y--1PxIjZtwi498NF22wNBApDI",
+      "id": "UgzaR12DTe3BY7RIoZd4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "b0zVN_Idm4bVK64ZDnx6wEKkYiA",
+          "id": "UgzaR12DTe3BY7RIoZd4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "My god, I absolutely adore the music that plays when Jason and Lucia are running from the police after the bar and when Jason and Lucia get home afterwards",
+            "textOriginal": "My god, I absolutely adore the music that plays when Jason and Lucia are running from the police after the bar and when Jason and Lucia get home afterwards",
+            "authorDisplayName": "@xiserhoff",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lfHLsKGdhW3jKoDsYkCP_PmPtW_t6mcxaOCAuRxeuOUAZa=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@xiserhoff",
+            "authorChannelId": {
+              "value": "UCDpJHEG6VtrEmolL-3kODgg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:39:44Z",
+            "updatedAt": "2026-11-20T07:39:44Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "8Mr4NI_POic5Eg_pqL2jCROI1l0",
+      "id": "UgxGtZZYbeG-ISB-Ll54AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lUZ9LLMjWB8pryxE7NtEZeVLumk",
+          "id": "UgxGtZZYbeG-ISB-Ll54AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Some of these scenes look like they could be mistaken for shots of real life.",
+            "textOriginal": "Some of these scenes look like they could be mistaken for shots of real life.",
+            "authorDisplayName": "@kingbaluyut7550",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Os6QNBiMdBFXUMqXuPvhFJOoJN_HVVHMZw-JOt9gnQrKgGX2JWjFWbMIgwIZUey8ikaH5DE6HA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kingbaluyut7550",
+            "authorChannelId": {
+              "value": "UCpQflRtlug8djqvE5kWQhpQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:39:21Z",
+            "updatedAt": "2026-11-20T07:39:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "u1zfLRRWmnZLQor6n_PimVkpgNI",
+      "id": "UgzmYcvH0ShvjiPHzmF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "KXIW0zUDwVqjGwacX6-hPrehiuo",
+          "id": "UgzmYcvH0ShvjiPHzmF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "20:22 as a Florida native, it's validating to see the way we drive on highways accurately depicted in a video game",
+            "textOriginal": "20:22 as a Florida native, it's validating to see the way we drive on highways accurately depicted in a video game",
+            "authorDisplayName": "@xcluedead4212",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nSZUvZ213it3IfPkAj_vATpw9AvV0NlPvKiuJsh-LWfmM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@xcluedead4212",
+            "authorChannelId": {
+              "value": "UCOa5v22q-4jW3U2NKqb3R8w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:38:16Z",
+            "updatedAt": "2026-11-20T07:38:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Q3etsmr1hHQH0V9rgjEyRHslN0I",
+      "id": "UgxTlSouj6prp3HkUFF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "I5oCThavJiirD_x_sEaUd6zHZTk",
+          "id": "UgxTlSouj6prp3HkUFF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Wat the HEK happend between 2:17:36 and 2:17:37 that was a hard cut",
+            "textOriginal": "Wat the HEK happend between 2:17:36 and 2:17:37 that was a hard cut",
+            "authorDisplayName": "@Domanill1",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nn0nPeAtS4vpP5sB93LSxmkAJmLryzVwDL6nWwpCdzqA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Domanill1",
+            "authorChannelId": {
+              "value": "UCrUWnywnZGMZI0OUaNYGQBA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:37:33Z",
+            "updatedAt": "2026-11-20T07:37:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Mz4ZhNWkjwhcDYHs5uJIFDdJsrA",
+      "id": "UgwqzpOtgQjMdCDIZ254AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "XxSXc99bXa3lYggxZMAdx1OD17U",
+          "id": "UgwqzpOtgQjMdCDIZ254AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I'm sorry are you kidding me they took this long to fucking make the game and they couldn't make a soundtrack that was YouTuber friendly like they didn't know this shit was going to be getting streamed like crazy and they could have made a mode for like blocking out nudity for the people who are streaming while doing this come on now that's just disrespectful",
+            "textOriginal": "I'm sorry are you kidding me they took this long to fucking make the game and they couldn't make a soundtrack that was YouTuber friendly like they didn't know this shit was going to be getting streamed like crazy and they could have made a mode for like blocking out nudity for the people who are streaming while doing this come on now that's just disrespectful",
+            "authorDisplayName": "@tobisadoop5419",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kKMnxvlDoLM2l8dW-cXrKdg5uwbzDhz-XkmTbqWmDlhwM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@tobisadoop5419",
+            "authorChannelId": {
+              "value": "UCLf_5LdsazsZr766PG2rx9w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:36:32Z",
+            "updatedAt": "2026-11-20T07:36:32Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-MXuBExh1icxvBIQCLyY-aaDUyw",
+      "id": "UgxYI6Ql4d6M8eFd-Mx4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4QKkmBcWu7xB_pxyZPX0iU6KRyA",
+          "id": "UgxYI6Ql4d6M8eFd-Mx4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "wasn't expecting a man of medan reference all these years later LOL",
+            "textOriginal": "wasn't expecting a man of medan reference all these years later LOL",
+            "authorDisplayName": "@cramdoodles",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mcQV1blZZGdTiUX4cVsdf4Vy1SlQ-i1uoE3AVa33Ptbpk4q41f12BxxTp0ggs_2KzTew=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@cramdoodles",
+            "authorChannelId": {
+              "value": "UC7Szu0dj7SxManFXurHWyDw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:36:06Z",
+            "updatedAt": "2026-11-20T07:36:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jahR37k1lizFJn5jEWJ79p5YIjU",
+      "id": "Ugxkv_UgYJF38T2zK7V4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "-cdanQlSgSWMUJP4Kln552WIP64",
+          "id": "Ugxkv_UgYJF38T2zK7V4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Please do the orca side quest 🙏",
+            "textOriginal": "Please do the orca side quest 🙏",
+            "authorDisplayName": "@theevilpannenkoek",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/5d6A0GIZIZhTVxDfWKvffWXph8hU9mBt7YAU54-_YPBZ6kT-hC24HyFQoD5vWZxM26w4Yh7iUg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@theevilpannenkoek",
+            "authorChannelId": {
+              "value": "UCmIMdvFuGNfr1haNKQ0RDmw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:34:42Z",
+            "updatedAt": "2026-11-20T07:34:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "fhrMTdq1owR9P9EZw78fOlnn_NM",
+      "id": "UgwbiUvhDjQXHiT9BaN4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "LZueNhu_rIgiNEOqTbjQKI1Z3bg",
+          "id": "UgwbiUvhDjQXHiT9BaN4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:17:56 Is it just me, or does that sound like Rob Wiethoff (John Marston)?",
+            "textOriginal": "1:17:56 Is it just me, or does that sound like Rob Wiethoff (John Marston)?",
+            "authorDisplayName": "@bigbeecole",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/RL7TA2r6sjW0F4SzEcjD6s8M5x7yRfexgl80Y3celCfjdNWrPuxhZd0f3jDq4ndIQFCDJXXQGQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@bigbeecole",
+            "authorChannelId": {
+              "value": "UCLo17uxRsw9W8Q6paIEcgXg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:33:25Z",
+            "updatedAt": "2026-11-20T07:33:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OfD-G5OcE-mEQw9AwXjzifId1J4",
+      "id": "UgySWu4h-Js_Ofyy3oF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "m4LuC0s8ezGe-xTpeoDQBlUNvwA",
+          "id": "UgySWu4h-Js_Ofyy3oF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Jason picking Lucia up and jumping straight back into the chaos is the perfect way to kick off part 2 — the back-and-forth between them already makes this playthrough so much fun to watch.",
+            "textOriginal": "Jason picking Lucia up and jumping straight back into the chaos is the perfect way to kick off part 2 — the back-and-forth between them already makes this playthrough so much fun to watch.",
+            "authorDisplayName": "@GTA6Clips-d7f",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/c7vTcH57SoleWf-Klt_1Majz8CAl6R2xenJdVvk1j-eu_2tk3eHiome8nbSc3t8v8WvgvYI_8fs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@GTA6Clips-d7f",
+            "authorChannelId": {
+              "value": "UCfxwvhrQoUNgkYahuWp3X7A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T07:31:54Z",
+            "updatedAt": "2026-11-20T07:31:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "h5jwN1KlnueAWB_3VSLAEOB3jlY",
+      "id": "UgyZmpGckYBoHtlb7Fh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "jRlkv3wZLbYKz4P1P8IJefsNqnM",
+          "id": "UgyZmpGckYBoHtlb7Fh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Bro, you're playing like old people. I used to love your playing but now? It hurts to watch you try",
+            "textOriginal": "Bro, you're playing like old people. I used to love your playing but now? It hurts to watch you try",
+            "authorDisplayName": "@ErfunAk",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/NSHGiX_brSOuoeHCYAfqvCmnCamXMWJWwA30vSmoLxxCxo9OU_6x4Gx6mb3OZM17_AYnT45u4g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ErfunAk",
+            "authorChannelId": {
+              "value": "UCGSX1IPuJU6f440FyIF5EWA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:31:41Z",
+            "updatedAt": "2026-11-20T07:31:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "b-BNed7jk9jnMEl_dUQMhDpjwk0",
+      "id": "UgyV_GffO_Xy_VqDIsZ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Kg8V1B7tOVklU1-MQnxlf0r8yvI",
+          "id": "UgyV_GffO_Xy_VqDIsZ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Skunk Ape?!",
+            "textOriginal": "Skunk Ape?!",
+            "authorDisplayName": "@TheOriginalMisterPancake",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nO5_AnrR5wC3yikrkeRVMEqqK2JYLnvMQub5cKxd-mCQNDacSpJv5wGRkTMh4pgO6TqQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@TheOriginalMisterPancake",
+            "authorChannelId": {
+              "value": "UCvSJFwjpyOJ1EHkfmoNtP4A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:30:55Z",
+            "updatedAt": "2026-11-20T07:30:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1I1vSb1aQRTrCJWis8Mze4CFLpg",
+      "id": "UgzQVl3kNkMUPaPhibF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "mKHwAvpdGVvVEjG7eowwyQ9EPpk",
+          "id": "UgzQVl3kNkMUPaPhibF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Aint no way part 2 was already out😂",
+            "textOriginal": "Aint no way part 2 was already out😂",
+            "authorDisplayName": "@cnmxproductions11",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uG6R35SfG4ov_8OIqlABgCMvYZCAE4t3WjVEat84pRn-Nmhuyv5Q6d78JCEAi4Iv8rCSa8Dk=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@cnmxproductions11",
+            "authorChannelId": {
+              "value": "UChwMaAJDxRf-zKvjlnLU9SQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:22:18Z",
+            "updatedAt": "2026-11-20T07:22:18Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xlGFx5ibmzqQCYKNh8Ohe3_M0hw",
+      "id": "UgxgpzhU8ACV_F0d_EZ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6PXNfSklZmyMKj5Wvm73dvYoUUk",
+          "id": "UgxgpzhU8ACV_F0d_EZ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Thank you for your sacrifice Sean",
+            "textOriginal": "Thank you for your sacrifice Sean",
+            "authorDisplayName": "@panyarou",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/izmqgqX26iGXkWruH5kuWKV47Xv_Hr6dzqJmk79xBAI4J0dJUWVBJHFcS6WzAAaO8_TEqUZo5Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@panyarou",
+            "authorChannelId": {
+              "value": "UCJjP6fTP9HgDGLgvnpaRkgQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:20:26Z",
+            "updatedAt": "2026-11-20T07:20:26Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "jHPyIZVxWJJ-AnggA7r1ZK4zfu4",
+      "id": "UgxMOcAlTWR_k4sy5D14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uuryVT-DPjg_abwmuepEIzn6YKg",
+          "id": "UgxMOcAlTWR_k4sy5D14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "jack my only exposure to this game just making this comment to prove im right. shes a liar. that kid aint with tia.",
+            "textOriginal": "jack my only exposure to this game just making this comment to prove im right. shes a liar. that kid aint with tia.",
+            "authorDisplayName": "@thesixdot",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mhpdt52gf-ewuMICMSpf58jqqKXetktX-rAgmJkXZktJrVu4vDkBYngfAtIfmb6uJy3w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@thesixdot",
+            "authorChannelId": {
+              "value": "UCBNYnOcUho_G3N5ObA-JUzg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:19:12Z",
+            "updatedAt": "2026-11-20T07:19:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "KwSv4IYsH0YPrc1n6PZWIo7m1Hc",
+      "id": "UgwJg3jTCVvTRFCn3FF4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "6vZppz_HOY2jzYGdfKsjcx33mEc",
+          "id": "UgwJg3jTCVvTRFCn3FF4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "you're a really bad driver",
+            "textOriginal": "you're a really bad driver",
+            "authorDisplayName": "@S20171",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/SdWYxA1WU9tGSxnaYX_MWzU-aGpe9x1Bp-fKLYu7g1hZucnF4m576nn6Yi4jYSEALbMzza8n=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@S20171",
+            "authorChannelId": {
+              "value": "UCRIPoVetiJjiIroRRZrye2A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:19:03Z",
+            "updatedAt": "2026-11-20T07:19:03Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "QVV6cRUvWyvsDkzm_xqyyjdcWRw",
+      "id": "UgzAPS_7gcESwSeKXVJ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "YF6dghNCdSPwc0rTM7PCsIShzus",
+          "id": "UgzAPS_7gcESwSeKXVJ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I kinda want RockStar to do a dedicated zombie game",
+            "textOriginal": "I kinda want RockStar to do a dedicated zombie game",
+            "authorDisplayName": "@rycecake69",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/AmBEgmWc0r4GE0W6o2Vs-F2uhAyEW-qBKXystO8cviFiBUI72jgL16U9BvKN3QR3Jt5EdR7Pdw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rycecake69",
+            "authorChannelId": {
+              "value": "UCnhrIu7RVvF4GxHhyB-FvQw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:17:16Z",
+            "updatedAt": "2026-11-20T07:17:16Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1WJmjZFWFzC8KFiMUduaSpOdhfA",
+      "id": "UgwP6akMg-QI90aQD9N4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "DFOJCjg9FXTN_ztc7e-XKlsf5PM",
+          "id": "UgwP6akMg-QI90aQD9N4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "1:03:44 u can acitvely see the graghpics looking worse after the intro segments of the game, this cutscene looks ass",
+            "textOriginal": "1:03:44 u can acitvely see the graghpics looking worse after the intro segments of the game, this cutscene looks ass",
+            "authorDisplayName": "@KuronDarkly",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/XflSkde8qfyheeSMa2OcuszHhDrpqXnTQ-bRURB0YeRKg_zHaYgMy2GOgYKFAUPwwTNev1c6mw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@KuronDarkly",
+            "authorChannelId": {
+              "value": "UC6yUBqOJs5i4be33GXsJBNQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:15:40Z",
+            "updatedAt": "2026-11-20T07:16:22Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vmkWgQTjQI3j70UUMXG-lLfVgpI",
+      "id": "UgyvW-fCxVPeFUBgBeB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "prIAp1TmsEzHoWq_HLAQcgg29bI",
+          "id": "UgyvW-fCxVPeFUBgBeB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Only time I have EVER felt immense Floridian pride is from how much of a cultural moment this game is + how much I adore it genuinely feels like if Rockstar made a game FOR ME. Like it 100% has its issues but everytime I see or think about it I can’t help but feeling immense joy! I hope y’all enjoy our little bit of culture :3 I know it ain’t much but this is literally the culture I grew up around (for better or worse LMAO)",
+            "textOriginal": "Only time I have EVER felt immense Floridian pride is from how much of a cultural moment this game is + how much I adore it genuinely feels like if Rockstar made a game FOR ME. Like it 100% has its issues but everytime I see or think about it I can’t help but feeling immense joy! I hope y’all enjoy our little bit of culture :3 I know it ain’t much but this is literally the culture I grew up around (for better or worse LMAO)",
+            "authorDisplayName": "@Zenythycat",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/wfMZCwPT0beYgoayy7D0zaPCkM2YxhHTaDRTb3B9Ons4D78tS22M6rSvk3Hzy_0OAfCbiv8X=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Zenythycat",
+            "authorChannelId": {
+              "value": "UCFjXSjUqVWV6hDfPp9kPPOA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:14:42Z",
+            "updatedAt": "2026-11-20T07:14:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mWDQmhTS-JC1IdeJMkKVsYgiSLc",
+      "id": "UgxA5UgmBhg-8eBrbmZ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9LfPK9rthJh7oNbRSYnrrEPMwKo",
+          "id": "UgxA5UgmBhg-8eBrbmZ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "If you wanna up the brightness you've gotta up the minimum darkness",
+            "textOriginal": "If you wanna up the brightness you've gotta up the minimum darkness",
+            "authorDisplayName": "@liam0-0",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/mbXp2Na7jOZ2JztiIELmcfSy--t3XEzicR8SVIjimEUNIfnvfeU0He6gexvmmVqjchF-gYqwWw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@liam0-0",
+            "authorChannelId": {
+              "value": "UCxD7gsatKXdkwNUZp7gPPIQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:12:50Z",
+            "updatedAt": "2026-11-20T07:12:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "R9ApWQ6Cbm6sILEIgpbrYzJxdu4",
+      "id": "Ugz76p8K96Z3451fecB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cfNfbtAQHVTvVGKbMGtNjroyFr8",
+          "id": "Ugz76p8K96Z3451fecB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "3:00:20 Jack, it's actually very realistic. It literally doesn't have any bullets in it, so it's not racking anything. So it can't fire unless you rack it again.",
+            "textOriginal": "3:00:20 Jack, it's actually very realistic. It literally doesn't have any bullets in it, so it's not racking anything. So it can't fire unless you rack it again.",
+            "authorDisplayName": "@Arisante",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Ci99STTtoMOddMKTV2suXrIvlrNvgCzXDZIDaSEVKnmUFXUrLOP3SgjdieNOFgLHbIDDxOuNZp8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Arisante",
+            "authorChannelId": {
+              "value": "UCTqdWuKNzdS48B02J3hU6gQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T07:09:52Z",
+            "updatedAt": "2026-11-20T07:09:52Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mrQWzTk9UpeeuKA1JJEokY9Ylk4",
+      "id": "UgzMGnoxM10CLBu3NrB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lRWcOyjrnmbyQN3gZUFiz3gW-zU",
+          "id": "UgzMGnoxM10CLBu3NrB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I am pissed that PC folks have to wait...also I am jealous that real world weight lifting does not work like in this game...lol.",
+            "textOriginal": "I am pissed that PC folks have to wait...also I am jealous that real world weight lifting does not work like in this game...lol.",
+            "authorDisplayName": "@Kai-Made",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/iEkBmTFEYmm7v2iheafbmU33deFzstCQfhuXpO0_jeVdxMwlOKgxe-g6wdG3wW5Eh_EBGSWk9A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Kai-Made",
+            "authorChannelId": {
+              "value": "UCkkCJOZA-cUoc8waae6a91A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:09:37Z",
+            "updatedAt": "2026-11-20T07:09:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "p6bGgTVhjOLgCCBTVLwmo5p563A",
+      "id": "UgwOlchZ9NqfQz17vid4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "UspSR3n-SHIQCDBUOQn0Wb8KjeE",
+          "id": "UgwOlchZ9NqfQz17vid4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "This game has gotta add non copyrighted music the silence is just so awkward",
+            "textOriginal": "This game has gotta add non copyrighted music the silence is just so awkward",
+            "authorDisplayName": "@silversamurai2424",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nFiqVTTcq3BHmoV5Iu_y3-HbzSF0i8n9LDsI0cGvBbOQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@silversamurai2424",
+            "authorChannelId": {
+              "value": "UCQI-IVBti-UZH4HwVZ5B4HQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:09:37Z",
+            "updatedAt": "2026-11-20T07:09:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sTIKuQqDNPP_WTtoLI4cOhCqrUc",
+      "id": "Ugw8WjLPSywi7csuIJB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "A-uNqzl1Uj-LBMasIO1vUln0gt0",
+          "id": "Ugw8WjLPSywi7csuIJB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I wonder if Lucia's PO is on his phone any watching reels.",
+            "textOriginal": "I wonder if Lucia's PO is on his phone any watching reels.",
+            "authorDisplayName": "@manueljohnson9047",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/tOCWSvTuCZDaeGI-9QNfjMDI4eCbH3XEE71a72jhxNvdvbFrKX9COS_dcMVj60cvMTlnrnnF=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@manueljohnson9047",
+            "authorChannelId": {
+              "value": "UCriuc7a7QrMyR9MyvJnNCeQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:09:21Z",
+            "updatedAt": "2026-11-20T07:09:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "aqY3Y2vzt8VbQf3K3GQzt9hwWMk",
+      "id": "UgzuKuW7r1cDus9hbHp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "aHmT_N0yyAO_KtmuiblsT8W18oQ",
+          "id": "UgzuKuW7r1cDus9hbHp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "3:00:20\nAs a gun nerd, I feel obligated to answer: Lucia keeps pulling back the slide to reset the hammer, as most semi-automatic weapons are \"single action,\" as in pulling the trigger only lets the hammer fall forward and nothing else. If the hammer is already down, like firing a weapon on empty, then the trigger does nothing. For dry firing training, this is to help with trigger discipline, so the trigger pull is the same weight as when firing live rounds, and to practice not pulling the weapon off target.",
+            "textOriginal": "3:00:20\nAs a gun nerd, I feel obligated to answer: Lucia keeps pulling back the slide to reset the hammer, as most semi-automatic weapons are \"single action,\" as in pulling the trigger only lets the hammer fall forward and nothing else. If the hammer is already down, like firing a weapon on empty, then the trigger does nothing. For dry firing training, this is to help with trigger discipline, so the trigger pull is the same weight as when firing live rounds, and to practice not pulling the weapon off target.",
+            "authorDisplayName": "@winter9523",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lAbCgfJp5PeLk0uASTOJPOQthnBwlUdVq13FHs5gXKn-c=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@winter9523",
+            "authorChannelId": {
+              "value": "UCVhfP4bcQ6ALojCXi1z5yxQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T07:08:59Z",
+            "updatedAt": "2026-11-20T07:08:59Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0ITGn-VLf0fWOga-JfXjaA1Zs9I",
+      "id": "Ugxb6OBV6hEk40WEdeh4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "uNcFpxlGJnFBWfoSNz1PtDbgGO0",
+          "id": "Ugxb6OBV6hEk40WEdeh4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Damn! when I did that mission I didn't hit the shark in time and it ate the guy lol.",
+            "textOriginal": "Damn! when I did that mission I didn't hit the shark in time and it ate the guy lol.",
+            "authorDisplayName": "@EagleReelsGaming",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/HbPoQXhZ20Hizrm2Acofc2ENEmzDWqmgV9pjivKUiAsuhhU34XHdThO8wUARJa7JDbomN6O5=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@EagleReelsGaming",
+            "authorChannelId": {
+              "value": "UCLEB5EFEOMNB-XGa7ghPgUQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:05:35Z",
+            "updatedAt": "2026-11-20T07:05:35Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NJzaGZt98d3d4cJ-kc4zWZP7HxE",
+      "id": "Ugypva5O0y1R4yGzipZ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "09D9EbyWx48NcuDBH7RpTYHsk6c",
+          "id": "Ugypva5O0y1R4yGzipZ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "She has to rack the slide every time she pulls the trigger because the round firing is what resets the trigger when firing normally. When you're dry firing there is no pressure to push the slide back and reset the trigger.",
+            "textOriginal": "She has to rack the slide every time she pulls the trigger because the round firing is what resets the trigger when firing normally. When you're dry firing there is no pressure to push the slide back and reset the trigger.",
+            "authorDisplayName": "@i_i_isaac_i_i8778",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l2M85digWhdOvGaUbG426KUOgFV3L1jGlVm5I9SpZiQA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@i_i_isaac_i_i8778",
+            "authorChannelId": {
+              "value": "UCQqtJwDk9c5VaNAxEsjXr4A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:05:06Z",
+            "updatedAt": "2026-11-20T07:05:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "5jOZEIZ47h0PUeNzg1bAIQwow5E",
+      "id": "Ugxl_fRyFNQnZ3UMNHt4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "dsTeuh_B3O7Z4eRmhrHI2qW6LpY",
+          "id": "Ugxl_fRyFNQnZ3UMNHt4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "3 hours and 35 minutes? That’s the content for a week for me!",
+            "textOriginal": "3 hours and 35 minutes? That’s the content for a week for me!",
+            "authorDisplayName": "@rupayan_biswas",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/bjnOVnrDkqFVn8QJwFFEm3uQ-QAHuJ2yIJAEtIFVksRiZj4T1arGn4w2sjdub7HRp6o5sjX7NrA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@rupayan_biswas",
+            "authorChannelId": {
+              "value": "UCCNmxsVFwp-dV_cv_SN2CDw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:02:42Z",
+            "updatedAt": "2026-11-20T07:02:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "1_-iTNOGQzwvDCBKtcxxbe-itgQ",
+      "id": "Ugwhp0-1sJ3GTvzDrT94AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "CzPmpPQF3Kq-g6gcOG0vGj0E9ck",
+          "id": "Ugwhp0-1sJ3GTvzDrT94AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Finally Jack is now playing GTA VI",
+            "textOriginal": "Finally Jack is now playing GTA VI",
+            "authorDisplayName": "@JossiahFlores-s8t",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mXl5vEZetSFCfuG2B7_VLqc38fE5TVJMtL_CGIeMUbdXJf55quvy5KONcX81xCv66Llw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JossiahFlores-s8t",
+            "authorChannelId": {
+              "value": "UCGB7u9PuPyC_keHEeokfhMA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:02:23Z",
+            "updatedAt": "2026-11-20T07:02:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OumP2ic0oiJBcnRR9mAbfmeL4hA",
+      "id": "UgwNxT5uk2sk1ur7HV14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "R-OxVbWT5mXnJFbHPUKvWTQX_QU",
+          "id": "UgwNxT5uk2sk1ur7HV14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Someone should play this game with an eyetracker 😂",
+            "textOriginal": "Someone should play this game with an eyetracker 😂",
+            "authorDisplayName": "@natashadebeer8351",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kQS8_nqfE0tBHw1k_WXnftKLlcEpYNtH3YUg0dFXddUgs=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@natashadebeer8351",
+            "authorChannelId": {
+              "value": "UCk7f2dmFJ_4fikoLICaIhHw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T07:02:09Z",
+            "updatedAt": "2026-11-20T07:02:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OAbdeEcGl0h0k9jLaKOJEl7QThQ",
+      "id": "UgydTKTrbCzOaQLf-594AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "rbwvmv8T-a5KKf2IFTjdIMYd3Ak",
+          "id": "UgydTKTrbCzOaQLf-594AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "The best part of this video is the ads every 80 seconds, like wtf dude.",
+            "textOriginal": "The best part of this video is the ads every 80 seconds, like wtf dude.",
+            "authorDisplayName": "@xxD3Vxx",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mGZ0dfxuLxtV_FHzfQ2KOBBhFB3r93I-EZ_4tRmBAfbg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@xxD3Vxx",
+            "authorChannelId": {
+              "value": "UCaiJV2l29ueIgqetDg8o5VA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T07:00:14Z",
+            "updatedAt": "2026-11-20T07:00:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TkMvajNm5wv_Suade-1LdaZQZMk",
+      "id": "UgyWvVTkr9Atg5MSfGp4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5vmDEv7mJoY-FRfJjwj45lcBZqY",
+          "id": "UgyWvVTkr9Atg5MSfGp4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Why couldn't they replace the music in copyright filter mode, watching the cutscenes with dead silence is so uncomfortable OMG",
+            "textOriginal": "Why couldn't they replace the music in copyright filter mode, watching the cutscenes with dead silence is so uncomfortable OMG",
+            "authorDisplayName": "@Yanntastic42",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/BQy80RjPZGFTcy01KUYUTA1wVEQZViANBmmoN2zJUyoBL5tiBuaeiLpxU23l_TKcFLA2Rtc4Iw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Yanntastic42",
+            "authorChannelId": {
+              "value": "UCPLV4HqzVSc59cjg2s-CA1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T07:00:02Z",
+            "updatedAt": "2026-11-20T07:18:35Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lRfxGJaEZ-15mamI6Qan4w2cqjA",
+      "id": "Ugw8o9NDgTGyE7qr_2N4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zoM2RhpKIUmh2OaGdkvA_IAW3z4",
+          "id": "Ugw8o9NDgTGyE7qr_2N4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Nah. Hes definitely related to arthur somehow. Deadeye acts the same. Same mannerisms. Same facial structure(yes ik the model is probably the same base)",
+            "textOriginal": "Nah. Hes definitely related to arthur somehow. Deadeye acts the same. Same mannerisms. Same facial structure(yes ik the model is probably the same base)",
+            "authorDisplayName": "@machinerage6941",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mGc8Infh0ltjHxbnIbZ4HENv_RmEpTaigLixsxtJgW4r8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@machinerage6941",
+            "authorChannelId": {
+              "value": "UCmRgGFSDwVaLkBKdnk325ug"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:59:29Z",
+            "updatedAt": "2026-11-20T06:59:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "VI1ZQlqbb_6_1mELhYBOPCC5JFY",
+      "id": "Ugz0fzUo-tqXVgNmUt14AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3sZQyJsTLvg_3pkFLqrNjD2lReM",
+          "id": "Ugz0fzUo-tqXVgNmUt14AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "There can't be a GTA with without Big Foont",
+            "textOriginal": "There can't be a GTA with without Big Foont",
+            "authorDisplayName": "@Yanntastic42",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/BQy80RjPZGFTcy01KUYUTA1wVEQZViANBmmoN2zJUyoBL5tiBuaeiLpxU23l_TKcFLA2Rtc4Iw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Yanntastic42",
+            "authorChannelId": {
+              "value": "UCPLV4HqzVSc59cjg2s-CA1g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-11-20T06:58:34Z",
+            "updatedAt": "2026-11-20T06:58:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "M61iFCXmNVpS-dXbi-dhU0h0QRo",
+      "id": "UgxBpxVD4nyuXrfzY0d4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "NFpBy3bfwv_zLasmLYAgcXunnrQ",
+          "id": "UgxBpxVD4nyuXrfzY0d4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "13 years of development and they didnt bother to add royalty free music. not like it's the biggest game of the decade with the most streams",
+            "textOriginal": "13 years of development and they didnt bother to add royalty free music. not like it's the biggest game of the decade with the most streams",
+            "authorDisplayName": "@almatskhan",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/nVurCBQLNZPUU7CvEaSn6fcXDD5b-LWLBMIVs1AiHIOHbm8QKtEn04ev6o_iq4gwsh3MHnnNBQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@almatskhan",
+            "authorChannelId": {
+              "value": "UC5dcZOlfB6d21gohzWYxmvw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:58:15Z",
+            "updatedAt": "2026-11-20T06:58:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "hGLQNDru2nbwFaL6TpGbqJofTfY",
+      "id": "Ugy1hifVIrfjhGNJ6ol4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "67G_7hZWe4XuqBnY_utRj1UhyLg",
+          "id": "Ugy1hifVIrfjhGNJ6ol4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I can’t believe how quickly 3 hours and 35 minutes went by watching this. I’m looking forward to more!",
+            "textOriginal": "I can’t believe how quickly 3 hours and 35 minutes went by watching this. I’m looking forward to more!",
+            "authorDisplayName": "@frostbittenghoul",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/-ydM5nzmmI9nnzTPjXbsh8iO0c0BOK42MPaoDyl803VuU1QkoV_F6UHrxOBg6_8yU9EZUsCZ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@frostbittenghoul",
+            "authorChannelId": {
+              "value": "UC0D7vns_PxjAm3ISy7iggTg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:56:19Z",
+            "updatedAt": "2026-11-20T06:56:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kWBhhRQw0VcwutGMe8lT2YsZV5o",
+      "id": "UgwN5O9fB0RWHdZfuO54AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5NWp4QzFz2878UGKttB2fR1_yjc",
+          "id": "UgwN5O9fB0RWHdZfuO54AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Oh god the dumb drivers are back again😭 20:20",
+            "textOriginal": "Oh god the dumb drivers are back again😭 20:20",
+            "authorDisplayName": "@radioactivegoat2",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/I461wbtIhqslrSYclFdsXAb5rzoqaOiVVohHG5yegxGqr-3TDaBdUI_MiYAkZrkf07yn1jgY=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@radioactivegoat2",
+            "authorChannelId": {
+              "value": "UCcIXO-3fZslhXjnxj6jAEbw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:55:21Z",
+            "updatedAt": "2026-11-20T06:55:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4xZZjY1Lf08x4x4xJttxsHmM1n8",
+      "id": "UgyxbRsR9qp14czlKpJ4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "vJxQzQQ2x7u6Mkvodx_xa2k1TIM",
+          "id": "UgyxbRsR9qp14czlKpJ4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Atleast Turn on radio man that shit should mute the copyrighted music too, I just wanna listen to the banger commentaries there",
+            "textOriginal": "Atleast Turn on radio man that shit should mute the copyrighted music too, I just wanna listen to the banger commentaries there",
+            "authorDisplayName": "@Deep_Mondal",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/qpVa3K84G5I3wKZYcd_Tf8NK6Yc_pKQ0i0SGjzq2mbbWwAPcijKJOKJg-7UnK-Ya5F-2ihs9=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Deep_Mondal",
+            "authorChannelId": {
+              "value": "UC5BkCWj6tlOk0n5k5OufaCg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:51:55Z",
+            "updatedAt": "2026-11-20T06:51:55Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ml4fUaU_pY-wClanKXi6KUR2VK0",
+      "id": "UgxK_evQ7C2lrQaMaVB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "p23UQPprIUCekDfQaQGnQUUmmhw",
+          "id": "UgxK_evQ7C2lrQaMaVB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I think Jack should just start singing his own songs during the cut scenes",
+            "textOriginal": "I think Jack should just start singing his own songs during the cut scenes",
+            "authorDisplayName": "@casigoodman9410",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lZjeqNVp1qXF1vnb1CUSqgNR4xUz26U148sNKquDnPlkmW=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@casigoodman9410",
+            "authorChannelId": {
+              "value": "UCJKwaUeUdUz9xYuq0NzWiGg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:46:09Z",
+            "updatedAt": "2026-11-20T06:46:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "eb7cwkat9kCeYXomScH18Pcir6M",
+      "id": "UgwVY-S0NwAtFrWrVAl4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5Rw0PTO8ZaFfSgXaGt0bOwsMhJs",
+          "id": "UgwVY-S0NwAtFrWrVAl4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "bro this is a gta game that doesn't want you to play it like a gta game",
+            "textOriginal": "bro this is a gta game that doesn't want you to play it like a gta game",
+            "authorDisplayName": "@ajblank833",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k_iCWhtexwdVVnCWhDygaCwas843bYm0gSfFN55kMMBww=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ajblank833",
+            "authorChannelId": {
+              "value": "UCxIHi6eXTwvuyYL3GEkwQYQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:46:06Z",
+            "updatedAt": "2026-11-20T06:46:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "s6WHuWABBlbv4BBae_LmwvkYPCQ",
+      "id": "UgwzTelYBFFGikcM88t4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "qhEBZ7eQUPzXSXv6S2151PxzAXI",
+          "id": "UgwzTelYBFFGikcM88t4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "2:27:30 you have your whole stash with you",
+            "textOriginal": "2:27:30 you have your whole stash with you",
+            "authorDisplayName": "@t0ws1fB",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/YtGuqnsF165TWhDCLoLemN7zJ0yFC0VFrg9CWEyZgj7R4cOsz2BsKYTSeabV1cE_RX5_6hzqaQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@t0ws1fB",
+            "authorChannelId": {
+              "value": "UCr08SqbPZFKaVa9fFjNrJGg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:43:33Z",
+            "updatedAt": "2026-11-20T06:43:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "shui3jfXi_nW6MGaQsPeZHQiM_0",
+      "id": "UgxeYK5a8kn7oi8uu2h4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bgPbN8g1Wn7luWRTU606L25iO10",
+          "id": "UgxeYK5a8kn7oi8uu2h4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Jack try first person driving.",
+            "textOriginal": "Jack try first person driving.",
+            "authorDisplayName": "@VulgarBlaze",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/UbTSxa2UbSXCTTsnZLRQg4-qoCaPIEW_rGCVCcF8gekfgeB2GqOsQiVH0e77IoebgkWUKmqH=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@VulgarBlaze",
+            "authorChannelId": {
+              "value": "UCk4elx5ALKlw0-DrHjchm3w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:42:41Z",
+            "updatedAt": "2026-11-20T06:42:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OBWLxdWWCfgIL4xTAv-NQPLqlxs",
+      "id": "UgxXcp6etp0v-RB5etB4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "utjmaxU0n_wd1fLmjVBYZRkzSWc",
+          "id": "UgxXcp6etp0v-RB5etB4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "Florida has it's own bigfoot type creature in the Everglades called Skunk Ape! growing up in southwest florida, there was a ton of stuff about the skunk ape, just like bigfoot out west!! Love that they included him in the grass rivers",
+            "textOriginal": "Florida has it's own bigfoot type creature in the Everglades called Skunk Ape! growing up in southwest florida, there was a ton of stuff about the skunk ape, just like bigfoot out west!! Love that they included him in the grass rivers",
+            "authorDisplayName": "@vd2837",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lsv6u1LfNFal74Uoc8IXFoAZWReykxznFGGjJZDX16oYF2=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vd2837",
+            "authorChannelId": {
+              "value": "UCxR6ELcNTT6P0K3Mw0NIZjg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T06:39:54Z",
+            "updatedAt": "2026-11-20T06:39:54Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "zrCNyZejUCsI0gwGy2yNG1HnkLQ",
+      "id": "UgwoDutPRpJhYZfqjzR4AaABAg",
+      "snippet": {
+        "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+        "videoId": "J18nXpZHyyI",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "DtPJ8U8lP4HlQgiYEjYT-0F6gIc",
+          "id": "UgwoDutPRpJhYZfqjzR4AaABAg",
+          "snippet": {
+            "channelId": "UCYzPXprvl5Y-Sf0g4vX-m6g",
+            "videoId": "J18nXpZHyyI",
+            "textDisplay": "I'm so bummed I can't afford to play this game myself. Hopefully one day. Same thing for the Ocarina remake, but at least Jack is taking his time playing this. I appreciate it ❤",
+            "textOriginal": "I'm so bummed I can't afford to play this game myself. Hopefully one day. Same thing for the Ocarina remake, but at least Jack is taking his time playing this. I appreciate it ❤",
+            "authorDisplayName": "@dahtpropane",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/vAObDD8IKOcXphXyHzRkZYbjYFDyDO1qjDrQ65BKfT9yNZbKmkiswUSldni6LNSgUGPc4zGVJA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@dahtpropane",
+            "authorChannelId": {
+              "value": "UCIp32MGM1Q4G6Ys7obdF0XA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T06:39:29Z",
+            "updatedAt": "2026-11-20T06:39:29Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

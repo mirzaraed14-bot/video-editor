@@ -7,6 +7,7 @@
                  sirius-build = the "Was Oldman A Good Sirius?" finish build (16 Nov 2026)
                  mj-beats, speed-beats = the AW MJ and IShowSpeed beat-mining research sessions (17 Nov 2026)
                  gta-farewell = the AW GTA 5 farewell Short research (17 Nov 2026)
+                 gta6-news, gta6-story = the AW GTA 6 launch-day Shorts research (19 Nov 2026)
                  affanwiz = the AffanWiz research session (Affan's OK 15 Nov 2026: channel listings only, 0 searches)
     <endpoint> : search | videos | channels | commentThreads | playlistItems
 
@@ -43,8 +44,8 @@ CACHE = os.path.join(HERE, "yt_api_cache")
 QUOTA = os.path.join(HERE, "yt_api.QUOTA")
 COST = {"search": 100, "videos": 1, "channels": 1, "commentThreads": 1, "playlistItems": 1}
 SESSIONS = {"hp-cast", "hp-films", "bolt-celeb", "ig-mj", "ig-icons", "ig-sports", "speed", "hub", "affanwiz",
-            "sirius-build", "dad-build", "mj-beats", "speed-beats", "gta-farewell"}  # gta-farewell: the AW GTA 5 farewell Short (Affan 17 Nov), cap 20  # mj-beats / speed-beats: the AW MJ + IShowSpeed research sessions (Affan 17 Nov 2026), default cap 12 each  # dad-build: mj-the-dad-he-never-had overlay sourcing (16 Nov 2026), default cap 12; sirius-build: the Oldman v6 finish (Affan's review 1, 16 Nov), default cap 12
-CAP = {"hub": 20, "ig-mj": 18, "affanwiz": 0, "mj-beats": 42, "speed-beats": 30, "gta-farewell": 20}  # mj-beats/speed-beats 30: Affan's 17 Nov "run the 2nd deep checks ... go on yt and instagram to stress test bits" (Pacific 16 Nov had 24 of 95 used); mj-beats 30 -> 42 on his 17 Nov "fully go all out before we pick a topic for this format" (61 of 95 used)  # ig-mj +6 on 15 Nov ~02:35 for his "go all out" MJ arc, from the idle lanes' unused searches
+            "sirius-build", "dad-build", "mj-beats", "speed-beats", "gta-farewell", "gta6-news", "gta6-story", "mj-short", "hp-short", "aw-gta6-reviews", "aw-travis-ch1"}  # aw-travis-ch1: the AW GTA 6 Travis Scott "BURN" Short v3, continued on the PC from the Mac (Affan 23 Nov), default cap 12  # aw-gta6-reviews: the AW GTA 6 creators'-verdict Short, continued on the PC from the Mac (Affan 23 Nov), default cap 12  # mj-short / hp-short: the AW daily MJ and HP Short sessions (week of 23 Nov 2026, WEEK-PLAN.md), default cap 12 each  # gta-farewell: the AW GTA 5 farewell Short (Affan 17 Nov), cap 20  # mj-beats / speed-beats: the AW MJ + IShowSpeed research sessions (Affan 17 Nov 2026), default cap 12 each  # dad-build: mj-the-dad-he-never-had overlay sourcing (16 Nov 2026), default cap 12; sirius-build: the Oldman v6 finish (Affan's review 1, 16 Nov), default cap 12
+CAP = {"hub": 20, "ig-mj": 18, "affanwiz": 0, "mj-beats": 42, "speed-beats": 30, "gta-farewell": 20, "gta6-news": 30, "gta6-story": 30}  # gta6-news / gta6-story: the two AW GTA 6 launch-day Short research sessions (Affan 19 Nov: "two shorts today ... deploy research sessions for each"), 30 each; Pacific 19 Nov had 0 of 95 used  # mj-beats/speed-beats 30: Affan's 17 Nov "run the 2nd deep checks ... go on yt and instagram to stress test bits" (Pacific 16 Nov had 24 of 95 used); mj-beats 30 -> 42 on his 17 Nov "fully go all out before we pick a topic for this format" (61 of 95 used)  # ig-mj +6 on 15 Nov ~02:35 for his "go all out" MJ arc, from the idle lanes' unused searches
 # affanwiz: the AffanWiz research session (creator-shorts). Affan OK'd this key for it on 15 Nov 2026 for channel
 # listings only, so its search cap is 0: the 100 searches a day stay with the AW sessions.
 DEFAULT_CAP = 12

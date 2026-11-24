@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "XsxQvROM2Y4wykbM5hEjZwpqPBY",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "s2q_PR8G3pe5T6IXxOhd5DJYUxc",
+      "id": "UCldnLLYMXEISsAtGEV7UPzQ",
+      "snippet": {
+        "title": "Sanji Nai-Chien",
+        "description": "",
+        "customUrl": "@sanji_chien",
+        "publishedAt": "2026-04-10T09:02:53.501916Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/F0b-_TFKoTqvkHzPaHfp_Glr96yC25fmzlWSpCIK_4GGFSOTOrRWsZYF2wHhw5hkCS1Vlrp1wA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/F0b-_TFKoTqvkHzPaHfp_Glr96yC25fmzlWSpCIK_4GGFSOTOrRWsZYF2wHhw5hkCS1Vlrp1wA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/F0b-_TFKoTqvkHzPaHfp_Glr96yC25fmzlWSpCIK_4GGFSOTOrRWsZYF2wHhw5hkCS1Vlrp1wA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Sanji Nai-Chien",
+          "description": ""
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "7288689",
+        "subscriberCount": "98200",
+        "hiddenSubscriberCount": false,
+        "videoCount": "173"
+      }
+    }
+  ]
+}

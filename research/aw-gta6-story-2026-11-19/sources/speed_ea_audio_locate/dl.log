@@ -1,0 +1,36 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=qSyo5d-dVzA
+[youtube] qSyo5d-dVzA: Downloading webpage
+[youtube] qSyo5d-dVzA: Downloading tv samsung player API JSON
+[youtube] qSyo5d-dVzA: Downloading visionos player API JSON
+[youtube] qSyo5d-dVzA: Downloading player 983e9c18-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+[info] qSyo5d-dVzA: Downloading 1 format(s): 140
+[info] qSyo5d-dVzA: Downloading 1 time ranges: 37200.0-42600.0
+[download] Destination: research\aw-gta6-story-2026-11-19\sources\speed_ea_audio_locate\qSyo5d-dVzA_102000-115000.m4a
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'https://rr5---sn-jtcxg-3ipl.googlevideo.com/videoplayback?expire=1795121843&ei=Uw7_aquiOa7Ki9oPitXS2QQ&ip=103.244.175.64&id=qSyo5d-dVzA.2&itag=140&aitags=140&source=yt_live_broadcast&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&hcs=sd%2Csd&met=1795100243%2C&mh=jk&mm=44%2C29&mn=sn-jtcxg-3ipl%2Csn-hgn7yn7s&ms=lva%2Crdu&mv=m&mvi=5&pl=25&rmhost=rr6---sn-jtcxg-3ipl.googlevideo.com%2C&rms=lva%2Clva&smhost=rr5---sn-jtcxg-3ipee.googlevideo.com%2Crr3---sn-ojhgn5-5j.googlevideo.com&pcm2=no&initcwndbps=615000&defrag=1&bui=AZFAFb_0aIH8pLzT22hECkeFc64pV7Lp6YTNAkJvd3uD-2HI_h5c7n6MoMPWd26D5Se3alz6IQOgsEad&vprv=1&ufph=1&live=1&hang=1&noclen=1&svpuc=1&mime=audio%2Fmp4&ns=XZ7TcYZAAlheV0JNihtBeHQa&rqh=1&reg=0&gir=yes&mt=1795099747&fvip=3&epbp=1&keepalive=yes&lmw=1&fexp=51565115%2C52240176&c=TVHTML5&sefc=1&n=PS3MKwZiNSdoqw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Cdefrag%2Cbui%2Cvprv%2Cufph%2Clive%2Chang%2Cnoclen%2Csvpuc%2Cmime%2Cns%2Crqh%2Creg%2Cgir&sig=AE0s2JYwRgIhAPLoTKNxUiL1M1UXxbPMUBo2dPyKtidWWR5a1AJRdwcXAiEArt2ZLP-0Q5kPSwI5SF8fNvJ81lor8GGb8BIg1T2F86s%3D&lsparams=hcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crmhost%2Crms%2Csmhost%2Cinitcwndbps&lsig=APaTxxMwRQIgaNdUDjk9TbidHwKNaGF_sueHuuGusm6DLm2u1UvcZaYCIQDHfTkOvFGBcpSeyinIFdvX6yk9rCi6rPfXljG0K5Pzfg%3D%3D':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+  Duration: 23:43:17.98, start: 85395.980771, bitrate: N/A
+  Stream #0:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s, start 85395.980771 (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+[ipod @ 0000029dd61bf480] Warning, extension is not .m4a nor .m4v Quicktime/Ipod might not play the file
+Output #0, ipod, to 'file:research\aw-gta6-story-2026-11-19\sources\speed_ea_audio_locate\qSyo5d-dVzA_102000-115000.m4a.part':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf63.1.101
+  Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 127 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc.
+Press [q] to stop, [?] for help
+[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0000029dd6114280] Error during demuxing: I/O error
+[out#0/ipod @ 0000029dd7d78bc0] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 227.520436%
+size=       1KiB time=-10:19:58.00 bitrate=N/A speed=N/A elapsed=0:00:00.02    
+[download] 100% of    1.17KiB in 00:00:00 at 2.83KiB/s
+rc=0

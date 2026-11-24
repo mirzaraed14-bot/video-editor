@@ -1,8 +1,11 @@
 ---
 name: feedback-onyx-reactions-v2-standard
-description: SUPERSEDED IN PART by v3 (2026-11-10, projects/_onyx-batch7-2026-11/REACTIONS-V3.md). Affan 2026-11-02 Tella review of the batch-6 reactions: voice peaks -6 dBFS, lo-fi/old-school hip-hop bed ~8 dB under, varied premium SFX per MG, show his screen when he points, play the prospect's best moment, no insulting hooks, captions below lips, a reviewer that compares to viral Shorts
+description: "SUPERSEDED IN PART by v3 (2026-11-10, projects/_onyx-batch7-2026-11/REACTIONS-V3.md). Affan 2026-11-02 Tella review of the batch-6 reactions: voice peaks -6 dBFS, lo-fi/old-school hip-hop bed ~8 dB under, varied premium SFX per MG, show his screen when he points, play the prospect's best moment, no insulting hooks, captions below lips, a reviewer that compares to viral Shorts"
 metadata:
+  node_type: memory
   type: feedback
+  originSessionId: 4f6ff510-e01c-4ae4-a5c4-8388b194173e
+  modified: 2026-11-23T03:20:20.477Z
 ---
 
 Every Onyx reaction is built to the v2 standard in `projects/_onyx-batch6-2026-10/REACTIONS-V2.md`: voice peak-normalized to −6 dBFS constant;
@@ -28,3 +31,6 @@ a time, never a frame edge; never cut a fact midway, keep setup lines, last take
 reaction (−6/−9/−8/−6 dB), so the music he actually ships sits ≈ 19 LU under his voice (target 19, min 16, max 25), not 12. The ABW10
 template's Mix fader was −5 dB (exports 5 dB under our sim); ABW11's template (from his "Sequence 02") reads 0 dB. He also trimmed a
 trailing clause before a graphic and a whole stat aside: end lines on their point, cut such asides as one unit. Amendment in REACTIONS-V3.md.
+
+**Lean (Affan 2026-11-23: "Samples can be heavy using sonnet as execution, reactions have to lean down"):** every reaction is built by `presets/youtube-shorts/onyx-samples/REACTIONS-LEAN.md` (one fresh Sonnet session, Opus only for the cut and the final QC, target 0.8 % of the week, cost logged in JOBS.md); V3 stays the sound spec.
+Affan 2026-11-23 (via the hub), "Yes, all three": the kit pilot (cap $60), no per-reaction catalog pass, no Fable advisor on reactions. Samples keep the full process (Sonnet builds, Opus QC, Fable advisor).

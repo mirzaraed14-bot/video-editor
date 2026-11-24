@@ -20,6 +20,9 @@ premium-SFX palette (`memory/feedback-premium-sfx.md`) and the FX catalogue (`re
 are now allowed sources of IDEAS — re-timed to this channel's fast pace, never its slow AW pacing. Log every new
 treatment and his verdict in `…-facecam/LESSONS.md`.
 
+## 0b. 🔒 FACE-CAM REACTION / TALK VIDEOS = the KSI+ style (Affan, 2026-11-23)
+A video where he WATCHES clips and reacts or talks off the cuff (first: `gta6-npc-organic`) is edited in the KSI+ style, not his own hand: **`REACTION-STYLE.md` (this folder) is the spec and wins over § 0 for that format only.** Scripted VO keeps § 0 + CREATOR-HAND; his play videos keep `FUNNY-MOMENTS-STYLE.md`.
+
 ## 1. The channel
 - **Affan Afterhours** — https://www.youtube.com/@AffanAfterhours · GTA 6 commentary, the creator on camera.
 - 14 long-forms + ~43 Shorts (table: `research/afterhours-channel-audit/channel-table.txt`). Long-form peak was

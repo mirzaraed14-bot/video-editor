@@ -3,6 +3,7 @@
 Every Onyx job, newest state first. Standing rules are in `LESSONS.md` § "Standing rules" and `PLAYBOOK.md`, not here. Each batch's own tracker holds the detail; this page says where to look.
 
 ## ▶ STATUS 2026-11-10: resume here
+- **2026-11-23, week of 23-30 Nov (`WEEK-PLAN.md` at the repo root, Affan via the hub):** 25 cold emails a day (non-negotiable; the daily task at 16:00 PKT, split 9/8/8 across the finders) and 30 samples a week, "efficient, not fancy": one look, one fresh Sonnet session per prospect, Opus picks the moment and does QC, Fable only at the lock and the final. **Log each job's actual cost in % in this file.** Yeses on 11-23: Chris Distefano (chrisdcomedy) and Your World Within (Eddie Pinero) were DROPPED by Affan on 11-23 (Chris: car-trunk set fails the studio check; no thank-you sent; both marked "Yes - NOT A FIT" in the tracker); Barbell Logic is IN BUILD from 2026-11-23 (Option A, YouTube look, `projects/barbell-logic-bench-shoulders/`). The waiting-for-a-sample queue lives ONLY in `my-businesses/onyx-show-notes.md` § "Waiting for a sample".
 - **2026-11-17 21:50 PST, Barbell Logic (Matt Reynolds) REVIVED by Affan ("make the short for barbell logic", overrides the 11-12 drop):** job `projects/barbell-logic-bench-shoulders/`; SEQUENCE written, WAITING for his OK, nothing built. Option A (recommended) = the permitted "Want a bigger bench?" rebuilt with Barbell Logic's leg-drive video (~46 s), A2 = the Short alone, B = the staged seniors reroute. He must pick the option and the look(s). Owner: `projects/barbell-logic-bench-shoulders/BRIEF.md` ▶ STATUS + `SEQUENCE.md`.
 - **2026-11-15 08:40 PKT, batches 8 + 9 (7 samples):** ALL on Drive in `G:\My Drive\Onyx Batch 15 Nov\`: Affan's 6 reactions (Prophecy Watchers' not recorded yet) + the 9 clips with his songs (music +3 dB after his listen, 11 LU under the voice; Lunch Table 14; Ready State's voice denoised; Prophecy no music). Prophecy's reaction is on Drive too (11-15). **All 7 approval emails + a Josh Trent follow-up are DRAFTED, not sent** (`projects/_onyx-batch9-2026-11/EMAIL-DRAFTS.md`); the 16 files are shared (11-15, checked logged out); the stale R1 drafts are discarded; before sending: pick one Josh draft. Owner: `projects/_onyx-batch9-2026-11/BATCH.md` ▶ STATUS.
 Live work. Each line names the file that owns the current state, so read that file rather than trusting this summary.
@@ -13,6 +14,7 @@ Live work. Each line names the file that owns the current state, so read that fi
 - **Rise Above, the death row guard:** v4 approved and BUILT 2026-11-12 (YouTube look, 54 s, `projects/riseabove-death-row-guard/`); Kevin must confirm the Steve Henley name. Owner: `projects/_onyx-batch9-2026-11/BATCH.md`.
 - **High Performance + Ron Spomer samples:** being built by another session since 11-09.
 - **Dropped by him 2026-11-12 ("drop both"):** Remnant Radio and Barbell Logic, no sample. Unanswered yes: Mulligan Brothers asked 11-05 "Could you link the channel?". That reply belongs to the email session.
+- **Organic @affancuts reels, posting check 2026-11-17 (his Reels page, by the continuation session):** 4 of 6 POSTED: Short 1 "Full episodes won't save you" 11-04, Short 5 "One Short, two variants" 11-08, Short 4 "Stop clip farming" 11-11, Short 6 "Titles, not statements" 11-15. NOT posted: Short 2 "Two viral Shorts beat ten" and Short 3 "Instagram builds the person"; their header files are ready in Exports (`affancuts-two-viral-shorts-beat-ten-ig.final.header.mp4`, `affancuts-instagram-builds-the-person-ig.final.header.mp4`). Open on those two: Short 2's made-up view counts + caption "reviews" + head jump 45 px at 3.19 s; Short 3 head jump 31 px at 14.18 s; no music versions exist in Exports.
 - **Organic @affancuts reels:** all six have his profile header and hook (11-08) and cleaned voice mixes. Next: his music track per reel, laid on the CLEANED mixes (`X:\Claude Projects\onyx-staging\organic-clean\`). Still open: is C1438 the 7th video, and does Short 5 need a real like-count screenshot?
 
 ## Where things live
@@ -24,9 +26,18 @@ Live work. Each line names the file that owns the current state, so read that fi
 | IG neon-window look (used for both looks since 10-24) | `presets/instagram/neon-window/` |
 | Prospect tracker, emails | `X:\Claude Projects\Hormozi Business\my-businesses\onyx-us-prospects.csv`, `onyx-email-log.csv`, `onyx-email-formats.md` |
 | Moment selection engine | `X:\Claude Projects\Hormozi Business\my-businesses\onyx-shorts-engine\` + `projects/_onyx-batch3-2026-10/VIRAL-BAR.md` |
-| Reaction standard | `projects/_onyx-batch6-2026-10/REACTIONS-V2.md` |
+| Reaction standard | `REACTIONS-LEAN.md` (this folder, since 2026-11-23: the build recipe, one Sonnet session, target 0.8 %); it keeps `projects/_onyx-batch7-2026-11/REACTIONS-V3.md` (+ V3.1) as the sound spec |
 | Songs on samples | `projects/_onyx-batch5-2026-10/samples_music.py` (bed 14 LU under the voice) |
 | Shared download / GPU locks | `bash projects/_onyx-batch2-2026-10/lock.sh <youtube\|gpu> <cmd>` |
+
+## Cost log
+One row per finished job, from `python workflows/session-cost.py --job <job> --quiet` (% at $22 per %; reads high, see `REACTIONS-LEAN.md` § Cost log).
+
+| Date | Job | Kind | Length | % of week | $ | Gate / rounds | Note |
+|---|---|---|---|---|---|---|---|
+| 2026-11-23 | kit pilot, part 1 (freeze) | reaction kit | n/a | 0.18 | 3.87 | dry runs + gate.sh on copies of HPP, no renders | Sonnet only, no advisor; kit at kit/reactions/KIT.md; part 2 = the first reaction built with it ($60 cap covers both) |
+| 2026-11-23 | barbell-logic-bench-shoulders | sample (YouTube look, Option A) | 0:45 | 0.47 | 10.24 | Opus QC 1 round (frame-0 hook fix, overlay-only re-run) | build only: Sonnet $7.63 + Fable advisor $2.61, 2h40m + 6 min fix; excludes the 11-17 sequence research session and the Opus QC turns |
+| 2026-11-14 | batch 9, 7 reactions (baseline) | reaction (old way) | 2:44-2:56 | 33.7 total, 4.8 each | 741 | 1-4 fix rounds, 1-2 reviews each | measured afterwards from session 81bec4af, for comparison |
 
 ## Job log
 (Moved out of memory 2026-11-10. Dates are when it happened.)

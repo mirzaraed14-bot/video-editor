@@ -3,6 +3,10 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-24: a whole English sentence can vanish from every Urdu-side pass (ABW11 Sequence 23)
+- **49.4-53.9 s was English** ("if you have these kinds of opinions, you're going to be treated like this, so it's better not to have them"). The ur pass TRANSLATED it into Urdu (اعتقادیں, لہذا), WhisperX garbled it, and the English listener (codeswitch) returned NOTHING for those 4.5 s; only the en window and the hi transliteration ("if you hai this kind") kept it. When the codeswitch words have a hole inside continuous speech, read the en window there before writing.
+- **A slowly drawn-out list fails HANGING** ("movies games shows", 0.72 s/word): check the envelope; if nothing is missing, merge the words into the neighbouring lines instead of probing.
+
 ## 2026-11-18: digits fail the HANGING check (ABW11 Sequence 13, Urdu mix)
 - **"8.1 million views" FAILED caption_qa as HANGING** (2.4 s under 3 words): the digits pack "eight point one" into one word, so the check counts too few. Joined it with the next words ("8.1 million views 30 days") instead of hunting for dropped speech; the English listener had all of it.
 - **The v2 two-layer geometry (Urdu 48 @ y1346, caps @ y1420) fits a two-framing reel** (Scale 100 + a punch-in) without change; re-measure the Urdu max descent per job (28 px on both Seq 10 and 13).

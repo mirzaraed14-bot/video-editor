@@ -368,3 +368,21 @@ Read offline by the CA-015 session from a copy of his saved ABW10.prproj (2026-1
   (CA-009, CA-010 and now CA-015: the placed A1 chain is a draft he always replaces); 3 cut zooms removed (0:56.6, 4:48.7, 8:37.3) and razors healed
   (V1 444 → 402); graphics, SFX, beds and length untouched. → Lesson: the drop-outs follow the zooms, so after his zoom edits the beds need re-cutting
   by section (`work/place_music.py`) — offered, not done without his word.
+
+
+## 2026-11-17 · CA-015 thumbnail: his rounds F02 → v7 (record: `creator-shorts/FEEDBACK.md` § 2026-11-17, `CA-015-THUMBNAIL-F02-STRESS-TEST-2026-11-17.md`)
+- **A thumbnail is a REMAKE of a proven format** (his rule, memory `feedback-thumbnails-proven-formats`): contenders first (7 + 2 near misses
+  from 96 channels / 158 outliers), he picked F02 "whiteboard plan behind you" (Daniel Pink's "PLAN 2026 IN 26 MINUTES", Q10H5RA3eCA).
+- **His face is his REAL recording frame, never an AI-regenerated one** ("im telling you right now i look ass i look completely fake" on a Higgsfield
+  harmonize render). The scene is built around him; the object (board, case, hand) is generated.
+- **Face finish, learned in four rounds:** v4 = Higgsfield 4K upscale + key-light grade + micro-contrast → "looks AI asf"; v5/v6 = raw 1080p frame,
+  lit only → "blurred". **v7 (APPROVED, "Yes, use v7") = the Higgsfield 4K upscale, lit with ONE linear exposure lift (ev 0.7), NO sharpening / micro-contrast /
+  clarity / S-curve on the face**, and any generated body or beard band at the SAME sharpness as the face. One sharpness across face and neck.
+- **His first F02 final was "the worst thumbnail I've ever seen"** (text-heavy, too long to build): the board wants ONE hero object (the physical GTA 6 disc
+  box stuck on it, labels stemming from it) and big bold labels each in its own colour, not black. He overrode "no key art / no title words" for this
+  thumbnail by his own words; the default rules still stand elsewhere. Keep boards simple: remove headline text first.
+- **Faces fill the frame:** v3 "face and board much more zoomed in, fill the free space".
+- **Cost:** 102.75 Higgsfield credits (F02 83.25 + v3-v7 19.5; balance 858.75 → 756). He OK'd Higgsfield for this thumbnail; log every spend.
+- **Rater panels (AI, blind) disagreed with him on the face:** raters preferred layouts, he judged by feel on his own face. His read wins on his own face.
+- Final: `creator-shorts/CA-015-THUMBNAIL-v7.png` / `.jpg`; build files `creator-shorts/CA-015-thumbs/build/`. Not upload-tested (Test & Compare is the real answer).
+

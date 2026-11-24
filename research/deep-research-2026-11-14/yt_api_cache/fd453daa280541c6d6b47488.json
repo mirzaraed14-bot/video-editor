@@ -1,0 +1,702 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "tExyAYh2HOG0jbOxKhEz4T1HmTk",
+  "nextPageToken": "CA8QAA",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 15
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ShguyBiaBVn51KSoYfHqzeIawzY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Sgg1GnuJ9n0"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T15:35:50Z",
+        "channelId": "UC36MGPfPwOWafAXauiV4LdA",
+        "title": "GTA 6 Physical Edition Unboxing",
+        "description": "Vlog channel: http://www.youtube.com/c/trevandchels Main Instagram: http://www.instagram.com/tmartn Gaming Instagram: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Sgg1GnuJ9n0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Sgg1GnuJ9n0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Sgg1GnuJ9n0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Sgg1GnuJ9n0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Sgg1GnuJ9n0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/Sgg1GnuJ9n0/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "TmarTn2",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T15:35:50Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ed7CTCethbHYeCDeQwyj2-3uM1w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "13tPlACFImA"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-16T18:23:28Z",
+        "channelId": "UCheoCqHDwPcfS9Jrgz8siQw",
+        "title": "GTA VI Unboxing | Full Details!! ",
+        "description": "In this video we are going to unbox GTA VI physical copy and the latest updates about the game before the paly. when you can ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/13tPlACFImA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/13tPlACFImA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/13tPlACFImA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/13tPlACFImA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/13tPlACFImA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/13tPlACFImA/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "VideoWaliSarkar",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-16T18:23:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "P68jBGy0k1XkMflFYZ5r1Shh6nE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "k_s9zYaor2Y"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T11:04:20Z",
+        "channelId": "UCzVXdulvpgEoI8yuFMmhxJw",
+        "title": "FINALLYYYY! GTA 6 is Here - Raw Unboxing, Game Code, Poster and More 🔥",
+        "description": "Catch GTA Assassin live on Kick! Follow for livestreams https://kick.com/thegtaassassin.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/k_s9zYaor2Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/k_s9zYaor2Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/k_s9zYaor2Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/k_s9zYaor2Y/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/k_s9zYaor2Y/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "qhd": {
+            "url": "https://i.ytimg.com/vi/k_s9zYaor2Y/qhddefault.jpg",
+            "width": 2560,
+            "height": 1440
+          }
+        },
+        "channelTitle": "The GTA Assassin",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T11:04:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pri8z0Jz20MPs2ov5P85_5bZ-LM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Zc9rjd-SgaA"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T11:34:19Z",
+        "channelId": "UCutTRCC3myxrUV-ivyU0Cfw",
+        "title": "I Finally Got the GTA 6 Khaaali Dabbaa | Unboxing | #gaminghindi #gtaindia #gta6india",
+        "description": "Holding GTA 6 physical copy for the First Time!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Zc9rjd-SgaA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Zc9rjd-SgaA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Zc9rjd-SgaA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Zc9rjd-SgaA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Zc9rjd-SgaA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/Zc9rjd-SgaA/sardefault.jpg",
+            "width": 1080,
+            "height": 1920
+          }
+        },
+        "channelTitle": "Daman Decrypts",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T11:34:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kp1pO_hLhuhZntTkEd3Ihdio4wU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kwp7cnvDdSo"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-13T00:43:26Z",
+        "channelId": "UCHCTR_rWomizZjS7TFYYdzw",
+        "title": "Unboxing GTA 6 Physical Edition!",
+        "description": "Ive waited 10 years for this moment . . • Community Discord Server: https://discord.gg/hKsZ2bD5RT • My Trophy Progress: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kwp7cnvDdSo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kwp7cnvDdSo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kwp7cnvDdSo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kwp7cnvDdSo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kwp7cnvDdSo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Dyllie",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-13T00:43:26Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2jYT46K2ZHXYWjx-nlLVIZk6l5k",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "3PKfG3bYV8Y"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-13T14:23:15Z",
+        "channelId": "UC0oI44ZUVCqq4meNOOaKPTQ",
+        "title": "Unboxing GTA 6 on PS5",
+        "description": "Unboxing the physical GTA VI game on PS5. Did you go digital or physical? Poster included map is not.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3PKfG3bYV8Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3PKfG3bYV8Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3PKfG3bYV8Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/3PKfG3bYV8Y/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/3PKfG3bYV8Y/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SpawnPoiint",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-13T14:23:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ZjvaB1a92EocJxl5YJStwYYchEo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "nH3_vQP7res"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-23T12:03:20Z",
+        "channelId": "UCpOD6y84n7fk30hjsTlec1w",
+        "title": "GTA 6 Physical Edition Buying &amp; Unboxing",
+        "description": "AMBRIT TV GAMES 09391035710 _________Gears I'm Using_________ Camera https://aip.urlgeni.us/https://amzn.to/3Bp6Tlp ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nH3_vQP7res/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nH3_vQP7res/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nH3_vQP7res/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nH3_vQP7res/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nH3_vQP7res/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/nH3_vQP7res/sardefault.jpg",
+            "width": 941,
+            "height": 1672
+          }
+        },
+        "channelTitle": "Tech Heist",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-23T12:03:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-1DCrcoT9PxSS927Bp1ebtCb0Lo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dwyiMjmCG8U"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T15:38:53Z",
+        "channelId": "UCdoDYkupTElV62K7ttA_E4w",
+        "title": "GTA 6 UNBOXING 😍 #Shorts",
+        "description": "TechBar #India #Hindi #gta #gta5 #gta6 Amazon Buy Link - https://amzn.to/3KufrR2 Follow TechBar Facebook: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dwyiMjmCG8U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dwyiMjmCG8U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dwyiMjmCG8U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dwyiMjmCG8U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dwyiMjmCG8U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "TechBar",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T15:38:53Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "lSyOdp1qGP2BMHQWIcCh3kSXbw0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5KUUiZJprc0"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T17:00:01Z",
+        "channelId": "UCoIXnB865l9Ex9zs4OIXTdQ",
+        "title": "Grand Theft Auto 6 Unboxing",
+        "description": "Grand Theft Auto 6 is out next week, but retail copies are going out to prepare for launch. I picked up a physical copy of the game ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5KUUiZJprc0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5KUUiZJprc0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5KUUiZJprc0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5KUUiZJprc0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5KUUiZJprc0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/5KUUiZJprc0/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "Spawn Wave",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T17:00:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "F14gniFFUk6obXT30vQPD1vs60Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mNdDX5KDtoM"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-11T03:03:15Z",
+        "channelId": "UCWoX4lLZ-OMlBbuCmL2dpLA",
+        "title": "GRAND THEFT AUTO 6 - GTA 6 - PS5 | EARLY Unboxing | Physical Code in Box Edition | 4K",
+        "description": "Unboxing the physical CODE-IN-BOX edition of GRAND THEFT AUTO VI (GTA 6) for PlayStation 5! Take a close look at the cover, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mNdDX5KDtoM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mNdDX5KDtoM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mNdDX5KDtoM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/mNdDX5KDtoM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/mNdDX5KDtoM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "GameResource",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-11T03:03:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "AFiIZcGIeFAB9MzlsLK_frDuchg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "b_kWhBLe0ZA"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T16:34:39Z",
+        "channelId": "UC36MGPfPwOWafAXauiV4LdA",
+        "title": "Unboxing GTA 6 Physical Version 📦",
+        "description": "Unboxing the PlayStation 5 and Xbox Series X physical cases of GTA 6! #tmartn2 #gta6 #gtavi #grandtheftauto6 #rockstargames.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/b_kWhBLe0ZA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/b_kWhBLe0ZA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/b_kWhBLe0ZA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/b_kWhBLe0ZA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/b_kWhBLe0ZA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "TmarTn2",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T16:34:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "z8L4HqWepo_geFt4a39K_W3q77c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "OBDA4OGi87w"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-16T15:27:55Z",
+        "channelId": "UCODr1kn9Owwev2j05OHEvyw",
+        "title": "I Bought GTA 6&#39;s Physical Edition… But There&#39;s NO Disc?",
+        "description": "Follow Us on Instagram: https://www.instagram.com/venomgaming3101 IEM: https://link.amazon/B08qjCwr4 Gaming PC Specs   ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OBDA4OGi87w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OBDA4OGi87w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OBDA4OGi87w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/OBDA4OGi87w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/OBDA4OGi87w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Venom Gaming",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-16T15:27:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zrSY-S6VTUNYKl5hINe7ULJv8aU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pCuMg9WqQHU"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-12T20:58:10Z",
+        "channelId": "UCdz4-IpA6MVK_DMPXG-R2nA",
+        "title": "GTA 6 physical copy unboxing",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pCuMg9WqQHU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pCuMg9WqQHU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pCuMg9WqQHU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pCuMg9WqQHU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pCuMg9WqQHU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Shredded Otaku",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-12T20:58:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "0acdRUiLZp-nMtxMuNv1g2RDVdo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "V_kIYM-2-Ow"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-11T04:30:27Z",
+        "channelId": "UCD94sX0lRpEOMZnwnT0x5AA",
+        "title": "GTA 6 Physical Edition Unboxing! What&#39;s Inside the Box? 👀",
+        "description": "What if GTA 6 came with a physical Collector's Edition for PS5? Well, I decided to make one myself! In this video, we're ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/V_kIYM-2-Ow/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/V_kIYM-2-Ow/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/V_kIYM-2-Ow/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/V_kIYM-2-Ow/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/V_kIYM-2-Ow/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Technology Hell",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-11T04:30:27Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "5tRZusKBtcqhJVU0FfCK-soVdrI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "CipvooIPrSk"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-20T17:23:30Z",
+        "channelId": "UC0oI44ZUVCqq4meNOOaKPTQ",
+        "title": "Unboxing the GTA 6 Collector’s Edition 🔥",
+        "description": "It's here, unboxing the limited edition GTA 6 collectors Edition. Launched on PS5 and XBOX.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CipvooIPrSk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CipvooIPrSk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CipvooIPrSk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/CipvooIPrSk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/CipvooIPrSk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SpawnPoiint",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-20T17:23:30Z"
+      }
+    }
+  ]
+}

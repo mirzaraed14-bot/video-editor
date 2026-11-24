@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "XDs1SZxB7UY0zJL2ZM2ZKc5CWXs",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "KVWr8lF58j6qJbDxuABI-Roj4gQ",
+      "id": "yr7kGfpv-JU",
+      "contentDetails": {
+        "duration": "PT35S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3871605",
+        "likeCount": "156413",
+        "favoriteCount": "0",
+        "commentCount": "978"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "KHg2aCuTotzV6JM-UFxvfshRito",
+      "id": "b1LLRvwu2F8",
+      "contentDetails": {
+        "duration": "PT14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "regionRestriction": {
+          "blocked": [
+            "RU"
+          ]
+        },
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "15062946",
+        "likeCount": "468670",
+        "favoriteCount": "0",
+        "commentCount": "6202"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 2
+  }
+}

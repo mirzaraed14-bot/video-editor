@@ -720,3 +720,119 @@ First delivery approved as it was; nothing changed after delivery. One approval,
   replaces the 10 Nov build-on-defaults rule (written after AI Ports) for sequences. -> change: EDITOR.md § 3b, the
   JOBS.md checklist step 4, and the memory files `feedback-build-dont-block-on-questions` /
   `feedback-one-session-per-video` / `project-gta-documentary-channel`.
+
+- **2026-11-18, GTA 6 Video A (streams):** the script said IGN's footage did not show heavy weapons taking limbs off; it does (2:12:10.5, 2:12:31.25). Cause: a thumbnail frame log's TOO SMALL was read as "absent". Change: every negative claim ("isn't in the footage") is checked at full resolution frame by frame before a script ships, or worded "I couldn't find it". File: memory feedback-absence-claims-full-res; VIDEO-A-PICKUP-ONE-LINE.md.
+
+- **2026-11-19, GTA 28 (Video A, the first faceless long-form):** the VO assembly map said Rec 2 held every section title; the transcripts showed the titles were in Rec 1 (3-6 inline, 1-2 as pickups after an aside to Claude) and Rec 2 held the IGN fix, the "Seven things" line, the jobs beat and a conclusion. -> change: an edit session transcribes BOTH recordings and reads them whole before trusting any assembly map; the map is a hypothesis about the recording, not a fact. -> file: `projects/gta6-everything-new/RUN.md` § VO assembly.
+- **2026-11-19, GTA 28:** with a numbered spoken title ("Number six, your car…") an extra beat recorded later goes AFTER the last spoken number (here the jobs beat became 7/7), so the voice and the on-screen counter never disagree. -> file: RUN.md.
+- **2026-11-19, GTA 28 review (his words: "a lot of retakes that you included… failed takes are still there"):** whole-phrase ASR (WhisperX, per-burst faster-whisper AND the per-segment re-check) collapses a restart into one clean line, so 13 false starts shipped inside kept segments ("vehicles / vehicles in your neighborhood", "I described this system from the preview / I described this system…", "Extremely violent behavior… / extremely violent behavior…"). -> change: after the cut, split EVERY kept segment at each quiet run >= 0.12 s and transcribe each piece on its own (`projects/gta6-everything-new/work/cut/subphrase.py`), flag any piece whose first words repeat in the next piece, and cut the earlier one. -> file: this LESSONS + lab-notes 2026-11-19.
+- **2026-11-19, GTA 28 review ("a lot of awkward silence between sentences… majority of the silences need to be removed… I like intentional pauses here and there"):** for a faceless VO the house 0.65 s dead-air line is far too loose. -> change: pauses capped at 0.30 s after a sentence and 0.16 s mid-sentence (never lengthened); section turns keep the 0.2 s colour bars. VO went 8:55.6 -> 8:31.6 (`work/cut/tighten.py`). -> a PLAYBOOK number for faceless VO jobs.
+- **2026-11-19, GTA 28 review ("not necessary to blur the face cams… label each streamer… no need to blur the face cam"):** streamer face cams stay visible, each labelled with the streamer's name on the cam ("xQc · Twitch" on the bottom edge of his cam); chat and viewer counts stay blurred (names + profanity). Overrides the brief's "never show a streamer's face". -> file: memory `feedback-streamer-facecams-labelled`.
+- **2026-11-19, GTA 28 thumbnail (relayed by the thumbnail session):** for GTA/gaming videos, copy thumbnail formats from the GAMING niche, never other niches (the cross-niche sheet was archived); he then named his own concept and it was built. -> file: memory `feedback-thumbnails-proven-formats`.
+- **2026-11-19, GTA 29 (Bigfoot Secrets) review: "I can't trust you".** With one YouTube search he found three eggs the script lacked: the Kraken, Jason's UFO abduction and iShowSpeed's Red Hulk (478K in 4 h). Our own watcher had logged all three before he recorded at 17:03. The script research never read the watcher; its METHOD banned "YouTube requests of any kind" (the block is on yt-dlp only), so it saw only Twitch VODs and articles. The hub forwarded "YouTube blocked" without cross-checking the script against the watcher. -> change: a hard TOPIC GATE on every egg / secrets / list script, before the ready-to-record ping and again before the edit (all GTA 6 titles in the watcher store, clustered and ranked, each topic marked IN or OUT, a big missing topic blocks recording); the METHOD YouTube rule corrected; iShowSpeed added to the watcher's watchlist. -> files: `X:\Claude Projects\GTA 6\research\vo-slate-2026-11-19\METHOD.md`, memory `feedback-live-research-until-recording`, `GTA 6\watcher\watchlist.txt`.
+- **2026-11-19, GTA 29 (faceless VO #2):** his saved Video A showed what our v2 still got wrong: he removed 5.5 s more at 16 spots (gaps that sat inside "speech" because breaths read above the -41 dB line; 4 orphan words) and swapped A1 for his own Enhance Speech bounce at +5 dB; he kept every graphic, SFX and bed. -> change: pauses are measured word end -> word start with breaths counted as pause (VOICED -40 dB), and the cut is gated on the ASSEMBLED file against his shipped distribution (median 0.15 s, p90 0.28 s, max ~0.45 s). -> file: `projects/gta6-bigfoot-secrets/NOTES-video-a.md`, `work/cut/assemble.py`.
+- **2026-11-19, GTA 29:** his asides to Claude inside a VO are instructions, not just lines to cut: "use footage of the actual gameplay where they say it instead of me" turned 16 acted lines into game-footage holds. -> change: read every aside verbatim into RUN.md before planning the picture.
+- **2026-11-19, GTA 29:** a truck livery in a streamer clip can carry a political slogan on the door AND a hood decal that reads at 1:1 only in the last second of a shot -> change: sticker checks are done on full-size frames of the RENDERED master, every 0.4 s, before placement (a 960 px sheet hid the hood text). -> file: `work/plan_s4_7.py` (bathtub shots).
+- **2026-11-20, GTA 29:** he read the PICKUPS draft with [bracketed] unverified words, not the final, minutes after it was sent -> change: never send a draft with bracketed claims as a PDF to read; send only lines that are final, or nothing.
+- **2026-11-20, GTA 29:** his edits on our sequence are data: read back BY NAME before any rebuild (two ripple cuts found, one carried into v2); build a revision on a NEW sequence, never over his. -> file: `projects/gta6-bigfoot-secrets/RUN.md`.
+
+## 2026-11-20 · GTA 29 POSTED — learn pass on the uploaded cut (edit session)
+Posted 20 Nov 03:52 PKT as "11 BIGGEST Easter Eggs Of GTA 6 (This Is NUTS)" (`2TktORyV4Bg`, 8:57; his title, our 26 tags). His uploaded
+sequence ("GTA 29 - Bigfoot Secrets v2", 536.9 s) was diffed against our delivered build (818 clips, 541.6 s) with both mapped to
+OUR time through the V1 reel sources (`projects/gta6-bigfoot-secrets/work/his_diff.py` -> `his-diff.json`), plus a read-only pass
+for disabled clips, keyframes, effects and transitions, the autosave XML (Audio Gain) and HIS EXPORT
+(`E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\GTA 29 - Bigfoot Secrets v2_1.mov`, 02:52, the file he uploaded; each
+dialogue clip correlated against it). **Stayed:** the position, trim, scale/position and clip level of every graphic, guide,
+tag, SFX and body bed, and every punch-in; nothing disabled, no keyframes, no effects added. What he changed:
+- **THE BIG ONE: the upload carries our FIRST dialogue pass, with his fixes, not our corrected one.** 02:30 we laid 14 lines
+  and told him it was done, BEFORE checking the delivered clips. By 02:41 he had cut D3-D12 by 6 dB (Audio Gain, invisible to
+  our readback), faded the squawks, swapped A1 for his Enhance Speech bounce and re-looped the open; then he exported. At 02:48
+  our second pass (re-cut D5 / D12 / D13a-c, new levels) landed on his sequence WHILE THE EXPORT RAN: it missed the upload, and
+  in the project it stacked our Volume levels on his -6 dB (D3, D6-D11) and dropped his -6 dB with the replaced D5 / D12. So the
+  posted video has the first pass's faults: brendaniel's own shout in the parrot montage (our first D13c), a parrot line cut at
+  "a lot of—" (first D13a), a blip at the end of "What next?" (first D12). -> change: (1) the delivered files are checked
+  (unprompted transcription vs the subtitle, loudness vs the VO) BEFORE the "done" message; he acts within minutes;
+  (2) after a ready hand-off, nothing is written to his sequence without telling him and getting his go (an export in
+  Premiere leaves him "idle" to our gate); (3) his clip Audio Gain is read from the autosave XML before any level change.
+  -> PLAYBOOK § C2, lab-notes, memory `feedback-verify-before-done-no-late-writes`.
+- **His dialogue level, measured on the upload:** with his VO at +7 dB (his A1 bounce, -23.5 LUFS, raised 7 dB), he set the
+  xQc / Lirik lines 6 dB under our first level: about 5 LU UNDER his VO (momentary, voiced median). He left the summit lines and
+  the parrot lines at our first level (about level with the VO). -> PLAYBOOK § C2 rule 4: ~5 LU under the VO, not equal.
+- **The dialogue holds (his note, before he called it ready): "there has to be the actual game audio of the actual character
+  speaking ... right now it's just awkward silence."** We had filled 14 quote holds with cards over silence. -> change: every
+  quote hold plays the character's real line in sync (words = the on-screen subtitle, the streamer silent), cut by
+  `work/dialogue/build_dialogue.py`, laid additively by `place_dialogue.py` / `replace_dialogue.py`. A line with the streamer over
+  it in every copy stays quiet and is named in the hand-off (D14 "Secret Stash"). -> file: PLAYBOOK § C2, memory
+  `feedback-gta-dialogue-real-audio`.
+- **Two restarts shipped inside the v2 pickups; he cut them** (0.83 s, 0.72 s): "Number six, Kyle. And I— On IShowSpeed's stream"
+  and "People are calling him the Red Hulk. His name— his actual name is Kyle". The gate ran and could not see them: Whisper
+  (and the gate's piece-alone ASR) DROPPED both fragments from the text ("Kyle!", "His actual name is Kyle"), and each restart
+  sits across a piece boundary. wav2vec2 CTC (no language model) spells what was said: "KYLE AN ISHA ON ISHAL SPEED STREAM",
+  "HIS NAME IS ACTUAL NAME". -> change: `work/ctc_restarts.py`: CTC-decode every piece JOINT (last 1.6 s + next 1.6 s) and flag a
+  content word that comes back within 3 words (fuzzy: CTC misspells names). On GTA 29 it flags 13 of 222 joints: both restarts +
+  11 legit repeats ("Kirk. Kirk checks", "five five five") dismissed by reading. Third review running with leftover false starts
+  (GTA 28, GTA 29 v1, GTA 29 v2) -> PLAYBOOK § C2.
+- **He tightened 12 pauses** (with the restarts, 14 cuts, 4.7 s). Word end -> next word start (WhisperX, `work/his_pauses.py`):
+  ours 0.26-0.48 s -> his 0.02-0.18 s, a section turn 0.48 -> 0.30. Where: the teaser (2), straight after a title shout ("The
+  Giant Crab!" -> "Gator Keys"), the crab action run (5), a section turn (1), the outro ad-lib (3). Cause: 0.04-0.33 s of each
+  gap sat above the gate's VOICED line (-30 dB on the polished file = raw2's raised -35 + 5 dB), so breath counted as speech
+  and the gate measured these gaps under its cap: the 19 Nov lesson again. **Not a global tighter cap:** across the whole VO his
+  word gaps and ours are the same (median 0.06, p90 0.26, p95 0.32 s; he kept 112 gaps over 0.30 s as intentional pauses,
+  `work/vo-gap-stats.json`). -> PLAYBOOK § C2 (where to tighten; measure breath-inclusive).
+- **His ripple cuts skip the beds:** each cut after hand-off went through A6 too: two skips in the cold-open bed (his 02:01
+  state, at 3.90 and 9.32 s) and two in the Kyle bed (m06-0: 0.83 s and 0.72 s, left in). At 02:41 he replaced the cold-open's
+  first 9.7 s of "Loungin - Scientific" with its fuller section (9.67-14.08 s) looped three times. Two readings, not settled: a
+  repair of the skips, or a preference for opening on the full section. -> change: none as a rule (one-off); the fix that holds
+  either way is shipping a VO he doesn't need to cut.
+- **He faded the parrot squawks:** 8 Constant Power fades (10 frames, in and out) on A4: the three parrot-squawk SFX in the
+  montage, now under the real parrot lines, and the cash register at the D14 hold. None in our build; the TSV readback can't
+  see transitions. -> change: the learn pass reads transitions, effects, keyframes and disabled clips too; an SFX that sits on
+  a real voice line gets soft edges. One-off -> lesson.
+- **A1 again became his Enhance Speech v2 bounce** (`...-esv2-3p-bg-10p-music-10p.mp3`, VO only, -23.5 LUFS, clip Volume 0 dB,
+  +7 dB in the export), at 02:41, AFTER our first dialogue pass. Our first lines were matched by RMS percentiles and played
+  6-12 LU over that VO (he took 6 dB off most of them). -> change: game audio is levelled by MOMENTARY loudness (ebur128 M,
+  voiced median) against the VO as it plays in his mix, ~5 LU under it. -> PLAYBOOK § C2.
+- **Sourcing a no-lips line from another run:** brendaniel shouts over the parrot's first "Generator!" in his own copy
+  (-11 dB vs the parrot's -22, transcribes "I'm curious"); Lirik's run has the same parrot line clean. A parrot / back-of-head
+  line can come from any streamer's run of the same moment. -> file: `projects/gta6-bigfoot-secrets/RUN.md`.
+
+
+## 2026-11-20 · GTA Short captions, ABW11 · Sequence 19 (`projects/abw11-seq19-short`)
+- **His cap this time: max 4 words per caption** (Seq 06 was 3, Seq 04 was 4). The number is per video: take the one he names.
+- **A caption hung 0.1-0.2 s into a gameplay insert** wherever A1 had a gap (4 of 31 cues; --hang ends 0.25 s after the
+  last word, past the clip end). -> `workflows/sequence-captions.py srt` now ends a caption on its voice clip's last frame
+  when an A1 gap follows.
+- **`sequence-captions.py read` plays sped-up clips at 1x** (this cut has 1.1x and 0.8x clips): rebuild the voice with
+  `presets/instagram/affanwizu/sequence_reference.py` instead (it multiplies the reported in point by the speed), then write
+  `brief/` from its `transcript/sequence.json`. Source probes need the same correction (Premiere reports in / speed).
+
+
+## 2026-11-24 · GTA Short captions, ABW11 · Sequence 21 (retimed after his inserts)
+- **He edits the sequence while the caption job runs** ("CAPS", then screenshots and a re-timed take inserted within minutes). The first track went
+  on out of sync. → Re-read the sequence right before `import`; if A1 changed, rebuild on the new cut first. Job `projects/abw11-seq21-short/RUN.md`.
+- **A re-timed SRT must be imported under a NEW name.** `import` reuses a project item whose path is already in the project ("srt already in
+  project"), so a rebuilt file under the old name lays the OLD timings again. → `sequence-captions.py import <job> --srt <new name>` (added 24 Nov).
+- **Clamp captions by the clip the last word STARTS in, not where its end lands.** WhisperX stretched "literally." 34 ms past its clip, the old
+  end-based check (20 ms tolerance) missed it and the caption hung 0.28 s over a screenshot. → fixed in `sequence-captions.py`; Seq 19 output
+  re-built byte-identical.
+- **A lock step stops when the lock is busy.** A second-listener command ran on after `mkdir .asr-lock` failed and then removed another
+  session's ASR lock (no transcription was running at the time, no harm). → `if ! mkdir "$L"; then exit; fi; trap 'rm -rf "$L"' EXIT`.
+
+
+## 2026-11-24 · GTA 41 reaction thumbnail (his review)
+- **"make the background purple instead of blue and pick a frame where im laughing".** → Purple `#B330FC` (KSI+'s own) is the reaction-thumbnail default;
+  his face is a LAUGH first, shock only when the moment has none. Final: `X:/Claude Projects/GTA 6/thumbnails/gta41-npc/gta41-alligator-purple-laugh_*.jpg`.
+  Files: `REACTION-THUMBNAILS.md` § 11 #2 + § 13, `X:/Claude Projects/GTA 6/FEEDBACK.md`.
+- **Second review: "my face is very low quality ... generate it through Higgsfield ... keep all the detail everything the same", more face, a softer white glow.** → his cam face now gets the Higgsfield enhance (2 credits) +
+  a 3–4× identity check (it had erased a cheek mole and invented a tooth: both put back from the real frame); `face_size` 0.78; glow 0.24/0.90.
+  Final: `gta41-alligator-purple-laugh-hf_*.jpg`. Files: `REACTION-THUMBNAILS.md` § 10 + § 13.
+
+## 2026-11-24 · GTA 41 reaction edit (his review of v1, relayed)
+- **"my facecam should be on the left".** → KSI+ reaction cam box now top-LEFT (x20–366, y21–412), pulse about its top-left corner;
+  folded into GTA 41's prepared fixed build (not yet in ABW11: waits for his go). Files: `REACTION-STYLE.md` ★ DEFAULT BUILD + § 11 + § 14.
+- **"where is audio ... the OBS recording has my mic audio in it".** → The OBS file had no mic track (desktop only, −91 dB while he talks);
+  his voice on A1 was the camera's BUILT-IN mic (no DJI on this shoot), too quiet and roomy: he re-records the video. Recording ask added to `REACTION-STYLE.md` § 13 (mic routed to the recorded track + a clap per
+  camera file for sync). Files: `REACTION-STYLE.md` § 13–14, `lanes/premiere/lab-notes.md` 2026-11-24.
+
+## 2026-11-24 · C1504 Short (`projects/gta6-jasons-house-5k`), his note before the build
+- **"but easy on the sharpen unsharp mask please".** The Afterhours Shorts in the Scott look inherited the Scott H1 sharpen (`sharpen-picture.py --mask 0.55 --sharp 0.40`, The Head Start and AI Ports). -> change: this job runs about half (`--mask 0.25 --sharp 0.20`) on his face, none on 4K-sourced gameplay, checked on 100 % stills. -> file: the job's BRIEF § His notes and its `work/final_build.sh` once built. If he says it again, it becomes the Afterhours Shorts number in EDITOR.md § 3b.

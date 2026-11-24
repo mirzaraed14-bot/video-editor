@@ -27,3 +27,5 @@ face grammar, pacing, slow-downs, music handling, ending on the face) stays his;
 for new clean, minimal, explanatory treatments, each with a premium (never goofy) SFX — a deliberate place to learn
 new effects. Vine booms and other meme SFX are out on graphics. Log each new treatment tried, and his verdict, in the
 facecam LESSONS so the vocabulary grows.
+
+**Exception, 2026-11-23: face-cam REACTION / chill talk videos use the KSI+ style** (Affan: "our secondary editing style for these reaction videos... I want the style to be exactly in this channel style", https://www.youtube.com/@KSIplus). For that format only, KSI+'s measured editing wins over his own hand; scripted VO and his play videos keep the rules above. Spec: `presets/youtube/affan-afterhours/REACTION-STYLE.md`. Where KSI+ breaks a standing rule (meme SFX, same-camera punch-ins, voice-first mix) he decides, one line each; see [[feedback-premium-sfx]], [[feedback-no-same-camera-punch-ins]].

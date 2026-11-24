@@ -1,7 +1,42 @@
 # gta5-farewell: BRIEF
 
 ## ▶ STATUS: resume here (rewrite at every milestone)
-- **17 Nov ~23:55 (machine clock) · Phase: STOP 1 = the RAW Premiere sequence** (build session told, `build/premiere/`). Affan:
+- **18 Nov 16:25 (machine clock) · YouTube open, but `youtube.lock` is HELD** (a directory with an `owner` file, since 16:23):
+  - It belongs to a multi-hour live-stream capture for Affan's GTA video.
+  - YouTube itself was blocked 06:10-16:21 by a GTA research session, then cleared.
+  - **Do NOT start a pace.sh youtube waiter.** After 4 h (~20:23) pace.sh takes the lock over even with its owner alive, and two
+    streams would overlap.
+  - Before any download, check `ls projects/_onyx-batch2-2026-10/.locks/youtube.lock`; download only once it's gone.
+  - Passed to gta5-farewell-build. Its only YouTube want, a TGG face-cam video, waits for Affan's v3 notes anyway.
+- **18 Nov ~03:45 · YOUTUBE OPEN AGAIN** (the hub's 03:40 probe answered normally; flag renamed `youtube.BLOCKED.cleared-2026-11-18`).
+  Rules from now on, and in every brief:
+  - downloads only, ONE video per `pace.sh youtube` slot (180 s apart);
+  - never `--write-auto-subs`, captions or timedtext (they drew the 01:36 429);
+  - words come from local ASR under `.asr-lock`;
+  - a bot page or a 429 means stop, set the flag, tell the hub.
+  No yt-dlp was running when the flag cleared.
+- **18 Nov ~01:55 · Affan's own edit + ASK 2.**
+  - He re-cut "13 Years Goodbye GTA 5 - raw cut" himself to ~30 s: Jelly "brought me up" → Shawn "saved me" → Slink "grew up"
+    → Slink's thank-you → TGG. Beats 2/3/8 and most spares are dropped. **His edit is the base; never touch it.**
+  - He asked the build session for more bits from other YouTubers. They are in a NEW sequence, "GTA 5 Farewell - more creator bits"
+    (same bin, 15 bits: Jelly ×5, Caylus ×2, TGG ×4, DarkViperAU ×2, Ned ×2; `build/premiere_more/BITS.md`).
+  - Placed 02:04: READBACK PASS, his playhead ticks identical (3077827200000), his sequence re-activated, Sequence 02 untouched.
+  - Still pending: the TDAWG Short and Kreek video (downloaded, not transcribed; the ASR memory guard decides).
+  - Next is unchanged: his Tella on his edit → § TELLA → the finish build.
+- **18 Nov 01:36 · YOUTUBE BLOCKED** (`youtube.BLOCKED`, set by the hub): the build session's "more bits" pass ran one pace.sh slot
+  of 5 `--write-auto-subs` caption requests, and the 5th got HTTP 429. **No yt-dlp at all until the hub clears the flag**
+  (its probe is at ~03:40). Standing rule for every brief from now on: **no captions, no timedtext, no batched requests**
+  (one video per pace.sh slot). Work from files on disk; the Premiere work needs no YouTube.
+- **18 Nov 00:38 (machine clock) · STOP 1 REACHED: the raw sequence is in his ABW11, waiting for his Tella.**
+  - Sequence "13 Years Goodbye GTA 5 - raw cut" (id 8a9eba7c…), bin "GTA 5 Farewell".
+  - Picture: the v3 cut is 50.97 s. V1 holds the person or picture of each beat; V2 holds the game-footage top panels.
+  - Audio: A1 voice spans, level-matched for review.
+  - 17 markers. Seven spares after a 2 s gap, running to 103.0 s.
+  - Checks: `build/premiere/READBACK.md` = PASS; his playhead ticks are identical (Sequence 13, 12992918400000).
+  - Not saved or exported: ABW11 needs his Ctrl+S.
+  - Comp vs code-final sheet: `build/premiere/proof/sheet_1.jpg`.
+  - Next: his Tella → resolve it into this BRIEF (§ TELLA) → the finish build from HIS edit of the sequence.
+- (earlier, 17 Nov ~23:55) Phase: STOP 1 = the RAW Premiere sequence (build session told, `build/premiere/`). Affan:
   "my workflow is this: text sequence -> premiere sequence -> tella video -> start the build". I skipped the Premiere step and
   the build session made a code-built final (`build/out/gta5-farewell.final.mp4`, 23:24). That file is NOT delivered and NOT
   handed to the hub. Stopped at ~23:50.

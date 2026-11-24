@@ -1,0 +1,45 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "907qQeVj1nXEXwk3GVyYfcSnu0s",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "J9u7_MbZMlC_fKTB-QVbjtGhlm0",
+      "id": "UgyEyICooKZgi9fMBK94AaABAg",
+      "snippet": {
+        "channelId": "UCmDTrq0LNgPodDOFZiSbsww",
+        "videoId": "L7KXEeEePlo",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "XWlwKReQrK18HkEySrujgYNyp8E",
+          "id": "UgyEyICooKZgi9fMBK94AaABAg",
+          "snippet": {
+            "channelId": "UCmDTrq0LNgPodDOFZiSbsww",
+            "videoId": "L7KXEeEePlo",
+            "textDisplay": "It’s very clear now that x don’t know how to use a controller properly. As someone growing up didn’t use joysticks and controllers more than k&m I still understand and have control Jesus he just is cooked and they def pay him to be even more cooked to make gameplay fucked up. Any game and any time doesn’t matter he always fucks something up",
+            "textOriginal": "It’s very clear now that x don’t know how to use a controller properly. As someone growing up didn’t use joysticks and controllers more than k&m I still understand and have control Jesus he just is cooked and they def pay him to be even more cooked to make gameplay fucked up. Any game and any time doesn’t matter he always fucks something up",
+            "authorDisplayName": "@Flueofdoom",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ke8rNN69Y_R0pT7Iisj_8U-GXCiqlSnWk1Rk6VFbwJTuwJ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Flueofdoom",
+            "authorChannelId": {
+              "value": "UCqd7uOc6TcAFwBbztDI6CGQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T07:17:25Z",
+            "updatedAt": "2026-11-20T07:17:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,78 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "snawge2b54Uqkb-zUvwfgPi26ds",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "xufu1ZI49E6ffcHYV3iwtzzl7hM",
+      "id": "-l3FisWnrWM",
+      "snippet": {
+        "publishedAt": "2026-11-20T12:34:12Z",
+        "channelId": "UCJfLChdIPNSMVfQn2gvErUg",
+        "title": "GTA VI Review #gaming #gta6 #review #streamer #fyp",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-l3FisWnrWM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-l3FisWnrWM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-l3FisWnrWM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/-l3FisWnrWM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/-l3FisWnrWM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/-l3FisWnrWM/sardefault.jpg",
+            "width": 808,
+            "height": 1437
+          }
+        },
+        "channelTitle": "Joopyder",
+        "categoryId": "20",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "GTA VI Review #gaming #gta6 #review #streamer #fyp",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en-US"
+      },
+      "contentDetails": {
+        "duration": "PT40S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "9675",
+        "likeCount": "115",
+        "favoriteCount": "0",
+        "commentCount": "34"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}
+

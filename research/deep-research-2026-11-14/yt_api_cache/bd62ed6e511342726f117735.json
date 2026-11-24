@@ -1,0 +1,241 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "K9xcC3jx3XTYmZ9jmuQRmTO_BSE",
+  "prevPageToken": "EAEaH1BUOkNNSURJaEEzT1RjelJUa3pOVEE0TUVZeVJqUkQ",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "x0RxgacLMRsIFN7DVHyDR5IIyN0",
+      "id": "VVVxeWIwQ1hLbjhuUHNObmhGMUpMRF9nLmtBSUlLaDB1Zkc0",
+      "snippet": {
+        "publishedAt": "2019-05-02T01:55:25Z",
+        "channelId": "UCqyb0CXKn8nPsNnhF1JLD_g",
+        "title": "Grandpa Speaking in Chicago",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kAIIKh0ufG4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kAIIKh0ufG4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kAIIKh0ufG4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kAIIKh0ufG4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "DaddySpeed",
+        "playlistId": "UUqyb0CXKn8nPsNnhF1JLD_g",
+        "position": 450,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "kAIIKh0ufG4"
+        },
+        "videoOwnerChannelTitle": "DaddySpeed",
+        "videoOwnerChannelId": "UCqyb0CXKn8nPsNnhF1JLD_g"
+      },
+      "contentDetails": {
+        "videoId": "kAIIKh0ufG4",
+        "videoPublishedAt": "2019-05-02T01:55:25Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "YVWDIxKkr9lPp-YEbsLzQ_-DKJ0",
+      "id": "VVVxeWIwQ1hLbjhuUHNObmhGMUpMRF9nLjlaNzZkR3ZCTFZV",
+      "snippet": {
+        "publishedAt": "2016-07-29T15:25:51Z",
+        "channelId": "UCqyb0CXKn8nPsNnhF1JLD_g",
+        "title": "The Wayne Dukes Band - The Rocks (Video)",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9Z76dGvBLVU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9Z76dGvBLVU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9Z76dGvBLVU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "DaddySpeed",
+        "playlistId": "UUqyb0CXKn8nPsNnhF1JLD_g",
+        "position": 451,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "9Z76dGvBLVU"
+        },
+        "videoOwnerChannelTitle": "DaddySpeed",
+        "videoOwnerChannelId": "UCqyb0CXKn8nPsNnhF1JLD_g"
+      },
+      "contentDetails": {
+        "videoId": "9Z76dGvBLVU",
+        "videoPublishedAt": "2016-07-29T15:25:51Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "pqEWKU0U15FQ_xKY6DF2TLOCx14",
+      "id": "VVVxeWIwQ1hLbjhuUHNObmhGMUpMRF9nLnVfcXRrdnFabjh3",
+      "snippet": {
+        "publishedAt": "2016-07-21T17:33:52Z",
+        "channelId": "UCqyb0CXKn8nPsNnhF1JLD_g",
+        "title": "The Wayne Duke Band behind the scenes",
+        "description": "Duane, Darren, and Travis working on a song for the album \" Church Picnic \"",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/u_qtkvqZn8w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/u_qtkvqZn8w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/u_qtkvqZn8w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/u_qtkvqZn8w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/u_qtkvqZn8w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "DaddySpeed",
+        "playlistId": "UUqyb0CXKn8nPsNnhF1JLD_g",
+        "position": 452,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "u_qtkvqZn8w"
+        },
+        "videoOwnerChannelTitle": "DaddySpeed",
+        "videoOwnerChannelId": "UCqyb0CXKn8nPsNnhF1JLD_g"
+      },
+      "contentDetails": {
+        "videoId": "u_qtkvqZn8w",
+        "videoPublishedAt": "2016-07-21T17:33:52Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "1r0M4VGBpDOQ8N8oGaXQiuXu4GY",
+      "id": "VVVxeWIwQ1hLbjhuUHNObmhGMUpMRF9nLk05MGhPYW1qQVpR",
+      "snippet": {
+        "publishedAt": "2016-07-01T18:24:31Z",
+        "channelId": "UCqyb0CXKn8nPsNnhF1JLD_g",
+        "title": "The Wayne Dukes Band-Rocks",
+        "description": "Church Picnic Album",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/M90hOamjAZQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/M90hOamjAZQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/M90hOamjAZQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/M90hOamjAZQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "DaddySpeed",
+        "playlistId": "UUqyb0CXKn8nPsNnhF1JLD_g",
+        "position": 453,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "M90hOamjAZQ"
+        },
+        "videoOwnerChannelTitle": "DaddySpeed",
+        "videoOwnerChannelId": "UCqyb0CXKn8nPsNnhF1JLD_g"
+      },
+      "contentDetails": {
+        "videoId": "M90hOamjAZQ",
+        "videoPublishedAt": "2016-07-01T18:24:31Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xvMnRufrQ4j65ZVBd68dcn9qbGA",
+      "id": "VVVxeWIwQ1hLbjhuUHNObmhGMUpMRF9nLks0NkhhM19ZZGln",
+      "snippet": {
+        "publishedAt": "2016-07-01T17:16:26Z",
+        "channelId": "UCqyb0CXKn8nPsNnhF1JLD_g",
+        "title": "The Wayne Dukes Band- Everything",
+        "description": "Church Picnic Album",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/K46Ha3_Ydig/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/K46Ha3_Ydig/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/K46Ha3_Ydig/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/K46Ha3_Ydig/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "DaddySpeed",
+        "playlistId": "UUqyb0CXKn8nPsNnhF1JLD_g",
+        "position": 454,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "K46Ha3_Ydig"
+        },
+        "videoOwnerChannelTitle": "DaddySpeed",
+        "videoOwnerChannelId": "UCqyb0CXKn8nPsNnhF1JLD_g"
+      },
+      "contentDetails": {
+        "videoId": "K46Ha3_Ydig",
+        "videoPublishedAt": "2016-07-01T17:16:26Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 455,
+    "resultsPerPage": 50
+  }
+}

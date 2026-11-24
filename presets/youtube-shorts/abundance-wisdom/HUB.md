@@ -21,6 +21,531 @@ Near-done jobs are NOT rebuilt for it; the style applies from their next step. T
 - the HP fork (`local_7f87fba7…`, Hagrid raw cut).
 Jermaine is still unbuilt, so its build takes this style.
 
+## ▶ 24 Nov (hub): Travis A2 v6 REJECTED by Affan ("worst video, not upload material"); v7 rebuilt on the AW house kit, HUB-VERIFIED (style PASS, 3 by-eye items)
+
+- **Hub error on v6:** the hub passed v6 after comparing it only with v5. Logged in LESSONS ("Travis A2 v6 REJECTED"); the style gate now runs on the whole Short against the house kit every version.
+- **v7 style vs the house kit:** PASS.
+  - Glow bar on every split seam, with the caption base ON the seam.
+  - AW grade and grain; the glowing box on ARUUU; kit SUBSCRIBE x2 at 16.2 and 30.4 s.
+  - House transitions only. The blurred faces at ~14.9 s and ~33.4 s are the entry frames of the peach "Uni Expose" transition and go sharp within ~0.3 s.
+  - Whole single 4K Travis shots; Higgsfield box + crown at beat 10.
+- **Copies:** 2 identical files (sha256 107f95e5547c3d98, 361,070,860 B) at `projects/travis-ch1-reactions/outputs/travis-a2-v7.mp4` and `X:\Claude Projects\Exports\`.
+- **Specs:** 1080x1920 h264 CRF 14 (~66 Mb/s), 60 fps, 2615 frames, 43.583 s, AAC 256k.
+- **Loudness:** review mix -17.9 LUFS, peak -1.0, unchanged. He lays the music himself.
+- **Stray frames:** 0 dark frames and 0 one- or two-frame spikes.
+- **By-eye items for Affan:**
+  1. silkyauday's "WE'RE GTA" (~10.6-11.5 s): the zoomed-face layout is very soft and blocky, a tiny source face blown up even after Topaz. The band under it is his source's own red/white stylised picture.
+  2. The "TRAVIS SCOTT" name card sits on the wires-teeth shot's mouth (~8 s).
+  3. Lacy's cam is a 64 px face (Topaz'd, still soft).
+
+  The build flagged 2 and 3 itself.
+
+## ▶ 24 Nov (hub): "Streamers Rated GTA 6 - v3d.mp4" HUB-VERIFIED (style + his 3 v3c notes PASS); Affan watching it in aw-gta6-reviews
+
+- **His v3c verdict:** "really really close". The three notes are fixed in v3d, each checked against v3c frames:
+  1. The trophy (~13.7-14.3 s) now faces the camera head-on: silver, with a glint and a zoom-out. v3c showed a side profile.
+  2. The letterboxes (explosion ~2 s, PS5 box ~5.8 s) are filled with a blurred copy, white lines kept. v3c had black bars and a sharp strip of the box under its window.
+  3. Kai (~9.2 s) is pulled back from over-bright to a natural dark-brown skin tone.
+- **Style vs the MJ son Short:** PASS. Full-frame face cams, AW captions at one base, source tags under the captions, kit SUBSCRIBE prompts, splits with white lines, the grade.
+- **Copies:** 2 identical files (sha256 ace958cbd585acf5, 193,129,746 B) at `X:\Claude Projects\Exports\` and `projects/gta6-reviews-compilation/outputs/`.
+- **Specs:** 1080x1920 h264 (~55.6 Mb/s), 60 fps, 1658 frames, 27.633 s, AAC.
+- **Loudness:** -14.1 LUFS, LRA 2.1, peak -1.6.
+- **Stray frames:** 0 dark frames and 0 one- or two-frame spikes.
+- **Audio:** bit-identical to v3c (md5 40ed3982).
+- **Higgsfield:** about 75 of the ~100 credits Affan approved in that session; balance ~1,160.
+- **Open:**
+  - grey under-eye patches on Moist (visible at full size at 0.4 and 21.8 s);
+  - overlays stay 1080p because yt-dlp's YouTube challenge solver fails on this PC. That is a tool problem, not a block, so no flag was written.
+- **LESSONS:** "v3c notes → v3d" entry logged.
+
+## ▶ 24 Nov (hub): Travis A2 "travis-a2-v6.mp4" HUB-VERIFIED: beat 10 filled (Higgsfield 3D GTA 6 box + crown), waiting on Affan's review
+
+- **Credits:** 11.5 of the 19 Affan approved (balance 1208.5 to 1197). Jobs 14c6fad1 (image) and c08dd09a (video), plus an auto upscale.
+- **Beat 10:** dark 3D box with "VI" sunset art and a gold crown on top. It rotates while the camera pulls back, with exposure bloom in and out. Captions read MOST ANTICIPATED / GAME OF / ALL TIME / WAITED 13 YEARS.
+  - The box art is a generated look-alike of the GTA VI logo, not the real logo; Affan judges.
+  - Style fits the rest of the Short: stacked splits with white lines, glowing windows over blur, AW captions, kit SUBSCRIBE prompts.
+- **Copies:** 2 identical files (sha256 42a5998ce75c73b0, 53,910,458 B) at `projects/travis-ch1-reactions/outputs/` and `X:\Claude Projects\Exports\`.
+- **Specs:** 1080x1920 h264, 60 fps, 2615 frames, 43.583 s, AAC 256k.
+- **Loudness:** review mix -17.9 LUFS, peak -1.0, same as v5. He lays his own music.
+- **Proof nothing else changed:** per-frame PSNR v5 vs v6. The only real change is 22.68-24.67 s (s10b). 26 frames are encoder noise (>= 40 dB); 2469 of 2615 are bit-identical. The audio is bit-identical (md5 c5f330fc).
+- **Stray frames:** 0 dark frames.
+  - The bright 1-2 frame peaks at 20.4, 22.27, 38.2 and 43.35 s are the job's exposure-bloom transition peaks, already in v5.
+  - The peak at 22.65 s is the new bloom into beat 10.
+  - None of them is a stray frame.
+
+## ▶ 24 Nov (hub): MJ "Michael Jackson Daughter Said THIS v2.mov" HUB-VERIFIED: caption fix only, everything else unchanged
+
+- **The fix:** the birth-story clip (Bashir Part 8) is re-framed so the caption sits under Michael's lips, not on them. Checked at 17, 19, 21, 24 and 25.9 s against v1. The closest frame is ~30 px under the lips, on the chin (target 40-60 px), and never on the mouth.
+- **Copies:** 3 identical files (sha256 06e5d5c176e31336, 319,178,022 B) at `projects/mj-daughter-said-this/outputs/`, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` and `X:\Claude Projects\Exports\`. v1 stays in place.
+- **Specs:** 1080x1920 h264, 60 fps, 2427 frames, 40.45 s, PCM s24 48k.
+- **Loudness:** -14.0 LUFS integrated, LRA 5.6, peak -1.6.
+- **Stray frames:** YAVG scan has 0 dark frames and 0 one- or two-frame spikes.
+- **Proof nothing else changed:** per-frame PSNR v1 vs v2. Only frames 1032-1560 (17.18-25.98 s, the birth clip on screen) really differ. 15.97-17.17 s and 25.98-27.92 s are encoder noise (>= 47 dB). Every other frame is bit-identical, and the audio is bit-identical (md5 4858717f).
+- **Style:** same kit as v1, which passed side by side against the MJ son Short. PASS.
+- **Open with Affan:** the "special bond" listen at 6-8 s, the defaults we chose, the soft Bashir picture. The mj-short session told him it is delivered.
+
+## ▶ 24 Nov (hub): MJ "Michael Jackson Daughter Said THIS v1.mov" DELIVERED + HUB-VERIFIED (file + style PASS), one caption fix asked
+
+- **Copies:** `projects/mj-daughter-said-this/outputs/`, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\` and `X:\Claude Projects\Exports\`. The sha256 66c1869feaf9f23b3d06… is identical at all 3.
+- **Checks, all pass:** h264 High 1080x1920, 60 CFR, 2427 frames, 40.45 s, PCM s24. −14.0 LUFS, LRA 5.6, TP −1.6. YAVG min 16.0, no dark runs, no spikes.
+- **Style gate (new): PASS** side by side against the MJ son "Step Outside" Short (captions, labels, subscribe pill, grade/vignette, the window with white lines).
+- **Part 8 birth piece:** the face is not plastic at full size.
+- **Defect:** the caption sits ON Michael's lips for the whole birth piece (~17-25 s). The fix is to the picture (scale down or raise), as ONE v2 render. Asked of the MJ session (`local_22eaf039`).
+- **Child Paris on frame (the red-curtain photo, the 2009 memorial):** his explicit call for this Short.
+- **Ear item for Affan:** "this special, special bond" at 6.35-8.6 s.
+- **Meter:** 17 % account-wide.
+
+## ▶ 24 Nov (hub): Game Awards statue rendered on Higgsfield (30 credits, ~1,208 left) for "Streamers Rated GTA 6" v3; MJ birth story FOUND (Bashir Part 8)
+
+- **Trophy:** the real Game Awards statue, animated from the Polygon image he clicked: 4K, a ~20° turn, a shine sweep. 30 credits, approved by Affan in the aw-gta6-reviews chat. It is queued into the v3 rebuild (AW house kit). The hub verifies v3 style-first when it lands.
+- **MJ daughter:** the birth story is in Bashir **Part 8** (CEZZAfSOCCA, the "LEGENDS IN 4K REMASTERED" upscale): Michael alone in a single shot, 8.8 s. The full rebuild and checks are running; the STOP 2 .mov is not delivered yet. The hub checks the Part 8 face for upscale plastic skin on delivery.
+
+## ▶ 24 Nov (hub): HP "Harry Potter Can't Watch Himself - raw cut" PLACED in ABW11 + HUB-VERIFIED (STOP 1), waiting on his Ctrl+S + Tella
+
+- **Sequence:** id `a59bf8a2-1d92-49fd-a036-ea8af3726d89` (bin "Harry Potter Can't Watch Himself"), 33.40 s, 29 clips (12 V1 + 12 A1 + 1 V2 HBP cover + 4 V3 placeholder labels). READBACK = PASS.
+- **His project, verified from run_window.log:**
+  - sequences 58 -> 59;
+  - Sequence 02 has 26 clips before and after;
+  - his active "Streamers Rated GTA 6 - v2" (adc7e9fc) was restored by id;
+  - his playhead is 4445280000000 before and after;
+  - no save, export or playback.
+  - The build deleted its OWN first sequence (d3f09f31) and bin, guarded by exact id, after finding duplicated frames in its mezzanines.
+- **Quality, his ask:** HSC = VP9 617, Garfield = VP9 616, Ross = the old avc1 (it beat both new streams), HBP = the official upload at 1080p (no 4K exists). 1.78x on every clip, Lanczos/Premiere scaler only, no AI. The framing sheets show face-centred static Motion, and the HSC bug is out of frame.
+- **For his Tella (nothing was listened to):**
+  - the B1 tail inside the laugh;
+  - B3a "again."|"You";
+  - the last 0.2 s of B7b;
+  - B6b possibly "that's really, but that's really nice";
+  - beats 4, 3b and 5b sit low until the STOP 2 limiter;
+  - possible 25p/23.976p judder;
+  - **the HBP cover lip-flaps** (Harry speaks for 2.5 s under Radcliffe's voice).
+- **Cost:** build 0.51 % of the week. **Downloads:** 7, no block. The 5-min cap was broken 3 times (logged in LESSONS).
+- **STOP 2 = the AW house kit** (`projects/mj-son-step-outside/`) for captions, labels, grade, head lock and SFX. The hub's side-by-side style gate applies.
+
+## ▶ 24 Nov (hub): "Streamers Rated GTA 6" fix1 REJECTED ("forgot my whole style… a little kids cartoon trophy"); v3 rebuilding on the AW house kit
+
+- **Root cause:** the BRIEF misread his note. MMC was meant for transitions only and was applied to everything, and the Higgsfield Game Awards statue became a drawn cup. The hub then passed fix1 without a style check. Logged in LESSONS 24 Nov and memory `feedback-fix-only-what-he-named`.
+- **Now:**
+  - BRIEF.md is corrected.
+  - gta6-verdicts-build (`local_8e9b1abc`) is rebuilding as v3 on the AW house kit (`projects/mj-son-step-outside/`), with MMC transitions only.
+  - It runs a kit diff before building and a side-by-side gate at the end.
+  - The aw-gta6-reviews session (`local_1030887d`) is asking Affan for up to ~100 Higgsfield credits for the 3D statue (Kling 3.0 4K i2v, ~30 per take; balance 1,238).
+- **New hub gate, from this Short on:** every AW render is checked side by side against an approved AW Short (captions, labels, grade, transitions, props) BEFORE the spec checks. Off-kit = a defect.
+- **4K overlays:** a VP9/AV1 pull is OK when it is transcoded to an H.264 crf ~12 mezzanine before Premiere.
+
+## ▶ 24 Nov (hub): "Streamers Rated GTA 6 - fix1" HUB-VERIFIED on specs only. REJECTED by Affan for style (see the entry above)
+
+- **File:** `X:\Claude Projects\Exports\Streamers Rated GTA 6 - fix1.mp4`, with an identical copy in outputs (sha256 15fd76e2...cf948).
+- **Checks, all pass:** 27.63 s, 1080x1920, 60 CFR, 1658 frames, AAC 253k. −13.9 LUFS, LRA 2.2, TP −1.3. 0 dark frames, no spikes.
+- **Fixed:**
+  - The PS5 box sits clear of the caption, in an inset over a blurred fill.
+  - No black letterbox: the cutscenes are insets over blur, and Lucia is full frame.
+  - No burned game subtitles.
+  - The lower band is lighter.
+- **Two soft spots left for Affan:**
+  - Moist's P13-15 at ~20-22 s is still a mid-shot (~57% fill, shoulders show). The final "THUS FAR" is tight.
+  - The split caption now sits centred on the white line, which his rule allows ("baseline/centre"). But the line runs through the white letters like a strikethrough, and the caption jumps from ~y1093 to the seam for that one shot.
+- **Fallback:** the original `Streamers Rated GTA 6.mp4` is still in Exports.
+
+## ▶ 24 Nov (hub): "Streamers Rated GTA 6" FULL SHORT rendered + HUB-VERIFIED; 5 defects open, waiting on his fix-or-ship
+
+- **File:** `X:\Claude Projects\Exports\Streamers Rated GTA 6.mp4`, with an identical copy in `projects/gta6-reviews-compilation/outputs/` (sha256 9efe9bda...629a44).
+- **Checks, all pass:** 27.63 s, 1080x1920, 60 CFR, 1658 frames, AAC 253k. −13.9 LUFS, LRA 2.2, TP −1.3 dBFS. 0 dark frames, no 1- or 2-frame spikes.
+- **Open defects:**
+  1. The lower band is crowded (caption, name label, subscribe, scoreboard all within y1095-1600), and the PS5 box art sits under the caption at ~5.6 s.
+  2. Moist's last beat is not tight.
+  3. Black letterbox at ~7.5 s and ~23.8 s (AW rule: blur, never black).
+  4. Burned game subtitles at ~7.6 s and in the ~18 s split, one with a profanity, cut off at the edge.
+  5. The split caption sits ~140 px below the white line, not on it.
+  - Defects 1-2 were found by the session; 3-5 by the hub.
+- **Defaults used for his open calls:** his Speed cut, the faces as built, a code-built trophy.
+- **Status:** the full list went to aw-gta6-reviews (`local_1030887d`). It started the fix round itself, without waiting, because these are objective defects and he wants it ASAP. The output is a new file, `Streamers Rated GTA 6 - fix1.mp4` in Exports, and the current file stays as the shippable fallback. The hub re-verifies fix1 when it lands.
+
+## ▶ 24 Nov (hub): Affan OKs HIGGSFIELD for Travis beat 10; hub found the Bashir birth-story source for mj-daughter-build
+
+- **Travis:** his words to the hub: "yes you can use higgsfield its ok". Relayed to aw-travis-burn (`local_0a6a2f2e`) for the 3D GTA 6 box + crown, up to the ~19 credits it asked for, preflight first, never on a real face. The hub verifies the new render on delivery.
+- **MJ daughter:** the build asked the hub for one search (its brief bars API searches).
+  - Two hub searches + 2 cheap calls (hub 2/20, all callers 12/95, Pacific 24 Nov).
+  - Best lead: **wcLZK0vlXsY**, 17 s, 545K views, from "LEGENDS IN 4K REMASTERED" (UC3BxE8IL_Q6mIG7yHUiTiOQ), titled "Debbie Rowe was ok with baby Paris leaving for home immediately after birth".
+  - Numbered parts 4-17 are listed with IDs and lengths in the hub message to `local_40114c15`. All are 4-5 min except part 13 (6:13) and part 2 (9:15).
+  - These are AI "4K upscale" copies of an SD original, so the face is checked for plastic skin, and the more natural copy wins.
+- **Still running:** the creators' verdict full render goes to `X:\Claude Projects\Exports\Streamers Rated GTA 6.mp4` (defaults: his Speed cut, the faces as built, a code-built trophy). The hub verifies it on delivery.
+
+## ▶ 24 Nov (hub): MJ DAUGHTER note-3 insert = "A, the birth story" (Affan's pick); mj-daughter-build on STOP 2
+
+- **What he picked:** Michael on the day Paris was born (Bashir 2003, a proven 1.28M). It goes right before Paris's "Ever since I was born". mj-daughter-build is now on STOP 2, the finished .mov.
+- **Defaults for his unanswered calls (relayed by the MJ session):**
+  - no "placenta";
+  - one red-curtain photo pushed in across both overlay slots;
+  - "bond" restored;
+  - the end hold with her real sob faded.
+- **Child Paris on frame:** relayed as his explicit call for this Short. This is a one-Short exception to the minors rule, not a new rule.
+- **Catalog pass:** BRIEF §3b.
+- **Sourcing, hub note:**
+  - "Living with Michael Jackson" (ITV, 2003) was made in SD (576i PAL). No true HD master is public, so any "HD" or "4K" upload is an upscale.
+  - Target the cleanest SD broadcast copy with no burned captions, better than our 480p fan Short. Check it at full size for halos and plastic skin. Lanczos only, no AI on his face.
+- **API:** mj-short's 12 searches were spent on Pacific 22 Nov. Pacific 24 Nov has 12 fresh, so the build may use session `mj-short`. The hub (20) is the backup.
+
+## ▶ 24 Nov (hub): HP "Harry Potter Can't Watch Himself" APPROVED by Affan, STOP 1 build started
+
+- **What he approved:** v3 minus the "uncool dad" sentence (~32-34 s), with beat 4 (his parents, "the reviews were good") kept. Centre 150K, range 30K-1.2M, unchanged.
+- **Build session:** hp-cant-watch-build (`local_7075150e-ec34-4dff-9ac7-e008ac7ed219`), Sonnet xhigh. STOP 1 only (the raw sequence in ABW11, the MJ method). Brief: `research/aw-hp-2026-11-23/BUILD-BRIEF.md`.
+- **His added ask:** "make sure the video quality is good for all source material". So the build re-fetches the best stream per span (VP9/AV1 up to 2160p, sections only, through `pace.sh`), keeps the sharper file by full-size face crops, sources a clean Half-Blood Prince close-up, and covers Garfield's host frames (~1334 s, ~1341 s) with film. Mezzanines are H.264 crf 12 + PCM. Lanczos only, no AI on faces.
+- **On disk before the re-fetch:** HSC 1080p59.94 at 2.7 Mb/s (soft once blown up to 9:16), Ross 1080p25 at 2.0 Mb/s (good), Garfield 1080p25 at 1.1 Mb/s (the lowest).
+- **Hub check of the brief (24 Nov):** the Premiere, silence, GPU and no-AI rules are all present. One gap: the HSC section 2465-2795 is 5.5 min, over the 5-min cap. Told the build session to fetch the beat spans in 2-3 shorter pieces. YouTube had no active block flag at the check.
+- **Hub verifies on delivery:** the READBACK verdict, the sequence count N -> N+1, his Sequence 02 unchanged, his playhead restored, the per-span sharpness proof images, and the blow-up factor per clip.
+
+## ▶ 24 Nov (hub): HP v3 TEXT (Radcliffe, "more bits" per Affan) re-locked at 150K, waiting on his OK
+- `research/aw-hp-2026-11-23/PITCH.md` (top), ~38-40 s (~33 s without beat 4); centre 150K (30K-1.2M).
+- Beats:
+  - "now I cringe watching myself when I was 18 or 19";
+  - Half-Blood Prince "the bottom… my own stuff";
+  - Jonathan Ross: "I avoid ever watching them again… like passing around baby photos of yourself";
+  - his parents: "the reviews were good… you're fine";
+  - Garfield → Dan "I disagree with him";
+  - END: his son watches the HBO show instead of the films, "his very uncool, unimpressive dad" (that promise has 6.17M / 1.6M / 437K views on the HBO peg).
+- Spend: 2 more paced downloads, 2 API searches, 1 medium.en job; meter 13 % account-wide. No build started.
+
+## ▶ 23 Nov (hub): TRAVIS A2 REVIEWABLE RENDER v4 VERIFIED (3D box + crown = a placeholder until his Higgsfield OK)
+- `projects/travis-ch1-reactions/outputs/travis-a2-v4.mp4` = `X:\Claude Projects\Exports	ravis-a2-v4.mp4` (sha256 `abe746fd563fa256f7fe…` at both paths). 1080x1920, 60/1, 2615 f = 43.583 s, AAC 48 kHz. -17.9 LUFS, -1.0 dBFS peak, LRA 4.0: quieter than AW's -14 because he strips the song and lays the music himself; the clip audio is on its own stems in `outputs/stems/`.
+- **Hub scan:**
+  - no dark frames;
+  - 12 short bright runs of 2-5 frames: the transitions' white flashes, each rising and falling over ~8-10 frames (e.g. frames 1330-1342 = 99 → 230 → 123), so not stray frames;
+  - the contact sheet shows every beat in order (Kai, *SPEED LOCKED IN*, the Kai line, Travis overlays, silkyauday, MONEYMAY, ARUUU, Kai "SO beautiful", the "never fumbled" end over Travis);
+  - no child on frame.
+- **Open:**
+  - the beat-10 PLACEHOLDER text ("3D GTA 6 BOX + CROWN, awaiting Higgsfield OK") collides with the captions "MOST ANTICIPATED" / "WAITED 13 YEARS". It goes when the real asset lands.
+  - Higgsfield needs his OK for 9.5 credits (one try; nothing spent).
+- Weekly meter 12 % account-wide (shared; this job's own share not measured).
+
+## ▶ 23 Nov (hub): TRAVIS A2 REVIEWED BY AFFAN (Tella) → finish build GO
+- His notes, resolved in `projects/travis-ch1-reactions/BRIEF-v3-REVIEW1.md`:
+  - formats per streamer;
+  - Music Media Co transitions;
+  - Travis 4K overlays;
+  - a 3D GTA box + crown (Higgsfield: a cost check + his OK first);
+  - the house-explosion slow-mo from a Mission #21 walkthrough;
+  - a "*Speed locked in*" caption;
+  - **he does the music himself**.
+- **AI voice approved:** "Jeremy, start build" → `vo/A2_jeremy_tight.mp3` (4.0 s, Epidemic voiceover on his subscription).
+- GO sent to travis-a2-raw-build (`local_d78ec827-973e-41da-acb8-bd35233c5418`, Sonnet), capped at 3-4 short YouTube pulls through pace.sh. It reports at a reviewable render; **the hub verifies it.**
+
+## ▶ 23 Nov ~11:40 PKT (hub): GTA 6 CREATORS' VERDICT RAW CUT PLACED + VERIFIED FROM FILES, Speed slot still empty
+- "Streamers Rated GTA 6 - raw cut" in ABW11 (bin "Streamers Rated GTA 6"), 34.3 s, 8 beats + 3 gameplay cutaways. `projects/gta6-reviews-compilation/premiere/READBACK.md` = PASS for STOP 1. Sequences 56 → 57 (ONE new), his "Sequence 02" 26 clips before and after, his "Sequence 20" + playhead unchanged. Not saved, not exported.
+- The anchor recipe test passed for Kai and failed for Moist (the eyelid smears are in the source).
+- **Speed (beat 2b) NOT placed, slot held.** His positive line IS confirmed in the fan Short QsI1s_Ptb5s ("you should buy it… it's not even a sponsor… it's actually a great game"); his own "I BEAT GTA 6!" Short is out (it shows only the ending, a spoiler). Affan asked to include Speed, so the hub asked the session to place it in the held slot (same safety) or tell him why not.
+- Day 1 builds: three raw cuts in ABW11 (Travis A2, MJ daughter, the GTA 6 creators' verdict), all waiting for his Ctrl+S + Tella. HP is still undecided.
+
+## ▶ 23 Nov ~11:20 PKT (hub): MJ DAUGHTER RAW CUT PLACED + VERIFIED FROM FILES (waiting for his Ctrl+S + Tella)
+- "MJ Daughter Said THIS - raw cut" in ABW11, 36.23 s, 15 clips; `projects/mj-daughter-said-this/premiere/READBACK.md` = PASS. Sequences 54 → 55 (ONE new), his "Sequence 02" 26 clips before and after, his "Sequence 20" restored. Not saved, not exported. Build cost ~1 % (meter 8 → 9 % account-wide).
+- The MJ session's own checks: A1 re-transcribed and the words match; no child on any frame (`timeline_1fps.png`).
+- **For his Tella:**
+  1. Beat 5 = Michael on the memorial's giant screen, a 3.15x crop: 6 s live, then the last frame held ~6 s (soft and static).
+  2. The B4b head reads "Do you not play?" in ASR; trimming +0.12 s fixes it.
+  3. The memorial words are "you could ever imagine".
+- **Leftover process:** `lanes/premiere/dialog-watch.py` (PID 28428), started by the build, is still running. The permission layer refused the build session's stop, so the hub doesn't stop it either (his call). It only closes Premiere import-failure dialogs.
+
+## ▶ 23 Nov ~11:15 PKT (hub): TRAVIS A2 RAW CUT PLACED + VERIFIED FROM FILES (waiting for his Ctrl+S + Tella)
+- "GTA 6 Travis Secret Song - A2 raw cut" (id `4cdfc357-bc25-47a8-a133-b3a95a96a327`) in ABW11: 13 clips V1/A1, 42.8334 s = 2570 frames, `projects/travis-ch1-reactions/premiere/READBACK.md` = PASS.
+- **Hub check (files):** sequences 55 → 56 → 56 (ONE new sequence; window 2 emptied and re-placed only ours, id pinned); his "Sequence 02" 26 clips before and after; his "Sequence 20" + playhead 15198624000000 restored by id. Window 1 read back FAIL (kept as `READBACK.window1-FAIL.md`) because B05 = 1.98 s = 118.8 frames is off the 60 fps grid; fixed at 119 frames. Not saved (Ctrl+S), not exported, nothing played.
+- **Lesson (again, see 18 Nov GTA farewell):** a beat table must be in whole frames at 60 fps before placement; 2-decimal seconds snap and open 3 ms gaps.
+
+## ▶ 23 Nov 11:03 PKT (hub): YOUTUBE CLEARED (probed early on Affan's "asap"); GTA 6 creators' verdict APPROVED for build
+- Probe on Nx1yuw8BdV4 answered normally 1 h 51 min after the 09:12 block → `youtube.BLOCKED.cleared-2026-11-23`.
+- Affan to aw-gta6-reviews: "try now, I need this short asap, start building the raw in Premiere and include the Speed bit". It starts ONE Sonnet STOP 1 build with a slot for Speed, and pulls only Speed's own "I BEAT GTA 6!" (kVk_Nwca6Wk, 35 s, 5.95M) and the fan Short QsI1s_Ptb5s. Rule kept: Speed said "It's not a 10-game" after finishing, so his positive line is never framed as "after beating it".
+- ABW11 is open (his active sequence "Sequence 20"). Three STOP 1 builds now share `premiere.lock`: Travis A2, MJ daughter, the GTA 6 creators' verdict. The hub verifies each.
+
+## ▶ 23 Nov ~10:20 PKT (hub): TRAVIS A2 APPROVED ("Build A2 now"); STOP 1 build started
+- **travis-a2-raw-build** (`local_d78ec827-973e-41da-acb8-bd35233c5418`, Sonnet), started by aw-travis-burn: a NEW raw sequence "GTA 6 Travis Secret Song - A2 raw cut" in ABW11, 13 clips, 42.83 s, with the Bigfoot method (`premiere.lock` + quietgate, restore by id, no save, no export, no playback). Brief `projects/travis-ch1-reactions/BUILD-BRIEF-A2.md`. All sources on disk; no YouTube.
+- Two builds now share `premiere.lock` (MJ daughter + Travis A2) and run one after the other. **The hub verifies both deliveries.**
+
+## ▶ 23 Nov ~10:15 PKT (hub): MJ DAUGHTER v2.1 APPROVED ("Build it"); STOP 1 build started
+- Affan approved daughter v2.1 (beat 4 = Paris's Zane Lowe "I would just stare at my dad… a big stare", never shipped; ~38 s; the memorial is audio only, no child on frame).
+- Build: **mj-daughter-build** (`local_40114c15-2042-4974-b132-ac93bfc2319a`, Sonnet xhigh), started by the MJ day-1 session. STOP 1 = a raw sequence in his Premiere (new clone of "Sequence 02", `premiere.lock` + quietgate, his sequence and playhead restored, no save, no export, no playback). Job `projects/mj-daughter-said-this/`.
+- **The hub verifies the delivery.** Day 1's first Short to reach a build.
+
+## ▶ 23 Nov ~09:55 PKT (hub): TRAVIS A2 = 42.8 s after TikTok + Twitch; research STOPPED by the hub at ~6 % for this session
+- Affan signed in to TikTok: 5 searches + 1 video, no block. The moment is proven there (@itzwxzard "The end of ch1 was so peak", 230.5K likes / 23.8K shares), but no crazy streamer reaction to BURN exists.
+- New beat: ARUUU at her stream's end (Twitch v2935461836 ≈ 28529-28535): "I… love this game. That… chapter one ending was crazy." Lacy's and xQc's 5 min after the song have nothing on it. A second cold read applied (`COLD-READ-A2.md`).
+- Open: Jynxzi and "Mande" (YouTube fan Shorts only); no Fable on A2; by-ear items; G5; Content ID. The session correctly refused to type his "strongest Short, I've done my all" line while gaps are open.
+- **Cost:** weekly meter 1 % → 7 % during this session (about 6 % its own): twice the 3 % line. The hub stopped research: A2 goes to Affan as it stands, with the gaps first; Jynxzi and Mande only on his word.
+
+## ▶ 23 Nov ~10:00 PKT (hub): MJ DAUGHTER v2 (Affan: "too short, Paris needs more bits"); a disputed Paris quote flagged
+- `research/aw-mj-2026-11-23/SEQUENCE-daughter.md` v2: 5 beats, ~45 s, 4 of them Paris (princess (CHD), "couldn't get enough" (Zane Lowe), "because I'm happy he would be satisfied" (CHD), and the memorial ending (6.99M, audio only)). Sent to him as text; no build. Meter 6 % account-wide.
+- **Disputed quote:** "only five people on the planet that had the relationship I had with him" (Trying Not To Die, ~50:57-51:20). The MJ session reports the frames show JACK OSBOURNE about Ozzy, not Paris. The hub added a ⚠ DISPUTED note at the top of `X:\Claude Projects\Abundance Wisdom\PARIS-LONGFORM.md` (which marks it "✅ by ear", -kXLpqK0MaM 51:07) and `projects/paris-wont-post-birthday/brief/edit-brief-v2.md`. Not re-checked by the hub; the shipped birthday Short's captions don't use it.
+
+## ▶ 23 Nov ~09:45 PKT (hub): TRAVIS A2 UPDATED via TWITCH (0 YouTube), Kai's "that was SO beautiful" found
+- Kai's Twitch VOD v2932305259 at ~45888-45894 s, right after the mission: "Oh my God, bro… that sh*t was beautiful. That was SO beautiful", chef's-kiss hands, his most expressive face of the day (a 60 s 1080p60 pull, word times + frames).
+- ARUUU's 5 min after: game dialogue only. Speed skipped: no free signal points to a moment.
+- **Variant A2 is now 36.6 s and recommended**, ending: silkyauday "waited 13 years…" → Kai "that was SO beautiful" → MONEYMAY "Travis has never, just never fumbled". In `research/aw-travis-ch1-2026-11-22/SEQUENCE-v3.md`.
+- Pulls: 2 Twitch audio sections (5 min) + 1 Twitch video (60 s), one at a time.
+
+## ▶ 23 Nov ~09:30 PKT (hub): MJ STORYLINE 2 ("next storyline", Affan's word) PITCHED: MJ + Paris, the daughter arc
+- `research/aw-mj-2026-11-23/SEQUENCE-daughter.md`, ~29 s, 4 beats: Michael (Bashir pt 15) "I used to walk around holding baby dolls… cuz I wanted children so badly" → Paris (CHD 2026) "daddy's little princess" → Paris (Zane Lowe 2026) "I wanted to spend all my time with my dad" → Paris at 11, memorial, AUDIO ONLY (proven 6.99M).
+- NOT max effort, named first: no advisor call and no cold read on this storyline, 0 Instagram posts at 65K+, nothing heard by ear. The proven birth hook (1.28M) is not downloadable while YouTube is blocked.
+- Weekly meter 6 % account-wide. Affan reviews it in that session. No build without his OK.
+
+## ▶ 23 Nov 09:12 PKT (hub): YOUTUBE BLOCKED by aw-travis-ch1 (an AW session this time)
+- HTTP 429, then a bot page, on H-4PyJlhI9g: a 20-minute audio-only section, the session's 8th YouTube pull of the day (all through pace.sh). Affan had asked it directly for "more meaningful compliment bits" (Kai / ARUUU / Speed after the mission).
+- Hub: probe around 11:15 PKT. Meanwhile Twitch copies (Kai, ARUUU), short sections, one stream; Speed waits.
+- **Lesson:** long YouTube sections (20 min) plus many pulls in a day per session trip the bot check even through pace.sh. Locate the line first (API, comments, Twitch), then pull 1-3 min.
+
+## ▶ 23 Nov (hub): AFFAN ON MJ "JUST DADDY": "nop not strong enough yet has potential tho"
+- No build; the toddler question is moot for now. Logged by the session in `research/aw-mj-2026-11-23/README.md`. The lead stays in BANK as "potential", and no more research is spent on it until he or the hub says so.
+
+## ▶ 23 Nov (hub): GTA 6 CREATORS' VERDICT PITCH IN (below the bar, 110K); DAY 1 = 4 pitches, none clears 150K
+- `research/aw-gta6-reviews-2026-11-21/SEQUENCE.md` v1.2, **"Streamers Rated GTA 6 👀"**, ~32.7 s, locked 110K (40K-320K, ~42 % to clear 150K). NOT max effort yet: anchor test not done (Kai and Moist faces soft; fallback = frame on a blurred fill), Instagram at 1 phrasing per creator, other tellings not searched beyond the files, nothing heard by ear.
+  - **Cut:** a card CRITICS 99 · USERS 5.6 (Metacritic, read 23 Nov) + Moist "does it live up to the hype?" → Kai "8.8… right at the nine mark" (his 7 s pause trimmed to ~1 s) → Asmongold "like a nine… game of the year material, it definitely is" → Kai "graphics and realism is 10 out of 10" (card: GRAPHICS & REALISM) → Moist "for me… GTA 6 has lived up to my expectations" (card: YES, FOR ME).
+  - **Weakest:** Moist's direct answer to the hype question is that it "could never" live up to unrealistic expectations (hence FOR ME). Bigger counter-clips exist: Asmongold "Chores Simulator" 1.18M, Kai "disappointed after 27 %" 339K. Speed and xQc are OUT; DarkViperAU is a swap.
+  - **His questions:** build below the bar or no pick; H1 or H2; DarkViperAU in; is "the hype question → yes, for me" honest enough.
+  - Meter 1 % → 5 % weekly, shared with 3 sessions.
+- **Day 1 tally:** MJ (no pick, "DADDY" card: soft footage, a toddler on frame, no IG proof), HP (Radcliffe 100K), Travis (110K), reviews (110K). Research cost about 2-3 % each; the weekly meter is ~5 %.
+- **Hub recommendation to Affan:**
+  - build the creators' verdict today (the launch window, the live 99-vs-5.6 fight);
+  - MJ "DADDY" only on his toddler OK + a sharper garden source;
+  - HP: check BANK #2 (Emma Watson) before building Radcliffe;
+  - Travis: wait for his TikTok sign-in.
+
+## ▶ 23 Nov (hub): TRAVIS "BURN" v3 TEXT READY (below the bar, 110K); GTA 6 creators' verdict told to finish lean
+- **Travis:** `research/aw-travis-ch1-2026-11-22/SEQUENCE-v3.md`. NOT max effort yet (TikTok unsearched because his PC Chrome isn't signed in; nothing heard by ear; other tellings partly searched). Locked 110K.
+  - **Finding:** no big-name CRAZY reaction to this song exists on file (Kai = awe/hype talk, Speed = serious/sad). The closer is MONEYMAY "Travis has never, just never fumbled", not GOAT.
+  - **Variant A** (his shape, 35.9 s): Kai "Oh my God" → Speed's face on the hook → Kai "Rockstar, this is what we like to see" → AI voice → silkyauday, Lacy, MONEYMAY, ARUUU, Kai "SO invested" → MONEYMAY closer. **B** opens on Speed's sad line.
+  - **Proof:** Instagram's "Burn" audio is in 596 reels in 4 days (tops 2.4M, 802K); YouTube song uploads 306K/148K/112K, so "blowing up" now holds.
+  - **Open:** G5 (no official credit for "Burn"); Content ID (upload Private first).
+  - **His calls (§ 6):** A or B; Speed's face, his sad line or his radio dance; the AI voice (paid credits need his OK); hook H1/H2/H3; censor the song's "sh*t".
+  - Cost ~3 % (meter 1 % → 4 %, shared). No build started.
+- **GTA 6 creators' verdict:** Speed is OUT (his Short has no "great game" line); DarkViperAU is new; Fable flagged Moist's "isn't worth the hype" counter-line, the anchor test, and that Kai's 10/10 is about graphics only. The hub said: finish lean (~1 % more), log the meter as shared, never reverse Moist's meaning, say "below the bar" or "no pick" first if honest framing drops it.
+
+## ▶ 23 Nov ~08:30 PKT (hub): MJ DAY 1 = NO PICK; one card + a bank of 9; cost 2 % (stopped at 3 %)
+- `research/aw-mj-2026-11-23/` (TEARDOWN, PITCH, BANK, IG, COLDREAD, README ▶ STATUS).
+- **Card: "Michael Jackson Was Just DADDY 🥹"**, ~20 s, centre 160-170K before the source check:
+  - Oprah 1993 "I love my father, but I don't know him";
+  - home video: Michael reading to his kids, cropped to him (6.64M on YouTube);
+  - home video: the toddler's "I want my daddy" over Michael in the garden (1.22M);
+  - Prince "...it was daddy to me".
+  - It reverses the comment "people try and say his staff raised the kids" (1,172 likes).
+- **Why no pick:**
+  - beats 2-3 are soft at delivery scale; beat 3 is far below the Prince ABC anchor (`proof/fullsize/faces_1to1.png`);
+  - Instagram has 0 proof for every beat (24 loads, the lane's best post 61.5K likes);
+  - the centre is a coin flip on 150K.
+- **It becomes a pick with:** a sharp copy of the garden take, or Affan's OK to show the toddler (his own child as a toddler: a real minor, flagged), plus a zoom-out test on beat 2.
+- Usage: 9/12 searches, 2 downloads, 6 windows transcribed, 1 Sonnet cold read, 2 Fable calls. No build started.
+- **Hub merged** the MJ (21 rows from IG.md) and HP (11 rows) Instagram rows into `research/deep-research-2026-11-14/IG-SEARCH-LOG.md`.
+- **Day 1 tally:** MJ and HP research cost ~2 % each and neither cleared the bar. The plan's cost per Short only holds if picks land; the bank files (MJ 9 rows, HP 8 rows) are the head start for day 2.
+
+## ▶ 23 Nov ~08:10 PKT (hub): HP DAY 1 = NO PICK AT THE BAR; best lead 100K; cost 2 % (1 % → 3 %, stopped at the tripwire)
+- `research/aw-hp-2026-11-23/` (TEARDOWN.md, PITCH.md v2, BANK.md; IG log `research/instagram-beat-mining/2026-11-23-hp.md`).
+- **Teardown:** Oldman/Sirius 516,497 views / 199 comments vs Snape 36,894 / 9, same like rate, so the gap is distribution. H1: the hook is a famous actor's HARSH verdict on his own loved role; ~25 of the top 40 comments argue with it, and the #1 comment (2,187 likes) is the "killed off too soon" grief.
+- **Best lead (below the bar):** "Daniel Radcliffe CRINGES At Himself 😅", locked 100K (20K-600K), ~20-22 s.
+  - Beats: Dan "I cringe watching myself at 18 or 19" → "Half-Blood Prince is the bottom" → Garfield "he's really good in those Harry Potter movies" → Dan "Thank you, Andrew Garfield… I disagree with him about my performance".
+  - Weak: Instagram has news posts only (People 17K, IGN 9.7K, and IGN ran the same join); his reply already sits in his owner's 62K Short; viewers tie the Half-Blood Prince verdict to his drinking.
+- **BANK #2:** Emma Watson's hated scene (28.8M proof, sources unread). **#3:** a Sirius part 2 (is it a repeat? his call).
+- Usage: 4/12 searches, 3 downloads, 12 IG loads, 2 GPU jobs, 1 Sonnet cold read, 2 Fable calls. No build session started.
+
+## ▶ 23 Nov (hub): TIKTOK IS NOT SIGNED IN on his PC Chrome (Travis BURN session)
+- A logged-out TikTok search returns "Something went wrong" (a login wall). The session stopped after 2 loads; the flag is `research/aw-travis-ch1-2026-11-22/tiktok.LOGGED-OUT`.
+- Instagram is fine (signed in, ~25 paced loads, no block); keyword search answers short phrases only, hashtag pages work.
+- TikTok research needs Affan to sign in to TikTok in that Chrome himself (we never type passwords). Meter at the session's start: 1 % weekly.
+
+## ▶ 23 Nov (hub): 20 FINISHED SESSIONS PERMANENTLY DELETED (Affan: "delte them there are of no use")
+- Deleted on his approval card: the 18 from the clean-up list + the Bigfoot research/build pair (he told the Main Brain "bigfoot is uploaded"). Their state stays in the job `RUN.md` files, `HUB.md`, `LESSONS.md` and `RESULTS.md`; transcripts are gone.
+- **Kept (6):** MJ day 1, HP day 1, Travis BURN, the GTA 6 creators' verdict, Speed Watkins (aw-gta6-story), Speed Darren (aw-speed-beats).
+- **Bigfoot is NOT public on AW yet:** the 23 Nov API read shows the newest public upload is still "Why Michael Jackson FIRED His Own Father 💔" (20 Nov). Probably private or scheduled; its view count goes into RESULTS once it's public.
+
+## ▶ 23 Nov (hub): SESSION CLEAN-UP, STEP 1 DONE (nothing archived or deleted yet; Affan picks archive or delete)
+- His ask via the Main Brain: remove unused sub-sessions after their value is in files. **18 are ready to remove; 8 are kept.** Every finished job's state is already in its own `RUN.md` ▶ STATUS (checked: Jermaine, Speed kicked-out, siblings, Dad, Sirius, MJ FIRED, GTA farewell) and in `LESSONS.md`/`HUB.md`.
+  - **Ready (finished, idle, posted or closed):** the GTA 5 farewell pair; the MJ beats research + the MJ FIRED build; the Sirius build; the 6 deep-research lanes of 14-15 Nov (hp-films, hp-cast, ig-mj, ig-sports, ig-icons, bolt-celeb); the Dad build; the Son-method research + the siblings build; the Speed research + the kicked-out build; the IG beat-mining experiment + the Jermaine build.
+  - **Kept:** the MJ day-1, HP day-1 and Travis BURN sessions (running); the GTA 6 creators' verdict session (waiting on Affan for the Mac zips); the Bigfoot pair (raw cut waiting on his Ctrl+S + Tella); the GTA 6 story session (Speed Watkins pitch waiting on his OK); the Speed beats session (the Darren pitch waiting on his OK).
+- **Saved what was missing:** the newest 25 uploads' public views (read 23 Nov) went into `X:\Claude Projects\Abundance Wisdom\RESULTS.md` as a dated block, with the winners/losers read. Per-job usage costs were never logged by these sessions (only the hub's meter notes); from now on each Short logs its %.
+
+## ▶ 23 Nov (hub): FOUR AW SESSIONS RUNNING (MJ day 1, HP day 1, two GTA 6 Shorts carried over from the Mac)
+- **MJ day 1** (`local_22eaf039-c6cd-45d4-ba30-02ff5066267a`) and **HP day 1** (`local_4e3b36f0-85a8-46a6-9b87-0c453fe767c0`): started by Affan from the hub's cards.
+- **aw-gta6-reviews** (`local_1030887d-43f3-40f8-a17c-d9c714b8e862`): "Big creators' verdict on GTA 6" (Moist, Kai, Asmongold verified; Speed's positive line unverified; below the bar at ~100K, not locked).
+  - The Mac's zips (`gta6-reviews-research.zip`, `-verdict-clips.zip`) were NOT found on the PC (the repo root, `X:\` depth 3, Downloads, Desktop, `X:\Mac-handoff`, `G:\My Drive`). The session asks Affan where they are.
+  - API label `aw-gta6-reviews`.
+- **aw-travis-burn** (`local_0a6a2f2e-36e2-4443-a95b-00d842ca0aed`): the GTA 6 × Travis Scott "BURN" Short v3, from `E:\Bullshit Folder\travis-ch1-HANDOVER-PC.md`.
+  - Affan rejected v2 on the Mac. His v3 vision: Speed + Kai open, an AI-voice hook, crazy reactions to the actual song, a "Travis is the GOAT" closer.
+  - 6 reactions verified; Instagram and TikTok never searched (the biggest gap); Agent00's VOD may be muted. API label `aw-travis-ch1`.
+- **GTA 6 was held "until he sends his research"**: these two ARE his research. Both end at a text sequence; a build only on his OK.
+- **MJ "FIRED His Father":** upload title "Michael Jackson FIRED His Father 😳" written in `projects/mj-fired-his-father/DELIVERY-NOTE.md` (v3 named, hash matches). It was posted on 20 Nov as "Why Michael Jackson FIRED His Own Father 💔" (44K).
+
+## ▶ 23 Nov (hub): NEW WEEK, 3 AW SHORTS A DAY (`WEEK-PLAN.md`); MJ + HP day-1 sessions PROPOSED (need Affan's click)
+- **Plan (via the Main Brain, Affan's words quoted in `WEEK-PLAN.md`):** one Short per niche per day: MJ, Harry Potter, GTA 6 (GTA 6 HELD until he sends his own research). Sonnet executes, Opus judges (pick, hook, sequence, final QC), Fable 1-2 calls per Short. A code-built AW Short measured 4-6 % each: lean sessions, no swarms, every Short logs its actual %, and a Short over 3 % is reported to the hub so the plan can be adjusted by day 2.
+- **Live counts read by the hub on 23 Nov** (`yt_api.py hub`, 1 playlistItems + 1 videos call):
+  - MJ "Became The BEST Dad 🥹" `b0y6iNlO9tg` 563,282 (16 Nov)
+  - MJ "Son Saw His Dad AGAIN 🥹" `06cXi5cJXMQ` 568,604 (10 Nov)
+  - HP "Gary Oldman Called His Sirius Black MEDIOCRE 💔" `avDFJMLKFxw` 515,973 (17 Nov)
+  - GTA "Saying Goodbye To GTA 5 💖🥹" `lHRF7XrGWaM` 367,123 (18 Nov)
+  - MJ "Siblings Saw Him AGAIN 🥹" 216,458
+  - IShowSpeed "Mom KICKED Him Out 💔" `j-5uXQ7cWxU` 72,101
+  - MJ "Why Michael Jackson FIRED His Own Father 💔" `3ds37Vc63L0` 44,206 (20 Nov)
+  - HP "Radcliffe Thought Snape HATED Him 💔😅" `h7ze3Ckj830` 36,884
+  - The newest 25 are in the run (merge into RESULTS when he confirms).
+- **Proposed cards (the app refuses a start on a peer-message turn):**
+  - "AW Short: today's Michael Jackson Short" (`task_c42a0f00`): teardown of both 🥹 winners vs the 💔 losers, ONE pick + a bank of 5+ storylines (`research/aw-mj-2026-11-23/`), API label `mj-short`.
+  - "AW Short: today's Harry Potter Short" (`task_2a35f543`): teardown of Oldman vs Snape, ONE pick + a bank (`research/aw-hp-2026-11-23/`), API label `hp-short`.
+  - Each: Opus effort high; on his OK, ONE Sonnet xhigh build session for STOP 1.
+- `yt_api.py`: the session names `mj-short` and `hp-short` were added (default cap 12 searches a day each).
+
+## ▶ 21 Nov ~00:20 PKT (hub): MAC HANDOFF FILE WRITTEN; YOUTUBE CLEARED 00:10
+- The Main Brain relayed Affan's wish (a Mac Claude carries AW until Monday 07:00 PKT, PC usage at ~98 %). **`X:\Mac-handoff\AW\START-HERE.md`**: AW style + research method (pointing at repo files), what is in flight, the copy list (about 170 MB for Bigfoot and research, about 600 MB with the Speed footage, about 2 GB for MJ v4 inputs), Mac specifics. MAC-SETUP.md is the Afterhours Editor's.
+- **Open question for Affan (in the file):** GitHub is stale (last sync commit 18 Nov 00:23; 25 modified + 154 untracked files; `/projects/` is gitignored), so push the light files or copy a folder? Nothing was pushed.
+- **YouTube:** a probe at 00:10 answered normally 2 h 35 min after the 21:35 403; flag cleared (`youtube.BLOCKED.cleared-2026-11-20b`). The fourth block in two days, all GTA sessions.
+- The YouTube API key is not in the handoff; Affan decides about the key file. The Mac's `.locks` don't see the PC's, so a Mac YouTube pull can overlap a PC one.
+
+## ▶ 20 Nov ~22:45 PKT (hub): BIGFOOT RAW CUT PLACED IN ABW11 + VERIFIED FROM FILES (waiting for his Ctrl+S and Tella review)
+- **Sequence "Bigfoot Is In GTA 6 - raw cut"** (id `c0cae39d-4e01-4000-b545-8d83b4228a2e`, new bin of the same name): 1080x1920 @ 60, 32.1 s, V1/A1 7 clips, 7 beat markers, 0 offline. Job: `projects/bigfoot-is-in-gta-6/` (`RUN.md` ▶ STATUS, `premiere/READBACK.md` = PASS, `proof/sheet_starts.jpg`).
+- **Hub check (files only; the hub did not read his live Premiere):**
+  - `READBACK.md`: every beat's in/out equals SEQUENCE-SPICY-v3 § 1 (B1 Fanum 4.55-7.55, B2 Kai 54.5-58.5, B3 summit1g 33.0-37.3, B4 Fanum 26.0-31.5, B5 Kai 6.2-10.9 and B6 Kai 20.4-23.4 of the 1080p re-pull, B7 xQc 93.0-100.6).
+  - All 7 mezzanines decode clean, 60 CFR, A/V start 0 (B5 0.05 s); `premiere.lock` is free.
+  - The contact sheet shows the right 7 beats.
+  - The build session's report: a 22:31:23-22:31:44 window, he was idle 306 s, his active sequence "Sequence 01" restored by id, his playhead ticks identical before and after, no save, no export. **ABW11 is NOT saved; he needs Ctrl+S.**
+- **Kai 1080p:** one Twitch pull (30 s section), frame-matched on beats 5 and 6, audio lag 0. The 19 h VOD was never pulled.
+- **Flags for his Tella (each one is a one-line trim):**
+  - B3 summit1g: the game picture fades to BLACK at 35.5-35.7 s and stays black to the out (~1.6 s of black, his cam visible). The blackout is the content, but it is a long black.
+  - B4 Fanum starts on a near-black game frame (fade-in 26.1-26.4 s, ~0.3 s black), at the PEAK beat. Starting at 26.3 s fixes it.
+  - B1 frame 1 still shows the tail of the game subtitle "...thing?".
+  - B7: the line is the GAME's Kirk; xQc is silent.
+  - Clip gain left at 0 dB: summit1g needs +15 dB and xQc +13 dB at the build.
+  - jacksepticeye not in the cut.
+  - His Q2 stays open: F*CK starred only, or bleeped too.
+- **Process flag:** `dialog-watch.py` was NOT running (0 processes, checked 3x, including inside the lock), although the build brief said it was. The build did not start one (rule). Imports were mezzanines and none failed.
+- Kit note (already in `lanes/premiere/lab-notes.md`, 2026-10-20): the clip outPoint reads STALE after a scripted `.end` pin; use inPoint + (end - start).
+- **Weekly usage 97 %** (resets Mon 23 Nov 07:00 PKT). Lean until then: no new research or build sessions. The Speed "Watkins" raw sequence waits on his OK.
+- **Per-beat source loudness (build session's follow-up, ffmpeg ebur128, clip gain 0 dB):** B1 -13.0 LUFS (peak -0.3), B2 -14.3 (-1.6), B3 summit1g **-31.0 (-17.5, needs about +14 dB)**, B4 -15.2 (-0.5), B5 Kai **-8.2 (+0.3, clipped at source)**, B6 Kai **-7.6 (+0.4, clipped at source)**, B7 -30.6 (-17.0, needs about +13.6 dB). The spread is 23 LU (B6 vs B3), B4 to B5 jumps 7 LU, and Kai's chase screams are over 0 dBFS. **At the build each beat gets its own level match plus a limiter**; the whole-clip numbers in SEQUENCE-SPICY-v3 § 2 understate Kai's chase. Table in `projects/bigfoot-is-in-gta-6/RUN.md`.
+
+## ▶ 20 Nov ~22:25 PKT (hub): BIGFOOT RAW CUT BUILD STARTED BY THE NEWS SESSION ON AFFAN'S DIRECT WORD; YOUTUBE BLOCKED AGAIN 21:35
+- **Affan to aw-gta6-news (22:20, verified in its transcript):** "check jack and also start to build the raw in premiere". It started [bigfoot-raw-build](#local_2a917318-3ca7-4edd-a2ca-9ca2baf53ce7) (Sonnet xhigh, `local_2a917318-3ca7-4edd-a2ca-9ca2baf53ce7`): a NEW sequence "Bigfoot Is In GTA 6 - raw cut" in ABW11 from `SEQUENCE-SPICY-v3.md` (7 beats). Twitch only; stops after the raw cut and the readback. **The hub starts no second build and will verify the delivery.** The hub added: quietgate, before/after restore by id, no save or export, ABW11 needs his Ctrl+S, no jacksepticeye pull.
+- **jacksepticeye:** located (J18nXpZHyyI "WAS THAT BIGFOOT?? Part 2", about 1:14:30-1:17:14) but not in the cut; Affan will download it himself if it's a good enough bit.
+- **YouTube BLOCKED again 21:35** by `gta6-six-stars` (403 on two downloads, Om4W6tYMF-0 at 21:19 and c4O6RS3r3WU at 21:28; four others succeeded; no bot page, no 429). The fourth block in two days (10:43 and 17:01 on 19 Nov, 19:00 and 21:35 on 20 Nov), all GTA sessions, and each time the hub cleared it. The hub probes after ~23:35. The Bigfoot build is Twitch only, so nothing waits on it.
+- Speed "Watkins" story v4: still no answer from Affan.
+
+## ▶ 20 Nov ~21:10 PKT (hub): BIGFOOT "SPICY" SEQUENCE IN TEXT (his order); YOUTUBE CLEARED 21:06; weekly usage 94 %
+- Affan told aw-gta6-news directly: build Bigfoot, but first the most dramatic big-names-only sequence in text. `research/aw-gta6-news-2026-11-19/SEQUENCE-SPICY-v3.md` (v3.1; v2.7 stays as the numbers record). About 32 s, 7 beats: Fanum hook; Kai effigy "oh my gosh bro"; summit1g blackout; Fanum's legs + hand over mouth + "what is that?!"; Kai's night chase x2 ("oh hell nah" three times, jaw dropped at 47 s); xQc "Nope. Skunk ape." button. Only Fanum, Kai and summit1g qualify; Speed has no Bigfoot moment. Prediction unchanged at 180K.
+- Not done (named): no cold read on v3.1; quotes not heard by ear. jacksepticeye's Bigfoot meeting is located (about 1:14:30-1:17:14 of "WAS THAT BIGFOOT?? Part 2") but NOT pulled: a 4-minute `pace.sh` section would show whether his reaction beats summit1g's. Kai's VOD section is 720p so far.
+- **YouTube cleared 21:06** (`youtube.BLOCKED.cleared-2026-11-20`). Third block in two days, all GTA sessions.
+- **Build starts only on his OK** (the news session sent the same text to him). The hub starts it.
+- **Weekly usage 94 %** (Fri 20 Nov; the reset is Mon 07:00): lean until then; no new research sessions.
+
+## ▶ 20 Nov ~20:00 PKT (hub): BIGFOOT v2.7 ABOVE THE BAR (180K); both GTA 6 pitches clear 150K, waiting on Affan
+- `research/aw-gta6-news-2026-11-19/SEQUENCE.md` v2.7 (v2.6 kept). Numbers only; the cut is unchanged.
+  - Bigfoot 180K (60K-550K, ~55 % to clear 150K); the jet 85K.
+  - G4 = PROVEN, with a heavy entry tax (the CaseOh 1.32M Short has the same angle).
+  - Cold read 5 applied; no new Fable call (the cut is unchanged since call 5, named in the statement).
+- Speed "Watkins" story v4: 200K, at the bar. Both wait on his pick for the raw Premiere sequence.
+
+## ▶ 20 Nov ~19:30 PKT (hub): BIGFOOT NOW PROVEN ON YOUTUBE SHORTS; re-lock v2.7 ordered; YOUTUBE BLOCKED 19:00 (not AW)
+- Affan asked aw-gta6-news directly at 19:20 ("what about now its been 16 hours"). `research/aw-gta6-news-2026-11-19/UPDATE-2026-11-20-1930.md`:
+  - Bigfoot lane 204K → 502K/h, 19 videos at 100K+;
+  - Marcade's Bigfoot Short 4.42M, the CaseOh fan Short 1.32M, the Kai fan Short 331K, jacksepticeye "WAS THAT BIGFOOT??" 929K;
+  - the jet 639K/h, mostly TmarTn2's long-form at 6.73M, its Shorts slowing;
+  - six stars cooled to 347K/h (MrBeast Gaming at 1.43M);
+  - Instagram: Bigfoot 16.5M, jet 16.9M.
+- Hub: re-lock as v2.7, numbers only (the cut is unchanged), a cold read of the changed sections, no new Fable call (named), answer Affan directly.
+- **YouTube BLOCKED 19:00:57** by `money-cheat-helper` (bot page on 630BqbOSVRI). The third block in two days, all from GTA sessions. The hub probes after ~21:00.
+
+## ▶ 20 Nov ~05:30 PKT (hub): BIGFOOT v2.6 RE-LOCKED AT 110K (still below the bar), Kai in; waiting on Affan
+- `research/aw-gta6-news-2026-11-19/SEQUENCE.md` v2.6 (v2.5 kept). Bigfoot 110K (40K-350K, ~12 % 1M+, ~43 % to clear 150K); the jet 85K. Still below 150K, with the exception named first.
+- Kai Cenat in at beat 5, from his own Twitch clip 4096145023 (1080p60).
+- **Fact settled:** the big daylight/night figures are EFFIGIES (stick figures bound to trees). Bigfoot itself is on frame only as its legs over the knocked-out player (Brendaniel, summit1g). The wording is fixed throughout.
+- The 543K CaseOh Short is discounted: title-only, not viewed. Single-streamer Bigfoot Shorts have a ~59K median (Kai fan 139K).
+- Cold read 4 + Fable call 5 applied. Weekly meter 84 % (Fri 20 Nov; the reset is Mon 07:00), so go lean on new research.
+
+## ▶ 20 Nov ~04:40 PKT (hub): BIGFOOT GOT STRONGER OVERNIGHT; news session told to re-lock as v2.6 with Kai
+- Affan asked aw-gta6-news directly (~04:20) whether Bigfoot is still the strongest. Its update (`research/aw-gta6-news-2026-11-19/UPDATE-2026-11-20-0430.md`):
+  - the streamer + Bigfoot join broke out on YouTube: the CaseOh fan Short 153K → 543K in ~9 h, a "Kai Cenat Found Bigfoot In GTA 6!" Short at 139K, the lane 124K → 204K/h, 10 videos at 100K+;
+  - the IG Bigfoot reel 13.7M → 15.8M (258K shares); the jet reel 16.5M (83K shares); the jet lane is cooling (718K → 602K/h);
+  - Kai located on frame in his own Twitch clip 4096145023 (night quest creature).
+- The hub said: re-lock now (v2.6, v2.5 kept), Kai in if his frames pass, G4 and the jet comparison updated, a cold read of the changes + one Fable call, the first line says what changed.
+- **Next news candidate (not started):** six stars, the fastest-rising lane (313K → 537K/h); MrBeast Gaming "How Long Can You Survive 6 Stars" at 114K in 2.4 h; Kai hit six stars on stream (HUD not checked). Raise with Affan.
+- Still pending his answer: Speed only, or both Shorts, to the raw Premiere sequence.
+
+## ▶ 19 Nov ~22:30 PKT (hub): SPEED "WATKINS" STORY v4 CLOSED AND SENT TO AFFAN, with Bigfoot
+- `research/aw-gta6-story-2026-11-19/SEQUENCE.md` v4 + `DELIVERY-NOTE.md` (5 questions). "Speed's NAME In GTA 6 🥹", ~37 s, locked 200K (70K-550K), "honest read AT the bar"; Gate A: a feeling piece, like the farewell.
+- Closing pass:
+  - shop story single-source, earned: DaddySpeed's 455 uploads, 5 web searches, nothing independent;
+  - the dad call is NOT on Instagram (Speed's Reels tab back to early 2025; DaddySpeed has no findable account);
+  - no beat shared with the Darren Short.
+- A Harold Watkins Sr. lead (a great-grandfather candidate) is NOT used. The hub told the session to drop its queued YouTube pull QbVUogd4UY4 (not needed for the pick; two blocks today).
+- **Hub recommendation to Affan:** Speed "Watkins" first (at the bar, story format like the farewell); Bigfoot is below the bar (90K), his call.
+- **Defaults if he says build without details:** crop Jamal out; end on "I'm about to cry, bro"; two separate Shorts, Watkins first; "1950" stays trimmed.
+
+## ▶ 19 Nov ~22:15 PKT (hub): BIGFOOT PITCH v2.5 CLOSED AND SENT TO AFFAN (below the bar, his call); STORY v4 still on its closing pass
+- `research/aw-gta6-news-2026-11-19/SEQUENCE.md` v2.5. First line: **BELOW THE USUAL BAR**, both Bigfoot and the jet re-locked at 90K (30K-300K, ~10 % 1M+); "held strictly to the bar, this route gives NO PICK". Exception argued: his ask today, launch week, and the GTA farewell at 298K. The hub's six items are closed:
+  - Instagram per streamer: none of Fanum, summit1g, xQc or Brendaniel has a Bigfoot reel; the moment is proven on Instagram, the streamers' clips are not.
+  - YouTube: G4 WEAK. The streamer + Bigfoot join was tried ~8 times today at 0.9-1.9K.
+  - Anchor test: FAIL. Face cams 45-67 px as insets vs Prince's 772-883 px, so insets only, no split.
+  - Kai out (77 clips, none on frame).
+  - Jet on the same rule: 90K too.
+- Still not doable: quotes by ear, Reddit/TikTok/X. Cut: 3 reactors (summit1g, Fanum, xQc) + Brendaniel, 32.3 s, the button = "Nope. Skunk ape."
+- **Title note:** the news session reads the posted farewell as "Saying Goodbye To GTA 5 💖🥹" (298K in 28 h), not the delivery note's "13 Years… Goodbye GTA 5 💔". He posted it under the alternate title. Use the posted title in RESULTS.
+
+## ▶ 19 Nov ~21:30 PKT (hub): BOTH GTA 6 PITCHES IN, BOTH SENT BACK FOR A SHORT CLOSING PASS (not yet with Affan)
+- **aw-gta6-news: "Bigfoot Is In GTA 6 😳"** (32.3 s; Fanum, summit1g, Brendaniel, xQc, the game's "Nope. Skunk ape."; `research/aw-gta6-news-2026-11-19/SEQUENCE.md` v2.2). Locked 50K (15K-180K): under the 150K bar. The jet theft leads on YouTube (~11 % vs ~2 % of videos at 100K+); Bigfoot leads on Instagram (13.7M / 226K shares). It overlaps the Afterhours "Bigfoot Isn't Bigfoot" long-form (same twist line). Sent back: Instagram per streamer, YouTube 3 phrasings per beat, the anchor test, Kai from a clip (no 19 h VOD), a JET prediction on the same scale, and the below-bar line first.
+- **aw-gta6-story: "Speed's NAME In GTA 6 🥹"** (~35.6 s; Speed's May 2025 Trailer 2 stream + the FaceTime with his dad about the family's Watkins auto shop -> 18 Nov 2026 at the in-game Watkins Auto Parts, "they put my dad in the game"; `research/aw-gta6-story-2026-11-19/SEQUENCE.md` v3). Locked 200K (70K-550K). Open: Jamal (a minor) beside Speed in the 2025 frames (crop planned, his call); single-source family story; Gate A weak; the 2026 VOD is still processing on YouTube. Sent back: the overlap with aw-speed-beats' pending "MILLIONS KNOW SPEED, NOT DARREN" (missing from the note), one other telling of the shop story, Instagram via Reels tabs.
+- **Results data (from the story session's API read):** "13 Years… Goodbye GTA 5 💔" = **299,378 views after ~33 h**, against its locked 45K. Newest-30 AW median 93.5K. Merge into RESULTS when Affan confirms.
+- **~22:00, story v4 in** (supersedes v3): the dad's own "No, no" (Rockstar never called them) is now in the cut. It ends on "I'm about to cry, bro"; "they put my dad in the game" is an option only. Gate A: no lesson, a feeling piece like the farewell. The Darren Short shares no beat; the session recommends two Shorts, Watkins first. Korean War line read from the source: the dad retells the great-grandfather's story ("1950" trimmed); the shop's existence is unconfirmed (3 searches). Prediction 200K, "honest read AT the bar". New comparator: AW's newest 12 non-MJ Shorts have a 32K median (MJ 133K). Still waiting on the closing pass: another telling via DaddySpeed's uploads, and Instagram via Reels tabs.
+
+## ▶ 19 Nov ~19:30 PKT (hub): GTA 6 LAUNCH DAY: TWO RESEARCH SESSIONS STARTED (his ask: two GTA 6 Shorts today)
+- **His words (voice):** "GTA6 currently is the Michael Jackson of video games ... the GTA5 [farewell] video is performing at number one ... one short is going to be on ... some crazy thing in the game and we do a ... compilation of all the people reacting to it and we do a story arc format ... deploy research sessions for each". Saved: memory `feedback-mega-famous-per-niche` (gaming = GTA 6 from 19 Nov).
+- **aw-gta6-news** (`local_5bc0d379-7889-4e78-b777-a93348123aaa`, Opus xhigh, Fable advisor, Sonnet agents): the craziest launch-day moment + a streamer reaction compilation. Bar by view velocity. Writes `research/aw-gta6-news-2026-11-19/`.
+- **aw-gta6-story** (`local_97c49d79-4d64-4ee8-af72-975f9fbeadfe`, same roles): the classic AW story arc for GTA 6. First a teardown of the GTA 5 farewell (#1), then 3+ framings, then one pick. Writes `research/aw-gta6-story-2026-11-19/`.
+- Both: sequence in text for his OK today, then STOP. They read each other's README before locking (no shared moment or main clip). They reuse Afterhours GTA 6 material read-only, and name any overlap with an Afterhours video (Bigfoot Secrets is being finished there).
+- **API:** `yt_api.py` gained the session names `gta6-news` and `gta6-story`, cap 30 searches each (Pacific 19 Nov: 0 of 95 used before).
+- **YouTube:** blocked 17:01 by `gta-vo-slate` (an Afterhours session; the second block today after 10:43). The hub probed at 19:16 (Nx1yuw8BdV4 title, normal) and cleared it (`youtube.BLOCKED.cleared-2026-11-19b`). Both briefs: download as little as possible, only after the pick, and check `youtube.lock` first.
+
+## ▶ 19 Nov ~04:35 PKT (hub): MJ FIRED HIS FATHER v3 DELIVERED + VERIFIED (waiting for his review of v3)
+- **His note on v2 (typed):** "where the saturation fades why does the positioning of Joseph change, I want a seamless fade". Cause: the v2 head lock corrected S19 and S20 (one continuous film shot) separately, so Joe jumped 42 px at 28.70 s. Fix: S20's track shifted to S19's anchor (`win/junction_fix.py`).
+- **Hub check:** `outputs/Michael Jackson FIRED His Father v3.mov`, sha256 `9f71d5142680de361c984b63adf07fdb8301e3d4be6cb2aaee5238faf1e192df` at all three paths; v1 and v2 and their copies untouched. 1969 f, 60/1, 32.817 s; audio packets identical to v1/v2; -14.1 LUFS, -1.6 dBFS, LRA 3.8; no dark or flash frames. Frames 0-1617 bit-identical to v2, 1618-1721 encoder-only (46-70 dB PSNR), 1722-1812 (S20) the real change. Step at 1721 -> 1722: v2 42 px, **v3 1 px**; S20 then drifts a smooth 21 px over 1.5 s (zoom), as in v2.
+- **Open, unchanged from v2:** the flagged readings (whole "to kill me" card red, the CNN bar at the torso, zoom rates), Piers and film audio unheard, Lionsgate Content ID, the full catalog pass. Logged in LESSONS.md. Next round = v4, never over v3.
+
+## ▶ 19 Nov ~04:00 PKT (hub): MJ FIRED HIS FATHER v2 DELIVERED + VERIFIED (waiting for his review of v2)
+- **His typed review of v1 (19 Nov, four notes) went to mj-fired-father-build (local_27a7dec9), which rendered `outputs/Michael Jackson FIRED His Father v2.mov`.** v1 and its two copies are untouched (sha `ad6a1188…3a75ee` at all three paths).
+- **Hub check:** sha256 `30477baac1c3530af19c73718f0b9657c00d05460f85fac03beddf8aa1b37624` at all three paths (outputs, `E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\`, `X:\Claude Projects\Exports\`); 1080x1920 H.264, 60/1, 1969 f = 32.817 s, PCM 24-bit; audio packets md5-identical to v1; -14.1 LUFS, -1.6 dBFS, LRA 3.8; YAVG 19.5-84.8, no dark frames, no 1-2-frame spikes; contact sheet: CNN bottom bar at ~y1398, Joe label and the 19.1 s pill below it, "TO KILL ME" all red.
+- **What v2 changed:** (1) zoom = soft attack + rising drift, 3.5 %/s film / 2.5 %/s overlays, pivot on the face; (2) CNN bottom glow bar to Joe's torso end (y1398) on all four shots; (3) "to kill me" whole card red; (4) head lock closed on the displayed head by optical flow (Katherine "whoop" 172/57 -> 6/10 px). Cost: film shots 1-10 % tighter. Not locked: Joe's whip at the belt line, the real Michael y (S06 63 -> 93 px).
+- **For him:** "red entirely" read as the whole card; the bar reading of his note 8; zoom rates are one dial. Still open: Piers and film audio unheard, Lionsgate Content ID, the full catalog pass not done. **Nobody watched it in motion.**
+- **Logged:** LESSONS.md 19 Nov section. The build wrote a hedged data point into memory `feedback-aw-transition-zoom` (a candidate curve, not a rule; the hub left it). Next round = v3, never over v2.
+
+## ▶ 18 Nov 16:25 PKT (hub): YOUTUBE BLOCKED 06:10-16:21 (not AW), now open; lock held by a live capture
+- 06:10 streamer-clips-anatomy (a GTA 6 research session) hit a bot page / 429 on V7-8suw3lv4 and set the flag. The Afterhours Editor
+  (local_92846f3a) cleared it at 16:21 after one spaced probe (`youtube.BLOCKED.cleared-2026-11-18b`) and told the hub. AW sessions
+  weren't told about the block; pace.sh exited 75 for them.
+- **Since 16:23 `youtube.lock` is held by a `--live-from-start` capture** of IGN's GTA 6 review AMA (pace.sh pid 409, yt-dlp 413) for
+  Affan's GTA video, until the stream ends. pace.sh line 29 takes over ANY lock older than 4 h (`age > 14400`), owner alive or not,
+  so a waiter still queued at ~20:23 would overlap a second YouTube stream. The Afterhours Editor will handle it near 20:20. AW told
+  (aw-mj-beats, aw-speed-beats, aw-gta5-farewell, each to relay): no waiters now, check `.locks/youtube.lock` first.
+
+## ▶ 18 Nov ~05:30 PKT (hub): MJ FIRED HIS FATHER, STOP 2 DELIVERED + VERIFIED (waiting for his review)
+- His Tella on the raw cut: notes 1-10, then "Yeah, that's about it. You can start the build now" (248-256 s;
+  `research/aw-mj-2026-11-17/format/review1/NOTES.md`). mj-fired-father-build finished it in code (the Dad Short form, aw-mj-beats'
+  call). Nothing was written to Premiere.
+- **Hub check, on the file:** `projects/mj-fired-his-father/outputs/Michael Jackson FIRED His Father.mov` sha256 `ad6a1188…3a75ee`,
+  identical at E:\Shorts\Abudance Wisdom Shorts Exports\Final Renders\ and X:\Claude Projects\Exports\. 1080x1920, 60/1,
+  1969 frames = 32.817 s, H.264 + PCM 24-bit, A/V start 0/0. ebur128 -14.1 LUFS, -1.6 dBFS true peak, LRA 3.8.
+- **Frames:** YAVG scan of all 1969: no 1- or 2-frame spikes, min 19.5. The only dips are two smooth 7-frame dips at the side switches
+  (8.35-8.45, 25.50-25.62), its designed transitions into the film. Contact sheet + detail frames: note 10 is in (film Joe greys under
+  "Well, he feels that he was strict", hard cut to the colour of real Michael at 30.217); white lines on the letterbox edges; CNN banner
+  blurred; no children on frame; "kill me" (Michael, laughing) is not a censor word.
+- **For him:** listen to the Piers audio (+11.5 dB) and the film lines (limited ~6 dB at the peaks), which nobody has heard; Lionsgate
+  Content ID; the full catalog pass was NOT done (BRIEF.md says so); 8 one-line decisions in RUN.md ▶ STATUS. A re-render is
+  `… v2.mov`, never over this one.
+
+## ▶ 18 Nov 01:36 PKT (hub): YOUTUBE BLOCKED (youtube.BLOCKED set by gta5-farewell-build), CLEARED 03:40
+- At 01:33 one paced slot ran 5 `yt-dlp --write-auto-subs` requests back to back; requests 3-5 answered HTTP 429. Caption/timedtext
+  fetches and batched requests are BANNED by the standing rules; it was on Affan's direct ask for more emotional creator bits for the
+  GTA farewell (a NEW Premiere sequence, his revised cut untouched). It stopped without retrying and set the flag.
+- Hub: all YouTube users told (aw-speed-beats, aw-mj-beats, aw-gta5-farewell, gta5-farewell-build, CA-015, the AffanWiz growth plan).
+  pace.sh exits 75 on the flag. The Data API (yt_api.py) is a different host and stays open. Hub probe ~2 h later (one `yt-dlp --print`
+  on one video, the 14 Nov recipe); clear only if it answers normally.
+- 01:45: CA-015 spotted an orphaned caption waiter (pid 60180, `pace.sh youtube yt-dlp --skip-download --write-auto-subs` for 5 videos,
+  parent gone). Hub checked: already gone. pace.sh re-checks the flag after taking the lock, so it exited 75 without firing. No YouTube
+  waiters remain.
+- **03:40 CLEARED.** Hub probe: no yt-dlp/pace.sh youtube running, then ONE `yt-dlp --print title` on 06cXi5cJXMQ (no cookies) answered
+  normally, 2 h 05 min after the 429. Flag renamed `youtube.BLOCKED.cleared-2026-11-18`, probe note appended. Told gta5-farewell-build
+  (directly: no caption fetches ever, words from local ASR), aw-gta5-farewell, aw-mj-beats (to relay to mj-fired-father-build),
+  aw-speed-beats, CA-015 and the AffanWiz growth plan: downloads only, one video per pace.sh slot at 180 s, no captions/timedtext,
+  no batches, searches via yt_api.py.
+
 ## ▶ 17 Nov ~21:00 PKT (hub): HIS TOPIC RULE: "the Michael Jackson of each space"
 - **His words:** "I think the Harry Potter niche is a staple now Currently the short is four out of 10 so it's directly competing with my Michael Jackson short
   ... ultra mega famous things are going viral on my channel ... we can go into any niche and say what is the Michael Jackson of this space
@@ -62,6 +587,9 @@ Jermaine is still unbuilt, so its build takes this style.
   STOP 1). aw-gta5-farewell owned the skip, but the hub's brief caused it: it said "After his OK: build" without naming STOP 1. Now
   gta5-farewell-build lays v3 as a raw sequence in ABW11 (no save, no export) once he's been idle 2.5 min in Premiere (quietgate),
   then reads it back. LESSON in LESSONS.md.
+  - **00:38 STOP 1: "13 Years Goodbye GTA 5 - raw cut" in ABW11** (bin "GTA 5 Farewell"), READBACK PASS, his playhead untouched, unsaved
+    (needs his Ctrl+S). Next: his Tella, then the finish build. His workflow, in his words: "text sequence -> premiere sequence -> tella video
+    -> start the build" (memory feedback-sequencing-before-edit). The caption ban is now in its BRIEF ▶ STATUS.
 
 ## ▶ 17 Nov ~03:35 PKT (hub): TWO RESEARCH SESSIONS STARTED, MJ + IShowSpeed, by beat mining (his words, this session)
 - **His ask:** two research sessions, one MJ ("that niche is just simply working"), one IShowSpeed ("got me a lot of views ... a mega
@@ -231,6 +759,12 @@ Jermaine is still unbuilt, so its build takes this style.
     1990 (IG 163K, but YouTube only 480p). SLIP: an IG agent skipped pace.sh once (logged in format/IG-FILM.md). 39/42 searches; meter 37 %.
   - **He chose THE FIRING → raw build:** [mj-fired-father-build](local_27a7dec9-c04d-4524-87ce-8b67d8f54b52), started by aw-mj-beats,
     makes a new raw sequence in ABW11 (no save, no export). Two raw builds (this + GTA) share premiere.lock and the idle gate.
+  - **00:57 (18 Nov) STOP 1: "Michael Jackson FIRED His Father - raw cut" placed in ABW11, READBACK PASS** (hub read `projects/mj-fired-his-father/
+    premiere/READBACK.md` § Verdict: every span within 2 ms). 38.30 s (36.23 s without the optional B7b/B7c). Window 00:56:49-00:57:05
+    behind GTA's lock, idle 161 s; his active Sequence 13 restored by id, playhead ticks identical, Sequence 02 untouched; no lock left.
+    NOT saved: he needs Ctrl+S. His items: hear the Piers audio (-28.5 LUFS, +11-12 dB review gain); Lionsgate film audio (Content ID);
+    beat 8 opens on 1.5 s of mixing-desk B-roll; beat 6 is a 296 % crop of an SD source (soft); a 0.1 s "And/I mean" lead-in on B1c;
+    Joe's "Well," cut.
   - **~07:00 Speed: Affan REJECTED the £1.79 sequence** (per aw-speed-beats) and set PASS 3 there: map our viral MJ frameworks onto Speed
     and beat-mine each one, his test being ~12 viral beats per framework (`research/aw-speed-2026-11-17/pass3/PLAN.md`, `FRAMEWORK-MAP.md`).
     F1 "the loud clown vs the lonely real Darren" (the analogue of the MJ skin-misconception Short) has 5 beats: @unpaid_bro 482K likes /

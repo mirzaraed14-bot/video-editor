@@ -1,0 +1,1032 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "SDcnFFyKDsl0QpmSSEboxu0WYeg",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1DdHdCQ0lBRUZSZTMwVGdhMFFFS3pBRUkyRjhRZ0FRWUJ5TEJBWk9aZ0JvZGZTV0NUakI3UzhZbUZsblo1MWRLQllGWXc5TFFSQlVtWGx2TmhSVGxVVTJjcm55OV9qdzZrVXBzbnZUVlh4RHVpLWstYTdyVVMzYUptV1FUX2xiblg2Ulo5UnVreGc2aXhndHJpSjlnVU5CZXFWei1HRTVqSk9OOFhUcUhfZ0kxWjM0TS1sRHZfNjdYbVZud180Q3VWZllQNDFHVnlhdzFwMjlBM3lrZ2dhOHlGTWdrN01zZDdEQ3hibkxxOTBDeUMzYS0yMkdnb3d1cTZqZkhKVmtjWU5LcVFkM2tQcjMzaUlkNWpUTTY4LVpISDNGSGY3Wnd5UGxIYjRzUUhoSUhDSVVnRUFjWUFSSUZDSVlnR0FBU0JRaUlJQmdBRWdVSWlTQVlBQklGQ0tnZ0dBQVNCd2lFSUJBYkdBRVNCUWpBSUJnQUVnVUloeUFZQUJJRkNMc2dHQUJRQUZnQg==",
+  "pageInfo": {
+    "totalResults": 30,
+    "resultsPerPage": 30
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "teaBGy56ziBaxhCqApOQzfarols",
+      "id": "Ugx_fe0wPXzg-STZSQ14AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "yvJK2D9AZNPYlYMSHAlqRBIMFJ4",
+          "id": "Ugx_fe0wPXzg-STZSQ14AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "It probably took 13 years because the women couldn't make up their mind.",
+            "textOriginal": "It probably took 13 years because the women couldn't make up their mind.",
+            "authorDisplayName": "@HyperDroids",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_n1uoxVeJZzBnMZypOwMPO5yBZ2h5ozj5YDDT19oXHFMe8=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@HyperDroids",
+            "authorChannelId": {
+              "value": "UCPrspUVL18p9HnIuM_FyYxA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 197,
+            "publishedAt": "2026-11-21T14:13:38Z",
+            "updatedAt": "2026-11-21T14:13:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "7-_ccamtKy06gR5sRqFYj6S3U3s",
+      "id": "UgzwStYJBqyoThv2NsV4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "HQZ4uQWviOI2xlVMkgiTJNqXPgo",
+          "id": "UgzwStYJBqyoThv2NsV4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "I should probably get off YouTube and get back to my chores before Lucia gets mad.",
+            "textOriginal": "I should probably get off YouTube and get back to my chores before Lucia gets mad.",
+            "authorDisplayName": "@Zharles",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/hmdRppEgmo2sn3T71IYEf1LNK-OTLnZJnLwkjp1WNsT6ksQpQP1q6sbNw7AKsQqHgCgEmDMSKg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Zharles",
+            "authorChannelId": {
+              "value": "UCtU1sqUHXNkVEtdzHi2NADg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3383,
+            "publishedAt": "2026-11-21T12:47:42Z",
+            "updatedAt": "2026-11-21T12:47:42Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 48,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OBo-bWMQqLWYTOtyIwzLLEOx66Y",
+      "id": "UgwU6jt_GRQIeRZkEFd4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "R78q_Jqn7Fg-fHA4RjaluvwVQ44",
+          "id": "UgwU6jt_GRQIeRZkEFd4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "13 years to see HR women write GTA",
+            "textOriginal": "13 years to see HR women write GTA",
+            "authorDisplayName": "@Dino9474",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ckfEdW0DLmXy8QXNUvt5XwSG55p5tGhQk4Wo-M_WGAkLTfZRYBnCafEi3mewx8pzCETS1Jg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Dino9474",
+            "authorChannelId": {
+              "value": "UCnha1IPUwILcWpI4mR1TM_A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 7261,
+            "publishedAt": "2026-11-21T11:54:50Z",
+            "updatedAt": "2026-11-21T11:54:50Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 128,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "26s805V5gXPqFylzDvf-GRsOfrk",
+      "id": "UgzWE5XWjQ0QoBqJ2OJ4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "96hrwEZB3AYMnL5cSVhM8QqJvno",
+          "id": "UgzWE5XWjQ0QoBqJ2OJ4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Don’t try to damage control that shit. This is undeniably being controlled by HR goobers who’ve never played a game in their lives. It’s a political stunt.",
+            "textOriginal": "Don’t try to damage control that shit. This is undeniably being controlled by HR goobers who’ve never played a game in their lives. It’s a political stunt.",
+            "authorDisplayName": "@shoot40blivion",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/Cong7b8pAIRgTYaHDEha5CLFldkV1PDzrlltaUhld6aj1QdnRR0zJO4LTSlQ8SBrShUZZWwLfQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@shoot40blivion",
+            "authorChannelId": {
+              "value": "UCs_fpVat4aHbki3993H2_IQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 26,
+            "publishedAt": "2026-11-21T14:37:04Z",
+            "updatedAt": "2026-11-21T14:37:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XWP-1dSxPUI-J7T6KhFBG8xZkSo",
+      "id": "UgwskDblfGZmMEYP96F4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "K7naJXjELthqF-ViU3rFq-KCB4M",
+          "id": "UgwskDblfGZmMEYP96F4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Turns out the real Grand Theft was selling this game for $100.",
+            "textOriginal": "Turns out the real Grand Theft was selling this game for $100.",
+            "authorDisplayName": "@kaskae",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/6bVtf8UwEdO926O_bYpC0wLJsJXBgAVi0kC3qVcz2x8GJ0h_553phtgknAFQA1dDyEUo1pDGS64=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kaskae",
+            "authorChannelId": {
+              "value": "UCbZExVew5f_oY3vH-cV3Yrg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5483,
+            "publishedAt": "2026-11-21T12:09:38Z",
+            "updatedAt": "2026-11-21T12:09:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 125,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-hv_5moqZR6e9O-q1R7YtWPCDhE",
+      "id": "UgyBmXi2KAPe-t1A_K14AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "BJqlc6_fO4TJVPjXkuJpjlE6Dfo",
+          "id": "UgyBmXi2KAPe-t1A_K14AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "GTA 6 out for 3 days and everybody already is over it. 13 years for this.",
+            "textOriginal": "GTA 6 out for 3 days and everybody already is over it. 13 years for this.",
+            "authorDisplayName": "@BDRpictures",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/C92RySADURbt1e9rG7rqvb-k2Ot8Mc8UZtqu0JVuM6U007T_pokBDmMAN3qCq3DXZcU3KMPTnw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@BDRpictures",
+            "authorChannelId": {
+              "value": "UCNg_onKyhuDTAUzhuM1ArcQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 6501,
+            "publishedAt": "2026-11-21T11:48:53Z",
+            "updatedAt": "2026-11-21T11:48:53Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 469,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "uD5yCcLV8b7jHMrRivksVAJNG98",
+      "id": "UgwRI8RKUVasYoW5sR94AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bmNgnyAfOLFXi1PH6C6OqIUNuXM",
+          "id": "UgwRI8RKUVasYoW5sR94AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Dan Houser, the original GTA writer left rockstar in 2020 after his ideas for GTA 6 were deemed too \"dark and controversial\". There you have it, a watered down, sanitized corporate ESG bullshit",
+            "textOriginal": "Dan Houser, the original GTA writer left rockstar in 2020 after his ideas for GTA 6 were deemed too \"dark and controversial\". There you have it, a watered down, sanitized corporate ESG bullshit",
+            "authorDisplayName": "@vdidyde2907",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kJChqz63l_q_AlLj-pWz984d0UOC-J8dpBJ9ISz_0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@vdidyde2907",
+            "authorChannelId": {
+              "value": "UCP3mtugR-A-03j32_keWznw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1333,
+            "publishedAt": "2026-11-21T13:14:17Z",
+            "updatedAt": "2026-11-21T13:14:17Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 62,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Ey1baCS3mZNSFc94bVvAHh29yRw",
+      "id": "UgxFFUdiTcR7vYtOTBh4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "dX_WlC8BVoWW5_YJuioAuDh_dNk",
+          "id": "UgxFFUdiTcR7vYtOTBh4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Shout out to all the players who saw this coming from the first announcement, and didn’t take the bait and didn’t give in to FOMO",
+            "textOriginal": "Shout out to all the players who saw this coming from the first announcement, and didn’t take the bait and didn’t give in to FOMO",
+            "authorDisplayName": "@CharlesEntertainmentCheeze",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ZmIMfcONNcCDKlEKZJNpLhJZ6uW5bdaxhH0ugwG0-7KpRd_z-pQA1irXfyzvoK7cPNagTHxf-Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CharlesEntertainmentCheeze",
+            "authorChannelId": {
+              "value": "UCsoA6pQR8Hx5njOb5HS79Yw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 16,
+            "publishedAt": "2026-11-21T14:54:11Z",
+            "updatedAt": "2026-11-21T14:54:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-duDrdkaSc-jFMxrsnJOaQl8koE",
+      "id": "UgyafVxueVga1dtBrJN4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "pcKYmvGVFOF8G2EytArvy1xWYZc",
+          "id": "UgyafVxueVga1dtBrJN4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "“You will play our trash, own nothing and be happy”.",
+            "textOriginal": "“You will play our trash, own nothing and be happy”.",
+            "authorDisplayName": "@Wise_om",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/k31bwsKYkiAe6bIV5cgUuDuaxVR2VFBaOUapFk9ijchObpPLwPeela1LXRwVGOIOrT_yS-wMsA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Wise_om",
+            "authorChannelId": {
+              "value": "UC7BHuwZ_nT9WlUOwIGXpC5w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 399,
+            "publishedAt": "2026-11-21T14:03:39Z",
+            "updatedAt": "2026-11-21T14:03:39Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 11,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rqqNTvP_y7BbYZKkjXJc6ntnV7Q",
+      "id": "Ugx2skK_cucgwkeQBqp4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Z8fuaRyCb8cDXbNHsGZ7r-FiQUw",
+          "id": "Ugx2skK_cucgwkeQBqp4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "GTA 6 became the game that GTA franchise use to satirize",
+            "textOriginal": "GTA 6 became the game that GTA franchise use to satirize",
+            "authorDisplayName": "@Who3_3Nose",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/yPrdrekIPuj5UXCa2nHt4CJ_Lw20feCtlTOUB8mb1YstROzux04RMvA4BYLsAupVzmiX3nzmtg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Who3_3Nose",
+            "authorChannelId": {
+              "value": "UCIuiKwrGk53tTVSK2rttKhQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3180,
+            "publishedAt": "2026-11-21T11:57:13Z",
+            "updatedAt": "2026-11-21T11:57:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 62,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vrGo7TC6OHyqwfdeXgcD-fsf81E",
+      "id": "UgwMj8gXaJ9cCsCNo2V4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "3u6Be7Wj4C3wjUXUaK4KSI88fBQ",
+          "id": "UgwMj8gXaJ9cCsCNo2V4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "When my girlfriend wants the game more than i do and she doesnt even game you know its bad.",
+            "textOriginal": "When my girlfriend wants the game more than i do and she doesnt even game you know its bad.",
+            "authorDisplayName": "@Jpp-r3j",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_ltG5Vixvi3d0Yh00mrIlUB2on93_zWY8hkMojmBpX9mvBiNJjt4vNgL5Rn8XCPf9bnFg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Jpp-r3j",
+            "authorChannelId": {
+              "value": "UCnjfg8b7DGp2rJXKHu0NE-Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2020,
+            "publishedAt": "2026-11-21T11:52:08Z",
+            "updatedAt": "2026-11-21T11:52:08Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 72,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "3Ts5odvBCn69WUBA-4gUGUSDH24",
+      "id": "UgyxluUAXL5ZEkFo3uR4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "y374tMUTLoOZqt3vgyazSWni594",
+          "id": "UgyxluUAXL5ZEkFo3uR4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Why Asmon is being such an apologist for this 5 / 10 that HR took 13 years to \"make\" is beyond me lol",
+            "textOriginal": "Why Asmon is being such an apologist for this 5 / 10 that HR took 13 years to \"make\" is beyond me lol",
+            "authorDisplayName": "@realaeonstar",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ybrfsz5dWOOf4knDOu4Bw-qAlAlWc8s4yG9g6EhWHBVZn4O8Mx5D5oY6QXwr3XGx8l0pQRUUNQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@realaeonstar",
+            "authorChannelId": {
+              "value": "UCpcb_KdOgb3aUUZExlifqZw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 23,
+            "publishedAt": "2026-11-21T14:47:40Z",
+            "updatedAt": "2026-11-21T14:47:40Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bjE8_cXVu9rRn1EkcmLvaiuX4tM",
+      "id": "UgwYbdPOHS2cOhSUvD14AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Yqq6vB76p5Oy-knc0u1ozXdHBRY",
+          "id": "UgwYbdPOHS2cOhSUvD14AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Imagine waiting over a decade just to get a linear relationship simulator with worse mechanics than GTA V.",
+            "textOriginal": "Imagine waiting over a decade just to get a linear relationship simulator with worse mechanics than GTA V.",
+            "authorDisplayName": "@trunkfunk",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/a3dJsOTQ1C9_P8s-8-BD2cpcjhK4KpMBEEKcq-G-5aDuHSUMv6dKCFFMKtNOWYflAVycZIDk5A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@trunkfunk",
+            "authorChannelId": {
+              "value": "UCe0Y3d6kTBWv-vNO_t6tcwQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 597,
+            "publishedAt": "2026-11-21T12:05:15Z",
+            "updatedAt": "2026-11-21T12:05:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 27,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "-4PkzJEfsDNR6407dRDcIHDWpG4",
+      "id": "UgwnO4pTVv6Ek687w2F4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ipwsL8TSMn7tIaWfN9upI1oefUI",
+          "id": "UgwnO4pTVv6Ek687w2F4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "If a game is \"politically correct\" then its not a GTA game.",
+            "textOriginal": "If a game is \"politically correct\" then its not a GTA game.",
+            "authorDisplayName": "@captainairbus3215",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kobtIKB48kYbyoIbTaEMN7k6Obdij_-kVeSMbC28jaAlf34P-acLGJTORMNvUS62PM0Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@captainairbus3215",
+            "authorChannelId": {
+              "value": "UCsAPWLh_kgu4vzpcpyBREfw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2351,
+            "publishedAt": "2026-11-21T11:59:15Z",
+            "updatedAt": "2026-11-21T11:59:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 87,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "5ZhstCJBAoOEx3nTL_3wzY2UcaU",
+      "id": "Ugwy-ZWMf_s2DTOi6Tt4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "vb2TfhZkYs6Frq6mZzozX_yie-A",
+          "id": "Ugwy-ZWMf_s2DTOi6Tt4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Turns out, you got sims 5 before you got gta 6.",
+            "textOriginal": "Turns out, you got sims 5 before you got gta 6.",
+            "authorDisplayName": "@drdaryl8758",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mmsD-lV1KwwETxT6mmremZdbV8RUlIGafNT-jYKHLRNAtUV3Th-FV9QR6jqDcCNsX9gA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@drdaryl8758",
+            "authorChannelId": {
+              "value": "UCBkS_PYZo0gtaZLFX9Gtgcg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 679,
+            "publishedAt": "2026-11-21T12:06:06Z",
+            "updatedAt": "2026-11-21T12:06:06Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 14,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "sqz7VTKHDbwLF2VLCeGBuzjmLTM",
+      "id": "UgzK8hGhOaZEzemTWZN4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9RD2XQa0DcWOtiLYGIWoWkOqPgc",
+          "id": "UgzK8hGhOaZEzemTWZN4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "This is why it was released on PS5 first, no refunds, they'll be able to show high numbers from suckers who pre-ordered. They'll count this as a win, but no one will ever buy from them again.",
+            "textOriginal": "This is why it was released on PS5 first, no refunds, they'll be able to show high numbers from suckers who pre-ordered. They'll count this as a win, but no one will ever buy from them again.",
+            "authorDisplayName": "@JoeTAC",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kJKD_UZfzm-SV7Yqo8OmaymcuAWrqeym07_DTtrMD7=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JoeTAC",
+            "authorChannelId": {
+              "value": "UCNE5UIdZq_RtCUt4oPaCW8g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 5,
+            "publishedAt": "2026-11-21T14:50:23Z",
+            "updatedAt": "2026-11-21T14:50:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "05J4YAnZPjYskIdZDNyW90Br0n8",
+      "id": "Ugy7G0JpetgpWasodC54AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "BfEtDb7pywVf-dsnpBOuw61gkpw",
+          "id": "Ugy7G0JpetgpWasodC54AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "I rather abandon my child that my baby daddy doesn't know about and rob a place and get sent to prison than pay for this game.",
+            "textOriginal": "I rather abandon my child that my baby daddy doesn't know about and rob a place and get sent to prison than pay for this game.",
+            "authorDisplayName": "@AlexandraJane21",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/pcPWRsEy5qvKd1DspH9J-LKN0svDHOT0drf_K-uGcw7cuQ5Oq1HndE_qa-fT8xC5VUa5upcWU5w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@AlexandraJane21",
+            "authorChannelId": {
+              "value": "UCnhpLfm53ZByKYgDla-f36w"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 445,
+            "publishedAt": "2026-11-21T12:02:40Z",
+            "updatedAt": "2026-11-21T12:03:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "0Ip0NDtjl_SSn2chYujaYHSd_B0",
+      "id": "UgwpyfixZ4JuoktjAu14AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "FRD4yCpoX0caWN86iFBHF5-wqKE",
+          "id": "UgwpyfixZ4JuoktjAu14AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "A coworker of mine was defending the not being able to hook up with prostitutes as \"well, now you're in a relationship, you can't be unfaithful to her\"\nI'm like: wtf do you mean?!\nMichael from GTA V was married and had kids and could do it.\n\"Yeah, but he was getting cheated on?\"\nSo?\nHe could've continued to be faithful, but he didn't. Also, since when is the game too moral for prostitution but going on a mass genocide rampage is ok?\nDon't give me that shit.\nIf a game tries to remind me of morally correct decisions while still giving me the opportunity to make morally opposite decisions, then it's trying to indoctrinate me into doing what THEY want and not want I freely wish to do.",
+            "textOriginal": "A coworker of mine was defending the not being able to hook up with prostitutes as \"well, now you're in a relationship, you can't be unfaithful to her\"\nI'm like: wtf do you mean?!\nMichael from GTA V was married and had kids and could do it.\n\"Yeah, but he was getting cheated on?\"\nSo?\nHe could've continued to be faithful, but he didn't. Also, since when is the game too moral for prostitution but going on a mass genocide rampage is ok?\nDon't give me that shit.\nIf a game tries to remind me of morally correct decisions while still giving me the opportunity to make morally opposite decisions, then it's trying to indoctrinate me into doing what THEY want and not want I freely wish to do.",
+            "authorDisplayName": "@ugn154",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/H5uDptnjsIOpn8xxLE26tOWHj1Pf9C2-1qzdjcHPRIZrGr6or7f6iLKI-ZmdjaEtUxMdp1yWtg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ugn154",
+            "authorChannelId": {
+              "value": "UCNWG734i6Yi-SByMVerimbA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 135,
+            "publishedAt": "2026-11-21T12:27:36Z",
+            "updatedAt": "2026-11-21T12:27:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "APtDGcO46o-BuBVG_9eO3MCfHsI",
+      "id": "UgzTWc2w_gP6j2vtBi54AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "76cKXWWCyM-2jZqxjFJoKstK0hA",
+          "id": "UgzTWc2w_gP6j2vtBi54AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Why would they sleep in the same bed? There's a couch",
+            "textOriginal": "Why would they sleep in the same bed? There's a couch",
+            "authorDisplayName": "@richardbaker308",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_koTW97fKmwLmOjHywAcXAoOrVRhwgCgt6uaCfnuMw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@richardbaker308",
+            "authorChannelId": {
+              "value": "UCy9Oc9Wv5PUYVm_5fO3hvIg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1656,
+            "publishedAt": "2026-11-21T11:55:19Z",
+            "updatedAt": "2026-11-21T11:55:19Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 144,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "X94Aj3AWrnlV6ubgXKvpWoCyp4g",
+      "id": "UgwGP_5C3-29psBbRqt4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5E16yuHmgc4w0YNjTKNWzzkYWC8",
+          "id": "UgwGP_5C3-29psBbRqt4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "People are not just mad, they are also sad and frustrated to see a thing they played for their whole childhood being ruined by the same people who ruined almost everything else for gamers, young men, worker class...EVERYONE who waited 13 years to get that sh*t should be insanely mad. \n\nGTA VI should have been the best thing of the year, with 95% of people as happy as Rat in the Cheese Factory, but there we are...",
+            "textOriginal": "People are not just mad, they are also sad and frustrated to see a thing they played for their whole childhood being ruined by the same people who ruined almost everything else for gamers, young men, worker class...EVERYONE who waited 13 years to get that sh*t should be insanely mad. \n\nGTA VI should have been the best thing of the year, with 95% of people as happy as Rat in the Cheese Factory, but there we are...",
+            "authorDisplayName": "@anubisTC",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nAThTa6GPOKda2sx5fbkwI8KBpN99kp7qROp3-Kks=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@anubisTC",
+            "authorChannelId": {
+              "value": "UCOugmBXr9LMEzD07pdD-Nmg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 4,
+            "publishedAt": "2026-11-21T14:36:51Z",
+            "updatedAt": "2026-11-21T14:37:04Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_nHN_d0HyxfzbPpba2eV_aX8pEg",
+      "id": "UgzVqm-kdDOHarx18bt4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "ewNv0dpkZyFWia3zBKm3WXjbKUA",
+          "id": "UgzVqm-kdDOHarx18bt4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "If you didn't see this happening, you haven't been paying attention.  These companies hate us.  Maybe it's time we return the sentiment.",
+            "textOriginal": "If you didn't see this happening, you haven't been paying attention.  These companies hate us.  Maybe it's time we return the sentiment.",
+            "authorDisplayName": "@Coronzon777",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/KxWgByBmN09pTLm66XK2qwGHkbBU7k-atqArrguMSz8jzqQysXdYdvuqWmaFi8aT6hvp_glQVc0=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Coronzon777",
+            "authorChannelId": {
+              "value": "UCqxBnPGzikGXL95JHlfQBKA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1428,
+            "publishedAt": "2026-11-21T12:10:10Z",
+            "updatedAt": "2026-11-21T12:10:10Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 78,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xDxydTz0Kwgl0hv8-yPC7l3P3uw",
+      "id": "Ugx4JMyfwhzWWN0Digl4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "pocl1HyoLETAIl0rfBuLe_Wk6Lo",
+          "id": "Ugx4JMyfwhzWWN0Digl4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "To get the \"good\" ending you have to be a good boy and not commit serious crime... in a game called grand theft auto. It's turned into the sims with guns.",
+            "textOriginal": "To get the \"good\" ending you have to be a good boy and not commit serious crime... in a game called grand theft auto. It's turned into the sims with guns.",
+            "authorDisplayName": "@ioijiopjkiopjkp",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nsGRoZSZqjCDH62l8tWFFgJjG0KRL6WsORv6L5KNzRqMZOL2aCbTH5fudu3WOXB8naMg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ioijiopjkiopjkp",
+            "authorChannelId": {
+              "value": "UCA1LA2VRe7npJXMQdS4hGxA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 180,
+            "publishedAt": "2026-11-21T12:33:57Z",
+            "updatedAt": "2026-11-21T12:33:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 21,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "SZiQ3WLidbJ-nRwmmWznhAD6Tno",
+      "id": "UgykJOgdUSYcoEq08wd4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "oQK_b43NEF6fUK4yM8pPJEpMQKA",
+          "id": "UgykJOgdUSYcoEq08wd4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "When women in HR determine acceptable amount of crime.",
+            "textOriginal": "When women in HR determine acceptable amount of crime.",
+            "authorDisplayName": "@Sadanche",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/2EuPAD5TfLGe9pdVb-b6ONkH-UwKauugZndVtBDCP-sejODhlCYMoMtZKjoTLsOfNz6V-MZmQow=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Sadanche",
+            "authorChannelId": {
+              "value": "UCTF_XXQG1YKWNuTEs5XjrzA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 406,
+            "publishedAt": "2026-11-21T13:14:33Z",
+            "updatedAt": "2026-11-21T13:14:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bhT-zbmITn1QOB3UqAM7wMxPv0Y",
+      "id": "Ugy_6LREe4WhKI_cDfV4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "faxUnaIe3f3ZvOwdJamDkW10CTI",
+          "id": "Ugy_6LREe4WhKI_cDfV4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "So this game is basically SIMS and not GTA",
+            "textOriginal": "So this game is basically SIMS and not GTA",
+            "authorDisplayName": "@DavidSlEePtOkEnSanchez",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mLkc4-kSZjn2qJyUFnRIH3v7Djmiznp-OE7TQOgxkz_28=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DavidSlEePtOkEnSanchez",
+            "authorChannelId": {
+              "value": "UCiha2f-ZnPLADYjgtLnv4Tw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3,
+            "publishedAt": "2026-11-21T14:53:58Z",
+            "updatedAt": "2026-11-21T14:53:58Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "CXe_6mdma-RBaUD-FO1EK5w-X2w",
+      "id": "UgxPmF7L6a_ckHSdCch4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "XpkoMuO5pAwnzf1JlwqFvtI7b3M",
+          "id": "UgxPmF7L6a_ckHSdCch4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "It is basically a feminist life simulator at 20 FPS.",
+            "textOriginal": "It is basically a feminist life simulator at 20 FPS.",
+            "authorDisplayName": "@kaandervis6276",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kq9phLggHZvy9QDS6vrlWL-LxTAtHmFvAkrBobr3w=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kaandervis6276",
+            "authorChannelId": {
+              "value": "UCNxJbSKEMigeWtV7p7IrqtQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 839,
+            "publishedAt": "2026-11-21T12:49:34Z",
+            "updatedAt": "2026-11-21T12:49:34Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 19,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Jj2D88QJysvA1zYLgdpgTJnqVEw",
+      "id": "UgzyE_JBWPJxG357YLJ4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "hm7geOHznbBhOVtk5BAkHlvEisg",
+          "id": "UgzyE_JBWPJxG357YLJ4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "They are psychological, social enginering and ai learning, data collection tools... the original GTA writer left rockstar in 2020 after his ideas for GTA 6 were deemed too \"dark and controversial\".",
+            "textOriginal": "They are psychological, social enginering and ai learning, data collection tools... the original GTA writer left rockstar in 2020 after his ideas for GTA 6 were deemed too \"dark and controversial\".",
+            "authorDisplayName": "@laurastelaa",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kljh194W0fyOjEpdBnRrpKD4q76nGlBRZYo6mgeqgsTC8mk-TjiIek9rEQ1FF9h-J10g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@laurastelaa",
+            "authorChannelId": {
+              "value": "UCCEhPTv5N6COHh_7DvufnIQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 386,
+            "publishedAt": "2026-11-21T13:40:23Z",
+            "updatedAt": "2026-11-21T13:40:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9BYxWus2CqRK9APWbSgSZnanAN8",
+      "id": "Ugwt-rX1uLeqfvimMjB4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "lGUUsVyhMaY9KJkefRLl3nUfCF0",
+          "id": "Ugwt-rX1uLeqfvimMjB4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "This is not GTA, they should of changed the name out of respect for the original founders .",
+            "textOriginal": "This is not GTA, they should of changed the name out of respect for the original founders .",
+            "authorDisplayName": "@ShutThatMuscleDown",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ptFTOrS5cFWWs1fvxPKOgJb1Q_GFEZOaj9rmgG7PcRVnCb_TvlpEWMxu6m0pMMCKDAAfb4uGZ30=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ShutThatMuscleDown",
+            "authorChannelId": {
+              "value": "UCAa_dwM4DAC1yFs8r8dY9hQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 206,
+            "publishedAt": "2026-11-21T12:06:54Z",
+            "updatedAt": "2026-11-21T12:07:15Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "cWCPTLzskQt9s3ep66DKge5Fu4U",
+      "id": "Ugx_yVnbMxEugGUrgal4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "iZ5Dt9WbM572OmovDKtk4uEQOsg",
+          "id": "Ugx_yVnbMxEugGUrgal4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "The bugs and frames are gonna be ironed out so at least people can start whining about the next biggest problem.",
+            "textOriginal": "The bugs and frames are gonna be ironed out so at least people can start whining about the next biggest problem.",
+            "authorDisplayName": "@ItsWheels69",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ro0cPcpzuYi2B3bqHk8pq5iqJHCuwGgNIsmEoZWMsgRB-GAHebbxc-V_AbFFG3anFGClVfz0PNQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ItsWheels69",
+            "authorChannelId": {
+              "value": "UCBVTwG3iPgfORPwN53NkbCg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-11-21T14:51:21Z",
+            "updatedAt": "2026-11-21T14:51:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9jiObEe8Y65jc8doOwehf_AeyBY",
+      "id": "Ugx7BOFmyF1CgXgEANZ4AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "tWKtryFXdi5omgREZDGtDrKFLMQ",
+          "id": "Ugx7BOFmyF1CgXgEANZ4AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Now we know why Rockstar was freaking so hard about leaks.",
+            "textOriginal": "Now we know why Rockstar was freaking so hard about leaks.",
+            "authorDisplayName": "@DarthBrooksJr",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/J2ReVCoXV5Y49sVQG8PHX9DYPSSklpl0_r8AL6zkqJFqKSTg4knlaX-XfO0FU9m-YfDjtidBcg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DarthBrooksJr",
+            "authorChannelId": {
+              "value": "UCEG9t-YJYmX5Lr0WdApOF1A"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 326,
+            "publishedAt": "2026-11-21T14:08:37Z",
+            "updatedAt": "2026-11-21T14:08:37Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 11,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "S7lzfW8jfONsz9Db6YiCOvAiZlo",
+      "id": "Ugx_eKsfUXjN_CUKGT54AaABAg",
+      "snippet": {
+        "channelId": "UCQeRaTukNYft1_6AZPACnog",
+        "videoId": "4RqYHJmmmuw",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "4oQcpK-5ETxb7cdACKK5vwnFj8Y",
+          "id": "Ugx_eKsfUXjN_CUKGT54AaABAg",
+          "snippet": {
+            "channelId": "UCQeRaTukNYft1_6AZPACnog",
+            "videoId": "4RqYHJmmmuw",
+            "textDisplay": "Remember, everyone, Metacritic, is deleting player negative review scores to try and artificially raise the player score.",
+            "textOriginal": "Remember, everyone, Metacritic, is deleting player negative review scores to try and artificially raise the player score.",
+            "authorDisplayName": "@1995JediMaster",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_muH9pc40J9u8W-MPnXgVSKB9BG1mCMgHQgQdi3_FS7SpU=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@1995JediMaster",
+            "authorChannelId": {
+              "value": "UCquctGEbaE_Vy8St-YGOzdw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 200,
+            "publishedAt": "2026-11-21T13:02:41Z",
+            "updatedAt": "2026-11-21T13:02:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

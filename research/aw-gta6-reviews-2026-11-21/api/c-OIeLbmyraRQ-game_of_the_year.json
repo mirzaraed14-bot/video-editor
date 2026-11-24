@@ -1,0 +1,385 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "JSbcesUqbw0Py-pbqIDD84EgJvA",
+  "pageInfo": {
+    "totalResults": 11,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4boYPPEZaq-7T4wcr6d7d-VzJ-8",
+      "id": "UgwJWmk8pvSOGqMY4NJ4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "quCNYMPaDcvsGGnv2VCoboD3lqQ",
+          "id": "UgwJWmk8pvSOGqMY4NJ4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "bro finished the game for 52 hours worth of 13 years of waiting",
+            "textOriginal": "bro finished the game for 52 hours worth of 13 years of waiting",
+            "authorDisplayName": "@xNatarine",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/rnGu2bf5AlxjgW-LNvpkYwKiMcnfjG7KHJ4fynIY-nPjULPRDpbdW1f-wNC-bLlX6vK5qA7z3g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@xNatarine",
+            "authorChannelId": {
+              "value": "UCI_c78KP0KDHFe5BepJBInw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-21T03:55:51Z",
+            "updatedAt": "2026-11-21T03:56:05Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "19TiuA5IreGiasGuirfDllG8564",
+      "id": "UgxIeXwLj2kIx2Lfh-h4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "KMeNYHC12Kci2hYppMYwYKQGdt0",
+          "id": "UgxIeXwLj2kIx2Lfh-h4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "5:13:48 Thanks Play GTA VI With me still Best Game of the year",
+            "textOriginal": "5:13:48 Thanks Play GTA VI With me still Best Game of the year",
+            "authorDisplayName": "@JavenQuiranteSpiderMan21",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/PERQhfu0XaPESi74CUYVX9SfVbHR2tKOHCIQfTVZM6vq-TFbaFF41OQiHeeSYNKCcBLuCXXa1l4=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JavenQuiranteSpiderMan21",
+            "authorChannelId": {
+              "value": "UCzFdu0Y2f0-DvyQ21gz_aPQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-11-21T00:32:38Z",
+            "updatedAt": "2026-11-21T00:32:38Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "csQw1zy21ipjnpN89U22R1ppF2A",
+      "id": "UgzV5E4kQg4ggEwv0zl4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Bo2IVIfz-3cLO2ifZemGaP9Ieko",
+          "id": "UgzV5E4kQg4ggEwv0zl4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "Speed we love you we all know that you are so tired, you should sleep bro and you are the king of the game right now… 52 hours of streaming that’s why he is the streamer of the year 3 years in a row",
+            "textOriginal": "Speed we love you we all know that you are so tired, you should sleep bro and you are the king of the game right now… 52 hours of streaming that’s why he is the streamer of the year 3 years in a row",
+            "authorDisplayName": "@Killertube-k9h",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/sxZQWwDM4vh_8x8dx12HHk0x2FZc9cyG-YlAB_L-9JympFV2RJwjpXly0Jvz3i_c8nw3FJEGRw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Killertube-k9h",
+            "authorChannelId": {
+              "value": "UCjj-WlPIHSaOQAazZyn6b0Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-11-20T21:50:43Z",
+            "updatedAt": "2026-11-20T21:51:36Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "gZrIjZaAm2dLbM2PkRcJSkXhHEg",
+      "id": "Ugwd3KUSuUXVmmbygKV4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "H0POfVZyRVJz6-E75vr1SYcvQGM",
+          "id": "Ugwd3KUSuUXVmmbygKV4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "Congratulations on completing the entire game! But don't you think it takes away some of the magic when you finish it all in one go? I mean, isn't it better to take your time and enjoy a game like this gradually, especially after waiting so many years for it to come out? Just an observation. :)",
+            "textOriginal": "Congratulations on completing the entire game! But don't you think it takes away some of the magic when you finish it all in one go? I mean, isn't it better to take your time and enjoy a game like this gradually, especially after waiting so many years for it to come out? Just an observation. :)",
+            "authorDisplayName": "@CarnivalOfTheDamned9",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_k7MVsVWpsQzvlM9FOV0RzRwLpYBv-_JwKWoGsBXgMVhQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@CarnivalOfTheDamned9",
+            "authorChannelId": {
+              "value": "UCVOHhnSg21Qr2SchWSgurdw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T21:01:33Z",
+            "updatedAt": "2026-11-20T21:01:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "TdLRXz7XgTp3khgInSQVOgaLF8Q",
+      "id": "UgxOzQNJWd9F4U18wJt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "D-XDqRYGp_CZStJdGHJaYqYJjuk",
+          "id": "UgxOzQNJWd9F4U18wJt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "Game of the year",
+            "textOriginal": "Game of the year",
+            "authorDisplayName": "@Adelakimario-p1i",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/GgA7Nm4C84cHNuo9WOJ0xVIytmOzBcIn54o6Mi0ZLk7ke0yv_WKgCZL7RmjslG8Kq0jpA6LXsRo=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Adelakimario-p1i",
+            "authorChannelId": {
+              "value": "UCHrdlPG3WnDs3_ex4DlJU_g"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T20:49:31Z",
+            "updatedAt": "2026-11-20T20:49:31Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "OBwYD-rCAVmDJ6eG7biuZHcninI",
+      "id": "Ugz7Uha2p8a7JdPsLc94AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5ymKNu4Q9QFz9O4uEv30ylI_1Ig",
+          "id": "Ugz7Uha2p8a7JdPsLc94AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "W GAME OF THE YEAR AND STREAMER OF THE YEAR❤",
+            "textOriginal": "W GAME OF THE YEAR AND STREAMER OF THE YEAR❤",
+            "authorDisplayName": "@DYP.",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/nDdlAdpgYX1F81QUt2ESGEQ_sq5KQZ4NkOtcXzTlOd_kogKIVyidmJ7quvl3_veC0biNYSCGxw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@DYP.",
+            "authorChannelId": {
+              "value": "UCFBdynUfERV6NUpM4P-eA9Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T19:13:13Z",
+            "updatedAt": "2026-11-20T19:13:13Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_4-zEn8XKK4-TbskK7JPDDg2J2I",
+      "id": "UgzRVMmm22QSUZfUGoV4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "77ffQrK9xOXJEsliiFI9H5299QQ",
+          "id": "UgzRVMmm22QSUZfUGoV4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "I’ll remember GTA VI’s release not just by the game itself and the cultural hysteria building up to its release, but tapping into YouTube quite frequently JUST TO STILL SEE THIS MADMAN, IShowSpeed, PLAYING GRAND THEFT AUTO 6. It’s become a daily tradition of life, for the past 3 days really.\n\nThis is the type of ordeal I’ll think back to many years in the future, maybe whilst I’m eating dinner at home, hanging out with friends, consuming entertainment, working, or even spending time with my future children and family, and I’ll just…\n\n…reminisce, I suppose~! \nI’m privileged to have shared the year of 2026, and this social media hysteria of Grand Theft Auto VI, with you all. 🐬💦✨",
+            "textOriginal": "I’ll remember GTA VI’s release not just by the game itself and the cultural hysteria building up to its release, but tapping into YouTube quite frequently JUST TO STILL SEE THIS MADMAN, IShowSpeed, PLAYING GRAND THEFT AUTO 6. It’s become a daily tradition of life, for the past 3 days really.\n\nThis is the type of ordeal I’ll think back to many years in the future, maybe whilst I’m eating dinner at home, hanging out with friends, consuming entertainment, working, or even spending time with my future children and family, and I’ll just…\n\n…reminisce, I suppose~! \nI’m privileged to have shared the year of 2026, and this social media hysteria of Grand Theft Auto VI, with you all. 🐬💦✨",
+            "authorDisplayName": "@JandL7777",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mkEnD92j6wSz7cHbOjpRnMdxJ28wqNJH41Kr2z5FfrA7c=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JandL7777",
+            "authorChannelId": {
+              "value": "UCtLXBsOtHUihccFTtnDIFoQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T19:12:56Z",
+            "updatedAt": "2026-11-20T19:12:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "rdt2XDeZpHtSPsonN_zcC9RxRWs",
+      "id": "UgwkHQpyv8bFv4ad5up4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "0T8Vb8z7g5H1-OQKSdi5Ucn5RxU",
+          "id": "UgwkHQpyv8bFv4ad5up4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "Bro deserves gamer of the year ngl",
+            "textOriginal": "Bro deserves gamer of the year ngl",
+            "authorDisplayName": "@ShvmOP",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/pYlpBDFsX_NfgOQcOdIcjK8Q5MSCqAmtD-ZDqPedv6R6PSkFqI7i8MB8ulx14aMec9uspo695A=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ShvmOP",
+            "authorChannelId": {
+              "value": "UCJobNSwTTjlYesa2lelH3rg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T19:12:00Z",
+            "updatedAt": "2026-11-20T19:12:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "DNJxX0oBEcIX_t48BuQczsXS9Jo",
+      "id": "Ugwu9WTwwHp8HYWcxYV4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bDKX93-rG-gPmPVVPJJ3eK4hkQU",
+          "id": "Ugwu9WTwwHp8HYWcxYV4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "game of the year and streamer of the year",
+            "textOriginal": "game of the year and streamer of the year",
+            "authorDisplayName": "@lolp6555-1",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/GxCwXdNdpGr9wv8EiH_-OJ5T0pJaerkGrRRXW6pgp5DJB7I8i6Pe-Ziu3duEy7oqcfnqkHdq6VA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lolp6555-1",
+            "authorChannelId": {
+              "value": "UC_S8iTvqLCjBue6KHuRa8wQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T19:00:01Z",
+            "updatedAt": "2026-11-20T19:00:01Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "_L_oAA5u3RhmckW-2aD7ANBuLi8",
+      "id": "UgyXtArmugN_QJdi0iF4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "9jM0e6tFwT1kfJPYfRfrUX6Mwo8",
+          "id": "UgyXtArmugN_QJdi0iF4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "GREATEST STREAMER OF ALL TIME, GTA 6 IS GAME OF THE YEAR",
+            "textOriginal": "GREATEST STREAMER OF ALL TIME, GTA 6 IS GAME OF THE YEAR",
+            "authorDisplayName": "@Flowsy_gg",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/2deu3dTb2CshIxB847jK_nQ20BLVe_Fu-DvEWU6kZ_GGy1YtIN69trhhZybtgPv2Ooqr4oFp=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Flowsy_gg",
+            "authorChannelId": {
+              "value": "UCekGpGpE1U3t33DEzr2JSOA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-20T18:58:56Z",
+            "updatedAt": "2026-11-20T18:58:56Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "q3Mf9qV1MAK03f-gQ_mfJsLtZck",
+      "id": "UgyxNbjEyxEvU3E1jpN4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "OIeLbmyraRQ",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "xwNbi3G4ZyW1nThK605tGJnspiE",
+          "id": "UgyxNbjEyxEvU3E1jpN4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "OIeLbmyraRQ",
+            "textDisplay": "Game of the year ! Speed I love you sm I loved the dedication of yours for 52 hours straight, mad respect dawg. Ggs",
+            "textOriginal": "Game of the year ! Speed I love you sm I loved the dedication of yours for 52 hours straight, mad respect dawg. Ggs",
+            "authorDisplayName": "@Rake.rishabh",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/OTdxtMMCHv4hVuYCdbu9Ng16V1C4cDkgVLPiGfgA9ZtEE6DOes6xB6WUnHPH3DMNqgwS3ed-Ag=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Rake.rishabh",
+            "authorChannelId": {
+              "value": "UCXU9-4XCfg64I1P8pCa8_xw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-20T18:58:07Z",
+            "updatedAt": "2026-11-20T18:58:25Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

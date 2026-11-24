@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "YUDQlh0QMrGmq6z4o8mlieUY9lU",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 5,
+    "resultsPerPage": 1
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zF_a7sXUzQkUxSXu48hIzrnWT0o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Si4O7EsYkaQ"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-19T11:13:44Z",
+        "channelId": "UCXZ9e30brwtvrmdYMFS2E_A",
+        "title": "Top 5 GTA 6 Streamer Moments 🔥 #5 to #1",
+        "description": "Ranking the wildest GTA 6 reactions, from Ron's fake Lambo flex to the Bigfoot jumpscare. Did we get #1 right? #GTA6 #Shorts ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Si4O7EsYkaQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Si4O7EsYkaQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Si4O7EsYkaQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Si4O7EsYkaQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Si4O7EsYkaQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Moments explained",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-19T11:13:44Z"
+      }
+    }
+  ]
+}

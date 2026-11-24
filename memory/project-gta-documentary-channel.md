@@ -46,3 +46,5 @@ continuity in files rather than chat.
 ([[reference-higgsfield-connector]]). Never "fix" his timeline values ([[feedback-creators-hand-is-not-a-bug]]). One
 fresh session per video ([[feedback-one-session-per-video]]). Related: [[feedback-gta-own-style-only]],
 [[user-abundance-wisdom-editor]], [[feedback-long-term-self-improving]], [[feedback-sourced-stills-must-be-hq]].
+
+**GTA 6 launch (from 2026-11-18):** start at `presets/youtube/affan-afterhours/LAUNCH-MODE.md` (the hour-drop loop) and `RAW-CLIPS.md` (the clipper's rulebook). Two lanes, his ruling: RAW clips from his play run with zero creative direction and no OK step (automated QA instead), in the Kai Cenat official-Shorts style; DIRECTED videos (What If series) come after each play session with his direction and the full max-effort gate. Posting stays his.

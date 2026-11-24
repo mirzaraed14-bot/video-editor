@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "UCdrnLNIqkg9a5iyaTN0Aa-K_Tk",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "qCQ8TaITrq2358RWTViOF_DvBf8",
+      "id": "UCvz84_Q0BbvZThy75mbd-Dg",
+      "snippet": {
+        "title": "Zack D. Films",
+        "description": "A Collection of Things I Find Interesting \n\n",
+        "customUrl": "@zackdfilms",
+        "publishedAt": "2021-06-07T23:35:47.434454Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/BmuAho1g50N6CbZc-OP3ievIbXopecRp5xxYwUWEEPNpVaa0afIZn8UoQCYxQQpEDQ5LabHDgg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/BmuAho1g50N6CbZc-OP3ievIbXopecRp5xxYwUWEEPNpVaa0afIZn8UoQCYxQQpEDQ5LabHDgg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/BmuAho1g50N6CbZc-OP3ievIbXopecRp5xxYwUWEEPNpVaa0afIZn8UoQCYxQQpEDQ5LabHDgg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Zack D. Films",
+          "description": "A Collection of Things I Find Interesting \n\n"
+        }
+      },
+      "statistics": {
+        "viewCount": "83836319255",
+        "subscriberCount": "29800000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "4263"
+      }
+    }
+  ]
+}

@@ -4,14 +4,16 @@
 - [Higgsfield connector](reference-higgsfield-connector.md) — AI video via claude.ai connector (not .mcp.json); preflight cost, approve before spending credits
 - [GTA channel](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md**; log + resume in JOBS.md; Shorts = Scott YT look
 - [One session per video](feedback-one-session-per-video.md) — a recording path goes to the channel editor session, which spawns ONE fresh session per video
-- [GTA: his own style only](feedback-gta-own-style-only.md) — copy only his own edits (CREATOR-HAND.md); insets over mattes, razor+static cut zooms
+- [GTA: hot beats only](feedback-gta-hot-beats-only.md) — research-led GTA videos: only outlandish beats measured HOT; warm/cold (the iguana) never filler; topic = a big question players still ask on day 2
+- [GTA money guides: money per minute](feedback-gta-money-guide-format.md) — rank methods by $/minute (HUD before/after + time); frame = your first $1M in stages; read the map ROBBERIES menu
+- [GTA: his own style only](feedback-gta-own-style-only.md) — copy only his own edits (CREATOR-HAND.md); insets over mattes, razor+static cut zooms; EXCEPT face-cam reaction/talk videos = KSI+ style (REACTION-STYLE.md, 11-23)
 - [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; resume blocks, channel LESSONS after every review
 - [Epidemic Sound connector](reference-epidemic-sound-connector.md) — his music/SFX library; OAuth sign-in fails, use an API key in .mcp.json
 - [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu reels; style LOCKED in presets/instagram/affanwizu/; codeswitch_pass.py + caption_qa.py PASS; two-layer captions since 11-16
 - [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on his timeline is a DECISION; FCP XML before any batch change
-- [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — web pictures checked at full size; soft ones: Higgsfield upscale (AW), NEVER on a real face (Lanczos only)
+- [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — web pictures checked at full size; soft ones: Higgsfield upscale (AW), never on a real face (Lanczos) EXCEPT his own cam face on reaction thumbs (11-24: enhance + 3-4x identity check)
 - [Editable captions in Premiere](feedback-editable-captions-in-premiere.md) — @affanwizu captions ship as an editable .srt caption track + saved Track Style, never a rendered .mov
-- [YouTube sourcing](feedback-youtube-sourcing.md) — fetch b-roll here, force H.264; search E:\Bullshit Folder before asking him
+- [YouTube sourcing](feedback-youtube-sourcing.md) — fetch b-roll here, H.264 into Premiere (VP9/AV1 4K OK if transcoded to an H.264 mezz first); search E:\Bullshit Folder before asking him
 - [Walkthrough videos](feedback-walkthrough-videos.md) — Tella/Loom brief: transcribe, sample the frames pointed at, resolve into BRIEF.md
 - [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
 - [AffanWiz channel](project-affanwiz-channel.md) — English brand (Skool); presets/youtube/affanwiz/ + youtube-shorts/affanwiz/, never mixed; resume in JOBS.md; research session `affanwiz-research`
@@ -50,8 +52,8 @@
 - [Work in silence](feedback-work-in-silence.md) — no sound while working; ffmpeg -f null only, close media tabs; in every brief
 - [No phone copies](feedback-no-phone-copies.md) — no phone encodes unless asked; masters to X:\Claude Projects\Exports\
 - [No price to silent prospects](feedback-no-price-to-silent-prospects.md) — a follow-up to a quiet host carries NO price; one free specific offer, price once they engage
-- [Onyx client criteria](feedback-onyx-client-criteria.md) — Scott-like podcasts only: 100K+, in-studio, $1,500+/mo, weekly, weak Shorts
-- [Fix only what he named](feedback-fix-only-what-he-named.md) — a note changes only what he named; never swap his grade; a note = data + ONE render
+- [Onyx client criteria](feedback-onyx-client-criteria.md) — any genre, any sit-down talk format (11-24); 100K+, in-studio, $1,000+/mo (price = $1,000 for 30 Shorts since 11-24), weekly, weak Shorts
+- [Fix only what he named](feedback-fix-only-what-he-named.md) — a note changes only what he named; a named reference channel = ONLY that dimension, house kit for the rest (11-24); never swap his grade; a note = data + ONE render
 - [Cover script reading](feedback-cover-phone-reading.md) — full-frame graphic over every script-reading span; face cam TIGHT; prove lip sync
 - [Face cam max 4 s](feedback-face-cam-max-4s.md) — Shorts: face cam <= ~4 s without an overlay; rotation, zooms, tight pauses
 - [Music is his job](feedback-music-is-his-job.md) — AW code-built Shorts ship with NO music bed (AW Shorts only)
@@ -69,7 +71,7 @@
 - [IG captions: whole line, subtle rise](feedback-captions-whole-line-subtle.md) — IG captions = one ~4-word line appearing whole with a very subtle eased rise; no word-by-word reveal
 - [Onyx samples: 30 fps, no Topaz](feedback-onyx-samples-30fps-no-topaz.md) — prospect samples ship at native 30 fps, no Iris/Chronos; the QA'd render is the final
 - [Hook = claim only](feedback-hook-claim-only.md) — no credit lines under the 0-3 s hook; key word coloured; captions from frame 1
-- [Onyx reactions v3 standard](feedback-onyx-reactions-v2-standard.md) — REACTIONS-V3.md: voice loudest, bed 19 LU under, SFX ~12 dB under, face fill, no push
+- [Onyx reactions: lean + V3](feedback-onyx-reactions-v2-standard.md) — REACTIONS-LEAN.md: 1 Sonnet session, Opus cut + QC, target 0.8 %; sound = V3
 - [Onyx sample = the permitted Short, enhanced](feedback-onyx-sample-is-the-permitted-short.md) — re-edit the EXACT permitted Short; enhance = restructure from the episode
 - [AW subscribe CTA](feedback-aw-subscribe-cta.md) — 2 subtle mid SUBSCRIBE prompts, END SCREEN off; kit abundance-wisdom/cta/, README § 12
 - [Bolt Motivation look](feedback-bolt-motivation-look.md) — AW template = projects/mj-son-step-outside/ + stacked splits & cutaways (README § 13)
@@ -84,7 +86,7 @@
 - [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — HP film young cast OK; a public figure's own teen footage OK (11-14); other real children flagged
 - [Checklist shape is a gate](feedback-checklist-shape-is-a-gate.md) — first filter = Instagram virality; gate-by-gate evidence; two facts = two topics
 - [No below-bar pitches](feedback-no-below-bar-pitches.md) — if nothing clears the bar, say "no pick" first; score B1 by "would Affan know this face?"
-- [The Michael Jackson of each space](feedback-mega-famous-per-niche.md) — AW wins on the most famous thing per space (MJ, Speed, Harry Potter, GTA 5); new lanes name it first
+- [The Michael Jackson of each space](feedback-mega-famous-per-niche.md) — AW wins on the most famous thing per space (MJ, Speed, Harry Potter, GTA 6 since 11-19); new lanes name it first
 - [Max effort on every asset](feedback-max-effort-every-asset.md) — every sequence/pick/pitch passes MAX-EFFORT-GATE.md first
 - [AffanWiz teaches faceless only](feedback-affanwiz-teach-faceless.md) — AffanWiz lessons match his Skool (faceless Shorts); no face-led format lessons
 - [AffanWiz Studio access](reference-affanwiz-studio-access.md) — Studio not reachable from Chrome; ask Affan for impressions/CTR/AVD
@@ -99,5 +101,23 @@
 - [Plain words only](feedback-plain-words-only.md) — Scott Reels/Shorts in plain everyday words, no coined terms; measure reading level first
 - [Time words match the post date](feedback-time-words-match-post-date.md) — check every today/this week/this month line against the post date
 - [DOAC kit](reference-doac-kit.md) — projects/_client-scott-clary/_doac-kit: Scott's DOAC-look Reels (30 fps check, 60 fps Chronos final)
-- [Thumbnails = proven formats](feedback-thumbnails-proven-formats.md) — remake proven formats (cross-niche; podcasts: MW/DOAC); ~10 real contenders + numbers, he picks; if he names one, build it
+- [Thumbnails = proven formats](feedback-thumbnails-proven-formats.md) — remake proven formats (cross-niche; GTA/gaming: gaming niche only; podcasts: MW/DOAC); ~10 real contenders + numbers, he picks; if he names one, build it
+- [Thumbnails: watch the video first](feedback-thumbnail-watch-first.md) — no thumbnail before the cut is watched (edit session sends offsets/clip map/cuts.json); card = the interaction's freeze frame, face = his reaction to it
 - [No audio-only podcasts](feedback-no-audio-only-podcasts.md) — a pick needs real VIDEO of the speaker, checked at pick stage; never stock b-roll over audio-only
+- [Keep the person centred](feedback-keep-person-centred.md) — Stygar v1 sat left: track the face (never a static off-centre crop), subtle continuous zoom, explainer graphics in the bottom band; fork at stygar work/v2
+- [Caption shadow stronger](feedback-caption-shadow-strong.md) — DOAC kit shadow too faded on bright wardrobe; use work/v2/shadow_v4.py two-layer (contrast 2.0 -> 3.5 worst)
+- [Cover one source: no proof rounds](feedback-cover-one-source-no-proof-rounds.md) — a video covering ONE fresh source he named = research that source only; no IG/YT proof, other outlets or old interviews
+- [GTA 6 on PlayStation, GPU free](feedback-gta6-on-playstation-gpu-free.md) — Affan 11-18: he plays GTA 6 on PS, not this PC; GPU work is fine while he plays (gpu.lock order + no parallel large-v3 still apply)
+- [Live research until he records](feedback-live-research-until-recording.md) — scripts stay live until he records; HARD GATE since 11-19 (Kraken/UFO/Red Hulk missed): YouTube API + watcher topic check before recording AND before the edit
+- [Absence claims need full-res checks](feedback-absence-claims-full-res.md) — never script "not in the footage" from thumbnails; 1080p frame-by-frame or "I couldn't find it"
+- [GTA 6: gameplay first](feedback-gta6-gameplay-first.md) — new GTA 6 gameplay is the main picture; MG only as pointers; full SFX + Epidemic music
+- [Streamer face cams: label, don't blur](feedback-streamer-facecams-labelled.md) — GTA streamer clips keep the face cam visible with the name on it; chat + viewer counts stay blurred
+- [Wikimedia stills route](reference-wikimedia-stills-route.md) — Commons doesn't resolve here, upload host 429s; pull via en.wikipedia Special:Redirect/file?width=N
+- [Scott IG = Scott's advice](feedback-scott-ig-advice-yt-stories.md) — IG Reels: SCOTT giving deep motivation/practical advice on real video; funny business stories are YouTube only
+- [GTA 6 launch strategy](project-gta6-launch-strategy.md) — his play = campaign funny moments + viral funny clips only; What If, guides, GTA 5 vs 6 comparisons = research-led faceless VO videos
+- [GTA dialogue holds = real game audio](feedback-gta-dialogue-real-audio.md) — a quote hold plays the character's real line in sync, never a card over silence; streamer voice still out
+- [Verify before done, no late writes](feedback-verify-before-done-no-late-writes.md) — check delivered files BEFORE "done" (he exports in minutes); after a hand-off, no writes to his sequence without his go
+- [Scott source picture quality](feedback-scott-source-picture-quality.md) — Karnazes rejected: soft Zoom source; pick needs full-size quality check per span, never crop Zoom 16:9 to 9:16 + sharpen; QA views every section
+
+- [No hedging on confirmed facts](feedback-no-hedging-confirmed-facts.md) — GTA scripts state shown/widely-reported facts flatly, no apparently/allegedly; weak claims cut, not hedged
+- [Instagram reading method](reference-instagram-reading-method.md) — DOM sections not the private API (denied); views from reels tab; pace.sh instagram before every load

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "keyqIZGL3TTQ5hCy1VoZwbMc-gM",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "mMis3MLvZr0zO6bjAtKwLW1AHZI",
+      "id": "UCftwRNsjfRo08xYE31tkiyw",
+      "snippet": {
+        "title": "WIRED",
+        "description": "For future reference.",
+        "customUrl": "@wired",
+        "publishedAt": "2005-09-23T03:09:26Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/3xLaRljIs8OZjbxyGnMlpHXtzrxY-keMiy9foklNwa9G5wzB2stC4ND56rZfZAuyLKmRLMm2cik=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/3xLaRljIs8OZjbxyGnMlpHXtzrxY-keMiy9foklNwa9G5wzB2stC4ND56rZfZAuyLKmRLMm2cik=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/3xLaRljIs8OZjbxyGnMlpHXtzrxY-keMiy9foklNwa9G5wzB2stC4ND56rZfZAuyLKmRLMm2cik=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "WIRED",
+          "description": "For future reference."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "5003917156",
+        "subscriberCount": "13000000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "4272"
+      }
+    }
+  ]
+}

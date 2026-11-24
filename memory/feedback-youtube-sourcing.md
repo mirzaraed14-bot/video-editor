@@ -39,3 +39,12 @@ and those uploads are often 360p/480p with no higher option.
 **Search his drives FIRST (Affan 2026-10-24: "have you checked in my machine before suggesting? I dont want to download twice"):** before asking him to download anything, `find` E:\, X:\ and C:\Users\affan by title words (~15 s); his pulls live in `E:\Bullshit Folder\` (often `Henry\`). A local copy can be BETTER than the briefs link (Pariss original vertical IG video vs the news package wrapping it). When he must download, give him the highest-quality upload of each (the original channels) and say which part of a long video is needed.
 
 **2026-11-06 (Ronaldo Retires, his words: "download them yourself"):** the one plain try worked, whatever the brief's standing "BLOCKED, do not run" line said: try it once when he says so. Through `lock.sh youtube`, >= 60 s apart, no cookies/proxies. FOX Soccer's upload answers "Video unavailable" here and foxsports.com 403: left alone, found another upload of the same feed, said so. `-S res,vcodec:h264` can bring 1440p VP9: fine, because `seq_src/` transcodes to H.264 before Premiere. Fan uploads can carry a warped "sad face" edit: look at close-ups at full size.
+
+**Quality pulls (Affan 2026-11-23/24: "crisp 4K Travis overlays", "make sure the video quality is good for all source material"):**
+the H.264-only fetch exists because Premiere cannot read AV1. When quality matters, pulling the VP9/AV1 stream (up to 2160p,
+sections only, through `pace.sh`) is OK, as long as it is transcoded locally to an H.264 crf ~12 + PCM mezzanine (the MJ method's
+`make_mezz.py`) before anything goes into Premiere. Premiere never meets the yt-dlp file. Precedents: the Oldman/Sirius winner (AV1
+2160p), the HP build brief (24 Nov). Keep whichever copy is sharper by a full-size face crop. Measured on the HP job (24 Nov): yt-dlp's default
+pick AV1 399 was WAXIER than the old avc1 (~27 % less face detail). VP9 "Premium" 616/617 won on HSC and Garfield, and on Ross the old
+avc1 beat both. Never assume the newer codec is better. VP9 mkv timestamps are rounded to ms, so conform with `fps=60:round=near`
+(`round=up` duplicated 9-12 frames at each clip head).

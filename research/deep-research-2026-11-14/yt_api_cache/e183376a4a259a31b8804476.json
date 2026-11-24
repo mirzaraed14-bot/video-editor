@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "cKLjyrQXf-NxPAbKRkQLUK37rAQ",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "tUeYE4pCeB0NmChDrhq1Z0qmbNo",
+      "id": "UCOGlIoVTya6oBHdcYyOXJJA",
+      "snippet": {
+        "title": "George Clicks",
+        "description": "Crazy for you (tube)\n",
+        "customUrl": "@georgeclicks",
+        "publishedAt": "2023-02-15T23:22:39.417063Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/AwNy6SFIPtA9mgPbn5Ywr-AZHWlvwNJx9_wKHIZ9N_l_HfeMNob_1GdE_u1WLtc_Glm4Wt4ciw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/AwNy6SFIPtA9mgPbn5Ywr-AZHWlvwNJx9_wKHIZ9N_l_HfeMNob_1GdE_u1WLtc_Glm4Wt4ciw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/AwNy6SFIPtA9mgPbn5Ywr-AZHWlvwNJx9_wKHIZ9N_l_HfeMNob_1GdE_u1WLtc_Glm4Wt4ciw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "George Clicks",
+          "description": "Crazy for you (tube)\n"
+        },
+        "country": "AU"
+      },
+      "statistics": {
+        "viewCount": "317479",
+        "subscriberCount": "10100",
+        "hiddenSubscriberCount": false,
+        "videoCount": "4"
+      }
+    }
+  ]
+}

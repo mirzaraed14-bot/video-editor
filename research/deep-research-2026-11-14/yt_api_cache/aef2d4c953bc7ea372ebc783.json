@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "tpfCzqWIY1TMLVogMNZ7Aa_APZc",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "IMYWLS8wRRuahugz94YzhZTgNFw",
+      "id": "UCwJJxcke-uBJcLJ58HqrdSw",
+      "snippet": {
+        "title": "Zylok",
+        "description": "Welcome To Zylok.Clipss Channel.\n\n🟩Edited on After Effects\n\n🟩 Every video is carefully edited with captions, sound effects, music, and visual effects to create an entertaining viewing experience.\n\n🟢Custom edits and smooth pacing\n🟢 Captions, SFX, and visual effects\n🟢 Creative editing in every video\n\nNot affiliated with the original creators.\n",
+        "customUrl": "@zylok.clipss",
+        "publishedAt": "2016-01-05T19:36:50Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ta_qYznIUArwcVDzD2XKfu0ri57BsCVry8vqJILIntKma3oYaewELDuSrYZpNoRcUg4AMCXa=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ta_qYznIUArwcVDzD2XKfu0ri57BsCVry8vqJILIntKma3oYaewELDuSrYZpNoRcUg4AMCXa=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ta_qYznIUArwcVDzD2XKfu0ri57BsCVry8vqJILIntKma3oYaewELDuSrYZpNoRcUg4AMCXa=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Zylok",
+          "description": "Welcome To Zylok.Clipss Channel.\n\n🟩Edited on After Effects\n\n🟩 Every video is carefully edited with captions, sound effects, music, and visual effects to create an entertaining viewing experience.\n\n🟢Custom edits and smooth pacing\n🟢 Captions, SFX, and visual effects\n🟢 Creative editing in every video\n\nNot affiliated with the original creators.\n"
+        },
+        "country": "FR"
+      },
+      "statistics": {
+        "viewCount": "3546548886",
+        "subscriberCount": "712000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2902"
+      }
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "s1jj0TxTnNoD16EF-jDGtKbVXqM",
+  "nextPageToken": "CA8QAA",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 102,
+    "resultsPerPage": 15
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aPB6ZPwydf-MjeN7G9vtanT8mfg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kywQCGWbMqs"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-31T22:00:10Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "#streamer #ItzCritz #funny #fyp #auraguy",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kywQCGWbMqs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kywQCGWbMqs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kywQCGWbMqs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kywQCGWbMqs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kywQCGWbMqs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-31T22:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Uwy9SnOTPodz4AHY4HLVpBH12hY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "y2ac-Fx3TAM"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-31T16:00:10Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "#streamer #ItzCritz #funny #fyp #auraguy",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/y2ac-Fx3TAM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/y2ac-Fx3TAM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/y2ac-Fx3TAM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/y2ac-Fx3TAM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/y2ac-Fx3TAM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-31T16:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "whRbR9fSOAnxdly_vZn9Jr1Sp2U",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "okcDzozyZwM"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-31T16:00:32Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "#streamer #ItzCritz #funny #fyp #eldenring",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/okcDzozyZwM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/okcDzozyZwM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/okcDzozyZwM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/okcDzozyZwM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/okcDzozyZwM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-31T16:00:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KjzKOkwOq0HL3DxnpLvNgw0f2ko",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "lYwMeVXykoM"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-31T14:00:17Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "#streamer #ItzCritz #funny #fyp #pogostuck",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lYwMeVXykoM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lYwMeVXykoM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lYwMeVXykoM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/lYwMeVXykoM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/lYwMeVXykoM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-31T14:00:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IStKT8xZCYF0oEd7tpGK-mueqcY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "9-yu_redRqg"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-30T16:00:12Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "#streamer #ItzCritz #funny #fyp #eldenring",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9-yu_redRqg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9-yu_redRqg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9-yu_redRqg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9-yu_redRqg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/9-yu_redRqg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-30T16:00:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "0aod8MwhQsNGbt3u6soArECHXpM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pngq8Fr8EA8"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-30T14:00:30Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "#streamer #ItzCritz #funny #fyp #eldenring",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pngq8Fr8EA8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pngq8Fr8EA8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pngq8Fr8EA8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pngq8Fr8EA8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pngq8Fr8EA8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-30T14:00:30Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Yl3eC2VAhzWib0DOI0M93BXVQ_g",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "cDsJGbWQP1c"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-28T16:00:05Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "GM was genuinely on his tail #streamer #streaming #funny #fyp #ItzCritz",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cDsJGbWQP1c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cDsJGbWQP1c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cDsJGbWQP1c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/cDsJGbWQP1c/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/cDsJGbWQP1c/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-28T16:00:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-apv-vKJHWmaA7L6iCvFAKPyOpU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "3v1D-mBoVk8"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-28T14:00:03Z",
+        "channelId": "UCyfQ13rNc4M8qbaak6DQr_w",
+        "title": "NEVER pass the aux to Critz #streamer #funny #streaming #fyp #ItzCritz",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3v1D-mBoVk8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3v1D-mBoVk8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3v1D-mBoVk8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/3v1D-mBoVk8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/3v1D-mBoVk8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz.clipper",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-28T14:00:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "fdS3W7AaoAzbU0162rIgUTU2WcA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "SuodzXsj-x8"
+      },
+      "snippet": {
+        "publishedAt": "2026-07-27T02:30:15Z",
+        "channelId": "UCiHIY3J541c02a2xLi0S_EQ",
+        "title": "I Streamed Until I Beat Elden Ring as a Complete Beginner",
+        "description": "Can someone who has never played a souls like beat Elden Ring in one sitting? No ending stream, No help, just me and my chat ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SuodzXsj-x8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SuodzXsj-x8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SuodzXsj-x8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SuodzXsj-x8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SuodzXsj-x8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/SuodzXsj-x8/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "Critz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-07-27T02:30:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hNESYylMEyLIB6-Wmkdxm6LxrG8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NSyLxWYnzUs"
+      },
+      "snippet": {
+        "publishedAt": "2026-02-08T02:30:55Z",
+        "channelId": "UCWDloDxWCfrWNs2clgTmgwA",
+        "title": "Live streaming of ItzCritz",
+        "description": "This stream is created with #PRISMLiveStudio.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NSyLxWYnzUs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NSyLxWYnzUs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NSyLxWYnzUs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/NSyLxWYnzUs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/NSyLxWYnzUs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ItzCritz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-02-08T02:30:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gL7f3yiwaiO2D2PctmS_2kqouIE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "DHXPVZooejE"
+      },
+      "snippet": {
+        "publishedAt": "2026-02-07T08:14:55Z",
+        "channelId": "UCWDloDxWCfrWNs2clgTmgwA",
+        "title": "Live streaming of ItzCritz",
+        "description": "This stream is created with #PRISMLiveStudio.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DHXPVZooejE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DHXPVZooejE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DHXPVZooejE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DHXPVZooejE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/DHXPVZooejE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ItzCritz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-02-07T08:14:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Fw9pHwsmwPdvY3QXtccbc0N9OoA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "JsBgpLDSSSM"
+      },
+      "snippet": {
+        "publishedAt": "2026-02-07T08:09:49Z",
+        "channelId": "UCWDloDxWCfrWNs2clgTmgwA",
+        "title": "Live streaming of ItzCritz",
+        "description": "This stream is created with #PRISMLiveStudio.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/JsBgpLDSSSM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/JsBgpLDSSSM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/JsBgpLDSSSM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/JsBgpLDSSSM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/JsBgpLDSSSM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ItzCritz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-02-07T08:09:49Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Q-al7xcsEpOKxjfR0yPCvq05y-c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "p8VWTs1r1Vc"
+      },
+      "snippet": {
+        "publishedAt": "2025-06-05T23:16:42Z",
+        "channelId": "UCiHIY3J541c02a2xLi0S_EQ",
+        "title": "This is Mario Kart World!!!",
+        "description": "I bought a Switch 2 on the midnight release and it is everything I didn't know I needed. I loved the game and I want some people to ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/p8VWTs1r1Vc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/p8VWTs1r1Vc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/p8VWTs1r1Vc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/p8VWTs1r1Vc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/p8VWTs1r1Vc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2025-06-05T23:16:42Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "EE8hAc6zbVo9mJWYpS8lg-beRxo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "lmXqLLwI4D0"
+      },
+      "snippet": {
+        "publishedAt": "2025-02-09T05:56:17Z",
+        "channelId": "UCiHIY3J541c02a2xLi0S_EQ",
+        "title": "I attempted the Hardest Challenge in Fortnite",
+        "description": "Subscribed if you enjoy, I want to make authentic content for people to enjoy! Socials Below: Tiktok: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/lmXqLLwI4D0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/lmXqLLwI4D0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/lmXqLLwI4D0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/lmXqLLwI4D0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/lmXqLLwI4D0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2025-02-09T05:56:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "L_OXQISL095_qowFlHSiipQ4Ed8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "h_jInhgDZR4"
+      },
+      "snippet": {
+        "publishedAt": "2022-10-04T22:59:57Z",
+        "channelId": "UCiHIY3J541c02a2xLi0S_EQ",
+        "title": "The plan was perfect…",
+        "description": "Socials Twitch▻ https://www.twitch.tv/iitzcritz Twitter▻ https://twitter.com/itzcritz__ Tiktok▻ https://www.tiktok.com/@itzcritz I'm not ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/h_jInhgDZR4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/h_jInhgDZR4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/h_jInhgDZR4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/h_jInhgDZR4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/h_jInhgDZR4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Critz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-10-04T22:59:57Z"
+      }
+    }
+  ]
+}

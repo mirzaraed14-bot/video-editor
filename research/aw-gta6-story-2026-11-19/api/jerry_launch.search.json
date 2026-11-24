@@ -1,0 +1,105 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "rnA18Y1DehtcwkZApmvbUzlfbLU",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 2
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SPpTdQegf2FOBRchdwgRw3jFHus",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "J2J68cl7h1U"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-17T21:00:16Z",
+        "channelId": "UCvbE4f_h3ikkPQWzHGAGz1A",
+        "title": "Rockstar Should Have Let Jerry Play GTA 6",
+        "description": "Jerry, known online as VoidOnly, wanted to live long enough to play GTA 6. Sadly, he never got that chance. In this video, I ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/J2J68cl7h1U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/J2J68cl7h1U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/J2J68cl7h1U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/J2J68cl7h1U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/J2J68cl7h1U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RantMaxxing",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-17T21:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "50Wniqv5Pyg7FWuje7plGlX-QMs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "JjmZi3kmtrc"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-18T09:56:47Z",
+        "channelId": "UC9I7A7uKseN_Zp6JnFZfHjw",
+        "title": "Gamers Who Never Got to Play GTA 6 💔 Rest in Peace",
+        "description": "They waited for GTA VI... but never got to play it. 🕊️ A tribute to the gamers and creators we lost before GTA VI came out.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/JjmZi3kmtrc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/JjmZi3kmtrc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/JjmZi3kmtrc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/JjmZi3kmtrc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/JjmZi3kmtrc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "qhd": {
+            "url": "https://i.ytimg.com/vi/JjmZi3kmtrc/qhddefault.jpg",
+            "width": 2560,
+            "height": 1440
+          }
+        },
+        "channelTitle": "Behind The Gamer",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-18T09:56:47Z"
+      }
+    }
+  ]
+}
+

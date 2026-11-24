@@ -1,0 +1,79 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "M2QRqSQ0bkJIfVJ067VPiobFTbo",
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "4CZ2BHVX80tNkaulFTPmlNADhyk",
+      "id": "Ugw51VZTHqsOqSMYZE54AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "qSyo5d-dVzA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_FnScisokzlEEgDXNJyERgfi0Ak",
+          "id": "Ugw51VZTHqsOqSMYZE54AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "qSyo5d-dVzA",
+            "textDisplay": "You the best😊 \u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=190\"\u003e3:10\u003c/a\u003e",
+            "textOriginal": "You the best😊 3:10",
+            "authorDisplayName": "@JobPictures",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nkHMdD8-iph0EM_9XXOHFTX5yr1_08Pyl5RsRmTC8NcKJnWauEhfigEgk72JRwumN-OA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@JobPictures",
+            "authorChannelId": {
+              "value": "UCwFvOgSd6EeL2OwMcLmNDMw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-19T23:42:51Z",
+            "updatedAt": "2026-11-19T23:42:51Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "L727RKFSup5uTLmQcgQtSj25x4E",
+      "id": "UgxmEsfZRREyQaEkz4d4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "qSyo5d-dVzA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "yq6biduKhP3KEzLYELZB2s_pdgs",
+          "id": "UgxmEsfZRREyQaEkz4d4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "qSyo5d-dVzA",
+            "textDisplay": "\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=3600\"\u003e1:00:00\u003c/a\u003e : Renesas\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=7200\"\u003e2:00:00\u003c/a\u003e : Tsmc\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=10800\"\u003e3:00:00\u003c/a\u003e :  Asml\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=14400\"\u003e4:00:00\u003c/a\u003e : Applied material \u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=18000\"\u003e5:00:00\u003c/a\u003e : Lam research \u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=21600\"\u003e6:00:00\u003c/a\u003e : Rapidus\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=25200\"\u003e7:00:00\u003c/a\u003e : Pegatron \u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=28800\"\u003e8:00:00\u003c/a\u003e : Quanta\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=32400\"\u003e9:00:00\u003c/a\u003e : Realtek\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=36000\"\u003e10:00:00\u003c/a\u003e : Novatek\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=39600\"\u003e11:00:00\u003c/a\u003e : Sumco\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=43200\"\u003e12:00:00\u003c/a\u003e : Micron\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=39600\"\u003e11:00:00\u003c/a\u003e : Advantest \u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=46800\"\u003e13:00:00\u003c/a\u003e : Unisoc\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=50400\"\u003e14:00:00\u003c/a\u003e : Olympus \u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=54000\"\u003e15:00:00\u003c/a\u003e : Sk hynix\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=57600\"\u003e16:00:00\u003c/a\u003e : Pentax\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=61200\"\u003e17:00:00\u003c/a\u003e : Tensor processing unit\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=64800\"\u003e18:00:00\u003c/a\u003e : Denso\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=68400\"\u003e19:00:00\u003c/a\u003e : Catyl \u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=72000\"\u003e20:00:00\u003c/a\u003e : neuralink\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=75600\"\u003e21:00:00\u003c/a\u003e : Himmo\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=79200\"\u003e22:00:00\u003c/a\u003e : Qwen\u003cbr\u003e\u003ca href=\"https://www.youtube.com/watch?v=qSyo5d-dVzA&amp;t=82800\"\u003e23:00:00\u003c/a\u003e : Mitsuoka",
+            "textOriginal": "1:00:00 : Renesas\n2:00:00 : Tsmc\n3:00:00 :  Asml\n4:00:00 : Applied material \n5:00:00 : Lam research \n6:00:00 : Rapidus\n7:00:00 : Pegatron \n8:00:00 : Quanta\n9:00:00 : Realtek\n10:00:00 : Novatek\n11:00:00 : Sumco\n12:00:00 : Micron\n11:00:00 : Advantest \n13:00:00 : Unisoc\n14:00:00 : Olympus \n15:00:00 : Sk hynix\n16:00:00 : Pentax\n17:00:00 : Tensor processing unit\n18:00:00 : Denso\n19:00:00 : Catyl \n20:00:00 : neuralink\n21:00:00 : Himmo\n22:00:00 : Qwen\n23:00:00 : Mitsuoka",
+            "authorDisplayName": "@GojoSatoru-q1m8j",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/XmwSdT4-L0lwMwLlhvK9dFGs83FEj_ihdhjifGe5s1-OomPbcwsHiCTcLw4TO5XupvquPxIM6rM=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@GojoSatoru-q1m8j",
+            "authorChannelId": {
+              "value": "UCbI8ii9nw58NS2Ptugd7JlQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 275,
+            "publishedAt": "2026-11-19T13:55:40Z",
+            "updatedAt": "2026-11-19T13:55:40Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 7,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

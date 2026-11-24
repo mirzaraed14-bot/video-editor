@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "ags825zWSkenw-AL85BeOlXbO7E",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "HZ_HWXclFW2ni5CEmXjxfvHgIgA",
+      "id": "UCj8DGOv5P7Ngsh-telMG-pw",
+      "snippet": {
+        "title": "Jon Youshaei",
+        "description": "After working inside YouTube & Instagram for 8 years, I'm sharing what I learned about creators with guests MrBeast, Mark Rober, Steph Curry, Kris Jenner, Marques Brownlee, and more.\n\nFor sponsorships, consulting, & speaking opportunities, email: Jon@Youshaei.com\n\nFollow on Instagram: @Youshaei and @Created \n",
+        "customUrl": "@youshaei",
+        "publishedAt": "2019-07-09T04:50:20Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/M3wL89LOmSiYS784WYKZ33eJwmn3jXimTHP-Q-vvZaIUYAawNpJNqqzuJV6DHHy5vjrcXcgMyQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/M3wL89LOmSiYS784WYKZ33eJwmn3jXimTHP-Q-vvZaIUYAawNpJNqqzuJV6DHHy5vjrcXcgMyQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/M3wL89LOmSiYS784WYKZ33eJwmn3jXimTHP-Q-vvZaIUYAawNpJNqqzuJV6DHHy5vjrcXcgMyQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Jon Youshaei",
+          "description": "After working inside YouTube & Instagram for 8 years, I'm sharing what I learned about creators with guests MrBeast, Mark Rober, Steph Curry, Kris Jenner, Marques Brownlee, and more.\n\nFor sponsorships, consulting, & speaking opportunities, email: Jon@Youshaei.com\n\nFollow on Instagram: @Youshaei and @Created \n"
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "405366826",
+        "subscriberCount": "826000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "320"
+      }
+    }
+  ]
+}

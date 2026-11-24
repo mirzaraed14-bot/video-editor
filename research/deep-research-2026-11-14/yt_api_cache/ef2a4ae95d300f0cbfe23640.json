@@ -1,0 +1,44 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "F6EDw51HoHsx26XUT29YWAJvjNM",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "Cg42nck0W80TFDOCZER_TNTbQ64",
+      "id": "UgzTVR96K6Y3mqZrjaF4AaABAg",
+      "snippet": {
+        "channelId": "UC92fbaZ2jMoKLkDSbW2KXGw",
+        "videoId": "Pbqt6HCxKt8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "m4Xh4AA0wTt7fEt0JB_cNQ1-hzE",
+          "id": "UgzTVR96K6Y3mqZrjaF4AaABAg",
+          "snippet": {
+            "channelId": "UC92fbaZ2jMoKLkDSbW2KXGw",
+            "videoId": "Pbqt6HCxKt8",
+            "textDisplay": "\u003ca href=\"https://www.youtube.com/watch?v=Pbqt6HCxKt8&amp;t=23200\"\u003e6:26:40\u003c/a\u003e God Travis scott man. I love this mission to the core",
+            "textOriginal": "6:26:40 God Travis scott man. I love this mission to the core",
+            "authorDisplayName": "@OhBbyWhy",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kcryN3d_ZJw8ERppZ5SLZZ6uYTLalWS49pfZZS_AlF_1c=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@OhBbyWhy",
+            "authorChannelId": {
+              "value": "UCZbzGoRj-Wti8KS4pWgVM3Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 23,
+            "publishedAt": "2026-11-21T10:55:47Z",
+            "updatedAt": "2026-11-21T10:55:47Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    }
+  ]
+}

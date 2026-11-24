@@ -148,7 +148,7 @@ def srt(job, max_words, hang=None):
             a, b = norm(p), norm(t['w'])
             if a != b and not ('*' in a and re.fullmatch(a.replace('*', '.'), b)):
                 sys.exit('MISMATCH %r vs transcript %r at %.2f s (line: %s)' % (p, t['w'], t['start'], line))
-        caps.append({'start': chunk[0]['start'], 'last': chunk[-1]['end'], 'text': line})
+        caps.append({'start': chunk[0]['start'], 'last': chunk[-1]['end'], 'last_start': chunk[-1]['start'], 'text': line})
         wi += len(parts)
     if over:
         sys.exit('over %d words:\n  %s' % (max_words, '\n  '.join(over)))
@@ -171,6 +171,13 @@ def srt(job, max_words, hang=None):
         # stays wall to wall). Seq 21 held "dropped on the" 1.7 s and "of the Year" 2.1 s over silence.
         if hang is not None and c['end'] - c['last'] > hang:
             c['end'] = c['last'] + 0.25
+        # an A1 gap is a picture insert with no voice (ABW11 Seq 19: gameplay, a screenshot): the caption
+        # ends on its voice clip's last frame, never a few frames over the insert. The clip is the one the
+        # caption's LAST WORD STARTS in: alignment can stretch a word's end past the cut (Seq 21:
+        # "literally." ended 34 ms after its clip, the old end-based match missed it and hung 0.28 s on a screenshot)
+        for a, b in clips:
+            if a <= c['last_start'] < b and not any(abs(a2 - b) < 0.005 for a2, _ in clips) and c['end'] > b:
+                c['end'] = b
     for c in caps:
         c['start'], c['end'] = round(c['start'] * fps) / fps, round(c['end'] * fps) / fps
 
@@ -188,9 +195,11 @@ def srt(job, max_words, hang=None):
         print('  %6.3f-%6.3f  %s' % (c['start'], c['end'], c['text']))
 
 
-def import_(job):
+def import_(job, srt_file=None):
+    # --srt: import a re-timed SRT under a NEW name. An SRT whose path is already in the project is reused as-is
+    # ("srt already in project"), so a rebuilt file under the old name would lay the OLD timings again (Seq 21 v2).
     meta = json.load(open(os.path.join(job, 'brief', 'sequence.json'), encoding='utf-8'))
-    path = os.path.abspath(os.path.join(job, 'outputs', slug(meta['sequence']) + '-captions.srt')).replace('\\', '/')
+    path = os.path.abspath(srt_file or os.path.join(job, 'outputs', slug(meta['sequence']) + '-captions.srt')).replace('\\', '/')
     js = r'''(function () {
       var PATH = %s, SEQ = %s, PROJ = %s, log = [];
       if (app.project.name !== PROJ) return "open project is " + app.project.name + ", expected " + PROJ + ": stopped";
@@ -229,10 +238,11 @@ if __name__ == '__main__':
     ap.add_argument('--max-words', type=int, default=3)
     ap.add_argument('--voice', default='A1', help='read: the tracks that carry speech, e.g. A1,A2 when the AI voice-over sits on A2')
     ap.add_argument('--hang', type=float, default=None, help='end a caption 0.25 s after its last word when a pause longer than this follows')
+    ap.add_argument('--srt', default=None, help='import: the SRT to import (default outputs/<seq>-captions.srt); use a new name for a re-timed version')
     a = ap.parse_args()
     if a.cmd == 'read':
         read(a.job, a.sequence or sys.exit('read needs the sequence name'), set(a.voice.split(',')))
     elif a.cmd == 'srt':
         srt(a.job, a.max_words, a.hang)
     else:
-        import_(a.job)
+        import_(a.job, a.srt)

@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "017twX_mkb13bbK1XhK4nKZhnXo",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "mjptYzSHaBJJcRD_sMww4gKCDB4",
+      "id": "UCUBpGZryYcpqLlDKT3HFjkA",
+      "snippet": {
+        "title": "Klip Dump",
+        "description": "Stream It • Clip It • Dump It ",
+        "customUrl": "@klipdumpofficial",
+        "publishedAt": "2018-09-06T01:32:43Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/LE3Yt01dko3zg4xx_EyDqaN7pR3HxcjzutZTPqcH6l4qUVhtnHFHl7aGIN7sS1_aJXN9MNfsew=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/LE3Yt01dko3zg4xx_EyDqaN7pR3HxcjzutZTPqcH6l4qUVhtnHFHl7aGIN7sS1_aJXN9MNfsew=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/LE3Yt01dko3zg4xx_EyDqaN7pR3HxcjzutZTPqcH6l4qUVhtnHFHl7aGIN7sS1_aJXN9MNfsew=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Klip Dump",
+          "description": "Stream It • Clip It • Dump It "
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "379893",
+        "subscriberCount": "379",
+        "hiddenSubscriberCount": false,
+        "videoCount": "11"
+      }
+    }
+  ]
+}

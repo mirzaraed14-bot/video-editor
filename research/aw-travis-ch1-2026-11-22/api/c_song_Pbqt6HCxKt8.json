@@ -1,0 +1,45 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "TekH62mBAv0pkqMAUP6GACUmF6w",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "ovuEJh3E-Qe-tb_aaFBWY-PP1po",
+      "id": "UgzzyNBMAGGTRQYm-hd4AaABAg",
+      "snippet": {
+        "channelId": "UC92fbaZ2jMoKLkDSbW2KXGw",
+        "videoId": "Pbqt6HCxKt8",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "TAEZcacqCc8wLZ99CxbBPpoNYDs",
+          "id": "UgzzyNBMAGGTRQYm-hd4AaABAg",
+          "snippet": {
+            "channelId": "UC92fbaZ2jMoKLkDSbW2KXGw",
+            "videoId": "Pbqt6HCxKt8",
+            "textDisplay": "\u003ca href=\"https://www.youtube.com/watch?v=Pbqt6HCxKt8&amp;t=7190\"\u003e1:59:50\u003c/a\u003e - GTA: Vice City Stories; Miami Vice (1980&#39;s) TV series. &quot;In the Air Tonight.&quot; - Phil Collins (formerly of the band, Genesis) - when MTV actually played music videos, Beavis and Butthead or Daria; instead of reality TV shows (&quot;Jersey Shore&quot;) or &quot;Jacka$$&quot;; \u003ca href=\"https://www.youtube.com/watch?v=Pbqt6HCxKt8&amp;t=16352\"\u003e4:32:32\u003c/a\u003e - &quot;Big Love (1987)&quot; by Fleetwood Mac.  &quot;Kokomo&quot; by The Beach Boys for that Tom Cruise &quot;Cocktail (1988)&quot; movie, is a classic song.",
+            "textOriginal": "1:59:50 - GTA: Vice City Stories; Miami Vice (1980's) TV series. \"In the Air Tonight.\" - Phil Collins (formerly of the band, Genesis) - when MTV actually played music videos, Beavis and Butthead or Daria; instead of reality TV shows (\"Jersey Shore\") or \"Jacka$$\"; 4:32:32 - \"Big Love (1987)\" by Fleetwood Mac.  \"Kokomo\" by The Beach Boys for that Tom Cruise \"Cocktail (1988)\" movie, is a classic song.",
+            "authorDisplayName": "@kshinokevin",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/0ng7SaAuIa0OZ3H6vYjauWAsAp7AFiyCf59V_IxgwHL8MyT_SrmQjiFin1_5oE_2BJ7P-lWeuw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kshinokevin",
+            "authorChannelId": {
+              "value": "UC6mRLGelZc2WhcxBsS3BwmA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 0,
+            "publishedAt": "2026-11-22T11:27:29Z",
+            "updatedAt": "2026-11-22T13:24:35Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

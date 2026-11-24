@@ -1,0 +1,5221 @@
+{
+ "name": "2023-10-28 02-26-18",
+ "video": [
+  [
+   {
+    "start": 0.0,
+    "end": 3.0197,
+    "name": "Don't Scream.mp4",
+    "in": 54.154,
+    "out": 57.1737,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Transform",
+      "instance": "Transform (Motion Blur)",
+      "match": "AE.ADBE Geometry2",
+      "bypass": false,
+      "params": {
+       "Anchor Point": "0.5:0.5",
+       "Position": {
+        "v": "0.5:0.5",
+        "kf": [
+         [
+          54.154,
+          "0.5:0.5"
+         ],
+         [
+          54.2374,
+          "0.20885416865348816:0.81759262084960938"
+         ],
+         [
+          56.1727,
+          "0.15260416269302368:0.8481481671333313"
+         ],
+         [
+          56.2561,
+          "0.05885416641831398:0.94999998807907104"
+         ]
+        ]
+       },
+       "#11": true,
+       "Scale": {
+        "v": 100.0,
+        "kf": [
+         [
+          54.154,
+          100.0
+         ],
+         [
+          54.2374,
+          165.0
+         ],
+         [
+          56.1727,
+          170.0
+         ],
+         [
+          56.2561,
+          190.0
+         ]
+        ]
+       },
+       "#4": 100.0,
+       "Skew": 0.0,
+       "Skew Axis": 0.0,
+       "Rotation": 0.0,
+       "Opacity": 100.0,
+       "#9": false,
+       "Shutter Angle": 360.0,
+       "Sampling": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 3.0197,
+    "end": 4.7047,
+    "name": "Don't Scream.mp4",
+    "in": 57.9912,
+    "out": 59.6762,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 4.7047,
+    "end": 5.2886,
+    "name": "Don't Scream.mp4",
+    "in": 60.4102,
+    "out": 60.9941,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 5.2886,
+    "end": 6.3063,
+    "name": "Don't Scream.mp4",
+    "in": 62.5957,
+    "out": 63.6134,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 6.3063,
+    "end": 7.9746,
+    "name": "Don't Scream.mp4",
+    "in": 69.0021,
+    "out": 70.6705,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 7.9746,
+    "end": 10.4271,
+    "name": "Don't Scream.mp4",
+    "in": 71.538,
+    "out": 73.9904,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 10.4271,
+    "end": 11.1611,
+    "name": "Don't Scream.mp4",
+    "in": 73.9904,
+    "out": 74.7245,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.33963691376701949:0.65591397849462441",
+       "Scale": 133.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 11.1611,
+    "end": 12.8128,
+    "name": "Don't Scream.mp4",
+    "in": 75.4919,
+    "out": 77.1436,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 12.8128,
+    "end": 13.9639,
+    "name": "Don't Scream.mp4",
+    "in": 77.6941,
+    "out": 78.8453,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.36384266263237508:0.61827956989247423",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 13.9639,
+    "end": 18.0847,
+    "name": "Don't Scream.mp4",
+    "in": 80.7639,
+    "out": 84.8846,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 18.0847,
+    "end": 20.387,
+    "name": "Don't Scream.mp4",
+    "in": 89.2723,
+    "out": 91.5746,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 20.387,
+    "end": 21.5215,
+    "name": "Don't Scream.mp4",
+    "in": 91.5746,
+    "out": 92.7091,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.28668683812405432:0.71236559139785072",
+       "Scale": 144.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 21.5215,
+    "end": 22.9062,
+    "name": "Don't Scream.mp4",
+    "in": 110.2933,
+    "out": 111.678,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 22.9062,
+    "end": 23.5902,
+    "name": "Don't Scream.mp4",
+    "in": 115.2983,
+    "out": 115.9823,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 23.5902,
+    "end": 24.2909,
+    "name": "Don't Scream.mp4",
+    "in": 117.4504,
+    "out": 118.1511,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 24.2909,
+    "end": 24.7747,
+    "name": "Don't Scream.mp4",
+    "in": 118.5682,
+    "out": 119.052,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 24.7747,
+    "end": 25.7423,
+    "name": "Don't Scream.mp4",
+    "in": 119.052,
+    "out": 120.0197,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.33020833134651184:0.28888890147209167",
+       "Scale": 150.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 25.7423,
+    "end": 26.8768,
+    "name": "Don't Scream.mp4",
+    "in": 120.0197,
+    "out": 121.1541,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 26.8768,
+    "end": 28.9455,
+    "name": "Don't Scream.mp4",
+    "in": 122.4554,
+    "out": 124.5242,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.36384266263237514:0.25268817204301008",
+       "Scale": 151.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 28.9455,
+    "end": 29.7296,
+    "name": "Don't Scream.mp4",
+    "in": 125.0247,
+    "out": 125.8088,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.25491679273827517:0.73118279569892586",
+       "Scale": 151.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 29.7296,
+    "end": 30.4303,
+    "name": "Don't Scream.mp4",
+    "in": 125.8088,
+    "out": 126.5095,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.1974281391830558:0.79569892473118398",
+       "Scale": 160.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 30.4303,
+    "end": 31.2812,
+    "name": "Don't Scream.mp4",
+    "in": 126.743,
+    "out": 127.5939,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 31.2812,
+    "end": 33.2665,
+    "name": "Don't Scream.mp4",
+    "in": 145.078,
+    "out": 147.0633,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 33.2665,
+    "end": 33.8504,
+    "name": "Don't Scream.mp4",
+    "in": 147.8474,
+    "out": 148.4313,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 33.8504,
+    "end": 35.2018,
+    "name": "Don't Scream.mp4",
+    "in": 148.5314,
+    "out": 149.8828,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 35.2018,
+    "end": 35.9692,
+    "name": "Don't Scream.mp4",
+    "in": 153.2361,
+    "out": 154.0035,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.28517397881996964:0.72043010752688286",
+       "Scale": 145.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 35.9692,
+    "end": 38.4717,
+    "name": "Don't Scream.mp4",
+    "in": 167.6004,
+    "out": 170.1029,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 38.4717,
+    "end": 39.773,
+    "name": "Don't Scream.mp4",
+    "in": 170.1029,
+    "out": 171.4042,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.34568835098335904:0.65322580645161332",
+       "Scale": 133.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 39.773,
+    "end": 40.8574,
+    "name": "Don't Scream.mp4",
+    "in": 220.67,
+    "out": 221.7544,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 40.8574,
+    "end": 41.4914,
+    "name": "Don't Scream.mp4",
+    "in": 221.7544,
+    "out": 222.3884,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 120.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 41.4914,
+    "end": 47.7643,
+    "name": "Don't Scream.mp4",
+    "in": 243.2425,
+    "out": 249.5154,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 47.7643,
+    "end": 52.8193,
+    "name": "Don't Scream.mp4",
+    "in": 252.9856,
+    "out": 258.0406,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 52.8193,
+    "end": 54.3709,
+    "name": "Don't Scream.mp4",
+    "in": 259.125,
+    "out": 260.6766,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 54.3709,
+    "end": 55.205,
+    "name": "Don't Scream.mp4",
+    "in": 261.1937,
+    "out": 262.0279,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 55.205,
+    "end": 56.8901,
+    "name": "Don't Scream.mp4",
+    "in": 281.3138,
+    "out": 282.9988,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 56.8901,
+    "end": 59.5093,
+    "name": "Don't Scream.mp4",
+    "in": 284.567,
+    "out": 287.1863,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 59.5093,
+    "end": 63.9638,
+    "name": "Don't Scream.mp4",
+    "in": 290.8567,
+    "out": 295.3111,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 63.9638,
+    "end": 64.9314,
+    "name": "Don't Scream.mp4",
+    "in": 299.2317,
+    "out": 300.1993,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 64.9314,
+    "end": 67.9344,
+    "name": "Don't Scream.mp4",
+    "in": 300.1993,
+    "out": 303.2023,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.37604168057441711:0.56666666269302368",
+       "Scale": 348.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 67.9344,
+    "end": 70.17,
+    "name": "Don't Scream.mp4",
+    "in": 309.225,
+    "out": 311.4605,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 70.17,
+    "end": 72.3054,
+    "name": "Don't Scream.mp4",
+    "in": 336.035,
+    "out": 338.1705,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 72.3054,
+    "end": 73.6234,
+    "name": "Don't Scream.mp4",
+    "in": 338.1705,
+    "out": 339.4885,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 199.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 73.6234,
+    "end": 76.4596,
+    "name": "Don't Scream.mp4",
+    "in": 362.8618,
+    "out": 365.6979,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 76.4596,
+    "end": 78.1613,
+    "name": "Don't Scream.mp4",
+    "in": 379.8787,
+    "out": 381.5804,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 78.1613,
+    "end": 79.8296,
+    "name": "Don't Scream.mp4",
+    "in": 416.6654,
+    "out": 418.3337,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 79.8296,
+    "end": 83.55,
+    "name": "Don't Scream.mp4",
+    "in": 431.8973,
+    "out": 435.6176,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 83.55,
+    "end": 86.9033,
+    "name": "Don't Scream.mp4",
+    "in": 439.5049,
+    "out": 442.8582,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 86.9033,
+    "end": 90.0398,
+    "name": "Don't Scream.mp4",
+    "in": 459.7584,
+    "out": 462.8948,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 90.0398,
+    "end": 90.8239,
+    "name": "Don't Scream.mp4",
+    "in": 473.1384,
+    "out": 473.9225,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 90.8239,
+    "end": 91.608,
+    "name": "Don't Scream.mp4",
+    "in": 479.745,
+    "out": 480.5291,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 91.608,
+    "end": 93.5433,
+    "name": "Don't Scream.mp4",
+    "in": 483.4987,
+    "out": 485.434,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 207.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 93.5433,
+    "end": 94.6444,
+    "name": "Don't Scream.mp4",
+    "in": 488.5371,
+    "out": 489.6382,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 94.6444,
+    "end": 102.2686,
+    "name": "Don't Scream.mp4",
+    "in": 496.2281,
+    "out": 503.8523,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 102.2686,
+    "end": 103.8702,
+    "name": "Don't Scream.mp4",
+    "in": 510.9427,
+    "out": 512.5443,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 103.8702,
+    "end": 106.0224,
+    "name": "Don't Scream.mp4",
+    "in": 522.6044,
+    "out": 524.7565,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 106.0224,
+    "end": 114.0637,
+    "name": "Don't Scream.mp4",
+    "in": 545.3604,
+    "out": 553.4017,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 114.0637,
+    "end": 115.632,
+    "name": "Don't Scream.mp4",
+    "in": 563.345,
+    "out": 564.9132,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.19440242057488699:0.77419354838709842",
+       "Scale": 162.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 115.632,
+    "end": 118.3513,
+    "name": "Don't Scream.mp4",
+    "in": 569.0173,
+    "out": 571.7367,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 118.3513,
+    "end": 120.9372,
+    "name": "Don't Scream.mp4",
+    "in": 584.7497,
+    "out": 587.3356,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 120.9372,
+    "end": 126.8264,
+    "name": "Don't Scream.mp4",
+    "in": 609.0739,
+    "out": 614.9631,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 126.8264,
+    "end": 128.2278,
+    "name": "Don't Scream.mp4",
+    "in": 614.9631,
+    "out": 616.3645,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.2216338880484115:0.77419354838709908",
+       "Scale": 156.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 128.2278,
+    "end": 133.2996,
+    "name": "Don't Scream.mp4",
+    "in": 699.1137,
+    "out": 704.1854,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 133.2996,
+    "end": 133.9002,
+    "name": "Don't Scream.mp4",
+    "in": 704.1854,
+    "out": 704.786,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.24583963691376698:0.75000000000000133",
+       "Scale": 152.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 133.9002,
+    "end": 136.3026,
+    "name": "Don't Scream.mp4",
+    "in": 732.9641,
+    "out": 735.3665,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 136.3026,
+    "end": 141.0239,
+    "name": "Don't Scream.mp4",
+    "in": 767.6654,
+    "out": 772.3867,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 141.0239,
+    "end": 142.9425,
+    "name": "Don't Scream.mp4",
+    "in": 810.4914,
+    "out": 812.41,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 142.9425,
+    "end": 145.0446,
+    "name": "Don't Scream.mp4",
+    "in": 812.41,
+    "out": 814.5121,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.64114582538604736:0.35092592239379883",
+       "Scale": 194.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 145.0446,
+    "end": 147.7807,
+    "name": "Don't Scream.mp4",
+    "in": 814.5121,
+    "out": 817.2481,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 147.7807,
+    "end": 149.8828,
+    "name": "Don't Scream.mp4",
+    "in": 819.6672,
+    "out": 821.7693,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 149.8828,
+    "end": 151.9181,
+    "name": "Don't Scream.mp4",
+    "in": 854.2183,
+    "out": 856.2537,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.40092593431472778",
+       "Scale": 247.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 151.9181,
+    "end": 157.1233,
+    "name": "Don't Scream.mp4",
+    "in": 856.2537,
+    "out": 861.4589,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 157.1233,
+    "end": 163.8634,
+    "name": "Don't Scream.mp4",
+    "in": 861.4589,
+    "out": 868.1989,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 163.8634,
+    "end": 165.9822,
+    "name": "Don't Scream.mp4",
+    "in": 868.1989,
+    "out": 870.3177,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.2851739788199702:0.71774193548387255",
+       "Scale": 147.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 165.9822,
+    "end": 168.885,
+    "name": "Don't Scream.mp4",
+    "in": 879.8772,
+    "out": 882.7801,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 168.885,
+    "end": 170.8203,
+    "name": "Don't Scream.mp4",
+    "in": 889.8872,
+    "out": 891.8225,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 170.8203,
+    "end": 172.0215,
+    "name": "Don't Scream.mp4",
+    "in": 897.7117,
+    "out": 898.9129,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.29727685325264758:0.68817204301075241",
+       "Scale": 143.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 172.0215,
+    "end": 172.5721,
+    "name": "Don't Scream.mp4",
+    "in": 898.9129,
+    "out": 899.4634,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "-0.96747352496217476:0.69354838709677313",
+       "Scale Height": 143.0,
+       "Scale Width": 448.0,
+       "#4": false,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 172.5721,
+    "end": 173.523,
+    "name": "Don't Scream.mp4",
+    "in": 900.1308,
+    "out": 901.0817,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.29727685325264758:0.68817204301075241",
+       "Scale": 143.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 173.523,
+    "end": 174.9911,
+    "name": "Don't Scream.mp4",
+    "in": 902.2662,
+    "out": 903.7344,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 174.9911,
+    "end": 175.9421,
+    "name": "Don't Scream.mp4",
+    "in": 905.4527,
+    "out": 906.4037,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 175.9421,
+    "end": 179.6124,
+    "name": "Don't Scream.mp4",
+    "in": 918.9328,
+    "out": 922.6032,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 179.6124,
+    "end": 179.6958,
+    "name": "TV colour bars test card screen with sine tone in 4K.mp4",
+    "in": 6.3897,
+    "out": 6.4731,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "F:\\sfx\\TV colour bars test card screen with sine tone in 4K.mp4"
+   },
+   {
+    "start": 179.6958,
+    "end": 181.3642,
+    "name": "Don't Scream.mp4",
+    "in": 966.7138,
+    "out": 968.3821,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 181.3642,
+    "end": 184.7675,
+    "name": "Don't Scream.mp4",
+    "in": 981.8623,
+    "out": 985.2656,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 184.7675,
+    "end": 191.4909,
+    "name": "Don't Scream.mp4",
+    "in": 995.8595,
+    "out": 1002.5829,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 191.4909,
+    "end": 198.0975,
+    "name": "Don't Scream.mp4",
+    "in": 1041.1547,
+    "out": 1047.7613,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 198.0975,
+    "end": 201.1005,
+    "name": "Don't Scream.mp4",
+    "in": 1047.7613,
+    "out": 1050.7643,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.27912254160363142:0.72580645161290458",
+       "Scale": 146.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 201.1005,
+    "end": 202.5853,
+    "name": "Don't Scream.mp4",
+    "in": 1052.2658,
+    "out": 1053.7506,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 202.5853,
+    "end": 214.3804,
+    "name": "Don't Scream.mp4",
+    "in": 1096.1929,
+    "out": 1107.988,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 214.3804,
+    "end": 215.2313,
+    "name": "Don't Scream.mp4",
+    "in": 1113.4601,
+    "out": 1114.311,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 215.2313,
+    "end": 224.1235,
+    "name": "Don't Scream.mp4",
+    "in": 1355.7851,
+    "out": 1364.6773,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 224.1235,
+    "end": 224.624,
+    "name": "Don't Scream.mp4",
+    "in": 1364.6773,
+    "out": 1365.1778,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.25491679273827517:0.74193548387096875",
+       "Scale": 151.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 224.624,
+    "end": 228.678,
+    "name": "Don't Scream.mp4",
+    "in": 1395.0242,
+    "out": 1399.0782,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 228.678,
+    "end": 229.7624,
+    "name": "Don't Scream.mp4",
+    "in": 1399.0782,
+    "out": 1400.1626,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.37897125567322221:0.61827956989247335",
+       "Scale": 126.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 229.7624,
+    "end": 231.6309,
+    "name": "Don't Scream.mp4",
+    "in": 1470.8498,
+    "out": 1472.7183,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.30000001192092896",
+       "Scale": 210.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 231.6309,
+    "end": 234.8508,
+    "name": "Don't Scream.mp4",
+    "in": 1475.4043,
+    "out": 1478.6242,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 234.8508,
+    "end": 236.9195,
+    "name": "Don't Scream.mp4",
+    "in": 1482.2445,
+    "out": 1484.3132,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 236.9195,
+    "end": 243.2091,
+    "name": "Don't Scream.mp4",
+    "in": 1585.0303,
+    "out": 1591.3199,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 243.2091,
+    "end": 244.8274,
+    "name": "Don't Scream.mp4",
+    "in": 1591.3199,
+    "out": 1592.9382,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.22314674735249607:0.76881720430107658",
+       "Scale": 157.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 244.8274,
+    "end": 248.0974,
+    "name": "Don't Scream.mp4",
+    "in": 1593.7556,
+    "out": 1597.0256,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 248.0974,
+    "end": 250.1995,
+    "name": "Don't Scream.mp4",
+    "in": 1654.6497,
+    "out": 1656.7518,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.27609682299546157:0.7150537634408608",
+       "Scale": 145.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 250.1995,
+    "end": 255.3713,
+    "name": "Don't Scream.mp4",
+    "in": 1750.1616,
+    "out": 1755.3334,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 255.3713,
+    "end": 257.4567,
+    "name": "Don't Scream.mp4",
+    "in": 1835.53,
+    "out": 1837.6154,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 257.4567,
+    "end": 258.8414,
+    "name": "Don't Scream.mp4",
+    "in": 1841.6862,
+    "out": 1843.0709,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 258.8414,
+    "end": 260.1927,
+    "name": "Don't Scream.mp4",
+    "in": 1843.0709,
+    "out": 1844.4222,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.39712556732223897:0.60215053763440851",
+       "Scale": 121.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 260.1927,
+    "end": 263.8297,
+    "name": "Don't Scream.mp4",
+    "in": 1866.0438,
+    "out": 1869.6807,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 263.8297,
+    "end": 267.3666,
+    "name": "Don't Scream.mp4",
+    "in": 1870.3648,
+    "out": 1873.9016,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 267.3666,
+    "end": 268.9014,
+    "name": "Don't Scream.mp4",
+    "in": 1873.9016,
+    "out": 1875.4365,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 158.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 268.9014,
+    "end": 275.9084,
+    "name": "Don't Scream.mp4",
+    "in": 2138.065,
+    "out": 2145.072,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 275.9084,
+    "end": 277.46,
+    "name": "Don't Scream.mp4",
+    "in": 2145.072,
+    "out": 2146.6235,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.38653555219364572:0.61827956989247412",
+       "Scale": 123.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 277.46,
+    "end": 281.2137,
+    "name": "Don't Scream.mp4",
+    "in": 2146.6235,
+    "out": 2150.3773,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 281.2137,
+    "end": 283.1823,
+    "name": "Don't Scream.mp4",
+    "in": 2158.5187,
+    "out": 2160.4874,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.27609682299546234:0.70161290322580716",
+       "Scale": 146.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 283.1823,
+    "end": 284.1333,
+    "name": "Don't Scream.mp4",
+    "in": 2160.4874,
+    "out": 2161.4383,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.20953101361573467:0.7876344086021515",
+       "Scale": 159.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 284.1333,
+    "end": 288.0872,
+    "name": "Don't Scream.mp4",
+    "in": 2177.0372,
+    "out": 2180.9911,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 288.0872,
+    "end": 292.1246,
+    "name": "Don't Scream.mp4",
+    "in": 2216.9603,
+    "out": 2220.9977,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 292.1246,
+    "end": 293.0755,
+    "name": "Don't Scream.mp4",
+    "in": 2220.9977,
+    "out": 2221.9486,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.20499243570347994:0.78225806451613034",
+       "Scale": 159.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 293.0755,
+    "end": 298.4809,
+    "name": "Don't Scream.mp4",
+    "in": 2234.0774,
+    "out": 2239.4828,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 298.4809,
+    "end": 299.7322,
+    "name": "Don't Scream.mp4",
+    "in": 2239.4828,
+    "out": 2240.734,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.24735249621785196:0.75537634408602206",
+       "Scale": 151.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 299.7322,
+    "end": 303.3691,
+    "name": "Don't Scream.mp4",
+    "in": 2246.9235,
+    "out": 2250.5605,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 303.3691,
+    "end": 309.2583,
+    "name": "Don't Scream.mp4",
+    "in": 2266.1427,
+    "out": 2272.0319,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 309.2583,
+    "end": 310.6097,
+    "name": "Don't Scream.mp4",
+    "in": 2272.0319,
+    "out": 2273.3832,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.36989409984871391:0.63440860215053818",
+       "Scale": 128.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 310.6097,
+    "end": 319.0181,
+    "name": "Don't Scream.mp4",
+    "in": 2324.4175,
+    "out": 2332.8258,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 319.0181,
+    "end": 325.6747,
+    "name": "Don't Scream.mp4",
+    "in": 2335.2282,
+    "out": 2341.8849,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 325.6747,
+    "end": 326.4588,
+    "name": "Don't Scream.mp4",
+    "in": 2343.6533,
+    "out": 2344.4374,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.18229954614220864:0.79032258064516281",
+       "Scale": 163.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 326.4588,
+    "end": 327.66,
+    "name": "Don't Scream.mp4",
+    "in": 2346.7397,
+    "out": 2347.9409,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 327.66,
+    "end": 328.8946,
+    "name": "Don't Scream.mp4",
+    "in": 2349.2756,
+    "out": 2350.5101,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 328.8946,
+    "end": 337.4865,
+    "name": "Don't Scream.mp4",
+    "in": 2371.2308,
+    "out": 2379.8227,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 337.4865,
+    "end": 339.6887,
+    "name": "Don't Scream.mp4",
+    "in": 2379.8227,
+    "out": 2382.0249,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.29273827534039326:0.70161290322580627",
+       "Scale": 142.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 339.6887,
+    "end": 340.7064,
+    "name": "Don't Scream.mp4",
+    "in": 2394.1536,
+    "out": 2395.1713,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 340.7064,
+    "end": 341.5906,
+    "name": "Don't Scream.mp4",
+    "in": 2395.8553,
+    "out": 2396.7396,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.5:0.5",
+       "Scale": 135.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 341.5906,
+    "end": 343.1922,
+    "name": "Don't Scream.mp4",
+    "in": 2404.1803,
+    "out": 2405.7819,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 343.1922,
+    "end": 346.7457,
+    "name": "Don't Scream.mp4",
+    "in": 2407.3001,
+    "out": 2410.8536,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 346.7457,
+    "end": 347.6132,
+    "name": "Don't Scream.mp4",
+    "in": 2412.522,
+    "out": 2413.3895,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.16263237518910723:0.8225806451612927",
+       "Scale": 173.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   },
+   {
+    "start": 347.6132,
+    "end": 348.9646,
+    "name": "Don't Scream.mp4",
+    "in": 2417.3434,
+    "out": 2418.6948,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 348.9646,
+    "end": 351.6172,
+    "name": "Don't Scream.mp4",
+    "in": 2427.587,
+    "out": 2430.2396,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 351.6172,
+    "end": 355.4043,
+    "name": "Don't Scream.mp4",
+    "in": 2430.9904,
+    "out": 2434.7775,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 355.4043,
+    "end": 357.6566,
+    "name": "Don't Scream.mp4",
+    "in": 2437.9306,
+    "out": 2440.1829,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 357.6566,
+    "end": 360.4427,
+    "name": "Don't Scream.mp4",
+    "in": 2440.5666,
+    "out": 2443.3527,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 360.4427,
+    "end": 362.0109,
+    "name": "Don't Scream.mp4",
+    "in": 2444.2703,
+    "out": 2445.8385,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 362.0109,
+    "end": 363.9295,
+    "name": "Don't Scream.mp4",
+    "in": 2446.7394,
+    "out": 2448.658,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 363.9295,
+    "end": 365.6145,
+    "name": "Don't Scream.mp4",
+    "in": 2450.1929,
+    "out": 2451.8779,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 365.6145,
+    "end": 369.0179,
+    "name": "Don't Scream.mp4",
+    "in": 2455.8318,
+    "out": 2459.2352,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.0179,
+    "end": 369.5017,
+    "name": "Don't Scream.mp4",
+    "in": 2466.1087,
+    "out": 2466.5925,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.5017,
+    "end": 369.9522,
+    "name": "Don't Scream.mp4",
+    "in": 2467.3767,
+    "out": 2467.8271,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.9522,
+    "end": 372.0876,
+    "name": "Don't Scream.mp4",
+    "in": 2468.1107,
+    "out": 2470.2462,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 372.0876,
+    "end": 375.8914,
+    "name": "Don't Scream.mp4",
+    "in": 2471.0136,
+    "out": 2474.8174,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 375.8914,
+    "end": 377.3762,
+    "name": "Don't Scream.mp4",
+    "in": 2475.735,
+    "out": 2477.2198,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 377.3762,
+    "end": 378.7443,
+    "name": "Don't Scream.mp4",
+    "in": 2479.1717,
+    "out": 2480.5398,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 378.7443,
+    "end": 380.2625,
+    "name": "Don't Scream.mp4",
+    "in": 2486.4957,
+    "out": 2488.0139,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 380.2625,
+    "end": 381.5638,
+    "name": "Don't Scream.mp4",
+    "in": 2489.8991,
+    "out": 2491.2004,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 381.5638,
+    "end": 383.866,
+    "name": "Don't Scream.mp4",
+    "in": 2492.6185,
+    "out": 2494.9208,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 383.866,
+    "end": 385.0672,
+    "name": "Don't Scream.mp4",
+    "in": 2494.9208,
+    "out": 2496.122,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "fx": [
+     {
+      "kind": "VideoFilterComponent",
+      "display": "Motion",
+      "instance": null,
+      "match": "AE.ADBE Motion",
+      "bypass": false,
+      "params": {
+       "Position": "0.33055976033210754:0.6764635443687439",
+       "Scale": 135.0,
+       "Scale Width": 100.0,
+       "#4": true,
+       "Rotation": 0.0,
+       "Anchor Point": "0.5:0.5",
+       "Anti-flicker Filter": 0.0
+      }
+     }
+    ]
+   }
+  ],
+  [],
+  []
+ ],
+ "audio": [
+  [
+   {
+    "start": 0.0,
+    "end": 3.0197,
+    "name": "Don't Scream.mp4",
+    "in": 54.154,
+    "out": 57.1737,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 3.0197,
+    "end": 4.7047,
+    "name": "Don't Scream.mp4",
+    "in": 57.9912,
+    "out": 59.6762,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 4.7047,
+    "end": 5.2886,
+    "name": "Don't Scream.mp4",
+    "in": 60.4102,
+    "out": 60.9941,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 5.2886,
+    "end": 6.3063,
+    "name": "Don't Scream.mp4",
+    "in": 62.5957,
+    "out": 63.6134,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 6.3063,
+    "end": 7.9746,
+    "name": "Don't Scream.mp4",
+    "in": 69.0021,
+    "out": 70.6705,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 7.9746,
+    "end": 10.4271,
+    "name": "Don't Scream.mp4",
+    "in": 71.538,
+    "out": 73.9904,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 10.4271,
+    "end": 11.1611,
+    "name": "Don't Scream.mp4",
+    "in": 73.9904,
+    "out": 74.7245,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 11.1611,
+    "end": 12.8128,
+    "name": "Don't Scream.mp4",
+    "in": 75.4919,
+    "out": 77.1436,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 12.8128,
+    "end": 13.9639,
+    "name": "Don't Scream.mp4",
+    "in": 77.6941,
+    "out": 78.8453,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 13.9639,
+    "end": 18.0847,
+    "name": "Don't Scream.mp4",
+    "in": 80.7639,
+    "out": 84.8846,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 18.0847,
+    "end": 20.387,
+    "name": "Don't Scream.mp4",
+    "in": 89.2723,
+    "out": 91.5746,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 20.387,
+    "end": 21.5215,
+    "name": "Don't Scream.mp4",
+    "in": 91.5746,
+    "out": 92.7091,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 21.5215,
+    "end": 22.9062,
+    "name": "Don't Scream.mp4",
+    "in": 110.2933,
+    "out": 111.678,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 22.9062,
+    "end": 23.5902,
+    "name": "Don't Scream.mp4",
+    "in": 115.2983,
+    "out": 115.9823,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 23.5902,
+    "end": 24.2909,
+    "name": "Don't Scream.mp4",
+    "in": 117.4504,
+    "out": 118.1511,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 24.2909,
+    "end": 24.7747,
+    "name": "Don't Scream.mp4",
+    "in": 118.5682,
+    "out": 119.052,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 24.7747,
+    "end": 25.7423,
+    "name": "Don't Scream.mp4",
+    "in": 119.052,
+    "out": 120.0197,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 25.7423,
+    "end": 26.8768,
+    "name": "Don't Scream.mp4",
+    "in": 120.0197,
+    "out": 121.1541,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 26.8768,
+    "end": 28.9455,
+    "name": "Don't Scream.mp4",
+    "in": 122.4554,
+    "out": 124.5242,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 28.9455,
+    "end": 29.7296,
+    "name": "Don't Scream.mp4",
+    "in": 125.0247,
+    "out": 125.8088,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 29.7296,
+    "end": 30.4303,
+    "name": "Don't Scream.mp4",
+    "in": 125.8088,
+    "out": 126.5095,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 30.4303,
+    "end": 31.2812,
+    "name": "Don't Scream.mp4",
+    "in": 126.743,
+    "out": 127.5939,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 31.2812,
+    "end": 33.2665,
+    "name": "Don't Scream.mp4",
+    "in": 145.078,
+    "out": 147.0633,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 33.2665,
+    "end": 33.8504,
+    "name": "Don't Scream.mp4",
+    "in": 147.8474,
+    "out": 148.4313,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 33.8504,
+    "end": 35.2018,
+    "name": "Don't Scream.mp4",
+    "in": 148.5314,
+    "out": 149.8828,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 35.2018,
+    "end": 35.9692,
+    "name": "Don't Scream.mp4",
+    "in": 153.2361,
+    "out": 154.0035,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 35.9692,
+    "end": 38.4717,
+    "name": "Don't Scream.mp4",
+    "in": 167.6004,
+    "out": 170.1029,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 38.4717,
+    "end": 39.773,
+    "name": "Don't Scream.mp4",
+    "in": 170.1029,
+    "out": 171.4042,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 39.773,
+    "end": 40.8574,
+    "name": "Don't Scream.mp4",
+    "in": 220.67,
+    "out": 221.7544,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 40.8574,
+    "end": 41.4914,
+    "name": "Don't Scream.mp4",
+    "in": 221.7544,
+    "out": 222.3884,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 41.4914,
+    "end": 47.7643,
+    "name": "Don't Scream.mp4",
+    "in": 243.2425,
+    "out": 249.5154,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 47.7643,
+    "end": 52.8193,
+    "name": "Don't Scream.mp4",
+    "in": 252.9856,
+    "out": 258.0406,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 52.8193,
+    "end": 54.3709,
+    "name": "Don't Scream.mp4",
+    "in": 259.125,
+    "out": 260.6766,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 54.3709,
+    "end": 55.205,
+    "name": "Don't Scream.mp4",
+    "in": 261.1937,
+    "out": 262.0279,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 55.205,
+    "end": 56.8901,
+    "name": "Don't Scream.mp4",
+    "in": 281.3138,
+    "out": 282.9988,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 56.8901,
+    "end": 59.5093,
+    "name": "Don't Scream.mp4",
+    "in": 284.567,
+    "out": 287.1863,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 59.5093,
+    "end": 63.9638,
+    "name": "Don't Scream.mp4",
+    "in": 290.8567,
+    "out": 295.3111,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 63.9638,
+    "end": 64.9314,
+    "name": "Don't Scream.mp4",
+    "in": 299.2317,
+    "out": 300.1993,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 64.9314,
+    "end": 67.9344,
+    "name": "Don't Scream.mp4",
+    "in": 300.1993,
+    "out": 303.2023,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 67.9344,
+    "end": 70.17,
+    "name": "Don't Scream.mp4",
+    "in": 309.225,
+    "out": 311.4605,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 70.17,
+    "end": 72.3054,
+    "name": "Don't Scream.mp4",
+    "in": 336.035,
+    "out": 338.1705,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 72.3054,
+    "end": 73.6234,
+    "name": "Don't Scream.mp4",
+    "in": 338.1705,
+    "out": 339.4885,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 73.6234,
+    "end": 76.4596,
+    "name": "Don't Scream.mp4",
+    "in": 362.8618,
+    "out": 365.6979,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 76.4596,
+    "end": 78.1613,
+    "name": "Don't Scream.mp4",
+    "in": 379.8787,
+    "out": 381.5804,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 78.1613,
+    "end": 79.8296,
+    "name": "Don't Scream.mp4",
+    "in": 416.6654,
+    "out": 418.3337,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 79.8296,
+    "end": 83.55,
+    "name": "Don't Scream.mp4",
+    "in": 431.8973,
+    "out": 435.6176,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 83.55,
+    "end": 86.9033,
+    "name": "Don't Scream.mp4",
+    "in": 439.5049,
+    "out": 442.8582,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 86.9033,
+    "end": 90.0398,
+    "name": "Don't Scream.mp4",
+    "in": 459.7584,
+    "out": 462.8948,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 90.0398,
+    "end": 90.8239,
+    "name": "Don't Scream.mp4",
+    "in": 473.1384,
+    "out": 473.9225,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 90.8239,
+    "end": 91.608,
+    "name": "Don't Scream.mp4",
+    "in": 479.745,
+    "out": 480.5291,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 91.608,
+    "end": 93.5433,
+    "name": "Don't Scream.mp4",
+    "in": 483.4987,
+    "out": 485.434,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 93.5433,
+    "end": 94.6444,
+    "name": "Don't Scream.mp4",
+    "in": 488.5371,
+    "out": 489.6382,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 94.6444,
+    "end": 102.2686,
+    "name": "Don't Scream.mp4",
+    "in": 496.2281,
+    "out": 503.8523,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 102.2686,
+    "end": 103.8702,
+    "name": "Don't Scream.mp4",
+    "in": 510.9427,
+    "out": 512.5443,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 103.8702,
+    "end": 106.0224,
+    "name": "Don't Scream.mp4",
+    "in": 522.6044,
+    "out": 524.7565,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 106.0224,
+    "end": 112.2119,
+    "name": "Don't Scream.mp4",
+    "in": 545.3604,
+    "out": 551.5499,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 112.2119,
+    "end": 113.1461,
+    "name": "Don't Scream.mp4",
+    "in": 553.4017,
+    "out": 554.336,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 113.1461,
+    "end": 114.0637,
+    "name": "Don't Scream.mp4",
+    "in": 552.4842,
+    "out": 553.4017,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 114.0637,
+    "end": 115.632,
+    "name": "Don't Scream.mp4",
+    "in": 563.345,
+    "out": 564.9132,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 115.632,
+    "end": 118.3513,
+    "name": "Don't Scream.mp4",
+    "in": 569.0173,
+    "out": 571.7367,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 118.3513,
+    "end": 120.9372,
+    "name": "Don't Scream.mp4",
+    "in": 584.7497,
+    "out": 587.3356,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 120.9372,
+    "end": 128.2278,
+    "name": "Don't Scream.mp4",
+    "in": 609.0739,
+    "out": 616.3645,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 128.2278,
+    "end": 133.9002,
+    "name": "Don't Scream.mp4",
+    "in": 699.1137,
+    "out": 704.786,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 133.9002,
+    "end": 136.3026,
+    "name": "Don't Scream.mp4",
+    "in": 732.9641,
+    "out": 735.3665,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 136.3026,
+    "end": 141.0239,
+    "name": "Don't Scream.mp4",
+    "in": 767.6654,
+    "out": 772.3867,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 141.0239,
+    "end": 147.7807,
+    "name": "Don't Scream.mp4",
+    "in": 810.4914,
+    "out": 817.2481,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 147.7807,
+    "end": 149.8828,
+    "name": "Don't Scream.mp4",
+    "in": 819.6672,
+    "out": 821.7693,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 149.8828,
+    "end": 153.9201,
+    "name": "Don't Scream.mp4",
+    "in": 854.2183,
+    "out": 858.2557,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 153.9201,
+    "end": 160.1263,
+    "name": "Don't Scream.mp4",
+    "in": 859.6904,
+    "out": 865.8966,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 160.1263,
+    "end": 165.9822,
+    "name": "Don't Scream.mp4",
+    "in": 864.4619,
+    "out": 870.3177,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 165.9822,
+    "end": 168.885,
+    "name": "Don't Scream.mp4",
+    "in": 879.8772,
+    "out": 882.7801,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 168.885,
+    "end": 170.8203,
+    "name": "Don't Scream.mp4",
+    "in": 889.8872,
+    "out": 891.8225,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 170.8203,
+    "end": 172.5721,
+    "name": "Don't Scream.mp4",
+    "in": 897.7117,
+    "out": 899.4634,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 172.5721,
+    "end": 173.523,
+    "name": "Don't Scream.mp4",
+    "in": 900.1308,
+    "out": 901.0817,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 173.523,
+    "end": 174.9911,
+    "name": "Don't Scream.mp4",
+    "in": 902.2662,
+    "out": 903.7344,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 174.9911,
+    "end": 175.9421,
+    "name": "Don't Scream.mp4",
+    "in": 905.4527,
+    "out": 906.4037,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 175.9421,
+    "end": 179.6124,
+    "name": "Don't Scream.mp4",
+    "in": 918.9328,
+    "out": 922.6032,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 179.6124,
+    "end": 179.6958,
+    "name": "TV colour bars test card screen with sine tone in 4K.mp4",
+    "in": 6.3897,
+    "out": 6.4731,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "F:\\sfx\\TV colour bars test card screen with sine tone in 4K.mp4"
+   },
+   {
+    "start": 179.6958,
+    "end": 181.3642,
+    "name": "Don't Scream.mp4",
+    "in": 966.7138,
+    "out": 968.3821,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 181.3642,
+    "end": 184.7675,
+    "name": "Don't Scream.mp4",
+    "in": 981.8623,
+    "out": 985.2656,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 184.7675,
+    "end": 191.4909,
+    "name": "Don't Scream.mp4",
+    "in": 995.8595,
+    "out": 1002.5829,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 191.4909,
+    "end": 201.1005,
+    "name": "Don't Scream.mp4",
+    "in": 1041.1547,
+    "out": 1050.7643,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 201.1005,
+    "end": 202.5853,
+    "name": "Don't Scream.mp4",
+    "in": 1052.2658,
+    "out": 1053.7506,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 202.5853,
+    "end": 210.1595,
+    "name": "Don't Scream.mp4",
+    "in": 1096.1929,
+    "out": 1103.7671,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 210.1595,
+    "end": 214.3804,
+    "name": "Don't Scream.mp4",
+    "in": 1104.5179,
+    "out": 1108.7388,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4",
+    "gain_db": -5.0
+   },
+   {
+    "start": 214.3804,
+    "end": 215.2313,
+    "name": "Don't Scream.mp4",
+    "in": 1113.4601,
+    "out": 1114.311,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 215.2313,
+    "end": 224.624,
+    "name": "Don't Scream.mp4",
+    "in": 1355.7851,
+    "out": 1365.1778,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 224.624,
+    "end": 229.7624,
+    "name": "Don't Scream.mp4",
+    "in": 1395.0242,
+    "out": 1400.1626,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 229.7624,
+    "end": 231.6309,
+    "name": "Don't Scream.mp4",
+    "in": 1470.8498,
+    "out": 1472.7183,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 231.6309,
+    "end": 234.8508,
+    "name": "Don't Scream.mp4",
+    "in": 1475.4043,
+    "out": 1478.6242,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 234.8508,
+    "end": 236.9195,
+    "name": "Don't Scream.mp4",
+    "in": 1482.2445,
+    "out": 1484.3132,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 236.9195,
+    "end": 243.2091,
+    "name": "Don't Scream.mp4",
+    "in": 1585.0303,
+    "out": 1591.3199,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 243.2091,
+    "end": 244.8274,
+    "name": "Don't Scream.mp4",
+    "in": 1591.3199,
+    "out": 1592.9382,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 244.8274,
+    "end": 248.0974,
+    "name": "Don't Scream.mp4",
+    "in": 1593.7556,
+    "out": 1597.0256,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 250.1995,
+    "end": 255.3713,
+    "name": "Don't Scream.mp4",
+    "in": 1750.1616,
+    "out": 1755.3334,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 255.3713,
+    "end": 257.4567,
+    "name": "Don't Scream.mp4",
+    "in": 1835.53,
+    "out": 1837.6154,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 257.4567,
+    "end": 260.1927,
+    "name": "Don't Scream.mp4",
+    "in": 1841.6862,
+    "out": 1844.4222,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 260.1927,
+    "end": 263.8297,
+    "name": "Don't Scream.mp4",
+    "in": 1866.0438,
+    "out": 1869.6807,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 263.8297,
+    "end": 268.9014,
+    "name": "Don't Scream.mp4",
+    "in": 1870.3648,
+    "out": 1875.4365,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 268.9014,
+    "end": 281.2137,
+    "name": "Don't Scream.mp4",
+    "in": 2138.065,
+    "out": 2150.3773,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 281.2137,
+    "end": 284.1333,
+    "name": "Don't Scream.mp4",
+    "in": 2158.5187,
+    "out": 2161.4383,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 284.1333,
+    "end": 288.0872,
+    "name": "Don't Scream.mp4",
+    "in": 2177.0372,
+    "out": 2180.9911,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 288.0872,
+    "end": 293.0755,
+    "name": "Don't Scream.mp4",
+    "in": 2216.9603,
+    "out": 2221.9486,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 293.0755,
+    "end": 299.7322,
+    "name": "Don't Scream.mp4",
+    "in": 2234.0774,
+    "out": 2240.734,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 299.7322,
+    "end": 303.3691,
+    "name": "Don't Scream.mp4",
+    "in": 2246.9235,
+    "out": 2250.5605,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 303.3691,
+    "end": 310.6097,
+    "name": "Don't Scream.mp4",
+    "in": 2266.1427,
+    "out": 2273.3832,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 310.6097,
+    "end": 319.0181,
+    "name": "Don't Scream.mp4",
+    "in": 2324.4175,
+    "out": 2332.8258,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 319.0181,
+    "end": 325.6747,
+    "name": "Don't Scream.mp4",
+    "in": 2335.2282,
+    "out": 2341.8849,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 325.6747,
+    "end": 326.4588,
+    "name": "Don't Scream.mp4",
+    "in": 2343.6533,
+    "out": 2344.4374,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 326.4588,
+    "end": 327.66,
+    "name": "Don't Scream.mp4",
+    "in": 2346.7397,
+    "out": 2347.9409,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 327.66,
+    "end": 328.8946,
+    "name": "Don't Scream.mp4",
+    "in": 2349.2756,
+    "out": 2350.5101,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 328.8946,
+    "end": 339.6887,
+    "name": "Don't Scream.mp4",
+    "in": 2371.2308,
+    "out": 2382.0249,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 339.6887,
+    "end": 340.7064,
+    "name": "Don't Scream.mp4",
+    "in": 2394.1536,
+    "out": 2395.1713,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 340.7064,
+    "end": 341.5906,
+    "name": "Don't Scream.mp4",
+    "in": 2395.8553,
+    "out": 2396.7396,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 341.5906,
+    "end": 343.1922,
+    "name": "Don't Scream.mp4",
+    "in": 2404.1803,
+    "out": 2405.7819,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 343.1922,
+    "end": 346.7457,
+    "name": "Don't Scream.mp4",
+    "in": 2407.3001,
+    "out": 2410.8536,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 346.7457,
+    "end": 347.6132,
+    "name": "Don't Scream.mp4",
+    "in": 2412.522,
+    "out": 2413.3895,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 347.6132,
+    "end": 348.9646,
+    "name": "Don't Scream.mp4",
+    "in": 2417.3434,
+    "out": 2418.6948,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 348.9646,
+    "end": 351.6172,
+    "name": "Don't Scream.mp4",
+    "in": 2427.587,
+    "out": 2430.2396,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 351.6172,
+    "end": 355.4043,
+    "name": "Don't Scream.mp4",
+    "in": 2430.9904,
+    "out": 2434.7775,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 355.4043,
+    "end": 357.6566,
+    "name": "Don't Scream.mp4",
+    "in": 2437.9306,
+    "out": 2440.1829,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 357.6566,
+    "end": 360.4427,
+    "name": "Don't Scream.mp4",
+    "in": 2440.5666,
+    "out": 2443.3527,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 360.4427,
+    "end": 362.0109,
+    "name": "Don't Scream.mp4",
+    "in": 2444.2703,
+    "out": 2445.8385,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 362.0109,
+    "end": 363.9295,
+    "name": "Don't Scream.mp4",
+    "in": 2446.7394,
+    "out": 2448.658,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 363.9295,
+    "end": 365.6145,
+    "name": "Don't Scream.mp4",
+    "in": 2450.1929,
+    "out": 2451.8779,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 365.6145,
+    "end": 369.0179,
+    "name": "Don't Scream.mp4",
+    "in": 2455.8318,
+    "out": 2459.2352,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.0179,
+    "end": 369.5017,
+    "name": "Don't Scream.mp4",
+    "in": 2466.1087,
+    "out": 2466.5925,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.5017,
+    "end": 369.9522,
+    "name": "Don't Scream.mp4",
+    "in": 2467.3767,
+    "out": 2467.8271,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.9522,
+    "end": 372.0876,
+    "name": "Don't Scream.mp4",
+    "in": 2468.1107,
+    "out": 2470.2462,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 372.0876,
+    "end": 375.8914,
+    "name": "Don't Scream.mp4",
+    "in": 2471.0136,
+    "out": 2474.8174,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 375.8914,
+    "end": 377.3762,
+    "name": "Don't Scream.mp4",
+    "in": 2475.735,
+    "out": 2477.2198,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 377.3762,
+    "end": 378.7443,
+    "name": "Don't Scream.mp4",
+    "in": 2479.1717,
+    "out": 2480.5398,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 378.7443,
+    "end": 380.2625,
+    "name": "Don't Scream.mp4",
+    "in": 2486.4957,
+    "out": 2488.0139,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 380.2625,
+    "end": 381.5638,
+    "name": "Don't Scream.mp4",
+    "in": 2489.8991,
+    "out": 2491.2004,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 381.5638,
+    "end": 385.0672,
+    "name": "Don't Scream.mp4",
+    "in": 2492.6185,
+    "out": 2496.122,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 3.0197,
+    "name": "Don't Scream.mp4",
+    "in": 54.154,
+    "out": 57.1737,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 3.0197,
+    "end": 4.7047,
+    "name": "Don't Scream.mp4",
+    "in": 57.9912,
+    "out": 59.6762,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 4.7047,
+    "end": 5.2886,
+    "name": "Don't Scream.mp4",
+    "in": 60.4102,
+    "out": 60.9941,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 5.2886,
+    "end": 6.3063,
+    "name": "Don't Scream.mp4",
+    "in": 62.5957,
+    "out": 63.6134,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 6.3063,
+    "end": 7.9746,
+    "name": "Don't Scream.mp4",
+    "in": 69.0021,
+    "out": 70.6705,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 7.9746,
+    "end": 10.4271,
+    "name": "Don't Scream.mp4",
+    "in": 71.538,
+    "out": 73.9904,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 10.4271,
+    "end": 11.1611,
+    "name": "Don't Scream.mp4",
+    "in": 73.9904,
+    "out": 74.7245,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 11.1611,
+    "end": 12.8128,
+    "name": "Don't Scream.mp4",
+    "in": 75.4919,
+    "out": 77.1436,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 12.8128,
+    "end": 13.9639,
+    "name": "Don't Scream.mp4",
+    "in": 77.6941,
+    "out": 78.8453,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 13.9639,
+    "end": 18.0847,
+    "name": "Don't Scream.mp4",
+    "in": 80.7639,
+    "out": 84.8846,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 18.0847,
+    "end": 20.387,
+    "name": "Don't Scream.mp4",
+    "in": 89.2723,
+    "out": 91.5746,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 20.387,
+    "end": 21.5215,
+    "name": "Don't Scream.mp4",
+    "in": 91.5746,
+    "out": 92.7091,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 21.5215,
+    "end": 22.9062,
+    "name": "Don't Scream.mp4",
+    "in": 110.2933,
+    "out": 111.678,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 22.9062,
+    "end": 23.5902,
+    "name": "Don't Scream.mp4",
+    "in": 115.2983,
+    "out": 115.9823,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 23.5902,
+    "end": 24.2909,
+    "name": "Don't Scream.mp4",
+    "in": 117.4504,
+    "out": 118.1511,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 24.2909,
+    "end": 24.7747,
+    "name": "Don't Scream.mp4",
+    "in": 118.5682,
+    "out": 119.052,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 24.7747,
+    "end": 25.7423,
+    "name": "Don't Scream.mp4",
+    "in": 119.052,
+    "out": 120.0197,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 25.7423,
+    "end": 26.8768,
+    "name": "Don't Scream.mp4",
+    "in": 120.0197,
+    "out": 121.1541,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 26.8768,
+    "end": 28.9455,
+    "name": "Don't Scream.mp4",
+    "in": 122.4554,
+    "out": 124.5242,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 28.9455,
+    "end": 29.7296,
+    "name": "Don't Scream.mp4",
+    "in": 125.0247,
+    "out": 125.8088,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 29.7296,
+    "end": 30.4303,
+    "name": "Don't Scream.mp4",
+    "in": 125.8088,
+    "out": 126.5095,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 30.4303,
+    "end": 31.2812,
+    "name": "Don't Scream.mp4",
+    "in": 126.743,
+    "out": 127.5939,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 31.2812,
+    "end": 33.2665,
+    "name": "Don't Scream.mp4",
+    "in": 145.078,
+    "out": 147.0633,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 33.2665,
+    "end": 33.8504,
+    "name": "Don't Scream.mp4",
+    "in": 147.8474,
+    "out": 148.4313,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 33.8504,
+    "end": 35.2018,
+    "name": "Don't Scream.mp4",
+    "in": 148.5314,
+    "out": 149.8828,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 35.2018,
+    "end": 35.9692,
+    "name": "Don't Scream.mp4",
+    "in": 153.2361,
+    "out": 154.0035,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 35.9692,
+    "end": 38.4717,
+    "name": "Don't Scream.mp4",
+    "in": 167.6004,
+    "out": 170.1029,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 38.4717,
+    "end": 39.773,
+    "name": "Don't Scream.mp4",
+    "in": 170.1029,
+    "out": 171.4042,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 39.773,
+    "end": 40.8574,
+    "name": "Don't Scream.mp4",
+    "in": 220.67,
+    "out": 221.7544,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 40.8574,
+    "end": 41.4914,
+    "name": "Don't Scream.mp4",
+    "in": 221.7544,
+    "out": 222.3884,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 41.4914,
+    "end": 47.7643,
+    "name": "Don't Scream.mp4",
+    "in": 243.2425,
+    "out": 249.5154,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 47.7643,
+    "end": 52.8193,
+    "name": "Don't Scream.mp4",
+    "in": 252.9856,
+    "out": 258.0406,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 52.8193,
+    "end": 54.3709,
+    "name": "Don't Scream.mp4",
+    "in": 259.125,
+    "out": 260.6766,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 54.3709,
+    "end": 55.205,
+    "name": "Don't Scream.mp4",
+    "in": 261.1937,
+    "out": 262.0279,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 55.205,
+    "end": 56.8901,
+    "name": "Don't Scream.mp4",
+    "in": 281.3138,
+    "out": 282.9988,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 56.8901,
+    "end": 59.5093,
+    "name": "Don't Scream.mp4",
+    "in": 284.567,
+    "out": 287.1863,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 59.5093,
+    "end": 63.9638,
+    "name": "Don't Scream.mp4",
+    "in": 290.8567,
+    "out": 295.3111,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 63.9638,
+    "end": 64.9314,
+    "name": "Don't Scream.mp4",
+    "in": 299.2317,
+    "out": 300.1993,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 64.9314,
+    "end": 67.9344,
+    "name": "Don't Scream.mp4",
+    "in": 300.1993,
+    "out": 303.2023,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 67.9344,
+    "end": 70.17,
+    "name": "Don't Scream.mp4",
+    "in": 309.225,
+    "out": 311.4605,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 70.17,
+    "end": 72.3054,
+    "name": "Don't Scream.mp4",
+    "in": 336.035,
+    "out": 338.1705,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 72.3054,
+    "end": 73.6234,
+    "name": "Don't Scream.mp4",
+    "in": 338.1705,
+    "out": 339.4885,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 73.6234,
+    "end": 76.4596,
+    "name": "Don't Scream.mp4",
+    "in": 362.8618,
+    "out": 365.6979,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 76.4596,
+    "end": 78.1613,
+    "name": "Don't Scream.mp4",
+    "in": 379.8787,
+    "out": 381.5804,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 78.1613,
+    "end": 79.8296,
+    "name": "Don't Scream.mp4",
+    "in": 416.6654,
+    "out": 418.3337,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 79.8296,
+    "end": 83.55,
+    "name": "Don't Scream.mp4",
+    "in": 431.8973,
+    "out": 435.6176,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 83.55,
+    "end": 86.9033,
+    "name": "Don't Scream.mp4",
+    "in": 439.5049,
+    "out": 442.8582,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 86.9033,
+    "end": 90.0398,
+    "name": "Don't Scream.mp4",
+    "in": 459.7584,
+    "out": 462.8948,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 90.0398,
+    "end": 90.8239,
+    "name": "Don't Scream.mp4",
+    "in": 473.1384,
+    "out": 473.9225,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 90.8239,
+    "end": 91.608,
+    "name": "Don't Scream.mp4",
+    "in": 479.745,
+    "out": 480.5291,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 91.608,
+    "end": 93.5433,
+    "name": "Don't Scream.mp4",
+    "in": 483.4987,
+    "out": 485.434,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 93.5433,
+    "end": 94.6444,
+    "name": "Don't Scream.mp4",
+    "in": 488.5371,
+    "out": 489.6382,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 94.6444,
+    "end": 102.2686,
+    "name": "Don't Scream.mp4",
+    "in": 496.2281,
+    "out": 503.8523,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 102.2686,
+    "end": 103.8702,
+    "name": "Don't Scream.mp4",
+    "in": 510.9427,
+    "out": 512.5443,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 103.8702,
+    "end": 106.0224,
+    "name": "Don't Scream.mp4",
+    "in": 522.6044,
+    "out": 524.7565,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 106.0224,
+    "end": 114.0637,
+    "name": "Don't Scream.mp4",
+    "in": 545.3604,
+    "out": 553.4017,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 114.0637,
+    "end": 115.632,
+    "name": "Don't Scream.mp4",
+    "in": 563.345,
+    "out": 564.9132,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 115.632,
+    "end": 118.3513,
+    "name": "Don't Scream.mp4",
+    "in": 569.0173,
+    "out": 571.7367,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 118.3513,
+    "end": 120.9372,
+    "name": "Don't Scream.mp4",
+    "in": 584.7497,
+    "out": 587.3356,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 120.9372,
+    "end": 126.8264,
+    "name": "Don't Scream.mp4",
+    "in": 609.0739,
+    "out": 614.9631,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 126.8264,
+    "end": 128.2278,
+    "name": "Don't Scream.mp4",
+    "in": 614.9631,
+    "out": 616.3645,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 128.2278,
+    "end": 133.2996,
+    "name": "Don't Scream.mp4",
+    "in": 699.1137,
+    "out": 704.1854,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 133.2996,
+    "end": 133.9002,
+    "name": "Don't Scream.mp4",
+    "in": 704.1854,
+    "out": 704.786,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 133.9002,
+    "end": 136.3026,
+    "name": "Don't Scream.mp4",
+    "in": 732.9641,
+    "out": 735.3665,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 136.3026,
+    "end": 141.0239,
+    "name": "Don't Scream.mp4",
+    "in": 767.6654,
+    "out": 772.3867,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 141.0239,
+    "end": 142.9425,
+    "name": "Don't Scream.mp4",
+    "in": 810.4914,
+    "out": 812.41,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 142.9425,
+    "end": 145.0446,
+    "name": "Don't Scream.mp4",
+    "in": 812.41,
+    "out": 814.5121,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 145.0446,
+    "end": 147.7807,
+    "name": "Don't Scream.mp4",
+    "in": 814.5121,
+    "out": 817.2481,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 147.7807,
+    "end": 149.8828,
+    "name": "Don't Scream.mp4",
+    "in": 819.6672,
+    "out": 821.7693,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 149.8828,
+    "end": 151.9181,
+    "name": "Don't Scream.mp4",
+    "in": 854.2183,
+    "out": 856.2537,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 151.9181,
+    "end": 157.1233,
+    "name": "Don't Scream.mp4",
+    "in": 856.2537,
+    "out": 861.4589,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 157.1233,
+    "end": 163.8634,
+    "name": "Don't Scream.mp4",
+    "in": 861.4589,
+    "out": 868.1989,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 163.8634,
+    "end": 165.9822,
+    "name": "Don't Scream.mp4",
+    "in": 868.1989,
+    "out": 870.3177,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 165.9822,
+    "end": 168.885,
+    "name": "Don't Scream.mp4",
+    "in": 879.8772,
+    "out": 882.7801,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 168.885,
+    "end": 170.8203,
+    "name": "Don't Scream.mp4",
+    "in": 889.8872,
+    "out": 891.8225,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 170.8203,
+    "end": 172.0215,
+    "name": "Don't Scream.mp4",
+    "in": 897.7117,
+    "out": 898.9129,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 172.0215,
+    "end": 172.5721,
+    "name": "Don't Scream.mp4",
+    "in": 898.9129,
+    "out": 899.4634,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 172.5721,
+    "end": 173.523,
+    "name": "Don't Scream.mp4",
+    "in": 900.1308,
+    "out": 901.0817,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 173.523,
+    "end": 174.9911,
+    "name": "Don't Scream.mp4",
+    "in": 902.2662,
+    "out": 903.7344,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 174.9911,
+    "end": 175.9421,
+    "name": "Don't Scream.mp4",
+    "in": 905.4527,
+    "out": 906.4037,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 175.9421,
+    "end": 179.6124,
+    "name": "Don't Scream.mp4",
+    "in": 918.9328,
+    "out": 922.6032,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 179.6958,
+    "end": 181.3642,
+    "name": "Don't Scream.mp4",
+    "in": 966.7138,
+    "out": 968.3821,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 181.3642,
+    "end": 184.7675,
+    "name": "Don't Scream.mp4",
+    "in": 981.8623,
+    "out": 985.2656,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 184.7675,
+    "end": 191.4909,
+    "name": "Don't Scream.mp4",
+    "in": 995.8595,
+    "out": 1002.5829,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 191.4909,
+    "end": 198.0975,
+    "name": "Don't Scream.mp4",
+    "in": 1041.1547,
+    "out": 1047.7613,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 198.0975,
+    "end": 201.1005,
+    "name": "Don't Scream.mp4",
+    "in": 1047.7613,
+    "out": 1050.7643,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 201.1005,
+    "end": 202.5853,
+    "name": "Don't Scream.mp4",
+    "in": 1052.2658,
+    "out": 1053.7506,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 202.5853,
+    "end": 214.3804,
+    "name": "Don't Scream.mp4",
+    "in": 1096.1929,
+    "out": 1107.988,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 214.3804,
+    "end": 215.2313,
+    "name": "Don't Scream.mp4",
+    "in": 1113.4601,
+    "out": 1114.311,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 215.2313,
+    "end": 224.1235,
+    "name": "Don't Scream.mp4",
+    "in": 1355.7851,
+    "out": 1364.6773,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 224.1235,
+    "end": 224.624,
+    "name": "Don't Scream.mp4",
+    "in": 1364.6773,
+    "out": 1365.1778,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 224.624,
+    "end": 228.678,
+    "name": "Don't Scream.mp4",
+    "in": 1395.0242,
+    "out": 1399.0782,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 228.678,
+    "end": 229.7624,
+    "name": "Don't Scream.mp4",
+    "in": 1399.0782,
+    "out": 1400.1626,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 229.7624,
+    "end": 231.6309,
+    "name": "Don't Scream.mp4",
+    "in": 1470.8498,
+    "out": 1472.7183,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 231.6309,
+    "end": 234.8508,
+    "name": "Don't Scream.mp4",
+    "in": 1475.4043,
+    "out": 1478.6242,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 234.8508,
+    "end": 236.9195,
+    "name": "Don't Scream.mp4",
+    "in": 1482.2445,
+    "out": 1484.3132,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 236.9195,
+    "end": 243.2091,
+    "name": "Don't Scream.mp4",
+    "in": 1585.0303,
+    "out": 1591.3199,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 243.2091,
+    "end": 244.8274,
+    "name": "Don't Scream.mp4",
+    "in": 1591.3199,
+    "out": 1592.9382,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 244.8274,
+    "end": 248.0974,
+    "name": "Don't Scream.mp4",
+    "in": 1593.7556,
+    "out": 1597.0256,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 248.0974,
+    "end": 250.1995,
+    "name": "Don't Scream.mp4",
+    "in": 1654.6497,
+    "out": 1656.7518,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 250.1995,
+    "end": 255.3713,
+    "name": "Don't Scream.mp4",
+    "in": 1750.1616,
+    "out": 1755.3334,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 255.3713,
+    "end": 257.4567,
+    "name": "Don't Scream.mp4",
+    "in": 1835.53,
+    "out": 1837.6154,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 257.4567,
+    "end": 258.8414,
+    "name": "Don't Scream.mp4",
+    "in": 1841.6862,
+    "out": 1843.0709,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 258.8414,
+    "end": 260.1927,
+    "name": "Don't Scream.mp4",
+    "in": 1843.0709,
+    "out": 1844.4222,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 260.1927,
+    "end": 263.8297,
+    "name": "Don't Scream.mp4",
+    "in": 1866.0438,
+    "out": 1869.6807,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 263.8297,
+    "end": 267.3666,
+    "name": "Don't Scream.mp4",
+    "in": 1870.3648,
+    "out": 1873.9016,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 267.3666,
+    "end": 268.9014,
+    "name": "Don't Scream.mp4",
+    "in": 1873.9016,
+    "out": 1875.4365,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 268.9014,
+    "end": 275.9084,
+    "name": "Don't Scream.mp4",
+    "in": 2138.065,
+    "out": 2145.072,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 275.9084,
+    "end": 277.46,
+    "name": "Don't Scream.mp4",
+    "in": 2145.072,
+    "out": 2146.6235,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 277.46,
+    "end": 281.2137,
+    "name": "Don't Scream.mp4",
+    "in": 2146.6235,
+    "out": 2150.3773,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 281.2137,
+    "end": 283.1823,
+    "name": "Don't Scream.mp4",
+    "in": 2158.5187,
+    "out": 2160.4874,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 283.1823,
+    "end": 284.1333,
+    "name": "Don't Scream.mp4",
+    "in": 2160.4874,
+    "out": 2161.4383,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 284.1333,
+    "end": 288.0872,
+    "name": "Don't Scream.mp4",
+    "in": 2177.0372,
+    "out": 2180.9911,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 288.0872,
+    "end": 292.1246,
+    "name": "Don't Scream.mp4",
+    "in": 2216.9603,
+    "out": 2220.9977,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 292.1246,
+    "end": 293.0755,
+    "name": "Don't Scream.mp4",
+    "in": 2220.9977,
+    "out": 2221.9486,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 293.0755,
+    "end": 298.4809,
+    "name": "Don't Scream.mp4",
+    "in": 2234.0774,
+    "out": 2239.4828,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 298.4809,
+    "end": 299.7322,
+    "name": "Don't Scream.mp4",
+    "in": 2239.4828,
+    "out": 2240.734,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 299.7322,
+    "end": 303.3691,
+    "name": "Don't Scream.mp4",
+    "in": 2246.9235,
+    "out": 2250.5605,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 303.3691,
+    "end": 309.2583,
+    "name": "Don't Scream.mp4",
+    "in": 2266.1427,
+    "out": 2272.0319,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 309.2583,
+    "end": 310.6097,
+    "name": "Don't Scream.mp4",
+    "in": 2272.0319,
+    "out": 2273.3832,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 310.6097,
+    "end": 319.0181,
+    "name": "Don't Scream.mp4",
+    "in": 2324.4175,
+    "out": 2332.8258,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 319.0181,
+    "end": 325.6747,
+    "name": "Don't Scream.mp4",
+    "in": 2335.2282,
+    "out": 2341.8849,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 325.6747,
+    "end": 326.4588,
+    "name": "Don't Scream.mp4",
+    "in": 2343.6533,
+    "out": 2344.4374,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 326.4588,
+    "end": 327.66,
+    "name": "Don't Scream.mp4",
+    "in": 2346.7397,
+    "out": 2347.9409,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 327.66,
+    "end": 328.8946,
+    "name": "Don't Scream.mp4",
+    "in": 2349.2756,
+    "out": 2350.5101,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 328.8946,
+    "end": 337.4865,
+    "name": "Don't Scream.mp4",
+    "in": 2371.2308,
+    "out": 2379.8227,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 337.4865,
+    "end": 339.6887,
+    "name": "Don't Scream.mp4",
+    "in": 2379.8227,
+    "out": 2382.0249,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 339.6887,
+    "end": 340.7064,
+    "name": "Don't Scream.mp4",
+    "in": 2394.1536,
+    "out": 2395.1713,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 340.7064,
+    "end": 341.5906,
+    "name": "Don't Scream.mp4",
+    "in": 2395.8553,
+    "out": 2396.7396,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 341.5906,
+    "end": 343.1922,
+    "name": "Don't Scream.mp4",
+    "in": 2404.1803,
+    "out": 2405.7819,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 343.1922,
+    "end": 346.7457,
+    "name": "Don't Scream.mp4",
+    "in": 2407.3001,
+    "out": 2410.8536,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 346.7457,
+    "end": 347.6132,
+    "name": "Don't Scream.mp4",
+    "in": 2412.522,
+    "out": 2413.3895,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 347.6132,
+    "end": 348.9646,
+    "name": "Don't Scream.mp4",
+    "in": 2417.3434,
+    "out": 2418.6948,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 348.9646,
+    "end": 351.6172,
+    "name": "Don't Scream.mp4",
+    "in": 2427.587,
+    "out": 2430.2396,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 351.6172,
+    "end": 355.4043,
+    "name": "Don't Scream.mp4",
+    "in": 2430.9904,
+    "out": 2434.7775,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 355.4043,
+    "end": 357.6566,
+    "name": "Don't Scream.mp4",
+    "in": 2437.9306,
+    "out": 2440.1829,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 357.6566,
+    "end": 360.4427,
+    "name": "Don't Scream.mp4",
+    "in": 2440.5666,
+    "out": 2443.3527,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 360.4427,
+    "end": 362.0109,
+    "name": "Don't Scream.mp4",
+    "in": 2444.2703,
+    "out": 2445.8385,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 362.0109,
+    "end": 363.9295,
+    "name": "Don't Scream.mp4",
+    "in": 2446.7394,
+    "out": 2448.658,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 363.9295,
+    "end": 365.6145,
+    "name": "Don't Scream.mp4",
+    "in": 2450.1929,
+    "out": 2451.8779,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 365.6145,
+    "end": 369.0179,
+    "name": "Don't Scream.mp4",
+    "in": 2455.8318,
+    "out": 2459.2352,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.0179,
+    "end": 369.5017,
+    "name": "Don't Scream.mp4",
+    "in": 2466.1087,
+    "out": 2466.5925,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.5017,
+    "end": 369.9522,
+    "name": "Don't Scream.mp4",
+    "in": 2467.3767,
+    "out": 2467.8271,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 369.9522,
+    "end": 372.0876,
+    "name": "Don't Scream.mp4",
+    "in": 2468.1107,
+    "out": 2470.2462,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 372.0876,
+    "end": 375.8914,
+    "name": "Don't Scream.mp4",
+    "in": 2471.0136,
+    "out": 2474.8174,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 375.8914,
+    "end": 377.3762,
+    "name": "Don't Scream.mp4",
+    "in": 2475.735,
+    "out": 2477.2198,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 377.3762,
+    "end": 378.7443,
+    "name": "Don't Scream.mp4",
+    "in": 2479.1717,
+    "out": 2480.5398,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 378.7443,
+    "end": 380.2625,
+    "name": "Don't Scream.mp4",
+    "in": 2486.4957,
+    "out": 2488.0139,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 380.2625,
+    "end": 381.5638,
+    "name": "Don't Scream.mp4",
+    "in": 2489.8991,
+    "out": 2491.2004,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 381.5638,
+    "end": 383.866,
+    "name": "Don't Scream.mp4",
+    "in": 2492.6185,
+    "out": 2494.9208,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   },
+   {
+    "start": 383.866,
+    "end": 385.0672,
+    "name": "Don't Scream.mp4",
+    "in": 2494.9208,
+    "out": 2496.122,
+    "label": "Iris",
+    "media_kind": "file",
+    "media": "E:\\Recordings\\Don't Scream.mp4"
+   }
+  ],
+  [
+   {
+    "start": 0.0,
+    "end": 0.2669,
+    "name": "FREE Transition Sounds Effects! ｜ Swoosh, Swish, Whoosh.mp3",
+    "in": 30.764,
+    "out": 31.0309,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "F:\\sfx\\FREE Transition Sounds Effects! ｜ Swoosh, Swish, Whoosh.mp3"
+   },
+   {
+    "start": 41.3079,
+    "end": 41.8417,
+    "name": "FREE Transition Sounds Effects! ｜ Swoosh, Swish, Whoosh.mp3",
+    "in": 28.2115,
+    "out": 28.7453,
+    "label": "Caribbean",
+    "media_kind": "file",
+    "media": "F:\\sfx\\FREE Transition Sounds Effects! ｜ Swoosh, Swish, Whoosh.mp3",
+    "gain_db": -7.0
+   }
+  ]
+ ],
+ "frame_ticks": 4237825133
+}

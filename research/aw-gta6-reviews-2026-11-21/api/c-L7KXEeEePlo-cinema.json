@@ -1,0 +1,45 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "eWebWdr9j_mWScEZ-Sa2ZZVSGPw",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "XaQV6Vu8mm7B3quabQODVSwB25U",
+      "id": "UgyK4lbodNMaiXvXkoR4AaABAg",
+      "snippet": {
+        "channelId": "UCmDTrq0LNgPodDOFZiSbsww",
+        "videoId": "L7KXEeEePlo",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "J2QnA_tZhNH3HFDhB9PSFvHUnT4",
+          "id": "UgyK4lbodNMaiXvXkoR4AaABAg",
+          "snippet": {
+            "channelId": "UCmDTrq0LNgPodDOFZiSbsww",
+            "videoId": "L7KXEeEePlo",
+            "textDisplay": "1:01:42  is pure pure gaming cinema holy",
+            "textOriginal": "1:01:42  is pure pure gaming cinema holy",
+            "authorDisplayName": "@eggegg6101",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nwTFE3PA_WDNcIwThJk3qSlsBF3aRW0aGvLDctLW_hkg=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@eggegg6101",
+            "authorChannelId": {
+              "value": "UCE2aWphUzpN8jCdwqgCO1TA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2,
+            "publishedAt": "2026-11-20T14:07:20Z",
+            "updatedAt": "2026-11-20T14:07:45Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

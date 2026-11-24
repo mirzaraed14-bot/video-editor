@@ -1,0 +1,521 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "ZZTXnvHDsLVWpS4RO3-WcQsTNNU",
+  "nextPageToken": "Z2V0X3JhbmtlZF9zdHJlYW1zLS1Db2NCQ0lBRUZSZTMwVGdhZlFwNUNOaGZFSUFFR0FjaWI1dTl6cWJfMzRDVkh6bHZqNVR4N1NMOU9GUVllUGs5aXpzTFBGSE5qNFNFTEpZUDhkdGFmam1Xd0VQczNLN3BfdXRZZFVrcEtHZXhUUUg4MF80TmNnUThLLUJUTVd1d3F6cEFjN0pRWTd0MzFNZXdxaE1tWmowQVBMeDI3Sjlxb2RaTnRBd0w2cXZZVUFXSnVJeldEUkFQRWdjSWhTQVFEeGdCRWdVSWlDQVlBQklGQ0ljZ0dBQVNCUWlvSUJnQUVnVUloaUFZQUJJRkNNQWdHQUFTQlFpSklCZ0FFZ1VJdXlBWUFCSUhDSVFnRUE4WUFWQUFXQUU=",
+  "pageInfo": {
+    "totalResults": 15,
+    "resultsPerPage": 15
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "E-P2Svb1HqCsKfJqSRwCkTtK9ds",
+      "id": "Ugx9Vv5O4PbLylVTkbh4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "WDjtzhd87yc5HT3kyAfcmYGXAcE",
+          "id": "Ugx9Vv5O4PbLylVTkbh4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "Paris expressed her point so articulately, without being mean. She doesn’t owe us anything. She’s really come into her own and I’m glad she’s setting and keeping boundaries that work for her.",
+            "textOriginal": "Paris expressed her point so articulately, without being mean. She doesn’t owe us anything. She’s really come into her own and I’m glad she’s setting and keeping boundaries that work for her.",
+            "authorDisplayName": "@phrank2023",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/1XTnOb7fPmWok7yqHqeAVnTRuwzqevs6P9RW-L4A0t5opzaoTDvHXsWcfXZxK4q-OfFcidgMu0M=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@phrank2023",
+            "authorChannelId": {
+              "value": "UCIv-z1gn8AZEj9ecqA9SciA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 3366,
+            "publishedAt": "2026-05-27T09:08:21Z",
+            "updatedAt": "2026-05-27T09:08:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 19,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "vRrYU7CVfi3QYAMSpLwEzwnea0k",
+      "id": "UgwzkbmXb1r6cGzPvWN4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "366zOdYu5Cwvjq_RRyyf0mVjhho",
+          "id": "UgwzkbmXb1r6cGzPvWN4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "He would be SO proud of her.",
+            "textOriginal": "He would be SO proud of her.",
+            "authorDisplayName": "@liv0413",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/IHCJC8BMdaHkHVeL2CdbY8Ou7hbxtkgGemVNehxLSCjLhk1YsSuU3n-Lf8UPAoVaiMXr25PtPA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@liv0413",
+            "authorChannelId": {
+              "value": "UC0nL4N5igd7LnToLegIIcvQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1796,
+            "publishedAt": "2026-05-27T13:56:09Z",
+            "updatedAt": "2026-05-27T13:56:09Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "lyWurlKbE3IhRVDZmk36JH-eIOE",
+      "id": "UgzAeb6S1CIFSCmCHWJ4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "_U-FRupoXemARAeD8wkGnf9jW5A",
+          "id": "UgzAeb6S1CIFSCmCHWJ4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "Such a beautiful lady.. MJ raised her right",
+            "textOriginal": "Such a beautiful lady.. MJ raised her right",
+            "authorDisplayName": "@krystalletendre8226",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_nK4orJx6Kn6j8YFleDkUkTxDPLHQyV03NTseULSng=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@krystalletendre8226",
+            "authorChannelId": {
+              "value": "UCazw-3hmBGNsPpynpNv5CSg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1252,
+            "publishedAt": "2026-05-27T12:03:12Z",
+            "updatedAt": "2026-05-27T12:03:12Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 8,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "zUgxly6q8CH_IJAv7expLYOuCZU",
+      "id": "UgyGNONnw4X428jKP4F4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "5SjDKKyvVS6QMLgMivP7VcX-SDg",
+          "id": "UgyGNONnw4X428jKP4F4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "Daddy raised his girl right. She is very down to earth just like her dad.All Michael kids are very introspective and intelligent.",
+            "textOriginal": "Daddy raised his girl right. She is very down to earth just like her dad.All Michael kids are very introspective and intelligent.",
+            "authorDisplayName": "@savitrirambally7560",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_l5DORQEdXdHiVGDpW-eSCuslVnq7afUsGEl0opQ-Q=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@savitrirambally7560",
+            "authorChannelId": {
+              "value": "UCvocBccYQU4G-igePAQl1JA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 2580,
+            "publishedAt": "2026-05-27T13:01:57Z",
+            "updatedAt": "2026-05-27T13:01:57Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 39,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "NcqMPj0Fa3LT21bNPm0MzmvgdD0",
+      "id": "Ugz_e6ZAQ06L-bNwXlt4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "fV2el9ZGd-OIcftGnnaFkdW9e7E",
+          "id": "Ugz_e6ZAQ06L-bNwXlt4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "I agree MJ would love to see his daughter coming out like that. So herself, so genuine, articulate and unafraid",
+            "textOriginal": "I agree MJ would love to see his daughter coming out like that. So herself, so genuine, articulate and unafraid",
+            "authorDisplayName": "@MicheleMizu",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/uvc00ohA9iwRm5PHFUS5377845pvNFkgWdfPINdhcIz2FaY2-yMwcRqOa6PkmIPFxR24T_nh=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@MicheleMizu",
+            "authorChannelId": {
+              "value": "UCmAoh1geo8aK0v8FbvVyIyA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 460,
+            "publishedAt": "2026-05-28T05:59:49Z",
+            "updatedAt": "2026-05-28T05:59:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 2,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "mQwlgYRr-__JdLjNU8rKq3_dQB8",
+      "id": "Ugw--fjKrNv4oSVhFSx4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "c1LLfQ6r86q7pSWqaSJj2JCRAMU",
+          "id": "Ugw--fjKrNv4oSVhFSx4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "Michael’s children all seem so smart, articulate, and independent. By all indications, he was an Amazing father.",
+            "textOriginal": "Michael’s children all seem so smart, articulate, and independent. By all indications, he was an Amazing father.",
+            "authorDisplayName": "@kimhansard6207",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lf7nzdlKkjY35kaweyaOo8xp7LZPIsE5JkclUkaMre5Fiw=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@kimhansard6207",
+            "authorChannelId": {
+              "value": "UCyH-RaWFX1Dc2VwXiEWa5rg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 117,
+            "publishedAt": "2026-05-27T18:09:49Z",
+            "updatedAt": "2026-05-27T18:09:49Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 4,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "VPI---BSrOXNFGjkyU5xjnDoR6s",
+      "id": "Ugzze8L40YDJ7V0qyCx4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Zy5Q56UQeJl45wqw2CZ7uueMADs",
+          "id": "Ugzze8L40YDJ7V0qyCx4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "Michael protected his children always. The media caused so much pain for this family, it is crazy to me that anyone would pressure Paris about how she celebrates her Dad. So glad she has the strength to set healthy boundaries around such personal moments ❤🙏🏽",
+            "textOriginal": "Michael protected his children always. The media caused so much pain for this family, it is crazy to me that anyone would pressure Paris about how she celebrates her Dad. So glad she has the strength to set healthy boundaries around such personal moments ❤🙏🏽",
+            "authorDisplayName": "@jbrinzable",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lTc7ur5W-O5PwdPx0vCVR0PIcKjajTevralkRkj74=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@jbrinzable",
+            "authorChannelId": {
+              "value": "UC-J-ZAM-Q61AKQZBHyl5eMA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 608,
+            "publishedAt": "2026-05-27T09:42:28Z",
+            "updatedAt": "2026-05-27T09:42:28Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 6,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "kROjCJUABPDkA2kkVQcnD64R9cI",
+      "id": "UgytvAapzEVzFg6cSe14AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "zM1mklFM3QoX8Jk3T_C1ycw5D7M",
+          "id": "UgytvAapzEVzFg6cSe14AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "He would be so proud of her 🥺❤️. She owes the world nothing , especially not after how he was treated.",
+            "textOriginal": "He would be so proud of her 🥺❤️. She owes the world nothing , especially not after how he was treated.",
+            "authorDisplayName": "@KFC8922",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/s2idN2sV5afCCDQQjVxQjkYiUVl9AR_kARfQS4mf4OH66oN5D0wGpMzuhu2Bqfqzju8be3HUicE=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@KFC8922",
+            "authorChannelId": {
+              "value": "UC8dMtxzT32i-QygRXHCgn4Q"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 220,
+            "publishedAt": "2026-05-28T00:16:34Z",
+            "updatedAt": "2026-05-28T00:17:23Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "96Y6vseGwbMPC249W29BHv3ZAE4",
+      "id": "Ugxi9u6BwJ16XvjNiJ94AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "MMpZjah0p83GEI0cRY-BNGg0bnY",
+          "id": "Ugxi9u6BwJ16XvjNiJ94AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "I feel so damn sad that she had to even clarify this because she was getting a lot of hate when she deleted her ig post on her dad's birthday (i dont remember when it was posted). We all witnessed how this young woman broke down in front of thousands of people when their father died. She was so devastated that their grandma Katherine would hear her scream and cry and say \"I'll go with you dad\". I'm tearing up as I type this because no child has to endure getting hated on how you celebrate your parent. If I was in her position, I would be too heartbroken to post anything about my deceased parent because they should have been here with me. Please stay strong, Paris! Remember what you always said when you were a kid—you are your daddy's baby.",
+            "textOriginal": "I feel so damn sad that she had to even clarify this because she was getting a lot of hate when she deleted her ig post on her dad's birthday (i dont remember when it was posted). We all witnessed how this young woman broke down in front of thousands of people when their father died. She was so devastated that their grandma Katherine would hear her scream and cry and say \"I'll go with you dad\". I'm tearing up as I type this because no child has to endure getting hated on how you celebrate your parent. If I was in her position, I would be too heartbroken to post anything about my deceased parent because they should have been here with me. Please stay strong, Paris! Remember what you always said when you were a kid—you are your daddy's baby.",
+            "authorDisplayName": "@ignorantekaba",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mz-e2c6HIEnQ5sqgeM2LB8KVhACw-uo7-mg7JWoJ15sTQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@ignorantekaba",
+            "authorChannelId": {
+              "value": "UCMcvXHSYh4O8b-1QDnm_YyQ"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 233,
+            "publishedAt": "2026-05-27T09:16:05Z",
+            "updatedAt": "2026-05-27T09:17:33Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "14BI3aBivHCF0-OC9z-TiGU9S9s",
+      "id": "UgxrGDncM8k5A0p-RoV4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "nDmc1s8DkNifiToWWIxKI4UJlQk",
+          "id": "UgxrGDncM8k5A0p-RoV4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "She reminds me of her mother's interview!  She express her point in very beautiful way.  She is MJ's daughter, wow!",
+            "textOriginal": "She reminds me of her mother's interview!  She express her point in very beautiful way.  She is MJ's daughter, wow!",
+            "authorDisplayName": "@nusraatmahzabeen8888",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/2OYTky18-_IwjbbPjyc5JM1R062Ys8NlXD-x6xmYDr2gmpOjCLOnfXrM0nVO8cQftK2OBcPeCgQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@nusraatmahzabeen8888",
+            "authorChannelId": {
+              "value": "UCsnOUItih677RDJv0-13esg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 49,
+            "publishedAt": "2026-06-12T13:00:32Z",
+            "updatedAt": "2026-06-12T13:04:21Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "U-hvWHX9MIUHEsrIZTnIIOiABJw",
+      "id": "UgxnkYoNxJLF_srAK-94AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "TeuCa3-WNV2HamXur-EWmkAiuz8",
+          "id": "UgxnkYoNxJLF_srAK-94AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "I really like Paris Jackson.  I wish her a blessed and beautiful life.  I wish MJ was still here to watch his children grow into beautiful caring adults.",
+            "textOriginal": "I really like Paris Jackson.  I wish her a blessed and beautiful life.  I wish MJ was still here to watch his children grow into beautiful caring adults.",
+            "authorDisplayName": "@joanneweed1683",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_lTlFL8la5R3hg7p0oPsvOPxlyXsCmmACMm2E6SZuWeYEI=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@joanneweed1683",
+            "authorChannelId": {
+              "value": "UCbAecR3gRG2q0f3px1OXfdw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 44,
+            "publishedAt": "2026-06-01T02:44:14Z",
+            "updatedAt": "2026-06-01T02:44:14Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "9qhEBH2AqPsMGppRa74O2hWRRyI",
+      "id": "UgwbnmF5kA5GYHFx7lp4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "cT2FGlSdT4xTFDtTH8Bpcc_nXMg",
+          "id": "UgwbnmF5kA5GYHFx7lp4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "I love her so much. She deserves the peace, so does he!❤",
+            "textOriginal": "I love her so much. She deserves the peace, so does he!❤",
+            "authorDisplayName": "@Sabrinacindy12",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/szd5VyDLYoJZcx5tWL7V5MbM8Um1Y8XdyH9Zclr7H8rOIAFPYT06_mgX8IkMJ-Tr-L2JBCdhqA=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@Sabrinacindy12",
+            "authorChannelId": {
+              "value": "UCTMI6XjYFY_BKgTfnB3h1lg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 138,
+            "publishedAt": "2026-05-27T10:05:48Z",
+            "updatedAt": "2026-05-27T10:05:48Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 1,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "fKEf9tPPzDzJHuFECdK7rIjQGuo",
+      "id": "UgyauX8Btr0XKQ-gUih4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "bMxlJTDgOUYwCderAYAjSuEC6Zc",
+          "id": "UgyauX8Btr0XKQ-gUih4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "she is correct and at the end of the day no one loves her Dad more than her, she just radiates him, I can see such a facial likeness",
+            "textOriginal": "she is correct and at the end of the day no one loves her Dad more than her, she just radiates him, I can see such a facial likeness",
+            "authorDisplayName": "@angeladavis-qi6kb",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mhTSxfocGvq2Ryf_PEvpbgfj2PZyBim3tIFvmHNhkVvDFd3q593bUOwjKNI2NUNYqKnQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@angeladavis-qi6kb",
+            "authorChannelId": {
+              "value": "UCy38HwTskX1NKTG8qyrkgrg"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 458,
+            "publishedAt": "2026-05-27T08:58:11Z",
+            "updatedAt": "2026-05-27T08:58:11Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 23,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "xK3C74qok_hfglZ_PHfEx1zp5M4",
+      "id": "UgzMmOXXuMgz6xZGK654AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "p9A2tOMGXNxkIgGN2Dj7DHP9x7Y",
+          "id": "UgzMmOXXuMgz6xZGK654AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "He was such a public figure. He gave so much of himself. His loved ones deserve the privacy he wasn't afforded. I love that she's not caving into pressure.",
+            "textOriginal": "He was such a public figure. He gave so much of himself. His loved ones deserve the privacy he wasn't afforded. I love that she's not caving into pressure.",
+            "authorDisplayName": "@stephanienelson6120",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_mUDpfvq4JK2FVL3ehHp906_Yc0lGyrC54NGoLs-E6YX-s=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@stephanienelson6120",
+            "authorChannelId": {
+              "value": "UC83kAHfEYkG2lIjKDjvFNKw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 116,
+            "publishedAt": "2026-05-27T21:46:41Z",
+            "updatedAt": "2026-05-27T21:46:41Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 3,
+        "isPublic": true
+      }
+    },
+    {
+      "kind": "youtube#commentThread",
+      "etag": "m1rdgGLXpfGdsN2-t1MmCYleBkI",
+      "id": "Ugx6Wa40R6dViCPYrqN4AaABAg",
+      "snippet": {
+        "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+        "videoId": "FSzJhXHEqsM",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "xnKdkBvEXnU_UIUZzz5z8ftTqDk",
+          "id": "Ugx6Wa40R6dViCPYrqN4AaABAg",
+          "snippet": {
+            "channelId": "UCPg1ubD3aE0LTQAzcKakyNw",
+            "videoId": "FSzJhXHEqsM",
+            "textDisplay": "What a sweet soul just like her dad! ✨",
+            "textOriginal": "What a sweet soul just like her dad! ✨",
+            "authorDisplayName": "@lacisapp5391",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_klw2Fua8O4oH48ZPB6bGCDE5k8V-Ca3MyuM0M1Ip7YrWQ=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@lacisapp5391",
+            "authorChannelId": {
+              "value": "UCjlrSqRtRQcfU8G9XiBqyRA"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 71,
+            "publishedAt": "2026-05-27T12:18:00Z",
+            "updatedAt": "2026-05-27T12:18:00Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}

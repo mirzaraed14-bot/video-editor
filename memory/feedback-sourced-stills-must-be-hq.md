@@ -48,5 +48,14 @@ recent photo has someone else beside her, crop to her and show it as a portrait 
 magnifying 2x to fill the full width. He approved the result: "Keep this photo" (over a wheelchair video frame or older
 press photos), so the real-photo + portrait-box route is the confirmed fix. Also logged in the AW Shorts `LESSONS.md` (2026-11-14 section).
 
+**2026-11-19 (GTA 28 thumbnail): one override, by him.** xQc's and Kai Cenat's faces went through a Higgsfield upscale and cutout
+at his explicit request (8 credits). That was his call for this one thumbnail, not a new default: the 11-14 rule (no AI upscale on a
+real person's face; Lanczos only) still stands unless he says so again.
+
+**2026-11-24 (GTA 41 reaction thumbnail): his OWN cam face, at his ask.** "my face is very low quality ... generate it through Higgsfield ... keep all the detail everything the same". Done with `upscale_image` bytedance 4K on
+the full 1920x1080 frame (2 credits). At 3-4x it had erased a cheek mole and invented a smeared front tooth: both put back from the
+real frame, feathered. So on reaction thumbnails his own cam face gets enhance + identity check by default (REACTION-THUMBNAILS.md
+§ 10); other real people's faces keep the 11-14 rule (Lanczos only unless he asks).
+
 ## Moved from the MEMORY.md index (2026-11-06)
 any web-sourced picture is checked at full size and enhanced in Higgsfield if soft, before it touches the timeline; 2026-11-03: on AW Shorts sourced stills AND clips get a serious Higgsfield upscale by default (4K image / Topaz 2160p clip), then checked under his grade

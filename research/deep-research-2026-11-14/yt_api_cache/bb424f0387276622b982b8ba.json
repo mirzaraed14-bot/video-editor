@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "FZuJ6TaArVUI2ga810BX59okkXY",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "Smqllt4M4yhJ5VvX0hoCHyQdqjM",
+      "id": "UCG4gAqcIgrW26ans7LzDeeA",
+      "snippet": {
+        "title": "Nion Anarchy",
+        "description": "The most mediocre 3D animated content about anything I think of with no particular order or reason.\n\nBusiness enquiries: nionanarchy@gmail.com\n",
+        "customUrl": "@nionanarchy",
+        "publishedAt": "2024-11-15T05:56:36.804092Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/yHUBx4FUk7FuDBEMSk3dSCf2a3EJfeof4-mym3Ine0j8XYfsaUn1vzSLYBNJkX_aqH35Tdv-5w=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/yHUBx4FUk7FuDBEMSk3dSCf2a3EJfeof4-mym3Ine0j8XYfsaUn1vzSLYBNJkX_aqH35Tdv-5w=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/yHUBx4FUk7FuDBEMSk3dSCf2a3EJfeof4-mym3Ine0j8XYfsaUn1vzSLYBNJkX_aqH35Tdv-5w=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Nion Anarchy",
+          "description": "The most mediocre 3D animated content about anything I think of with no particular order or reason.\n\nBusiness enquiries: nionanarchy@gmail.com\n"
+        },
+        "country": "SK"
+      },
+      "statistics": {
+        "viewCount": "5226488",
+        "subscriberCount": "94500",
+        "hiddenSubscriberCount": false,
+        "videoCount": "15"
+      }
+    }
+  ]
+}

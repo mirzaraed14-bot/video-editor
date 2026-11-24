@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "kq5uR7uKgFNXSC9WSIwjL_nuTLQ",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 7,
+    "resultsPerPage": 1
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Goz8WMOctYA39ir-zMToiL8YFmY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "j-NxQw76YOY"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-16T13:13:53Z",
+        "channelId": "UCQT0aokBFC7MDOw1DIvguTg",
+        "title": "Goodbye GTA 5 - These Memories Will Stay Forever... 😭",
+        "description": "Best Buy Links GTA 6 Disk - https://link.amazon/B0agi8GVS PlayStation 5 Digital Edition - https://link.amazon/B0d7tOeNy ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/j-NxQw76YOY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/j-NxQw76YOY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/j-NxQw76YOY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/j-NxQw76YOY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/j-NxQw76YOY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Shakti Playz",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-16T13:13:53Z"
+      }
+    }
+  ]
+}

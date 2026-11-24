@@ -1,0 +1,87 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "C_i020v_sM_jmYgKwt443tU8mFM",
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "qm5w2O1TGBVfKdxGKNtfg_KhFGQ",
+      "id": "UCqyb0CXKn8nPsNnhF1JLD_g",
+      "snippet": {
+        "title": "DaddySpeed",
+        "description": "Hi — I’m IShowSpeed’s dad. I livestream my life from wherever I am — buses, church, trips — sharing music, family, and candid moments. I play the organ, sing, act, and was once Bowler of the Year; I’m also a proud father of five, including two YouTube-star sons. Expect live streams, performances, travel clips, and heartfelt family content. Subscribe to join the journey and catch new streams and videos as they drop.",
+        "customUrl": "@daddyspeedy",
+        "publishedAt": "2013-10-17T02:26:25Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/Z_JR7p2FfhzEbMKOyF-VeIPH69F-3uwc0LEEE-TtoCkVvpR9sk7nHWbzLI3T4l54y7J6ibld=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/Z_JR7p2FfhzEbMKOyF-VeIPH69F-3uwc0LEEE-TtoCkVvpR9sk7nHWbzLI3T4l54y7J6ibld=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/Z_JR7p2FfhzEbMKOyF-VeIPH69F-3uwc0LEEE-TtoCkVvpR9sk7nHWbzLI3T4l54y7J6ibld=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "DaddySpeed",
+          "description": "Hi — I’m IShowSpeed’s dad. I livestream my life from wherever I am — buses, church, trips — sharing music, family, and candid moments. I play the organ, sing, act, and was once Bowler of the Year; I’m also a proud father of five, including two YouTube-star sons. Expect live streams, performances, travel clips, and heartfelt family content. Subscribe to join the journey and catch new streams and videos as they drop."
+        },
+        "country": "US"
+      },
+      "statistics": {
+        "viewCount": "28825925",
+        "subscriberCount": "590000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "454"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "Mv5wRHzyh0Hy2FlIQHDgdb2IAMY",
+      "id": "UCT0OwZUFaS0Q87PW1L2Fsaw",
+      "snippet": {
+        "title": "DaddySpeed",
+        "description": "I’m Darren Ishowspeed’s dad. I love bowling and all kinds of things. Please subscribe to the channel where you will be entertained! Much Love!!",
+        "customUrl": "@daddyspeed341",
+        "publishedAt": "2024-01-14T22:21:00.351742Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/a5be8_MJq_yROyBo4i5_i7gfv_3b6pgiDHY3KXG2KLcFoU_ny4sQk1CpxOanavMaNfuq0xxx_Q=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/a5be8_MJq_yROyBo4i5_i7gfv_3b6pgiDHY3KXG2KLcFoU_ny4sQk1CpxOanavMaNfuq0xxx_Q=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/a5be8_MJq_yROyBo4i5_i7gfv_3b6pgiDHY3KXG2KLcFoU_ny4sQk1CpxOanavMaNfuq0xxx_Q=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "DaddySpeed",
+          "description": "I’m Darren Ishowspeed’s dad. I love bowling and all kinds of things. Please subscribe to the channel where you will be entertained! Much Love!!"
+        }
+      },
+      "statistics": {
+        "viewCount": "199",
+        "subscriberCount": "7",
+        "hiddenSubscriberCount": false,
+        "videoCount": "5"
+      }
+    }
+  ]
+}

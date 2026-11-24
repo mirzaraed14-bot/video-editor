@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "48WPZ7SQHf9H-uZSuMGW261XlvE",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "nk5NyE2aCHn9aeSL7S2uqJEQzGw",
+      "id": "UC3cpN6gcJQqcCM6mxRUo_dA",
+      "snippet": {
+        "title": "Wendigoon",
+        "description": "Good vibes and ok content\n\nOpen to sponsorships! \nBusiness email: wendigoon@manatalentgroup.com\nPersonal/Inquiries email: wendigoonmail@gmail.com\n",
+        "customUrl": "@wendigoon",
+        "publishedAt": "2019-07-19T09:16:38Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/W517qRWpVmgVaVz8RD2tXAAins5NoniTB7m7RPPaDOtOFFWSQHO2dOoqf6IX50LmV_ysB6FjKp8=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/W517qRWpVmgVaVz8RD2tXAAins5NoniTB7m7RPPaDOtOFFWSQHO2dOoqf6IX50LmV_ysB6FjKp8=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/W517qRWpVmgVaVz8RD2tXAAins5NoniTB7m7RPPaDOtOFFWSQHO2dOoqf6IX50LmV_ysB6FjKp8=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Wendigoon",
+          "description": "Good vibes and ok content\n\nOpen to sponsorships! \nBusiness email: wendigoon@manatalentgroup.com\nPersonal/Inquiries email: wendigoonmail@gmail.com\n"
+        }
+      },
+      "statistics": {
+        "viewCount": "793479973",
+        "subscriberCount": "4750000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "195"
+      }
+    }
+  ]
+}

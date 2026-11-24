@@ -1,0 +1,45 @@
+{
+  "kind": "youtube#commentThreadListResponse",
+  "etag": "T2wtrga7DjeTT1o_Dimxg4IuwAU",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 100
+  },
+  "items": [
+    {
+      "kind": "youtube#commentThread",
+      "etag": "bO_amYDtrWS-XJ7fC54Aaim7M4M",
+      "id": "Ugx0IqRte5JKG091mJt4AaABAg",
+      "snippet": {
+        "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+        "videoId": "qSyo5d-dVzA",
+        "topLevelComment": {
+          "kind": "youtube#comment",
+          "etag": "Pj7ZZf_hvSlWFLOmx5HGxnPKLl8",
+          "id": "Ugx0IqRte5JKG091mJt4AaABAg",
+          "snippet": {
+            "channelId": "UCWsDFcIhY2DBi3GB5uykGXA",
+            "videoId": "qSyo5d-dVzA",
+            "textDisplay": "what a WASTE OF LIFE! You people are so dumb. And the game is about some half-breed boss bitch ordering a \"nice guy\"  around. Really?? You like that? No wonder modern woman are so low quality",
+            "textOriginal": "what a WASTE OF LIFE! You people are so dumb. And the game is about some half-breed boss bitch ordering a \"nice guy\"  around. Really?? You like that? No wonder modern woman are so low quality",
+            "authorDisplayName": "@markmaracatu6811",
+            "authorProfileImageUrl": "https://yt3.ggpht.com/ytc/AIdro_kyrB63i0TBmPuKpcWIwJAGPff_Xgbughu0F59nh8g=s48-c-k-c0x00ffffff-no-rj",
+            "authorChannelUrl": "http://www.youtube.com/@markmaracatu6811",
+            "authorChannelId": {
+              "value": "UCL4GG3A7pRZ61MbDYx4sqGw"
+            },
+            "canRate": true,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2026-11-21T02:15:02Z",
+            "updatedAt": "2026-11-21T02:15:02Z"
+          }
+        },
+        "canReply": true,
+        "totalReplyCount": 0,
+        "isPublic": true
+      }
+    }
+  ]
+}
+

@@ -24,3 +24,8 @@ the sequence in text then once i approve start the raw build in premiere". On AW
 (Instagram included), then the sequence in text, then his OK, then the raw build. A "Yes, build it" to a pitch is not that
 approval once he has asked for more research. A bare "start it" after a research question means the research, not the build:
 ask if unsure. I misread one on 11-13 and had to stop a build session.
+- **2026-11-17 ~23:50, his words (relayed by the GTA farewell sessions; their transcripts quote it the same way): "my workflow is this:
+  text sequence -> premiere sequence -> tella video -> start the build".** After the text OK, the next step is a RAW Premiere sequence
+  (STOP 1: no save, no export, the idle gate), and he records a Tella on it. Only then does the finish build start. The GTA 5 farewell
+  skipped the Premiere step (a code final at 23:24, NOT delivered), because the hub's brief said "after his OK: build". Every brief names
+  all four steps.

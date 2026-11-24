@@ -1,0 +1,48 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "_E51ANADR-1pgreKvOaPq8VV8Mk",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "NfhZJ54FCzgV2paf9m2tok_z8_c",
+      "id": "UC5g1kvyNO83VDWfb6sOVHeg",
+      "snippet": {
+        "title": "Zane Hoyer",
+        "description": "I'm a video editor and I use AI sometimes and I am from canada",
+        "customUrl": "@zanehoyer",
+        "publishedAt": "2014-09-21T18:49:17Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/Aszhpg0A8wJhDGq4dVJhGMLChZS3vNTnvQ8nzKoml34FjkeNzMQcK0qUncH5ePFdmiN44tbE=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/Aszhpg0A8wJhDGq4dVJhGMLChZS3vNTnvQ8nzKoml34FjkeNzMQcK0qUncH5ePFdmiN44tbE=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/Aszhpg0A8wJhDGq4dVJhGMLChZS3vNTnvQ8nzKoml34FjkeNzMQcK0qUncH5ePFdmiN44tbE=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Zane Hoyer",
+          "description": "I'm a video editor and I use AI sometimes and I am from canada"
+        }
+      },
+      "statistics": {
+        "viewCount": "8763112",
+        "subscriberCount": "138000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "85"
+      }
+    }
+  ]
+}

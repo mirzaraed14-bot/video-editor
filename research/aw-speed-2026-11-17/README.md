@@ -5,6 +5,14 @@ Instagram beat-mining framework, built like the Birthdays Short. Output: ONE pic
 No build, no Premiere.
 
 ## ▶ STATUS: resume here
+- **16:25 PKT 18 Nov: YouTube LOCK held since 16:23 by a multi-hour GTA live-stream capture (hub).** Do NOT start a pace.sh youtube
+  waiter: it would sit for hours, and after 4 h (~20:23) pace.sh takes the lock over with the owner alive, so two streams overlap.
+  First `ls projects/_onyx-batch2-2026-10/.locks/youtube.lock`; download only once it is gone. (YouTube was also blocked 06:10-16:21 by a
+  GTA research session, now cleared.) Nothing of ours is running or waiting.
+- **~03:40 PKT 18 Nov: YouTube OPEN again (hub's probe passed, youtube.BLOCKED cleared).** Rules from the hub: ONE video per pace.sh
+  youtube slot (180 s apart), no batched requests in a slot, no captions/timedtext/--write-auto-subs, no ytsearch via yt-dlp (searches
+  through yt_api.py only). A bot page or 429 → stop, set the flag, tell the hub. Nothing to pull now: Darren v3 waits on Affan's OK.
+  (It was blocked 01:36-03:40 after another session's caption fetches drew a 429; nothing of ours was running.)
 - **~00:02 PKT 18 Nov: DARREN v3 (Affan: "too short ... 35 sec atleast", "more bits").** `pass3/SEQUENCE-darren.md` (v2 kept as
   `SEQUENCE-darren-v2.md`): ~46 s (~39 s without the Sep 2025 tour stream), 9 beats; new proven hook = CBS Sports Golazo "What is
   IShowSpeed's real name?" `2XACBzE-GRs` 13.75M ("nobody knows my real name" → Jamie "Darren Watkins"). Most likely ~120K, no pick at the
