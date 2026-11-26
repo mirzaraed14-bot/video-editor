@@ -3,6 +3,11 @@
 Format: *lesson → change made → file*. Newest first. A lesson that repeats becomes a rule in
 `deep-talks-style.md` / `roman-urdu.md` / `PLAYBOOK.md`.
 
+## 2026-11-26: voices on A2-A4 are not in the rebuild (ABW11 Sequence 26)
+- **`sequence_reference.py` rebuilds V1/A1 only.** Seq 26 (a two-character skit) had 12 of his recorded voice clips on A2-A4 (Premiere "Captured Audio"), which the A1-only cut would have left uncaptioned. Read `transcript/sequence.json` for `a` clips with `t >= 1` before transcribing; mix them in at their `s`/`i0` (ffmpeg atrim + adelay + amix normalize=0) and keep only the mixed cut in `raw/` (build.py and caption_qa refuse two files there).
+- **A skit that is all character dialogue gets no quotes** (quotes mark speech inside narration); said in the hand-off so he can overrule.
+- His Roman spellings `caption_qa --fix` applies: hogya, kardo, karhe (kar rahe).
+
 ## 2026-11-24: a whole English sentence can vanish from every Urdu-side pass (ABW11 Sequence 23)
 - **49.4-53.9 s was English** ("if you have these kinds of opinions, you're going to be treated like this, so it's better not to have them"). The ur pass TRANSLATED it into Urdu (اعتقادیں, لہذا), WhisperX garbled it, and the English listener (codeswitch) returned NOTHING for those 4.5 s; only the en window and the hi transliteration ("if you hai this kind") kept it. When the codeswitch words have a hole inside continuous speech, read the en window there before writing.
 - **A slowly drawn-out list fails HANGING** ("movies games shows", 0.72 s/word): check the envelope; if nothing is missing, merge the words into the neighbouring lines instead of probing.

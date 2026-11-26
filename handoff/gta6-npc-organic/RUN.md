@@ -1,6 +1,13 @@
 # RUN — gta6-npc-organic (Affan Afterhours video 41: GTA 6 NPC reactions, KSI+ style)
 
-## ▶ STATUS: WAITING ON THE RE-RECORD (2026-11-24 ~08:50 PKT). Affan: "no ill rerecord we're fcked"
+## ▶ STATUS: TAKE 2 PLACED + VERIFIED (2026-11-25 06:35 PKT): ABW11 › "GTA 41 - NPC Reactions take 2", 21:57 → resume in `take2/RUN-take2.md`
+- He re-recorded: camera `X:/Recordings/Afterhours/C1506.MP4` (2360.4 s, 59.94) + OBS `…/Batch Batch/2026-11-25 03-42-35.mp4` (2142.4 s).
+- Gate: OBS again desktop-only (one track, silent while he talks), so the HyperX was NOT recorded. C1506's camera audio is strong (speech p95
+  −22.9 dBFS vs −48.8 on take 1; floor −65; 42 dB margin; peaks −3.5). **Affan chose "Use camera audio"** (his own click, 25 Nov).
+- Build = the take-1 kit cloned into `take2/` (work/, premiere/), new sequence **"GTA 41 - NPC Reactions take 2"** in bin "GTA 41 - take 2";
+  v1 "GTA 41 - NPC Reactions" stays untouched.
+
+## (superseded 25 Nov) WAITING ON THE RE-RECORD (2026-11-24 ~08:50 PKT). Affan: "no ill rerecord we're fcked"
 - **Why:** his only voice on this take was the CAMERA'S BUILT-IN MIC (no DJI on the shoot: speech p95 −48.7 dBFS, floor −94.8, roomy), and
   OBS recorded desktop audio only (profile "Ig live": Simple output `RecTracks=1`; Mic/Aux on track 2). No voice rescue (no Enhance Speech, no A1 swap).
 - **ABW11:** v1 "GTA 41 - NPC Reactions" stays EXACTLY as it is (placed 05:57, unsaved, untouched since). Do not write to it, do not delete it

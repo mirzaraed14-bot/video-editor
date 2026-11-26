@@ -1,0 +1,52 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 06:03:15 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/r6dOCImntws_hbc_clevver.wav
+[   9.60-  11.32] you
+[  26.44-  47.79] I didn't really leave myself anywhere to go, but somehow I did top what I did on the first one. She's sort of without limits. It's quite interesting. She's a bully, and like most bullies, I think bullies are terrified of everything, really. That's why they have to scare other people before they get scared. That's her way of disabling people, is to terrify.
+[  75.75-  77.88] you
+## research/aw-hp-2026-11-26/src/fU7_Py-KgY0_hbc_moviesie_0000.wav
+[   2.92-  20.06] I was thinking when I saw this movie, the bloodlust in Bellatrix, there's something that I feel is very natural to you. I don't know whether there's a real kind of happiness in playing this role or whether you have to... Oh yeah. No, I had a great laugh doing this. The idea that kids will be, as again, will be sort of a...
+[  20.06-  37.26] I would hope, scare the bejesus out of them. Is it something that you kind of have an idea in your head of other people that you're thinking of as you do it? Are there certain things you're tapping into? Oh yeah, I mean it's a mixture of all sorts of things. It's like a magpie, you go around collecting different bits.
+[  37.26-  61.27] But the main thing with Beatrice, I did think she had to be attractive. She can be scary, and definitely kids are scared of her, but also have a part of her that's just that they kind of wouldn't mind being her in the sense that she's really naughty, she gets away with everything, you know. She's just... And she's incredibly infantile, but she's very liberated. It was really fun to play her because she's so completely abandoned.
+[  61.27-  88.89] you know, so I just let go really. Having said that, she did require a pitch of energy that was after a bit tiring, you know, it was like having a two year old around all the time. And this contrast of being a kid's nightmare and most men's dream, is there a certain amount of, I don't know if you can go method, if you stay in character, whether you're a good enough an actor now to be able to switch it off and on? I don't even know if it's a good of a marker or a good actor or not, whether you take it home at night.
+[  89.60- 112.44] With Bellatrix, no, I didn't think I brought her home. I'd been told to stay away, frankly. I brought the teeth back, though. Oh, nice. I missed looking, you know, I did miss the gear. I am sad to say goodbye. I missed the wand, I missed the gear, just like her. It was a fun costume. And the teeth, but I did keep the teeth.
+[ 112.77- 120.03] didn't fit anybody else, they were useless to everybody else. They were going to go in a Warner Brothers vault, you know. It is like the most wonderful rap company because
+## research/aw-hp-2026-11-26/src/fU7_Py-KgY0_hbc_moviesie_0200.wav
+[ 120.03- 142.34] They've got the budget here and the reputation to bring in some of the finest actors available to the UK and Ireland and all that. And I guess it must feel a little bit like that, like it is a rep company that you come back to occasionally. It is, it was fun. Yeah, it was really fun. The people you met, too. People that I worked with. And you felt like here we're in the club because there are a hell of a lot of brilliant actors.
+[ 143.52- 172.41] you know, and they're all jealous, you know, and we're all so pathetic and our egos are like, oh yeah, we must be okay, we're in Harry Potter. So it was fun, but also it was just fun hanging out with these guys, because they are so nice, they really are, and they're really fun and they're really clever. I know George Lucas has proven very dramatically that it's a bad idea often to go back to a Much Loved franchise and try to revisit it and relaunch another bunch of films. There was a hint from JK that she might be tempted to go back and
+[ 172.41- 198.94] She says never say never. What did she say exactly? I'm not sure what she said exactly but certainly the hint is there that, you know, maybe, who knows, you know, there might be a reason. Would you feel, would you have strong feelings about that? If it was called Bellatrix Potter that would be fine with me. That could work. I should wrap up very quickly. That idea that you've gone from this wonderful, you know, the early days of having the Corset Queen kind of reputation to this wonderful kind of mincy, toxic princess.
+[ 198.94- 225.58] Was that like a thought in your head that I want to get away from that or did it just sort of happen naturally? No, I never really had a problem with the typecasting. I thought it was really good. I mean, I got really good parts, you know, and everyone was like, oh, Jesus, she's laying in a corset again. But, you know, they were really well written. And you can't really, you're not really an architect of your own career as an actor. You're just lucky if you're going to get parts, you know, come your way. You know, it's very haphazard and random.
+[ 226.19- 237.56] And this one was perfect. You know the witch. I mean I love witches. I've done a few in my lifetime It was a good fit for me anyway. I've been given the right friendly finger lovely to talk to you dear. Yeah
+## research/aw-hp-2026-11-26/src/m6HwnW7Icbc_hbc_heyuguys_0400.wav
+[ 240.03- 269.11] and Amanda and Lisa, the costume and the hair and the makeup and all the runners. I mean, Matthew Sharp is the most amazing second AD. And his humor and Jamie the first and all, Eduardo, all the, I mean, there's such a massive amount of people, quite apart from the three Davids. The laughs, we had a huge amount of laughs. And then Dan and Rupert and then Emma and seeing them grow up.
+[ 269.11- 283.65] and all the other actors. It's been a privilege to be part of it, it's a phenomenon. And, you know, it's so lucky that people are enchanted by it. Job well done. Thank you very much.

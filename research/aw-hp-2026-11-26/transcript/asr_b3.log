@@ -1,0 +1,56 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 05:51:00 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/BTHs9dsImLs_clevver_junket_0400.wav
+[ 240.03- 262.58] see that. It's funny when we shot that scene, the crew were very divided about it. Some of the crew were like, they didn't really get it, they weren't really sure if it was going to work, and then other members of the crew loved it, but generally the response we've had to that scene, because obviously it was just written for the movie, it's not in the book, the audience members seem to love it. And I think it's important to have that moment of
+[ 263.64- 288.83] you know, just a break from the intensity and the stress and the worry and everything. They just need to have a moment where they can just be kids and just be silly and stupid and just have a nice, you know, nice time together. Especially for you too, like, how do you, you know, put your real life aside and just, especially growing up since you were 10 doing this, when did you have a chance to be a kid and be silly and, you know, do you have those opportunities? I mean, it's...
+[ 288.83- 314.47] I mean, yes. I'm very lucky that I made these movies with Dan and Rupert. I had two friends at my side, and we had some laughs. We did. We laughed a lot, and I'm grateful for that. But yeah, I can relate to that feeling, definitely. I can't imagine what the last day of shooting was like. Can you take me back?
+[ 315.55- 338.80] It was... Part of me was really... The boys, I think, right up until the last moment were more in denial about it. They didn't really want to face up to it, but I was really trying to get myself to process that it was over. It was a really hard thing to do because we're so used to having these breaks and then coming back. It'd be very easy for me to tell myself, oh, it's not really over, but I really wanted to feel
+[ 339.80- 360.03] feel completed I wanted to I wanted to be upset because I wanted to feel like I could move on you know and move on you did you cut your hair was that like the day after you finished shooting no that would have been too much that would have been that would have been overload I think I took like three weeks or something and then I and then I cut it off yeah well like I say it looks fantastic
+## research/aw-hp-2026-11-26/src/BTHs9dsImLs_clevver_junket_0600.wav
+[ 360.03- 376.03] So how's school? How's that going? I just have a son that started university this year too. It's a big challenge I would think, huh? It is. There were times when I was like, oh my goodness, because I was going to university, living in a foreign country.
+[ 376.03- 393.83] I'm still juggling doing Harry Potter at the same time. And there were times where I was just like, oh, this is just too much. This is really hard. But I'm so grateful that I stayed and that I went in the first place because sophomore year, I'm having such a great time. I have such a great group of friends.
+[ 393.83- 420.11] and it was so the right thing to do and it was worth every effort. I'm sure you're doing fantastic. Well, just on a personal note, I just want to say that you've done a fantastic job in this, but it's just been an honour and a pleasure for me to know you since you were this big and you've just grown into such a lovely young woman and I know you're just going to be fantastic for years to come, so thank you for giving me a pleasure to know you. Thank you, that's so nice. I'm going to start to cry.
+## research/aw-hp-2026-11-26/src/m6HwnW7Icbc_hbc_heyuguys_0000.wav
+[   0.72-  16.37] Helena, as I came out of the tube today, there you were hurtling towards me on one of these fantastic new moving posters. Really? It actually looks like something out of a Harry Potter film. It's marvelous. A moving one? A moving one. Which tube? It was actually at Bond Street.
+[  16.91-  38.30] I've got to go. You've got to go and see it. I just wondered if you haven't seen it, but what about the rest of the anticipation for the film? Have you found that the excitement has been building a bit more for this penalty film? Yeah, I think people have been. It's really nice when people are so excited and it's just across the board.
+[  38.30-  51.72] I just love the fact that most of them are young people and that they're excited. I brought my little niece last night and she said, it's the best thing ever. It's their enthusiasm, you do it for them.
+[  52.11-  71.51] Well let's just talk a little bit about Bellatrix and she is one of my favourite characters. I think I relate because I have that kind of wild hair myself. We like big hair. But I think you play her with this sort of wonderful menacing coquettishness as well. What do you relish about the role? I think I've relished
+[  72.97-  89.57] Well, I love the teeth, to be honest. I've loved getting dressed every day and getting into all the gear. And I love the fact that I've been allowed to just unleash my total man in a child, you know, and total anarchy, and nothing really, no choice.
+[  90.38- 120.03] I mean, anything goes. It means that you have to kind of be on the ball. So you can't be lazy and you've got, she's never laid back. She always requires a lot of energy. But it meant that I could just be really inventive because it, you know, anything will win our kick, you know, and try. And David Yates, you know, gave me, I trust him enough to just go for it. And, but he was really exacting too. You know, he wouldn't let me get away with. So she was just fun.
+## research/aw-hp-2026-11-26/src/m6HwnW7Icbc_hbc_heyuguys_0200.wav
+[ 120.03- 134.00] There are lots of different elements. She's meant to be a bit sexy, but sometimes she's meant to be revolting, she's meant to be tough. It's like playing lots of contradictions. I think that's the thing. I wanted people to feel like, oh, what are you? Are you actually quite attractive? Well, no, you're not.
+[ 135.19- 162.78] And you made such an impact with Order of the Phoenix. I just wondered, how much of a challenge was it sort of turning up the volume a notch each time in all of the four? Well, David said that he noticed that I was better at it than the last film. Well, yeah, probably is, because it takes a bit of time for her to settle in. And after one, I think one of them, I just had a baby, so I was completely out of it, frankly. And the other one, the first one, it was quite hard to find her. There were lots of ambitions.
+[ 162.78- 189.79] But it's so funny because it does change because I started off speaking quite a posh accent and I noticed in this last one although it had gone really quite cockney because I was speaking to Nick Moran opposite Nick Moran and I was just like where is she and I said well I did start off very you know pure blood and arrows ago and then so it's just like whatever Bellatrix has her own. She's going to be doing anything? Yeah. Go Birmingham. Anyways.
+[ 190.08- 204.05] Well, I mean, I'm a grown woman, but Voldemort absolutely terrifies me and I just wondered what for you makes him one of the great screen films because, of course, the Ralph Fiennes who plays him is the most beautifully, quietly spoken gentleman in real life, isn't he? Yeah, yeah.
+[ 204.86- 223.49] No, I think containment, contained rage is really scary and properly channeled is really scary and I think Rafe is brilliant at that and he's amazing and really mesmerizing as Voldemort. I think it's the no-nos that does it for me.
+[ 226.06- 240.03] And time just for a little bit of reflection. What fond memories will you take away from the making of this wonderful collection? I loved all my different relationships and friendships that people I got to know, Jani, because

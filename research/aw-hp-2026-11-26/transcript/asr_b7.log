@@ -1,0 +1,51 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 06:30:33 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/jP-p3QM9dWk_heyuguys_watson_0000.wav
+[   1.23-  25.68] Now, after 10 years and eight movies, is there anything about your Harry Potter experience that you haven't yet shared with the world through interviews? Oh my goodness, to be honest, I don't, I really couldn't tell you. I feel like I've been asked every single question under the sun. Not really. What about the oddest thing you've ever been asked? The oddest thing I've ever been asked? I don't know.
+[  26.17-  42.59] That's hard. There's been some very old questions. It's mainly like journalists ask what they think is a really simple, obvious question, but it's actually impossible to answer. How has Harry Potter changed your life? And it's like, I don't even know where to begin. Can you tell me your favorite memory from the past?
+[  42.59-  62.55] 11 years and I'm like oh I can't it's like too much information to process it's like it's too big a question the questions are so big it's like hard to know where to answer them sometimes especially because you're so bright and thoughtful of the person as well you're going to be thinking now there's a distinct change in the dynamics between the three heroes this time around isn't there um what is threatening the bond between them
+[  63.50-  84.88] This Horcrux mainly, we wear it to keep it safe and we all take it in turns but it affects the wearer really negatively. It brings out the worst aspects of their personality and all their insecurities and it affects them really negatively. For Ron it makes him really jealous of Hermione and Harry.
+[  84.88- 114.65] he gets really paranoid that there's something going on between them, and yeah. It's funny, the relationship between Hermione and Ron is so unspoken that you're almost like, why are they arguing? But if you understand that they're secretly in love, then everything kind of makes sense. Like in real life as well, it's often unspoken and quite subtle, isn't it? Exactly, yeah, exactly. What can you tell us about that very touching moment in the film, which uses the song by muggle musician Nick Cave, Oh Children? I really like that moment in the film. I love that song.
+[ 114.65- 119.76] Yeah, that moment was really about, you know...
+## research/aw-hp-2026-11-26/src/jP-p3QM9dWk_heyuguys_watson_0200.wav
+[ 120.03- 138.63] When the film is so dark and intense all the way through there just needs to be a moment when the tension could just be released a bit and that they could just remember that they were kids and just like have this like fun beautiful moment together and it's nice to see Harry trying to cheer Hermione up because it's usually Hermione that's like
+[ 138.63- 157.61] keeping everything together and keeping everyone together. It's nice that for once it's him comforting her and not the other way around. So I think it's a really nice moment. The critics seem pretty divided about it. Some people seem to love it, other people seem to hate it. I love it personally, but you have to see it.
+[ 157.61- 184.21] and make up your own mind. And there's a scene in the film that had me right on the edge of my seat, where Bellatrix tortures poor Hermione. I just wondered how intense that was for you to film, and also how open David Yates might have been to one of your suggestions. It was very intense to film. I was actually surprised by how affecting I found it, but the way we did it is I agreed with him. I said, look, I'll do it once, and I'll do it for real. And he was like, OK. So he set up two, three different cameras.
+[ 184.71- 212.08] And then he just said, roll. And then Helena and I basically just like free played for like two minutes. And by the end of it, I was a bit of a state. I couldn't, when he called car, I couldn't stop crying. It's like quite hard when you get yourself into something like that, that when the camera stops rolling to just click out of it. So it was pretty intense, but I'm really glad with how it came out.
+[ 212.39- 215.41] It's fantastic. Emma Watson, thanks very much. Thank you.
+## research/aw-hp-2026-11-26/src/qaBU6M6Ao6Q_ign_cast_0000.wav
+[  11.64-  30.44] We've still got the wedding. But I don't care about a wedding. I'm sorry, no matter whose it is, I have to start finding these Horcruxes. They're our only chance to beat him, and the longer we stay here, the stronger he gets. I think in this film Harry is even more sort of tormented and...
+[  31.05-  48.23] you know, tearing himself apart inside than we have ever seen him before. He's not somebody... I mean, he is kind of always pretty troubled, but in this film he is even more sort of insular and...
+[  48.23-  72.02] sort of angry than we've ever seen him I think. I just thought after all this time we would have actually achieved something. I thought you knew what you were doing. I thought Dumbledore would have told you something worthwhile. I thought you had a plan. I told you everything Dumbledore told me and in case you haven't noticed we have found a Horcrux already. Yeah and we're about as close to getting rid of it as we are to finding the rest of them aren't we? There's a lot going on with Ron I think in this one. All the characters I think are a lot
+[  72.02-  95.68] a lot more complicated, I think. Now we're kind of out of the school. Everyone's more kind of grown up and Ron kind of... He kind of gets stressed out a little bit because he's jealous and he's paranoid and he doesn't have any faith in Harry at all and we're really not kind of getting anywhere with the Horcrux mission.
+[  95.68- 120.03] It's, yeah, it was nice to see that kind of aggressive side of Ron that we don't really, we haven't really seen before, so it was, yeah, it was fun. Go. Leave. If I'd had to have, like, another one of those speeches in the Great Hall again,

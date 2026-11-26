@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "Uu0zqJXOfvhNeTAVAeUryUAu5UY",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "vm05YlQurX-sBCKbsbNhDPalD28",
+      "id": "UCGw8Bgp61aagA60izJ54fVQ",
+      "snippet": {
+        "title": "Inside Of You Clips",
+        "description": "“Inside Of You with Michael Rosenbaum” is a playful podcast that goes deep into the psychology of what makes actors, musicians, artists, comedians and athletes tick. Learn how you may relate to the same anxiety, depression, adversity, and fears that some of the most famous people in the world deal with. The podcast shows the human side of these people we appreciate so much... which makes us appreciate them even more. ",
+        "customUrl": "@insideofyouclips",
+        "publishedAt": "2019-12-01T00:59:14.0433Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/X7CZtIwNXMWZ6tP64h6k29CnoXRIZlFY9BEzV3PyTjJ0EptfWkv093w9YQZBYkdJ2rj4SWkN=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/X7CZtIwNXMWZ6tP64h6k29CnoXRIZlFY9BEzV3PyTjJ0EptfWkv093w9YQZBYkdJ2rj4SWkN=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/X7CZtIwNXMWZ6tP64h6k29CnoXRIZlFY9BEzV3PyTjJ0EptfWkv093w9YQZBYkdJ2rj4SWkN=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Inside Of You Clips",
+          "description": "“Inside Of You with Michael Rosenbaum” is a playful podcast that goes deep into the psychology of what makes actors, musicians, artists, comedians and athletes tick. Learn how you may relate to the same anxiety, depression, adversity, and fears that some of the most famous people in the world deal with. The podcast shows the human side of these people we appreciate so much... which makes us appreciate them even more. "
+        },
+        "country": "US"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUGw8Bgp61aagA60izJ54fVQ"
+        }
+      }
+    }
+  ]
+}

@@ -6,6 +6,12 @@ the look in [README.md](README.md), lessons in [LESSONS.md](LESSONS.md). Ideas a
 files in `X:\Claude Projects\Abundance Wisdom\` (ENGINE, RESULTS, the newest HANDOFF), or from the Instagram method
 (`research/instagram-beat-mining/`).
 
+## ▶ HUB DELIVERY GATE (every version, the WHOLE Short; sync added 25 Nov)
+1. **Style first:** the whole Short against the house kit (the Jafaar .mov, README § 13 and the job's BRIEF format rulings), never against its previous version. A build without the AW engine (Topaz, head lock, AE grade, glow bars, CapCut caption pass) fails on sight.
+2. **Sync (since 25 Nov, Travis v7):** every third-party clip's audio is cross-correlated against its source file decoded from the claimed in-point (full decode, never input-seek), and must be within 1 frame. The build ships a caption sync table: each caption's first frame vs the word start in the FINAL mix, measured twice, by wav2vec2 alignment and by the 10 ms energy rise in the voice stem (wav2vec2 can misplace a start: Kai's "oh" came out 1.1 s late). A gap over 0.1 s fails. A caption whose two measures disagree by more than 0.1 s is flagged and checked by eye against the mouth. The hub re-measures the 3 worst on the final.
+3. **His notes:** every row of the job's review BRIEF is checked by eye on the final, his main complaint first.
+4. **Tech:** sha256 at every path, ffprobe, ebur128, the YAVG stray-frame scan, a contact sheet, detail frames, and a PSNR diff against the previous version plus an audio md5.
+
 ## ▶ HOUSE STYLE (Affan 2026-11-12 ~19:45)
 **The build template is `projects/mj-son-step-outside/` ("Jafaar") exactly as shipped**: its Topaz, head tracks, zoom,
 transitions, captions, mix, and its grade (his AE look, `grade_mode 'ae'`). He said it is "really close to Bolt
@@ -20,6 +26,105 @@ Near-done jobs are NOT rebuilt for it; the style applies from their next step. T
 - snape-prank-build (`local_055879e1…`, building now);
 - the HP fork (`local_7f87fba7…`, Hagrid raw cut).
 Jermaine is still unbuilt, so its build takes this style.
+
+## ▶ 26 Nov (hub, ~09:25 PKT): Affan REJECTED Sirius Part 2; Bonnie Wright = NO PICK at 60K; HBO-series test after the 13:00 PKT reset
+- **His words** (directly in aw-hp-day2, ~08:55 PKT, answering its Oldman text sequence; the hub read them in that transcript): "nop find something else this is not good". Sirius Part 2 (`PITCH-sirius-backup.md`, 150K) is dead. He gave no reason, so the hub reads no rule into it (a Part 2 of the same face's winner, or this sequence itself). The Watson 360p question went unanswered; the session moved to new faces.
+- **Best new face, aw-hp-day2:** Bonnie Wright, "Movie Ginny Wasn't Her Fault" (`research/aw-hp-2026-11-26/PITCH-bonnie.md`). Source: Inside of You `KqOW45wD2a8`, 1080p studio, her words "seen as, like, badly portraying this character… it wasn't really my… fault… we know it wasn't you, we just wanted more of you". Topic proof: GSA `pdp8lwroGTU` 3.70M, Peralo `kYJQAWYDozE` 898K. **Locked 60K = NO PICK; not pitched to him as a pick.**
+- **Weak (the session named them):** a fear, not a verdict; no second voice; the host is on screen for the payoff (~1919.6-1922); a mid-fame face; the 898K Short probably already ran the clip.
+- **NOT max effort:** Instagram (Chrome disconnected); no Fable final; no cold read; one YouTube phrasing; ear-check; the 898K Short is not pulled (the permission classifier refused it; not retried, and the hub will not pull it for it).
+- **Next (the session's plan, inside his "find something else"):** after the 13:00 PKT reset (a new Pacific day; `hp-short` back to 37 searches), test HBO-series Shorts, the only HP Shorts over ~500K since 1 Sep (GSA 4.53M, 672K, 419K), with an ADULT original-cast voice on camera. The HBO child cast are minors (other children: flag before use).
+- **Cost:** the weekly meter is 72 % with 3 d 21 h to the reset (~7 %/day of room). The HP day-2 pick has now run ~15 % (57 -> 71 %), five times WEEK-PLAN's 3 % flag, with no pick yet.
+
+## ▶ 26 Nov (hub): HP day 2 WATSON sequence v3 = NO PICK at the bar (NOT max effort yet); relayed to Affan with 2 calls
+- **aw-hp-day2's report** (`research/aw-hp-2026-11-26/PITCH.md`, v3): "HATED" is NOT her word (the 28.8M GSA Short is a narrator). Her own telling (HeyUGuys Nov 2010, `jP-p3QM9dWk`): "I'll do it once, and I'll do it for real… When he called cut, I couldn't stop crying… really glad with how it came out". The turn: DH2 featurette `j0fBiihIt-8`, "Helena was also a really important mentor… I went home and wrote down everything that she said". ~28 s, "Bellatrix Was Emma Watson's MENTOR 🥹", locked 100K (below 150K).
+- **Hub check:** ffprobe confirms the hook source is 640x360 VP9 25 fps and the featurette is 960x720 (letterboxed picture). Hook, mentor and notebook lines are found in `transcript/jP-p3QM9dWk_heyuguys_watson_0200.txt` and `transcript/w1.txt`. On `proof/heyuguys_full.png` the face is soft but readable (box only, ~1.7x). Bonham Carter's side is not on camera (4 sit-downs + 2 on-set clips + role swap checked). Fan lore is excluded.
+- **Open:** the Topaz/anchor test; an HD film insert; TIME "10 Questions" not pulled; Instagram under 3 phrasings per beat; ear-check; v3 not re-read after its cold read. The engine differs from the winner (a warm mentor turn, not a harsh self-verdict).
+- **Backup:** Sirius Part 2 ("Oldman's FAVOURITE Sirius Scene 🥹", `PITCH-sirius-backup.md`): all HD, locked 150K, on his same-face call; its own 6 open items (ear, word edges, PoA insert, IG, other voices, anchor panel).
+- **Flags:** this pick cost 10 % of the week (57 -> 67 %), over WEEK-PLAN's 3 % flag; one yt-dlp section ran 2:08 (8 s over the 2-min rule), logged in its README; 35/37 searches, no YouTube flag.
+- **Asked Affan:** (1) 360p Watson in the box after a Topaz test, or HD only (then Watson is dead)? (2) is Sirius Part 2 a repeat? (3) if Watson: hook A "do it for real" or B "couldn't stop crying" (Collider's 4.2M line)?
+
+## ▶ 26 Nov (hub, ~03:45 PKT): HP "HATED His Acting" 73K on day 1; HP day-2 pick session started
+- **His words:** "harry potter short is doing well again find another topic". Read as another HARRY POTTER topic (the staple lane); he can redirect it with a word.
+- **Live counts** (`yt_api.py hub`, 2 playlistItems + 2 videos calls; the first pair read the wrong playlist, `UU3BxE8IL…` = the "LEGENDS IN 4K REMASTERED" source channel, AW is `UUbLhNRQjyvNTqluyjKiJ8jw`): "Daniel Radcliffe HATED His Harry Potter Acting 🤯" `p8fIsS5PhJ4` 72,748 at ~21.5 h (posted 25 Nov 01:15 UTC, the "Can't Watch Himself" job); Oldman/Sirius 659,463 (516K on 23 Nov); MJ "Daughter Said THIS 🥹" `eSjmysltfiQ` 19,645 at ~9 h. Full block in `X:\Claude Projects\Abundance Wisdom\RESULTS.md`.
+- **Pattern (hypothesis):** an HP face's own harsh verdict on their own work won twice (659K, 73K day 1); "someone else hated me" (Snape) lost at 37K.
+- **Started:** [aw-hp-day2](local_199bbe8d-2fa9-4b3c-b6c8-f1b3d0c0dd92), Opus high, research in `research/aw-hp-2026-11-26/`, API label `hp-short` (cap 12 -> 25 in `yt_api.py`, then 37 at ~05:25 PKT for the Watson pivot; Pacific 25 Nov 49 of 95 used then). Note: the read was 22:42 UTC 25 Nov; Git Bash labels the PC clock "PST" but it is PKT. It works from BANK.md (#1 posted, #5 same promise not this week, #8 killed; live: #2 Watson, #4 Felton Broadway, #3 Sirius Part 2 with his repeat question, #6, #7) plus new self-verdict storylines. It ends at a text sequence and STOPs for his OK; the hub gates it first.
+- **His direction (later, same day):** "try to make a text sequence for the emma watson angle". Relayed to aw-hp-day2: Watson (bank #2, the DH1 Malfoy Manor scene + Helena Bonham Carter, GSA proof `LkmgyChiCIc` 28.8M) is the lead, and the rest are backups. The story must exist on camera in her or HBC's own words; if not, the session says "no pick" first. The Sirius repeat question is still open. The Radcliffe job is closed by its session (posted).
+
+## ▶ 25 Nov (hub): Travis A2 v8b HUB-VERIFIED (full gate PASS): caption-only fix of v8; the version for Affan to watch
+
+- **File:** `X:\Claude Projects\Exports\travis-a2-v8b.mp4` = `projects/travis-ch1-reactions/outputs/travis-a2-v8b.mp4`, sha c5e80aae3308590b, 159,858,258 B. 2153 frames, 35.883 s, 1080x1920, 60 fps. -17.8 LUFS, LRA 2.7, peak -1.0 dBFS. No dark frames, no 1-2 frame spikes. v8 is kept as it was.
+- **What changed (proof):**
+  - The audio is bit-identical to v8 (PCM md5 c357acf8…).
+  - The per-frame PSNR against v8 is below 40 dB on only 86 frames, in 5 spans: 1.33-1.45, 10.32-10.57, 16.55-17.00, 18.00-18.27, 19.23-19.50 (the five moved captions). 767 frames are bit-identical, and the rest is encoder noise.
+  - So the whole-Short style and audio-sync PASS of v8 carries over; the hub's 1 fps sheet `t8b_sheet.png` confirms it.
+- **The five moved captions:** the hub picked the exact first-visible frames (`t8b_caps.png`) and compared them with the speech-band onsets measured on v8. All are within 0.02 s:
+  - MY GOD 1.333 (voice 1.34);
+  - IS THAT TRAVIS? 10.350, ON the cut frame; "OF GTA 6" exits on the frame before (voice from the 10.35 cut);
+  - WITHIN THE WORLD 16.583 (16.60);
+  - I'M SCARED BRO 18.167 (18.18);
+  - I'M SO SCARED 19.233 (19.25).
+- **Still for his ear** (nobody has listened): the 0.27 s dead silence at 10.08-10.35, and captions held 0.1-0.22 s across 5 cuts.
+- Rendered on the Main Brain's "keep going while Affan is at the gym" relay. **It waits for Affan's watch.**
+
+## ▶ 25 Nov (hub, ~19:00): NickEh30 "family friendly" STOP 0 HELD (NOT max effort yet); sent back to close 3 open items
+
+- **Session:** aw-nickeh30 (`local_6d480485-8652-4884-a31f-affbcda15a42`), job `projects/nickeh30-family-friendly-gta6/`, started on Affan's voice note (25 Nov).
+- **Sequence v5 (Variant B), about 44 s:** Nick's own "most family friendly way possible" promise → Joe Bart describes the bike → the bike → the harpoon with Joe under it → Nick's grin → the swearing family ("Keep it family friendly next time, you hear?") → Jynxzi opens his live stream → Tim's "may be a psychopath" → the game's PSYCHO profile. Variants A, E2 and E3 are in BRIEF § 4.
+- **Proof:** Joe Bart clip 6.91M; Verzen 4.71M; IG Jynxzi split 2.7M / 93.8K shares; IG "Evil Eh 30" 1.7M. Locked prediction 120K.
+- **Done:** 3 Fable calls, a cold read (14 defects) and a re-read (7). **The session wrote "NOT max effort yet" honestly.**
+- **Open items, and what the hub did:**
+  1. YouTube phrasings were capped at 12 → the hub raised `aw-nick-gta6` to 30 in `yt_api.py` (Pacific 25 Nov had 12 of 95 used).
+  2. Instagram had only 1-2 phrasings per beat → sent back to reach at least 3.
+  3. The Topaz anchor test (Tim 161 px, Jynxzi 213 px) → the GPU is free now; Topaz may need Affan to sign in.
+  - TikTok (CAPTCHA), the by-ear list (silence rule) and xQc (no first-party file) stay NOT DONE, with reasons.
+- **Affan's 4 questions** (gore, order B/A, ending, optional beats) travel with the re-sent STOP 0.
+- **YouTube flag:** cleared 25 Nov 03:09 by the afterhours-editor hub's probe (`youtube.BLOCKED.cleared-2026-11-25`), not by this hub. No active flag.
+- The gpu.lock from mj-daughter's dead 02:27 run is gone; the GPU is free.
+
+## ▶ 25 Nov (hub): Travis A2 v8 HUB-CHECKED: style, audio sync and his 16 notes PASS; 2 captions miss the 0.1 s bar
+
+- **File:** `X:\Claude Projects\Exports\travis-a2-v8.mp4` = `projects/travis-ch1-reactions/outputs/travis-a2-v8.mp4`, sha b662e787a603ba7e, 159,831,526 B. 35.883 s, 1080x1920, 60 fps, H.264 + AAC 48 k. -17.8 LUFS, LRA 2.7, peak -1.0 dBFS. No dark frames and no 1-2 frame spikes; the white flashes at 7.80 and 35.33 are the house transitions.
+- **Style (whole Short against the house kit):** PASS.
+  - Every box is the centred long rectangle (y 656-1263) on a blurred twin, with glow bars.
+  - Splits have the white seam with the captions on it.
+  - House transitions, AE grade, Topaz cams.
+  - The box card has rounded corners and a white glow; SUBSCRIBE x2.
+- **His 16 v7 notes:** all visibly addressed on the frames (sheet `t8_sheet.png`, details `t8_detail.png`, `t8_end.png` in the hub scratchpad).
+- **Audio vs source (hub's own cross-correlation, full decode from sample 0, all 14 clips):** every clip within 1 frame (0.0 to ±5 ms; ±14 ms worst window on 12b). The v7 seek bug is gone.
+- **Captions:**
+  - The first visible frames match the build's table (the hub's own band-change detection).
+  - Word starts were re-measured from the speech-band level (250-3500 Hz, 10 ms) of the final AND the source, full decode:
+    - GAME OF (22.11) and FUMBLED (35.39): in sync.
+    - **I'M SCARED BRO: caption at 18.00, voice at 18.18 = 0.18 s EARLY.**
+    - **IS THAT TRAVIS?: voice starts right at the 10.35 cut, the caption at 10.45-10.50 = ~0.15 s LATE.**
+  - The aligners disagreed on both: wav2vec2 put "I'm" before the clip even starts, and the aw-travis-burn re-check's stem onset of 17.90 does not show in the source. → The speech-band level on a full decode is the hub's tie-breaker.
+- **Ear items (nobody has listened):**
+  - 0.27 s of dead digital silence at 10.08-10.35, just before "IS THAT TRAVIS?";
+  - captions held 0.1-0.22 s across a cut ("IN MY EAR" over Kai at 26.58, "SO BEAUTIFUL" over ARUUU at 29.82, "MY GOD", "SPEED LOCKED IN", "ENDING WAS CRAZY").
+- **Next:** the build re-measures all 25 flagged captions with the speech-band method and prepares the shifts without rendering. Whether to render a v8b now or fold it into his v8 notes is Affan's call.
+- **v8b prepared, not rendered** (`v8/captions/captions-plan.v8b.json`; the method is in SYNC.md § 4-5). Five captions move: MY GOD -0.134, IS THAT TRAVIS? to 10.250 (the hub moved it so it first shows ON the 10.35 cut frame, not 1 frame before it), I'M SCARED BRO +0.156, I'M SO SCARED -0.164, WITHIN THE WORLD -0.144. The hub confirmed the onsets on the final. About 24 rows on continuous speech can't be resolved by any onset method and are kept as they are. The render is caption-only (`caps_chain.sh` + `final8.sh`), about 25 min, under the GPU lock.
+
+## ▶ 25 Nov (hub): Travis A2 v7 "still needs a lot of work" (Affan's Tella review, 16 notes); v8 in build; the hub missed the sync drift
+
+- His review is resolved against the frames in `projects/travis-ch1-reactions/BRIEF-v7-REVIEW.md` (Tella h71nh2ya, 4:39). Main complaint, said 5 times: the lips, the speech and the captions are not synced.
+- **Cause** (travis-a2-raw-build's measurement): ffmpeg input-seek put the audio of kai_tw_45880.mp4 and aruuu_tw_28510.mp4 0.3-0.7 s late. The s11-s13 captions ran 0.6-1.0 s late, because their times came from medium.en ASR plus the CapCut model's 6-frame lateness. **v8 fix:** audio cut from a full decode; captions from wav2vec2-aligned word times of the final audio, shifted 5 frames earlier.
+- **Format rulings:**
+  - every box shot = a centred long 16:9 rectangle (607 px high, y 656-1263) over a blurred full-frame twin, with glow bars on both edges; never a letterbox or a dark half;
+  - on Kai (s03, s11) and ARUUU (s09, s12a) the box holds the streamer's CAM, never gameplay;
+  - the caption base sits just under the chin; a lowered stream cam gets a mirrored blurred fill;
+  - ONE continuous push-in across the same camera (Lacy s06+s07);
+  - a visible transition and a push-in onto the Higgsfield box; the box card gets rounded corners and a white glowing border;
+  - denoise and deblock the plates, no added grain;
+  - Travis overlays centred;
+  - only the line he wants: s05 "IS THAT TRAVIS?", s11 from "that sh*t was beautiful", s13 "Travis has never fumbled", and no 1.8 s hole inside "I ... love this game".
+- **v8:** about 35.9 s, in build. Topaz waits on gpu.lock (held by mj-daughter). The hub runs the full gate on delivery.
+- **The hub passed v7 and missed the sync.** Its gate had no caption-to-word or audio-offset check, and the 3 by-eye items it raised were not his main notes. → HUB DELIVERY GATE item 2 (top of this file); LESSONS 2026-11-25; memory `feedback-av-sync-gate`.
+
+## ▶ 24 Nov (hub, ~15:55): YouTube BLOCKED again since 11:08 (jasons-house-5k bot page); flag LEFT IN PLACE, no probe run
+
+- Flag `projects/_onyx-batch2-2026-10/.locks/youtube.BLOCKED`, 11:08:17: jasons-house-5k (Afterhours C1504 edit) got "Sign in to confirm you're not a bot" on TykMvTgzx1E, its 2nd paced pull (1st, 4XkKFefZwPo 2160p, OK at 11:07). No cookies or proxies tried.
+- mj-short (local_22eaf039) hit it on mj-daughter-build's v3 request (LYJ4zFtRHhk "Paris Jackson: I Love My Daddy So Much"); pace.sh refused, no retry. Covered locally: the same Access Hollywood clip from E: (640x480), now in `projects/mj-daughter-said-this/sources/paris_ah/`; no cleaner Part 8 than the 1646x1080 upscale already in the build. No build is waiting on YouTube.
+- The hub's one spaced probe (yt-dlp --print title, no cookies) was DENIED by the permission check at ~15:55, so the flag stays. Clearing it needs Affan's go for the probe. Second block in two days (11-23 09:12 one cleared 11:03).
 
 ## ▶ 24 Nov (hub): Travis A2 v6 REJECTED by Affan ("worst video, not upload material"); v7 rebuilt on the AW house kit, HUB-VERIFIED (style PASS, 3 by-eye items)
 

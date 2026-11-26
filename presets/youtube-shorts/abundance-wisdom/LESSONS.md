@@ -1937,3 +1937,19 @@ Resolved brief: `projects/oldman-good-sirius/review1/REVIEW1.md`. He re-cut the 
   → **Lean means fewer rounds, never a cheaper engine.**
 - **The hub passed v6 and was wrong.** Its style gate compared v6 with v5 ("fits the rest of the Short") instead of the whole Short against the house kit. → The hub style gate runs on the WHOLE Short against the house kit every version, even when only one beat changed. A build without the AW engine fails on sight. Memory `feedback-fix-only-what-he-named`.
 - **Same day, same cause as "Streamers Rated GTA 6" fix1:** a reference channel (Music Media) applied to everything. See the fix1 entry above.
+
+## 2026-11-25 · Travis A2 v7 Tella review ("still needs a lot of work") → v8 (lesson → change made → file)
+Source: `projects/travis-ch1-reactions/BRIEF-v7-REVIEW.md` (16 notes, resolved against the frames).
+- **Lips, speech and captions out of sync** (said 5 times). Input-seek (`-ss` before `-i`) on two stream files landed their audio 0.3-0.7 s late, and captions timed from medium.en ASR ran up to 1.0 s late. → Cut every third-party clip's audio from a full decode. Time captions from wav2vec2-aligned word starts of the FINAL mix, minus the kit's 6-frame CapCut lateness (v8: 5 frames earlier). Travis v8 build.
+- **Box shots are a centred long rectangle.** A 16:9 box, 607 px high (y 656-1263), over a blurred full-frame twin, with glow bars on both edges; never a letterbox or a dark half-frame. On a reaction beat the box holds the streamer's CAM, not the gameplay. → Travis v8. It becomes a README § 13 number if it repeats.
+- **Caption base just under the chin.** When a stream cam is lowered to get there, the gap gets a mirrored blurred fill. → Travis v8. Matches memory `feedback-captions-just-below-lips`.
+- **One push-in per camera.** Two shots from the same camera get ONE continuous push-in, never a second zoom. A cut onto a card is never a snap: it gets a house transition and a push-in. → Travis v8. Matches memory `feedback-aw-transition-zoom`.
+- **Cards:** rounded corners and a white glowing border, like the stream-cam boxes. → Travis v8.
+- **Noisy plates:** denoise and deblock; no added grain and no over-sharpening on them. → Travis v8.
+- **Only the line he wants.** Drop dead lead-ins. A silent hole inside one sentence reads as the audio cutting out, even at 1.8 s (under the 2 s clip-pause cap), so it goes. → Travis v8 (s05, s11, s12a, s13).
+- **The hub passed v7 and missed the sync.** Its gate had no caption-to-word or audio-offset check. → The HUB DELIVERY GATE (top of HUB.md) now cross-correlates every third-party clip's audio against its source (within 1 frame) and needs a caption sync table (any gap over 0.1 s fails). Memory `feedback-av-sync-gate`.
+
+## 2026-11-26 · HP day 2: Sirius Part 2 REJECTED at the text sequence; no new face at the bar (lesson → change made → file)
+- **Affan on "Oldman's FAVOURITE Sirius Scene 🥹" (a Part 2 of the 659K Oldman winner, all 1080p, locked 150K): "nop find something else this is not good".** Same face, same film, softer engine: the first Short was his harsh self-verdict ("mediocre"), this one a warm favourite scene. He gave no reason, so it stays data, not a rule: one rejected Part 2. → Sirius Part 2 is struck from the HP bank (`research/aw-hp-2026-11-26/PITCH-sirius-backup.md`, `HUB.md` 26 Nov).
+- **The day-1 pattern still holds:** both HP wins were the face's own harsh verdict on their own work. Day 2's candidates were a fear (Bonnie Wright, 60K), a warm mentor turn (Watson, 100K, 360p) and a favourite scene (Sirius): none was a verdict, and none reached the bar. → The next HP search (HBO-series Shorts, adult original cast, after the 13:00 PKT reset) looks for a verdict first (`HUB.md` 26 Nov).
+- **Research cost ~15 % of the weekly meter (57 → 71 %) with no pick.** That is five times WEEK-PLAN's 3 % flag. → The hub reports the cost to Affan with every no-pick (`HUB.md` 26 Nov).

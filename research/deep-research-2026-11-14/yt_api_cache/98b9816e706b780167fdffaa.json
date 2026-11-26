@@ -1,0 +1,143 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "PMuXRA0eTxZCILUml2UVSVqQStw",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 8,
+    "resultsPerPage": 3
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "CAbiaEA_O6bzhbMm0k1YZqyUWzo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "PfZ-cBkJYnQ"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-21T10:20:02Z",
+        "channelId": "UCL2mRaF6s_cyB3HI-pB1-Tg",
+        "title": "NickEh30&#39;s &quot;Family Friendly&quot; GTA 6 Run 💀",
+        "description": "NickEh30 promised to play GTA 6 the most family friendly way possible… 4 seconds later Credit: NickEh30 – clip via ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PfZ-cBkJYnQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PfZ-cBkJYnQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PfZ-cBkJYnQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/PfZ-cBkJYnQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/PfZ-cBkJYnQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Grand Theft Escrow",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-21T10:20:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "iXRLZP9-SWDv4Hs__evVTodDwwE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zWRz9pFLDnM"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-23T15:09:44Z",
+        "channelId": "UCt9loympDnu65K8-SfPQKgg",
+        "title": "NickEh30 Laughing While Harpooning an Entire Family in GTA VI 😭 #shorts",
+        "description": "NickEh30, the most wholesome streamer on the internet, found a harpoon in GTA VI… and that family on the boat never stood a ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zWRz9pFLDnM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zWRz9pFLDnM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zWRz9pFLDnM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zWRz9pFLDnM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zWRz9pFLDnM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "JustGotViced",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-23T15:09:44Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "1gLyu-x-WsoZSSw5oM3YRPRhV1Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QL-OPohf2Ls"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-23T19:00:34Z",
+        "channelId": "UC-tC7t5-6L8XBrnkYrTgMXw",
+        "title": "Nick Eh 30 Saved GTA 6..",
+        "description": "NickEh30 kicked a dog in GTA 6, robbed a train full of NPCs, and kept calling the streams family friendly. But his biggest clip of ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QL-OPohf2Ls/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QL-OPohf2Ls/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QL-OPohf2Ls/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QL-OPohf2Ls/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QL-OPohf2Ls/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Mid Stream",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-23T19:00:34Z"
+      }
+    }
+  ]
+}

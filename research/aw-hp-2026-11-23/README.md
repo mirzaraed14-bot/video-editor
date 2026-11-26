@@ -1,6 +1,10 @@
 # aw-hp-2026-11-23: today's AW Harry Potter Short (research → pitch → STOP for Affan's OK)
 
-## ▶ STATUS: resume here (24 Nov 2026, ~03:00 PKT, PC clock)
+## ▶ STATUS: resume here (26 Nov 2026)
+- **POSTED 25 Nov 01:15 UTC as `p8fIsS5PhJ4`, "Daniel Radcliffe HATED His Harry Potter Acting 🤯".** Affan finished and posted it himself (the last sequence built here was polaroid v3). **72,748 views at ~26 h** (the hub's API read, 26 Nov ~03:45 PST). The locked centre was 150K; the hub owns RESULTS.
+- **This job is CLOSED.** No more finish work goes onto his Premiere unless he asks. The next HP topic runs in the session aw-hp-day2, not here.
+
+### 24 Nov (~03:00 PKT): STOP 1 built
 - **24 Nov: v3 APPROVED by Affan, STOP 1 BUILT.** The uncool-dad sentence is cut, so the Short ends on "...sort of happy with that." Sequence "Harry Potter Can't Watch Himself - raw cut" (id `a59bf8a2-1d92-49fd-a036-ea8af3726d89`) is in his ABW11: 33.40 s, 29 clips, READ BACK = PASS, **not saved (needs his Ctrl+S)**.
   - Built by the session hp-cant-watch-build (Sonnet, $11.17 = 0.51 %).
   - Job: `projects/radcliffe-cant-watch-himself/RUN.md` (quality table, proof, ear items).

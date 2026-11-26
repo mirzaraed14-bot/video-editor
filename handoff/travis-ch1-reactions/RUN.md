@@ -1,4 +1,12 @@
+> v8b RENDERED (25 Nov 2026 18:38, caption-only, five caption moves per v8/proof/SYNC.md section 5). Copy `X:\Claude Projects\Exports\travis-a2-v8b.mp4`. Picture/audio otherwise identical to v8, which is untouched. Affan has not yet picked v8 vs v8b.
+
 # travis-ch1-reactions: GTA 6 x Travis Scott "BURN" Short, Variant A2 (PC)
+
+## ▶ STATUS: v8 RENDERED (25 Nov 2026 05:56), checked on frames, not heard; waiting for Affan. Copy `X:\Claude Projects\Exports	ravis-a2-v8.mp4` (outputs/travis-a2-v8.mp4). Proofs: `v8/proof/SYNC.md` (+ `final_1s.jpg`). Earlier text: v8 IN BUILD (25 Nov 2026), from Affan's Tella review of v7 ("still needs a lot of work"); notes resolved in `BRIEF-v7-REVIEW.md`
+- **v8 lives in `v8/`** (beats8.py = the table, audio8.py -> v8/mix8.wav, stageA8.py -> topaz8.py -> pieces8.py -> make_timeline8.py -> make_plan8.py + captions chain -> final8.sh). 2153 frames = 35.88 s (tighter: s05 / s11 / s12 / ending cut per his notes).
+- **ROOT CAUSE of "lips / speech / captions not synced":** ffmpeg input `-ss` on `kai_tw_45880.mp4` and `aruuu_tw_28510.mp4` puts the AUDIO 0.3-0.7 s late (picture seek is exact); v7's s11 and s12a audio was that far off. Other sources measure 0.000 s (`v8/build/seekcheck.py`). v8 cuts every stem from ONE full decode. The v7 captions also carried the CapCut model's 6-frame lateness: v8 plan starts 5 frames earlier.
+- **Format ruling (from his notes):** every box = a 607 px 16:9 rectangle CENTRED (y656-1263) on a blurred twin with glow bars on both edges, caption base = its bottom bar (dy +303); splits keep the seam y960; faces sit LOW (chin rule) so the caption is just under the chin; no grain, mild hqdn3d denoise.
+- Waiting on gpu.lock (held by mj-daughter-build) for Topaz + captions + the engine render.
 
 ## ▶ STATUS: v7 RENDERED (24 Nov 2026 09:16 PKT), checked on frames of the FINISHED file, waiting for Affan. v6 was REJECTED ("worst video, not upload material")
 - **v7 = `outputs/travis-a2-v7.mp4`** (copy `X:\Claude Projects\Exports\travis-a2-v7.mp4`), 1080x1920, 60 fps, 2615 frames = 43.583 s, H.264 CRF 14 + AAC 256k, mix unchanged from v5/v6 (-17.9 LUFS, TPK -1.0). Proof: `v7/proof/final_1s.jpg` (1 frame per second), `v7/proof/trans_check.jpg` (pink flash + green dip in the file).

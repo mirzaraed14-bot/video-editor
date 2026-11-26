@@ -1,0 +1,99 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "00SiruOdmdcCn5ldOKDznRL4mj4",
+  "regionCode": "PK",
+  "pageInfo": {
+    "totalResults": 161,
+    "resultsPerPage": 2
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "rcpFFxxxeR2Ye0BenHoRRDCeXb4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "79Jj3XhEyE0"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-24T03:51:58Z",
+        "channelId": "UC9B97WNab9LDYLeC1TKgqsw",
+        "title": "Nick Eh 30 Tried &quot;Family Friendly&quot; Justice in GTA 6... Instant Karma 💀 #shorts #gta6 #nickeh30",
+        "description": "Nick Eh 30 really tried to enforce \"family-friendly\" road rules in GTA 6, had Lucia telling him to chill, and got hit with the fastest ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/79Jj3XhEyE0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/79Jj3XhEyE0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/79Jj3XhEyE0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/79Jj3XhEyE0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/79Jj3XhEyE0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Jason Sumisu Clips",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-24T03:51:58Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "lFvMgOPzkxCn925F0gYa11hyaDE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gh_tLSr9dBc"
+      },
+      "snippet": {
+        "publishedAt": "2026-11-25T00:54:30Z",
+        "channelId": "UCBkFzNuCbNErzr16Zv7Ty1Q",
+        "title": "Nick Eh 30 Had One Rule for GTA VI",
+        "description": "Jynxzi reacts to Nick Eh 30's plan to keep GTA VI family-friendly, right down to which side of the road he drives on. #NickEh30 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gh_tLSr9dBc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gh_tLSr9dBc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gh_tLSr9dBc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gh_tLSr9dBc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gh_tLSr9dBc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "More Content and Clips",
+        "liveBroadcastContent": "none",
+        "publishTime": "2026-11-25T00:54:30Z"
+      }
+    }
+  ]
+}

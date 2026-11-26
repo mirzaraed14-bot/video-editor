@@ -87,3 +87,40 @@ replaying the stale EDL. Workaround: write the EDL from bash, or resolve the pat
   - **An end-edge 0.015 s later (332.175 vs 332.16) tripped audio-qa AMBIENCE HOLE at the next joint (-9 dB)**; the earlier edge passed. Re-splice cost 3 min under memory pressure.
   - **A flipped SPLIT (`"flip": true`, B-roll above, speaker below) needs `split.bob_amp: 0` and a panel card of exactly 1080 x (seam+4); the speaker half is NOT head-tracked** (`track=False`): `fy_out` 0.42 / `z0` 1.15 puts the face at y ~1200-1620 under a 0.9 s hook slide-out only if the split starts ~0.5 s after the hold ends. Add SPLIT ranges to `reading_gate.py` (it only looked at kind A).
   - **PIL `ImageDraw.Draw(im, "RGBA")` on an RGBA frame with alpha 0 still leaves the RGB behind once the frame is written as RGB** (a faded gold line stayed visible): stop drawing at alpha 0.
+
+- **2026-11-24 · Afterhours Short `gta6-jasons-house-5k` (C1504, medium.en: no large-v3 while Premiere is open, hub ruling):**
+  - **WhisperX medium.en squeezed a spoken number: "$5,000 in my wallet" got 0.60 s (115.39-115.99) while the envelope has speech to 116.80, and it dropped the take's first "I".** The per-burst faster-whisper pass (`work/cut/bursts.medium-en.json`) had both right (`$5` + `,000` = 115.37-116.21, "wallet" to 116.79). Fix used: that take's words from the per-burst pass in `transcript/words.json`, with the envelope's onset for "I". Check every numeral word's duration against the 10 ms envelope before trusting a WhisperX clock.
+  - **The verbatim pass's filler prompt invents restarts:** "I just - I just" on the prompt pass only; the plain pass and the envelope (one 0.32 s blob, a dip, then "just") say one "I". The both-ways rule held.
+  - **A kit `FIT(...)` helper with a fixed `src_in=0.0` plus `src_in` in **kw raises "multiple values for keyword"**: put `src_in` in the defaults dict instead (this job's `yt/build_spec.py`).
+  - **grade-picture.py and sharpen-picture.py skip a B shot only when its src basename starts with `mg-`:** naming the gameplay source `mg-hope.mkv` keeps a game capture out of the room grade and the sharpen; SPLIT bottoms still need `work/panels.py` (the head-start hook_panel.py for every SPLIT).
+
+- **2026-11-26 · Onyx sample `twohottakes-weird-party` (research stage, Two Hot Takes):**
+  - **A CUDA "out of memory" from WhisperX can be HOST commit, not VRAM.** Every ASR try failed (large-v3 fp16, int8_float16 + batch 4, then medium.en on CPU with `mkl_malloc` / "not enough memory" for 2 MB) while the GPU sat at 2.2 of 8 GB. Windows commit was at 1 GB free of 91 GB, eaten by other sessions' ASR jobs run outside `lock.sh gpu` (`chunks/c2|c3/work/row_asr_retry.py` x3, ~7.3 GB each; `research/aw-hp-2026-11-26/asr.py`) plus Premiere 8.3 GB and Photoshop 5.6 GB. Check `(Get-CimInstance Win32_OperatingSystem).FreeVirtualMemory` before blaming the GPU; large-v3 loaded fine at >= 11 GB free (the job's `work/tx_s5_retry.sh` waits for that). A read-only draft is still possible meanwhile: faster-whisper `small.en`, CPU int8, segment times (`work/fw_small.py`), never written to `transcript/`.
+  - **large-v3 silently dropped 22 s of clear speech (467-489 s of a 12-min podcast section: the end of a read update).** No warning; the small.en draft and the clip's own Short have the words. Diff the canonical transcript's word gaps (> 5 s inside speech) against the envelope before captioning.
+  - **yt-dlp `-f "bv*[vcodec^=avc1][height<=1080]..."` fetches a vertical Short at 480p** (1080x1920 and 720x1280 fail the height test). For Shorts use `height<=1920` (or `[width<=1080]`).
+  - **The episode file is the edited program, so "the reaction at that moment" exists only where the edit shows that camera.** Map the live camera per kept span (`select='gt(scene,0.25)'` + one frame per segment) before promising a face: here half the story read was on the wide shot only (faces ~95 px tall).
+  - **A WhisperX word END can sit 0.02-0.04 s before the other voice's first word** (two hosts on one mix). Check each edge for a 30 ms window under -40 dB between the kept word and its neighbour; 3 of 32 edges here had none and had to move to the next clean pause.
+- **2026-11-26 (twohottakes-weird-party): a yt-dlp `--download-sections` MP4 carries an edit-list PRE-ROLL, and a stream COPY of it shifts the clock.**
+  The section file's video starts at a keyframe ~2.2 s before the cut point, hidden by an edit list (ffprobe shows start 0; packets from -2.236 with the D flag).
+  `ffmpeg -i section.mp4 -c:v copy ... out.mkv` (with or without `-ss`, with `aresample=async=1:first_pts=0`) KEEPS those 67 frames and moves the audio to
+  start at 2.236 s, while a plain audio decode of the result (what WhisperX reads) starts at the first sample. Result: every transcript time was 2.236 s
+  EARLY against the picture and the camera map measured on the picture was 2.2 s late. Fix: re-encode the video from the section file (the decoder applies
+  the edit list): `ffmpeg -i section.mp4 -map 0:v:0 -map 0:a:0 -c:v libx264 -crf 12 -r 30000/1001 -c:a flac raw.mkv`, then check `ffprobe` start_time
+  = 0 for BOTH streams. Gate for any raw made from a section pull: `ffprobe -show_entries stream=start_time` must read 0 / 0.
+- **2026-11-26: yt-dlp's n-challenge (deno) fails today ("a.addOnDisposeCallback is not a function"), which hides every DASH format (313/401/248 ...):
+  "Requested format is not available".** The HLS (m3u8) formats still download: `-f '625/620/614/270'` (625 = VP9 2160p, video only) with
+  `--download-sections` worked (855 MB for 7:20). It has no audio; align it to the raw by PICTURE (64x36 grey-thumbnail MSE over a +-6 s search,
+  `projects/twohottakes-weird-party/work/hq_align.py`), pad with `tpad=start=K`, re-stamp `setpts=N/(30000/1001)/TB` (its r_frame_rate reads
+  29041/969 but it held frame lock at 8 checkpoints over 7 min), and mux the raw's own audio.
+
+## 2026-11-26 · Onyx YT kit: one `select=` over an out-of-order EDL plays the segments in SOURCE order
+Building the 4K base pair (`base_hq`) for `projects/crewhasit-chappelle-dubai` with ONE `select='between(t,a,b)+between(t,c,d)+...'`
+over all EDL segments emitted the frames in source order, not EDL order. The cut moved one line ("This is the day") earlier, so every
+segment after it showed the wrong frames: Gianni's slot showed Bach. The 1080p base looked right, so only a frame compare caught it.
+Rule: cut the base PER SEGMENT in EDL order (frame-exact) and concatenate (`work/build_inner.py` there), then compare sampled frames of
+the 4K base against the 1080p cut (that job: 69 frames, max diff 2.9). The same trap also hits `yt_build.py --skip picture` reruns.
+Two related traps from the same job:
+- A yt-dlp section whose audio starts at container 1.9 s can be CORRECTLY placed. Check it by cross-correlation against the full
+  episode before applying the 2026-10-06 `first_pts=0` rule, which would have shifted that one by 1.9 s.
+- Cards that composite REAL camera frames (`mg-*` from the episode) skip the POP grade + sharpen, because the grade pass excludes
+  `mg-*`. Grade their real frames inside the card build, or they read flatter than the face shots around them.

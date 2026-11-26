@@ -1,0 +1,54 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=j0fBiihIt-8
+[youtube] j0fBiihIt-8: Downloading webpage
+[youtube] j0fBiihIt-8: Downloading tv samsung player API JSON
+[youtube] j0fBiihIt-8: Downloading visionos player API JSON
+[youtube] j0fBiihIt-8: Downloading player b485e332-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] j0fBiihIt-8: Downloading m3u8 information
+[info] j0fBiihIt-8: Downloading 1 format(s): 136+140
+[info] j0fBiihIt-8: Downloading 1 time ranges: 90.0-170.0
+[download] Destination: research\aw-hp-2026-11-26\src\j0fBiihIt-8_women_hp_0130.mp4
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'https://rr3---sn-jtcxg-3ip6.googlevideo.com/videoplayback?expire=1795679899&ei=O5IHa-O5LLjRmLAPtsbcwAo&ip=103.244.175.64&id=o-AHaoDMpmr_giPzK_axkfMUyG4ACuAS_OCEzfA7c8PRsB&itag=136&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=79&met=1795658299%2C&mh=SH&mm=31%2C29&mn=sn-jtcxg-3ip6%2Csn-ajhju5-59&ms=au%2Crdu&mv=m&mvi=3&pl=25&rms=au%2Cau&pcm2=no&initcwndbps=750250&bui=AZFAFb_Vp9K_PBw4rtzYP5mBYX2gfEz3xRpy-Veb046izqrrSOfOm-z5mJR5R4o2iWrRYI59_7E8uqXo&spc=nfZ8ZkTKIzwqg7XSbDbgLp1rpLBDfPzAOqJpz3YnZYw0LXM476k-EwbEYtlG&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=21734316&dur=169.669&lmt=1737360380922463&mt=1795657771&fvip=1&epbp=1&keepalive=yes&fexp=51565115&c=VISIONOS&txp=8218224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRgIhAPWEnQNo9XQ1d_KpgtvWARaAMDQzNS8WLThehUH9yda3AiEAv_gw-yrohX3_vz37qOz7ssjsHh1nxPkVLTLeK4tgRqg%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgfxWztGysMmW1hFgACpMOMXbhvfPowXh6RZd-TCrG8J4CIQDWte5kYVu2_b9AwlcfC3F-ndshlX26YpUgP_TsuxmsXA%3D%3D':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6avc1mp41
+    creation_time   : 2025-01-20T07:57:20.000000Z
+  Duration: 00:02:49.67, start: 0.000000, bitrate: 1024 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 960x720 [SAR 1:1 DAR 4:3], 966 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-20T07:57:20.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+Input #1, mov,mp4,m4a,3gp,3g2,mj2, from 'https://rr3---sn-jtcxg-3ip6.googlevideo.com/videoplayback?expire=1795679899&ei=O5IHa-O5LLjRmLAPtsbcwAo&ip=103.244.175.64&id=o-AHaoDMpmr_giPzK_axkfMUyG4ACuAS_OCEzfA7c8PRsB&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=79&met=1795658299%2C&mh=SH&mm=31%2C29&mn=sn-jtcxg-3ip6%2Csn-ajhju5-59&ms=au%2Crdu&mv=m&mvi=3&pl=25&rms=au%2Cau&pcm2=no&initcwndbps=750250&bui=AZFAFb_Vp9K_PBw4rtzYP5mBYX2gfEz3xRpy-Veb046izqrrSOfOm-z5mJR5R4o2iWrRYI59_7E8uqXo&spc=nfZ8ZkTKIzwqg7XSbDbgLp1rpLBDfPzAOqJpz3YnZYw0LXM476k-EwbEYtlG&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=2747772&dur=169.737&lmt=1737359881541074&mt=1795657771&fvip=1&epbp=1&keepalive=yes&fexp=51565115&c=VISIONOS&txp=8218224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRgIhAOh_P8EaHAqRxm5i5SNQoZHhCyf1hY-XrGhMtYzBn7X9AiEAoxQUCiZJYxVCINfSEDc7quxHR5uZNSxmcOEFtDrGnnU%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgfxWztGysMmW1hFgACpMOMXbhvfPowXh6RZd-TCrG8J4CIQDWte5kYVu2_b9AwlcfC3F-ndshlX26YpUgP_TsuxmsXA%3D%3D':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    creation_time   : 2025-01-20T07:57:18.000000Z
+    encoder         : Google
+  Duration: 00:02:49.74, start: 0.000000, bitrate: 129 kb/s
+  Stream #1:0[0x1](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-20T07:57:18.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #1:0 -> #0:1 (copy)
+Output #0, mp4, to 'file:research\aw-hp-2026-11-26\src\j0fBiihIt-8_women_hp_0130.mp4.part':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6avc1mp41
+    encoder         : Lavf63.1.101
+  Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 960x720 [SAR 1:1 DAR 4:3], q=2-31, 966 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)
+    Metadata:
+      creation_time   : 2025-01-20T07:57:20.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2025-01-20T07:57:18.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+Press [q] to stop, [?] for help
+frame= 1006 fps=0.0 q=-1.0 size=    4864KiB time=00:00:29.07 bitrate=1370.6kbits/s speed=57.7x elapsed=0:00:00.50    frame= 1810 fps=1758 q=-1.0 size=    8960KiB time=00:00:55.89 bitrate=1313.3kbits/s speed=54.3x elapsed=0:00:01.02    frame= 2238 fps=1451 q=-1.0 size=   10752KiB time=00:01:10.17 bitrate=1255.2kbits/s speed=45.5x elapsed=0:00:01.54    [out#0/mp4 @ 0000022f4b168640] video:10876KiB audio:1246KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.689102%
+frame= 2525 fps=1511 q=-1.0 Lsize=   12205KiB time=00:01:19.73 bitrate=1253.9kbits/s speed=47.7x elapsed=0:00:01.67    
+[download] 100% of   11.92MiB in 00:00:02 at 3.99MiB/s

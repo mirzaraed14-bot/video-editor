@@ -1,11 +1,729 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "rNLL2Y-ydNWfT-Nho8GVUGtHNrs",
-  "nextPageToken": "EAAaHlBUOkNESWlFRFJDUkRkRU9UWTFRa1pDTmtVMk1EYw",
+  "etag": "oy6hn4BtQ2sAuWdXb46va6Mnng4",
+  "nextPageToken": "EAAaHlBUOkNESWlFRVF6TlRjeU56azFNRU5CT0RGRU9UZw",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "WEW0Fep7WK2sSTVpM7J3GEWFt_E",
+      "etag": "cLIKbUVk0jnK6f5qq6FpKaQLyZg",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjhsbC1mQm4wVEt3",
+      "snippet": {
+        "publishedAt": "2026-11-24T16:00:10Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "The difference between David Fincher and Quentin Tarantino",
+        "description": "David Fincher breaks down the difference between him and Quentin Tarantino as filmmakers",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8ll-fBn0TKw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8ll-fBn0TKw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8ll-fBn0TKw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8ll-fBn0TKw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8ll-fBn0TKw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "8ll-fBn0TKw"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "jLHI7yX1WjDLVj_ZIH7kfly2Vyc",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmU4bWRISFhVYjMw",
+      "snippet": {
+        "publishedAt": "2026-11-23T16:00:25Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "David Fincher's take on SPIDER-MAN and BATMAN",
+        "description": "What would a David Fincher-directed SPIDER-MAN or BATMAN look like?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/e8mdHHXUb30/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/e8mdHHXUb30/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/e8mdHHXUb30/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/e8mdHHXUb30/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/e8mdHHXUb30/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "e8mdHHXUb30"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "1ZPLpehCQLxYO3zsgIkCdh0_b2g",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjNHMmIzQmlURFpn",
+      "snippet": {
+        "publishedAt": "2026-11-23T11:15:53Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "David Fincher on CLIFF BOOTH, MINDHUNTER, ALIEN 3, ZODIAC, his BATMAN & STAR WARS pitches, & more!",
+        "description": "David Fincher, HSC’s most anticipated guest, finally joins the podcast. Fincher sits down with Josh for Happy Sad Confused’s longest episode yet: an hour-and-a-half deep dive into one of the greatest living directors’ filmography, from ALIEN 3’s original pitch, to the opening sequence of SEVEN, to what drew him to collaborating with Quentin Tarantino on his latest film, THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH. Find out why he won’t make another season of MINDHUNTER, how he shot the most disturbing scene in ZODIAC, and why he sees actors better than anyone. Plus, Fincher shares what his pitches were for STAR WARS, BATMAN, SPIDER-MAN, & more! This is an extensive, career-spanning conversation for any Fincher fan out there. Enjoy!\n\n#happysadconfused #joshhorowitz #davidfincher #cliffbooth  #mindhunter #zodiac #seven #alien3 #gonegirl \n\n🎬 GET MORE HAPPY SAD CONFUSED ON PATREON\n\nEarly interviews, exclusive monthly videos, guest-question opportunities & more. Starting at $5/month.\n\nhttps://patreon.com/happysadconfused\n\n🎟️ HAPPY SAD CONFUSED LIVE — UPCOMING EVENTS\n\nDecember 6th -- Tom Hiddleston & Hayley Atwell -- tickets here: https://www.92ny.org/event/much-ado-a...\nDecember 8th -- David Corenswet -- tickets here: https://www.92ny.org/event/mr-irrelevant\n\nSPONSORS\nRula -- Rula patients typically pay $15 per session when using insurance. Connect with quality therapists and mental health experts who specialize in you at https://www.rula.com/happy #rulapod\n\nQuince -- Go to \u2060Quince.com/HAPPYSAD \u2060for free shipping and 365-day returns.\n\nLimited Time Offer–Get Huel today with my exclusive offer of 15% OFF online with my code happy15 at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060http://huel.com/happy15.\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 New Customers Only. Thank you to Huel for partnering and supporting our show!\n\nLISTEN TO THE PODCAST\n\nApple: https://podcasts.apple.com/us/podcast/happy-sad-confused/id827905050\n\nSpotify: https://open.spotify.com/show/6cQa5xnTYHaIh6SAK4gW3w\n\nCHAPTERS\n\n0:00 intro\n2:07 David Fincher starts\n3:21 Brad Pitt\n5:48 Working with actors\n10:57 Reading SEVEN\n18:19 THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH\n31:09 INDUSTRIAL LIGHT & MAGIC\n36:52 ALIEN 3\n41:24 FIGHT CLUB\n42:47 ZODIAC\n47:42 Favorite credit sequence\n48:17 SEVEN opening credit\n55:17 Fighting for your vision \n58:02 The Black Dahlia\n1:00:11 Filmmaking philosophy\n1:02:17 GONE GIRL\n1:05:48 Mentors & Mentorship\n1:09:33 ROPE\n1:10:41 Quentin Tarantino\n1:14:16 Steven Soderbergh\n1:15:12 ERIN BROKOVICH\n1:16:24 SPIDER-MAN\n1:17:03 BATMAN\n1:19:07 MINDHUNTER\n1:30:56 RINGS OF POWER\n1:31:47 STAR WARS\n1:33:47 JAMES BOND\n1:35:40 STAR WARS influence",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3G2b3BiTDZg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3G2b3BiTDZg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3G2b3BiTDZg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/3G2b3BiTDZg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/3G2b3BiTDZg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/3G2b3BiTDZg/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "3G2b3BiTDZg"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "cWRNPvSn67_5JX8PhLQTJYDyRzU",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjVEN3hzOUJRTU5n",
+      "snippet": {
+        "publishedAt": "2026-11-22T16:00:39Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Josh Hutcherson ranks the HUNGER GAMES movies",
+        "description": "What’s Josh Hutcherson’s favorite and least favorite HUNGER GAMES movie?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5D7xs9BQMNg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5D7xs9BQMNg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5D7xs9BQMNg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5D7xs9BQMNg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5D7xs9BQMNg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/5D7xs9BQMNg/sardefault.jpg",
+            "width": 1315,
+            "height": 2338
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "5D7xs9BQMNg"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "0ghT2SD_Sp0X46AceHeh_KZ8stA",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnNXZEdyYjdWRWFF",
+      "snippet": {
+        "publishedAt": "2026-11-21T16:00:15Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "How Joseph Zada landed Haymitch",
+        "description": "Joseph Zada shares his unique audition process for landing the role of Haymitch in SUNRISE ON THE REAPING",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sWdGrb7VEaE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sWdGrb7VEaE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sWdGrb7VEaE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/sWdGrb7VEaE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/sWdGrb7VEaE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/sWdGrb7VEaE/sardefault.jpg",
+            "width": 1320,
+            "height": 2347
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "sWdGrb7VEaE"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "hV4k18Ti1jK8yhl7hn0afjilLeo",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnhKcGdIVWtxRzVV",
+      "snippet": {
+        "publishedAt": "2026-11-20T16:00:10Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "How Josh Hutcherson and Jennifer Lawrence ended up in the new HUNGER GAMES",
+        "description": "Josh Hutcherson on how that Peeta and Katniss cameo happened to be",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xJpgHUkqG5U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xJpgHUkqG5U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xJpgHUkqG5U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/xJpgHUkqG5U/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/xJpgHUkqG5U/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/xJpgHUkqG5U/sardefault.jpg",
+            "width": 1320,
+            "height": 2347
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "xJpgHUkqG5U"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "YHPlI0k_5GjkKPBhWQWEGbqawsE",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmkzU3RqTDlROWk4",
+      "snippet": {
+        "publishedAt": "2026-11-20T02:49:09Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Josh Hutcherson on his HUNGER GAMES return, Jennifer Lawrence, Team Peeta, and more + Joseph Zada!",
+        "description": "Josh Hutcherson joins HSC to discuss his grand return to the HUNGER GAMES franchise in SUNRISE ON THE REAPING. Hear how his cameo happened, what it was like to reunite with Jennifer Lawrence and Woody Harrelson, how he really feels about Team Peeta vs Team Gale, and more. Plus, a bonus interview with the star of the new film, Joseph Zada!\n\n#happysadconfused #joshhorowitz #joshhutcherson #thehungergames #jenniferlawrence #hungergames #sunriseonthereaping #josephzada \n\n🎬 GET MORE HAPPY SAD CONFUSED ON PATREON\n\nEarly interviews, exclusive monthly videos, guest-question opportunities & more. Starting at $5/month.\n\nhttps://patreon.com/happysadconfused\n\n🎟️ HAPPY SAD CONFUSED LIVE — UPCOMING EVENTS\nDecember 6th -- Tom Hiddleston & Hayley Atwell -- tickets here: \u2060\u2060\u2060https://www.92ny.org/event/much-ado-about-nothing\u2060\u2060\u2060\nDecember 8th -- David Corenswet -- tickets here: \u2060\u2060\u2060https://www.92ny.org/event/mr-irrelevant\u2060\u2060\n\nSPONSORS\nRula -- Rula patients typically pay $15 per session when using insurance. Connect with quality therapists and mental health experts who specialize in you at https://www.rula.com/happy #rulapod\n\nQuince -- Go to \u2060Quince.com/HAPPYSAD \u2060for free shipping and 365-day returns.\n\nLimited Time Offer–Get Huel today with my exclusive offer of 15% OFF online with my code happy15 at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060http://huel.com/happy15.\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 New Customers Only. Thank you to Huel for partnering and supporting our show!\n\nLISTEN TO THE PODCAST\n\nApple: https://podcasts.apple.com/us/podcast/happy-sad-confused/id827905050\n\nSpotify: https://open.spotify.com/show/6cQa5xnTYHaIh6SAK4gW3w\n\n0:00 Introduction\n1:37 Josh Hutcherson joins the show\n2:07 The Sunrise on the Reaping premiere\n5:44 Watching the film with Jennifer Lawrence\n7:37 The Comic-Con \"Joshifer\" clip\n10:33 Why he's barely on social media\n11:48 Field dressing a bison on a birthday trip\n16:54 Getting the call to return\n18:28 Shooting the cameo in Germany\n20:06 The wigs\n20:57 Returning to the Hunger Games set\n21:38 Living with Hunger Games fame\n23:23 Fan tattoos and babies named Peeta\n24:21 Ranking the Hunger Games movies\n26:13 Why he never rewatches his movies\n27:00 Team Peeta vs. Team Gale\n28:32 Little Manhattan and the kissing scenes\n30:48 Hopes for more Hunger Games\n31:50 Audience questions\n32:29 Broadway, TV, and directing\n34:38 Mister Miracle\n36:38 The legacy cast\n40:04 Joseph Zada joins the show\n41:39 Learning from actor interviews\n44:12 How he got into acting\n48:11 Invisible Boys and We Were Liars\n49:44 Auditioning for young Haymitch\n55:11 Not imitating Woody Harrelson\n55:40 Staying in character\n57:29 Heath Ledger and River Phoenix\n58:18 What's next for his career\n1:01:10 Profoundly random questions\n1:06:14 Wrap-up",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/i3StjL9Q9i8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/i3StjL9Q9i8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/i3StjL9Q9i8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/i3StjL9Q9i8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/i3StjL9Q9i8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/i3StjL9Q9i8/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 6,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "i3StjL9Q9i8"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "-q0stDQOEC6bupvDWGsNXMVrLrk",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLlI3ZGhDbGFDa2Zj",
+      "snippet": {
+        "publishedAt": "2026-11-18T16:00:03Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Seth Rogen on earliest version of SUPERBAD script",
+        "description": "Seth Rogen shares how the SUPERBAD script evolved over 10 years",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/R7dhClaCkfc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/R7dhClaCkfc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/R7dhClaCkfc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/R7dhClaCkfc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/R7dhClaCkfc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/R7dhClaCkfc/sardefault.jpg",
+            "width": 1320,
+            "height": 2347
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 7,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "R7dhClaCkfc"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "aTGHggF1HL05mlHpduooQ9hZp4I",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmJfdUZHZ1VXV3RN",
+      "snippet": {
+        "publishedAt": "2026-11-17T16:00:31Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Seth Rogen remembers partying with the 12 YEARS A SLAVE cast",
+        "description": "Seth Rogen says the THIS IS THE END and 12 YEARS A SLAVE casts used to party together while filming",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/b_uFGgUWWtM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/b_uFGgUWWtM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/b_uFGgUWWtM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/b_uFGgUWWtM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/b_uFGgUWWtM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/b_uFGgUWWtM/sardefault.jpg",
+            "width": 1319,
+            "height": 2344
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 8,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "b_uFGgUWWtM"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "V09tr5aXEXiPMQNjclceVzkYmxU",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjg2SkUwUzVKcnVj",
+      "snippet": {
+        "publishedAt": "2026-11-16T18:00:16Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Seth Rogen teases Madonna role in THE STUDIO Season 2",
+        "description": "Seth Rogen hints at Madonna's \"very meta\" storyline in THE STUDIO",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/86JE0S5Jruc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/86JE0S5Jruc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/86JE0S5Jruc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/86JE0S5Jruc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/86JE0S5Jruc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/86JE0S5Jruc/sardefault.jpg",
+            "width": 1312,
+            "height": 2333
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 9,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "86JE0S5Jruc"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "vJj-7eyuDSh_7bIIKru9ZPncXPg",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkhlRW1COGEzdjJr",
+      "snippet": {
+        "publishedAt": "2026-11-16T16:00:09Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Seth Rogen hated being on DAWSON'S CREEK",
+        "description": "Seth Rogen looks back on his post-FREAKS AND GEEKS career movies, including a one episode stint on DAWSON'S CREEK",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HeEmB8a3v2k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HeEmB8a3v2k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HeEmB8a3v2k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HeEmB8a3v2k/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HeEmB8a3v2k/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/HeEmB8a3v2k/sardefault.jpg",
+            "width": 1320,
+            "height": 2347
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 10,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "HeEmB8a3v2k"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "KSuZGErTRZU53gzmfXQF8yLXLg4",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmMzalVNSGlhUENr",
+      "snippet": {
+        "publishedAt": "2026-11-16T11:55:39Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Seth Rogen on THE INVITE, THE STUDIO Season 2, SUPERBAD, THE GREEN HORNET, & more!",
+        "description": "Welcome Seth Rogen back to the podcast! This time, Seth is here to chat about his summer hit, THE INVITE, but he and Josh also dive deep into his filmography. Here, Seth reminisces on the earliest versions of the SUPERBAD script, shares why THE GREEN HORNET taught him how NOT to make a movie, and what he learned from working with Steven Spielberg. Plus, hear how he ended up partying with the 12 YEARS A SLAVE cast, why he hated being on DAWSON’S CREEK, find out what he thinks is his best movie, and more!\n\nRecorded at SCAD Savannah Film Festival\n\n#happysadconfused #joshhorowitz #sethrogen #theinvite #superbad #thegreenhornet #thestudio \n\n🎬 GET MORE HAPPY SAD CONFUSED ON PATREON\n\nEarly interviews, exclusive monthly videos, guest-question opportunities & more. Starting at $5/month.\n\nhttps://patreon.com/happysadconfused\n\n🎟️ HAPPY SAD CONFUSED LIVE — UPCOMING EVENTS\nDecember 6th -- Tom Hiddleston & Hayley Atwell -- tickets here: \u2060\u2060\u2060https://www.92ny.org/event/much-ado-about-nothing\u2060\u2060\u2060\nDecember 8th -- David Corenswet -- tickets here: \u2060\u2060\u2060https://www.92ny.org/event/mr-irrelevant\u2060\u2060\n\nSPONSORS\nRula -- Rula patients typically pay $15 per session when using insurance. Connect with quality therapists and mental health experts who specialize in you at https://www.rula.com/happy #rulapod\n\nQuince -- Go to \u2060Quince.com/HAPPYSAD \u2060for free shipping and 365-day returns.\n\nLimited Time Offer–Get Huel today with my exclusive offer of 15% OFF online with my code happy15 at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060http://huel.com/happy15.\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 New Customers Only. Thank you to Huel for partnering and supporting our show!\n\nLISTEN TO THE PODCAST\n\nApple: https://podcasts.apple.com/us/podcast/happy-sad-confused/id827905050\n\nSpotify: https://open.spotify.com/show/6cQa5xnTYHaIh6SAK4gW3w\n\n0:00 Introduction\n2:57 Seth Rogen joins the show\n5:08 His Wikipedia entry\n5:43 The king of the sex comedy\n6:39 Movies he grew up watching\n7:44 Writing Superbad at 13\n9:51 Resisting studio notes on Superbad\n14:55 The Invite and why acting scares him\n16:51 Embarrassment on set\n17:42 Rewriting The Invite in rehearsal\n21:18 Edward Norton's speech\n24:17 The ending of The Invite\n27:29 His early acting career\n29:15 Famous auditions\n29:58 Dawson's Creek\n30:45 Knocked Up\n32:33 The Green Hornet\n36:07 Why he avoids big franchises\n37:35 Take This Waltz\n39:17 Steve Jobs\n40:30 This Is the End and 12 Years a Slave\n42:09 The Fabelmans and Steven Spielberg\n45:20 Movies he could fit into\n47:44 The Studio season 2\n49:42 Directing Madonna\n51:11 Profoundly random questions\n53:17 Picking his best movie\n56:27 Wrap-up",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/c3jUMHiaPCk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/c3jUMHiaPCk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/c3jUMHiaPCk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/c3jUMHiaPCk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/c3jUMHiaPCk/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "fhd": {
+            "url": "https://i.ytimg.com/vi/c3jUMHiaPCk/fhddefault.jpg",
+            "width": 1920,
+            "height": 1080
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 11,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "c3jUMHiaPCk"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Az54eBLQUsm46pitJsYio6aygq0",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLlREYTVlaE1fM3dz",
+      "snippet": {
+        "publishedAt": "2026-11-15T16:00:20Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "Jamie Dornan's take on Aragorn",
+        "description": "Jamie Dornan is playing Aragorn in the upcoming LORD OF THE RINGS film, but he has nothing but respect for Viggo Mortensen's portrayal",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/TDa5ehM_3ws/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/TDa5ehM_3ws/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/TDa5ehM_3ws/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/TDa5ehM_3ws/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/TDa5ehM_3ws/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/TDa5ehM_3ws/sardefault.jpg",
+            "width": 1299,
+            "height": 2309
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 12,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "TDa5ehM_3ws"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "BT1GHIQMcn4RwlGaNoF6ax4zDms",
+      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnQ5QnN2Z2l5a3dv",
+      "snippet": {
+        "publishedAt": "2026-11-15T13:00:25Z",
+        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
+        "title": "JAWS or JURASSIC PARK??",
+        "description": "If you could only keep one Spielberg classic, which would you choose: JAWS or JURASSIC PARK?",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/t9Bsvgiykwo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/t9Bsvgiykwo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/t9Bsvgiykwo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/t9Bsvgiykwo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/t9Bsvgiykwo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "shortsAspectRatio": {
+            "url": "https://i.ytimg.com/vi/t9Bsvgiykwo/sardefault.jpg",
+            "width": 1315,
+            "height": 2337
+          }
+        },
+        "channelTitle": "Josh Horowitz",
+        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
+        "position": 13,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "t9Bsvgiykwo"
+        },
+        "videoOwnerChannelTitle": "Josh Horowitz",
+        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "rgZZaV2xrqDBljjrQiOXl9NgCPY",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLklPdFdjcTJvZjRn",
       "snippet": {
         "publishedAt": "2026-11-14T16:00:15Z",
@@ -46,7 +764,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 0,
+        "position": 14,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "IOtWcq2of4g"
@@ -57,7 +775,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "1Z2JrXpaVT4LvHtvD-nDDPEA7xE",
+      "etag": "Qsn_ZJugn9sHWI29tIV8n2ELbdQ",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmQyamNYcnpudmdR",
       "snippet": {
         "publishedAt": "2026-11-13T18:54:13Z",
@@ -98,7 +816,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 1,
+        "position": 15,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "d2jcXrznvgQ"
@@ -109,7 +827,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "6oKmhhEK6xgc0BSaxf6eITRpYwM",
+      "etag": "jdMILftROsvPgTzx63woKlbdCE0",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLlViSUV0NkZjVWxj",
       "snippet": {
         "publishedAt": "2026-11-11T16:00:45Z",
@@ -150,7 +868,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 2,
+        "position": 16,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "UbIEt6FcUlc"
@@ -161,7 +879,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "QD_S6Go52xz3rHp5hUlnc23u6V8",
+      "etag": "l3AbDT1x8m4DHDuUzPF_TGNGsQk",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLktYcERJUnRVXzF3",
       "snippet": {
         "publishedAt": "2026-11-10T16:00:22Z",
@@ -202,7 +920,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 3,
+        "position": 17,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "KXpDIRtU_1w"
@@ -213,7 +931,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "0yu3G8c9PY9NbI1lkcKQ23o4KMA",
+      "etag": "bSev4CsGBOYY-7dQz1xcYeLyxpU",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmo5dmV4TWdzU3dF",
       "snippet": {
         "publishedAt": "2026-11-09T16:00:07Z",
@@ -254,7 +972,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 4,
+        "position": 18,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "j9vexMgsSwE"
@@ -265,7 +983,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "-lTKu9wZxSIznn2P3B6ezbbaxLg",
+      "etag": "ysKs51nii1VNwmojbxv-UMV23X0",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnFxUjdhUEpVcHVr",
       "snippet": {
         "publishedAt": "2026-11-09T13:01:35Z",
@@ -306,7 +1024,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 5,
+        "position": 19,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "qqR7aPJUpuk"
@@ -317,7 +1035,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "37hKy9wOpsllryCDt9MpYG1RI38",
+      "etag": "TW8mLpemJWbYN1d4c4mo6u9obYo",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLk84Vkp3a2kyd1B3",
       "snippet": {
         "publishedAt": "2026-11-07T16:00:26Z",
@@ -358,7 +1076,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 6,
+        "position": 20,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "O8VJwki2wPw"
@@ -369,7 +1087,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "lLJvBxmqZbjaxDz2sam8Sycl7wg",
+      "etag": "NX3AfDRReo7ChR3YNTHbVrXgxZc",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnlYSVVGSmttcWxv",
       "snippet": {
         "publishedAt": "2026-11-06T16:00:07Z",
@@ -410,7 +1128,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 7,
+        "position": 21,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "yXIUFJkmqlo"
@@ -421,7 +1139,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "XgonfUQFu8Y8SyupgAQfbcay074",
+      "etag": "gGCBixQ5-PZisUoKsesOkyiRf48",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkNXYnZfOG9sRkpj",
       "snippet": {
         "publishedAt": "2026-11-05T16:00:20Z",
@@ -462,7 +1180,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 8,
+        "position": 22,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "CWbv_8olFJc"
@@ -473,7 +1191,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ah1ylew6Ga8kEYD6745dfnLVKNg",
+      "etag": "GM_oc5OaJadWLTfoNGYMbOm-TCs",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjdkeXJ3TEFINk1n",
       "snippet": {
         "publishedAt": "2026-11-05T11:55:09Z",
@@ -514,7 +1232,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 9,
+        "position": 23,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "7dyrwLAH6Mg"
@@ -525,7 +1243,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "M-QIiq0huhFwTlxFIuQZCSlXz_I",
+      "etag": "UDk1pT9s8D42mGomeBshHzXvyh8",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLm9EX1RlU05oU1Aw",
       "snippet": {
         "publishedAt": "2026-11-04T15:00:28Z",
@@ -566,7 +1284,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 10,
+        "position": 24,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "oD_TeSNhSP0"
@@ -577,7 +1295,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "YnAjR7DrAi_I2eBRZ6HLDSkuvnA",
+      "etag": "H88BZKTg-eMuwRwSlBHmkFxVrvM",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLlZCcnlWd0xxdkdv",
       "snippet": {
         "publishedAt": "2026-11-02T15:00:09Z",
@@ -618,7 +1336,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 11,
+        "position": 25,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "VBryVwLqvGo"
@@ -629,7 +1347,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Vt7C_lJhj6bj46KXKxsmq2dlz9o",
+      "etag": "tArjxmOx3jclPG-FnIWPHWYLx94",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkxtOTBIX3pkLS1J",
       "snippet": {
         "publishedAt": "2026-11-02T10:47:14Z",
@@ -670,7 +1388,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 12,
+        "position": 26,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "Lm90H_zd--I"
@@ -681,7 +1399,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "STmU_EIs3EJOoOG0wJTQiRafrWQ",
+      "etag": "1i8ALOWw_70EmhUjDgQ8-lsBZWg",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLl9NU1FRRHJCNVJN",
       "snippet": {
         "publishedAt": "2026-11-01T16:00:36Z",
@@ -722,7 +1440,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 13,
+        "position": 27,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "_MSQQDrB5RM"
@@ -733,7 +1451,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ckd0ia1RRL6e1LLZsdWpv5O1atE",
+      "etag": "Ly-iCl3CDVOxDJVC_-Ju_n5nwXo",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmRXTHNTTmtQVS1Z",
       "snippet": {
         "publishedAt": "2026-10-30T15:00:33Z",
@@ -774,7 +1492,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 14,
+        "position": 28,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "dWLsSNkPU-Y"
@@ -785,7 +1503,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "K0w6VtUTw_SJBjP3-_b20GYgLlk",
+      "etag": "9t4inhOAapRJHdqGahsIZ_wCRwA",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkJfWFZHVnBTbFpJ",
       "snippet": {
         "publishedAt": "2026-10-29T15:00:06Z",
@@ -826,7 +1544,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 15,
+        "position": 29,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "B_XVGVpSlZI"
@@ -837,7 +1555,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "5HCMn8H9hIu-Wq3VbKSRkwWSQoY",
+      "etag": "6xZHrEVps0QmNwE9qY1AV3F7DVU",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkIxZ0lwRS1DZlcw",
       "snippet": {
         "publishedAt": "2026-10-29T09:48:02Z",
@@ -878,7 +1596,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 16,
+        "position": 30,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "B1gIpE-CfW0"
@@ -889,7 +1607,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "E1A27Pl1xv6hO03qNTnSBavtLZ8",
+      "etag": "GX5YozOPt1XI1N-tT0szvMMk51k",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLm5UZWpKdEw5Rnl3",
       "snippet": {
         "publishedAt": "2026-10-28T15:00:25Z",
@@ -930,7 +1648,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 17,
+        "position": 31,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "nTejJtL9Fyw"
@@ -941,7 +1659,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "XZFOJzkdiUzsUTl64FOCL7EC0Yw",
+      "etag": "oQUBi1W2MfiQ991NhjT8XvE3cww",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjc1VGl2dnh0d2xB",
       "snippet": {
         "publishedAt": "2026-10-27T15:00:32Z",
@@ -982,7 +1700,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 18,
+        "position": 32,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "75TivvxtwlA"
@@ -993,7 +1711,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "x1kfY7EJKa3elsbQCAEHeG53U_M",
+      "etag": "L8eqyu0PRxwISZiTXT5mckNI6Lw",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLm8zZ3BlQnJ2aFRV",
       "snippet": {
         "publishedAt": "2026-10-26T15:00:06Z",
@@ -1034,7 +1752,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 19,
+        "position": 33,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "o3gpeBrvhTU"
@@ -1045,7 +1763,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "TBG5G3hl8Jvcy7qqOYhAOFEtz9Y",
+      "etag": "YW0eFWdhCOMF3rbsKQ3V4Rutcek",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLlVXaE1sVWFDT2xn",
       "snippet": {
         "publishedAt": "2026-10-26T09:57:41Z",
@@ -1086,7 +1804,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 20,
+        "position": 34,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "UWhMlUaCOlg"
@@ -1097,7 +1815,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "uIsaYBwusKAR7toDM18ERj-cZcI",
+      "etag": "LD5X6SRwE7RIwKsa42OEw8Q49OY",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLk55RWljY1AyT0F3",
       "snippet": {
         "publishedAt": "2026-10-24T15:00:00Z",
@@ -1138,7 +1856,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 21,
+        "position": 35,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "NyEiccP2OAw"
@@ -1149,7 +1867,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "r7JrfJiXHuViJiQb84IKIQUKF00",
+      "etag": "1Vx4DxdHwarKeXQF11IewvhRM8E",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnhBeFd0OFYzTUxv",
       "snippet": {
         "publishedAt": "2026-10-23T15:00:33Z",
@@ -1190,7 +1908,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 22,
+        "position": 36,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "xAxWt8V3MLo"
@@ -1201,7 +1919,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "ndjrWUmi-kTkzTM4p8dP9dYruMY",
+      "etag": "sHYui-kFiFT3qky3Vf49rh9kyhA",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLk0zclZmd1pOZ01R",
       "snippet": {
         "publishedAt": "2026-10-22T15:00:38Z",
@@ -1242,7 +1960,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 23,
+        "position": 37,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "M3rVfwZNgMQ"
@@ -1253,7 +1971,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "id79x9r82xk_bu34o9FOTLXurHc",
+      "etag": "hWM_zW1Q2VbfFuLve5qiwG1WSeo",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjFhNXl5MmtfNW04",
       "snippet": {
         "publishedAt": "2026-10-22T10:00:59Z",
@@ -1294,7 +2012,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 24,
+        "position": 38,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "1a5yy2k_5m8"
@@ -1305,7 +2023,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "kcaepwVqx7HqcyYZBN46UcfvF-Q",
+      "etag": "cY3nu_ah2z3LnoyO1jpwDHbs5XY",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLllVYlNWQ19sQ2lF",
       "snippet": {
         "publishedAt": "2026-10-20T15:00:03Z",
@@ -1346,7 +2064,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 25,
+        "position": 39,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "YUbSVC_lCiE"
@@ -1357,7 +2075,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Sykep2DkHqor3VhqdWeEeuCSlQo",
+      "etag": "qY1k1hwjSwAL_WtsNG624Wo0UKM",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmZ5TTZFdmdKOEtF",
       "snippet": {
         "publishedAt": "2026-10-19T15:00:25Z",
@@ -1398,7 +2116,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 26,
+        "position": 40,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "fyM6EvgJ8KE"
@@ -1409,7 +2127,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "wfYhCOCo_XGum0hU7H4J-xK7Pxs",
+      "etag": "m119XYyKrXWBsJOwEXfmOM3swVA",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnYxWDhtM3lFcHRJ",
       "snippet": {
         "publishedAt": "2026-10-19T10:31:03Z",
@@ -1450,7 +2168,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 27,
+        "position": 41,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "v1X8m3yEptI"
@@ -1461,7 +2179,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "CiLLVSXyycNGUtYxhxSmp_Y0pS8",
+      "etag": "y6LH8vkvlFvGZqgH6V7qX-51w8I",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnJMN1NBak00N3lV",
       "snippet": {
         "publishedAt": "2026-10-17T15:00:01Z",
@@ -1502,7 +2220,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 28,
+        "position": 42,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "rL7SAjM47yU"
@@ -1513,7 +2231,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "Yy8DMhsmSse-_XsLcBAiZMwNd1s",
+      "etag": "Xv_8QDfTfVEk_CtfhIfatamySNk",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLlNoYUhqSDJRTnk0",
       "snippet": {
         "publishedAt": "2026-10-16T15:00:03Z",
@@ -1554,7 +2272,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 29,
+        "position": 43,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "ShaHjH2QNy4"
@@ -1565,7 +2283,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "P_BJ6ZdX0Yweuk7aCSZtoAYyRAE",
+      "etag": "A4Hrn3wzIAZ7bf6xyiSsLIgBw0E",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjVzelhpZFoyZ2k0",
       "snippet": {
         "publishedAt": "2026-10-15T15:00:20Z",
@@ -1606,7 +2324,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 30,
+        "position": 44,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "5szXidZ2gi4"
@@ -1617,7 +2335,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "uJ1P33Hd5wkKqvrtXscyw1ObffA",
+      "etag": "5seCvmGFjdK6Qpku5kccmwl_Q9g",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkhzTXI2TkJkTmtV",
       "snippet": {
         "publishedAt": "2026-10-15T10:47:07Z",
@@ -1658,7 +2376,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 31,
+        "position": 45,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "HsMr6NBdNkU"
@@ -1669,7 +2387,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "D3rVZJ14gqk21qpM8xdCKZPSWjE",
+      "etag": "k5whnhGy3UlAONMHsgY7nYSKfOM",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLm5aQ3diSGE5Y3pN",
       "snippet": {
         "publishedAt": "2026-10-14T15:00:00Z",
@@ -1710,7 +2428,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 32,
+        "position": 46,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "nZCwbHa9czM"
@@ -1721,7 +2439,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "43knrxC4a4Z1YqsOfSZ4QxIgnE8",
+      "etag": "NeD-LbgqyoIFBeVgQd8fk4CZewA",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjZuYTRZS1BuWXNZ",
       "snippet": {
         "publishedAt": "2026-10-13T15:00:16Z",
@@ -1762,7 +2480,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 33,
+        "position": 47,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "6na4YKPnYsY"
@@ -1773,7 +2491,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "LBdaGzwUNMyBcxzD3vfiwhysYWE",
+      "etag": "h0TipWy6k1S3Q374VXq1jtP2Wm8",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnVuaVRXRTZ5LW5n",
       "snippet": {
         "publishedAt": "2026-10-12T15:00:36Z",
@@ -1814,7 +2532,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 34,
+        "position": 48,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "uniTWE6y-ng"
@@ -1825,7 +2543,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "BtMc1L6c-WcS6xrE0goVofmYAIU",
+      "etag": "oQJPVDK3Yq8c5eucRVQgJRt-YrA",
       "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLk1BZlZyTTIzSGln",
       "snippet": {
         "publishedAt": "2026-10-12T09:41:58Z",
@@ -1866,7 +2584,7 @@
         },
         "channelTitle": "Josh Horowitz",
         "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 35,
+        "position": 49,
         "resourceId": {
           "kind": "youtube#video",
           "videoId": "MAfVrM23Hig"
@@ -1874,738 +2592,10 @@
         "videoOwnerChannelTitle": "Josh Horowitz",
         "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
       }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "fy91dLE1GaKSwR6wX-DZ8g35nqU",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnBCaWh6bzFoYy1j",
-      "snippet": {
-        "publishedAt": "2026-10-11T21:52:19Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "How Ben Affleck found the BATMAN voice",
-        "description": "Ben Affleck on how he chose his BATMAN voice",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/pBihzo1hc-c/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/pBihzo1hc-c/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/pBihzo1hc-c/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/pBihzo1hc-c/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/pBihzo1hc-c/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/pBihzo1hc-c/sardefault.jpg",
-            "width": 1316,
-            "height": 2339
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 36,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "pBihzo1hc-c"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "6lCmRNfgCqirWr3Ht2mbji5jcPM",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjFmNzFTOW4ybWdj",
-      "snippet": {
-        "publishedAt": "2026-10-10T15:00:27Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "John Cena thought his acting career was done",
-        "description": "John Cena shares why parodying himself in the FRED movies was a pivotal moment in his career",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/1f71S9n2mgc/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/1f71S9n2mgc/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/1f71S9n2mgc/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/1f71S9n2mgc/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/1f71S9n2mgc/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/1f71S9n2mgc/sardefault.jpg",
-            "width": 1314,
-            "height": 2336
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 37,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "1f71S9n2mgc"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "IFE9uANM6OuYLqMGSHgd5YNlnjE",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjRpdjhKVExGSFJB",
-      "snippet": {
-        "publishedAt": "2026-10-09T15:00:08Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "John Cena will always miss wrestling",
-        "description": "The ultimate reason John Cena stepped away from wrestling",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/4iv8JTLFHRA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/4iv8JTLFHRA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/4iv8JTLFHRA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/4iv8JTLFHRA/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/4iv8JTLFHRA/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/4iv8JTLFHRA/sardefault.jpg",
-            "width": 1320,
-            "height": 2346
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 38,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "4iv8JTLFHRA"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "6LOjySYfq7m3HZJbI9jMrGxs5Nw",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLm9md2IyTVhtRXo4",
-      "snippet": {
-        "publishedAt": "2026-10-08T15:00:10Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "John Cena on the future of PEACEMAKER",
-        "description": "John Cena shares his thoughts on PEACEMAKER’s future",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/ofwb2MXmEz8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/ofwb2MXmEz8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/ofwb2MXmEz8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/ofwb2MXmEz8/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/ofwb2MXmEz8/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/ofwb2MXmEz8/sardefault.jpg",
-            "width": 1312,
-            "height": 2333
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 39,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "ofwb2MXmEz8"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "w0ZQbIE5_zi6LFAOmvuVWEdHDf4",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnJVY1lleE0wM1lR",
-      "snippet": {
-        "publishedAt": "2026-10-08T10:24:27Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "John Cena on MATCHBOX THE MOVIE, PEACEMAKER, The Rock, wrestling, & more!",
-        "description": "John Cena is back! For John’s third time on the podcast, he and Josh chat all about his new film MATCHBOX THE MOVIE, the future of PEACEMAKER, and even look back at his wrestling career–including that iconic heel turn in 2025. Plus, the first time he met James Gunn, his relationship with Dwayne Johnson, his take on a new FAST & FURIOUS movie, & more!\n\n#happysadconfused #joshhorowitz #johncena #matchbox #peacemaker #wwe #wrestling \n\nTo get early access to all of Josh's interviews plus bonus content, merch, and discounts to live events, go to patreon.com/happysadconfused\n\nMake sure you SUBSCRIBE to the channel so you don't miss any of Josh's interviews!\n\nSUPPORT THE SHOW BY SUPPORTING OUR SPONSORS!\nRula -- Rula patients typically pay $15 per session when using insurance. Connect with quality therapists and mental health experts who specialize in you at https://www.rula.com/happy #rulapod\n\nQuince -- Go to \u2060Quince.com/HAPPYSAD \u2060for free shipping and 365-day returns.\n\nLimited Time Offer–Get Huel today with my exclusive offer of 15% OFF online with my code happy15 at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060http://huel.com/happy15.\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 New Customers Only. Thank you to Huel for partnering and supporting our show!\n\nListen to the podcast on...\nAPPLE: https://podcasts.apple.com/us/podcast/happy-sad-confused/id827905050\n\nSPOTIFY: https://open.spotify.com/show/6cQa5xnTYHaIh6SAK4gW3w \n\nJosh on Twitter: https://twitter.com/joshuahorowitz\nJosh on Instagram: https://www.instagram.com/joshuahorowitz\nJosh on TikTok: @happysadconfused\n\n0:00 Cold open: Peacemaker on set\n0:28 Introduction\n2:13 John Cena joins the show\n3:03 Life as a busy actor\n3:35 Staying even-keeled\n6:23 Defining a \"mess up\"\n7:33 Knowing his career will end\n10:22 Being okay without a next project\n14:58 Matchbox the Movie\n17:38 Sam Hargrave and Skydance\n20:48 Childhood friends\n22:58 Trusting new people\n24:27 The Marine and his early career\n29:05 Stepping away from movies in 2009\n30:13 The Fred movies\n31:14 Trainwreck\n32:38 Meeting James Gunn\n34:58 Building the Peacemaker character\n41:18 More Peacemaker?\n44:03 Deciding to retire from wrestling\n47:29 The WWE heel turn\n54:51 Another Fast & Furious movie?\n56:20 A movie with Dwayne Johnson\n58:58 Profoundly random questions\n59:39 Wrap-up",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/rUcYexM03YQ/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/rUcYexM03YQ/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/rUcYexM03YQ/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/rUcYexM03YQ/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/rUcYexM03YQ/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "fhd": {
-            "url": "https://i.ytimg.com/vi/rUcYexM03YQ/fhddefault.jpg",
-            "width": 1920,
-            "height": 1080
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 40,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "rUcYexM03YQ"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "UYermdBNjmZPAZvK7Wygi3XooMA",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjkwTWxyeEphdXBn",
-      "snippet": {
-        "publishedAt": "2026-10-06T15:00:00Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "How becoming a dad affected Sebastian Stan's connection to FJORD",
-        "description": "Sebastian Stan’s perspective on FJORD has already changed since becoming a dad",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/90MlrxJaupg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/90MlrxJaupg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/90MlrxJaupg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/90MlrxJaupg/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/90MlrxJaupg/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/90MlrxJaupg/sardefault.jpg",
-            "width": 1315,
-            "height": 2337
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 41,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "90MlrxJaupg"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "nC_wZwnDhCkXLeh4yRZXZ6i2jnw",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLk1xWjhCeHByQ2pJ",
-      "snippet": {
-        "publishedAt": "2026-10-05T18:00:09Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "Sebastian Stan made $65k for THE COVENANT",
-        "description": "Sebastian Stan looks back on 20 years of THE COVENANT",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/MqZ8BxprCjI/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/MqZ8BxprCjI/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/MqZ8BxprCjI/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/MqZ8BxprCjI/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/MqZ8BxprCjI/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/MqZ8BxprCjI/sardefault.jpg",
-            "width": 1309,
-            "height": 2327
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 42,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "MqZ8BxprCjI"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "TibDpoL76e0fuawRg7MkhVusqHU",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmJQNlFmazI4RXpB",
-      "snippet": {
-        "publishedAt": "2026-10-05T15:00:31Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "How Sebastian Stan ended up in THE BATMAN PART II",
-        "description": "Can Sebastian Stan finally reveal more about his role in THE BATMAN PART II??",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/bP6Qfk28EzA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/bP6Qfk28EzA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/bP6Qfk28EzA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/bP6Qfk28EzA/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/bP6Qfk28EzA/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/bP6Qfk28EzA/sardefault.jpg",
-            "width": 1314,
-            "height": 2336
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 43,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "bP6Qfk28EzA"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "XGirbb15Kk8c5uFVLidxk-7aqP8",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLmg2Y3R3Z2RJQ1hz",
-      "snippet": {
-        "publishedAt": "2026-10-05T10:04:58Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "SEBASTIAN STAN on FJORD, THE BATMAN PART II, AVENGERS: DOOMSDAY, THE COVENANT & more!",
-        "description": "Round 4 of HSC for Sebastian Stan! This episode has it all: discussions about THE BATMAN PART II, Steve and Bucky’s reunion in AVENGERS: DOOMSDAY, and even a 20th anniversary look back at THE COVENANT. On his latest visit to Happy Sad Confused, Sebastian and Josh sit down in honor of his new film, FJORD, which has already taken on new meaning for Sebastian since becoming a dad. All this and more on the latest episode!\n\n#happysadconfused #joshhorowitz #sebastianstan #fjord #thebatman #avengersdoomsday #thecovenant #buckybarnes \n\nTo get early access to all of Josh's interviews plus bonus content, merch, and discounts to live events, go to patreon.com/happysadconfused\n\nMake sure you SUBSCRIBE to the channel so you don't miss any of Josh's interviews!\n\nSUPPORT THE SHOW BY SUPPORTING OUR SPONSORS!\nRula -- Rula patients typically pay $15 per session when using insurance. Connect with quality therapists and mental health experts who specialize in you at https://www.rula.com/happy #rulapod\n\nQuince -- Go to \u2060Quince.com/HAPPYSAD \u2060for free shipping and 365-day returns.\n\nLimited Time Offer–Get Huel today with my exclusive offer of 15% OFF online with my code happy15 at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060http://huel.com/happy15.\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 New Customers Only. Thank you to Huel for partnering and supporting our show!\n\nListen to the podcast on...\nAPPLE: https://podcasts.apple.com/us/podcast/happy-sad-confused/id827905050\n\nSPOTIFY: https://open.spotify.com/show/6cQa5xnTYHaIh6SAK4gW3w \n\nJosh on Twitter: https://twitter.com/joshuahorowitz\nJosh on Instagram: https://www.instagram.com/joshuahorowitz\nJosh on TikTok: @happysadconfused\n\n0:00 Introduction\n2:19 Sebastian Stan joins the show\n3:12 Shaving his head for Fjord\n4:31 The origin story of Fjord\n6:34 Fjord's plot and central themes\n9:04 Fatherhood's impact on watching Fjord\n10:57 Redefining masculinity\n17:41 The Apprentice and A Different Man\n19:49 How his approach to the industry has shifted\n21:05 20th anniversary of The Covenant\n23:42 Near-misses: The Vampire Diaries and more\n28:38 Auditioning for Captain America\n30:07 The future of Bucky and Winter Soldier\n31:46 Avengers: Doomsday and reuniting with Chris Evans\n35:03 Shooting The Batman: Part II\n40:03 What he's been watching\n41:39 Fan rapid-fire questions\n48:55 Ranking his own movies\n51:38 Profoundly random questions\n53:18 Wrap-up",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/h6ctwgdICXs/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/h6ctwgdICXs/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/h6ctwgdICXs/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/h6ctwgdICXs/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/h6ctwgdICXs/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "fhd": {
-            "url": "https://i.ytimg.com/vi/h6ctwgdICXs/fhddefault.jpg",
-            "width": 1920,
-            "height": 1080
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 44,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "h6ctwgdICXs"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "aDyKY-2o4Ludz4kDFNsgzSA7XCw",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLnVrSlo0SmNjdGJZ",
-      "snippet": {
-        "publishedAt": "2026-10-03T15:00:23Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "Is Christopher Abbott psychic??",
-        "description": "How far is Christopher Abbott willing to go for X-MEN prep?",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/ukJZ4JcctbY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/ukJZ4JcctbY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/ukJZ4JcctbY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/ukJZ4JcctbY/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/ukJZ4JcctbY/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/ukJZ4JcctbY/sardefault.jpg",
-            "width": 1314,
-            "height": 2336
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 45,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "ukJZ4JcctbY"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "oP243y-n3lAAScNlxGE3m0qEJLU",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkdnTG92NEozcFlB",
-      "snippet": {
-        "publishedAt": "2026-10-02T15:00:31Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "Even Christopher Abbott didn't get KRAVEN THE HUNTER",
-        "description": "Didn’t understand KRAVEN THE HUNTER? Neither did Christopher Abbott",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/GgLov4J3pYA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/GgLov4J3pYA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/GgLov4J3pYA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/GgLov4J3pYA/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/GgLov4J3pYA/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/GgLov4J3pYA/sardefault.jpg",
-            "width": 1318,
-            "height": 2343
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 46,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "GgLov4J3pYA"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "ijkD9TlQpzfx9UUDBqbmcXR1Xfs",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjVWb0lxSjVwWUNv",
-      "snippet": {
-        "publishedAt": "2026-10-01T15:00:24Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "Christopher Abbott & Adam Driver are going from GIRLS to X-MEN",
-        "description": "The set of X-MEN is about to be a GIRLS reunion for Christopher Abbott and Adam Driver",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/5VoIqJ5pYCo/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/5VoIqJ5pYCo/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/5VoIqJ5pYCo/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/5VoIqJ5pYCo/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/5VoIqJ5pYCo/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/5VoIqJ5pYCo/sardefault.jpg",
-            "width": 1315,
-            "height": 2337
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 47,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "5VoIqJ5pYCo"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "oNsCAJo4N1bby7rlstnGRhnGW_Q",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLjc4WHJhSXZzTjB3",
-      "snippet": {
-        "publishedAt": "2026-10-01T12:06:48Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "Christopher Abbott on EAST OF EDEN, X-MEN, GIRLS, KRAVEN THE HUNTER, and more",
-        "description": "Christopher Abbott finally joins the podcast! Josh and Christopher sit down to chat about his new limited series EAST OF EDEN, why his time on GIRLS almost made him quit acting, how he landed the role of Charles Xavier in the upcoming X-MEN film, and how even he doesn’t understand what was going on in KRAVEN THE HUNTER. Plus, Christopher shares his reaction to losing a Tony Award, how a GAME OF THRONES fan mistook him for Kit Harington, and more! #happysadconfused #joshhorowitz #christopherabbott\n\nTo get early access to all of Josh's interviews plus bonus content, merch, and discounts to live events, go to patreon.com/happysadconfused\n\nMake sure you SUBSCRIBE to the channel so you don't miss any of Josh's interviews!\n\nSUPPORT THE SHOW BY SUPPORTING OUR SPONSORS!\nRula -- Rula patients typically pay $15 per session when using insurance. Connect with quality therapists and mental health experts who specialize in you at https://www.rula.com/happy #rulapod\n\nQuince -- Go to \u2060Quince.com/HAPPYSAD \u2060for free shipping and 365-day returns.\n\nLimited Time Offer–Get Huel today with my exclusive offer of 15% OFF online with my code happy15 at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060http://huel.com/happy15.\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 New Customers Only. Thank you to Huel for partnering and supporting our show!\n\nListen to the podcast on...\nAPPLE: https://podcasts.apple.com/us/podcast/happy-sad-confused/id827905050\n\nSPOTIFY: https://open.spotify.com/show/6cQa5xnTYHaIh6SAK4gW3w \n\nJosh on Twitter: https://twitter.com/joshuahorowitz\nJosh on Instagram: https://www.instagram.com/joshuahorowitz\nJosh on TikTok: @happysadconfused\n00:00 Introduction\n01:52 Christopher Abbott begins\n05:03 turning 40\n07:37 ambition\n08:47 getting into acting\n12:26 Ad -- Quince\n14:08 Ad -- Huel\n16:00 late bloomer\n18:38 perception of Christopher\n20:28 EAST OF EDEN\n25:37 early roles\n26:49 Ad -- Rula\n28:35 GIRLS\n33:07 X-MEN\n35:20 James White\n36:56 auditions\n39:55 KRAVEN\n41:45 X-MEN\n45:57 profoundly random questions",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/78XraIvsN0w/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/78XraIvsN0w/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/78XraIvsN0w/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/78XraIvsN0w/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/78XraIvsN0w/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "fhd": {
-            "url": "https://i.ytimg.com/vi/78XraIvsN0w/fhddefault.jpg",
-            "width": 1920,
-            "height": 1080
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 48,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "78XraIvsN0w"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
-    },
-    {
-      "kind": "youtube#playlistItem",
-      "etag": "7SEhQQWfqUvIv9rbPKt1ywYXzYY",
-      "id": "VVVmM1NwdXBmb0duWEVwZ2FHUkdQYnFnLkhiZFBKb2l0ZkJn",
-      "snippet": {
-        "publishedAt": "2026-09-30T13:00:31Z",
-        "channelId": "UCf3SpupfoGnXEpgaGRGPbqg",
-        "title": "John Cusack says characters should be allowed to be a**holes",
-        "description": "John Cusack thinks SAY ANYTHING would be criticized today",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/HbdPJoitfBg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/HbdPJoitfBg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/HbdPJoitfBg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/HbdPJoitfBg/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/HbdPJoitfBg/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          },
-          "shortsAspectRatio": {
-            "url": "https://i.ytimg.com/vi/HbdPJoitfBg/sardefault.jpg",
-            "width": 1313,
-            "height": 2334
-          }
-        },
-        "channelTitle": "Josh Horowitz",
-        "playlistId": "UUf3SpupfoGnXEpgaGRGPbqg",
-        "position": 49,
-        "resourceId": {
-          "kind": "youtube#video",
-          "videoId": "HbdPJoitfBg"
-        },
-        "videoOwnerChannelTitle": "Josh Horowitz",
-        "videoOwnerChannelId": "UCf3SpupfoGnXEpgaGRGPbqg"
-      }
     }
   ],
   "pageInfo": {
-    "totalResults": 1847,
+    "totalResults": 1861,
     "resultsPerPage": 50
   }
 }

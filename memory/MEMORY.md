@@ -1,48 +1,48 @@
-- [Abundance Wisdom editor](user-abundance-wisdom-editor.md) — runs Abundance Wisdom (Shorts) + Affan Afterhours (GTA); director, voice-dictated, wants md-file continuity
-- [Shorts automation project](project-abundance-shorts-automation.md) — AW Shorts built in code since 10-11; status log in the file; HUB = presets/youtube-shorts/abundance-wisdom/HUB.md
-- [Instagram beat mining](project-instagram-beat-mining.md) — his method (proven IG Reel beats, stitched); Claude runs it and must beat it; log research/instagram-beat-mining/
-- [Higgsfield connector](reference-higgsfield-connector.md) — AI video via claude.ai connector (not .mcp.json); preflight cost, approve before spending credits
-- [GTA channel](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md**; log + resume in JOBS.md; Shorts = Scott YT look
-- [One session per video](feedback-one-session-per-video.md) — a recording path goes to the channel editor session, which spawns ONE fresh session per video
-- [GTA: hot beats only](feedback-gta-hot-beats-only.md) — research-led GTA videos: only outlandish beats measured HOT; warm/cold (the iguana) never filler; topic = a big question players still ask on day 2
-- [GTA money guides: money per minute](feedback-gta-money-guide-format.md) — rank methods by $/minute (HUD before/after + time); frame = your first $1M in stages; read the map ROBBERIES menu
-- [GTA: his own style only](feedback-gta-own-style-only.md) — copy only his own edits (CREATOR-HAND.md); insets over mattes, razor+static cut zooms; EXCEPT face-cam reaction/talk videos = KSI+ style (REACTION-STYLE.md, 11-23)
-- [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; resume blocks, channel LESSONS after every review
-- [Epidemic Sound connector](reference-epidemic-sound-connector.md) — his music/SFX library; OAuth sign-in fails, use an API key in .mcp.json
-- [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu reels; style LOCKED in presets/instagram/affanwizu/; codeswitch_pass.py + caption_qa.py PASS; two-layer captions since 11-16
-- [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on his timeline is a DECISION; FCP XML before any batch change
-- [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — web pictures checked at full size; soft ones: Higgsfield upscale (AW), never on a real face (Lanczos) EXCEPT his own cam face on reaction thumbs (11-24: enhance + 3-4x identity check)
-- [Editable captions in Premiere](feedback-editable-captions-in-premiere.md) — @affanwizu captions ship as an editable .srt caption track + saved Track Style, never a rendered .mov
-- [YouTube sourcing](feedback-youtube-sourcing.md) — fetch b-roll here, H.264 into Premiere (VP9/AV1 4K OK if transcoded to an H.264 mezz first); search E:\Bullshit Folder before asking him
-- [Walkthrough videos](feedback-walkthrough-videos.md) — Tella/Loom brief: transcribe, sample the frames pointed at, resolve into BRIEF.md
-- [Humor style](reference-humor-style.md) — their comedy is timing not material; slow-downs are ALWAYS 0.8x, measured in the facecam preset's HUMOR.md
-- [AffanWiz channel](project-affanwiz-channel.md) — English brand (Skool); presets/youtube/affanwiz/ + youtube-shorts/affanwiz/, never mixed; resume in JOBS.md; research session `affanwiz-research`
-- [Workspace on the X: NVMe](project-workspace-on-nvme.md) — all at X:\Claude Projects; E: becomes a junction via move-to-nvme.cmd, never just deleted
-- [Abundance Wisdom long-form](project-abundance-wisdom-longform.md) — AW face-led long-forms start at presets/youtube/abundance-wisdom/PLAYBOOK.md (gist, never a lock); job log in the file
-- [AW long-form documentary rules](feedback-aw-longform-documentary-rules.md) — bespoke visual per line, FX catalog + MG, no freeze under VO, subtitles on clips, name every speaker
-- [Premium doc channels](reference-premium-doc-channels.md) — research/premium-doc-channels.md, coded into FX-01..80 in research/effects-catalog/CATALOG.md
-- [Onyx sample Shorts](project-onyx-sample-shorts.md) — prospect sample Shorts + his reaction (@affancuts); ▶ STATUS presets/youtube-shorts/onyx-samples/JOBS.md, rules in LESSONS.md
-- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); --segments at every cut; lapsed token = silent WATERMARK; no Iris on small faces/wides
-- [Captions just below the lips](feedback-captions-just-below-lips.md) — short-form captions at ONE base per video, just under the lips (y940-1130); never lift footage for it
-- [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes, white + coloured emphasis, smooth rise; @affanwizu: no ? until answered
+- [Abundance Wisdom editor](user-abundance-wisdom-editor.md) — runs AW Shorts + Affan Afterhours (GTA); director, voice-dictated, wants md continuity
+- [Shorts automation project](project-abundance-shorts-automation.md) — AW Shorts built in code; HUB = presets/youtube-shorts/abundance-wisdom/HUB.md
+- [Instagram beat mining](project-instagram-beat-mining.md) — his proven-IG-beats method; Claude runs it and must beat it
+- [Higgsfield connector](reference-higgsfield-connector.md) — AI video via the claude.ai connector; preflight cost, approve credits first
+- [GTA channel](project-gta-documentary-channel.md) — **GTA jobs start at presets/youtube/affan-afterhours/EDITOR.md**; log + resume in JOBS.md
+- [One session per video](feedback-one-session-per-video.md) — a recording path → the channel editor session → ONE fresh session per video
+- [GTA: hot beats only](feedback-gta-hot-beats-only.md) — only outlandish beats measured HOT; topic = a big question players still ask on day 2
+- [GTA money guides: money per minute](feedback-gta-money-guide-format.md) — rank by $/min (HUD before/after + time); $1M in stages; streamers are proof, never the frame (11-25)
+- [GTA: his own style only](feedback-gta-own-style-only.md) — copy only his own edits (CREATOR-HAND.md); face-cam reaction/talk videos = KSI+ (REACTION-STYLE.md)
+- [Long-term self-improving workflow](feedback-long-term-self-improving.md) — nothing lives only in chat; LESSONS after every review
+- [Epidemic Sound connector](reference-epidemic-sound-connector.md) — his library; use an API key in .mcp.json
+- [Urdu Instagram captions](project-urdu-instagram-captions.md) — @affanwizu Roman Urdu reels; style LOCKED in presets/instagram/affanwizu/
+- [The creator's hand is not a bug](feedback-creators-hand-is-not-a-bug.md) — a non-default value on his timeline is a decision; FCP XML first
+- [Sourced stills must be HQ](feedback-sourced-stills-must-be-hq.md) — web pictures checked at full size; upscale rules (AW, his own face) in the file
+- [Editable captions in Premiere](feedback-editable-captions-in-premiere.md) — @affanwizu: an editable .srt track + saved style, never a .mov
+- [YouTube sourcing](feedback-youtube-sourcing.md) — fetch b-roll here as H.264; search E:\Bullshit Folder before asking him
+- [Walkthrough videos](feedback-walkthrough-videos.md) — Tella/Loom brief: transcribe, sample the frames, write BRIEF.md
+- [Humor style](reference-humor-style.md) — comedy is timing; slow-downs always 0.8x (HUMOR.md)
+- [AffanWiz channel](project-affanwiz-channel.md) — English Skool brand; its own presets, never mixed; resume in JOBS.md
+- [Workspace on the X: NVMe](project-workspace-on-nvme.md) — all at X:\Claude Projects; E: is a junction, never deleted
+- [Abundance Wisdom long-form](project-abundance-wisdom-longform.md) — start at presets/youtube/abundance-wisdom/PLAYBOOK.md (gist, never a lock)
+- [AW long-form documentary rules](feedback-aw-longform-documentary-rules.md) — bespoke visual per line, FX catalog + MG, name every speaker
+- [Premium doc channels](reference-premium-doc-channels.md) — coded into FX-01..80 in research/effects-catalog/CATALOG.md
+- [Onyx sample Shorts](project-onyx-sample-shorts.md) — prospect samples + his reactions; ▶ STATUS onyx-samples/JOBS.md, rules in LESSONS.md
+- [Topaz Video AI](reference-topaz-video-ai.md) — scriptable (workflows/topaz-iris.py); lapsed token = silent watermark
+- [Captions just below the lips](feedback-captions-just-below-lips.md) — one caption base per video, just under the lips (y940-1130)
+- [Caption punctuation](feedback-caption-punctuation.md) — only ! ? and quotes; @affanwizu: no ? until answered
 - [No same-camera punch-ins](feedback-no-same-camera-punch-ins.md) — no instant zoom/whip within one camera; one keyframed push-in
 - [SFX on every graphic](feedback-sfx-on-every-graphic.md) — every pop-up/MG gets a clearly audible, crisp Epidemic SFX
 - [Affan exports himself](feedback-affan-exports-himself.md) — his own Premiere project: prepare the sequence, never exportAsMediaDirect
-- [Whooshes too loud](feedback-whooshes-too-loud.md) — whoosh SFX 10 dB under the yt4 level; a whoosh is texture, not a graphic's sound
-- [Voice-first mix](feedback-voice-first-mix.md) — voice loudest; music bed 12-14 LU under it, SFX ~8 dB under voice peaks; previews replay real levels
-- [Cinematic pacing, long-form](feedback-cinematic-pacing-longform.md) — AW long-form: FX-12 cards, 20 fps stepped, easy ease, builds end >= 1 s before a cut
-- [Premium SFX](feedback-premium-sfx.md) — refined, varied, SUBTLE, never goofy/UI; Onyx = one soft swish per entrance, 19-23 dB under voice
-- [No stray frames at overlays](feedback-no-stray-frames-at-overlays.md) — overlay edges land on a V1 cut or butt the next; never a 1-frame face flash
-- [Split screens: white line, captions on it](feedback-split-screen-white-line.md) — every split has a white separator line, and the whole video's caption base IS that line
-- [IG look: neon window](feedback-instagram-neon-window.md) — rounded window on black, red glowing type, no electric SFX; presets/instagram/neon-window/
-- [Instagram look: expensive minimal](feedback-instagram-expensive-minimal.md) — big black bars, animated captions, refined MGs, crisp SFX; research IG first
-- [Every video better than the last](feedback-every-video-better-than-last.md) — BRIEF says what is better; floor 5 % + whole FX catalog first; Scott >= 2 new moves
+- [Whooshes too loud](feedback-whooshes-too-loud.md) — whooshes 10 dB under the yt4 level
+- [Voice-first mix](feedback-voice-first-mix.md) — voice loudest; bed 12-14 LU under, SFX ~8 dB under voice peaks
+- [Cinematic pacing, long-form](feedback-cinematic-pacing-longform.md) — AW: FX-12 cards, 20 fps stepped, easy ease
+- [Premium SFX](feedback-premium-sfx.md) — refined, subtle, never goofy; Onyx = one soft swish per entrance
+- [No stray frames at overlays](feedback-no-stray-frames-at-overlays.md) — overlay edges land on a V1 cut; never a 1-frame flash
+- [Split screens: white line, captions on it](feedback-split-screen-white-line.md) — every split has a white line; the captions sit on it
+- [IG look: neon window](feedback-instagram-neon-window.md) — rounded window on black, red glowing type; presets/instagram/neon-window/
+- [Instagram look: expensive minimal](feedback-instagram-expensive-minimal.md) — black bars, animated captions, refined MGs; research IG first
+- [Every video better than the last](feedback-every-video-better-than-last.md) — BRIEF says what is better; floor 5 % + the FX catalog first
 - [No C-drive exports](feedback-no-c-drive-exports.md) — never put videos on C; export copies go to X:\Claude Projects\Exports\ (VE_EXPORT_DIR)
-- [Shutdown after an overnight job](feedback-shutdown-after-overnight-job.md) — finish, save, quit Premiere, wait for sessions, shutdown /s /t 300
+- [Shutdown after an overnight job](feedback-shutdown-after-overnight-job.md) — finish, save, quit Premiere, then shutdown /s /t 300
 - [Sequencing before the edit](feedback-sequencing-before-edit.md) — research incl. Instagram → sequence text → his OK → build
 - [Google Drive = G:](reference-google-drive.md) — Drive for desktop mounts as G:\My Drive; upload = copy there; nearly full
-- [Viral pick bar](feedback-viral-pick-bar.md) — a moment ENDS in a usable lesson or reversed belief (VIRAL-BAR.md); 'the viewer gets: ___'
-- [Model roles: Fable advises, Opus judges, Sonnet executes](feedback-use-fable-allowance.md) — NO Fable agents; builders Sonnet (xhigh), Opus judges, Fable advises; research = Opus + Fable advisor + Sonnet agents; check `advisorModel`
+- [Viral pick bar](feedback-viral-pick-bar.md) — a moment ends in a usable lesson or reversed belief (VIRAL-BAR.md)
+- [Model roles: Fable advises, Opus judges, Sonnet executes](feedback-use-fable-allowance.md) — NO Fable agents; Sonnet builds, Opus judges, Fable advises; check `advisorModel`
 - [Usage costs, measured](reference-usage-costs.md) — weekly cap ≈ $2,150–2,450 (1 % ≈ $22); % per job type; Fable advisor call ≈ $5
 - [Usage budget](feedback-usage-budget.md) — hit 100 % right at the Monday 7 AM reset; the nightly pace report says spend or go lean
 - [AW shorts session start](reference-aw-shorts-session-start.md) — AW short passes start at presets/youtube-shorts/abundance-wisdom/SESSION-START.md
@@ -51,73 +51,74 @@
 - [Head steady across cuts](feedback-head-steady-across-cuts.md) — same-camera jump cuts: the head never moves/resizes (head_track/head_lock)
 - [Work in silence](feedback-work-in-silence.md) — no sound while working; ffmpeg -f null only, close media tabs; in every brief
 - [No phone copies](feedback-no-phone-copies.md) — no phone encodes unless asked; masters to X:\Claude Projects\Exports\
-- [No price to silent prospects](feedback-no-price-to-silent-prospects.md) — a follow-up to a quiet host carries NO price; one free specific offer, price once they engage
-- [Onyx client criteria](feedback-onyx-client-criteria.md) — any genre, any sit-down talk format (11-24); 100K+, in-studio, $1,000+/mo (price = $1,000 for 30 Shorts since 11-24), weekly, weak Shorts
-- [Fix only what he named](feedback-fix-only-what-he-named.md) — a note changes only what he named; a named reference channel = ONLY that dimension, house kit for the rest (11-24); never swap his grade; a note = data + ONE render
-- [Cover script reading](feedback-cover-phone-reading.md) — full-frame graphic over every script-reading span; face cam TIGHT; prove lip sync
+- [No price to silent prospects](feedback-no-price-to-silent-prospects.md) — one free specific offer; price only once they engage
+- [Onyx client criteria](feedback-onyx-client-criteria.md) — sit-down talk, 100K+, in-studio, weekly, weak Shorts; $1,000 for 30 Shorts
+- [Fix only what he named](feedback-fix-only-what-he-named.md) — a note changes only what he named; a reference channel = only that dimension; never swap his grade
+- [Cover script reading](feedback-cover-phone-reading.md) — full-frame graphic over every script-reading span; prove lip sync
 - [Face cam max 4 s](feedback-face-cam-max-4s.md) — Shorts: face cam <= ~4 s without an overlay; rotation, zooms, tight pauses
 - [Music is his job](feedback-music-is-his-job.md) — AW code-built Shorts ship with NO music bed (AW Shorts only)
-- [AffanWiz beds are ours](feedback-affanwiz-beds-are-ours.md) — AffanWiz long-forms ship WITH his Epidemic beds laid by us (STYLE § 4)
-- [Reactions keep his whole intro](feedback-reaction-whole-intro.md) — the full credential intro stays in every Onyx reaction; the prospect is the real viewer
-- [Music arc](feedback-music-arc.md) — score a long-form by feeling: mellow sad start, intense where the story builds, mellow near the end; never one flat bed
+- [AffanWiz beds are ours](feedback-affanwiz-beds-are-ours.md) — AffanWiz long-forms ship with his Epidemic beds
+- [Reactions keep his whole intro](feedback-reaction-whole-intro.md) — his full credential intro stays in every Onyx reaction
+- [Music arc](feedback-music-arc.md) — mellow start, intense build, mellow end; never one flat bed
 - [Censor sensitive words](feedback-censor-sensitive-words.md) — drugs/self-harm words censored in audio AND captions; ask once on the next
-- [Clip pauses max 2 s](feedback-clip-pauses-max-2s.md) — no silence over 2 s inside third-party clips; no designed silent holds without asking
-- [No promo frames](feedback-no-promo-frames.md) — check every clip edge frame by frame; never a 1-2 frame "watch on Spotify/YouTube" promo
-- [Scott Shorts 20K guarantee](project-scott-clary-shorts-guarantee.md) — last 12 must average 20K or Onyx works free; START at the ENGINE ▶ STATUS; FUNNY test
-- [Bombas benchmark](feedback-bombas-benchmark.md) — every Scott idea scored against the Bombas Short (600K+) on B1-B11, better/on par/worse (ENGINE)
-- [Steady drift zoom on face cams](feedback-steady-drift-zoom.md) — every face-cam shot drifts in 2.5 %/s; Scott: POP grade + stronger sharpen
+- [Clip pauses max 2 s](feedback-clip-pauses-max-2s.md) — no silence over 2 s inside third-party clips
+- [No promo frames](feedback-no-promo-frames.md) — check every clip edge frame by frame for promo frames
+- [Scott Shorts 20K guarantee](project-scott-clary-shorts-guarantee.md) — last 12 must average 20K; start at the ENGINE ▶ STATUS
+- [Bombas benchmark](feedback-bombas-benchmark.md) — every Scott idea scored vs the Bombas Short (ENGINE)
+- [Steady drift zoom on face cams](feedback-steady-drift-zoom.md) — face cams drift in 2.5 %/s; Scott: POP grade + sharpen
 - [Labels at the bottom](feedback-labels-at-bottom.md) — labels sit LOW (top ~y1260-1280, above y1620), never the top band
 - [Motion effects need clips](feedback-motion-effects-need-clips.md) — approve VFX from a real-speed clip of the fastest spans, never from stills
-- [IG captions: whole line, subtle rise](feedback-captions-whole-line-subtle.md) — IG captions = one ~4-word line appearing whole with a very subtle eased rise; no word-by-word reveal
+- [IG captions: whole line, subtle rise](feedback-captions-whole-line-subtle.md) — one ~4-word line, whole, very subtle eased rise; no word-by-word
 - [Onyx samples: 30 fps, no Topaz](feedback-onyx-samples-30fps-no-topaz.md) — prospect samples ship at native 30 fps, no Iris/Chronos; the QA'd render is the final
 - [Hook = claim only](feedback-hook-claim-only.md) — no credit lines under the 0-3 s hook; key word coloured; captions from frame 1
 - [Onyx reactions: lean + V3](feedback-onyx-reactions-v2-standard.md) — REACTIONS-LEAN.md: 1 Sonnet session, Opus cut + QC, target 0.8 %; sound = V3
-- [Onyx sample = the permitted Short, enhanced](feedback-onyx-sample-is-the-permitted-short.md) — re-edit the EXACT permitted Short; enhance = restructure from the episode
+- [Onyx sample = the permitted Short, enhanced](feedback-onyx-sample-is-the-permitted-short.md) — re-edit the exact permitted Short; enhance from the episode
 - [AW subscribe CTA](feedback-aw-subscribe-cta.md) — 2 subtle mid SUBSCRIBE prompts, END SCREEN off; kit abundance-wisdom/cta/, README § 12
 - [Bolt Motivation look](feedback-bolt-motivation-look.md) — AW template = projects/mj-son-step-outside/ + stacked splits & cutaways (README § 13)
 - [AW transition zoom](feedback-aw-transition-zoom.md) — one push-in per SHOT CHANGE, speeds into the cut; no sine ease or flip-flops
-- [AW overlays: recognisable + crisp](feedback-aw-overlays-recognisable-crisp.md) — crisp, known faces; white line ON the edge; letterbox = blur, never black
-- [Icarus track + subtle bed recipe](reference-icarus-track.md) — Tony Ann piano on E:; flat bed, voice >= 10 dB over (music/mix_icarus.py)
-- [First-party HQ bits](feedback-first-party-hq-bits.md) — HQ first-party video + audio; keyword-scan local docs; new bits on a v2 sequence
+- [AW overlays: recognisable + crisp](feedback-aw-overlays-recognisable-crisp.md) — crisp known faces; white edge line; letterbox = blur
+- [Icarus track + subtle bed recipe](reference-icarus-track.md) — Tony Ann piano on E:; music/mix_icarus.py
+- [First-party HQ bits](feedback-first-party-hq-bits.md) — HQ first-party video + audio; new bits on a v2 sequence
 - [No false completion line](feedback-no-false-completion-line.md) — never type his 'best sequence possible' line with a known gap open
 - [Shorts titles: 5 words max](feedback-shorts-titles-five-words.md) — blunt statement, 21-40 chars; overrides ENGINE title format
-- [Build, don't block on questions](feedback-build-dont-block-on-questions.md) — build on defaults, questions in the delivery note; SEQUENCES: text → his OK → build
+- [Build, don't block on questions](feedback-build-dont-block-on-questions.md) — build on defaults, questions in the note; sequences still need his OK
 - [Pre-pitch checklist](feedback-pitch-checklist.md) — no AW pitch until PITCH-CHECKLIST.md passes; a fail is logged
-- [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — HP film young cast OK; a public figure's own teen footage OK (11-14); other real children flagged
-- [Checklist shape is a gate](feedback-checklist-shape-is-a-gate.md) — first filter = Instagram virality; gate-by-gate evidence; two facts = two topics
-- [No below-bar pitches](feedback-no-below-bar-pitches.md) — if nothing clears the bar, say "no pick" first; score B1 by "would Affan know this face?"
-- [The Michael Jackson of each space](feedback-mega-famous-per-niche.md) — AW wins on the most famous thing per space (MJ, Speed, Harry Potter, GTA 6 since 11-19); new lanes name it first
+- [Minors rule: HP film OK](feedback-minors-rule-hp-film-ok.md) — HP film cast and a public figure's own teen footage OK; other children flagged
+- [Checklist shape is a gate](feedback-checklist-shape-is-a-gate.md) — first filter = Instagram virality; two facts = two topics
+- [No below-bar pitches](feedback-no-below-bar-pitches.md) — if nothing clears the bar, say "no pick" first
+- [The Michael Jackson of each space](feedback-mega-famous-per-niche.md) — AW wins on the most famous thing per space; new lanes name it first
 - [Max effort on every asset](feedback-max-effort-every-asset.md) — every sequence/pick/pitch passes MAX-EFFORT-GATE.md first
 - [AffanWiz teaches faceless only](feedback-affanwiz-teach-faceless.md) — AffanWiz lessons match his Skool (faceless Shorts); no face-led format lessons
 - [AffanWiz Studio access](reference-affanwiz-studio-access.md) — Studio not reachable from Chrome; ask Affan for impressions/CTR/AVD
 - [Natural speech, whole lines](feedback-natural-speech-whole-lines.md) — never cut him mid-phrase; one-take and transition lines stay whole
 - [Subtle transitions](feedback-subtle-transitions.md) — Skool VSL: soft dissolves, no zoom transitions, no CTA push, head centred
-- [Scott IG: minimal format](feedback-scott-ig-minimal-format.md) — never INVENT a look; a code-built COPY of a reel he picked is OK (DOAC Katt Williams spec in file)
+- [Scott IG: minimal format](feedback-scott-ig-minimal-format.md) — never invent a look; a code-built copy of a reel he picked is OK
 - [Reactions: fast, not perfect](feedback-reactions-fast-not-perfect.md) — one build, one review, one fix round, deliver
-- [Don't disturb his Premiere](feedback-dont-disturb-his-premiere.md) — never move his playhead; offline frames + quiet-mode writes; no parallel large-v3 ASR
-- [YouTube Data API keys](reference-youtube-data-api-key.md) — one key per job (GTA 6 watcher, AW research); no downloads/transcripts; AffanWiz may list channels with the AW key
-- [News Shorts get GPU priority](feedback-news-shorts-gpu-priority.md) — time-sensitive Shorts outrank research on gpu.lock; ask the holder to pause, never kill
-- [AffanWiz: borrowed faces, Skool members](feedback-affanwiz-borrowed-faces.md) — goal = Skool members; borrowed faces/brands carry the point; ideas backed by stats, 'not Fugazi'
-- [Plain words only](feedback-plain-words-only.md) — Scott Reels/Shorts in plain everyday words, no coined terms; measure reading level first
+- [Don't disturb his Premiere](feedback-dont-disturb-his-premiere.md) — never move his playhead; no parallel large-v3 ASR
+- [YouTube Data API keys](reference-youtube-data-api-key.md) — one key per job (GTA watcher, AW research); metadata only, no downloads
+- [News Shorts get GPU priority](feedback-news-shorts-gpu-priority.md) — time-sensitive Shorts outrank research on gpu.lock; never kill
+- [AffanWiz: borrowed faces, Skool members](feedback-affanwiz-borrowed-faces.md) — goal = Skool members; borrowed faces carry the point; stats-backed ideas
+- [Plain words only](feedback-plain-words-only.md) — Scott: plain everyday words, no coined terms
 - [Time words match the post date](feedback-time-words-match-post-date.md) — check every today/this week/this month line against the post date
-- [DOAC kit](reference-doac-kit.md) — projects/_client-scott-clary/_doac-kit: Scott's DOAC-look Reels (30 fps check, 60 fps Chronos final)
-- [Thumbnails = proven formats](feedback-thumbnails-proven-formats.md) — remake proven formats (cross-niche; GTA/gaming: gaming niche only; podcasts: MW/DOAC); ~10 real contenders + numbers, he picks; if he names one, build it
-- [Thumbnails: watch the video first](feedback-thumbnail-watch-first.md) — no thumbnail before the cut is watched (edit session sends offsets/clip map/cuts.json); card = the interaction's freeze frame, face = his reaction to it
-- [No audio-only podcasts](feedback-no-audio-only-podcasts.md) — a pick needs real VIDEO of the speaker, checked at pick stage; never stock b-roll over audio-only
-- [Keep the person centred](feedback-keep-person-centred.md) — Stygar v1 sat left: track the face (never a static off-centre crop), subtle continuous zoom, explainer graphics in the bottom band; fork at stygar work/v2
-- [Caption shadow stronger](feedback-caption-shadow-strong.md) — DOAC kit shadow too faded on bright wardrobe; use work/v2/shadow_v4.py two-layer (contrast 2.0 -> 3.5 worst)
-- [Cover one source: no proof rounds](feedback-cover-one-source-no-proof-rounds.md) — a video covering ONE fresh source he named = research that source only; no IG/YT proof, other outlets or old interviews
-- [GTA 6 on PlayStation, GPU free](feedback-gta6-on-playstation-gpu-free.md) — Affan 11-18: he plays GTA 6 on PS, not this PC; GPU work is fine while he plays (gpu.lock order + no parallel large-v3 still apply)
-- [Live research until he records](feedback-live-research-until-recording.md) — scripts stay live until he records; HARD GATE since 11-19 (Kraken/UFO/Red Hulk missed): YouTube API + watcher topic check before recording AND before the edit
-- [Absence claims need full-res checks](feedback-absence-claims-full-res.md) — never script "not in the footage" from thumbnails; 1080p frame-by-frame or "I couldn't find it"
+- [DOAC kit](reference-doac-kit.md) — projects/_client-scott-clary/_doac-kit (30 fps check, 60 fps final)
+- [Thumbnails = proven formats](feedback-thumbnails-proven-formats.md) — remake proven formats; ~10 real contenders + numbers, he picks; GTA = gaming niche only
+- [Thumbnails: watch the video first](feedback-thumbnail-watch-first.md) — no thumbnail before the cut is watched; card = the freeze frame, face = his reaction
+- [No audio-only podcasts](feedback-no-audio-only-podcasts.md) — a pick needs real VIDEO of the speaker, checked at pick stage
+- [Keep the person centred](feedback-keep-person-centred.md) — track the face, never a static off-centre crop; subtle zoom; graphics in the bottom band
+- [Caption shadow stronger](feedback-caption-shadow-strong.md) — DOAC kit: use work/v2/shadow_v4.py two-layer shadow
+- [Cover one source: no proof rounds](feedback-cover-one-source-no-proof-rounds.md) — a video on ONE fresh source he named = research that source only
+- [GTA 6 on PlayStation, GPU free](feedback-gta6-on-playstation-gpu-free.md) — he plays on PS, not this PC: GPU work is fine (gpu.lock + no parallel large-v3 still apply)
+- [Live research until he records](feedback-live-research-until-recording.md) — scripts stay live until he records; HARD GATE: YouTube API + watcher topic check before recording and the edit
+- [Absence claims need full-res checks](feedback-absence-claims-full-res.md) — never script "not in the footage" from thumbnails; 1080p or "I couldn't find it"
 - [GTA 6: gameplay first](feedback-gta6-gameplay-first.md) — new GTA 6 gameplay is the main picture; MG only as pointers; full SFX + Epidemic music
-- [Streamer face cams: label, don't blur](feedback-streamer-facecams-labelled.md) — GTA streamer clips keep the face cam visible with the name on it; chat + viewer counts stay blurred
-- [Wikimedia stills route](reference-wikimedia-stills-route.md) — Commons doesn't resolve here, upload host 429s; pull via en.wikipedia Special:Redirect/file?width=N
-- [Scott IG = Scott's advice](feedback-scott-ig-advice-yt-stories.md) — IG Reels: SCOTT giving deep motivation/practical advice on real video; funny business stories are YouTube only
-- [GTA 6 launch strategy](project-gta6-launch-strategy.md) — his play = campaign funny moments + viral funny clips only; What If, guides, GTA 5 vs 6 comparisons = research-led faceless VO videos
-- [GTA dialogue holds = real game audio](feedback-gta-dialogue-real-audio.md) — a quote hold plays the character's real line in sync, never a card over silence; streamer voice still out
-- [Verify before done, no late writes](feedback-verify-before-done-no-late-writes.md) — check delivered files BEFORE "done" (he exports in minutes); after a hand-off, no writes to his sequence without his go
-- [Scott source picture quality](feedback-scott-source-picture-quality.md) — Karnazes rejected: soft Zoom source; pick needs full-size quality check per span, never crop Zoom 16:9 to 9:16 + sharpen; QA views every section
-
-- [No hedging on confirmed facts](feedback-no-hedging-confirmed-facts.md) — GTA scripts state shown/widely-reported facts flatly, no apparently/allegedly; weak claims cut, not hedged
-- [Instagram reading method](reference-instagram-reading-method.md) — DOM sections not the private API (denied); views from reels tab; pace.sh instagram before every load
+- [Streamer face cams: label, don't blur](feedback-streamer-facecams-labelled.md) — keep streamer face cams with the name on; blur chat + viewer counts
+- [Wikimedia stills route](reference-wikimedia-stills-route.md) — pull via en.wikipedia Special:Redirect/file?width=N
+- [Scott IG = Scott's advice](feedback-scott-ig-advice-yt-stories.md) — IG = Scott giving advice on real video; funny stories = YouTube only
+- [GTA 6 launch strategy](project-gta6-launch-strategy.md) — his play = funny moments; What If, guides, 5 vs 6 = research-led faceless VO
+- [GTA dialogue holds = real game audio](feedback-gta-dialogue-real-audio.md) — a quote hold plays the real line in sync, never a card over silence
+- [Verify before done, no late writes](feedback-verify-before-done-no-late-writes.md) — check delivered files BEFORE "done"; no writes to his sequence after a hand-off without his go
+- [Scott source picture quality](feedback-scott-source-picture-quality.md) — full-size quality check per span; never crop Zoom 16:9 to 9:16 + sharpen
+- [No hedging on confirmed facts](feedback-no-hedging-confirmed-facts.md) — state shown/widely reported facts flat; cut weak claims, never hedge
+- [Instagram reading method](reference-instagram-reading-method.md) — DOM sections, not the private API; views from the reels tab; pace.sh per load
+- [Spoiler warning stays](feedback-spoiler-warning-stays.md) — his spoken spoiler warning stays whole at the open, face/card only (11-25)
+- [A/V sync gate](feedback-av-sync-gate.md) — lips, speech, captions in sync: full-decode cuts, captions from final-mix words, checked every version

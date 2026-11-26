@@ -188,6 +188,8 @@ reason to stop him; (3) the clap shows on both.
 Only then start the real take. The edit session runs this check on the test files if he sends them. **The thumbnail face is a frame of this camera (his call 24 Nov):** keep the mic off your mouth, and laugh toward the camera at least once (`REACTION-THUMBNAILS.md` § 10).
 
 ## 14. Lessons
+- **2026-11-25, GTA 41 take 2 REJECTED → v2 (read before any reaction build):** `X:/Claude Projects/GTA 6/research/ksiplus-style-2026-11-25/FOUNDATION.md` (Fable study of 7 KSI+ uploads) overturns 10 claims of this file (its § 17): clips ARE frozen and punched into, text gets a yellow highlighter, sub-booms on whips, face zooms are 1-frame steps on fixed levels, the box crop is HC 1000. Layout is chosen BY REFERENT, never by the reel's play state. The applied spec: `projects/gta6-npc-organic/take2/v2/BUILD-PLAN.md`; lessons: `LESSONS.md` 2026-11-25. This file gets the v2 rewrite after his verdict on the pilot.
+
 Log every review note of the first job here as *note → change → file*, and in `LESSONS.md`.
 - **GTA 41, 24 Nov: "my facecam should be on the left".** → The cam box moves to the TOP-LEFT (outer x20–366, y21–412, border, trim
   and AFTERHOURS unchanged); the laugh pulse anchors on its top-left corner. A 9:16 reel sits at x656–1264, so the box never covers the

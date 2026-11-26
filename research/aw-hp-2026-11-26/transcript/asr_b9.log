@@ -1,0 +1,50 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 06:54:51 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/xdlUgrpsZf4_hbc_bts2.wav
+[   0.03-  19.66] I can't be sure.
+[  20.30-  36.75] Stupefy!
+[  48.75-  55.63] Thank you.
+## research/aw-hp-2026-11-26/src/B4hHnkyOtkM_hbc_onset.wav
+[   4.57-  28.52] I didn't really leave myself anywhere to go but somehow I did a top what I did on the first one. She's sort of without limits. It's quite interesting, she's a bully and like most bullies I think bullies are terrified of everything really. That's why they have to scare other people before they get scared. That's her way of disabling people is to terrify.
+## research/aw-hp-2026-11-26/src/KUKULvha5Tk_roleswap_0000.wav
+[   8.84-  28.18] Part two is operatic and epic. Gringotts Bank is obviously a huge undertaking. Harry and Hermione and Ron are there with Gritpop. And they're breaking into Gringotts to see if there's a Horcrux in Bellatrix's vault. Adam Lestrange. Good morning.
+[  28.62-  46.61] It's a pretty daunting adventure. Ron's disguised as the Death Eater. He looks fantastic. So, with the help of a bit of makeup, actually, we have a really strong character. Quite enjoyed all those scenes where we were all kind of disguised and stuff. It was basically a full beard and Gary Edmonds, I would think, I think.
+[  46.61-  75.48] They darkened my eyebrows, and it was quite strange. People I've known for, like, years... ...kind of just walked past me and didn't have a clue who I was. It was quite fun. But it was quite a weird scene to get your head around. I'll try and make things simple, because it's confused enough. I'm Helen, and I come to Harry Potter. They pay me to pretend to be Bellatrix. Now, I've got to pretend to be Hermione pretending to be Bellatrix.
+[  75.68-  98.85] David really wanted me heavily involved... ...in helping Helena really become me. The way that Helena works as an actress... ...is that she takes research for her character really seriously. So she'd just sit and ask me question after question about Hermione... ...in the most crazy details. Emma Watson is Helena Boncock... ...slash, bell tips are strange. Ready to go.
+[  98.85- 120.03] We had a session with Helena and Emma in a big rehearsal room... ...where Emma basically did the scene. She said, okay, Emma, just show us how you'd walk up to the bank teller... ...what you'd say to him, how you'd say it. I hardly think that will be necessary. I've never been so self-aware... ...the way Helena was going, you know you do this. And I was like, I had no idea I do that. Like, one of them.
+## research/aw-hp-2026-11-26/src/KUKULvha5Tk_roleswap_0200.wav
+[ 120.03- 149.53] When I laugh, I go ask for air. I'd never realized I'd been there before. Or, like, I play with my... I'm doing it right now. I play with my hands a lot, which I never realized. But these are all treats that obviously come out in Hermione because I'm playing her. She gulps before each. It's like she's drowning. I'm sort of in Emma's mindset, so I'm thinking, okay, I've got to get into Gringotts. Are they gonna recognize me? I'm thinking I mustn't blow it. So there's a lot of concern. So she's very serious, and she tries desperately hard, Hermione, because she always feels that she's not quite good enough.
+[ 149.53- 176.04] Did she just give herself a hug? I think Hermione is kind of growing into her looks and kind of growing into her body... ...but I think she still feels insecure about it... ...and she's kind of quite shy and quite almost prudish in a way. So to play Bellatrix, who has these amazing voluptuous breasts... ...and she wears a corset and she's evil and she's a witch... ...I think she just feels really uncomfortable about the whole thing.
+[ 177.47- 185.84] Not only is the tension of being in this really threatening environment, Gringotts not wanting to be exposed, but also there's the fact that
+[ 186.22- 215.64] Hermione just wouldn't want to be Bellatrix. She hates her. What she was trying to get across is... ...how uncomfortable Hermione would be in Helena's body... ...because they are so different as people. You know, that's good. That's very Ammonite. And so you could see the awkwardness of Helena's walk in there. And I think it adds a strange tension and also some humor. It was funny. It's sweet. It was... I really liked working with her.
+[ 217.16- 236.27] It was quite amazing, really. She really got the kind of walk and the way Emma kind of speaks and stuff. I hardly think that'll be necessary. It's a role that has certain challenges. But Helena made a very good Emma. And it was quite charming, actually. I don't like to be kept waiting. Very well, Madam Lestrange. You have to call me Emma. I'm sorry, Emma.

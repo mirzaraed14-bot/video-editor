@@ -1,0 +1,48 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 05:39:23 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/clev2m.wav
+[  27.67-  48.31] Voldemort has split his soul into seven pieces to make him immortal. And he's hidden these seven pieces of his soul in different objects that are related to his past and related to him and who he is. And so Harry, Hermione and Ron have to find the Horcruxes and destroy them one by one to make him mortal again. Good job!
+[  52.92-  69.22] It's Harry, Hermione and Ron on the road, on the move. They're like refugees. They're being hunted. They don't have a home anymore. They're not safe anywhere anymore. And they're on a kind of mission. They're on a journey. They're on a...
+[  69.78-  85.00] crusade as it were. So it makes it very exciting. I feel kind of relieved that we've left Hogwarts behind in a sense and it's really about the three of us and what we're doing and it feels a lot more grown up.
+[ 113.55- 115.41] you
+## research/aw-hp-2026-11-26/src/clevj_0000.wav
+[  33.65-  53.07] They just keep getting better and better. How do you guys do this? I don't know. I have to say, it seems so unusual that a film franchise, the films get better as they go along. It's usually like they get worse, but we seem to be going that way, so I'm happy. I feel like this is significantly better. It's not just kind of like,
+[  53.07-  74.80] I felt the other ones kind of like gradually, whereas the last two I feel like are just on a totally different plane. Yeah, but also you guys are giving it your all. You know it's coming to an end and the material is just so rich and amazing. You're out of your element. You're not in Hogwarts, so there's so much to work with. Did you find that it was just a huge challenge doing these and shooting them both at the same time?
+[  74.80-  96.72] Yeah, and it was a huge challenge. Doing even just one Harry Potter film is exhausting, let me tell you. Doing two back to back, by the end of it we were all on our knees. We were really struggling. But I feel like in a way they have so much energy and momentum because we did them both at once and it was all mad and we were shooting
+[  96.72- 120.03] from one movie and then going to the part two and it was all just kind of crazy but I somehow it seems to have come out really well so we were obviously doing something right oh yeah I'd say and of course you know that that that scene the poor scene when you guys are racing you know Daniel says he's the fastest I don't know you look like you were going pretty fast I was going pretty fast I've never run that fast in my life I we were just we were just really
+## research/aw-hp-2026-11-26/src/clevj_0200.wav
+[ 120.03- 145.12] going for it. And Dan and I are pretty competitive, so we turned it into a bit of a race. But it was hard because we all got started off on different marks. We couldn't really tell who was running the fastest, but I think it was me. But we won't tell him that. I have to tell you, I don't even know how on earth you even begin to look back at these ten years and the experience that you've had in your life, how do you even begin to put that into words?
+[ 145.92- 172.70] It's very strange trying to answer questions about it because a lot of the time I don't have answers. People are like, what is your life going to look like when this is over? And I'm like, I have no idea. This has been all I've ever known. This is how I grew up. I can barely remember my life before Harry Potter. So, I've got a lot to figure out. It's been huge. It's been huge.
+[ 172.76- 195.38] Yeah, and just an amazing, the people that you've met, the friends that you've made. The places I've travelled, the experiences I've had, it's been amazing. I'm so thankful that I've had such a unique life and such a unique chance and experience and it's been absolutely amazing.
+[ 195.38- 221.15] There's so many wonderful scenes in this film, I could talk forever, but one that really stood out for me and touched me so deeply was the dancing scene between you and Daniel in that tent. I don't know, for me, your friendship was on your faces, like your real life R-E-A-L was going into your R-E-E-L life. Did you find that, especially with the three of you and how close you've become, that this was really a friendship bond more than anything?
+[ 221.45- 240.03] It's funny, David really wanted us to use that. He was like, come on, you guys have grown up together. You are like brother and sister. Bring that to the roles. Bring that to your work. And we did. Thank you, as you said. I think you can

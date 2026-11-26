@@ -1,0 +1,50 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "4yL0_ZS2g43LIcwR7A6Gb1aoBt8",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "vfKkGhMpqe8JR8ocmzMRblmm4iY",
+      "id": "UCt9nYeSz90lnOnaVFjxFJzw",
+      "snippet": {
+        "title": "Nick Eh 30",
+        "description": "• Daily Fortnite Streamer\n• Family-Friendly\n• Positivity\n• Canadian/Lebanese\n• Born in Nova Scotia, Canada\n\n#EhTeam\n",
+        "customUrl": "@nickeh30",
+        "publishedAt": "2014-12-20T21:34:17Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/R57uW-BLxSSFLQTmh7ELdORWPMJkEPkAzKxCWb1z6ctjU4lH4O9s6_Q9LdVmfq8JmfsC2XzKbA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/R57uW-BLxSSFLQTmh7ELdORWPMJkEPkAzKxCWb1z6ctjU4lH4O9s6_Q9LdVmfq8JmfsC2XzKbA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/R57uW-BLxSSFLQTmh7ELdORWPMJkEPkAzKxCWb1z6ctjU4lH4O9s6_Q9LdVmfq8JmfsC2XzKbA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "defaultLanguage": "en",
+        "localized": {
+          "title": "Nick Eh 30",
+          "description": "• Daily Fortnite Streamer\n• Family-Friendly\n• Positivity\n• Canadian/Lebanese\n• Born in Nova Scotia, Canada\n\n#EhTeam\n"
+        },
+        "country": "CA"
+      },
+      "statistics": {
+        "viewCount": "1644042384",
+        "subscriberCount": "8760000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "713"
+      }
+    }
+  ]
+}

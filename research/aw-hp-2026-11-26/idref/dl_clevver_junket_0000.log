@@ -1,0 +1,39 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=BTHs9dsImLs
+[youtube] BTHs9dsImLs: Downloading webpage
+[youtube] BTHs9dsImLs: Downloading tv samsung player API JSON
+[youtube] BTHs9dsImLs: Downloading visionos player API JSON
+[youtube] BTHs9dsImLs: Downloading player b485e332-main
+[youtube] [jsc:deno] Solving JS challenges using deno
+[youtube] BTHs9dsImLs: Downloading m3u8 information
+[info] BTHs9dsImLs: Downloading 1 format(s): 140-18
+[info] BTHs9dsImLs: Downloading 1 time ranges: 0.0-120.0
+[download] Destination: research\aw-hp-2026-11-26\idref\BTHs9dsImLs_clevver_junket_0000.m4a
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'https://rr13---sn-jtcxg-3ipee.googlevideo.com/videoplayback?expire=1795674813&ei=XX4Ha7uYDceP8uMPmY_qkQk&ip=103.244.175.64&id=o-AHneSCq-79jymBMRFZGs8uEvNiCD_3Qk2Xxy41_dm0Nu&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=263&met=1795653213%2C&mh=1v&mm=31%2C29&mn=sn-jtcxg-3ipee%2Csn-ajhju5-5o&ms=au%2Crdu&mv=m&mvi=13&pl=25&rms=au%2Cau&pcm2=yes&initcwndbps=766375&bui=AZFAFb8Q5rAbdRBPVCdJrMOVxGxjrgPrhA0oeP7gtcjboGanp-c6htc-dKcNP5ZolbqRbuKufojbW2Nx&spc=nfZ8Znz4uKpFCck5cI-W-5zc4jmo45TCvijkViwX_F_ex0lN9eyj4ZoJM1vw&vprv=1&svpuc=1&xtags=acont%3Doriginal%3Alang%3Den-US&mime=audio%2Fmp4&rqh=1&gir=yes&clen=6859345&dur=423.787&lmt=1775028445051738&mt=1795652784&fvip=4&epbp=1&keepalive=yes&fexp=51565116%2C52338434&c=VISIONOS&txp=8208224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cxtags%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AE0s2JYwRAIgd5wU7BNZ5k4UDOC1935ZMiqhlJOz4KaSCiRjJ4Zy7gECIE8cIwKGhRThOBTVGKnA3IaV5EA1IiyWG12nD3d5tZ8m&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgcHnHI7ZnRoJV3aQWIKnqHnvP5Nn6iNiWjGDgVaJ-CbUCIFDdYKTOcjx56jMKjG-5Zb4a1knw1DlqBxFmM8FDR266':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    creation_time   : 2026-04-01T07:21:39.000000Z
+    encoder         : Google
+  Duration: 00:07:03.79, start: 0.000000, bitrate: 129 kb/s
+  Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2026-04-01T07:21:39.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+[ipod @ 0000023570e872c0] Warning, extension is not .m4a nor .m4v Quicktime/Ipod might not play the file
+Output #0, ipod, to 'file:research\aw-hp-2026-11-26\idref\BTHs9dsImLs_clevver_junket_0000.m4a.part':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf63.1.101
+  Stream #0:0(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2026-04-01T07:21:39.000000Z
+      handler_name    : ISO Media file produced by Google Inc.
+Press [q] to stop, [?] for help
+[out#0/ipod @ 0000023570d04080] video:0KiB audio:1875KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 1.120904%
+size=    1896KiB time=00:02:00.00 bitrate= 129.4kbits/s speed= 652x elapsed=0:00:00.18    
+[download] 100% of    1.85MiB in 00:00:01 at 1.74MiB/s

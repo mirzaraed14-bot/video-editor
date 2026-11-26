@@ -202,7 +202,7 @@ html, body {{ margin: 0; background: transparent; }}
 .glint {{ position: absolute; visibility: hidden; background: #FFFFFF; filter: drop-shadow(0 0 12px #CFF7FF) drop-shadow(0 0 26px #9EE7FF);
   clip-path: polygon(50% 0%, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0% 50%, 42% 42%); }}
 #wm {{ position: absolute; left: 0; width: {W}px; text-align: center; font-family: "YTC Anton", sans-serif; font-size: 47px;
-  letter-spacing: 0.01em; color: rgba(255,255,255,0.38); transform: skewX(-12deg); text-shadow: 0 2px 4px rgba(0,0,0,0.18); line-height: 1; }}
+  letter-spacing: 0.01em; color: rgba(255,255,255,{spec.get('watermark_opacity', 0.38)}); transform: skewX(-12deg); text-shadow: {spec.get('watermark_shadow', '0 2px 4px rgba(0,0,0,0.18)')}; line-height: 1; }}
 {extra.get("css", "")}
 </style>
 </head>

@@ -128,8 +128,13 @@ def srt(job, max_words, hang=None):
     out = os.path.join(job, 'outputs', slug(meta['sequence']) + '-captions.srt')
     tw = json.load(open(os.path.join(job, 'transcript', 'words.json'), encoding='utf-8'))['clips'][0]['words']
     tw = corrected(tw, out)
-    clips = [tuple(float(x) for x in l.split('|')[1:3])
-             for l in open(os.path.join(job, 'brief', 'tracks.txt'), encoding='utf-8') if l.startswith('A1|')]
+    tracks = os.path.join(job, 'brief', 'tracks.txt')
+    if os.path.exists(tracks):
+        clips = [tuple(float(x) for x in l.split('|')[1:3])
+                 for l in open(tracks, encoding='utf-8') if l.startswith('A1|')]
+    else:   # a job rebuilt by presets/instagram/affanwizu/sequence_reference.py has transcript/sequence.json instead (Seq 01/25, 26 Nov)
+        seq = json.load(open(os.path.join(job, 'transcript', 'sequence.json'), encoding='utf-8'))
+        clips = [(float(c['s']), float(c['e'])) for c in seq['a'] if c['t'] == 0]
     end = max(b for _, b in clips)
     cuts = sorted({a for a, _ in clips} | {b for _, b in clips})
     silent = [(a, b) for a, b in clips if not any(a <= w['start'] < b for w in tw)]

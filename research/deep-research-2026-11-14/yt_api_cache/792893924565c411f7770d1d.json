@@ -1,0 +1,55 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "wex120Mx_nitprTBwIOYAXdCOTU",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "JqeL78a4JPbThvh_twq5tOw8ADg",
+      "id": "UCIgcCdrKd3z3FQrUUlYuVkA",
+      "snippet": {
+        "title": "INYO PROJECT K-POP",
+        "description": "#InYo\nВторой канал творческого объединения INYO project, на котором выходят видео связанные с K-Pop культурой.\nОсновной канал : https://www.youtube.com/channel/UCmAo_fQlDKA5b61zecMTWXg",
+        "customUrl": "@insideofyou",
+        "publishedAt": "2015-02-21T01:00:17Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_mvyDPd9DmPNaCE4ObWKFX4SNWDVntnj-aUvGyqkjdTekQ=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_mvyDPd9DmPNaCE4ObWKFX4SNWDVntnj-aUvGyqkjdTekQ=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_mvyDPd9DmPNaCE4ObWKFX4SNWDVntnj-aUvGyqkjdTekQ=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "INYO PROJECT K-POP",
+          "description": "#InYo\nВторой канал творческого объединения INYO project, на котором выходят видео связанные с K-Pop культурой.\nОсновной канал : https://www.youtube.com/channel/UCmAo_fQlDKA5b61zecMTWXg"
+        },
+        "country": "RU"
+      },
+      "contentDetails": {
+        "relatedPlaylists": {
+          "likes": "",
+          "uploads": "UUIgcCdrKd3z3FQrUUlYuVkA"
+        }
+      },
+      "statistics": {
+        "viewCount": "7410",
+        "subscriberCount": "22",
+        "hiddenSubscriberCount": false,
+        "videoCount": "17"
+      }
+    }
+  ]
+}

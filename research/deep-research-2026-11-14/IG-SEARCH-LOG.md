@@ -1058,3 +1058,113 @@ Correction to the follow-up rows above: the stamps "17:2x", "17:3x" and "17:4x" 
 - 2026-11-23 keyword "social media iceberg": 5 results (weak)
 - 2026-11-23 keyword "creator economy iceberg": 0 results (not retried)
 - 2026-11-23 keyword "iceberg explained": 5 results (22 searches total this session, none blocked)
+| Wed 25 Nov | casting-43 | kw: gta 6 lucia actress | 5 tiles (renders ~8 s) | DdBzULVt772 @ricks_2388 22.3K likes; DgGanSGIpxU @itsallmaad 12.7K; De5sqawp7UK @project.vice 11.5K; DgAuZj9JXOF @viralpopculture 38.3K; Df7dcDdjG7e @vybeezy 24K |
+| Wed 25 Nov | casting-43 | kw: gta 6 jason actor | 23 tiles (dense, 19-23 Nov photo posts) | Df7eesMkcb6 @complexpop 35.6K likes; Df75q_cISXh @gtacommunity 79.5K; Df7RyzbG71r Complex Pop; DgGkiySM0p- History Facts; Dewzq7sCpAL, DgDnSGOzjZv (unopened) |
+| Wed 25 Nov | casting-43 | kw: manni perez | 24 tiles | DfBToGdvJ8t @danallengaming 53.7K likes / 1.4K cm; DgHi6QwFNNs @gtagamelancer 94; Df6X9MCBgfe 44; Dc4scPWEf7b (Manni own, 4 Sep) |
+| Wed 25 Nov | casting-43 | kw: dylan rourke | 24 tiles | Df77PORDmqF @gtavinewsjournal(collab rockstargames) 42.2K; Df7dSsajU_w Pubity; Df7kXBHmgYy RapTV; Df7cEVApUew Viral Pop; Df7yHpgIB1w Inside History |
+| Wed 25 Nov | casting-43 | kw: gta 6 casting director | 24 tiles | mostly cast members' own credits-live thank-you posts (Df77wmVFlC_ @allothompson 498 likes thanks 'the casting team'); no casting-director reel; Df7gjeZFXFH grid-of-five-actors post |
+| Wed 25 Nov | casting-43 | kw: how gta 6 actors were chosen | 0 results (No results page) | - |
+| Wed 25 Nov | casting-43 | kw: gta 6 audition | 24 tiles (untitled mostly) | Df7wogMy-Br @sylviavillagran 2.3K likes (VO audition reel, 'the audition that got me booked'); Df8n65FjbBt Josh Reiter; DfsN6mcjPod NYCastings generic |
+| Wed 25 Nov | casting-43 | kw: gta 6 voice actors | 5 tiles | Df8bPhviite @igndotcom 93.7K likes / 702 cm (full cast revealed; 1 comment tags casting director); DgDi_8Xha7Z, Df7rofyvNGe, DgEpv16xfXh, Df77eqivk1A |
+| Wed 25 Nov | casting-43 | kw: abigail red dead casting director | 0 results | - |
+| Wed 25 Nov | casting-43 | kw: cali elizabeth moore | 0 results | - |
+| Wed 25 Nov | casting-43 | kw: lucia actress secret nda | 0 results | - |
+| Wed 25 Nov | casting-43 | kw: gta 6 cast real life | 24 tiles (mostly repeats of Nov 19-21 Jason+Lucia photo posts) | Df_eJUoOrKq; Df8QmoBiL_x @Luxury; Df7NfxZPBBn Rolling Stone Brasil |
+| Wed 25 Nov | casting-43 | post Df_eJUoOrKq | /p/ | @gta6.only 30.4K likes / 361 cm, cast in Times Square; Q 'I spot manni but who are the others ?' 17 |
+| Wed 25 Nov | casting-43 | kw: gta 5 actors audition | 0 results | - |
+| Wed 25 Nov | casting-43 | tag #gta6cast (redirects to keyword search) | 24 tiles | Df8bPhviite IGN top; Df7wogMy-Br @sylviavillagran audition reel; DgCDto-hhh7, Df8ZEMzMQOe unopened |
+| Wed 25 Nov | casting-43 | tag #manniperez (redirects to keyword search) | 24 tiles | mostly repeats of DgGanSGIpxU, DdBzULVt772, DgAuZj9JXOF, De5sqawp7UK |
+| Wed 25 Nov | casting-43 | profile @danallengaming /reels/ | loaded | 12.5k followers; 45 tiles scrolled, DfBToGdvJ8t (Manni dream car, collab with danallengamingpodcast) not on this grid; top tiles 1.6m / 1m / 135k |
+| Wed 25 Nov | casting-43 | profile @project.vice /reels/ | loaded | 39.2k followers; De5sqawp7UK = 444k views |
+| Wed 25 Nov | casting-43 | profile @gta6.only /reels/ | loaded | 601k followers; Df_eJUoOrKq = 395k views |
+| Wed 25 Nov | casting-43 | profile @ricks_2388 /reels/ | loaded | 3,592 followers; DdBzULVt772 (22.3K likes) not on first 40 tiles, views n/a |
+
+### 2026-11-25 gta6-first-1m (video 44)
+- 2026-11-25 keyword "gta 6 1 million": 48 results (scrolled; KreekCraft $1M savings, MrBeast $1M car, Speed vs Kai, Rockstar $1M prize letter)
+- 2026-11-25 keyword "gta 6 million dollars": 48 results (scrolled; warnerreu glitch counter, Yugi2x $2M)
+- 2026-11-25 keyword "kai cenat speed gta 6": 48 results (scrolled; Kai/Speed race clips, StreamCreamTV rules post)
+- 2026-11-25 keyword "gta 6 money": 48 results (scrolled; bltzz van farm, golden bill)
+- 2026-11-25 keyword "gta 6 fastest money": 72 results (scrolled; majin2uu +$132,000 stash sale, nexiph, shooteverytok)
+- 2026-11-25 keyword "gta 6 money method": 72 results (scrolled; same hot set)
+- 2026-11-25 keyword "gta 6 bank vault": 48 results (scrolled; $10,496,600 Chapter 3 heist, Speed vault clip)
+- 2026-11-25 keyword "gta 6 vault": 48 results (scrolled; same vault cluster)
+- 2026-11-25 keyword "gta 6 jewelry store": 24 results (partial scroll; first attempts froze the Chrome renderer twice, third load worked)
+- 2026-11-25 keyword "gta 6 randy wish list": 0 results ("No results")
+- 2026-11-25 keyword "gta 6 atm": 5 results (first screen only; tow-truck ATM clips)
+- 2026-11-25 keyword "gta 6 bank robbery": 24 results (partial scroll)
+- 2026-11-25 keyword "gta 6 supercar sell": 0 results ("No results")
+- 2026-11-25 keyword "gta 6 supercar": 24 results (partial scroll; free supercar spots)
+- 2026-11-25 keyword "gta 6 how to get rich": 24 results (partial scroll; same hot set)
+- 2026-11-25 keyword "#gta6money" (tag page, redirects to search): 24 results (partial scroll)
+- 2026-11-25 keyword "gta 6 buckme": 24 results (partial scroll; BUCKME app jokes)
+- 2026-11-25 keyword "gta 6 mansion robbery": 0 results ("No results")
+- 2026-11-25 keyword "gta 6 money guide": 24 results (partial scroll; same hot set)
+- 2026-11-25 profile /nexiph/reels/, /warnerreu/reels/, /shooteverytok/reels/, /bltzz/reels/, /fazesway/reels/: loaded (views read for the top posts; 26 post pages read this session; none blocked)
+- 2026-11-25 keyword "gta 6 randy": 24 results (shorter retry of "randy wish list"; top post kadoheu Randy dealership method, 100k in 20 min)
+- 2026-11-25 keyword "gta 6 mansion": 24 results (shorter retry of "mansion robbery"; grid not opened)
+- 2026-11-25 note: the 3 "No results" above (randy wish list, supercar sell, mansion robbery) were long-phrase artifacts; shorter variants returned 24 each
+- 2026-11-25 keyword "nickeh30 gta 6": 24 results (Nick fan clips) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 family friendly": 24 results (grid, includes Tim post 48.9K likes) [aw-nick-gta6]
+- 2026-11-25 keyword "nick eh 30 harpoon": 24 results (harpoon boat reels small) [aw-nick-gta6]
+- 2026-11-25 keyword "joe bart nick eh 30": 24 results (casterline cap commentary 20.8K likes) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 bike": 24 results (burnout on NPC reels) [aw-nick-gta6]
+- 2026-11-25 keyword "jynxzi nick eh 30": 24 results (Jynxzi reaction reels, top 237.8K likes) [aw-nick-gta6]
+- 2026-11-25 keyword "nick eh 30 evil": 24 results (Evil Eh 30 reels, cafe robbery, motorbike kill) [aw-nick-gta6]
+- 2026-11-25 keyword "xqc nick eh 30": 24 results (xQc/KICK reaction reels) [aw-nick-gta6]
+- 2026-11-25 keyword "timthetatman nick eh 30": No results (phrase-level; "tim nickeh30" also none) [aw-nick-gta6]
+- 2026-11-25 keyword "family friendly streamer gta 6": No results (phrase-level) [aw-nick-gta6]
+- 2026-11-25 keyword "nick eh 30 gta 6": 24 results (same top set) [aw-nick-gta6]
+- 2026-11-25 hashtag #nickeh30gta6: 24 results (top = gio.temple, Jynxzi, xQc reels) [aw-nick-gta6]
+- 2026-11-25 hashtag #nickeh30: 24 results (same top set) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 swear": 5 results (DgGUJujB7zh clipping_heist 461 likes / 433 shares, the swearing-family beat) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 psycho": No results [aw-nick-gta6]
+- 2026-11-25 keyword "nick eh 30 motorcycle": 0 tiles, not retried [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 most family friendly": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "nick eh 30 gta 6 family friendly promise": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 motorcycle": 0 results (empty load) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 harpoon family": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "nick eh 30 boat gta 6": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 family friendly stream": 5 results (best DgJT-SxyIpC 28.9K likes, no-cursing elevator beat) [aw-nick-gta6]
+- 2026-11-25 keyword "keep it family friendly next time": 5 results (DgEomS2hWrS small; rest old) [aw-nick-gta6]
+- 2026-11-25 keyword "joe bartolozzi nickeh30": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "joe bart gta 6 nick": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "jynxzi nickeh30": 5 results (DgHY6uOBg3u 237.8K likes, DgINZbXh11X 5K) [aw-nick-gta6]
+- 2026-11-25 keyword "jynxzi checks on nick": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "timthetatman nickeh30": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "nickeh30 criminal profile": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "gta 6 psycho criminal profile": 0 results (No results) [aw-nick-gta6]
+- 2026-11-25 keyword "edwina rai": 24 results (Df-EmPzGCJu = her 20 Nov post; her GTA VI post Df7HqUSMx9Y found via her profile) [casting-43]
+- 2026-11-25 post Df7wogMy-Br (@sylviavillagran audition reel, caption only) + profiles @edwinarai, @mannilperez (708K), @dylan_rourke (239K) [casting-43]
+- 2026-11-26 keyword "dave chappelle dubai": 24 results (#1 DfkYZWXhHCA = thecrewhasit clip 11-10; rest generic Chappelle/Dubai, tiles have no captions) [crewhasit]
+- 2026-11-26 profile @thecrewhasit /reels: 323k followers, 379 posts; newest 20 reels 5k-920k; DfkYZWXhHCA (King Bach/Chappelle Dubai, 11-10) 113k, DfncXDPSAhn (King Bach ranking, 11-11) 660k [crewhasit]
+- 2026-11-26 keyword "king bach dave chappelle": 24 results (#1 DfkfkiRo8nG 11-10, #2 DfkYZWXhHCA = thecrewhasit; others DfqAzNKiJqr 11-12, Dfm6lqCmPmb 11-11, Df0SCa4OkPx 11-16) [crewhasit]
+- 2026-11-26 post DfkfkiRo8nG (@thebfacollective repost of Crew Has It clip, 11-10, 126 likes/3 comments; caption says Abu Dhabi yacht party) [crewhasit]
+- 2026-11-26 post DfqAzNKiJqr (@com_ed.y, 11-12, no caption, original audio, 27s; unclear relevance) [crewhasit]
+- 2026-11-26 keyword "reddit story reaction": 24 results (grid shows tiles only, no handles/counts; opened posts individually) [tht-sample]
+- 2026-11-26 keyword "reddit stories podcast": 24 results (tiles show handles-less grid; split-screen + red-card Reddit formats) [tht-sample]
+- 2026-11-26 keyword "double coverage mystic zach": 0 results [doublecoverage]
+- 2026-11-26 profile @twohottakes (483K, 1,152 posts) + /reels/ grid 24 tiles + posts DflHeXNydXy, De0Ff5eSLog, DXVAGJnkjfK [tht-sample]
+- 2026-11-26 profile @doubl3coverage /reels (linked from the main YT channel's episode descriptions): 5 posts, 3 followers, bio 'Freelancer', 3 reels tiles 29-200 views: no real IG feed [doublecoverage]
+- 2026-11-26 keyword "mystic zach": 24 results (grid, no handles shown) [doublecoverage]
+- 2026-11-26 profile @mysticzach /reels: 742 followers, 54 posts, bio 'Running It Back with Pac and Zach' (another football podcast); newest reel ~Jan 2025; NOT a Double Coverage feed [doublecoverage]
+- 2026-11-26 keyword "masvidal pay per view ufc pay": 0 results [doublecoverage]
+- 2026-11-26 04:24:44 keyword "masvidal": 'No results' (suspicious for a famous name; earlier tab froze on navigation; possible soft limit) [doublecoverage]
+- 2026-11-26 04:26:51 SEARCH LOOKS SOFT-LIMITED: keyword "masvidal" -> 'No results' (screenshot), and navigation away from the search page hangs twice (tab froze, fresh tab same). Not a 429/login wall, so no BLOCKED flag set; doublecoverage session stopped IG and will retry once later [doublecoverage]
+- 2026-11-26 keyword "king bach yacht": 0 results (No results) [crewhasit]
+- 2026-11-26 keyword "chappelle yacht": 0 results (No results) [crewhasit]
+- 2026-11-26 keyword "chappelle denied entry": 0 results (No results) [crewhasit]
+- 2026-11-26 keyword "bouncer didn't recognize": 0 results (No results) [crewhasit]
+- 2026-11-26 keyword "denied entry": 5 results (DeVtw3ysvim 10-11, Dan-Y-HTqZ_ 7-10, Dbu3A-3NE9H 8-7, DfqvkF4A2L0 11-13, DfiFffnO3Am 11-9; tiles uncaptioned) [crewhasit]
+- 2026-11-26 post DfqvkF4A2L0 (@coribush, 11-13, visa revoked; NOT premise-relevant) [crewhasit]
+- 2026-11-26 post DfkYZWXhHCA re-read (hook frames 0.5s/2s: no hook title, burned word-by-word purple captions, Nick's HotPass sponsor bug TL, THE CREW HAS IT logo TR) [crewhasit]
+- 2026-11-26 keyword "celebrity denied entry": 24 results (uncaptioned tiles; newest DfSgHzSRyUl 11-03, DfGAbCfu9Mw 10-29, DfEUuZohhx4 10-29, Df_2ZIsIln6 11-21 meme) [crewhasit]
+- 2026-11-26 04:44:44 CONTROL keyword "mystic zach": 24 results again -> search NOT limited; the 'masvidal' 0 was query-side [doublecoverage]
+- 2026-11-26 post DfSgHzSRyUl (@theblacksonexperience, 11-03, 32 s, 40 likes; not premise-relevant) [crewhasit]
+- 2026-11-26 04:45:48 keyword "jorge masvidal": 24 results (recent codes De2yo0vspaV De7BFVBhPYf De5zL7xNLmV Dec4ogIiD8s DfhnXIbAXkq Ddy2ju7O0tO) [doublecoverage]
+- 2026-11-26 keyword "didn't know who i was security": 0 results (No results) [crewhasit]
+- 2026-11-26 04:46:51 post DfhnXIbAXkq (@jabsring, 2026-11-09, Masvidal 2019 revenge arc): 12.2K likes / 233 comments / 207 reposts / 1.2K shares [doublecoverage]
+- 2026-11-26 04:47:58 post De7BFVBhPYf (@propodcastclips, 2026-10-25, Double Coverage Masvidal comeback clip): 21 likes / 1 / 1 (a DC clipper on IG too) [doublecoverage]
+- 2026-11-26 04:49:00 keyword "ufc fighter pay": 5 results (DcfoUS5INUz DYSJPQcIPPt DfXmsnLDa2m DbrIwk6SCy1 Db_F38fALRE) [doublecoverage]
+- 2026-11-26 04:49:50 post DfXmsnLDa2m (@khabib_nurmohagmadov fan page, 2026-11-05, UFC Q3 revenue $513M / Paramount): 18 likes / 13 comments [doublecoverage]
+- 2026-11-26 04:52:16 keyword "boxing vs ufc pay": 0 tiles on first read, then the renderer froze (CDP timeout); tab closed, doublecoverage IG work stopped (8 loads, 3 posts read) [doublecoverage]
+- 2026-11-26 post DflHeXNydXy (@twohottakes, the permitted story, page rendered 0x0, no read) + post DfnGPIJImmj (its UPDATE reel: 17.8K likes / 81 comments / 47 reposts / 428 shares, 2026-11-11) [tht-sample]

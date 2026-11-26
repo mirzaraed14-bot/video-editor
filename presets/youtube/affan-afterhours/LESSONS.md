@@ -834,5 +834,51 @@ tag, SFX and body bed, and every punch-in; nothing disabled, no keyframes, no ef
   his voice on A1 was the camera's BUILT-IN mic (no DJI on this shoot), too quiet and roomy: he re-records the video. Recording ask added to `REACTION-STYLE.md` § 13 (mic routed to the recorded track + a clap per
   camera file for sync). Files: `REACTION-STYLE.md` § 13–14, `lanes/premiere/lab-notes.md` 2026-11-24.
 
+## 2026-11-25 · GTA 41 take 2 (the re-record), build lessons before his review
+- **The pre-record gate still failed on OBS** (desktop-only again; he skipped the 10 s test), but the camera mic was 27 dB hotter, and he chose
+  "Use camera audio". → For reactions, the camera's built-in mic is a usable voice when it is close and hot: check its level at intake
+  (speech p95 −23 dBFS here vs −49 on take 1) before asking for a re-record. File: `projects/gta6-npc-organic/take2/RUN-take2.md`.
+- **Sync without shared audio: his mouse clicks.** The camera hears every click that pauses or plays a reel; the OBS track shows the reel
+  audio stopping and starting. That locked the sync to a 7 ms cluster (`take2/work/sync/clicksync.py`, lab-notes 2026-11-25). → First
+  method to try on every face-cam + screen reaction where the mic is not in the OBS file.
+- **Censoring on the reaction format:** first take with drug / suicide words in his own speech (6: "shoot himself", "snort a line",
+  "overdosed on cocaine"…). → REACTION-STYLE § 12.9 default applied: A1 Level keyed to −inf over the word + a 1 kHz tone at −17.5 dBFS
+  on A6 (`take2/work/censor_scan.py`, `bleep_tones.py`, `premiere/place_fx.tmpl.js`). Asked once in the delivery note.
+- **The opener title follows his spoken order and is re-measured on his cutout every take** (GTA 6 / FUNNIEST / NPCS this time). At 200 px
+  FUNNIEST hid its whole F behind his head ("UNNIEST"): it runs at 160 px so the word reads while he stays in front of the type.
+- **Laugh creeps outrank push-ins** on the same row (take 2's longest talk rows held his loudest laughs, so the push took them and no
+  creep was planned). `take2/work/move_plan.py`.
+- **Editorial defaults taken (for his review):** R19 cut (he skips it on camera), a conspiracy list naming pedophiles / satanic rituals
+  cut, a "CP" comment read cut, a secondhand BDSM reel story he didn't show cut, GOTY rant + next-game musing cut. His verdicts go here.
+
 ## 2026-11-24 · C1504 Short (`projects/gta6-jasons-house-5k`), his note before the build
 - **"but easy on the sharpen unsharp mask please".** The Afterhours Shorts in the Scott look inherited the Scott H1 sharpen (`sharpen-picture.py --mask 0.55 --sharp 0.40`, The Head Start and AI Ports). -> change: this job runs about half (`--mask 0.25 --sharp 0.20`) on his face, none on 4K-sourced gameplay, checked on 100 % stills. -> file: the job's BRIEF § His notes and its `work/final_build.sh` once built. If he says it again, it becomes the Afterhours Shorts number in EDITOR.md § 3b.
+
+## 2026-11-25 · C1504 "Jason's house $5K" Short, his note on v1
+- **His words:** "put my spoiler warning in back brh and no gameplay while i say it the whole purpose is people can scroll of if they havent completed chapter 1".
+- **Lesson:** his spoken spoiler warning is a FEATURE, a scroll-off gate for viewers who have not finished the chapter, so it is never cut or collapsed into a chip.
+  - Nothing that spoils is on screen while he says it: no gameplay, no story picture.
+  - The hub brief's default ("the spoiler warning collapses to one fast line or card") was wrong for his spoiler Shorts.
+- **Change made:** v2 opens on his warning take ("Major spoilers for people who haven't completed Chapter 1 of GTA 6") and on "So if you have completed, make sure that you do this".
+  - On the warning: his face on top, a drawn MAJOR SPOILERS / GTA 6 · CHAPTER 1 card below.
+  - On the bridge line: his face full-frame.
+  - The gameplay starts on the first tip line.
+- **Files:** `projects/gta6-jasons-house-5k/work/cut/make_edl.py`, `yt/build_spec.py`, `yt/assets/build/spoiler_card.py`.
+- **Rule from now on:** a spoiler Short keeps his recorded warning whole, with a spoiler-free picture under it. If it repeats, it becomes an EDITOR rule.
+- **Also from this job:** his head sits at the very top of the C1504 camera frame, so no crop can move it down. A chip above his head touches his hair: put chips under the captions or in a panel.
+
+## 2026-11-25 · GTA 41 take 2 (`projects/gta6-npc-organic/take2`), his review: "not upload-worthy"
+- **His words (gist):** cuts too loose; retakes left in (English is his 2nd language); he reads comments and the video shows only his face, with no comments and no marks; "Leonida Animal Services" is his face instead of a marked, funny edit; the polar bear coming out is not shown; the Amazon/Sahara crash is unmarked; the zooms/keyframes look low quality ("KSI+ is not doing these"); the Red Dead bit is cut abruptly; the guy shooting himself should get the grey Speed / uncanny meme face; the box is too zoomed in (show the top of his head). Use Fable to dial in the style, Opus to manage, Sonnet to execute.
+- **Root cause → change:** take 2 chose the layout from the reel's PLAY STATE (paused → his face). He pauses exactly when he talks ABOUT the screen, so 103 rows hid the referent. → Layout is chosen BY REFERENT (eye line + reel state + comments panel + deictic words). A paused reel is shown as a FREEZE of the last icon-free frame, a named detail as a 1-frame PUNCH (the crop is the mark), text as a card with a word-synced yellow highlighter. → Files: `X:/Claude Projects/GTA 6/research/ksiplus-style-2026-11-25/FOUNDATION.md` (Fable study; overturns 10 claims of REACTION-STYLE v1), `take2/work/review/BEATS.md`, `take2/v2/BUILD-PLAN.md`.
+- **Cuts:** his own joints, measured on the same lens: take 2 was 184 ms median, his ≈ 93; v2 is 92 / p90 118 (`take2/v2/cut/p2_calibration.md`). WhisperX word edges on C1506 sit ~83 ms deeper inside the words than on his PC/GI files, so raw-ASR gap numbers do NOT compare across recordings: calibrate with polish-boundaries' onset/decay first.
+- **Retakes:** large-v3 MISSED restarts ("Red Dead even doesn't have… Red Dead doesn't even have"). A whole-cut re-transcription of the BUILT A1 (CPU medium.en + small, each hit confirmed twice) found 11 more retakes/fillers. → Before every delivery: transcribe the built cut, not only the source (`take2/v2/cut/slices/whole_cut_scan.md`).
+- **Zooms:** face scale only 1.00 / 1.15 / 1.30, 1-frame steps on the phrase break, the eye line held, ≤ 5.5 / min, ≥ 70 % at 1.00, Unsharp Mask 40 / 1.2 at 1.30; no eased un-blurred keyframes, no creeps. One blurred stock push (pre-rendered) as a test for his OK.
+- **Box:** crop height 1000 of the 1080 camera (head ≈ 38–40 % of the box, like KSI+); 900 is the one-number fallback.
+- **Instagram pause icon:** it fades IN ~0.05–0.1 s after his click and OUT over ~0.25 s after play. Check freezes and live-reel edges at 60 fps on the icon area (a 20 fps check missed a faint ring at 362.90).
+- **Blur windows** must open at or before the first SHOWN frame of a row (the fit clip's first 2 frames leaked the clerk at t = 217.29). `fit_reel.py` now asserts it.
+- **Status:** the v2 PILOT (first 3:49) built for his review: sequence "GTA 41 - NPC Reactions take 2 v2". His verdicts on the pilot go here.
+
+## 2026-11-26 · GTA Short captions, ABW11 · Sequences 01 and 25
+- **"caps" + a sequence tab, then "both are ABW 11"** = English captions on each named sequence, his last cap (4 words), one job folder per sequence (`projects/abw11-seqNN-short/`).
+- **A job rebuilt by `presets/instagram/affanwizu/sequence_reference.py` has no `brief/tracks.txt`:** `workflows/sequence-captions.py srt` now falls back to `transcript/sequence.json` (both SRTs byte-identical either way; Seq 21 unchanged).
+- **With Premiere open, large-v3 on the CPU floor can't load (mkl_malloc at 7 GB free):** run GPU-only, `WHISPERX_NO_CPU=1 WHISPERX_COMPUTE=int8_float16 WHISPERX_BATCH=8`, under the ASR lock (abort if busy) and `lock.sh gpu`.

@@ -1,0 +1,44 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 07:06:02 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/w0.wav
+[   0.03-  23.32] I really enjoyed killing Bellatrix. And I really enjoyed having it be Molly that did it. And, of course, you also have two very different kinds of female energy. They're pitted against each other. You have Molly, who will mother the whole world if she can. And you have Bellatrix, whose idea of love is very perverse and twisted. And that was satisfying.
+[  23.32-  49.93] You know, I had a lot of fully-fledged members of the Order of the Phoenix... ...who were female and who were fighting alongside the men. And I really needed to show some female Death Eaters. And Bellatrix is the female Death Eater par excellence. Bellatrix is not a great advertisement for prison... ...if it is what it's done to her.
+[  57.42-  81.54] But she is doing everything for Voldemort. And she follows him over the precipice like a lemon. There's an interesting thing, isn't there, about female psychopaths. They often need to meet a male counterpart to release that part of themselves. And that's how I see Bellatrix. She is the only true follower. I think Bellatrix thinks, you know, she went to Azkaban, but she's prepared to die.
+[  81.71-  90.03] So she's pretty convinced by his supremacy and his superiority and his worthiness. I mean, Voldemort clearly is her idol.
+## research/aw-hp-2026-11-26/src/w1.wav
+[  90.03- 108.31] her obsession he is the only person to whom she feels subservience she has that curious personality disorder or quirk or whatever we're going to call it but I think he's peculiarly female and Helena portrays that with such gusto it's fabulous to watch
+[ 113.88- 140.59] Helena was also a really important mentor to me on this last movie. She very sweetly invited me over for dinner, and we talked about books a lot, and just being a woman. You know, we talked about how to kind of be able to absorb criticism and flattery, and knowing what's genuine and what isn't, and knowing who to trust, and... Yeah, I had such a good... It was such a big evening for me. I don't know if she knows how kind of...
+[ 140.98- 169.76] important it was for me but I've never told her this but after after I had my evening with her I went home and wrote down everything that she said everything that we that we shared and I actually have a book of important encounters to me and I write down I write down things that they say because I was like one day I really wish I remembered what that incredible person I met said and what they thought about things and I just I don't want to forget so Jo has a page too
+## research/aw-hp-2026-11-26/src/rsv.wav
+[ 195.03- 222.93] Hermione would be in Helena's body... ...because they are so different as people. And so you could see the awkwardness of Helena's walk in there... ...and I think it adds a strange tension, also some humor. It was funny. It's sweet. It was... I really liked working with her. It was quite amazing, really. She really got the kind of walk and all that speaks and stuff. I hardly think that'll be necessary.
+[ 223.18- 236.26] It's a role that has certain challenges. But Helena made a very good Emma. And it was quite charming, actually. I don't like to be kept waiting. Very well, Madam Lestrange. You have to call me Emma. I'm sorry, Emma.

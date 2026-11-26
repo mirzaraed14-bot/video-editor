@@ -1,0 +1,45 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 07:14:58 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/qaBU6M6Ao6Q_ign_cast_0200.wav
+[ 120.03- 139.39] That kind of structure, I think, gets a bit tiresome and a bit repetitive, so it's just really nice to just say, forget that, we're going to do something completely different this time. Please take the whole crux off, you wouldn't be saying any of this if you hadn't been wearing it all day. Do you know why I listen to that radio every night, dear?
+[ 139.56- 152.55] To make sure I don't hear Ginny's name. Or Fred. Or George. Or Mark. You think I'm not listening too? You think I don't know how this feels? No, you don't know how it feels! Your parents are dead! You have no family!
+[ 154.47- 181.51] You know, I always think the two films I made were about Harry kind of growing up, but actually they were the kind of tentative first steps into adulthood. And I think this movie is actually about, you know, that transition, the breaking of innocence in a way. There are moments in this film where they do things which you actually think, you know, I can't imagine that happening at Hogwarts. It's too, Hogwarts was always too safe a place.
+[ 181.51- 202.35] And so it's really about their journey into adulthood, in a way. And that's what's fun about the film, because these characters we've grown up with... ...and you suddenly see them making choices, fighting about things... ...realizing how small and vulnerable they are in the world. And there's something very moving about that.
+[ 210.03- 221.18] I'm sorry.
+[ 223.05- 240.03] Ever since I read the book I was firmly advocating the idea that it should be done as two films. I simply think it's impossible to adapt into one script without cutting out a huge amount of really important stuff. I think a lot of the stuff that would have been cut is
+## research/aw-hp-2026-11-26/src/qaBU6M6Ao6Q_ign_cast_0400.wav
+[ 240.03- 254.75] actually the stuff that's in this part one where you know you actually get to spend some time with the characters and you know become a bit involved with them as opposed to just the all-out action stuff so you know there's I mean there is a lot of action in this movie but it's
+[ 255.12- 274.96] It's also paced very nicely so that it doesn't feel rushed. I think it was the right choice, really, especially from the book fan's point of view. We were able to get a lot more of the book into two films because it's a massive book and there's so much detail in it.
+[ 276.04- 302.59] I think, yeah, it's really gonna... And also, kind of, because it's the last one, it kind of sends it off in a real kind of bang, really. And I think that's kind of... Yeah, it drags it out a bit longer as well, which is always good. Basically, we went through the book. I listed all the things that I thought would be really cool to be in the movie. We put a kind of cost on that. And it was an impossibly expensive movie to make, even by Harry Potter standards.
+[ 302.59- 320.46] So in a sense you go, all right, well what are we going to lose? And when you start scratching off things that in a way are signature moments in that novel, your heart starts to break and you go, I can't lose that and I can't lose that and I can't lose that.
+[ 320.46- 344.84] And I'd been hammered by some of the fans, not all of them, in Order of the Phoenix and Half-Blood Prince, for losing certain things. You know, there were things that I didn't want to lose too, but which didn't work in the rhythm of the movie. So this was the last ever Harry Potter. I wanted to try and, first of all, include all the things that I felt should be in the movie, and also give the fans as generous an experience as possible.

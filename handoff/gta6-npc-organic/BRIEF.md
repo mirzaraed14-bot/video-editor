@@ -27,3 +27,14 @@
 
 ## Open decisions for him (REACTION-STYLE § 12; built on the DEFAULT until he answers)
 See RUN.md § Delivery note for the final list with what was built.
+
+## Take 2 (re-record, 25 Nov): what this build does better than v1
+- **His notes on v1, built in from the start:** cam box TOP-LEFT (x20–366), the voice is the camera mic he chose ("Use camera audio"), and
+  it is 27 dB hotter than take 1's, so the house chain has real signal to work with.
+- **The three v1 defects fixed at the source, not patched:** word-safe cut edges (`polish.py`), the grey whips after B&W rows, and
+  streamer chat (R19, the only reel with chat, is skipped on camera this time and cut).
+- **Catalog pass:** unchanged from the v1 pass above (same KSI+ DEFAULT BUILD: L1 layout, jump zooms, punch, push-in, laugh creep,
+  B&W ≤ 2, box pulse, whips, fire-plate opener). New this take: the opener title follows HIS spoken order (GTA 6 / FUNNIEST / NPCS) and
+  is placed on the take-2 cutout masks; drug / suicide words are bleeped (REACTION-STYLE § 12.9 default, 1 kHz soft tone).
+- **Sync is sharper than v1's C1499 file** (±0.25 there): mouse clicks on the camera mic vs the reel pausing/playing put every reel within
+  a 7 ms cluster (±0.1 s labelled).

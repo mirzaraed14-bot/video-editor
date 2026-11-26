@@ -1,0 +1,42 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 06:14:27 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/yO_yE15G7_o_malfoys_epk_0000.wav
+[   6.11-  24.48] You have nothing to fear if you have nothing to hide. Harry, tell me where he is. Harry, go! We are the ones to hand Potter to the Dark Lord. Everything will be as it was, Westeros.
+[  28.85-  55.89] The Malfoys are interesting characters... ...because there's an element of where do they stand. Clearly, they're on the side of the Dark Lord. But how far will you go on that side? Get Draco. Draco is somewhat torn. He's been raised to be a follower of Voldemort... ...but he comes to realize that's not all it's cracked up to be, as it were. This isn't who we think it is, Draco, and we call him. He'll kill us all.
+[  58.10-  81.74] ...really in a place where I don't think he wants to be part of the evil mafia anymore... ...and he wants to sort of cut his ties. But, of course, he doesn't have a choice in the matter. So he's forever still trying to please Lucius and Narcissa... ...to try and sort of be the next chosen one. Lucius is in a very bad way, actually... ...because the family have let Voldemort down consistently... ...and they've been humiliated.
+[  84.46- 106.50] In the time that he's been away in Azkaban, his spirit's been broken. And when he tries to stand next to Voldemort and be the right-hand man he always imagined he'd be, Voldemort couldn't be more contemptuous. It's an enormous fall from grace for Lucius, because not only does Voldemort not respect him, but his own sister-in-law, in his own house, doesn't let him call the shots. She's a loose cannon, Bellatrix. Where'd you get that?
+[ 107.63- 120.03] She's a bully, and like most bullies, I think bullies are terrified of everything, really. That's her way of disabling people, is to terrify. I think she's probably frightened deep down of Harry Potter.
+## research/aw-hp-2026-11-26/src/yO_yE15G7_o_malfoys_epk_0200.wav
+[ 120.03- 133.46] She's just very mystified that possibly this young boy is way more powerful than Voldemort. She is the only true follower. She just thinks the end is in sight. And I'll be queen.
+[ 136.38- 164.80] She's such an extreme character. You're never gonna be able to sit with a Sunday paper and have a little chat with Bellatrix. I think Bellatrix just horrifies Narcissa, actually. She's changed from a woman that had the luxury to think that she ruled the world because she did within her world, and she doesn't anymore. And nobody knows how this war's gonna turn out. Narcissa comes to the fore here because she's holding the family together and keeping them, I think, just the right side of the Dark Lord's wrath.
+[ 167.09- 184.75] All of us have really got a loaded gun to our heads. Well, a far worse thing than a loaded gun. See if any of us make any mistakes, we've got the Dark Lord to answer to. I have seen your heart. And it is mine.

@@ -1,0 +1,41 @@
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\core\io.py:48: UserWarning: 
+torchcodec is not installed correctly so built-in audio decoding will fail. Solutions are:
+* use audio preloaded in-memory as a {'waveform': (channel, time) torch.Tensor, 'sample_rate': int} dictionary;
+* fix torchcodec installation. Error message was:
+
+Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6 and 7.
+          2. The PyTorch version (2.8.0+cu128) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 7: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 6: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 5: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+FFmpeg version 4: Could not find module 'X:\Caches\dot-cache\video-editor\whisperx-venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+[end of libtorchcodec loading traceback].
+  warnings.warn(
+2026-11-26 05:18:40 - whisperx.vads.pyannote - INFO - Performing voice activity detection using Pyannote...
+Lightning automatically upgraded your loaded checkpoint from v1.5.4 to v2.6.6. To apply the upgrade to your files permanently, run `python -m lightning.pytorch.utilities.upgrade_checkpoint C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\whisperx\assets\pytorch_model.bin`
+C:\Users\affan\.cache\video-editor\whisperx-venv\Lib\site-packages\pyannote\audio\utils\reproducibility.py:74: ReproducibilityWarning: TensorFloat-32 (TF32) has been disabled as it might lead to reproducibility issues and lower accuracy.
+It can be re-enabled by calling
+   >>> import torch
+   >>> torch.backends.cuda.matmul.allow_tf32 = True
+   >>> torch.backends.cudnn.allow_tf32 = True
+See https://github.com/pyannote/pyannote-audio/issues/1370 for more details.
+
+  warnings.warn(
+## research/aw-hp-2026-11-26/src/o23_455.wav
+[ 455.03- 480.36] But this is not unique to your career. Like time and again, I've touched on it before. You talk about this for so many roles. It's crazy to me. No, tons of it. I'd put it all on a fire and burn it and do it all again. Gary. How would you do Dracula differently now? Dracula I've seen probably 25 times in my life. I'm obsessed with it, yet I know you don't love your, you don't love that film. I'm not crazy about it.
+[ 481.93- 505.28] No, I tell you what it is. I tell you what it is. There's probably actors here, yeah, tonight. Any actors in the Heights? Any actors in the Heights? But it's like anything. I think that if you, if I sat and watched myself in something and said, my God, I'm amazing.
+[ 506.14- 514.97] Right? That would be a very sad die because you want to make the next thing better.
+## research/aw-hp-2026-11-26/src/o25_010.wav
+[  10.03-  25.98] I've talked to Dan Radcliffe, and he said on his last day of shooting with you, you came up to him and said, was I a good serious? Like you asked him, did I do the job? Sounds like me, yeah. Is that part and parcel of that?
+## research/aw-hp-2026-11-26/src/o26_415.wav
+[ 415.54- 433.64] Is that what it's about? You just want me to compliment you more? Because you're amazing, a serious flag. But, okay, you've said before to me and others, you've said you call your work mediocre. That's insane that we're gonna leave that behind. Do you have a favorite scene at least? Can you cite like a moment that you felt between you and Daniel that you do take pride in?
+[ 433.76- 449.98] Yeah, I have the scene with Daniel where I talk about that the people that we've loved or that have loved us live in here and that we carry them always with us. Yeah, something like that.

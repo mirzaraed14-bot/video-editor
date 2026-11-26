@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: ba0c4372-a56a-4e31-9e42-90041477178f
-  modified: 2026-11-15T12:47:38.283Z
+  modified: 2026-11-26T03:52:20.016Z
 ---
 
 **Rule (Affan, 2026-10-21, MJ siblings short):** "don't use agents of fable, use opus only, and use advisor as well to see if a
@@ -74,3 +74,16 @@ Related: [[feedback-usage-budget]].
   — the same three roles now stated for an EDIT session too: the Opus session manages (plans, judges, adjudicates), every
   executor/reviewer agent passes `model: sonnet` (effort xhigh), and the Fable advisor is consulted before the approach and
   before done. No Fable agents.
+- **2026-11-25, GTA 41 take-2 review (his words, an explicit exception): "use Fable to really dial in the foundation of this editing
+  style ... pass it down to Opus and then Sonnet for the actual execution because Fable is going to be the one that will deploy agents
+  and actually understand humorous funny editing".** → For a STYLE FOUNDATION study (the creative "why it's funny" layer) and the
+  beat plan that comes out of it, a Fable AGENT is allowed and wanted (Agent tool `model: fable`); Opus manages and turns it into
+  a build plan; Sonnet agents execute. The no-Fable-agents rule still holds for everything else (builders, scans, reviewers).
+- **2026-11-26, GTA 41 full build, at $270 = 12 % (his words): "yo relax on the usage brh" + "use sonnet for executions".**
+  - He then said the Fable advisor calls are fine ("only like 2.5 %"; measured $51 ≈ 2.3 %). So keep advisor calls, at most ~2 per builder.
+    The usage to cut is the volume of builder rounds and the manager's own mechanical work.
+  - **How to apply (lean mode):**
+    - Fewer builder rounds: no rebuilds for taste, short hand-backs.
+    - No extra Opus cold-check agent.
+    - The Opus manager does no mechanical work itself (frame grabs, PSNR, composites, sheet scans). A Sonnet agent does it and flags; the manager views only the flagged items and decides.
+    - Builders are resumed only when needed, with short hand-backs.
